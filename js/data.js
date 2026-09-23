@@ -355,7 +355,7 @@ window.privacyData = {
       },
       {
         heading: "Every culture draws the line somewhere",
-        text: "Alan Westin, drawing on studies of animal behaviour and territoriality, argued that the human need for privacy “may well be rooted” in our animal origins.{1,2,3} The psychologist Irwin Altman concluded in 1977, from ethnographic evidence, that privacy is a universal process regulated by culturally specific means — secret forest paths among some Brazilian peoples, soft speech in Java, the Tuareg face veil — a boundary people open as well as close.{4,5} The sociologist Barrington Moore called it “a socially created need”.{6} The oldest rules are about relationships and homes: the Hippocratic Oath binds the physician to keep secret what he sees and hears in patients’ lives;{7} the Mishnah bars opening a doorway or window opposite a neighbour’s onto a shared courtyard;{8} and the Qur’an tells believers not to enter others’ houses until welcomed, and not to spy — in Arabic-Islamic usage, the idea closest to privacy is often hurma, what may not be looked at without permission.{9,10,11}",
+        text: "Alan Westin, drawing on studies of animal behaviour and territoriality, argued that the human need for privacy “may well be rooted” in our animal origins.{1,2,3} The psychologist Irwin Altman concluded in 1977, from ethnographic evidence, that privacy is a universal process regulated by culturally specific means — secret forest paths among some Brazilian peoples, soft speech in Java, the Tuareg face veil — a boundary people open as well as close.{4,5} The sociologist Barrington Moore called it “a socially created need”.{6} Some of the oldest rules are about relationships and homes: the Hippocratic Oath binds the physician to keep secret what he sees and hears in patients’ lives that ought not to be spoken of;{7} the Mishnah bars opening a doorway or window opposite a neighbour’s onto a shared courtyard;{8} and the Qur’an tells believers not to enter others’ houses until welcomed, and not to spy — in Arabic-Islamic usage, the idea closest to privacy is often hurma, what may not be looked at without permission.{9,10,11}",
         source: [
           {
             institution: "Frontiers in Veterinary Science (vol. 8)",
@@ -587,7 +587,7 @@ window.privacyData = {
       },
       {
         heading: "From the wall to the right",
-        text: "In December 1890 two Boston lawyers, Samuel Warren and Louis Brandeis, argued that “instantaneous photographs and newspaper enterprise” had invaded “the sacred precincts of private and domestic life”, and that the law should protect what Judge Thomas Cooley had called the right “to be let alone”.{1,2} In 1928, dissenting in a wiretapping case, Brandeis called that right “the most comprehensive of rights and the right most valued by civilized men”.{3} After the Second World War privacy became a human right: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence”, the Universal Declaration proclaimed in 1948,{4,5} and the European Convention of 1950 and the UN Covenant of 1966 followed.{6,7,8} Today 171 of the 188 national constitutions in force are coded as providing a right to privacy; where the text is silent, as in India and France, courts and statutes protect it instead.{9,10,11,12,13} The US Constitution never uses the word; its Supreme Court found “zones of privacy” in 1965.{14,15,16} Words travelled with the law. Japanese uses the loanword puraibashii, which — according to Masao Horibe, then chairman of Japan’s Personal Information Protection Commission — came into wide use owing partly to a Tokyo court’s 1964 ruling, the first to recognise privacy as a legally protected right;{17,18} the Chinese yinsi (隐私) — “hide” and “private” — was at first often confused, a 2005 study noted, with a near-homophone meaning a “shameful secret”;{19,20} China’s Civil Code of 2020 now defines it as the tranquillity of private life and the private space, activities and information a person does not wish others to know.{21}",
+        text: "In December 1890 two Boston lawyers, Samuel Warren and Louis Brandeis, argued that “instantaneous photographs and newspaper enterprise” had invaded “the sacred precincts of private and domestic life”, and that the law should protect what Judge Thomas Cooley had called the right “to be let alone”.{1,2} In 1928, dissenting in a wiretapping case, Brandeis called that right “the most comprehensive of rights and the right most valued by civilized men”.{3} After the Second World War privacy became a human right: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence”, the Universal Declaration proclaimed in 1948,{4,5} and the European Convention of 1950 and the UN Covenant of 1966 followed.{6,7,8} Today 171 of the 188 national constitutions in force are coded as providing a right to privacy; where the text is silent, as in India and France, courts and statutes protect it instead.{9,10,11,12,13} The US Constitution never uses the word; its Supreme Court found “zones of privacy” in 1965.{14,15,16} Words travelled with the law. Japanese uses the loanword puraibashii, which — according to Masao Horibe, then chairman of Japan’s Personal Information Protection Commission — came into wide use owing partly to a Tokyo court’s 1964 ruling, the first to recognise privacy as a legally protected right in Japan;{17,18} the Chinese yinsi (隐私) — “hide” and “private” — was at first often confused, a 2005 study noted, with a near-homophone meaning a “shameful secret”;{19,20} China’s Civil Code of 2020 now defines it as the tranquillity of private life and the private space, activities and information a person does not wish others to know.{21}",
         source: [
           {
             institution: "University of Louisville, Louis D. Brandeis School of Law Library (Brandeis Collection)",
@@ -794,7 +794,7 @@ window.privacyData = {
       },
       {
         heading: "From the house to the record",
-        text: "In 1967 Alan Westin moved privacy from the house to the data: it is “the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others”.{1,2} By 1971 the threat had a name — Arthur Miller’s The Assault on Privacy: Computers, Data Banks, and Dossiers.{3,4,5} In 1983 Germany’s constitutional court gave it a right: informational self-determination, the individual’s authority, in principle, to decide on the disclosure and use of their personal data.{6,7} The UN Human Rights Committee read the Covenant the same way in 1988: data banks must be regulated by law, and every individual should be able to learn whether data about them is stored, and why.{8} Programmers answered in code. Phil Zimmermann released PGP in 1991, its user’s guide warning that “if privacy is outlawed, only outlaws will have privacy”;{9,10} Eric Hughes’s cypherpunk manifesto of 1993 separated privacy from secrecy — “the power to selectively reveal oneself to the world”.{11} Business had its own view: “You have zero privacy anyway. Get over it,” Sun Microsystems’ chief executive told reporters in 1999;{12} in 2015 Shoshana Zuboff set out “surveillance capitalism” — a term she had first used the year before — as a logic of accumulation producing mechanisms of extraction and control that “effectively exile persons from their own behavior”.{13}",
+        text: "In 1967 Alan Westin moved privacy from the house to the data: it is “the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others”.{1,2} By 1971 the threat had a name — Arthur Miller’s The Assault on Privacy: Computers, Data Banks, and Dossiers.{3,4,5} In 1983 Germany’s constitutional court gave it a right: informational self-determination, the individual’s authority, in principle, to decide on the disclosure and use of their personal data.{6,7} The UN Human Rights Committee read the Covenant the same way in 1988: data banks must be regulated by law, and every individual should be able to learn whether data about them is stored, and why.{8} Programmers answered in code. Phil Zimmermann released PGP in 1991, its user’s guide warning that “if privacy is outlawed, only outlaws will have privacy”;{9,10} Eric Hughes’s cypherpunk manifesto of 1993 separated privacy from secrecy — “the power to selectively reveal oneself to the world”.{11} Business had its own view: “You have zero privacy anyway. Get over it,” Sun Microsystems’ chief executive told reporters in 1999;{12} in 2015 Shoshana Zuboff set out “surveillance capitalism” — a term she had first used the year before — as a logic of accumulation whose architecture produces a new power, “Big Other”, made of mechanisms of extraction and control that “effectively exile persons from their own behavior”.{13}",
         source: [
           {
             institution: "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
@@ -1022,7 +1022,7 @@ window.privacyData = {
       },
       {
         heading: "Consent, its critics — and terms the person proffers",
-        text: "What the law settled on, online, was consent. Solove named the model “privacy self-management” — rights to notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because of the limits of human attention and because there are too many data collectors to manage one by one.{1} Nissenbaum called its flaw the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.{2} Reading the privacy policies of the sites one American visits would take about 244 hours a year — some 40 minutes a day — researchers at Carnegie Mellon estimated in 2008 (their abstract says 201; their own tables give 244).{3,4,5,6} Doc Searls argued that privacy online cannot be “a grace of privacy policies”; individuals should proffer terms “as first parties”, which sites agree to, with both keeping records.{7} That is what IEEE 7012-2025 standardises. It was approved on 4 November 2025 and published on 20 January 2026 —{8,9,10} just as software agents began to browse, fill in forms and buy for people, each errand meeting someone else’s terms.{11,12,13,14}",
+        text: "What the law settled on, online, was consent. Solove named the model “privacy self-management” — rights to notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because of people’s cognitive limits and because there are too many data collectors to manage one by one.{1} Nissenbaum named its bind the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.{2} Reading the privacy policies of the sites one American visits would take about 244 hours a year — some 40 minutes a day — researchers at Carnegie Mellon estimated in 2008 (their conclusion says 201; their own tables give 244).{3,4,5,6} Doc Searls argued that privacy online cannot be “a grace of privacy policies”; individuals should proffer terms “as first parties”, which sites agree to, with both keeping records.{7} That is what IEEE 7012-2025 standardises. It was approved on 4 November 2025 and published on 20 January 2026 —{8,9,10} just as software agents began to browse, fill in forms and buy for people, each errand meeting someone else’s terms.{11,12,13,14}",
         source: [
           {
             institution: "Harvard Law Review (vol. 126, no. 7)",
@@ -1571,20 +1571,40 @@ window.privacyData = {
             title: "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
             date: "2026-01-20",
             url: "https://standards.ieee.org/ieee/7012/7192/",
-            quote: "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides. … PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20 … Working Group Chair Doc Searls",
+            quote: "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides. … PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20 … Working Group Chair Doc Searls … If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily. … The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one. Party-to-party negotiations over terms in any of these contracts or other agreements are outside the scope of this standard.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE",
             note: "Standard page lists: Status Active Standard; Standard Committee SSIT/SC; Working Group MRPT-WG; Working Group Chair Doc Searls; IEEE Program Manager Malia Zaman."
           },
           {
-            institution: "IEEE-SA (Project Authorization Request form)",
-            title: "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
-            date: "2017-12-06",
-            url: "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
-            quote: "PAR Request Date: 16-Oct-2017 PAR Approval Date: 06-Dec-2017 … The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world. … 5.2 Scope: The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines.",
-            note: "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself.",
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.4 The recorder",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "The contract recorder shall record the agreement and handshake terms, date, time stamp, and pseudonymous or explicit identifiers, containing a unique contract ID … The recorder shall record rejected agreements including date, time, and entity refusing the offer.",
+            note: "Normative. Sets the minimum content of the record. The clause continues: 'The recorder shall record rejected agreements including date, time, and entity refusing the offer.' (FOUND), and requires a function for submitting a disputed agreement to auditors. --check FOUND 2026-09-23. Normative ('shall'). Recording a refusal is required, not optional; cl. 5.3.1 adds 'If an agreement is not reached, a record shall be generated to document rejection.' (FOUND). --check FOUND 2026-09-23.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+            note: "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+            title: "MyTerms FAQs – Common Questions About the Privacy Standard",
+            date: "2026-01-26",
+            url: "https://myterms.info/faqs/",
+            quote: "MyTerms are also contracts: legal agreements, enforceable by contract law. That makes them binding. … You can choose an agreement from a small roster of terms posted at a neutral nonprofit site such as CutomerCommons.org or MyTerms.info.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE",
+            note: "Supports 'roster kept by Customer Commons' (the 'CutomerCommons' typo is on the page). myterms.info is itself a Customer Commons site: its footer reads '© 2026 Customer Commons'. The standard only requires 'an independent and neutral non-business entity' and does not name Customer Commons. --check FOUND 2026-09-23."
           }
         ]
       }
@@ -11659,7 +11679,7 @@ window.privacyData = {
       eventId: "netherlands-population-register-lentz-1941",
       date: "1936–1941",
       phase: "letalone",
-      headline: "A perfect register, in the wrong hands",
+      headline: "A model register, in the wrong hands",
       narrative: "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”). These registers and the related identity cards played an important role in rounding them up before deportation. Dutch Jews had the highest death rate (73 percent) of Jews in any occupied western European country. Jewish refugees living in the Netherlands died at a lower rate. Demographers William Seltzer and Margo Anderson think the best explanation is that, unlike most Dutch Jews, the refugees avoided registration.",
       why: "It showed that an accurate, centralised, linked register is dangerous in itself: the harm came from data built for benign administration, once control over it changed hands.",
       chips: [
@@ -11677,7 +11697,7 @@ window.privacyData = {
       why: "Privacy moved from national tort law into the universal vocabulary of human rights, framed as protection against arbitrary interference by others.",
       media: ["eleanor-roosevelt-udhr-poster-1949", "palais-de-chaillot-un-general-assembly-1951"],
       chips: [
-        { label: "Terms set by", value: "International law" }
+        { label: "Terms set by", value: "An international declaration" }
       ],
       flyTo: [48.8625, 2.2877],
       zoom: 5
@@ -11920,7 +11940,7 @@ window.privacyData = {
       eventId: "cjeu-schrems-i-safe-harbour-invalid-2015",
       date: "6 October 2015",
       phase: "surveillance",
-      headline: "One student topples a transatlantic deal",
+      headline: "One Facebook user topples a transatlantic deal",
       narrative: "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law and practice did not offer sufficient protection against surveillance by public authorities of data transferred there. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
       why: "One individual's complaint knocked out Safe Harbour, the main framework for transatlantic data flows, proving that a person could force the system to answer for where their data goes.",
       media: ["max-schrems-big-brother-awards-2015", "cjeu-kirchberg-luxembourg-2006"],
@@ -11989,7 +12009,7 @@ window.privacyData = {
       eventId: "sephora-ccpa-settlement-global-privacy-control-2022",
       date: "24 August 2022",
       phase: "surveillance",
-      headline: "Ignoring the signal costs $1.2 million",
+      headline: "Ignoring the signal: part of a $1.2 million settlement",
       narrative: "California Attorney General Rob Bonta announced a settlement with Sephora resolving allegations that it failed to disclose that it sold consumers' personal information, failed to process opt-out requests sent via user-enabled global privacy controls, and did not cure these violations within the 30-day period the CCPA then allowed. Sephora agreed to pay $1.2 million in penalties and to provide ways for consumers to opt out of sale, including via the Global Privacy Control; the same day the Attorney General sent notices to other businesses alleging that they were failing to process such signals. It was the Attorney General's first publicly disclosed CCPA enforcement settlement; the second, with DoorDash, came in February 2024.",
       why: "The moment a machine-readable signal from the person's browser was enforced with a penalty — proof that a person-side signal can bind a business.",
       chips: [
@@ -12002,7 +12022,7 @@ window.privacyData = {
       eventId: "chatgpt-research-preview-2022",
       date: "30 November 2022",
       phase: "surveillance",
-      headline: "Everyone gets an assistant",
+      headline: "A free assistant, open to the public",
       narrative: "OpenAI released ChatGPT, fine-tuned from a GPT-3.5-series model and designed to interact 'in a conversational way', as a free research preview at chat.openai.com. OpenAI said it was releasing it to get users' feedback and was 'eager to collect user feedback to aid our ongoing work to improve this system'.",
       why: "The mass-market chatbot turned ordinary people's questions, drafts and confidences into training and product data at a scale no privacy notice had anticipated, and set up the assistants that became agents.",
       chips: [
@@ -12109,7 +12129,7 @@ window.privacyData = {
       eventId: "myterms-public-launch-london-2026",
       date: "28 January 2026",
       phase: "agents",
-      headline: "MyTerms launches, pitched at agents",
+      headline: "MyTerms launches, pitched at cookie notices and agents",
       narrative: "Customer Commons and MyData Global launched MyTerms on 28 January 2026 (Data Privacy Day) at an event at Imperial College Business School and online, titled 'The Only Way to Get Real Privacy Online'. Speakers reported by InfoQ included Doc Searls, Jamie Smith of Customer Futures, who called MyTerms a likely cornerstone for trusting AI agents as a customer channel, Dan Leininger of Consumer Reports and John Abbott of Yoti.",
       why: "At its public debut, speakers tied the standard to agentic commerce (AI agents acting for customers) as well as to replacing cookie notices.",
       chips: [
@@ -26589,7 +26609,7 @@ window.privacyData = {
     {
       claim: "Reading every privacy policy you meet would take 201 hours a year.",
       verdict: "MISLEADING",
-      correction: "The figure comes from the abstract of McDonald and Cranor's 2008 study, but their own Table 7 gives a point estimate of 244 hours a year to read word for word (range 181–304; 154 to skim) — about 40 minutes a day — and the $3,534-per-person and $781-billion totals in the same sentence are computed from 244, not 201.",
+      correction: "The figure comes from the “Discussion and Conclusions” of McDonald and Cranor's 2008 study, but their own Table 7 gives a point estimate of 244 hours a year to read word for word (range 181–304; 154 to skim) — about 40 minutes a day — and the $3,534-per-person and $781-billion totals in the same sentence are computed from 244, not 201.",
       era: "cookies",
       source: [
         {

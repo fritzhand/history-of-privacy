@@ -1,0 +1,80 @@
+{
+ "slice": "personas-advocates",
+ "chunk": "f102",
+ "verdicts": [
+  {
+   "kind": "people",
+   "id": "kevin-poulsen",
+   "status": "FIXED",
+   "issues": [
+    "The contribution conflates what the 1993 indictment said. It says he was charged 'with seizing Pacific Bell phone lines to win Los Angeles radio contests'. The San Francisco Chronicle report of 22 April 1993 (RISKS 14.55) says he was accused of 'conspiring with two other hackers to seize control of incoming phone lines at the radio stations', and that he did it by 'hacking into Pacific Bell computers to block out other callers'. The lines belonged to the radio stations and the computers belonged to Pacific Bell. Reworded.",
+    "The 1993 indictment claim ('set up his own wire taps') appeared only in a source note. The RISKS 14.55 reprint of the Chronicle article is added as a full source, and both of its sentences --check FOUND.",
+    "The thread says 'Poulsen designed a system'. Swartz wrote the code and designed its architecture. The New Yorker piece says Poulsen asked Swartz to build it and they 'whiteboarded some of the details'; the FPF release says Poulsen 'developed the original project with Swartz'. Changed to 'co-developed'.",
+    "Checked OK. quoteSource: New Yorker, 'Strongbox and Aaron Swartz', byline Kevin Poulsen, datePublished 2013-05-14 in page metadata. The quote --check FOUND on a fresh fetch. The page also says 'almost two years ago, I asked him to build an open-source, anonymous in-box' and 'In October, 2011, Aaron came to the Wired office', which supports 2011, and 'it went online this morning', which supports May 2013.",
+    "Checked OK. sources[0]: SFGate, datePublished 1995-04-02. Both the quote and the FBI undercover-businesses sentence --check FOUND. sources[1]: FPF release dated 'October 15, 2013 San Francisco, CA'. The quote FOUND, and so are 'which has been renamed “SecureDrop.”' and 'Poulsen, who serves as Wired’s investigations editor'.",
+    "Minor, not changed: 'roles' gives 'Wired investigations editor' and 'years' runs to 'present', but Poulsen later left Wired for The Daily Beast and then The Wall Street Journal (web search: Wikipedia; Talking Biz News 'Poulsen joins WSJ's investigations team'). Read as his role at the time of Strongbox, the field is accurate."
+   ],
+   "fieldFixes": {
+    "contribution": "In the late 1980s and early 1990s Poulsen was a notorious hacker: a 1993 federal indictment accused him of seizing control of the incoming phone lines of Los Angeles radio stations, by hacking Pacific Bell's computers, to win their contests, and of setting up his own wiretaps. He pleaded guilty, including to breaking into a computer for the names of FBI undercover businesses. He became a journalist and Wired's investigations editor, and in 2011 asked Aaron Swartz to build an open-source anonymous in-box for sources. After Swartz's death he launched it as Strongbox at The New Yorker in May 2013 and handed it to the Freedom of the Press Foundation, which renamed it SecureDrop, in October 2013.",
+    "thread": "A former intruder once charged with setting up his own wiretaps, Poulsen co-developed a system in which the recipient cannot learn who the sender is — protection that does not depend on the organisation's goodwill."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND; datePublished 1995-04-02T11:00:00Z. 'Poulsen also pleaded guilty to breaking into a computer to get the names of undercover businesses operated by the FBI.' also FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. Dateline 'October 15, 2013 San Francisco, CA'. FOUND on the same page: 'renamed “SecureDrop.”' and 'developed the original project with Swartz, managed it for the first six months since it went public, and is handing over the reins'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "San Francisco Chronicle (reprinted in RISKS Digest 14.55)",
+     "title": "Don Clark, 'Hacker Accused of Rigging Radio Contests'",
+     "date": "1993-04-22",
+     "url": "https://catless.ncl.ac.uk/Risks/14/55",
+     "quote": "A new 19-count federal indictment filed in Los Angeles charges that Poulsen also set up his own wire taps and hacked into computers owned by California Department of Motor Vehicles and Pacific Bell.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Also FOUND: 'Kevin Lee Poulsen, now awaiting trial on earlier federal charges, is accused of conspiring with two other hackers to seize control of incoming phone lines at the radio stations.' Reprinted in RISKS 'with permission of the author'."
+    }
+   ]
+  },
+  {
+   "kind": "people",
+   "id": "edward-snowden",
+   "status": "FIXED",
+   "issues": [
+    "The contribution gets the order wrong. It says Snowden 'gave journalists top-secret documents ... then flew to Hong Kong on 20 May 2013'. The cited Guardian article says that 'At the NSA office in Hawaii where he was working, he copied the last set of documents he intended to disclose', then 'On May 20, he boarded a flight to Hong Kong'. It also says the journalists identified him 'after several days of interviews' there. The main handover to Greenwald and Poitras happened in Hong Kong in June, not before the flight. Reworded so the text no longer puts the handover before the flight.",
+    "The influence overstates the USA FREEDOM Act. The record says the Act 'stopped bulk collection'. The Ninth Circuit says it 'effectively ended the NSA’s bulk telephony metadata collection program', and the Act's Sec. 103 is a 'Prohibition on bulk collection of tangible things'. Other bulk programs, such as those under EO 12333, were not ended. Narrowed to the bulk collection of phone records. The phrase 'debate that ended with the USA FREEDOM Act' was also recast so it no longer puts a causal sequence in the court's mouth.",
+    "Checked OK. quoteSource and the age, employer and CIA claims: the Guardian page (fresh fetch) FOUND 'a 29-year-old former technical assistant for the CIA and current employee of the defence contractor Booz Allen Hamilton' and 'On May 20, he boarded a flight to Hong Kong'. The quote --check FOUND. datePublished in metadata is 2013-06-11, and the URL date and publication date are 9 June 2013.",
+    "Checked OK. CBS/AP is dated 'June 22, 2013 / 12:07 AM EDT / CBS/AP'. The quote FOUND, and so does 'Both are charges under the Espionage Act. Snowden also is charged with theft of government property.' Ninth Circuit Moalin (No. 13-50572, 2 Sept 2020): the quote and the syllabus sentence 'exceeded the scope of Congress’s authorization in 50 U.S.C. § 1861' FOUND. PL 114-23: 'Sec. 103. Prohibition on bulk collection of tangible things.' FOUND. NPR, 26 Sept 2022: the quote FOUND, and so does 'The news was confirmed in a decree by Russian President Vladimir Putin', which supports 'by decree'."
+   ],
+   "fieldFixes": {
+    "contribution": "Snowden, a 29-year-old Booz Allen Hamilton employee working at the NSA and a former CIA technical assistant, copied top-secret documents on US and allied mass surveillance at the NSA office in Hawaii, flew to Hong Kong on 20 May 2013, gave them to journalists he trusted and identified himself in the Guardian on 9 June 2013. The disclosures began with the bulk collection of Americans' phone records. A criminal complaint dated 14 June 2013 charged him with theft of government property and two Espionage Act offences; he has lived in Russia since 2013 and was granted Russian citizenship by decree in September 2022.",
+    "influence": "In the Ninth Circuit's words, his disclosure of the phone-records program 'prompted significant public debate'; in June 2015 Congress passed the USA FREEDOM Act, which the court said 'effectively ended' the NSA's bulk collection of phone records, and in 2020 the same court held the program had exceeded the authority Congress gave."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND. Page header 'June 22, 2013 / 12:07 AM EDT / CBS/AP'. The Espionage Act and theft-of-government-property sentences are also FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF. Quote --check FOUND. Syllabus sentence 'On the merits, the panel held that the metadata collection exceeded the scope of Congress’s authorization in 50 U.S.C. § 1861' FOUND. The govinfo PL 114-23 'Sec. 103' line also FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. Also FOUND: 'The news was confirmed in a decree by Russian President Vladimir Putin posted Monday to the Kremlin's website.' (Monday = 26 Sept 2022)."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

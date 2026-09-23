@@ -1,0 +1,359 @@
+{
+ "slice": "agents",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "moltbook-exposed-api-tokens-2026",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched the Wiz post on 2026-09-23. The quote --check FOUND. Title ('Hacking Moltbook: The AI Social Network Any Human Can Control') and date (datePublished 2026-02-02T10:00:03-05:00) are correct. Wiz's disclosure timeline puts the exposure and fixes on 31 Jan to 1 Feb 2026, so year 2026 is right.",
+    "The value of 1,500,000 matches Wiz's rounded figure. However, the post shows these were Moltbook's own per-agent API keys, one for each of the ~1.5 million registered agents ('The agents table exposed authentication credentials for every registered agent in the database', FOUND). Those agents belonged to about 17,000 human owners. The notes set 1.5M tokens next to 'plaintext OpenAI API keys', so a reader could take the 1.5M for third-party credentials. The notes now make the distinction clear.",
+    "Independent check: CNN (Hadas Gold, Jack Guy, 2026-02-03) confirms that Wiz found unauthenticated access to the whole production database and 'tens of thousands of email addresses'. The 1.5M token count itself is sourced only to Wiz, and Wikipedia also cites it to Wiz alone."
+   ],
+   "fieldFixes": {
+    "notes": "Wiz's count. The tokens were Moltbook's own per-agent API keys, one for each of the ~1.5 million registered agents (which belonged to about 17,000 human owners). Anyone holding a key could fully take over that agent. Also exposed: 35,000 email addresses and private messages between agents, some of which contained third-party credentials such as plaintext OpenAI API keys."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. Also FOUND on the same page: 'The agents table exposed authentication credentials for every registered agent in the database' and 'while Moltbook boasted 1.5 million registered agents, the database revealed only 17,000 human owners behind them - an 88:1 ratio.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "CNN Business",
+     "title": "What is Moltbook, the social networking site for AI bots - and should we be scared?",
+     "date": "2026-02-03",
+     "url": "https://www.cnn.com/2026/02/03/tech/moltbook-explainer-scli-intl",
+     "quote": "Cloud security platform Wiz conducted a security review of Moltbook and found that the site granted unauthenticated access to its entire production database within minutes and easily exposed tens of thousands of email addresses.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. datePublished 2026-02-03T13:33Z; authors Hadas Gold and Jack Guy. This independently confirms the exposure. The 1.5M token count rests on Wiz alone."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-cookie-consent-covers-ai-agents",
+   "status": "OK",
+   "issues": [
+    "OpenAI source: the Wayback capture (20250801053448) re-fetched 2026-09-23. The quote --check FOUND in the 'Privacy controls' paragraph. The page is dated July 17, 2025. Its title reads 'Introducing ChatGPT agent: bridging research and action', which matches.",
+    "arXiv 2507.12844: the quote is an elision of two sentences that a table interrupts. Both parts --check FOUND in the current PDF (v2, 12 Nov 2025) and in v1 (submitted 2025-07-17). The authors are Nitu and Stöckl of the University of Applied Sciences Upper Austria, Hagenberg, so the institution is right.",
+    "The 'three LLM web agents' claim is correct. Section 4.2.1 ran 10 trials per model for each of three banner designs, using GPT-4o, Claude 3.7 Sonnet and Gemini 2.0 Flash through Browser Use (Table 7). None opened the 'Accept Selected'/'Deny All' preference layer.",
+    "Title note: the record's title matches the PDF's printed title. arXiv's metadata title has since changed to 'Machine-Readable Ads: Accessibility and Trust Patterns for AI Web Agents interacting with Online Advertisements'. Either can be used, so no change was made."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched Wayback capture 2026-09-23: --check FOUND. Page date July 17, 2025."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: both halves of the elided quote --check FOUND in v2 and v1 PDFs. arXiv v1 published 2025-07-17T07:10Z; v2 updated 2025-11-12."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-robots-txt-protects-personal-data",
+   "status": "OK",
+   "issues": [
+    "RFC 9309 (September 2022) re-fetched 2026-09-23. The quote --check FOUND. The correction's phrase 'are not a form of access authorization' --check FOUND ('These rules are not a form of access authorization.'). The RFC's own abstract describes robots.txt as a method 'for service owners to control how content served by their services may be accessed ... by automatic clients known as crawlers', which supports 'published by the site operator about the site's paths'.",
+    "draft-ietf-aipref-vocab-08 re-fetched. Datatracker shows rev 08 dated 2026-09-14T06:18Z. The title 'A Vocabulary For Expressing AI Usage Preferences' matches. 'Preferences are not a security mechanism.' --check FOUND. The correction's phrase 'has a choice whether to follow' is verbatim ('An entity that receives usage preferences has a choice whether to follow those preferences.').",
+    "The last sentence of the correction (no individual terms about data concerning oneself) is an inference, but a sound one. Neither document provides any mechanism for data subjects."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. Datatracker API: rev 08, time 2026-09-14T06:18:02Z, expires 2027-03-18."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-telling-ai-to-respect-privacy-is-enough",
+   "status": "FIXED",
+   "issues": [
+    "ConfAIde: the abstract re-fetched 2026-09-23. The quote --check FOUND. The 39% (GPT-4) and 57% (ChatGPT) figures are verbatim in the abstract ('39% and 57% of the time, respectively'). arXiv published 2023-10-27, with the comment '2024 ICLR Spotlight'. The correction correctly avoids saying that the 39%/57% figures were measured under privacy prompts.",
+    "PrivacyLens: the quote --check FOUND. arXiv published 2024-08-29, with the comment 'NeurIPS 2024 Datasets and Benchmarks Track'. The figures 25.68% (GPT-4) and 38.69% (Llama-3-70B) match.",
+    "Source 0 title was a shortened label. The full title is 'Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory'.",
+    "Caveat for the editor (no change made): both benchmarks tested 2023-24 models (GPT-4, ChatGPT, Llama-3-70B). The correction names those models, so it does not overclaim for current systems."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory (ConfAIde)",
+     "note": "Re-fetched arXiv abstract 2026-09-23: --check FOUND. The title was expanded to the paper's full title."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched arXiv abstract 2026-09-23: --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-ai-act-lets-people-opt-out-of-training",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND on 2026-09-23. Article 53(1)(c) is quoted from the correct article (Section 2, 'Obligations for providers of general-purpose AI models'), and the OJ date is 12.7.2024. The Council register document ST 15698/25 (dated 20 Nov 2025) encloses COM(2025) 837 final of 19.11.2025. The proposal's Article 3 amends the GDPR and inserts Article 88c, and the quoted words are in 88c's second paragraph.",
+    "Wording problem 1: calling Art. 53(1)(c) a 'machine-readable opt-out duty' overstates the text. The article obliges GPAI providers to have a copyright policy that identifies and complies with Article 4(3) DSM-directive reservations. 'Machine-readable' comes from the DSM directive, not the AI Act.",
+    "Wording problem 2 (substantive): 'an opt-out that is still only a proposal' implies people have no way today to object to their personal data being used for training. That is wrong. GDPR Article 21(1) already gives a right to object to processing based on legitimate interests. The controller can override it only by showing compelling legitimate grounds. What the Omnibus would add is an 'unconditional' version.",
+    "Wording problem 3: in the proposed 88c the 'unconditional right to object' is one of a 'such as' list of safeguards, so it is not a free-standing right. The rewording reflects this.",
+    "Status check for 'still only a proposal': the European Parliament Legislative Observatory (2025/0360(COD)), fetched 2026-09-23, shows 'Awaiting committee decision'. Its last key event is the committee referral on 19/01/2026. The claim still holds today."
+   ],
+   "fieldFixes": {
+    "correction": "The one training opt-out the AI Act does recognise is a copyright one. Article 53(1)(c) requires general-purpose model providers to identify and respect rights holders' text-and-data-mining reservations under Article 4(3) of the 2019 copyright directive. It gives individuals no opt-out for their personal data. Personal data remain under the GDPR. There, Article 21 already lets a person object to processing based on legitimate interests, but the controller can override that objection with 'compelling legitimate grounds'. The Commission's November 2025 Digital Omnibus would add an Article 88c that allows AI development on legitimate interests and lists an 'unconditional right to object' among its safeguards. As of September 2026 that is still a proposal awaiting committee decision in the European Parliament."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched Wayback capture of EUR-Lex 2026-09-23: --check FOUND under 'Article 53 Obligations for providers of general-purpose AI models', point (c). OJ date 12.7.2024."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND in proposed Article 88c GDPR (inserted by Article 3 of the proposal). The Council cover note is dated 20 November 2025. COM(2025) 837 final is dated 19.11.2025."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex, Internet Archive capture)",
+     "title": "Regulation (EU) 2016/679 (GDPR), Article 21(1) - Right to object",
+     "date": "2016-05-04",
+     "url": "https://web.archive.org/web/2025/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679",
+     "quote": "The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Also FOUND on the same page: 'The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of Article 6(1), including profiling based on those provisions.'"
+    },
+    {
+     "institution": "European Parliament Legislative Observatory (OEIL)",
+     "title": "2025/0360(COD) Simplification of the digital legislative framework - Digital Omnibus (Omnibus VII)",
+     "date": "2026-09-23",
+     "url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0360(COD)",
+     "quote": "Awaiting committee decision",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23 (the date is the access date). Key events listed: proposal published 19/11/2025; committee referral announced 19/01/2026. Joint ITRE/LIBE rapporteurs appointed 25/02/2026."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-openai-15m-fine-stands",
+   "status": "FIXED",
+   "issues": [
+    "The Garante quote --check FOUND on 2026-09-23. The page itself is the press release dated 'Rome, 20 December 2024'. The asterisked note about removal was added after the 18 March 2026 judgment. The source date of 2026-03-18 gives the judgment date, not the page date, so it was corrected to 2024-12-20.",
+    "Verdict should be FALSE, not MISLEADING. The Court of Rome annulled decision no. 755/2024 in full. ANSA (20 Mar 2026, citing Reuters): 'Il Tribunale di Roma ha annullato una multa di 15 milioni'. So 'definitively fined' is false as of today.",
+    "'For training ChatGPT on personal data' is incomplete. The Garante's release and NT+ Diritto list several violations: an unnotified March 2023 breach, no legal basis identified before training, transparency failures, no age verification, and non-compliance with the 2023 communication order. Training was one of these.",
+    "The judgment's reasoning, which the record says was not reviewed, is now established. NT+ Diritto (Il Sole 24 Ore, 3 Jun 2026) reports that the court upheld OpenAI's first ground only: from 15 Feb 2024, OpenAI Ireland Ltd.'s sole EU establishment moved competence to the Irish lead authority under the GDPR one-stop-shop. The court held that the merits 'resta non esaminato'. The fine had been suspended by order of 21 March 2025. The Garante could still appeal to the Court of Cassation.",
+    "The Garante says the decision was 'temporarily' removed. The correction dropped that word, and it has been restored."
+   ],
+   "fieldFixes": {
+    "verdict": "FALSE",
+    "correction": "The Garante did impose EUR 15 million, in decision no. 755 of 2 November 2024 (announced 20 December 2024). The fine covered several GDPR breaches, not just training: training ChatGPT on users' data without a prior legal basis, transparency failures, no age verification, and an unreported March 2023 data breach. The Court of Rome suspended the fine in March 2025. It then annulled the decision in judgment no. 4153/2026, published 18 March 2026, and the Garante has temporarily removed the decision from its website. The annulment was on a preliminary point, not the merits: once OpenAI had set up its sole EU establishment in Ireland (recognised 15 February 2024), competence passed to the Irish lead authority under the GDPR's one-stop-shop. Whether the training was lawful was left unexamined, and the Garante could still appeal to the Court of Cassation."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2024-12-20",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The page is the 20 December 2024 press release ('Rome, 20 December 2024'). The quoted removal notice was added after the 18 March 2026 judgment. The same page lists the violations (breach not notified, no legal basis for training, transparency, age verification)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ANSA",
+     "title": "Tribunale Roma annulla multa da 15 milioni di euro del Garante Privacy a OpenAI",
+     "date": "2026-03-20",
+     "url": "https://www.ansa.it/canale_tecnologia/notizie/tecnologia/2026/03/20/tribunale-roma-annulla-multa-da-15-milioni-di-euro-del-garante-privacy-a-openai_6560fadd-4099-451e-99a0-7fcbc9a285c1.html",
+     "quote": "Il Tribunale di Roma ha annullato una multa di 15 milioni di euro che l'Autorità Garante per la Privacy aveva comminato a OpenAI, la casa madre di ChatGpt, a dicembre 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. article:published_time 2026-03-20T19:17+01:00. Cites Reuters. Also reports that the court had temporarily suspended the fine in March 2025."
+    },
+    {
+     "institution": "NT+ Diritto (Il Sole 24 Ore)",
+     "title": "ChatGPT, il Tribunale di Roma annulla la sanzione da 15 milioni del Garante: decide l'autorità capofila",
+     "date": "2026-06-03",
+     "url": "https://ntplusdiritto.ilsole24ore.com/art/chatgpt-tribunale-roma-annulla-sanzione-15-milioni-garante-decide-l-autorita-capofila-AI88UIRD",
+     "quote": "La pronuncia non entra nel merito degli addebiti: si arresta su una questione preliminare, quella del riparto di competenza tra le autorità di controllo nazionali nel trattamento transfrontaliero",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Page time element dateTime 2026-06-03. The same article (also FOUND) says 'Il merito delle violazioni del GDPR resta non esaminato'. It adds: judgment given at the 18 March 2026 hearing (R.G. n. 4785/2025); OpenAI Ireland Ltd. recognised as sole establishment by the Irish DPC on 15 February 2024; fine suspended by order of 21 March 2025; a Cassation appeal by the Garante is possible."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-myterms-is-just-do-not-track",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND on 2026-09-23 (IEEE 7012 abstract; MyTerms FAQ Q15). The IEEE page details match the correction: the first party points to agreements and the second party 'shall accept one'; the agreement is 'signed electronically by both parties or their agents'; and 'a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed'.",
+    "Problem: 'DNT and GPC are one-way signals responding to choices framed by sites' is inaccurate. It borrows the MyTerms FAQ's framing. DNT and GPC are user-initiated browser signals and are not framed by sites. GPC is a single header value ('Sec-GPC: 1') conveying 'a person's request to websites and services to not sell or share their personal information', and its force comes from laws such as the CCPA (W3C GPC Working Draft, 17 Sep 2026). The accurate contrast is request versus agreement, not reactive versus proactive. The correction was rewritten.",
+    "The claim that the transport 'may resemble a browser header' is supported by the MyTerms FAQ itself: 'including browser headers (on the model of Do Not Track and Global Privacy Conrol)' (typo verbatim, FOUND). This was added as a source."
+   ],
+   "fieldFixes": {
+    "correction": "DNT and GPC are one-way preference signals. The browser sends a single header value asking sites not to track, or not to sell or share personal data. Whether that binds anyone depends on the site or on a law such as California's, and no agreement is formed. IEEE 7012 makes the individual the first party who proffers standard-form contractual terms. The site accepts one, both sides (or their agents) sign, and each keeps a matching record that can be audited or disputed. MyTerms may travel in a browser header 'on the model of' DNT and GPC, but its legal form is different: an agreement with records. (The characterisation of MyTerms as an enforceable contract is the project's own and is untested in court.)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. Page: Active Standard; Board Approval 2025-11-04; Published 2026-01-20."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND (FAQ item 15)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "Global Privacy Control (GPC), W3C Working Draft 17 September 2026",
+     "date": "2026-09-17",
+     "url": "https://www.w3.org/TR/gpc/",
+     "quote": "This document defines a signal, transmitted over HTTP and through the DOM, that conveys a person's request to websites and services to not sell or share their personal information with third parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page header reads 'W3C Working Draft 17 September 2026'. The editor's draft states that the preference 'is expressed as a single value of 1'."
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - How does a site/service signal it accepts MyTerms, and how does a person present MyTerms?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "On the Web, browsers or their plug-ins will signal MyTerms options to sites several possible means, including browser headers (on the model of Do Not Track and Global Privacy Conrol).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The spelling 'Conrol' is on the page and was kept verbatim."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-ieee-7012-published-2025",
+   "status": "OK",
+   "issues": [
+    "IEEE page re-fetched 2026-09-23. The quote --check FOUND. The status-panel strings also --check FOUND on the page: 'PAR Approval 2017-12-06', 'Board Approval 2025-11-04' and 'Published: 2026-01-20'. The designation IEEE 7012-2025 plus board approval on 2025-11-04 and publication on 2026-01-20 fits the IEEE practice of using the approval year in the designation.",
+    "The MyTerms FAQ quote --check FOUND (FAQ item 9).",
+    "Arithmetic: 2017-12-06 to 2026-01-20 is 8 years and about 1.5 months, so 'more than eight years' is correct.",
+    "Source 0's quote only identifies the standard, and the dates are structured fields (as the existing note says). 'Published: 2026-01-20' is also a verbatim block on the page if a quote carrying the date is preferred."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. Also FOUND: 'Published: 2026-01-20', 'Board Approval 2025-11-04', 'PAR Approval 2017-12-06'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "argument",
+   "id": "arg-1-scale-outruns-reading",
+   "status": "FIXED",
+   "issues": [
+    "All three evidence quotes --check FOUND on 2026-09-23: Pew (2023-10-18), the Linux Foundation AAIF release (dateline 'SAN FRANCISCO, Dec. 9, 2025') and the ICO innovation-opportunities page. The ICO subpage's DC.Date meta reads 12 Dec 2025. The report was published on 8 Jan 2026, per the landing page and a prior verifier, so the date was kept.",
+    "'MCP ... connected agents to more than 10,000 published servers within a year' is off by a few weeks. MCP was open-sourced on 25 Nov 2024 (Anthropic). The 10,000 figure is from the 9 Dec 2025 LF release, about 12.5 months later. This was reworded to 'little more than a year after its November 2024 launch'. The LF figure also counts published servers, not connections.",
+    "'agent-to-agent and payment protocols launched with 50 and 60-plus corporate partners' was unsourced in the record. Checked: Google's A2A launch (9 Apr 2025) cites 'more than 50 technology partners', with service providers such as Accenture and Deloitte listed separately. Google's AP2 launch (16 Sep 2025) says 'more than 60 organizations'. Every AP2 partner it names is a company, but the source's own word is 'organizations'. The explanation was reworded to 'more than 50 and more than 60 partner organisations', and both launch posts were added as evidence.",
+    "The Pew figure concerns U.S. adults ('Americans'), and 'frequently' in Pew's wording covers always/almost always/often. The paraphrase 'frequently click agree unread' is faithful.",
+    "The evidence array is replaced wholesale via fieldFixes.evidence, not via sourceFixes/addSources, because tools/apply-verdicts.py only edits 'sources'/'source' and would otherwise create a stray empty 'sources' list on this record."
+   ],
+   "fieldFixes": {
+    "explanation": "Even before agents, most people did not read privacy terms: 56% of Americans frequently click 'agree' without reading, and two in five UK adults never read cookie policies. One protocol alone, MCP, had more than 10,000 published servers for agents to connect to little more than a year after its November 2024 launch. The agent-to-agent (A2A) and agent-payments (AP2) protocols launched with more than 50 and more than 60 partner organisations respectively. Delegation multiplies the number of counterparties while removing the human reader entirely.",
+    "evidence": [
+     {
+      "institution": "Pew Research Center",
+      "title": "How Americans View Data Privacy",
+      "date": "2023-10-18",
+      "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+      "quote": "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Re-fetched 2026-09-23: --check FOUND."
+     },
+     {
+      "institution": "The Linux Foundation",
+      "title": "Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)",
+      "date": "2025-12-09",
+      "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+      "quote": "MCP has rapidly become the universal standard protocol for connecting AI models to tools, data and applications, with more than 10,000 published MCP servers now covering everything from developer tools to Fortune 500 deployments.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Re-fetched 2026-09-23: --check FOUND. Dateline 'SAN FRANCISCO, Dec. 9, 2025'."
+     },
+     {
+      "institution": "Information Commissioner's Office (UK)",
+      "title": "ICO tech futures: Agentic AI - Innovation opportunities",
+      "date": "2026-01-08",
+      "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/innovation-opportunities-what-innovation-might-the-ico-want-to-see-in-agentic-ai/",
+      "quote": "In survey research we commissioned, two in five UK adults admitted to never reading cookie policies or settings.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Re-fetched 2026-09-23: --check FOUND. The subpage's own DC.Date meta is 12 Dec 2025. The report was released on 8 Jan 2026."
+     },
+     {
+      "institution": "Anthropic",
+      "title": "Introducing the Model Context Protocol",
+      "date": "2024-11-25",
+      "url": "https://www.anthropic.com/news/model-context-protocol",
+      "quote": "Today, we're open-sourcing the Model Context Protocol (MCP), a new standard for connecting AI assistants to the systems where data lives, including content repositories, business tools, and development environments.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "--check FOUND 2026-09-23 (from the page text). The page is dated Nov 25, 2024. This dates MCP's launch for the 'little more than a year' claim."
+     },
+     {
+      "institution": "Google for Developers Blog",
+      "title": "Announcing the Agent2Agent Protocol (A2A)",
+      "date": "2025-04-09",
+      "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "quote": "Today, we’re launching a new, open protocol called Agent2Agent (A2A), with support and contributions from more than 50 technology partners",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "--check FOUND 2026-09-23. The page is dated APRIL 9, 2025."
+     },
+     {
+      "institution": "Google Cloud Blog",
+      "title": "Announcing Agent Payments Protocol (AP2)",
+      "date": "2025-09-16",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+      "quote": "We’re collaborating with a diverse group of more than 60 organizations to help shape the future of agentic payments",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "--check FOUND 2026-09-23. datePublished 2025-09-16."
+     }
+    ]
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

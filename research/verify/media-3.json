@@ -1,0 +1,140 @@
+{
+  "slice": "media",
+  "chunk": 3,
+  "verdicts": [
+    {
+      "kind": "image",
+      "id": "keypunch-operator-1950-census",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: I re-read the Commons API extmetadata (2026-09-23): LicenseShortName 'Public domain', Copyrighted False, Artist 'U.S. Census Bureau employees', DateTimeOriginal '1950s' (decade precision). The Licensing sentence 'This image or file is a work of a United States Census Bureau employee, taken or made as part of that person's official duties. As a work of the U.S. federal government, the image is in the public domain.' is verbatim in the page HTML. fetch-text.py --check reports NOT-FOUND only because its block extractor skips the licence-template table. The description quote ('A clerk employee creates punch cards ... Keypunch machine is an IBM Type 016.') is FOUND.",
+        "Local file assets/media/keypunch-operator-1950-census.jpg opens (960x790 RGB JPEG). It shows a woman at a keypunch with a 1950 Census of Population and Housing schedule on the copy holder, which matches the alt text. The thumbUrl returns HTTP 200.",
+        "The caption overstates the record. Saying the Bureau 'translated the cards to magnetic tape' after installing UNIVAC reads as if the whole 1950 count moved to the computer. census.gov (census-innovations/technology/univac-i.html) says 'UNIVAC I was soon used to tabulate part of the 1950 population census and the entire 1954 economic census.' (--check FOUND). The caption has been reworded to say 'part'.",
+        "The coordinates are wrong for the stated purpose. 38.8977, -77.0365 is exactly the White House (1600 Pennsylvania Ave), which puts a map pin on the wrong landmark. The Census Bureau's headquarters has been in Suitland, Maryland, since 1942 (Wikipedia, United States Census Bureau: 'The Census Bureau headquarters has been in Suitland, Maryland, since 1942.'). The OSM geocode for the Census Bureau at 4600 Silver Hill Road is 38.8485, -76.9313. The record does not name where the photo was taken, so the pin stays approximate and locationNote now says so."
+      ],
+      "fieldFixes": {
+        "caption": "A Census Bureau clerk creates punch cards containing data from the 1950 Census on an IBM Type 016 keypunch. The Bureau first tabulated the 1950 count with punch cards and electronic tabulators; after installing its first computer, UNIVAC I, in 1951, it transferred card data to magnetic tape so that part of the count could be processed faster.",
+        "lat": 38.8485,
+        "lng": -76.9313,
+        "locationNote": "U.S. Census Bureau headquarters, Suitland, Maryland, the Bureau's home since 1942. The record does not name where the photograph was taken, so the point is approximate."
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "univac-i-census-bureau-dedication-1951",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: Commons API extmetadata gives LicenseShortName 'Public domain', Copyrighted False, Artist 'U.S. Census Bureau employees' and DateTimeOriginal 1951-06-14. The PD-USGov-Census licensing sentence is verbatim in the page HTML. The description quote 'On June 14, 1951, we dedicated UNIVAC I, the nation's first commercial computer built for a civilian government agency at the Eckert-Mauchly Laboratory in Philadelphia, PA.' is FOUND on the Commons page.",
+        "Attribution problem in the caption. It presents 'the nation's first commercial computer built for a civilian government agency' as something 'the Bureau records'. That wording exists only in the Commons description, which cites census.gov/history as a whole, and I could not find it on current census.gov pages. census.gov does verifiably say 'Census Bureau officials attended the dedication of UNIVAC I at the Eckert-Mauchly Laboratory in Philadelphia, PA, on June 14, 1951.' (census-innovations/technology/univac-i.html, --check FOUND) and calls UNIVAC I 'the first modern computer installed by a civilian government agency' (census-innovations/technology.html, --check FOUND). The caption now uses the census.gov wording. Independent check: Wikipedia's UNIVAC I article says 'The first UNIVAC was accepted by the United States Census Bureau on March 31, 1951, and was dedicated on June 14 that year.'",
+        "Provenance note: the Commons file history shows the current version (24 September 2025, 3,748 x 2,728) was uploaded by JayCubby from a third-party website (laradiomak.com.ar). It replaced the 680 x 526 census.gov-sourced upload of 18 July 2017 (touched up 15 February 2023). It is the same Census Bureau photograph and its public-domain status is unaffected, but the high-resolution copy does not come from the Bureau directly. This is now recorded in rightsEvidence.",
+        "The image (960x699, opens) shows a man at the UNIVAC supervisory console, a second man at the mainframe and a row of UNISERVO tape drives, which matches the caption and alt. The 'laptop-like' object on the console is the console keyboard, visible in long-circulating copies of this photo, and needs no change. The locationNote already warns that the picture may not show the dedication itself. City-level Philadelphia coordinates are labelled as such. For reference, the Eckert-Mauchly works were at 3747 Ridge Avenue (Wikipedia EMCC), about 40.0022, -75.1869, if a finer pin is wanted."
+      ],
+      "fieldFixes": {
+        "caption": "An operator sits at the UNIVAC console beside a bank of tape drives in this Census Bureau photograph. The Bureau's history pages record that its officials attended the dedication of UNIVAC I at the Eckert-Mauchly Laboratory in Philadelphia on 14 June 1951, and call it 'the first modern computer installed by a civilian government agency'.",
+        "rightsEvidence": "Commons file page Licensing section: \"This image or file is a work of a United States Census Bureau employee, taken or made as part of that person's official duties. As a work of the U.S. federal government, the image is in the public domain.\" Description: \"On June 14, 1951, we dedicated UNIVAC I, the nation's first commercial computer built for a civilian government agency at the Eckert-Mauchly Laboratory in Philadelphia, PA.\" (credited to census.gov/history; this exact wording was not found on current census.gov pages). census.gov, census-innovations/technology/univac-i.html: \"Census Bureau officials attended the dedication of UNIVAC I at the Eckert-Mauchly Laboratory in Philadelphia, PA, on June 14, 1951.\" census.gov, census-innovations/technology.html: \"UNIVAC I, the first modern computer installed by a civilian government agency\". File history: the current 3,748 x 2,728 version (24 September 2025) was re-uploaded from a third-party website (laradiomak.com.ar) over the 680 x 526 census.gov-sourced upload of 18 July 2017; it is the same Census Bureau photograph."
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "palais-de-chaillot-un-general-assembly-1951",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: the Commons Permission section says 'This media file is in the public domain in the United States.' (FOUND), with 'Standardized rights statement No Copyright - United States'. The NARA catalogue record (catalog.archives.gov/proxy/records/search?naId=19999523) has useRestriction 'Unrestricted'. Note that the Commons tag is the generic PD-US one, not PD-USGov, and it warns that the image might not be in the public domain outside the United States. The record's 'Public domain' licence field is acceptable on the NARA/DPLA 'No Copyright - United States' basis.",
+        "Misattributed dating. The caption says 'The National Archives record dates it, by proximity to other photos of the sixth session, to November 1951.' The NARA record 19999523 has no date and no such sentence. 'By proximity to other DPLA photos ...' is a note written into the Wikimedia Commons description. I tested the dating independently against NARA's neighbouring items in the same file run (286-MP-PAR): PAR-3234 to 3236 '[UNO Assembly (Inaugural Session with Vincent Auriol)]', PAR-3238 '[Acheson Greets Eden at UN Assembly]', PAR-3240 to 3248 '[American Youth Celebrate Thanksgiving Day in Paris]', PAR-3249 to 3252 this Chaillot set, and PAR-3254 '[Dean Acheson with A. Eden]' (titles --check FOUND on the NARA proxy JSON). Eden became Foreign Secretary on 28 October 1951 (Wikipedia), and the sixth session opened at the Palais de Chaillot on 6 November 1951 (Wikipedia). That rules out the 1948 Paris session and supports November 1951. The date is right; the caption now attributes it correctly.",
+        "The creator field is misleading. 'Department of State. Agency for International Development' is NARA's most recent records-creator for the series (AID was established in 1961, ten years after the photo). The item sits in RG 286, series 'Photographs of Marshall Plan Programs, Exhibits, and Personnel' (--check FOUND), whose 1951 predecessor creator is the Economic Cooperation Administration. No photographer is named.",
+        "The image (960x1164, opens) shows the view from the Palais de Chaillot roof across the Seine to the Eiffel Tower, with the dome of Les Invalides in the distance. The flag in the foreground plainly carries the UN emblem (legible in the image), so the caption can name it. The coordinates are about 100 m from the OSM point for the Palais, which is fine. The locationNote facts (third session 1948, UDHR, sixth session 1951-52) are correct."
+      ],
+      "fieldFixes": {
+        "caption": "A US government photograph titled 'Palais de Chaillot where the UN General Assembly is Being Held', looking from the palace roof towards the Eiffel Tower, with the UN flag in the foreground. The National Archives record gives no date, but the picture is numbered in the same run of Marshall Plan photographs as the Assembly's inaugural session, Dean Acheson greeting Anthony Eden at the Assembly and a Thanksgiving celebration in Paris, which places it in November 1951, during the sixth session.",
+        "creator": "Unknown photographer, U.S. Marshall Plan photographic service (NARA Record Group 286, 'Photographs of Marshall Plan Programs, Exhibits, and Personnel')",
+        "rightsEvidence": "Commons file page Permission section: \"This media file is in the public domain in the United States.\" Standardized rights statement: \"No Copyright - United States\". NARA catalogue record 19999523 (local identifier 286-MP-par-03250): title \"[Palais de Chaillot where the UN General Assembly is Being Held]\", series \"Photographs of Marshall Plan Programs, Exhibits, and Personnel\" in \"Records of the Agency for International Development\" (RG 286), use restriction \"Unrestricted\"; the NARA record gives no date. The November 1951 date is a Commons description note (\"By proximity to other DPLA photos of the sixth session of the UN General Assembly, this is from November 1951\"), consistent with neighbouring NARA items PAR-3238 \"[Acheson Greets Eden at UN Assembly]\" and PAR-3240-3248 \"[American Youth Celebrate Thanksgiving Day in Paris]\"."
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "hessian-landtag-stadtschloss-wiesbaden",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: the Commons page says 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.' (own work, Wolfgang Pehlemann; the attribution requirement is quoted correctly). All three rightsEvidence quotes are FOUND. The description date is 2007, which matches year '2007 (photo)'.",
+        "The image (960x648, opens) shows the Stadtschloss corner entrance with 'HESSISCHER LANDTAG' lettering over it, a flower-box balcony and a lamp post, which matches the caption and alt. Independent: de.wikipedia Stadtschloss Wiesbaden confirms it has been the seat of the Hessian Landtag since December 1946 and that the balcony carries the inscription 'Hessischer Landtag'. de.wikipedia Hessisches Datenschutzgesetz confirms the act of 7 October 1970. So the locationNote is right that the Landtag sitting here passed the 1970 Act.",
+        "The coordinates are labelled 'building-level' but sit about 145 m east of the building, on the Schlossplatz towards the Marktkirche: record 50.0823, 8.2436 against OSM 'Stadtschloss Wiesbaden, 1, Schlossplatz' at 50.08245, 8.24160 (en.wikipedia 50.0822, 8.2414). Corrected."
+      ],
+      "fieldFixes": {
+        "lat": 50.0824,
+        "lng": 8.2416
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "oecd-chateau-de-la-muette-paris",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: the Commons page says 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' FlickreviewR 2 confirmed cc-by-2.0 on 29 April 2020. The Flickr page itself (flickr.com/photos/131702661@N08/33637874098) carries license id 4 (creativecommons.org/licenses/by/2.0), dateTaken '2019-03-20 13:42:23' and the album text 'TICTeC 2019: OECD in Paris ... Our stunning venue was thanks to TICTeC's hosts, the OECD.' All rightsEvidence quotes are FOUND. The Commons version is the uploader's perspective-corrected copy of the Flickr original.",
+        "The image (960x640, opens) shows the courtyard facade behind clipped box hedges, with cars parked at the entrance, which matches the alt. Independent: Wikipedia confirms the Château de la Muette became OEEC headquarters in 1949 and is the OECD's headquarters.",
+        "Small wording error in locationNote. The file page gives 48.861389, 2.269444 as the 'Object location', not the camera location. The record's 48.8614, 2.2694 is 17 m from the OSM point for the château, so the coordinates are fine."
+      ],
+      "fieldFixes": {
+        "locationNote": "Object location from the file page (48.861389, 2.269444), Château de la Muette, 2 rue André Pascal, Paris 16e; OECD headquarters, where the 1980 Privacy Guidelines were adopted"
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "council-of-europe-palais-de-l-europe-strasbourg",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: the Commons API gives LicenseShortName 'CC BY 3.0', Credit 'Council of Europe' and Artist 'Architect: Henry Bernard Photo: Council of Europe'. The page shows VRT ticket #2008031710012506 and a dual GFDL / CC BY 3.0 licence. The first upload, on 17 March 2008, came from the account CoEComm, which supports 'supplied by the Council of Europe itself'. Both rightsEvidence quotes are FOUND.",
+        "The coordinates are wrong. 48.5888, 7.774 is about 700 m south of the Palais de l'Europe, in the Parc de l'Orangerie area, although it is labelled 'building-level'. OSM geocodes 'Palais de l'Europe, Avenue de l'Europe' at 48.59516, 7.77189, and en.wikipedia gives 48.595, 7.7719. Corrected.",
+        "The photo date can be narrowed. The aerial view shows the European Parliament's Louise Weiss building (the curved glass block across the river, top left) and the round towers of the Human Rights Building (top right). The Parliament used the Palais de l'Europe until 1999 (en.wikipedia Palace of Europe: 'Between 1977 and 1999 it was also the Strasbourg seat of the European Parliament'). So the photo dates from between 1999 and the March 2008 upload. 'before 2008 (photo)' is not wrong but can be tightened.",
+        "The image (960x640, opens) matches the alt: a square modernist block with a dark central dome, lawn and flagpoles, beside the river. Caption facts (architect Henry Bernard, CoE-supplied free licence) are supported. The Palais has been the Council's seat since 1977, and Convention 108 was 'Done at Strasbourg' on 28 January 1981, so the locationNote is sound."
+      ],
+      "fieldFixes": {
+        "lat": 48.5952,
+        "lng": 7.7719,
+        "year": "1999-2008 (photo)"
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "federal-constitutional-court-karlsruhe",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed: the Commons API gives LicenseShortName 'CC BY-SA 3.0', Attribution 'Guido Radig at German Wikipedia' and DateTimeOriginal 2006-10-09. The page offers GFDL, CC BY-SA 3.0 Unported and CC BY-SA 3.0 DE, at the user's choice. The rightsEvidence quote is FOUND.",
+        "Factual error in the caption and alt. They describe 'glass-and-concrete pavilions' and 'stacked horizontal concrete bands'. The closed facade bands are grey cast-aluminium panels, not concrete. de.wikipedia Bundesverfassungsgericht says: 'Die Stahlskelettbauten verfügen über großzügige, in Oregon -Holzelementen eingefasste Glasfronten, die geschlossenen Flächen sind mit grauen Aluminium-Gussplatten verkleidet.' (--check FOUND), and 'Nach Baumgartens Plänen entstand von 1965 bis 1969 ein Komplex aus fünf pavillonartigen, in der Höhe gestaffelten Baukörpern' (--check FOUND). The photo (960x638, opens) shows exactly these mottled grey metal panels and wood-framed glazing. Caption and alt corrected.",
+        "The coordinates are about 110 m south-east of the OSM point for the court (49.01270, 8.40133; en.wikipedia 49.01242, 8.40161) although they are labelled 'building-level'. Tightened to 49.0125, 8.4016. The locationNote is correct: the court has sat in the Schlossbezirk building since 1969, so the 1983 census judgment was handed down there."
+      ],
+      "fieldFixes": {
+        "caption": "The building of the Bundesverfassungsgericht, Germany's Federal Constitutional Court, in Karlsruhe, photographed on 9 October 2006. Paul Baumgarten's steel-framed pavilions, completed in 1969, with wood-framed glass fronts and grey cast-aluminium cladding, sit among trees.",
+        "alt": "Low modernist building of stacked horizontal bands of grey metal cladding and large wood-framed glass windows, partly screened by trees",
+        "lat": 49.0125,
+        "lng": 8.4016
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "census-boycott-demo-freiburg-1987",
+      "status": "OK",
+      "issues": [
+        "Checked OK: the Commons page carries the LABW notice 'Works in the Baden-Württemberg State Archives digital finding aid are released under the Creative Commons Attribution 4.0 licence' and 'This file is licensed under the Creative Commons Attribution 4.0 International license.' (FOUND). The Landesarchiv's own viewer for the item (permalink landesarchiv-bw.de/plink/?f=5-795053-1) says 'Es steht unter der Creative Commons Lizenz CC BY 4.0.'",
+        "Checked OK: the LABW structure view (www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=23088&sprungId=3074571) lists 'W 140 Nr. 08765 Archivalieneinheit Freiburg im Breisgau: Demo gegen die Volkszählung Autor/Fotograf/Künstler: Marlis Decker Informationsträger (Material): Negativ 4 Negative 25. Mai 1987'. Signature, photographer and date in the caption and creditLine all match. 25 May 1987 was the reference day of the 1987 census.",
+        "Checked OK: the local file (500x326, opens; the original on Commons is only 941x613) shows a street march seen from above behind a banner that legibly reads 'Volkszählung Nein!', with tram tracks in the foreground, which matches the caption and alt. The thumbUrl returns HTTP 200. Freiburg city-centre coordinates are labelled city-level. The rightsEvidence note that this is the 1987 census held after the 1983 ruling is correct."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": []
+    }
+  ]
+}

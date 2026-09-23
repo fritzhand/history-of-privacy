@@ -1,0 +1,288 @@
+{
+ "slice": "internet",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "montulli-invents-the-http-cookie-1994",
+   "status": "FIXED",
+   "issues": [
+    "Significance overstates: 'The web's first memory mechanism'. Before cookies, sites used workarounds such as hidden form fields and state carried in URLs (Kristol 2001 calls them an 'unsatisfactory workaround' and says Mosaic 'offered no support for a state mechanism'). Cookies were the first mechanism built into the protocol, so the fix narrows the wording to 'first built-in'.",
+    "Sources 1 (Wayback copy of the Netscape spec) and 2 (Wayback copy of the NYT article) could not be re-fetched. Both are set to PENDING. A live mirror of the Netscape spec on curl.se is added in their place; the quote is FOUND there verbatim.",
+    "The 'June' in 'Around June or July 1994' rests only on the NYT article, which is now PENDING. Montulli's own post says 'Sometime around July of 1994' and 'By the summer 1994'. The displayDate 'Summer 1994' is safe. The summary wording can stay if the NYT source is re-confirmed later; otherwise it should read 'Around July 1994'."
+   ],
+   "fieldFixes": {
+    "significance": "The web's first built-in memory mechanism was designed by the site for the site: the person's browser stored whatever the server chose to set, and the person said nothing."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. fetch-text.py does not extract the Blogger post body from the HTML page, so --check on the page URL returns NOT-FOUND. I extracted the post-body div with BeautifulSoup: the quote is verbatim, and so are 'Sometime around July of 1994 I went to a meeting to talk about a shopping server' and 'I was very much against this concept because the unique identifier could be used to track a user at every website.' The same three sentences return FOUND through fetch-text.py --check on the blog's Atom feed, https://montulli.blogspot.com/feeds/posts/default. The page header gives 'Tuesday, May 14, 2013'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. The archive.org availability API returned no snapshot record for this URL and timestamp. The same text is confirmed on a live mirror, added as a new source."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. nytimes.com returns HTTP 403 to fetch-text.py, and WebFetch cannot reach it either. The archive.org availability API does list this snapshot (20201206124432, status 200), so the copy exists but could not be read. This is the only source for 'June 1994'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "curl project (curl.se), hosting Netscape's original cookie specification",
+     "title": "Persistent Client State HTTP Cookies — Preliminary Specification (Netscape Communications)",
+     "date": "2026-09-23",
+     "url": "https://curl.se/rfc/cookie_spec.html",
+     "quote": "Shopping applications can now store information about the currently selected items, for fee services can send back registration information and free the client from retyping a user-id on next connection, sites can store per-user preferences on the client, and have the client supply those preferences every time that site is connected to.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. The page's header note says: 'This is the original spec once found on netscape.com but since they decided to not keep the original URL alive and working, we host it here'. The spec itself is undated; the date is the date consulted."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "eu-data-protection-directive-95-46-1995",
+   "status": "FIXED",
+   "issues": [
+    "The record's claims all check out: signed at Luxembourg on 24 October 1995; OJ L 281 of 23.11.95, pp. 31–50; the Article 7(a) consent ground; the Article 25 'adequate level of protection' test; and the Article 32 three-year transposition deadline.",
+    "The only source, a Wayback copy of EUR-Lex, could not be re-fetched and is set to PENDING. Live EUR-Lex returns a bot-challenge page to scripts. The Official Journal facsimile of the adopted text on legislation.gov.uk is added in its place; its quotes are FOUND."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. The archive.org availability API returned no snapshot record for this URL and timestamp. Live EUR-Lex (the TXT/HTML, LexUriServ HTML, LexUriServ OJ PDF and ELI URLs) returns a page without the text. The same wording is confirmed on the added legislation.gov.uk facsimile."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "legislation.gov.uk (The National Archives), facsimile of the Official Journal of the European Communities L 281, 23 November 1995, pp. 31–50",
+     "title": "Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 (as adopted)",
+     "date": "1995-10-24",
+     "url": "https://www.legislation.gov.uk/eudr/1995/46/pdfs/eudr_19950046_adopted_en.pdf",
+     "quote": "Member States shall provide that personal data may be processed only if: ... the data subject has unambiguously given his consent",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 7 opening and point (a); fetch-text.py --check FOUND. The OCR text sets the point letter as '( a )', which is why the two parts are joined by an ellipsis. The same PDF gives 'Done at Luxembourg, 24 October 1995' (FOUND), the running head 'No L 281 /31' with '23 . 11 . 95', and Article 32(1): 'at the latest at the end of a period of three years from the date of its adoption' (FOUND). Article 25(1)'s 'adequate level of protection' is on the page too, but the two-column OCR interleaves it, so it is not quotable as a clean string."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "financial-times-exposes-cookies-1996",
+   "status": "FIXED",
+   "issues": [
+    "The summary is supported by the contemporaneous repost: the headline, 12 February 1996, the tracking sentence, 'Netscape's failure to draw their attention', and 'only one way to disable the facility: by manually amending or deleting the COOKIE.TXT file'.",
+    "Significance calls it 'The first mass-media warning'. No source on the record establishes that it was first. Kristol (2001) says cookies 'were in use for over two years before they first achieved notoriety'. The fix softens the claim to 'one of the earliest'."
+   ],
+   "fieldFixes": {
+    "significance": "One of the earliest mass-media warnings that the web's memory had become an unseen surveillance channel, with no user-facing control."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND. The page is the 'cr> 18Feb96 Tidbits' compilation of 18 February 1996, posted by Richard K. Moore. The item 'Date: Fri, 16 Feb 1996 Sender: John Whiting ... Subject: The way the cookie crumbles' is headed 'Financial Times [London} February 12 1996 Tim Jackson: THIS BUG IN YOUR PC IS A SMART COOKIE'. The page also has: 'many PC users may take a dim view of Netscape's failure to draw their attention to the fact that their behaviour may be tracked in this way' and 'there appears to be only one way to disable the facility: by manually amending or deleting the COOKIE.TXT file'. The institution, title and date fields are correct."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "rfc-2109-unverifiable-third-party-cookies-1997",
+   "status": "FIXED",
+   "issues": [
+    "The summary says RFC 6265 was when 'the IETF finally replaced the cookie standard in April 2011'. That skips a step: RFC 2109 was obsoleted in October 2000 by RFC 2965 (Kristol and Montulli), which kept the same unverifiable-transaction rule with overrides defaulting to 'off'. RFC 6265 (April 2011) obsoleted RFC 2965.",
+    "Significance calls it 'The first standards-body attempt to encode a privacy expectation into the protocol'. That is overstated. RFC 1945 (HTTP/1.0, May 1996) already said 'The client should not send the From header field without the user's approval, as it may conflict with the user's privacy interests'.",
+    "Source 1 (Wayback copy of the NYT) could not be re-fetched and is set to PENDING. The claim that the browsers did not adopt the default is now covered by Kristol's own account, which is added."
+   ],
+   "fieldFixes": {
+    "summary": "In February 1997 the IETF published RFC 2109, 'HTTP State Management Mechanism', by David Kristol of Bell Laboratories and Lou Montulli of Netscape, on the standards track. It defined 'unverifiable' transactions — requests, such as for embedded images, whose address the user had no chance to review — and said a browser must enable a cookie session in them only within the domain of the page the user chose, with any override defaulting to 'off'. The two dominant browsers did not adopt that default, and advertising networks built cross-site tracking on third-party cookies. RFC 2965, which replaced RFC 2109 in October 2000, kept the same rule; when RFC 6265 replaced it in turn in April 2011, the IETF called third-party cookies 'particularly worrisome' but left browsers 'wide latitude to experiment' with their own policies.",
+    "significance": "An early standards-body attempt to build a privacy default into the web's plumbing — and an early lesson that a privacy default nobody ships has no force; by 2011 the standard simply described the tracking regime."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The header reads 'D. Kristol ... Bell Laboratories, Lucent Technologies ... Category: Standards Track ... L. Montulli Netscape Communications ... February 1997'. Section 4.3.5's override sentence ('...so long as these override options default to \"off\".') is FOUND. The rule reads: 'a user agent must enable a session only if a cookie with a domain attribute D was sent or received in its origin transaction, such that the host name in the Request-URI of the unverifiable transaction domain-matches D.' The summary's paraphrase is fair."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. nytimes.com returns HTTP 403. The archive.org availability API lists the snapshot (20201206124432), but it could not be read. The claim about browser defaults is now covered by the added Kristol (2001) source."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Also FOUND: 'This document grants user agents wide latitude to experiment with third-party cookie policies' and 'These third-party servers can use cookies to track the user even if the user never visits the server directly.' The header reads 'A. Barth ... U.C. Berkeley ... Obsoletes: 2965 ... April 2011 ... Standards Track'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force",
+     "title": "RFC 2965: HTTP State Management Mechanism (D. Kristol, L. Montulli)",
+     "date": "2000-10",
+     "url": "https://www.rfc-editor.org/rfc/rfc2965",
+     "quote": "User agents may offer configurable options that allow the user agent, or any autonomous programs that the user agent executes, to ignore the above rule, so long as these override options default to \"off\".",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. The header reads 'Obsoletes: 2109' (FOUND), 'Category: Standards Track' and 'October 2000' (FOUND). This shows the default-off rule for unverifiable transactions survived into the 2000 replacement of RFC 2109."
+    },
+    {
+     "institution": "arXiv (David M. Kristol, Bell Labs, Lucent Technologies); journal reference: ACM Transactions on Internet Technology, Vol. 1, #2, November 2001",
+     "title": "David M. Kristol, 'HTTP Cookies: Standards, Privacy, and Politics'",
+     "date": "2001-05-09",
+     "url": "https://arxiv.org/pdf/cs/0105018",
+     "quote": "Vendors have steadfastly supported the advertising industry, leaving third-party cookies enabled by default.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. This is the co-author's own account. Same paper: 'Because many of the networks had developed business models that relied on third-party cookies to do targeted advertising, they felt the RFC's mandate to disable third-party cookies by default was a threat to their business.' (FOUND). On Netscape's later controls it says 'the default remained to allow them'. The date is the arXiv submission date (9 May 2001), and the journal reference comes from the arXiv abstract page."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "ftc-privacy-online-report-1998",
+   "status": "FIXED",
+   "issues": [
+    "The summary's numbers all check out: over 1,400 sites surveyed in March 1998; a Comprehensive Sample of 674; 92% collecting (Figure 1, base 674); 14% posting any disclosure; 2% of collecting sites having a Privacy Policy Notice; the self-regulation finding.",
+    "The title says 'post a privacy policy'. The report reserves 'Privacy Policy Notice' for a comprehensive, one-place description of a site's practices, and a further 14–15% of collecting sites posted some narrower 'Information Practice Statement'. The Executive Summary says 'approximately 2% — provide notice by means of a comprehensive privacy policy'. Without 'comprehensive', the title reads as if 98% posted nothing, which is wrong. The 2% also holds for the random samples only; in the non-random Most Popular Sample, 44% of collecting sites had a Privacy Policy Notice."
+   ],
+   "fieldFixes": {
+    "title": "FTC survey: only 2% of data-collecting websites post a comprehensive privacy policy"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND (p. 27). The '14% ... post any disclosure' sentence in the note is also FOUND. The cover reads 'JUNE 1998'. The Executive Summary says 'The Commission's survey of over 1,400 Web sites reveals that industry's efforts to encourage voluntary adoption of the most basic fair information practice principle — notice — have fallen far short of what is needed', and that 'effective industry self-regulation ... has not yet taken hold'. Figure 1 shows Collect 92%, 'Base: All Web Sites in Comprehensive Sample (674)', March 1998. The report defines a 'Privacy Policy Notice' as 'a comprehensive description of a site's information practices that is located in one place on the site'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "us-sectoral-privacy-laws-hipaa-coppa-1996-1998",
+   "status": "FIXED",
+   "issues": [
+    "The summary is accurate. HIPAA s.264(a) sets the 12-month deadline for recommendations and s.264(c)(1) the 36-month trigger for regulations. The COPPA enactment date is 21 October 1998, the rule's effective date is 21 April 2000, and the parental-consent requirement is stated correctly.",
+    "Significance says both laws are rules 'in which consent is a gate the data holder must pass'. That fits COPPA, which requires verifiable parental consent, but not HIPAA. The 1996 Act's privacy section (s.264) says nothing about consent: it only orders recommendations and, failing legislation, regulations. The later HIPAA Privacy Rule also lets data holders use and disclose health data for treatment, payment and operations without consent. The fix keeps the point without the inaccurate generalisation."
+   ],
+   "fieldFixes": {
+    "significance": "Instead of a general privacy law the US wrote sector-specific rules whose terms — including, for children's data, a parental-consent gate the data holder must pass — were set by Congress and regulators, never by the patient or family."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND in SEC. 264(a), which begins 'Not later than the date that is 12 months after the date of the enactment of this Act'. SEC. 264(c)(1) confirms the 36-month trigger for regulations. The margin note '<<NOTE: Aug. 21, 1996 - [H.R. 3103]>>' is on the page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. 'The rule will become effective on April 21, 2000.' is FOUND. The masthead reads Federal Register Vol. 64, No. 212, Wednesday, November 3, 1999, p. 59888."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The same paragraph says the Act covers 'operators of commercial websites and online services directed to children under 13 or knowingly collecting personal information from children under 13', which matches the summary."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "cluetrain-manifesto-markets-are-conversations-1999",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND (theses 1 and 2). The footer reads 'Copyright © 1999 Levine, Locke, Searls & Weinberger.' No month of first posting is given, so the displayDate '1999' is right."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: 'Cambridge, Mass. : Perseus Books' FOUND. The record's 'Publication date' is 2000. Perseus Books was at 11 Cambridge Center (Kendall Square), so the coordinates are right."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "mcnealy-zero-privacy-get-over-it-1999",
+   "status": "FIXED",
+   "issues": [
+    "The record's claims check out: 25 January 1999 was a Monday; Wired published on 26 January 1999 (datePublished 1999-01-26); the byline is Polly Sprenger; 'red herring', Bernstein's title and the Intel Pentium III reversal 'only hours' earlier are all on the page.",
+    "Source 1's metadata is wrong. The InfoWorld page is a JavaWorld article by Scott Plamondon ('Scott Plamondon is JavaWorld's Senior Editor'). The page's publication date is 1 February 1999 (meta date and datePublished); 25 January 1999 is only the article's dateline. The institution, title and date fields are corrected."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND. The next paragraph is '\"Get over it.\"'. The page metadata gives author Polly Sprenger and datePublished 1999-01-26. The page also says 'McNealy's comments came only hours after competitor Intel ( INTC ) reversed course under pressure and disabled identification features in its forthcoming Pentium III chip' and names 'Jodie Bernstein, director of the Bureau of Consumer Protection at the Federal Trade Commission'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "InfoWorld (JavaWorld archive)",
+     "title": "Scott Plamondon, 'Jini, Sun's magic out of the lamp'",
+     "date": "1999-02-01",
+     "note": "Re-fetched: quote FOUND. The paragraph opens with the dateline 'January 25, 1999 —', which fixes the event date. The page byline is 'by Scott Plamondon', whose bio reads 'Scott Plamondon is JavaWorld's Senior Editor'. The page's meta date is 'February 1, 1999' (datePublished 1999-02-01), so the source date is corrected to the publication date. The page names CEO Scott McNealy among the presenters at the Sheraton Palace rollout."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "doubleclick-abacus-profile-merger-retreat-2000",
+   "status": "FIXED",
+   "issues": [
+    "The summary says DoubleClick 'bought' Abacus Direct in June 1999. That follows the court opinion's phrasing, but June 1999 is when the deal was agreed; it closed in the autumn. ABC News (23 January 2001) describes it as 'the company's $1.7 billion purchase last fall'. The fix says the deal was agreed in June and closed that autumn.",
+    "The summary says FTC staff were 'finding DoubleClick had not combined' the data. The closing letter's wording is hedged: 'it appears to staff that ... DoubleClick did not combine PII from Abacus Direct with clickstream'. The fix matches that hedge.",
+    "The rest is confirmed: over one billion dollars, about 90% of households, O'Connor's 'mistake' on 2 March 2000, the FTC probe beginning in February 2000 and closing on 22 January 2001, and the 28 March 2001 dismissal and consent holding."
+   ],
+   "fieldFixes": {
+    "summary": "In June 1999 the ad network DoubleClick agreed to buy Abacus Direct, a direct-marketing firm holding names, addresses and purchasing histories on about 90% of American households, in a deal worth more than one billion dollars that closed that autumn, amid plans to link that offline data to its online browsing profiles. After a public outcry and an FTC investigation begun in February 2000, chief executive Kevin O'Connor said on 2 March 2000 that the plan had been a 'mistake' and that no merger of the databases would happen until government and industry agreed privacy standards. On 22 January 2001 FTC staff closed the inquiry, saying it appeared DoubleClick had not combined Abacus data with clickstream data. On 28 March 2001 a federal judge in New York dismissed a class action over DoubleClick's cookie tracking, holding that the DoubleClick-affiliated websites were parties to users' communications and had given DoubleClick sufficient consent to intercept them."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND. The note's quotes are also on the page: 'In June 1999, DoubleClick purchased Abacus Direct Corp. (\"Abacus\") for more than one billion dollars.' (FOUND); 'approximately ninety percent of American households'; 'The FTC concluded its investigation on January 22, 2001'; 'it appears that DoubleClick did not combine PII from Abacus Direct with clickstream collected on client Web sites.' The judge is Naomi Reice Buchwald. The scanned FTC letter was not re-read."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The header reads 'March 28, 2001, Decided March 29, 2001, Filed'. The federal claims were dismissed with prejudice, and the court declined supplemental jurisdiction over the state claims."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The page metadata gives datePublished 2001-01-23 and author ABC News. The dateline reads 'N E W Y O R K, Jan. 23 -- The Federal Trade Commission on Monday ended its investigation' (Monday was 22 January 2001)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ABC News",
+     "title": "FTC Closes DoubleClick Investigation",
+     "date": "2001-01-23",
+     "url": "https://abcnews.com/Technology/story?id=99060&page=1",
+     "quote": "$1.7 billion purchase last fall of direct marketing company Abacus",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. The full sentence begins 'The complaints against DoubleClick were sparked by the company's'. The page's markup runs 'company's' into '$1.7' and 'Abacus' into 'and', so the quote is cut to the span that matches verbatim. It supports the deal closing in autumn 1999 (the article is from January 2001), not in June."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,208 @@
+{
+ "slice": "myterms",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "agreementType",
+   "id": "Personal Data Contribution",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 (HTTP 200, not from cache) plus fetch-text.py --check: FOUND. The quote is the body text under the page heading 'Data Contribution Agreements'. The type name 'Personal Data Contribution' does not appear in the quote itself; it comes from the page sentence 'MyTerms agreements are of two types: Personal Data Contribution and Relationship', added below as a same-page source so the type name is supported verbatim. The page's HTML <title> is 'IEEE 7012 (MyTerms) - Machine-Readable Privacy Terms', its H1 is 'The Standard', and the footer reads '(c) 2026 Customer Commons' (dateModified 2026-02-14). The record's title and institution are acceptable. The same text is also on myterms.info/agreements/. Framing caution: this is a category in the MyTerms/Customer Commons launch roster (PDC-AI, PDC-GOOD, PDC-INTENT), not normative text of IEEE 7012-2025. The IEEE SA abstract says terms 'shall be chosen from a collection of standard-form agreements in a roster kept by an independent and neutral non-business entity'. The site also says it will run the 5 launch agreements for up to 6 months and then update them."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "MyTerms agreements are of two types: Personal Data Contribution and Relationship",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. This sentence names the type verbatim. On the page it is followed by ' .' (link markup), so the quote stops before the period."
+    },
+    {
+     "institution": "InfoQ",
+     "title": "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies",
+     "date": "2026-02-02",
+     "url": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
+     "quote": "For example, terms can cover ongoing relationships, such as \"service delivery only\" or \"service delivery only with data portability\", as well as one-time data contributions, such as \"AI training and operations\", \"sharing intent data\", and more.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent trade-press report by Sergio De Simone, dated Feb 02, 2026. fetch-text.py --check FOUND. It independently confirms the one-off contribution category (AI training and operations, intent data) against the ongoing relationship category."
+    }
+   ]
+  },
+  {
+   "kind": "principle",
+   "id": "Transparency",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/agreements/ (HTTP 200) plus fetch-text.py --check: FOUND verbatim. The HTML <title> is 'Agreements | MyTerms', dateModified is 2026-01-22 and the footer reads '(c) 2026 Customer Commons', so the title and date '2026' are right. The page introduces this as the first of 'The key principles built into the MyTerms agreements'. The identical list also appears on myterms.info/ieee7012-standards/. Framing caution: these are principles of the MyTerms agreement roster (Customer Commons / MyTerms Alliance). They are not shown to be normative clauses of IEEE 7012-2025, and the public 2017 PAR contains none of these principle words. Do not write 'the standard's four principles'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "principle",
+   "id": "Data minimisation",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/agreements/ plus fetch-text.py --check: FOUND verbatim. The UK spelling 'Minimisation' matches the source. It is the second of 'The key principles built into the MyTerms agreements' and also appears on /ieee7012-standards/. Framing caution: this is a MyTerms roster principle, not shown to be normative IEEE 7012-2025 text."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "principle",
+   "id": "Purpose limitation",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/agreements/ plus fetch-text.py --check: FOUND verbatim. The source itself writes 'Purpose limitation' with a lower-case l, and the record name matches. It is the third of 'The key principles built into the MyTerms agreements' and also appears on /ieee7012-standards/. Framing caution: this is a MyTerms roster principle, not shown to be normative IEEE 7012-2025 text."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "principle",
+   "id": "Reciprocity",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/agreements/ plus fetch-text.py --check: FOUND verbatim. It is the fourth principle in the list, which also appears on /ieee7012-standards/. Framing caution: this is a MyTerms roster principle, not shown to be normative IEEE 7012-2025 text."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/faqs/ (HTTP 200; HTML <title> 'MyTerms FAQs - Common Questions About the Privacy Standard | MyTerms'; dateModified 2026-01-26) plus fetch-text.py --check: FOUND. It is the answer to FAQ 23, 'What is \"Reciprocity\" in the context of MyTerms?', which opens '(This is in response to the fourth principle listed here.)'. That ties the answer to this principle. The answer continues: 'This means data and metadata from and about the person should be accessible to the person, in easily usable forms.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "format",
+   "id": "Plain language",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/ieee7012-standards/ plus fetch-text.py --check: FOUND verbatim, including the typo 'everday' (the [sic] in the record note is correct). The footnote on the same page supports the record note: '(*) Our master agreements are published in English (UK), but can and will be translated into many more languages.' The format list is introduced as 'Each of our agreements are made available in three related formats'. That makes it a MyTerms / Customer Commons publishing choice for its roster agreements, not something shown to be required by IEEE 7012-2025."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "format",
+   "id": "Machine readable",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/ieee7012-standards/ plus fetch-text.py --check: FOUND verbatim. The same wording is on /agreements/. This is the second of three MyTerms roster formats, and the page gives no specific serialisation (for example JSON-LD). Do not claim a particular machine format beyond 'a range of formats'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "format",
+   "id": "Legal agreement",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 of myterms.info/ieee7012-standards/ plus fetch-text.py --check: FOUND verbatim. Caution: the /agreements/ page words this differently: 'Legal agreement format - the canonical interpretation of each agreement expressed in ways that express levels of detail that support legal interpretation and reliance.' The record's wording ('with levels of detail') is correct only for the cited /ieee7012-standards/ URL, so keep that URL paired with this quote."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "mechanics",
+   "id": "dpv-links",
+   "status": "FIXED",
+   "issues": [
+    "Source 0's quote ('That enables us to link to clear, expert-built perma-link definitions...') never names the Data Privacy Vocabulary. The DPV link claim in the summary rests on the preceding sentence, which the quote left out. The quote is replaced with that sentence, which does name DPV. The original perma-link sentence is kept in a second same-text source from /agreements/, where the two sentences can be quoted together.",
+    "No independent confirmation from outside the MyTerms site or the DPVCG was attached. A statement by the working-group chair (Searls, Jan 2026) is added.",
+    "The summary is accurate as written. The DPVCG extension cited (v2.1, 16 March 2025) has since been followed by v2.2 (Draft Community Group Report, 01 August 2025), which keeps the same appendix sentence. It is added as a source. Both are Community Group drafts, not W3C Standards, so do not call them 'W3C standards'. On the MyTerms page the DPV link currently points to DPV 2.2 (w3c.github.io/dpv/2.2/dpv/)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "In all cases, where useful, the MyTerms agreements include links to the Data Privacy Vocabulary",
+     "note": "Live re-fetch 2026-09-23 plus fetch-text.py --check: FOUND. The original quote was also FOUND, but it does not name DPV. On this page the two sentences are separated by the link element ('Vocabulary . That'), so they cannot be checked as one string here. The combined sentence pair is added from /agreements/ instead. The page's DPV hyperlink goes to https://w3c.github.io/dpv/2.2/dpv/."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 (HTTP 200) plus fetch-text.py --check: FOUND. Page header: 'Extension for IEEE P7012 (P7012) / version 2.1 / Draft Community Group Report 16 March 2025'. Editor Harshvardhan J. Pandit; authors Beatriz Esteves, Harshvardhan J. Pandit, Iain Henderson. Its status section reads 'It is not a W3C Standard nor is it on the W3C Standards Track'. The title and date fields are correct. The w3id 'latest' link (w3id.org/dpv/standards/p7012) currently redirects to a 404, so keep the versioned URL."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Agreements",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "In all cases, where useful, the MyTerms agreements include links to the Data Privacy Vocabulary. That enables us to link to clear, expert-built perma-link definitions of all of the key words in our agreements",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. The page's dateModified is 2026-01-22. This carries both sentences as one quote."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "W3C DPV (Data Privacy Vocabulary) is cited in MyTerms (IEEE P7012) and is good for indicating privacy preferences and maintaining records.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. This is the working-group chair confirming that the standard cites DPV. It is not fully independent of MyTerms, but it is a separate publisher from myterms.info and the DPVCG."
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.2 — Draft Community Group Report 01 August 2025",
+     "date": "2025-08-01",
+     "url": "https://w3c-cg.github.io/dpv/2.2/standards/p7012/",
+     "quote": "The [ IEEE-P7012 ] draft standard references [ DPV ] in its appendix as an example of a vocabulary that can be used to express the relevant information for the creation and use of privacy terms in its defined processes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND for both the quote and the header line 'Draft Community Group Report 01 August 2025'. This is the later draft of the same extension, and it keeps the appendix sentence."
+    }
+   ]
+  }
+ ]
+}

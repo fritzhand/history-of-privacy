@@ -1,0 +1,398 @@
+{
+ "slice": "global",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "greenleaf-count-172-countries-with-data-privacy-laws-2025",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes were re-fetched and found word for word. The 172 count, the 3.3 average and the 5.4 average since 2020 are all correct. The PL&B abstract says the table lists national laws 'known as at 15 March 2025'.",
+    "The date is off. The headline count of 172 countries first appeared in the April 2025 issue (International Report 194, 'Global data privacy laws 2025: 172 countries, 12 new in 2023/24'). The SSRN version of the year-by-year list is dated 23 March 2025. June 2025 is only when PL&B reprinted the year-by-year table (issue 195). displayDate should be April 2025.",
+    "Source 0's quote leaves out the 5.4-a-year figure that the summary uses. The next sentence on the same page supplies it, so the quote has been extended.",
+    "Location: PL&B's contact page gives 215 Marsh Road, Pinner, Middlesex HA5 5NE. That is in the London Borough of Harrow, but the record's coordinates are Harrow town centre, about 2.5–3 km away. Moved to Pinner.",
+    "Independent check: Greenleaf's SSRN abstracts (Internet Archive snapshots) give the same figures and the same 'first assessment' sentence."
+   ],
+   "fieldFixes": {
+    "displayDate": "April 2025",
+    "summary": "Graham Greenleaf's running census of national data-privacy laws, published in Privacy Laws & Business International Report, counted 172 countries with such laws as at 15 March 2025. That is an average of 3.3 new countries a year since Sweden's 1973 law, rising to 5.4 a year since 2020. His April 2025 biennial assessment, the ninth since 2011, concluded for the first time that revising existing laws now mattered more than enacting new ones. A year-by-year list of all 172 followed in June 2025.",
+    "place": "Privacy Laws & Business, Pinner, north-west London (publisher); author at Macquarie Law School, Sydney",
+    "lat": 51.5905,
+    "lng": -0.378,
+    "locationNote": "Privacy Laws & Business is at 215 Marsh Road, Pinner, Middlesex HA5 5NE (London Borough of Harrow), per its contact page; coordinates are approximate for Pinner."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "For the past 52 years since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 laws by March 2025. Since 2020 the average number of new laws per year has risen to 5.4.",
+     "note": "Re-fetched 2026-09-23; extended quote --check FOUND. The page is labelled 'International Report June 2025' and also says 'The table lists national laws known as at 15 March 2025.' Abstract is free; full article and table are subscriber-only."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The page is labelled 'International Report April 2025' and adds 'This biennial global assessment is the ninth in this publication since 2011.' Abstract is free; full article subscriber-only."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "SSRN (Graham Greenleaf), Internet Archive snapshot",
+     "title": "172 Countries with Data Privacy Laws -Year by Year 1973-2025",
+     "date": "2025-03-23",
+     "url": "https://web.archive.org/web/20251122134859/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972",
+     "quote": "For the past 52 years, since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 countries with such laws by March 2025. Since 2020 the average number of new countries per year has risen to 5.4.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "SSRN abstract, 'Date Written: March 23, 2025', posted 28 Apr 2025. papers.ssrn.com returns HTTP 403 to scripts, so this is the Internet Archive snapshot of 22 Nov 2025. --check FOUND."
+    },
+    {
+     "institution": "SSRN (Graham Greenleaf), Internet Archive snapshot",
+     "title": "Global Data Privacy Laws 2025: 172 Countries, Twelve New in 2023/24",
+     "date": "2025-04-02",
+     "url": "https://web.archive.org/web/20250807154128/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5275559",
+     "quote": "This is the first assessment to conclude that revisions to existing data privacy laws are now more important than enactment of new laws in countries without such laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "SSRN abstract, 'Date Written: April 02, 2025', posted 30 May 2025 (Internet Archive snapshot, 7 Aug 2025). Independent copy of the April 2025 PL&B assessment. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "se-1973",
+   "status": "OK",
+   "issues": [
+    "Both quotes were re-fetched and found word for word. data.riksdagen.se gives 'Utfärdad: 1973-05-11' and 'Upphävd: 1998-10-24'. Jan Freese's 1979 SvJT article dates the Data Inspection Board and the supervision rules to 1 July 1973 and the permit rules to a year later, so inForce 1973 holds for the first provisions.",
+    "Minor wording point, not changed: under the original 1973 Act the Board granted a permit ('tillstånd') for every computerised personal register, public or private. The separate 'licens' came only with Lag 1982:446. 'Licensed' is fine as plain English. Freese's description of the permit requirement is added as a source.",
+    "The 'world's first national' claim is backed by Greenleaf ('since 1973 when Sweden enacted the first national data privacy law'). The coordinates match the Riksdag in Stockholm.",
+    "Side note: the Freese article dates Hesse's law to 1971. That is wrong (it is 1970), but the record does not rely on it."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; 'Utfärdad: 1973-05-11' --check FOUND. The text shown is the consolidated version after amendments."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The byline is 'Av generaldirektören JAN FREESE'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Svensk Juristtidning (1979), p. 499 - Jan Freese, director-general of Datainspektionen",
+     "title": "Datainspektionen",
+     "date": "1979",
+     "url": "https://svjt.se/svjt/1979/497",
+     "quote": "Enligt datalagen krävs tillstånd innan ett personregister inrättas eller börjar föras.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Under the Data Act a permit is required before a personal register is set up or begins to be kept.' The next sentences say the applicant is the controller and 'Kravet på tillstånd gäller både myndigheter och företag eller andra' (the permit requirement applies to authorities and companies alike). --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "de-1977",
+   "status": "FIXED",
+   "issues": [
+    "'Adopted 27 January 1977 while the Bundestag sat in Bonn' confuses the Act's date with a parliamentary vote. 27 January 1977 is the date of signature ('Das vorstehende Gesetz wird hiermit ausgefertigt ... Bonn, den 27. Januar 1977', signed by President Scheel). The gazette, BGBl. I Nr. 7, was issued on 1 February 1977. The Bundestag's votes came earlier, in 1976. The BfDI page's 'verabschiedet am 27. Januar 1977' is loose usage, and the BfDI page even heads the entry '28. Januar 1977'.",
+    "'It took effect on 1 January 1978, which is also when the post of Federal Data Protection Commissioner was created' is contradicted by the statute. § 47 BDSG 1977 reads: 'Dieses Gesetz tritt am 1. Januar 1978 in Kraft. Abweichend davon treten in Kraft: ... 2. §§ 17, 18, 28 und 38 am 1. Juli 1977'. § 17 is headed 'Bestellung eines Bundesbeauftragten für den Datenschutz'. So the provisions creating the post took effect on 1 July 1977. The BfDI's own milestone of 1 January 1978 simplifies this. The first commissioner, Hans Peter Bull, took office on 14 February 1978.",
+    "Hesse: 'had passed the world's first data-protection law on 7 October 1970' is shaky. 7 October 1970 is the Act's official date (GVBl. I S. 625). The BfDI page cited as source 0 gives 30 September 1970 ('Hessen erlässt ...') and entry into force on 13 October 1970. Secondary sources disagree about the day the Landtag voted, so the wording now avoids 'passed on'.",
+    "Regulator label: in 1977 the office was the Bundesbeauftragter für den Datenschutz (BfD). The 'und die Informationsfreiheit' (BfDI) name dates from 2006.",
+    "Sources 0 and 1 are the same URL with different titles and institutions. The page's <title> is 'BfDI - Datenschutz-Garten - Die Geschichte des Datenschutzes' and its heading is 'Die Geschichte des Datenschutzes'. Source 1 has been aligned to match.",
+    "Checked and correct: BGBl. I S. 201; the Bonn coordinates (Bundeshaus); the HBDI quote on Hesse being first in the world."
+   ],
+   "fieldFixes": {
+    "regulator": "Bundesbeauftragter für den Datenschutz (BfD; since 2006 the Bundesbeauftragte für den Datenschutz und die Informationsfreiheit, BfDI)",
+    "note": "The first federal data-protection act. It was signed in Bonn on 27 January 1977 by President Walter Scheel and promulgated in the Federal Law Gazette on 1 February 1977 (BGBl. I S. 201). Most of it took effect on 1 January 1978. The sections providing for a Federal Commissioner for Data Protection (§§ 17–18) took effect earlier, on 1 July 1977, and the first commissioner, Hans Peter Bull, took office on 14 February 1978. Hesse's Data Protection Act, dated 7 October 1970 and in force from 13 October 1970, had been the world's first data-protection law."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. 'Verabschiedet am 27. Januar 1977' on this page refers to the date the Act was signed (Ausfertigung), not to a Bundestag vote; see the BGBl source. The page heads the entry '28. Januar 1977' but says 27 January in the text. The site header reads 'Der Bundesbeauftragte ...'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+     "title": "Datenschutz-Garten: Die Geschichte des Datenschutzes",
+     "note": "Same page as source 0; quote --check FOUND. This is the BfDI's own milestone. The statute (§ 47 BDSG 1977) put §§ 17–18, on appointing the Federal Commissioner, into force on 1 July 1977, so this source backs only the date the BfDI itself gives, not the date the post was created in law. The same page: Bull 'am 14. Februar 1978 in sein Amt eingeführt'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The page does not give a day for the 1970 Act."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Bundesgesetzblatt Teil I 1977 Nr. 7 (scan via OffeneGesetze.de)",
+     "title": "Gesetz zum Schutz vor Mißbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz - BDSG) vom 27. Januar 1977",
+     "date": "1977-02-01",
+     "url": "https://media.offenegesetze.de/bgbl1/1977/bgbl1_1977_7.pdf",
+     "quote": "Das vorstehende Gesetz wird hiermit ausgefertigt und wird im Bundesgesetzblatt verkündet. Bonn, den 27. Januar 1977",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Signature block, followed by 'Der Bundespräsident Scheel', 'Der Bundeskanzler Schmidt' and 'Der Bundesminister des Innern Maihofer'. Gazette footer: 'Tag der Ausgabe: Bonn, den 1. Februar 1977'. --check FOUND."
+    },
+    {
+     "institution": "Bundesgesetzblatt Teil I 1977 Nr. 7 (scan via OffeneGesetze.de)",
+     "title": "Bundesdatenschutzgesetz 1977, § 47 Inkrafttreten",
+     "date": "1977-02-01",
+     "url": "https://media.offenegesetze.de/bgbl1/1977/bgbl1_1977_7.pdf",
+     "quote": "2. §§ 17, 18, 28 und 38 am 1. Juli 1977,",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "§ 47 opens 'Dieses Gesetz tritt am 1. Januar 1978 in Kraft. Abweichend davon treten in Kraft:' (that sentence --check FOUND separately), followed by this item. § 17 is headed 'Bestellung eines Bundesbeauftragten für den Datenschutz' and begins 'Es ist ein Bundesbeauftragter für den Datenschutz zu bestellen.' Item 3 puts § 6 (technical and organisational measures) into force on 1 January 1979. --check FOUND."
+    },
+    {
+     "institution": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+     "title": "Datenschutz-Garten: Die Geschichte des Datenschutzes",
+     "date": "2026",
+     "url": "https://www.bfdi.bund.de/DE/BfDI/Inhalte/Datenschutzpfad/Geschichte-Datenschutz.html",
+     "quote": "30. September 1970: Hessen erlässt das erste Datenschutzgesetz weltweit, das am 13.10.1970 in Kraft tritt",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '30 September 1970: Hesse enacts the world's first data protection law, which enters into force on 13.10.1970.' --check FOUND."
+    },
+    {
+     "institution": "Wikipedia (de)",
+     "title": "Hessisches Datenschutzgesetz",
+     "date": "2026",
+     "url": "https://de.wikipedia.org/wiki/Hessisches_Datenschutzgesetz",
+     "quote": "Datenschutzgesetz (GVBl. II 300-10) vom 7. Oktober 1970 . In: Ursprungsfassung (Hrsg.): Gesetz- und Verordnungsblatt für das Land Hessen . 1970 Nr. 41 , S. 625",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Gives the official citation (Act of 7 October 1970, GVBl. 1970 Nr. 41 S. 625) and says 'Das Datenschutzgesetz des Landes Hessen trat am 13. Oktober 1970 in Kraft'. The linked gazette scan (starweb.hessen.de/cache/GVBL/1970/00041.pdf) downloads, but it is an image-only PDF with no text layer, so it could not be checked for the quote. Tertiary source used only for the date. --check FOUND (the spaces before punctuation come from the page's rendering)."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "fr-1978",
+   "status": "FIXED",
+   "issues": [
+    "The only source (CNIL's text of the law) backs the law's name and date but says nothing about the 1974 SAFARI affair or the CNIL being set up as an independent authority. Both claims in the note were unsourced.",
+    "Both claims are correct. CNIL's 3 Dec 2020 article says the law was voted 'suite, notamment, à l'annonce du projet SAFARI' and 'permis la création de la CNIL, première autorité administrative indépendante en France'. Philippe Boucher's Le Monde article of 21 March 1974 ('\"Safari\" ou la chasse aux Français') describes the operation as the individual identification of all 52 million French people. Sources added; the fields are unchanged.",
+    "Checked and correct: law number and title; the Paris coordinates (Assemblée nationale); the source date (page shows '15 novembre 2024')."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The page shows '15 novembre 2024'. It supports only the law's title and date."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Commission nationale de l'informatique et des libertés (CNIL)",
+     "title": "Informatique et Libertés : retour sur la création de la CNIL pendant le mandat du Président Valéry Giscard d'Estaing",
+     "date": "2020-12-03",
+     "url": "https://www.cnil.fr/fr/loi-informatique-et-libertes-creation-mandat-valery-giscard-destaing",
+     "quote": "Face au débat relatif aux enjeux émergents pour la vie privée et les libertés individuelles suite, notamment, à l'annonce du projet SAFARI, la loi Informatique et Libertés est votée en 1978.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Following the debate on emerging issues for privacy and individual liberties, prompted notably by the announcement of the SAFARI project, the Informatique et Libertés law was voted in 1978.' The next paragraph says the law 'permis la création de la CNIL, première autorité administrative indépendante en France' (also --check FOUND). --check FOUND."
+    },
+    {
+     "institution": "Le Monde (archives) - Philippe Boucher",
+     "title": "\"Safari\" ou la chasse aux Français",
+     "date": "1974-03-21",
+     "url": "https://www.lemonde.fr/archives/article/1974/03/21/safari-ou-la-chasse-aux-francais_3086610_1819218.html",
+     "quote": "L'appareil employé pour engranger les données de l'opération Safari, qui concerne l'identification individuelle de l'ensemble des 52 millions de Français, a une contenance de 2 milliards d'octets",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The machine used to store the data of Operation Safari, which concerns the individual identification of all 52 million French people, has a capacity of 2 billion bytes.' The article also describes Interior Ministry tests meant 'rendre cohérentes entre elles, les données contenues dans les 400 fichiers que possèdent les services de police'. This supports 'a plan to interconnect government files'. The free archive page shows the opening of the article. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "at-1978",
+   "status": "OK",
+   "issues": [
+    "The quote was re-fetched from the RIS gazette PDF and found word for word. The header reads 'Bundesgesetz vom 18. Oktober 1978 ... Ausgegeben am 28. November 1978'. § 1 sits under 'Artikel 1 (Verfassungsbestimmung) GRUNDRECHT AUF DATENSCHUTZ'.",
+    "'Covering the public and private sectors' is correct. The Act has a '2. Abschnitt ÖFFENTLICHER BEREICH' and a '3. Abschnitt PRIVATER BEREICH'. § 1(6) says that against bodies acting under private law the right is enforced in the ordinary courts. The '5. Abschnitt' sets up the Datenschutzkommission and Datenschutzrat, which backs the regulator field.",
+    "Optional: the record has no inForce field. § 58(1) sets 1 January 1980 ('tritt ... mit 1. Jänner 1980 in Kraft'); add inForce 1980 if the timeline uses it. The Act also covered legal persons ('natürliche oder juristische Person', § 3). The Vienna coordinates match the Parliament."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 from ris.bka.gv.at; quote --check FOUND. Title, date (Ausgegeben am 28. November 1978) and § 58(1) (in force 1 January 1980) confirmed on the PDF."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "law",
+   "id": "no-1978",
+   "status": "FIXED",
+   "issues": [
+    "'Passed by the Storting on 9 June 1978' is probably a conflation, though the cited article says so word for word. 9 June 1978 is the Act's official date (LOV-1978-06-09-48). Norwegian Acts of that era are dated by royal sanction in the Council of State, which met on Fridays. 9 June 1978 was a Friday, and other Acts share the date, such as the Equality Act, LOV-1978-06-09-45. The Odelsting and Lagting votes normally came earlier. The actual vote dates could not be found (lovdata.no returns HTTP 405 to scripts), so the note now gives the Act's official date without claiming a Storting vote on that day.",
+    "Missing context: the Act and its regulations took effect on 1 January 1980, and the Datatilsynet was set up on that date. Sources: Føyen, 'iverksettes sammen med loven pr. 1. januar 1980'; SNL, 'Trådt i kraft 01.01.1980, 01.07.1980'; no.wikipedia, 'opprettet 1. januar 1980'.",
+    "Source 1 (Paperjam) is dated '2026'. The article's datePublished is 2005-01-21, as the lu-1979 record already has it.",
+    "Checked and correct: law name, regulator, Oslo coordinates (Storting). The Paperjam list (Norway among the 1978 laws) is a weak secondary source that the law's year does not depend on."
+   ],
+   "fieldFixes": {
+    "note": "The Personal Data Registers Act (Lov om personregistre m.m.) is dated 9 June 1978 (Act No. 48). It created the Datatilsynet (Data Inspectorate). Together with its regulations it took effect on 1 January 1980, when the Datatilsynet began work."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The author, Arve Føyen, ran the implementation project and was office head at Datatilsynet 1979–82. Caveat: '9. juni 1978' is the Act's official (sanction) date, and 'vedtatt av Stortinget' on that day follows common Norwegian usage rather than the record of the Storting's votes. The article also says the regulations were to take effect 'sammen med loven pr. 1. januar 1980'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2005-01-21",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. Date corrected from '2026' to the article's datePublished of 2005-01-21 (JSON-LD; dateModified 2012-12-04)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Store norske leksikon (Jon Gisle)",
+     "title": "personregisterloven (opphevet)",
+     "date": "2024-11-26",
+     "url": "https://snl.no/personregisterloven",
+     "quote": "Trådt i kraft 01.01.1980, 01.07.1980 Lovdata-ID NLO/lov/1978-06-09-48",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fact box: in force 1 January 1980 (some provisions 1 July 1980); Lovdata ID for the Act of 9 June 1978 No. 48. Full name 'lov om personregistre m.m.'. The page is marked 'Sist oppdatert: 26. november 2024'. --check FOUND."
+    },
+    {
+     "institution": "Wikipedia (no)",
+     "title": "Datatilsynet",
+     "date": "2026",
+     "url": "https://no.wikipedia.org/wiki/Datatilsynet",
+     "quote": "Datatilsynet er et norsk, uavhengig forvaltningsorgan administrativt underordnet Digitaliserings- og forvaltningsdepartementet , opprettet 1. januar 1980.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Datatilsynet is a Norwegian independent administrative body ... established 1 January 1980.' The page lists Helge Seip as the first director (1980–1989). Tertiary source; it agrees with Føyen. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "dk-1978",
+   "status": "FIXED",
+   "issues": [
+    "The only source (Paperjam) says just that Denmark legislated in 1978. It does not name the two Acts or the Registertilsynet, so the law and regulator fields were unsupported.",
+    "Retsinformation serves machine-readable metadata at /eli/lta/1978/293/xml and /294/xml. It confirms Lov nr. 293 'Lov om private registre m.v. (Registerlov)' and Lov nr. 294 'Lov om offentlige myndigheders registre', both signed 1978-06-08 (DiesSigni) and published in Lovtidende A by the Justitsministeriet. The law field now uses the official titles, numbers and date.",
+    "Regulator confirmed by Den Store Danske/lex.dk: 'Registertilsynet var et organ, der tilså, at registerlovene blev overholdt. Efter 2000 afløst af Datatilsynet.' (da.wikipedia says the name lasted to 2002, so the note gives no exact year.)",
+    "The note's statement that only a secondary source was read, because the portal is script-rendered, is out of date now that the primary metadata has been read.",
+    "Source 0 (Paperjam) is dated '2026'. The article's datePublished is 2005-01-21."
+   ],
+   "fieldFixes": {
+    "law": "Lov nr. 293 om private registre m.v. and Lov nr. 294 om offentlige myndigheders registre, both of 8 June 1978 (Private Registers Act and Public Authorities' Registers Act)",
+    "note": "Denmark regulated personal-data registers in two Acts of 8 June 1978, one for the private sector (No. 293) and one for public authorities (No. 294). Both were overseen by the Registertilsynet, which the Datatilsynet replaced under the 2000 Act on Processing of Personal Data."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2005-01-21",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. Date corrected from '2026' to datePublished 2005-01-21. It supports only that Denmark legislated in 1978."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Retsinformation (Civilstyrelsen / Justitsministeriet), Lovtidende A",
+     "title": "Lov om private registre m.v. (Registerlov), lov nr. 293 af 8. juni 1978 - document metadata",
+     "date": "1978-06-08",
+     "url": "https://www.retsinformation.dk/eli/lta/1978/293/xml",
+     "quote": "Lov om private registre m.v. (Registerlov) 1978 1978-06-08",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "XML metadata: DocumentTitle 'Lov om private registre m.v. (Registerlov)', Year 1978, DiesSigni 1978-06-08, Number 293, AnnouncedIn 'Lovtidende A', Ministry Justitsministeriet, Status Historic; amended by Act of 10 June 1987. The quote strings together adjacent element texts, as the fetch tool renders them. The human page (retsinformation.dk/eli/lta/1978/293) is script-rendered. --check FOUND."
+    },
+    {
+     "institution": "Retsinformation (Civilstyrelsen / Justitsministeriet), Lovtidende A",
+     "title": "Lov om offentlige myndigheders registre, lov nr. 294 af 8. juni 1978 - document metadata",
+     "date": "1978-06-08",
+     "url": "https://www.retsinformation.dk/eli/lta/1978/294/xml",
+     "quote": "Lov om offentlige myndigheders registre. 1978 1978-06-08",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "XML metadata: DocumentTitle 'Lov om offentlige myndigheders registre.', Year 1978, DiesSigni 1978-06-08, Number 294, AnnouncedIn 'Lovtidende A'. The quote strings together adjacent element texts. --check FOUND."
+    },
+    {
+     "institution": "Lex.dk / Den Store Danske (Peter Blume)",
+     "title": "Registertilsynet",
+     "date": "2023-06-20",
+     "url": "https://lex.dk/Registertilsynet",
+     "quote": "Registertilsynet var et organ, der tilså, at registerlovene blev overholdt. Efter 2000 afløst af Datatilsynet",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The Registertilsynet was a body that supervised compliance with the registers acts. Replaced after 2000 by the Datatilsynet.' The page says 'Senest ændret: 20. juni 2023'. Lex.dk 'Persondataloven' adds that the 2000 Act 'trådte i kraft i 2000 og afløste de hidtil gældende registerlove' (--check FOUND). --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "lu-1979",
+   "status": "OK",
+   "issues": [
+    "Both quotes were re-fetched and found word for word. The CNPD page gives the official title, says the Act was substantially amended in 1992 and was repealed by the 2002 law. Paperjam, dated correctly at 2005-01-21 per its JSON-LD datePublished, supports prior authorisation by the Minister of Justice on the opinion of a consultative commission.",
+    "The law title and 31 March 1979 date are confirmed. The coordinates are Luxembourg City (Chamber of Deputies). The missing regulator field is reasonable: the 1979 Act used ministerial authorisation plus a consultative commission, and the CNPD came only in 2002.",
+    "The Legilux gazette page (legilux.public.lu/eli/etat/leg/loi/1979/03/31/n1/jo, including the /fr/pdf and /fr/html forms) is script-rendered and could not be read. No primary text was checked."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The page title is 'Textes législatifs n'étant plus en vigueur - Législation - CNPD'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. datePublished 2005-01-21 confirmed from the page's JSON-LD."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "law",
+   "id": "gb-1984",
+   "status": "OK",
+   "issues": [
+    "Both quotes were re-fetched and found word for word. The long title and '[12th July 1984]' (the date of Royal Assent) are on legislation.gov.uk's as-enacted text. The ICO page gives the ten-person Registrar's office in 1984 and the photo caption 'Eric Howe CBE, Data Protection Registrar 1984-1994'.",
+    "The claims that it 'created a Data Protection Registrar' and 'covered only automatically processed information' are both correct. Section 3(1)(a) of the Act as enacted creates 'an officer known as the Data Protection Registrar'. That text is added as a direct statutory source. The coordinates match the Palace of Westminster."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. The page's <title> is 'History of the ICO | ICO'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "The National Archives (legislation.gov.uk)",
+     "title": "Data Protection Act 1984 (as enacted), section 3",
+     "date": "1984-07-12",
+     "url": "https://www.legislation.gov.uk/ukpga/1984/35/enacted",
+     "quote": "an officer known as the Data Protection Registrar",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "s. 3(1): 'For the purposes of this Act there shall be— (a) an officer known as the Data Protection Registrar (in this Act referred to as \"the Registrar\"); and (b) a tribunal known as the Data Protection Tribunal'. s. 3(2): the Registrar is appointed by Letters Patent. --check FOUND."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,349 @@
+{
+  "slice": "surveillance",
+  "chunk": 2,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "gdpr-applies-forced-consent-complaints-2018",
+      "status": "OK",
+      "issues": [
+        "No errors found. All three quotes were re-fetched with a fresh cache and are verbatim. The Article 83(5) quote sits under Article 83, paragraph 5 (the EUR 20m / 4% tier; paragraph 4 is the EUR 10m / 2% tier). The Article 7(3) quote sits under Article 7. The Cellar document is the English OJ L 119, 4.5.2016 text of the Regulation of 27 April 2016.",
+        "The noyb page is dated 2018-05-25 (datePublished 2018-05-25T09:09:22+0200). It names the four authorities: CNIL (Google Android), the Belgian DPA (Instagram), Hamburg (WhatsApp) and the Austrian DSB (Facebook). This matches the source note.",
+        "No source directly supported the 25 May 2018 application date. Article 99(2) of the same document is added as a source."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Article 83(5), the higher fine tier."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND, Article 7(3)."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; page datePublished 2018-05-25."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+          "title": "Regulation (EU) 2016/679, Article 99(2) — Entry into force and application",
+          "date": "2016-04-27",
+          "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+          "quote": "It shall apply from 25 May 2018.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Article 99(2); Article 99(1) sets entry into force on the twentieth day after publication (i.e. 2016). The quote is short but it is the operative date provision."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "carpenter-v-united-states-cell-site-location-2018",
+      "status": "FIXED",
+      "issues": [
+        "Source [0] note locates the quote in 'Opinion of the Court, Part III-B'. In the slip opinion it is the first sentence of Part IV ('IV Having found that the acquisition of Carpenter’s CSLI was a search…'). The source title is corrected to name Part IV.",
+        "The summary overstated the holding as 'acquiring cell-site location information (CSLI) was a Fourth Amendment search' in general. The syllabus holds that 'The Government’s acquisition of Carpenter’s cell-site records was a Fourth Amendment search'. Footnote 3 of the opinion says the Court decides no more than that 'accessing seven days of CSLI constitutes a Fourth Amendment search'.",
+        "'Without a warrant' is accurate but incomplete. The records were obtained with Stored Communications Act court orders (18 U.S.C. §2703(d)) on a 'reasonable grounds' showing, which the Court said 'falls well short of the probable cause required for a warrant'. The summary now says this.",
+        "The 12,898 points, 101 per day and 127 days are from the syllabus and are verbatim. The opinion itself says MetroPCS produced records spanning 127 days and Sprint two more days, 'Altogether … 12,898 location points'. The 127-day span in the syllabus is its own summary. The 5–4 split (Roberts with Ginsburg, Breyer, Sotomayor, Kagan; Kennedy, Thomas, Alito and Gorsuch dissenting) and the decision date of 22 June 2018 are confirmed on the PDF."
+      ],
+      "fieldFixes": {
+        "summary": "Using court orders under the Stored Communications Act — which required only 'reasonable grounds', well short of the probable cause needed for a warrant — prosecutors had obtained from wireless carriers 12,898 location points cataloguing Timothy Carpenter's movements over 127 days, an average of 101 a day. In a 5–4 opinion by Chief Justice Roberts, the Court held that the Government's acquisition of Carpenter's cell-site location information (CSLI) was a Fourth Amendment search — deciding no more than that accessing seven days of CSLI is one — and that the government must generally obtain a warrant supported by probable cause before acquiring such records."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "title": "Carpenter v. United States, 585 U.S. ___ (2018), No. 16–402, slip opinion — Opinion of the Court, Part IV",
+          "note": "Fresh fetch: FOUND. The quote opens Part IV, not Part III-B as the original note said."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND in the syllabus. 'Argued November 29, 2017—Decided June 22, 2018'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Supreme Court of the United States",
+          "title": "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, Part I-B",
+          "date": "2018-06-22",
+          "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+          "quote": "Based on that information, the prosecutors applied for court orders under the Stored Communications Act to obtain cell phone records for petitioner Timothy Carpenter and several other suspects.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "The orders were issued under 18 U.S.C. §2703(d) ('reasonable grounds'), not warrants."
+        },
+        {
+          "institution": "Supreme Court of the United States",
+          "title": "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, Part IV",
+          "date": "2018-06-22",
+          "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+          "quote": "That showing falls well short of the probable cause required for a warrant.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Refers to the Stored Communications Act 'reasonable grounds' showing."
+        },
+        {
+          "institution": "Supreme Court of the United States",
+          "title": "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, footnote 3",
+          "date": "2018-06-22",
+          "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+          "quote": "It is sufficient for our purposes today to hold that accessing seven days of CSLI constitutes a Fourth Amendment search.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "The Court expressly declined to decide whether a shorter period of historical CSLI can be obtained without Fourth Amendment scrutiny."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "california-consumer-privacy-act-signed-2018",
+      "status": "FIXED",
+      "issues": [
+        "Source [1] (Internet Archive copy of the leginfo AB-375 bill history) could not be re-fetched on 2026-09-23. web.archive.org reset the connection on every attempt (6 tries, including the id_ raw variant), and the agent proxy logged ws_closed_mid_exchange. The live leginfo page returned HTTP 502 or timed out. The archive.org availability API does list a snapshot (20260702234430), but the quote could not be read, so the source is set to PENDING.",
+        "The claim itself (Chapter 55, Statutes of 2018; signed 28 June 2018) is confirmed independently from the Attorney General's Initial Statement of Reasons, which is added as a source. Its heading cites '(Stats. 2018, Ch. 55 [AB 375] …)', and its appended economic impact assessment says 'On June 28, 2018, AB 375 passed unanimously and was signed into law.'",
+        "The AG press release quote (signed 28 June 2018; amended by SB 1121 and the 2019 bills; in effect 1 January 2020) was re-fetched and is verbatim. The same release supports the rights to know, delete and opt out. The date, place and coordinates are right."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. The same release lists 'the right to know, the right to delete, and the right to opt-out of the sale of personal information'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "PENDING",
+          "note": "Not re-verified 2026-09-23: web.archive.org reset the connection on every attempt (Errno 104, 6 tries), and live leginfo.legislature.ca.gov returned HTTP 502 or timed out. The Wayback availability API lists a snapshot at 20260702234430 but its text could not be read. Chapter 55 is confirmed instead by the AG ISOR (added source)."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "California Office of the Attorney General",
+          "title": "Initial Statement of Reasons (ISOR): Proposed Adoption of California Consumer Privacy Act Regulations",
+          "date": "2019-10-11",
+          "url": "https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-isor-appendices.pdf",
+          "quote": "(Stats. 2018, Ch. 55 [AB 375], as amended by Stats. 2018, Ch. 735 [SB 1121])",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Heading of the ISOR, which was issued with the Notice of Proposed Rulemaking '(Notice to be Published on October 11, 2019)'. The same PDF's appended Standardized Regulatory Impact Assessment (Berkeley Economic Advising and Research) reads: 'On June 28, 2018, AB 375 passed unanimously and was signed into law.'"
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "zuboff-age-of-surveillance-capitalism-2019",
+      "status": "FIXED",
+      "issues": [
+        "The title 'Shoshana Zuboff names surveillance capitalism' overstates the 2019 book. Zuboff introduced the term in 2014–15: the FAZ essay 'A Digital Declaration: Big Data as Surveillance Capitalism' (15 September 2014) and 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization' (Journal of Information Technology 30(1), March 2015). The Crossref record for the 2015 article is added. Foster and McChesney had also used 'Surveillance Capitalism' as a Monthly Review title in July 2014, with a different meaning. The book popularised the term; it did not name it.",
+        "Both quotes were re-fetched and are verbatim. Hachette gives 'On Sale Jan 15, 2019' for the PublicAffairs hardcover, ISBN 9781610395694. The Guardian/Observer piece is by John Naughton, published 2019-01-20T07:00Z.",
+        "Minor: the summary's quoted words use UK spelling ('behavioural'), taken from The Observer's quotation. The PublicAffairs (US) edition named in the summary spells it 'behavioral'. The wording otherwise matches the book as quoted, and the source note already flags UK spelling."
+      ],
+      "fieldFixes": {
+        "title": "Shoshana Zuboff's The Age of Surveillance Capitalism",
+        "summary": "PublicAffairs published Shoshana Zuboff's The Age of Surveillance Capitalism on 15 January 2019, expanding a concept she had set out in a 2015 journal article, 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization'. Zuboff argued that surveillance capitalism 'unilaterally claims human experience as free raw material for translation into behavioural data', part of which is declared a proprietary 'behavioural surplus' and fabricated into prediction products traded in what she calls 'behavioural futures markets'.",
+        "significance": "Popularised a name for the business model that consent banners were papering over — and framed privacy as a question of who sets the terms for human experience."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND. The byline is John Naughton and article:published_time is 2019-01-20T07:00:14Z."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND ('On Sale' Jan 15, 2019; Publisher PublicAffairs)."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "SAGE Publications (Journal of Information Technology), via Crossref metadata API",
+          "title": "Big other: Surveillance Capitalism and the Prospects of an Information Civilization (Shoshana Zuboff), Journal of Information Technology 30(1): 75–89, doi:10.1057/jit.2015.5",
+          "date": "2015-03",
+          "url": "https://api.crossref.org/works/10.1057/jit.2015.5",
+          "quote": "Surveillance capitalism challenges democratic norms and departs in key ways from the centuries-long evolution of market capitalism.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Last sentence of the article's abstract in the publisher-deposited Crossref record. The title string 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization' is also FOUND on this page. The record gives published-print 2015-03. The SAGE landing page returns 403 to scripts."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "ftc-facebook-5-billion-order-2019",
+      "status": "OK",
+      "issues": [
+        "No errors found. Both quotes were re-fetched and are verbatim. The release also calls the penalty 'the largest ever imposed on any company for violating consumers’ privacy', which supports the significance line.",
+        "The claim about the Cambridge Analytica, Nix and Kogan actions was in the summary without a quote. It is on the same page and is added as a source.",
+        "The locationNote's press conference is confirmed. The page says: 'The FTC hosted an IN-PERSON press conference at FTC Headquarters, 600 Pennsylvania Ave, NW, Washington D.C., on July 24, 2019.'"
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "US Federal Trade Commission",
+          "title": "FTC Imposes $5 Billion Penalty and Sweeping New Privacy Restrictions on Facebook",
+          "date": "2019-07-24",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+          "quote": "In a related, but separate development, the FTC also announced today separate law enforcement actions against data analytics company Cambridge Analytica , its former Chief Executive Officer Alexander Nix, and Aleksandr Kogan, an app developer who worked with the company, alleging they used false and deceptive tactics to harvest personal information from millions of Facebook users.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "The space before the comma is a link boundary in the page text. The same page records the in-person press conference at FTC Headquarters on July 24, 2019."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "cjeu-planet49-pre-ticked-cookie-consent-2019",
+      "status": "OK",
+      "issues": [
+        "No errors found. The operative-part quote is verbatim in point 1 of the English Grand Chamber judgment of 1 October 2019, Case C‑673/17. The reference came from the Bundesgerichtshof.",
+        "The summary's description of Planet49 as 'an online gaming company that had run a promotional lottery' had no quoted support. Paragraph 2 of the judgment says so, and it is added as a source."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND in operative part point 1. The document header reads 'JUDGMENT OF THE COURT (Grand Chamber) 1 October 2019', In Case C‑673/17."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Court of Justice of the European Union (Grand Chamber), via EU Publications Office (Cellar)",
+          "title": "Judgment of 1 October 2019, Planet49, Case C-673/17, EU:C:2019:801 — paragraph 2",
+          "date": "2019-10-01",
+          "url": "https://publications.europa.eu/resource/cellar/3d6585b3-e42f-11e9-9c4e-01aa75ed71a1.0022.05/DOC_1",
+          "quote": "Planet49 GmbH, an online gaming company, concerning the consent of participants in a promotional lottery organised by that company to the transfer of their personal data to the company’s sponsors and partners",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Describes the parties. The Federation is 'Federal Union of Consumer Organisations and Associations — Federation of Consumer Organisations, Germany'."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "google-third-party-cookie-plan-announced-abandoned-2020",
+      "status": "OK",
+      "issues": [
+        "No errors found. All three quotes were re-fetched and are verbatim. The CMA notice is dated 11 June 2021 (Case 50972). It records that the CMA opened its investigation on 7 January 2021 and lists '14 January 2020: Google first announced its intent to remove TPCs'.",
+        "The CMA release decision is dated 17 October 2025. It confirms that the commitments were accepted on 11 February 2022, and gives the 22 July 2024 blog post and the 22 April 2025 announcement. The Privacy Sandbox post is by Anthony Chavez and dated 2024-07-22."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND. The PDF is dated 11 June 2021."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND; the page shows 2024-07-22 and the author Anthony Chavez."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND. The PDF is dated 17 October 2025, and para 2.12 gives 22 April 2025."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "cjeu-schrems-ii-privacy-shield-invalid-2020",
+      "status": "FIXED",
+      "issues": [
+        "The summary's closing line, 'It was Schrems's second successful challenge to the legal basis of EU-US data transfers', is imprecise. The C-311/18 proceedings were brought in the Irish High Court by the Data Protection Commissioner, not by Schrems. Schrems's reformulated complaint targeted Facebook's transfers under the standard contractual clauses, and the Court upheld those clauses. Privacy Shield fell because of the questions the High Court referred. The summary now describes the proceedings accurately and points to Schrems I (6 October 2015, C-362/14, Safe Harbour), with a source added.",
+        "Both quotes were re-fetched and are verbatim. The Privacy Shield quote is operative point 5 and the SCC-validity finding is point 4. 'Delivered in open court in Luxembourg on 16 July 2020.' The press release number (91/20) and title are correct."
+      ],
+      "fieldFixes": {
+        "summary": "On a reference from the Irish High Court in Case C-311/18 — proceedings brought by the Irish Data Protection Commissioner over Max Schrems's complaint against Facebook's transfers of his data to the United States — the Grand Chamber declared Commission Implementing Decision (EU) 2016/1250 on the EU-US Privacy Shield invalid, while holding that the Commission's standard contractual clauses (Decision 2010/87) remained valid. It was the second time a Schrems complaint led the Court to strike down an EU-US transfer framework: in 2015 (Schrems I, Case C-362/14) it had invalidated the Safe Harbour decision."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND as operative point 5. 'Delivered in open court in Luxembourg on 16 July 2020.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND. The header reads 'PRESS RELEASE No 91/20, Luxembourg, 16 July 2020'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Court of Justice of the European Union",
+          "title": "Press Release No 91/20: The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield",
+          "date": "2020-07-16",
+          "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+          "quote": "In a judgment delivered on 6 October 2015, the Court of Justice, before which the High Court (Ireland) had referred questions for a preliminary ruling, declared that decision invalid (‘the Schrems I judgment’).",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "'That decision' is Decision 2000/520 (Safe Harbour), Case C-362/14. The release goes on to say that Schrems's reformulated complaint concerned transfers under the standard data protection clauses in the Annex to Decision 2010/87."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "ccpa-regulations-global-privacy-controls-2020",
+      "status": "FIXED",
+      "issues": [
+        "The significance line 'The first regulation anywhere to make a signal sent by the person's own software legally binding' overstates. GDPR Article 21(5), in force since 2016 and applicable from 25 May 2018, already provided that 'the data subject may exercise his or her right to object by automated means using technical specifications'. California's rule was the first US rule of this kind. The GDPR provision is added as a source.",
+        "The §999.315(c) lettering was checked and is correct for the approved text. The OAL Amended Notice of Approval in Part and Withdrawal in Part (effective 8/14/2020) withdrew proposed §999.315(c), and the FSOR Addendum says 'the subsequent sections re-lettered accordingly'. The cited PDF, which the AG's CCPA regs page labels 'Final Text of Regulations', is the post-withdrawal text: the withdrawn 'minimal steps' clause is absent and the global privacy control duty is (c).",
+        "All three quotes were re-fetched and are verbatim. The CPPA §7025(b)(1) quote was checked in context. The CPPA's rulemaking page confirms: 'On March 29, 2023, the Office of Administrative Law approved the California Privacy Protection Agency’s regulations … The regulations became effective on March 29, 2023.'"
+      ],
+      "fieldFixes": {
+        "significance": "The first US rule to require businesses to honour an opt-out signal sent by the person's own software (the GDPR had already let people object 'by automated means using technical specifications') — the direct precedent for honouring machine-readable, person-proffered terms."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND. This PDF is the approved post-OAL text, linked as 'Final Text of Regulations' on oag.ca.gov/privacy/ccpa/regs; the global privacy control subsection became (c) after the original (c) was withdrawn."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND; the release also says 'The approved regulations go into effect immediately.'"
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch: FOUND in §7025(b)(1). The approval date is confirmed on cppa.ca.gov/regulations/consumer_privacy_act.html."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+          "title": "Regulation (EU) 2016/679, Article 21(5) — Right to object",
+          "date": "2016-04-27",
+          "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+          "quote": "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "An earlier EU provision recognising machine-sent objections. It is cited to qualify the 'first' claim for the California rule."
+        }
+      ]
+    }
+  ]
+}

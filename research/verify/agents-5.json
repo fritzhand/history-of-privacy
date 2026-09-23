@@ -1,0 +1,255 @@
+{
+ "slice": "agents",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "pew-2025-want-more-control-over-ai",
+   "status": "OK",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the Pew page. The page metadata datePublished is 2025-04-03T09:54:29-04:00, and the title is 'How the US Public and AI Experts View Artificial Intelligence'. The method box reads 'we surveyed 5,410 adults from Aug. 12 to Aug. 18, 2024'. The key-findings text also gives 'a separate survey of 1,013 AI experts conducted Aug. 14-Oct. 31, 2024', so the experts' 57% is correctly kept apart from the public's 55%. The value, year (fieldwork 2024) and population are right. Nothing to change."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23; the methodology sentence 'we surveyed 5,410 adults from Aug. 12 to Aug. 18, 2024' is on the same page."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "pew-2026-ai-makes-info-less-secure",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote. The page's chart block directly above the sentence reads 'Less secure / Will not make much difference / Most secure / Not sure / U.S. adults 71% 10% 3% 16%', so the value of 71 is right. The fieldwork sentence 'We surveyed 5,119 U.S. adults from Feb. 17 to 23, 2026' is on the page, and article:published_time is 2026-06-17.",
+    "Minor: the source title's capitalization differs from the page H1, which reads 'Americans and AI 2026: Chatbots, Smart Devices and Views on Impact'. The HTML <title> is 'Americans' Views on AI Chatbots, Smart Devices and AI's Impact'. The title is corrected to the H1."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Americans and AI 2026: Chatbots, Smart Devices and Views on Impact",
+     "note": "--check FOUND 2026-09-23; the 71% chart label sits directly before the quoted sentence in the page text."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "cisco-2024-genai-users-enter-personal-info",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the Cisco newsroom page, which is dated 'SAN JOSE, Calif., October 30, 2024'. The page footnote reads 'surveyed anonymously 2600 consumers in Australia, Brazil, China, France, Germany, India, Italy, Japan, Mexico, Spain, UK, US'. The full report PDF (cisco.com/c/dam/.../cisco-consumer-privacy-report-2024.pdf) says 'Respondents comprised 2600+ adults (18 years and older) in 12 countries', so '2,600+' and 12 countries are right. fetch-text.py gets HTTP 403 from cisco.com for the report; it was read through a WebFetch download and pdfminer, so it is not added as a --check source.",
+    "The report dates the fieldwork: 'As of June 2024, when our survey was conducted'. It confirms the 84% is among Gen AI users: 'Gen AI users seem to be highly aware ... 84% were concerned their data could be shared' (Figure 21, 'Data could be made public' 84%).",
+    "Caveat that belongs in the notes: the 30% headline is not in the report's text. The report's Figure 20 gives higher per-category shares of Gen AI users entering specific data: 'health information' 37%, 'work information' 36%, and '24% to 29%' for financial information, account numbers, religion/ethnicity, name and address. It is hard to reconcile these with only 30% entering 'personal or confidential information including financial and health details'. The value stands as Cisco's own published headline and is flagged, not changed."
+   ],
+   "fieldFixes": {
+    "notes": "84% of Gen AI users in the same survey were concerned their data could be made public. Cisco's own consumer survey (double-blind online panel, fieldwork June 2024, 2,600+ adults in 12 countries); company research, not official statistics. The 30% is Cisco's press-release headline. The full report's category breakdown shows higher shares entering specific data types (health information 37%, work information 36%), so treat the figure as indicative."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23; the press-release footnote gives 2600 consumers in 12 named countries."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "confaide-chatgpt-contextual-leak-rate-2023",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the arXiv abstract page (v1 27 Oct 2023, v2 28 Jun 2024; comments '2024 ICLR Spotlight'). The PDF abstract words it slightly differently ('even commercial models such as GPT-4 and ChatGPT'), but the quote matches the abs page, which is the cited URL.",
+    "The label says 'Share of ConfAIde test cases', which misdescribes the population. The 57% is not a share of all benchmark cases. It is the Tier 4 result only, where the model acts as an AI meeting assistant, and the models were explicitly told to preserve privacy. The paper's introduction says: 'GPT-4 and ChatGPT reveal secrets 22% and 93% of the time in Tier 3, and flow information to inappropriate actors 39% and 57% of the time in Tier 4, even though they are directly instructed to preserve privacy.' Table 4 ('models are used as AI meeting assistants generating meeting summary and personal action items') gives ChatGPT 0.57 and GPT-4 0.39 on the 'Leaks Secret' row for the meeting-summary task. That is the average over 10 runs; the worst-case row is higher at 0.85 and 0.80. Table 5's 'w/o CoT' Tier 4 values (0.39 and 0.57) confirm this. The label, unit and notes are corrected.",
+    "The 'Leakage persisted with privacy-inducing prompts and chain-of-thought reasoning' note is supported by the abstract: 'This leakage persists even when we employ privacy-inducing prompts or chain-of-thought reasoning' (--check FOUND). The models are gpt-4-0613 and gpt-3.5-turbo-0613 (paper footnote)."
+   ],
+   "fieldFixes": {
+    "label": "Share of ConfAIde Tier 4 meeting-assistant outputs in which ChatGPT leaked a secret to people who should not learn it, despite being told to preserve privacy",
+    "unit": "percent of outputs (Tier 4 meeting summaries, average over 10 runs)",
+    "notes": "GPT-4: 39%. In Tier 4 the model acts as an AI meeting assistant writing a meeting summary, and the figure is how often the summary discloses a secret discussed earlier in the meeting. The models were explicitly instructed to preserve privacy. The paper's abstract calls this revealing private information 'in contexts that humans would not'. In Tier 3 (short theory-of-mind scenarios) ChatGPT revealed secrets 93% of the time and GPT-4 22%. Leakage persisted with chain-of-thought prompting. Models tested: gpt-4-0613 and gpt-3.5-turbo-0613."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND on https://arxiv.org/abs/2310.17884 on 2026-09-23."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "arXiv (Cornell University); ICLR 2024",
+     "title": "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory (Mireshghallah et al.), full text",
+     "date": "2024-06-28",
+     "url": "https://arxiv.org/pdf/2310.17884",
+     "quote": "GPT-4 and ChatGPT reveal secrets 22% and 93% of the time in Tier 3, and flow information to inappropriate actors 39% and 57% of the time in Tier 4, even though they are directly instructed to preserve privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23 (v2 PDF). The same PDF has 'Table 4: Overview of metric values for Tier 4, where models are used as AI meeting assistants generating meeting summary and personal action items.' (--check FOUND) and 'This leakage is higher in the meeting summary task compared to the personal action item generation task.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "privacylens-llama3-agent-leak-rate-2024",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the arXiv abstract page (v1 29 Aug 2024; v3 14 Mar 2025; comments 'NeurIPS 2024 Datasets and Benchmarks Track'). Authors Shao, Li, Shi, Liu, Yang.",
+    "The label and notes say the 38.69% is the share of trajectories with a leak, but it is the paper's adjusted leakage rate (LRh), not the raw leakage rate. Table 2's caption: 'LR denotes the leakage rate; LRh denotes the adjusted leakage rate, considering only cases with positive helpfulness scores.' Under the Privacy-Enhancing Prompt, Table 2 gives Llama-3-70B-Instruct LR 39.15 and LRh 38.69, and GPT-4 LR 24.54 and LRh 25.68. The abstract's '25.68% and 38.69% of cases' are the LRh values. The headline is kept but the label, unit and notes now say what it measures, with the raw rates added. The model is Llama-3-70B-Instruct. There are 493 trajectories, and leakage was judged by a Mistral-7B-Instruct-v0.2 classifier validated against human annotators."
+   ],
+   "fieldFixes": {
+    "label": "Share of PrivacyLens agent tasks in which Llama-3-70B leaked sensitive information despite privacy-enhancing instructions (helpfulness-adjusted rate)",
+    "unit": "percent of cases (adjusted leakage rate LRh: counted among agent final actions rated helpful)",
+    "notes": "GPT-4: 25.68%. These are the paper's adjusted leakage rates (LRh), counted only over agent final actions rated helpful. The unadjusted leakage rates with the same privacy-enhancing prompt are 39.15% for Llama-3-70B-Instruct and 24.54% for GPT-4. They are measured over 493 trajectories in which models act as agents carrying out user instructions (e.g. sending emails), not answering probing questions. Leakage was judged by a Mistral-7B classifier validated against human annotators."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND on https://arxiv.org/abs/2409.00138 on 2026-09-23; the figures are LRh values from Table 2 (Privacy-Enhancing Prompt)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "arXiv (Cornell University); NeurIPS 2024 Datasets and Benchmarks",
+     "title": "PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action (Shao et al.), full text, Table 2",
+     "date": "2025-03-14",
+     "url": "https://arxiv.org/pdf/2409.00138",
+     "quote": "LR denotes the leakage rate; LRh denotes the adjusted leakage rate, considering only cases with positive helpfulness scores.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Table 2, Privacy-Enhancing Prompt columns: Llama-3-70B-Instruct LR 39.15 / LRh 38.69; GPT-4 LR 24.54 / LRh 25.68. The same PDF has 'In total, we gather 493 seeds and extend them into 493 expressive vignettes and 493 trajectories.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "agents-cookie-banner-granular-settings-2025",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched https://arxiv.org/pdf/2507.12844 (v2, 12 Nov 2025) on 2026-09-23. The recorded quote joins two passages with '...', so it is not verbatim and --check on the whole string fails. The parts are each FOUND: 'Notably, none of the models accessed granular settings options' and 'for any banner. They either straight up accepted everything or nothing.' (Table 7 interrupts the sentence in the PDF). The quote is replaced with the first verbatim part, and the second is added as its own source.",
+    "Claims checked: three banner designs (non-essential sticky footer, modal blocker, predatory modal); 'For 30 experimental trials per banner variant (10 trials per model)' (FOUND), which makes 90 trials; the Browser Use framework (v0.1.41) with GPT-4o, Claude 3.7 Sonnet and Gemini 2.0 Flash; and 'a faithful clone of the news site of the Tiroler Tageszeitung' (FOUND), which is an Austrian (Tyrol) paper. The value of 0 and the unit are right. Useful context now added to the notes: footnote 14 gives the prompt for these trials as 'Summarize the headline article.' The agents met the banners in passing and were not asked to manage consent.",
+    "Metadata: the arXiv listing title is 'Machine-Readable Ads: Accessibility and Trust Patterns for AI Web Agents interacting with Online Advertisements'. The record's title ('... Behavioral Patterns of AI Web Agents Interacting ...') is the v2 PDF's own title page, which is what the URL serves, so it is kept. One author (Mühle) is at 506 Data & Performance GmbH, Linz, not the University of Applied Sciences Upper Austria; the institution field is adjusted."
+   ],
+   "fieldFixes": {
+    "notes": "GPT-4o, Claude 3.7 Sonnet and Gemini 2.0 Flash were driven through the Browser Use framework. The agents met the banners while asked to 'Summarize the headline article', and they either accepted everything or nothing. Small single-site study (preprint)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Notably, none of the models accessed granular settings options",
+     "institution": "arXiv (Cornell University) - University of Applied Sciences Upper Austria / 506 Data & Performance GmbH",
+     "note": "--check FOUND 2026-09-23 on the v2 PDF. The sentence continues after Table 7 with 'for any banner.' The trial design 'For 30 experimental trials per banner variant (10 trials per model)' is also FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "arXiv (Cornell University) - University of Applied Sciences Upper Austria / 506 Data & Performance GmbH",
+     "title": "Machine-Readable Ads: Accessibility and Behavioral Patterns of AI Web Agents Interacting with Online Advertisements (Nitu, Mühle, Stöckl), section 4.2.1",
+     "date": "2025-11-12",
+     "url": "https://arxiv.org/pdf/2507.12844",
+     "quote": "for any banner. They either straight up accepted everything or nothing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is the end of the sentence 'Notably, none of the models accessed granular settings options ... for any banner', which Table 7 interrupts in the PDF text layer. The same page has 'a faithful clone of the news site of the Tiroler Tageszeitung' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "mcp-published-servers-2025",
+   "status": "OK",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the Linux Foundation press release, which is dated 'SAN FRANCISCO, Dec. 9, 2025' with metadata 2025-12-09T17:00:00. The full headline continues ', Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md'; the shortened title is acceptable. The release puts the launch 'just one year after the release of MCP by Anthropic', which supports the label. Independent corroboration from Anthropic's announcement the same day, 'There are now more than 10,000 active public MCP servers' (--check FOUND), is added. Both are interested parties, and the figure is a self-reported lower bound, as the unit already says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Anthropic",
+     "title": "Donating the Model Context Protocol and establishing the Agentic AI Foundation",
+     "date": "2025-12-09",
+     "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+     "quote": "There are now more than 10,000 active public MCP servers, covering everything from developer tools to Fortune 500 deployments",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23; page date 'Dec 9, 2025'. The same figure comes from the protocol's originator, not an independent count."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "cloudflare-managed-robots-txt-domains-2025",
+   "status": "OK",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the Cloudflare blog (article:published_time 2025-09-24T13:10:00Z, author Will Allen, title 'Giving users choice with Cloudflare's new Content Signals Policy'). The recorded quote alone does not say what managed robots.txt does. The next sentence on the page supports the label's 'tell AI companies not to train': 'they have chosen to instruct companies that they do not want the content on those domains to be used for AI training' (--check FOUND). It is added as a second source. Value, unit and date are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Cloudflare (The Cloudflare Blog)",
+     "title": "Giving users choice with Cloudflare’s new Content Signals Policy",
+     "date": "2025-09-24",
+     "url": "https://blog.cloudflare.com/content-signals-policy/",
+     "quote": "they have chosen to instruct companies that they do not want the content on those domains to be used for AI training",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is the sentence directly after the 3.8 million figure ('By doing so, ...') and states what the managed robots.txt signals."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "uk-adults-never-read-cookie-policies-2026",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched 2026-09-23. --check FOUND for the quote on the ICO page. The report landing page's DC.Date is 'Thursday, January 08, 2026', so the source date is right. The phrase 'survey research' in the quote links to https://ico.org.uk/media2/wwrm3yrh/cookies-omnibus-summary-of-findings.pdf, which gives the underlying survey.",
+    "The year is wrong. That survey's methodology reads 'Savanta interviewed 2,316 UK adults aged 18+ online in March 2024', so the statistic is from 2024, not 2026 (2026 is only the year of the report that cites it). The year is corrected to 2024. The record id still contains '2026'; ids are left unchanged.",
+    "The notes call the figure approximate ('two in five' converted to 40%), but the survey gives it exactly: 'In comparison, two in five (40%) adults never read them.' The survey question is about reading 'the cookies preferences, policies, or settings' when visiting a new website. 56% claim to read them, and 17% always do. The label, unit and notes are corrected, and the primary survey is added as a source."
+   ],
+   "fieldFixes": {
+    "year": 2024,
+    "label": "UK adults who say they never read cookie preferences, policies or settings when visiting a new website",
+    "unit": "percent of UK adults aged 18+",
+    "notes": "Savanta online omnibus survey of 2,316 UK adults, March 2024, commissioned by the ICO. 56% say they read cookie notices at least sometimes and 17% always do. The ICO cites the finding ('two in five') in its January 2026 Tech Futures report on agentic AI, where it argues for agents that read cookie and privacy notices on a user's behalf."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23; 'survey research' links to the Savanta cookies omnibus PDF (fieldwork March 2024)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Information Commissioner's Office (UK) / Savanta",
+     "title": "Cookies Omnibus: Summary of Findings",
+     "date": "2025-03-17",
+     "url": "https://ico.org.uk/media2/wwrm3yrh/cookies-omnibus-summary-of-findings.pdf",
+     "quote": "Over half (56%) of UK adults claim to read the cookies preferences, policies, or settings when visiting a new website, 17% do so always. In comparison, two in five (40%) adults never read them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Methodology on the same PDF: 'Savanta interviewed 2,316 UK adults aged 18+ online in March 2024.' (--check FOUND). The date is the PDF's creation date (17 March 2025); the fieldwork was March 2024."
+    }
+   ]
+  }
+ ]
+}

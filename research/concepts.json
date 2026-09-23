@@ -1,6 +1,6 @@
 {
  "slice": "concepts",
- "notes": "",
+ "notes": "Slice 'concepts': the ideas of privacy (9 concept cards), an 18-regime comparison matrix (jurisdictions), 13 cases where records were turned on people (harms), and 8 popular myths. Method: every quote was captured with tools/fetch-text.py and checked with --check (FOUND) before being marked CONFIRMED; non-English quotes are given in the original with translations in note. Primary texts were preferred (statutes on official portals: publications.europa.eu Cellar for EUR-Lex texts, legislation.gov.uk, uscode.house.gov, govinfo.gov, Texas/Colorado legislature sites, camara.leg.br, npc.gov.cn, meity.gov.in, KLRI, sso.agc.gov.sg, legislation.gov.au, gov.za, ndpc.gov.ng, odpc.go.ke, fedlex; judgments from the BVerfG, Library of Congress U.S. Reports and the Third Circuit). Where a publisher blocked scripted access (EUR-Lex, consilium.europa.eu, projectvrm.org, some law-review repositories) an official mirror or an Internet Archive snapshot was used and the note says so. Field conventions: jurisdictions add 'automatedSignalsProvision' (the provision behind the yes/partial/no rating) and optional 'notes'; concepts add 'displayDate' and 'locationNote'. 'automatedSignals' = 'yes' only where the law obliges controllers to honour a person's automated or machine-readable objection/opt-out; 'partial' for registry-style opt-outs (Do Not Call lists) or consent intermediaries (India's Consent Managers). Known gaps and caveats: Westin's 1967 definition is quoted via Margulis (2003) because the book is in copyright; Nissenbaum is quoted from the 2004 pre-publication manuscript; Solove from a university-hosted copy of the published article. Unverified or approximate: CCPA's 1 Jan 2020 operative date, APPI's 2003/2005 dates and PIPA's 2011 entry-into-force are standard dates not confirmed on a primary page; the Colorado $20,000 penalty is from a law-firm advisory; Korea's 2026 PIPA amendment is from IAPP (secondary); the EU 'data omnibus' (proposed GDPR Art. 88b on machine-readable signals) was still in negotiation — its status at Sept 2026 was not verified from a primary source; Brazil's PL 2338/2023 status after March 2025 not verified. Harms not included for lack of a readable primary source: OPM breach 2015 (House Oversight report PDF is image-only beyond page 1), Grindr's 2018 sharing of HIV status (press only), Clearview AI fines by EU DPAs/ICO (sites blocked or pages withdrawn), the 23andMe Chapter 11 sale (company investor site blocked), Robodebt (Royal Commission site blocked), Target pregnancy-prediction anecdote (single anonymous source in a paywalled NYT article — treated as unverified and left out). The NYT AOL article is listed as PENDING (paywall, HTTP 403).",
  "events": [],
  "concepts": [
   {
@@ -77,7 +77,7 @@
    "name": "The right to be let alone",
    "originator": "Thomas M. Cooley (phrase, 1879); Samuel D. Warren and Louis D. Brandeis (Harvard Law Review, 1890)",
    "year": 1890,
-   "displayDate": "15 December 1890",
+   "displayDate": "1890",
    "place": "Harvard Law Review, Gannett House, Cambridge, Massachusetts",
    "lat": 42.3777,
    "lng": -71.1189,
@@ -92,7 +92,7 @@
      "quote": "the right to life has come to mean the right to enjoy life--the right to be let alone, the right to liberty secures the exercise of extensive civil privileges",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Originally published at 4 Harv. L. Rev. 193 (dated 15 December 1890)."
+     "note": "Originally published at 4 Harv. L. Rev. 193 (1890); the issue is dated 15 December 1890 (JSTOR record, not read)."
     },
     {
      "institution": "Harvard Law Review, vol. 4, no. 5 (reproduced by the Louis D. Brandeis School of Law Library, University of Louisville)",
@@ -279,7 +279,7 @@
    "lat": 39.9536,
    "lng": -75.1927,
    "definition": "In the taxonomy that follows, there are four basic groups of harmful activities: (1) information collection, (2) information processing, (3) information dissemination, and (4) invasion.",
-   "plainSummary": "Instead of one definition, Solove maps sixteen kinds of harmful activity — from surveillance and aggregation to exclusion and decisional interference — grouped by where in the data's life they occur.",
+   "plainSummary": "Instead of one definition, Solove maps the kinds of activity that cause privacy harm — from surveillance and aggregation to exclusion and decisional interference — in four groups: collection, processing, dissemination and invasion.",
    "sources": [
     {
      "institution": "University of Pennsylvania Law Review, vol. 154, no. 3 (copy hosted by Yale University, Department of Computer Science)",
@@ -348,7 +348,1849 @@
    "locationNote": "ProjectVRM is hosted by the Berkman Klein Center; Searls later worked from the Ostrom Workshop, Indiana University, Bloomington."
   }
  ],
- "jurisdictions": [],
- "harms": [],
- "myths": []
+ "jurisdictions": [
+  {
+   "id": "eu-gdpr",
+   "region": "European Union (27 member states; also EEA)",
+   "law": "General Data Protection Regulation, Regulation (EU) 2016/679",
+   "enacted": 2016,
+   "inForce": 2018,
+   "regulator": "National data protection authorities, coordinated through the European Data Protection Board",
+   "maxPenalty": "Up to €20 million or 4% of total worldwide annual turnover of the preceding year, whichever is higher (Art. 83(5))",
+   "automatedSignals": "yes",
+   "automatedSignalsProvision": "Art. 21(5): in information-society services the data subject 'may exercise his or her right to object by automated means using technical specifications'. The Commission's Digital Omnibus proposal (COM(2025) 837, 19 Nov 2025) would add Art. 88b requiring controllers' online interfaces to accept consent, refusal and objection 'through automated and machine-readable means' once standards exist; that 'data omnibus' was still being negotiated when this was compiled (status not independently verified).",
+   "aiRules": "AI Act, Regulation (EU) 2024/1689 (general application 2 Aug 2026); the 2026 'AI omnibus' (final Council approval 29 June 2026) moved high-risk obligations to 2 Dec 2027 (stand-alone systems) and 2 Aug 2028 (AI embedded in products). GDPR Art. 22 separately limits decisions based solely on automated processing.",
+   "sources": [
+    {
+     "institution": "Publications Office of the European Union (Official Journal L 119, 4 May 2016)",
+     "title": "Regulation (EU) 2016/679 (General Data Protection Regulation), Art. 21(5)",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Publications Office of the European Union (Official Journal L 119, 4 May 2016)",
+     "title": "Regulation (EU) 2016/679 (General Data Protection Regulation), Art. 83(5)",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "Infringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Publications Office of the European Union (Official Journal L 119, 4 May 2016)",
+     "title": "Regulation (EU) 2016/679 (General Data Protection Regulation), Art. 99(2)",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "It shall apply from 25 May 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Publications Office of the European Union (Official Journal L 119, 4 May 2016)",
+     "title": "Regulation (EU) 2016/679 (General Data Protection Regulation), Art. 22(1)",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "The data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Council of the European Union (document ST 15698/25, transmitting COM(2025) 837 final)",
+     "title": "Proposal for a Regulation … as regards the simplification of the digital legislative framework (Digital Omnibus) — proposed Article 88b GDPR",
+     "date": "2025-11-20",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
+     "quote": "Controllers shall ensure that their online interfaces allow data subjects to: ... decline a request for consent and exercise the right to object pursuant to Article 21(2) through automated and machine-readable means.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Proposal only. Later negotiating status of the data-protection part of the omnibus was not verified from a primary source."
+    },
+    {
+     "institution": "Publications Office of the European Union (Official Journal, L series, 12 July 2024)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Art. 113",
+     "date": "2024-07-12",
+     "url": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "It shall apply from 2 August 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Council of the European Union (press release, via Internet Archive snapshot of 20 Sept 2026)",
+     "title": "Artificial Intelligence: Council gives final green light to simplify and streamline rules",
+     "date": "2026-06-29",
+     "url": "https://web.archive.org/web/20260920015855id_/https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+     "quote": "the new application dates would be 2 December 2027 for stand-alone high-risk AI systems and 2 August 2028 for high-risk AI systems embedded in products.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "consilium.europa.eu blocks scripted access; read through the Internet Archive."
+    }
+   ]
+  },
+  {
+   "id": "uk-gdpr-duaa",
+   "region": "United Kingdom",
+   "law": "UK GDPR and Data Protection Act 2018, as amended by the Data (Use and Access) Act 2025",
+   "enacted": 2018,
+   "inForce": 2018,
+   "regulator": "Information Commissioner's Office (to be replaced by a corporate body, the Information Commission, under DUAA 2025 s.117)",
+   "maxPenalty": "Up to £17.5 million or 4% of total worldwide annual turnover, whichever is higher (UK GDPR Art. 83(5))",
+   "automatedSignals": "yes",
+   "automatedSignalsProvision": "UK GDPR Art. 21(5) keeps the EU text: the right to object 'by automated means using technical specifications'.",
+   "aiRules": "No AI statute. DUAA 2025 s.80 replaces UK GDPR Art. 22 with Arts. 22A–22D: solely automated 'significant decisions' are allowed with safeguards, but restricted where special-category data are involved.",
+   "notes": "DPA 2018 received Royal Assent in May 2018; the UK GDPR is the retained, amended text of the EU GDPR. DUAA 2025 received Royal Assent on 19 June 2025 and is being commenced in stages.",
+   "sources": [
+    {
+     "institution": "legislation.gov.uk (The National Archives)",
+     "title": "UK GDPR, Article 21 (Right to object)",
+     "date": "2025",
+     "url": "https://www.legislation.gov.uk/eur/2016/679/article/21",
+     "quote": "the data subject may exercise his or her right to object by automated means using technical specifications",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "legislation.gov.uk (The National Archives)",
+     "title": "UK GDPR, Article 83 (General conditions for imposing administrative fines)",
+     "date": "2025",
+     "url": "https://www.legislation.gov.uk/eur/2016/679/article/83",
+     "quote": "be subject to administrative fines up to [ F5 £17,500,000 ] , or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "UK Parliament / legislation.gov.uk",
+     "title": "Data (Use and Access) Act 2025 (c. 18), as enacted",
+     "date": "2025-06-19",
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/enacted",
+     "quote": "[19th June 2025]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "UK Parliament / legislation.gov.uk",
+     "title": "Data (Use and Access) Act 2025, section 80 (Automated decision-making)",
+     "date": "2025-06-19",
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/section/80/enacted",
+     "quote": "For Article 22 of the UK GDPR (automated individual decision-making, including profiling) substitute",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "UK Parliament / legislation.gov.uk",
+     "title": "Data (Use and Access) Act 2025, section 117 (The Information Commission)",
+     "date": "2025-06-19",
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/section/117/enacted",
+     "quote": "A body corporate called the Information Commission is established.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "us-federal-ftc",
+   "region": "United States (federal)",
+   "law": "No comprehensive federal privacy statute; Federal Trade Commission Act s.5 (15 U.S.C. 45) plus sectoral laws such as the Video Privacy Protection Act (1988)",
+   "enacted": 1914,
+   "inForce": 1914,
+   "regulator": "Federal Trade Commission (plus sectoral regulators)",
+   "maxPenalty": "Civil penalty of $53,088 per violation for knowing violations of FTC trade-regulation rules or of final FTC orders (2025 level, kept unchanged for 2026)",
+   "automatedSignals": "partial",
+   "automatedSignalsProvision": "Only registry-style opt-outs: the National Do Not Call Registry is a list telemarketers must respect; there is no federal duty to honour a browser or agent-sent privacy signal.",
+   "aiRules": "No general federal AI statute. The TAKE IT DOWN Act (Pub. L. 119-12, 19 May 2025) requires covered platforms to remove non-consensual intimate images, including AI 'digital forgeries', within 48 hours of a valid request.",
+   "sources": [
+    {
+     "institution": "Office of the Law Revision Counsel, U.S. House of Representatives",
+     "title": "15 U.S.C. 45 — Unfair methods of competition unlawful; prevention by Commission",
+     "date": "2026",
+     "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim",
+     "quote": "Unfair methods of competition in or affecting commerce, and unfair or deceptive acts or practices in or affecting commerce, are hereby declared unlawful.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Office of the Law Revision Counsel, U.S. House of Representatives",
+     "title": "15 U.S.C. 45 — source credits",
+     "date": "2026",
+     "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim",
+     "quote": "Sept. 26, 1914, ch. 311, §5, 38 Stat. 719",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The 'unfair or deceptive acts or practices' language was added by the Wheeler-Lea Act of 21 March 1938."
+    },
+    {
+     "institution": "Federal Trade Commission (Federal Register, via govinfo.gov)",
+     "title": "Adjustments to Civil Penalty Amounts (FR Doc. 2025-01361)",
+     "date": "2025-01-17",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-17/pdf/2025-01361.pdf",
+     "quote": "15 U.S.C. 45(m)(1)(A) (knowing violation of rule respecting unfair or deceptive acts or practices)—Increase from $51,744 to $53,088;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Trade Commission (Federal Register, via govinfo.gov)",
+     "title": "Civil Penalty Inflation Adjustments (FR Doc. 2026-18853)",
+     "date": "2026-09-15",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-15/pdf/2026-18853.pdf",
+     "quote": "civil penalty amounts will remain unchanged during 2026. The FTC will continue to apply the 2025 civil penalty levels.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Trade Commission, Consumer Advice",
+     "title": "National Do Not Call Registry FAQs",
+     "date": "2026",
+     "url": "https://consumer.ftc.gov/articles/national-do-not-call-registry-faqs",
+     "quote": "The Registry is a list that tells registered telemarketers what numbers not to call — but it doesn’t block calls.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Government Publishing Office (govinfo.gov)",
+     "title": "Public Law 119-12 (TAKE IT DOWN Act), 139 Stat. 55",
+     "date": "2025-05-19",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf",
+     "quote": "a covered platform shall, as soon as possible, but not later than 48 hours after receiving such request",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "us-california-ccpa",
+   "region": "California, United States",
+   "law": "California Consumer Privacy Act of 2018, as amended by the California Privacy Rights Act (Proposition 24, 2020)",
+   "enacted": 2018,
+   "inForce": 2020,
+   "regulator": "California Privacy Protection Agency and the California Attorney General",
+   "maxPenalty": "Administrative fines up to $2,663 per violation, or $7,988 per intentional violation or violation involving known minors under 16 (CPI-adjusted from 1 Jan 2025; Civ. Code 1798.155)",
+   "automatedSignals": "yes",
+   "automatedSignalsProvision": "CCPA Regulations, 11 CCR §7025(b): a business that sells or shares personal information 'shall process any opt-out preference signal' meeting the requirements (e.g., Global Privacy Control) as a valid opt-out request.",
+   "aiRules": "CPPA regulations on automated decisionmaking technology (ADMT), risk assessments and cybersecurity audits were approved in September 2025, took effect 1 Jan 2026, and require ADMT compliance from 1 Jan 2027.",
+   "notes": "The CCPA's original operative date of 1 January 2020 was not confirmed on the pages quoted here.",
+   "sources": [
+    {
+     "institution": "California Privacy Protection Agency (privacy.ca.gov)",
+     "title": "CCPA Regulations (Cal. Code Regs. tit. 11, §7000 et seq.), effective 1 Jan 2026 — §7025 Opt-out Preference Signals",
+     "date": "2026-01-01",
+     "url": "https://privacy.ca.gov/wp-content/uploads/sites/357/2026/03/ccpa_regulations_eff_20260101-1.pdf",
+     "quote": "A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "Updated Monetary Thresholds in CCPA (effective 1/1/2025; posted 12/17/2024)",
+     "date": "2024-12-17",
+     "url": "https://cppa.ca.gov/regulations/cpi_adjustment.html",
+     "quote": "Not more than $2,663 for each violation or $7,988 for each intentional violation and violations involving the personal information of consumers whom the violator has actual knowledge are under 16 years of age.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Department of Justice, Office of the Attorney General",
+     "title": "California Consumer Privacy Act (CCPA)",
+     "date": "2026",
+     "url": "https://oag.ca.gov/privacy/ccpa",
+     "quote": "In November of 2020, California voters approved Proposition 24, the CPRA , which amended the CCPA and added new additional privacy protections that began on January 1, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy",
+     "date": "2025-09-23",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html",
+     "quote": "Businesses that use ADMT to make significant decisions must comply with the ADMT requirements beginning January 1, 2027.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "us-colorado-cpa",
+   "region": "Colorado, United States",
+   "law": "Colorado Privacy Act (SB 21-190; C.R.S. 6-1-1301 et seq.)",
+   "enacted": 2021,
+   "inForce": 2023,
+   "regulator": "Colorado Attorney General and district attorneys (no private right of action)",
+   "maxPenalty": "A violation is a deceptive trade practice under the Colorado Consumer Protection Act; civil penalties reported as up to $20,000 per violation",
+   "automatedSignals": "yes",
+   "automatedSignalsProvision": "C.R.S. 6-1-1306(1)(a)(IV)(B): from 1 July 2024 controllers 'shall allow' consumers to opt out of targeted advertising and sale through a user-selected universal opt-out mechanism meeting the Attorney General's technical specifications; Global Privacy Control was the first mechanism recognised. A consumer's later consent given on a web page overrides the signal (subsection (C)).",
+   "aiRules": "SB 26-189 repealed and re-enacted the 2024 Colorado AI Act (SB 24-205) as a narrower law on automated decision-making technology in consequential decisions, taking effect 1 Jan 2027.",
+   "sources": [
+    {
+     "institution": "Colorado General Assembly",
+     "title": "Senate Bill 21-190 (signed act)",
+     "date": "2021-07-07",
+     "url": "https://leg.colorado.gov/sites/default/files/2021a_190_signed.pdf",
+     "quote": "EFFECTIVE JULY 1, 2024, A CONTROLLER THAT PROCESSES PERSONAL DATA FOR PURPOSES OF TARGETED ADVERTISING OR THE SALE OF PERSONAL DATA SHALL ALLOW CONSUMERS TO EXERCISE THE RIGHT TO OPT OUT",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Colorado General Assembly",
+     "title": "Senate Bill 21-190 (signed act) — enforcement",
+     "date": "2021-07-07",
+     "url": "https://leg.colorado.gov/sites/default/files/2021a_190_signed.pdf",
+     "quote": "FOR PURPOSES ONLY OF ENFORCEMENT OF THIS PART 13 BY THE ATTORNEY GENERAL OR A DISTRICT ATTORNEY, A VIOLATION OF THIS PART 13 IS A DECEPTIVE TRADE PRACTICE.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Colorado Attorney General (coag.gov)",
+     "title": "Colorado Privacy Act (CPA)",
+     "date": "2026",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Alston & Bird LLP (law-firm advisory)",
+     "title": "Colorado Privacy Act Becomes Third Comprehensive State Privacy Act in the United States",
+     "date": "2021-07",
+     "url": "https://www.alston.com/en/insights/publications/2021/07/colorado-privacy-act",
+     "quote": "businesses that violate the Act may face liability for deceptive acts (and a civil penalty of $20,000 per violation), enforced by the Colorado attorney general and/or Colorado state district attorneys.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary source for the penalty amount, which comes from C.R.S. 6-1-112 (not read directly)."
+    },
+    {
+     "institution": "Colorado General Assembly",
+     "title": "Senate Bill 26-189 (signed act), section 5",
+     "date": "2026",
+     "url": "https://leg.colorado.gov/bill_files/116489/download",
+     "quote": "Except as otherwise provided in subsection (2) of this section, this act takes effect January 1, 2027.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "us-texas-tdpsa",
+   "region": "Texas, United States",
+   "law": "Texas Data Privacy and Security Act (HB 4, 88th Legislature, 2023; Bus. & Com. Code ch. 541)",
+   "enacted": 2023,
+   "inForce": 2024,
+   "regulator": "Texas Attorney General",
+   "maxPenalty": "Civil penalty up to $7,500 per violation (s.541.155)",
+   "automatedSignals": "yes",
+   "automatedSignalsProvision": "s.541.055(e), in force 1 Jan 2025: a consumer may designate an 'authorized agent' to opt out on their behalf using a technology such as a browser setting or extension or a global device setting — the statute treats the signal as an agent acting for the person.",
+   "aiRules": "Texas Responsible Artificial Intelligence Governance Act (HB 149, 89th Legislature) took effect 1 Jan 2026.",
+   "sources": [
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 4 (88R), enrolled version — s.541.055(e)",
+     "date": "2023",
+     "url": "https://capitol.texas.gov/tlodocs/88R/billtext/html/HB00004F.htm",
+     "quote": "A consumer may designate an authorized agent using a technology, including a link to an Internet website, an Internet browser setting or extension, or a global setting on an electronic device, that allows the consumer to indicate the consumer's intent to opt out of the processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 4 (88R), enrolled version — s.541.155",
+     "date": "2023",
+     "url": "https://capitol.texas.gov/tlodocs/88R/billtext/html/HB00004F.htm",
+     "quote": "an amount not to exceed $7,500 for each violation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 4 (88R), enrolled version — effective dates",
+     "date": "2023",
+     "url": "https://capitol.texas.gov/tlodocs/88R/billtext/html/HB00004F.htm",
+     "quote": "by this Act, takes effect January 1, 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 149 (89R), enrolled version",
+     "date": "2025",
+     "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm",
+     "quote": "This Act may be cited as the Texas Responsible Artificial Intelligence Governance Act.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 149 (89R), enrolled version — section 10",
+     "date": "2025",
+     "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm",
+     "quote": "SECTION 10. This Act takes effect January 1, 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "canada-pipeda",
+   "region": "Canada (federal, private sector)",
+   "law": "Personal Information Protection and Electronic Documents Act (S.C. 2000, c. 5); proposed successor: Protecting Privacy and Consumer Data Act (Bill C-36)",
+   "enacted": 2000,
+   "inForce": 2001,
+   "regulator": "Office of the Privacy Commissioner of Canada",
+   "maxPenalty": "Fines up to C$100,000 on indictment for specified offences such as obstructing the Commissioner (s.28)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "PIPEDA has no provision on automated or machine-readable opt-out signals.",
+   "aiRules": "No federal AI statute. Bill C-27, which bundled privacy reform with an AI act, failed; Bill C-36 (first reading 15 June 2026) would replace PIPEDA's privacy rules and add disclosure and transparency duties for automated decision systems.",
+   "sources": [
+    {
+     "institution": "Department of Justice Canada (Justice Laws Website)",
+     "title": "Personal Information Protection and Electronic Documents Act, s.28",
+     "date": "2026",
+     "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/page-5.html",
+     "quote": "an indictable offence and liable to a fine not exceeding $100,000.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Department of Justice Canada (Justice Laws Website)",
+     "title": "Personal Information Protection and Electronic Documents Act — assent and commencement notes",
+     "date": "2026",
+     "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/page-1.html",
+     "quote": "Assented to 2000-04-13",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Parliament of Canada (LEGISinfo)",
+     "title": "Bill C-36, 45th Parliament, 1st session — status data",
+     "date": "2026-06-15",
+     "url": "https://www.parl.ca/legisinfo/en/bill/45-1/c-36/json",
+     "quote": "An Act to enact the Protecting Privacy and Consumer Data Act, to amend the Personal Information Protection and Electronic Documents Act and to make amendments to other Acts",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "LEGISinfo records first reading in the House of Commons on 15 June 2026 (sponsor: Evan Solomon)."
+    },
+    {
+     "institution": "Blake, Cassels & Graydon LLP (law-firm analysis)",
+     "title": "Third Time's the Charm? Canada's Latest Approach to Reform the Federal Private-Sector Privacy Framework",
+     "date": "2026-06",
+     "url": "https://www.blakes.com/insights/third-time-s-the-charm-canada-s-latest-approach-to-reform-the-federal-private-sector-privacy-framew/",
+     "quote": "While Bill C-36 does not include as comprehensive a framework for governing artificial intelligence (AI) as we saw in Bill C-27, it does create disclosure and transparency obligations for organizations using automated decision systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "notes": "PIPEDA s.4(3) was in force 1 January 2001 (SI/2000-29); the Act applied in stages to 2004."
+  },
+  {
+   "id": "brazil-lgpd",
+   "region": "Brazil",
+   "law": "Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709, de 14 de agosto de 2018)",
+   "enacted": 2018,
+   "inForce": 2020,
+   "regulator": "Agência Nacional de Proteção de Dados (ANPD; created as the 'Autoridade' in 2018/2019 and renamed an agency by Medida Provisória nº 1.317/2025)",
+   "maxPenalty": "Simple fine up to 2% of the group's Brazilian revenue in the prior year, capped at R$50 million per infraction (Art. 52, II); sanctions applicable from 1 Aug 2021",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable opt-out or consent signals.",
+   "aiRules": "Art. 20 gives a right to request review of decisions taken solely by automated processing, including profiling. The AI bill PL 2338/2023 passed the Senate on 10 Dec 2024 and was sent to the Chamber of Deputies on 17 Mar 2025 (final status at Sept 2026 not verified).",
+   "sources": [
+    {
+     "institution": "Câmara dos Deputados (Legislação Informatizada) — updated text",
+     "title": "Lei nº 13.709/2018, Art. 52, II",
+     "date": "2026",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.pdf",
+     "quote": "multa simples, de até 2% (dois por cento) do faturamento da pessoa jurídica de direito privado, grupo ou conglomerado no Brasil no seu último exercício, excluídos os tributos, limitada, no total, a R$ 50.000.000,00 (cinquenta milhões de reais) por infração",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'a simple fine of up to 2% of the revenue of the private legal entity, group or conglomerate in Brazil in its last financial year, excluding taxes, limited in total to R$50,000,000 per infraction'."
+    },
+    {
+     "institution": "Câmara dos Deputados (Legislação Informatizada) — updated text",
+     "title": "Lei nº 13.709/2018, Art. 65, I-A",
+     "date": "2026",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.pdf",
+     "quote": "dia 1º de agosto de 2021, quanto aos arts. 52, 53 e 54;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '1 August 2021, as regards Arts. 52, 53 and 54' (the sanctions articles). Most other provisions took effect in September 2020 (date set by later legislation; not quoted here)."
+    },
+    {
+     "institution": "Câmara dos Deputados (Legislação Informatizada) — updated text",
+     "title": "Lei nº 13.709/2018, Art. 20",
+     "date": "2026",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.pdf",
+     "quote": "O titular dos dados tem direito a solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The data subject has the right to request review of decisions taken solely on the basis of automated processing of personal data that affect his or her interests'."
+    },
+    {
+     "institution": "Câmara dos Deputados (Legislação Informatizada) — updated text",
+     "title": "Lei nº 13.709/2018, Art. 55-A",
+     "date": "2026",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.pdf",
+     "quote": "Fica criada a Agência Nacional de Proteção de Dados (ANPD)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The National Data Protection Agency (ANPD) is hereby created'."
+    },
+    {
+     "institution": "Senado Federal",
+     "title": "PL 2338/2023 (artificial intelligence) — legislative history",
+     "date": "2026",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157233",
+     "quote": "17/03/2025 - REMETIDA À CÂMARA DOS DEPUTADOS",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'sent to the Chamber of Deputies'. The same page records plenary approval on 10/12/2024."
+    }
+   ]
+  },
+  {
+   "id": "china-pipl",
+   "region": "People's Republic of China",
+   "law": "Personal Information Protection Law (个人信息保护法)",
+   "enacted": 2021,
+   "inForce": 2021,
+   "regulator": "Cyberspace Administration of China (national coordinator) with sectoral State Council departments",
+   "maxPenalty": "For serious violations: up to ¥50 million or 5% of the prior year's turnover, plus suspension or licence revocation; ¥100,000–1 million fines on responsible managers (Art. 66)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No machine-readable signal; Art. 24 gives individuals a right to refuse decisions made solely by automated decision-making that significantly affect their rights.",
+   "aiRules": "Measures for Labelling AI-Generated and Synthetic Content (CAC and three other ministries) in force 1 Sept 2025, alongside earlier generative-AI and algorithm rules.",
+   "notes": "Adopted by the NPC Standing Committee on 20 Aug 2021; in force 1 Nov 2021.",
+   "sources": [
+    {
+     "institution": "National People's Congress of the PRC (npc.gov.cn)",
+     "title": "中华人民共和国个人信息保护法 (Personal Information Protection Law), Art. 66",
+     "date": "2021-08-20",
+     "url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+     "quote": "并处五千万元以下或者上一年度营业额百分之五以下罚款",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '...and impose a fine of up to 50 million yuan or up to 5% of the previous year's turnover'."
+    },
+    {
+     "institution": "National People's Congress of the PRC (npc.gov.cn)",
+     "title": "Personal Information Protection Law, Art. 24",
+     "date": "2021-08-20",
+     "url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+     "quote": "个人有权要求个人信息处理者予以说明，并有权拒绝个人信息处理者仅通过自动化决策的方式作出决定",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'the individual has the right to require the handler to explain, and has the right to refuse the personal information handler making decisions solely through automated decision-making'."
+    },
+    {
+     "institution": "National People's Congress of the PRC (npc.gov.cn)",
+     "title": "Personal Information Protection Law, Art. 74",
+     "date": "2021-08-20",
+     "url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+     "quote": "本法自2021年11月1日起施行。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'This Law takes effect on 1 November 2021.'"
+    },
+    {
+     "institution": "National People's Congress of the PRC (npc.gov.cn)",
+     "title": "Personal Information Protection Law, Art. 60",
+     "date": "2021-08-20",
+     "url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+     "quote": "国家网信部门负责统筹协调个人信息保护工作和相关监督管理工作。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The national cyberspace department is responsible for overall planning and coordination of personal information protection and related supervision.'"
+    },
+    {
+     "institution": "Cyberspace Administration of China (cac.gov.cn)",
+     "title": "关于印发《人工智能生成合成内容标识办法》的通知 (Measures for Labelling AI-Generated Synthetic Content)",
+     "date": "2025-03-14",
+     "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+     "quote": "第十四条 本办法自2025年9月1日起施行。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Article 14: These Measures take effect on 1 September 2025.'"
+    }
+   ]
+  },
+  {
+   "id": "india-dpdp",
+   "region": "India",
+   "law": "Digital Personal Data Protection Act, 2023 (No. 22 of 2023) and DPDP Rules, 2025",
+   "enacted": 2023,
+   "inForce": 2025,
+   "regulator": "Data Protection Board of India",
+   "maxPenalty": "Up to ₹250 crore (for failure to take reasonable security safeguards; Schedule)",
+   "automatedSignals": "partial",
+   "automatedSignalsProvision": "Consent Managers (s.2(g), s.6(7)–(9)): registered intermediaries through which a person gives, manages, reviews and withdraws consent via an 'accessible, transparent and interoperable platform' — a person-side, machine-mediated consent channel, though not an open signal standard.",
+   "aiRules": "No AI statute; MeitY unveiled the India AI Governance Guidelines, a governance framework rather than binding law, in November 2025.",
+   "notes": "Act assented 11 Aug 2023; Rules notified 14 Nov 2025 with an 18-month phased compliance period.",
+   "sources": [
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India copy)",
+     "title": "The Digital Personal Data Protection Act, 2023 — s.2(g)",
+     "date": "2023-08-11",
+     "url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
+     "quote": "“Consent Manager” means a person registered with the Board, who acts as a single point of contact to enable a Data Principal to give, manage, review and withdraw her consent through an accessible, transparent and interoperable platform;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India copy)",
+     "title": "The Digital Personal Data Protection Act, 2023 — Schedule",
+     "date": "2023-08-11",
+     "url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
+     "quote": "May extend to two hundred and fifty crore rupees.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India copy)",
+     "title": "The Digital Personal Data Protection Act, 2023 — s.2(c)",
+     "date": "2023-08-11",
+     "url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
+     "quote": "“Board” means the Data Protection Board of India established by the Central",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Press Information Bureau, Government of India",
+     "title": "DPDP Rules, 2025 Notified (backgrounder)",
+     "date": "2025-11-17",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf",
+     "quote": "The Rules introduce an eighteen-month period for phased compliance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Press Information Bureau, Government of India",
+     "title": "MeitY Unveils India AI Governance Guidelines under IndiaAI Mission",
+     "date": "2025-11-05",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2186639",
+     "quote": "The Ministry of Electronics and Information Technology (MeitY), under the IndiaAI Mission, today unveiled the India AI Governance Guidelines, a comprehensive framework to ensure safe, inclusive, and responsible AI adoption across sectors.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "japan-appi",
+   "region": "Japan",
+   "law": "Act on the Protection of Personal Information (APPI, Act No. 57 of 2003; major amendments 2015, 2020, 2021)",
+   "enacted": 2003,
+   "inForce": 2005,
+   "regulator": "Personal Information Protection Commission (PPC)",
+   "maxPenalty": "Criminal fines up to ¥100 million on corporations for violating PPC orders or unlawfully providing personal-information databases (2020 amendment; Art. 184 in the current numbering)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable signals.",
+   "aiRules": "Act on the Promotion of Research, Development and Utilization of AI-Related Technologies (Act No. 53 of 2025), enacted 28 May 2025 and promulgated 4 June 2025 — a promotion framework rather than a regulatory code.",
+   "notes": "Enactment (2003) and full entry into force (1 April 2005) are standard dates not confirmed on the pages quoted here.",
+   "sources": [
+    {
+     "institution": "Personal Information Protection Commission, Japan",
+     "title": "Amended Act on the Protection of Personal Information (Tentative Translation), June 2020",
+     "date": "2020-06",
+     "url": "https://www.ppc.go.jp/files/pdf/APPI_english.pdf",
+     "quote": "(i) Article 83 and Article 84 a fine of not more than 100 million yen",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Corporate-liability provision (then Art. 87) of the 2020 amendment; renumbered in the 2022 consolidation."
+    },
+    {
+     "institution": "National Diet Library, Japanese Law Index (日本法令索引)",
+     "title": "人工知能関連技術の研究開発及び活用の推進に関する法律 (令和7年法律第53号)",
+     "date": "2025-06-04",
+     "url": "https://hourei.ndl.go.jp/simple/detail?lawId=0000168047&current=-1",
+     "quote": "成立年月日：令和7年5月28日",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Date enacted: 28 May 2025 (Reiwa 7)'. The same record gives promulgation on 令和7年6月4日 (4 June 2025)."
+    }
+   ]
+  },
+  {
+   "id": "south-korea-pipa",
+   "region": "Republic of Korea",
+   "law": "Personal Information Protection Act (Act No. 10465 of 2011; overhauled 2023; amended 2026)",
+   "enacted": 2011,
+   "inForce": 2011,
+   "regulator": "Personal Information Protection Commission (PIPC)",
+   "maxPenalty": "Penalty surcharge up to 3% of total sales (Art. 64-2); a 2026 amendment (promulgated 10 Mar 2026, in force 11 Sept 2026) allows up to 10% of total revenue for severe or repeated violations",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No machine-readable signal; Art. 37-2 (2023) lets a data subject object to, or demand an explanation of, a decision made by a completely automated system, including AI.",
+   "aiRules": "Framework Act on AI Development and Establishment of a Foundation for Trustworthiness, promulgated 21 Jan 2025, in force 22 Jan 2026 (duties for 'high-impact' AI and labelling of generative AI).",
+   "notes": "Entry into force of the original 2011 Act (30 Sept 2011) not confirmed on the pages quoted.",
+   "sources": [
+    {
+     "institution": "Korea Legislation Research Institute (official English translation service)",
+     "title": "Personal Information Protection Act (Act No. 19234, 14 Mar 2023), Art. 64-2",
+     "date": "2023-03-14",
+     "url": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=62389",
+     "quote": "The Protection Commission may impose a penalty surcharge on the relevant personal information controller within the scope not exceeding 3/100 of the total sales",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Korea Legislation Research Institute (official English translation service)",
+     "title": "Personal Information Protection Act, Art. 37-2",
+     "date": "2023-03-14",
+     "url": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=62389",
+     "quote": "made by processing personal information with a completely automated system (including a system to which artificial intelligence technologies are applied) has a significant effect on his or her right or duty, a data subject shall have the right to file with the relevant personal information controller an objection against the relevant decision",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Korea Legislation Research Institute (official English translation service)",
+     "title": "Personal Information Protection Act — amendment history",
+     "date": "2023-03-14",
+     "url": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=62389",
+     "quote": "Act No. 10465, Mar. 29, 2011",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "International Association of Privacy Professionals (IAPP)",
+     "title": "South Korea overhauls PIPA and ties fines to CEO accountability",
+     "date": "2026",
+     "url": "https://iapp.org/news/a/south-korea-overhauls-pipa-and-ties-fines-to-ceo-accountability",
+     "quote": "On 10 March 2026, South Korea promulgated the most consequential rewrite of its Personal Information Protection Act since the law's 2023 overhaul. Set to take effect 11 Sept., the amendment introduces a penalty ceiling of 10% of total turnover and places personal supervisory liability on the CEO.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary source; Hunton Andrews Kurth reports National Assembly passage on 12 Feb 2026."
+    },
+    {
+     "institution": "Future of Privacy Forum",
+     "title": "South Korea’s New AI Framework Act: A Balancing Act Between Innovation and Regulation",
+     "date": "2025",
+     "url": "https://fpf.org/blog/south-koreas-new-ai-framework-act-a-balancing-act-between-innovation-and-regulation/",
+     "quote": "The AI Framework Act was officially promulgated on 21 January 2025 and will take effect on 22 January 2026, following a one-year transition period to prepare for compliance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "singapore-pdpa",
+   "region": "Singapore",
+   "law": "Personal Data Protection Act 2012 (as amended 2020)",
+   "enacted": 2012,
+   "inForce": 2014,
+   "regulator": "Personal Data Protection Commission (PDPC)",
+   "maxPenalty": "Up to 10% of annual turnover in Singapore for organisations with Singapore turnover above S$10 million; otherwise up to S$1 million (s.48J(3), from 1 Oct 2022)",
+   "automatedSignals": "partial",
+   "automatedSignalsProvision": "Part 9 Do Not Call Registry: senders must obtain valid confirmation that a number is not on the register before sending specified messages (s.43) — a central, machine-checkable opt-out list rather than an agent-sent signal.",
+   "aiRules": "No AI statute; PDPC's Advisory Guidelines on Use of Personal Data in AI Recommendation and Decision Systems (1 Mar 2024) are expressly not legally binding.",
+   "notes": "Data-protection obligations began on 2 July 2014 (see s.19, 'Personal data collected before 2 July 2014').",
+   "sources": [
+    {
+     "institution": "Singapore Statutes Online (Attorney-General's Chambers)",
+     "title": "Personal Data Protection Act 2012, s.48J",
+     "date": "2026",
+     "url": "https://sso.agc.gov.sg/Act/PDPA2012?ProvIds=pr48J-",
+     "quote": "an organisation whose annual turnover in Singapore exceeds $10 million — 10% of the annual turnover in Singapore of the organisation",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Singapore Statutes Online (Attorney-General's Chambers)",
+     "title": "Personal Data Protection Act 2012, s.43 (Duty to check register)",
+     "date": "2026",
+     "url": "https://sso.agc.gov.sg/Act/PDPA2012?ProvIds=pr43-",
+     "quote": "a person must not send a specified message addressed to a Singapore telephone number unless the person has, at the time the person sends the specified message, valid confirmation that the Singapore telephone number is not listed in the relevant register.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Singapore Statutes Online (Attorney-General's Chambers)",
+     "title": "Personal Data Protection Act 2012 — table of contents",
+     "date": "2026",
+     "url": "https://sso.agc.gov.sg/Act/PDPA2012?ProvIds=legis",
+     "quote": "19 Personal data collected before 2 July 2014",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Personal Data Protection Commission Singapore",
+     "title": "Advisory Guidelines on Use of Personal Data in AI Recommendation and Decision Systems (issued 1 Mar 2024)",
+     "date": "2024-03-01",
+     "url": "https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-on-the-use-of-personal-data-in-ai-recommendation-and-decision-systems.pdf",
+     "quote": "These Guidelines are advisory in nature, are not legally binding on the Commission or on any other party, and do not constitute legal advice.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "australia-privacy-act",
+   "region": "Australia (federal)",
+   "law": "Privacy Act 1988 (Cth), as amended by the Privacy and Other Legislation Amendment Act 2024",
+   "enacted": 1988,
+   "inForce": 1989,
+   "regulator": "Office of the Australian Information Commissioner (OAIC)",
+   "maxPenalty": "For serious interferences with privacy by a body corporate: the greater of A$50 million, 3x the benefit obtained, or 30% of adjusted turnover in the breach period (s.13G)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable opt-out signals.",
+   "aiRules": "No AI statute. The 2024 amendments require privacy policies to disclose decisions made with substantially automated computer programs; those provisions start 24 months after Royal Assent (i.e., from 10 Dec 2026).",
+   "sources": [
+    {
+     "institution": "Federal Register of Legislation (Australian Government)",
+     "title": "Privacy Act 1988, compilation of 4 June 2026 — s.13G",
+     "date": "2026-06-04",
+     "url": "https://www.legislation.gov.au/C2004A03712/2026-06-04/2026-06-04/text/original/pdf",
+     "quote": "if the court cannot determine the value of that benefit—30% of the adjusted turnover of the body corporate during the breach turnover period for the contravention.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Register of Legislation (Australian Government)",
+     "title": "Privacy Act 1988, compilation of 4 June 2026 — s.13G(a)",
+     "date": "2026-06-04",
+     "url": "https://www.legislation.gov.au/C2004A03712/2026-06-04/2026-06-04/text/original/pdf",
+     "quote": "(a) $50,000,000; (b) if the court can determine the value of the benefit",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Register of Legislation (Australian Government)",
+     "title": "Privacy Act 1988 — endnotes (assent and commencement)",
+     "date": "2026-06-04",
+     "url": "https://www.legislation.gov.au/C2004A03712/2026-06-04/2026-06-04/text/original/pdf",
+     "quote": "14 Dec 1988 1 Jan 1989 (s 2 and",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Endnote table: assent 14 December 1988; commencement 1 January 1989 for most provisions."
+    },
+    {
+     "institution": "Federal Register of Legislation (Australian Government)",
+     "title": "Privacy and Other Legislation Amendment Act 2024 (No. 128, 2024)",
+     "date": "2024-12-10",
+     "url": "https://www.legislation.gov.au/C2024A00128/asmade/2024-12-10/text/original/pdf",
+     "quote": "[Assented to 10 December 2024]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Register of Legislation (Australian Government)",
+     "title": "Privacy and Other Legislation Amendment Act 2024 — commencement of Schedule 1, Part 15 (automated decisions and privacy policies)",
+     "date": "2024-12-10",
+     "url": "https://www.legislation.gov.au/C2024A00128/asmade/2024-12-10/text/original/pdf",
+     "quote": "The day after the end of the period of 24 months beginning on the day this Act receives the Royal Assent.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Commencement-table entry for Part 15 of Schedule 1 (automated decisions and privacy policies)."
+    }
+   ]
+  },
+  {
+   "id": "south-africa-popia",
+   "region": "South Africa",
+   "law": "Protection of Personal Information Act 4 of 2013 (POPIA)",
+   "enacted": 2013,
+   "inForce": 2020,
+   "regulator": "Information Regulator",
+   "maxPenalty": "Administrative fines up to R10 million; criminal offences up to 10 years' imprisonment",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable signals; s.71 protects against decisions based solely on automated processing intended to profile a person.",
+   "aiRules": "No AI statute; s.71 limits solely automated profiling decisions.",
+   "notes": "Most sections commenced 1 July 2020, with a grace period to 30 June 2021 (Proclamation R.21 of 2020).",
+   "sources": [
+    {
+     "institution": "South African Government (gov.za) — Government Gazette No. 37067",
+     "title": "Protection of Personal Information Act 4 of 2013, s.109",
+     "date": "2013-11-26",
+     "url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf",
+     "quote": "subject to subsection (10), not exceed R10 million",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PDF text layer uses the 'ﬁ' ligature for 'fine'."
+    },
+    {
+     "institution": "South African Government (gov.za) — Government Gazette No. 37067",
+     "title": "Protection of Personal Information Act 4 of 2013, s.107",
+     "date": "2013-11-26",
+     "url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf",
+     "quote": "imprisonment for a period not exceeding 10 years",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "South African Government (gov.za) — Government Gazette No. 37067",
+     "title": "Protection of Personal Information Act 4 of 2013, s.5(g)",
+     "date": "2013-11-26",
+     "url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf",
+     "quote": "not to be subject, under certain circumstances, to a decision which is based solely on the basis of the automated processing of his, her or its personal information intended to provide a proﬁle of such person",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "South African Government (gov.za) — Government Gazette No. 43461",
+     "title": "Proclamation R.21 of 2020: Commencement of certain sections of the Protection of Personal Information Act",
+     "date": "2020-06-22",
+     "url": "https://www.gov.za/sites/default/files/gcis_document/202006/43461rg11136pr21.pdf",
+     "quote": "1 July 2020 as the date on which ... sections 2 to 38;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Two-column bilingual Gazette layout; the quoted words are on the page in this order, with line breaks between them."
+    }
+   ]
+  },
+  {
+   "id": "nigeria-ndpa",
+   "region": "Nigeria",
+   "law": "Nigeria Data Protection Act, 2023 (Act No. 37)",
+   "enacted": 2023,
+   "inForce": 2023,
+   "regulator": "Nigeria Data Protection Commission (NDPC)",
+   "maxPenalty": "For data controllers or processors of major importance, the 'higher maximum amount': the greater of ₦10 million or 2% of annual gross revenue in the preceding year (s.48)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable signals; s.37 gives a right not to be subject to decisions based solely on automated processing.",
+   "aiRules": "No AI statute; s.37 limits solely automated decisions with legal or similarly significant effects.",
+   "sources": [
+    {
+     "institution": "Nigeria Data Protection Commission (Official Gazette No. 119, Vol. 110)",
+     "title": "Nigeria Data Protection Act, 2023, s.48(4)",
+     "date": "2023-06-12",
+     "url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+     "quote": "The “higher maximum amount” shall be the greater of ... N10,000,000, and ... 2% of its annual gross revenue in the preceding financial year.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Nigeria Data Protection Commission (Official Gazette No. 119, Vol. 110)",
+     "title": "Nigeria Data Protection Act, 2023 — commencement",
+     "date": "2023-06-12",
+     "url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+     "quote": "[12th Day of June, 2023]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Nigeria Data Protection Commission (Official Gazette No. 119, Vol. 110)",
+     "title": "Nigeria Data Protection Act, 2023, s.37(1)",
+     "date": "2023-06-12",
+     "url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+     "quote": "A data subject shall have the right not to be subject to a decision based solely on automated processing of personal data, including profiling, which produces legal or similar significant effects concerning the data subject.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Nigeria Data Protection Commission (Official Gazette No. 119, Vol. 110)",
+     "title": "Nigeria Data Protection Act, 2023 — arrangement of sections",
+     "date": "2023-06-12",
+     "url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+     "quote": "Establishment of the Nigeria Data Protection Commission",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "kenya-dpa",
+   "region": "Kenya",
+   "law": "Data Protection Act, 2019 (No. 24 of 2019)",
+   "enacted": 2019,
+   "inForce": 2019,
+   "regulator": "Office of the Data Protection Commissioner (ODPC)",
+   "maxPenalty": "Penalty notice up to KSh 5 million or, for an undertaking, 1% of annual turnover of the preceding year, whichever is lower (s.63)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable signals; s.35 gives a right not to be subject to decisions based solely on automated processing.",
+   "aiRules": "No AI statute; s.35 limits solely automated decisions.",
+   "sources": [
+    {
+     "institution": "Office of the Data Protection Commissioner, Kenya (Kenya Gazette Supplement No. 181)",
+     "title": "The Data Protection Act, 2019, s.63",
+     "date": "2019-11-11",
+     "url": "https://www.odpc.go.ke/wp-content/uploads/2024/02/TheDataProtectionAct__No24of2019.pdf",
+     "quote": "the maximum amount of the penalty that may be imposed by the Data Commissioner in a penalty notice is up to five million shillings, or in the case of an undertaking, up to one per centum of its annual turnover of the preceding financial year, whichever is lower.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Office of the Data Protection Commissioner, Kenya (Kenya Gazette Supplement No. 181)",
+     "title": "The Data Protection Act, 2019 — assent and commencement",
+     "date": "2019-11-11",
+     "url": "https://www.odpc.go.ke/wp-content/uploads/2024/02/TheDataProtectionAct__No24of2019.pdf",
+     "quote": "Date of Assent: 8th November, 2019 Date of Commencement: 25th November, 2019",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Office of the Data Protection Commissioner, Kenya (Kenya Gazette Supplement No. 181)",
+     "title": "The Data Protection Act, 2019, s.35(1)",
+     "date": "2019-11-11",
+     "url": "https://www.odpc.go.ke/wp-content/uploads/2024/02/TheDataProtectionAct__No24of2019.pdf",
+     "quote": "Every data subject has a right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning or significantly affects the data subject.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "switzerland-revfadp",
+   "region": "Switzerland",
+   "law": "Federal Act on Data Protection (revised FADP, SR 235.1) of 25 September 2020",
+   "enacted": 2020,
+   "inForce": 2023,
+   "regulator": "Federal Data Protection and Information Commissioner (FDPIC)",
+   "maxPenalty": "Criminal fines up to CHF 250,000, imposed on complaint on the responsible private persons (individuals), not the company (Arts. 60–63)",
+   "automatedSignals": "no",
+   "automatedSignalsProvision": "No provision on machine-readable signals; Art. 21 requires controllers to inform people of automated individual decisions and, on request, allow human review.",
+   "aiRules": "No AI act; the FDPIC's position is that the FADP applies directly to AI-supported data processing.",
+   "sources": [
+    {
+     "institution": "Fedlex — Federal Chancellery (English translation, no legal force)",
+     "title": "Federal Act on Data Protection (FADP), status as of 1 September 2023, Art. 60",
+     "date": "2023-09-01",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/en/pdf-a/fedlex-data-admin-ch-eli-cc-2022-491-20230901-en-pdf-a.pdf",
+     "quote": "On complaint, a fine not exceeding 250,000 francs shall be imposed on private persons who:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Fedlex — Federal Chancellery (English translation, no legal force)",
+     "title": "Federal Act on Data Protection (FADP), Art. 21",
+     "date": "2023-09-01",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/en/pdf-a/fedlex-data-admin-ch-eli-cc-2022-491-20230901-en-pdf-a.pdf",
+     "quote": "The controller shall inform the data subject about any decision that is based exclusively on automated processing and that has a legal consequence for or a considerable adverse effect on the data subject (automated individual decision).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Fedlex — Federal Chancellery (English translation, no legal force)",
+     "title": "Federal Act on Data Protection (FADP) — commencement",
+     "date": "2023-09-01",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/en/pdf-a/fedlex-data-admin-ch-eli-cc-2022-491-20230901-en-pdf-a.pdf",
+     "quote": "Commencement date: 1 September 2023",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Data Protection and Information Commissioner (FDPIC)",
+     "title": "Current data protection legislation is directly applicable to AI",
+     "date": "2023-11-09",
+     "url": "https://www.edoeb.admin.ch/en/09112023-current-data-protection-legislation-is-directly-applicable-to-ai",
+     "quote": "The FDPIC therefore wishes to point out that the Federal Data Protection Act, which has been in force since 1 September 2023, is directly applicable to AI-supported data processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "harms": [
+  {
+   "id": "dutch-jewish-registration-1941",
+   "year": 1941,
+   "displayDate": "January 1941 – September 1944",
+   "place": "German-occupied Netherlands (occupation administration in The Hague)",
+   "lat": 52.0799,
+   "lng": 4.3113,
+   "what": "In January 1941 the German occupation authorities required every Jew in the Netherlands to register as a Jew; from the summer of 1942 the registered population was deported, mostly to Auschwitz and Sobibor.",
+   "scale": "159,806 persons registered; some 107,000 deported",
+   "consequence": "Only 5,200 of the deportees survived, and less than 25 percent of Dutch Jewry survived the Holocaust.",
+   "sources": [
+    {
+     "institution": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+     "title": "The Netherlands",
+     "date": "2026",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/the-netherlands",
+     "quote": "In January 1941, the German authorities required all Jews to register themselves as Jews. A total of 159,806 persons registered, including 19,561 persons born of mixed marriages.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+     "title": "The Netherlands",
+     "date": "2026",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/the-netherlands",
+     "quote": "During these two years, the Germans and their Dutch collaborators deported some 107,000 Jews, mostly to Auschwitz and Sobibor , where they were murdered. Only 5,200 survived.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+     "title": "The Netherlands",
+     "date": "2026",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/the-netherlands",
+     "quote": "The ruthless efficiency of the German administration and the willing cooperation of Dutch administrators and policemen doomed the Jews of the Netherlands. Less than 25 percent of Dutch Jewry survived the Holocaust.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Registration was nationwide; coordinates are The Hague, seat of the occupation administration. The role of the Dutch population-register system itself is documented in scholarship (e.g., Seltzer 1998) not read for this record."
+  },
+  {
+   "id": "us-census-japanese-americans-1942",
+   "year": 1943,
+   "displayDate": "1942 – August 1943",
+   "place": "U.S. Census Bureau / Department of Commerce, Washington, D.C.",
+   "lat": 38.8938,
+   "lng": -77.0328,
+   "what": "With confidentiality suspended by the Second War Powers Act of 1942, the Census Bureau released block-by-block data locating Japanese Americans and, in August 1943, gave the Secret Service the names and addresses of people of Japanese ancestry in the Washington, D.C., area.",
+   "scale": "About 112,000 people sent to 'assembly centers' between March and August 1942",
+   "consequence": "Nearly 70,000 of those removed were U.S. citizens, none charged with disloyalty; the Bureau's release of individual data was denied for decades until records surfaced in 2007.",
+   "sources": [
+    {
+     "institution": "Scientific American",
+     "title": "Confirmed: The U.S. Census Bureau Gave Up Names of Japanese-Americans in WW II",
+     "date": "2007-03-30",
+     "url": "https://www.scientificamerican.com/article/confirmed-the-us-census-b/",
+     "quote": "The Second War Powers Act of 1942 temporarily repealed that protection to assist in the roundup of Japanese-Americans for imprisonment in internment camps in California and six other states during the war.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reports research by historian Margo Anderson and statistician William Seltzer."
+    },
+    {
+     "institution": "Scientific American",
+     "title": "Confirmed: The U.S. Census Bureau Gave Up Names of Japanese-Americans in WW II",
+     "date": "2007-03-30",
+     "url": "https://www.scientificamerican.com/article/confirmed-the-us-census-b/",
+     "quote": "the Census Bureau complied with an August 4, 1943, request by Treasury Secretary Henry Morgenthau for the names and locations of all people of Japanese ancestry in the Washington, D.C., area",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. National Archives and Records Administration",
+     "title": "Japanese-American Incarceration During World War II",
+     "date": "2026",
+     "url": "https://www.archives.gov/education/lessons/japanese-relocation",
+     "quote": "From the end of March to August, approximately 112,000 persons were sent to \"assembly centers\" – often racetracks or fairgrounds – where they waited and were tagged to indicate the location of a long-term \"relocation center\" that would be their home for the rest of the war. Nearly 70,000 of the evacuees were American citizens.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates of the Department of Commerce (Herbert C. Hoover Building), Washington, D.C.; the Census Bureau's exact 1943 office location is not given in the sources."
+  },
+  {
+   "id": "stasi-files-1950-1989",
+   "year": 1989,
+   "displayDate": "1950 – 1989",
+   "place": "Ministry for State Security (Stasi) headquarters, Normannenstraße, Berlin-Lichtenberg",
+   "lat": 52.5145,
+   "lng": 13.487,
+   "what": "East Germany's Ministry for State Security kept files on its own population, fed by full-time officers and a network of 'unofficial collaborators' (informers).",
+   "scale": "About 189,000 unofficial collaborators by 1989 (one per ~90 citizens); 111 km of files",
+   "consequence": "After 1990 the files were opened to the people they described: by 31 Dec 2025 the archive had received 7,561,665 requests and applications, 3,499,663 of them from citizens.",
+   "sources": [
+    {
+     "institution": "Bundesarchiv — Stasi Records Archive",
+     "title": "The Unofficial Collaborators of the MfS",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/en/stasi-records-archive/education/what-was-the-state-security/the-unofficial-collaborators-of-the-mfs/",
+     "quote": "By 1989 the State Security had about 189,000 unofficial collaborators – one for about every 90 GDR citizens.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Bundesarchiv — Stasi Records Archive",
+     "title": "Stasi Records Archive",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/en/stasi-records-archive/",
+     "quote": "111 kilometres of documents are in the Stasi Records Archives.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Bundesarchiv — Stasi-Unterlagen-Archiv",
+     "title": "Das Stasi-Unterlagen-Archiv in Zahlen",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/stasi-unterlagen-archiv/das-stasi-unterlagen-archiv-in-zahlen/",
+     "quote": "Seit Beginn der Arbeit des Stasi -Unterlagen-Archivs Ende 1990 sind bislang 7.561.665 (Stand: 31. Dezember 2025) Ersuchen und Anträge eingegangen , darunter 3.499.663 Anträge von Bürgerinnen und Bürgern .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Since the archive began work at the end of 1990, 7,561,665 requests and applications have been received (as of 31 December 2025), including 3,499,663 applications from citizens.' The German page gives the total holdings as about 112.5 km across 13 sites; the English page says 111 km."
+    }
+   ],
+   "locationNote": "The former MfS headquarters complex (now the 'Campus for Democracy') in Berlin-Lichtenberg."
+  },
+  {
+   "id": "cointelpro-1956-1971",
+   "year": 1956,
+   "displayDate": "1956 – 1971",
+   "place": "Federal Bureau of Investigation headquarters, Washington, D.C.",
+   "lat": 38.8927,
+   "lng": -77.025,
+   "what": "The FBI's counterintelligence programs used files and informants to disrupt domestic political groups — anonymous letters to spouses, 'snitch jackets', contacting employers to get targets fired, even using the IRS to audit a professor.",
+   "scale": "2,370 approved counterintelligence actions over 15 years",
+   "consequence": "Exposed after the 8 March 1971 break-in at the FBI's Media, Pennsylvania office; the programs were terminated on 27 April 1971 and condemned by the Senate's Church Committee in 1976.",
+   "sources": [
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III: Supplementary Detailed Staff Reports on Intelligence Activities and the Rights of Americans (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "The Bureau approved 2,370 separate counterintelligence actions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III: Supplementary Detailed Staff Reports on Intelligence Activities and the Rights of Americans (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "COINTELPRO began in 1956, in part because of frustration with Supreme Court rulings limiting the Government's power to proceed overtly against dissident groups; it ended in 1971 with the threat of public exposure.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III: Supplementary Detailed Staff Reports on Intelligence Activities and the Rights of Americans (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "to mailing anonymous letters to a member's spouse accusing the target of infidelity",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III: Supplementary Detailed Staff Reports on Intelligence Activities and the Rights of Americans (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "On March 8, 1971, the FBI resident ageiicy in Media, Pennslyrania, was broken into.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "OCR of the printed report reproduces typesetting/scan errors ('ageiicy', 'Pennslyrania'); the same footnote records termination on April 27, 1971."
+    }
+   ],
+   "locationNote": "FBI headquarters was then in the Department of Justice Building, Washington, D.C."
+  },
+  {
+   "id": "bork-video-rental-list-1987",
+   "year": 1987,
+   "displayDate": "1987",
+   "place": "Washington City Paper, Washington, D.C.",
+   "lat": 38.9072,
+   "lng": -77.0369,
+   "what": "During Robert Bork's Supreme Court confirmation fight, a Washington weekly obtained and published the list of videos his family had rented from a local store.",
+   "scale": "146 films",
+   "consequence": "Congress passed the Video Privacy Protection Act (Pub. L. 100-618, 5 Nov 1988), with liquidated damages of $2,500 per violation — still one of the few U.S. laws protecting a specific kind of consumer record.",
+   "sources": [
+    {
+     "institution": "U.S. Court of Appeals for the Third Circuit",
+     "title": "In re: Nickelodeon Consumer Privacy Litigation, No. 15-1441 (opinion filed 27 June 2016)",
+     "date": "2016-06-27",
+     "url": "https://www2.ca3.uscourts.gov/opinarch/151441p.pdf",
+     "quote": "Congress passed the Video Privacy Protection Act in 1988 after the Washington City Paper published Supreme Court nominee Robert Bork’s video rental history.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Court of Appeals for the Third Circuit",
+     "title": "In re: Nickelodeon Consumer Privacy Litigation, No. 15-1441",
+     "date": "2016-06-27",
+     "url": "https://www2.ca3.uscourts.gov/opinarch/151441p.pdf",
+     "quote": "a list of the 146 films that the Bork family had rented from a Washington, D.C.-area video store.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Office of the Law Revision Counsel, U.S. House of Representatives",
+     "title": "18 U.S.C. 2710 — Wrongful disclosure of video tape rental or sale records",
+     "date": "2026",
+     "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section2710&num=0&edition=prelim",
+     "quote": "actual damages but not less than liquidated damages in an amount of $2,500;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Publisher's city."
+  },
+  {
+   "id": "aol-search-data-release-2006",
+   "year": 2006,
+   "displayDate": "August 2006",
+   "place": "AOL, Dulles, Virginia",
+   "lat": 38.9531,
+   "lng": -77.448,
+   "what": "AOL published 'anonymized' search logs for academic research, replacing names with numbers but leaving every query a user had typed.",
+   "scale": "About 20 million search queries from roughly 658,000 users over three months (March–May 2006)",
+   "consequence": "AOL withdrew the data and apologised ('This was a screw up'); reporters identified at least one searcher from her queries, and the release became a standard example of failed anonymisation.",
+   "sources": [
+    {
+     "institution": "TechCrunch (reproducing AOL's statement)",
+     "title": "AOL: “This was a screw up”",
+     "date": "2006-08-07",
+     "url": "https://techcrunch.com/2006/08/07/aol-this-was-a-screw-up/",
+     "quote": "Search data for roughly 658,000 anonymized users over a three month period from March to May.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Company statement republished by TechCrunch; the same post gives 'Roughly 20 million search records over that period'."
+    },
+    {
+     "institution": "TechCrunch (reproducing AOL's statement)",
+     "title": "AOL: “This was a screw up”",
+     "date": "2006-08-07",
+     "url": "https://techcrunch.com/2006/08/07/aol-this-was-a-screw-up/",
+     "quote": "AOL is apologizing in the aftermath of yesterday’s story about their voluntary release of search data on 650,000 users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "TechCrunch",
+     "title": "AOL Proudly Releases Massive Amounts of Private Data",
+     "date": "2006-08-06",
+     "url": "https://techcrunch.com/2006/08/06/aol-proudly-releases-massive-amounts-of-user-search-data/",
+     "quote": "That’s the only way to explain their release of data that includes 20 million web queries from 650,000 AOL users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Symposium on Security and Privacy 2008 (Narayanan & Shmatikov, author copy at Cornell)",
+     "title": "Robust De-anonymization of Large Sparse Datasets",
+     "date": "2008",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+     "quote": "Famous attacks include de-anonymization of a Massachusetts hospital discharge database by joining it with a public voter database [25] and privacy breaches caused by (ostensibly anonymized) AOL search data [16].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "The New York Times",
+     "title": "A Face Is Exposed for AOL Searcher No. 4417749",
+     "date": "2006-08-09",
+     "url": "https://www.nytimes.com/2006/08/09/technology/09aol.html",
+     "quote": "",
+     "verificationStatus": "PENDING",
+     "accessType": "PAYWALL",
+     "note": "Reporters identified a searcher from her queries. Site blocks scripted access (HTTP 403); not read, no quote taken."
+    }
+   ],
+   "locationNote": "AOL's then headquarters city (online-only event); not stated in the cited sources."
+  },
+  {
+   "id": "equifax-breach-2017",
+   "year": 2017,
+   "displayDate": "2017 (announced September 2017)",
+   "place": "Equifax headquarters, Atlanta, Georgia",
+   "lat": 33.7925,
+   "lng": -84.387,
+   "what": "Attackers exploited a known, unpatched vulnerability in the credit bureau's database for consumer inquiries about their credit data — a company holding files on people who had not chosen to be its customers.",
+   "scale": "Approximately 147 million people",
+   "consequence": "Global settlement with the FTC, CFPB and 50 U.S. states and territories of at least $575 million, potentially up to $700 million (July 2019).",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Equifax Data Breach Settlement",
+     "date": "2026",
+     "url": "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement",
+     "quote": "In September of 2017, Equifax announced a data breach that exposed the personal information of 147 million people.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Equifax to Pay $575 Million as Part of Settlement with FTC, CFPB, and States Related to 2017 Data Breach",
+     "date": "2019-07-22",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+     "quote": "Equifax Inc. has agreed to pay at least $575 million, and potentially up to $700 million, as part of a global settlement with the Federal Trade Commission, the Consumer Financial Protection Bureau (CFPB), and 50 U.S. states and territories",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Equifax to Pay $575 Million as Part of Settlement with FTC, CFPB, and States Related to 2017 Data Breach",
+     "date": "2019-07-22",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+     "quote": "The FTC alleges that Equifax failed to patch its network after being alerted in March 2017 to a critical security vulnerability affecting its ACIS database, which handles inquiries from consumers about their personal credit data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Company headquarters (online breach)."
+  },
+  {
+   "id": "cambridge-analytica-facebook-2014",
+   "year": 2014,
+   "displayDate": "2014 (made public March 2018; FTC action July 2019)",
+   "place": "Cambridge Analytica, London",
+   "lat": 51.5074,
+   "lng": -0.1278,
+   "what": "A personality-quiz app collected Facebook profile data from its users and from their friends — who had never used the app — and the data were used by Cambridge Analytica to build voter-profiling and targeting models.",
+   "scale": "250,000–270,000 app users plus 50–65 million of their Facebook friends (at least 30 million identifiable U.S. consumers)",
+   "consequence": "The FTC filed a complaint against Cambridge Analytica and imposed a record $5 billion penalty on Facebook for violating its 2012 privacy order (24 July 2019).",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Sues Cambridge Analytica, Settles with Former CEO and App Developer",
+     "date": "2019-07-24",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-sues-cambridge-analytica-settles-former-ceo-app-developer",
+     "quote": "The FTC alleges that the GSRApp was able to take advantage of this access to collect Facebook profile data from 250,000 to 270,000 users of the GSRApp located in the United States, as well as 50 million to 65 million of those users’ Facebook friends, including at least 30 million identifiable U.S. consumers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Sues Cambridge Analytica, Settles with Former CEO and App Developer",
+     "date": "2019-07-24",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-sues-cambridge-analytica-settles-former-ceo-app-developer",
+     "quote": "alleging they employed deceptive tactics to harvest personal information from tens of millions of Facebook users for voter profiling and targeting.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Imposes $5 Billion Penalty and Sweeping New Privacy Restrictions on Facebook",
+     "date": "2019-07-24",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+     "quote": "The $5 billion penalty against Facebook is the largest ever imposed on any company for violating consumers’ privacy and almost 20 times greater than the largest privacy or data security penalty ever imposed worldwide.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "City-level coordinates for Cambridge Analytica's London base; the 'March 2018' public disclosure date comes from press reporting not quoted here."
+  },
+  {
+   "id": "grindr-adtech-sharing-2020",
+   "year": 2020,
+   "displayDate": "Complaint 2020; fine December 2021; upheld 2023 and 21 October 2025",
+   "place": "Datatilsynet (Norwegian Data Protection Authority), Oslo",
+   "lat": 59.9139,
+   "lng": 10.7522,
+   "what": "The dating app for gay, bi, trans and queer people shared users' GPS location, IP address, advertising ID, age, gender and the fact that they used Grindr with advertising partners, without valid consent.",
+   "scale": "NOK 65 million fine (number of users affected not stated)",
+   "consequence": "Norway's regulator treated app use itself as revealing sexual orientation (special-category data); the fine was upheld by the Privacy Appeals Board and, on 21 October 2025, by the Borgarting Court of Appeal.",
+   "sources": [
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "Record fine in the Grindr case confirmed",
+     "date": "2023",
+     "url": "https://www.datatilsynet.no/en/news/news-2023/record-fine-grindr-confirmed/",
+     "quote": "Grindr shared information about GPS location, IP address, mobile phone advertising ID, age and gender – in addition to an individual being a Grindr user – to several third parties for marketing purposes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "Intention to issue € 10 million fine to Grindr LLC",
+     "date": "2021",
+     "url": "https://www.datatilsynet.no/en/news/2021/intention-to-issue--10-million-fine-to-grindr-llc2/",
+     "quote": "we believe that the fact that someone is a Grindr user speaks to their sexual orientation, and therefore this constitutes special category data that merit particular protection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "The Court of Appeal upholds the fine against Grindr",
+     "date": "2025-10",
+     "url": "https://www.datatilsynet.no/en/news/news-2025/the-court-of-appeal-upholds-the-fine-against-grindr/",
+     "quote": "Borgarting Court of Appeal has handed down a verdict in the Grindr case on Tuesday 21 October, and Grindr’s appeal over the District Court's verdict did not succeed. The fine of NOK 65 million was maintained.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates of Oslo, seat of the regulator that documented the case; Grindr LLC is based in the United States. Separate 2018 press reports that Grindr shared users' HIV status with app-analytics vendors were not verified for this record."
+  },
+  {
+   "id": "clearview-ai-faceprints-2020",
+   "year": 2020,
+   "displayDate": "Revealed January 2020; consent order 11 May 2022",
+   "place": "Circuit Court of Cook County (Illinois state court), Chicago",
+   "lat": 41.8842,
+   "lng": -87.6305,
+   "what": "Clearview AI scraped face images from the open web to build a searchable faceprint database sold to police and others, without the consent of the people pictured.",
+   "scale": "More than three billion faceprints by 2020 (ACLU); the company now advertises 70+ billion images",
+   "consequence": "Under a 2022 settlement with the ACLU under Illinois's Biometric Information Privacy Act, Clearview is permanently banned from making its database available to most private entities nationwide.",
+   "sources": [
+    {
+     "institution": "American Civil Liberties Union",
+     "title": "ACLU v. Clearview AI (case page)",
+     "date": "2022",
+     "url": "https://www.aclu.org/cases/aclu-v-clearview-ai",
+     "quote": "Face recognition technology has helped Clearview capture more than three billion faceprints, and counting, from images available online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "American Civil Liberties Union",
+     "title": "ACLU v. Clearview AI (case page)",
+     "date": "2022",
+     "url": "https://www.aclu.org/cases/aclu-v-clearview-ai",
+     "quote": "After the parties reached a settlement agreement , on May 11, 2022, the court signed a consent order ending this case. The central provision of the settlement restricts Clearview’s practices not just in Illinois, but across the United States, by permanently banning Clearview from making its faceprint database available to most businesses and other private entities nationwide.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Clearview AI (company website)",
+     "title": "Clearview AI — home page",
+     "date": "2026",
+     "url": "https://www.clearview.ai/",
+     "quote": "70+ Billion Images in our law enforcement database — the largest in the world by far",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Company's own claim about its database size."
+    }
+   ],
+   "locationNote": "The ACLU suit was filed in Illinois state court in Chicago; Clearview AI is headquartered in New York. EU regulators (France, Italy, Greece, the Netherlands) and the UK ICO also fined the company; those decisions could not be read for this record."
+  },
+  {
+   "id": "kochava-location-data-2022",
+   "year": 2022,
+   "displayDate": "29 August 2022",
+   "place": "Kochava Inc., Sandpoint, Idaho",
+   "lat": 48.2766,
+   "lng": -116.5535,
+   "what": "A data broker sold precise, timestamped location feeds tied to mobile device identifiers, which could trace people to reproductive-health clinics, places of worship, shelters and addiction-recovery centres; the FTC filed suit two months after the Supreme Court's Dobbs decision ended the federal constitutional right to abortion.",
+   "scale": "Location data from more than 61 million unique devices in a single week's free sample; hundreds of millions of devices overall",
+   "consequence": "The FTC sued to halt Kochava's sale of sensitive geolocation data, warning of stigma, stalking, discrimination, job loss and physical violence.",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Sues Kochava for Selling Data that Tracks People at Reproductive Health Clinics, Places of Worship, and Other Sensitive Locations",
+     "date": "2022-08-29",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2022/08/ftc-sues-kochava-selling-data-tracks-people-reproductive-health-clinics-places-worship-other",
+     "quote": "The Federal Trade Commission filed a lawsuit against data broker Kochava Inc. for selling geolocation data from hundreds of millions of mobile devices that can be used to trace the movements of individuals to and from sensitive locations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of the United States",
+     "title": "Dobbs v. Jackson Women's Health Organization, No. 19-1392 (slip opinion)",
+     "date": "2022-06-24",
+     "url": "https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf",
+     "quote": "Argued December 1, 2021—Decided June 24, 2022",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The syllabus states the holding: 'The Constitution does not confer a right to abortion; Roe and Casey are overruled; and the authority to regulate abortion is returned to the people and their elected representatives.'"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Sues Kochava for Selling Data that Tracks People at Reproductive Health Clinics, Places of Worship, and Other Sensitive Locations",
+     "date": "2022-08-29",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2022/08/ftc-sues-kochava-selling-data-tracks-people-reproductive-health-clinics-places-worship-other",
+     "quote": "The data sample the FTC examined included precise, timestamped location data collected from more than 61 million unique mobile devices in the previous week.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "The FTC describes Kochava as 'Idaho-based'; coordinates are Sandpoint, its headquarters town."
+  },
+  {
+   "id": "23andme-breach-2023",
+   "year": 2023,
+   "displayDate": "April–September 2023 (breach); June 2025 (UK fine)",
+   "place": "23andMe, South San Francisco, California",
+   "lat": 37.6545,
+   "lng": -122.388,
+   "what": "Using passwords leaked in other breaches, an attacker logged into about 14,000 genetic-testing accounts and, through the 'DNA Relatives' feature, reached millions of relatives who had shared data with them.",
+   "scale": "About 5.5 million DNA Relatives profiles and 1.4 million Family Tree profiles; 155,592 UK residents",
+   "consequence": "The UK ICO fined 23andMe £2.31 million in June 2025; as the company reported financial distress in March 2025, California's Attorney General urged customers to delete their genetic data and destroy their samples.",
+   "sources": [
+    {
+     "institution": "23andMe (company blog)",
+     "title": "Addressing Data Security Concerns",
+     "date": "2023-12",
+     "url": "https://blog.23andme.com/articles/addressing-data-security-concerns",
+     "quote": "The threat actor used the compromised credential stuffed accounts to access the information included in a significant number of DNA Relatives profiles (approximately 5.5 million) and Family Tree feature profiles (approximately 1.4 million), each of which were connected to the compromised accounts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "23andMe fined £2.31 million for failing to protect UK users’ genetic data",
+     "date": "2025-06",
+     "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/23andme-fined-for-failing-to-protect-uk-users-genetic-data/",
+     "quote": "This resulted in the unauthorised access to personal information belonging to 155,592 UK residents, potentially revealing names, birth years, self-reported city or postcode-level location, profile images, race, ethnicity, family trees and health reports.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Department of Justice, Office of the Attorney General",
+     "title": "Attorney General Bonta Urgently Issues Consumer Alert for 23andMe Customers",
+     "date": "2025-03",
+     "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-urgently-issues-consumer-alert-23andme-customers",
+     "quote": "Given 23andMe’s reported financial distress, I remind Californians to consider invoking their rights and directing 23andMe to delete their data and destroy any samples of genetic material held by the company.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Company headquarters city (online breach). The Chapter 11 filing (March 2025) and the subsequent court-approved sale of the company and its genetic database were not verified from primary documents for this record."
+  },
+  {
+   "id": "dutch-childcare-benefits-algorithm-2021",
+   "year": 2021,
+   "displayDate": "c. 2013–2019 (profiling); January 2021 (government resigns); October 2021 (Amnesty report)",
+   "place": "Binnenhof (Dutch government), The Hague",
+   "lat": 52.0799,
+   "lng": 4.313,
+   "what": "The Dutch tax authorities used an algorithmic risk-scoring system, with nationality as one of the risk factors, to flag childcare-benefit claims as potentially fraudulent.",
+   "scale": "Tens of thousands of parents and caregivers falsely accused of fraud",
+   "consequence": "The scandal brought down the Dutch government in January 2021; families from ethnic minorities were disproportionately hit.",
+   "sources": [
+    {
+     "institution": "Amnesty International",
+     "title": "Xenophobic machines: Discrimination through unregulated use of algorithms in the Dutch childcare benefits scandal (EUR 35/4686/2021)",
+     "date": "2021-10-25",
+     "url": "https://www.amnesty.org/en/documents/eur35/4686/2021/en/",
+     "quote": "The Dutch tax authorities adopted an algorithmic decision-making system to create risk profiles of individuals applying for childcare benefits in order to detect inaccurate and potentially fraudulent applications at an early stage. Nationality was one of the risk factors used by the tax authorities to assess the risk of inaccuracy and/or fraud in the applications submitted.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Amnesty International",
+     "title": "Dutch childcare benefit scandal an urgent wake-up call to ban racist algorithms",
+     "date": "2021-10-25",
+     "url": "https://www.amnesty.org/en/latest/news/2021/10/xenophobic-machines-dutch-child-benefit-scandal/",
+     "quote": "Tens of thousands of parents and caregivers from mostly low-income families were falsely accused of fraud by the Dutch tax authorities as a result, with people from ethnic minorities disproportionately impacted. While the scandal brought down the Dutch government in January",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Seat of the government that resigned; the benefits administration itself is not located in the sources. The years of profiling (c. 2013–2019) are approximate and not quoted here. The Dutch DPA's 2021 fine on the Tax Administration could not be read (site blocks scripted access)."
+  }
+ ],
+ "myths": [
+  {
+   "id": "myth-privacy-is-a-modern-invention",
+   "claim": "Privacy is a modern invention — people in the past did not expect it.",
+   "verdict": "MISLEADING",
+   "correction": "The legal phrase 'right to privacy' is a 19th-century coinage, but the expectations behind it are far older: the Hippocratic Oath binds the physician to keep secret what he sees and hears in patients' lives, and English courts in 1604 held that a man's house is his 'Castle and Fortress', limiting even the sheriff's entry.",
+   "sources": [
+    {
+     "institution": "U.S. National Library of Medicine, History of Medicine Division",
+     "title": "Greek Medicine: The Hippocratic Oath (translation)",
+     "date": "2008",
+     "url": "https://www.nlm.nih.gov/hmd/topics/greek-medicine/index.html",
+     "quote": "Whatever I see or hear in the lives of my patients, whether in connection with my professional practice or not, which ought not to be spoken of outside, I will keep secret, as considering all such things to be private.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "English translation published by NLM with its 2008 display on Greek medicine (curated by Michael North). The Greek text is conventionally dated to the late 5th or 4th century BCE; the date is approximate."
+    },
+    {
+     "institution": "Online Library of Liberty (Liberty Fund), from The Selected Writings of Sir Edward Coke, vol. I",
+     "title": "Sir Edward Coke declares that your house is your “Castle and Fortress” (1604)",
+     "date": "2026",
+     "url": "https://oll.libertyfund.org/quotes/sir-edward-coke-declares-that-your-house-is-your-castle-and-fortress-1604",
+     "quote": "That the house of every one is to him as his Castle and Fortress as well for defence against injury and violence, as for his repose",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Semayne's Case, 5 Co. Rep. 91a, 77 Eng. Rep. 194 (King's Bench, Michaelmas term 1604); transcription from Coke's Reports as edited by Steve Sheppard for Liberty Fund."
+    }
+   ]
+  },
+  {
+   "id": "myth-warren-brandeis-coined-let-alone",
+   "claim": "Warren and Brandeis coined the phrase 'the right to be let alone' in 1890.",
+   "verdict": "FALSE",
+   "correction": "Warren and Brandeis themselves credited the phrase to Judge Thomas M. Cooley's treatise on torts (they cite the 2nd edition, p. 29); Cooley's first edition appeared in 1879.",
+   "sources": [
+    {
+     "institution": "Harvard Law Review, vol. 4, no. 5 (reproduced by the Louis D. Brandeis School of Law Library, University of Louisville)",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy'",
+     "date": "1890",
+     "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+     "quote": "Recent inventions and business methods call attention to the next step which must be taken for the protection of the person, and for securing to the individual what Judge Cooley calls the right \"to be let alone.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Originally published at 4 Harv. L. Rev. 193 (15 December 1890). Footnote 10 cites 'Cooley on Torts, 2d ed., p. 29'."
+    },
+    {
+     "institution": "Harvard Law Review, vol. 4, no. 5 (reproduced by the Louis D. Brandeis School of Law Library, University of Louisville)",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', footnote 10",
+     "date": "1890",
+     "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+     "quote": "Cooley on Torts , 2d ed., p. 29.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Warren and Brandeis attribute the phrase to Thomas M. Cooley's Treatise on the Law of Torts (1st ed. Chicago: Callaghan, 1879; 2nd ed. 1888)."
+    }
+   ]
+  },
+  {
+   "id": "myth-nothing-to-hide",
+   "claim": "If you have nothing to hide, you have nothing to fear.",
+   "verdict": "MISLEADING",
+   "correction": "Privacy harms are not limited to exposing wrongdoing. Germany's Constitutional Court held in 1983 that people who fear being recorded stop exercising their rights; Solove's taxonomy counts chilled behaviour and shifts of power as harms; and the Church Committee found the FBI's COINTELPRO went 'far beyond' anyone involved in violence.",
+   "sources": [
+    {
+     "institution": "Bundesverfassungsgericht (Federal Constitutional Court of Germany)",
+     "title": "Judgment of 15 December 1983, 1 BvR 209/83 et al. (Census Act) — official English translation",
+     "date": "1983-12-15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html",
+     "quote": "Individuals who worry that non-conformist behaviour could be recorded at any time and that such information could permanently be stored, used or shared will try not to draw attention to themselves by not engaging in such behaviour.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "University of Pennsylvania Law Review, vol. 154, no. 3 (copy hosted by Yale University)",
+     "title": "Daniel J. Solove, 'A Taxonomy of Privacy'",
+     "date": "2006-01",
+     "url": "https://zoo.cs.yale.edu/classes/cs457/fall13/SoloveTaxonomy.pdf",
+     "quote": "People’s behavior might be chilled, making them less likely to attend political rallies or criticize popular views.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "Many of the techniques used would be intolerable in a democratic society even if all of the targets had been involved in violent activity, but COINTELPRO went far beyond that.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-anonymised-data-is-safe",
+   "claim": "Once names are removed, data is anonymous and cannot be traced back to you.",
+   "verdict": "MISLEADING",
+   "correction": "A handful of ordinary attributes is usually enough to single people out: Latanya Sweeney estimated that 87% of the U.S. population is likely unique on ZIP code, gender and date of birth alone, and AOL's 2006 'anonymized' search logs had to be withdrawn after searchers were identified from their own queries.",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (Latanya Sweeney)",
+     "title": "Simple Demographics Often Identify People Uniquely",
+     "date": "2000",
+     "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+     "quote": "It was found that 87% (216 million of 248 million) of the population in the United States had reported characteristics that likely made them unique based only on {5-digit ZIP, gender, date of birth}.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "TechCrunch (reproducing AOL's statement)",
+     "title": "AOL: “This was a screw up”",
+     "date": "2006-08-07",
+     "url": "https://techcrunch.com/2006/08/07/aol-this-was-a-screw-up/",
+     "quote": "Although there was no personally-identifiable data linked to these accounts, we’re absolutely not defending this.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Symposium on Security and Privacy 2008 (Narayanan & Shmatikov, author copy at Cornell)",
+     "title": "Robust De-anonymization of Large Sparse Datasets",
+     "date": "2008",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+     "quote": "Even if identiﬁers such as names and Social Security numbers have been removed, the adversary can use background knowledge and cross-correlation with other databases to re-identify individual data records.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PDF text uses the 'ﬁ' ligature in 'identifiers'."
+    }
+   ]
+  },
+  {
+   "id": "myth-gdpr-first-data-protection-law",
+   "claim": "Data-protection law began with Europe's GDPR in 2018.",
+   "verdict": "FALSE",
+   "correction": "The German state of Hesse passed the world's first data-protection act in 1970 and created the first data-protection commissioner; national laws, the EU's 1995 Directive and Germany's 1983 'informational self-determination' ruling all came decades before the GDPR.",
+   "sources": [
+    {
+     "institution": "Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (Hessian Data Protection Commissioner)",
+     "title": "Geschichte des Datenschutzes",
+     "date": "2026",
+     "url": "https://datenschutz.hessen.de/ueber-uns/geschichte-des-datenschutzes",
+     "quote": "Das Hessische Datenschutzgesetz von 1970 war das erste Datenschutzgesetz deutschland- und weltweit.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The Hessian Data Protection Act of 1970 was the first data protection law in Germany and worldwide.'"
+    },
+    {
+     "institution": "Bundesverfassungsgericht (Federal Constitutional Court of Germany)",
+     "title": "Judgment of the First Senate of 15 December 1983, 1 BvR 209, 269, 362, 420, 440, 484/83 (Census Act) — official English translation",
+     "date": "1983-12-15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html",
+     "quote": "This fundamental right confers upon the individual the authority to, in principle, decide themselves on the disclosure and use of their personal data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-people-dont-care-about-privacy",
+   "claim": "Privacy is dead — people have stopped caring about it.",
+   "verdict": "MISLEADING",
+   "correction": "Surveys show concern rising, not falling: Pew found in 2023 that most Americans are concerned about how companies and the government use their data, that worry about government use rose from 64% (2019) to 71%, and that 67% say they understand little or nothing about what companies do with their data.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy (survey of 5,101 U.S. adults, 15–21 May 2023)",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Today, as in the past, most Americans are concerned about how companies and the government use their information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "The share who say they are worried about government use of people’s data has increased from 64% in 2019 to 71% today.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Some 67% say they understand little to nothing about what companies are doing with their personal data, up from 59%.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-us-constitution-explicit-privacy-right",
+   "claim": "The U.S. Constitution explicitly guarantees a right to privacy.",
+   "verdict": "FALSE",
+   "correction": "The word 'privacy' does not appear in the Constitution. In Griswold (1965) the Court inferred 'zones of privacy' from the penumbras of several Bill of Rights guarantees; Justice Black dissented that government may invade privacy unless a specific provision forbids it.",
+   "sources": [
+    {
+     "institution": "Supreme Court of the United States — United States Reports vol. 381 (Library of Congress)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), opinion of the Court",
+     "date": "1965-06-07",
+     "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep381/usrep381479/usrep381479.pdf",
+     "quote": "specific guarantees in the Bill of Rights have penumbras, formed by emanations from those guarantees that help give them life and substance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of the United States — United States Reports vol. 381 (Library of Congress)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Black, J., dissenting",
+     "date": "1965-06-07",
+     "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep381/usrep381479/usrep381479.pdf",
+     "quote": "I like my privacy ... as well as the next one, but I am nevertheless compelled to admit that government has a right to invade it unless prohibited by some specific constitutional provision.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The OCR text layer displaces a line; the ellipsis marks where it breaks the sentence."
+    }
+   ]
+  },
+  {
+   "id": "myth-privacy-signals-are-just-requests",
+   "claim": "Browser privacy signals (like Do Not Track or Global Privacy Control) are only polite requests that companies are free to ignore.",
+   "verdict": "MISLEADING",
+   "correction": "Not any more, in a growing number of places: California's regulations require businesses that sell or share data to honour opt-out preference signals, Colorado has required acceptance of universal opt-out mechanisms since 1 July 2024, Texas treats a browser setting as the consumer's authorised agent, and the GDPR has allowed objections 'by automated means' since 2018. What these signals still cannot do is state positive terms — the gap IEEE 7012 (MyTerms) addresses.",
+   "sources": [
+    {
+     "institution": "California Privacy Protection Agency (privacy.ca.gov)",
+     "title": "CCPA Regulations §7025 Opt-out Preference Signals (effective 1 Jan 2026)",
+     "date": "2026-01-01",
+     "url": "https://privacy.ca.gov/wp-content/uploads/sites/357/2026/03/ccpa_regulations_eff_20260101-1.pdf",
+     "quote": "A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Colorado Attorney General (coag.gov)",
+     "title": "Colorado Privacy Act (CPA)",
+     "date": "2026",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 4 (88R), enrolled — Bus. & Com. Code s.541.055(e)",
+     "date": "2023",
+     "url": "https://capitol.texas.gov/tlodocs/88R/billtext/html/HB00004F.htm",
+     "quote": "A consumer may designate an authorized agent using a technology, including a link to an Internet website, an Internet browser setting or extension, or a global setting on an electronic device, that allows the consumer to indicate the consumer's intent to opt out of the processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Publications Office of the European Union",
+     "title": "Regulation (EU) 2016/679 (GDPR), Art. 21(5)",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "the data subject may exercise his or her right to object by automated means using technical specifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ]
 }

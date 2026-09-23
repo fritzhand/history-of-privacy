@@ -1,0 +1,273 @@
+{
+ "slice": "numbers",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-data-protection-is-a-european-idea",
+   "status": "FIXED",
+   "issues": [
+    "Every number in the correction checks out against Greenleaf: Sweden 1973 was the first national law; by January 2015, 56 of 109 laws (over 51%) were outside Europe; Africa grew fastest in the preceding 18 months; 172 countries had laws by March 2025.",
+    "Source 1's title and institution cite '(2025) 194 PLBIR'. The SSRN page gives no PL&B citation. Privacy Laws & Business publishes this year-by-year list in International Report June 2025 (issue 195 in the URL). Issue 194 (April 2025) is a different Greenleaf article, 'Global data privacy laws 2025: 172 countries, 12 new in 2023/24'. Title and institution are corrected, and the live PL&B page is added as a second copy.",
+    "Both sources are Wayback captures of SSRN pages. web.archive.org reset every connection on 2026-09-23 (Errno 104; curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), so no fresh fetch was possible. SSRN, AustLII, WebFetch and the Semantic Scholar/OpenAlex APIs all refused or rate-limited. Both quotes are FOUND in the raw Wayback HTML fetched earlier the same day (the tool's cache, which I inspected). The 2015 file carries 109 web.archive.org/web/20250807213518 markers, so it is a genuine capture. The 2015 figures (56 of 109; Africa) have no independent live copy."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "The fresh re-fetch on 2026-09-23 failed: web.archive.org reset every connection. The quote is --check FOUND in the raw Wayback HTML retrieved earlier the same day (capture 20250807213518; the file contains 109 web.archive.org/web/20250807213518 markers). The page shows '(2015) 133 Privacy Laws & Business International Report, February 2015', 'UNSW Law Research Paper No. 2015-21', 'Date Written: January 30, 2015' and 'there are now 109 countries with laws, and 102 without such laws'. Live SSRN and AustLII return HTTP 403 to scripts. No independent live copy was found."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "SSRN (author paper, Graham Greenleaf, Macquarie Law School; abstract read via Internet Archive snapshot)",
+     "title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972; also published in Privacy Laws & Business International Report, June 2025)",
+     "note": "The fresh re-fetch on 2026-09-23 failed: web.archive.org reset every connection. The quote is --check FOUND in the raw Wayback HTML retrieved earlier the same day (capture 22 Nov 2025; 'Date Written: March 23, 2025'; '3 Pages Posted: 28 Apr 2025'). The page carries no PL&B issue citation. PL&B's own site places this list in International Report June 2025 (int195), so the '(2025) 194 PLBIR' citation was wrong and has been removed. The same wording, in PL&B's slightly edited version, is FOUND on the added PL&B page."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Privacy Laws & Business International Report, June 2025 (issue 195) (Graham Greenleaf)",
+     "title": "172 Countries with Data Privacy Laws – Year by Year 1973-2025",
+     "date": "2025-06",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int195/int195dplaws/",
+     "quote": "For the past 52 years since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 laws by March 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The page is labelled 'International Report June 2025' and also says 'The table lists national laws known as at 15 March 2025.' The abstract is free to read; the full article and table are for subscribers only."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-us-has-no-privacy-law",
+   "status": "FIXED",
+   "issues": [
+    "The claims check out. The IAPP chart (fresh fetch) lists 23 entries under 'LAWS SIGNED (TO DATE)': AL, CA, CO, CT, DE, IN, IA, KY, LA, MD, MN, MT, NE, NH, NJ, OK, OR, RI, TN, TX, UT, VT, VA. California is the earliest, '(2018; effective 1 Jan. 2020)'. Four are dated 2026 (Alabama, Louisiana, Oklahoma, Vermont) and none 2025. WilmerHale independently confirms Oklahoma (signed 20 March 2026) as the 20th law and 2025 as a year with no new law, which gives 19 laws before 2026 plus 4 = 23.",
+    "Source 0's quote ('Tracker last updated 8 Sept. 2026') supports only the date, not the count or the California-2018 start. It is replaced with a --check FOUND quote from the same PDF that starts the signed-laws list. The institution ('Westin Research Center') is confirmed on the IAPP tracker page, which links this PDF.",
+    "Minor and not changed: the correction's statement that no comprehensive federal law exists has no source in this record. It matches the IAPP tracker's framing (the IAPP runs a separate federal tracker) and my own knowledge."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "LAWS SIGNED (TO DATE) Alabama Personal Data Protection Act (2026; effective 1 May 2027) California Consumer Privacy Act (2018; effective 1 Jan. 2020)",
+     "note": "Fresh fetch 2026-09-23. The new quote is --check FOUND, and the old quote 'Tracker last updated 8 Sept. 2026' is also still FOUND. I counted 23 laws under 'LAWS SIGNED (TO DATE)'. The legend reads 'Signed: The governor signed the bill and it is now law.' The IAPP tracker page (iapp.org/resources/article/us-state-privacy-legislation-tracker) links this PDF and says 'The IAPP Westin Research Center actively tracks the proposed and enacted comprehensive privacy bills'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The same paragraph says: 'On March 16, the Oklahoma legislature passed SB 546, with Oklahoma Governor Kevin Stitt signing the bill into law on March 20.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-gdpr-created-cookie-banners",
+   "status": "FIXED",
+   "issues": [
+    "'46.1% of the most popular websites in every EU member state' can be read as 46.1% in each state. It is the pooled figure for the 500 most popular sites of each of the 28 member states. Degeling's Table III shows January 2018 rates by country list ranging from about 9.5% (Estonia) to 53.9% (Poland).",
+    "'and most did not meet the law's own standard for consent' overgeneralises. The only support is Nouwens et al.: a September 2019 scrape of 680 top-10,000 UK sites that used the five most popular consent platforms, of which 11.8% met three minimal requirements. That is a different population and year from the EU-wide 2018 banners in the sentence. The fix states the finding with its scope.",
+    "Source 1's quote stops at 'to state that' and so never shows the consent requirement it is cited for. It is extended to the verbatim continuation (--check FOUND). The primary text of Directive 2009/136/EC Art. 2(5) (amended Art. 5(3)) is added from legislation.gov.uk.",
+    "'62.1% by the end of May 2018' is right. Degeling's section VI says '62.1 % at the end of May (post-GDPR)'. That quote is added.",
+    "Degeling's own domain count is internally inconsistent (6,579 in the abstract, 6,759 in the body), so no domain total is used in the fix."
+   ],
+   "fieldFixes": {
+    "correction": "Cookie consent predates the GDPR: a 2009 amendment (Directive 2009/136/EC) to the EU's ePrivacy Directive already made storing information on a user's device conditional on consent (strictly necessary cookies excepted), and in January 2018, months before the GDPR applied on 25 May 2018, 46.1% of the sites on the 500-most-popular lists of the 28 EU member states already showed a cookie consent notice. The GDPR accelerated them, to 62.1% by the end of May 2018. Many still fell short of the law's own standard for consent: a September 2019 scrape of 680 top UK sites using the five most popular consent platforms found only 11.8% met minimal requirements of EU law."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. Method: '500 most popular websites in each of the 28 member states of the EU', inspected manually in January and May 2018."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "In an earlier harmonization effort, Directive 2009/136/EC had changed Article 5(3) of the ePrivacy Directive (2002/58/EC) to state that “the storing of information [...] in the terminal equipment of a [...] user” is only allowed if the user “has given his or her consent, having been provided with [...] information [...] about the purposes of the processing” [2].",
+    "note": "Fresh fetch 2026-09-23. The extended quote is --check FOUND. The old quote ended at 'to state that' and did not show the consent requirement."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND on arxiv.org/abs/2001.02479. The PDF gives the scrape date as 'over 3 days in September 2019 over the top 10,000 UK sites' and the venue as 'CHI ’20 ... April 25–30, 2020, Honolulu, HI, USA', DOI 10.1145/3313831.3376321."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "legislation.gov.uk (The National Archives, UK), EU Directive text, 'Original (As adopted by EU)' version",
+     "title": "Directive 2009/136/EC of the European Parliament and of the Council of 25 November 2009, Article 2 (amendments to Directive 2002/58/EC)",
+     "date": "2009-11-25",
+     "url": "https://www.legislation.gov.uk/eudr/2009/136/article/2",
+     "quote": "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information, in accordance with Directive 95/46/EC, inter alia, about the purposes of the processing.",
+    "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. This is the new Article 5(3) of the ePrivacy Directive, inserted by Article 2(5) of Directive 2009/136/EC. The same paragraph exempts storage 'strictly necessary in order for the provider of an information society service explicitly requested by the subscriber or user to provide the service'. EUR-Lex blocks scripted access."
+    },
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "the adoption of cookie consent notices had increased across Europe, from 46.1 % in January to 62.1 % at the end of May (post-GDPR) and reached 63.2 % in October 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND (section VI). This supports 'by the end of May 2018'."
+    },
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/pdf/2001.02479",
+     "quote": "over 3 days in September 2019 over the top 10,000 UK sites",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. This gives the scrape date for the 11.8% figure. The next line in the PDF is hyphenated ('web- traffic service Alexa'), so the quote stops before it."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-cookie-banners-give-real-choice",
+   "status": "FIXED",
+   "issues": [
+    "The numbers are right: 11.8% met the three conditions (explicit consent, reject as easy as accept, no pre-ticked optional boxes); 50.1% had no 'reject all' button; removing the reject-all button from the first page raised consent by 22-23 percentage points (0.220 and 0.231 slopes).",
+    "'scraped the five most popular consent platforms on the top 10,000 UK sites in 2019' leaves out that the percentages cover the 680 sites where those CMPs were found, not 10,000 sites. The scrape date (September 2019) is added.",
+    "'in their experiment' leaves out that it was a 40-participant field experiment. That matters for how much weight the 22-23 point effect can bear.",
+    "'Design, not preference, drives much of the \"yes\"' overstates the finding. The paper's regressions attribute 11.7% (barrier) and 13.5% (banner) of the variation in answers to button prominence. It is softened to what the paper shows.",
+    "Source 1 claims 'Only 12.6% ... same or fewer number of clicks' but the correction never uses that figure. No change needed. An added source supports the experiment claim from the paper body."
+   ],
+   "fieldFixes": {
+    "correction": "When Nouwens and colleagues scraped the top 10,000 UK websites in September 2019 for the five most popular consent platforms, only 11.8% of the 680 sites using them met three minimal requirements of EU law (explicit consent, rejecting as easy as accepting, no pre-ticked boxes), and half had no 'reject all' button. In their field experiment with 40 participants, removing the 'reject all' button from the first page raised consent by 22-23 percentage points. Interface design, not only preference, shapes how many people click 'yes'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND on arxiv.org/abs/2001.02479. The abstract also says: 'Second, we conducted a field experiment with 40 participants ... removing the opt-out button from the first page increases consent by 22--23 percentage points' (--check FOUND)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND on arxiv.org/pdf/2001.02479."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/pdf/2001.02479",
+     "quote": "We found that removing the ‘reject all’ button from the first page increased the probability of consent by 22−23 percentage points.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The dash is U+2212 as printed. The same section gives R² of 0.117 (barrier) and 0.135 (banner). The paper also says: 'we consider that a site is minimally compliant if it has no optional boxes pre-ticked, if rejection is as easy as acceptance, and if consent is explicit. Only 11.8% of sites met these basic requirements.' (--check FOUND)"
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-clearing-cookies-stops-tracking",
+   "status": "FIXED",
+   "issues": [
+    "The figures are right. The crawl is the January 2016 measurement of the Alexa top 1 million: canvas fingerprinting on 14,371 sites (1.6% of the 917,261 sites successfully measured), 98.2% from third-party scripts.",
+    "The correction leaves out the paper's own caveat, which weakens how it uses the number as evidence of tracking. On the same page the authors write that 'the most prominent trackers have by-and-large stopped using it' and that 'the use has shifted from behavioral tracking to fraud detection'. Presenting the 14,371 sites as tracking without this is misleading. The fix adds the caveat.",
+    "The correction never shows that fingerprinting survives cookie clearing, which is the myth's actual point. The paper says so directly for a device readout (the Battery Status API): 'the readout may remain constant when a user clears cookies'. That quote is added.",
+    "'draws hidden graphics' is not what the paper says. It describes devices drawing the same image differently ('Differences in font rendering, smoothing, anti-aliasing ... cause devices to draw the image differently'). The wording is adjusted."
+   ],
+   "fieldFixes": {
+    "correction": "Tracking also works without stored identifiers. Englehardt and Narayanan's January 2016 crawl of the top million sites found canvas fingerprinting, which identifies a device from the tiny differences in how it draws the same image, on 14,371 sites, 98.2% of it from third-party scripts. The authors noted that its use had shifted from behavioural tracking toward fraud detection, but such fingerprints need no cookie. They warned that another device readout they found in fingerprinting scripts 'may remain constant when a user clears cookies, switches to private browsing mode, or opens a new browser'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The paper says: 'In this paper we report results from a January 2016 measurement of the top 1 million sites' (--check FOUND). Table 7 totals '15089 (14371 unique)'. The header reads 'This is an extended version of our paper that appeared at ACM CCS 2016.' The same page also says: 'Third, the use has shifted from behavioral tracking to fraud detection, in line with the ad industry’s self-regulatory norm regarding acceptable uses of ﬁngerprinting.' (--check FOUND with the PDF's ligature)"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "These status readouts can help identify users who take action to protect their privacy while already on a site. For example, the readout may remain constant when a user clears cookies, switches to private browsing mode, or opens a new browser before re-visiting the site.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND (section on the Battery Status API). This directly supports the myth's refutation: cookie clearing does not reset device readouts."
+    },
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "Third, the use has shifted from behavioral tracking to fraud detection, in line with the ad industry’s self-regulatory norm regarding acceptable uses of ﬁngerprinting.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The quote contains the 'ﬁ' ligature of the PDF text layer. This caveat belongs next to the 14,371 figure."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-gdpr-is-toothless",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes are verbatim on fresh fetches, and the numbers are right: EUR 7.1bn from 25 May 2018 to 10 Jan 2026 (DLA Piper, 21 January 2026); Ireland EUR 4.04bn; Meta EUR 1.2bn in 2023 (CMS dates the decision 12.05.2023); CMS EUR 6.11bn to a 1 March 2026 cut-off.",
+    "'concentrated on a few big-tech firms' had no source in the record. The DLA Piper quotes support only the Ireland concentration. The CMS page (already cited) supports it. Its 'Overall top 10 Fines' table lists only Meta Platforms Ireland/Inc. (5 fines), TikTok (2), LinkedIn, Uber and WhatsApp Ireland, and says the Irish DPC accounts for 9 of the top 10. That quote is added.",
+    "'slow enforcement' had no source. Added: ICCL's 2021 GDPR report (an advocacy group, Irish Council for Civil Liberties), which says 98% of major cases referred to Ireland were unresolved. It is dated September 2021, so it is framed as a 2021 finding.",
+    "DLA Piper's EUR 7.1bn covers 'all the jurisdictions surveyed' (EU/EEA plus UK), which the phrase 'by DLA Piper's count' already covers."
+   ],
+   "fieldFixes": {
+    "correction": "Fines are real and large: about EUR 7.1 billion from 25 May 2018 to 10 January 2026 by DLA Piper's count, including a single EUR 1.2 billion fine on Meta in 2023. But they are concentrated on a few big-tech firms and a few regulators. Ireland alone accounts for about EUR 4.04 billion, and every one of the ten largest fines in CMS's tracker, nine of them Irish, fell on Meta (including WhatsApp), TikTok, LinkedIn or Uber. Totals also differ by method: CMS counts about EUR 6.11 billion of publicly known fines to 1 March 2026. The fair criticism is uneven, slow enforcement, not absence of enforcement: in 2021 the Irish Council for Civil Liberties found 98% of major GDPR cases referred to Ireland still unresolved."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The page is dated '21 January 2026' and describes itself as the 'eighth annual edition'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. CMS's top-10 table dates the Meta decision 12.05.2023."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The page is headed 'GDPR Enforcement Tracker Report 2026'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "CMS (law firm network) — GDPR Enforcement Tracker Report, 7th edition",
+     "title": "GDPR Enforcement Tracker Report: Numbers and Figures",
+     "date": "2026",
+     "url": "https://cms.law/en/int/publication/gdpr-enforcement-tracker-report/numbers-and-figures",
+     "quote": "The overview illustrates that the highest fine amounting to EUR 1.2 billion originates from Ireland and was imposed against Meta Platforms Ireland Limited. This was the first fine in the billions to date. Overall, the Irish Data Protection Commission is the supervisory authority responsible for the highest fines, accounting for 9 of the top 10 fines.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. The 'Overall top 10 Fines' table above it lists Meta Platforms Ireland Ltd (EUR 1.2bn, 12.05.2023), TikTok Technology Ltd (530m, 02.05.2025), Meta Platforms, Inc. (405m), Meta Platforms Ireland (390m), TikTok Ltd (345m), LinkedIn (310m), Uber (290m, the Netherlands), Meta Platforms Ireland (265m and 251m) and WhatsApp Ireland (225m). Together they total about EUR 4.21bn of the EUR 6.11bn."
+    },
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), civil-liberties advocacy group",
+     "title": "Europe’s enforcement paralysis: ICCL’s 2021 GDPR report (Johnny Ryan)",
+     "date": "2021-09-13",
+     "url": "https://www.iccl.ie/digital-data/2021-gdpr-report/",
+     "quote": "The Irish Data Protection Commission is the bottleneck of GDPR enforcement against Big Tech across the EU. Almost all (98%) major GDPR cases referred to Ireland remain unresolved.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23, --check FOUND. This is an advocacy source and its figure is as of September 2021, so the correction attributes and dates it. The page also says: 'Three and a half years after the introduction of the GDPR, EU GDPR enforcement against Big Tech is paralysed by Ireland’s failure to deliver draft decisions on major cross-border cases.' (--check FOUND)"
+    }
+   ]
+  }
+ ]
+}

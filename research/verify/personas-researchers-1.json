@@ -1,0 +1,385 @@
+{
+ "slice": "personas-researchers",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "person",
+   "id": "latanya-sweeney",
+   "status": "FIXED",
+   "issues": [
+    "The contribution says 'She later founded Harvard's Data Privacy Lab'. That is incomplete. Her own CV lists '2001 - 2011. Director and Founder, Data Privacy Lab, Carnegie Mellon University' and then '2011 - today. Director and Founder, Data Privacy Lab, Harvard University'. So she founded the lab at Carnegie Mellon and moved it to Harvard. Reworded, and the CV is added as a source.",
+    "The contribution says she 'picked out Governor William Weld's hospital record'. Her own k-anonymity paper says 'his medical records were in the GIC data', where GIC is the state employees' health-insurance commission. Barth-Jones likewise says 'medical data within an insurance data set'. Changed to 'medical records'.",
+    "Checked OK. All four sources and the quoteSource --check FOUND after a fresh re-fetch. The 87% figure ('216 million of 248 million') from 1990 Census data and the ZIP/gender/date-of-birth triple match the 2000 paper. The paper header reads 'Carnegie Mellon University, Data Privacy Working Paper 3. Pittsburgh 2000.' The k-anonymity paper's references date the Cambridge voter list 'February 1997' and the GIC testimony 'March 19, 1997', which supports 1997. The CV confirms 'S.M. 1997' at MIT and the MIT PhD in 2001, so she was an MIT graduate student in 1997. The $20 price ('For twenty dollars I purchased the voter registration list for Cambridge') is confirmed. Barth-Jones is dated 'July, 2012' in the PDF footer (SSRN 2076397), and he is an Assistant Professor of Clinical Epidemiology at Columbia. The FTC release is dated 18 November 2013 (page datetime 2013-11-18) and says she would join 'in January' (2014)."
+   ],
+   "fieldFixes": {
+    "contribution": "As an MIT graduate student in 1997, Sweeney linked a $20 Cambridge voter list to Massachusetts state-employee health data released without names, and picked out Governor William Weld's medical records. Her 2000 working paper estimated from 1990 Census data that 87% of the U.S. population was likely unique on five-digit ZIP code, gender and date of birth, and her 2002 k-anonymity model proposed a formal test for releases. She founded the Data Privacy Lab at Carnegie Mellon in 2001, moved it to Harvard in 2011, and in 2014 served as the Federal Trade Commission's chief technologist."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache; --check FOUND in the abstract, p. 2."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND. Header: 'International Journal on Uncertainty, Fuzziness and Knowledge-based Systems, 10 (5), 2002; 557-570.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND in the abstract; footer 'July, 2012 ... ssrn.com/abstract=2076397'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; release datetime 2013-11-18."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Data Privacy Lab (Latanya Sweeney's curriculum vitae)",
+     "title": "Latanya Sweeney — Curriculum Vitae",
+     "date": "2026",
+     "url": "https://dataprivacylab.org/people/sweeney/cv.html",
+     "quote": "2001 - 2011. Director and Founder, Data Privacy Lab , Carnegie Mellon University.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same CV: '2011 - today. Director and Founder, Data Privacy Lab , Harvard University.'; 'Massachusetts Institute of Technology, Cambridge, MA., S.M. 1997 in Electrical Engineering and Computer Science.'; '2014 Chief Technology Officer, U.S. Federal Trade Commission.'"
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "arvind-narayanan",
+   "status": "FIXED",
+   "issues": [
+    "Overstatement: the contribution says the Netflix Prize ratings 'could be matched to named people'. The paper says an adversary 'who knows only a little bit about an individual subscriber can easily identify this subscriber's record'. Its IMDb demonstration used 'a very small sample of around 50 IMDb users' and identified 'the Netflix records of known users', meaning IMDb accounts, which are often pseudonymous. The paper calls this 'a proof of concept'. Reworded, and the paper is added as a source.",
+    "The quoteSource note is wrong. It says 'Earliest comments on the page are dated September 2008'. The earliest comment on the About page is dated November 29, 2008. The blog's first post, 'What this blog is about', is dated September 29, 2008, according to the 33bits.wordpress.com 2008 archive read via WebFetch. The note is corrected. The contribution now says 'started in September 2008'.",
+    "quoteSource re-fetch: web.archive.org resets the connection from this environment, the plain-http wayback URL returns 403, and the live 33bits.wordpress.com returns 403 to scripts. The quote was verified in two other ways. First, the raw HTML already fetched from web.archive.org (snapshot 20260107113550, in /tmp/fetch-text-cache) contains the sentence verbatim. Second, a WebFetch of the live https://33bits.wordpress.com/about/ returned the identical sentence. The status is kept at CONFIRMED.",
+    "Checked OK: the FTC closing letter is dated 'March 12,2010' (OCR). It names the two researchers, cites the paper, and records that Netflix intended to 'suspend plans for Prize 2'. The Princeton homepage links twitter.com/random_walker and mastodon.social/@randomwalker and gives his titles. The OpenWPM paper's abstract and the 'repeatedly forced companies' sentence are both FOUND."
+   ],
+   "fieldFixes": {
+    "contribution": "With Vitaly Shmatikov at the University of Texas, Narayanan showed that an adversary who knows only a little about a Netflix subscriber can pick out that subscriber's record in the 'anonymous' Netflix Prize ratings; in a proof of concept with about 50 IMDb users, they matched Netflix records to ratings those users had posted publicly on IMDb. His '33 Bits of Entropy' blog, started in September 2008, carried the argument to a lay audience. At Princeton he later led the Web Transparency and Accountability Project, whose open-source crawler OpenWPM measured tracking across the top one million websites in 2016.",
+    "quoteSource.note": "The live wordpress.com page returns 403 to scripts and web.archive.org could not be reached on re-check. The sentence was confirmed verbatim in the archived HTML (Wayback snapshot 20260107113550) and on the live page via WebFetch. The earliest comment on the About page is dated November 29, 2008; the blog's first post ('What this blog is about') is dated September 29, 2008."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; OCR --check FOUND; letter dated March 12, 2010, signed by Maneesha Mithal, Associate Director, DPIP."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; 'has repeatedly forced companies to improve their privacy practices' also FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Symposium on Security and Privacy 2008 (authors' copy, Cornell)",
+     "title": "A. Narayanan and V. Shmatikov, 'Robust De-anonymization of Large Sparse Datasets'",
+     "date": "2008-05",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+     "quote": "We demonstrate that an adversary who knows only a little bit about an individual subscriber can easily identify this subscriber's record in the dataset.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (abstract). Section on IMDb: 'we worked with a very small sample of around 50 IMDb users' (FOUND); 'Our results should thus be viewed as a proof of concept.'"
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "vitaly-shmatikov",
+   "status": "OK",
+   "issues": [
+    "No errors found. Everything was re-fetched with a fresh cache and every quote --check FOUND. CACM PDF: DOI 10.1145/1743546.1743558; page footers read 'june 2010 | vol. 53 | no. 6'. The quoteSource sentence is the pull-quote. The body text says 'Any information that distinguishes one person from another can be used for re-identifying anonymous data', which confirms that the pull-quote is authorial. The 'informed consent and contracts' sentence is the final paragraph before the References, so 'closes by arguing' is accurate.",
+    "arXiv 1610.05820: the abstract and the comment 'In the proceedings of the IEEE Symposium on Security and Privacy, 2017' are both confirmed. The Cornell homepage reads 'Vitaly Shmatikov Professor Cornell Tech'. The Roosevelt Island coordinates are correct. The FTC letter names 'Arvind Narayanan and Vitaly Shmatikov' at the University of Texas."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; last paragraph before References."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; OCR --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "lorrie-faith-cranor",
+   "status": "FIXED",
+   "issues": [
+    "The thread is misleading as worded. It says P3P's idea is 'the same idea that person-proffered terms (IEEE 7012) and AI agents now revive, but with the site, not the person, stating the terms'. Read literally, this says IEEE 7012 has the site stating the terms, which is the reverse of the intended contrast. In P3P the site stated its policy; in IEEE 7012 the person proffers terms. Reworded.",
+    "Overstatement in the influence field: the post-mortem is called 'the standard account' of why P3P failed, and no source supports that. Changed to 'a detailed insider's account'. The rest of the field is now tied to the article's own findings. It found 'thousands of sites that had identical erroneous policies' traced 'to a Microsoft support website' after Internet Explorer made compact policies a cookie gate (FOUND). It also says that 'as of June 2012, no public enforcement actions have been taken based on P3P' (FOUND). The W3C 2018 obsoletion note repeats both points: the IE 'broad gate', sites choosing 'to copy general policies', and 'no enforcement action followed'.",
+    "The contribution understated her role: she chaired the W3C P3P Specification Working Group. The spec's Appendix 8 says the group was 'chaired by Lorrie Cranor (AT&T)', and her bio confirms it. Added.",
+    "Source 0 (w3.org/TR/P3P/) returns 403 to tools/fetch-text.py's user agent. It was fetched with curl and checked with the tool's own text extraction and normalisation: quote FOUND. Header: 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018'; 'Authors: Lorrie Cranor, AT&T'. The JTHTL quoteSource is on p. 279 (Section II, 'Platform for Privacy Preferences', starts at 279)."
+   ],
+   "fieldFixes": {
+    "contribution": "Cranor chaired the W3C working group that wrote P3P and was one of its authors; the standard (Recommendation, 16 April 2002) let websites publish their privacy practices in a machine-readable format for browsers to read on users' behalf. At Carnegie Mellon she directs the CyLab Usable Privacy and Security Laboratory and founded the Symposium On Usable Privacy and Security (SOUPS); with Aleecia McDonald she estimated in 2008 that reading the privacy policy of every new site an American visits would take about 244 hours a year. In 2012 she published a candid post-mortem of P3P and of notice-and-choice, and in 2016 she served as chief technologist at the U.S. Federal Trade Commission.",
+    "influence": "Her post-mortem is a detailed insider's account of why P3P failed: the negotiation protocol was dropped, Internet Explorer's use of compact policies as a cookie gate led thousands of sites to post copied or erroneous policies, and no enforcement followed — lessons W3C itself repeated when it declared P3P obsolete in 2018.",
+    "thread": "P3P's founding idea was a browser that would 'negotiate with websites, and take actions on their users’ behalf' — the idea that person-proffered terms (IEEE 7012) and AI agents now revive. The difference is who states the terms: in P3P the site published its policy and the person's browser evaluated it; in IEEE 7012 the person proffers the terms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Tool fetch 403 (user-agent block); fetched with curl and checked with the tool's to_text/norm: quote FOUND; status-section sentences on IE compact-policy gate, copied policies and 'no enforcement action followed' also FOUND; Appendix 8: WG 'chaired by Lorrie Cranor (AT&T)'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND (Section II, p. 279)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; same page: 'She chaired the Platform for Privacy Preferences Project (P3P) Specification Working Group at the W3C and authored the book Web Privacy with P3P (O'Reilly 2002).' (FOUND)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Journal on Telecommunications and High Technology Law, vol. 10",
+     "title": "L. F. Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice'",
+     "date": "2012",
+     "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+     "quote": "Upon further investigation, we discovered thousands of sites that had identical erroneous policies and traced these policies to a Microsoft support website",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (Section V, Adoption and Enforcement). Same section: 'as of June 2012, no public enforcement actions have been taken based on P3P.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "christopher-soghoian",
+   "status": "FIXED",
+   "issues": [
+    "The influence field is wrong on two points. (1) It says 'The single browser header he prototyped ... became the Do Not Track signal later standardised at W3C'. Soghoian and Stamm's 2009 prototype sent two headers, 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. The W3C Note's acknowledgements say 'The DNT header field is based on the original Do Not Track submission by Jonathan Mayer (Stanford), Arvind Narayanan (Stanford), and Sid Stamm (Mozilla)', not on Soghoian's add-on. (2) 'Standardised' overstates the outcome: the work never became a W3C Recommendation and ended as a Working Group Note. Soghoian's own post says only that in 2010 'the header I had implemented and lobbied for somehow managed to catch the attention of' advocates, regulators and browser vendors, and that 'focus has shifted to a single header'. Rewritten, with the W3C acknowledgement added as a source.",
+    "Checked OK. The blog post is dated 'Friday, January 21, 2011' in the page's date header. tools/fetch-text.py reports NOT-FOUND for the quoteSource and for sources 0 and 1 because the Blogger and dubfire.net pages put their text in divs. All three quotes are FOUND against the full-page text, using the tool's own normalisation. The post also confirms the July 2009 prototype, the mid-July 2009 Future of Privacy Forum pitch, 'none of the advertising firms showed any interest', and his joining the FTC 'a couple months later'. http://www.dubfire.net/ now 301-redirects to https://www.dubfire.net/; the same bio text is there, including Wyden, the ACLU 2012-2016, the StingRay work and the 2012 Indiana PhD.",
+    "Source 3 (w3.org/TR/tracking-dnt/) returns 403 to the tool's user agent. It was fetched with curl and checked with the tool's extraction: quote FOUND. The Note is dated 17 January 2019. The TED quote was re-fetched and FOUND."
+   ],
+   "fieldFixes": {
+    "influence": "The browser-header approach he prototyped and pitched in 2009 resurfaced in 2010, when the FTC chairman revived talk of Do Not Track; the single DNT header that W3C's Tracking Protection Working Group later took up was based on a submission by Jonathan Mayer, Arvind Narayanan and Sid Stamm. That W3C effort never became a standard: it ended in January 2019 as a Working Group Note for lack of deployment, bearing out his warning that the hard part was what sites must do when they receive the header."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched over http; tool --check NOT-FOUND due to div-based Blogger body; quote FOUND in full page text with the tool's normalisation. Post dated Friday, January 21, 2011."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "url": "https://www.dubfire.net/",
+     "note": "http://www.dubfire.net/ now 301-redirects to https; quote FOUND in full page text (tool paragraph extractor misses div text)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Tool fetch 403 (user-agent block); fetched with curl and checked with the tool's to_text/norm: FOUND. 'W3C Working Group Note 17 January 2019'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "World Wide Web Consortium (W3C), Tracking Protection Working Group",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note, Appendix A: Acknowledgements",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "The DNT header field is based on the original Do Not Track submission by Jonathan Mayer (Stanford), Arvind Narayanan (Stanford), and Sid Stamm (Mozilla).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "w3.org returns 403 to tools/fetch-text.py's user agent; page fetched with curl and checked with the tool's to_text/norm: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "aleecia-mcdonald",
+   "status": "FIXED",
+   "issues": [
+    "The note on source 0 says the 201-hour figure 'appears only in the abstract/conclusion'. In the Stanford-hosted published PDF, the abstract gives no hour figure, only '$781 billion'. The figure '201 hours' appears only in Section IV, Discussion and Conclusions. The note is corrected. The record's own 244-hour point estimate and '$781 billion' are correct: Table 7 and the text both say 'using the point estimate of 244 hours per year', and 'the nation would lose the value of about $781 billion'.",
+    "Checked OK. Every quote was re-fetched and --check FOUND. The Stanford CIS page confirms the W3C TPWG co-chair role, the part-time Mozilla and CIS posts in 2011-12, and the CMU PhD 'as a member of the Cylab Usable Privacy and Security (CUPS) research laboratory'. The CMU INI page confirms 'Assistant Professor of the Practice'; it adds that she is based at CMU Silicon Valley. The W3C DNT Note lists 'Aleecia M. McDonald (Stanford)' among contributors (FOUND via curl). The Cranor 2012 introduction gives the 244-hour estimate, and the next paragraph says policies are 'failing consumers'."
+   ],
+   "fieldFixes": {
+    "sources[0].note": "The paper's conclusion instead says 'approximately 201 hours a year, worth about $3,534 annually per American Internet user'; its Table 7 gives 244 hours (range 181-304) to read and 154 hours to skim, and Table 8 pairs $3,534 and $781 billion with reading. In this published version the 201-hour figure appears only in Section IV (Discussion and Conclusions), not in the abstract, and does not match the tables."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND (p. 274, footnote 3)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; page: 'Assistant Professor of the Practice, based at the CMU Silicon Valley campus'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "ann-cavoukian",
+   "status": "FIXED",
+   "issues": [
+    "Misattribution: the contribution calls the 1995 co-publisher 'Cavoukian's Ontario privacy office'. In 1995 she was not yet commissioner. She was appointed in 1997 (per the IPC 2014 Annual Report), and before that she had been Assistant Commissioner since 1990, under Commissioner Tom Wright. The report's cover credits the 'Registratiekamer' and the 'Information and Privacy Commissioner/Ontario'. Reworded to say the office where she was then assistant commissioner, with a source added for that post.",
+    "Loose phrasing: the contribution says 'As Ontario's commissioner she developed Privacy by Design'. Her own text says it is 'a concept I developed back in the 90’s', which is partly before her 1997 appointment. Reworded so that she developed it from the 1990s and set it out as commissioner in 2009.",
+    "Checked OK. Every quote was re-fetched and --check FOUND. The 7 Principles PDF is marked 'Revised: January 2011 Originally Published: August 2009'. Principle 2 is 'Privacy as the Default Setting' and Principle 7 is 'Respect for User Privacy — Keep it User-Centric'. The Jerusalem resolution is headed '32nd International Conference of Data Protection and Privacy Commissioners, Jerusalem, Israel, 27-29 October, 2010'. 'No silver bullet' is dated July 9, 2014. The revised PET report reads 'Registratiekamer, The Hague, August 2000' and 'Revised edition of: Rossum, H. van, e.a. (1995)'. The IPC 2014 Annual Report covers January 1 to December 31, 2014, and Beamish writes 'as I begin my term'. The 2 Bloor Street East coordinates are correct.",
+    "The influence field's GDPR claim cites only a Wayback read of EUR-Lex, and neither can be re-fetched from here: EUR-Lex returns an empty or JS page, and web.archive.org resets the connection. An Article 25 source is added instead, from the gdpr-info.eu reproduction of the Regulation (FOUND)."
+   ],
+   "fieldFixes": {
+    "contribution": "In 1995 the Ontario privacy commissioner's office, where Cavoukian was then assistant commissioner, co-published with the Dutch data-protection authority (the Registratiekamer) the report 'Privacy-enhancing technologies: the path to anonymity', which proposed a user-controlled 'identity protector'. She developed Privacy by Design from the 1990s and, as Ontario's commissioner, set it out in 2009 as seven principles — among them privacy as the default setting and 'Respect for User Privacy — Keep it User-Centric'. In October 2010 the world's data-protection commissioners, meeting in Jerusalem, adopted a resolution recognising Privacy by Design. Her 2014 report with Daniel Castro defending de-identification was sharply disputed by Arvind Narayanan and Edward Felten."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; report covers January 1 to December 31, 2014."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; cover credits Registratiekamer and Information and Privacy Commissioner/Ontario; 'Registratiekamer, The Hague, August 2000'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; header 'Jerusalem, Israel 27-29 October, 2010'."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; dated July 9, 2014."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Ann Cavoukian",
+     "date": "2026",
+     "url": "https://en.wikipedia.org/wiki/Ann_Cavoukian",
+     "quote": "Cavoukian served as its first Director of Compliance followed by her appointment as Assistant Commissioner in 1990.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same article: 'She was initially appointed commissioner in 1997' (FOUND). Secondary source, used only for her pre-1997 post."
+    },
+    {
+     "institution": "Regulation (EU) 2016/679 (GDPR), Article 25 — text reproduced by gdpr-info.eu (intersoft consulting)",
+     "title": "Art. 25 GDPR — Data protection by design and by default",
+     "date": "2016-04-27",
+     "url": "https://gdpr-info.eu/art-25-gdpr/",
+     "quote": "Art. 25 GDPR Data protection by design and by default",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Unofficial reproduction; EUR-Lex (CELEX 32016R0679) could not be read by script from this environment."
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "kim-cameron",
+   "status": "OK",
+   "issues": [
+    "No errors found. Everything was re-fetched and every quote --check FOUND. The PDF reads '…as of 5/11/2005', and the author line is 'Kim Cameron, Architect of Identity, Microsoft Corporation'. The first law is 'User Control and Consent'. The text speaks of 'the Internet’s missing identity layer' and 'the seven essential' laws. The acknowledgements thank Caspar Bowden, Doc Searls, 'Identity Woman Kaliya' and Stefan Brands. The Passport sentence is present.",
+    "Windley's post is dated 'Sun Dec 5 17:23:00 2021'. It confirms Cameron at the first IIW in October 2005 and that Microsoft paid for the first IIW dinner. It also says 'Kim's participation and support was instrumental in building IIW over the years', which supports 'supported the Internet Identity Workshop from its first meeting'. The IDPro tribute gives November 2021 and contains the 'making user-centric identity viable and adopted' passage (Bertocci)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND; post dated 5 December 2021."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "kaliya-young",
+   "status": "FIXED",
+   "issues": [
+    "Wrong location: the contribution says she 'has convened it twice a year since, at the Computer History Museum in Mountain View'. This slice's own myth record (myth-first-iiw-mountain-view-computer-history-museum) corrects exactly this. The first IIW was held in Berkeley on 26-27 October 2005, and Windley's announcement says so: 'Kaliya Hamlin, Drummond Reed, Doc Searls and I are hosting the Internet Identity Workshop in Berkeley on October 26 and 27th' (FOUND). The Computer History Museum is the current venue. Reworded, and the announcement is added as a source; it also documents her as a co-founder.",
+    "Checked OK. Every quote was re-fetched and --check FOUND. The Open Transcripts header reads 'presented by Kaliya Young in New America » Self-Sovereign Identity in the Developing World on 10/18/2018'. The talk says the Domains framework came out of her UT Austin identity-management master's programme, which is consistent with the 2020 book. The MyData presenter page confirms the co-founding in 2005, the twice-yearly convening and both books. The IIW About page quote is confirmed. The CHM coordinates are correct."
+   ],
+   "fieldFixes": {
+    "contribution": "Kaliya Young, known online as 'Identity Woman', co-founded the Internet Identity Workshop, first held in Berkeley in October 2005, and still convenes it twice a year, now at the Computer History Museum in Mountain View. The workshop's founding question, in her words, was how individuals could own their own digital identifiers rather than live 'underneath the platforms'. She later championed self-sovereign identity — decentralised identifiers, verifiable credentials and personal agents under the individual's control — and wrote 'The Domains of Identity' (2020)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched over http; --check FOUND; talk dated 10/18/2018."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND. Its 'We meet in the Computer History Museum' describes the current venue, not the 2005 first meeting."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Phil Windley, Technometria (blog of an Internet Identity Workshop co-founder)",
+     "title": "Announcing the Internet Identity Workshop (IIW2005)",
+     "date": "2005-08-01",
+     "url": "https://www.windley.com/archives/2005/08/announcing_the_1.shtml",
+     "quote": "Kaliya Hamlin , Drummond Reed , Doc Searls and I are hosting the Internet Identity Workshop in Berkeley on October 26 and 27th",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND; post dated Mon Aug 1 2005. Kaliya Young was then known as Kaliya Hamlin."
+    }
+   ]
+  }
+ ]
+}

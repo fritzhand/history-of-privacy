@@ -1,0 +1,202 @@
+{
+ "slice": "dataprotection",
+ "chunk": 8,
+ "verdicts": [
+  {
+   "kind": "fipps",
+   "id": "coe108-1981-data-security",
+   "status": "FIXED",
+   "issues": [
+    "The text is correct. Article 7 is headed 'Data security' and reads word for word as recorded. It sits in Chapter II ('Basic principles for data protection'). Checked with --check (FOUND) on the Irish Statute Book copy of the Convention, on the UN Treaty Series text (heading 'Article 7. DATA SECURITY', FOUND) and on a cached Wayback capture of the CoE Treaty Office HTML. The name, year 1981, order 7 and source date 1981-01-28 (opened for signature at Strasbourg) are all right.",
+    "The only source (a Wayback copy of rm.coe.int/1680078b37) could not be re-fetched: web.archive.org resets the connection and live rm.coe.int returns 403. It is set to PENDING, and the Irish Statute Book and UNTS texts are added as confirmed sources. In the UNTS PDF text layer the last word breaks across a line with no hyphen ('dissem ination'), so the UNTS quote stops at 'alteration or'. The Irish quote is the whole Article."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of Ireland, Irish Statute Book",
+     "title": "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+     "quote": "Appropriate security measures shall be taken for the protection of personal data stored in automated data files against accidental or unauthorised destruction or accidental loss as well as against unauthorised access, alteration or dissemination.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. 'Article 7 Data security' heading FOUND."
+    },
+    {
+     "institution": "United Nations, Treaty Series (UN Treaty Collection)",
+     "title": "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+     "date": "1988",
+     "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+     "quote": "Appropriate security measures shall be taken for the protection of personal data stored in automated data files against accidental or unauthorised destruction or accidental loss as well as against unauthorised access, alteration or",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. The quote is truncated because the PDF text layer splits the final word as 'dissem ination' with no hyphen, so the full sentence cannot be matched."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "coe108-1981-know-existence",
+   "status": "FIXED",
+   "issues": [
+    "The text is correct. Article 8 'Additional safeguards for the data subject' opens 'Any person shall be enabled:', and item a reads exactly as recorded. Checked with --check on the Irish Statute Book copy, the UNTS text and the cached CoE Treaty Office HTML: FOUND on all three. The editorial name 'Right to know a file exists' is fair. The item covers the file's existence, its main purposes and the controller's identity and habitual residence or principal place of business. Year, order 8 and source date are right.",
+    "The only source (a Wayback copy of rm.coe.int/1680078b37) could not be re-fetched. It is set to PENDING, and the Irish Statute Book and UNTS texts are added as confirmed sources."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of Ireland, Irish Statute Book",
+     "title": "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+     "quote": "to establish the existence of an automated personal data file, its main purposes, as well as the identity and habitual residence or principal place of business of the controller of the file;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'a .' under 'Article 8 Additional safeguards for the data subject Any person shall be enabled:' (FOUND)."
+    },
+    {
+     "institution": "United Nations, Treaty Series (UN Treaty Collection)",
+     "title": "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+     "date": "1988",
+     "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+     "quote": "To establish the existence of an automated personal data file, its main purposes, as well as the identity and habitual residence or principal place of business of the controller of the file;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item a. under 'Article 8. ADDITIONAL SAFEGUARDS FOR THE DATA SUBJECT' / 'Any person shall be enabled:' (both FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "coe108-1981-access",
+   "status": "FIXED",
+   "issues": [
+    "The text is correct. Article 8, item b reads exactly as recorded. Checked with --check (FOUND) on the Irish Statute Book copy, the UNTS text and the cached CoE Treaty Office HTML. The name 'Right of access', year 1981, order 9 and source date are right. For context, Art. 9(3) lets Parties restrict items b-d for statistics and scientific research files 'when there is obviously no risk of an infringement of the privacy of the data subjects'. The record makes no claim that this contradicts.",
+    "The only source (a Wayback copy of rm.coe.int/1680078b37) could not be re-fetched. It is set to PENDING, and the Irish Statute Book and UNTS texts are added as confirmed sources."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of Ireland, Irish Statute Book",
+     "title": "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+     "quote": "to obtain at reasonable intervals and without excessive delay or expense confirmation of whether personal data relating to him are stored in the automated data file as well as communication to him of such data in an intelligible form;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'b .' of Article 8."
+    },
+    {
+     "institution": "United Nations, Treaty Series (UN Treaty Collection)",
+     "title": "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+     "date": "1988",
+     "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+     "quote": "To obtain at reasonable intervals and without excessive delay or expense confirmation of whether personal data relating to him are stored in the automated data file as well as communication to him of such data in an intelligible form;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item b. of Article 8."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "coe108-1981-rectification-erasure",
+   "status": "FIXED",
+   "issues": [
+    "The substance is correct. Article 8, item c reads as recorded, including the cross-reference to 'Articles 5 and 6'. Checked with --check (FOUND, case-insensitive) on the Irish Statute Book copy, the UNTS text and the cached CoE Treaty Office HTML. The name, year 1981, order 10 and source date are right.",
+    "There is one cosmetic variance. Every copy that could be read prints 'Articles 5 and 6 of this convention' with a lower-case 'c': the UN-registered authentic text (UNTS vol. 1496), Ireland's enacted First Schedule and the CoE Treaty Office's own 2012 HTML. The record's text and quote have 'this Convention'. The CoE PDF that the record cites could not be read. The record's Art. 1 quote from the same PDF also capitalises 'Convention', so that PDF may well be typeset this way. The wording is unaffected, so 'text' is left unchanged, but the added sources quote the lower-case form exactly as printed.",
+    "The only source (a Wayback copy of rm.coe.int/1680078b37) could not be re-fetched. It is set to PENDING, and the Irish Statute Book and UNTS texts are added as confirmed sources."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today. Not checked: whether the PDF prints 'this Convention' (as the recorded quote has it) or 'this convention' (as in the UNTS, Irish and 2012 CoE HTML texts)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of Ireland, Irish Statute Book",
+     "title": "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+     "quote": "to obtain, as the case may be, rectification or erasure of such data if these have been processed contrary to the provisions of domestic law giving effect to the basic principles set out in Articles 5 and 6 of this convention;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'c .' of Article 8, with a lower-case 'convention'. The page has 0 hits for 'this Convention;'."
+    },
+    {
+     "institution": "United Nations, Treaty Series (UN Treaty Collection)",
+     "title": "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+     "date": "1988",
+     "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+     "quote": "To obtain, as the case may be, rectification or erasure of such data if these have been processed contrary to the provisions of domestic law giving effect to the basic principles set out in Articles 5 and 6 of this convention;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item c. of Article 8, printed with a lower-case 'convention'."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "coe108-1981-remedy",
+   "status": "FIXED",
+   "issues": [
+    "The text is correct. Article 8, item d reads exactly as recorded, including 'paragraphs b and c of this article'. Checked with --check (FOUND) on the Irish Statute Book copy, the UNTS text and the cached CoE Treaty Office HTML. The name 'Remedy', year 1981, order 11 and source date are right. This remedy is separate from Art. 10 ('Sanctions and remedies', a duty on the Parties). The record does not conflate the two.",
+    "The only source (a Wayback copy of rm.coe.int/1680078b37) could not be re-fetched. It is set to PENDING, and the Irish Statute Book and UNTS texts are added as confirmed sources."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of Ireland, Irish Statute Book",
+     "title": "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+     "quote": "to have a remedy if a request for confirmation or, as the case may be, communication, rectification or erasure as referred to in paragraphs b and c of this article is not complied with.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'd .' of Article 8."
+    },
+    {
+     "institution": "United Nations, Treaty Series (UN Treaty Collection)",
+     "title": "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+     "date": "1988",
+     "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+     "quote": "To have a remedy if a request for confirmation or, as the case may be, communication, rectification or erasure as referred to in paragraphs b and c of this article is not complied with.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item d. of Article 8."
+    }
+   ]
+  }
+ ]
+}

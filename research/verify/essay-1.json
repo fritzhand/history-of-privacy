@@ -1,0 +1,269 @@
+{
+ "slice": "essay",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "fact",
+   "id": "latin-privatus-privare",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim in the Etymonline 'private (adj.)' entry, which opens 'late 14c. ... from Latin privatus'. Independent check: Wiktionary 'privatus' says 'Perfect passive participle of prīvō ( “ to bereave, deprive; to free, release ” )', and Wiktionary 'privo' gives 'to bereave , deprive , rob or strip of something', so the participle claim and the gloss hold."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. It supports 'past participle of privare' ('past-participle adjective from the verb privare') and the 'one's own' root (privus)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "privacy-enters-english-1590s",
+   "status": "FIXED",
+   "issues": [
+    "The statement gives Etymonline's date as settled fact ('recorded in English from the 1590s'), but dictionaries disagree. Merriam-Webster's live entry says 'First Known Use 15th century, in the meaning defined at sense 1a' (sense 1a: 'the quality or state of being apart from company or observation : seclusion'). A search-engine snippet of the OED entry (paywalled, not read) reports 'OED's earliest evidence for privacy is from 1534'. Both are earlier than the 1590s. The 1590s, c. 1600 and 1814 dates must be credited to Etymonline, not stated as consensus."
+   ],
+   "fieldFixes": {
+    "statement": "The Online Etymology Dictionary dates the noun 'privacy' to the 1590s, first meaning 'a private or personal matter, a secret' and from c. 1600 'seclusion', with an earlier form 'privatie' in the late 14th century; it dates the sense 'freedom from intrusion or interference' to 1814. Dictionaries disagree on the first date: Merriam-Webster puts the first known use of the 'seclusion' sense in the 15th century."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: the whole quote is FOUND verbatim in Etymonline 'privacy (n.)'. It supports the Etymonline dates only. Other dictionaries give earlier dates (see the added Merriam-Webster source; the OED is paywalled and could not be read)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Merriam-Webster",
+     "title": "privacy (noun)",
+     "date": "2026",
+     "url": "https://www.merriam-webster.com/dictionary/privacy",
+     "quote": "15th century, in the meaning defined at sense 1a",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the 'Word History / First Known Use' line. Sense 1a on the same page reads 'the quality or state of being apart from company or observation : seclusion' (seen in the raw HTML; the helper's paragraph extractor does not pick up the definition block). A search-engine snippet of the paywalled OED entry reports 'OED's earliest evidence for privacy is from 1534'. That was not verified from the OED itself."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "arendt-privative-to-intimate",
+   "status": "FIXED",
+   "issues": [
+    "The statement quotes 'not fully human', but neither source quote contained that phrase. Komamura's block quote of Arendt continues into it, so quote 0 has been extended to cover it.",
+    "The note on quote 1 gives 'pp. 1344-45'. The passage (Arendt's 'We no longer think primarily of deprivation ...' paragraph) falls entirely after the page-1345 running head, so it is on p. 1345."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "In ancient feeling the privative trait of privacy, indicated in the word itself, was all-important; it meant literally a state of being deprived of something, and even of the highest and most human of man's capacities. A man who lived only a private life, who like the slave was not permitted to enter the public realm, or like the barbarian had chosen not to establish such a realm, was not fully human.",
+     "note": "Re-fetched the PDF: the extended quote is FOUND verbatim, on Komamura p. 1342, with footnote 19 'Id. at 38 (emphasis added)', i.e. Arendt, The Human Condition (2d ed. 1998), p. 38. Footnote 8 confirms the book was 'first published by the University of Chicago Press in 1958'. The PDF running heads confirm Washington University Law Review vol. 96, starting p. 1337. openscholarship.wustl.edu lists the article at vol96/iss6/8, so 'no. 6' is correct."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. It is Komamura p. 1345, not pp. 1344-45; footnote 35 reads 'ARENDT, supra note 8, at 38 (emphasis added)'. The abstract sentence cited in the note, 'privacy has been a relational concept since the beginnings of western political thought', is also FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "greek-oikos-polis-idion-koinon",
+   "status": "FIXED",
+   "issues": [
+    "'Greek thought drew the first map' is an overstated priority claim. No source says the Greeks were first to separate private from public. The SEP only calls Aristotle's polis/oikos distinction 'the starting point for philosophical discussions of privacy'. The wording has been softened.",
+    "The note on source 0 says Komamura's sentence paraphrases Arendt p. 28. In fact that sentence carries footnote 9, 'ARENDT, supra note 8, at 24'. The quoted line 'the distinction between a private and a public sphere of life corresponds to the household and the political realms' is the next sentence, footnote 10, 'Id. at 28'."
+   ],
+   "fieldFixes": {
+    "statement": "Philosophical accounts of privacy usually start with the Greeks. Aristotle's split between the household (oikos) and the political community (polis) is the standard starting point for philosophical discussions of privacy, and his Politics contrasts what is one's own (idion) with what is common (koinon)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF: quote FOUND verbatim on Komamura p. 1341. The sentence carries fn. 9, 'ARENDT, supra note 8, at 24'. The following sentence quotes Arendt p. 28 (fn. 10): '[t]he distinction between a private and a public sphere of life corresponds to the household and the political realms, which have existed as distinct, separate entities at least since the rise of the ancient city-state.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The page header reads 'First published Tue May 14, 2002; substantive revision Thu Oct 19, 2023', so the title and date fields are right."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim on the MIT page, inside 'Part III' of Book Two (Jowett, 'Written 350 B.C.E'). The Greek in the note could not be re-read because Perseus returned HTTP 503 on every attempt. It matches the standard text of Pol. 2.3, 1261b33-35 (ἰδίων / κοινῶν), but treat the Greek wording as unre-verified in this pass."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "chinese-yinsi-shameful-secret",
+   "status": "FIXED",
+   "issues": [
+    "The statement conflates two words. In Cao, the translations 'privacy', 'personal secret' or 'shameful secret' belong to a word 'most often used in legislation' that 'usually means something negative'. Cao sets it 'in contrast' to 'the related word \"Yinsi\"', which 'is closer to Western ideas of privacy' and which he defines from the Modern Chinese Dictionary as 'a personal thing people do not wish to tell others or disclose in public'. That definition matches 隐私. The negative word is the near-homophone generally written 阴私 (Wiktionary: 'hidden secret'). The PDF has lost the Chinese characters, so this identification rests on the dictionary definitions (Cao cites pp. 1363 and 1368, i.e. two separate entries). The statement wrongly gave all three translations to 隐私.",
+    "'Legal scholar' overstates Cao's standing. The article's author note says it was 'Submitted as part of the LLM programme at Victoria University of Wellington.'",
+    "Cao's gloss 'yin means \"hide\"' is attached in his text to the negative, legislative word. For 隐 = 'hide' an independent dictionary source has been added."
+   ],
+   "fieldFixes": {
+    "statement": "The Chinese word for privacy, yinsi (隐私), joins yin (隐), 'hide', and si (私), 'private'. In a 2005 law-review article, Cao Jingchun distinguished it from a near-homophone 'most often used in legislation', translated as 'privacy', 'personal secret' or 'shameful secret', which 'usually means something negative'. Because the two words were 'used confusingly', he wrote, 'it was initially common for Chinese to misunderstand privacy as relating to shameful secrets'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim (VUWLR 36(3), 2005, p. 646). The OJS citation metadata confirms volume 36, issue 3, pp. 645-664, date 2005, DOI 10.26686/vuwlr.v36i3.5610. The gloss is ambiguous: in Cao's text it describes the word 'most often used in legislation' (the negative near-homophone), not necessarily 隐私. Use the added Wiktionary source for 隐 = 'hide'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. It is preceded by 'The two words are used confusingly though.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Victoria University of Wellington Law Review (vol. 36, no. 3)",
+     "title": "Cao Jingchun, 'Protecting the Right to Privacy in China'",
+     "date": "2005",
+     "url": "https://ojs.victoria.ac.nz/vuwlr/article/download/5610/4977/7913",
+     "quote": "It is this word which is most often used in legislation and is most familiar to Chinese lawyers. It is translated into English as \"privacy\", \"personal secret\" or \"shameful secret\". However it usually means something negative. In contrast, the related word \"Yinsi\" is closer to Western ideas of privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the passage that actually carries the three translations. Cao applies them to the legislative, negative word, which he contrasts with 'Yinsi' (隐私), the word 'closer to Western ideas of privacy'."
+    },
+    {
+     "institution": "Wiktionary",
+     "title": "隱 (Chinese)",
+     "date": "2026",
+     "url": "https://en.wiktionary.org/wiki/%E9%9A%B1",
+     "quote": "to hide ; to cover ; to shield",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (the spacing is as extracted). 隱 is the traditional form of 隐, the yin of 隐私. The 隱私 entry (https://en.wiktionary.org/wiki/%E9%9A%B1%E7%A7%81) gives 'private business ; secrets ; personal matters ; privacy' (FOUND). The 陰私 entry gives 'hidden secret' (FOUND). Wiktionary is a collaborative dictionary, so this is secondary support only."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "china-civil-code-1032-defines-privacy",
+   "status": "OK",
+   "issues": [
+    "Minor, note only: the source note says 'the page also states' that pre-Code law used 隐私权 without defining it. On the page this is attributed to an unnamed judge ('有法官表示')."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: the Chinese definition is FOUND verbatim twice. Once it is quoted as '民法典第1032条规定', and once under '民法典相关规定' directly below the heading '第一千零三十二条', which confirms the article number. The page is the NPC explainer by 郑文阳 (URL date 2020-12-16). The 'before the Civil Code ... only the term 隐私权' remark is attributed to an unnamed judge ('有法官表示'). The English translation in the note is fair. Third-party translations cite the official English as 'Privacy is the tranquility of the private life of a natural person, the private space, private activities and private information, which he is unwilling to be known to others'; the NPC English PDF could not be retrieved."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "japan-puraibashii-1964",
+   "status": "FIXED",
+   "issues": [
+    "'Japan's data-protection chairman Masao Horibe has said' reads as present tense. The source is a September 2017 speech, so he should be described as 'then chairman' of the Personal Information Protection Commission.",
+    "'It spread after' the ruling slightly overstates Horibe. He says the term became widely used 'Due to this court decision and many other backgrounds'. The loanword also predates the ruling: the JILPT report cites Masami Ito, 'Puraibashi no Kenri' (Iwanami 1963)."
+   ],
+   "fieldFixes": {
+    "statement": "Japanese uses the loanword puraibashii (プライバシー), a phonetic rendering of the English 'privacy'. Masao Horibe, then chairman of Japan's Personal Information Protection Commission, said in 2017 that the term came into wide use owing partly to the Tokyo District Court's ruling of 28 September 1964 in a suit over Yukio Mishima's novel After the Banquet, which recognised privacy as a legally protected right for the first time."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim. The preceding sentence names 'a popular novel titled \"After the Banquet\", which was written by Yukio Mishima in 1960'. The speech opens 'I am Masao HORIBE, Chairman of the Personal Information Protection Commission' and thanks the Hong Kong PCPD as host, consistent with the 39th ICDPPC in Hong Kong in September 2017. The filename 290928 = 28 Sept. Heisei 29 (2017)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. Note the hedge 'and many other backgrounds'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim as footnote 4. The body text ties it to the 'Utage no Ato' case and Mishima's novel. Footnote 3 of the same report cites 'Masami Ito, Puraibashi no Kenri (Iwanami 1963)' (FOUND), so the loanword was already in print before the ruling. Footnotes accessed 'June 2014' confirm the 2014 date."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "german-privatsphaere-and-informational-self-determination",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim in headnote 1 of the official English translation of the judgment of 15 December 1983 (1 BvR 209, 269, 362, 420, 440, 484/83). The German original (DE page) uses the phrase 'Rechts auf \"informationelle Selbstbestimmung\"', confirming the German term."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim in headnote 2. German original: 'Einschränkungen dieses Rechts auf \"informationelle Selbstbestimmung\" sind nur im überwiegenden Allgemeininteresse zulässig.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim as sense 1 of the DWDS entry 'Privatsphäre'. Sense 2 is 'ungestörter, privater bzw. individueller (konkreter) Rückzugsraum'. The statement's gloss 'narrower realm of personal life' is a fair translation."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "french-vie-privee-walled",
+   "status": "FIXED",
+   "issues": [
+    "The note on the Littré source says 'Littré gives the maxim without attribution'. That holds only for the definition line. The same Littré entry has a REMARQUE quoting Édouard Fournier (Feuilleton de la Patrie, 14 July 1868). Fournier had believed Royer-Collard coined 'le mur de la vie privée', then found a Stendhal letter of 31 Oct. 1823 crediting Talleyrand. The attribution debate is therefore in Littré itself, and the notes have been corrected with a source added. The statement itself is accurate."
+   ],
+   "fieldFixes": {
+    "note": "Attribution contested. Littré prints the maxim unattributed under 'privé', but the entry's Remarque quotes Édouard Fournier (La Patrie, 14 July 1868). Fournier had thought it Royer-Collard's, then found Stendhal (letter of 31 Oct. 1823) crediting Talleyrand. Quote it as Littré's, not as Royer-Collard's or Talleyrand's."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim. The PDF heading is 'Article 9 du code civil (loi du 17 juillet 1970)'. Independent check: French Wikipedia 'Droit à la vie privée' says 'l'article 9 du code civil français , issu de la loi du 17 juillet 1970' (FOUND)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. It continues: 'Elle a été précisée peu à peu par la jurisprudence et peut être considérée comme incluant l'état de santé, la vie sentimentale, l'image, la pratique religieuse, les relations familiales et l'intimité.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim under 'privé' sense 2, unattributed. The note is wrong on one point: the same entry's REMARQUE quotes Édouard Fournier (1868) on the Royer-Collard vs Talleyrand attribution (see added source). Littré's dictionary appeared 1863-1872 with a supplement in 1877, so '1872-1877' reflects the edition that littre.org reproduces and is acceptable."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Littré, Dictionnaire de la langue française (online edition, littre.org)",
+     "title": "privé (Remarque)",
+     "date": "1872-1877 (online 2026)",
+     "url": "https://www.littre.org/definition/priv%C3%A9",
+     "quote": "Je n'ose continuer de peur d'entreprendre sur la vie privée d'un citoyen, qui, comme l'a si bien dit M. de Talleyrand, doit être murée",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is Stendhal's letter of 31 Oct. 1823, as quoted by Éd. Fournier (Feuilleton de la Patrie, 14 juill. 1868) in Littré's Remarque. Fournier opens: 'J'ai cru d'abord, comme bien des gens. que c'était Royer-Collard [qui avait créé cette expression]' (also FOUND). This shows the Royer-Collard attribution was already doubted in the 19th century."
+    }
+   ]
+  }
+ ]
+}

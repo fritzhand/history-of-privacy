@@ -1,0 +1,435 @@
+{
+ "slice": "concepts",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "jurisdiction",
+   "id": "india-dpdp",
+   "status": "FIXED",
+   "issues": [
+    "All 5 quotes re-fetched with an empty cache and FOUND verbatim. The MeitY Gazette copy gives Act No. 22 of 2023, Presidential assent on 11 Aug 2023, s.2(c) 'Board', s.2(g) 'Consent Manager', s.6(7)-(9) and Schedule item 1: up to Rs 250 crore for failing to take reasonable security safeguards under s.8(5). The PIB backgrounder of 17 Nov 2025 gives Rules notified 14 Nov 2025 and 'an eighteen-month period for phased compliance'. The PIB release on the AI Governance Guidelines was posted 05 Nov 2025.",
+    "notes and inForce overstate how much of the law applies. The Rules Gazette (G.S.R. 846(E), dated 13 Nov 2025) brings only Rules 1, 2 and 17-21 (the Board) into force on publication. Rule 4 (registration and obligations of Consent Managers) starts one year later, around Nov 2026. Rules 3, 5-16, 22 and 23 (notice, breach reporting, children, Significant Data Fiduciaries, rights, retention) start 18 months later, around May 2027. inForce=2025 can stay only as the year the first provisions commenced; the notes must say the core duties apply from 2027.",
+    "automatedSignalsProvision calls Consent Managers a working 'registered intermediary' channel. As of 23 Sept 2026 Rule 4 is not yet in force, so no Consent Manager can have been registered under the Act. The caveat must be added.",
+    "Minor date point: the Gazette notification is dated 13 Nov 2025, while PIB says the Rules were 'notified' on 14 Nov 2025 (the e-Gazette upload code is 14112025). Both dates are defensible; the note keeps 14 Nov and attributes it to PIB."
+   ],
+   "fieldFixes": {
+    "notes": "Act assented 11 Aug 2023. DPDP Rules 2025 (G.S.R. 846(E), Gazette dated 13 Nov 2025; PIB gives notification as 14 Nov 2025) phase the law in. The Board and Rules 1, 2 and 17-21 took effect on publication. Consent Manager registration (Rule 4) starts one year later (Nov 2026). Most Data Fiduciary duties (notice, breach reporting, children's data, Significant Data Fiduciaries, rights handling; Rules 3, 5-16, 22-23) apply 18 months after publication (May 2027).",
+    "automatedSignalsProvision": "Consent Managers (s.2(g), s.6(7)–(9)): intermediaries registered with the Board, through which a person gives, manages, reviews and withdraws consent via an 'accessible, transparent and interoperable platform'. This is a person-side, machine-mediated consent channel, not an open signal standard. Registration under DPDP Rule 4 only begins one year after the Rules' publication (Nov 2026), so no Consent Managers yet operate under the Act."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 (fresh cache): s.2(g) verbatim; s.6(7)-(9) also present on the same PDF."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: Schedule item 1, 'Breach in observing the obligation of Data Fiduciary to take reasonable security safeguards to prevent personal data breach under sub-section (5) of section 8' - 'May extend to two hundred and fifty crore rupees.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.2(c) verbatim."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: backgrounder dated November 17, 2025; says Rules notified on 14 November 2025."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: 'Posted On: 05 NOV 2025 2:34PM by PIB Delhi'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India, G.S.R. 846(E))",
+     "title": "Digital Personal Data Protection Rules, 2025 — rule 1 (commencement)",
+     "date": "2025-11-13",
+     "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+     "quote": "(3) Rule 4 shall come into force one year after the date of publication of this Gazette.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Rule 4 is 'Registration and obligations of Consent Manager'. The same rule 1 says: '(2) Rules 1, 2 and 17 to 21 shall come into force on the date of their publication in the Official Gazette.' The notification is dated 'New Delhi, the 13th November, 2025'."
+    },
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India, G.S.R. 846(E))",
+     "title": "Digital Personal Data Protection Rules, 2025 — rule 1(4)",
+     "date": "2025-11-13",
+     "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+     "quote": "(4) Rules 3, 5 to 16, 22 and 23 shall come into force eighteen months after the date of publication of this Gazette.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "japan-appi",
+   "status": "OK",
+   "issues": [
+    "Both quotes re-fetched and FOUND. The PPC PDF is headed 'June, 2020 ... Amended Act on the Protection of Personal Information (Tentative Translation)'. Its Art. 87(1)(i) gives 'Article 83 and Article 84 a fine of not more than 100 million yen'. Art. 83 is violation of a PPC order and Art. 84 is providing or stealing a personal-information database for illegal profit, so the maxPenalty description is right. The NDL record gives 成立 令和7年5月28日, 公布 令和7年6月4日 and 令和7年法律第53号.",
+    "The listed sources did not support 'Art. 184 in the current numbering'. I checked it against the consolidated Japanese text on e-Gov: Art. 184 is now the corporate dual-liability article, and its item 1 sets 第百七十八条及び第百七十九条 → 一億円以下の罰金刑. The claim is correct and a source is added.",
+    "The e-Gov metadata gives promulgation on 30 May 2003 (平成十五年法律第五十七号), which confirms the 2003 enactment. The Act's original supplementary provisions set commencement of Chapters 4-6 'within two years by Cabinet Order' without naming the date, so 1 April 2005 remains standard but not quoted. The existing notes hedge is appropriate."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: PDF header 'June, 2020 / Personal Information Protection Commission, Japan'; quote is Art. 87(1)(i) of the 2020 text."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: 成立年月日：令和7年5月28日; 公布年月日：令和7年6月4日; 法律番号：令和7年法律第53号."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Digital Agency, e-Gov Law Search (法令API)",
+     "title": "個人情報の保護に関する法律 (平成十五年法律第五十七号), 第百八十四条 (current consolidated text)",
+     "date": "2026",
+     "url": "https://laws.e-gov.go.jp/api/1/lawdata/415AC0000000057",
+     "quote": "第百八十四条 法人の代表者又は法人若しくは人の代理人、使用人その他の従業者が、その法人又は人の業務に関して、次の各号に掲げる違反行為をしたときは、行為者を罰するほか、その法人に対して当該各号に定める罰金刑を、その人に対して各本条の罰金刑を科する。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Item 1 of the same article reads '第百七十八条及び第百七十九条 一億円以下の罰金刑' (Arts. 178 and 179: fine of up to ¥100 million), also --check FOUND. Arts. 178/179 are the current numbers for the 2020 text's Arts. 83/84. The human-readable page (laws.e-gov.go.jp/law/415AC0000000057) is script-rendered, so the API XML is cited."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "south-korea-pipa",
+   "status": "FIXED",
+   "issues": [
+    "All 5 quotes re-fetched and FOUND: KLRI Art. 64-2(1), Art. 37-2, 'Act No. 10465, Mar. 29, 2011', the IAPP intro paragraph and FPF.",
+    "maxPenalty summarises the 2026 amendment as allowing 10% 'for severe or repeated violations'. That is vague and partly unsupported: IAPP's free text says only 'a penalty ceiling of 10% of total turnover'. Hunton Andrews Kurth (13 Feb 2026) lists the three actual triggers: a repeat intentional or grossly negligent violation within three years; intentional or grossly negligent conduct affecting 10 million or more people; or failure to comply with a PIPC corrective order followed by a breach. National Assembly passage was 12 Feb 2026.",
+    "The 3% base is calculated on total sales net of sales unrelated to the violation (Art. 64-2(2), same KLRI page). The record left this qualifier out.",
+    "The notes say the 2011 entry into force is unconfirmed. The KoreanLII translation confirms 'Promulgated on March 29, 2011 Effective on September 30, 2011' (--check FOUND). A source is added and the notes are updated.",
+    "Source dates were imprecise. The IAPP article's datePublished is 2026-03-11 and the FPF post is dated April 18, 2025.",
+    "The IAPP article is mostly members-only. The quoted opening paragraph is on the free portion, so accessType FREE is acceptable for this quote."
+   ],
+   "fieldFixes": {
+    "maxPenalty": "Penalty surcharge of up to 3% of total sales, calculated net of sales unrelated to the violation (Art. 64-2). A 2026 amendment (passed 12 Feb 2026, promulgated 10 Mar 2026, in force 11 Sept 2026) raises the ceiling to 10% of total revenue in certain high-severity cases: repeat intentional or grossly negligent violations within three years, intentional or grossly negligent conduct affecting 10 million or more people, or a breach after failing to comply with a PIPC corrective order.",
+    "notes": "Original Act promulgated 29 Mar 2011 and in force 30 Sept 2011; overhauled by Act No. 19234 (14 Mar 2023); 2026 amendment in force 11 Sept 2026."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: Art. 64-2(1) verbatim. Art. 64-2(2) adds that the surcharge is calculated 'based on the gross sales net of the sales unrelated to the violation'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: Art. 37-2 verbatim."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: amendment history list begins 'Act No. 10465, Mar. 29, 2011'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-03-11",
+     "note": "Re-fetched. The quote is in the free opening; the rest of the article is members-only. Page datePublished 2026-03-11T17:18Z."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "date": "2025-04-18",
+     "note": "Re-fetched: quote verbatim; post dated April 18, 2025. The page also confirms obligations for 'high-impact' AI and mandatory labelling for certain generative-AI uses."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Korean Legal Information Institute (koreanlii.or.kr) — English translation",
+     "title": "Personal Information Protection Act (2011)",
+     "date": "2011-03-29",
+     "url": "http://koreanlii.or.kr/w/images/0/0e/KoreanDPAct2011.pdf",
+     "quote": "PERSONAL INFORMATION PROTECTION ACT Promulgated on March 29, 2011 Effective on September 30, 2011",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Unofficial translation. The addendum reads 'This Act shall enter into force on the day when 6 months elapse after its promulgation' (also FOUND)."
+    },
+    {
+     "institution": "Hunton Andrews Kurth LLP, Privacy & Cybersecurity Law Blog",
+     "title": "South Korea Amends Privacy Law to Authorize Fines of Up to 10% of Total Revenue",
+     "date": "2026-02-13",
+     "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/south-korea-amends-privacy-law-to-authorize-fines-of-up-to-10-of-total-revenue",
+     "quote": "On February 12, 2026, South Korea’s National Assembly passed amendments to the Personal Information Protection Act (“PIPA”) authorizing administrative fines of up to 10% of a company’s total revenue in certain high-severity data breach cases.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same post lists the triggers verbatim (each FOUND): 'intentionally or with gross negligence commits and repeats a violation within three years'; 'engages in intentional or grossly negligent conduct affecting 10 million or more individuals; or'; 'fails to comply with a PIPC corrective order and a breach occurs.' Secondary source (law-firm blog)."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "singapore-pdpa",
+   "status": "OK",
+   "issues": [
+    "All 4 quotes re-fetched and FOUND. s.48J(3) matches: 10% of Singapore turnover above $10 million, otherwise $1 million. The SSO page carries the note '[Act 40 of 2020 wef 01/10/2022]', which confirms the 1 Oct 2022 date the record's sources did not otherwise support. The s.43 wording and the Part 9 'DO NOT CALL REGISTRY' heading are correct. The PDPC AI guidelines PDF says 'Issued 1 Mar 2024'.",
+    "The notes rely on the heading of s.19 for the 2 July 2014 start. The SSO legislative-history block states the staged commencement directly: 2 Jan 2013, 2 Dec 2013, 2 Jan 2014 (DNC ss.43-48) and 2 July 2014 (Parts III-VII, the data-protection obligations). A source is added. inForce=2014 is right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.48J(3)(a) verbatim; (b) 'in any other case — $1 million. [Act 40 of 2020 wef 01/10/2022]' also FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.43 verbatim."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: TOC entry verbatim."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: cover reads 'Issued 1 Mar 2024'; not-legally-binding sentence verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Singapore Statutes Online (Attorney-General's Chambers)",
+     "title": "Personal Data Protection Act 2012 — commencement dates",
+     "date": "2026",
+     "url": "https://sso.agc.gov.sg/Act/PDPA2012?ProvIds=legis",
+     "quote": "2 January 2014: Sections 43 to 48 and 67(1) and the Eighth Schedule ; 2 July 2014: Parts III to VII, and the Second to Sixth Schedules ]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Parts III-VII (original numbering) are the data-protection obligations; ss.43-48 are the Do Not Call duties. The same block lists 2 Jan 2013 and 2 Dec 2013 for earlier Parts."
+    },
+    {
+     "institution": "Singapore Statutes Online (Attorney-General's Chambers)",
+     "title": "Personal Data Protection Act 2012, s.48J(3)(b) and commencement note",
+     "date": "2026",
+     "url": "https://sso.agc.gov.sg/Act/PDPA2012?ProvIds=pr48J-",
+     "quote": "in any other case — $1 million. [Act 40 of 2020 wef 01/10/2022]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "australia-privacy-act",
+   "status": "FIXED",
+   "issues": [
+    "All 5 quotes re-fetched and FOUND. The compilation is No. 104, compilation date 4 June 2026 (C2026C00227). The endnotes give assent 14 Dec 1988 and commencement 1 Jan 1989. The POLA Act 2024 was assented 10 Dec 2024. Its commencement table item 7 (Schedule 1, Part 15, 'Automated decisions and privacy policies') starts 'The day after the end of the period of 24 months beginning on the day this Act receives the Royal Assent', which is 10 Dec 2026, so aiRules is correct.",
+    "maxPenalty misstates s.13G(3). The 3x-benefit and 30%-of-turnover limbs are alternatives, not two amounts to compare. Para (b) applies 'if the court can determine the value of the benefit' and para (c) applies only 'if the court cannot determine the value of that benefit'. The ceiling is therefore the greater of A$50m and whichever of (b) or (c) applies. The record also omitted the A$2.5m ceiling for persons other than bodies corporate (s.13G(2))."
+   ],
+   "fieldFixes": {
+    "maxPenalty": "For a serious interference with privacy by a body corporate: the greatest of A$50 million and either 3x the benefit obtained from the contravention or, if that benefit cannot be determined, 30% of adjusted turnover in the breach turnover period (s.13G(3)); up to A$2.5 million for other persons (s.13G(2))."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.13G(3)(c) verbatim, and the text shows (c) applies only where the benefit cannot be determined."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.13G(3)(a)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: endnote table row 'Privacy Act 1988 119, 1988 14 Dec 1988 1 Jan 1989 (s 2 and gaz 1988, No S399)'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: the quoted commencement text is table item 7, 'Schedule 1, Part 15'; Part 15 is headed 'Automated decisions and privacy policies'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Federal Register of Legislation (Australian Government)",
+     "title": "Privacy Act 1988, compilation of 4 June 2026 — s.13G(2)-(3)(b)",
+     "date": "2026-06-04",
+     "url": "https://www.legislation.gov.au/C2004A03712/2026-06-04/2026-06-04/text/original/pdf",
+     "quote": "(b) if the court can determine the value of the benefit that the body corporate, and any related body corporate, have obtained directly or indirectly and that is reasonably attributable to the conduct constituting the contravention—3 times the value of that benefit;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "s.13G(2) on the same page: '(2) The amount of the penalty for a contravention of subsection (1) by a person other than a body corporate is an amount not more than $2,500,000.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "south-africa-popia",
+   "status": "OK",
+   "issues": [
+    "All 4 quotes re-fetched with an empty cache and FOUND. The Gazette 37067 cover is dated 26 November 2013. s.109(2)(c) sets the R10 million limit, s.107(a) sets 10 years' imprisonment, and s.5(g)/s.71 cover automated decision-making. Proclamation R.21 of 2020 (Gazette 43461, 22 June 2020; signed 17 June 2020) sets 1 July 2020 for ss.2-38, 55-109, 111 and 114(1)-(3).",
+    "The '30 June 2021' grace period in notes is not directly stated by the Proclamation quote. It comes from s.114(1), which the Proclamation brought into force on 1 July 2020 and which gives one year to conform. The Proclamation's own 30 June 2021 date is for ss.110 and 114(4). The note is correct in substance; the s.114(1) source is added so the grace-period claim is supported. Some sections (s.1, Part A of Ch. 5 on the Information Regulator, ss.112-113) had commenced in April 2014. That is not wrong to omit, given inForce is 2020."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.109(2)(c) 'specify the amount of the administrative fine payable, which amount may, subject to subsection (10), not exceed R10 million'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.107(a)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.5(g)."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: bilingual layout; fragments present in order. The same page has '30 June 2021 as the date on which sections 110 and 114(4),' (FOUND)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "South African Government (gov.za) — Government Gazette No. 37067",
+     "title": "Protection of Personal Information Act 4 of 2013, s.114(1)",
+     "date": "2013-11-26",
+     "url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf",
+     "quote": "114. (1) All processing of personal information must within one year after the commencement of this section be made to conform to this Act.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "s.114(1) commenced 1 July 2020 under Proclamation R.21 of 2020, giving the grace period to 30 June 2021."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "nigeria-ndpa",
+   "status": "OK",
+   "issues": [
+    "All 4 quotes re-fetched with an empty cache and FOUND. The PDF is Official Gazette No. 119, Vol. 110, Act No. 37. s.48(3)-(4) gives the higher maximum amount, 'the greater of (a) N10,000,000, and (b) 2% of its annual gross revenue in the preceding financial year', for data controllers or processors of major importance. The standard maximum amount is N2,000,000 or 2%. Commencement is '[12th Day of June, 2023]' and s.37(1) is verbatim.",
+    "Minor, no change required: the Gazette issue itself is dated 'Lagos - 1st July, 2023'. The sources' date 2023-06-12 is the Act's commencement date, which is acceptable for citing the Act."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.48(4)(a)-(b) text matches with ellipses; s.48(3)(a) ties it to controllers/processors 'of major importance'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Gazette cover: 'Official Gazette No. 119 Lagos - 1st July, 2023 Vol. 110'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.37(1) verbatim."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "kenya-dpa",
+   "status": "OK",
+   "issues": [
+    "All 3 quotes re-fetched with an empty cache and FOUND. The PDF cover reads 'Kenya Gazette Supplement No. 181 (Acts No. 24) ... NAIROBI, 11th November, 2019', 'Date of Assent: 8th November, 2019' and 'Date of Commencement: 25th November, 2019'. s.63 is headed 'Administrative fines': up to five million shillings or, for an undertaking, 1% of annual turnover, whichever is lower. s.35(1) is verbatim. enacted/inForce 2019 is correct."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.63 verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: s.35(1) verbatim."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "switzerland-revfadp",
+   "status": "FIXED",
+   "issues": [
+    "All 4 quotes re-fetched and FOUND. The Fedlex PDF is headed 'Federal Act of 25 September 2020 (Status as of 1 September 2023) on Data Protection', SR 235.1. The Art. 21 wording is correct. The FDPIC statement was published 9 November 2023.",
+    "maxPenalty is wrong in two ways. (1) 'Imposed on complaint' is not true of all Arts. 60-63. Art. 60(2) (false information to, or non-cooperation with, the FDPIC) and Art. 63 (wilfully disregarding an FDPIC ruling) are prosecuted without a complaint; only Arts. 60(1), 61 and 62 are complaint offences. (2) 'Not the company' is too absolute. Art. 64(2) lets the authority fine the business itself, up to CHF 50,000, instead of the individuals where identifying the perpetrators would be disproportionate (Art. 7 ACLA)."
+   ],
+   "fieldFixes": {
+    "maxPenalty": "Criminal fines of up to CHF 250,000, imposed on the responsible individuals (Arts. 60–63). Most offences are prosecuted only on complaint; disregarding an FDPIC ruling (Art. 63) and obstructing an FDPIC investigation (Art. 60(2)) are not. The business itself can be fined, up to CHF 50,000, only where identifying the individuals would take disproportionate effort (Art. 64)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: Art. 60(1) opening verbatim. It supports only the complaint-based offences; see added sources for Arts. 63 and 64."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: Art. 21(1) verbatim; Art. 21(2) adds 'The data subject may request that the automated individual decision be reviewed by a natural person.' (FOUND)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: 'Published on 9 November 2023'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Fedlex — Federal Chancellery (English translation, no legal force)",
+     "title": "Federal Act on Data Protection (FADP), Art. 64 (Corporate criminal liability)",
+     "date": "2023-09-01",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/en/pdf-a/fedlex-data-admin-ch-eli-cc-2022-491-20230901-en-pdf-a.pdf",
+     "quote": "If a fine not exceeding 50,000 francs is under consideration and if the identification of the perpetrators in accordance with Article 6 ACLA requires measures that would be disproportionate in view of the potential penalty, the authority may decide not to pursue these persons but instead to order the business to pay the fine (Art. 7 ACLA).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Fedlex — Federal Chancellery (English translation, no legal force)",
+     "title": "Federal Act on Data Protection (FADP), Art. 63 (Disregard of decisions)",
+     "date": "2023-09-01",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/en/pdf-a/fedlex-data-admin-ch-eli-cc-2022-491-20230901-en-pdf-a.pdf",
+     "quote": "Any private person who wilfully fails to comply with a ruling issued by the FDPIC or a decision of the appeal courts that refers to the penalty under this Article shall be liable to a fine not exceeding 250,000 francs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "No 'on complaint' requirement, unlike Arts. 60(1), 61 and 62."
+    }
+   ]
+  }
+ ]
+}

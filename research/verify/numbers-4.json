@@ -1,0 +1,341 @@
+{
+ "slice": "numbers",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "degeling-privacy-policy-mean-length-2016-2018",
+   "status": "FIXED",
+   "issues": [
+    "Quote is verbatim on the live NDSS PDF, and the value 3,603, the unit, 'late May' and the 6,579-site / 28-country / top-500 frame all match (abstract: 'For each country, we periodically examined its 500 most popular websites - 6,579 in total'). Crossref (DOI 10.14722/ndss.2019.23378) confirms NDSS 2019, San Diego, Internet Society, and the six authors.",
+    "The notes say the growth happened 'most of it around the GDPR'. That is wrong if it means the deadline. Of the 1,458 words added (2,145 to 3,603, +68%, so 'about two-thirds' is right), 899 (62%) were added between March 2016 and March 2018. Only 559 (38%) came in the roughly two months before 25 May 2018. The paper's 'another 18 percentage points' is measured against the March 2018 length (3,603/3,044 = +18%), not the 2016 base (which would be +26 points).",
+    "The notes leave out a population caveat. The March 2016 (and 2017) lengths come from Internet Archive copies. The paper says 'On average, we were able to access previous versions for 2,187 policies for each month'. So the 2016 mean is not over all 6,579 sites, and the three means are not necessarily over the same set of policies. The authors also did not compare lengths across countries because of language differences (footnote 9).",
+    "The notes' parenthetical about Amos et al. is confirmed. Amos et al. (arXiv 2008.09159v4) write 'Degaling et al. found the median privacy policy word count ... to be 2,145 in 2016 ... and 3,044 in 2018', while Degeling et al. say 'mean'. Added as an independent source."
+   ],
+   "fieldFixes": {
+    "geography": "EU: privacy policies of the 500 most popular websites in each of the 28 member states (6,579 sites in the study; 2016 lengths from Internet Archive copies)",
+    "notes": "Up from a mean of 2,145 words in March 2016 and 3,044 words in March 2018. Policies grew by about two-thirds (+68%) in just over two years. About 60% of the added words came between March 2016 and March 2018 (the GDPR was adopted in April 2016). The rest, an 18% rise on the March 2018 length, came in the two months before the GDPR took effect on 25 May 2018. The 2016 figure is based on Internet Archive copies (on average 2,187 policies a month could be retrieved), so the three means are not necessarily over the same set of sites. The authors did not compare lengths across countries because of language differences. (Amos et al. 2021 cite the 2016 and 2018 figures as medians; Degeling et al. describe them as means.)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Context checked: the length figures come from section IV (policy changes); the 2016-2017 policies were retrieved from the Wayback Machine ('On average, we were able to access previous versions for 2,187 policies for each month'); footnote 9: 'We refrained from comparing policy lengths across countries due to language differences impacting length'. Venue confirmed via Crossref DOI 10.14722/ndss.2019.23378."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+     "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "date": "2021-04",
+     "url": "https://arxiv.org/pdf/2008.09159v4",
+     "quote": "Degaling et al. found the median privacy policy word count of the top 500 websites for 28 EU countries to be 2,145 in 2016 (our data: 1K: 2,691, 10K: 2,122) and 3,044 in 2018 (our data: 1K: 3,303, 10K: 2651) [25].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent secondary citation of the Degeling figures. 'Degaling' is Amos et al.'s misspelling, and they call the figures medians while Degeling et al. call them means. Amos et al. find their own top-10K numbers roughly consistent for 2016 ('We believe the inconsistency is due to the difference in website sampling methods'). --check FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "nouwens-cmp-sites-meeting-minimal-legal-requirements",
+   "status": "OK",
+   "issues": [
+    "Both quotes are verbatim on the live arXiv abstract page and PDF. The value 11.8% is repeated in the results ('Only 11.8% of sites met these basic requirements').",
+    "Every note claim checks out against the PDF: the three conditions ('Consent must be explicit', 'Accepting all is as easy as rejecting all' - the same number of clicks, 'No pre-ticked boxes'); implicit consent 32.5% (visiting 16.8%, navigating 6.2%, refreshing 7.6%, scrolling/clicking 5.3%); 50.1% with no 'reject all'; 12.6% with reject as easy as accept; 40 participants; 22-23 percentage points ('removing the opt-out button from the first page' is the abstract's wording); the scraper ran 'from a Danish IP address over 3 days in September 2019 over the top 10,000 UK sites according to web-traffic service Alexa'. n=680 is the sites where one of the five CMPs (QuantCast, OneTrust, TrustArc, Cookiebot, Crownpeak) could be scraped, 6.8% of the top 10,000.",
+    "Venue and authors are confirmed by Crossref (DOI 10.1145/3313831.3376321: CHI '20, Honolulu HI USA; authors Nouwens, Liccardi, Veale, Karger, Kagal) and by the arXiv comment ('To appear in the Proceedings of CHI '20 ... April 25--30, 2020, Honolulu, HI, USA'). Minor context, not an error: CHI 2020 is formally listed as Honolulu, but its in-person meeting did not take place because of COVID-19. The paper appears in the proceedings."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. arXiv abstract page, v1 submitted January 2020; related DOI 10.1145/3313831.3376321."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Results section, 'Results' paragraph 3."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "iccl-rtb-broadcasts-per-person-per-day-us",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes are verbatim in the live ICCL PDF. 747, Colorado 987, District of Columbia 486 ('D.C. day time commuter adjusted population used') and the lowest state, Mississippi 493, all match the per-person chart on p. 3.",
+    "The 747 is not total U.S. broadcasts divided by population. It equals the simple unweighted mean of ICCL's 51 state and D.C. figures (746.7). ICCL's own total of 294 billion a day divided by the 2021 U.S. population (about 332 million) gives about 886, or about 984 if divided by 90% of the population. The notes should say what the 747 is.",
+    "The notes misdescribe the stated method. They say per-person figures 'divide by population assuming 90% of people are online'. The published state and country figures instead match 0.9 x daily broadcasts / total population, within 1%, for every state or country where the report gives a daily total: California 35bn gives 803 (published 804), Texas 24.5bn gives 747 (748), Florida 21bn gives 868 (870), Germany 30.8bn gives 333 (334), France 25.4bn gives 339 (340), using 2021 census and Eurostat populations. Dividing by 90% of the population would give figures about 23% higher. The UK (31.9bn a day, published 462) fits neither method.",
+    "'State averages range from 987 (Colorado) to 486 (District of Columbia...)': D.C. is not a state. Reworded to 'state and D.C. figures'.",
+    "The report does not reconcile internally. ICCL says 'People in the U.S. have their online activity and real-world location exposed 57% more often than people in Europe', but 747 vs 376 is 99% more. The Europe 376 also seems to use a different method (see the Europe verdict), so the U.S. and Europe headline averages should not be compared directly.",
+    "The notes leave out ICCL's own caveat. The report calls its figures 'a low estimate' because the industry data exclude Facebook and Amazon RTB broadcasts.",
+    "No independent source reproduces the figure, because the underlying industry data are confidential. The session's web-search budget was exhausted, so press coverage could not be looked for. The record is kept as a clearly labelled advocacy estimate. Year 2022 (publication 16 May 2022, per the page's article:published_time) is right."
+   ],
+   "fieldFixes": {
+    "notes": "ICCL's 747 is the simple (unweighted) average of its 51 state and D.C. figures. These range from 987 (Colorado) to 486 (District of Columbia, commuter-adjusted population). ICCL's own U.S. total of 294 billion broadcasts a day divided by the U.S. population would give about 886. ICCL says the industry counts of RTB broadcasts over 30 days come from a confidential source, and that it assumes 90% of each population is online. The published figures do not follow that method exactly. State and country figures match 0.9 x daily broadcasts / total population (California 35bn a day gives 804, Germany 30.8bn gives 334), not broadcasts / (0.9 x population). ICCL calls its figures a low estimate because the industry data exclude Facebook and Amazon RTB broadcasts. Advocacy estimate, not independently audited: treat as an order-of-magnitude figure, and do not compare it directly with the Europe average of 376, which appears to be computed differently."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. p. 1 key insights. The PDF's own title line reads 'ICCL report on scale of Real-Time Bidding data broadcasts' (no 'the'); the web page uses 'on the scale of'. Author: 'Written and designed by Dr Johnny Ryan.' The per-person chart page carries 'DRAFT' text in the PDF text layer. The 747 equals the unweighted mean of the 51 state/D.C. values on p. 3 (746.7). ICCL's own caveat (p. 9): 'We regard the figures presented for RTB broadcasts as a low estimate. The industry figures on which we rely do not include Facebook or Amazon RTB broadcasts.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "title": "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. End note 2 (p. 9). The same note says: 'We assume that only 90% of the population of each Member State is online.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "iccl-rtb-broadcasts-per-person-per-day-europe",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes are verbatim in the live ICCL PDF, and the UK figure of 462 is on the p. 3 chart ('462 United Kingdom').",
+    "The geography is imprecise. ICCL's 'Europe' per-person chart lists the 27 EU states plus Norway, Iceland, Switzerland and the UK ('Excluding Liechtenstein'). Switzerland is not an EEA member, although ICCL labels its tables 'EEA & UK'.",
+    "The 376 cannot be reproduced from the report's country figures. Their unweighted mean is about 302 and their population-weighted mean about 339. It is close to ICCL's Europe total of 197 billion a day divided by the whole EEA+UK population (about 520-528 million gives about 373-379), with no 90%-online adjustment. The U.S. 747, by contrast, is the unweighted mean of state figures. The two headline averages therefore appear to be computed differently, and ICCL's own claim that people in the U.S. are exposed '57% more often' than people in Europe does not match 747 vs 376 (99% more).",
+    "The same method misdescription as in the U.S. record: the country figures match 0.9 x broadcasts / total population (Germany 30.8bn gives 333, published 334; France 25.4bn gives 339, published 340), not division by the 90% of people online. The UK (31.9bn a day, 462) fits neither method.",
+    "The notes leave out ICCL's 'low estimate' caveat (no Facebook or Amazon RTB broadcasts). No independent source reproduces the figure (confidential industry data; web-search budget exhausted)."
+   ],
+   "fieldFixes": {
+    "geography": "Europe: the 27 EU member states, Norway, Iceland, Switzerland and the UK (ICCL labels this 'EEA & UK'; Liechtenstein excluded from the per-person chart)",
+    "notes": "The UK figure is 462 a day. Country figures range from 462 (UK) and 431 (Poland) down to 149 (Romania). The 376 average is close to ICCL's Europe total of 197 billion broadcasts a day divided by the whole population, not the average of its country figures (about 302 unweighted), so it is not computed the same way as the U.S. figure of 747. ICCL says the industry counts of RTB broadcasts over 30 days come from a confidential source, and that it assumes 90% of each population is online. The published figures do not follow that method exactly. State and country figures match 0.9 x daily broadcasts / total population (California 35bn a day gives 804, Germany 30.8bn gives 334), not broadcasts / (0.9 x population). ICCL calls its figures a low estimate because the industry data exclude Facebook and Amazon RTB broadcasts. Advocacy estimate, not independently audited: treat as an order-of-magnitude figure."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. p. 1 key insights. The p. 3 chart lists 31 countries (UK 462 ... Romania 149, including Switzerland 300, Norway 340, Iceland 319; '‡ Excluding Liechtenstein.'). ICCL's own caveat (p. 9): 'We regard the figures presented for RTB broadcasts as a low estimate. The industry figures on which we rely do not include Facebook or Amazon RTB broadcasts.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "title": "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. End note 2 (p. 9)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "iccl-rtb-broadcasts-per-year-us-europe",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes are verbatim: the web page (live; article:published_time 2022-05-16T04:00:00, byline Johnny Ryan, May 16, 2022) and the PDF (pp. 1-2, end note 2).",
+    "The arithmetic checks: 107 + 71 = 178 trillion; 294 bn/day x 365 = 107.3 trillion; 197 bn/day x 365 = 71.9 trillion (ICCL rounds this down to 71). '4,698 companies are allowed by Google to receive RTB data about people in the U.S.' is verbatim in the PDF and on the web page. The record is correct.",
+    "The notes carry boilerplate about per-person figures ('divide by population assuming 90% of people are online'), which does not apply to this total and misdescribes ICCL's arithmetic (see the per-person verdicts). They also leave out ICCL's own caveat that the totals are 'a low estimate' excluding Facebook and Amazon RTB broadcasts. The notes are rewritten.",
+    "No independent source reproduces the total (confidential industry data; web-search budget exhausted). It is kept as a labelled advocacy estimate."
+   ],
+   "fieldFixes": {
+    "notes": "107 trillion a year in the U.S. and 71 trillion in Europe (294 billion and 197 billion a day). ICCL says 4,698 companies are allowed by Google to receive RTB data about people in the U.S. Year = publication (16 May 2022); ICCL does not say which 30-day period the industry figures cover. ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and calls its totals a low estimate because those figures exclude Facebook and Amazon RTB broadcasts. A 'broadcast' is a bid request sent about a person, not an advertisement shown. Advocacy estimate, not independently audited: treat as an order-of-magnitude figure."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Page byline 'Johnny Ryan May 16, 2022'; article:published_time 2022-05-16T04:00:00+00:00 (dateModified 2023-02-05)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "title": "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. p. 2 findings; the '1' and '2' are footnote markers. ICCL's own caveat (p. 9): 'We regard the figures presented for RTB broadcasts as a low estimate. The industry figures on which we rely do not include Facebook or Amazon RTB broadcasts.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "title": "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. End note 2 (p. 9)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "englehardt-narayanan-third-parties-on-top-million-sites",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes are verbatim in the live Princeton PDF (extended version of the CCS 2016 paper). 81,000, 123 sites above 1%, 'over 90 million requests' and January 2016 all match. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan.",
+    "The notes repeat 'Google, Facebook, Twitter and AdNexus were the only third-party entities on more than 10% of sites' without the qualification in the same section. Grouping domains by parent organization, the paper says 'Google, Facebook, Twitter, Amazon, AdNexus, and Oracle are the third-party organizations present on more than 10% of sites' (Figure 3). Readers will take 'entities' to mean companies, so both counts should be given.",
+    "Missing caveats that change how the number should be read. (a) A 'third party' is any domain (public suffix + 1) other than the landing page's, not necessarily a tracker: 'Every third party is potentially a tracker, but for many of our results we need a more conservative definition'. Content-delivery domains such as gstatic.com and fbcdn.net are counted. (b) The crawler visited only each site's homepage: 'The browser does not interact with the site or visit any other pages within the site'. (c) Statistics cover the 917,261 sites that loaded successfully, not a full million.",
+    "No independent secondary source repeating 81,000 could be found (webtap.princeton.edu returned 502, the ACM DL 403, and the web-search budget was exhausted). The Freedom to Tinker release post (18 May 2016) confirms the study but gives no figures."
+   ],
+   "fieldFixes": {
+    "notes": "A long tail: only 123 of these 81,000 were present on more than 1% of sites. A 'third party' here is any outside domain loaded by a site's homepage, not necessarily a tracker (content-delivery domains count too). The crawl visited only homepages of the 917,261 sites that loaded, making over 90 million requests. All top 5 third parties and 12 of the top 20 were Google-owned domains. Google, Facebook, Twitter and AdNexus were the only third-party entities on more than 10% of sites. Grouped by parent organization, the paper counts six: Google, Facebook, Twitter, Amazon, AdNexus and Oracle."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 5.1."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 5.1."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 4 (measurement configuration); Table 2 gives 1 million sites attempted, 917,261 successful, 14-day crawl."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "Every third party is potentially a tracker, but for many of our results we need a more conservative deﬁnition.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 4, 'What makes a tracker?'. Shows the 81,000 count covers all third-party domains, not only trackers. Contains the PDF text layer's 'ﬁ' ligature. --check FOUND on 2026-09-23."
+    },
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "For eash site, the browser will visit the homepage and wait until the site has ﬁnished loading or until the 90 second timeout is reached. The browser does not interact with the site or visit any other pages within the site.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 4. Homepage-only crawl ('eash' is the paper's typo). --check FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "englehardt-narayanan-google-concentration",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes are verbatim in the live PDF, so the value 4 is literally supported ('the only third-party entities present on more than 10% of sites'). Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan.",
+    "The same section gives a different count at company level. Using domain-to-organization mappings (Libert; Disconnect), it says 'Google, Facebook, Twitter, Amazon, AdNexus, and Oracle are the third-party organizations present on more than 10% of sites' (Figure 3). The notes speak of 'the same few companies', and at the level of companies the paper's figure is 6, not 4. The label, unit and notes need to say that 4 is the paper's entity-level count and give the organization-level six alongside it (or switch the value to 6 if the page says 'companies').",
+    "'AdNexus' is the paper's spelling. The domain behind it in Figure 2 is adnxs.com, the AppNexus ad exchange.",
+    "Also a homepage-only crawl of the 917,261 sites that loaded (see the 81,000 verdict)."
+   ],
+   "fieldFixes": {
+    "label": "Third-party entities present on more than 10% of the top 1 million sites (paper's entity-level count)",
+    "unit": "entities (Google, Facebook, Twitter, AdNexus); six at parent-organization level",
+    "notes": "Tracking is concentrated: a few companies see a large share of the web. All of the top 5 third-party domains and 12 of the top 20 were Google-owned. At the entity level the paper finds four above 10% of sites. Grouping domains by parent organization, it finds six: Google, Facebook, Twitter, Amazon, AdNexus (the ad exchange at adnxs.com, i.e. AppNexus) and Oracle (through its BlueKai and AddThis acquisitions). Homepages only, of the 917,261 sites that loaded in January 2016."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 5.1. The following paragraph gives the organization-level count of six (added as a source)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 4."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "As shown in Figure 3, Google, Facebook, Twitter, Amazon, AdNexus, and Oracle are the third-party organizations present on more than 10% of sites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 5.1, next paragraph after the 'entities' sentence. Counts parent organizations using Libert's and Disconnect's domain-to-organization mappings; Oracle is included through its BlueKai and AddThis acquisitions. --check FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "englehardt-narayanan-canvas-fingerprinting-sites",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes are verbatim in the live PDF. 14,371 and 98.2% match, and 1.6% is right against the 917,261 sites that loaded successfully (14,371/917,261 = 1.57%), which the unit 'of those measured' correctly reflects (it would be 1.4% of a full million). Table 7 gives 15,089 script inclusions on 14,371 unique first parties. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan.",
+    "The label's '(tracking without cookies)' and the notes overstate the purpose. The paper reports that 'the use has shifted from behavioral tracking to fraud detection, in line with the ad industry's self-regulatory norm regarding acceptable uses of fingerprinting', and that 'the most prominent trackers have by-and-large stopped using it'. The largest script domain is doubleverify.com (7,806 first parties). The 14,371 sites are sites where canvas fingerprinting scripts ran, not sites confirmed to track users with them. The notes are corrected and the label softened.",
+    "Homepage-only crawl, so this is a lower bound for sites with such scripts anywhere on the site. The scripts came from about 3,500 URLs on about 400 domains."
+   ],
+   "fieldFixes": {
+    "label": "Sites among the top 1 million running canvas fingerprinting scripts (identification without cookies)",
+    "notes": "98.2% came from third-party scripts, served from about 400 domains (the largest, doubleverify.com, on 7,806 sites). Fingerprinting identifies a browser without storing anything on it, so clearing cookies does not stop it. The authors found that compared with a 2014 study, the most prominent trackers had largely stopped using canvas fingerprinting, and its use had shifted from behavioural tracking to fraud detection. Homepages only, so a lower bound."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 6.1, Results; Table 7."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Crossref (DOI 10.1145/2976749.2978313) confirms CCS'16, Vienna, Austria, published 24 Oct 2016, pp. 1388-1401, authors Englehardt and Narayanan. Section 4."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "Third, the use has shifted from behavioral tracking to fraud detection, in line with the ad industry’s self-regulatory norm regarding acceptable uses of ﬁngerprinting.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 6.1, comparison with the 2014 Acar et al. study. Contains the PDF text layer's 'ﬁ' ligature. --check FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "ftc-2014-data-segments-per-consumer",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes are verbatim in the live FTC PDF (dated May 2014; released 27 May 2014). The nine brokers, the section 6(b) orders ('in December 2012, the Commission initiated a study'), the 'starting January 1, 2010' scope and the broker-to-broker sourcing claim all match. 'None of the nine data brokers collect data directly from consumers' supports the notes' paraphrase.",
+    "The record leaves the broker anonymous and presents the number as an FTC finding. The FTC report itself names it: 'Acxiom ... Its databases contain information about 700 million consumers worldwide with over 3000 data segments for nearly every U.S. consumer', footnoted to 'Acxiom Corp., Annual Report 8 (2013)'. The figure is Acxiom's own marketing claim, repeated by the FTC, not a number the FTC measured from the 6(b) responses. Acxiom's 10-K for the fiscal year ended 31 March 2013 (filed 29 May 2013) says 'Over 3,000 propensities for nearly every U.S. consumer'. It is also a floor ('over'), not an exact count. The label, unit and notes are corrected; year 2014 is kept as the publication year.",
+    "Independent check: the FTC press release of 27 May 2014 confirms the report and the nine-broker study, but does not repeat the 3,000 figure."
+   ],
+   "fieldFixes": {
+    "label": "Data segments one data broker (Acxiom) said it held on nearly every U.S. consumer",
+    "unit": "data segments per consumer (more than; Acxiom's own figure)",
+    "notes": "The FTC names the broker as Acxiom and takes the figure from Acxiom's 2013 annual report (Acxiom's 10-K for the year to March 2013: 'Over 3,000 propensities for nearly every U.S. consumer'). It is the company's own claim, which the FTC repeated, not an FTC measurement. Year = FTC publication (May 2014). The FTC orders were issued in December 2012 under section 6(b) and covered practices from 1 January 2010. None of the nine brokers collected data directly from consumers; they obtained most of it from other data brokers rather than from original sources."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Executive summary. The same report's list of the nine brokers identifies this broker as Acxiom and cites Acxiom's 2013 Annual Report (footnote 21)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live on 2026-09-23 (HTTP 200; bytes identical to the fetch-text cache copy); quote --check FOUND. Executive summary."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Federal Trade Commission",
+     "title": "Data Brokers: A Call for Transparency and Accountability",
+     "date": "2014-05",
+     "url": "https://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf",
+     "quote": "Acxiom provides consumer data and analytics for marketing campaigns and fraud detection. Its databases contain information about 700 million consumers worldwide with over 3000 data segments for nearly every U.S. consumer.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section I (Introduction), list of the nine data brokers; footnote 21 cites 'Acxiom Corp., Annual Report 8 (2013)'. --check FOUND on 2026-09-23."
+    },
+    {
+     "institution": "Acxiom Corporation, Form 10-K filed with the U.S. Securities and Exchange Commission (EDGAR)",
+     "title": "Acxiom Corporation, Annual Report on Form 10-K for the fiscal year ended March 31, 2013",
+     "date": "2013-05-29",
+     "url": "https://www.sec.gov/Archives/edgar/data/733269/000073326913000012/financials.htm",
+     "quote": "Over 3,000 propensities for nearly every U.S. consumer",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Business section, 'Data and Insight' bullet (next to 'Multi-sourced insight into approximately 700 million consumers worldwide'). Found with SEC full-text search (accession 0000733269-13-000012, filed 2013-05-29). sec.gov returns 403 to fetch-text.py's browser user-agent, so the page was downloaded live with curl using a declared user-agent as SEC requires (HTTP 200, 2.26 MB), stored in the fetch-text cache, and then checked with fetch-text.py --check (FOUND) on 2026-09-23."
+    }
+   ]
+  }
+ ]
+}

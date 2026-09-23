@@ -1,0 +1,299 @@
+{
+ "slice": "myterms",
+ "chunk": 7,
+ "verdicts": [
+  {
+   "kind": "lineage",
+   "id": "iso-iec-ts-27560-2023",
+   "status": "OK",
+   "issues": [
+    "Re-fetched the 28 Jan 2026 Internet Archive snapshot of iso.org/standard/80392.html on 2026-09-23. The quote is verbatim in the abstract ('aiming to support the: — provision of a record of the consent to the PII principal; ...'). It supports the note that a copy of the record may go to the individual.",
+    "The fate dates are right, but no quoted text carried them. The same page's life-cycle block shows '60.60 2023-08-08 International Standard published' and '90.92 2025-04-03 International Standard to be revised'. It also shows 'Technical Committee : ISO/IEC JTC 1/SC 27' (so the body is right), 'Edition : 1', 52 pages, and 'Will be replaced by Under development ISO/IEC CD 27560'. Sources for both dates are added.",
+    "Two claims had no source: machineReadable=true, and recordKeptBy=organisation (the record is kept by the controller). The W3C DPVCG implementation guide (Final CG Report, 15 Feb 2026) states both, and its sources are added.",
+    "Not checked: whether ISO status changed after Jan 2026. The live iso.org page returns 403 to scripts, and the 2 Sep 2026 Wayback snapshot (web/20260902161324) could not be fetched because web.archive.org reset the connection several times. The fate text is historical (dates of publication and of the 'to be revised' mark), so it remains true either way."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 (Wayback 20260128031229); --check FOUND. The page lists Publication date 2023-08, Stage 90.92, JTC 1/SC 27. Institution, title and date fields are correct."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC TS 27560:2023 — life cycle",
+     "date": "2023-08-08",
+     "url": "https://web.archive.org/web/20260128031229/https://www.iso.org/standard/80392.html",
+     "quote": "60.60 2023-08-08 International Standard published",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Life-cycle block on the ISO standard page; supports 'Published 8 August 2023'. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC TS 27560:2023 — life cycle",
+     "date": "2025-04-03",
+     "url": "https://web.archive.org/web/20260128031229/https://www.iso.org/standard/80392.html",
+     "quote": "90.92 2025-04-03 International Standard to be revised",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'marked \"to be revised\" 3 April 2025'. The same page says it 'Will be replaced by' ISO/IEC CD 27560, which is under development. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Consent Records and Receipts as per ISO/IEC TS 27560:2023 using DPV — Final Community Group Report 15 February 2026",
+     "date": "2026-02-15",
+     "url": "https://w3id.org/dpv/guides/consent-27560",
+     "quote": "According to [ ISO-27560 ], records are generated and maintained by organisations (Controller, Third Party), and are utilised to provide receipts to a Data Subject.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent secondary source for recordKeptBy=organisation and for the note. The guide adds that the Kantara Consent Receipt spec, on which 27560 is based, framed receipts the other way round. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Consent Records and Receipts as per ISO/IEC TS 27560:2023 using DPV — Final Community Group Report 15 February 2026",
+     "date": "2026-02-15",
+     "url": "https://w3id.org/dpv/guides/consent-27560",
+     "quote": "The ISO/IEC TS 27560:2023 Privacy technologies — Consent record information structure provides guidance for the creation and maintenance of records regarding consent as machine-readable information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports machineReadable=true. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "ietf-aipref-2025",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes re-fetched 2026-09-23 and --check FOUND. The charter paragraph is verbatim (charter-ietf-aipref-01, Approved). The history page shows '2025-01-07 Cindy Morgan Charter approved, group active', and the charter document history shows 'IESG has approved the charter' on 2025-01-07, so 'chartered 7 January 2025' is right. draft-ietf-aipref-vocab-08 is dated 14 September 2026 in the draft header (Datatracker's 'Last updated' reads 2026-09-13, a UTC timing difference). It is an 'Active Internet-Draft (aipref WG)' with IESG state 'I-D Exists', so 'still an Internet-Draft' is right. The Aug 2026 milestone for sending it to the IESG has passed.",
+    "legalForce 'None' overstates the case. The charter does list 'Technical enforcement of preferences' as out of scope, and §3.2 of the draft says it does not 'ensure that preferences are followed'. But the draft's Introduction says: 'The vocabulary is intended to be used in jurisdictions where expressing preferences results in legal obligations, as well as where there are no associated legal obligations.' So the spec carries no legal force of its own, but an AIPREF signal can carry legal effect where local law gives a machine-readable reservation force. The field is corrected and a source added.",
+    "Minor: the vocab draft defines the author of a preference as any 'Declaring party', not necessarily an organisation, and warns that 'no assumptions can be made about where a preference originates'. whoProffers='organisation' is acceptable only with the note's 'usually'."
+   ],
+   "fieldFixes": {
+    "legalForce": "None of its own: the charter puts technical enforcement out of scope and the draft does not ensure preferences are followed; the draft says the vocabulary is meant for use both where expressing preferences results in legal obligations and where it does not"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. Charter charter-ietf-aipref-01 (Approved). The same page lists 'Technical enforcement of preferences' among out-of-scope topics. Chairs Mark Nottingham and Suresh Krishnan; area wit."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. The entry is dated 2025-01-07 (Cindy Morgan). Milestones were moved from Aug 2025 to Aug 2026 on 2025-09-23."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND (the abstract). Header: Keller (Open Future) and Thomson, Ed. (Mozilla), 14 September 2026, expires 18 March 2027, Intended status Standards Track."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IETF Datatracker",
+     "title": "A Vocabulary For Expressing AI Usage Preferences (draft-ietf-aipref-vocab-08)",
+     "date": "2026-09-14",
+     "url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
+     "quote": "The vocabulary is intended to be used in jurisdictions where expressing preferences results in legal obligations, as well as where there are no associated legal obligations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 1, Introduction. Supports the corrected legalForce field. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IETF Datatracker",
+     "title": "AI Preferences (aipref) — charter",
+     "date": "2025-01-07",
+     "url": "https://datatracker.ietf.org/wg/aipref/about/",
+     "quote": "The following topics are out of scope for this charter: Technical enforcement of preferences",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The lead-in sentence and the first list item are joined here. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IETF Datatracker",
+     "title": "Charter for AI Preferences (aipref) — history",
+     "date": "2025-01-07",
+     "url": "https://datatracker.ietf.org/doc/charter-ietf-aipref/history/",
+     "quote": "IESG has approved the charter",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dated 2025-01-07, alongside 'State changed to Approved from External Review'. Independent corroboration of the charter date. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "ieee-7012-2025",
+   "status": "OK",
+   "issues": [
+    "Both quotes re-fetched fresh (not from cache) on 2026-09-23 and --check FOUND. The IEEE SA page shows Status Active Standard, PAR Approval 2017-12-06, Board Approval 2025-11-04, Published 2026-01-20, Standard Committee SSIT/SC, WG MRPT-WG, and chair Doc Searls. 'Approved 4 November 2025; published 20 January 2026' and the body field are correct.",
+    "Three claims were not in any quoted text: 'launched 28 January 2026', 'five agreements in a market-feedback phase', and 'roster kept by Customer Commons'. All three are correct according to other pages. Doc Searls' 'Now We Begin' (posted 2026-01-29; WP API date 2026-01-29T14:40) says 'Yesterday, Customer Commons and MyData Global launched MyTerms'. myterms.info/ieee7012-standards/ says it will launch with 5 agreements for up to 6 months of market feedback. The FAQ says the roster is posted at a neutral nonprofit site such as CustomerCommons.org or MyTerms.info, and the myterms.info footer reads '© 2026 Customer Commons'. Sources for these are added.",
+    "Caveat: the market-feedback phase was announced as 'up to 6 months' from the 28 Jan 2026 launch, so by today (2026-09-23) that window has passed. No source read says whether updated agreements or a 'full market launch' followed. The fate text describes the launch state, which is accurate.",
+    "The FAQ says the agreements are 'enforceable by contract law'. That is the proponents' claim, and the record correctly flags it as untested in court."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch 2026-09-23; --check FOUND in the abstract. Dates on the page: PAR 2017-12-06, Board Approval 2025-11-04, Published 2026-01-20."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch 2026-09-23; --check FOUND in FAQ Q15 ('How is MyTerms different from \"Do Not Track,\" \"Global Privacy Control,\" cookie banners, and preference centers?'). The WordPress API gives the FAQ page created 2025-11-11 and modified 2026-01-26, so the date is made precise."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "Yesterday, Customer Commons and MyData Global launched MyTerms at a London event correctly titled The Only Way to Get Real Privacy Online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the launch date of 28 January 2026. Fresh fetch plus --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026-02-14",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "MyTerms will launch with 5 standardized personal privacy agreements and run in that mode for up to 6 months in order to gain market feedback.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'five agreements in a market-feedback phase'. WP API: page modified 2026-02-14. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "You can choose an agreement from a small roster of terms posted at a neutral nonprofit site such as CutomerCommons.org or MyTerms.info.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'roster kept by Customer Commons' (the 'CutomerCommons' typo is on the page). myterms.info is itself a Customer Commons site: its footer reads '© 2026 Customer Commons'. The standard only requires 'an independent and neutral non-business entity' and does not name Customer Commons. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "firstParty",
+   "id": "par-2017-first-parties",
+   "status": "OK",
+   "issues": [
+    "Quote verbatim in field 5.4 'Purpose' of the P7012 PAR form (approved 06-Dec-2017), including the double hyphens. The attribution to the 2017 PAR is right. The later modified PAR (as Searls reproduced it on 2025-04-06) uses different scope wording, so labelling the quote '2017' matters and is correct.",
+    "An attempt at independent corroboration through the 2019 Wayback copy of standards.ieee.org/project/7012.html failed: web.archive.org reset the connection. The HL7 copy is the IEEE form itself, so this does not weaken the source."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch of the HL7-hosted PDF on 2026-09-23; --check FOUND. The form header reads 'PAR Request Date: 16-Oct-2017 PAR Approval Date: 06-Dec-2017', and its WG chair field names David Reed. The attachment's modificationDate 1548607614535 = 2019-01-27, so this is the original 2017 PAR, not the 2025 modified PAR. The modified PAR text that Searls posted on projectvrm.org (2025-04-06) does not contain this sentence."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "par-2017-anybody-proffer",
+   "status": "OK",
+   "issues": [
+    "Quote verbatim in field 5.5 'Need for the Project' of the 2017 PAR form, so the speaker label 'need for the project' is right. The sentence before it reads 'The norm on the Net thus far has been for server operators to proffer all terms of engagement ... with no alternative but to go away', so the quote is not taken out of context."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch of the HL7-hosted PDF on 2026-09-23; --check FOUND. The form header reads 'PAR Request Date: 16-Oct-2017 PAR Approval Date: 06-Dec-2017', and its WG chair field names David Reed. The attachment's modificationDate 1548607614535 = 2019-01-27, so this is the original 2017 PAR, not the 2025 modified PAR. The modified PAR text that Searls posted on projectvrm.org (2025-04-06) does not contain this sentence."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "abstract-2026-proffer",
+   "status": "OK",
+   "issues": [
+    "The sentence is verbatim in the abstract on the IEEE SA standard page (fresh fetch 2026-09-23). It is the second sentence of the abstract, which opens by naming 'websites, applications and AI agents'. The source date (2026-01-20) is the publication date shown on the page.",
+    "The same sentence was already in the modified PAR text that Searls posted on 2025-04-06. That version said only 'including websites', with no AI-agent wording. So the words are not new in 2026, but labelling them the 'IEEE 7012-2025 abstract' is accurate."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch 2026-09-23; --check FOUND. The page shows Board Approval 2025-11-04 and Published 2026-01-20."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "projectvrm-principle",
+   "status": "FIXED",
+   "issues": [
+    "The quote is on the ProjectVRM Main Page under the 'VRM Principles' heading (fresh fetch 2026-09-23). The displayed quote has a space before the em dash ('engagement —and') that is not in the source. The raw HTML is '<b>proffer their own terms of engagement</b>—and to have ...'. The extractor inserts the space at the closing bold tag. The displayed quote is corrected. The source quote is left as is, because the repo helper's text has the space and --check needs it.",
+    "Source date '2026' is an access year. The page footer reads 'This page was last edited on 3 March 2024, at 16:40.'"
+   ],
+   "fieldFixes": {
+    "quote": "Customers must be able to proffer their own terms of engagement—and to have auditable records of all contracts to which both sides agree."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2024-03-03",
+     "note": "Fresh fetch 2026-09-23; --check FOUND (helper text keeps an extractor-inserted space before the em dash; the page itself has none). This is the fourth item of the 'VRM Principles' list. The page was last edited 3 March 2024."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "searls-2022-your-terms",
+   "status": "OK",
+   "issues": [
+    "The quote is verbatim (fresh fetch 2026-09-23). The WordPress API gives title 'The most important standard in development today', date 2022-10-11T10:56:02 and modified 2025-10-31. The post now opens with 'Update on 31 October 2025: P7012 is now nicknamed MyTerms ...'. The quoted sentence is in the original body, right after the quoted 2017 PAR scope ('identifies/addresses the manner ...'). That placement fits the 2022 text.",
+    "Could not independently confirm that the sentence was in the pre-update version. The Wayback copy from 2 Oct 2023 (web/20231002211552) could not be fetched because web.archive.org reset the connection and WebFetch is blocked there. The risk is low, because the 2025 edit is clearly marked as a prefixed update."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch 2026-09-23; --check FOUND. WP API: date 2022-10-11, modified 2025-10-31 (an update note was added at the top). Title and date fields are correct."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "searls-2018-readers-terms",
+   "status": "FIXED",
+   "issues": [
+    "The page exists: the title is 'Help Us Cure Online Publishing of Its Addiction to Personal Data | Linux Journal', the byline is Doc Searls, and it is dated March 14, 2018, so the title, author and date fields are right. The article is his first editorial as Editor in Chief of the relaunched Linux Journal.",
+    "The displayed quote ends 'readers' terms .' with a space before the period that is not in the source. The raw HTML is '<a href=\"https://medium.com/@dsearls/time-for-them-to-agree-to-our-terms-263ee87e9f41\">publishers will agree to readers' terms</a>.' The extractor inserts the space at the closing link tag. The displayed quote is corrected. The source quote is changed to stop before the period so that --check matches without the artifact."
+   ],
+   "fieldFixes": {
+    "quote": "Instead of readers always agreeing to publishers' terms, publishers will agree to readers' terms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Instead of readers always agreeing to publishers' terms, publishers will agree to readers' terms",
+     "note": "Fresh curl fetch 2026-09-23; --check FOUND for this quote without the extractor's stray ' .'. On the page, the sentence ends with a link on 'publishers will agree to readers' terms' followed by a period. The page is dated March 14, 2018."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

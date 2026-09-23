@@ -1,0 +1,118 @@
+{
+  "slice": "media",
+  "chunk": 4,
+  "verdicts": [
+    {
+      "kind": "image",
+      "id": "stasi-archive-erfurt-secured-1989",
+      "status": "OK",
+      "issues": [
+        "Checked OK: Commons API (extmetadata + wikitext) re-read on 2026-09-23. LicenseShortName 'CC BY-SA 3.0 de' (cc-by-sa-3.0-de, creativecommons.org/licenses/by-sa/3.0/de), Attribution 'Bundesarchiv, Bild 183-1989-1204-023 / Heinz Hirndorf / CC-BY-SA 3.0'. The creditLine matches it word for word. The BArch-image template gives photographer 'Hirndorf, Heinz', date 1989-12-04, depicted place Erfurt, ID Bild 183-1989-1204-023. The original caption 'ADN-ZB/Hirndorf/4.12.89/Erfurt: Beweismaterial sichergestellt./ In den Räumen der Bezirksbehörde des ehemaligen Ministeriums für Staatssicherheit wurden umfangreiche Bestände des Archives beschlagnahmt und durch den Militärstaatsanwalt sichergestellt.' is verbatim, so the caption's date, photographer, agency (ADN-Zentralbild) and military-prosecutor clause are all supported.",
+        "Independent check: English Wikipedia (Stasi Records Agency) and German Wikipedia (Gedenk- und Bildungsstätte Andreasstraße) both date the citizens' occupation of the Erfurt Stasi district headquarters to 4 December 1989, the first occupation of an MfS district office. That matches the photo date. Erfurt city coordinates (50.9787, 11.0328) are right. The Andreasstraße building lies about 0.6 km west, which is fine at city level.",
+        "Checked OK: the local file opens (500x320 RGB) and shows metal shelving with numbered archive boxes and stacked cartons, as the alt text says. The original is 798x510, so a 500 px thumbnail is correct. thumbUrl returns HTTP 200 image/jpeg."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "stasi-informer-files-central-archive-2016",
+      "status": "OK",
+      "issues": [
+        "Checked OK: Commons file page HTML re-fetched. The licence sentence 'This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.' is verbatim, under 'I, the copyright holder of this work, hereby publish it under the following license:'. The page gives Author 'Dr. Hubertus Knabe', Date '29 April 2016, 17:52:04' and Source 'Own work'. The author's attribution-and-link condition is quoted correctly in rightsEvidence. The English description ('Bookshelves in the central Stasi archive with files of Stasi informers, in the back the federal officer for the Stasi files Roland Jahn (2016)') and the German one ('Zentralarchiv der Stasi-Unterlagen-Behörde') support the caption.",
+        "Upstream checked: hubertus-knabe.de/rettet-die-gauck-behoerde/ exists and carries the photo with the caption 'Stasi-Unterlagen-Beauftragter Roland Jahn mit IM-Akten des DDR-Staatssicherheitsdienstes'. The article first ran in Welt on 23.09.2019, and the photo itself dates from 2016. The same article says Jahn's second term ends in January 2021, so 'then Federal Commissioner' is right for April 2016.",
+        "The coordinates (52.5147, 13.487) fall on the former Stasi headquarters site in Berlin-Lichtenberg, where the central archive is. The page gives no address, and the locationNote says so honestly. The local file opens (675x1200) and shows a narrow aisle of shelves full of brown files, with a white-haired man at the far end, as the alt text says. thumbUrl returns HTTP 200."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "netscape-navigator-1-1-install-disk",
+      "status": "OK",
+      "issues": [
+        "Checked OK: Commons API re-read. LicenseShortName 'CC BY-SA 4.0' ({{self|cc-by-sa-4.0}}), Artist Kevin van Haaren (User:Nmtgxnku), date 2023-09-01, source own work. The description 'When Netscape Navigator was released strong encryption algorithms were considered munitions and could not be exported, special export restricted installers were produced for the US and Canada.' is verbatim, and the caption paraphrases it faithfully.",
+        "Independent: English Wikipedia's 'Export of cryptography from the United States' says cryptography was on the US Munitions List from 1954 and that Canada was exempt from export licences. It also says Netscape shipped a 'U.S. edition' with full-length keys and an 'International Edition' cut to 40-bit, and it uses this same disk as an illustration. The caption's 'could not be exported' simplifies things, since 40-bit versions could be exported, but it is accurate for strong encryption. Wikipedia's Netscape Navigator article dates the 1.1 beta to 6 March 1995, so '1990s disk' is safe. '1995' would be more precise but is not needed.",
+        "Checked OK: the local file opens (960x987). The label reads 'NETSCAPE NAVIGATOR / Version 1.1 / for Macintosh / US and Canada Only - Not For Export / Run \"Installer\" To Setup' with the N logo, which matches the caption and alt text. Mountain View was Netscape's headquarters city, and the note flags this as a proxy location. thumbUrl returns HTTP 200."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "phorm-tracking-cookie-diagram-2008",
+      "status": "OK",
+      "issues": [
+        "Checked OK: Commons API re-read. LicenseShortName 'CC BY-SA 3.0' ({{self|cc-by-sa-3.0}}), Artist/Attribution Lostforwords, date 2008-04-28. The description 'A diagram showing how Phorm's system creates copies of its tracking cookie in each domain the browser fetches, based on the analysis published by Richard Clayton.' is verbatim, and the source is {{Based|Phorm_cookie_diagram.png}}. The file was moved from en.wikipedia with FileImporter.",
+        "Checked against the image: the local file (960x797, flattened SVG) shows 'Phorm System Situated within ISP's network', 'Masquerade as: Bebo.com', 'Act as: Webwise.net', 'Act as Proxy +Mirror / Remove Webwise cookie', 'webwise 2173' cookies and a 'Profiler' box. Every clause of the caption is visible in the diagram.",
+        "Independent: Clayton's PDF at cl.cam.ac.uk/~rnc1/080518-phorm.pdf opens with 'The Phorm \"Webwise\" System / Richard Clayton, 4th April 2008, Revised: 23rd April 18th May 2008'. The date in the locationNote is correct; there was an intermediate 23 April revision that the note leaves out, which is harmless. Paragraphs 14-22 describe the same flow: a machine in the ISP network 'will pretend to be www.cnn.com', redirects to webwise.net, and sets 'a special \"webwise\" labelled cookie within the www.cnn.com domain'. lat/lng null is deliberate and appropriate. thumbUrl returned 429 once, then HTTP 200 image/png on retry."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "google-street-view-car-london-2008",
+      "status": "FIXED",
+      "issues": [
+        "Checked OK: Commons API re-read. LicenseShortName 'CC BY 2.0' (cc-by-2.0), Artist 'Master Man', DateTimeOriginal 2008-09-22 19:47:53, FlickreviewR passed on 2023-10-27 with author MasterMan and sourceurl flickr.com/photos/90614808@N00/2947211893. The upstream Flickr page (flickr.com/photos/masterman/2947211893/) still resolves, 'Taken on September 22, 2008', and still carries licence id 4 ('https://creativecommons.org/licenses/by/2.0/'), so the licence has not changed.",
+        "Minor wording error: the caption says the photographer 'posted it to Flickr as \"Google Street View!!!! (in London)\"'. On Flickr the photo's title is 'CIMG1076' (og:title) and 'Google Street View!!!! (in London)' is its description (og:description; Commons also uses it as the description). The caption is reworded to match.",
+        "Checked OK: the local file opens (960x720) and shows a black Opel Astra hatchback (Commons category 'Opel Astra H Google Street View camera cars') with a camera mast and a Google sticker. A red bus, traffic lights and a 'Dual carriageway' sign are also in frame, which matches the alt text. London city coordinates are fine. thumbUrl returns HTTP 200."
+      ],
+      "fieldFixes": {
+        "caption": "A Google Street View car with its roof-mounted camera mast drives through London on 22 September 2008. The photographer posted it to Flickr with the description 'Google Street View!!!! (in London)'."
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "berkman-center-23-everett-street-2011",
+      "status": "FIXED",
+      "issues": [
+        "Checked OK: Commons file page HTML re-fetched. The sentence 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.' is verbatim under 'I, the copyright holder of this work, hereby publish it under the following license:'. The page gives Description 'Berkman Center for Internet & Society at 23 Everett Street, Cambridge MA', Date 16 July 2011, Author Fletcher6, Own work, camera location 42.379889; -71.117972. The coordinates in the record match.",
+        "Caption is dated: it says 'The picture shows the centre's home', which reads as a present-day statement. The Berkman Klein Center's own site footer (cyber.harvard.edu, raw HTML, fetched 2026-09-23) now gives its address as '1557 Massachusetts Avenue, 5th Floor, Cambridge, MA 02138'. The centre is therefore no longer based at 23 Everett Street. The caption should anchor 23 Everett Street to 2011. Independent: English Wikipedia's Berkman Klein Center article says 'On July 5, 2016, the center added \"Klein\" to its name', and it captions the same house 'The location at 23 Everett Street', which supports the 2011 description.",
+        "Checked OK: the local file opens (960x634) and shows a pale yellow clapboard house with dormers, black shutters and a white front porch and steps, as the alt text says. thumbUrl returns HTTP 200."
+      ],
+      "fieldFixes": {
+        "caption": "The Berkman Center for Internet & Society at 23 Everett Street, Cambridge, Massachusetts, photographed on 16 July 2011, when the house was the centre's home. It is a pale yellow clapboard house with a white front porch. The centre, renamed the Berkman Klein Center in 2016, now lists its address as 1557 Massachusetts Avenue."
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "edward-snowden-hong-kong-2013",
+      "status": "FIXED",
+      "issues": [
+        "Checked OK: Commons API re-read. LicenseShortName 'CC BY 3.0', Attribution 'Laura Poitras / Praxis Films', VRT ticket 2013070610007169 ('The following permission and license are based on an email from Laura Poitras at Praxis Films, who is the filmmaker.'). The page has a RetouchedPicture template ('reflections and background elements removed, sharpened, colour'), date 2013-06-06, and location 22.300324, 114.172480. The licence is acceptable.",
+        "6 June 2013 confirmed independently: the Guardian's page for part two of the same interview (theguardian.com/world/video/2013/jul/08/edward-snowden-video-interview) says 'This interview was recorded in Hong Kong on 6 June 2013' (fetch-text --check FOUND). The first video was published on 9 June 2013 (datePublished 2013-06-09T17:26Z) with Glenn Greenwald and Laura Poitras as authors. That supports 'first published in The Guardian'. The Mira hotel is confirmed by English Wikipedia (Snowden 'remained in his room at the Mira Hotel'; The Mira Hong Kong article: 118 Nathan Road, Tsim Sha Tsui). The camera coordinates are about 200 m from the hotel, which is fine.",
+        "Unsupported label: the caption calls the frame a still 'from the film Prism'. That phrase comes only from the Commons uploader's source field ('Screenshot of the film Prism by Praxis Films'). The original File:Edward_Snowden.jpg has the same field and a 2 July 2013 date. The Guardian published the footage as an untitled interview video credited to Greenwald and Poitras, and 'Prism' there is only a topic tag. No Poitras film titled 'Prism' could be confirmed; her Snowden feature is Citizenfour (2014). The caption is reworded so it does not assert a film title.",
+        "Checked OK: the local file opens (500x602; the original is 576x694, so the 500 px thumbnail is correct) and shows a close-up of a young man with rimless glasses and stubble, as the alt text says. thumbUrl returns HTTP 200."
+      ],
+      "fieldFixes": {
+        "caption": "Edward Snowden speaks about the NSA leaks in an interview with reporter Glenn Greenwald at The Mira hotel in Hong Kong, recorded on 6 June 2013 and first published in The Guardian on 9 June. The frame is a retouched still from Laura Poitras's footage of the interview (Praxis Films)."
+      },
+      "sourceFixes": [],
+      "addSources": []
+    },
+    {
+      "kind": "image",
+      "id": "nsa-utah-data-center-eff-2014",
+      "status": "OK",
+      "issues": [
+        "Checked OK: Commons file page HTML re-fetched. The sentence 'This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication.' is verbatim. The page gives Description 'Photograph of the NSA's Utah Data Center, taken by an employee of the Electronic Frontier Foundation during an airship flight.', 'Taken on 27 June 2014, 06:40:50', Author 'User:ParkerHiggins (Electronic Frontier Foundation)', and camera location 40.431530; -111.933092, which the record matches.",
+        "Upstream checked: the EFF Deeplinks post 'Releasing a Public Domain Image of the NSA's Utah Data Center' (meta author Parker Higgins, dated July 9, 2014) says 'we're releasing a photograph of the Utah Data Center into the public domain' and 'this image is released into the public domain under the terms of the CC0 waiver from Creative Commons'. This supports the caption's last sentence. The waiver is in EFF's name ('Electronic Frontier Foundation has waived all copyright'). Crediting Parker Higgins as photographer rests on the Commons Author/Own-work fields, which is acceptable.",
+        "Independent date check: EFF's press release 'Diverse Groups Fly Airship Over NSA's Utah Data Center to Protest Illegal Spying' is dated June 27, 2014 and says Greenpeace flew the airship over the Bluffdale data center 'early Friday morning'. 27 June 2014 was a Friday, which is consistent with the 06:40 EXIF time.",
+        "Checked OK: the local file opens (960x640) and shows low white buildings in a brown valley below mountains, as the alt text says. thumbUrl returns HTTP 200."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": []
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "slice": "early",
+  "chunk": 2,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "wilkes-v-wood-general-warrants-1763",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch 2026-09-23: --check FOUND. Page footer reads 'The Founders' Constitution Volume 5, Amendment IV, Document 4'; citation line '98 Eng. Rep. 489, 498--99 C.P. 1763'. The quote is Pratt's charge to the jury on the general warrant." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Supports the verdict for Wilkes with a thousand pounds damages." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Donohue, 83 U Chi L Rev (2016); same paragraph places the trial 'at the Court of Common Pleas at Westminster' and later says the jury returned £1,000 'after a mere half hour'." }
+      ],
+      "addSources": [
+        {
+          "institution": "The Founders' Constitution (University of Chicago Press), vol. 5, Amendment IV, Document 4",
+          "title": "Wilkes v. Wood, 98 Eng. Rep. 489 (C.P. 1763) — length of the sitting",
+          "date": "1763-12-06",
+          "url": "https://press-pubs.uchicago.edu/founders/documents/amendIVs4.html",
+          "quote": "The Court sat at nine o'clock in the morning, and the verdict was brought in at twenty minutes past eleven o'clock at night.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Supports the summary's 'from nine in the morning to after eleven at night', which the existing sources did not quote. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "entick-v-carrington-papers-dearest-property-1765",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. PDF header confirms '(2022) 110 Kentucky Law Journal 265'. Transcription heading reads 'Michs Term 6th G 3rd Wednesday the 27th of November 1765' (27 Nov 1765 was a Wednesday), footnote 47 says 'Lord Camden delivered his judgment on November 27, 1765', and the declaration gives entry 'on the 11th day of November 1762' under Halifax's warrant of 6 November 1762. The article describes the report as prepared 'based on notes taken in court by the barrister Edward Moore', so 'contemporaneous' holds." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Page citation line is '95 Eng. Rep. 807 K.B. 1765' (Wilson's report); the record's note correctly flags that the case was in the Common Pleas." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. The sentence sits in Donohue's section '1. Entick v Carrington (1765)', so it is about the Entick trial." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "sweden-freedom-of-the-press-ordinance-public-access-1766",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Front matter: Anders Chydenius Foundation's Publications 2, Kokkola 2006, translation by Peter Hogg. The same PDF says the ordinance abolished 'the previously established office of Censor' and that 'the innovation was suspended from 1772-1809', which supports the summary." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. The sentence is the end of §10 of the translated ordinance, as the source title says." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "blackstone-eavesdroppers-common-nuisance-1769",
+      "status": "FIXED",
+      "issues": [
+        "The significance field claims eavesdropping was 'the common law's first named privacy offence'. No source supports that 'first'. Blackstone was recording an existing offence, not naming a new one: his own footnotes on this passage cite older authorities ('Kitch. of courts. 20' and '1 Hawk. P. C. 132'). The significance has been rewritten without the 'first' claim.",
+        "Avalon source (index 0): the quote IS verbatim on the page. tools/fetch-text.py --check reports NOT-FOUND only because its paragraph extractor skips this page's <br>-separated text. A full-text extraction of the same freshly fetched page contains it exactly, so the status is raised to CONFIRMED and the stale 'PENDING only because' note is replaced."
+      ],
+      "fieldFixes": {
+        "summary": "The fourth book of William Blackstone's Commentaries on the Laws of England (1769) lists eavesdroppers — those who listen under walls, windows or the eaves of a house to pick up talk and then frame slanderous and mischievous tales — among common nuisances. They could be presented at the court-leet or indicted at the sessions, and punished by a fine and by finding sureties for good behaviour. Blackstone was recording an old offence, not creating a new one: his footnotes cite earlier authorities, Kitchin on courts and Hawkins's Pleas of the Crown.",
+        "significance": "A common-law offence aimed at listening in, recorded long before 'privacy' was a legal term. The U.S. Supreme Court still cited Blackstone's passage when it confronted electronic eavesdropping in 1967.",
+        "sources[0].note": "Avalon transcribes the 1769 first edition with the long s rendered as 'f' (fuch = such, liften = listen, houfe = house, nufance = nuisance). tools/fetch-text.py --check returns NOT-FOUND because the page sets its text in <br>-separated blocks that the helper's paragraph extractor skips. The verifier re-fetched the page on 2026-09-23 and found the quote verbatim in the full BeautifulSoup text, followed by ': or are indictable at the feffions, and punifhable by fine and finding fureties for the good behaviour', with footnotes 's Kitch. of courts. 20' and 't Ibid. 1 Hawk. P. C. 132'. Avalon's Blackstone index gives the source edition as 'First Edition Oxford : Printed at the Clarendon Press, 1765-1769'."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Quote verified verbatim in the full text of the freshly fetched Avalon page; the helper's NOT-FOUND is an extraction artefact (see fieldFixes sources[0].note)." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Berger v. New York was decided 12 June 1967; it cites '4 Blackstone, Commentaries 168'." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "french-constitution-private-life-clause-1791",
+      "status": "FIXED",
+      "issues": [
+        "The summary says Halpérin notes that twentieth-century French doctrine 'largely ignored' the 1791 provision. His words, in the record's own quote, are 'ignorait totalement' (ignored it entirely). The summary understated the source and has been corrected.",
+        "The summary's 'allowed public criticism of officials' is loose. Article 17 permits 'La censure sur les actes des Pouvoirs constitués' (criticism of the acts of the constituted powers) and lets officials prosecute deliberate calumnies against their probity. The wording has been tightened, and the article reference (Title III, ch. V, art. 17), confirmed on both official pages, is added."
+      ],
+      "fieldFixes": {
+        "summary": "The Constitution of 3 September 1791 (Title III, chapter V, article 17) permitted criticism of the acts of the constituted powers and let officials prosecute deliberate calumnies against their probity. It also provided that calumnies and insults against any person relating to the actions of their private life would be punished at that person's suit. The historian Jean-Louis Halpérin notes that twentieth-century French legal doctrine ignored this provision entirely."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. The sentence is the last clause of 'Article 17' under 'Chapitre V - Du pouvoir judiciaire' of Titre III." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Page title 'La Constitution du 3 septembre 1791'; text sits in ART. 17 of CHAPITRE V." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Page header reads 'Nouveaux Cahiers du Conseil constitutionnel - n° 48, juin 2015'. Halpérin also places the clause 'dans le chapitre V, titre III, article 17 de la Constitution de 1791'." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "bentham-panopticon-inspection-house-1791",
+      "status": "OK",
+      "issues": [
+        "No factual error found. A fresh re-fetch of the Wayback URL failed on 2026-09-23: the proxy tunnel to web.archive.org was reset on every attempt, and the live UCL page returns HTTP 403. The Wayback capture fetched earlier the same day (shared tool cache, 10:31 UTC) is a genuine capture ('FILE ARCHIVED ON 04:21:16 Feb 01, 2026') and contains the quote verbatim, so the source stays CONFIRMED."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Quote verbatim in the Wayback capture of 1 Feb 2026 (cached fetch of 2026-09-23 10:31 UTC). Later same-day re-fetches failed on proxy tunnel resets to web.archive.org. The same page supports 'cells arranged around the outer wall ... inspection tower' and that 'the prison's inspector could look into the cells at any time ... though the inmates themselves would never be able to see the inspector'." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Header 'Journal of Bentham Studies, vol. 9 (2007)'. Footnote 2 also says the letters were 'written from Russia ... in 1787'. An Internet Archive scan of the 1791 edition (id 10059224bsb) has on its title page 'Written in the Year 1787, from Crecheff in White Russia, to a Friend in England', which matches the locationNote." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "us-fourth-amendment-ratified-1791",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. The text is 'Article the sixth' of the transcribed 1789 Joint Resolution (and 'Amendment IV' in the page's second transcription)." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. The same introduction reads 'On September 25, 1789, the First Congress of the United States proposed 12 amendments to the Constitution', which supports the summary's proposal date." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Page footer reads 'Volume 5, Amendment IV, Document 9'; heading 'Virginia Declaration of Rights, sec. 10, 12 June 1776'." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "us-post-office-act-penalty-for-opening-letters-1792",
+      "status": "FIXED",
+      "issues": [
+        "The summary applied the $300 / six-months penalty to any letter an employee 'secreted, embezzled or destroyed'. Section 16 limits that penalty to letters and packets 'which shall not contain any security for, or assurance relating to money'. Secreting, embezzling, destroying or stealing letters containing bank notes, bills or other money instruments carried the death penalty under the same section.",
+        "The dead-letter provision is section 18. It applies to letters still unclaimed after being advertised for three months, not to all 'undeliverable' letters. Valuables found were advertised and kept for the addressee on payment of postage. No existing source quoted this provision, so a source is added."
+      ],
+      "fieldFixes": {
+        "summary": "Section 16 of the Act to establish the Post-Office and Post Roads, approved on 20 February 1792, punished any post-office employee who unlawfully detained, delayed or opened a letter, packet, bag or mail of letters entrusted to him with a fine of up to three hundred dollars, up to six months' imprisonment, or both. The same penalty applied to secreting, embezzling or destroying a letter that held no money or securities. Secreting or stealing letters that contained bank notes or other money instruments was punishable by death. Under section 18, letters still unclaimed after being advertised were sent as 'dead letters' to the General Post Office, where they were opened and inspected, and any valuable papers were advertised and kept for the addressee."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. The PDF heads the Act '2nd Congress, Sess. I, Ch. 7 ... Feb, 20, 1792' and ends 'APPROVED, February 20, 1792.'" },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. In the Act this penalty covers opening, detaining or delaying mail, and secreting or destroying letters 'which shall not contain any security for, or assurance relating to money'." }
+      ],
+      "addSources": [
+        {
+          "institution": "New Jersey Postal History Society (transcription of 1 Stat. 232)",
+          "title": "Act of Feb. 20, 1792, sec. 16 — death penalty for letters containing money",
+          "date": "1792-02-20",
+          "url": "https://njpostalhistory.org/media/pdf/postact1792.pdf",
+          "quote": "or if any such person, employed as aforesaid, shall steal or take any of the same out of any letter, packet, bag or mail of letters, that shall come to his possession, he shall, on conviction for any such offence, suffer death.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "'the same' refers to bank notes, bills of exchange, Treasury warrants and other money instruments listed earlier in sec. 16. --check FOUND."
+        },
+        {
+          "institution": "New Jersey Postal History Society (transcription of 1 Stat. 232)",
+          "title": "Act of Feb. 20, 1792, sec. 18 — dead letters",
+          "date": "1792-02-20",
+          "url": "https://njpostalhistory.org/media/pdf/postact1792.pdf",
+          "quote": "shall send such of the said letters as then remain on hand, as dead letters, to the general post-office, where the same shall be opened and inspected",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Sec. 18 continues: if 'any valuable papers or matter of consequence' are found, the Postmaster General is to advertise them and preserve the letter and contents for the addressee on payment of postage. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "royer-collard-vie-privee-muree-1819",
+      "status": "FIXED",
+      "issues": [
+        "The summary tied the speech to 'the press law that became the law of 17 May 1819'. The primary text (Barante's 1863 edition of Royer-Collard's speeches, pp. 474–475) shows he was speaking to the article 'Nul ne sera admis à prouver la vérité des faits diffamatoires, si ce n'est dans le cas d'imputation contre les dépositaires ou agents de l'autorité ... de faits relatifs à leurs fonctions'. As far as the verifier knows, this rule was enacted as art. 20 of the companion law of 26 May 1819 on prosecution and trial, not the 17 May law; the text of the 1819 laws could not be fetched to confirm the article number. Halpérin speaks loosely of the 17 May law, so the summary now says 'the de Serre press laws of May 1819' and keeps Halpérin's point about 17 May scoped to that law.",
+        "Grammar: 'His phrase ... are' is corrected to 'His words ... are'.",
+        "The only source was secondary, because the Gallica primary returned HTTP 403. A primary-text source (Barante, via Internet Archive) is added; its quote gives Royer-Collard's own gloss that truth may not be told about private life."
+      ],
+      "fieldFixes": {
+        "summary": "In the Chamber of Deputies on 27 April 1819, during the debate on the de Serre press laws of May 1819, Royer-Collard defended the bill's rule on proving defamatory facts. Truth could be proved against officials over acts of their public functions, but not against private individuals: 'it is not permitted to tell the truth about private life'. His words — 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — are 'famous' in the historian Jean-Louis Halpérin's phrase. Halpérin also notes that the expression 'vie privée' does not appear in the law of 17 May 1819 itself."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Fresh re-fetch: --check FOUND. Page header 'Nouveaux Cahiers du Conseil constitutionnel - n° 48, juin 2015'. The next sentence says Royer-Collard's argument justifies the scheme in which 'l'exception de vérité est admise' for defamation of public agents but 'la preuve de la vérité des faits allégués est interdite' for private persons." }
+      ],
+      "addSources": [
+        {
+          "institution": "Internet Archive (scan of the University of Toronto, Robarts Library copy)",
+          "title": "Prosper de Barante, La vie politique de M. Royer-Collard, ses discours et ses écrits, vol. 1 (Paris: Didier, 1863), pp. 474–475",
+          "date": "1863",
+          "url": "https://archive.org/stream/laviepolitiquede01barauoft/laviepolitiquede01barauoft_djvu.txt",
+          "quote": "L'article établit seulement que la preuve ne sera pas admise contre les particuliers, c'est-à-dire qu'il n'est pas permis de dire la vérité sur la vie privée.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Primary text of the speech (OCR). Barante introduces it with the bill's article: 'Nul ne sera admis à prouver la vérité des faits diffamatoires, si ce n'est dans le cas d'imputation contre les dépositaires ou agents de l'autorité, ou autres personnes ayant agi dans un caractère public, de faits relatifs à leurs fonctions.' The speech continues: 'Voilà donc la vie privée murée, si je puis me servir de cette expression; elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons.' That sentence is OCR-damaged in the scan, so only the clean preceding sentence is quoted. Barante gives no date; 27 April 1819 rests on Halpérin. --check FOUND."
+        }
+      ]
+    }
+  ]
+}

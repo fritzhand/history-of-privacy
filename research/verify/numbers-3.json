@@ -1,0 +1,273 @@
+{
+ "slice": "numbers",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "pew-2023-ai-data-used-uncomfortably",
+   "status": "FIXED",
+   "issues": [
+    "The notes give 'n=5,101', but that is the full survey sample. The 81% base is narrower. Topline AIPRIV2 was asked only of respondents who had heard a lot or a little about AI ('ASK IF HEARD A LOT OR A LITTLE ABOUT AI (AI_HEARD=1,2) [N=4,566]'). Because the unit is '% of U.S. adults who have heard of AI', the notes should give that base.",
+    "Checked and correct: the quote was re-fetched and FOUND verbatim on the overview page. 81% = 40% 'definitely' + 41% 'probably will happen' (topline item a). 80% = 44 + 36 (item b). The 70% 'little to no trust' figure is on the chapter page. Fieldwork was May 15-21, 2023, among ATP panelists. The Pew title and date (2023-10-18) are correct."
+   ],
+   "fieldFixes": {
+    "notes": "80% expect uses 'that weren't originally intended' — the purpose-limitation problem in survey form. Separately, 70% of those who have heard of AI have little or no trust in companies to make responsible decisions about using it in their products. 81% = 40% 'definitely' plus 41% 'probably' will happen. Asked of the 4,566 respondents (out of 5,101 surveyed 15-21 May 2023) who had heard a lot or a little about AI."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND verbatim on the overview page."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center (American Trends Panel Wave 127 topline)",
+     "title": "How Americans View Data Privacy — Topline questionnaire, Wave 127, May 15-21, 2023",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2023/10/PI_2023.10.18_Data-Privacy_TOPLINE-1.pdf",
+     "quote": "ASK IF HEARD A LOT OR A LITTLE ABOUT AI (AI_HEARD=1,2) [N=4,566]:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Question AIPRIV2: 'As companies use AI to collect and analyze personal details and information, do you think this information will be used in ways…' (--check FOUND). Item a, 'People would not be comfortable with': Definitely will happen 40, Probably will happen 41, so 81% in total. Item b, 'That were not originally intended': 44 + 36 = 80. Base: the 4,566 respondents who had heard a lot or a little about AI, out of 5,101. Checked with --check: FOUND."
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "1. Views of data privacy risks, personal data and digital privacy laws (chapter of 'How Americans View Data Privacy')",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "Roughly eight-in-ten say the information will be used in ways people are not comfortable with or that were not originally intended.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "This sentence sits under the chapter's heading 'Among those who have heard of AI:', next to '70% say they have little to no trust in companies to make responsible decisions about how they use AI in their products.' Both were checked with --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "pew-2023-want-more-regulation",
+   "status": "OK",
+   "issues": [
+    "No errors. The quote was re-fetched and FOUND verbatim. 72% more / 7% less (18% same) matches topline GOVREGV1, which was asked of all 5,101 respondents. The overview page gives 78% of Democrats and 68% of Republicans. Pew's charts label these 'Dem/Lean Dem' and 'Rep/Lean Rep', so 'including leaners' is right.",
+    "Minor wording point: the question actually asked is 'what companies can do with their customers' personal information'. The label's 'people's data' follows Pew's own summary wording, so it is acceptable. I added the chapter source that carries the exact question wording. For context, the 2019 figure was 75%."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "1. Views of data privacy risks, personal data and digital privacy laws (chapter of 'How Americans View Data Privacy')",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "Overall, 72% say there should be more government regulation of what companies can do with their customers’ personal information. Just 7% say there should be less regulation. Another 18% say it should stay about the same.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Gives the exact question wording (topline GOVREGV1, asked of all 5,101 respondents: 72 more / 7 less / 18 same / 3 no answer; June 2019: 75 / 8 / 16). The same chapter says 'A majority of Democrats and Republicans say there should be more government regulation for how companies treat users’ personal information (78% vs. 68%).' The report's charts label these groups 'Dem/Lean Dem' and 'Rep/Lean Rep'. Checked with --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "mcdonald-cranor-hours-per-year-reading-privacy-policies",
+   "status": "OK",
+   "issues": [
+    "No errors. Both quotes were re-fetched from the author draft and FOUND. Table 7 in the draft matches the record: read 181 / 244 / 304 hours a year, skim 81 / 154 / 293. Table 5's point estimate is 1,462 sites a year. The draft uses 221 million Americans online.",
+    "The '201 hours' inconsistency is real and also appears in the published I/S version (OSU Knowledge Bank PDF). The same sentence's $3,534 per user is the 244-hour point estimate from Table 8: work $2,791 + home $743. So 244 is the internally consistent figure, and the record is right to use it."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the author draft. The same sentence is FOUND in the published I/S version."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the author draft. The same sentence is FOUND in the published I/S version. It supports the note about the inconsistency, not the value 244."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008), pp. 543-568 (Ohio State University Moritz College of Law) — published version, Ohio State University Knowledge Bank (hdl.handle.net/1811/72839)",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://kb.osu.edu/server/api/core/bitstreams/a9510be5-b51e-526d-aea3-8e9636bc00cd/content",
+     "quote": "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Published journal version (ISJLP_V4N3_543.pdf) from the OSU Knowledge Bank item http://hdl.handle.net/1811/72839 (metadata: dc.date.issued 2008; citation 'I/S ... vol. 4, no. 3 (2008), 543-568'). The repo helper's own request got HTTP 403 from the server, so the PDF was downloaded with curl (HTTP 200, application/pdf, 1,654,540 bytes), put in the helper's cache, and checked with --check: FOUND. The text layer is OCR, so a few digits come out as letters (e.g. 'lo minutes' for '10 minutes'). Confirms that the 244-hour figure and the 40-minutes-a-day comparison are unchanged in the published version."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "mcdonald-cranor-national-hours-reading-privacy-policies",
+   "status": "OK",
+   "issues": [
+    "No errors. The quote was re-fetched and FOUND in the author draft and in the published version. Table 7's national read point estimate is '53.8 billion hours / year' (FOUND), with a range of 39.9-67.1 billion. 244 hours x 221 million = 53.9 billion hours. The draft says 'nationwide, U.S. tax payers spent 3.4 billion hours completing federal income taxes' in 2000, which matches the notes."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the author draft. The same sentence is FOUND in the published I/S version."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008), pp. 543-568 (Ohio State University Moritz College of Law) — published version, Ohio State University Knowledge Bank (hdl.handle.net/1811/72839)",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://kb.osu.edu/server/api/core/bitstreams/a9510be5-b51e-526d-aea3-8e9636bc00cd/content",
+     "quote": "We estimate that if all American Internet users were to annually read the online privacy policies word-for-word each time they visited a new site, the nation would spend about 54 billion hours reading privacy policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Published journal version (ISJLP_V4N3_543.pdf) from the OSU Knowledge Bank item http://hdl.handle.net/1811/72839 (metadata: dc.date.issued 2008; citation 'I/S ... vol. 4, no. 3 (2008), 543-568'). The repo helper's own request got HTTP 403 from the server, so the PDF was downloaded with curl (HTTP 200, application/pdf, 1,654,540 bytes), put in the helper's cache, and checked with --check: FOUND. The text layer is OCR, so a few digits come out as letters (e.g. 'lo minutes' for '10 minutes'). The same sentence in the published version."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "mcdonald-cranor-national-opportunity-cost",
+   "status": "FIXED",
+   "issues": [
+    "The notes say 'The authors compare it with 2007 U.S. online retail sales of about $260 billion.' That misreads the paper. The $260 billion sentence does not compare against the $781 billion total. It reads 'In 2007, United States online sales were approximately $260 billion—more than the cost to businesses if their employees were to read privacy policies on corporate time'. That clause itself conflicts with the paper's own Table 8, which puts the work-time cost at $617B. The paper also says 'online sales', not 'retail sales'. The comparison the authors actually draw for the $781 billion is with U.S. online advertising: 'The value of all online advertising in the United States was about $21 billion in 2007', and Internet users 'should give up an estimated $781 billion of their time to protect themselves from an industry worth substantially less.'",
+    "Checked and correct: the quote was FOUND in the draft and in the published version. $781B is the point estimate (range $559.7B-$1.1T), split into work $617B and home $164B. $3,534 per user = work $2,791 + home $743. Time is valued at 1/4 of wages at home and 2x wages at work, from a BLS average hourly wage of $17.93 for March 2008."
+   ],
+   "fieldFixes": {
+    "notes": "Point estimate (range $559.7 billion to $1.1 trillion; work time $617 billion, home time $164 billion). Values leisure time at 25% of the average hourly wage ($17.93, BLS, March 2008) and time at work at twice the wage; about $3,534 per internet user per year. The authors set it against the roughly $21 billion value of all U.S. online advertising in 2007, the industry whose data collection the policies disclose."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the author draft. The same sentence is FOUND in the published I/S version."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "The current policy decisions surrounding online privacy suggest that Internet users should give up an estimated $781 billion of their time to protect themselves from an industry worth substantially less.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The paper's own comparison for the $781B, which comes right after 'The value of all online advertising in the United States was about $21 billion in 2007.' (also FOUND). Checked with --check: FOUND in the author draft and in the published version."
+    },
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008), pp. 543-568 (Ohio State University Moritz College of Law) — published version, Ohio State University Knowledge Bank (hdl.handle.net/1811/72839)",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://kb.osu.edu/server/api/core/bitstreams/a9510be5-b51e-526d-aea3-8e9636bc00cd/content",
+     "quote": "The value of all online advertising in the United States was about $21 billion in 2007.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Published journal version (ISJLP_V4N3_543.pdf) from the OSU Knowledge Bank item http://hdl.handle.net/1811/72839 (metadata: dc.date.issued 2008; citation 'I/S ... vol. 4, no. 3 (2008), 543-568'). The repo helper's own request got HTTP 403 from the server, so the PDF was downloaded with curl (HTTP 200, application/pdf, 1,654,540 bytes), put in the helper's cache, and checked with --check: FOUND. The text layer is OCR, so a few digits come out as letters (e.g. 'lo minutes' for '10 minutes'). The comparison figure used in the corrected notes."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "mcdonald-cranor-minutes-per-policy",
+   "status": "FIXED",
+   "issues": [
+    "The notes give the range as '8 minutes for a first-quartile policy of 2,071 words', which leaves out the upper end. Table 1 runs from 8 minutes (2,071 words, 'first quartile') to 12 minutes (3,112 words, 'third quartile'). The text says 'it takes about eight to twelve minutes'. The paper defines these 'quartiles' in its own way, as the average of all data points below or above the median (footnote 37).",
+    "The geography '75 most popular U.S. websites (2008)' is inaccurate. The paper took the 75 most popular sites from 'a list of 30,000 most frequently clicked-on websites from AOL search data in October, 2005'. The paper does not say the sites are U.S. sites, and the popularity ranking dates from October 2005, not 2008.",
+    "Checked and correct: the quote was FOUND in the draft and in the published version. 2,514-word median at 250 wpm = 10 minutes. The skimming study had 212 participants, from whom 44 outliers were removed. The paper is inconsistent on the point estimate: it says 'with the mean value as a point estimate', but Table 1 uses the median. The label's 'average' follows the abstract's wording and is acceptable."
+   ],
+   "fieldFixes": {
+    "geography": "75 most popular websites, from a list of the 30,000 most frequently clicked-on sites in AOL search data (October 2005); policies measured for the 2008 paper",
+    "notes": "Median policy length 2,514 words at 250 words per minute. Range 8-12 minutes: 2,071 words for a 'first-quartile' policy and 3,112 words for a 'third-quartile' one (the paper defines these as the averages below and above the median). The authors say the times may be slightly low because of jargon and slower reading on screen. They also measured skimming time in an online study of 212 participants (44 outliers removed)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the author draft. The same sentence is FOUND in the published I/S version (OCR renders '10' as 'lo')."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "As seen in Table 1, we find that it takes about eight to twelve minutes to read privacy policies on the most popular sites, with a point estimate of ten minutes per policy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the 8-12 minute range. Checked with --check: FOUND in the author draft and in the published version."
+    },
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We measured the word count of the 75 most popular websites based on a list of 30,000 most frequently clicked-on websites from AOL search data in October, 2005.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the corrected geography. Checked with --check: FOUND in the author draft and in the published version."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "obar-oeldorf-hirsch-skipped-privacy-policy",
+   "status": "OK",
+   "issues": [
+    "No errors. The abstract says 'Results reveal 74% skipped PP, selecting the ‘quick join’ clickwrap' and 'Most participants agreed to the policies, 97% to PP and 93% to TOS' (N = 543, fictitious SNS 'NameDrop'). The institution, volume, pages and dates match Crossref. Caveat: the full text is behind a 403, so the participant population (who the 543 were) could not be checked. The geography field wisely does not claim more than the abstract says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23. The quote was checked against the JSON-decoded abstract: FOUND verbatim. ASCII fragments were also FOUND with the repo helper. A second index, OpenAlex (api.openalex.org/works/doi:10.1080/1369118X.2018.1486870), rebuilds the same abstract word for word. Crossref gives vol. 23, issue 1, pp. 128-147, online 2018-07-03, print 2020-01-02, which matches the institution and date fields. The Taylor & Francis full text and SSRN still return 403, so none of the claims could be checked beyond the abstract. The record relies only on abstract-level facts."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "obar-oeldorf-hirsch-mean-privacy-policy-reading-time",
+   "status": "OK",
+   "issues": [
+    "No errors. The abstract says 'For those that didn’t select the clickwrap, average PP reading time was 73 seconds', 'TOS … average reading time of 51 seconds', and 250-280 wpm, which implies 29-32 minutes for the PP and 15-17 minutes for the TOS. The label's 'those who opened it' is a fair gloss of 'those that didn't select the clickwrap'. The abstract says 'average'; whether that is a mean could not be confirmed because the full text is not accessible, but the label says 'Average', which is consistent."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23. The quote was checked against the JSON-decoded abstract: FOUND verbatim. ASCII fragments were also FOUND with the repo helper. A second index, OpenAlex (api.openalex.org/works/doi:10.1080/1369118X.2018.1486870), rebuilds the same abstract word for word. Crossref gives vol. 23, issue 1, pp. 128-147, online 2018-07-03, print 2020-01-02, which matches the institution and date fields. The Taylor & Francis full text and SSRN still return 403, so none of the claims could be checked beyond the abstract. The record relies only on abstract-level facts."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "obar-oeldorf-hirsch-missed-gotcha-clauses",
+   "status": "OK",
+   "issues": [
+    "No errors. The abstract says '98% missed NameDrop TOS ‘gotcha clauses’ about data sharing with the NSA and employers, and about providing a first-born child as payment for SNS access.' The label and notes match. The notes' 'would be taken as payment' paraphrases 'providing a first-born child as payment'. The abstract does not state the denominator of the 98% or how 'missed' was measured; '% of participants' is the natural reading, but it could not be checked against the full text (403)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23. The quote was checked against the JSON-decoded abstract: FOUND verbatim. ASCII fragments were also FOUND with the repo helper. A second index, OpenAlex (api.openalex.org/works/doi:10.1080/1369118X.2018.1486870), rebuilds the same abstract word for word. Crossref gives vol. 23, issue 1, pp. 128-147, online 2018-07-03, print 2020-01-02, which matches the institution and date fields. The Taylor & Francis full text and SSRN still return 403, so none of the claims could be checked beyond the abstract. The record relies only on abstract-level facts."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

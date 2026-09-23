@@ -1,7 +1,40 @@
 {
  "slice": "agents",
- "notes": "(filled below)",
+ "notes": "Slice 'agents' (2022 to 23 September 2026): the arrival of AI assistants and agents, the machine-readable signals built for publishers and payments, the regulatory hooks that make person-side automated signals binding, and the case (argument), limits (counterpoints) and an ILLUSTRATIVE walk-through (agentScenario) for IEEE 7012-2025 'MyTerms'. METHOD: sources found by web search; every CONFIRMED quote was fetched with tools/fetch-text.py and passed --check (145+ checks, all FOUND at the time of writing). Blocked sites were read through alternatives: openai.com, perplexity.ai, mastercard.com, w3.org and eur-lex.europa.eu (HTTP 403 or empty 202 bot challenge) were read on Internet Archive Wayback captures; the CVE record was read through the CVE Services API. NOT VERIFIED / GAPS: (1) IEEE Xplore full text of IEEE 7012-2025 (document 11360682) blocks scripted access, so the standard is cited from its IEEE SA abstract page and the MyTerms site; the agentScenario therefore marks every mechanism not in those public materials as 'not specified in public materials'. (2) OpenAI's February 2024 ChatGPT memory announcement could not be read (openai.com 403; Wayback unreachable late in the pass), so memory is recorded inside the ChatGPT Atlas event. (3) OpenAI's own 'Buy it in ChatGPT' (29 Sep 2025) and the OWASP Top 10 for Agentic Applications (9 Dec 2025) pages returned 403 and are not used; the EDPS TechSonar and CNIL agentic-AI material were not reached. (4) The Council of the EU's 18 June 2026 Digital Omnibus compromise text was not read; its removal of Article 88b is cited from noyb, an advocacy group. The Court of Rome judgment 4153/2026 annulling the Garante's OpenAI fine is cited only from the Garante's notice. (5) Customer Commons' agreement texts (SD-BASE etc.) returned 403; agreements are described from myterms.info summaries. (6) Visa/Mastercard and payment-protocol events use the companies' own announcements (for what they did). Survey figures are Pew (probability panel) and Cisco (company survey; treat as indicative). (7) Laboratory results (ConfAIde, PrivacyLens, AgentDAM, the cookie-banner agent study) are small, model-specific benchmarks; the cookie-banner study is a single-site preprint. COORDINATES: laws at legislature/regulator seats; online launches at company HQ (city-level where the exact building was not verified), as stated in each locationNote. DELIBERATE OVERLAP: the IEEE 7012 publication event and the GDPR Art. 21(5) / CCPA § 7025 citations may also appear in other slices; the builder should de-duplicate by id or date. Event count is 33, one above the 22-32 target, because the brief's must-have list plus 2026 developments did not compress further without losing dated milestones.",
  "events": [
+  {
+   "id": "rfc-9309-robots-exclusion-protocol-2022",
+   "displayDate": "September 2022",
+   "year": 2022,
+   "title": "robots.txt becomes an IETF standard (RFC 9309) - and says it is not access control",
+   "place": "IETF Administration LLC (publisher of the RFC series), Wilmington, Delaware",
+   "lat": 39.7459,
+   "lng": -75.5466,
+   "summary": "The Robots Exclusion Protocol - the robots.txt convention that crawlers had followed informally since the early web - was published as Standards Track RFC 9309 in September 2022, authored by Martijn Koster and three Google engineers. It specifies rules that 'crawlers are requested to honor' and states plainly that these rules 'are not a form of access authorization'.",
+   "significance": "The web's oldest machine-readable preference signal was standardised on the eve of generative AI - a publisher-side, request-only signal that later AI-era schemes would extend, and that no individual can use to state terms about themselves.",
+   "sources": [
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force (IETF)",
+     "title": "RFC 9309: Robots Exclusion Protocol",
+     "date": "2022-09",
+     "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+     "quote": "These rules are not a form of access authorization.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force (IETF)",
+     "title": "RFC 9309: Robots Exclusion Protocol (section 1, Introduction)",
+     "date": "2022-09",
+     "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+     "quote": "This document specifies the rules originally defined by the \"Robots Exclusion Protocol\" [ ROBOTSTXT ] that crawlers are requested to honor when accessing URIs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Bracketed reference text reproduced as it appears on the HTML page."
+    }
+   ],
+   "locationNote": "A standards document with no single place of adoption; mapped to the registered office of the IETF Administration LLC, which publishes the RFC series. Coordinates approximate (city centre)."
+  },
   {
    "id": "chatgpt-research-preview-2022",
    "displayDate": "30 November 2022",
@@ -10,7 +43,7 @@
    "place": "OpenAI headquarters, Mission District, San Francisco, California",
    "lat": 37.7623,
    "lng": -122.4148,
-   "summary": "OpenAI released ChatGPT, a GPT-3.5-based model that 'interacts in a conversational way', as a research preview that was free to use at chat.openai.com. Every conversation typed into it was, by default, text a company could log and learn from.",
+   "summary": "OpenAI released ChatGPT, fine-tuned from a GPT-3.5-series model and designed to interact 'in a conversational way', as a free research preview at chat.openai.com. OpenAI said it was releasing it to get users' feedback and was 'eager to collect user feedback to aid our ongoing work to improve this system'.",
    "significance": "The mass-market chatbot turned ordinary people's questions, drafts and confidences into training and product data at a scale no privacy notice had anticipated, and set up the assistants that became agents.",
    "sources": [
     {
@@ -21,7 +54,16 @@
      "quote": "We are excited to introduce ChatGPT to get users' feedback and learn about its strengths and weaknesses. During the research preview, usage of ChatGPT is free.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "openai.com returns HTTP 403 to scripts; quote checked on the Wayback capture made on the day of release (30 Nov 2022 18:09 UTC)."
+     "note": "openai.com returns HTTP 403 to scripts; quote checked on the Wayback capture made on the day of release (30 Nov 2022 18:09 UTC). Same page: 'ChatGPT is fine-tuned from a model in the GPT-3.5 series, which finished training in early 2022.'"
+    },
+    {
+     "institution": "OpenAI (archived by the Internet Archive Wayback Machine, capture of 30 November 2022)",
+     "title": "ChatGPT: Optimizing Language Models for Dialogue (limitations section)",
+     "date": "2022-11-30",
+     "url": "https://web.archive.org/web/20221130180912/https://openai.com/blog/chatgpt/",
+     "quote": "We’re eager to collect user feedback to aid our ongoing work to improve this system.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
     }
    ],
    "locationNote": "Online release; mapped to OpenAI's then headquarters (Pioneer Building, 18th Street, San Francisco)."
@@ -60,6 +102,186 @@
    "locationNote": "Seat of the Garante, Piazza Venezia, Rome."
   },
   {
+   "id": "dpdp-act-india-2023",
+   "displayDate": "11 August 2023",
+   "year": 2023,
+   "title": "India's Digital Personal Data Protection Act receives assent - with 'Consent Managers' acting for people",
+   "place": "Parliament House, New Delhi",
+   "lat": 28.6172,
+   "lng": 77.2081,
+   "summary": "The Digital Personal Data Protection Act, 2023 (No. 22 of 2023) received presidential assent and was published in the Gazette of India on 11 August 2023. Among other things it created the 'Consent Manager', a person registered with the Data Protection Board who acts as a single point of contact enabling an individual to give, manage, review and withdraw consent through an interoperable platform, and who is accountable to that individual.",
+   "significance": "The largest new privacy law of the AI era wrote a regulated intermediary acting for the person into statute - a legal precedent for software that manages a person's permissions on the person's side.",
+   "sources": [
+    {
+     "institution": "Ministry of Law and Justice, Government of India (Gazette of India, Extraordinary, Part II, Section 1) - hosted by MeitY",
+     "title": "The Digital Personal Data Protection Act, 2023 (No. 22 of 2023)",
+     "date": "2023-08-11",
+     "url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
+     "quote": "“Consent Manager” means a person registered with the Board, who acts as a single point of contact to enable a Data Principal to give, manage, review and withdraw her consent through an accessible, transparent and interoperable platform;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 2(g). Section 6(8) adds that 'The Consent Manager shall be accountable to the Data Principal'. Gazette header on p. 1 reads 'NEW DELHI, FRIDAY, AUGUST 11, 2023'."
+    },
+    {
+     "institution": "Press Information Bureau, Government of India",
+     "title": "DPDP Rules, 2025 Notified (PIB backgrounder)",
+     "date": "2025-11-17",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655&reg=3&lang=2",
+     "quote": "Parliament enacted the Digital Personal Data Protection Act on 11 August 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Seat of the Parliament of India, New Delhi."
+  },
+  {
+   "id": "eu-parliament-adopts-ai-act-2024",
+   "displayDate": "13 March 2024",
+   "year": 2024,
+   "title": "European Parliament adopts the AI Act, 523 votes to 46",
+   "place": "European Parliament, Louise Weiss building, Strasbourg",
+   "lat": 48.5974,
+   "lng": 7.7686,
+   "summary": "At its plenary session, the European Parliament approved the Artificial Intelligence Act with 523 votes in favour, 46 against and 49 abstentions. The law bans some AI practices outright, including untargeted scraping of facial images to build recognition databases, and sets transparency duties for general-purpose AI, including compliance with EU copyright law and summaries of training content.",
+   "significance": "The first comprehensive AI statute tied AI training to machine-readable rights reservations and transparency, but addressed people's personal terms only through the GDPR it sits beside.",
+   "sources": [
+    {
+     "institution": "European Parliament (Press Room)",
+     "title": "Artificial Intelligence Act: MEPs adopt landmark law",
+     "date": "2024-03-13",
+     "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law",
+     "quote": "The regulation, agreed in negotiations with member states in December 2023, was endorsed by MEPs with 523 votes in favour, 46 against and 49 abstentions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Press release reference 20240308IPR19015; the vote was held on Wednesday 13 March 2024 in the Strasbourg plenary."
+    }
+   ],
+   "locationNote": "The 11-14 March 2024 plenary sat at the Parliament's seat in Strasbourg; the press page is dated 13-03-2024 and tagged 'Plenary session'."
+  },
+  {
+   "id": "colorado-universal-opt-out-mechanism-2024",
+   "displayDate": "1 July 2024",
+   "year": 2024,
+   "title": "Colorado makes businesses honour a universal opt-out signal (Global Privacy Control)",
+   "place": "Colorado Department of Law, Ralph L. Carr Colorado Judicial Center, Denver",
+   "lat": 39.7361,
+   "lng": -104.9869,
+   "summary": "Under the Colorado Privacy Act and the Attorney General's rules, data controllers had to accept opt-out requests sent through recognised universal opt-out mechanisms from 1 July 2024. The first mechanism the state recognised was Global Privacy Control, a browser signal.",
+   "significance": "A US state made an automated, person-side signal legally binding on businesses - proof that software can carry a person's choice at scale, though only a one-bit 'no' rather than full terms.",
+   "sources": [
+    {
+     "institution": "Colorado Attorney General (Colorado Department of Law)",
+     "title": "Colorado Privacy Act (CPA) - resource page",
+     "date": "2024",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated resource page, written before the obligation took effect; retrieved 2026-09-23."
+    },
+    {
+     "institution": "Colorado Attorney General (Colorado Department of Law)",
+     "title": "Colorado Privacy Act (CPA) - Data Privacy and Global Privacy Control webinar",
+     "date": "2024-03",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "In March 2024, Attorney General Phil Weiser was joined by experts to discuss what’s next for Colorado’s privacy landscape during a live webinar featuring some of the people behind the state’s first universal opt-out mechanism, Global Privacy Control, and a Q&A.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Office of the Colorado Attorney General, Denver."
+  },
+  {
+   "id": "eu-ai-act-enters-into-force-2024",
+   "displayDate": "1 August 2024",
+   "year": 2024,
+   "title": "The EU AI Act enters into force",
+   "place": "European Commission, Berlaymont building, Brussels",
+   "lat": 50.8434,
+   "lng": 4.3824,
+   "summary": "Regulation (EU) 2024/1689, signed on 13 June 2024 and published in the Official Journal on 12 July 2024, entered into force on 1 August 2024, twenty days after publication. Its obligations were phased: prohibitions after six months, general-purpose AI rules from 2 August 2025, and most other provisions from 2 August 2026.",
+   "significance": "It began the clock on the world's first binding AI rulebook, whose transparency and copyright hooks assume that rights-holders can express machine-readable reservations.",
+   "sources": [
+    {
+     "institution": "European Commission",
+     "title": "AI Act enters into force",
+     "date": "2024-08-01",
+     "url": "https://commission.europa.eu/news/ai-act-enters-force-2024-08-01_en",
+     "quote": "On 1 August 2024, the European Artificial Intelligence Act (AI Act) enters into force .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 113",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "eur-lex.europa.eu answers scripts with an empty HTTP 202 bot challenge; the Official Journal text was read and checked on the Internet Archive's capture of the EUR-Lex page."
+    }
+   ],
+   "locationNote": "Seat of the European Commission, Brussels."
+  },
+  {
+   "id": "anthropic-computer-use-2024",
+   "displayDate": "22 October 2024",
+   "year": 2024,
+   "title": "Anthropic releases 'computer use': a model that operates a desktop like a person",
+   "place": "Anthropic headquarters, 500 Howard Street, San Francisco",
+   "lat": 37.7881,
+   "lng": -122.3964,
+   "summary": "Anthropic put 'computer use' into public beta on its API with an upgraded Claude 3.5 Sonnet, letting developers direct the model to look at a screen, move a cursor, click and type. The company called it the first frontier model to offer the capability publicly and described it as experimental and error-prone.",
+   "significance": "Once a model can click through any interface a person can, every consent dialog, cookie banner and terms page designed for human eyes can be 'agreed' by software - with no statement of the principal's own terms to go by.",
+   "sources": [
+    {
+     "institution": "Anthropic",
+     "title": "Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
+     "date": "2024-10-22",
+     "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+     "quote": "developers can direct Claude to use computers the way people do—by looking at a screen, moving a cursor, clicking buttons, and typing text.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page is dated 'Oct 22, 2024' in its HTML header."
+    }
+   ],
+   "locationNote": "Online release; mapped to Anthropic's San Francisco headquarters."
+  },
+  {
+   "id": "model-context-protocol-2024",
+   "displayDate": "25 November 2024",
+   "year": 2024,
+   "title": "Anthropic open-sources the Model Context Protocol (MCP)",
+   "place": "Anthropic headquarters, 500 Howard Street, San Francisco",
+   "lat": 37.7881,
+   "lng": -122.3964,
+   "summary": "Anthropic open-sourced the Model Context Protocol, a standard for connecting AI assistants to 'the systems where data lives', with SDKs, local server support in Claude Desktop and pre-built connectors for Google Drive, Slack, GitHub, Git, Postgres and Puppeteer. A year later, when MCP was donated to the Linux Foundation's new Agentic AI Foundation, more than 10,000 MCP servers had been published.",
+   "significance": "MCP standardised how agents reach into people's files, mail and accounts; nothing in it standardises the terms on which the person those data describe agrees to that reach.",
+   "sources": [
+    {
+     "institution": "Anthropic",
+     "title": "Introducing the Model Context Protocol",
+     "date": "2024-11-25",
+     "url": "https://www.anthropic.com/news/model-context-protocol",
+     "quote": "Today, we're open-sourcing the Model Context Protocol (MCP), a new standard for connecting AI assistants to the systems where data lives, including content repositories, business tools, and development environments.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page is dated 'Nov 25, 2024' in its HTML header."
+    },
+    {
+     "institution": "The Linux Foundation",
+     "title": "Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF), Anchored by New Project Contributions Including Model Context Protocol (MCP), goose and AGENTS.md",
+     "date": "2025-12-09",
+     "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+     "quote": "MCP has rapidly become the universal standard protocol for connecting AI models to tools, data and applications, with more than 10,000 published MCP servers now covering everything from developer tools to Fortune 500 deployments.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online release; mapped to Anthropic's San Francisco headquarters."
+  },
+  {
    "id": "garante-fines-openai-15m-2024",
    "displayDate": "20 December 2024",
    "year": 2024,
@@ -91,12 +313,1915 @@
     }
    ],
    "locationNote": "Seat of the Garante, Piazza Venezia, Rome."
+  },
+  {
+   "id": "ietf-aipref-working-group-2025",
+   "displayDate": "7 January 2025",
+   "year": 2025,
+   "title": "IETF charters the AI Preferences (AIPREF) working group",
+   "place": "IETF Administration LLC, Wilmington, Delaware",
+   "lat": 39.7459,
+   "lng": -75.5466,
+   "summary": "The IETF approved the charter of the AI Preferences working group to standardise a vocabulary for expressing how content may be used for AI training and use, and ways to attach those preferences through robots.txt and HTTP headers. It followed earlier publisher-side efforts such as the W3C community group's TDM Reservation Protocol (final report 10 May 2024). The charter puts technical enforcement and auditing out of scope; the vocabulary draft (version 08, 14 September 2026) says a recipient 'has a choice whether to follow those preferences' and that contracts may override them.",
+   "significance": "The internet's standards body is building a machine-readable 'preference' language for content owners that is explicitly unenforced and unrecorded - the opposite design choice to IEEE 7012's signed, two-sided records for persons.",
+   "sources": [
+    {
+     "institution": "Internet Engineering Task Force (IETF Datatracker)",
+     "title": "AI Preferences (aipref) - charter-ietf-aipref-01",
+     "date": "2025-01-07",
+     "url": "https://datatracker.ietf.org/wg/aipref/about/",
+     "quote": "The AI Preferences Working Group will standardize building blocks that allow for the expression of preferences about how content is collected and processed for Artificial Intelligence (AI) model development, deployment, and use.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Group history (https://datatracker.ietf.org/wg/aipref/history/) records 'Charter approved, group active' on 2025-01-07. Out-of-scope list includes 'Technical enforcement of preferences' and 'Auditing and other transparency measures for AI training'."
+    },
+    {
+     "institution": "Internet Engineering Task Force (IETF Datatracker)",
+     "title": "A Vocabulary For Expressing AI Usage Preferences, draft-ietf-aipref-vocab-08 (Keller & Thomson)",
+     "date": "2026-09-14",
+     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+     "quote": "An entity that receives usage preferences has a choice whether to follow those preferences.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Work in progress; the draft states its contents do not reflect working-group consensus."
+    },
+    {
+     "institution": "W3C Text and Data Mining Reservation Protocol Community Group (Internet Archive capture)",
+     "title": "TDM Reservation Protocol (TDMRep), Final Community Group Report 10 May 2024",
+     "date": "2024-05-10",
+     "url": "https://web.archive.org/web/2025/https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/",
+     "quote": "This specification defines a simple and practical Web protocol, capable of expressing the reservation of rights relative to text & data mining (TDM) applied to lawfully accessible Web content, and to ease the discovery of TDM licensing policies associated with such content.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "w3.org returns HTTP 403 to scripts; read on the Wayback capture. Not a W3C Standard; a Community Group report edited by Laurent Le Meur (EDRLab)."
+    }
+   ],
+   "locationNote": "IETF working groups meet online and at plenaries worldwide; mapped to the IETF Administration LLC's registered city. Coordinates approximate."
+  },
+  {
+   "id": "openai-operator-2025",
+   "displayDate": "23 January 2025",
+   "year": 2025,
+   "title": "OpenAI launches Operator, an agent that browses and fills in forms for you",
+   "place": "OpenAI headquarters, San Francisco",
+   "lat": 37.7685,
+   "lng": -122.3894,
+   "summary": "OpenAI released Operator as a research preview for Pro users in the US: an agent driven by a 'Computer-Using Agent' model that sees web pages through screenshots and types, clicks and scrolls to complete tasks such as filling out forms and ordering groceries. For login credentials and payment details it hands control back to the user in a 'takeover mode' during which it does not collect or screenshot what is typed.",
+   "significance": "The first mass-market browsing agent had to invent an ad hoc privacy boundary (hand the keyboard back to the human) because the web offered no machine-readable way for the agent to state what its principal would and would not share.",
+   "sources": [
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing Operator",
+     "date": "2025-01-23",
+     "url": "https://web.archive.org/web/20260108213932/https://openai.com/index/introducing-operator/",
+     "quote": "Operator is one of our first agents, which are AIs capable of doing work for you independently—you give it a task and it will execute it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page. Page dated January 23, 2025; a 17 July 2025 update notes Operator was folded into ChatGPT agent."
+    },
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing Operator (safety section)",
+     "date": "2025-01-23",
+     "url": "https://web.archive.org/web/20260108213932/https://openai.com/index/introducing-operator/",
+     "quote": "Takeover mode: Operator asks the user to take over when inputting sensitive information into the browser, such as login credentials or payment information. When in takeover mode, Operator does not collect or screenshot information entered by the user.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page."
+    }
+   ],
+   "locationNote": "Online release; mapped to OpenAI's San Francisco headquarters (Mission Bay), city-level precision."
+  },
+  {
+   "id": "google-agent2agent-protocol-2025",
+   "displayDate": "9 April 2025",
+   "year": 2025,
+   "title": "Google launches the Agent2Agent (A2A) protocol with more than 50 partners",
+   "place": "Google headquarters (Googleplex), Mountain View, California",
+   "lat": 37.422,
+   "lng": -122.0841,
+   "summary": "Google announced Agent2Agent (A2A), an open protocol to let AI agents built by different vendors 'communicate with each other, securely exchange information, and coordinate actions', launched with support from more than 50 technology partners and presented as complementary to Anthropic's MCP.",
+   "significance": "Agent-to-agent messaging gave organisations a common channel between their agents; it did not give the person on whose behalf an agent acts a standard way to put their own terms into that channel - the gap IEEE 7012 addresses.",
+   "sources": [
+    {
+     "institution": "Google for Developers Blog",
+     "title": "Announcing the Agent2Agent Protocol (A2A)",
+     "date": "2025-04-09",
+     "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+     "quote": "Today, we’re launching a new, open protocol called Agent2Agent (A2A), with support and contributions from more than 50 technology partners like Atlassian, Box, Cohere, Intuit, Langchain, MongoDB, PayPal, Salesforce, SAP, ServiceNow, UKG and Workday;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page dated APRIL 9, 2025. Announced during Google Cloud Next 2025 in Las Vegas; mapped to Google's headquarters."
+    }
+   ],
+   "locationNote": "Online announcement; mapped to Google's Mountain View headquarters."
+  },
+  {
+   "id": "visa-mastercard-agent-payments-2025",
+   "displayDate": "29-30 April 2025",
+   "year": 2025,
+   "title": "Mastercard Agent Pay and Visa Intelligent Commerce open card networks to AI agents",
+   "place": "Mastercard headquarters, 2000 Purchase Street, Purchase, New York",
+   "lat": 41.0412,
+   "lng": -73.7143,
+   "summary": "On 29 April 2025 Mastercard launched Agent Pay, built on 'Agentic Tokens', and the next day Visa unveiled Visa Intelligent Commerce, with partners including Anthropic, Microsoft, OpenAI, Perplexity and Stripe. Visa said agents would 'find, shop and buy for consumers based on their pre-selected preferences', with each consumer setting the limits.",
+   "significance": "Payment networks moved quickly to give agents machine-readable, bounded mandates for money; no equivalent mandate existed for what the merchant may do with the shopper's personal data.",
+   "sources": [
+    {
+     "institution": "Mastercard (Internet Archive capture)",
+     "title": "Mastercard unveils Agent Pay, pioneering agentic payments technology to power commerce in the age of AI",
+     "date": "2025-04-29",
+     "url": "https://web.archive.org/web/2025/https://www.mastercard.com/global/en/news-and-trends/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai.html",
+     "quote": "Mastercard today announced the launch of its Agentic Payments Program, Mastercard Agent Pay.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "mastercard.com returns HTTP 403 to scripts; read on the Wayback capture of 21 Dec 2025 (dateline 'April 29, 2025 | Purchase, NY')."
+    },
+    {
+     "institution": "Visa Inc. (Business Wire release)",
+     "title": "Find and Buy with AI: Visa Unveils New Era of Commerce",
+     "date": "2025-04-30",
+     "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.21361.html",
+     "quote": "Now, with Visa Intelligent Commerce, AI agents can find, shop and buy for consumers based on their pre-selected preferences. Each consumer sets the limits, and Visa helps manage the rest.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to Mastercard's headquarters (the first of the two announcements); Visa's release is datelined San Francisco."
+  },
+  {
+   "id": "echoleak-m365-copilot-cve-2025",
+   "displayDate": "11 June 2025",
+   "year": 2025,
+   "title": "EchoLeak: a single email could make Microsoft 365 Copilot leak a user's data (CVE-2025-32711)",
+   "place": "Microsoft headquarters, Redmond, Washington",
+   "lat": 47.6423,
+   "lng": -122.1369,
+   "summary": "Microsoft published CVE-2025-32711, rated critical (CVSS 9.3): 'AI command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network.' It had been found by researchers at Aim Security (Aim Labs); a later academic case study describes it as a zero-click prompt injection in which a single crafted email made the assistant exfiltrate data from the user's context without any interaction.",
+   "significance": "It showed that an assistant with access to a person's mail and files can be instructed by any third party that reaches its context - so the person's limits on data flows must travel with the agent and be checkable afterwards, not assumed.",
+   "sources": [
+    {
+     "institution": "MITRE CVE Program (record assigned by Microsoft)",
+     "title": "CVE-2025-32711: M365 Copilot Information Disclosure Vulnerability (CVE JSON record)",
+     "date": "2025-06-11",
+     "url": "https://cveawg.mitre.org/api/cve/CVE-2025-32711",
+     "quote": "Ai command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "CVE record datePublished 2025-06-11T13:22:38Z; CVSS 3.1 base score 9.3 (CRITICAL). The NVD page is JavaScript-rendered, so the CVE Services API record was read."
+    },
+    {
+     "institution": "arXiv (Cornell University)",
+     "title": "EchoLeak: The First Real-World Zero-Click Prompt Injection Exploit in a Production LLM System (Reddy & Gujral)",
+     "date": "2025-09",
+     "url": "https://arxiv.org/abs/2509.10540",
+     "quote": "This paper presents an in-depth case study of EchoLeak (CVE-2025-32711), a zero-click prompt injection vulnerability in Microsoft 365 Copilot that enabled remote, unauthenticated data exfiltration via a single crafted email.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Authors are at George Washington University. The paper's text (https://arxiv.org/pdf/2509.10540) states: 'In June 2025, researchers at Aim Security disclosed EchoLeak, a zero-click vulnerability in Microsoft 365 Copilot that allowed a remote attacker to steal confidential data simply by sending an email'. Aim Labs' own write-up was not read."
+    }
+   ],
+   "locationNote": "Mapped to Microsoft (the CVE assigner and vendor), Redmond. Aim Labs is part of Aim Security (Tel Aviv)."
+  },
+  {
+   "id": "cloudflare-default-ai-crawler-block-2025",
+   "displayDate": "1 July 2025",
+   "year": 2025,
+   "title": "Cloudflare blocks AI crawlers by default and launches 'pay per crawl'",
+   "place": "Cloudflare headquarters, 101 Townsend Street, San Francisco",
+   "lat": 37.7803,
+   "lng": -122.3903,
+   "summary": "On what it called 'Content Independence Day', Cloudflare changed its default to block AI crawlers unless they pay creators, and launched a private beta of 'pay per crawl', which answers an AI crawler either with content (HTTP 200) when it presents payment intent or with an HTTP 402 Payment Required response and a price.",
+   "significance": "Publishers gained an enforced, machine-readable way to set terms for AI access at network scale - showing that such terms can work, and underlining that individuals had no equivalent for data about themselves.",
+   "sources": [
+    {
+     "institution": "Cloudflare (The Cloudflare Blog, Matthew Prince)",
+     "title": "Content Independence Day: no AI crawl without compensation!",
+     "date": "2025-07-01",
+     "url": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/",
+     "quote": "Cloudflare, along with a majority of the world's leading publishers and AI companies, is changing the default to block AI crawlers unless they pay creators for their content.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Cloudflare (The Cloudflare Blog, Will Allen and Simon Newton)",
+     "title": "Introducing pay per crawl: Enabling content owners to charge AI crawlers for access",
+     "date": "2025-07-01",
+     "url": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+     "quote": "Each time an AI crawler requests content, they either present payment intent via request headers for successful access ( HTTP response code 200 ), or receive a 402 Payment Required response with pricing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online policy change; mapped to Cloudflare's San Francisco headquarters."
+  },
+  {
+   "id": "perplexity-comet-agentic-browser-2025",
+   "displayDate": "9 July 2025",
+   "year": 2025,
+   "title": "Perplexity launches Comet, an agentic browser - and researchers show a web page can hijack it",
+   "place": "Perplexity AI, San Francisco",
+   "lat": 37.7749,
+   "lng": -122.4194,
+   "summary": "Perplexity launched Comet, a browser whose assistant carries out whole browsing sessions - booking meetings, sending email, buying things. On 20 August 2025 Brave's security team published research showing that Comet fed page content to its model without separating it from the user's instructions, so hidden text on a page (in their demonstration, a Reddit comment) could make the assistant read the user's email address and a one-time password from their logged-in Gmail and post them back to the attacker.",
+   "significance": "Agentic browsers act with the user's logged-in authority on every site; without a portable statement of what the principal permits, a stranger's web page can issue the instructions instead.",
+   "sources": [
+    {
+     "institution": "Perplexity AI (Internet Archive capture)",
+     "title": "Introducing Comet: Browse at the speed of thought",
+     "date": "2025-07-09",
+     "url": "https://web.archive.org/web/20250710000000/https://www.perplexity.ai/hub/blog/introducing-comet",
+     "quote": "Ask Comet to book a meeting or send an email, based on something you saw. Ask Comet to buy something you forgot.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "perplexity.ai returns HTTP 403 to scripts; read on a Wayback capture of July 2025. Post shows 'Published on Jul 9, 2025'."
+    },
+    {
+     "institution": "Brave Software (Brave blog; Artem Chaikin and Shivan Kaul Sahib)",
+     "title": "Agentic Browser Security: Indirect Prompt Injection in Perplexity Comet",
+     "date": "2025-08-20",
+     "url": "https://brave.com/blog/comet-prompt-injection/",
+     "quote": "This allows attackers to embed indirect prompt injection payloads that the AI will execute as commands. For instance, an attacker could gain access to a user’s emails from a prepared piece of text in a page in another tab.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online launch; Perplexity is headquartered in San Francisco (city-level coordinates)."
+  },
+  {
+   "id": "chatgpt-agent-2025",
+   "displayDate": "17 July 2025",
+   "year": 2025,
+   "title": "ChatGPT agent: the chatbot gets its own computer - and inherits every site's cookie policy",
+   "place": "OpenAI headquarters, San Francisco",
+   "lat": 37.7685,
+   "lng": -122.3894,
+   "summary": "OpenAI merged Operator and deep research into 'ChatGPT agent', which uses its own virtual computer to browse, log in, run code and buy things for the user. OpenAI warned that prompt injection could trick the agent into 'sharing private data from a connector with the attacker', and said that unless the user deletes browsing data, cookies persist according to each visited website's cookie policies.",
+   "significance": "The agent's privacy regime is whatever each website's terms say: the person's own terms have no channel through which to travel.",
+   "sources": [
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT agent: bridging research and action",
+     "date": "2025-07-17",
+     "url": "https://web.archive.org/web/20250801053448/https://openai.com/index/introducing-chatgpt-agent/",
+     "quote": "Privacy controls: With a single click in ChatGPT’s settings, you can delete all browsing data and immediately log out of all active website sessions. Otherwise, cookies persist based on each visited website’s cookie policies, which can make repeat visits to sites more efficient.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page. Page dated July 17, 2025."
+    },
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT agent: bridging research and action (safety section)",
+     "date": "2025-07-17",
+     "url": "https://web.archive.org/web/20250801053448/https://openai.com/index/introducing-chatgpt-agent/",
+     "quote": "For example, a malicious prompt hidden in a webpage, such as in invisible elements or metadata, could trick the agent into taking unintended actions, like sharing private data from a connector with the attacker, or taking a harmful action on a site the user has logged into.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page."
+    }
+   ],
+   "locationNote": "Online release; mapped to OpenAI's San Francisco headquarters (city-level precision)."
+  },
+  {
+   "id": "ai-act-gpai-obligations-apply-2025",
+   "displayDate": "2 August 2025",
+   "year": 2025,
+   "title": "AI Act duties for general-purpose AI apply - including honouring machine-readable opt-outs",
+   "place": "European AI Office, European Commission, Brussels",
+   "lat": 50.8434,
+   "lng": 4.3824,
+   "summary": "From 2 August 2025 the AI Act's chapter on general-purpose AI models applied. Article 53(1)(c) requires providers to have a copyright policy that identifies and complies, 'including through state-of-the-art technologies', with rights reservations made under Article 4(3) of the 2019 copyright directive, which allows text-and-data-mining opt-outs by 'machine-readable means'. The Commission's GPAI Code of Practice, published on 10 July 2025, commits signatories to crawlers that follow robots.txt as specified in RFC 9309.",
+   "significance": "EU law now makes a publisher's machine-readable 'no' binding on AI model providers; no comparable duty yet attaches to a person's machine-readable terms about their own data.",
+   "sources": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 113(b)",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "eur-lex.europa.eu answers scripts with an empty HTTP 202 bot challenge; the Official Journal text was read and checked on the Internet Archive's capture of the EUR-Lex page."
+    },
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 53(1)(c)",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "put in place a policy to comply with Union law on copyright and related rights, and in particular to identify and comply with, including through state-of-the-art technologies, a reservation of rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "eur-lex.europa.eu answers scripts with an empty HTTP 202 bot challenge; the Official Journal text was read and checked on the Internet Archive's capture of the EUR-Lex page."
+    },
+    {
+     "institution": "European Commission (Shaping Europe's digital future)",
+     "title": "Code of Practice for General-Purpose AI Models - Copyright Chapter",
+     "date": "2025-07-10",
+     "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118115",
+     "quote": "to employ web-crawlers that read and follow instructions expressed in accordance with the Robot Exclusion Protocol (robots.txt), as specified in the Internet Engineering Task Force (IETF) Request for Comments No. 9309",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PDF linked from https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai. Publication date of the Code (10 July 2025) is from the Commission's page, not the PDF."
+    }
+   ],
+   "locationNote": "The AI Office sits within the European Commission in Brussels; mapped to the Berlaymont."
+  },
+  {
+   "id": "google-agent-payments-protocol-ap2-2025",
+   "displayDate": "16 September 2025",
+   "year": 2025,
+   "title": "Google's Agent Payments Protocol (AP2): signed 'mandates' and an audit trail for what agents buy",
+   "place": "Google headquarters (Googleplex), Mountain View, California",
+   "lat": 37.422,
+   "lng": -122.0841,
+   "summary": "Google announced the Agent Payments Protocol (AP2), developed with more than 60 organisations including Mastercard, American Express, PayPal and Coinbase, as an extension of A2A and MCP. AP2 records a user's instructions as 'Mandates' - tamper-proof, cryptographically signed digital contracts - so that intent, cart and payment form 'a non-repudiable audit trail'.",
+   "significance": "Commerce built for agents exactly what IEEE 7012 asks for on privacy - a signed statement of the principal's terms with records on both sides - but only for the payment, not for the personal data that flows with it.",
+   "sources": [
+    {
+     "institution": "Google Cloud Blog",
+     "title": "Powering AI commerce with the new Agent Payments Protocol (AP2)",
+     "date": "2025-09-16",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+     "quote": "AP2 builds trust by using Mandates—tamper-proof, cryptographically-signed digital contracts that serve as verifiable proof of a user's instructions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Google Cloud Blog",
+     "title": "Powering AI commerce with the new Agent Payments Protocol (AP2) (how it works)",
+     "date": "2025-09-16",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+     "quote": "This complete sequence—from intent, to cart, to payment—creates a non-repudiable audit trail that answers the critical questions of authorization and authenticity, providing a clear foundation for accountability.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online announcement; mapped to Google's Mountain View headquarters."
+  },
+  {
+   "id": "cloudflare-content-signals-policy-2025",
+   "displayDate": "24 September 2025",
+   "year": 2025,
+   "title": "Cloudflare's Content Signals Policy adds search / ai-input / ai-train terms to robots.txt",
+   "place": "Cloudflare headquarters, 101 Townsend Street, San Francisco",
+   "lat": 37.7803,
+   "lng": -122.3903,
+   "summary": "Cloudflare published a Content Signals Policy that extends robots.txt with three machine-readable signals - search, ai-input and ai-train - preceded by licence-style text stating that accessing the site is conditional on abiding by them. It said it would add the policy to the managed robots.txt files it already served for more than 3.8 million domains whose owners had chosen to tell companies not to use their content for AI training.",
+   "significance": "Publishers began phrasing machine-readable signals as terms of access - the move IEEE 7012 makes for individuals, whose data still travel without any such terms attached.",
+   "sources": [
+    {
+     "institution": "Cloudflare (The Cloudflare Blog, Will Allen)",
+     "title": "Giving users choice with Cloudflare’s new Content Signals Policy",
+     "date": "2025-09-24",
+     "url": "https://blog.cloudflare.com/content-signals-policy/",
+     "quote": "This policy defines three content signals - search, ai-input, and ai-train - and their relevance to crawlers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Cloudflare (The Cloudflare Blog, Will Allen)",
+     "title": "Giving users choice with Cloudflare’s new Content Signals Policy (adoption)",
+     "date": "2025-09-24",
+     "url": "https://blog.cloudflare.com/content-signals-policy/",
+     "quote": "Cloudflare customers have already turned on our managed robots.txt feature for over 3.8 million domains.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online policy; mapped to Cloudflare's San Francisco headquarters."
+  },
+  {
+   "id": "agentic-commerce-protocol-instant-checkout-2025",
+   "displayDate": "29 September 2025",
+   "year": 2025,
+   "title": "Stripe and OpenAI release the Agentic Commerce Protocol; ChatGPT starts selling",
+   "place": "Stripe headquarters, South San Francisco, California",
+   "lat": 37.664,
+   "lng": -122.3886,
+   "summary": "Stripe announced that it was powering Instant Checkout in ChatGPT, letting US users buy from Etsy sellers inside the chat (with over a million Shopify merchants to follow), and released the Agentic Commerce Protocol (ACP), an open standard co-developed with OpenAI for agent-mediated purchases.",
+   "significance": "With the chatbot now the storefront, the terms governing a shopper's data are set between the platform and the merchant; the shopper has no standard channel to proffer their own.",
+   "sources": [
+    {
+     "institution": "Stripe (Newsroom)",
+     "title": "Stripe powers Instant Checkout in ChatGPT and releases Agentic Commerce Protocol codeveloped with OpenAI",
+     "date": "2025-09-29",
+     "url": "https://stripe.com/newsroom/news/stripe-openai-instant-checkout",
+     "quote": "This milestone in the evolution of AI-enabled commerce is powered by the Agentic Commerce Protocol (ACP), a new, merchant-friendly open standard codeveloped by Stripe and OpenAI, informed by Stripe’s 15 years of experience building commerce infrastructure for the world's fastest-growing businesses.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page dated September 29, 2025 (dateline SAN FRANCISCO). OpenAI's own announcement ('Buy it in ChatGPT') returns HTTP 403 to scripts and was not read."
+    }
+   ],
+   "locationNote": "Mapped to Stripe's headquarters; the release is datelined San Francisco."
+  },
+  {
+   "id": "california-opt-me-out-act-ab566-2025",
+   "displayDate": "8 October 2025",
+   "year": 2025,
+   "title": "California's 'Opt Me Out Act' (AB 566) requires every browser to send an opt-out signal",
+   "place": "California State Capitol, Sacramento",
+   "lat": 38.5767,
+   "lng": -121.4934,
+   "summary": "Governor Gavin Newsom signed AB 566 (Chapter 465, Statutes of 2025), sponsored by the California Privacy Protection Agency. From 1 January 2027 a business may not develop or maintain a browser that lacks a consumer-configurable setting to send an opt-out preference signal to the businesses the consumer interacts with, making California the first state to require browser support for such signals.",
+   "significance": "It is the first law to force the software that acts for a person to carry that person's privacy choice automatically - the legal pattern an agent proffering IEEE 7012 terms would extend from opt-out to full terms.",
+   "sources": [
+    {
+     "institution": "California Legislature (leginfo.legislature.ca.gov)",
+     "title": "AB-566 California Consumer Privacy Act of 2018: opt-out preference signal (Chapter 465, Statutes of 2025)",
+     "date": "2025-10-08",
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB566",
+     "quote": "A business shall not develop or maintain a browser that does not include functionality configurable by a consumer that enables the browser to send an opt-out preference signal to businesses with which the consumer interacts through the browser.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "New Civil Code section 1798.136(a)(1); subsection (f): 'This section shall become operative on January 1, 2027.' Bill page shows '10/08/25 - Chaptered'."
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "Governor Signs Groundbreaking Privacy Bill Making It Easier for Californians to Protect Their Personal Data",
+     "date": "2025-10-08",
+     "url": "https://cppa.ca.gov/announcements/2025/20251008_2.html",
+     "quote": "Today, Governor Newsom signed the California Opt Me Out Act (AB 566, Lowenthal) , making California the first state in the nation to require browsers to offer users a simple, built-in way to tell websites not to sell or share their personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Signed by the Governor; mapped to the State Capitol, Sacramento."
+  },
+  {
+   "id": "chatgpt-atlas-browser-2025",
+   "displayDate": "21 October 2025",
+   "year": 2025,
+   "title": "OpenAI launches ChatGPT Atlas, a browser with ChatGPT's memory and an agent built in",
+   "place": "OpenAI headquarters, San Francisco",
+   "lat": 37.7685,
+   "lng": -122.3894,
+   "summary": "OpenAI launched ChatGPT Atlas on macOS, a web browser with ChatGPT at its core and the user's ChatGPT memory built in, so that it can draw on past chats. Optional 'browser memories' let ChatGPT remember context from sites a user visits, and 'agent mode' (in preview for paid tiers) lets it act on the user's behalf while they browse.",
+   "significance": "When the browser itself becomes an agent that remembers what you read, the place where a person's own machine-readable terms would be proffered is owned by the same company that trains on and monetises the conversation.",
+   "sources": [
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT Atlas",
+     "date": "2025-10-21",
+     "url": "https://web.archive.org/web/2025/https://openai.com/index/introducing-chatgpt-atlas/",
+     "quote": "Browser memories let ChatGPT remember context from the sites you visit and bring that context back when you need it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page. Page dated October 21, 2025; resolved to the capture of 2 January 2026."
+    },
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT Atlas (memory and agent mode)",
+     "date": "2025-10-21",
+     "url": "https://web.archive.org/web/2025/https://openai.com/index/introducing-chatgpt-atlas/",
+     "quote": "Your ChatGPT memory is built in, so conversations can draw on past chats and details to help you get new things done.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page. Same page: 'Agent mode in Atlas is available today in preview for Plus, Pro, and Business users.' OpenAI's February 2024 announcement of ChatGPT memory could not be read (openai.com 403; Internet Archive unreachable during this pass), so memory is recorded here rather than as a separate event."
+    }
+   ],
+   "locationNote": "Online release; mapped to OpenAI's San Francisco headquarters (city-level precision)."
+  },
+  {
+   "id": "dpdp-rules-notified-india-2025",
+   "displayDate": "14 November 2025",
+   "year": 2025,
+   "title": "India notifies the DPDP Rules, 2025, bringing its data-protection law into operation",
+   "place": "Ministry of Electronics and Information Technology, Electronics Niketan, New Delhi",
+   "lat": 28.5866,
+   "lng": 77.2337,
+   "summary": "The Government of India notified the Digital Personal Data Protection Rules, 2025 on 14 November 2025 after consultations that drew 6,915 inputs, with an eighteen-month phased compliance period. The Rules require Consent Managers - the regulated intermediaries that help people give, manage and withdraw consent - to be companies based in India, and let individuals nominate another person to exercise their rights.",
+   "significance": "India operationalised person-side consent management as a licensed role, a regulatory model into which standard, person-proffered terms could plug.",
+   "sources": [
+    {
+     "institution": "Press Information Bureau, Government of India",
+     "title": "DPDP Rules, 2025 Notified (PIB backgrounder, Release ID 2190655)",
+     "date": "2025-11-17",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655&reg=3&lang=2",
+     "quote": "The Government of India notified the Digital Personal Data Protection (DPDP) Rules, 2025 on 14 November 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Press Information Bureau, Government of India",
+     "title": "DPDP Rules, 2025 Notified (implementation section)",
+     "date": "2025-11-17",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655&reg=3&lang=2",
+     "quote": "Consent Managers, who help people manage their permissions, must be companies based in India.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to MeitY, which notified the Rules (approximate coordinates of Electronics Niketan, CGO Complex)."
+  },
+  {
+   "id": "eu-digital-omnibus-article-88b-2025",
+   "displayDate": "19 November 2025",
+   "year": 2025,
+   "title": "EU 'Digital Omnibus' proposes that websites must honour automated, machine-readable privacy choices",
+   "place": "European Commission, Berlaymont building, Brussels",
+   "lat": 50.8434,
+   "lng": 4.3824,
+   "summary": "The Commission's Digital Omnibus proposal, COM(2025) 837, would insert Article 88b into the GDPR: controllers' online interfaces must let people give or refuse consent and object 'through automated and machine-readable means', controllers must respect those choices, European standards bodies would draft the interpretation standards, and large browser providers would have to support the signals 48 months after entry into force. A proposed Article 88c would let AI development rely on legitimate interests subject to an 'unconditional right to object'. On 10 February 2026 the EDPB and EDPS 'strongly welcome[d]' Article 88b.",
+   "significance": "For the first time an EU legislative text would oblige organisations to accept a person's own machine-readable signal as the expression of their choice - the regulatory opening an IEEE 7012 agent needs.",
+   "sources": [
+    {
+     "institution": "Council of the European Union (register copy of the Commission proposal)",
+     "title": "Proposal for a Regulation ... (Digital Omnibus), COM(2025) 837 final, 2025/0360 (COD) - proposed Article 88b GDPR",
+     "date": "2025-11-19",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
+     "quote": "(b) decline a request for consent and exercise the right to object pursuant to Article 21(2) through automated and machine-readable means.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Council document ST 15698/25 of 20 November 2025, transmitting COM(2025) 837 final dated 'Brussels, 19.11.2025'. Paragraph 2 of the proposed article: 'Controllers shall respect the choices made by data subjects in accordance with paragraph 1.'"
+    },
+    {
+     "institution": "Council of the European Union (register copy of the Commission proposal)",
+     "title": "Digital Omnibus, COM(2025) 837 final - proposed Article 88b(6) GDPR (browsers)",
+     "date": "2025-11-19",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
+     "quote": "Providers of web browsers, which are not SMEs, shall provide the technical means to allow data subjects to give their consent and to refuse a request for consent and exercise the right to object pursuant to Article 21(2) through the automated and machine-readable means referred to in paragraph 1 of this Article",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Paragraph 7: paragraph 6 would apply 48 months after entry into force; paragraphs 1-2 after 24 months."
+    },
+    {
+     "institution": "European Data Protection Board and European Data Protection Supervisor",
+     "title": "EDPB-EDPS Joint Opinion 2/2026 on the Digital Omnibus (adopted 10 February 2026)",
+     "date": "2026-02-10",
+     "url": "https://www.edpb.europa.eu/system/files/2026-02/edpb_edps_jointopinion_202602_digitalomnibus_en.pdf",
+     "quote": "They consider that the use of technical means can simplify compliance by controllers, support data subjects in making their online choices, and make such choices effective in practice.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Paragraph 108, which opens: 'The EDPB and the EDPS strongly welcome proposed Article 88b GDPR'. Para. 115 recommends extending the browser duty to mobile and desktop operating systems."
+    }
+   ],
+   "locationNote": "Proposal adopted by the European Commission in Brussels."
+  },
+  {
+   "id": "rsl-1-0-ai-licensing-standard-2025",
+   "displayDate": "10 December 2025",
+   "year": 2025,
+   "title": "RSL 1.0: publishers get a machine-readable licensing standard for AI",
+   "place": "RSL Collective (dateline San Francisco)",
+   "lat": 37.7749,
+   "lng": -122.4194,
+   "summary": "The RSL Technical Steering Committee published the Really Simple Licensing 1.0 specification, an open standard, built on RSS, for publishers to declare machine-readable usage and licensing terms for AI systems, supported by Cloudflare, Akamai, Creative Commons and the IAB Tech Lab. The organisers said more than 1,500 organisations endorsed it.",
+   "significance": "Machine-readable terms proffered by the content side and expected to bind AI companies became an industry standard; individuals had to wait for IEEE 7012 to publish, six weeks later, for the equivalent about themselves.",
+   "sources": [
+    {
+     "institution": "RSL Collective / RSL Technical Steering Committee",
+     "title": "RSL AI Licensing 1.0 Now an Official Industry Standard with New Capabilities as Momentum Accelerates",
+     "date": "2025-12-10",
+     "url": "https://rslstandard.org/press/rsl-1-specification-2025",
+     "quote": "RSL 1.0 is an industry-first, open web standard for publishers and creators to define transparent, machine-readable usage and licensing terms for the content on which AI systems rely to fuel future innovation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dateline 'SAN FRANCISCO — December 10, 2025'. The 1,500+ endorsement figure is the organisers' own claim."
+    }
+   ],
+   "locationNote": "Online standard; mapped to the release's San Francisco dateline (city-level)."
+  },
+  {
+   "id": "ico-tech-futures-agentic-ai-2026",
+   "displayDate": "8 January 2026",
+   "year": 2026,
+   "title": "UK ICO sets out the data-protection risks of agentic AI - and calls for privacy-management agents",
+   "place": "Information Commissioner's Office, Wycliffe House, Wilmslow, Cheshire",
+   "lat": 53.3271,
+   "lng": -2.229,
+   "summary": "The Information Commissioner's Office published 'ICO tech futures: Agentic AI', listing novel risks including unclear controller and processor roles in agent supply chains, purposes set too broadly for general-purpose agents, processing beyond what instructions need, and the concentration of personal information in personal-assistant agents. It said it wanted to explore agents that take on the burden of managing privacy, noting that two in five UK adults admit never reading cookie policies or settings.",
+   "significance": "A national regulator named person-side privacy agents as a desirable innovation - the role an agent proffering IEEE 7012 terms would play, though the ICO framed it as reading organisations' policies rather than stating the person's own.",
+   "sources": [
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "ICO tech futures: Agentic AI - Executive summary",
+     "date": "2026-01-08",
+     "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/",
+     "quote": "As developing agentic AI increases the potential for automation, organisations remain responsible for data protection compliance of the agentic AI they develop, deploy or integrate in their systems and processes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page metadata date: Thursday, January 08, 2026."
+    },
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "ICO tech futures: Agentic AI - Innovation opportunities",
+     "date": "2026-01-08",
+     "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/innovation-opportunities-what-innovation-might-the-ico-want-to-see-in-agentic-ai/",
+     "quote": "We are keen to explore the possibility of developing AI agents that take on some of this burden, for example, by interpreting website privacy policies or cookie statements and comparing them to their users’ preferences. In survey research we commissioned, two in five UK adults admitted to never reading cookie policies or settings.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "ICO headquarters, Wilmslow."
+  },
+  {
+   "id": "ieee-7012-myterms-published-2026",
+   "displayDate": "20 January 2026",
+   "year": 2026,
+   "title": "IEEE publishes 7012-2025 ('MyTerms'): personal privacy terms that people's agents proffer",
+   "place": "IEEE Standards Association, 445 Hoes Lane, Piscataway, New Jersey",
+   "lat": 40.5549,
+   "lng": -74.4646,
+   "summary": "IEEE 7012-2025, Standard for Machine Readable Personal Privacy Terms, approved by the IEEE SA Standards Board on 4 November 2025 and published on 20 January 2026, covers agreements between individuals and the websites, applications 'and AI agents' they deal with. Individuals act as first parties and point to standard-form terms from a roster kept by a neutral non-business body; if the second party agrees, both sides or their agents sign and each keeps a matching record that can be retrieved, audited or disputed. The project's PAR had been approved on 6 December 2017.",
+   "significance": "It is the first standard in which the person, through their own agent, offers the terms and the organisation accepts them, with records on both sides - the inversion of the click-through model that delegated AI agents otherwise inherit.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025: IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page lists PAR Approval 2017-12-06, Board Approval 2025-11-04, Published 2026-01-20; Standard Committee SSIT/SC (Social Implications of Technology). The full text is on IEEE Xplore (document 11360682), which blocks scripted access and was not read."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page, abstract continued)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info, Customer Commons / MyTerms Alliance)",
+     "title": "MyTerms FAQs",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The publication date for MyTerms (IEEE 7012) is 20 January 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "IEEE Standards Association offices, Piscataway, NJ (publisher)."
+  },
+  {
+   "id": "singapore-agentic-ai-governance-framework-2026",
+   "displayDate": "22 January 2026",
+   "year": 2026,
+   "title": "Singapore launches a Model AI Governance Framework for Agentic AI at Davos",
+   "place": "World Economic Forum Annual Meeting, Congress Centre, Davos, Switzerland",
+   "lat": 46.8003,
+   "lng": 9.8222,
+   "summary": "Singapore's Minister for Digital Development and Information, Josephine Teo, launched the Model AI Governance Framework for Agentic AI, developed by the Infocomm Media Development Authority. It warns that agents may hold sensitive data and make payments or change databases, and recommends bounding agents' autonomy and access to tools and data, human approval checkpoints, technical controls and end-user transparency.",
+   "significance": "Governance guidance for agents now centres on bounding what an agent may do with data - limits that, for the person's own data, need a portable machine-readable form.",
+   "sources": [
+    {
+     "institution": "Ministry of Digital Development and Information, Singapore",
+     "title": "Singapore Launches New Model AI Governance Framework for Agentic AI",
+     "date": "2026-01-22",
+     "url": "https://www.mddi.gov.sg/newsroom/singapore-launches-new-model-ai-governance-framework-for-agentic-ai--/",
+     "quote": "However, as AI agents may have access to sensitive data and the ability to make changes to their environment, such as updating a customer database or making a payment, their use introduces potential new risks, for example unauthorised or erroneous actions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dateline 'DAVOS, 22 January 2026'. IMDA's own copy of the release (imda.gov.sg) renders its body with JavaScript."
+    }
+   ],
+   "locationNote": "Announced at the World Economic Forum in Davos."
+  },
+  {
+   "id": "moltbook-agent-network-data-exposure-2026",
+   "displayDate": "31 January 2026",
+   "year": 2026,
+   "title": "Moltbook, a social network for AI agents, exposes 1.5 million API keys and agents' private messages",
+   "place": "Wiz (research team), New York",
+   "lat": 40.7128,
+   "lng": -74.006,
+   "summary": "Security firm Wiz found that Moltbook, a viral site where AI agents post and message each other, exposed its whole production database through a key in client-side code: 1.5 million API authentication tokens, 35,000 email addresses and private messages between agents, some containing plaintext OpenAI API keys. Wiz reported it on 31 January 2026, it was fixed within hours, and Wiz published its findings on 2 February 2026.",
+   "significance": "Agents carry their principals' credentials and confidences into places the principal never sees; with no recorded terms on either side, one misconfiguration exposes everything.",
+   "sources": [
+    {
+     "institution": "Wiz (Wiz Blog)",
+     "title": "Hacking Moltbook: The AI Social Network Any Human Can Control",
+     "date": "2026-02-02",
+     "url": "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys",
+     "quote": "The exposure included 1.5 million API authentication tokens, 35,000 email addresses, and private messages between agents.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Timeline on the page: 'January 31, 2026 22:06 UTC - Reported Supabase RLS misconfiguration exposing agents table (API keys, emails)'. Published 2026-02-02 (page metadata)."
+    },
+    {
+     "institution": "Wiz (Wiz Blog)",
+     "title": "Hacking Moltbook (private messages and third-party credential leaks)",
+     "date": "2026-02-02",
+     "url": "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys",
+     "quote": "Users shared OpenAI API keys and other credentials in direct messages under the assumption of privacy, but a configuration issue made those messages publicly accessible.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online platform; mapped to city-level coordinates for Wiz's New York headquarters."
+  },
+  {
+   "id": "nist-ai-agent-standards-initiative-2026",
+   "displayDate": "17 February 2026",
+   "year": 2026,
+   "title": "NIST launches an AI Agent Standards Initiative on agent security, identity and authorization",
+   "place": "National Institute of Standards and Technology, Gaithersburg, Maryland",
+   "lat": 39.1336,
+   "lng": -77.2161,
+   "summary": "NIST's Center for AI Standards and Innovation (CAISI) launched the AI Agent Standards Initiative so that agents can 'function securely on behalf of its users' and interoperate, with pillars on industry-led standards, open-source protocols, and research into agent security and identity. It sought input through a CAISI request for information on AI agent security and an ITL concept paper on AI agent identity and authorization.",
+   "significance": "The US standards agency treated 'acting on behalf of users' as the core problem of agents - which makes a standard way for the user's terms to accompany the agent a natural complement.",
+   "sources": [
+    {
+     "institution": "National Institute of Standards and Technology (NIST)",
+     "title": "Announcing the \"AI Agent Standards Initiative\" for Interoperable and Secure Innovation",
+     "date": "2026-02-17",
+     "url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+     "quote": "The Initiative will ensure that the next generation of AI—AI agents capable of autonomous actions—is widely adopted with confidence, can function securely on behalf of its users, and can interoperate smoothly across the digital ecosystem.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page metadata carries both 2026-02-17 and 2026-02-18; February 17, 2026 is the displayed release date."
+    }
+   ],
+   "locationNote": "NIST campus, Gaithersburg."
+  },
+  {
+   "id": "council-drops-article-88b-coalition-letter-2026",
+   "displayDate": "18 June 2026",
+   "year": 2026,
+   "title": "EU Council text drops the machine-readable consent signal; 19 groups demand it back",
+   "place": "Council of the European Union, Europa building, Brussels",
+   "lat": 50.8423,
+   "lng": 4.381,
+   "summary": "According to noyb, the Council's position paper of 18 June 2026 on the Digital Omnibus removed Article 88b, the obligation to honour automated privacy signals. On 10 September 2026 a coalition of 19 civil-society organisations, businesses and academics ('Kill the cookie banner') wrote to MEPs, the Council and the Commission asking for it to be restored, insisting that 'independent user agents' must be able to send such signals and that dominant browser makers must not control them. noyb reported that amendments to keep and strengthen Article 88b had been tabled in the European Parliament.",
+   "significance": "The fight over Article 88b is the live test of whether Europe will let a person's software, rather than each website's banner, carry the person's terms.",
+   "sources": [
+    {
+     "institution": "noyb - European Center for Digital Rights",
+     "title": "EU Member States (and Google) suddenly want to keep cookie banners!",
+     "date": "2026-06-23",
+     "url": "https://noyb.eu/en/eu-member-states-and-google-suddenly-want-keep-cookie-banners",
+     "quote": "In the Council’s latest position paper of 18 June, the plan to abolish the cookie banner has been scrapped.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy organisation's account; the Council document itself (published by Politico) was not read."
+    },
+    {
+     "institution": "Kill the Cookie Banner coalition (letter hosted by noyb)",
+     "title": "Joint call to replace cookie banners with automated signals (Article 88b proposal for a Digital Omnibus COM(2025) 837 final)",
+     "date": "2026-09-10",
+     "url": "https://noyb.eu/sites/default/files/2026-09/Joint%20letter%20Kill%20the%20Cookie%20Banner%20Campaign%2010092026.pdf",
+     "quote": "Browsers, operating systems, applications and independent user agents must be able to transmit signals without gatekeeper interference and/or additional tracking.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Date from the letter file name (10092026)."
+    },
+    {
+     "institution": "noyb - European Center for Digital Rights",
+     "title": "Open Letter: Civil society coalition urges EU to kill the cookie banner!",
+     "date": "2026-09",
+     "url": "https://noyb.eu/en/open-letter-civil-society-coalition-urges-eu-kill-cookie-banner",
+     "quote": "Therefore, a coalition of currently 19 civil society organisations, businesses and academics has joined forces.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'In the European Parliament constructive amendments have been tabled to maintain and improve Article 88b and automated signals.' The European Parliament's Legislative Train page records a co-rapporteurs' draft report of 22 June 2026 and over 1,750 amendments tabled by 15 July 2026 (https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-digital-package)."
+    }
+   ],
+   "locationNote": "Council of the EU, Brussels."
   }
  ],
  "series": [],
- "quant": [],
- "myths": [],
- "argument": [],
- "counterpoints": [],
- "agentScenario": []
+ "quant": [
+  {
+   "id": "pew-2023-ai-little-no-trust-companies",
+   "label": "Americans aware of AI who have little or no trust in companies to use it responsibly",
+   "value": 70,
+   "unit": "percent of U.S. adults who have heard of AI",
+   "year": 2023,
+   "geography": "United States",
+   "notes": "Pew Research Center American Trends Panel survey of 5,101 U.S. adults, 15-21 May 2023.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Among those who’ve heard about AI, 70% have little to no trust in companies to make responsible decisions about how they use it in their products.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fieldwork: 'This survey was conducted among 5,101 U.S. adults from May 15 to 21, 2023.'"
+    }
+   ]
+  },
+  {
+   "id": "pew-2023-ai-data-used-uncomfortably",
+   "label": "Americans familiar with AI who expect companies' AI use to put their information to uses they are not comfortable with",
+   "value": 81,
+   "unit": "percent of U.S. adults familiar with AI",
+   "year": 2023,
+   "geography": "United States",
+   "notes": "Same survey; 80% also expect uses 'that weren't originally intended'.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "And about eight-in-ten of those familiar with AI say its use by companies will lead to people’s personal information being used in ways they won’t be comfortable with (81%) or that weren’t originally intended (80%).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2023-click-agree-without-reading",
+   "label": "Americans who frequently click 'agree' on privacy policies without reading them",
+   "value": 56,
+   "unit": "percent of U.S. adults",
+   "year": 2023,
+   "geography": "United States",
+   "notes": "Baseline for the click-through consent model that agents now inherit.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2025-want-more-control-over-ai",
+   "label": "U.S. adults who want more control over how AI is used in their lives",
+   "value": 55,
+   "unit": "percent of U.S. adults",
+   "year": 2024,
+   "geography": "United States",
+   "notes": "Survey of 5,410 U.S. adults, 12-18 August 2024 (published 3 April 2025); AI experts surveyed separately: 57%.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How the U.S. Public and AI Experts View Artificial Intelligence",
+     "date": "2025-04-03",
+     "url": "https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/",
+     "quote": "More than half of U.S. adults (55%) and a similar share of AI experts (57%) say they want more control over how it is used in their lives.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Methodology on the same page: 'we surveyed 5,410 adults from Aug. 12 to Aug. 18, 2024.'"
+    }
+   ]
+  },
+  {
+   "id": "pew-2026-ai-makes-info-less-secure",
+   "label": "U.S. adults who expect AI to make their personal information less secure",
+   "value": 71,
+   "unit": "percent of U.S. adults",
+   "year": 2026,
+   "geography": "United States",
+   "notes": "Survey of 5,119 U.S. adults, 17-23 February 2026; 3% expect AI to make their information more secure. The text says 'roughly seven-in-ten'; the page's chart gives 71%.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and AI 2026: chatbots, smart devices and views on impact",
+     "date": "2026-06-17",
+     "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
+     "quote": "In fact, roughly seven-in-ten predict AI will make their personal information less secure. Just 3% say it will lead to their information being more secure.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The 71% figure is the chart label on the same page; fieldwork: 'our survey of 5,119 U.S. adults conducted Feb. 17-23, 2026'."
+    }
+   ]
+  },
+  {
+   "id": "cisco-2024-genai-users-enter-personal-info",
+   "label": "Generative-AI users who enter personal or confidential information into GenAI tools",
+   "value": 30,
+   "unit": "percent of GenAI users surveyed",
+   "year": 2024,
+   "geography": "12 countries (global survey of 2,600+ consumers)",
+   "notes": "84% of the same users are concerned about that data going public. Cisco's own consumer survey; company research, not official statistics.",
+   "sources": [
+    {
+     "institution": "Cisco Systems (Newsroom)",
+     "title": "New Cisco Survey Shows Strong Relationship Between Privacy Awareness and Trust in AI",
+     "date": "2024-10-30",
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m10/cisco-survey-shows-strong-relationship-between-privacy-awareness-and-trust-in-ai.html",
+     "quote": "Focusing on privacy, 30% of GenAI users say they enter personal or confidential information, including financial and health details, into GenAI tools. This is despite 84% being concerned about that data going public.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "confaide-chatgpt-contextual-leak-rate-2023",
+   "label": "Share of ConfAIde test cases in which ChatGPT revealed private information where humans would not",
+   "value": 57,
+   "unit": "percent of benchmark cases",
+   "year": 2023,
+   "geography": "Laboratory benchmark (English)",
+   "notes": "GPT-4: 39%. Leakage persisted with privacy-inducing prompts and chain-of-thought reasoning.",
+   "sources": [
+    {
+     "institution": "arXiv (Cornell University); ICLR 2024",
+     "title": "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory (Mireshghallah et al.)",
+     "date": "2023-10-27",
+     "url": "https://arxiv.org/abs/2310.17884",
+     "quote": "Our experiments show that even the most capable models such as GPT-4 and ChatGPT reveal private information in contexts that humans would not, 39% and 57% of the time, respectively.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "privacylens-llama3-agent-leak-rate-2024",
+   "label": "Share of PrivacyLens agent trajectories in which Llama-3-70B leaked sensitive information despite privacy instructions",
+   "value": 38.69,
+   "unit": "percent of cases",
+   "year": 2024,
+   "geography": "Laboratory benchmark (English)",
+   "notes": "GPT-4: 25.68%. Measured when models act as agents executing user instructions (e.g. sending emails), not when answering probing questions.",
+   "sources": [
+    {
+     "institution": "arXiv (Cornell University); NeurIPS 2024 Datasets and Benchmarks",
+     "title": "PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action (Shao et al.)",
+     "date": "2024-08-29",
+     "url": "https://arxiv.org/abs/2409.00138",
+     "quote": "State-of-the-art LMs, like GPT-4 and Llama-3-70B, leak sensitive information in 25.68% and 38.69% of cases, even when prompted with privacy-enhancing instructions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "agents-cookie-banner-granular-settings-2025",
+   "label": "Cookie-banner trials in which an AI web agent opened the granular consent settings",
+   "value": 0,
+   "unit": "trials (of 90: 3 banner designs x 3 models x 10 trials)",
+   "year": 2025,
+   "geography": "Laboratory test on a cloned Austrian news site",
+   "notes": "GPT-4o, Claude 3.7 Sonnet and Gemini 2.0 Flash driven through the Browser Use framework; agents either accepted everything or nothing. Small single-site study (preprint).",
+   "sources": [
+    {
+     "institution": "arXiv (Cornell University) - University of Applied Sciences Upper Austria",
+     "title": "Machine-Readable Ads: Accessibility and Behavioral Patterns of AI Web Agents Interacting with Online Advertisements (Nitu, Mühle, Stöckl)",
+     "date": "2025-07-17",
+     "url": "https://arxiv.org/pdf/2507.12844",
+     "quote": "Notably, none of the models accessed granular settings options ... for any banner. They either straight up accepted everything or nothing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Sentence is interrupted in the PDF text layer by Table 7; trial design: 'For 30 experimental trials per banner variant (10 trials per model), we documented the behavioral patterns'. v2 dated 12 Nov 2025."
+    }
+   ]
+  },
+  {
+   "id": "mcp-published-servers-2025",
+   "label": "Published Model Context Protocol servers one year after launch",
+   "value": 10000,
+   "unit": "servers (lower bound, 'more than')",
+   "year": 2025,
+   "geography": "Global",
+   "notes": "Indicator of how many distinct services an agent can reach through one protocol; stated by the Linux Foundation at the launch of the Agentic AI Foundation.",
+   "sources": [
+    {
+     "institution": "The Linux Foundation",
+     "title": "Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)",
+     "date": "2025-12-09",
+     "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+     "quote": "MCP has rapidly become the universal standard protocol for connecting AI models to tools, data and applications, with more than 10,000 published MCP servers now covering everything from developer tools to Fortune 500 deployments.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "cloudflare-managed-robots-txt-domains-2025",
+   "label": "Domains using Cloudflare's managed robots.txt to tell AI companies not to train on their content",
+   "value": 3800000,
+   "unit": "domains (lower bound, 'over 3.8 million')",
+   "year": 2025,
+   "geography": "Global (Cloudflare customers)",
+   "notes": "Scale of publisher-side machine-readable AI terms, for contrast with the absence of person-side terms.",
+   "sources": [
+    {
+     "institution": "Cloudflare (The Cloudflare Blog)",
+     "title": "Giving users choice with Cloudflare’s new Content Signals Policy",
+     "date": "2025-09-24",
+     "url": "https://blog.cloudflare.com/content-signals-policy/",
+     "quote": "Cloudflare customers have already turned on our managed robots.txt feature for over 3.8 million domains.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "uk-adults-never-read-cookie-policies-2026",
+   "label": "UK adults who admit never reading cookie policies or settings",
+   "value": 40,
+   "unit": "percent of UK adults ('two in five')",
+   "year": 2026,
+   "geography": "United Kingdom",
+   "notes": "From ICO-commissioned survey research cited in the ICO's agentic-AI report; 'two in five' converted to 40% (approximate).",
+   "sources": [
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "ICO tech futures: Agentic AI - Innovation opportunities",
+     "date": "2026-01-08",
+     "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/innovation-opportunities-what-innovation-might-the-ico-want-to-see-in-agentic-ai/",
+     "quote": "In survey research we commissioned, two in five UK adults admitted to never reading cookie policies or settings.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The underlying survey's fieldwork year is not given on this page; year field is the report year."
+    }
+   ]
+  },
+  {
+   "id": "moltbook-exposed-api-tokens-2026",
+   "label": "API authentication tokens exposed by the Moltbook AI-agent network",
+   "value": 1500000,
+   "unit": "tokens",
+   "year": 2026,
+   "geography": "Global (online platform)",
+   "notes": "Also exposed: 35,000 email addresses and private messages between agents, some containing plaintext OpenAI API keys.",
+   "sources": [
+    {
+     "institution": "Wiz (Wiz Blog)",
+     "title": "Hacking Moltbook: The AI Social Network Any Human Can Control",
+     "date": "2026-02-02",
+     "url": "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys",
+     "quote": "The exposure included 1.5 million API authentication tokens, 35,000 email addresses, and private messages between agents.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "myths": [
+  {
+   "id": "myth-cookie-consent-covers-ai-agents",
+   "claim": "When an AI agent browses for you, the cookie-consent banner still protects your privacy choices.",
+   "verdict": "MISLEADING",
+   "correction": "Consent banners are built for a human to read; nothing in them carries the principal's own terms. OpenAI says its ChatGPT agent's cookies 'persist based on each visited website's cookie policies', and in a 2025 test three LLM web agents never opened a banner's granular settings - they accepted everything or nothing. Whatever the agent clicks becomes the 'consent'.",
+   "sources": [
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT agent: bridging research and action",
+     "date": "2025-07-17",
+     "url": "https://web.archive.org/web/20250801053448/https://openai.com/index/introducing-chatgpt-agent/",
+     "quote": "Otherwise, cookies persist based on each visited website’s cookie policies, which can make repeat visits to sites more efficient.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page."
+    },
+    {
+     "institution": "arXiv (Cornell University) - University of Applied Sciences Upper Austria",
+     "title": "Machine-Readable Ads: Accessibility and Behavioral Patterns of AI Web Agents Interacting with Online Advertisements",
+     "date": "2025-07-17",
+     "url": "https://arxiv.org/pdf/2507.12844",
+     "quote": "Notably, none of the models accessed granular settings options ... for any banner. They either straight up accepted everything or nothing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-robots-txt-protects-personal-data",
+   "claim": "robots.txt (or the new AI-preference signals) keeps personal data out of AI systems.",
+   "verdict": "FALSE",
+   "correction": "robots.txt is a request to crawlers, published by the site operator about the site's paths; RFC 9309 says its rules 'are not a form of access authorization' and that it is 'not a substitute for valid content security measures'. The IETF's AI-preferences vocabulary likewise says preferences 'are not a security mechanism' and that a recipient 'has a choice whether to follow' them. Neither lets an individual state terms about data concerning themselves on other people's sites.",
+   "sources": [
+    {
+     "institution": "RFC Editor / IETF",
+     "title": "RFC 9309: Robots Exclusion Protocol",
+     "date": "2022-09",
+     "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+     "quote": "The Robots Exclusion Protocol is not a substitute for valid content security measures.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IETF Datatracker",
+     "title": "A Vocabulary For Expressing AI Usage Preferences, draft-ietf-aipref-vocab-08",
+     "date": "2026-09-14",
+     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+     "quote": "Preferences are not a security mechanism.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-telling-ai-to-respect-privacy-is-enough",
+   "claim": "If you instruct an AI assistant to respect privacy, it will not leak what you share with it.",
+   "verdict": "FALSE",
+   "correction": "Benchmarks show leakage survives privacy instructions: in ConfAIde, GPT-4 and ChatGPT revealed private information where humans would not in 39% and 57% of cases, and 'this leakage persists even when we employ privacy-inducing prompts'; in PrivacyLens, GPT-4 and Llama-3-70B agents leaked sensitive information in 25.68% and 38.69% of cases even with privacy-enhancing instructions.",
+   "sources": [
+    {
+     "institution": "arXiv (Cornell University); ICLR 2024",
+     "title": "Can LLMs Keep a Secret? (ConfAIde)",
+     "date": "2023-10-27",
+     "url": "https://arxiv.org/abs/2310.17884",
+     "quote": "This leakage persists even when we employ privacy-inducing prompts or chain-of-thought reasoning.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "arXiv (Cornell University); NeurIPS 2024",
+     "title": "PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action",
+     "date": "2024-08-29",
+     "url": "https://arxiv.org/abs/2409.00138",
+     "quote": "State-of-the-art LMs, like GPT-4 and Llama-3-70B, leak sensitive information in 25.68% and 38.69% of cases, even when prompted with privacy-enhancing instructions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-ai-act-lets-people-opt-out-of-training",
+   "claim": "The EU AI Act lets individuals opt out of having their personal data used to train AI.",
+   "verdict": "MISLEADING",
+   "correction": "The AI Act's machine-readable opt-out duty (Article 53(1)(c)) concerns copyright holders' reservations under the 2019 copyright directive, not personal data. Personal data remain under the GDPR; the Commission's 2025 Digital Omnibus would add an Article 88c allowing AI development on 'legitimate interests' with an 'unconditional right to object' - an opt-out that is still only a proposal.",
+   "sources": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689, Article 53(1)(c)",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "put in place a policy to comply with Union law on copyright and related rights, and in particular to identify and comply with, including through state-of-the-art technologies, a reservation of rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "eur-lex.europa.eu answers scripts with an empty HTTP 202 bot challenge; the Official Journal text was read and checked on the Internet Archive's capture of the EUR-Lex page."
+    },
+    {
+     "institution": "Council of the European Union (register copy of the Commission proposal)",
+     "title": "Digital Omnibus, COM(2025) 837 final - proposed Article 88c GDPR",
+     "date": "2025-11-19",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
+     "quote": "providing data subjects with an unconditional right to object to the processing of their personal data",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-openai-15m-fine-stands",
+   "claim": "OpenAI was definitively fined EUR 15 million in Italy for training ChatGPT on personal data.",
+   "verdict": "MISLEADING",
+   "correction": "The Garante imposed the fine in its decision of 2 November 2024 (announced 20 December 2024), but the Court of Rome upheld OpenAI's appeal in judgment no. 4153/2026, published 18 March 2026, and the Garante removed the decision from its website. The judgment's reasoning was not reviewed for this record.",
+   "sources": [
+    {
+     "institution": "Garante per la protezione dei dati personali (Italian Data Protection Authority)",
+     "title": "ChatGPT, The Italian Data Protection Authority closes the preliminary investigation (doc. web n. 10085432)",
+     "date": "2026-03-18",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432",
+     "quote": "Decision No. 755 of 2 November 2024 has been temporarily removed from the website of the Italian Data Protection Authority following judgment No. 4153/2026 of the Court of Rome. The judgment, published on 18 March 2026, upheld the appeal lodged against the Authority’s decision",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-myterms-is-just-do-not-track",
+   "claim": "IEEE 7012 / MyTerms is just another browser flag like Do Not Track or Global Privacy Control.",
+   "verdict": "MISLEADING",
+   "correction": "DNT and GPC are one-way signals responding to choices framed by sites. IEEE 7012 makes the individual the first party who proffers standard-form contractual terms; the site accepts one, both sides (or their agents) sign, and each keeps a matching record that can be audited or disputed. The transport may resemble a browser header, but the legal form - an agreement with records - is different. (The characterisation of MyTerms as enforceable contract is the project's own and is untested in court.)",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - How is MyTerms different from Do Not Track, Global Privacy Control, cookie banners, and preference centers?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In all those cases, the person responds to choices provided by corporate systems. In legal language, persons are second parties, not first parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-ieee-7012-published-2025",
+   "claim": "IEEE 7012 was published in 2025 (because it is called 'IEEE 7012-2025').",
+   "verdict": "MISLEADING",
+   "correction": "The '-2025' suffix reflects the year of approval: the IEEE SA Standards Board approved it on 4 November 2025. It was published on 20 January 2026, more than eight years after the project was authorised (PAR approved 6 December 2017).",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page: History)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dates are from the page's status panel: 'PAR Approval 2017-12-06', 'Board Approval 2025-11-04', 'Published: 2026-01-20'. The quote identifies the standard; the dates are structured fields on the same page."
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The publication date for MyTerms (IEEE 7012) is 20 January 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "argument": [
+  {
+   "id": "arg-1-scale-outruns-reading",
+   "claim": "Agents meet far more services, on a person's behalf, than any person could ever read the terms of.",
+   "explanation": "Even before agents, most people did not read privacy terms: 56% of Americans frequently click 'agree' unread, and two in five UK adults never read cookie policies. One protocol alone, MCP, connected agents to more than 10,000 published servers within a year, and agent-to-agent and payment protocols launched with 50 and 60-plus corporate partners. Delegation multiplies the number of counterparties while removing the human reader entirely.",
+   "evidence": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "The Linux Foundation",
+     "title": "Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)",
+     "date": "2025-12-09",
+     "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+     "quote": "MCP has rapidly become the universal standard protocol for connecting AI models to tools, data and applications, with more than 10,000 published MCP servers now covering everything from developer tools to Fortune 500 deployments.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "ICO tech futures: Agentic AI - Innovation opportunities",
+     "date": "2026-01-08",
+     "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/innovation-opportunities-what-innovation-might-the-ico-want-to-see-in-agentic-ai/",
+     "quote": "In survey research we commissioned, two in five UK adults admitted to never reading cookie policies or settings.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-2-click-through-does-not-survive-delegation",
+   "claim": "Click-through consent does not survive delegation: an agent that clicks 'accept' is not the person consenting.",
+   "explanation": "In a controlled test, LLM web agents facing cookie banners never opened granular settings - they accepted everything or nothing. OpenAI's own agent keeps cookies 'based on each visited website's cookie policies', and its first browsing agent had to hand the keyboard back to the human for credentials and payments. Consent designed as a human ceremony has no defined meaning when software performs it.",
+   "evidence": [
+    {
+     "institution": "arXiv (Cornell University) - University of Applied Sciences Upper Austria",
+     "title": "Machine-Readable Ads: Accessibility and Behavioral Patterns of AI Web Agents Interacting with Online Advertisements",
+     "date": "2025-07-17",
+     "url": "https://arxiv.org/pdf/2507.12844",
+     "quote": "Notably, none of the models accessed granular settings options ... for any banner. They either straight up accepted everything or nothing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT agent: bridging research and action",
+     "date": "2025-07-17",
+     "url": "https://web.archive.org/web/20250801053448/https://openai.com/index/introducing-chatgpt-agent/",
+     "quote": "Otherwise, cookies persist based on each visited website’s cookie policies, which can make repeat visits to sites more efficient.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page."
+    },
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing Operator",
+     "date": "2025-01-23",
+     "url": "https://web.archive.org/web/20260108213932/https://openai.com/index/introducing-operator/",
+     "quote": "Takeover mode: Operator asks the user to take over when inputting sensitive information into the browser, such as login credentials or payment information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page."
+    }
+   ]
+  },
+  {
+   "id": "arg-3-portable-statement-of-principals-terms",
+   "claim": "An agent needs a portable, machine-readable statement of its principal's terms that it can present anywhere.",
+   "explanation": "IEEE 7012 is written for exactly this: it covers agreements with 'websites, applications and AI agents', and lets the individual's agent point to standard-form terms held on a neutral roster. MyTerms describes SD-BASE as the default agreement for 'any individual using an agent'. Without it, the only terms an agent can carry are each site's own.",
+   "evidence": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "Agreements",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "It is the base/ default relationship agreement that should be in place for any individual using an agent to propose a MyTerms agreement to an organisation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-4-records-on-both-sides-make-delegation-auditable",
+   "claim": "Records kept by both sides turn an agent's promise into something that can be audited and disputed.",
+   "explanation": "IEEE 7012 requires a matching record kept by both parties that can be 'retrieved, audited, or disputed'. Commerce has already adopted the same logic for agents: Google's AP2 uses signed 'Mandates' to create 'a non-repudiable audit trail'. The ICO lists 'mechanisms for redress and restitution, particularly in agent ecosystems' among the research it wants - a need made concrete by prompt-injection exfiltration such as EchoLeak.",
+   "evidence": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Google Cloud Blog",
+     "title": "Powering AI commerce with the new Agent Payments Protocol (AP2)",
+     "date": "2025-09-16",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+     "quote": "This complete sequence—from intent, to cart, to payment—creates a non-repudiable audit trail that answers the critical questions of authorization and authenticity, providing a clear foundation for accountability.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "ICO tech futures: Agentic AI - Innovation opportunities",
+     "date": "2026-01-08",
+     "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/innovation-opportunities-what-innovation-might-the-ico-want-to-see-in-agentic-ai/",
+     "quote": "mechanisms for redress and restitution, particularly in agent ecosystems – ways to understand how something has gone wrong and how to put it right.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-5-regulators-honour-machine-readable-signals",
+   "claim": "Law is moving to make organisations honour a person's machine-readable signal, which gives person-proffered terms a legal foothold.",
+   "explanation": "The GDPR already lets people object 'by automated means using technical specifications'; California's regulations make businesses treat opt-out preference signals as valid requests, AB 566 obliges browsers to offer one from 2027, and Colorado has enforced a universal opt-out since July 2024. The EU's proposed Article 88b would require controllers to accept automated, machine-readable consent choices - welcomed by the EDPB and EDPS, though dropped from the Council's June 2026 text.",
+   "evidence": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2016/679 (GDPR), Article 21(5)",
+     "date": "2016-05-04",
+     "url": "https://web.archive.org/web/2025/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679",
+     "quote": "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "eur-lex.europa.eu answers scripts with an empty HTTP 202 bot challenge; the Official Journal text was read and checked on the Internet Archive's capture of the EUR-Lex page."
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "California Consumer Privacy Act Regulations, 11 CCR § 7025(b) (effective 1 January 2026)",
+     "date": "2026-01-01",
+     "url": "https://privacy.ca.gov/wp-content/uploads/sites/357/2026/03/ccpa_regulations_eff_20260101-1.pdf",
+     "quote": "A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "European Data Protection Board and European Data Protection Supervisor",
+     "title": "EDPB-EDPS Joint Opinion 2/2026 on the Digital Omnibus",
+     "date": "2026-02-10",
+     "url": "https://www.edpb.europa.eu/system/files/2026-02/edpb_edps_jointopinion_202602_digitalomnibus_en.pdf",
+     "quote": "They consider that the use of technical means can simplify compliance by controllers, support data subjects in making their online choices, and make such choices effective in practice.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-6-pdc-ai-opt-in-for-training",
+   "claim": "PDC-AI gives people an opt-in route for AI training data, where current law and industry offer mostly opt-outs for publishers.",
+   "explanation": "Italy's regulator found ChatGPT was trained without an adequate legal basis, and the EU's pending proposal would rest AI training on 'legitimate interests' plus a right to object. Machine-readable AI signals so far serve content owners (robots.txt, AIPREF, RSL, Cloudflare). MyTerms' PDC-AI agreement lets an individual affirmatively offer specific data 'for the purposes of Training and Operating AI technologies' on their own terms - while 30% of GenAI users already type personal or confidential data into these tools.",
+   "evidence": [
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "Agreements - PDC-AI",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "An agreement that indicates you are willing to provide access to specific data under your control for the purposes of Training and Operating AI technologies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Garante per la protezione dei dati personali (Italian Data Protection Authority)",
+     "title": "Provvedimento del 30 marzo 2023 [doc. web n. 9870832]",
+     "date": "2023-03-30",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832",
+     "quote": "RILEVATA l’assenza di idonea base giuridica in relazione alla raccolta dei dati personali e al loro trattamento per scopo di addestramento degli algoritmi sottesi al funzionamento di ChatGPT;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'NOTING the absence of a suitable legal basis for the collection of personal data and their processing for the purpose of training the algorithms underlying the operation of ChatGPT'."
+    },
+    {
+     "institution": "Cisco Systems (Newsroom)",
+     "title": "New Cisco Survey Shows Strong Relationship Between Privacy Awareness and Trust in AI",
+     "date": "2024-10-30",
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m10/cisco-survey-shows-strong-relationship-between-privacy-awareness-and-trust-in-ai.html",
+     "quote": "Focusing on privacy, 30% of GenAI users say they enter personal or confidential information, including financial and health details, into GenAI tools. This is despite 84% being concerned about that data going public.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-7-intention-economy-without-surveillance",
+   "claim": "Agents can signal what a person wants to buy without the seller having to surveil them - the 'intention economy'.",
+   "explanation": "Payment networks already let consumers pre-set preferences and limits for agents, and AP2 records a shopper's 'Intent Mandate'. MyTerms' PDC-INTENT agreement applies the same idea to data: people 'gather, curate and share intent data under their control', rather than having intent inferred from tracking. This is the Intention Economy Doc Searls described in 2012.",
+   "evidence": [
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "Agreements - PDC-INTENT",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "An enabler of The Intention Economy in which people can gather, curate and share intent data under their control.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Google Cloud Blog",
+     "title": "Powering AI commerce with the new Agent Payments Protocol (AP2)",
+     "date": "2025-09-16",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+     "quote": "When you delegate a task like, “Buy concert tickets the moment they go on sale,” you sign a detailed Intent Mandate upfront.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Visa Inc. (Business Wire release)",
+     "title": "Find and Buy with AI: Visa Unveils New Era of Commerce",
+     "date": "2025-04-30",
+     "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.21361.html",
+     "quote": "Now, with Visa Intelligent Commerce, AI agents can find, shop and buy for consumers based on their pre-selected preferences. Each consumer sets the limits, and Visa helps manage the rest.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-8-platform-owned-personal-agents",
+   "claim": "Without person-proffered terms, 'personal' agents are owned by platforms whose interests may differ from their users'.",
+   "explanation": "The leading agents run inside the platforms' own browsers and chat apps, with built-in memory of what users read, and commerce protocols billed as 'merchant-friendly'. The ICO flags the 'concentration of personal information facilitating personal assistant agents'; civil-society groups demand that 'independent user agents' can send privacy signals without gatekeeper interference. A neutral, standard set of terms that any agent can carry is a counterweight.",
+   "evidence": [
+    {
+     "institution": "Information Commissioner's Office (UK)",
+     "title": "ICO tech futures: Agentic AI - Executive summary",
+     "date": "2026-01-08",
+     "url": "https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/",
+     "quote": "concentration of personal information facilitating personal assistant agents.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Kill the Cookie Banner coalition (letter hosted by noyb)",
+     "title": "Joint call to replace cookie banners with automated signals",
+     "date": "2026-09-10",
+     "url": "https://noyb.eu/sites/default/files/2026-09/Joint%20letter%20Kill%20the%20Cookie%20Banner%20Campaign%2010092026.pdf",
+     "quote": "Browsers, operating systems, applications and independent user agents must be able to transmit signals without gatekeeper interference and/or additional tracking.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT Atlas",
+     "date": "2025-10-21",
+     "url": "https://web.archive.org/web/2025/https://openai.com/index/introducing-chatgpt-atlas/",
+     "quote": "Browser memories let ChatGPT remember context from the sites you visit and bring that context back when you need it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "openai.com returns HTTP 403 to scripts; text read and quote checked on an Internet Archive Wayback Machine capture of the OpenAI page."
+    },
+    {
+     "institution": "Stripe (Newsroom)",
+     "title": "Stripe powers Instant Checkout in ChatGPT and releases Agentic Commerce Protocol codeveloped with OpenAI",
+     "date": "2025-09-29",
+     "url": "https://stripe.com/newsroom/news/stripe-openai-instant-checkout",
+     "quote": "This milestone in the evolution of AI-enabled commerce is powered by the Agentic Commerce Protocol (ACP), a new, merchant-friendly open standard codeveloped by Stripe and OpenAI, informed by Stripe’s 15 years of experience building commerce infrastructure for the world's fastest-growing businesses.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "arg-9-public-wants-control",
+   "claim": "The public already distrusts how AI handles personal data and wants more control - demand a person-side standard can meet.",
+   "explanation": "Seven in ten Americans expect AI to make their personal information less secure (2026), 55% want more control over how AI is used in their lives (2024 fieldwork), and in 2023 70% of those aware of AI had little or no trust in companies to use it responsibly.",
+   "evidence": [
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and AI 2026",
+     "date": "2026-06-17",
+     "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
+     "quote": "In fact, roughly seven-in-ten predict AI will make their personal information less secure. Just 3% say it will lead to their information being more secure.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How the U.S. Public and AI Experts View Artificial Intelligence",
+     "date": "2025-04-03",
+     "url": "https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/",
+     "quote": "More than half of U.S. adults (55%) and a similar share of AI experts (57%) say they want more control over how it is used in their lives.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Among those who’ve heard about AI, 70% have little to no trust in companies to make responsible decisions about how they use it in their products.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "counterpoints": [
+  {
+   "id": "counter-adoption-incentives",
+   "point": "Organisations whose revenue depends on tracking have little reason to accept terms that forbid it, so early adoption may be thin.",
+   "response": "The MyTerms project concedes that the standard 'will take time to propagate and not all organisations will adopt them', and says its first targets are sites 'that don't participate in the surveillance economy'. Adoption therefore likely depends on regulatory pressure (such as the proposed EU Article 88b) or on accepting sites gaining trust; there is no public adoption data yet.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - Any risks or downsides?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The agreements themselves, when accepted and in place have very few, if any downsides. The only negative in the early days is that it will take time to propagate and not all organisations will adopt them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - Why do you think MyTerms will succeed ...?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Our first targets for MyTerms acceptance are the countless millions of websites and services that don’t participate in the surveillance economy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "counter-enforcement",
+   "point": "Machine-readable signals are only as good as their enforcement, and today's AI-preference standards explicitly leave compliance to the recipient.",
+   "response": "IEEE 7012's answer is contract plus two-sided records rather than a bare preference; if a site refuses, the person's agent records that. Whether courts will enforce browser-proffered terms as contracts has not been tested, and the Italian Garante's EUR 15 million ChatGPT fine being overturned on appeal in 2026 shows how uncertain after-the-fact enforcement is.",
+   "sources": [
+    {
+     "institution": "IETF Datatracker",
+     "title": "A Vocabulary For Expressing AI Usage Preferences, draft-ietf-aipref-vocab-08",
+     "date": "2026-09-14",
+     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+     "quote": "An entity that receives usage preferences has a choice whether to follow those preferences.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - What happens if a company says 'No' to my terms?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Your agent can record that outcome, and it or other programs can keep track of it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Garante per la protezione dei dati personali (Italian Data Protection Authority)",
+     "title": "ChatGPT ... closes the preliminary investigation (notice after the Court of Rome ruling)",
+     "date": "2026-03-18",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432",
+     "quote": "Decision No. 755 of 2 November 2024 has been temporarily removed from the website of the Italian Data Protection Authority following judgment No. 4153/2026 of the Court of Rome. The judgment, published on 18 March 2026, upheld the appeal lodged against the Authority’s decision",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "counter-fate-of-p3p-and-dnt",
+   "point": "Earlier machine-readable privacy signals failed: Do Not Track was never made binding, and P3P faded; why would 7012 fare better?",
+   "response": "The difference claimed is legal form: DNT was a one-bit preference that California's Attorney General found could not be required because it did not clearly convey an opt-out, whereas GPC succeeded once regulators defined its meaning. IEEE 7012 is a contract with records, but it too needs counterparties willing to honour it. P3P's history is covered in other slices of this study and was not re-verified here.",
+   "sources": [
+    {
+     "institution": "Global Privacy Control (globalprivacycontrol.org)",
+     "title": "GPC FAQ - Why not just use Do Not Track (DNT)?",
+     "date": "2026",
+     "url": "https://globalprivacycontrol.org/faq",
+     "quote": "Unfortunately, in the appendices to their Final Statement of Reasons, the California Attorney General (AG) determined that the AG could not require businesses to comply with DNT requests because the requests do not clearly convey users’ intent to opt out of the sale of their data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "GPC is a project of its founding organisations; the California AG's Final Statement of Reasons (Appendix E) itself was not read."
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - How is MyTerms different from Do Not Track, Global Privacy Control, cookie banners, and preference centers?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In addition, MyTerms requires that both sides keep identical records of their agreement, so compliance can be audited, and disputes adjudicated, should the need arise.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "California Consumer Privacy Act Regulations, 11 CCR § 7025(b)",
+     "date": "2026-01-01",
+     "url": "https://privacy.ca.gov/wp-content/uploads/sites/357/2026/03/ccpa_regulations_eff_20260101-1.pdf",
+     "quote": "A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "counter-agent-vendor-capture",
+   "point": "The agents people actually use are built by platforms that may not proffer their users' terms - or may shape the signal to suit themselves.",
+   "response": "The fight over EU Article 88b shows the risk: noyb says that, following lobbying spearheaded by Google, the Council removed the automated-signal provision, and the coalition letter asks that dominant browser makers not design or manage the signals. MyTerms hopes large platforms will add 7012 functions, but the standard also allows simple independent browser and server add-ons.",
+   "sources": [
+    {
+     "institution": "noyb - European Center for Digital Rights",
+     "title": "Open Letter: Civil society coalition urges EU to kill the cookie banner!",
+     "date": "2026-09",
+     "url": "https://noyb.eu/en/open-letter-civil-society-coalition-urges-eu-kill-cookie-banner",
+     "quote": "Following lobbying efforts spearheaded by Google , several Member States are now blocking the EU Commission’s proposal and the Council has currently removed Article 88b from its position.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy organisation's characterisation; spacing before the comma reproduced from the page."
+    },
+    {
+     "institution": "Kill the Cookie Banner coalition (letter hosted by noyb)",
+     "title": "Joint call to replace cookie banners with automated signals",
+     "date": "2026-09-10",
+     "url": "https://noyb.eu/sites/default/files/2026-09/Joint%20letter%20Kill%20the%20Cookie%20Banner%20Campaign%2010092026.pdf",
+     "quote": "Dominant companies (e.g. gatekeepers like Google, in relation to browsers) should not be able to design or manage automated signals for users in a way that further entrenches their market power.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - How does a site/service signal it accepts MyTerms?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In the long run it is likely that Apple, Google, and other big players and platforms add MyTerms functions to their products.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "counter-legal-and-technical-gaps",
+   "point": "Key mechanics are left open: how agreement records look and where they are stored, how terms change over time, and which protocol carries them.",
+   "response": "IEEE 7012 deliberately allows 'any protocol that serves the purpose' and puts negotiation out of scope; MyTerms says the record format is 'an option left open'. This flexibility eases adoption but means interoperability, and therefore auditability across vendors, depends on implementations not yet public. Jurisdictional differences in contract law are acknowledged by the project.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Party-to-party negotiations over terms in any of these contracts or other agreements are outside the scope of this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - What does an 'agreement record kept by both sides' look like, and where is it stored?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "This is an option left open by the MyTerms standard, to maximize development choices.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - Can a relationship start on SD-BASE and later 'step up'?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The standard does not specify how changes in MyTerms decisions between the two parties will be made, leaving that open for developers as well.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "counter-contracts-override-signals",
+   "point": "A site's own terms of service may override a person's signal, and the IETF vocabulary itself says contracts can trump preferences.",
+   "response": "This cuts both ways: it is why 7012 frames the person's terms as a contract rather than a preference. But where a person has also clicked a site's terms, which agreement prevails is a question the standard's public materials do not resolve.",
+   "sources": [
+    {
+     "institution": "IETF Datatracker",
+     "title": "A Vocabulary For Expressing AI Usage Preferences, draft-ietf-aipref-vocab-08",
+     "date": "2026-09-14",
+     "url": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+     "quote": "Contractual agreements or other specific arrangements might override statements of preference.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "agentScenario": [
+  {
+   "step": 1,
+   "title": "The person chooses default terms once",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. Maya sets her shopping agent's default to SD-BASE (service delivery only, no sharing with third parties) and lists PDC-AI as a term she will NOT offer to this merchant.",
+   "supportInPublicMaterials": "MyTerms FAQ: people choose an agreement from a small roster posted at a neutral nonprofit site; SD-BASE is the base/default agreement for anyone using an agent. How an agent stores the person's default settings is not specified in public materials.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - Can I change my terms for different websites?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "You can choose an agreement from a small roster of terms posted at a neutral nonprofit site such as CutomerCommons.org or MyTerms.info.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "Agreements - SD-BASE",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "It is the base/ default relationship agreement that should be in place for any individual using an agent to propose a MyTerms agreement to an organisation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "step": 2,
+   "title": "Her agent contacts the merchant's agent",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. Maya's agent opens a session with an online shop's agent to buy running shoes, over whatever channel the two support (an HTTP header, an agent-to-agent message).",
+   "supportInPublicMaterials": "IEEE 7012 abstract: agents for both parties engage using any protocol that serves the purpose; MyTerms FAQ mentions browser headers on the model of DNT and GPC. No specific wire format (header name, A2A extension) is specified in public materials.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - How does a site/service signal it accepts MyTerms, and how does a person present MyTerms?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "On the Web, browsers or their plug-ins will signal MyTerms options to sites several possible means, including browser headers (on the model of Do Not Track and Global Privacy Conrol).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'Conrol' is a typo on the source page, reproduced verbatim."
+    }
+   ]
+  },
+  {
+   "step": 3,
+   "title": "The agent proffers SD-BASE as first party",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. Before any personal data is exchanged, Maya's agent points to SD-BASE (or a short list: SD-BASE, SD-BASE-DP) as the terms on which she will deal.",
+   "supportInPublicMaterials": "IEEE 7012 abstract: the first party points to a preferred agreement or set of agreements, from which the second party accepts one.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "title": "The merchant's agent accepts - no haggling",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. The shop's agent accepts SD-BASE as offered. It cannot counter-propose edits to the text; it can only accept one of the offered agreements or decline.",
+   "supportInPublicMaterials": "IEEE 7012 abstract puts party-to-party negotiation over terms out of scope.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Party-to-party negotiations over terms in any of these contracts or other agreements are outside the scope of this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "step": 5,
+   "title": "Both agents sign",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. Each agent signs the agreement electronically on behalf of its principal.",
+   "supportInPublicMaterials": "IEEE 7012 abstract: if both agree, the agreement is signed electronically by both parties or their agents. The signature scheme (e.g. keys, verifiable credentials) is not specified in public materials.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "step": 6,
+   "title": "Both sides record the same agreement",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. Maya's agent stores its copy in her personal records; the shop stores an identical copy. The purchase itself proceeds under a separate payment mandate (for example AP2's cart mandate), which records the price and items but not privacy terms.",
+   "supportInPublicMaterials": "IEEE 7012 and MyTerms FAQ: both sides keep identical records; the form and storage location are left open by the standard. Linking a 7012 record to a payment mandate is not specified in public materials.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In addition, MyTerms requires that both sides keep identical records of their agreement, so compliance can be audited, and disputes adjudicated, should the need arise.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - What does an 'agreement record kept by both sides' look like, and where is it stored?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "This is an option left open by the MyTerms standard, to maximize development choices.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Google Cloud Blog",
+     "title": "Powering AI commerce with the new Agent Payments Protocol (AP2)",
+     "date": "2025-09-16",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+     "quote": "After the agent presents a cart with the shoes you want, your approval signs a Cart Mandate .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Illustrates a payment record running alongside, not part of, the 7012 agreement."
+    }
+   ]
+  },
+  {
+   "step": 7,
+   "title": "If a merchant refuses, the refusal is recorded too",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. At a second shop that declines SD-BASE, Maya's agent records the refusal and, following her settings, shops elsewhere.",
+   "supportInPublicMaterials": "MyTerms FAQ: the person's agent can record a refusal and keep track of it. What the agent then does is a product decision, not specified in public materials.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - What happens if a company says 'No' to my terms?",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Your agent can record that outcome, and it or other programs can keep track of it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "step": 8,
+   "title": "Later: audit or dispute",
+   "illustrative": true,
+   "action": "ILLUSTRATIVE. Months later Maya receives marketing from a third party that appears to have her shoe purchase. Her agent retrieves the signed SD-BASE record to support a complaint to the shop or a regulator.",
+   "supportInPublicMaterials": "IEEE 7012 abstract: records must be retrievable, auditable or disputable. How a breach is detected, and which forum hears the dispute, is not specified in public materials.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ]
 }

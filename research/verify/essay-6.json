@@ -1,0 +1,187 @@
+{
+ "slice": "essay",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "quote",
+   "id": "q-arendt-1958-privative",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Wash. U. L. Rev. PDF with the cache cleared: quote FOUND verbatim as a block quotation in Part I.A ('The Privative Trait of Privacy'). Komamura's n.19 reads 'Id. at 38 (emphasis added)', and n.8 identifies the source as 'HANNAH ARENDT, THE HUMAN CONDITION 71 (2d ed. 1998) (first published by the University of Chicago Press in 1958)'. So p. 38 is a page of the 1998 second edition, and the italics in the PDF are Komamura's. The journal landing page (journals.library.wustl.edu/lawreview/article/id/6219/) gives citation_volume 96, citation_issue 6, 2019, and the PDF runs from p. 1337, so the institution, title and date fields are right. The note's gloss holds: the passage goes on 'A man who lived only a private life ... was not fully human.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-littre-vie-privee-muree",
+   "status": "FIXED",
+   "issues": [
+    "Littré gives the sentence with no author, as its own example under sense 2 of 'privé'. So 'Maxim quoted in Littré' suggests a sourced citation that is not there.",
+    "'Commonly attributed to Royer-Collard' leaves out that Littré's own REMARQUE on the same page questions that attribution. It quotes Édouard Fournier (Feuilleton de la Patrie, 14 July 1868): 'J'ai cru d'abord, comme bien des gens. que c'était Royer-Collard [qui avait créé cette expression]… Depuis quelque temps j'ai des doutes'. It then cites a Stendhal letter of 31 Oct. 1823 that credits the phrase to Talleyrand ('comme l'a si bien dit M. de Talleyrand, doit être murée'). The speaker field should reflect the dispute."
+   ],
+   "fieldFixes": {
+    "speaker": "Littré, Dictionnaire de la langue française (an example given with no author; the 'wall of private life' is variously credited to Royer-Collard or Talleyrand)",
+    "note": "The wall as the emblem of privacy, in one line. Translation: \"Private life must be walled in; it is not permitted to seek out and make known what happens in a private person's house.\" Littré prints the sentence with no author, as an example of 'vie privée'. In a remark on the same entry, Littré quotes Édouard Fournier (1868), who first thought Royer-Collard coined 'the wall of private life'. Fournier then doubted it because an 1823 letter by Stendhal credits Talleyrand. So credit the sentence to Littré."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched littre.org with the cache cleared: quote FOUND verbatim under sense 2 of 'privé', with no author named. The same page's REMARQUE is also FOUND. It records Fournier's doubt about Royer-Collard and the Stendhal letter of 31 Oct. 1823 crediting Talleyrand. The year 1872 is when the dictionary's first edition was completed (issued in parts from 1863). This entry must postdate July 1868, since its remark cites a feuilleton of 14 July 1868."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-bverfg-1983-who-knows-what",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim in the Court's English version. The page heading reads 'Judgment of 15 December 1983', with headnotes 'to the Judgment of the First Senate of 15 December 1983, 1 BvR 209, 269, 362, 420, 440, 484/83'. It also gives ECLI:DE:BVerfG:1983:rs19831215.1bvr020983 and BVerfGE 65, 1. The page does not say whether the translation is authoritative, and the German text is the binding one. 'Official English translation' is best read as 'English translation published by the Court'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: German original FOUND verbatim at para. 146 of the Court's German text (BVerfGE 65, 1 <43>). The English sentence is a faithful rendering. Date, senate and file number match."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-westin-1967-claim",
+   "status": "FIXED",
+   "issues": [
+    "The only source (Solove 2002, via an Internet Archive copy) could not be re-read in this pass. web.archive.org reset every connection through the egress proxy (more than 20 attempts over about 30 minutes, including plain HTTP). The archive.org availability API still lists the snapshot (timestamp 20260918051731, status 200), but its content could not be fetched. The live GW repository PDF returns HTTP 403, and SSRN returns 403. The quote's wording is independently confirmed by the Stanford Encyclopedia of Philosophy, which cites Westin 1967 p. 7 (added below). SEP prints 'when, how and to what extent' without the serial comma, and Solove and Wikipedia print 'when, how, and to what extent'. The record keeps Solove's form.",
+    "The note's claim about the Association of the Bar of the City of New York's Special Committee rests on the Washington and Lee Law Review book note. That note is cited on a separate essay fact record, not on this one. Its archived copy could not be re-read either (same web.archive.org failure)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-fetch on 2026-09-23. web.archive.org/web/20260918051731id_/... reset every connection through the egress proxy (ws_closed_mid_exchange, repeated retries). The archive.org availability API confirms the snapshot exists (20260918051731, status 200). The live scholarship.law.gwu.edu PDF returns 403, as does SSRN (abstract 313103). The GW landing page (faculty_publications/933) does load and confirms 'Daniel J. Solove, Conceptualizing Privacy, 90 Cal. L. Rev. 1087 (2002)'. Re-check the quote when the archive is reachable. The wording of Westin's definition is confirmed by the added SEP source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Stanford Encyclopedia of Philosophy",
+     "title": "Beate Roessler and Judith DeCew, 'Privacy'",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Privacy is the claim of individuals, groups, or institutions to determine for themselves when, how and to what extent information about them is communicated to others. (1967: 7; see also Gross 1971)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched and checked with --check (FOUND). The entry was first published on 14 May 2002, and the date given is its latest substantive revision (19 Oct 2023). It confirms the wording and the page (Westin 1967: 7). The SEP bibliography lists 'Westin, Alan F., 1967, Privacy and Freedom, New York: Atheneum', which confirms the publisher. SEP omits the serial comma after 'how'."
+    }
+   ]
+  },
+  {
+   "kind": "quote",
+   "id": "q-cohen-2013-emergent",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim in the article's introduction on harvardlawreview.org. The page header reads 'What Privacy is For / Julie E. Cohen / Volume 126 / Issue 7 / May 2013'. The published article is 126 Harv. L. Rev. 1904 (2013)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-coke-1604-castle",
+   "status": "FIXED",
+   "issues": [
+    "The note calls Semayne's Case 'The source of \"a man's home is his castle\"'. That overstates it. In the same resolution Coke grounds the rule in older authority: Year Book citations (3 Edw. 3; 26 Ass.; 21 Hen. 7. 39) and the maxim 'domus sua cuique est tutissimum refugium'. The passage is the classic legal statement of the idea, not its origin.",
+    "Text variant: the Liberty Fund text used here reads 'as well for defence against injury and violence'. The standard report (5 Co. Rep. 91a, 77 E.R. 194, as quoted on Wikipedia's Semayne's case page) reads 'as well for his defence against injury and violence'. The record's quote is verbatim to its cited source, but readers comparing editions will notice the difference.",
+    "The Liberty Fund page's own framing is wrong: it calls Coke 'the English judge' who 'declared in a ruling'. In 1604 Coke was Attorney General and reported the case. The King's Bench judges (Popham CJ, Gawdy, Fenner, Yelverton, Williams JJ) decided it. The record's speaker field ('reporting Semayne's Case') is correct, so do not copy the Liberty Fund framing into the prose."
+   ],
+   "fieldFixes": {
+    "note": "The classic legal statement of \"a man's home is his castle\" - privacy as a wall the law will defend. Coke, then Attorney General, reported the King's Bench resolution and grounded it in older authority (\"domus sua cuique est tutissimum refugium\"). Note \"for his repose\": rest and quiet, not only safety. Standard editions (5 Co. Rep. 91a, 77 E.R. 194) read \"as well for his defence\"; the Liberty Fund text omits \"his\"."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim on oll.libertyfund.org ('Found in: Selected Writings of Sir Edward Coke, vol. I'). The same passage goes on to cite 21 Hen. 7. 39 and 'domus sua cuique est tutissimum refugium'. The year is supported: Wikipedia gives 'Decided Michaelmas Term, 1604' in the Court of King's Bench, published in Coke's fifth Reports in 1605."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Semayne's case",
+     "date": "2026",
+     "url": "https://en.wikipedia.org/wiki/Semayne%27s_case",
+     "quote": "the house of every one is to him as his castle and fortress, as well for his defence against injury and violence, as for his repose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent check (--check FOUND). It gives the standard-report wording ('for his defence'), 'Decided Michaelmas Term, 1604', Court of King's Bench, and 'reported by Sir Edward Coke, who was then the Attorney General'. Use it as corroboration only."
+    }
+   ]
+  },
+  {
+   "kind": "quote",
+   "id": "q-warren-brandeis-1890-sacred-precincts",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim in the Louisville Brandeis Collection transcription ('Originally published in 4 Harvard Law Review 193 (1890)'). The page itself gives no day. The date 1890-12-15 is the issue date of Harv. L. Rev. vol. 4 no. 5 (15 Dec. 1890), which is correct. The 'prediction' does allude to Luke 12:3 ('that which ye have spoken in the ear in closets shall be proclaimed upon the housetops')."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-brandeis-1928-let-alone",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim in Brandeis J.'s dissent on LII. In context, 'They' is 'The makers of our Constitution', as the note says. The page gives 'Argued Feb. 20 and 21, 1928. Decided June 4, 1928.' It confirms the note's facts: the taps were 'made without trespass upon any property of the defendants', in an office-building basement and 'in the streets near the houses'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-puttaswamy-2017-dignity",
+   "status": "FIXED",
+   "issues": [
+    "The speaker field credits the line to the 'Supreme Court of India (nine-judge bench)'. It is not a holding of all nine judges. It is conclusion (E) in Part T of Dr D Y Chandrachud J's opinion, signed by Khehar CJI, Agrawal J, Chandrachud J and Nazeer J (four of nine). The unanimous Order of the Court (paras (i)-(iv)) does not contain it. The record's own note says this, but the speaker field contradicts the note."
+   ],
+   "fieldFixes": {
+    "speaker": "Justice D. Y. Chandrachud, for four of the nine judges (Supreme Court of India)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim on Indian Kanoon as conclusion '(E) Privacy is the constitutional core of human dignity. Privacy has both a normative and descriptive function.' It sits in the conclusions of Chandrachud J's opinion, and signature lines follow for [JAGDISH SINGH KHEHAR] CJI, [R K AGRAWAL], [Dr D Y CHANDRACHUD] and [S ABDUL NAZEER]. The Order of the Court confirms that this opinion was delivered on behalf of those four, and that Chelameswar, Bobde, Sapre, Nariman and Kaul JJ wrote separately. The judgment is dated 24 August 2017."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "slice": "personas-code",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "image",
+   "id": "cynthia-dwork-safra-center-2017",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the Commons API was re-queried on 2026-09-23. extmetadata gives LicenseShortName 'CC BY 2.0', LicenseUrl creativecommons.org/licenses/by/2.0, Artist 'Edmond J.  Safra Center for Ethics' (sic, with a double space), Credit 'Tina Eliassi-Rad Lecture', DateTimeOriginal '2017-11-02 18:02', and ImageDescription 'Cynthia Dwork at the Edmond J. Safra Center for Ethics.'. The wikitext Source is flickr.com/photos/harvardethics/38091746086 (the Center's HarvardEthics stream), and FlickreviewR 2 passed it as cc-by-2.0 on 2020-05-10. Every rightsEvidence field matches.",
+    "Checked OK: the local file assets/media/cynthia-dwork-safra-center-2017.jpg opens as a 960x640 RGB JPEG. It shows a woman with curly hair and glasses who holds a hand-held microphone and raises her other hand, matching the alt text. The thumbUrl returns HTTP 200 (after one 429 retry).",
+    "Minor, no change needed: the Flickr title 'Tina Eliassi-Rad Lecture' suggests Dwork was a discussant or questioner at another speaker's lecture, not the speaker. The caption does not claim otherwise. 'Harvard' is right because the Edmond J. Safra Center for Ethics is a Harvard centre. The lat/lng are null, which is appropriate."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "latanya-sweeney-knight-paley-center-2017",
+   "status": "OK",
+   "issues": [
+    "Checked OK: in the Commons API extmetadata, LicenseShortName is 'CC BY 4.0' ({{self|cc-by-4.0}}), Artist is 'Parker Higgins', Credit is 'Own work' and DateTimeOriginal is '2017-11-16 15:59:00'. The ImageDescription reads verbatim 'Latanya Sweeney takes part in a panel discussion at a Knight News Challenge event at the Paley Center for Media in New York City on November 16, 2017.', which is the caption word for word.",
+    "Checked OK: the local file opens as a 960x960 RGB JPEG. It shows a woman with short grey hair and dark-rimmed glasses in a grey jacket, seated and speaking in front of a backdrop that reads 'KNIGHT ... FOUNDATION'. The alt text is accurate, and the thumbUrl returns HTTP 200.",
+    "Coordinates roughly right: Wikipedia gives the Paley Center for Media (25 W 52nd St) as 40.76056, -73.9775. The record's 40.7613, -73.9786 is about 120 m away on the same block of West 52nd Street, which is acceptable for a map pin. The optional refinement is lat 40.7606, lng -73.9775."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "dan-bernstein-27c3-2010",
+   "status": "OK",
+   "issues": [
+    "Checked OK: in the Commons API extmetadata, LicenseShortName is 'CC BY 3.0' ({{self|cc-by-3.0}}, plus a {{Personality rights}} warning), Artist is 'Alexander Klink', Credit is 'Own work', DateTimeOriginal is '2010-12-29' and ImageDescription is 'Dan Bernstein at the 27th Chaos Communication Congress'. The file is in Category:Daniel J. Bernstein and carries a QualityImage assessment. 27C3 ran in Berlin from 27 to 30 December 2010, so the 29 December date falls within it.",
+    "Checked OK: the local file opens as a 960x1441 RGB JPEG, matching thumbPx. It is a head-and-shoulders studio-style portrait of a smiling man with wire-rimmed glasses and short dark hair against a deep-blue background. The alt text is accurate, and the thumbUrl returns HTTP 200. The personality-rights tag does not stop editorial use in a history study."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "adam-back-joi-ito-2014",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the Commons wikitext has {{Information |Description=Adam Back |Date=2014-12-02 |Source=https://flickr.com/photos/joi/15753708050 |Author=Joi Ito}}, {{Cc-by-2.0}} and {{Flickrreview|Abzeronow|2023-10-27}}, so a trusted reviewer confirmed the Flickr licence. extmetadata gives LicenseShortName 'CC BY 2.0'. Every rightsEvidence field matches.",
+    "Checked OK: the local file opens as a 960x707 RGB JPEG. It shows a man with wire-rimmed glasses and a goatee in an olive/khaki zip jacket, seated against a dark horizontally padded backdrop. The alt text is accurate, and the thumbUrl returns HTTP 200. The Flickr page renders client-side, so fetching it gave no extra place or date information. The record correctly leaves the location unknown."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "rsa-munitions-t-shirt-1997",
+   "status": "DOWNGRADED",
+   "issues": [
+    "The licence cannot be confirmed from the stated source. The Commons revision history shows that user Thue (a Copenhagen-based Wikimedian, not Adam Back) uploaded both 'Munitions T-shirt (front).jpg' and '(back).jpg' through UploadWizard on 2014-07-01, gave the author as 'Adam Back <adam@cypherspace.org>', and applied {{cc-zero}} with an empty permission field. There is no VRT ticket. The source page named in the upload, cypherspace.org/adam/rsa/uk-shirt.html, was re-fetched and its raw HTML read: it has no licence or public-domain statement. The shirt-design page (cypherspace.org/adam/shirt/design/) offers the artwork for people to print shirts but grants no licence either. The CC0 is therefore a third party's assertion for someone else's photograph, and the photographer is not named anywhere. Commons extmetadata does say 'CC0', so the rightsEvidence quoted in the record is accurate as far as it goes, but it is not independent evidence of a release.",
+    "The year and caption date '1997' are unsupported and probably wrong for the shirt. The upload gave the date as '1993-03-30'. On 2023-01-23 an anonymous IP changed it to '1997', inferring that 'the ruling that this code was 5D002 didn't happen until 1997 ... so this tshirt is after that'. That inference runs backwards. The shirt's own text says it is 'classified as a munition', and Adam Back's shirt homepage says the ITAR sections 120.17 and 121.1 (Category XIII) are 'the sections quoted on the shirt'. Encryption was controlled as a munition under the ITAR, not under the Commerce EAR's 5D002, until the December 1996 transfer. Back's media page states: 'Mockup of UK shirt appeared in the Japanese edition of Wired Nov 95.' The UK shirt therefore dates from 1995. The photograph itself is undated.",
+    "Checked OK otherwise: the local file opens as a 330x380 RGB JPEG, which matches thumbPx, and the thumbUrl returns HTTP 200. The alt text is accurate. The image shows a black shirt, worn, with 'WARNING This shirt is classified as a munition and may not be exported from the United States, or shown to a foreign national', 'RSA encryption in perl', lines of code and a large barcode in a white box. This matches Back's design page ('File warning.gz ... File rsa.gz ... Machine readable version of program: CODE128 barcode'). A UK-style wall socket is visible, which fits Back's alt text 'front of UK munitions T'.",
+    "Recommendation: keep the image only with the date corrected and the rights status marked unconfirmed (verified:false, which build-data renders as PENDING). If the project needs rights confirmed at the source, replace it with a better-documented image."
+   ],
+   "fieldFixes": {
+    "year": 1995,
+    "caption": "A UK-printed 'munitions' T-shirt (front), carrying RSA encryption in three lines of Perl as a protest against US export rules that classed encryption software as a munition. Adam Back's site says a mock-up of the UK shirt appeared in the Japanese edition of Wired in November 1995; the photograph itself is undated.",
+    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC0\"; Artist \"Adam Back <adam@cypherspace.org>\"; Credit \"http://www.cypherspace.org/adam/rsa/uk-shirt.html\". Caveat: the CC0 tag was applied by a third-party uploader (User:Thue, UploadWizard, 2014-07-01) with an empty permission field and no VRT ticket, and the cited source page carries no licence statement, so the release could not be confirmed at source. The Commons date '1997' was entered by an anonymous IP in 2023 as an inference; the upload had given '1993-03-30'.",
+    "verified": false
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "Adam Back (cypherspace.org)",
+     "title": "Media Appearances (munitions T-shirt)",
+     "date": "c. 1996",
+     "url": "http://www.cypherspace.org/adam/shirt/media.html",
+     "quote": "Mockup of UK shirt appeared in the Japanese edition of Wired Nov 95.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. It dates the UK shirt design to 1995. The page itself carries no date, so 'c. 1996' is an estimate."
+    },
+    {
+     "institution": "Adam Back (cypherspace.org)",
+     "title": "perl RSA \"munitions\" T-Shirt homepage",
+     "date": "c. 1995",
+     "url": "http://www.cypherspace.org/adam/shirt/",
+     "quote": "see sections 120.17, and 121.1 (Category XIII) - the sections quoted on the shirt.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. It shows the shirt quotes the ITAR (the State Department munitions list), which governed encryption exports until the December 1996 move to the Commerce EAR. The page's references to the Council of Europe recommendation and the NIST software key escrow meeting place it around late 1995."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "tor-stands-for-the-onion-router",
+   "status": "OK",
+   "issues": [
+    "Checked OK: source 0 (Syverson, 'A Peel of Onion', ACSAC 2011 keynote PDF) was re-fetched and the quote is FOUND verbatim. The note quote ('He would respond that it was the onion routing, the original program of projects from NRL. It was Rachel Greenstadt who noted to him that this was a nice acronym and gave Tor its name.') is also FOUND. The same passage says 'It was also his decision that it should be written 'Tor' not 'TOR'', where 'his' refers to Roger Dingledine, and concludes 'the 'r' in 'Tor' represents 'routing' not 'router''. Every clause of the correction is supported, including the 2004 paper title 'Tor: The Second-Generation Onion Router' (confirmed on the USENIX PDF).",
+    "Checked OK: source 1 (torproject.org/about/history/) was re-fetched and its quote is FOUND verbatim. It agrees independently with Syverson that the name expanded to 'The Onion Routing' and that Roger named the project. Minor nuance, no change needed: Syverson credits Rachel Greenstadt with spotting the acronym, and the correction's 'Roger Dingledine used it' is consistent with that. MISLEADING is a fair verdict, because 'router' versus 'routing' is a small but documented error."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote and note quote both --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "tor-built-by-nsa-as-spy-tool",
+   "status": "FIXED",
+   "issues": [
+    "The correction goes too far in one place. It says the ''spy tool' purpose' is 'not supported by the record', but the record shows onion routing was meant partly to protect government, including intelligence, users. Syverson's paper (source 2) says: 'Law enforcement and intelligence agencies need to operate on the Internet without revealing their activities or intentions to those they are investigating or anyone else observing.' The 2004 Tor design paper (source 1) says: 'This work has been supported by ONR and DARPA.' The claim does say 'or the US military', and military funding is part of it. What the record does not support is an NSA origin or a surveillance purpose. The correction is reworded to concede the military and intelligence link while keeping the rebuttal of 'NSA' and 'surveillance tool'.",
+    "Checked OK: source 0 (Tor Project History) was re-fetched and its quote is FOUND. The three note quotes (1995 Goldschlag/Reed/Syverson at NRL; EFF funding in 2004; Tor Project, Inc. founded in 2006) are verbatim on the page. Source 1 (USENIX 2004 PDF) quote FOUND, and the affiliations (Dingledine and Mathewson 'The Free Haven Project', Syverson 'Naval Research Lab') are confirmed on the title page. Source 2 (Syverson 2011) quote FOUND. The correction's quoted phrase 'separate identification from routing' is in Syverson's abstract and section 1 ('We (David Goldschlag, Michael Reed, and I) began work on onion routing in late 1995 with the goal to separate identification from routing'). '1995–96' fits a late-1995 start and a first publication in May 1996 at Information Hiding."
+   ],
+   "fieldFixes": {
+    "correction": "Onion routing was invented in 1995–96 by David Goldschlag, Michael Reed and Paul Syverson at the U.S. Naval Research Laboratory (not the NSA) to 'separate identification from routing'. The military link is real. Syverson names law-enforcement and intelligence agencies that 'need to operate on the Internet without revealing their activities' among its intended users, and the 2004 Tor design paper says the work 'has been supported by ONR and DARPA'. But onion routing was built to hide its users' own traffic, not to watch anyone else's. Tor itself was designed in the early 2000s by Roger Dingledine and Nick Mathewson of the Free Haven Project, working with Syverson. Its code was released under a free-software licence when the network launched in 2002. The Electronic Frontier Foundation funded the work from 2004, and an independent nonprofit, the Tor Project, took it over in 2006. Navy origins and military funding are on the record. An NSA origin and a surveillance purpose are not."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote and all three note quotes present verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND; affiliations confirmed on title page."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Naval Research Laboratory / ACSAC 2011 (keynote paper, public domain)",
+     "title": "Paul Syverson, 'A Peel of Onion'",
+     "date": "2011-12",
+     "url": "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
+     "quote": "Law enforcement and intelligence agencies need to operate on the Internet without revealing their activities or intentions to those they are investigating or anyone else observing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. It supports the corrected text's concession that intelligence users were among onion routing's intended beneficiaries, as protection for their own traffic."
+    },
+    {
+     "institution": "USENIX Association, Proceedings of the 13th USENIX Security Symposium",
+     "title": "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router'",
+     "date": "2004-08",
+     "url": "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf",
+     "quote": "This work has been supported by ONR and DARPA.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND (Acknowledgments). Military research funding (Office of Naval Research, DARPA), not the NSA."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "clipper-chip-mandatory-backdoor-in-every-phone",
+   "status": "FIXED",
+   "issues": [
+    "'The government bought devices to seed a market' gives a motive that no source states. The White House release says 'To demonstrate the effectiveness of this new technology, the Attorney General will soon purchase several thousand of the new devices'. Blaze (source 2) says 'As incentive for AT&T's cooperation, the government agreed to purchase a' significant quantity of Clipper-equipped TSD-3600Es. The sentence is reworded to follow the sources. The rest of the correction is supported.",
+    "Checked OK: source 0 (clintonwhitehouse6.archives.gov, 16 April 1993) was re-fetched and its quote and note quote are FOUND. The release also says the chip 'can be used in new, relatively inexpensive encryption devices that can be attached to an ordinary telephone', that 'the two keys will be deposited separately in two \"key-escrow\" data bases that will be established by the Attorney General', and that 'Access to these keys will be limited to government officials with legal authorization to conduct a wiretap', which supports 'add-on telephone encryption devices', 'two escrow databases' and 'lawful wiretaps'. Source 1 (Zimmermann, 'Why I Wrote PGP') quote and both note quotes are FOUND. The page describes itself as 'Part of the Original 1991 PGP User's Guide (updated in 1999)', so the 1999 date is right for the Clipper passage. Source 2 (Blaze, ACSAC 2011) quote FOUND, and both note quotes are FOUND ('(and ultimately the only) company to produce a full product based on the ill-fated escrow system' and the TSD passage)."
+   ],
+   "fieldFixes": {
+    "correction": "The White House announced Clipper on 16 April 1993 as a 'voluntary program'. It was a government-designed chip for relatively inexpensive encryption devices that attach to an ordinary telephone. Each device had two keys, deposited separately in two escrow databases set up by the Attorney General and released only to officials with legal authority for a wiretap. The Attorney General promised to buy several thousand of the devices. In Matt Blaze's account, that purchase was the incentive for AT&T, which became the only company to build a full product around the chip. Industry and the public largely rejected Clipper, and critics feared that other encryption would eventually be outlawed. The scheme never became mandatory, and by the end of the decade the government had abandoned key escrow."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote and note quote --check FOUND; key-escrow and 'attached to an ordinary telephone' sentences also verbatim on the page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote and both note quotes --check FOUND. Page header: 'Part of the Original 1991 PGP User's Guide (updated in 1999)'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. Also FOUND: 'As incentive for AT&T's cooperation, the government agreed to purchase a' (continues 'significant quantity of Clipper-equipped TSD-3600Es, which sold for over $1000 each')."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "blaze-flaw-killed-the-clipper-chip",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the source (Blaze, 'Key Escrow from a Safe Distance: Looking Back at the Clipper Chip', author copy of the ACSAC 2011 paper) was re-fetched and its quote is FOUND verbatim in section 3, 'Postscript'. The next paragraph names 'the problem of securing a growing database of end-user keys' and 'the economic problem', namely that cryptography was becoming 'an essentially zero-marginal-cost technology' that 'could often be implemented in software' while 'Clipper required the use of hardware cryptography'. That supports the correction's 'deeper problems' clause.",
+    "Checked OK: the correction's factual clauses are in the same paper and FOUND. For the 16-bit search: 'The LEAF checksum was, in fact, 16 bits long' and 'The only thing stopping you was a 16 bit exhaustive search, a very low barrier even in 1993.' For the front page: 'the top of the front page, under the headline Flaw Found in Federal Plan for Wiretapping.' The 1994 date also checks out: Blaze wrote the paper in April 1994, the Times story ran in early June 1994, and the paper went to ACM CCS in November 1994. 'At most accelerated' is a fair gloss of 'may have helped accelerate its demise'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. Also FOUND on the same PDF: 'The only thing stopping you was a 16 bit exhaustive search, a very low barrier even in 1993.' and 'the top of the front page, under the headline Flaw Found in Federal Plan for Wiretapping.'"
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

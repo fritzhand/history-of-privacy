@@ -1,0 +1,286 @@
+{
+ "slice": "dataprotection",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-gdpr-invented-data-protection",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes re-fetched and verbatim (--check FOUND). The HBDI, Dataskyddet 50 år and CNIL pages are live (HTTP 200).",
+    "'Council of Europe Convention 108 became the first binding international data protection treaty in 1981' is imprecise: 28 January 1981 is when it was opened for signature; it only became binding on entering into force in 1985. None of the record's three sources covers Convention 108 at all; an EU (European Parliament DPO) page that states both facts is added.",
+    "'Sweden passed the first national law in 1973' - its own source says the Datalag was the first national law to regulate computerised processing of personal data comprehensively ('på ett heltäckande sätt'). The US Fair Credit Reporting Act (1970) was an earlier national, sectoral data law, so 'first comprehensive national law' is the defensible wording.",
+    "CNIL page is dated '03 décembre 2020' on the page; the record gives only 2020-12. Minor, corrected.",
+    "'nearly half a century' (1970 to 2018 = 48 years) and 'France created the CNIL in 1978' (CNIL: 'la loi Informatique et Libertés est votée en 1978 ... permis la création de la CNIL') check out."
+   ],
+   "fieldFixes": {
+    "correction": "The GDPR, applied from May 2018, came nearly half a century after the first data protection statute: Hesse's act of 1970. Sweden passed the first comprehensive national law in 1973, France created the CNIL in 1978, and Council of Europe Convention 108, opened for signature in 1981, was the first legally binding international data protection treaty. The CNIL itself says France's 1978 law contributed to the drafting of the GDPR."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote verbatim (--check FOUND). Same paragraph: 'Der weltweit erste Datenschutzbeauftragte war Willi Birkelbach, der am 8. Juni 1971 vom Hessischen Landtag ... gewählt wurde.' Page is undated; 2024 is not shown on it (treat as access-era date)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote verbatim (--check FOUND). The page opens 'Under 2023 fyller dataskyddslagstiftningen 50 år.' Note the qualifiers 'nationella' and 'på ett heltäckande sätt' (comprehensively)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "date": "2020-12-03",
+     "note": "Re-fetched; quote verbatim (--check FOUND). Page date shown as '03 décembre 2020'. Same page: 'la loi Informatique et Libertés est votée en 1978' and it 'permis la création de la CNIL'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "European Parliament, Data Protection Officer",
+     "title": "28.01.2025 - Data Protection Day",
+     "date": "2025-01-28",
+     "url": "https://www.europarl.europa.eu/data-protection/en/28.01.2025-data-protection-day/products-details/20250119CAN74153",
+     "quote": "The Data Protection Day marks the anniversary of the opening for signature in 1981 of Convention 108, the first legally binding international instrument to protect privacy in the digital age - The Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data on 28th January 1981.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live fetch, HTTP 200). Supports 'opened for signature in 1981' and 'first legally binding international instrument'. Entry into force (1 October 1985) is not on this page."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-sweden-first-data-protection-law",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes re-fetched and verbatim (--check FOUND).",
+    "'Hesse passed the first data protection statute of any kind in October 1970' is wrong on the month. The Hessian Landtag passed the act at its 80th sitting on 30 September 1970 (second and third readings, 'Gesetz beschlossen'); 7 October 1970 is the date it was signed, it was promulgated on 12 October and it came into force on 13 October. Primary evidence (scanned, no text layer, so --check is impossible; read visually from the page images): Hessischer Landtag, 6. Wahlperiode, Stenographischer Bericht Nr. 80, 80. Sitzung, Wiesbaden, 30 September 1970 (https://starweb.hessen.de/cache/PLPR/06/0/00080.pdf). Contents p. IV, item 14: 'Zweite und dritte Lesung des Entwurfs für ein Datenschutzgesetz - Drucks. Nr. 3065 und 3376 - In zweiter und dritter Lesung angenommen: Gesetz beschlossen'. p. 4272, President Buch: 'Das Gesetz ist mit den Stimmen der SPD, CDU und F.D.P. angenommen, ohne Gegenstimmen, bei Stimmenthaltung der NPD. Damit ist der Entwurf zum Gesetz erhoben.' The Gesetz- und Verordnungsblatt für das Land Hessen Teil I, 1970 Nr. 41 (https://starweb.hessen.de/cache/GVBL/1970/00041.pdf, also scanned) is 'Ausgegeben zu Wiesbaden am 12. Oktober 1970'; p. 625 reads 'Der Landtag hat das folgende Gesetz beschlossen: Datenschutzgesetz Vom 7. Oktober 1970'. The same issue lists nine laws all dated 7.10.70, several of which (Acetylenverordnung, Architektengesetz, Personalvertretungsgesetz, Schiedsmannsgesetz, Gerichtsorganisationsgesetz) were also passed at the 30 September sitting - so 7 October is the signing (Ausfertigung) date, not the vote.",
+    "'nearly three years earlier' overstates the gap: the Datalag (1973:289) was issued on 11 May 1973 (Riksdag open data: 'Utfärdad: 1973-05-11'), about two years and seven months after Hesse's act. Corrected to 'some two and a half years'. The riksdagen source is added.",
+    "'the first national data protection law' - the Swedish source's own claim is narrower: the first national law to regulate computerised processing of personal data comprehensively. The US Fair Credit Reporting Act (October 1970) was an earlier national but sectoral law. Wording tightened to 'first comprehensive national'."
+   ],
+   "fieldFixes": {
+    "correction": "Sweden's Datalag, issued on 11 May 1973, was the first comprehensive national data protection law. But the West German state of Hesse passed the first data protection statute of any kind in 1970, some two and a half years earlier, and elected the first data protection commissioner in June 1971."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote verbatim (--check FOUND). Qualifiers 'nationella' (national) and 'på ett heltäckande sätt' (comprehensively) confirmed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote verbatim (--check FOUND). Same page: 'Das Hessische Datenschutzgesetz von 1970 war das erste Datenschutzgesetz deutschland- und weltweit.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Sveriges riksdag (open data, Svensk författningssamling)",
+     "title": "Datalag (1973:289)",
+     "date": "1973-05-11",
+     "url": "https://data.riksdagen.se/dokument/sfs-1973-289.text",
+     "quote": "Utfärdad: 1973-05-11",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND. 'Issued: 1973-05-11'. The page also records 'Upphävd: 1998-10-24'."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-hesse-law-30-september-1970",
+   "status": "DROP",
+   "issues": [
+    "The record's correction is false. It says '30 September 1970 was a reading of the bill'. In fact 30 September 1970 was the day the Hessian Landtag passed the act, in its second and third readings, with no votes against. Primary evidence (scanned, no text layer, so --check is impossible; read visually from the page images): Hessischer Landtag, 6. Wahlperiode, Stenographischer Bericht Nr. 80, 80. Sitzung, Wiesbaden, 30 September 1970 (https://starweb.hessen.de/cache/PLPR/06/0/00080.pdf). Contents p. IV, item 14: 'Zweite und dritte Lesung des Entwurfs für ein Datenschutzgesetz - Drucks. Nr. 3065 und 3376 - In zweiter und dritter Lesung angenommen: Gesetz beschlossen'. p. 4272, President Buch: 'Das Gesetz ist mit den Stimmen der SPD, CDU und F.D.P. angenommen, ohne Gegenstimmen, bei Stimmenthaltung der NPD. Damit ist der Entwurf zum Gesetz erhoben.' The Gesetz- und Verordnungsblatt für das Land Hessen Teil I, 1970 Nr. 41 (https://starweb.hessen.de/cache/GVBL/1970/00041.pdf, also scanned) is 'Ausgegeben zu Wiesbaden am 12. Oktober 1970'; p. 625 reads 'Der Landtag hat das folgende Gesetz beschlossen: Datenschutzgesetz Vom 7. Oktober 1970'. The same issue lists nine laws all dated 7.10.70, several of which (Acetylenverordnung, Architektengesetz, Personalvertretungsgesetz, Schiedsmannsgesetz, Gerichtsorganisationsgesetz) were also passed at the 30 September sitting - so 7 October is the signing (Ausfertigung) date, not the vote.",
+    "So the 'myth' claim ('Hesse enacted the world's first data protection law on 30 September 1970') is essentially true if 'enacted' means the legislature's vote, which is how the BfDI uses 'erlässt'. It is only imprecise because the act's official date is 7 October 1970 (the signature date, which gives the law its name) and it came into force on 13 October 1970. A record that brands the BfDI's date an error, while treating the archive's '7 October ... verabschiedete der Hessische Landtag' as right, gets the facts backwards.",
+    "Source 2 (Arcinsys) is quoted verbatim, but its statement is itself inaccurate: the Landtag did not vote on 7 October. It passed the act on 30 September; 7 October is the Ausfertigung date. Any other record relying on this Arcinsys sentence for 'the Landtag passed it on 7 October' should be corrected. That includes the source note on event hesse-data-protection-act-1970, which translates it as 'On 7 October 1970 the Hessian Landtag passed the Data Protection Act' (outside this chunk). The slice 'notes' pointer to this myth should also be removed.",
+    "If editors want a date-clarifying item in its place, a true version would read: 'Hesse's Landtag passed the act on 30 September 1970, with no votes against. It is dated 7 October 1970, the day it was signed, was published in the Gesetz- und Verordnungsblatt on 12 October and came into force on 13 October 1970, so sources that give either 30 September or 7 October are both right about different steps.' This is a nuance, not a myth."
+   ],
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched PDF; quote verbatim (--check FOUND). The lecture also says 'hat das Land Hessen am 7.10.1970 das erste Datenschutzgesetz der Welt erlassen', and footnote 1 cites 'Hessisches Datenschutzgesetz vom 7.10.1970, Hess. GVBl. I 1970, S. 625'. It does not say which reading was the final vote; the plenary record shows 30 September was the second and third reading, when the act was passed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote verbatim (--check FOUND). The 30 September date is the Landtag's final vote (Stenographischer Bericht 6/80, p. 4272), so the BfDI heading is defensible, not an error. Entry into force 13.10.1970 is correct (GVBl. issued 12 October 1970)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote verbatim (--check FOUND). The quoted statement is inaccurate on the date of the Landtag's vote: the plenary record shows the Landtag passed the act on 30 September 1970, and 7 October 1970 is the signing date printed on the act ('Vom 7. Oktober 1970'). The same Arcinsys page gives 'Inkrafttreten am 13.10.1970' (correct)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-data-protection-day-is-an-eu-day",
+   "status": "FIXED",
+   "issues": [
+    "Source 0 (Wayback copy of the coe.int Data Protection Day page) could not be re-fetched. web.archive.org reset every connection this session (fetch-text.py, curl and WebFetch all failed), and live coe.int returns HTTP 403. It is marked PENDING, and two confirmed sources are added that carry the same facts.",
+    "Source 1 (IAPP) quote verbatim. But its date is wrong: 2023-11-13 is the CMS datePublished (the page's dateModified is 2026-05-28). The article text opens 'Friday, Jan. 28, is Data Protection Day' and has a section 'Data Privacy Day 2022' ('This year will be the 16th Data Protection/Privacy Day'). 28 January 2022 was a Friday, so the article dates from January 2022. The author is Müge Fazlioglu.",
+    "All claims in the correction are supported by confirmed sources. IAPP: 'The day was initiated by the Committee of Ministers of the Council of Europe in 2006' and the date 'marks the anniversary of the opening for signature of the Council of Europe's Convention 108 in 1981'. The European Parliament DPO page: 'In 2006, the Committee of Ministers of the Council of Europe decided to designate the 28th of January as Data Protection Day.' '46-member': Wikipedia's Council of Europe article (the Committee of Ministers comprises 'the Ministers of Foreign Affairs of all 46 member states'). This matches a cached Dec 2024 coe.int header ('46 Member States'); the count has been 46 since Russia's exclusion in March 2022.",
+    "Nuance, not an error: EU institutions do mark the day (the European Parliament DPO publishes a Data Protection Day page, and IAPP itself labels it 'Data Protection Day (in the EU)'). The FALSE verdict is right about its origin, which is the Council of Europe and Convention 108, not EU law."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed: web.archive.org returned 'Connection reset by peer' on every attempt (fetch-text.py and curl, several tries over the session); WebFetch reports it cannot fetch from web.archive.org; live https://www.coe.int/en/web/data-protection/data-protection-day returns HTTP 403. The archive.org availability API lists a snapshot 20260916055535, but its content could not be read. The same facts are confirmed by the IAPP and European Parliament pages."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022-01",
+     "note": "Re-fetched (live, HTTP 200); quote verbatim (--check FOUND). Also FOUND: 'The day was initiated by the Committee of Ministers of the Council of Europe in 2006.' and 'Convention 108 holds special status as the first legally binding international agreement on data protection ...'. Date corrected from the CMS datePublished (2023-11-13) to January 2022: the text says 'Friday, Jan. 28, is Data Protection Day' and 'Data Privacy Day 2022'. Author: Müge Fazlioglu. The IAPP page does not state '46'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "European Parliament, Data Protection Officer",
+     "title": "28.01.2025 - Data Protection Day",
+     "date": "2025-01-28",
+     "url": "https://www.europarl.europa.eu/data-protection/en/28.01.2025-data-protection-day/products-details/20250119CAN74153",
+     "quote": "The Data Protection Day marks the anniversary of the opening for signature in 1981 of Convention 108, the first legally binding international instrument to protect privacy in the digital age - The Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data on 28th January 1981.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live fetch). The same page, in a bold lead span that fetch-text's paragraph extraction skips, reads: 'In 2006, the Committee of Ministers of the Council of Europe decided to designate the 28th of January as Data Protection Day. This day is now celebrated worldwide, under the name \"Privacy Day\" outside Europe.' (seen in the page HTML)."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "Council of Europe",
+     "date": "2026",
+     "url": "https://en.wikipedia.org/wiki/Council_of_Europe",
+     "quote": "The Committee of Ministers , comprising the Ministers of Foreign Affairs of all 46 member states",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check: FOUND (the space before the comma is how the page text extracts). Supports the '46-member' figure. The same article: 'The Council of Europe is not to be confused with the Council of the European Union ... or the European Council, which belong to the European Union, an entirely separate body from the Council of Europe'. Tertiary source, used only for the member count because coe.int returns 403."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-informational-self-determination-means-ownership",
+   "status": "OK",
+   "issues": [
+    "No error found. BVerfG English translation re-fetched: the quote is verbatim, and headnote 2 ('Restrictions ... only permissible if they serve an overriding public interest') is verbatim too. Headnote 1 supports 'a right to decide, in principle, on the disclosure and use of one's data': 'This fundamental right confers upon the individual the authority to, in principle, decide themselves on the disclosure and use of their personal data.' Headnote 2 also requires a constitutional statutory basis, legal clarity and proportionality, matching the correction.",
+    "bpb quote verbatim. In context the slogans belong to the 1983 boycott campaign that came before the judgment ('Zahlreiche Bürgerinnen und Bürger zogen noch im gleichen Jahr vor das Bundesverfassungsgericht'), so calling it a boycott slogan, not the court's holding, is accurate. Page dated 22.05.2017 as recorded."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (live, HTTP 200); quote verbatim (--check FOUND); headnote 2 sentence in the note also FOUND. Page heading: 'Judgment of 15 December 1983', 'HEADNOTES to the Judgment of the First Senate of 15 December 1983, 1 BvR 209, 269, 362, 420, 440, 484/83'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (live, HTTP 200); quote verbatim (--check FOUND). Page date '22.05.2017'. The slogans are placed in the 1983 protest before the court's interim order and judgment."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-fipps-began-with-oecd-1980",
+   "status": "FIXED",
+   "issues": [
+    "Source 1 (Wayback copy of the OECD 1980 guidelines page) could not be re-fetched: web.archive.org reset every connection this session and WebFetch cannot reach it. It is marked PENDING. The same Explanatory Memorandum para. 13 text is confirmed in the OECD's own 2002 edition PDF (live), added below. pdfminer places the paragraph number '13.' inside the first sentence, so the added quote starts at 'adopted two resolutions'.",
+    "DOJ source quote verbatim (fetched earlier this session; a later live re-fetch by script got HTTP 401 from the site's bot filter, but WebFetch confirms the page is live with the same wording). The DOJ page itself dates the HEW report 'DHEW Publication No. (OS) 73-94 (July 1973)', supporting 'July 1973'.",
+    "Correction claims check out: HEW 'Code of Fair Information Practice' with 'five basic principles' (ASPE full text). Council of Europe resolutions of 1973 and 1974 (OECD memo para. 13). Hesse 1970, Sweden 1973, West Germany 1977 and France 1978 all legislated before September 1980. The OECD memo also says 'Most of the statutes were enacted after 1973' (FOUND), consistent with 'codified principles already in circulation'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote verbatim (--check FOUND). The page cites 'Records, Computers, and the Rights of Citizens ... DHEW Publication No. (OS) 73-94 (July 1973)'. The site intermittently returns HTTP 401 to scripted fetches; WebFetch confirmed the live page carries the same 'code of fair information practices' sentence."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed: web.archive.org returned 'Connection reset by peer' on every attempt (fetch-text.py and curl, repeated over the session), and WebFetch reports it cannot fetch from web.archive.org. The same para. 13 wording is confirmed in the OECD 2002 edition PDF (added source)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, with the 1980 Explanatory Memorandum)",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "adopted two resolutions concerning the protection of the privacy of individuals vis-à-vis electronic data banks in the private and public sectors respectively. Both resolutions recommend that the governments of the Member states of the Council of Europe take steps to give effect to a number of basic principles of protection relating to the obtaining of data, the quality of data, and the rights of individuals to be informed about data and data processing activities.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND. Explanatory Memorandum para. 13, which begins 'In 1973 and 1974 the Committee of Ministers of the Council of Europe ...' (the PDF text layer puts the paragraph number inside that sentence). Para. 4 of the same memo: 'Most of the statutes were enacted after 1973 and this present period may be described as one of continued or even widened legislative activity.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-fipps-meant-notice-and-click-consent",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes verbatim (--check FOUND), and the 'unfair information practice' sentence in the note is FOUND too. In context the HEW sentence follows 'In many circumstances in modem life, an individual must either surrender some of that control or forego the services that an organization provides.', so it is not taken out of context.",
+    "Paraphrase of the DOJ account slightly overreaches: 'a governance framework serving both sides'. DOJ says the framework was 'designed to ensure the trust of the stakeholders in the information. These included the individuals about whom the information pertained and the agency with a public need to use the information, as well as others.' Reworded to match. DOJ also says 'property-based', not 'property-style'.",
+    "Fair to note (not an error): HEW principle 3 does include consent ('without his consent') for secondary use. The correction does not deny this; it rightly says the code was enforceable law rather than terms written by one side."
+   ],
+   "fieldFixes": {
+    "correction": "The 1973 HEW report proposed legally enforceable 'safeguard requirements', with violations treated as an 'unfair information practice' carrying criminal penalties and civil remedies, and wrote that when privacy is traded for a benefit 'both parties to the exchange should participate in setting the terms'. The Justice Department's account says the authors rejected a property-based model of individual control in favour of a governance framework meant to earn the trust of everyone with a stake in the information, individuals and agencies alike. Notice-and-choice as practised online came later."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (live, HTTP 200); quote verbatim (--check FOUND); note sentence FOUND. The ASPE page shows 'Publication Date Jun 30, 1973' (a timezone artefact of 1973-07-01); DOJ cites the report as 'July 1973', so 1973-07 stands."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote verbatim (--check FOUND). Surrounding text: the framework was 'designed to ensure the trust of the stakeholders in the information. These included the individuals about whom the information pertained and the agency with a public need to use the information, as well as others.' Scripted live re-fetch intermittently gets HTTP 401; WebFetch confirmed the page is live."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-bork-tapes-revealed-scandal",
+   "status": "FIXED",
+   "issues": [
+    "Source 0 (Dolan, Wayback copy) could not be re-fetched this session. web.archive.org reset every connection, the live theamericanporch.com was refused by the egress proxy (CONNECT 502) and does not resolve over plain HTTP, and WebFetch cannot reach web.archive.org. Marked PENDING. Another quote from the same Wayback URL was confirmed earlier today by the chunk-3 verifier, so the page existed in that snapshot, but this 'not an X in the bunch' line could not be re-checked here.",
+    "'The 146 rentals were mostly Hitchcock films, spy thrillers and British costume dramas' overstates. HLR says 'Judge Bork favored Alfred Hitchcock films, spy thrillers, and British costume dramas; someone in the Bork household had an affinity for John Hughes movies.' Neither source says these genres made up most of the 146. The rentals were also on the household account (in Mrs. Bork's name, with Robert Bork under 'Other Users', per Dolan), not his alone.",
+    "HLR quotes verbatim (--check FOUND): '146 videotapes Judge Bork had rented over the course of two years, leaked by a store clerk, revealed nothing particularly salacious', plus the Hitchcock sentence. Also: 'the publication of The Bork Tapes drew bipartisan ire and generated consensus on the importance of intellectual privacy', which supports the last sentence of the correction."
+   ],
+   "fieldFixes": {
+    "correction": "The list of 146 rentals on the Bork household's account, leaked by a store clerk, revealed nothing particularly salacious. Bork favoured Hitchcock films, spy thrillers and British costume dramas, and someone in the family liked John Hughes movies. The journalist who wrote them up found 'not an X in the bunch, and hardly an R'. The outrage that produced the Video Privacy Protection Act was about the disclosure itself, not its contents."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed: web.archive.org returned 'Connection reset by peer' on every attempt (fetch-text.py and curl, repeated); WebFetch cannot fetch from web.archive.org; live https://theamericanporch.com/bork5.htm was refused by the egress proxy (CONNECT tunnel 502), and http:// does not resolve. The same Wayback URL was confirmed for a different quote by the chunk-3 verifier earlier in the session; HLR footnote 2 cites this Wayback copy. Re-run --check when archive.org is reachable."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (live, HTTP 200); quote verbatim (--check FOUND). 'Judge Bork favored Alfred Hitchcock films, spy thrillers, and British costume dramas' FOUND; the same sentence continues '; someone in the Bork household had an affinity for John Hughes movies.' HLR does not quote Dolan's 'not an X' line."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fipps",
+   "id": "hew-1973-no-secret-systems",
+   "status": "OK",
+   "issues": [
+    "No error found. Source re-fetched (live, HTTP 200) and the quote is verbatim (--check FOUND). It is the first of the five principles in the report's summary, right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' (order 1 is correct). The body of the report repeats it hyphenated: 'There must be no personal-data record-keeping systems whose very existence is secret.' The ASPE page shows 'Publication Date Jun 30, 1973' (timezone artefact); DOJ cites 'July 1973', so the 1973-07 date and year 1973 are right. The short name 'No secret systems (openness)' is editorial, as the note says. No sourceFixes are given, so the apply script does not turn this record's single 'source' object into a list."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+  "slice": "surveillance",
+  "chunk": 1,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "guardian-verizon-order-prism-revealed-2013",
+      "status": "FIXED",
+      "issues": [
+        "Source [2] (Guardian PRISM story) is dated 2013-06-07, which is the page's later-update timestamp (article:published_time 2013-06-07T19:23Z). The story was first published on 6 June 2013: the URL path is /2013/jun/06/, and Wikipedia's PRISM article cites Greenwald & MacAskill, The Guardian, June 6, 2013.",
+        "The summary implies The Guardian alone broke PRISM. The Washington Post (Gellman & Poitras) published its own PRISM story the same day, 6 June 2013. The summary also stated as fact that PRISM 'collected' data 'from' the companies. The Guardian attributes that to the document ('the document says'), and the companies denied it.",
+        "Every quote was re-fetched with a fresh cache and each one is verbatim. The FISC order date (25 April), '41-slide PowerPoint presentation' and 'denied knowledge of any such program' are all confirmed on the Guardian pages. The PCLOB report title and its date (January 23, 2014) are confirmed on the PDF's title page."
+      ],
+      "fieldFixes": {
+        "summary": "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. On 6 June The Guardian and The Washington Post both reported an NSA programme called PRISM. The Guardian's story drew on a 41-slide training presentation which said the programme let officials collect search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies. Every company that answered the Guardian denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim, with the space before the comma. The page metadata article:published_time is 2013-06-06T10:05Z (06.05 EDT), a later update. The Guardian text confirms 'granted the order to the FBI on April 25'. The page title is 'NSA collecting phone records of millions of Verizon customers daily'." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched the PDF: the quote is verbatim. The title page reads 'Report on the Telephone Records Program Conducted under Section 215 of the USA PATRIOT Act and on the Operations of the Foreign Intelligence Surveillance Court, JANUARY 23, 2014'." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "date": "2013-06-06", "note": "Re-fetched: the quote is verbatim, and the same page has '41-slide PowerPoint presentation' and 'all those who responded ... denied knowledge of any such program'. The date is corrected to 6 June 2013, the original publication date: it matches the URL path, and Wikipedia's PRISM article cites the Guardian story as June 6, 2013. The page's article:published_time of 2013-06-07T19:23Z is a later update." }
+      ],
+      "addSources": [
+        {
+          "institution": "Wikipedia",
+          "title": "PRISM",
+          "date": "2026-09-23",
+          "url": "https://en.wikipedia.org/wiki/PRISM",
+          "quote": "The disclosures were published by The Guardian and The Washington Post on June 6, 2013.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Independent corroboration (tertiary) that PRISM was first reported on 6 June 2013 by both papers. It cites Gellman & Poitras, Washington Post, June 6, 2013, and Greenwald & MacAskill, The Guardian, June 6, 2013. The Washington Post URL refused scripted access. The date field is the date accessed."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "snowden-identifies-himself-hong-kong-2013",
+      "status": "OK",
+      "issues": [
+        "No substantive error. Both quotes were re-fetched and are verbatim. 'The Guardian, after several days of interviews, is revealing his identity at his request.' also checks FOUND.",
+        "The page metadata now reads article:published_time 2013-06-11T13:00Z, a later update. The original 9 June 2013 date is supported by the URL path (/2013/jun/09/) and by Wikipedia's Edward Snowden article ('his identity was made public by The Guardian at his request on June 9, 2013').",
+        "Age check: Snowden was born 21 June 1983, so he was 29 on 9 June 2013. The Tsim Sha Tsui coordinates are roughly right for the Mira Hotel area. Sources [0] and [1] cite the same URL; the second is redundant but not wrong."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: the quote is verbatim. The page's current published_time metadata (2013-06-11) is a later update. The original date of 9 June 2013 is confirmed by the URL path and by Wikipedia." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim. It is the same article as source [0]." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "cjeu-google-spain-costeja-2014",
+      "status": "FIXED",
+      "issues": [
+        "The summary narrows the Court's exception to 'unless the person's role in public life justifies access'. Paragraph 97 says the rule does not apply 'if it appeared, for particular reasons, such as the role played by the data subject in public life', that the interference is justified by the public's preponderant interest. Public role is one example, not the only ground.",
+        "Everything else checks out. Paragraph 97 is the right paragraph number. Operative point 3 confirms delisting 'even, as the case may be, when its publication in itself on those pages is lawful'. The press release confirms the 2010 AEPD complaint and the La Vanguardia pages of January and March 1998 announcing a real-estate auction for social security debts."
+      ],
+      "fieldFixes": {
+        "summary": "In Case C-131/12, brought after Mario Costeja González complained in 2010 to Spain's data protection agency about search results linking to 1998 La Vanguardia pages announcing a real-estate auction, the Grand Chamber held that a search engine operator processes personal data and can be obliged to remove links to lawful third-party pages from results for a person's name. It held that the data subject's rights under Articles 7 and 8 of the Charter override, as a rule, both the operator's economic interest and the public's interest in finding the information, unless there are particular reasons, such as the person's role in public life, why the public's interest in access prevails."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched from Cellar with a fresh cache: the quote is verbatim at paragraph 97 (the number sits directly above the text). The next sentence of paragraph 97 carries the 'for particular reasons, such as the role played by the data subject in public life' exception." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: Press Release No 70/14, Luxembourg, 13 May 2014. The quote is verbatim. The release also confirms the pages were of 'January and March 1998' and announced a real-estate auction for recovery of social security debts." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "cjeu-schrems-i-safe-harbour-invalid-2015",
+      "status": "FIXED",
+      "issues": [
+        "The summary overstates the complaint as 'US law did not protect data transferred there from surveillance'. The press release says he complained that 'the law and practice of the United States do not offer sufficient protection against surveillance by the public authorities of the data transferred to that country'.",
+        "The significance overstates the effect by calling Safe Harbour 'the legal basis for transatlantic data flows'. It was a principal basis, but standard contractual clauses (Commission Decision 2010/87) and binding corporate rules stayed available. The Schrems II press release of 2020 confirms that Decision 2010/87 on SCCs was still in force and valid.",
+        "Checks passed: the paragraph 94 quote is verbatim with its number, 'Decision 2000/520 is invalid.' checks FOUND, and the Safe Harbour decision date of 26 July 2000 appears in the press release."
+      ],
+      "fieldFixes": {
+        "summary": "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law and practice did not offer sufficient protection against surveillance by public authorities of data transferred there. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
+        "significance": "One individual's complaint knocked out Safe Harbour, the main framework for transatlantic data flows, proving that a person could force the system to answer for where their data goes."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched from Cellar with a fresh cache: the quote is verbatim at paragraph 94. 'Decision 2000/520 is invalid.' checks FOUND. The heading reads 'JUDGMENT OF THE COURT (Grand Chamber) 6 October 2015', Case C-362/14." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: Press Release No 117/15, Luxembourg, 6 October 2015. The quote is verbatim. The release gives the complaint's wording as 'do not offer sufficient protection against surveillance by the public authorities'." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "gdpr-adopted-regulation-2016-679-2016",
+      "status": "FIXED",
+      "issues": [
+        "The significance claims that Article 21(5) is 'the first clause in a major privacy law' to anticipate a person's software stating their objection. That 'first' cannot be supported. Recital 66 of Directive 2009/136/EC (the 2009 ePrivacy amendment) already contemplated consent 'expressed by using the appropriate settings of a browser or other application'. California's 2013 amendment to CalOPPA (AB 370) required websites to disclose how they respond to browser 'Do Not Track' signals. Neither is a right to object by automated means, so Article 21(5) may still be the first binding right of its kind, but the unqualified 'first clause' is overstated. EUR-Lex blocked scripted access, so these precedents could not be quote-checked; they are cited only to justify softening the claim.",
+        "All factual claims check out: signed 'Done at Brussels, 27 April 2016', OJ L 119 of 4.5.2016, Article 99(2) 'It shall apply from 25 May 2018.', and the texts of Article 21(5) and Article 25(2), with article numbers confirmed in the extracted text. Brussels as the signing place fits the Parliament's Brussels mini-plenary of 27–28 April 2016."
+      ],
+      "fieldFixes": {
+        "significance": "Article 21(5) was among the first provisions in a major privacy law to give a person a right that their software can exercise for them, objecting 'by automated means using technical specifications'. It is the legal hook on which machine-readable signals such as Global Privacy Control and person-proffered terms can hang."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched from Cellar with a fresh cache: the quote is verbatim as paragraph 5 under 'Article 21 Right to object'. The header reads 4.5.2016, OJ L 119/1." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim as paragraph 2 under 'Article 25'." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: '2. It shall apply from 25 May 2018.' sits under Article 99. 'Done at Brussels, 27 April 2016.' checks FOUND." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "eu-us-privacy-shield-adopted-2016",
+      "status": "FIXED",
+      "issues": [
+        "Source [0]'s note says the quote is from 'Recital 141'. It is actually from recital (13) of the decision. Recital (141) reads 'The Commission concludes that this meets the standards of Article 25 of Directive 95/46/EC ...'.",
+        "The summary claims the Court of Justice invalidated the decision four years later in Schrems II, but no source supported that. A source is added: CJEU Press Release No 91/20 of 16 July 2020, re-fetched and checked FOUND.",
+        "Checks passed: the decision is dated 12 July 2016 ('Done at Brussels, 12 July 2016.') and published in OJ L 207 of 1.8.2016. 'Nine months after Safe Harbour fell' holds (6 October 2015 to 12 July 2016). Schrems II came on 16 July 2020, four years later."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched from Cellar with a fresh cache: the quote is verbatim, but it is recital (13), not recital 141. Article 1(1) gives the operative finding: 'the United States ensures an adequate level of protection for personal data transferred from the Union to organisations in the United States under the EU-U.S. Privacy Shield.' The decision is signed 'Done at Brussels, 12 July 2016.' and the header reads OJ L 207/1, 1.8.2016." }
+      ],
+      "addSources": [
+        {
+          "institution": "Court of Justice of the European Union",
+          "title": "Press Release No 91/20: Judgment in Case C-311/18 Data Protection Commissioner v Facebook Ireland and Maximillian Schrems",
+          "date": "2020-07-16",
+          "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+          "quote": "However, the Court declares Decision 2016/1250 invalid.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Headline: 'The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield'. Dated 'Luxembourg, 16 July 2020'. Both phrases check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "puttaswamy-privacy-fundamental-right-india-2017",
+      "status": "FIXED",
+      "issues": [
+        "The significance overstates the holding. It says the judgment extended constitutional privacy 'explicitly to threats from private, non-state actors'. The Court's order declares a right under Article 21 and Part III. Chandrachud J's opinion recognises that dangers 'can originate not only from the state but from non-state actors as well' and commends a data protection law to the Government. Kaul J writes: 'The right to privacy is claimed qua the State and non-State actors. Recognition and enforcement of claims qua non-state actors may require legislative intervention by the State.' So the judgment recognised non-state threats but did not make the constitutional right directly enforceable against them.",
+        "Checks passed: the Order of the Court overrules M P Sharma outright and Kharak Singh 'to the extent that it holds that the right to privacy is not protected by the Constitution'. It is signed by all nine judges and dated 'New Delhi; AUGUST 24, 2017'. The order confirms the Chandrachud judgment was delivered for Khehar CJI, Agrawal and Nazeer JJ and himself. Wikipedia independently confirms the 24 August 2017 date and the nine-judge bench."
+      ],
+      "fieldFixes": {
+        "significance": "Extended constitutional privacy to the world's most populous democracy. Its opinions explicitly recognised that threats to informational privacy come from private, non-state actors holding data as well as from the state, though they noted that enforcing privacy claims against such actors may require legislation."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the 547-page PDF with a fresh cache: point (iii) of the Order of the Court is verbatim, and the order is dated 'New Delhi; AUGUST 24, 2017'." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim. 'We commend to the Union Government the need to examine and put into place a robust regime for data protection.' also checks FOUND." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "equifax-breach-disclosed-2017",
+      "status": "FIXED",
+      "issues": [
+        "The significance says people whose data was taken 'had never chosen to deal with Equifax at all'. That is too broad. Equifax's own release says dispute documents for about 182,000 US consumers were accessed, and those people had contacted Equifax. It also says credit card numbers for about 209,000 consumers were taken. Most victims had no direct relationship with Equifax, but not all of them.",
+        "Checks passed: 'Released September 7, 2017'. The release gives 143 million, mid-May through July 2017, and 'names, Social Security numbers, birth dates, addresses'. The FTC release gives $575 million, up to $700 million, and approximately 147 million people. Wikipedia independently confirms the upward revision to 147.9 million US consumers."
+      ],
+      "fieldFixes": {
+        "significance": "Most of the people whose data was taken had never chosen to deal with Equifax at all, a stark case of data held about people without any relationship or terms of their own."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: the FTC release quote is verbatim." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim, and the page reads 'Released September 7, 2017' with the dateline 'ATLANTA, Sept. 7, 2017 /PRNewswire/'. The same release has the dispute documents for about 182,000 consumers and the credit card numbers for about 209,000." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "cambridge-analytica-revealed-2018",
+      "status": "OK",
+      "issues": [
+        "No substantive error. All three quotes were re-fetched and are verbatim. The Guardian page title matches exactly, and the same article names the app 'thisisyourdigitallife' built by 'academic Aleksandr Kogan' and says 'the app also collected the information of the test-takers' Facebook friends'.",
+        "The Facebook sources check out. The Grewal post has 'Originally published on March 16, 2018' and 'Update on March 17, 2018, 9:50 AM PT: The claim that this is a data breach is completely false.' The Schroepfer post has article:published_time 2018-04-04. Wikipedia independently confirms 270,000 downloads and up to 87 million users.",
+        "Minor context, not an error: The New York Times published its Cambridge Analytica story the same day as The Observer."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: the quote is verbatim, and the <title> is 'Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach'." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim. The post is by Mike Schroepfer, Chief Technology Officer, with published_time 2018-04-04T18:30Z." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the quote is verbatim. The post is by Paul Grewal and reads 'Originally published on March 16, 2018'. The 17 March update denying a 'data breach' is on the page." }
+      ],
+      "addSources": []
+    }
+  ]
+}

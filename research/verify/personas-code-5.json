@@ -1,0 +1,137 @@
+{
+ "slice": "personas-code",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "image",
+   "id": "eric-hughes-cypherpunk-kspiers",
+   "status": "FIXED",
+   "issues": [
+    "Caption hedge is wrong. It says the 9 November 2025 date 'may be the scan or upload date rather than the date the photograph was taken'. The Commons page's EXIF block reads Camera manufacturer 'OnePlus', Camera model 'OnePlus Open' (a phone released in 2023), 'Date and time of data generation 16:14, 9 November 2025'. The file history shows the upload at '21:36, 27 November 2025' by Kspiers ('Uploaded own work with UploadWizard'). So the photo is a born-digital phone picture, not a scan, and 9 November 2025 is the camera timestamp, not the upload date.",
+    "Identity rests only on the uploader's description. Commons description 'Cypherpunk Eric Hughes wearing a black bandana and a nametag with the Luther Blissett pseudonym' (--check FOUND). The face is covered, so the photo cannot confirm who it is. The file is used on en.wikipedia 'Eric Hughes (cypherpunk)', fr/pl Wikipedia and Wikidata Q5386764, but those uses rest on the same uploader claim. The caption should attribute the identification.",
+    "Checked OK: licence. Commons API extmetadata gives LicenseShortName 'CC BY-SA 4.0', LicenseUrl creativecommons.org/licenses/by-sa/4.0, Artist 'Kspiers', Credit 'Own work'. The local file assets/media/eric-hughes-cypherpunk-kspiers.jpg opens (960x768 RGB JPEG). The alt text matches the image: black wide-brimmed hat, glasses, black bandana over the lower face, and a yellow badge reading 'Luther Blissett'. The badge background text also reads 'HACKERS'."
+   ],
+   "fieldFixes": {
+    "caption": "A person identified by the photographer on Wikimedia Commons as cypherpunk Eric Hughes, wearing a black bandana over his face and a name tag with the Luther Blissett pseudonym. The phone's camera data dates the photograph to 9 November 2025; it was uploaded on 27 November 2025.",
+    "locationNote": "The file page does not say where the photograph was taken. The date is the camera's EXIF timestamp (a OnePlus Open phone), 9 November 2025, so the 2025 era is right; the upload followed on 27 November 2025.",
+    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Kspiers\"; Credit \"Own work\"; DateTimeOriginal \"2025-11-09 16:14:51\" (EXIF, OnePlus Open camera); uploaded 2025-11-27."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "john-gilmore-joi-ito-2009",
+   "status": "OK",
+   "issues": [
+    "Checked OK: licence. Commons API extmetadata gives CC BY 2.0 (LicenseUrl creativecommons.org/licenses/by/2.0), Artist 'Joi Ito (Joi @ Flickr)', and Credit flickr.com/photos/joi/3267039800. The Flickr page itself now returns 403, and oEmbed returns only a bare 'link'. The Commons licence review confirms the licence verbatim: 'It was reviewed on 8 July 2009 by FlickreviewR and was confirmed to be licensed under the terms of the cc-by-2.0.' (--check FOUND). A CC grant cannot be revoked.",
+    "Checked OK: date and description. The EXIF block reads Leica M8, 'Date and time of data generation 10:47, 9 February 2009', which matches 'file dated 9 February 2009'. The Commons description is 'John Gilmore, a founder of the Electronic Frontier Foundation.' Independent: the EFF's own history page (eff.org/about/history) names 'John Gilmore, an early employee of Sun Microsystems' with Kapor and Barlow as the people who formed the organisation (--check FOUND).",
+    "Checked OK: the local file opens (960x646 RGB JPEG). The alt text matches: a balding man with glasses and a long grey beard, resting his head on his hand."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "matt-blaze-def-con-20-2012",
+   "status": "OK",
+   "issues": [
+    "Checked OK: licence. Commons API extmetadata gives CC BY 3.0, Artist 'DEFCONConference', Credit youtu.be/c8pZnaiUj9w?t=1205, Restrictions 'personality'. The Commons page records a licence review: 'reviewed on 25 July 2016 by reviewer Ww2censor, who confirmed that it was available there under the stated license on that date'. The YouTube page still exists, with title 'DEF CON 20 - Bankston Blaze and Granick - Should the Wall of Sheep Be Illegal' and publishDate 2013-10-30, which matches the Commons date. The current YouTube HTML no longer shows a licence row, so the 2016 review is the licence evidence. A CC grant cannot be revoked.",
+    "Checked OK: caption. The DEF CON 20 speakers page (defcon.org/html/defcon-20/dc-20-speakers.html) lists 'Should the Wall of Sheep Be Illegal? A Debate Over Whether and How Open WiFi Sniffing Should Be Regulated' (--check FOUND), with 'Matt Blaze Director, Distributed Systems Lab at the University of Pennsylvania' alongside Kevin Bankston and Jennifer Granick. DEF CON 20 took place in 2012. The Commons date (30 October 2013) is the YouTube upload date, as rightsEvidence already says.",
+    "Checked OK: the local file opens (250x243 RGB JPEG, from a 300x291 original). The alt text matches: a man with glasses in a black shirt, speaking on a panel with a microphone."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "paul-syverson-nrl-2012",
+   "status": "FIXED",
+   "issues": [
+    "Overstatement: the caption calls Syverson 'inventor of onion routing' (copied from the Wikidata description on the Commons page). He was one of three co-inventors. The Tor Project history page says: 'in 1995, David Goldschlag, Michael G. Reed, and Paul Syverson at the U.S. Naval Research Lab (NRL) asked themselves if there was a way to create internet connections that don't reveal who is talking to whom' (--check FOUND). The same page credits the three of them with 'the first research designs and prototypes of onion routing'. The Tor PrivChat page likewise calls him 'one of the authors of the first onion routing paper'.",
+    "Checked OK: licence and credit. The Commons licence template reads 'This file is a work of a sailor or employee of the U.S. Navy, taken or made as part of that person's official duties' (--check FOUND), plus PDM 1.0. The EXIF block gives Author 'Jamie J. Hartman', image title 'Paul Syverson, 5543', a Nikon D3, and 'Date and time of data generation 10:14, 24 October 2012'. That supports the creator and the 'file dated 24 October 2012' wording. The credited NRL release URL (nrl.navy.mil/news/releases/nrls-paul-syverson-named-fellow-association-computing-machinery) returns 403 to both fetchers, and the Wayback Machine could not be reached, so the release itself could not be re-read.",
+    "Checked OK: the local file opens (500x626 RGB JPEG). The alt text matches: a smiling man with grey hair in a blue shirt against a grey backdrop."
+   ],
+   "fieldFixes": {
+    "caption": "Paul Syverson, computer scientist and mathematician at the US Naval Research Laboratory, who with David Goldschlag and Michael G. Reed created onion routing there in the mid-1990s. Photograph by Jamie J. Hartman, U.S. Naval Research Laboratory (camera date 24 October 2012)."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "roger-dingledine-30c3-2013",
+   "status": "OK",
+   "issues": [
+    "Checked OK: licence. The Commons page carries the CC0 1.0 Universal Public Domain Dedication. Extmetadata gives LicenseShortName 'CC0', Artist 'Ordercrazy', Credit 'Own work', and description 'Tor-Entwickler Roger Dingledine auf dem 30C3'.",
+    "Checked OK: date. The EXIF block reads Olympus E-P1, 'Date and time of data generation 21:13, 27 December 2013'. The 30C3 Fahrplan (fahrplan.events.ccc.de/congress/2013/Fahrplan/events/5423.html) lists the talk 'The Tor Network: We're living in interesting times' on '27.12.2013 Anfang: 20:30 Uhr Dauer: 01:00 Room: Saal 1', with the line 'Roger Dingledine and Jacob Appelbaum will discuss contemporary Tor Network issues related to censorship, security, privacy and anonymity online.' (--check FOUND). The photo therefore dates from that talk, and the slide in it ('...oogle, Skype, ...') fits.",
+    "Checked OK: the local file opens (960x1280 RGB JPEG). The alt text matches: green Tor T-shirt, on stage in front of a projected slide."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "nick-mathewson-tor-project-2021",
+   "status": "FIXED",
+   "issues": [
+    "The caption's date is misleading. '28 September 2021' is only the Date field on the Commons file (uploaded 2 October 2021); it is neither the photograph date nor the publication date. The credited source is the Tor Project page for PrivChat chapter 4. That page reads 'Chapter #4 - 25th Anniversary of Onion Routing' and 'May 31, 2021 marks the 25th anniversary of the first public presentation of onion routing' (--check FOUND). It links the event video, 'PrivChat #4 - 25th Anniversary of Onion Routing' on YouTube (publishDate 2021-05-27). So the image was published for the May 2021 event, and the photograph itself is undated.",
+    "Checked OK: image identity. The Tor page's image static/images/privchat/nick.png is 964x1004, the same size as the Commons original. Downscaled to 64x64, its mean grey-level difference from the local copy is 0.44 out of 255, so it is the same picture. The page calls Mathewson one of 'the Tor Project co-founders' (--check FOUND) and 'one of the original designers of Tor'.",
+    "Checked OK: licence, with a note. Extmetadata gives CC BY 3.0, and the Commons licence review reads 'reviewed on 10 October 2021 by reviewer Yann, who confirmed that it was available there under the stated license on that date' (review link: torproject.org/about/trademark). The Tor site now says 'Unless otherwise noted, copyrightable content on this site is licensed under a Creative Commons Attribution 4.0 International License' (--check FOUND). The 2021 CC BY 3.0 grant still stands, and CC BY 4.0 is also acceptable. The local file opens (960x1000 RGB JPEG), and the alt text matches (black-and-white, bearded, glasses, foliage)."
+   ],
+   "fieldFixes": {
+    "caption": "Nick Mathewson, a co-founder of the Tor Project and one of Tor's original designers. The Tor Project published this photograph on its page for PrivChat chapter 4, a May 2021 event marking 25 years of onion routing. The photograph itself is undated; 28 September 2021 is only the date on the Wikimedia Commons file."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "moxie-marlinspike-techcrunch-2017",
+   "status": "FIXED",
+   "issues": [
+    "The locationNote says the place is not given, but the linked source gives it. The Flickr record (flickr.com/photos/techcrunch/37137051592), credited on the Commons page, is titled 'TechCrunch Disrupt SF 2017'. Its description reads 'TechCrunch Disrupt SF 2017 in San Francisco on September 18, 2016. Photo by Max Morse for TechCrunch' (--check FOUND; the '2016' is a typo in TechCrunch's description). The Flickr page data give dateTaken '2017-09-18 11:21:47' ('Taken on September 18, 2017') and licence CC BY 2.0 (licenses/by/2.0). The Disrupt/SF backdrop is visible in the photo.",
+    "Checked OK: licence and creator. Extmetadata gives CC BY 2.0, Artist 'Max Morse for TechCrunch', DateTimeOriginal 2017-09-18. The Commons page notes the file was 'extracted from another file: Moxie Marlinspike TC.jpg', which matches 'cropped'. The local file opens (960x1280 RGB JPEG), and the alt text matches."
+   ],
+   "fieldFixes": {
+    "caption": "Moxie Marlinspike at TechCrunch Disrupt SF 2017 in San Francisco, photographed by Max Morse for TechCrunch on 18 September 2017 (cropped).",
+    "locationNote": "TechCrunch's Flickr record places the photograph at TechCrunch Disrupt SF 2017 in San Francisco; the venue within the city is not given."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "tor-design-circuit-diagram-2004",
+   "status": "DOWNGRADED",
+   "issues": [
+    "The licence could not be confirmed as CC BY 3.0. The Commons page carries a CC BY 3.0 tag added by the uploader (Tikmok, 2018), but there is no licence review and no statement of where the licence comes from. The source it cites, svn.torproject.org/svn/projects/design-paper/tor-design.pdf, carries no licence or copyright notice anywhere in its text. The USENIX Security 2004 proceedings copy (usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf) says: 'Rights to individual papers remain with the author or the author's employer. Permission is granted for noncommercial reproduction of the work for educational or research purposes.' (--check FOUND). That is a noncommercial permission, not CC BY.",
+    "A plausible free-licence basis exists, but it is not CC BY. The figure's xfig source, doc/design-paper/interaction.fig, was shipped in the Tor source tree (checked at tag tor-0.1.0.10 on the GitHub mirror). tor-design.tex includes it as \\epsfig{figure=interaction}, labelled fig:interaction. The LICENSE file at the same tag says 'Tor is distributed under this license: Copyright (c) 2001-2004, Roger Dingledine; Copyright (c) 2004-2005, Roger Dingledine, Nick Mathewson', followed by 3-clause BSD terms. Syverson's share, as an NRL employee, may be US public domain. So the diagram is probably reusable under Tor's BSD licence, but the record's 'CC BY 3.0' and its credit line are not supported by any source.",
+    "Checked OK: content. The paper's caption reads 'Figure 1: Alice builds a two-hop circuit and begins fetching a web page.' (--check FOUND), which matches the record's caption and alt text. The local file opens (960x513 RGB JPEG) and shows Alice, OR 1, OR 2 and the website, with the original 'TLS-encryped' typo. The Commons date '2 August 2004' is not a publication date: the symposium ran 9–13 August 2004 in San Diego. The caption says only '2004', which is fine."
+   ],
+   "fieldFixes": {
+    "verified": false,
+    "license": "Tagged CC BY 3.0 on Wikimedia Commons (uploader's assertion, no licence review; not supported by the cited source). The figure's source file was distributed in the Tor source tree under Tor's 3-clause BSD licence.",
+    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; Artist \"Roger Dingledine, Nick Mathewson, Paul Syverson\"; Credit \"https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf\". The Commons page has no licence review. The cited PDF carries no licence. The USENIX Security 2004 printing reserves rights to the authors and grants only noncommercial reproduction. The figure source doc/design-paper/interaction.fig is in the Tor repository (e.g. tag tor-0.1.0.10), whose LICENSE grants 3-clause BSD terms from copyright holders Dingledine and Mathewson. Use only if editors accept the BSD basis, with the credit changed to match; otherwise drop."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "rsa-2008-cryptographers-panel-hellman",
+   "status": "OK",
+   "issues": [
+    "Checked OK: licence. Commons extmetadata gives CC BY-SA 2.0, Artist 'Dan Spisak', and Credit 'Four biggest names in Crypto on stage' (flickr.com/photos/93006992@N00/2398322321). The uploader was FlickreviewR on 2008-04-13. The Flickr page itself also carries licenses/by-sa/2.0 (licence id 5), dateTaken '2008-04-08 10:35:46' and 'Taken on April 8, 2008'.",
+    "Checked OK: names. The Flickr description reads 'At RSA 2008 Cryptographers Panel From left to right: Burt Kaliski, RSA (Moderator) Whitfield Diffie, Sun Martin Hellman, Stanford University Ronald Rivest, MIT Adi Shamir, Weizmann Institute of Science' (--check FOUND on the prefix). The Commons EXIF block reads Nokia N82, 10:35, 8 April 2008. The image agrees with that order: Diffie, with long white hair and beard, is second from left and is also on the big screen; Shamir, bald and bearded, is on the far right. This is the only independent check on the names. No RSA Conference programme for 2008 could be reached: web search was exhausted, and Bing/DuckDuckGo gave nothing usable.",
+    "Checked OK: the local file opens (960x720 RGB JPEG). The alt text matches: five men seated on stage, with a close-up of Diffie on the screen behind."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

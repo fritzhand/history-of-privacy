@@ -1,0 +1,244 @@
+{
+ "slice": "numbers",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "ftc-2014-data-broker-aggregated-data-elements",
+   "status": "OK",
+   "issues": [
+    "No errors. The FTC PDF was re-fetched on 2026-09-23 with a fresh cache and the quote was FOUND verbatim. It appears in the Executive Summary (p. iv) and again in the Conclusion (p. 46).",
+    "Checked and correct: the report is dated May 2014 (the filename 140527 matches its 27 May 2014 release). The orders were issued under section 6(b) of the FTC Act (15 U.S.C. § 46(b)). The nine brokers are listed on pp. 8-9 as Acxiom, Corelogic, Datalogix, eBureau, ID Analytics, Intelius, PeekYou, Rapleaf and Recorded Future, the same as the record's geography. The notes' 1.4 billion transactions, one trillion dollars and three billion new records a month are all in the quoted sentence.",
+    "The report does not say which broker holds the 700 billion elements. The record correctly leaves the broker unnamed."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND. Also checked the section 6(b) wording and the list of nine brokers in the same PDF."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "california-registered-data-brokers-2026",
+   "status": "FIXED",
+   "issues": [
+    "The value is correct. I re-downloaded https://cppa.ca.gov/data_broker_registry/registry.csv (the file behind the page's 'Download Registration Information' button) on 2026-09-23 and parsed it as CSV. It has 603 data rows and 603 distinct non-empty 'Data broker name:' values. The file has 866 physical lines because some fields span several lines, so a line count would be wrong.",
+    "The notes overstate the timing. They say the businesses 'registered with CalPrivacy in January 2026', and source 1's note says 'Registrations filed January 2026'. The page gives only the statutory window ('must register ... annually between January 1-31'). It also says the registry is published after that period ends and is headed '2026 California Data Broker Registry — Last Updated: 7/29/2026'. So the list can include late registrations or later corrections, and the CSV has no filing dates to prove every row was filed in January. The wording should describe the registration year, not a filing month.",
+    "Context, not an error: the 2025 registry CSV (registry2025.csv) has 543 rows and the 2024 CSV also has 543 rows. The rise to 603 is consistent with the series california-registered-data-brokers."
+   ],
+   "fieldFixes": {
+    "notes": "Businesses that operated as data brokers in 2025 and registered with CalPrivacy for 2026. The law requires registration each year between 1 and 31 January, and the registry is published after that window closes. The registry page was last updated 29 July 2026. Count of rows in the registry's CSV download, computed by this study on 23 Sept 2026."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND (the button label). Count recomputed by this study from https://cppa.ca.gov/data_broker_registry/registry.csv: 603 CSV rows and 603 distinct 'Data broker name:' entries (866 physical lines because of multi-line fields). These are registrations for 2026 covering activity in 2025. The statutory window is 1-31 January, and the page shows 'Last Updated: 7/29/2026'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "California Privacy Protection Agency (CalPrivacy)",
+     "title": "California Data Broker Registry",
+     "date": "2026-07-29",
+     "url": "https://cppa.ca.gov/data_broker_registry/",
+     "quote": "2026 California Data Broker Registry Last Updated: 7/29/2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same page also says: 'CalPrivacy publishes the information submitted during the registration process in the California Data Broker Registry after the registration period ends.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "cms-gdpr-enforcement-tracker-total-2026",
+   "status": "OK",
+   "issues": [
+    "No errors. The quote was re-fetched on 2026-09-23 with a fresh cache and FOUND verbatim. The notes' average fine of EUR 2,277,122 is in the next sentence of the same paragraph, so a source carrying it has been added. The arithmetic is consistent: 6.11bn / 2,685 ≈ EUR 2.28m.",
+    "Geography checked: the report has chapters on Norway and the United Kingdom, so 'EEA and UK' is right. The tracker records fines that have been made public.",
+    "Minor: the page's JSON-LD gives datePublished 2026-05-21, so the source date can be made more precise than '2026'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "date": "2026-05-21", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND. The date comes from the page's JSON-LD datePublished '2026-05-21'."}
+   ],
+   "addSources": [
+    {
+     "institution": "CMS (law firm network) — GDPR Enforcement Tracker Report, 7th edition",
+     "title": "GDPR Enforcement Tracker Report: Numbers and Figures",
+     "date": "2026-05-21",
+     "url": "https://cms.law/en/int/publication/gdpr-enforcement-tracker-report/numbers-and-figures",
+     "quote": "In the reporting period 2018-2026, the average fine was EUR 2,277,122 across all countries.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Supports the average-fine figure in the notes."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "dla-piper-daily-breach-notifications-2025",
+   "status": "FIXED",
+   "issues": [
+    "The quote was re-fetched on 2026-09-23 and FOUND verbatim. The page is dated 21 January 2026. The value (443 a day) and the 22% rise are correct. The page's detailed paragraph gives the base: 'from 363 to 443', measured 'Between 28 January 2025 and 27 January 2026'. That end date falls after the page's own 21 January 2026 date, an inconsistency in DLA Piper's text. I have kept it as stated. Using 2025 as the record year is reasonable.",
+    "The notes are ambiguous. 'The first time since 2018 the daily average exceeded 400' can be read as saying it also exceeded 400 in 2018. DLA Piper means the first time since the GDPR took effect: 'For the first time since 25 May 2018, average breach notifications per day have reached over 400'.",
+    "The geography 'EU-27 plus UK, Norway, Iceland and Liechtenstein' is not stated on the January 2026 page, which refers only to 'all the jurisdictions surveyed'. The full report is behind a registration form. The same survey's January 2023 page states that scope, so I added it as a supporting source with a note that the 2026 page does not repeat it."
+   ],
+   "fieldFixes": {
+    "notes": "Up 22% from 363 a day the year before, in DLA Piper's year from 28 January 2025 to 27 January 2026 (as the survey states). This is the first time since the GDPR took effect on 25 May 2018 that the daily average has exceeded 400."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND. Page date: 21 January 2026."}
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "For the first time since 25 May 2018, average breach notifications per day have reached over 400 – breaking the plateauing trend we have seen in recent years. Between 28 January 2025 and 27 January 2026, the average number of breach notifications per day increased by 22% – from 363 to 443.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Gives the base (363), the measurement year, and the precise 'since 25 May 2018' wording."
+    },
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2023",
+     "date": "2023-01-25",
+     "url": "https://www.dlapiper.com/en/insights/publications/2023/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2023",
+     "quote": "This figure is taken from DLA Piper’s latest annual General Data Protection Regulation (GDPR) Fines and Data Breach Survey of the 27 European Union Member states plus the UK, Norway, Iceland and Liechtenstein.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is the survey's stated scope in its 2023 edition. The public January 2026 page does not repeat it and the full 2026 report is behind a registration form, so the 2026 scope is assumed to be unchanged."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "pew-2025-us-adults-used-chatgpt",
+   "status": "OK",
+   "issues": [
+    "No errors. Both quotes were re-fetched on 2026-09-23 with a fresh cache and FOUND verbatim. The JSON-LD datePublished is 2025-06-25T09:54:51-04:00, which matches the source date. The page confirms a sample of 5,123 U.S. adults, Feb. 24 to March 2, 2025, on the American Trends Panel.",
+    "'Roughly double the share in summer 2023' matches the page ('has roughly doubled since summer 2023'). The measure is 'ever used', not current use."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "nber-chatgpt-share-world-adults-2025",
+   "status": "FIXED",
+   "issues": [
+    "The quote was re-fetched on 2026-09-23 and FOUND verbatim on the NBER page. The authors and working-paper number match the NBER citation.",
+    "The label misstates what was measured. 'Adopted' in the abstract means weekly active users. The paper's body says: 'By the end of July 2025, ChatGPT had more than 700 million total WAU, nearly 10% of the world’s adult population.' Footnote 20 adds that the counts are of accounts (login credentials or browser cookies), which 'somewhat exceed distinct people'. The measure covers consumer plans (Free, Plus, Pro) only. The label should say weekly users, so it is not confused with Pew's 'ever used' measure.",
+    "The notes understate the company affiliation. They say the NBER page discloses that 'an author' is an OpenAI employee. In fact two authors disclose it on the NBER page: Aaron Chatterji ('I am an employee of OpenAI and this paper was written as part of my responsibilities there') and Zoe Hitzig ('I am a full-time employee of OpenAI'). The paper itself lists an OpenAI affiliation for six of the seven authors; all except David Deming.",
+    "The source date is imprecise. The NBER page shows 'Issue Date: September 2025' (datetime 2025-09-12), and the paper PDF is dated September 15, 2025.",
+    "'Rather than human readers' is supported by the paper ('without any human ever reading the contents of a message'), but not by the NBER abstract alone. I added the paper PDF as a source."
+   ],
+   "fieldFixes": {
+    "label": "Weekly ChatGPT users as a share of the world's adult population, July 2025",
+    "notes": "About 700 million weekly active users on ChatGPT's consumer plans (Free, Plus, Pro) by the end of July 2025. The paper calls this 'nearly 10%' of the world's adult population, and the abstract 'around 10%'. It counts accounts, which the authors say somewhat exceed distinct people. This is not comparable with Pew's 'ever used' measure for U.S. adults. The research is company research: two authors (Aaron Chatterji and Zoe Hitzig) disclose on the NBER page that they are OpenAI employees, and six of the seven list an OpenAI affiliation in the paper. The paper classified a sample of conversations with an automated, privacy-preserving LLM pipeline 'without any human ever reading the contents of a message'. That method is itself an example of the data-use questions this study is about."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "date": "2025-09", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND. NBER page: 'Issue Date September 2025' (datetime 2025-09-12). Disclosures by Chatterji and Hitzig confirmed on the page. Citation: NBER Working Paper 34255 (2025), https://doi.org/10.3386/w34255."}
+   ],
+   "addSources": [
+    {
+     "institution": "OpenAI (paper PDF; also issued as NBER Working Paper 34255)",
+     "title": "Aaron Chatterji, Tom Cunningham, David Deming, Zoë Hitzig, Christopher Ong, Carl Shan, Kevin Wadman, 'How People Use ChatGPT'",
+     "date": "2025-09-15",
+     "url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+     "quote": "By the end of July 2025, ChatGPT had more than 700 million total WAU, nearly 10% of the world’s adult population.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same PDF also has 'Note that we expect our counts of distinct accounts to somewhat exceed distinct people when one person has two accounts' (footnote 20) and 'we construct message-level datasets without any human ever reading the contents of a message' (§3.2), both --check FOUND. The author list shows affiliation 1 (OpenAI) for every author except Deming. NBER's own PDF returns HTTP 403 to scripts."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "ca-ag-sephora-gpc-penalty-2022",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes were re-fetched on 2026-09-23 with a fresh cache and FOUND verbatim. The press release is dated 'Wednesday, August 24, 2022'. It confirms the $1.2 million penalty and all three allegations: Sephora did not disclose sales, did not process opt-outs sent by global privacy controls, and did not cure 'within the 30-day period'. It also confirms that notices went to other businesses the same day.",
+    "The notes overstate the settlement's legal effect. They say 'It made a browser-sent, machine-readable preference legally binding in practice'. The same press release says the duty already existed: 'Under the CCPA, businesses must treat opt-out requests made by user-enabled global privacy controls the same as requests made by users who have clicked the “Do Not Sell My Personal Information” link'. The settlement enforced an existing obligation with a penalty; it did not create one. The notes are reworded. I avoided adding 'first CCPA settlement', because the cited sources do not say it."
+   ],
+   "fieldFixes": {
+    "notes": "Announced 24 August 2022. The Attorney General alleged Sephora did not disclose that it sold personal information, did not process opt-outs sent via user-enabled global privacy controls, and did not cure within 30 days. The CCPA already required businesses to honour such signals. The settlement showed that ignoring a browser-sent, machine-readable preference carries a penalty, a direct precursor of person-proffered terms. The same day the AG sent notices to other businesses that failed to process such signals."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND. Page dated Wednesday, August 24, 2022."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "greenleaf-new-countries-per-year-since-2020",
+   "status": "FIXED",
+   "issues": [
+    "The value (5.4 a year since 2020), the 3.3-a-year long-run average and the 172 total by March 2025 are correct. They appear verbatim in Greenleaf's SSRN abstract and in PL&B's own abstract, which says the table lists laws 'known as at 15 March 2025'.",
+    "Source 0's journal citation is wrong. The title says '(2025) 194 PLBIR' and the institution names Privacy Laws & Business International Report, but no issue number appears on the cited SSRN page. It gives only 'Greenleaf, Graham, 172 Countries with Data Privacy Laws -Year by Year 1973-2025 (March 23, 2025). Available at SSRN' (3 pages, posted 28 Apr 2025). PL&B's own site places the year-by-year list in 'International Report June 2025' (URL path int195, i.e. issue 195), not 194. Issue 194 (April 2025) carried the separate biennial assessment. The citation is corrected, and the PL&B page is added as the primary source (re-fetched fresh, FOUND).",
+    "Source 1's 'pp. 1, 3-9' is not on the cited SSRN page, which shows 11 pages and no journal citation. Issue 194 / April 2025 is confirmed by PL&B's page ('International Report April 2025', URL path int194), but the page range could not be confirmed, so it is removed.",
+    "Fresh re-fetch failed: web.archive.org reset every connection during this check ('Connection reset by peer'; the proxy status shows 'ws_closed_mid_exchange' for web.archive.org). Both Wayback quotes were instead checked against the raw Wayback HTML retrieved earlier today, which was in /tmp/fetch-text-cache. That HTML contains the 'FILE ARCHIVED ON ... RETRIEVED FROM THE INTERNET ARCHIVE ON 10:22 Sep 23, 2026' markers and the SSRN meta tags: citation_publication_date 2025/03/23 and 2025/04/02. Both quotes are FOUND in it. The PL&B equivalents were re-fetched fresh and FOUND."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "institution": "SSRN (author paper, Graham Greenleaf, Macquarie Law School; abstract read via Internet Archive snapshot)", "title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972, dated 23 March 2025; also published in Privacy Laws & Business International Report, June 2025)", "note": "web.archive.org reset connections on 2026-09-23, so no fresh fetch was possible. Quote FOUND in the raw Wayback HTML retrieved earlier the same day (capture 22 Nov 2025; 'Date Written: March 23, 2025', 3 pages). The page carries no PL&B citation. PL&B's site places this list in International Report June 2025 (int195), not issue 194, so '(2025) 194 PLBIR' was removed."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "institution": "Privacy Laws & Business International Report, April 2025 (issue 194) (abstract on SSRN, read via Internet Archive)", "note": "web.archive.org reset connections on 2026-09-23. Quote FOUND in the raw Wayback HTML retrieved earlier the same day (capture 7 Aug 2025; 'Date Written: April 02, 2025', 11 pages). The page range 'pp. 1, 3-9' is not on the page and could not be confirmed, so it was removed. Issue 194 / April 2025 is confirmed by https://www.privacylaws.com/reports-gateway/articles/int194/int194dp2025/ ('International Report April 2025'), where the same sentence is --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf)",
+     "title": "172 Countries with Data Privacy Laws – Year by Year 1973-2025",
+     "date": "2025-06",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int195/int195dplaws/",
+     "quote": "For the past 52 years since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 laws by March 2025. Since 2020 the average number of new laws per year has risen to 5.4.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. The page is labelled 'International Report June 2025' (issue 195 per URL). It also says 'The table lists national laws known as at 15 March 2025.' (--check FOUND). The abstract is free; the full table is for subscribers."
+    },
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf)",
+     "title": "Global data privacy laws 2025: 172 countries, 12 new in 2023/24",
+     "date": "2025-04",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int194/int194dp2025/",
+     "quote": "This is the first assessment to conclude that revisions to existing data privacy laws are now more important than enactment of new laws in countries without such laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. The page is labelled 'International Report April 2025' (issue 194 per URL)."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-people-dont-care-about-privacy",
+   "status": "OK",
+   "issues": [
+    "No errors in the stated figures. All three quotes were re-fetched on 2026-09-23 with a fresh cache and FOUND verbatim. The 2019 figure is 81% (company data-collection risks outweigh the benefits). The 2023 figures are 81% concerned about company use and 72% wanting more regulation. The series referred to in the correction exist in numbers.json: pew-little-or-no-control-over-company-data and pew-understand-little-or-nothing-company-data-use.",
+    "The phrase ''agree' a resigned click' had no direct source. The 2023 Pew overview says 56% frequently click 'agree' without reading privacy policies, so I added that as a source. I tried to fetch Turow et al.'s 'The Tradeoff Fallacy' (Annenberg, 2015), a direct rebuttal of 'happily trade', but asc.upenn.edu returned HTTP 403, so it is not added."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Supports the correction's point that 'agree' is often a click without reading, not a considered trade."
+    }
+   ]
+  }
+ ]
+}

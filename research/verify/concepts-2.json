@@ -1,0 +1,563 @@
+{
+ "slice": "concepts",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "jurisdiction",
+   "id": "eu-gdpr",
+   "status": "FIXED",
+   "issues": [
+    "All seven quotes re-fetched and FOUND except source 6 (see below). Adoption 27 Apr 2016, OJ L 119 of 4 May 2016, application from 25 May 2018, Art. 83(5) fine ceiling, Art. 21(5), Art. 22(1) and AI Act Art. 113 all check out.",
+    "automatedSignalsProvision misdescribed proposed Art. 88b in three ways. (1) The article is limited by its title to 'processing of personal data in the terminal equipment of natural persons' (the cookie/ePrivacy rules moved into the GDPR). The summary presented it as a general machine-readable consent-and-objection duty. (2) The objection it covers is only the Art. 21(2) direct-marketing objection. (3) 'Once standards exist' comes from the explanatory memorandum. The operative text applies paragraphs 1-2 from a fixed date, 24 months after entry into force. Standards are requested separately and only give a presumption of conformity.",
+    "The record left out the part of Art. 88b that matters most for the MyTerms story: para. 6 would oblige web-browser providers that are not SMEs to provide the technical means for these machine-readable signals, 48 months after entry into force.",
+    "The record flagged the omnibus status as 'not independently verified'. The EP Legislative Observatory (fetched 23 Sept 2026) shows procedure 2025/0360(COD) at 'Awaiting committee decision': rapporteurs were appointed 25 Feb 2026 and the procedure has no committee vote yet. The status is now verified and the hedge can be removed.",
+    "aiRules is correct. It can now name the final act: OEIL records Council adoption on 29/06/2026, signature on 08/07/2026 and publication as Regulation (EU) 2026/1744 in OJ L of 24.07.2026.",
+    "Source 6 (Internet Archive copy of the Council press release): a fresh re-fetch from this environment failed three times (web.archive.org connection reset; consilium.europa.eu returns HTTP 403 to scripts). The quote IS present verbatim in the fetch-text.py cache of the same snapshot, which I read in full (Council page dated '29 June 2026 14:30'). OEIL independently confirms the 29 June 2026 Council adoption."
+   ],
+   "fieldFixes": {
+    "automatedSignalsProvision": "Art. 21(5): in information-society services the data subject 'may exercise his or her right to object by automated means using technical specifications'. The Commission's Digital Omnibus proposal (COM(2025) 837, 19 Nov 2025) would add Art. 88b. It covers processing in people's terminal equipment (the cookie rules). Controllers' online interfaces would have to let people give consent, refuse it, and object to direct marketing (Art. 21(2)) 'through automated and machine-readable means', and would have to respect those choices, from 24 months after entry into force. European standards would be requested to interpret the signals. Web browsers from providers that are not SMEs would have to supply the technical means after 48 months. On 23 Sept 2026 the proposal (2025/0360(COD)) was still at committee stage in the European Parliament ('Awaiting committee decision').",
+    "aiRules": "AI Act, Regulation (EU) 2024/1689 (general application 2 Aug 2026). The 'Digital omnibus on AI' was adopted by the Council on 29 June 2026 and published as Regulation (EU) 2026/1744 (OJ L, 24 July 2026). It moved high-risk obligations to 2 Dec 2027 for stand-alone systems and 2 Aug 2028 for AI embedded in products. GDPR Art. 22 separately limits decisions based solely on automated processing."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched Cellar DOC_1 (OJ L 119); quote FOUND in Art. 21(5)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 83(5); supports the EUR 20m / 4% ceiling."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Art. 99(2) quote FOUND. Strictly, the Regulation entered into force on 24 May 2016 (Art. 99(1)) and applies from 25 May 2018; 'inForce 2018' is read as the application date."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Art. 22(1) quote FOUND."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND: Art. 88b(1)(b) of the proposal, joined to the chapeau by an ellipsis. Article title: 'Automated and machine-readable indications of data subject's choices with respect to processing of personal data in the terminal equipment of natural persons'. Paras 1-2 apply 24 months after entry into force and para. 6 (browsers) after 48 months. Status checked on the EP Legislative Observatory on 23 Sept 2026: 'Awaiting committee decision' (see added source)."
+    },
+    {
+     "index": 5,
+     "verificationStatus": "CONFIRMED",
+     "note": "AI Act Cellar DOC_1 re-fetched; Art. 113 quote FOUND."
+    },
+    {
+     "index": 6,
+     "verificationStatus": "CONFIRMED",
+     "note": "A fresh re-fetch on 23 Sept 2026 failed: web.archive.org reset the connection three times and consilium.europa.eu returns 403. The quote is FOUND verbatim in the cached copy of this snapshot (tools/fetch-text.py cache), which I read in full; the page is headed 'Press release 29 June 2026 14:30'. Council adoption on 29/06/2026 is independently confirmed by OEIL 2025/0359(COD)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "European Parliament, Legislative Observatory (OEIL)",
+     "title": "Procedure file 2025/0360(COD): Simplification of the digital legislative framework – Digital Omnibus (Omnibus VII)",
+     "date": "2026-09-23",
+     "url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0360(COD)",
+     "quote": "Awaiting committee decision",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Status field as fetched on 23 Sept 2026. Joint ITRE/LIBE committee; rapporteurs Aura Salla and Marina Kaljurand appointed 25/02/2026; the page lists no committee vote yet."
+    },
+    {
+     "institution": "European Parliament, Legislative Observatory (OEIL)",
+     "title": "Procedure file 2025/0359(COD): Digital omnibus on AI — final act",
+     "date": "2026-07-24",
+     "url": "https://oeil.secure.europarl.europa.eu/oeil/en/procedure-file?reference=2025/0359(COD)",
+     "quote": "Regulation 2026/1744 OJ OJ L 24.07.2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same page lists '29/06/2026 Act adopted by Council after Parliament's 1st reading' and 'Final act signed' on 08/07/2026. The doubled 'OJ OJ' is on the page."
+    },
+    {
+     "institution": "Council of the European Union (document ST 15698/25, transmitting COM(2025) 837 final)",
+     "title": "Proposal for a Regulation … (Digital Omnibus) — proposed Article 88b(6) GDPR (web browsers)",
+     "date": "2025-11-20",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
+     "quote": "Providers of web browsers, which are not SMEs, shall provide the technical means to allow data subjects to give their consent and to refuse a request for consent and exercise the right to object pursuant to Article 21(2) through the automated and machine-readable means referred to in paragraph 1 of this Article",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Proposal text only. Para. 7 of the proposed article: 'Paragraph 6 shall apply from [... 48 months following the date of entry into force of this Regulation]'."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "uk-gdpr-duaa",
+   "status": "FIXED",
+   "issues": [
+    "All five quotes re-fetched from legislation.gov.uk and FOUND. They support the claims: the £17.5m/4% ceiling in Art. 83(5), the Art. 21(5) automated objection, Royal Assent on 19 June 2025, s.80 substituting Art. 22, and s.117 establishing the Information Commission.",
+    "The regulator field is out of date. It says the ICO is 'to be replaced' by the Information Commission. S.I. 2026/1015 (Commencement No. 9, made 10 Sept 2026) brings s.118 (abolition of the office of Information Commissioner) and s.119 (transfer of functions) into force on 30 September 2026. s.117 itself (except s.117(4)(a)) has been in force since 20 Aug 2025. So on 30 Sept 2026, one week after this was compiled, the regulator becomes the Information Commission.",
+    "aiRules does not say whether s.80 is in force. legislation.gov.uk records s.80 in force from 5 Feb 2026 (S.I. 2026/82), so Arts 22A-22D are current law, not prospective. It also omits a second restriction in new Art. 22B(4): no solely automated significant decision where processing relies on 'recognised legitimate interests' (Art. 6(1)(ea)).",
+    "Minor: Art. 21(5) does not keep the EU text word for word. The 'notwithstanding Directive 2002/58/EC' clause is replaced by a reference to 'domestic law made before IP completion day implementing Directive 2002/58/EC'. The automated-means wording itself is unchanged."
+   ],
+   "fieldFixes": {
+    "regulator": "Information Commissioner's Office until 29 Sept 2026. From 30 Sept 2026 the Information Commission, a corporate body set up by DUAA 2025 s.117, replaces it: the office of Information Commissioner is abolished and its functions are transferred (ss.118–119, commenced by S.I. 2026/1015).",
+    "automatedSignalsProvision": "UK GDPR Art. 21(5) keeps the EU rule that the data subject 'may exercise his or her right to object by automated means using technical specifications'. The only change is that the reference to the ePrivacy Directive now points to pre-exit domestic law implementing it.",
+    "aiRules": "No AI statute. DUAA 2025 s.80 (in force 5 Feb 2026) replaces UK GDPR Art. 22 with Arts. 22A–22D. Solely automated 'significant decisions' are allowed with safeguards, but they are restricted where special-category data are involved or where the processing relies on 'recognised legitimate interests' (Art. 6(1)(ea)).",
+    "notes": "DPA 2018 received Royal Assent in May 2018. The UK GDPR is the retained, amended text of the EU GDPR. DUAA 2025 received Royal Assent on 19 June 2025 and is being commenced in stages: s.80 from 5 Feb 2026, and the Information Commission replaces the ICO on 30 Sept 2026."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 21(5) (revised text, up to date to 23 Sept 2026)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 83(5), including the '[ F5 £17,500,000 ]' annotation."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "'[19th June 2025]' FOUND on the as-enacted Act (the Royal Assent date)."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The same page contains new Arts 22A-22D, including the special-category restriction (Art. 22B(1)) and the Art. 6(1)(ea) restriction (Art. 22B(4))."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The revised version of s.117 notes: 'S. 117 (except s. 117(4)(a)) in force at 20.8.2025 by S.I. 2025/904'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "legislation.gov.uk (The National Archives)",
+     "title": "The Data (Use and Access) Act 2025 (Commencement No. 9 and Transitional and Saving Provisions) Regulations 2026 (S.I. 2026/1015), reg. 2",
+     "date": "2026-09-10",
+     "url": "https://www.legislation.gov.uk/uksi/2026/1015/made",
+     "quote": "section 118 (abolition of the office of Information Commissioner);",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reg. 2 opens: 'The following provisions of the Data (Use and Access) Act 2025 come into force on 30th September 2026' and also lists s.119 (transfer of functions to the Information Commission)."
+    },
+    {
+     "institution": "legislation.gov.uk (The National Archives)",
+     "title": "Data (Use and Access) Act 2025, section 80 — commencement information",
+     "date": "2026",
+     "url": "https://www.legislation.gov.uk/ukpga/2025/18/section/80",
+     "quote": "S. 80 in force at 5.2.2026 in so far as not already in force by S.I. 2026/82",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "us-federal-ftc",
+   "status": "OK",
+   "issues": [
+    "No errors found. All six quotes re-fetched and FOUND.",
+    "Section 5 was enacted 26 Sept 1914 (38 Stat. 719). The UDAP clause dates from the Wheeler-Lea Act of 21 Mar 1938 (52 Stat. 111), which is in the source credits and the source note.",
+    "$53,088 is confirmed for both 45(m)(1)(A) (knowing rule violations) and 45(l) (violations of final Commission orders) in FR Doc. 2025-01361. I added the 45(l) line because the record claims both.",
+    "FR Doc. 2026-18853 (FR vol. 91, no. 177, 15 Sept 2026, p. 58446ff) is an FTC notice. It says the 2025 levels remain unchanged during 2026, effective 15 Sept 2026.",
+    "TAKE IT DOWN Act: Pub. L. 119-12, 19 May 2025, 139 Stat. 55. The 48-hour removal duty is in s.3(a)(3). 'Digital forgery' is defined as an intimate visual depiction made with AI or other technological means, and s.4 imports that definition. Platforms had one year to set up the process (s.3(a)(1)(A)), so the removal duty has been live since 19 May 2026."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND on uscode.house.gov (prelim edition)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Source credit FOUND. The credits continue 'Mar. 21, 1938, ch. 49, §3, 52 Stat. 111', which confirms the Wheeler-Lea date in the note."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in the 17 Jan 2025 FR notice."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in the FTC 'Civil Penalty Inflation Adjustments' notice, 91 FR (15 Sept 2026), 'DATES: Effective September 15, 2026'."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND on the FTC consumer-advice FAQ."
+    },
+    {
+     "index": 5,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in s.3(a)(3); the header confirms 'PUBLIC LAW 119–12—MAY 19, 2025 139 STAT. 55'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Federal Trade Commission (Federal Register, via govinfo.gov)",
+     "title": "Adjustments to Civil Penalty Amounts (FR Doc. 2025-01361) — 15 U.S.C. 45(l)",
+     "date": "2025-01-17",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-17/pdf/2025-01361.pdf",
+     "quote": "U.S.C. 45(l) (violation of final Commission order)—Increase from $51,744 to $53,088;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the 'final FTC orders' half of maxPenalty."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "us-california-ccpa",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes re-fetched and FOUND. They support the claims. §7025(b) is the right subsection: '(b) A business that sells or shares personal information shall process any opt-out preference signal...'. The $2,663/$7,988 row is attached to Civ. Code §1798.155(a), as claimed. The same amounts apply to AG civil penalties under §1798.199.90(a). The ADMT date and the 1 Jan 2026 effective date are both in the CPPA announcement.",
+    "The record flagged the 1 Jan 2020 operative date as unconfirmed. Civ. Code §1798.198(a) on leginfo.legislature.ca.gov states it, so the gap is closed (source added).",
+    "Omission relevant to the MyTerms/agents story: AB 566 (Stats. 2025, ch. 465, approved 8 Oct 2025) adds Civ. Code §1798.136. From 1 Jan 2027 a business may not develop or maintain a browser that lacks a consumer-configurable setting to send an opt-out preference signal. This is the first US law putting the signal duty on browser makers (sources added)."
+   ],
+   "fieldFixes": {
+    "automatedSignalsProvision": "CCPA Regulations, 11 CCR §7025(b): a business that sells or shares personal information 'shall process any opt-out preference signal' that meets the requirements (e.g., Global Privacy Control) as a valid opt-out request. AB 566 (2025) adds Civ. Code §1798.136: from 1 Jan 2027, businesses that make web browsers must build in a setting consumers can configure to send such a signal.",
+    "notes": "CCPA operative 1 January 2020 (Civ. Code §1798.198(a)); CPRA amendments in force from 1 January 2023."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. It is §7025(b) in the 'Effective 1/1/2026' consolidated regulations PDF (p. 44)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in the row for 'Civil Code § 1798.155(a): Administrative fine amounts'. Adjustments are made every odd-numbered year (§1798.199.95(d)), so these amounts remain current until Jan 2027."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND on oag.ca.gov."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The same page says 'The regulations go into effect January 1, 2026.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "California Legislative Information (leginfo.legislature.ca.gov)",
+     "title": "Civil Code §1798.198",
+     "date": "2026",
+     "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.198",
+     "quote": "Subject to limitation provided in subdivision (b), and in Section 1798.199, this title shall be operative January 1, 2020.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Legislative Information (leginfo.legislature.ca.gov)",
+     "title": "AB-566 California Consumer Privacy Act of 2018: opt-out preference signal (Chapter 465, Statutes of 2025), new Civ. Code §1798.136(a)(1)",
+     "date": "2025-10-08",
+     "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB566",
+     "quote": "A business shall not develop or maintain a browser that does not include functionality configurable by a consumer that enables the browser to send an opt-out preference signal to businesses with which the consumer interacts through the browser.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same text includes '(f) This section shall become operative on January 1, 2027.' The page header reads 'CHAPTER 465 ... [ Approved by Governor October 08, 2025. Filed with Secretary of State October 08, 2025. ]'."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "us-colorado-cpa",
+   "status": "FIXED",
+   "issues": [
+    "All five quotes re-fetched and FOUND. The subsection numbering in automatedSignalsProvision is right: SB 21-190 6-1-1306(1)(a)(IV)(B) is the 1 July 2024 'shall allow' duty, and (IV)(C) is the rule that web-page consent 'takes precedence over any choice reflected through the universal opt-out mechanism'.",
+    "The $20,000 penalty rested only on a law-firm advisory ('reported as'). Primary source found: HB 19-1289 (signed act) amended C.R.S. 6-1-112(1)(a) to 'a civil penalty of not more than two TWENTY thousand dollars for each such violation', with each consumer or transaction a separate violation. Capitals mark new text; the struck-out 'two' is deleted text. I could not read the current consolidated C.R.S. text, so later amendments cannot be excluded, but none are indicated.",
+    "'GPC was the first mechanism recognised' had no source on the record. coag.gov supports it: 'the state's first universal opt-out mechanism, Global Privacy Control'. The same page supports the signing date (7 July 2021) and the in-force date (1 July 2023).",
+    "aiRules called SB 26-189 a 'narrower' law. Neither the enacted text nor the General Assembly's bill summary says so; the summary says the act 'repeals and reenacts those provisions with new requirements'. The bill page returned HTTP 406 to fetch-text.py and was read with curl. The PDF confirms 'repeal and reenact, with amendments, part 17 of article 1 of title 6', effective 1 Jan 2027 and applying to consequential decisions made on or after that date. 'Narrower' is an unsupported characterisation and is dropped."
+   ],
+   "fieldFixes": {
+    "maxPenalty": "A violation is a deceptive trade practice under the Colorado Consumer Protection Act. The civil penalty is up to $20,000 per violation, and each consumer or transaction counts as a separate violation (C.R.S. 6-1-112(1)(a), as amended by HB 19-1289).",
+    "aiRules": "SB 26-189 repealed and re-enacted part 17 (the 2024 Colorado AI Act, SB 24-205) as a law on automated decision-making technology used in consequential decisions. It takes effect 1 Jan 2027 and applies to decisions made on or after that date."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. It is 6-1-1306(1)(a)(IV)(B) of the signed act; (IV)(C) (consent overrides the signal) is on the same page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND on coag.gov."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. Now backed by the primary source HB 19-1289 (added)."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in SECTION 5 of SB 26-189. Section 1 reads 'repeal and reenact, with amendments, part 17 of article 1 of title 6'. The leg.colorado.gov bill page, read with curl because fetch-text.py got HTTP 406, shows 'Became Law'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Colorado General Assembly",
+     "title": "House Bill 19-1289 (signed act), amending C.R.S. 6-1-112(1)(a)",
+     "date": "2019",
+     "url": "https://leg.colorado.gov/sites/default/files/2019a_1289_signed.pdf",
+     "quote": "a civil penalty of not more than two TWENTY thousand dollars for each such violation",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Session-law typography: capitals are new text and struck-through words are deletions, so 'two' was removed and 'TWENTY' added (i.e., $20,000). The same subsection adds: 'a violation of any provision shall constitute a separate violation with respect to each consumer or transaction involved'."
+    },
+    {
+     "institution": "Colorado Attorney General (coag.gov)",
+     "title": "Colorado Privacy Act (CPA)",
+     "date": "2026",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "The CPA is a part of the State of Colorado’s Consumer Protection Act and went into effect July 1, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page also says: 'On July 7, 2021, Governor Polis signed Senate Bill 21-190'."
+    },
+    {
+     "institution": "Colorado Attorney General (coag.gov)",
+     "title": "Colorado Privacy Act (CPA) — Data Privacy and Global Privacy Control webinar",
+     "date": "2026",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "some of the people behind the state’s first universal opt-out mechanism, Global Privacy Control",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Colorado General Assembly",
+     "title": "Senate Bill 26-189 (signed act), section 1",
+     "date": "2026",
+     "url": "https://leg.colorado.gov/bill_files/116489/download",
+     "quote": "In Colorado Revised Statutes, repeal and reenact, with amendments, part 17 of article 1 of title 6 as follows:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "us-texas-tdpsa",
+   "status": "FIXED",
+   "issues": [
+    "All five quotes re-fetched and FOUND. The section numbers are right: 541.055(e), 541.155(a) ($7,500), and SECTION 7(b), which makes 541.055(e) effective 1 Jan 2025.",
+    "inForce 2024 had no quote. SECTION 7(a) of HB 4 supplies it: 'this Act takes effect July 1, 2024' (source added).",
+    "automatedSignalsProvision omitted the conditions attached to the duty. The controller 'shall comply' only if it can verify, with commercially reasonable effort, the consumer's identity and the agent's authority. It need not comply if the request is not clear and unambiguous, residency cannot be verified, the controller 'does not possess the ability to process the request', or it does not process similar requests under other states' laws. Rating 'yes' is kept, since there is a statutory duty, but the carve-outs are material and are now stated."
+   ],
+   "fieldFixes": {
+    "automatedSignalsProvision": "s.541.055(e), in force 1 Jan 2025: a consumer may designate an 'authorized agent' to opt out on their behalf 'using a technology', such as a browser setting or extension or a global device setting, so the statute treats the signal as an agent acting for the person. A controller 'shall comply' if it can verify, with commercially reasonable effort, the consumer's identity and the agent's authority. It need not comply if the request is unclear, Texas residency cannot be verified, it 'does not possess the ability to process the request', or it does not process similar requests under other states' laws."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in s.541.055(e) of the enrolled HB 4."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in s.541.155(a)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in SECTION 7(b) ('Section 541.055(e), Business & Commerce Code, as added by this Act, takes effect January 1, 2025.')."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 4 (88R), enrolled version — SECTION 7(a)",
+     "date": "2023",
+     "url": "https://capitol.texas.gov/tlodocs/88R/billtext/html/HB00004F.htm",
+     "quote": "Except as provided by Subsection (b) of this section, this Act takes effect July 1, 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Texas Legislature Online",
+     "title": "HB 4 (88R), enrolled version — s.541.055(e), controller duty",
+     "date": "2023",
+     "url": "https://capitol.texas.gov/tlodocs/88R/billtext/html/HB00004F.htm",
+     "quote": "A controller shall comply with an opt-out request received from an authorized agent under this subsection if the controller is able to verify, with commercially reasonable effort, the identity of the consumer and the authorized agent's authority to act on the consumer's behalf.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The exceptions follow in the same subsection, e.g. '(3) the controller does not possess the ability to process the request'."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "canada-pipeda",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes re-fetched and FOUND. s.28(b) gives a fine not exceeding $100,000 on indictment, and s.28 names obstruction of the Commissioner. Assent was 2000-04-13. The LEGISinfo JSON (fresh fetch) confirms first reading on 2026-06-15, sponsor Hon. Evan Solomon (Minister of Artificial Intelligence and Digital Innovation), and status 'At second reading in the House of Commons'. Blakes confirms C-36 would 'repeal the privacy provisions of PIPEDA and replace them' and adds ADS transparency duties.",
+    "The notes field is misleading. The Justice Laws footnote it cites is about subsection 4(3) only (the paramountcy clause). The operative commencement is 'Part 1 in force January 1, 2001, see SI/2000-29' (footnote to s.72). Staged application came through s.30: provincially regulated commercial activity was excluded until 1 Jan 2004, when s.30(1) ceased to have effect three years after s.30 came into force."
+   ],
+   "fieldFixes": {
+    "notes": "PIPEDA's privacy rules (Part 1) came into force on 1 January 2001 (SI/2000-29) and applied in stages. Under s.30 they reached commercial activity regulated by the provinces only from 1 January 2004."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in s.28(b). s.28 covers knowing contraventions of ss.8(8), 10.1, 10.3(1), 27.1(1) and obstruction of the Commissioner."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "'Assented to 2000-04-13' FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Long title FOUND in a fresh fetch of the JSON. PassedHouseFirstReadingDateTime is 2026-06-15; SponsorPersonName is Evan Solomon."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The article also notes that C-36 would move enforcement from the OPC to a new Digital Safety and Data Protection Commission."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Department of Justice Canada (Justice Laws Website)",
+     "title": "Personal Information Protection and Electronic Documents Act — commencement note (s.72)",
+     "date": "2026",
+     "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/page-6.html",
+     "quote": "Parts 2, 3 and 4 in force May 1, 2000; Part 1 in force January 1, 2001, see SI/2000-29; Part 5 in force June 1, 2009, see SI/2009-42.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "brazil-lgpd",
+   "status": "FIXED",
+   "issues": [
+    "All five quotes re-fetched and FOUND. They support Art. 52(II) (2% of Brazilian revenue, capped at R$50m per infraction), Art. 65(I-A) (sanctions from 1 Aug 2021), Art. 20 (review of solely automated decisions, including profiling), and the Senate history (approved 10/12/2024, sent to the Chamber 17/03/2025).",
+    "The regulator field is incomplete. The Câmara's consolidated text shows that Medida Provisória nº 1.317 of 17/9/2025, which turned the ANPD into an agency, was converted into Lei nº 15.352 of 25/2/2026. The agency form now rests on a statute, not on a provisional measure, and the field should say so.",
+    "aiRules said PL 2338/2023's status after March 2025 was 'not verified'. The Câmara's tramitação page (fetched 23 Sept 2026) shows it still 'Aguardando Parecer do(a) Relator(a) na Comissão Especial', with the last movement on 2 Sept 2026. It has not been enacted (source added)."
+   ],
+   "fieldFixes": {
+    "regulator": "Agência Nacional de Proteção de Dados (ANPD). It was created as the 'Autoridade' by MP 869/2018, converted into Lei 13.853/2019, and turned into a special-regime agency by Medida Provisória nº 1.317/2025, converted into Lei nº 15.352 of 25 Feb 2026.",
+    "aiRules": "Art. 20 gives a right to request review of decisions taken solely by automated processing, including profiling. The AI bill PL 2338/2023 passed the Senate on 10 Dec 2024 and went to the Chamber of Deputies on 17 Mar 2025. In Sept 2026 it was still awaiting the rapporteur's report in a Chamber special committee."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 52(II)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 65(I-A), added by Lei 14.010/2020."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 20 caput. It continues 'incluídas as decisões destinadas a definir o seu perfil pessoal, profissional, de consumo e de crédito'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The footnote reads 'com redação dada pela Medida Provisória nº 1.317, de 17/9/2025, convertida na Lei nº 15.352, de 25/2/2026'."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The same page shows the plenary session of 10/12/2024 approving Emenda nº 199 (Substitutivo)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Câmara dos Deputados (Legislação Informatizada) — updated text",
+     "title": "Lei nº 13.709/2018, Capítulo IX, Seção I heading (ANPD)",
+     "date": "2026",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.pdf",
+     "quote": "Da Agência Nacional de Proteção de Dados (Seção com redação dada pela Medida Provisória nº 1.317, de 17/9/2025, convertida na Lei nº 15.352, de 25/2/2026)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Of the National Data Protection Agency (Section worded by Provisional Measure No. 1,317 of 17/9/2025, converted into Law No. 15,352 of 25/2/2026)'."
+    },
+    {
+     "institution": "Câmara dos Deputados",
+     "title": "PL 2338/2023 — ficha de tramitação",
+     "date": "2026-09-23",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+     "quote": "Aguardando Parecer do(a) Relator(a) na Comissão Especial destinada a proferir parecer ao Projeto de Lei nº 2338, de 2023, do Senado Federal",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Awaiting the rapporteur's report in the Special Committee set up to report on Bill No. 2338 of 2023, from the Federal Senate'. The Câmara open-data API (proposicoes/2487262) gives the latest status entry as 2026-09-02, 'Aguardando Parecer'."
+    }
+   ]
+  },
+  {
+   "kind": "jurisdiction",
+   "id": "china-pipl",
+   "status": "OK",
+   "issues": [
+    "No errors found. All five quotes re-fetched from npc.gov.cn and cac.gov.cn and FOUND.",
+    "Adoption on 20 Aug 2021 at the 30th session of the 13th NPC Standing Committee is on the page heading. Art. 74 gives entry into force on 1 Nov 2021.",
+    "Art. 66 para. 2 matches the maxPenalty text in full: for serious cases, up to ¥50m or 5% of prior-year turnover, suspension of business or licence revocation, and ¥100,000–1,000,000 fines on responsible managers.",
+    "The quoted Art. 24 sentence is para. 3 (decisions with a major impact on individual rights).",
+    "The CAC notice was issued jointly by four bodies (CAC, MIIT, MPS, NRTA), as the record says ('CAC and three other ministries'). It is signed 2025年3月7日; the web page is dated 14 March 2025."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 66 para. 2."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND in Art. 24 para. 3."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND (Art. 74)."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND (Art. 60 para. 1)."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. The notice (国信办通字〔2025〕2号) is signed by CAC, MIIT, MPS and NRTA and dated 7 March 2025; the page was published 14 March 2025, and the source date refers to that publication."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

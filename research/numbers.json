@@ -1,6 +1,6 @@
 {
  "slice": "numbers",
- "notes": "",
+ "notes": "Quantitative spine for the privacy study: how fast data privacy law spread (Greenleaf's global count, UNCTAD, US states), what notice-and-consent costs people (McDonald & Cranor; Obar & Oeldorf-Hirsch; Amos et al.; Pew 2019/2023), how consent pop-ups actually behave after the GDPR (Degeling et al.; Nouwens et al.), the scale of tracking and data brokerage (Englehardt & Narayanan; ICCL on real-time bidding; FTC 2014; California's data broker registry), enforcement (DLA Piper and CMS GDPR fine totals; California's Sephora/GPC settlement) and the AI-chatbot base on which agents are built (Pew 2025; NBER/OpenAI 2025). Method: every quote was captured with tools/fetch-text.py and re-checked with --check in a final audit (95 unique source-quote pairs; all FOUND except the three Obar & Oeldorf-Hirsch quotes, which come from a JSON API and were verified against the decoded abstract instead — see their notes). SSRN, AustLII, unctad.org and idtheftcenter.org block scripted access (HTTP 403 / Cloudflare), so Greenleaf abstracts and UNCTAD pages were read from Internet Archive captures, cited by their archive URL. Derived figures are labelled: UNCTAD 2026 share (computed from UNCTAD's data file, PENDING), California registry counts (rows in CalPrivacy's CSVs), and GDPR cumulative fines for 2022-2024 (back-calculated from DLA Piper totals, estimate=true). Known gaps: (1) Identity Theft Resource Center annual data-compromise counts (series us-data-compromises) could not be built — idtheftcenter.org returns 403 to scripts and the Internet Archive connection kept resetting during this session; (2) Do Not Track adoption and Apple App Tracking Transparency opt-in rates — Flurry publishes its ATT rates only as chart images, and no primary DNT adoption figure was reachable; (3) Global Privacy Control has no published user-count figure; only its legal status (Sephora settlement) is recorded; (4) Greenleaf's 2025 year-by-year list (SSRN 5189972) was not retrievable, so the pre-2011 points are running sums of his 2011 decade counts and no year between editions is interpolated; (5) the popular '76 work days a year to read privacy policies' figure (The Atlantic, 2012) could not be fetched to check how it was derived from McDonald & Cranor, whose own point estimate is 244 hours a year. Web search quota for the session was exhausted mid-slice, which limited the search for alternatives.",
  "events": [],
  "series": [
   {
@@ -281,7 +281,7 @@
    "label": "Share of countries with data protection and privacy legislation (UNCTAD Global Cyberlaw Tracker)",
    "unit": "% of countries tracked (194 UNCTAD member states; 195 entries in the 2026 data file)",
    "geography": "World",
-   "notes": "UNCTAD's tracker counts any data protection and privacy legislation reported by member states and is broader than Greenleaf's count (which requires minimum international standards and private-sector coverage), so the two series do not match exactly. UNCTAD revised its own figure downward between December 2020 (132/194) and May 2021 (128/194).",
+   "notes": "UNCTAD's tracker counts any data protection and privacy legislation reported by member states and uses a different definition from Greenleaf's count (which requires minimum international standards and coverage of most of the private sector), so the two series do not match. UNCTAD revised its own figure downward between December 2020 (132/194) and May 2021 (128/194).",
    "sources": [
     {
      "institution": "UN Trade and Development (UNCTAD)",
@@ -396,6 +396,1049 @@
      "note": "155 of 195 = 79.5%, computed by this study from UNCTAD's data file dated 17 Feb 2026."
     }
    ]
+  },
+  {
+   "id": "us-state-comprehensive-privacy-laws",
+   "label": "US states with a comprehensive consumer privacy law (cumulative, by year signed)",
+   "unit": "states (cumulative)",
+   "geography": "United States (50 states)",
+   "notes": "By year the law was signed, not the year it took effect (effective dates lag by one to three years). Uses the IAPP Westin Research Center's definition of 'comprehensive': industry-specific, information-specific and narrowly scoped laws are excluded. There is still no comprehensive federal consumer privacy law. 2026 is a partial year (to 8 Sept. 2026).",
+   "sources": [
+    {
+     "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+     "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+     "date": "2026-09-08",
+     "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+     "quote": "Tracker last updated 8 Sept. 2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PDF chart linked from https://iapp.org/resources/article/us-state-privacy-legislation-tracker. In the PDF text layer the names of the New Hampshire, New Jersey and Oklahoma laws are separated from their date lines, which read '(2024; effective 1 Jan. 2025)', '(2024; effective 15 Jan. 2025)' and '(2026; effective 1 Jan. 2027)'."
+    },
+    {
+     "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+     "title": "US State Privacy Legislation Tracker (web page)",
+     "date": "2026",
+     "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker",
+     "quote": "The tracker only includes bills intended to be comprehensive approaches to governing the use of personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "WilmerHale Privacy and Cybersecurity Law Blog",
+     "title": "Oklahoma Enacts Nation’s Twentieth State Comprehensive Privacy Law",
+     "date": "2026-03-27",
+     "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20260327-oklahoma-enacts-nations-twentieth-state-comprehensive-privacy-law",
+     "quote": "SB 546 is the twentieth state comprehensive law to be enacted and will take effect on January 1, 2027. Notably, the Oklahoma law comes after a long hiatus for state comprehensive privacy laws, with last year marking the first year since 2020 in which no new state comprehensive privacy was enacted.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: the legislature passed SB 546 on 16 March 2026 and Governor Kevin Stitt signed it on 20 March 2026."
+    }
+   ],
+   "points": [
+    {
+     "year": 2018,
+     "value": 1,
+     "source": {
+      "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+      "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+      "date": "2026-09-08",
+      "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+      "quote": "California Consumer Privacy Act (2018; effective 1 Jan. 2020)",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "California (CCPA)."
+    },
+    {
+     "year": 2019,
+     "value": 1,
+     "source": "IAPP chart (series source 1): no comprehensive law signed in 2019",
+     "estimate": false,
+     "note": "No new state."
+    },
+    {
+     "year": 2020,
+     "value": 1,
+     "source": "IAPP chart (series source 1): no new state in 2020; WilmerHale (series source 3) dates the pre-2025 run of new laws from 2021",
+     "estimate": false,
+     "note": "California's CPRA ballot measure (Nov 2020) amended the CCPA; it is not a new state."
+    },
+    {
+     "year": 2021,
+     "value": 3,
+     "source": {
+      "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+      "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+      "date": "2026-09-08",
+      "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+      "quote": "Virginia Consumer Data Protection Act (2021; effective 1 Jan. 2023)",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Also in the chart: 'Colorado Privacy Act (2021; effective 1 July 2023)'."
+     },
+     "estimate": false,
+     "note": "+ Virginia, Colorado."
+    },
+    {
+     "year": 2022,
+     "value": 5,
+     "source": {
+      "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+      "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+      "date": "2026-09-08",
+      "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+      "quote": "Connecticut Data Privacy Act (2022; effective 1 July 2023)",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Also in the chart: 'Utah Consumer Privacy Act (2022; effective 31 Dec. 2023)'."
+     },
+     "estimate": false,
+     "note": "+ Utah, Connecticut."
+    },
+    {
+     "year": 2023,
+     "value": 12,
+     "source": {
+      "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+      "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+      "date": "2026-09-08",
+      "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+      "quote": "Delaware Personal Data Privacy Act (2023; effective 1 Jan. 2025) Indiana Consumer Data Protection Act (2023; effective 1 Jan. 2026) Iowa Consumer Data Protection Act (2023; effective 1 Jan. 2025)",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Also dated 2023 in the chart: Montana, Oregon, Tennessee, Texas."
+     },
+     "estimate": false,
+     "note": "+ Delaware, Indiana, Iowa, Montana, Oregon, Tennessee, Texas. Florida's 2023 Digital Bill of Rights is not on IAPP's list of comprehensive laws."
+    },
+    {
+     "year": 2024,
+     "value": 19,
+     "source": {
+      "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+      "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+      "date": "2026-09-08",
+      "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+      "quote": "Maryland Online Data Privacy Act (2024, effective Oct. 1, 2025) Minnesota Consumer Data Privacy Act (2024; effective 31 July 2025) Montana Consumer Data Privacy Act (2023; effective 1 Oct. 2024) Nebraska Data Privacy Act (2024; effective 1 Jan. 2025)",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Also dated 2024 in the chart: Kentucky, New Hampshire, New Jersey, Rhode Island. PDF chart linked from https://iapp.org/resources/article/us-state-privacy-legislation-tracker. In the PDF text layer the names of the New Hampshire, New Jersey and Oklahoma laws are separated from their date lines, which read '(2024; effective 1 Jan. 2025)', '(2024; effective 15 Jan. 2025)' and '(2026; effective 1 Jan. 2027)'."
+     },
+     "estimate": false,
+     "note": "+ Kentucky, Maryland, Minnesota, Nebraska, New Hampshire, New Jersey, Rhode Island."
+    },
+    {
+     "year": 2025,
+     "value": 19,
+     "source": {
+      "institution": "WilmerHale Privacy and Cybersecurity Law Blog",
+      "title": "Oklahoma Enacts Nation’s Twentieth State Comprehensive Privacy Law",
+      "date": "2026-03-27",
+      "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20260327-oklahoma-enacts-nations-twentieth-state-comprehensive-privacy-law",
+      "quote": "SB 546 is the twentieth state comprehensive law to be enacted and will take effect on January 1, 2027. Notably, the Oklahoma law comes after a long hiatus for state comprehensive privacy laws, with last year marking the first year since 2020 in which no new state comprehensive privacy was enacted.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Same post: the legislature passed SB 546 on 16 March 2026 and Governor Kevin Stitt signed it on 20 March 2026."
+     },
+     "estimate": false,
+     "note": "No new state in 2025 — the first such year since 2020."
+    },
+    {
+     "year": 2026,
+     "value": 23,
+     "source": {
+      "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+      "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+      "date": "2026-09-08",
+      "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+      "quote": "Alabama Personal Data Protection Act (2026; effective 1 May 2027)",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Also dated 2026 in the chart: 'Lousiana Data Privacy Act (2026; effective Jan 1, 2027)' [sic], 'Vermont Data Privacy and Online Surveillance Act (2026; effective Jan.1, 2028)' and Oklahoma (SB 546). Count as of 8 Sept. 2026."
+     },
+     "estimate": false,
+     "note": "+ Oklahoma (20th, signed 20 March 2026), Alabama, Louisiana, Vermont. Partial year: to 8 Sept. 2026."
+    }
+   ]
+  },
+  {
+   "id": "pew-little-or-no-control-over-company-data",
+   "label": "Say they have very little or no control over the data companies collect about them",
+   "unit": "% of U.S. adults",
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question wording in both waves per Pew's 2023 report, which draws the comparison itself. The share fell 8 points, but roughly three in four still report little or no control. Government: 84% (2019) to 79% (2023).",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "People don’t feel in control: Roughly three-quarters or more feel they have very little or no control over the data collected about them by companies (73%) or the government (79%).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Not feeling in control of personal data: Roughly eight-in-ten or more U.S. adults say they have very little or no control over the data that government (84%) or companies (81%) collect about them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "This survey was conducted among 5,101 U.S. adults from May 15 to 21, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2019,
+     "value": 81,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+      "date": "2019-11-15",
+      "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+      "quote": "Not feeling in control of personal data: Roughly eight-in-ten or more U.S. adults say they have very little or no control over the data that government (84%) or companies (81%) collect about them.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    },
+    {
+     "year": 2023,
+     "value": 73,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+      "date": "2023-10-18",
+      "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+      "quote": "People don’t feel in control: Roughly three-quarters or more feel they have very little or no control over the data collected about them by companies (73%) or the government (79%).",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "pew-understand-little-or-nothing-company-data-use",
+   "label": "Say they understand very little or nothing about what companies do with the data they collect",
+   "unit": "% of U.S. adults",
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question wording in both waves per Pew's 2023 report, which draws the comparison itself. Rising confusion: +8 points in four years.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "Americans are now less knowledgeable than before about how companies are using their personal data. The share who say they don’t understand this has risen from 59% in 2019 to 67% in 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Lack of understanding: 78% of U.S. adults say they understand very little or nothing about what the government does with the data it collects, and 59% say the same about the data companies collect.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "This survey was conducted among 5,101 U.S. adults from May 15 to 21, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2019,
+     "value": 59,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+      "date": "2019-11-15",
+      "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+      "quote": "Lack of understanding: 78% of U.S. adults say they understand very little or nothing about what the government does with the data it collects, and 59% say the same about the data companies collect.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    },
+    {
+     "year": 2023,
+     "value": 67,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+      "date": "2023-10-18",
+      "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+      "quote": "Americans are now less knowledgeable than before about how companies are using their personal data. The share who say they don’t understand this has risen from 59% in 2019 to 67% in 2023.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "pew-concerned-company-data-use",
+   "label": "Very or somewhat concerned about how companies use the data they collect about them",
+   "unit": "% of U.S. adults",
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question wording in both waves per Pew's 2023 report, which draws the comparison itself. A 2-point change for companies; Pew's 2023 report highlights instead the rise in concern about government use, from 64% to 71%.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "Concern is high: 81% say they feel very or somewhat concerned with how companies use the data they collect about them. Fully 71% say the same regarding the government’s use of data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Concern about how data is used: 79% of adults assert they are very or somewhat concerned about how companies are using the data they collect about them, while 64% say they have the same level of concern about government data collection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "This survey was conducted among 5,101 U.S. adults from May 15 to 21, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2019,
+     "value": 79,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+      "date": "2019-11-15",
+      "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+      "quote": "Concern about how data is used: 79% of adults assert they are very or somewhat concerned about how companies are using the data they collect about them, while 64% say they have the same level of concern about government data collection.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    },
+    {
+     "year": 2023,
+     "value": 81,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+      "date": "2023-10-18",
+      "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+      "quote": "Concern is high: 81% say they feel very or somewhat concerned with how companies use the data they collect about them. Fully 71% say the same regarding the government’s use of data.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "pew-understand-little-privacy-laws",
+   "label": "Say they understand very little or nothing about the laws that protect their data privacy",
+   "unit": "% of U.S. adults",
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question wording in both waves per Pew's 2023 report, which draws the comparison itself. More laws, less understanding: the rise coincides with the spread of US state privacy laws (see us-state-comprehensive-privacy-laws).",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "Today, 72% of Americans say they have little to no understanding about the laws and regulations that are currently in place to protect their data privacy. This is up from 63% in 2019.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Roughly six-in-ten Americans (63%) say they have very little or no understanding of the laws and regulations that are currently in place to protect their privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "This survey was conducted among 5,101 U.S. adults from May 15 to 21, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2019,
+     "value": 63,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+      "date": "2019-11-15",
+      "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+      "quote": "Roughly six-in-ten Americans (63%) say they have very little or no understanding of the laws and regulations that are currently in place to protect their privacy.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    },
+    {
+     "year": 2023,
+     "value": 72,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+      "date": "2023-10-18",
+      "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+      "quote": "Today, 72% of Americans say they have little to no understanding about the laws and regulations that are currently in place to protect their data privacy. This is up from 63% in 2019.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "privacy-policy-median-length-words",
+   "label": "Median length of website privacy policies",
+   "unit": "words (median)",
+   "geography": "English-language websites archived by the Wayback Machine (over 130,000 sites)",
+   "notes": "Amos et al. reconstructed 1,071,488 privacy policies from Internet Archive snapshots. 2009 = first half of 2009 ('2009A'); 2019 = second half of 2019 ('2019B'). Spread is wide: in their data the 5th percentile is 248 words and the 95th is 3,404. Most of the corpus is 2009-2019. Growth was sharpest after the GDPR.",
+   "sources": [
+    {
+     "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+     "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "date": "2021-04",
+     "url": "https://arxiv.org/pdf/2008.09159v4",
+     "quote": "The median word count has increased gradually over time — doubling between 2009A (876) and 2019B (1522) — and more sharply in recent years, after the introduction of the GDPR.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'2009A' and '2019B' are the first and second half-year snapshot intervals of those years. Section 7.1, Figure 5."
+    },
+    {
+     "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+     "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "date": "2021-04",
+     "url": "https://arxiv.org/abs/2008.09159",
+     "quote": "We also find that over the last twenty years privacy policies have become even more difficult to read, doubling in length and increasing a full grade in the median reading level.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Published version: https://doi.org/10.1145/3442381.3450048 (WWW '21, 19-23 April 2021, Ljubljana)."
+    },
+    {
+     "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+     "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "date": "2021-04",
+     "url": "https://arxiv.org/abs/2008.09159",
+     "quote": "we curated a dataset of 1,071,488 English language privacy policies, spanning over two decades and over 130,000 distinct websites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2009,
+     "value": 876,
+     "source": {
+      "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+      "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+      "date": "2021-04",
+      "url": "https://arxiv.org/pdf/2008.09159v4",
+      "quote": "The median word count has increased gradually over time — doubling between 2009A (876) and 2019B (1522) — and more sharply in recent years, after the introduction of the GDPR.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "'2009A' and '2019B' are the first and second half-year snapshot intervals of those years. Section 7.1, Figure 5."
+     },
+     "estimate": false
+    },
+    {
+     "year": 2019,
+     "value": 1522,
+     "source": {
+      "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+      "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+      "date": "2021-04",
+      "url": "https://arxiv.org/pdf/2008.09159v4",
+      "quote": "The median word count has increased gradually over time — doubling between 2009A (876) and 2019B (1522) — and more sharply in recent years, after the introduction of the GDPR.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "'2009A' and '2019B' are the first and second half-year snapshot intervals of those years. Section 7.1, Figure 5."
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "privacy-policy-median-reading-grade",
+   "label": "Median reading difficulty of website privacy policies (Flesch-Kincaid grade level)",
+   "unit": "US school grade level",
+   "geography": "English-language websites archived by the Wayback Machine (over 130,000 sites)",
+   "notes": "Grade 12 = final year of US high school; 13+ = college level. 2000 = first half of 2000 ('2000A'); 2019 = second half of 2019 ('2019B'). More popular websites have less readable policies.",
+   "sources": [
+    {
+     "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+     "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "date": "2021-04",
+     "url": "https://arxiv.org/pdf/2008.09159v4",
+     "quote": "The median readability score has risen more than a grade level from 2000A (11.9) to 2019B (13.2).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Flesch-Kincaid grade level; section 7.1, Figure 6."
+    },
+    {
+     "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+     "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "date": "2021-04",
+     "url": "https://arxiv.org/abs/2008.09159",
+     "quote": "We also find that over the last twenty years privacy policies have become even more difficult to read, doubling in length and increasing a full grade in the median reading level.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Published version: https://doi.org/10.1145/3442381.3450048 (WWW '21, 19-23 April 2021, Ljubljana)."
+    }
+   ],
+   "points": [
+    {
+     "year": 2000,
+     "value": 11.9,
+     "source": {
+      "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+      "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+      "date": "2021-04",
+      "url": "https://arxiv.org/pdf/2008.09159v4",
+      "quote": "The median readability score has risen more than a grade level from 2000A (11.9) to 2019B (13.2).",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Flesch-Kincaid grade level; section 7.1, Figure 6."
+     },
+     "estimate": false
+    },
+    {
+     "year": 2019,
+     "value": 13.2,
+     "source": {
+      "institution": "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
+      "title": "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+      "date": "2021-04",
+      "url": "https://arxiv.org/pdf/2008.09159v4",
+      "quote": "The median readability score has risen more than a grade level from 2000A (11.9) to 2019B (13.2).",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Flesch-Kincaid grade level; section 7.1, Figure 6."
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "eu-websites-with-cookie-consent-notices",
+   "label": "Popular EU websites showing a cookie consent notice, before and after the GDPR took effect",
+   "unit": "% of websites",
+   "geography": "EU: 500 most popular websites in each of the 28 member states (6,579 sites)",
+   "notes": "The GDPR applied from 25 May 2018. The rise is 16 percentage points (46.1% to 62.1%). The same study found 84.5% of sites had a privacy policy by 25 May 2018 and 72.6% of sites with existing policies updated them around that date.",
+   "sources": [
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "The GDPR’s most notable (and visible for users) effect we observed is the increase of cookie consent notiﬁcations, which rose from 46.1 % in January to 62.1 % in May.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quote contains the 'ﬁ' ligature as printed in the PDF text layer. DOI 10.14722/ndss.2019.23378."
+    },
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "Most visibly, 62.1 % of websites in Europe now display cookie consent notices, 16 % more than in January 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The '16 %' is percentage points (46.1% to 62.1%)."
+    },
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "For each country, we periodically examined its 500 most popular websites – 6,579 in total – for the presence of and updates to their privacy policy between December 2017 and October 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2018,
+     "value": 46.1,
+     "source": {
+      "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+      "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+      "date": "2019-02",
+      "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+      "quote": "The GDPR’s most notable (and visible for users) effect we observed is the increase of cookie consent notiﬁcations, which rose from 46.1 % in January to 62.1 % in May.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Quote contains the 'ﬁ' ligature as printed in the PDF text layer. DOI 10.14722/ndss.2019.23378."
+     },
+     "estimate": false,
+     "note": "January 2018 (before the GDPR applied)."
+    },
+    {
+     "year": 2018.4,
+     "value": 62.1,
+     "source": {
+      "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+      "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+      "date": "2019-02",
+      "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+      "quote": "The GDPR’s most notable (and visible for users) effect we observed is the increase of cookie consent notiﬁcations, which rose from 46.1 % in January to 62.1 % in May.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Quote contains the 'ﬁ' ligature as printed in the PDF text layer. DOI 10.14722/ndss.2019.23378."
+     },
+     "estimate": false,
+     "note": "End of May 2018 (after 25 May 2018). Year encoded as 2018.4 to separate the two 2018 measurements; both are 2018."
+    }
+   ]
+  },
+  {
+   "id": "california-registered-data-brokers",
+   "label": "Data brokers registered in California's Data Broker Registry",
+   "unit": "registered businesses",
+   "geography": "California (businesses selling data on California residents, wherever based)",
+   "notes": "Registration year = the January in which brokers registered; each registration covers the previous calendar year. 2020-2023 registrations were administered by the California Department of Justice and are published as one combined file (549 rows), so they are not split by year here. Since 1 January 2026 Californians can send one deletion request to every registered broker through the DROP platform (the Delete Act); brokers must process requests from 1 August 2026. Counts are rows in CalPrivacy's own CSV downloads, computed by this study.",
+   "sources": [
+    {
+     "institution": "California Privacy Protection Agency (CalPrivacy)",
+     "title": "California Data Broker Registry",
+     "date": "2026",
+     "url": "https://cppa.ca.gov/data_broker_registry/",
+     "quote": "Any business that meets the definition of \"data broker\" must register with CalPrivacy annually between January 1-31 to report on its activities from the previous calendar year. The businesses in this registry operated as data brokers in 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Privacy Protection Agency (CalPrivacy)",
+     "title": "California Data Broker Registry",
+     "date": "2026",
+     "url": "https://cppa.ca.gov/data_broker_registry/",
+     "quote": "As of January 1, 2026, California residents may use DROP to submit one request to all active data brokers, including those on this registry, requesting the deletion of their personal information. Data brokers are required to begin processing these requests on August 1, 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2024,
+     "value": 543,
+     "source": {
+      "institution": "California Privacy Protection Agency (CalPrivacy)",
+      "title": "California Data Broker Registry — 2024 registration data (CSV download)",
+      "date": "2024",
+      "url": "https://cppa.ca.gov/data_broker_registry/",
+      "quote": "Download Previous Data Broker Registries",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Count computed by this study: 543 registration rows (542 distinct business names). Data file: https://cppa.ca.gov/data_broker_registry/registry2024.csv (linked from the registry page under the quoted label)."
+     },
+     "estimate": false
+    },
+    {
+     "year": 2025,
+     "value": 543,
+     "source": {
+      "institution": "California Privacy Protection Agency (CalPrivacy)",
+      "title": "California Data Broker Registry — 2025 registration data (CSV download)",
+      "date": "2025",
+      "url": "https://cppa.ca.gov/data_broker_registry/",
+      "quote": "Download Previous Data Broker Registries",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Count computed by this study: 543 registration rows after the two header rows (540 distinct names). Data file: https://cppa.ca.gov/data_broker_registry/registry2025.csv (linked from the registry page under the quoted label)."
+     },
+     "estimate": false
+    },
+    {
+     "year": 2026,
+     "value": 603,
+     "source": {
+      "institution": "California Privacy Protection Agency (CalPrivacy)",
+      "title": "California Data Broker Registry — 2026 registration data (CSV, 'Download Registration Information')",
+      "date": "2026",
+      "url": "https://cppa.ca.gov/data_broker_registry/",
+      "quote": "Download Registration Information",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Count computed by this study: 603 rows, 603 distinct 'Data broker name:' entries. Registrations filed January 2026 for activity in 2025. Data file: https://cppa.ca.gov/data_broker_registry/registry.csv (linked from the registry page under the quoted label)."
+     },
+     "estimate": false
+    }
+   ]
+  },
+  {
+   "id": "gdpr-fines-cumulative-eur",
+   "label": "Cumulative GDPR fines since 25 May 2018 (DLA Piper survey)",
+   "unit": "EUR billion (cumulative, as at each January survey)",
+   "geography": "EU-27 plus UK, Norway, Iceland and Liechtenstein (jurisdictions surveyed by DLA Piper)",
+   "notes": "Totals are as at each annual January survey, so '2026' means fines to 10 January 2026. 2022-2024 points are estimates derived from DLA Piper's stated annual totals (nearly EUR 1.1bn, EUR 1.64bn, EUR 1.78bn; each for the year from 28 January) and its January 2025 cumulative figure. An independent count, CMS's GDPR Enforcement Tracker (publicly known fines only), gives about EUR 6.11bn across 2,685 fines to 1 March 2026 — lower than DLA Piper's EUR 7.1bn, a reminder that the totals depend on method.",
+   "sources": [
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "The aggregate total fines reported since the application of GDPR on 25 May 2018 to 10 January 2026 across all the jurisdictions surveyed now stands at EUR7.1 billion (USD8.4 billion/GBP6.2 billion).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2025",
+     "date": "2025-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025",
+     "quote": "The total fines reported since the application of GDPR in 2018 now stand at EUR5.88 billion (USD 6.17 billion/GBP 4.88 billion).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "CMS (law firm network) — GDPR Enforcement Tracker Report, 7th edition",
+     "title": "GDPR Enforcement Tracker Report: Numbers and Figures",
+     "date": "2026",
+     "url": "https://cms.law/en/int/publication/gdpr-enforcement-tracker-report/numbers-and-figures",
+     "quote": "In the 7th edition of the GDPR Enforcement Tracker Report, with a cut-off date of 1 March 2026, a total number of 2,685 fines (+440 in comparison to the GDPR Enforcement Tracker Report 2025) have been recorded in the CMS Enforcement Tracker database (3,062 if fines with limited information on amount or date are also counted) amounting to a sum of around EUR 6.11 billion (+487.6 million in comparison to the GDPR Enforcement Tracker Report 2025) .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2020,
+     "value": 0.114,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Data Breach Survey 2020",
+      "date": "2020-01-20",
+      "url": "https://www.dlapiper.com/en/insights/publications/2020/01/gdpr-data-breach-survey-2020",
+      "quote": "According to DLA Piper's latest GDPR Data Breach Survey, data protection regulators have imposed EUR114 million (approximately USD126 million / GBP97 million) in fines under the GDPR regime for a wide range of GDPR infringements, not just for data breaches.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "25 May 2018 to January 2020."
+    },
+    {
+     "year": 2021,
+     "value": 0.2725,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR fines and data breach survey 2021",
+      "date": "2021-01-19",
+      "url": "https://www.dlapiper.com/en/insights/publications/2021/01/dla-piper-gdpr-fines-and-data-breach-survey-2021",
+      "quote": "EUR272.5 million (about USD332.4 million / GBP245.3 million) of fines have been imposed for a wide range of infringements of Europe's tough data protection laws according to international law firm DLA Piper.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE",
+      "note": "Cumulative since 25 May 2018; the same page gives country aggregates 'since the application of GDPR on 25 May 2018'."
+     },
+     "estimate": false,
+     "note": "25 May 2018 to January 2021."
+    },
+    {
+     "year": 2022,
+     "value": 1.26,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR fines and data breach survey: January 2022",
+      "date": "2022-01-18",
+      "url": "https://www.dlapiper.com/en/insights/publications/2022/01/dla-piper-gdpr-fines-and-data-breach-survey-2022",
+      "quote": "Data protection supervisory authorities across Europe have issued a total of nearly EUR1.1 billion (USD1.2 / GBP0.9 billion) in fines since 28 January 2021, according to international law firm DLA Piper.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": true,
+     "note": "About EUR 1.26bn to January 2022. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper did not state a cumulative figure in this edition. Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap."
+    },
+    {
+     "year": 2023,
+     "value": 2.9,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2023",
+      "date": "2023-01-25",
+      "url": "https://www.dlapiper.com/en/insights/publications/2023/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2023",
+      "quote": "Data protection supervisory authorities across Europe have issued a total of EUR1.64bn (USD1.74bn/GBP1.43bn) in fines since 28 January 2022.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": true,
+     "note": "About EUR 2.90bn to January 2023. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper did not state a cumulative figure in this edition. Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap."
+    },
+    {
+     "year": 2024,
+     "value": 4.68,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2024",
+      "date": "2024-01-17",
+      "url": "https://www.dlapiper.com/en/insights/publications/2024/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2024",
+      "quote": "Supervisory authorities across Europe have issued a total of EUR1.78 billion (USD1.94billion/GBP1.55 billion) in fines since 28 January 2023, which is an increase of over 14% on the total issued in the year from 28 January 2022.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": true,
+     "note": "About EUR 4.68bn to January 2024 (includes the EUR 1.2bn fine on Meta imposed in 2023). Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper did not state a cumulative figure in this edition. Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap."
+    },
+    {
+     "year": 2025,
+     "value": 5.88,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2025",
+      "date": "2025-01-21",
+      "url": "https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025",
+      "quote": "The total fines reported since the application of GDPR in 2018 now stand at EUR5.88 billion (USD 6.17 billion/GBP 4.88 billion).",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "25 May 2018 to late January 2025."
+    },
+    {
+     "year": 2026,
+     "value": 7.1,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+      "date": "2026-01-21",
+      "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+      "quote": "The aggregate total fines reported since the application of GDPR on 25 May 2018 to 10 January 2026 across all the jurisdictions surveyed now stands at EUR7.1 billion (USD8.4 billion/GBP6.2 billion).",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "25 May 2018 to 10 January 2026."
+    }
+   ]
+  },
+  {
+   "id": "gdpr-fines-annual-eur",
+   "label": "GDPR fines issued per year (DLA Piper survey years)",
+   "unit": "EUR billion per survey year",
+   "geography": "EU-27 plus UK, Norway, Iceland and Liechtenstein",
+   "notes": "DLA Piper survey years run from 28 January to late January of the following year (2025: calendar 2025 to 10 January 2026). Year label = the calendar year in which most of the period falls. The 2023 peak includes the record EUR 1.2bn fine on Meta Platforms Ireland by the Irish Data Protection Commission.",
+   "sources": [
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "European supervisory authorities issued fines totalling approximately EUR1.2 billion (USD1.42 billion/GBP1.06 billion) in 2025, broadly matching 2024’s figure.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2025",
+     "date": "2025-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025",
+     "quote": "In the year from 28 January 2024, EUR1.2 billion fines were imposed. This was a 33% decrease compared to the aggregate fines imposed in the previous year, bucking the 7-year trend of increasing enforcement.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2024",
+     "date": "2024-01-17",
+     "url": "https://www.dlapiper.com/en/insights/publications/2024/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2024",
+     "quote": "Supervisory authorities across Europe have issued a total of EUR1.78 billion (USD1.94billion/GBP1.55 billion) in fines since 28 January 2023, which is an increase of over 14% on the total issued in the year from 28 January 2022.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2021,
+     "value": 1.1,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR fines and data breach survey: January 2022",
+      "date": "2022-01-18",
+      "url": "https://www.dlapiper.com/en/insights/publications/2022/01/dla-piper-gdpr-fines-and-data-breach-survey-2022",
+      "quote": "Data protection supervisory authorities across Europe have issued a total of nearly EUR1.1 billion (USD1.2 / GBP0.9 billion) in fines since 28 January 2021, according to international law firm DLA Piper.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "'Nearly EUR 1.1 billion', 28 Jan 2021 to Jan 2022."
+    },
+    {
+     "year": 2022,
+     "value": 1.64,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2023",
+      "date": "2023-01-25",
+      "url": "https://www.dlapiper.com/en/insights/publications/2023/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2023",
+      "quote": "Data protection supervisory authorities across Europe have issued a total of EUR1.64bn (USD1.74bn/GBP1.43bn) in fines since 28 January 2022.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "28 Jan 2022 to Jan 2023."
+    },
+    {
+     "year": 2023,
+     "value": 1.78,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2024",
+      "date": "2024-01-17",
+      "url": "https://www.dlapiper.com/en/insights/publications/2024/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2024",
+      "quote": "Supervisory authorities across Europe have issued a total of EUR1.78 billion (USD1.94billion/GBP1.55 billion) in fines since 28 January 2023, which is an increase of over 14% on the total issued in the year from 28 January 2022.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "28 Jan 2023 to Jan 2024."
+    },
+    {
+     "year": 2024,
+     "value": 1.2,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2025",
+      "date": "2025-01-21",
+      "url": "https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025",
+      "quote": "In the year from 28 January 2024, EUR1.2 billion fines were imposed. This was a 33% decrease compared to the aggregate fines imposed in the previous year, bucking the 7-year trend of increasing enforcement.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "28 Jan 2024 to Jan 2025."
+    },
+    {
+     "year": 2025,
+     "value": 1.2,
+     "source": {
+      "institution": "DLA Piper (international law firm)",
+      "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+      "date": "2026-01-21",
+      "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+      "quote": "European supervisory authorities issued fines totalling approximately EUR1.2 billion (USD1.42 billion/GBP1.06 billion) in 2025, broadly matching 2024’s figure.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false,
+     "note": "Approximately EUR 1.2bn in 2025."
+    }
+   ]
+  },
+  {
+   "id": "pew-us-adults-under-30-used-chatgpt",
+   "label": "U.S. adults under 30 who have ever used ChatGPT",
+   "unit": "% of U.S. adults ages 18-29",
+   "geography": "United States (Pew American Trends Panel)",
+   "notes": "Chatbot use, not agent use: a proxy for how fast conversational AI — the interface through which AI agents now act for people — has become ordinary. Fieldwork for the 2025 point: 24 Feb - 2 Mar 2025 (n=5,123). Among all U.S. adults the 2025 share was 34%.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+     "date": "2025-06-25",
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "quote": "Today, 58% of adults under 30 say they have used it, up from 43% in 2024 and 33% in 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+     "date": "2025-06-25",
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "quote": "Today, 34% of U.S. adults say they have ever used ChatGPT, according to a Pew Research Center survey. That includes a 58% majority of adults under 30.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+     "date": "2025-06-25",
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "quote": "For this analysis, we surveyed 5,123 U.S. adults from Feb. 24 to March 2, 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "points": [
+    {
+     "year": 2023,
+     "value": 33,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+      "date": "2025-06-25",
+      "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+      "quote": "Today, 58% of adults under 30 say they have used it, up from 43% in 2024 and 33% in 2023.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    },
+    {
+     "year": 2024,
+     "value": 43,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+      "date": "2025-06-25",
+      "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+      "quote": "Today, 58% of adults under 30 say they have used it, up from 43% in 2024 and 33% in 2023.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    },
+    {
+     "year": 2025,
+     "value": 58,
+     "source": {
+      "institution": "Pew Research Center",
+      "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+      "date": "2025-06-25",
+      "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+      "quote": "Today, 58% of adults under 30 say they have used it, up from 43% in 2024 and 33% in 2023.",
+      "verificationStatus": "CONFIRMED",
+      "accessType": "FREE"
+     },
+     "estimate": false
+    }
+   ]
   }
  ],
  "quant": [
@@ -429,7 +1472,984 @@
      "note": "Computed by this study, not a figure UNCTAD states in text: in the data file credited 'Source: UNCTAD, 17/02/2026', the third status code (index 2 = 'Privacy and Data Protection' per the page script) is 1 = Legislation for 155 of 195 economies, 2 = Draft for 5, 3 = No legislation for 33, 0 = No data for 2. The live page now renders its percentages in the browser, so there is no sentence to quote. Read via Internet Archive (unctad.org 403s scripts)."
     }
    ]
+  },
+  {
+   "id": "pew-2019-never-read-privacy-policy",
+   "label": "Say they never read a company's privacy policy before agreeing to it",
+   "value": 36,
+   "unit": "% of U.S. adults",
+   "year": 2019,
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "97% say they are ever asked to approve privacy policies; 9% always and 13% often read them first. Fieldwork 3-17 June 2019, n=4,272.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Fully 97% say they are ever asked to approve privacy policies, yet only one-in-five adults overall say they always (9%) or often (13%) read these policies. Some 38% of U.S. adults maintain they sometimes read such policies, and 36% say they never read a company’s privacy policy before agreeing to it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2019-readers-read-all-the-way-through",
+   "label": "Of those who ever read privacy policies, share who read them all the way through before agreeing",
+   "value": 22,
+   "unit": "% of adults who ever read privacy policies",
+   "year": 2019,
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "A subset of a subset: most people who do open a policy do not finish it. Fieldwork 3-17 June 2019, n=4,272.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Among adults who say they ever read privacy policies before agreeing to their terms and conditions, only a minority – 22% – say they read them all the way through before agreeing to their terms and conditions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2023-click-agree-without-reading",
+   "label": "Frequently click 'agree' without reading privacy policies",
+   "value": 56,
+   "unit": "% of U.S. adults",
+   "year": 2023,
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "Different wording from the 2019 'how often do you read' question, so not charted as a trend. 69% view privacy policies as 'just something to get past'; 61% think they are ineffective at explaining data use. Fieldwork 15-21 May 2023, n=5,101.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2023-ai-data-used-uncomfortably",
+   "label": "Among those who have heard of AI: expect companies' AI use to lead to personal information being used in ways they won't be comfortable with",
+   "value": 81,
+   "unit": "% of U.S. adults who have heard of AI",
+   "year": 2023,
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "80% expect uses 'that weren't originally intended' — the purpose-limitation problem in survey form. Separately, 70% of those who have heard of AI have little or no trust in companies to make responsible decisions about using it in their products. Fieldwork 15-21 May 2023, n=5,101.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "And about eight-in-ten of those familiar with AI say its use by companies will lead to people’s personal information being used in ways they won’t be comfortable with (81%) or that weren’t originally intended (80%).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2023-want-more-regulation",
+   "label": "Say there should be more government regulation of what companies can do with people's data",
+   "value": 72,
+   "unit": "% of U.S. adults",
+   "year": 2023,
+   "geography": "United States (adults 18+, Pew American Trends Panel)",
+   "notes": "78% of Democrats and 68% of Republicans (including leaners). Fieldwork 15-21 May 2023, n=5,101.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Some 72% of Americans say there should be more regulation than there is now; just 7% say there should be less.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "mcdonald-cranor-hours-per-year-reading-privacy-policies",
+   "label": "Time for one American internet user to read the privacy policy of every new site visited in a year",
+   "value": 244,
+   "unit": "hours per year (point estimate)",
+   "year": 2008,
+   "geography": "United States (221 million Americans online, 2008 estimate)",
+   "notes": "Point estimate for reading word-for-word (Table 7): 1,462 unique sites a year × about 10 minutes per policy (2,514-word median policy at 250 words per minute). Range 181-304 hours; skimming 81-293 hours (point 154). About 40 minutes a day. The paper's own conclusion gives 'approximately 201 hours a year' — an internal inconsistency in the source; 244 is the figure that matches its national total of 53.8 billion hours.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008)."
+    },
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user. Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008)."
+    }
+   ]
+  },
+  {
+   "id": "mcdonald-cranor-national-hours-reading-privacy-policies",
+   "label": "National time if every US internet user read each new site's privacy policy once a year",
+   "value": 54,
+   "unit": "billion hours per year",
+   "year": 2008,
+   "geography": "United States (221 million Americans online, 2008 estimate)",
+   "notes": "Point estimate 53.8 billion hours (range 39.9-67.1 billion). For comparison, the paper notes U.S. taxpayers spent 3.4 billion hours on federal income taxes in 2000.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We estimate that if all American Internet users were to annually read the online privacy policies word-for-word each time they visited a new site, the nation would spend about 54 billion hours reading privacy policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008)."
+    }
+   ]
+  },
+  {
+   "id": "mcdonald-cranor-national-opportunity-cost",
+   "label": "National opportunity cost of the time to read online privacy policies",
+   "value": 781,
+   "unit": "billion US dollars per year",
+   "year": 2008,
+   "geography": "United States (221 million Americans online, 2008 estimate)",
+   "notes": "Values leisure time at 25% of average hourly wages and time at work at twice wages; about $3,534 per internet user per year. The authors compare it with 2007 U.S. online retail sales of about $260 billion.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user. Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008)."
+    }
+   ]
+  },
+  {
+   "id": "mcdonald-cranor-minutes-per-policy",
+   "label": "Average time to read one privacy policy of a top-75 website",
+   "value": 10,
+   "unit": "minutes per policy",
+   "year": 2008,
+   "geography": "75 most popular U.S. websites (2008)",
+   "notes": "Median policy length 2,514 words at 250 words per minute (range: 8 minutes for a first-quartile policy of 2,071 words). The authors also measured skimming time in an online study of 212 participants.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "First, we used a list of the 75 most popular websites and assumed an average reading rate of 250 words per minute to find an average reading time of 10 minutes per policy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008)."
+    }
+   ]
+  },
+  {
+   "id": "obar-oeldorf-hirsch-skipped-privacy-policy",
+   "label": "Participants who skipped the privacy policy by choosing the 'quick join' clickwrap",
+   "value": 74,
+   "unit": "% of participants",
+   "year": 2018,
+   "geography": "543 participants in an experimental survey joining a fictitious social networking service, 'NameDrop'",
+   "notes": "97% agreed to the privacy policy and 93% to the terms of service.",
+   "sources": [
+    {
+     "institution": "Information, Communication & Society 23(1): 128-147 (Taylor & Francis; online 3 July 2018, print 2020) — abstract via Semantic Scholar API",
+     "title": "Jonathan A. Obar and Anne Oeldorf-Hirsch, 'The biggest lie on the Internet: ignoring the privacy policies and terms of service policies of social networking services'",
+     "date": "2018-07-03",
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/1369118X.2018.1486870?fields=title,abstract,year,venue",
+     "quote": "Results reveal 74% skipped PP, selecting the ‘quick join’ clickwrap.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "The publisher page (https://doi.org/10.1080/1369118X.2018.1486870) returns 403 to scripts; the abstract was read from the Semantic Scholar API (JSON). Because the JSON escapes curly quotes, en dashes and thin spaces, the repo helper's --check cannot match whole sentences; each quote was verified FOUND against the JSON-decoded abstract, and ASCII fragments were also FOUND with the helper. Published online 3 July 2018; print issue 2 January 2020 (Crossref)."
+    }
+   ]
+  },
+  {
+   "id": "obar-oeldorf-hirsch-mean-privacy-policy-reading-time",
+   "label": "Average time spent on the privacy policy by those who opened it",
+   "value": 73,
+   "unit": "seconds",
+   "year": 2018,
+   "geography": "543 participants in an experimental survey joining a fictitious social networking service, 'NameDrop'",
+   "notes": "At 250-280 words per minute the policy should have taken 29-32 minutes to read; the terms of service (shown to everyone) should have taken 15-17 minutes but got an average of 51 seconds.",
+   "sources": [
+    {
+     "institution": "Information, Communication & Society 23(1): 128-147 (Taylor & Francis; online 3 July 2018, print 2020) — abstract via Semantic Scholar API",
+     "title": "Jonathan A. Obar and Anne Oeldorf-Hirsch, 'The biggest lie on the Internet: ignoring the privacy policies and terms of service policies of social networking services'",
+     "date": "2018-07-03",
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/1369118X.2018.1486870?fields=title,abstract,year,venue",
+     "quote": "Average adult reading speed (250–280 words per minute), suggests PP should have taken 29–32 minutes and TOS 15–17 minutes to read. For those that didn’t select the clickwrap, average PP reading time was 73 seconds. All participants were presented the TOS and had an average reading time of 51 seconds.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "The publisher page (https://doi.org/10.1080/1369118X.2018.1486870) returns 403 to scripts; the abstract was read from the Semantic Scholar API (JSON). Because the JSON escapes curly quotes, en dashes and thin spaces, the repo helper's --check cannot match whole sentences; each quote was verified FOUND against the JSON-decoded abstract, and ASCII fragments were also FOUND with the helper. Published online 3 July 2018; print issue 2 January 2020 (Crossref)."
+    }
+   ]
+  },
+  {
+   "id": "obar-oeldorf-hirsch-missed-gotcha-clauses",
+   "label": "Participants who missed the terms-of-service 'gotcha' clauses (data shared with the NSA and employers; first-born child as payment)",
+   "value": 98,
+   "unit": "% of participants",
+   "year": 2018,
+   "geography": "543 participants in an experimental survey joining a fictitious social networking service, 'NameDrop'",
+   "notes": "The fictitious terms said users' data would be shared with the NSA and employers and that a first-born child would be taken as payment for access.",
+   "sources": [
+    {
+     "institution": "Information, Communication & Society 23(1): 128-147 (Taylor & Francis; online 3 July 2018, print 2020) — abstract via Semantic Scholar API",
+     "title": "Jonathan A. Obar and Anne Oeldorf-Hirsch, 'The biggest lie on the Internet: ignoring the privacy policies and terms of service policies of social networking services'",
+     "date": "2018-07-03",
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/1369118X.2018.1486870?fields=title,abstract,year,venue",
+     "quote": "Implications are revealed as 98% missed NameDrop TOS ‘gotcha clauses’ about data sharing with the NSA and employers, and about providing a first-born child as payment for SNS access.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "The publisher page (https://doi.org/10.1080/1369118X.2018.1486870) returns 403 to scripts; the abstract was read from the Semantic Scholar API (JSON). Because the JSON escapes curly quotes, en dashes and thin spaces, the repo helper's --check cannot match whole sentences; each quote was verified FOUND against the JSON-decoded abstract, and ASCII fragments were also FOUND with the helper. Published online 3 July 2018; print issue 2 January 2020 (Crossref)."
+    }
+   ]
+  },
+  {
+   "id": "degeling-privacy-policy-mean-length-2016-2018",
+   "label": "Mean length of privacy policies on popular EU websites, March 2016 to late May 2018",
+   "value": 3603,
+   "unit": "words (mean, late May 2018)",
+   "year": 2018,
+   "geography": "EU: 500 most popular websites in each of the 28 member states (6,579 sites)",
+   "notes": "Up from a mean of 2,145 words in March 2016 and 3,044 words in March 2018: policies grew by about two-thirds in just over two years, most of it around the GDPR. (Amos et al. 2021 cite these same figures as medians; Degeling et al. describe them as means.)",
+   "sources": [
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "The average text length rose from a mean of 2,145 words in March 2016 to 3,044 words in March 2018 (+41 percentage points in 2 years) and increased another 18 percentage points until late May (3,603 words).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "nouwens-cmp-sites-meeting-minimal-legal-requirements",
+   "label": "Consent-management-platform pop-ups that met minimal requirements of European law",
+   "value": 11.8,
+   "unit": "% of sites scraped",
+   "year": 2019,
+   "geography": "UK: sites among the top 10,000 using one of the five most popular consent management platforms (n=680)",
+   "notes": "The three minimal conditions: consent must be explicit, accepting all must be no easier than rejecting all, and no pre-ticked boxes. 32.5% relied on implied consent (e.g. just visiting or scrolling); 50.1% had no 'reject all' button; only 12.6% made 'reject all' as easy as 'accept all'. In a 40-person field experiment, removing the opt-out button from the first page raised consent by 22-23 percentage points. Year = data collection: the scraper ran over 3 days in September 2019 from a Danish IP address.",
+   "sources": [
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/abs/2001.02479",
+     "quote": "We scraped the designs of the five most popular CMPs on the top 10,000 websites in the UK (n=680). We found that dark patterns and implied consent are ubiquitous; only 11.8% meet the minimal requirements that we set based on European law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "arXiv:2001.02479 (January 2020); published at CHI 2020 (Honolulu)."
+    },
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/pdf/2001.02479",
+     "quote": "50.1% of sites did not have a ‘reject all’ button. Only 12.6% of sites had a ‘reject all’ button accessible with the same or fewer number of clicks as an ‘accept all’ button.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "iccl-rtb-broadcasts-per-person-per-day-us",
+   "label": "Real-time bidding broadcasts exposing one person's online activity and location, per day (U.S.)",
+   "value": 747,
+   "unit": "broadcasts per person per day (average)",
+   "year": 2022,
+   "geography": "United States",
+   "notes": "State averages range from 987 (Colorado) to 486 (District of Columbia, commuter-adjusted). Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate.",
+   "sources": [
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
+     "quote": "On average, a person in the U.S. has their online activity and location exposed 747 times every day by the RTB industry.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate."
+    },
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
+     "quote": "The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate."
+    }
+   ]
+  },
+  {
+   "id": "iccl-rtb-broadcasts-per-person-per-day-europe",
+   "label": "Real-time bidding broadcasts exposing one person's online activity and location, per day (Europe)",
+   "value": 376,
+   "unit": "broadcasts per person per day (average)",
+   "year": 2022,
+   "geography": "Europe (EEA member states and UK)",
+   "notes": "The UK figure is 462 a day. Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate.",
+   "sources": [
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
+     "quote": "In Europe, RTB exposes people’s data 376 times a day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate."
+    },
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
+     "quote": "The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate."
+    }
+   ]
+  },
+  {
+   "id": "iccl-rtb-broadcasts-per-year-us-europe",
+   "label": "Real-time bidding broadcasts about people in the U.S. and Europe, per year",
+   "value": 178,
+   "unit": "trillion broadcasts per year",
+   "year": 2022,
+   "geography": "United States and Europe",
+   "notes": "107 trillion a year in the U.S. and 71 trillion in Europe (294 billion and 197 billion a day). ICCL says 4,698 companies are allowed by Google to receive RTB data about people in the U.S. Year = publication (16 May 2022); ICCL does not say which 30-day period the industry figures cover. Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate.",
+   "sources": [
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan) (web page)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/digital-data/iccl-report-on-the-scale-of-real-time-bidding-data-broadcasts-in-the-u-s-and-europe/",
+     "quote": "RTB is the biggest data breach ever recorded. It tracks and shares what people view online and their real-world location 178 Trillion times every year in U.S. & Europe.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
+     "quote": "U.S. Internet users’ online behaviour and locations1 are tracked and shared 107 trillion times a year.2 Europeans’ data is exposed 71 trillion times a year.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate. The '1' and '2' inside the quote are footnote markers in the PDF text layer."
+    },
+    {
+     "institution": "Irish Council for Civil Liberties (ICCL), Dublin",
+     "title": "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+     "date": "2022-05-16",
+     "url": "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
+     "quote": "The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Advocacy estimate: ICCL states that 'The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential', and per-person figures divide by population assuming 90% of people are online. Not independently audited; treat as an order-of-magnitude estimate."
+    }
+   ]
+  },
+  {
+   "id": "englehardt-narayanan-third-parties-on-top-million-sites",
+   "label": "Distinct third parties found on at least two of the top 1 million websites",
+   "value": 81000,
+   "unit": "third-party domains (more than)",
+   "year": 2016,
+   "geography": "World: Alexa top 1 million websites (crawled January 2016)",
+   "notes": "A long tail: only 123 of these 81,000 were present on more than 1% of sites. All top 5 third parties and 12 of the top 20 were Google-owned domains; Google, Facebook, Twitter and AdNexus were the only third-party entities on more than 10% of sites. The crawl made over 90 million requests.",
+   "sources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "In short, a lot: the total number of third parties present on at least two ﬁrst parties is over 81,000.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    },
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "What is more surprising is that the prevalence of third parties quickly drops oﬀ: only 123 of these 81,000 are present on more than 1% of sites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    },
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "The data used in this paper were collected during January 2016.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    }
+   ]
+  },
+  {
+   "id": "englehardt-narayanan-google-concentration",
+   "label": "Third-party entities present on more than 10% of the top 1 million sites",
+   "value": 4,
+   "unit": "entities (Google, Facebook, Twitter, AdNexus)",
+   "year": 2016,
+   "geography": "World: Alexa top 1 million websites (crawled January 2016)",
+   "notes": "Tracking is concentrated: the same few companies see a large share of the web. All of the top 5 third-party domains and 12 of the top 20 were Google-owned.",
+   "sources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "All of the top 5 third parties, as well as 12 of the top 20, are Google-owned domains. In fact, Google, Facebook, Twitter, and AdNexus are the only third-party entities present on more than 10% of sites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    },
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "The data used in this paper were collected during January 2016.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    }
+   ]
+  },
+  {
+   "id": "englehardt-narayanan-canvas-fingerprinting-sites",
+   "label": "Sites among the top 1 million using canvas fingerprinting (tracking without cookies)",
+   "value": 14371,
+   "unit": "websites (1.6% of those measured)",
+   "year": 2016,
+   "geography": "World: Alexa top 1 million websites (crawled January 2016)",
+   "notes": "98.2% came from third-party scripts. Fingerprinting identifies a browser without storing anything on it, so clearing cookies does not stop it.",
+   "sources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "We found canvas ﬁngerprinting on 14,371 (1.6%) sites. The vast majority (98.2%) are from third-party scripts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    },
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "The data used in this paper were collected during January 2016.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    }
+   ]
+  },
+  {
+   "id": "ftc-2014-data-segments-per-consumer",
+   "label": "Data segments one data broker held on nearly every U.S. consumer",
+   "value": 3000,
+   "unit": "data segments per consumer",
+   "year": 2014,
+   "geography": "United States: nine data brokers studied under FTC Act section 6(b) orders (Acxiom, Corelogic, Datalogix, eBureau, ID Analytics, Intelius, PeekYou, Rapleaf, Recorded Future)",
+   "notes": "FTC orders issued December 2012 covered practices from 1 January 2010. The nine brokers obtained most of their data from other data brokers rather than from consumers or original sources.",
+   "sources": [
+    {
+     "institution": "U.S. Federal Trade Commission",
+     "title": "Data Brokers: A Call for Transparency and Accountability",
+     "date": "2014-05",
+     "url": "https://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf",
+     "quote": "Most importantly, data brokers hold a vast array of information on individual consumers. For example, one of the nine data brokers has 3000 data segments for nearly every U.S. consumer.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Federal Trade Commission",
+     "title": "Data Brokers: A Call for Transparency and Accountability",
+     "date": "2014-05",
+     "url": "https://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf",
+     "quote": "The nine data brokers studied obtain most of their data from other data brokers rather than directly from an original source.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "ftc-2014-data-broker-aggregated-data-elements",
+   "label": "Aggregated data elements in one data broker's database",
+   "value": 700,
+   "unit": "billion data elements (over)",
+   "year": 2014,
+   "geography": "United States: nine data brokers studied under FTC Act section 6(b) orders (Acxiom, Corelogic, Datalogix, eBureau, ID Analytics, Intelius, PeekYou, Rapleaf, Recorded Future)",
+   "notes": "The same database held information on 1.4 billion consumer transactions. Another broker's database covered one trillion dollars in consumer transactions; another added three billion new records a month.",
+   "sources": [
+    {
+     "institution": "U.S. Federal Trade Commission",
+     "title": "Data Brokers: A Call for Transparency and Accountability",
+     "date": "2014-05",
+     "url": "https://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf",
+     "quote": "Of the nine data brokers, one data broker’s database has information on 1.4 billion consumer transactions and over 700 billion aggregated data elements; another data broker’s database covers one trillion dollars in consumer transactions; and yet another data broker adds three billion new records each month to its databases.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "california-registered-data-brokers-2026",
+   "label": "Data brokers in California's 2026 registry",
+   "value": 603,
+   "unit": "registered businesses",
+   "year": 2026,
+   "geography": "California",
+   "notes": "Businesses that operated as data brokers in 2025 and registered with CalPrivacy in January 2026. Count of rows in the registry's CSV download, computed by this study on 23 Sept 2026.",
+   "sources": [
+    {
+     "institution": "California Privacy Protection Agency (CalPrivacy)",
+     "title": "California Data Broker Registry",
+     "date": "2026",
+     "url": "https://cppa.ca.gov/data_broker_registry/",
+     "quote": "Any business that meets the definition of \"data broker\" must register with CalPrivacy annually between January 1-31 to report on its activities from the previous calendar year. The businesses in this registry operated as data brokers in 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Privacy Protection Agency (CalPrivacy)",
+     "title": "California Data Broker Registry — 2026 registration data (CSV, 'Download Registration Information')",
+     "date": "2026",
+     "url": "https://cppa.ca.gov/data_broker_registry/",
+     "quote": "Download Registration Information",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Count computed by this study: 603 rows, 603 distinct 'Data broker name:' entries. Registrations filed January 2026 for activity in 2025. Data file: https://cppa.ca.gov/data_broker_registry/registry.csv (linked from the registry page under the quoted label)."
+    },
+    {
+     "institution": "California Privacy Protection Agency (CalPrivacy)",
+     "title": "California Data Broker Registry",
+     "date": "2026",
+     "url": "https://cppa.ca.gov/data_broker_registry/",
+     "quote": "As of January 1, 2026, California residents may use DROP to submit one request to all active data brokers, including those on this registry, requesting the deletion of their personal information. Data brokers are required to begin processing these requests on August 1, 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "cms-gdpr-enforcement-tracker-total-2026",
+   "label": "Publicly known GDPR fines recorded by the CMS Enforcement Tracker",
+   "value": 6.11,
+   "unit": "EUR billion (cumulative, around)",
+   "year": 2026,
+   "geography": "EEA and UK (fines made public)",
+   "notes": "2,685 fines with known amount and date (3,062 including those with limited information), cut-off 1 March 2026; average fine EUR 2,277,122. Up EUR 487.6 million and 440 fines on the 2025 report.",
+   "sources": [
+    {
+     "institution": "CMS (law firm network) — GDPR Enforcement Tracker Report, 7th edition",
+     "title": "GDPR Enforcement Tracker Report: Numbers and Figures",
+     "date": "2026",
+     "url": "https://cms.law/en/int/publication/gdpr-enforcement-tracker-report/numbers-and-figures",
+     "quote": "In the 7th edition of the GDPR Enforcement Tracker Report, with a cut-off date of 1 March 2026, a total number of 2,685 fines (+440 in comparison to the GDPR Enforcement Tracker Report 2025) have been recorded in the CMS Enforcement Tracker database (3,062 if fines with limited information on amount or date are also counted) amounting to a sum of around EUR 6.11 billion (+487.6 million in comparison to the GDPR Enforcement Tracker Report 2025) .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "dla-piper-daily-breach-notifications-2025",
+   "label": "Personal data breach notifications to European regulators per day",
+   "value": 443,
+   "unit": "notifications per day (average)",
+   "year": 2025,
+   "geography": "EU-27 plus UK, Norway, Iceland and Liechtenstein",
+   "notes": "A 22% annual increase, and the first time since 2018 the daily average exceeded 400.",
+   "sources": [
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "Significantly, the analysis of data from Europe’s data protection supervisory bodies reveals a 22% annual increase in notified personal data breaches, amounting to an average of 443 notifications per day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pew-2025-us-adults-used-chatgpt",
+   "label": "U.S. adults who have ever used ChatGPT",
+   "value": 34,
+   "unit": "% of U.S. adults",
+   "year": 2025,
+   "geography": "United States (Pew American Trends Panel)",
+   "notes": "Roughly double the share in summer 2023. Survey of 5,123 adults, 24 Feb - 2 Mar 2025.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+     "date": "2025-06-25",
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "quote": "Today, 34% of U.S. adults say they have ever used ChatGPT, according to a Pew Research Center survey. That includes a 58% majority of adults under 30.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023",
+     "date": "2025-06-25",
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "quote": "For this analysis, we surveyed 5,123 U.S. adults from Feb. 24 to March 2, 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "nber-chatgpt-share-world-adults-2025",
+   "label": "Share of the world's adult population that had adopted ChatGPT by July 2025",
+   "value": 10,
+   "unit": "% of world adults (around)",
+   "year": 2025,
+   "geography": "World",
+   "notes": "From an analysis by OpenAI and academic co-authors of ChatGPT's consumer product, launch (November 2022) to July 2025. Company-affiliated research: the NBER page discloses that an author is an OpenAI employee. The paper classified conversations with an automated, privacy-preserving pipeline rather than human readers — itself an example of the data-use questions this study is about.",
+   "sources": [
+    {
+     "institution": "National Bureau of Economic Research (NBER Working Paper 34255)",
+     "title": "Aaron Chatterji, Thomas Cunningham, David J. Deming, Zoe Hitzig, Christopher Ong, Carl Yan Shan, Kevin Wadman, 'How People Use ChatGPT'",
+     "date": "2025",
+     "url": "https://www.nber.org/papers/w34255",
+     "quote": "We document the growth of ChatGPT’s consumer product from its launch in November 2022 through July 2025, when it had been adopted by around 10% of the world’s adult population.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "NBER Working Paper 34255 (2025), DOI 10.3386/w34255, as cited on the NBER page."
+    }
+   ]
+  },
+  {
+   "id": "ca-ag-sephora-gpc-penalty-2022",
+   "label": "Penalty in the California Attorney General's CCPA settlement with Sephora, which included ignoring Global Privacy Control opt-out signals",
+   "value": 1.2,
+   "unit": "million US dollars",
+   "year": 2022,
+   "geography": "California",
+   "notes": "Announced 24 August 2022. The Attorney General alleged Sephora did not disclose that it sold personal information, did not process opt-outs sent via user-enabled global privacy controls, and did not cure within 30 days. It made a browser-sent, machine-readable preference legally binding in practice — a direct precursor of person-proffered terms. The same day the AG sent notices to other businesses that failed to process such signals.",
+   "sources": [
+    {
+     "institution": "California Department of Justice, Office of the Attorney General",
+     "title": "Attorney General Bonta Announces Settlement with Sephora as Part of Ongoing Enforcement of California Consumer Privacy Act (press release)",
+     "date": "2022-08-24",
+     "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+     "quote": "Today's settlement requires Sephora to pay $1.2 million in penalties and comply with important injunctive terms.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Department of Justice, Office of the Attorney General",
+     "title": "Attorney General Bonta Announces Settlement with Sephora as Part of Ongoing Enforcement of California Consumer Privacy Act (press release)",
+     "date": "2022-08-24",
+     "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+     "quote": "Under the CCPA, businesses must treat opt-out requests made by user-enabled global privacy controls the same as requests made by users who have clicked the “Do Not Sell My Personal Information” link.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Global Privacy Control (GPC) project",
+     "title": "Global Privacy Control — home page",
+     "date": "2026",
+     "url": "https://globalprivacycontrol.org/",
+     "quote": "The GPC signal is intended to communicate a Do Not Sell or Share request under the California Consumer Privacy Act, and similar state privacy laws that allow users to opt out of data sales or the use of their data for cross-context targeted advertising.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "greenleaf-new-countries-per-year-since-2020",
+   "label": "Countries enacting their first data privacy law each year, average since 2020",
+   "value": 5.4,
+   "unit": "new countries per year",
+   "year": 2025,
+   "geography": "World",
+   "notes": "Against a long-run average of 3.3 new countries a year from Sweden's 1973 law to March 2025, when the total reached 172. The pace of new national laws has risen in the 2020s even as, in Greenleaf's 2025 assessment, revising existing laws has become more important than enacting new ones.",
+   "sources": [
+    {
+     "institution": "Privacy Laws & Business International Report (author preprint abstract on SSRN, read via Internet Archive snapshot)",
+     "title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972; (2025) 194 PLBIR)",
+     "date": "2025-03-23",
+     "url": "https://web.archive.org/web/20251122134859/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972",
+     "quote": "For the past 52 years, since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 countries with such laws by March 2025. Since 2020 the average number of new countries per year has risen to 5.4.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "SSRN (papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972) blocks scripted access (HTTP 403); abstract read from the Internet Archive capture of 22 Nov 2025. The 3-page paper itself (the year-by-year list) could not be retrieved."
+    },
+    {
+     "institution": "Privacy Laws & Business International Report no. 194, pp. 1, 3-9 (abstract on SSRN, read via Internet Archive)",
+     "title": "Graham Greenleaf, 'Global Data Privacy Laws 2025: 172 Countries, Twelve New in 2023/24'",
+     "date": "2025-04-02",
+     "url": "https://web.archive.org/web/20250807154128/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5275559",
+     "quote": "This is the first assessment to conclude that revisions to existing data privacy laws are now more important than enactment of new laws in countries without such laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "SSRN blocks scripted access (HTTP 403); abstract read from the Internet Archive capture of 7 Aug 2025."
+    }
+   ]
   }
  ],
- "myths": []
+ "myths": [
+  {
+   "id": "myth-people-dont-care-about-privacy",
+   "claim": "People don't really care about privacy — they happily trade their data for free services.",
+   "verdict": "MISLEADING",
+   "correction": "Behaviour and attitudes diverge, but not because people are indifferent. In Pew's 2019 survey 81% of Americans said the risks of company data collection outweigh the benefits; in 2023, 81% were concerned about how companies use their data and 72% wanted more regulation. What people report lacking is control and understanding (see the Pew series on control and understanding in this file), which makes 'agree' a resigned click rather than a considered trade.",
+   "sources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "quote": "Risks vs. rewards of data collection and profiling: 81% of Americans think the potential risks of data collection by companies about them outweigh the benefits, and 66% say the same about government data collection about them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/",
+     "quote": "Concern is high: 81% say they feel very or somewhat concerned with how companies use the data they collect about them. Fully 71% say the same regarding the government’s use of data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "quote": "Some 72% of Americans say there should be more regulation than there is now; just 7% say there should be less.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-data-protection-is-a-european-idea",
+   "claim": "Data protection law is a European invention that the rest of the world has not adopted.",
+   "verdict": "FALSE",
+   "correction": "Europe started it — Sweden passed the first national data privacy law in 1973 — but lost its majority a decade ago: by January 2015, 56 of 109 national data privacy laws were outside Europe, with Africa the fastest-growing region in the preceding 18 months, and by March 2025 Graham Greenleaf counted 172 countries with such laws.",
+   "sources": [
+    {
+     "institution": "Privacy Laws & Business International Report no. 133 (UNSW Law Research Paper 2015-21; abstract on SSRN, read via Internet Archive)",
+     "title": "Graham Greenleaf, 'Global Data Privacy Laws 2015: 109 Countries, with European Laws Now a Minority'",
+     "date": "2015-01-30",
+     "url": "https://web.archive.org/web/20250807213518/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2603529",
+     "quote": "For the first time, a majority of fifty-six data privacy laws are outside Europe, over 51% of the total. Because there is little room for increase within Europe, the majority of the world’s data privacy laws will now continue to be from outside Europe, and increasingly so. During this eighteen month period, the fastest ‘growth area’ has been Africa.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "i.e. 56 of the 109 laws counted in January 2015 were outside Europe."
+    },
+    {
+     "institution": "Privacy Laws & Business International Report (author preprint abstract on SSRN, read via Internet Archive snapshot)",
+     "title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972; (2025) 194 PLBIR)",
+     "date": "2025-03-23",
+     "url": "https://web.archive.org/web/20251122134859/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972",
+     "quote": "For the past 52 years, since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 countries with such laws by March 2025. Since 2020 the average number of new countries per year has risen to 5.4.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "SSRN (papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972) blocks scripted access (HTTP 403); abstract read from the Internet Archive capture of 22 Nov 2025. The 3-page paper itself (the year-by-year list) could not be retrieved."
+    }
+   ]
+  },
+  {
+   "id": "myth-us-has-no-privacy-law",
+   "claim": "The United States has no consumer privacy law.",
+   "verdict": "MISLEADING",
+   "correction": "There is still no comprehensive federal consumer privacy law, but by 8 September 2026, 23 states had signed comprehensive consumer privacy laws by the IAPP's count, starting with California in 2018. After a year with no new state law in 2025, four more followed in 2026 (Oklahoma, Alabama, Louisiana, Vermont).",
+   "sources": [
+    {
+     "institution": "IAPP (International Association of Privacy Professionals), Westin Research Center",
+     "title": "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
+     "date": "2026-09-08",
+     "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
+     "quote": "Tracker last updated 8 Sept. 2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PDF chart linked from https://iapp.org/resources/article/us-state-privacy-legislation-tracker. In the PDF text layer the names of the New Hampshire, New Jersey and Oklahoma laws are separated from their date lines, which read '(2024; effective 1 Jan. 2025)', '(2024; effective 15 Jan. 2025)' and '(2026; effective 1 Jan. 2027)'."
+    },
+    {
+     "institution": "WilmerHale Privacy and Cybersecurity Law Blog",
+     "title": "Oklahoma Enacts Nation’s Twentieth State Comprehensive Privacy Law",
+     "date": "2026-03-27",
+     "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20260327-oklahoma-enacts-nations-twentieth-state-comprehensive-privacy-law",
+     "quote": "SB 546 is the twentieth state comprehensive law to be enacted and will take effect on January 1, 2027. Notably, the Oklahoma law comes after a long hiatus for state comprehensive privacy laws, with last year marking the first year since 2020 in which no new state comprehensive privacy was enacted.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: the legislature passed SB 546 on 16 March 2026 and Governor Kevin Stitt signed it on 20 March 2026."
+    }
+   ]
+  },
+  {
+   "id": "myth-gdpr-created-cookie-banners",
+   "claim": "The GDPR created cookie banners.",
+   "verdict": "MISLEADING",
+   "correction": "Cookie consent predates the GDPR: a 2009 amendment (Directive 2009/136/EC) to the EU's ePrivacy Directive already required consent before storing information on a user's device, and 46.1% of the most popular websites in every EU member state showed a cookie notice in January 2018, months before the GDPR applied on 25 May 2018. The GDPR accelerated them, to 62.1% by the end of May 2018 — and most did not meet the law's own standard for consent.",
+   "sources": [
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "The GDPR’s most notable (and visible for users) effect we observed is the increase of cookie consent notiﬁcations, which rose from 46.1 % in January to 62.1 % in May.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quote contains the 'ﬁ' ligature as printed in the PDF text layer. DOI 10.14722/ndss.2019.23378."
+    },
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "Consent to the use of cookies. In an earlier harmonization effort, Directive 2009/136/EC had changed Article 5(3) of the ePrivacy Directive (2002/58/EC) to state that",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/abs/2001.02479",
+     "quote": "We scraped the designs of the five most popular CMPs on the top 10,000 websites in the UK (n=680). We found that dark patterns and implied consent are ubiquitous; only 11.8% meet the minimal requirements that we set based on European law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "arXiv:2001.02479 (January 2020); published at CHI 2020 (Honolulu)."
+    }
+   ]
+  },
+  {
+   "id": "myth-cookie-banners-give-real-choice",
+   "claim": "Clicking 'accept' on a consent pop-up is a free, informed choice.",
+   "verdict": "MISLEADING",
+   "correction": "When Nouwens and colleagues scraped the five most popular consent platforms on the top 10,000 UK sites in 2019, only 11.8% met three minimal requirements of EU law (explicit consent, reject as easy as accept, no pre-ticked boxes); half had no 'reject all' button, and removing the opt-out from the first page raised consent by 22-23 points in their experiment. Design, not preference, drives much of the 'yes'.",
+   "sources": [
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/abs/2001.02479",
+     "quote": "We scraped the designs of the five most popular CMPs on the top 10,000 websites in the UK (n=680). We found that dark patterns and implied consent are ubiquitous; only 11.8% meet the minimal requirements that we set based on European law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "arXiv:2001.02479 (January 2020); published at CHI 2020 (Honolulu)."
+    },
+    {
+     "institution": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM), Honolulu, 25-30 April 2020 — arXiv preprint",
+     "title": "Midas Nouwens, Ilaria Liccardi, Michael Veale, David Karger, Lalana Kagal, 'Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence'",
+     "date": "2020-01",
+     "url": "https://arxiv.org/pdf/2001.02479",
+     "quote": "50.1% of sites did not have a ‘reject all’ button. Only 12.6% of sites had a ‘reject all’ button accessible with the same or fewer number of clicks as an ‘accept all’ button.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-clearing-cookies-stops-tracking",
+   "claim": "If you clear your cookies, websites can no longer track you.",
+   "verdict": "MISLEADING",
+   "correction": "Tracking also works without stored identifiers. Englehardt and Narayanan's January 2016 crawl of the top million sites found canvas fingerprinting — which identifies a browser from how it draws hidden graphics — on 14,371 sites, 98.2% of it from third-party scripts.",
+   "sources": [
+    {
+     "institution": "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+     "title": "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016-10",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "We found canvas ﬁngerprinting on 14,371 (1.6%) sites. The vast majority (98.2%) are from third-party scripts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer."
+    }
+   ]
+  },
+  {
+   "id": "myth-gdpr-is-toothless",
+   "claim": "The GDPR is toothless: regulators never fine anyone.",
+   "verdict": "MISLEADING",
+   "correction": "Fines are real and large — about EUR 7.1 billion from 25 May 2018 to 10 January 2026 by DLA Piper's count, including a single EUR 1.2 billion fine on Meta in 2023 — but they are concentrated on a few big-tech firms and a few regulators (Ireland alone accounts for about EUR 4.04 billion), and totals differ by method (CMS counts about EUR 6.11 billion of publicly known fines to 1 March 2026). The fair criticism is uneven, slow enforcement, not absence of enforcement.",
+   "sources": [
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "The aggregate total fines reported since the application of GDPR on 25 May 2018 to 10 January 2026 across all the jurisdictions surveyed now stands at EUR7.1 billion (USD8.4 billion/GBP6.2 billion).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "Ireland once again leads the enforcement tables, with aggregate fines issued by the Irish Data Protection Commission now reaching EUR4.04 billion (USD4.77 billion/GBP3.56 billion) since the GDPR came into force in May 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "DLA Piper (international law firm)",
+     "title": "DLA Piper GDPR Fines and Data Breach Survey: January 2026",
+     "date": "2026-01-21",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026",
+     "quote": "Despite another active year, the largest fine ever imposed under the GDPR remains the EUR1.2 billion (USD1.42 billion/GBP1.06 billion) fine issued by the Irish Data Protection Commission against Meta Platforms Ireland Limited in 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "CMS (law firm network) — GDPR Enforcement Tracker Report, 7th edition",
+     "title": "GDPR Enforcement Tracker Report: Numbers and Figures",
+     "date": "2026",
+     "url": "https://cms.law/en/int/publication/gdpr-enforcement-tracker-report/numbers-and-figures",
+     "quote": "In the 7th edition of the GDPR Enforcement Tracker Report, with a cut-off date of 1 March 2026, a total number of 2,685 fines (+440 in comparison to the GDPR Enforcement Tracker Report 2025) have been recorded in the CMS Enforcement Tracker database (3,062 if fines with limited information on amount or date are also counted) amounting to a sum of around EUR 6.11 billion (+487.6 million in comparison to the GDPR Enforcement Tracker Report 2025) .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ]
 }

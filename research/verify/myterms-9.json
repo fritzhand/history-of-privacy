@@ -1,0 +1,303 @@
+{
+ "slice": "myterms",
+ "chunk": 9,
+ "verdicts": [
+  {
+   "kind": "aiAgents",
+   "id": "machine-readable-for-agents",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim on myterms.info/ieee7012-standards/ (re-fetched 2026-09-23, --check FOUND). The same wording is on /agreements/.",
+    "The claim says 'The machine-readable format' (singular). The source says 'a range of formats', and it is one of three related formats ('Each of our agreements are made available in three related formats'). The claim is reworded to match.",
+    "Framing: this is how MyTerms / Customer Commons publishes its roster agreements. It is not shown to be a requirement of IEEE 7012-2025. The IEEE SA abstract does name AI agents in scope, and that source is added for context. The site gives no specific serialisation (for example JSON-LD or ODRL), so no particular machine format should be claimed."
+   ],
+   "fieldFixes": {
+    "claim": "Each MyTerms agreement is published in three related formats: plain language, legal, and machine-readable. The machine-readable version is 'a range of formats' designed to let computers and agents access and interact with the agreements."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. The page's HTML <title> is 'IEEE 7012 (MyTerms) – Machine-Readable Privacy Terms' and its H1 is 'The Standard'. WP dateModified is 2026-02-14 and the footer reads © 2026 Customer Commons, so the record's title and date are acceptable. The quote is the second item under 'Each of our agreements are made available in three related formats:'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard.",
+     "note": "The IEEE SA abstract of the published standard, re-fetched live 2026-09-23 (HTTP 200); --check FOUND. It confirms that AI agents are within the standard's scope. The 'three formats' detail comes from the MyTerms roster site, not this abstract."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin (Doc Searls)",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "On the Creative Commons model, agreements are readable by ordinary folk, by lawyers, and by machines. MyTerms addresses the third of those.",
+     "note": "Searls (working group chair) writing the day after the 28 Jan 2026 launch. --check FOUND 2026-09-23. It supports the machine-readable emphasis."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "agents-private-instruments",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim (--check FOUND 2026-09-23), but it only supports the second half of the claim ('not instruments of outside surveillance'). The 'privately and exclusively for their own party' half comes from the sentence just before it. The quote is replaced with both sentences, verbatim.",
+    "The post carries no visible byline; WordPress author id 2 is the 'vrm' account. myterms.info/news lists it as 'A MyTerms Summary (Doc Searls, 8 Dec. 2025)'. The WP API confirms the date 2025-12-08T08:23:08. 'Proponents'' is a fair description.",
+    "This is an advocacy position, not normative text of IEEE 7012-2025. An independent, near-normative echo is added: the W3C DPV draft P7012 extension defines an Agent as working 'exclusively for its party'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "For maximized agency on both sides, AI agents must be private instruments of full sovereignty, meaning they work privately and exclusively for each party. They cannot be instruments of surveillance or control by outside actors of any kind.",
+     "note": "Re-fetched 2026-09-23; --check FOUND for the two-sentence quote. Author: Doc Searls, per the myterms.info/news listing ('A MyTerms Summary (Doc Searls, 8 Dec. 2025)'). Date confirmed via the WP REST API (2025-12-08)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "An Agent is any software or a combination of software and hardware that works exclusively for its party, and which may be provided by a third party but must be controlled and be responsible to the party it represents",
+     "note": "The definition of p7012:Agent in the DPVCG draft extension (term created 2024-12-17). --check FOUND 2026-09-23. It is a community-group vocabulary, not IEEE text, but it independently shows the 'exclusively for its party' condition. The same definition is in the v2.2 draft of 01 Aug 2025."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "pdc-ai-training",
+   "status": "OK",
+   "issues": [
+    "The quote is verbatim on myterms.info/ieee7012-standards/ (re-fetched 2026-09-23, --check FOUND). It is also on /agreements/. PDC-AI is one of the five agreements named for the launch (SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT).",
+    "Nuance, no fix needed: the source says the agreement 'indicates you are willing to provide access to' data, and puts it under Data Contribution Agreements for 'one-off contributions ... non-repeating data donations'. 'Contribute ... on their own terms' is a fair gloss. Framing: this is a MyTerms / Customer Commons roster agreement, not text of IEEE 7012-2025 itself."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. The quote appears under the 'PDC-AI' heading in the 'Data Contribution Agreements' section. The page is dated 2026 (dateModified 2026-02-14)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "aiAgents",
+   "id": "agentic-commerce-cookies",
+   "status": "OK",
+   "issues": [
+    "The quote is verbatim (--check FOUND 2026-09-23). The existing note is right that it is InfoQ's paraphrase of Smith, not Smith's own words. InfoQ datePublished is 2026-02-02T13:00, and the author is Sergio De Simone.",
+    "'At the launch': InfoQ places the remarks in its account of 'a recent event in London'. myterms.info/news and Doc Searls ('Now We Begin', 29 Jan 2026) date that launch to 28 January 2026 (Data Privacy Day), at Imperial College London. InfoQ does not say in so many words that Smith spoke at the event, but the paragraph sequence (Searls, Smith, Abbott of Yoti, Leninger of Consumer Reports) makes it a list of event speakers.",
+    "Smith's direct words, shown by InfoQ as a blockquote, are added as a source so a verbatim Smith quote is available."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. The preceding sentence reads: 'MyTerms is even more relevant in our age, Smith says, where AI agents increasingly automate internet activity on our behalf...'. Paraphrase, not a direct Smith quote."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "InfoQ (C4Media)",
+     "title": "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies (Sergio De Simone)",
+     "date": "2026-02-02",
+     "url": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "I really believe that as agents become the new customer channel, MyTerms is going to be a cornerstone of how we can trust those agents and how business are going to interact with them.",
+     "note": "Shown by InfoQ as a blockquote of Jamie Smith's words, directly after the paraphrase. --check FOUND 2026-09-23. The source's grammar ('how business are') is kept."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "News",
+     "date": "2026",
+     "url": "https://myterms.info/news/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "Re-watch our Launch on YouTube from January 28, 2026",
+     "note": "Dates the launch event. The same page says 'MyTerms Kicked Off to large online and in-person crowd at Imperial College London'. The linked YouTube video (youtu.be/Nphd8l7KLek) is titled 'MyTerms Announcement and Launch on Data Privacy Day Jan 28 2026' per YouTube oEmbed. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "no-ai-required",
+   "status": "OK",
+   "issues": [
+    "The quote is verbatim (--check FOUND 2026-09-23). It answers FAQ item 'Do I need an AI to use MyTerms?' in the 'For Individuals' section. The page title is 'MyTerms FAQs – Common Questions About the Privacy Standard | MyTerms' and dateModified is 2026-01-26. The claim is supported.",
+    "Added an independent corroboration from the working group chair: agents can be simple plugins or AIs, and 'The standard leaves these choices open.' The IEEE abstract also says agents 'shall engage using any protocol that serves the purpose'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. This is the answer to the question 'Do I need an AI to use MyTerms?'. Title and date fields are correct."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin (Doc Searls)",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "These agents can be as simple as browser and web server plugins, or as fancy as personal and corporate AIs. The standard leaves these choices open.",
+     "note": "Doc Searls (working group chair), 29 Jan 2026. --check FOUND 2026-09-23. It corroborates that AI is optional under IEEE 7012."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "dpv-person-agent",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim (--check FOUND 2026-09-23). The page header confirms 'version 2.1', 'Draft Community Group Report 16 March 2025', with editor H. J. Pandit and authors Esteves, Pandit and Henderson (JLINC Labs). But the quote only supports the shared-registry part of the claim. It never names PersonAgent or EntityAgent.",
+    "Added a verbatim sentence from the same page that names both agents. (The inline definition 'PersonAgent is a software or machine agent...' was not used: link markup makes the extracted text 'Person , and', so it cannot be confirmed verbatim with the tool.)",
+    "Context: a later draft, version 2.2 (Draft CG Report, 01 August 2025), exists at w3c-cg.github.io/dpv/2.2/standards/p7012/ and contains both sentences unchanged. The 'latest' w3id link currently resolves to a 404, so the versioned URL is the right one to cite. Both versions are drafts, as the claim says. The DPV example agreements are SD-BY / SD-BY-A / SD-BY-AT, not the MyTerms roster names."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. Title, date (16 March 2025) and institution are correct. The quote supports the AgreementRegistry part. The PersonAgent/EntityAgent part is supported by the added source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "To distinguish between agents acting on behalf of parties, a PersonAgent represents the Person and an EntityAgent represents the Entity organisation.",
+     "note": "Same page, section on agents. --check FOUND 2026-09-23. The raw HTML has the same text (terms are hyperlinked). It supports the PersonAgent/EntityAgent part of the claim."
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "Therefore, any offer or counter-offer made is always for an agreement hosted in the AgreementRegistry",
+     "note": "Same page. --check FOUND 2026-09-23. It supports 'exchange agreements from a shared registry'."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "p7012-par-to-publication-years",
+   "status": "FIXED",
+   "issues": [
+    "The arithmetic is right: 6 Dec 2017 to 20 Jan 2026 is 2,967 days, or 8.12 years, so 8.1 years. Both dates are on the IEEE SA page. It was re-fetched live 2026-09-23 (HTTP 200 with a browser UA) and shows 'PAR Approval 2017-12-06', 'Board Approval 2025-11-04' and 'Published: 2026-01-20'. The page also confirms MRPT-WG, chair Doc Searls and program manager Malia Zaman.",
+    "Source 1's quote is only the field label '4.3 Projected Completion Date for Submittal to RevCom' and does not contain the 02/2020 value the notes rely on. In the PDF text the value follows a note line. The quote is replaced with a verbatim string that includes '02/2020'.",
+    "Added independent corroboration: InfoQ says development 'took approximately eight years' from the December 2017 PAR, and the MyTerms FAQ gives the publication date as 20 January 2026."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 (HTTP 200); the page HTML contains PAR Approval 2017-12-06 and Published 2026-01-20. --check FOUND for the composite string, whose parts are adjacent field labels and values on the page. Status Active Standard; SSIT/SC; MRPT-WG; chair Doc Searls; PM Malia Zaman."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Note: Usual minimum time between initial sponsor ballot and submission to Revcom is 6 months.: 02/2020",
+     "note": "Live re-fetch 2026-09-23 (HTTP 200 application/pdf, byte-identical to the cached copy); --check FOUND. This line directly follows '4.3 Projected Completion Date for Submittal to RevCom' and carries the 02/2020 value. The form also shows 'PAR Approval Date: 06-Dec-2017' and 'PAR Expiration Date: 31-Dec-2021', so the PAR must have been extended before the 2025 approval. The attachment modificationDate 1548607614535 is 2019-01-27 UTC, which matches 'uploaded January 2019'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "InfoQ (C4Media)",
+     "title": "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies (Sergio De Simone)",
+     "date": "2026-02-02",
+     "url": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "The development of the standard took approximately eight years, from the proposal and approval of its Project Authorization Request (PAR) in December 2017.",
+     "note": "Independent press corroboration of the ~8-year span. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "The publication date for MyTerms (IEEE 7012) is 20 January 2026.",
+     "note": "Corroborates the end date. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "p7012-par-expected-participants-2017",
+   "status": "OK",
+   "issues": [
+    "The quote is verbatim in the PAR PDF (live re-fetch 2026-09-23, HTTP 200, byte-identical to the cache; --check FOUND). The form is the P7012 PAR with 'PAR Approval Date: 06-Dec-2017' and chair David Reed, so the year and title are right. The notes correctly call it an estimate, not a head-count.",
+    "Could not find a second copy of the PAR at IEEE: the IEEE SA development portal needs a login, and web search was unavailable (budget exhausted). The HL7 copy is the IEEE form itself (submitter johnchavens@gmail.com), so the source stands."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch 2026-09-23 with a browser UA (without a UA the host returns 405); --check FOUND. Field 5.1 reads ': 20'. The PAR also lists the WG as SSIT/SC/MachReadPrivacy and the sponsor as SSIT/SC."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "myterms-launch-agreements-2026",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim (--check FOUND 2026-09-23), but it is future tense ('There will be 5 agreements when we launch MyTerms'). The FAQ page was last modified 2026-01-26, before the 28 Jan 2026 launch event. As late as their 2026 modifications, /ieee7012-standards/ (2026-02-14) and /agreements/ still say 'MyTerms will launch with 5 standardised agreements'. The home page frames the five as a pre-'full market launch' feedback set. So 5 is the announced launch roster. No source shows the five agreement texts actually published: myterms.info links to none, and customercommons.org is behind a captcha. The label should say this.",
+    "The notes' agreement names and 'up to six months' detail were not in the cited quote. A same-site source that states them is added.",
+    "The FAQ also says '8 more in the pipeline', which is worth keeping in the notes."
+   ],
+   "fieldFixes": {
+    "label": "Standard agreements announced for MyTerms' initial launch (market-feedback phase)",
+    "notes": "Announced roster: SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT, with '8 more in the pipeline'. MyTerms says it will run these for up to six months for market feedback, then update them before a 'full market launch'. The launch event was held 28 January 2026 in London. As of their last 2026 updates, the myterms.info pages still describe the five in the future tense, and none of them links to published agreement texts."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. It answers FAQ 13, 'How many agreements are there; of what types?'. The page's dateModified is 2026-01-26, before the 28 Jan 2026 launch event. Future tense."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "accessType": "FREE",
+     "verificationStatus": "CONFIRMED",
+     "quote": "MyTerms will launch with 5 standardized personal privacy agreements and run in that mode for up to 6 months in order to gain market feedback. We will then update those agreements in advance of a full market launch.",
+     "note": "Supports the notes' 'up to six months' feedback phase. The same page names the five: SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT. dateModified is 2026-02-14. --check FOUND 2026-09-23."
+    }
+   ]
+  }
+ ]
+}

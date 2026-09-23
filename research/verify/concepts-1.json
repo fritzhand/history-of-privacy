@@ -1,0 +1,203 @@
+{
+ "slice": "concepts",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "concept",
+   "id": "confidentiality-hippocratic-oath-c400bce",
+   "status": "FIXED",
+   "issues": [
+    "The 'originator' field states an authorship claim as fact: 'Hippocratic school of Kos'. Modern scholars do not attribute the Oath to Hippocrates. Proposed dates range from the 5th to the 3rd century BCE, and one line of argument (Edelstein) gives it a Pythagorean origin. The NLM page only says the Oath 'may have marked' a move to train people outside 'the Asclepiads of Kos'. The locationNote already hedges ('authorship and exact date are unknown'), so the originator should hedge too.",
+    "The note on source[0] gives the date as 'late 5th or 4th century BCE'. That range is too narrow: estimates run from the 5th to the 3rd century BCE, including a Hellenistic dating. 'c. 400 BCE' is still an acceptable conventional displayDate."
+   ],
+   "fieldFixes": {
+    "originator": "The Hippocratic Oath (author unknown; traditionally attributed to Hippocrates and the medical school of Kos)"
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: quote FOUND verbatim in the 'Translation of the Hippocratic Oath' section of NLM's Greek Medicine page. The page says its content 'is drawn from a display held in the History of Medicine Division of the National Library of Medicine, March 6 through June 15, 2008' and that 'The display was curated by Michael North'. Dating: the Greek text is placed anywhere from the 5th to the 3rd century BCE, so 'c. 400 BCE' is a conventional approximation. Independent check: Wikipedia's 'Hippocratic Oath' article gives 'between the fifth and third centuries BC'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim on the same NLM page (Hippocrates section). It supports the link to Cos only as the place of the Hippocratic medical school, not as proof of who wrote the Oath."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "concept",
+   "id": "home-as-castle-semaynes-case-1604",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: quote FOUND verbatim. It opens the passage quoted from Coke's report, which continues '...domus sua cuique est tutissimum refugium'. Caveat: OLL's own framing calls Coke 'The English judge' who 'declared in a ruling'. In 1604 Coke was Attorney General and reported the case; the judges were Popham CJ, Gawdy, Fenner, Yelverton and Williams JJ, per Wikipedia's 'Semayne's case', which gives Michaelmas Term 1604 and 5 Co Rep 91a, 77 ER 194. The record's originator ('reporting Semayne's Case') is correct, so it should not copy OLL's 'judge' framing."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim in OLL's editorial 'Thoughts' paragraph, which is a gloss rather than Coke's text. The same gloss says the ruling allowed sheriffs to break in for the King's process only after following strict procedures such as requesting entry first. That supports the plainSummary's 'limits when even the King's sheriff may break into a house'."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "concept",
+   "id": "right-to-be-let-alone-warren-brandeis-1890",
+   "status": "FIXED",
+   "issues": [
+    "The 'place' field is anachronistic. It locates the 1890 article at 'Harvard Law Review, Gannett House'. The Review moved into Gannett House only in the 1920s; before that it was in the Law School's Austin Hall (Wikipedia 'Harvard Law Review', checked FOUND: 'has been home to the Harvard Law Review since the 1920s. Before moving into Gannett House, the journal resided in the Law School's Austin Hall'). The article itself is signed 'Boston, December, 1890.'",
+    "The originator credits Cooley with the phrase in 1879, but none of the record's sources supports that year. Warren and Brandeis cite the 2nd edition ('Cooley on Torts, 2d ed., p. 29.'). A source is added: the 2nd-edition text, whose preface to the first edition is dated December 1878. The HathiTrust catalogue API also gives publishDate 1879 for the first edition (Record 010461084). The 1879 page itself could not be read because HathiTrust full-text search returns HTTP 403."
+   ],
+   "fieldFixes": {
+    "place": "Harvard Law Review (then housed in Austin Hall, Harvard Law School), Cambridge, Massachusetts",
+    "lat": 42.3771,
+    "lng": -71.1188,
+    "locationNote": "Publisher's location: in 1890 the Harvard Law Review worked from Austin Hall (it moved to Gannett House only in the 1920s). The article is signed 'Boston, December, 1890', where Warren and Brandeis practised law together."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: quote FOUND verbatim on the Louisville page. The page header reads 'Originally published in 4 Harvard Law Review 193 (1890)'. The issue date of 15 December 1890 is independently confirmed by Wikipedia's 'The Right to Privacy (article)': '4 Harvard L.R. 193 (Dec. 15, 1890)'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim. Footnote 10 on the page reads 'Cooley on Torts , 2d ed., p. 29.' The article ends 'Boston, December, 1890.'"},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim. The same page also has 'but that of an inviolate personality', which supports the plainSummary's 'inviolate personality'."}
+   ],
+   "addSources": [
+    {
+     "institution": "Callaghan & Company, Chicago (digitised by the North Dakota Constitution project, ndconst.org)",
+     "title": "Thomas M. Cooley, A Treatise on the Law of Torts, or the Wrongs Which Arise Independent of Contract, 2nd edition",
+     "date": "1888",
+     "url": "https://www.ndconst.org/_media/laws/1888_cooley_torts_2d.pdf",
+     "quote": "The right to one's person may be said to be a right of complete immunity : to be let alone.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The quote is from p. 29, 'Personal Immunity', the edition and page Warren and Brandeis cite in their footnote 10; the OCR layer puts a space before the colon. The same PDF reprints the 'PREFACE TO THE FIRST EDITION', signed 'UNIVERSITY OF MICHIGAN, ANN ARBOR, December, 1878.' The HathiTrust catalogue API gives publishDate 1879 for the first edition (Record 010461084). The first-edition page itself was not read, so the phrase is quoted from the 1888 edition."
+    }
+   ]
+  },
+  {
+   "kind": "concept",
+   "id": "control-over-information-westin-1967",
+   "status": "FIXED",
+   "issues": [
+    "The plainSummary overstates Westin's role: 'the definition that underpins \"notice and choice\" and the Fair Information Practices'. None of the record's sources says this. The Fair Information Practices came from the 1973 HEW advisory committee report. The IAPP obituary makes a narrower claim: Westin's 1972 'Data Banks in a Free Society' 'presaged an ethos very similar to the Fair Information Practice Principles', and he 'consulted Sen. Sam Ervin, Jr., in drafting the Federal Privacy Act of 1974'. The summary is reworded to fit what the sources say, and those IAPP sentences are added as sources.",
+    "Source[1] (the W&L Law Review book note, read through the Internet Archive) could not be re-fetched. Every attempt to reach web.archive.org failed with a connection reset (proxy 'ws_closed_mid_exchange'), and the direct scholarlycommons.law.wlu.edu URL returns an HTTP 403 Cloudflare challenge. It is set to PENDING. The 1967 New York publication is independently supported by Margulis's bibliography ('Westin, A. (1967). Privacy and freedom. New York: Athenaeum.') and by Open Library, which lists the work with first_publish_year 1967, publisher Atheneum and LCCN 67014335."
+   ],
+   "fieldFixes": {
+    "plainSummary": "Westin moves privacy from the house to the data: it is a person's claim to decide who learns what about them, and when. This 'control' view runs through later 'notice and choice' rules; Westin himself advised on the US Privacy Act of 1974, and his 1972 Databanks study anticipated the Fair Information Practice Principles."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the HSE-hosted PDF with a fresh cache: quote FOUND verbatim. Margulis introduces it as 'According to Westin (1967, p. 7):' under the heading 'Westin's Influence'. The header reads 'Journal of Social Issues, Vol. 59, No. 2, 2003, pp. 411--429'. The bibliography entry is 'Westin, A. (1967). Privacy and freedom. New York: Athenaeum.'"},
+    {"index": 1, "verificationStatus": "PENDING", "note": "Not re-verified. The Internet Archive snapshot URL failed on more than 10 attempts with 'Connection reset by peer' (agent proxy reported ws_closed_mid_exchange for web.archive.org), and the live W&L repository URL returns HTTP 403 (Cloudflare 'Just a moment...'). This looks like a network failure, not evidence that the page is wrong. The claim it supports (Atheneum, New York, 1967) is covered by source[0]'s bibliography and by Open Library."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim. The article is by Jedidiah Bracy and reports Westin's death on 18 February 2013. The page also says he was professor emeritus of public law and government at Columbia 'for more than 37 years', which supports the Columbia placement."}
+   ],
+   "addSources": [
+    {
+     "institution": "International Association of Privacy Professionals (IAPP)",
+     "title": "Westin’s Privacy Scholarship, Research Influenced a Generation",
+     "date": "2013-02-19",
+     "url": "https://iapp.org/news/a/2013-02-19-westins-privacy-scholarship-research-influenced-a-generation",
+     "quote": "Noting that increased computerization was not necessarily leading to surveillance fears held by many at the time, and that these new methods of record keeping improved work efficiency, the work presaged an ethos very similar to the Fair Information Practice Principles.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. 'The work' is Data Banks in a Free Society (1972, with Michael Baker)."
+    },
+    {
+     "institution": "International Association of Privacy Professionals (IAPP)",
+     "title": "Westin’s Privacy Scholarship, Research Influenced a Generation",
+     "date": "2013-02-19",
+     "url": "https://iapp.org/news/a/2013-02-19-westins-privacy-scholarship-research-influenced-a-generation",
+     "quote": "During that time, Westin consulted Sen. Sam Ervin, Jr., in drafting the Federal Privacy Act of 1974.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "concept",
+   "id": "informational-self-determination-bverfg-1983",
+   "status": "FIXED",
+   "issues": [
+    "The originator field credits the concept wholly to the Bundesverfassungsgericht. The court made informational self-determination a constitutional right in 1983, but it did not coin the idea or the term. The 'informationelle Selbstbestimmungsrecht' appears in the July 1971 expert report 'Grundfragen des Datenschutzes' by Wilhelm Steinmüller, Bernd Lutterbeck, Christoph Mallmann and others for the Federal Interior Ministry. That report was printed as Anlage 1 to Bundestag Drucksache VI/3826 (7 September 1972). German Wikipedia ('Informationelle Selbstbestimmung') also says the term goes back to this 1971 report. A primary source is added."
+   ],
+   "fieldFixes": {
+    "originator": "Bundesverfassungsgericht, First Senate (Census Act judgment, BVerfGE 65, 1), which made it a constitutional right; the term 'informationelles Selbstbestimmungsrecht' goes back to Wilhelm Steinmüller and colleagues' 1971 expert report for the Federal Interior Ministry"
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: quote FOUND verbatim as the second sentence of Headnote 1 in the court's official English translation ('Judgment of 15 December 1983', 1 BvR 209, 269, 362, 420, 440, 484/83). Headnote 6 says § 9(1) to (3) of the 1983 Census Act 'violate the general right of personality', which supports 'strikes down parts of the 1983 census law'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim on the same official translation page."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim as Headnote 1 on DFR (servat.unibe.ch). The operative part (Entscheidungsformel no. 2) confirms that '§ 9 Absatz 1 bis 3 des Volkszählungsgesetzes 1983 ist mit Artikel 2 Absatz 1 in Verbindung mit Artikel 1 Absatz 1 des Grundgesetzes unvereinbar und nichtig', and gives the oral hearing as 18 and 19 October 1983. The translation in the note is accurate."}
+   ],
+   "addSources": [
+    {
+     "institution": "Deutscher Bundestag, Drucksache VI/3826, Anlage 1 (expert report for the Federal Ministry of the Interior)",
+     "title": "W. Steinmüller, B. Lutterbeck, C. Mallmann, U. Harbort, G. Kolb, J. Schneider, 'Grundfragen des Datenschutzes'",
+     "date": "1971-07",
+     "url": "https://dserver.bundestag.de/btd/06/038/0603826.pdf",
+     "quote": "Prüfungsmaßstab, an dem öffentliche Informationsverarbeitung zu messen ist, so ergab sich oben 2., ist das informationelle Selbstbestimmungsrecht über das eigene Person- bzw. Gruppenbild",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Translation: 'The standard against which public information processing is to be measured, as shown in 2. above, is the right of informational self-determination over one's own image as a person or group.' The Drucksache is the Interior Minister's answer of 7 September 1972. Its cover text says Steinmüller (Regensburg) was commissioned in December 1970 and that 'Das sehr umfangreiche Gutachten liegt seit Juli 1971 vor' (--check FOUND). The title page of Anlage 1 is dated 'Juli 1971'; its OCR reads 'C. Malimann' for Christoph Mallmann."
+    }
+   ]
+  },
+  {
+   "kind": "concept",
+   "id": "decisional-privacy-griswold-1965",
+   "status": "FIXED",
+   "issues": [
+    "The plainSummary misstates what the law covered. It says the Court struck down 'Connecticut's ban on contraceptive use by married couples', but the statute was not limited to married couples: 'A Connecticut statute makes it a crime for any person to use any drug or article to prevent conception' (syllabus). The Court held it unconstitutional as applied to married couples, grounding the holding in 'the right of marital privacy'. The appellants were convicted as accessories for advising married persons."
+   ],
+   "fieldFixes": {
+    "plainSummary": "Privacy as freedom to make intimate decisions without the state: the Court strikes down Connecticut's ban on the use of contraceptives as applied to married couples, finding a 'zone of privacy' created by several guarantees in the Bill of Rights."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the LOC U.S. Reports PDF with a fresh cache: quote FOUND verbatim in the Opinion of the Court ('MR. JUSTICE DOUGLAS delivered the opinion of the Court')."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim. The syllabus header confirms 'No. 496. Argued March 29-30, 1965.-Decided June 7, 1965.', which matches the displayDate."}
+   ],
+   "addSources": [
+    {
+     "institution": "Supreme Court of the United States — United States Reports vol. 381 (Library of Congress digital collection)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965) — syllabus",
+     "date": "1965-06-07",
+     "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep381/usrep381479/usrep381479.pdf",
+     "quote": "The Connecticut statute forbidding use of contraceptives violates the right of marital privacy which is within the penumbra of specific guarantees of the Bill of Rights.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the Reporter's syllabus, not the opinion itself. The same syllabus states 'A Connecticut statute makes it a crime for any person to use any drug or article to prevent conception.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "concept",
+   "id": "contextual-integrity-nissenbaum-2004",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the Stanford PORTIA PDF with a fresh cache: quote FOUND verbatim in the abstract. The header reads 'REVNISSENBAUMDTP31.DOC FORTHCOMING: WASHINGTON LAW REVIEW, 2004' and '2/6/04 9:25 AM', with 'Copyright © 2004 by Washington Law Review Association'. The author footnote gives 'Associate Professor, Department of Culture & Communication, New York University', which supports the locationNote. The published citation, 79 Wash. L. Rev. 119 (2004), is standard; it was not read on the publisher's site."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "concept",
+   "id": "taxonomy-of-privacy-solove-2006",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the Yale-hosted PDF with a fresh cache: quote FOUND verbatim. The first page reads 'University of Pennsylvania Law Review ... VOL. 154 JANUARY 2006 NO. 3', and the page number '(477)' appears, which confirms 154 U. Pa. L. Rev. 477 and the 'January 2006' displayDate. The author note ('Associate Professor, George Washington University Law School') supports the locationNote. The table of contents includes 'Exclusion', and the text discusses 'aggregation', which supports the plainSummary's examples."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim; these are the article's opening sentences."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "concept",
+   "id": "person-as-first-party-vrm-2006",
+   "status": "FIXED",
+   "issues": [
+    "Source[1] points to an Internet Archive snapshot that could not be re-fetched: every attempt was reset by the proxy. The live post at projectvrm.org is now readable by script, contrary to the note's 'projectvrm.org blocks scripted access', and the quote is FOUND there verbatim. The URL is switched to the live page and the note corrected. The quoted sentence is Searls's own lead-in to the post, not text from the PAR. The PAR scope text is quoted further down the same post.",
+    "The displayDate '2006 (ProjectVRM) – 2026 (IEEE 7012)' can confuse readers, because the standard is designated 7012-2025. Per the verified myterms slice, the IEEE SA Standards Board approved it on 4 November 2025 and IEEE Xplore published it on 20 January 2026. The fix makes clear that 2026 is the publication date."
+   ],
+   "fieldFixes": {
+    "displayDate": "2006 (ProjectVRM) – 2026 (IEEE 7012-2025 published)"
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: quote FOUND verbatim under 'VRM Principles' on the ProjectVRM wiki Main Page, which is the current (2026) wiki text. The record does not claim this wording dates from 2006. The founding year is independently supported by Wikipedia's 'Vendor relationship management': Mike Vizard first used the term 'on September 1, 2006, in a conversation with Doc Searls about the project Searls had recently started as a fellow at the Berkman Center'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "url": "https://projectvrm.org/2025/04/06/myterms/", "institution": "ProjectVRM (projectvrm.org)", "note": "The archive snapshot (web.archive.org/web/20251228093954id_/...) failed on every attempt with 'Connection reset by peer'. The live page fetched fine and the quote was FOUND verbatim. The page is titled 'The MyTerms PAR', by Doc Searls (rel=author), dated April 6, 2025. The quoted sentence is Searls's own framing at the top of the post; the post then quotes the P7012 PAR scope ('It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms...')."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim, including the stray space before the comma after 'Doc Searls'. The Main Page confirms 'The blog was hosted at Harvard from 2007 to 2023'. The locationNote's Ostrom Workshop claim is independently supported by Wikipedia's 'Doc Searls': 'Searls and his wife Joyce live in Bloomington, Indiana, where both are visiting scholars at the Ostrom Workshop at Indiana University'."}
+   ],
+   "addSources": []
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "slice": "personas-researchers",
- "notes": "IN PROGRESS",
+ "notes": "Scope: researchers, identity-system designers and privacy thinkers whose largely online work shaped the privacy debate on the line that leads to person-held terms — re-identification (Sweeney; Narayanan & Shmatikov), machine-readable notice and the cost of consent (Cranor; McDonald), browser-sent preferences (Soghoian's Do Not Track), design-side and contextual theories (Cavoukian; Nissenbaum; boyd; Zuboff), and the user-centric identity / VRM line (Cameron; Kaliya Young; Searls; Christopher Allen; Berners-Lee's Solid). 15 people, 13 events, 6 myths, 12 openly licensed portraits. Method: one person at a time; every quote was copied from text printed by tools/fetch-text.py and re-checked with --check at the end (114 source objects, all CONFIRMED). Five quotes from Christopher Soghoian's Blogger site and dubfire.net return NOT-FOUND from fetch-text.py only because its paragraph extractor skips div/<br> text; they were verified against the same fetched HTML's full get_text() and each source note says so. Some PDFs' text layers use 'fi'/'ff' ligatures, which are kept in the quotes so they match. Portrait licences were read from the Commons API extmetadata (and file wikitext where the metadata conflicted); thumbnails are saved as JPEG q82 in assets/media. Corrections to the brief: (1) the first Internet Identity Workshop (26–27 Oct 2005) met in Berkeley (Hillside Club), not Mountain View — IIW moved to the Computer History Museum later (see myth); (2) McDonald & Cranor's published paper gives a point estimate of 244 hours a year to read policies (Table 7) while its conclusion says 'approximately 201 hours' — both are recorded; (3) the Privacy by Design resolution (Jerusalem, 27–29 Oct 2010) is NOT written as an event here because global.json already has it as jerusalem-resolution-privacy-by-design-2010; it is cited in Cavoukian's card. Overlaps for the editorial layer to resolve: latanya-sweeney also appears in personas-code.json and doc-searls in personas-advocates.json; myterms.json has projectvrm-launched-berkman-2006 (duplicate of searls-projectvrm-launched-berkman-2006) and P3P / Do Not Track as lineage items (this file has them as events w3c-p3p-recommendation-2002 and soghoian-stamm-do-not-track-header-prototype-2009). Could not read by script: doc.searls.com, projectvrm.org and blogs.harvard.edu/vrm (403), identitywoman.net (captcha), medium.com, several w3.org pages (403 intermittently), web.archive.org (connection resets for most of the session), IPC Ontario's own Privacy by Design PDF (a Simon Fraser University copy was used), The Baffler and OneZero (critiques of Zuboff by Morozov and Doctorow — mentioned only in a note, not cited). Known gaps: no openly licensed portraits found on Commons for Vitaly Shmatikov, Aleecia McDonald or Christopher Allen; Kim Cameron's portrait is a group photo (with Drummond Reed and Esther Dyson); Kaliya Young's is a wide workshop shot. Cynthia Dwork (differential privacy) and Ashkan Soltani are covered in other persona slices and were not duplicated. The first use of 'VRM' (reportedly a Gillmor Gang podcast, 1 Sept 2006) and the ProjectVRM launch month were not verified — the event is dated 2006 only.",
  "people": [
   {
    "id": "latanya-sweeney",
@@ -73,6 +73,917 @@
     }
    ],
    "portrait": "latanya-sweeney-knight-news-challenge-2017"
+  },
+  {
+   "id": "arvind-narayanan",
+   "name": "Arvind Narayanan",
+   "handle": "@random_walker (Twitter/X); @randomwalker@mastodon.social; blog '33 Bits of Entropy'",
+   "roles": "computer scientist · de-anonymisation and web-tracking researcher",
+   "years": "2006–present",
+   "place": "Austin, Texas (University of Texas, Netflix work); Princeton, New Jersey (Center for Information Technology Policy)",
+   "lat": 40.3502,
+   "lng": -74.6526,
+   "keyWork": {
+    "title": "Robust De-anonymization of Large Sparse Datasets (with Vitaly Shmatikov), IEEE Symposium on Security and Privacy",
+    "year": 2008,
+    "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf"
+   },
+   "contribution": "With Vitaly Shmatikov at the University of Texas, Narayanan showed that the 'anonymous' Netflix Prize movie ratings could be matched to named people using a few ratings they had posted publicly on IMDb. His '33 Bits of Entropy' blog, started in 2008, carried the argument to a lay audience. At Princeton he later led the Web Transparency and Accountability Project, whose open-source crawler OpenWPM measured tracking across the top one million websites in 2016.",
+   "quote": "The title refers to the fact that there are only 6.6 billion people in the world, so you only need 33 bits (more precisely, 32.6 bits) of information about a person to determine who they are.",
+   "quoteSource": {
+    "institution": "33 Bits of Entropy (Arvind Narayanan's blog), via Internet Archive Wayback Machine",
+    "title": "About 33 Bits",
+    "date": "2008",
+    "url": "https://web.archive.org/web/2025/https://33bits.wordpress.com/about/",
+    "quote": "The title refers to the fact that there are only 6.6 billion people in the world, so you only need 33 bits (more precisely, 32.6 bits) of information about a person to determine who they are.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "The live wordpress.com page returns 403 to scripts; the archived copy was read. Earliest comments on the page are dated September 2008."
+   },
+   "influence": "The Netflix result was cited by the U.S. Federal Trade Commission when it questioned Netflix's plan for a second contest; Netflix suspended the second prize, and FTC staff urged companies to be cautious about calling data 'anonymous'.",
+   "thread": "His measurement work treats tracking as something outsiders can observe and count; Englehardt and Narayanan note that such measurement 'has repeatedly forced companies to improve their privacy practices'.",
+   "sources": [
+    {
+     "institution": "U.S. Federal Trade Commission, Division of Privacy and Identity Protection",
+     "title": "Closing letter to Reed Freeman (Morrison & Foerster), counsel for Netflix, Inc.",
+     "date": "2010-03-12",
+     "url": "https://www.ftc.gov/sites/default/files/documents/closing_letters/netflix-inc./100312netflixletter.pdf",
+     "quote": "the company sent a letter to staff stating that it intended to suspend plans for Prize 2.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scanned letter (OCR). Same letter names 'two researchers at the University of Texas, Arvind Narayanan and Vitaly Shmatikov' and says staff 'encourages companies to be cautious when releasing data presumed to be \"anonymous\" or \"not personally identifiable\"'."
+    },
+    {
+     "institution": "Princeton University (Arvind Narayanan's faculty homepage)",
+     "title": "Arvind Narayanan — Princeton",
+     "date": "2026",
+     "url": "https://www.cs.princeton.edu/~arvindn/",
+     "quote": "I led Princeton's Web Transparency and Accountability Project . Through large-scale, automated web measurement, we uncovered how companies collect and use our personal information. Our open-source tool OpenWPM has enabled over 100 studies of web privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page gives his titles as professor of computer science and director of the Center for Information Technology Policy; it links to twitter.com/random_walker and mastodon.social/@randomwalker."
+    },
+    {
+     "institution": "Princeton University — extended version of paper at ACM CCS 2016",
+     "title": "S. Englehardt and A. Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+     "date": "2016",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+     "quote": "We present the largest and most detailed measurement of online tracking conducted to date, based on a crawl of the top 1 million websites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Introduction: web privacy measurement 'has repeatedly forced companies to improve their privacy practices due to public pressure, press coverage, and regulatory action'."
+    }
+   ],
+   "portrait": "arvind-narayanan-stanford-2010"
+  },
+  {
+   "id": "vitaly-shmatikov",
+   "name": "Vitaly Shmatikov",
+   "handle": "",
+   "roles": "computer scientist · security and privacy researcher",
+   "years": "2006–present",
+   "place": "Austin, Texas (University of Texas); New York City (Cornell Tech)",
+   "lat": 40.7555,
+   "lng": -73.956,
+   "keyWork": {
+    "title": "Robust De-anonymization of Large Sparse Datasets (with Arvind Narayanan), IEEE Symposium on Security and Privacy",
+    "year": 2008,
+    "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf"
+   },
+   "contribution": "At the University of Texas, Shmatikov co-authored the Netflix Prize de-anonymisation with Arvind Narayanan and, with him, a 2010 Communications of the ACM essay arguing that 'personally identifiable information' is a poor basis for privacy protection because any distinguishing detail can re-identify someone. In 2016-17 he co-authored a membership-inference attack on machine-learning models, showing that a model's outputs can reveal whether a given record was in its training data. He is a professor at Cornell Tech.",
+   "quote": "any information that distinguishes one person from another can be used for re-identifying data.",
+   "quoteSource": {
+    "institution": "Communications of the ACM 53(6), June 2010 (author's copy, Cornell)",
+    "title": "A. Narayanan and V. Shmatikov, 'Myths and Fallacies of \"Personally Identifiable Information\"'",
+    "date": "2010-06",
+    "url": "https://www.cs.cornell.edu/~shmat/shmat_cacm10.pdf",
+    "quote": "any information that distinguishes one person from another can be used for re-identifying data.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Co-authored with Arvind Narayanan; the sentence is the article's pull-quote. DOI 10.1145/1743546.1743558."
+   },
+   "influence": "The CACM essay closes by arguing that privacy-preserving computation needs 'informed consent and contracts specifying acceptable uses of data' as well as technical protection — an early statement from security researchers that technique alone would not do.",
+   "thread": "The membership-inference work carried the de-anonymisation argument into machine learning: data a person contributed can leak back out of the model trained on it.",
+   "sources": [
+    {
+     "institution": "Communications of the ACM 53(6), June 2010 (author's copy, Cornell)",
+     "title": "A. Narayanan and V. Shmatikov, 'Myths and Fallacies of \"Personally Identifiable Information\"'",
+     "date": "2010-06",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_cacm10.pdf",
+     "quote": "any system for privacy-preserving computation on sensitive data must be accompanied by strong access control mechanisms and non-technological protection methods such as informed consent and contracts specifying acceptable uses of data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "arXiv (Cornell University); published in Proceedings of the IEEE Symposium on Security and Privacy 2017",
+     "title": "R. Shokri, M. Stronati, C. Song and V. Shmatikov, 'Membership Inference Attacks against Machine Learning Models' (arXiv:1610.05820)",
+     "date": "2016-10-18",
+     "url": "https://arxiv.org/abs/1610.05820",
+     "quote": "We quantitatively investigate how machine learning models leak information about the individual data records on which they were trained.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "arXiv comment: 'In the proceedings of the IEEE Symposium on Security and Privacy, 2017'. The abstract says the attacks were evaluated on models trained by commercial 'machine learning as a service' providers such as Google and Amazon."
+    },
+    {
+     "institution": "U.S. Federal Trade Commission, Division of Privacy and Identity Protection",
+     "title": "Closing letter to counsel for Netflix, Inc.",
+     "date": "2010-03-12",
+     "url": "https://www.ftc.gov/sites/default/files/documents/closing_letters/netflix-inc./100312netflixletter.pdf",
+     "quote": "two researchers at the University of Texas, Arvind Narayanan and Vitaly Shmatikov, published a research paper demonstrating that it is possible to",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scanned letter (OCR); sentence continues 're-identify particular individuals within the Prize 1 data set using a minimal amount of outside information'. His Cornell homepage (https://www.cs.cornell.edu/~shmat/) lists him as Professor, Cornell Tech."
+    }
+   ]
+  },
+  {
+   "id": "lorrie-faith-cranor",
+   "name": "Lorrie Faith Cranor",
+   "handle": "",
+   "roles": "computer scientist · usable-privacy researcher · P3P co-author · FTC chief technologist (2016)",
+   "years": "1997–present",
+   "place": "Pittsburgh, Pennsylvania (Carnegie Mellon University, CyLab)",
+   "lat": 40.4446,
+   "lng": -79.9446,
+   "keyWork": {
+    "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification, W3C Recommendation (co-author, then at AT&T)",
+    "year": 2002,
+    "url": "https://www.w3.org/TR/P3P/"
+   },
+   "contribution": "Cranor was one of the authors of P3P, the W3C standard (Recommendation, 16 April 2002) that let websites publish their privacy practices in a machine-readable format for browsers to read on users' behalf. At Carnegie Mellon she directs the CyLab Usable Privacy and Security Laboratory and founded the Symposium On Usable Privacy and Security (SOUPS); with Aleecia McDonald she estimated in 2008 that reading the privacy policy of every new site an American visits would take about 244 hours a year. In 2012 she published a candid post-mortem of P3P and of notice-and-choice, and in 2016 she served as chief technologist at the U.S. Federal Trade Commission.",
+   "quote": "P3P is a user empowerment tool that was developed in response to Congressional and FTC interest in online privacy in the mid-1990s and concerns that it was unrealistic to expect consumers to read long online privacy policies at every website they visit.",
+   "quoteSource": {
+    "institution": "Journal on Telecommunications and High Technology Law, vol. 10 (University of Colorado Law School)",
+    "title": "L. F. Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice'",
+    "date": "2012",
+    "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+    "quote": "P3P is a user empowerment tool that was developed in response to Congressional and FTC interest in online privacy in the mid-1990s and concerns that it was unrealistic to expect consumers to read long online privacy policies at every website they visit.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Section II, p. 279. The journal site serves the PDF over plain http (its https certificate is self-signed); a copy is also listed on Colorado Law Scholarly Commons (https://scholar.law.colorado.edu/ctlj/vol10/iss2/7/), which blocked scripted access."
+   },
+   "influence": "Her post-mortem is the standard account of why P3P failed: the negotiation protocol was dropped, Internet Explorer's cookie gate led sites to copy boilerplate policies, and nothing was enforced — lessons W3C itself repeated when it declared P3P obsolete in 2018.",
+   "thread": "P3P's founding idea was a browser that would 'negotiate with websites, and take actions on their users’ behalf' — the same idea that person-proffered terms (IEEE 7012) and AI agents now revive, but with the site, not the person, stating the terms.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — obsoleted Recommendation",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "web users would configure their individual user agents to accept some practices automatically without the user having to read the policy",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Header: 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018'; authors listed include 'Lorrie Cranor, AT&T'. Status note: 'web site administrators chose to copy general policies rather than encode specific policies that reflected their sites' own privacy practices.'"
+    },
+    {
+     "institution": "Journal on Telecommunications and High Technology Law, vol. 10",
+     "title": "L. F. Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice'",
+     "date": "2012",
+     "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+     "quote": "early proponents of P3P described web browsers that could read privacy policies, negotiate with websites, and take actions on their users’ behalf without interfering with the web browsing experience.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same article: 'The negotiation protocol was not included in the final specification, largely due to the added implementation complexity and lack of interest from industry'; 'the P3P working group was closed in 2006 due to lack of industry participation'; conclusion: 'privacy user empowerment tools and notice and choice mechanisms are insufficient to protect privacy.'"
+    },
+    {
+     "institution": "Carnegie Mellon University (Lorrie Faith Cranor's website)",
+     "title": "Lorrie Faith Cranor — Bio",
+     "date": "2025",
+     "url": "https://lorrie.cranor.org/bio.html",
+     "quote": "She founded the Symposium On Usable Privacy and Security (SOUPS) and co-founded the Conference on Privacy Engineering Practice and Respect (PEPR).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'In 2016 she served as Chief Technologist at the US Federal Trade Commission.' and that she 'directs the CyLab Usable Privacy and Security Laboratory (CUPS)'."
+    }
+   ],
+   "portrait": "lorrie-cranor-capitol-hill-briefing-2014"
+  },
+  {
+   "id": "christopher-soghoian",
+   "name": "Christopher Soghoian",
+   "handle": "@csoghoian (Twitter/X); blog 'slight paranoia' (paranoia.dubfire.net)",
+   "roles": "privacy researcher · activist technologist · FTC and ACLU technologist",
+   "years": "2006–present",
+   "place": "Bloomington, Indiana (Indiana University) and Washington, D.C. (FTC, ACLU, U.S. Senate)",
+   "lat": 38.8977,
+   "lng": -77.0366,
+   "keyWork": {
+    "title": "Do Not Track header prototype (Firefox add-on with Sid Stamm); account published as 'The History of the Do Not Track Header'",
+    "year": 2009,
+    "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html"
+   },
+   "contribution": "In July 2009, then a doctoral student, Soghoian built with Sid Stamm a prototype Firefox add-on that sent 'X-Do-Not-Track' and 'X-Behavioral-Ad-Opt-Out' headers, and pitched the idea to industry at a Future of Privacy Forum meeting; no ad firm showed interest. He then became the first technologist in the FTC's Division of Privacy and Identity Protection, and from 2012 to 2016 was principal technologist at the ACLU, exposing government use of StingRay phone surveillance. He later became senior technologist and adviser for privacy and cybersecurity to Senator Ron Wyden.",
+   "quote": "The far more complex problem relates to the policy questions of what advertising networks do when they receive the header.",
+   "quoteSource": {
+    "institution": "slight paranoia (Christopher Soghoian's blog)",
+    "title": "The History of the Do Not Track Header",
+    "date": "2011-01-21",
+    "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+    "quote": "The far more complex problem relates to the policy questions of what advertising networks do when they receive the header.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Preceded by: 'The technology behind implementing the Do Not Track header is trivially easy - it took Sid Stamm just a few minutes to whip up the first prototype.' Verified against the fetched HTML's full text: tools/fetch-text.py's paragraph extractor skips this Blogger template's post body (div text with <br>), so its --check reports NOT-FOUND; the sentence is on the page. The site serves over http only (https handshake fails)."
+   },
+   "influence": "The single browser header he prototyped and lobbied for became the Do Not Track signal later standardised at W3C; that effort ended in January 2019 as a Working Group Note for lack of deployment, bearing out his warning that the hard part was what sites must do when they receive it.",
+   "thread": "Do Not Track was the first widely shipped signal a person's browser sends to every site stating their terms for tracking — a one-bit ancestor of person-proffered terms and of the Global Privacy Control.",
+   "sources": [
+    {
+     "institution": "slight paranoia (Christopher Soghoian's blog)",
+     "title": "The History of the Do Not Track Header",
+     "date": "2011-01-21",
+     "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+     "quote": "In July of 2009, I decided to try and solve this problem. My friend and research collaborator Sid Stamm helped me to put together a prototype Firefox add-on that added two headers to outgoing HTTP requests",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Verified against full page text (see quoteSource note). Same post: 'In mid July 2009, the Future of Privacy Forum organized a meeting and conference call in which I pitched the header concept'; 'In the end, none of the advertising firms showed any interest in the header. A couple months later, I started working at the Federal Trade Commission'."
+    },
+    {
+     "institution": "Christopher Soghoian (personal website, dubfire.net)",
+     "title": "Christopher Soghoian, Ph.D. — Biography",
+     "date": "2026",
+     "url": "http://www.dubfire.net/",
+     "quote": "Soghoian is the Senior Technologist and Senior Advisor for Privacy & Cybersecurity in the office of Senator Ron Wyden . He was previously a TechCongress Innovation Fellow. Between 2012 and 2016, Soghoian was the Principal Technologist with the Speech, Privacy, and Technology Project at the American Civil Liberties Union.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Verified against the fetched page's full text. Same page: he 'has exposed the US government's use of StingRay cell phone surveillance technology' and 'completed his Ph.D. at Indiana University in 2012'. Served over http."
+    },
+    {
+     "institution": "TED Conferences",
+     "title": "Christopher Soghoian — speaker page",
+     "date": "2026",
+     "url": "https://www.ted.com/speakers/christopher_soghoian",
+     "quote": "Before joining the ACLU, he was the first-ever technologist for the Federal Trade Commision's Division of Privacy and Identity Protection, where he worked on investigations of Facebook, Twitter, MySpace and Netflix.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same page calls him 'the creator of Do Not Track, an anti-tracking device that all major web browsers now use' — an overstatement; see the Do Not Track myth."
+    },
+    {
+     "institution": "World Wide Web Consortium (W3C), Tracking Protection Working Group",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The Note 'defines the DNT request header field as an HTTP mechanism for expressing a user's preference regarding tracking'."
+    }
+   ],
+   "portrait": "christopher-soghoian-30c3-hamburg-2013"
+  },
+  {
+   "id": "aleecia-mcdonald",
+   "name": "Aleecia M. McDonald",
+   "handle": "",
+   "roles": "privacy policy researcher · W3C Tracking Protection Working Group co-chair",
+   "years": "2006–present",
+   "place": "Pittsburgh (Carnegie Mellon) and Stanford, California (Center for Internet and Society)",
+   "lat": 37.4241,
+   "lng": -122.1661,
+   "keyWork": {
+    "title": "The Cost of Reading Privacy Policies (with Lorrie Faith Cranor), I/S: A Journal of Law and Policy for the Information Society 4(3)",
+    "year": 2008,
+    "url": "https://cyberlaw.stanford.edu/content/files/bitstream/handle/1811/72839/isjlp_v4n3_543.pdf"
+   },
+   "contribution": "As a Carnegie Mellon doctoral student in the CyLab Usable Privacy and Security lab, McDonald and Lorrie Faith Cranor estimated that reading the privacy policy of every new site an American visits in a year would take about 244 hours (point estimate), worth about $781 billion of the nation's time. She then co-chaired the W3C Tracking Protection Working Group, which tried to standardise Do Not Track, while a part-time senior privacy researcher at Mozilla and a resident fellow at Stanford's Center for Internet and Society (2011-12). She later became an assistant professor of the practice at Carnegie Mellon's Information Networking Institute.",
+   "quote": "In this paper we contend that the time to read privacy policies is, in and of itself, a form of payment.",
+   "quoteSource": {
+    "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review); copy hosted by Stanford Center for Internet and Society",
+    "title": "A. M. McDonald and L. F. Cranor, 'The Cost of Reading Privacy Policies'",
+    "date": "2008",
+    "url": "https://cyberlaw.stanford.edu/content/files/bitstream/handle/1811/72839/isjlp_v4n3_543.pdf",
+    "quote": "In this paper we contend that the time to read privacy policies is, in and of itself, a form of payment.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Co-authored with Lorrie Faith Cranor; McDonald is first author. The authors' pre-press draft is at https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf."
+   },
+   "influence": "Cranor's 2012 review of notice-and-choice opens with this paper's estimate that reading every policy once a year would take 244 hours, as evidence that privacy policies are 'failing consumers'; McDonald's W3C group was the main international attempt to agree what a site must do when a browser asks not to be tracked.",
+   "thread": "Her working group tried to agree 'what sites must do when they comply with an incoming request for user privacy' — the problem that any person-proffered term, from Do Not Track to IEEE 7012, has to solve.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3; copy hosted by Stanford Center for Internet and Society",
+     "title": "A. M. McDonald and L. F. Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://cyberlaw.stanford.edu/content/files/bitstream/handle/1811/72839/isjlp_v4n3_543.pdf",
+     "quote": "using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The paper's conclusion instead says 'approximately 201 hours a year, worth about $3,534 annually per American Internet user'; its Table 7 gives 244 hours (range 181-304) to read and 154 hours to skim, and Table 8 pairs $3,534 and $781 billion with reading. The 201-hour figure appears only in the abstract/conclusion and does not match the tables."
+    },
+    {
+     "institution": "Journal on Telecommunications and High Technology Law, vol. 10",
+     "title": "L. F. Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice'",
+     "date": "2012",
+     "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+     "quote": "If an individual were to read the privacy policy at every website she visited even once per year, she would spend, on average, an estimated 244 hours per year reading privacy policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Footnote 3 cites McDonald & Cranor, The Cost of Reading Privacy Policies."
+    },
+    {
+     "institution": "Stanford Law School, Center for Internet and Society",
+     "title": "Aleecia M. McDonald — people page",
+     "date": "2026",
+     "url": "https://cyberlaw.stanford.edu/about/people/aleecia-mcdonald",
+     "quote": "This effort brings together over 100 international stakeholders from industry, academia, civil society, privacy advocates, and regulators to reach an open, consensus-based multi-party agreement that will establish a baseline for what sites must do when they comply with an incoming request for user privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'She co-chaired, and remains active in, the WC3’s Tracking Protection Working Group' and 'she was a Senior Privacy Researcher for Mozilla (part-time, 2011-12,) while working for CIS as a Resident Fellow (part-time, 2011-12.)' The page's 'WC3' is a typo for W3C."
+    },
+    {
+     "institution": "Carnegie Mellon University, Information Networking Institute",
+     "title": "Aleecia M. McDonald — team page",
+     "date": "2026",
+     "url": "https://www.cmu.edu/ini/about/team/mcdonald.html",
+     "quote": "She co-chaired the WC3’s Tracking Protection Working Group, which was an effort to establish international standards for a Do Not Track mechanism that users can enable to request enhanced privacy online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The W3C DNT Note (https://www.w3.org/TR/tracking-dnt/) lists 'Aleecia M. McDonald (Stanford)' among contributors."
+    }
+   ]
+  },
+  {
+   "id": "ann-cavoukian",
+   "name": "Ann Cavoukian",
+   "handle": "",
+   "roles": "Information and Privacy Commissioner of Ontario (1997–2014, three terms) · originator of Privacy by Design",
+   "years": "1995–present",
+   "place": "Toronto, Ontario (Office of the Information and Privacy Commissioner, 2 Bloor Street East)",
+   "lat": 43.6703,
+   "lng": -79.3858,
+   "keyWork": {
+    "title": "Privacy by Design: The 7 Foundational Principles (Information and Privacy Commissioner of Ontario; published August 2009, revised January 2011)",
+    "year": 2009,
+    "url": "https://www.sfu.ca/~palys/Cavoukian-2011-PrivacyByDesign-7FoundationalPrinciples.pdf"
+   },
+   "contribution": "Cavoukian's Ontario privacy office co-published with the Dutch data-protection authority the 1995 report 'Privacy-enhancing technologies: the path to anonymity', which proposed a user-controlled 'identity protector'. As Ontario's commissioner she developed Privacy by Design, set out in 2009 as seven principles — among them privacy as the default setting and 'Respect for User Privacy — Keep it User-Centric'. In October 2010 the world's data-protection commissioners, meeting in Jerusalem, adopted a resolution recognising Privacy by Design. Her 2014 report with Daniel Castro defending de-identification was sharply disputed by Arvind Narayanan and Edward Felten.",
+   "quote": "If an individual does nothing, their privacy still remains intact. No action is required on the part of the individual to protect their privacy — it is built into the system, by default.",
+   "quoteSource": {
+    "institution": "Information and Privacy Commissioner of Ontario (copy hosted by Simon Fraser University)",
+    "title": "A. Cavoukian, 'Privacy by Design: The 7 Foundational Principles'",
+    "date": "2011-01",
+    "url": "https://www.sfu.ca/~palys/Cavoukian-2011-PrivacyByDesign-7FoundationalPrinciples.pdf",
+    "quote": "If an individual does nothing, their privacy still remains intact. No action is required on the part of the individual to protect their privacy — it is built into the system, by default.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Principle 2, 'Privacy as the Default Setting'. The document is marked 'Revised: January 2011 Originally Published: August 2009'. The IPC's own copy (ipc.on.ca) returned 403 to scripted requests."
+   },
+   "influence": "Regulators adopted Privacy by Design at the 32nd International Conference of Data Protection and Privacy Commissioners in Jerusalem (27–29 October 2010), and the idea entered EU law in the GDPR as 'data protection by design and by default'.",
+   "thread": "Her principles aim at 'ensuring privacy and gaining personal control over one’s information', and the 1995 report she co-published imagined an identity protector 'under the control of the user' that reveals identity to some services 'but not to others'.",
+   "sources": [
+    {
+     "institution": "Information and Privacy Commissioner of Ontario",
+     "title": "2014 Annual Report (Commissioner's message, Brian Beamish)",
+     "date": "2014",
+     "url": "https://www.ipc.on.ca/sites/default/files/legacy/Resources/ar-2014-e.pdf",
+     "quote": "In 1997, Ann Cavoukian was appointed Commissioner and would go on to serve for three terms.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Annual report covering 2014 (publication date not shown in the PDF). Her successor Brian Beamish writes that he is beginning his term, which supports the 2014 end date."
+    },
+    {
+     "institution": "Information and Privacy Commissioner of Ontario (copy hosted by Simon Fraser University)",
+     "title": "A. Cavoukian, 'Privacy by Design: The 7 Foundational Principles'",
+     "date": "2011-01",
+     "url": "https://www.sfu.ca/~palys/Cavoukian-2011-PrivacyByDesign-7FoundationalPrinciples.pdf",
+     "quote": "Privacy by Design is a concept I developed back in the 90’s, to address the ever-growing and systemic effects of Information and Communication Technologies, and of large-scale networked data systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'The objectives of Privacy by Design — ensuring privacy and gaining personal control over one’s information and, for organizations, gaining a sustainable competitive advantage'."
+    },
+    {
+     "institution": "Registratiekamer (Netherlands) and Information and Privacy Commissioner/Ontario — revised edition hosted by the Autoriteit Persoonsgegevens",
+     "title": "Privacy-enhancing technologies: the path to anonymity (Revised Edition, Achtergrondstudies en Verkenningen 11)",
+     "date": "2000-08",
+     "url": "https://autoriteitpersoonsgegevens.nl/uploads/imported/av11.pdf",
+     "quote": "Since the identity protector is under the control of the user, he/she can set it to perform a variety of functions such as revealing his or her actual identity to certain service providers, but not to others.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The PDF says it is a 'Revised edition of: Rossum, H. van, e.a. (1995). Privacy-enhancing Technologies: the path to anonymity.' Library records list Ann Cavoukian among the 1995 authors; that authorship was not seen in the fetched revised edition."
+    },
+    {
+     "institution": "32nd International Conference of Data Protection and Privacy Commissioners (hosted by the Global Privacy Assembly)",
+     "title": "Resolution on Privacy by Design (Jerusalem, 27-29 October 2010)",
+     "date": "2010-10",
+     "url": "https://globalprivacyassembly.com/wp-content/uploads/2015/02/32-Conference-Israel-resolution-on-Privacy-by-Design.pdf",
+     "quote": "Recognize Privacy by Design as an essential component of fundamental privacy protection;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The event itself is recorded in the global slice as jerusalem-resolution-privacy-by-design-2010. GDPR recital 78 (EUR-Lex, read via https://web.archive.org/web/2025/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679): 'the controller should adopt internal policies and implement measures which meet in particular the principles of data protection by design and data protection by default.'"
+    },
+    {
+     "institution": "Princeton University (Narayanan and Felten)",
+     "title": "A. Narayanan and E. W. Felten, 'No silver bullet: De-identification still doesn't work'",
+     "date": "2014-07-09",
+     "url": "https://www.cs.princeton.edu/~arvindn/publications/no-silver-bullet-de-identification.pdf",
+     "quote": "A new report by Ann Cavoukian and Daniel Castro is full of such inaccuracies, despite its claims of “setting the record straight.”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Response to Cavoukian and Castro, 'Big Data and Innovation, Setting the Record Straight: De-identification Does Work' (ITIF, 2014)."
+    }
+   ],
+   "portrait": "ann-cavoukian-goopendata-toronto-2013"
+  },
+  {
+   "id": "kim-cameron",
+   "name": "Kim Cameron",
+   "handle": "Identityblog (identityblog.com)",
+   "roles": "identity architect (Microsoft) · author of 'The Laws of Identity'",
+   "years": "2004–2021",
+   "place": "Redmond, Washington (Microsoft)",
+   "lat": 47.674,
+   "lng": -122.1215,
+   "keyWork": {
+    "title": "The Laws of Identity",
+    "year": 2005,
+    "url": "https://www.identityblog.com/stories/2005/05/13/TheLawsOfIdentity.pdf"
+   },
+   "contribution": "As Microsoft's Architect of Identity, Cameron refined 'The Laws of Identity' in an open blog conversation and published them in May 2005 as seven laws for the Internet's missing 'identity layer', the first being 'User Control and Consent'. He thanked participants including Doc Searls, Kaliya ('Identity Woman'), Caspar Bowden and Stefan Brands, and used the laws to explain the failures of Microsoft's own Passport system. He went on to work on Information Cards (CardSpace) and supported the Internet Identity Workshop from its first meeting in October 2005. He died in November 2021.",
+   "quote": "Technical identity systems must only reveal information identifying a user with the user’s consent.",
+   "quoteSource": {
+    "institution": "Kim Cameron, Microsoft Corporation (Identityblog)",
+    "title": "The Laws of Identity",
+    "date": "2005-05",
+    "url": "https://www.identityblog.com/stories/2005/05/13/TheLawsOfIdentity.pdf",
+    "quote": "Technical identity systems must only reveal information identifying a user with the user’s consent.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Law 1, 'User Control and Consent'. The PDF is headed '…as of 5/11/2005' and its URL path is dated 13 May 2005; the author line reads 'Kim Cameron, Architect of Identity, Microsoft Corporation'."
+   },
+   "influence": "Phil Windley, a co-founder of the Internet Identity Workshop, calls the Laws of Identity 'a foundational work in online identity', and colleagues credit them with giving Microsoft's identity work the mission of 'making user-centric identity viable and adopted'.",
+   "thread": "The laws argue on practical, not moral, grounds that 'a system that does not put users in control will – immediately or over time - be rejected by enough of them that it cannot become and remain a unifying technology' — the premise of every later user-held-terms design.",
+   "sources": [
+    {
+     "institution": "Kim Cameron, Microsoft Corporation (Identityblog)",
+     "title": "The Laws of Identity",
+     "date": "2005-05",
+     "url": "https://www.identityblog.com/stories/2005/05/13/TheLawsOfIdentity.pdf",
+     "quote": "a system that does not put users in control will – immediately or over time - be rejected by enough of them that it cannot become and remain a unifying technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The acknowledgements thank, among others, 'Caspar Bowden', 'Doc Searls', 'Identity Woman Kaliya' and 'Stefan Brands'; the text says the Law of Justifiable Parties can 'account for the successes and failures of Microsoft‟s Passport identity system'."
+    },
+    {
+     "institution": "Phil Windley, Technometria (blog of an Internet Identity Workshop co-founder)",
+     "title": "In Memory of Kim Cameron",
+     "date": "2021-12-05",
+     "url": "https://www.windley.com/archives/2021/12/in_memory_of_kim_cameron.shtml",
+     "quote": "Kim Cameron's Laws of Identity are a foundational work in online identity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: 'We held the first IIW in October 2005. Along with many others, Kim was there to talk about his ideas and plans for identity. He'd already published his Laws of Identity and was working on a project called Information Cards .'"
+    },
+    {
+     "institution": "IDPro (professional association for digital identity)",
+     "title": "Remembering Kim Cameron",
+     "date": "2021-12",
+     "url": "https://idpro.org/remembering-kim-cameron/",
+     "quote": "In November 2021, the world lost Kim Cameron, a champion of digital identity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Tribute by Vittorio Bertocci on the page describes Cameron's Laws as giving CardSpace 'a mission, making user-centric identity viable and adopted.'"
+    }
+   ],
+   "portrait": "identity-gang-reed-cameron-dyson-pc-forum-2005"
+  },
+  {
+   "id": "kaliya-young",
+   "name": "Kaliya Young",
+   "handle": "Identity Woman (identitywoman.net)",
+   "roles": "identity community convener · Internet Identity Workshop co-founder · self-sovereign identity advocate",
+   "years": "2005–present",
+   "place": "Mountain View, California (Internet Identity Workshop, Computer History Museum)",
+   "lat": 37.4143,
+   "lng": -122.0775,
+   "keyWork": {
+    "title": "The Domains of Identity & Self-Sovereign Identity (talk at New America, later expanded as the book 'The Domains of Identity', 2020)",
+    "year": 2018,
+    "url": "http://opentranscripts.org/transcript/domains-self-sovereign-identity/"
+   },
+   "contribution": "Kaliya Young, known online as 'Identity Woman', co-founded the Internet Identity Workshop in 2005 and has convened it twice a year since, at the Computer History Museum in Mountain View. The workshop's founding question, in her words, was how individuals could own their own digital identifiers rather than live 'underneath the platforms'. She later championed self-sovereign identity — decentralised identifiers, verifiable credentials and personal agents under the individual's control — and wrote 'The Domains of Identity' (2020).",
+   "quote": "We began meeting really asking this question, how can individuals own their own digital identifiers? How can we get out from being underneath the platforms that we’re interacting with?",
+   "quoteSource": {
+    "institution": "Open Transcripts (transcript of a talk at New America, 'Self-Sovereign Identity in the Developing World')",
+    "title": "Kaliya Young, 'The Domains of Identity & Self-Sovereign Identity'",
+    "date": "2018-10-18",
+    "url": "http://opentranscripts.org/transcript/domains-self-sovereign-identity/",
+    "quote": "We began meeting really asking this question, how can individuals own their own digital identifiers? How can we get out from being underneath the platforms that we’re interacting with?",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Spoken remarks as transcribed; the page serves over http (its https certificate does not match the host). Her own site identitywoman.net sits behind a captcha wall and could not be read by script."
+   },
+   "influence": "Kim Cameron thanked 'Identity Woman Kaliya' among the contributors to his 2005 Laws of Identity, and the workshop she co-founded describes itself as bringing together 'the largest concentration on the planet of talent dedicated to designing and building identity systems that empower individuals'.",
+   "thread": "In 2018 she described individuals with 'agents that are cloud-based that are connected to their wallet' and 'also under their control' — an explicit picture of person-side agents that hold a person's data and act for them.",
+   "sources": [
+    {
+     "institution": "Open Transcripts",
+     "title": "Kaliya Young, 'The Domains of Identity & Self-Sovereign Identity' (New America, 18 October 2018)",
+     "date": "2018-10-18",
+     "url": "http://opentranscripts.org/transcript/domains-self-sovereign-identity/",
+     "quote": "And then next you have what is happening in the cloud, so that individuals will have agents that are cloud-based that are connected to their wallet. And these are also under their control.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same talk: 'I founded the Internet Identity Workshop with some colleagues in 2005 , and we are still convening.'"
+    },
+    {
+     "institution": "MyData Global (MyData Online 2020 presenter page)",
+     "title": "Kaliya Young — presenter",
+     "date": "2020",
+     "url": "https://online2020.mydata.org/presenter/kaliya-young/",
+     "quote": "She co-founded the Internet Identity Workshop in 2005 and continues to convene it twice a year.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'She is the author of two books the Domains of Identity (2020) and A Comprehensive Guide to Self Sovereign Identity (2018).'"
+    },
+    {
+     "institution": "IIW Foundation (Internet Identity Workshop)",
+     "title": "About IIW",
+     "date": "2026",
+     "url": "https://internetidentityworkshop.com/about/",
+     "quote": "IIW brings together the largest concentration on the planet of talent dedicated to designing and building identity systems that empower individuals.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Self-description by the workshop."
+    }
+   ],
+   "portrait": "kaliya-hamlin-vrm-day-2015"
+  },
+  {
+   "id": "doc-searls",
+   "name": "Doc Searls",
+   "handle": "@dsearls (Medium and other networks); blog doc.searls.com",
+   "roles": "writer · Cluetrain co-author · founder of ProjectVRM · chair of the IEEE 7012 (MyTerms) working group",
+   "years": "1999–present",
+   "place": "Cambridge, Massachusetts (Berkman Klein Center, ProjectVRM)",
+   "lat": 42.377,
+   "lng": -71.1167,
+   "keyWork": {
+    "title": "The Intention Economy: When Customers Take Charge (Harvard Business Review Press)",
+    "year": 2012,
+    "url": "https://cyber.harvard.edu/events/2012/05/searls"
+   },
+   "contribution": "Searls co-wrote The Cluetrain Manifesto (1999, with Levine, Locke and Weinberger), whose theme was that networked 'markets are conversations'. As a Berkman Center fellow from 2006 he started ProjectVRM (vendor relationship management), whose principles say customers 'must be able to proffer their own terms of engagement'; his 2012 book The Intention Economy set out that programme. Approached by the IEEE in 2017, he helped start and was the last of three chairs of the working group that produced IEEE 7012-2025 'MyTerms', the standard for machine-readable personal privacy terms published in January 2026.",
+   "quote": "Give individuals the ability to assert their own terms of service , reducing or eliminating the need for organization-written terms of service that nobody reads and everybody has to \"accept\" anyway.",
+   "quoteSource": {
+    "institution": "ProjectVRM wiki, Berkman Klein Center for Internet & Society, Harvard University",
+    "title": "ProjectVRM — Main Page ('VRM Goals', quoting Searls's 'Markets Are Relationships' chapter in the 10th-anniversary edition of The Cluetrain Manifesto)",
+    "date": "2022-09",
+    "url": "https://cyber.harvard.edu/projectvrm/Main_Page",
+    "quote": "Give individuals the ability to assert their own terms of service , reducing or eliminating the need for organization-written terms of service that nobody reads and everybody has to \"accept\" anyway.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "The wiki introduces the list: 'In the \"Markets Are Relationships\" chapter of the 10th Anniversary edition of The Cluetrain Manifesto , Doc Searls writes this about the goals of VRM efforts'. The stray space before the comma is in the page text (a link boundary). Page last describes itself as written 'At this writing (September, 2022)'."
+   },
+   "influence": "The IEEE 7012 FAQ says 'The ideas directly behind 7012 were worked out in ProjectVRM' and its spinoff Customer Commons; the standard covers agreements between individuals and services 'including websites, applications and AI agents'.",
+   "thread": "The most direct line in this study: from 'markets are conversations' (1999) through ProjectVRM's principle that customers proffer their own terms (2006) to an IEEE standard in which individuals act 'as first parties' and 'proffer their privacy requirements as contractual terms' (2025–26).",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page gives PAR approval 2017-12-06, Board approval 2025-11-04, Published 2026-01-20; scope covers service providers 'including websites, applications and AI agents'."
+    },
+    {
+     "institution": "MyTerms (Customer Commons / MyTerms Alliance)",
+     "title": "MyTerms FAQs",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Doc is also the person first approached by John C. Havens of the IEEE in 2017 with the idea of starting the workgroup.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Doc was the last of three chairs of the working group. First and second were David P. Reed and Lisa LaVasseur.' and 'The ideas directly behind 7012 were worked out in ProjectVRM, which was launched at the Berkman (now Berkman Klein) Center at Harvard in 2006, and its nonprofit spinoff, Customer Commons, in 2013.' Searls is a Customer Commons board member, so this is an interested source."
+    },
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge — event page",
+     "date": "2012-05",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "Doc Searls served as a Berkman Fellow from 2006 to 2010, during which he launched and led ProjectVRM , which encourages the development of new tools by which individuals create and control their relationships with companies and other organizations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Doc co-wrote (with fellow Berkmanian David Weinberger and two others) the 2000 bestseller The Cluetrain Manifesto'. The Cluetrain site itself is marked 'Copyright © 1999 Levine, Locke, Searls & Weinberger.' (https://www.cluetrain.com/)."
+    },
+    {
+     "institution": "InfoQ (C4Media)",
+     "title": "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies",
+     "date": "2026-02-02",
+     "url": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
+     "quote": "According to Searls, MyTerms is \"a complete script flip\", in which customers are first party controlling how they interact with service and product providers, the second party, by selecting from a \"roster of terms\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reports the London launch; the MyTerms news page says the launch was at Imperial College London on 28 January 2026."
+    }
+   ],
+   "portrait": "doc-searls-headshot-2022"
+  },
+  {
+   "id": "danah-boyd",
+   "name": "danah boyd",
+   "handle": "zephoria (blog 'apophenia' at zephoria.org)",
+   "roles": "ethnographer of networked life · founder of Data & Society",
+   "years": "2000s–present",
+   "place": "New York City (Data & Society)",
+   "lat": 40.7128,
+   "lng": -74.006,
+   "keyWork": {
+    "title": "It's Complicated: The Social Lives of Networked Teens (Yale University Press; open-access PDF)",
+    "year": 2014,
+    "url": "https://www.danah.org/books/ItsComplicated.pdf"
+   },
+   "contribution": "boyd spent a decade studying how teenagers use social media and argued, against the claim that young people do not care about privacy, that they work hard to achieve it within public networks — often by controlling who can understand a post rather than who can see it. In talks such as 'Networked Privacy' (2011) she argued that privacy is collective: what friends, parents and data brokers share about us implicates us. She founded the Data & Society research institute and is now a professor of communication at Cornell.",
+   "quote": "Privacy doesn’t just depend on agency; being able to achieve privacy is an expression of agency.",
+   "quoteSource": {
+    "institution": "Yale University Press (author's open-access PDF at danah.org)",
+    "title": "danah boyd, It's Complicated: The Social Lives of Networked Teens, chapter 2 'privacy'",
+    "date": "2014",
+    "url": "https://www.danah.org/books/ItsComplicated.pdf",
+    "quote": "Privacy doesn’t just depend on agency; being able to achieve privacy is an expression of agency.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Same chapter: privacy 'is a process by which people seek to have control over a social situation by managing impressions, information flows, and context.'"
+   },
+   "influence": "The White House's May 2014 'Big Data: Seizing Opportunities, Preserving Values' report cited It's Complicated for its account of how youth obscure the meaning of what they share, and listed a Data & Society/NYU workshop on big data (17 March 2014) that boyd introduced among its review events.",
+   "thread": "Her definition of privacy as 'control over their social situation' plus 'enough agency to assert control' shifts the question from what data exists to who has the power to set the terms of its flow.",
+   "sources": [
+    {
+     "institution": "danah boyd (danah.org), talk at Personal Democracy Forum, New York",
+     "title": "Networked Privacy",
+     "date": "2011-06-06",
+     "url": "https://www.danah.org/papers/talks/2011/PDF2011.html",
+     "quote": "Privacy is a feeling that people have when they feel as though they have two important things: 1) control over their social situation; and 2) enough agency to assert control.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same talk: 'Privacy isn't about the individual's relationship to information. If we want to have privacy in this world, we need to think about what networked privacy looks like.' The page calls itself a 'VERY rough unedited crib of the actual talk'."
+    },
+    {
+     "institution": "Executive Office of the President (The White House), Washington, D.C.",
+     "title": "Big Data: Seizing Opportunities, Preserving Values",
+     "date": "2014-05",
+     "url": "https://obamawhitehouse.archives.gov/sites/default/files/docs/big_data_privacy_report_may_1_2014.pdf",
+     "quote": "many youth experiment with various ways to obscure the meaning of what they share except to select others, even if they are unable to limit access to the content itself.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Footnote 63 cites 'danah boyd, It’s Complicated: The Social Lives of Networked Teens, (Yale University Press, 2014)'. The appendix lists 'The Social, Cultural, & Ethical Dimensions of ‘Big Data’ The Data & Society Research Institute & New York University (NYU) New York, New York March 17, 2014' with 'Introduction: danah boyd, Data & Society'."
+    },
+    {
+     "institution": "danah boyd (personal website)",
+     "title": "danah.org — home page",
+     "date": "2026",
+     "url": "https://www.danah.org/",
+     "quote": "danah boyd is the Geri Gay Professor of Communication at Cornell University and the founder of Data & Society.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "portrait": "danah-boyd-yale-roundtable-2009"
+  },
+  {
+   "id": "helen-nissenbaum",
+   "name": "Helen Nissenbaum",
+   "handle": "",
+   "roles": "philosopher of information · author of 'contextual integrity' · co-creator of TrackMeNot",
+   "years": "1995–present",
+   "place": "New York City (New York University; Cornell Tech)",
+   "lat": 40.7295,
+   "lng": -73.9965,
+   "keyWork": {
+    "title": "Privacy as Contextual Integrity, 79 Washington Law Review 119",
+    "year": 2004,
+    "url": "https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10/"
+   },
+   "contribution": "Nissenbaum proposed 'contextual integrity' (2004; expanded in her book Privacy in Context, Stanford University Press): privacy is violated when information flows break the norms of the context in which it was shared, rather than whenever something 'private' becomes known. With Daniel Howe at NYU she released TrackMeNot in August 2006, a browser extension that hides a user's real searches in a stream of decoy queries. She later co-wrote Obfuscation: A User's Guide for Privacy and Protest (2015, with Finn Brunton) and directs the Digital Life Initiative at Cornell Tech.",
+   "quote": "Contextual integrity ties adequate protection for privacy to norms of specific contexts, demanding that information gathering and dissemination be appropriate to that context and obey the governing norms of distribution within it.",
+   "quoteSource": {
+    "institution": "Washington Law Review, vol. 79 no. 1 (University of Washington School of Law Digital Commons)",
+    "title": "H. Nissenbaum, 'Privacy as Contextual Integrity' — abstract",
+    "date": "2004",
+    "url": "https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10/",
+    "quote": "Contextual integrity ties adequate protection for privacy to norms of specific contexts, demanding that information gathering and dissemination be appropriate to that context and obey the governing norms of distribution within it.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Recommended citation on the page: 79 Wash. L. Rev. 119 (2004)."
+   },
+   "influence": "The White House's February 2012 Consumer Privacy Bill of Rights adopted a 'Respect for Context' principle and cited a comment by Nissenbaum, Farrall and Brunton recommending context as a source of 'baseline substantive constraints on data practices'.",
+   "thread": "TrackMeNot was, in its authors' words, 'an immediate solution, implemented and controlled by users themselves' — privacy asserted from the user's side rather than granted by the service.",
+   "sources": [
+    {
+     "institution": "Executive Office of the President (The White House)",
+     "title": "Consumer Data Privacy in a Networked World: A Framework for Protecting Privacy and Promoting Innovation in the Global Digital Economy",
+     "date": "2012-02-23",
+     "url": "https://obamawhitehouse.archives.gov/sites/default/files/privacy-final.pdf",
+     "quote": "Respect for Context: Consumers have a right to expect that companies will collect, use, and disclose personal data in ways that are consistent with the context in which consumers provide the data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "A footnote cites 'Helen Nissenbaum, Kenneth Farrall, and Finn Brunton, Comment on the Privacy and Innovation Green Paper, at 2-3 (recommending consideration of context as a source of “baseline substantive constraints on data practices following the model of current US sectoral privacy regulation”)'."
+    },
+    {
+     "institution": "TrackMeNot project (Daniel C. Howe and Helen Nissenbaum), hosted at New York University",
+     "title": "TrackMeNot",
+     "date": "2026",
+     "url": "https://cs.nyu.edu/trackmenot/",
+     "quote": "We have developed TrackMeNot as an immediate solution, implemented and controlled by users themselves.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Cornell Tech (Helen Nissenbaum's faculty website)",
+     "title": "Helen Nissenbaum — home page",
+     "date": "2026",
+     "url": "https://nissenbaum.tech.cornell.edu/",
+     "quote": "Professor, Cornell Tech Information Science Director, Digital Life Initiative",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page lists 'Obfuscation: A User's Guide for Privacy and Protest , F. Brunton and H. Nissenbaum, (MIT Press, 2015)' and 'Privacy in Context: Technology, Policy, and the Integrity of Social Life , Palo Alto, CA: Stanford University Press'."
+    }
+   ],
+   "portrait": "helen-nissenbaum-berkeley-lecture-2008"
+  },
+  {
+   "id": "shoshana-zuboff",
+   "name": "Shoshana Zuboff",
+   "handle": "",
+   "roles": "social psychologist and business scholar · theorist of 'surveillance capitalism'",
+   "years": "2011–present (surveillance-capitalism work)",
+   "place": "Boston, Massachusetts (Harvard Business School)",
+   "lat": 42.3656,
+   "lng": -71.1224,
+   "keyWork": {
+    "title": "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power (PublicAffairs)",
+    "year": 2019,
+    "url": "https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/"
+   },
+   "contribution": "Zuboff, the Charles Edward Wilson Professor Emerita at Harvard Business School, spent 2011–2018 writing The Age of Surveillance Capitalism, published in Germany in October 2018 and in the United States on 15 January 2019. The book argues that platform companies treat private human experience as raw material, extracting it as behavioural data to manufacture and sell predictions. It became an international bestseller and gave the debate a name for the business model behind online tracking.",
+   "quote": "We deserve a digital future that amplifies human rights, individual sovereignty, and other requirements of a free and flourishing democracy.",
+   "quoteSource": {
+    "institution": "Shoshana Zuboff (author website)",
+    "title": "About — The Age of Surveillance Capitalism",
+    "date": "2021",
+    "url": "https://shoshanazuboff.com/book/about/",
+    "quote": "We deserve a digital future that amplifies human rights, individual sovereignty, and other requirements of a free and flourishing democracy.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Page refers to 'the big work of 2021 and the decade ahead', dating it to about 2021. Same page: 'It was published in Germany in October 2018 and in the US on January 15, 2019.'"
+   },
+   "influence": "Privacy regulators and legislators took up her framing: she received the inaugural Global Privacy Assembly Giovanni Buttarelli Award (2021) and appeared as a witness before a U.S. House of Representatives hearing in February 2022.",
+   "thread": "She frames the remedy in terms of 'individual sovereignty' — the claim that people, not platforms, should decide what becomes of their experience, which person-proffered terms try to make enforceable.",
+   "sources": [
+    {
+     "institution": "U.S. House of Representatives (Committee on House Administration hearing documents)",
+     "title": "Shoshana Zuboff — witness biography, hearing of 16 February 2022",
+     "date": "2022-02-16",
+     "url": "https://docs.house.gov/meetings/HA/HA00/20220216/114403/HHRG-117-HA00-Bio-ZuboffS-20220216.pdf",
+     "quote": "Her work has been recognized with the Axel Springer Award (2019), the EPIC Lifetime Achievement Award (2021), and the inaugural Global Privacy Assembly Giovanni Buttarelli Award (2021).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Committee identified from the document path (HA00 = Committee on House Administration)."
+    },
+    {
+     "institution": "Shoshana Zuboff (author website)",
+     "title": "Shoshana — biography",
+     "date": "2026",
+     "url": "https://shoshanazuboff.com/book/shoshana/",
+     "quote": "synthesizes her decades of research and thinking to reveal a new economic era in which once private human experience is secretly invaded, extracted as data, and exploited for hidden processes of manufacturing, prediction, and sales.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Zuboff is the Charles Edward Wilson Professor Emeritus at Harvard Business School'."
+    },
+    {
+     "institution": "PublicAffairs (Hachette Book Group)",
+     "title": "The Age of Surveillance Capitalism — publisher's page",
+     "date": "2019-01-15",
+     "url": "https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/",
+     "quote": "the product is expected to ship on or around January 15, 2019.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page lists 'On Sale Jan 15, 2019', 704 pages. Critics such as Evgeny Morozov and Cory Doctorow disputed parts of her analysis (their reviews could not be fetched by script and are not cited here)."
+    }
+   ],
+   "portrait": "shoshana-zuboff-hiig-berlin-2019"
+  },
+  {
+   "id": "tim-berners-lee",
+   "name": "Tim Berners-Lee",
+   "handle": "@timberners_lee (Medium)",
+   "roles": "inventor of the World Wide Web · W3C founder · Solid project director · Inrupt co-founder",
+   "years": "1989–present (Solid: 2016–present)",
+   "place": "Cambridge, Massachusetts (MIT CSAIL, Decentralized Information Group)",
+   "lat": 42.3616,
+   "lng": -71.0906,
+   "keyWork": {
+    "title": "Solid: personal online data stores ('pods') — 'One Small Step for the Web…' announcement",
+    "year": 2018,
+    "url": "https://www.inrupt.com/blog/one-small-step-for-the-web"
+   },
+   "contribution": "Having invented the web at CERN in 1989, Berners-Lee led a team at MIT's Decentralized Information Group that built Solid, which stores each person's data in a personal online datastore ('pod') that the person controls and lets them switch apps and pod providers. In September 2018 he announced he was taking a sabbatical from MIT and reducing his day-to-day W3C role to found the company Inrupt with John Bruce to build the Solid ecosystem. The Solid project now describes pods as letting people choose which 'people, applications, and AI agents' may read and edit their data.",
+   "quote": "Solid changes the current model where users have to hand over personal data to digital giants in exchange for perceived value.",
+   "quoteSource": {
+    "institution": "Inrupt (company blog; essay first published on Medium)",
+    "title": "Tim Berners-Lee, 'One Small Step for the Web…'",
+    "date": "2018-09-29",
+    "url": "https://www.inrupt.com/blog/one-small-step-for-the-web",
+    "quote": "Solid changes the current model where users have to hand over personal data to digital giants in exchange for perceived value.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Date from Common Dreams' republication of the essay (https://www.commondreams.org/views/2018/09/29/one-small-step-web), which also carries the Inrupt announcement; the Inrupt blog copy shows 'October 22, 2018'. The Medium original (medium.com/@timberners_lee) blocks scripted access."
+   },
+   "influence": "Solid moved from research into public infrastructure in Flanders, where the data company Athumi runs a Solid-based personal 'data vault' service and says it aims to make Flanders 'the leader in Solid vault technology in Europe and the world'.",
+   "thread": "Solid gives the person, not the service, custody of the data and the power to decide 'which people, applications, and AI agents can read and edit' it — data-side control that complements person-proffered terms.",
+   "sources": [
+    {
+     "institution": "MIT CSAIL Decentralized Information Group and Qatar Computing Research Institute (author PDF)",
+     "title": "A. V. Sambra, E. Mansour, S. Hawke, M. Zereba, N. Greco, A. Ghanem, D. Zagidulin, A. Aboulnaga and T. Berners-Lee, 'Solid: A Platform for Decentralized Social Applications Based on Linked Data'",
+     "date": "2016",
+     "url": "https://emansour.com/research/lusail/solid_protocols.pdf",
+     "quote": "The user’s data is stored in a Web-accessible personal online datastore (or pod). Solid allows users to have one or more pods from diﬀerent pod providers, while at the same time enabling users to easily switch between providers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated technical report; year inferred from its citations of demos and a tutorial at the World Wide Web Conference 2016. Text layer uses the 'ff' ligature."
+    },
+    {
+     "institution": "Common Dreams (republication of Tim Berners-Lee's essay)",
+     "title": "One Small Step for the Web…",
+     "date": "2018-09-29",
+     "url": "https://www.commondreams.org/views/2018/09/29/one-small-step-web",
+     "quote": "So I have taken a sabbatical from MIT, reduced my day-to-day involvement with the World Wide Web Consortium (W3C) and founded a company called Inrupt",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The Inrupt copy adds: 'My partner and Inrupt co-founder is John Bruce'."
+    },
+    {
+     "institution": "Solid project (solidproject.org)",
+     "title": "About Solid",
+     "date": "2026",
+     "url": "https://solidproject.org/about",
+     "quote": "Solid lets you put documents into an online file system where you have control over which people, applications, and AI agents can read and edit them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'You decide which AI systems can learn from your information and for what purposes.'"
+    },
+    {
+     "institution": "Athumi (Flemish data utility company)",
+     "title": "Solid: vault technology for consumers and businesses",
+     "date": "2026",
+     "url": "https://athumi.eu/en/technologies/solid",
+     "quote": "The Solid concept, coined by Sir Tim Berners-Lee, whose ideas helped found the World Wide Web, stems from his concerns regarding consumer data hoarded by companies, over which consumers no longer have any control.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'We are working closely with SolidLab and Imec to make Flanders the leader in Solid vault technology in Europe and the world.' Athumi's home page says it helps 'boost the Flemish data economy'."
+    }
+   ],
+   "portrait": "tim-berners-lee-web-summit-lisbon-2018"
+  },
+  {
+   "id": "christopher-allen",
+   "name": "Christopher Allen",
+   "handle": "@ChristopherA (Twitter/X, GitHub); blog 'Life With Alacrity'",
+   "roles": "cryptographer · decentralised-identity architect · co-author of the TLS standard",
+   "years": "2016–present (self-sovereign identity work)",
+   "place": "Mountain View, California (Internet Identity Workshop, where he took the essay's ideas in May 2016)",
+   "lat": 37.4143,
+   "lng": -122.0775,
+   "keyWork": {
+    "title": "The Path to Self-Sovereign Identity",
+    "year": 2016,
+    "url": "https://www.lifewithalacrity.com/article/the-path-to-self-soverereign-identity/"
+   },
+   "contribution": "A co-author of the TLS security standard, Allen published 'The Path to Self-Sovereign Identity' on 26 April 2016, just before the 22nd Internet Identity Workshop and the first ID2020 summit at the United Nations. Building explicitly on Kim Cameron's Laws of Identity, it set out ten principles — among them that users must control their identities, must consent to their use, and must disclose only the minimum. He also convened the #RebootingWebOfTrust design workshops on decentralised identity.",
+   "quote": "Control. Users must control their identities.",
+   "quoteSource": {
+    "institution": "Life With Alacrity (Christopher Allen's blog)",
+    "title": "The Path to Self-Sovereign Identity",
+    "date": "2016-04-26",
+    "url": "https://www.lifewithalacrity.com/article/the-path-to-self-soverereign-identity/",
+    "quote": "Control. Users must control their identities.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Principle 2 of ten. The original URL http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html redirects here. The page header describes him as 'Co-author TLS Security Standard'."
+   },
+   "influence": "His essay gave the self-sovereign identity movement its principles; by 2018 Kaliya Young could tell a New America audience that 'a whole set of open standards around self-sovereign identity' had emerged.",
+   "thread": "His 'Consent' principle — 'sharing of data must only occur with the consent of the user' — and 'Minimalization' carry Cameron's 2005 laws into the credential wallets and agents on which person-proffered terms can ride.",
+   "sources": [
+    {
+     "institution": "Life With Alacrity (Christopher Allen's blog)",
+     "title": "The Path to Self-Sovereign Identity",
+     "date": "2016-04-26",
+     "url": "https://www.lifewithalacrity.com/article/the-path-to-self-soverereign-identity/",
+     "quote": "At all of these events I want to share a vision for how we can enhance the ability of digital identity to enable trust while preserving individual privacy. This vision is what I call “Self-Sovereign Identity”.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same essay: 'Kim Cameron wrote one of the earliest “Laws of Identity”'; 'Consent. Users must agree to the use of their identity.'; the events listed include 'the 22st (!) Internet Identity Workshop' and 'the first ID2020 Summit on Digital Identity at the United Nations'."
+    },
+    {
+     "institution": "Open Transcripts (Kaliya Young talk at New America)",
+     "title": "The Domains of Identity & Self-Sovereign Identity",
+     "date": "2018-10-18",
+     "url": "http://opentranscripts.org/transcript/domains-self-sovereign-identity/",
+     "quote": "There’s a whole set of open standards around self-sovereign identity that have emerged.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
   }
  ],
  "events": [
@@ -92,10 +1003,10 @@
      "title": "L. Sweeney, 'k-anonymity: a model for protecting privacy'",
      "date": "2002",
      "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf",
-     "quote": "For example, William Weld was governor of Massachusetts at that time and his medical records were in the GIC data. Governor Weld lived in Cambridge Massachusetts. According to the Cambridge Voter list, six people had his particular birth date; only three of them were men; and, he was the only one in his 5-digit ZIP code.",
+     "quote": "Governor Weld lived in Cambridge Massachusetts. According to the Cambridge Voter list, six people had his particular birth date; only three of them were men; and, he was the only one in his 5-digit ZIP code.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Same page: GIC collected data 'for approximately 135,000 state employees and their families. Because the data were believed to be anonymous, GIC gave a copy of the data to researchers and sold a copy to industry'; 'For twenty dollars I purchased the voter registration list for Cambridge Massachusetts'. The paper's reference for the voter list is dated February 1997."
+     "note": "Preceded by: 'For example, William Weld was governor of Massachusetts at that time and his medical records were in the GIC data.' Same page: GIC collected data 'for approximately 135,000 state employees and their families. Because the data were believed to be anonymous, GIC gave a copy of the data to researchers and sold a copy to industry'; 'For twenty dollars I purchased the voter registration list for Cambridge Massachusetts'. The paper's reference for the voter list is dated February 1997."
     },
     {
      "institution": "Daniel C. Barth-Jones, Columbia University Mailman School of Public Health (SSRN abstract 2076397; copy hosted by the Future of Privacy Forum)",
@@ -143,6 +1054,431 @@
     }
    ],
    "locationNote": "Carnegie Mellon University, where the working paper was issued."
+  },
+  {
+   "id": "narayanan-shmatikov-netflix-deanonymization-2008",
+   "displayDate": "18–21 May 2008",
+   "year": 2008,
+   "title": "Netflix's 'anonymous' ratings are matched to named people",
+   "place": "IEEE Symposium on Security and Privacy, Oakland, California",
+   "lat": 37.8044,
+   "lng": -122.2712,
+   "summary": "Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin presented a statistical attack on the Netflix Prize dataset, which held movie ratings of about 500,000 subscribers with names replaced by numbers. Using ratings people had posted publicly on the Internet Movie Database as background knowledge, they identified the Netflix records of known users. They calculated that eight ratings (two of which may be wrong) with dates accurate to 14 days single out 99% of records. In March 2010, after FTC staff raised the research with the company, Netflix suspended plans for a second prize dataset.",
+   "significance": "It carried re-identification from demographics to behaviour — what people watch, click and buy — the very data online services collect, and it moved a regulator to act.",
+   "sources": [
+    {
+     "institution": "IEEE Symposium on Security and Privacy 2008 (author's copy, Cornell University)",
+     "title": "A. Narayanan and V. Shmatikov, 'Robust De-anonymization of Large Sparse Datasets'",
+     "date": "2008-05",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+     "quote": "With 8 movie ratings (of which 2 may be completely wrong) and dates that may have a 14-day error, 99% of records can be uniquely identiﬁed in the dataset.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PDF text layer uses the 'fi' ligature. A preprint, 'How To Break Anonymity of the Netflix Prize Dataset', was posted to arXiv (cs/0610105) on 18 October 2006, revised 22 November 2007."
+    },
+    {
+     "institution": "arXiv (Cornell University)",
+     "title": "How To Break Anonymity of the Netflix Prize Dataset (arXiv:cs/0610105)",
+     "date": "2007-11-22",
+     "url": "https://arxiv.org/abs/cs/0610105",
+     "quote": "Using the Internet Movie Database as the source of background knowledge, we successfully identified the Netflix records of known users, uncovering their apparent political preferences and other potentially sensitive information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract also: the dataset 'contains anonymous movie ratings of 500,000 subscribers of Netflix'. Princeton's publication record gives the venue as the 2008 IEEE Symposium on Security and Privacy, Oakland, CA, 18-21 May 2008, pages 111-125, DOI 10.1109/SP.2008.33 (https://collaborate.princeton.edu/en/publications/robust-de-anonymization-of-large-sparse-datasets/)."
+    },
+    {
+     "institution": "U.S. Federal Trade Commission, Division of Privacy and Identity Protection",
+     "title": "Closing letter to counsel for Netflix, Inc.",
+     "date": "2010-03-12",
+     "url": "https://www.ftc.gov/sites/default/files/documents/closing_letters/netflix-inc./100312netflixletter.pdf",
+     "quote": "the company sent a letter to staff stating that it intended to suspend plans for Prize 2.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scanned letter (OCR). The letter says the first dataset was released on 2 October 2006 and 'represented the movies rated by over 480,000 Netflix customers'."
+    }
+   ],
+   "locationNote": "Oakland, California, the symposium's listed city (city coordinates); the research was done at the University of Texas at Austin."
+  },
+  {
+   "id": "w3c-p3p-recommendation-2002",
+   "displayDate": "16 April 2002",
+   "year": 2002,
+   "title": "P3P: websites state their privacy practices in machine-readable form",
+   "place": "World Wide Web Consortium (W3C), MIT Laboratory for Computer Science, Cambridge, Massachusetts",
+   "lat": 42.363,
+   "lng": -71.0916,
+   "summary": "After a process begun in 1997, the W3C published the Platform for Privacy Preferences (P3P 1.0) as a Recommendation on 16 April 2002; its authors included Lorrie Cranor of AT&T. Sites would publish machine-readable privacy policies and browsers would act on users' preferences without the user reading each policy. The originally planned negotiation protocol was dropped, the working group closed in 2006 for lack of industry participation, and W3C declared the specification obsolete on 30 August 2018.",
+   "significance": "The first standard for machine-readable privacy terms — but the terms were the website's, read by the user's software, the mirror image of the person-proffered terms of IEEE 7012.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "W3C Recommendation 16 April 2002 obsoleted 30 August 2018",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Status section: 'W3C concludes that P3P itself has not seen sufficient ecosystem uptake to continue to recommend that the community implement the 2002 specification.'"
+    },
+    {
+     "institution": "Journal on Telecommunications and High Technology Law, vol. 10",
+     "title": "L. F. Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice'",
+     "date": "2012",
+     "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+     "quote": "the P3P working group was closed in 2006 due to lack of industry participation, and P3P 1.1 was never finalized.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same section: 'in 1997 the World Wide Web Consortium (“W3C”) launched a five-year process that led to the publication of the P3P 1.0 specification in 2002' and 'The negotiation protocol was not included in the final specification'."
+    }
+   ],
+   "locationNote": "W3C's U.S. host in 2002 was the MIT Laboratory for Computer Science at 200 Technology Square, Cambridge (approximate coordinates); W3C is a multi-site consortium."
+  },
+  {
+   "id": "soghoian-stamm-do-not-track-header-prototype-2009",
+   "displayDate": "July 2009",
+   "year": 2009,
+   "title": "A browser header that says 'do not track'",
+   "place": "Future of Privacy Forum meeting and conference call (FPF is based in Washington, D.C.)",
+   "lat": 38.9007,
+   "lng": -77.032,
+   "summary": "In July 2009 Christopher Soghoian and Sid Stamm built a prototype Firefox add-on that added 'X-Do-Not-Track: 1' and 'X-Behavioral-Ad-Opt-Out: 1' headers to every web request, replacing the per-company opt-out cookies that were erased whenever users cleared cookies. In mid-July Soghoian pitched the header at a Future of Privacy Forum meeting; none of the advertising firms showed interest. After FTC chairman Jon Leibowitz revived the 'do not track' idea in July 2010, the header approach displaced a 2007 advocacy proposal for an FTC-run Do Not Track list, and W3C later worked on it as the DNT standard until 2019.",
+   "significance": "For the first time a person's own software stated a tracking preference to every site at once — the one-bit ancestor of machine-readable personal terms.",
+   "sources": [
+    {
+     "institution": "slight paranoia (Christopher Soghoian's blog)",
+     "title": "The History of the Do Not Track Header",
+     "date": "2011-01-21",
+     "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+     "quote": "In July of 2009, I decided to try and solve this problem. My friend and research collaborator Sid Stamm helped me to put together a prototype Firefox add-on that added two headers to outgoing HTTP requests",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "First-hand account. Verified against the fetched page's full text (the repo helper's extractor skips this Blogger post body). Same post: the 2007 groups 'asked the FTC to create a Do Not Track list for online advertising'; Leibowitz raised a 'do-not-track' list at a Senate Commerce Committee hearing on 27 July 2010; 'none of the advertising firms showed any interest in the header.'"
+    },
+    {
+     "institution": "World Wide Web Consortium (W3C), Tracking Protection Working Group",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "This Note is a final outcome of the standardization process by the Tracking Protection Working Group for the extensions to HTTP known variously as DNT, Do Not Track, or Tracking Protection Expression.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Soghoian's account does not say where the meeting was held; the coordinates are FPF's home city, Washington, D.C. (city centre, approximate). The add-on itself was distributed online."
+  },
+  {
+   "id": "mcdonald-cranor-cost-of-reading-privacy-policies-2008",
+   "displayDate": "2008",
+   "year": 2008,
+   "title": "Reading every privacy policy would take 244 hours a year",
+   "place": "Carnegie Mellon University, Pittsburgh, Pennsylvania",
+   "lat": 40.4433,
+   "lng": -79.9436,
+   "summary": "Aleecia McDonald and Lorrie Faith Cranor of Carnegie Mellon measured how long privacy policies take to read and skim and multiplied by the number of sites Americans visit. Their point estimate was 244 hours a year per person to read the policy of each new site word-for-word — about 40 minutes a day — worth about $781 billion a year nationally in lost time. The paper's conclusion gives a lower figure of about 201 hours, which does not match its own tables.",
+   "significance": "It put a number on why notice-and-consent fails: no one can read the terms, so the terms have to be read by machines — or set by the person.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review); copy hosted by Stanford Center for Internet and Society",
+     "title": "A. M. McDonald and L. F. Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://cyberlaw.stanford.edu/content/files/bitstream/handle/1811/72839/isjlp_v4n3_543.pdf",
+     "quote": "using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same paper: 'the nation would lose the value of about $781 billion from the opportunity cost value of the time to read privacy policies.' Its conclusion says 'approximately 201 hours a year, worth about $3,534 annually per American Internet user'; Table 7 gives 244 hours (range 181-304) to read and 154 hours to skim."
+    },
+    {
+     "institution": "Journal on Telecommunications and High Technology Law, vol. 10",
+     "title": "L. F. Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice'",
+     "date": "2012",
+     "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+     "quote": "If an individual were to read the privacy policy at every website she visited even once per year, she would spend, on average, an estimated 244 hours per year reading privacy policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Carnegie Mellon University (CyLab), where both authors worked."
+  },
+  {
+   "id": "cameron-laws-of-identity-2005",
+   "displayDate": "May 2005",
+   "year": 2005,
+   "title": "Kim Cameron publishes 'The Laws of Identity'",
+   "place": "Microsoft Corporation, Redmond, Washington",
+   "lat": 47.674,
+   "lng": -122.1215,
+   "summary": "Kim Cameron, Microsoft's Architect of Identity, published seven 'Laws of Identity' after refining them in public on his Identityblog. The first law, 'User Control and Consent', holds that identity systems must reveal identifying information only with the user's consent; the second calls for minimal disclosure for a constrained use. Cameron argued the laws explained the failures of Microsoft's own Passport identity system.",
+   "significance": "A major platform company's identity architect put user control and consent at the base of Internet identity design — the premise from which user-held credentials and person-proffered terms grew.",
+   "sources": [
+    {
+     "institution": "Kim Cameron, Microsoft Corporation (Identityblog)",
+     "title": "The Laws of Identity",
+     "date": "2005-05",
+     "url": "https://www.identityblog.com/stories/2005/05/13/TheLawsOfIdentity.pdf",
+     "quote": "Technical identity systems must only reveal information identifying a user with the user’s consent.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The PDF is headed '…as of 5/11/2005'; the URL path is dated 13 May 2005. Law 2 is 'Minimal Disclosure for a Constrained Use'. The text says the Law of Justifiable Parties can 'account for the successes and failures of Microsoft‟s Passport identity system'."
+    },
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "In Memory of Kim Cameron",
+     "date": "2021-12-05",
+     "url": "https://www.windley.com/archives/2021/12/in_memory_of_kim_cameron.shtml",
+     "quote": "Kim Cameron's Laws of Identity are a foundational work in online identity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Microsoft's headquarters in Redmond, where Cameron worked; the laws were developed and published online (identityblog.com)."
+  },
+  {
+   "id": "first-internet-identity-workshop-berkeley-2005",
+   "displayDate": "26–27 October 2005",
+   "year": 2005,
+   "title": "The first Internet Identity Workshop meets in Berkeley",
+   "place": "Hillside Club, Berkeley, California",
+   "lat": 37.8787,
+   "lng": -122.2631,
+   "summary": "Kaliya Hamlin (now Young), Drummond Reed, Doc Searls and Phil Windley hosted the first Internet Identity Workshop in Berkeley on 26–27 October 2005 to compare proposals for Internet-wide identity, from Microsoft's InfoCard to OpenID and i-names. The first day opened with Searls on 'the rise of the fully empowered customer'; the second ran as a participant-driven 'structured open space' at the Hillside Club, at Hamlin's urging. One breakout discussed 'Identity Rights Agreements' — ways for users to state their privacy preferences — and concluded that what was missing was a legal framework to make such agreements binding.",
+   "significance": "The user-centric identity community took shape here, and its 'Identity Rights Agreements' session posed, in 2005, the problem that person-proffered terms like IEEE 7012 set out to solve.",
+   "sources": [
+    {
+     "institution": "Phil Windley, Technometria (blog of an IIW co-founder)",
+     "title": "Announcing the Internet Identity Workshop (IIW2005)",
+     "date": "2005-08-01",
+     "url": "https://www.windley.com/archives/2005/08/announcing_the_1.shtml",
+     "quote": "Kaliya Hamlin , Drummond Reed , Doc Searls and I are hosting the Internet Identity Workshop in Berkeley on October 26 and 27th ( Note: this changed from 25th and 26th )",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The announcement lists proposals to be compared, including 'Microsoft's InfoCard system', 'OpenID' and 'XRI/XDI (i-names)'."
+    },
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "IIW2005: Identity Rights Agreements",
+     "date": "2005-10-27",
+     "url": "https://www.windley.com/archives/2005/10/iiw2005_identit.shtml",
+     "quote": "What we're saying in the discussion of IRAs is that we can build systems that allow users to easily indicate their privacy preferences, at least for some classes of data. What's missing is the legal framework in the middle to make such agreements legally binding.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "IIW2005: Day Two Wrap-Up",
+     "date": "2005-10-27",
+     "url": "https://www.windley.com/archives/2005/10/iiw2005_day_two.shtml",
+     "quote": "The rows were for different spaces at the Hillside Club and the columns were times in 30 minute blocks.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: 'Kaliya Hamlin was anxious that we use it as a way of creating discussion.' Windley's November 2005 archive lists the recording 'Identity in the Marketplace: The Rise of the Fully Empowered Customer, featuring Doc Searls, podcast from the Internet Identity Workshop, Oct. 26, 2005.'"
+    }
+   ],
+   "locationNote": "The Hillside Club in Berkeley is named in Windley's day-two report (coordinates approximate). Later IIWs meet at the Computer History Museum in Mountain View."
+  },
+  {
+   "id": "searls-projectvrm-launched-berkman-2006",
+   "displayDate": "2006",
+   "year": 2006,
+   "title": "ProjectVRM: tools for the customer's side of the relationship",
+   "place": "Berkman Center for Internet & Society, Harvard University, Cambridge, Massachusetts",
+   "lat": 42.378,
+   "lng": -71.119,
+   "summary": "Doc Searls created ProjectVRM when he became a fellow at Harvard's Berkman Center in 2006. VRM — vendor relationship management — was framed as the customer-side counterpart of companies' CRM systems. Its principles hold that customers should control the data they generate, share it selectively, and 'proffer their own terms of engagement' with auditable records of agreements; Searls reported its progress in The Intention Economy (Harvard Business Review Press, 2012).",
+   "significance": "This is where the idea of person-proffered terms was named and organised; IEEE 7012's own FAQ says the ideas behind the standard 'were worked out in ProjectVRM'.",
+   "sources": [
+    {
+     "institution": "ProjectVRM wiki, Berkman Klein Center, Harvard University",
+     "title": "VRM History",
+     "date": "2010",
+     "url": "https://cyber.harvard.edu/projectvrm/VRM_History",
+     "quote": "It was created by Doc Searls when he became a fellow at the Center in 2006.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page date inferred from its statement that Searls 'has been an alumnus fellow since September 2010'; the wiki page is undated."
+    },
+    {
+     "institution": "ProjectVRM wiki, Berkman Klein Center, Harvard University",
+     "title": "ProjectVRM — Main Page ('VRM Principles')",
+     "date": "2022-09",
+     "url": "https://cyber.harvard.edu/projectvrm/Main_Page",
+     "quote": "Customers must be able to proffer their own terms of engagement —and to have auditable records of all contracts to which both sides agree.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (Customer Commons / MyTerms Alliance)",
+     "title": "MyTerms FAQs",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The ideas directly behind 7012 were worked out in ProjectVRM, which was launched at the Berkman (now Berkman Klein) Center at Harvard in 2006, and its nonprofit spinoff, Customer Commons, in 2013.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Interested source (the standard's promoters)."
+    }
+   ],
+   "locationNote": "Harvard Law School campus area, Cambridge (approximate); the Berkman Center's 2006 street address was not verified."
+  },
+  {
+   "id": "first-agentic-internet-workshop-mountain-view-2025",
+   "displayDate": "24 October 2025",
+   "year": 2025,
+   "title": "The identity community turns to agents",
+   "place": "Computer History Museum, Mountain View, California",
+   "lat": 37.4143,
+   "lng": -122.0775,
+   "summary": "The day after the 41st Internet Identity Workshop, its organisers held the first Agentic Internet Workshop at the Computer History Museum. Run in the same open-space format, it had more than 40 sessions on agent identity protocols, agentic browsers, policy enforcement for AI agents and the legal frameworks for 'human-centric agency', with participants from 10 countries. Co-organiser Phil Windley framed it as a response to an internet where agents 'interact, negotiate, and make decisions on our behalf'.",
+   "significance": "Twenty years after the first IIW asked how people could control their own identifiers, the same community began asking how people could control the agents that act for them — the setting in which person-proffered terms like MyTerms now operate.",
+   "sources": [
+    {
+     "institution": "Phil Windley, Technometria (IIW co-founder)",
+     "title": "The First Agentic Internet Workshop",
+     "date": "2025-11-06",
+     "url": "https://www.windley.com/archives/2025/11/the_first_agentic_internet_workshop.shtml",
+     "quote": "On October 24, 2025, the day after IIW 41 wrapped up, we held the first-ever Agentic Internet Workshop (AIW1) at the Computer History Museum.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: 'IIW 41 was about the state of identity. AIW1 asked: what happens when we give identity the power to act?' and 'With more than 40 sessions across four time slots'."
+    },
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "From IIW to the Agentic Internet Workshop",
+     "date": "2025-09-18",
+     "url": "https://www.windley.com/archives/2025/09/from_iiw_to_the_agentic_internet_workshop.shtml",
+     "quote": "Together, we now face the shift toward an internet where agents—AI-powered and otherwise—interact, negotiate, and make decisions on our behalf.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Computer History Museum, Mountain View (coordinates approximate), where IIW now meets."
+  },
+  {
+   "id": "howe-nissenbaum-trackmenot-2006",
+   "displayDate": "August 2006",
+   "year": 2006,
+   "title": "TrackMeNot hides real searches in a cloud of decoys",
+   "place": "New York University, New York City",
+   "lat": 40.7295,
+   "lng": -73.9965,
+   "summary": "Daniel Howe and Helen Nissenbaum of New York University released TrackMeNot, a free Firefox extension that periodically sends randomised 'ghost' queries to search engines so that a user's real searches are harder to profile. Its authors cited the U.S. Justice Department's 2005 subpoena of search records and the New York Times coverage of AOL's release of search logs. By their count it passed 350,000 downloads; a 2010 study showed that a search engine using machine-learning classifiers could often separate the decoys from real queries.",
+   "significance": "An early example of privacy as something users enact with their own software against a service, rather than a setting the service grants.",
+   "sources": [
+    {
+     "institution": "D. C. Howe and H. Nissenbaum, New York University — chapter in 'Lessons from the Identity Trail' (Oxford University Press); pre-publication PDF hosted by the TrackMeNot project",
+     "title": "TrackMeNot: Resisting Surveillance in Web Search",
+     "date": "2009",
+     "url": "https://www.trackmenot.io/_files/ugd/654565_96fc2dcd8f7f4b55bc6caff610d061c2.pdf",
+     "quote": "Since August 2006, when the initial version of TMN was made publicly available, free of charge, there have been over 350,000 downloads.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The PDF is headed 'In: On the Identity Trail: Privacy, Anonymity and Identity in a Networked Society, Eds. Ian Kerr, Carole Lucock and Valerie Steeves (Forthcoming, Oxford University Press)'. Creative Commons reported on 21 April 2009 that the book had been 'recently published by Oxford University Press' (https://creativecommons.org/2009/04/21/oxford-university-press-releases-lessons-from-the-identity-trail-under-cc-license/)."
+    },
+    {
+     "institution": "TrackMeNot project, hosted at New York University",
+     "title": "TrackMeNot",
+     "date": "2026",
+     "url": "https://cs.nyu.edu/trackmenot/",
+     "quote": "It hides users' actual search trails in a cloud of 'ghost' queries, significantly increasing the difficulty of aggregating such data into accurate or identifying user profiles.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The 'why we created TMN' section refers to the Justice Department subpoena to Google 'initiated August 2005' and to a front-page New York Times article on AOL's release of search data."
+    },
+    {
+     "institution": "Privacy Enhancing Technologies Symposium 2010, Lecture Notes in Computer Science vol. 6205 (Springer)",
+     "title": "S. T. Peddinti and N. Saxena, 'On the Privacy of Web Search Based on Query Obfuscation: A Case Study of TrackMeNot'",
+     "date": "2010",
+     "url": "https://link.springer.com/chapter/10.1007/978-3-642-14527-8_2",
+     "quote": "We demonstrate that a search engine, equipped with only a short-term history of a user’s search queries, can break the privacy guarantees of TMN by only utilizing off-the-shelf machine learning classifiers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Abstract is free; full text paywalled."
+    }
+   ],
+   "locationNote": "New York University, Washington Square, Manhattan (approximate), where both authors worked; the extension was distributed online."
+  },
+  {
+   "id": "zuboff-age-of-surveillance-capitalism-2019",
+   "displayDate": "15 January 2019",
+   "year": 2019,
+   "title": "'The Age of Surveillance Capitalism' names the business model",
+   "place": "PublicAffairs (Hachette Book Group), New York City",
+   "lat": 40.7614,
+   "lng": -73.979,
+   "summary": "Harvard Business School professor emerita Shoshana Zuboff published The Age of Surveillance Capitalism in the United States on 15 January 2019, after a German edition in October 2018; she had written it from 2011 through 2018. The 704-page book describes an economic order in which once-private human experience is extracted as data and used to manufacture and sell predictions about behaviour. Its publisher billed it as an international bestseller, and its title term became a common name for the tracking-based business model.",
+   "significance": "It recast tracking from a privacy nuisance into an economic system — sharpening the case that individuals need their own terms, not just better notices.",
+   "sources": [
+    {
+     "institution": "Shoshana Zuboff (author website)",
+     "title": "About — The Age of Surveillance Capitalism",
+     "date": "2021",
+     "url": "https://shoshanazuboff.com/book/about/",
+     "quote": "From 2011 through 2018 I wrote a comprehensive book on this subject: The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power . It was published in Germany in October 2018 and in the US on January 15, 2019.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "PublicAffairs (Hachette Book Group)",
+     "title": "The Age of Surveillance Capitalism — publisher's page",
+     "date": "2019-01-15",
+     "url": "https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/",
+     "quote": "the product is expected to ship on or around January 15, 2019.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page: 'On Sale Jan 15, 2019', 'Page Count 704 pages', 'An International Bestseller'."
+    },
+    {
+     "institution": "Shoshana Zuboff (author website)",
+     "title": "Shoshana — biography",
+     "date": "2026",
+     "url": "https://shoshanazuboff.com/book/shoshana/",
+     "quote": "synthesizes her decades of research and thinking to reveal a new economic era in which once private human experience is secretly invaded, extracted as data, and exploited for hidden processes of manufacturing, prediction, and sales.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Publisher's city: PublicAffairs, an imprint of Hachette Book Group, New York (approximate coordinates of Hachette's Manhattan offices). Zuboff worked at Harvard Business School, Boston."
+  },
+  {
+   "id": "berners-lee-solid-inrupt-announced-2018",
+   "displayDate": "29 September 2018",
+   "year": 2018,
+   "title": "The web's inventor goes public with Solid personal data pods",
+   "place": "MIT Computer Science and Artificial Intelligence Laboratory, Cambridge, Massachusetts",
+   "lat": 42.3616,
+   "lng": -71.0906,
+   "summary": "Tim Berners-Lee published 'One Small Step for the Web…', announcing that he had been working with colleagues at MIT and elsewhere on Solid, 'an open-source project to restore the power and agency of individuals on the web', and that he was taking a sabbatical from MIT to found the company Inrupt with John Bruce. Solid, described in a 2016 MIT–Qatar Computing Research Institute paper, stores each person's data in a personal online datastore ('pod') they control, so they can switch apps and pod providers.",
+   "significance": "The web's inventor proposed reversing its data architecture — people keep their data and grant access — the storage-side counterpart to people setting their own terms.",
+   "sources": [
+    {
+     "institution": "Common Dreams (republication of Tim Berners-Lee's essay)",
+     "title": "One Small Step for the Web…",
+     "date": "2018-09-29",
+     "url": "https://www.commondreams.org/views/2018/09/29/one-small-step-web",
+     "quote": "So I have taken a sabbatical from MIT, reduced my day-to-day involvement with the World Wide Web Consortium (W3C) and founded a company called Inrupt",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Inrupt (company blog copy of the essay)",
+     "title": "Tim Berners-Lee, 'One Small Step for the Web…'",
+     "date": "2018-09-29",
+     "url": "https://www.inrupt.com/blog/one-small-step-for-the-web",
+     "quote": "This is why I have, over recent years, been working with a few people at MIT and elsewhere to develop Solid, an open-source project to restore the power and agency of individuals on the web.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same text: 'My partner and Inrupt co-founder is John Bruce'. The blog copy displays 'October 22, 2018'."
+    },
+    {
+     "institution": "MIT CSAIL Decentralized Information Group and Qatar Computing Research Institute (author PDF)",
+     "title": "Sambra et al., 'Solid: A Platform for Decentralized Social Applications Based on Linked Data'",
+     "date": "2016",
+     "url": "https://emansour.com/research/lusail/solid_protocols.pdf",
+     "quote": "The user’s data is stored in a Web-accessible personal online datastore (or pod). Solid allows users to have one or more pods from diﬀerent pod providers, while at the same time enabling users to easily switch between providers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated technical report; year inferred from its references to WWW 2016."
+    }
+   ],
+   "locationNote": "MIT CSAIL (Stata Center), where Solid was developed in the Decentralized Information Group; the announcement itself was published online."
   }
  ],
  "images": [
@@ -166,6 +1502,251 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 4.0\"; License \"cc-by-4.0\"; UsageTerms \"Creative Commons Attribution 4.0\"; Artist \"Parker Higgins\"; Credit \"Own work\"; AttributionRequired \"true\"; DateTimeOriginal \"2017-11-16 15:59:00\".",
    "localFile": "assets/media/latanya-sweeney-knight-news-challenge-2017.jpg",
    "thumbPx": "960x960"
+  },
+  {
+   "id": "arvind-narayanan-stanford-2010",
+   "era": "cookies",
+   "year": 2010,
+   "title": "Arvind Narayanan at Stanford, 2010",
+   "caption": "Arvind Narayanan in the computer science department at Stanford University in October 2010, photographed with professor Dan Boneh for a post on a privacy-preserving location 'check-in' system (cropped to Narayanan).",
+   "alt": "Arvind Narayanan in a red plaid shirt standing in front of window blinds",
+   "creator": "Robert Scoble",
+   "license": "CC BY 2.0",
+   "creditLine": "Robert Scoble / Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanford%27s_privacy_guy_-_Arvind_Narayana.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Stanford%27s_privacy_guy_-_Arvind_Narayana.jpg/960px-Stanford%27s_privacy_guy_-_Arvind_Narayana.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Stanford%27s_privacy_guy_-_Arvind_Narayana.jpg",
+   "upstreamArchive": "Flickr (scobleizer)",
+   "upstreamUrl": "https://www.flickr.com/photos/scobleizer/5115027150/",
+   "lat": 37.43,
+   "lng": -122.1733,
+   "locationNote": "Stanford University computer science department (Gates Building), Stanford, California",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"Robert Scoble\"; Credit \"https://www.flickr.com/photos/scobleizer/5115027150/\"; DateTimeOriginal \"2010-10-21 16:19:08\"; category 'Extracted images'. Description: \"These two guys, Arvind Narayanan, left, and professor Dan Boneh, work in the computer science department at Stanford University.\"",
+   "localFile": "assets/media/arvind-narayanan-stanford-2010.jpg",
+   "thumbPx": "960x870"
+  },
+  {
+   "id": "lorrie-cranor-capitol-hill-briefing-2014",
+   "era": "surveillance",
+   "year": 2014,
+   "title": "Lorrie Cranor at a Capitol Hill privacy briefing, 2014",
+   "caption": "Lorrie Faith Cranor speaking at 'Privacy and Cybersecurity in a Connected Age', a briefing on Capitol Hill presented by the National Science Foundation and IEEE-USA with the Congressional Cybersecurity Caucus during National Cyber Security Awareness Month, 30 October 2014 (cropped).",
+   "alt": "Lorrie Cranor, wearing glasses, speaking into a microphone at a hearing-room table",
+   "creator": "National Science Foundation",
+   "license": "Public domain",
+   "creditLine": "National Science Foundation / Wikimedia Commons (public domain)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Privacy_and_security_in_a_connected_age_(cropped).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Privacy_and_security_in_a_connected_age_%28cropped%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Privacy_and_security_in_a_connected_age_%28cropped%29.jpg",
+   "upstreamArchive": "NSF on Flickr",
+   "upstreamUrl": "https://www.flickr.com/photos/nsf_beta/15548257259/",
+   "lat": 38.8899,
+   "lng": -77.0091,
+   "locationNote": "U.S. Capitol complex, Washington, D.C. (the specific building is not named in the record)",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"Public domain\"; License \"pd\"; Artist \"National Science Foundation\"; Copyrighted \"False\"; categories include 'PD US NSF' and 'Lorrie Cranor'; DateTimeOriginal \"2014-10-30 15:06:58\". Description: \"the National Science Foundation (NSF) and IEEE-USA joined with the Congressional Cybersecurity Caucus of the U.S. House of Representatives to present a briefing on Capitol Hill on “Privacy and Cybersecurity in a Connected Age.”\"",
+   "localFile": "assets/media/lorrie-cranor-capitol-hill-briefing-2014.jpg",
+   "thumbPx": "488x657"
+  },
+  {
+   "id": "christopher-soghoian-30c3-hamburg-2013",
+   "era": "surveillance",
+   "year": 2013,
+   "title": "Christopher Soghoian at the 30th Chaos Communication Congress, 2013",
+   "caption": "Christopher Soghoian at the 30th Chaos Communication Congress in Hamburg, 29 December 2013.",
+   "alt": "Christopher Soghoian, bearded and wearing glasses and an ACLU T-shirt, gesturing while speaking on stage",
+   "creator": "Tobias Klenze (Wikimedia user Church of emacs)",
+   "license": "CC BY 3.0",
+   "creditLine": "Tobias Klenze / Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-12-29_30C3_-_Christopher_Soghoian_3145.JPG",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/2013-12-29_30C3_-_Christopher_Soghoian_3145.JPG/960px-2013-12-29_30C3_-_Christopher_Soghoian_3145.JPG",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/2013-12-29_30C3_-_Christopher_Soghoian_3145.JPG",
+   "lat": 53.5552,
+   "lng": 9.991,
+   "locationNote": "Congress Center Hamburg (CCH), venue of 30C3 (coordinates approximate)",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Credit \"Own work\"; DateTimeOriginal \"2013-12-29 23:28:14\". File wikitext license section: \"{{self|GFDL|cc-by-3.0}}\" (dual-licensed GFDL / CC BY 3.0; CC BY 3.0 chosen). The author's attribution template asks for credit as 'Wikipedia / Tobias Klenze'. Description: \"Christopher Soghoian at the 30th Chaos Communication Congress in Hamburg, 2013\".",
+   "localFile": "assets/media/christopher-soghoian-30c3-hamburg-2013.jpg",
+   "thumbPx": "960x1440"
+  },
+  {
+   "id": "identity-gang-reed-cameron-dyson-pc-forum-2005",
+   "era": "cookies",
+   "year": 2005,
+   "title": "Drummond Reed, Kim Cameron and Esther Dyson at the first 'Identity Gang' gathering, 2005",
+   "caption": "Drummond Reed, Kim Cameron and Esther Dyson at the first \"Identity Gang\" gathering, held at Esther Dyson's PC Forum in Scottsdale, Arizona, on 20 March 2005. The photographer, Doc Searls, describes the gathering as the forerunner of the Internet Identity Workshop.",
+   "alt": "Three people laughing at an outdoor café table with laptops and paper cups: Drummond Reed, Kim Cameron and Esther Dyson, named in that order in the title",
+   "creator": "Doc Searls",
+   "license": "CC BY 2.0",
+   "creditLine": "Doc Searls / Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drummond_Reed,_Kim_Cameron_and_Esther_Dyson.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Drummond_Reed%2C_Kim_Cameron_and_Esther_Dyson.jpg/960px-Drummond_Reed%2C_Kim_Cameron_and_Esther_Dyson.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Drummond_Reed%2C_Kim_Cameron_and_Esther_Dyson.jpg",
+   "upstreamArchive": "Flickr (docsearls)",
+   "upstreamUrl": "https://www.flickr.com/photos/docsearls/14745767570/",
+   "lat": 33.4942,
+   "lng": -111.9261,
+   "locationNote": "Scottsdale, Arizona (city coordinates); PC Forum 2005 venue per the photographer's description",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"Doc Searls\"; Credit \"https://www.flickr.com/photos/docsearls/14745767570/\"; category 'Flickr images reviewed by FlickreviewR 2'; DateTimeOriginal \"2005-03-20 10:15:58\". Description: \"Drummond Reed, Kim Cameron and Esther Dyson at the first \\\"Identity Gang\\\" gathering, which became henceforth the Internet Identity Workshop ... The gathering was at Esther Dyson's PC Forum in Scottsdale, Arizona.\"",
+   "localFile": "assets/media/identity-gang-reed-cameron-dyson-pc-forum-2005.jpg",
+   "thumbPx": "960x623"
+  },
+  {
+   "id": "doc-searls-headshot-2022",
+   "era": "surveillance",
+   "year": 2022,
+   "title": "Doc Searls, May 2022",
+   "caption": "Doc Searls headshot, 30 May 2022.",
+   "alt": "Doc Searls, white-bearded and smiling, arms folded, in a black T-shirt against a wooden wall",
+   "creator": "Doc Searls (uploaded from his Flickr account)",
+   "license": "CC BY 2.0",
+   "creditLine": "Doc Searls / Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Doc_Searls,_May_2022.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Doc_Searls%2C_May_2022.jpg/960px-Doc_Searls%2C_May_2022.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Doc_Searls%2C_May_2022.jpg",
+   "upstreamArchive": "Flickr (docsearls)",
+   "upstreamUrl": "https://www.flickr.com/photos/docsearls/54030165035/",
+   "lat": 42.377,
+   "lng": -71.1167,
+   "locationNote": "Where the photo was taken is not recorded; coordinates are those of his ProjectVRM base (Berkman Klein Center, Cambridge, Massachusetts) for mapping only",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"Doc Searls\"; Credit \"https://www.flickr.com/photos/docsearls/54030165035/\"; category 'Flickr images reviewed by FlickreviewR 2'; DateTimeOriginal \"2022-05-30 18:11:04\". Description: \"Doc Searls headshot\". Note: Artist field names Searls although he is the subject; the Flickr account is his.",
+   "localFile": "assets/media/doc-searls-headshot-2022.jpg",
+   "thumbPx": "960x1183"
+  },
+  {
+   "id": "ann-cavoukian-goopendata-toronto-2013",
+   "era": "surveillance",
+   "year": 2013,
+   "title": "Ann Cavoukian at the GOopendata conference, 2013",
+   "caption": "Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \"Access by Design - Time To Change the Paradigm\" keynote at the GOopendata conference, May 2013.",
+   "alt": "Ann Cavoukian in a tweed jacket in front of a projected slide reading www.privacybydesign.ca",
+   "creator": "Laurelrusswurm (Wikimedia Commons user)",
+   "license": "CC BY 3.0",
+   "creditLine": "Laurelrusswurm / Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ann_Cavoukian,_Information_and_Privacy_Commissioner_of_Ontario.jpeg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ann_Cavoukian%2C_Information_and_Privacy_Commissioner_of_Ontario.jpeg/960px-Ann_Cavoukian%2C_Information_and_Privacy_Commissioner_of_Ontario.jpeg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Ann_Cavoukian%2C_Information_and_Privacy_Commissioner_of_Ontario.jpeg",
+   "lat": 43.6532,
+   "lng": -79.3832,
+   "locationNote": "Toronto (city coordinates); the file does not name the venue. The description gives 11 May 2013 while the camera timestamp reads 8 May 2013.",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Artist \"Laurelrusswurm\"; Credit \"Own work\"; category 'Self-published work'; DateTimeOriginal \"2013-05-08 23:34:51\". Description: \"Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \\\"Access by Design - Time To Change the Paradigm\\\" Keynote speech at the GOopendata Conference, on May 11, 2013\".",
+   "localFile": "assets/media/ann-cavoukian-goopendata-toronto-2013.jpg",
+   "thumbPx": "960x720"
+  },
+  {
+   "id": "danah-boyd-yale-roundtable-2009",
+   "era": "cookies",
+   "year": 2009,
+   "title": "danah boyd at Yale, 2009",
+   "caption": "danah boyd at the Writers on Writing about Technology roundtable at Yale University, 30 September 2009, marking the publication of The Best Technology Writing 2009 (Yale University Press), to which she contributed (cropped).",
+   "alt": "danah boyd speaking into a microphone and gesturing at a panel table in front of a blackboard",
+   "creator": "Sage Ross",
+   "license": "CC BY-SA 3.0",
+   "creditLine": "Sage Ross / Wikimedia Commons (CC BY-SA 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danah_boyd_crop.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Danah_boyd_crop.jpg/960px-Danah_boyd_crop.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Danah_boyd_crop.jpg",
+   "lat": 41.3111,
+   "lng": -72.9267,
+   "locationNote": "Yale University, New Haven, Connecticut (campus coordinates)",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 3.0\"; License \"cc-by-sa-3.0\"; UsageTerms \"Creative Commons Attribution-Share Alike 3.0\"; Artist \"Sage Ross\"; Credit \"File:danah boyd, Writers on Writing about Technology roundtable, 2009-09-30.jpg\" (crop of that file); categories 'GFDL', 'CC-BY-SA-3.0,2.5,2.0,1.0', 'Self-published work'; DateTimeOriginal \"2009-09-30 20:19:34\".",
+   "localFile": "assets/media/danah-boyd-yale-roundtable-2009.jpg",
+   "thumbPx": "960x980"
+  },
+  {
+   "id": "helen-nissenbaum-berkeley-lecture-2008",
+   "era": "cookies",
+   "year": 2008,
+   "title": "Helen Nissenbaum lecturing at Berkeley, 2008",
+   "caption": "Helen Nissenbaum giving a guest lecture at the University of California, Berkeley, 2 April 2008 (cropped). The file title reads \"Helen's guest lecture at University of Berkley\"; the identification comes from its Commons category 'Helen Nissenbaum'.",
+   "alt": "Helen Nissenbaum in a white shirt standing and gesturing in front of a classroom blackboard",
+   "creator": "Joe Hall",
+   "license": "CC BY 2.0",
+   "creditLine": "Joe Hall / Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helen%27s_guest_lecture_at_University_of_Berkley_(cropped).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Helen%27s_guest_lecture_at_University_of_Berkley_%28cropped%29.jpg/960px-Helen%27s_guest_lecture_at_University_of_Berkley_%28cropped%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Helen%27s_guest_lecture_at_University_of_Berkley_%28cropped%29.jpg",
+   "upstreamArchive": "Flickr (joebeone)",
+   "upstreamUrl": "https://www.flickr.com/photos/joebeone/2385347407/",
+   "lat": 37.8719,
+   "lng": -122.2585,
+   "locationNote": "University of California, Berkeley (campus coordinates); the building is not named",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"Joe Hall\"; Credit \"https://www.flickr.com/photos/joebeone/2385347407/\"; categories 'Helen Nissenbaum', 'Extracted images'; DateTimeOriginal \"2008-04-02 16:32:55\". Description: \"Helen's guest lecture at University of Berkley\".",
+   "localFile": "assets/media/helen-nissenbaum-berkeley-lecture-2008.jpg",
+   "thumbPx": "960x1629"
+  },
+  {
+   "id": "kaliya-hamlin-vrm-day-2015",
+   "era": "surveillance",
+   "year": 2015,
+   "title": "Kaliya Hamlin (Young) at VRM Day, 2015",
+   "caption": "Kaliya Hamlin and Lionel Wolberger at VRM Day, 6 April 2015, photographed by Doc Searls.",
+   "alt": "A workshop room: a woman in a blue scarf stands facing seated participants with laptops while a man writes on a whiteboard covered in notes",
+   "creator": "Doc Searls (Flickr user dsearls)",
+   "license": "CC BY 2.0",
+   "creditLine": "Doc Searls / Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_04_06_vrmday_038z.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/2015_04_06_vrmday_038z.jpg/960px-2015_04_06_vrmday_038z.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/2015_04_06_vrmday_038z.jpg",
+   "upstreamArchive": "Flickr (dsearls)",
+   "upstreamUrl": "https://www.flickr.com/photos/52614599@N00/22348758586/",
+   "lat": 37.4143,
+   "lng": -122.0775,
+   "locationNote": "The file does not record the venue; coordinates are those of the Computer History Museum, Mountain View, where the Internet Identity Workshop meets, for mapping only.",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"dsearls\"; Credit \"https://www.flickr.com/photos/52614599@N00/22348758586/\"; category 'Flickr images verified by UploadWizard', 'VRM Day 2015'; DateTimeOriginal \"2015-04-06 16:34:14\". Description: \"Kaliya Hamlin and Lionel Wolberger at VRM Day\".",
+   "localFile": "assets/media/kaliya-hamlin-vrm-day-2015.jpg",
+   "thumbPx": "960x405"
+  },
+  {
+   "id": "shoshana-zuboff-hiig-berlin-2019",
+   "era": "surveillance",
+   "year": 2019,
+   "title": "Shoshana Zuboff at the Humboldt Institute for Internet and Society, 2019",
+   "caption": "Shoshana Zuboff speaking on 'Surveillance capitalism and democracy' at an event of the Alexander von Humboldt Institute for Internet and Society, 11 November 2019 (video still, cropped and brightened).",
+   "alt": "Shoshana Zuboff, with curly hair and glasses, seated in a red chair speaking into a handheld microphone",
+   "creator": "Alexander von Humboldt Institute for Internet and Society (HIIG)",
+   "license": "CC BY 3.0",
+   "creditLine": "Alexander von Humboldt Institut für Internet und Gesellschaft / Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shoshana_Zuboff_at_Alexander_von_Humboldt_Institut.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shoshana_Zuboff_at_Alexander_von_Humboldt_Institut.jpg/960px-Shoshana_Zuboff_at_Alexander_von_Humboldt_Institut.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Shoshana_Zuboff_at_Alexander_von_Humboldt_Institut.jpg",
+   "upstreamArchive": "YouTube (HIIG), video 'Shoshana Zuboff: Surveillance capitalism and democracy', frame at 1:28:39",
+   "lat": 52.52,
+   "lng": 13.405,
+   "locationNote": "Berlin (city coordinates); HIIG is based in Berlin, and the file does not name the venue",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Artist \"Alexander von Humboldt Institut for internet and society\"; Credit \"Shoshana Zuboff: Surveillance capitalism and democracy at 1:28:39, cropped, brightened\"; categories 'Media from YouTube', 'Files from external sources with reviewed licenses'; DateTimeOriginal \"2019-11-11\".",
+   "localFile": "assets/media/shoshana-zuboff-hiig-berlin-2019.jpg",
+   "thumbPx": "960x976"
+  },
+  {
+   "id": "tim-berners-lee-web-summit-lisbon-2018",
+   "era": "surveillance",
+   "year": 2018,
+   "title": "Tim Berners-Lee at Web Summit, Lisbon, 2018",
+   "caption": "Tim Berners-Lee, inventor of the World Wide Web, backstage during the Web Summit 2018 opening ceremony at the Altice Arena in Lisbon, 5 November 2018 — five weeks after he announced Solid's commercial push with Inrupt. Cropped to Berners-Lee from a two-person photo.",
+   "alt": "Tim Berners-Lee in a dark jacket and pale blue shirt, wearing a headset microphone, standing backstage against a dark curtain",
+   "creator": "Stephen McCarthy / Web Summit via Sportsfile",
+   "license": "CC BY 2.0",
+   "creditLine": "Stephen McCarthy / Web Summit via Sportsfile, Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Web_Summit_2018_-_Opening_Night_-_November_5_SMX_4794_(44822699885).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Web_Summit_2018_-_Opening_Night_-_November_5_SMX_4794_%2844822699885%29.jpg/1920px-Web_Summit_2018_-_Opening_Night_-_November_5_SMX_4794_%2844822699885%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Web_Summit_2018_-_Opening_Night_-_November_5_SMX_4794_%2844822699885%29.jpg",
+   "upstreamArchive": "Web Summit Flickr stream",
+   "lat": 38.7684,
+   "lng": -9.094,
+   "locationNote": "Altice Arena, Parque das Nações, Lisbon (approximate coordinates)",
+   "verified": true,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"Web Summit\"; categories 'Tim Berners-Lee', 'Flickr images reviewed by FlickreviewR 2', 'Web Summit flickr stream'; DateTimeOriginal \"2018-11-05 19:32\". Description: \"5 November 2018; Tim Berners-Lee, inventor of the World Wide Web, backstage during the Web Summit 2018 Opening Ceremony at the Altice Arena in Lisbon, Portugal. Photo by Stephen McCarthy/Web Summit via Sportsfile\". Local file cropped from the 1920 px thumbnail.",
+   "localFile": "assets/media/tim-berners-lee-web-summit-lisbon-2018.jpg",
+   "thumbPx": "680x1160"
   }
  ],
  "myths": [
@@ -204,6 +1785,171 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Barth-Jones's critique is itself disputed by re-identification researchers (e.g. Narayanan and Felten, 2014)."
+    }
+   ]
+  },
+  {
+   "id": "myth-soghoian-invented-do-not-track-used-by-all-browsers",
+   "claim": "Christopher Soghoian invented Do Not Track, an anti-tracking tool that all major browsers use.",
+   "verdict": "MISLEADING",
+   "correction": "By Soghoian's own account the name came from a 2007 proposal by public-interest groups for an FTC-run 'Do Not Track list'; the idea of a browser header had been urged on him by Dan Kaminsky and Mozilla's Mike Shaver before he and Sid Stamm built the first header prototype in July 2009. DNT was a request, not a blocking tool: it only worked if sites chose to honour it, W3C closed the standard in January 2019 for lack of deployment, and in February 2019 Apple began removing it from Safari because the signal could itself be used to fingerprint users.",
+   "sources": [
+    {
+     "institution": "slight paranoia (Christopher Soghoian's blog)",
+     "title": "The History of the Do Not Track Header",
+     "date": "2011-01-21",
+     "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+     "quote": "In 2007, several public interest groups, including the World Privacy Forum, CDT and EFF, asked the FTC to create a Do Not Track list for online advertising.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Verified against the fetched page's full text. The same post quotes Kaminsky's email ('Just add an \"X-No-Track: user-opt-out=explicit\" header to all HTTP requests') and says Mozilla's VP of Engineering Mike Shaver 'emailed me to state his own preference for a header'."
+    },
+    {
+     "institution": "World Wide Web Consortium (W3C), Tracking Protection Working Group",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "WebKit (Apple)",
+     "title": "Release Notes for Safari Technology Preview 75",
+     "date": "2019-02-06",
+     "url": "https://webkit.org/blog/8611/release-notes-for-safari-technology-preview-75/",
+     "quote": "Removed support for the expired Do Not Track standard to prevent potential use as a fingerprinting variable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-first-iiw-mountain-view-computer-history-museum",
+   "claim": "The Internet Identity Workshop began in 2005 at the Computer History Museum in Mountain View.",
+   "verdict": "FALSE",
+   "correction": "IIW now meets at the Computer History Museum, and its site says it has met twice a year since 2005 — which invites the assumption. But the co-founders' own announcement and reports from the time place the first workshop, on 26–27 October 2005, in Berkeley, with the open-space day held at the Hillside Club.",
+   "sources": [
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "Announcing the Internet Identity Workshop (IIW2005)",
+     "date": "2005-08-01",
+     "url": "https://www.windley.com/archives/2005/08/announcing_the_1.shtml",
+     "quote": "Kaliya Hamlin , Drummond Reed , Doc Searls and I are hosting the Internet Identity Workshop in Berkeley on October 26 and 27th ( Note: this changed from 25th and 26th )",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "IIW2005: Day Two Wrap-Up",
+     "date": "2005-10-27",
+     "url": "https://www.windley.com/archives/2005/10/iiw2005_day_two.shtml",
+     "quote": "The rows were for different spaces at the Hillside Club and the columns were times in 30 minute blocks.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IIW Foundation (Internet Identity Workshop)",
+     "title": "About IIW",
+     "date": "2026",
+     "url": "https://internetidentityworkshop.com/about/",
+     "quote": "The Internet Identity Workshop has been finding, probing and solving identity issues twice every year since 2005. We meet in the Computer History Museum in Mountain View, CA.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Present-tense description of the current venue, not of the 2005 meeting."
+    }
+   ]
+  },
+  {
+   "id": "myth-oauth-created-at-internet-identity-workshop",
+   "claim": "OAuth was created at the Internet Identity Workshop.",
+   "verdict": "MISLEADING",
+   "correction": "Speaker biographies often say OAuth and OpenID Connect were 'created' at IIW. OAuth's own published history traces it to a November 2006 conversation between Twitter and Ma.gnolia developers at a CitizenSpace OpenID meeting, a Google group formed in April 2007 and a final OAuth Core 1.0 draft on 3 October 2007, without mentioning IIW. IIW was one of several forums where this user-centric identity work was discussed and advanced, as its co-founder Phil Windley says, rather than the place it was invented.",
+   "sources": [
+    {
+     "institution": "OAuth community site (oauth.net), adapted from Eran Hammer-Lahav, 'Explaining OAuth' (2007)",
+     "title": "Introduction — About OAuth",
+     "date": "2007-09-05",
+     "url": "https://oauth.net/about/introduction/",
+     "quote": "OAuth started around November 2006, while Blaine Cook was working on the Twitter OpenID implementation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'In April 2007, a Google group was created with a small group of implementers to write a proposal for an open protocol' and 'On October 3rd, 2007 the OAuth Core 1.0 final draft was released.'"
+    },
+    {
+     "institution": "KuppingerCole Analysts (speaker profile)",
+     "title": "Speaker Profile: Kaliya Young",
+     "date": "2026",
+     "url": "https://www.kuppingercole.com/speakers/3524",
+     "quote": "Kaliya co-founded the Internet Identity Workshop in 2005, where OpenID Connect and OAuth were created",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "An example of the popular version."
+    },
+    {
+     "institution": "Phil Windley, Technometria",
+     "title": "From IIW to the Agentic Internet Workshop",
+     "date": "2025-09-18",
+     "url": "https://www.windley.com/archives/2025/09/from_iiw_to_the_agentic_internet_workshop.shtml",
+     "quote": "Just like IIW gave us space to define protocols like OAuth, OpenID Connect, and Decentralized Identifiers, AIW is meant to give us a neutral ground to figure out the next generation of protocols for an agentic world.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The co-founder's own, more careful framing: IIW gave 'space to define' these protocols."
+    }
+   ]
+  },
+  {
+   "id": "myth-young-people-do-not-care-about-privacy",
+   "claim": "Young people who grew up online don't care about privacy.",
+   "verdict": "MISLEADING",
+   "correction": "Teens did share more about themselves as platforms grew — Pew found each of five kinds of personal information more widely posted in 2012 than in 2006 — but few took a fully public approach. Sixty per cent of teen Facebook users kept their profiles private and 74% of teen social-media users had deleted people from their networks. danah boyd's fieldwork found teens working to achieve privacy inside public networks, often by controlling who could understand a post rather than who could see it. What teens worried about least was third-party access: only 9% were 'very' concerned.",
+   "sources": [
+    {
+     "institution": "Pew Research Center (with the Berkman Center for Internet & Society)",
+     "title": "Teens, Social Media, and Privacy",
+     "date": "2013-05-21",
+     "url": "https://www.pewresearch.org/internet/2013/05/21/teens-social-media-and-privacy/",
+     "quote": "However, few teens embrace a fully public approach to social media. Instead, they take an array of steps to restrict and prune their profiles",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Survey of 802 teens. Same page: '60% of teen Facebook users keep their profiles private'; '74% of teen social media users have deleted people from their network or friends list'; 'just 9% say they are “very” concerned' about third-party access to their data."
+    },
+    {
+     "institution": "Yale University Press (author's open-access PDF at danah.org)",
+     "title": "danah boyd, It's Complicated: The Social Lives of Networked Teens",
+     "date": "2014",
+     "url": "https://www.danah.org/books/ItsComplicated.pdf",
+     "quote": "Teenagers have not given up on privacy, even if their attempts to achieve it are often undermined by people who hold power over them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-zuboff-coined-surveillance-capitalism",
+   "claim": "Shoshana Zuboff coined the term 'surveillance capitalism'.",
+   "verdict": "MISLEADING",
+   "correction": "Zuboff developed the best-known theory of surveillance capitalism and made the term famous with her 2019 book, and reviewers often credit her with coining it. But John Bellamy Foster and Robert W. McChesney had already published 'Surveillance Capitalism: Monopoly-Finance Capital, the Military-Industrial Complex, and the Digital Age' in the socialist magazine Monthly Review's July–August 2014 issue, with a different analysis centred on monopoly capital and the military-industrial complex. The phrase has more than one origin; Zuboff's meaning — the extraction of behavioural data to sell predictions — is her own.",
+   "sources": [
+    {
+     "institution": "John Bellamy Foster (author website)",
+     "title": "Surveillance Capitalism (bibliographic entry and opening text)",
+     "date": "2014-07",
+     "url": "https://johnbellamyfoster.org/articles/surveillance-capitalism/",
+     "quote": "(coauthored with Robert W. McChesney, Foster listed first), Monthly Review vol. 66, no. 11 (July-August 2014), pp. 1-32.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The DOI given on the page (10.14452/MR-066-03-2014-07_1) and the Monthly Review archive (https://monthlyreviewarchives.org/index.php/mr/article/view/MR-066-03-2014-07_1) put the article in vol. 66 no. 3 (July–August 2014); the author page's 'no. 11' appears to be an error. Monthly Review's own page URL is dated 2014/07/01."
+    },
+    {
+     "institution": "PublicAffairs (Hachette Book Group) — publisher's page quoting Sam Biddle, The Intercept",
+     "title": "The Age of Surveillance Capitalism — praise",
+     "date": "2019",
+     "url": "https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/",
+     "quote": "named for the now‑popular term Zuboff herself coined five years ago",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "An example of the popular claim. 'Five years' before 2019 is 2014, the same year as the Foster–McChesney article."
     }
    ]
   }

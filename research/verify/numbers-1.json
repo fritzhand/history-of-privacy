@@ -1,0 +1,350 @@
+{
+ "slice": "numbers",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "series",
+   "id": "countries-with-data-privacy-laws",
+   "status": "FIXED",
+   "issues": [
+    "The definition in the notes is wrong for the later editions. 'Covers most of the private sector (and usually the public sector)' is the 2011 test ('laws that at least cover most of their private sector'). The 2017 abstract counts 'comprehensive data privacy laws for the private sector, public sector, or (in most cases) both', and the 2019 abstract says 'covering both the private sector and public sectors in most cases'. From at least 2017, then, a law that covers only the public sector can count. The pre-2011 running sums, which use the 2011 test, are therefore not strictly comparable with the 2015+ points. The notes are corrected.",
+    "The 2011 point note ('Greenleaf's own table revised this to 81 by 10 November 2011 after re-applying his criteria') is not supported by any cited source. The SSRN abstract of paper 1946700 has no '81' and no 'November'. Removed.",
+    "The 2025 source's citation '(2025) 194 PLBIR' and its institution 'Privacy Laws & Business International Report' are not on the cited page. The SSRN capture gives only 'Greenleaf, Graham, 172 Countries with Data Privacy Laws -Year by Year 1973-2025 (March 23, 2025). Available at SSRN', with 3 pages, posted 28 Apr 2025. PL&B's site and Macquarie's research portal could not be reached to confirm an issue number, so the unverified journal citation is removed from the title and institution (series source 0 and points[1], points[14]).",
+    "'Published in Privacy Laws & Business International Report since 2011' overstates it slightly. The 2013 edition (99 countries) was published in the Journal of Law, Information & Science 23(1). The notes now say 'mostly'.",
+    "Checked and correct: every value (0, 1, 7, 17, 36, 68, 76, 99, 109, 120, 132, 145, 157, 162, 172) matches its quoted abstract, and the running sums 7+10+19+32 = 68 and +8 = 76 are right. Sweden 1973 is the first national law and Hesse 1970 the first law overall. The rates 3.3 a year and 5.4 a year since 2020 are verbatim. The dates and PL&B issue/page citations of the 2011, 2015, 2017, 2019, 2021, 2022 and 2023 editions match SSRN's suggested citations (e.g. '(2023) 181 Privacy Laws and Business International Report (PLBIR) 1, 2-4, UNSW Law Research Paper No. 23-48'). The 2015 abstract independently confirms the mid-2013 count of 99 ('since the last assessment in mid-2013 listing 99 countries')."
+   ],
+   "fieldFixes": {
+    "notes": "Graham Greenleaf's roughly biennial global count, published mostly in Privacy Laws & Business International Report since 2011 (the 2013 edition appeared in the Journal of Law, Information & Science). A 'data privacy law' must meet minimum formal standards drawn from the OECD Guidelines and Council of Europe Convention 108. His 2011 count also required it to cover most of the private sector. From at least the 2017 edition he counts laws covering the private sector, the public sector or (in most cases) both, so the pre-2011 points (running sums of his 2011 decade counts) use a slightly narrower test than the later editions. Separate legal jurisdictions (e.g. Faroe Islands) count as 'countries'. His 2025 year-by-year list (SSRN 5189972, 3 pages) could not be retrieved, so points between editions are not interpolated. Counts are as at the date of each edition, not year-end. Average growth 1973-2025: 3.3 new countries a year; since 2020: 5.4 a year.",
+    "points[6].note": "As of mid-2011 (Greenleaf's first global count).",
+    "points[1].source.title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972, dated 23 March 2025)",
+    "points[1].source.institution": "SSRN (author paper, Macquarie Law School; abstract read via Internet Archive snapshot)",
+    "points[14].source.title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972, dated 23 March 2025)",
+    "points[14].source.institution": "SSRN (author paper, Macquarie Law School; abstract read via Internet Archive snapshot)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972, dated 23 March 2025)",
+     "institution": "SSRN (author paper, Macquarie Law School; abstract read via Internet Archive snapshot)",
+     "note": "web.archive.org reset every connection during this check (curl/urllib: 'Connection reset by peer'; WebFetch also refused the host), so a fresh re-fetch was impossible. Verified instead against the raw Wayback HTML captured earlier in /tmp/fetch-text-cache (Wayback toolbar markers and the capture timestamp present in the bytes); quote FOUND in the abstract (page title '172 Countries with Data Privacy Laws -Year by Year 1973-2025 by Graham Greenleaf :: SSRN'; Date Written: March 23, 2025; 3 Pages). The page carries no PL&B citation, so '(2025) 194 PLBIR' was removed as unverified."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection during this check (curl/urllib: 'Connection reset by peer'; WebFetch also refused the host), so a fresh re-fetch was impossible. Verified instead against the raw Wayback HTML captured earlier in /tmp/fetch-text-cache (Wayback toolbar markers and the capture timestamp present in the bytes); quote FOUND. SSRN suggested citation: 'Privacy Laws and Business International Report, No. 112, pp. 11-17, September 2011, UNSW Law Research Paper No. 2011-36'; Date Written: October 10, 2011. The same abstract gives the 2011 test ('at least cover most of their private sector') and '76 ... As of mid-2011'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection during this check (curl/urllib: 'Connection reset by peer'; WebFetch also refused the host), so a fresh re-fetch was impossible. Verified instead against the raw Wayback HTML captured earlier in /tmp/fetch-text-cache (Wayback toolbar markers and the capture timestamp present in the bytes); quote FOUND. SSRN suggested citation: '(2023) 181 Privacy Laws and Business International Report (PLBIR) 1, 2-4, UNSW Law Research Paper No. 23-48'; Date Written: February 10, 2023."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "series",
+   "id": "unctad-share-countries-with-data-protection-legislation",
+   "status": "OK",
+   "issues": [
+    "The four sentence-based points check out. 58% (news item, article:published_time 2019-01-28, Data Privacy Day), 66% (news item published 2020-04-29; 'another 10% of countries have draft legislations' supports the draft note), 128/194 = 66.0% (capture 20210530233842) and 137/194 = 70.6% (capture 20220401054637) are all verbatim.",
+    "The revision note is confirmed from raw captures. Capture 20201227155938 reads '132 out of 194'. Captures 20210530, 20220105 and 20220202 read '128 out of 194'. Captures 20220401 through 20221204 read '137 out of 194'. By 20251030 the 137 sentence is inside an HTML comment, i.e. no longer displayed.",
+    "The 2026 point (155/195 = 79.5%) stays PENDING. It is the study's own count from UNCTAD's CyberlawData.js, and neither the Wayback copy (connection reset) nor the live file (unctad.org 403) could be re-fetched, so the tally could not be reproduced. The method is sound as far as it can be checked. The page script in the 8 Sept 2026 capture defines sections[2] = 'Data Protection & Privacy Laws' and statusLabels ['No Data','Legislation','Draft Legislation','No Legislation'], and codes 1/2/3/0 map to Legislation/Draft/No legislation/No data, as the record says. The arithmetic 155/195 = 79.49% is right. Readers should be told that this last point has a different basis (computed, 195 entries) from the earlier stated figures (194 member states)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection during this check (curl/urllib: 'Connection reset by peer'; WebFetch also refused the host), so a fresh re-fetch was impossible. Verified instead against the raw Wayback HTML captured earlier in /tmp/fetch-text-cache (Wayback toolbar markers and the capture timestamp present in the bytes); quote FOUND in capture 20220401054637, and also in captures of 2022-07-07, 2022-10-04 and 2022-12-04."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection during this check (curl/urllib: 'Connection reset by peer'; WebFetch also refused the host), so a fresh re-fetch was impossible. Verified instead against the raw Wayback HTML captured earlier in /tmp/fetch-text-cache (Wayback toolbar markers and the capture timestamp present in the bytes); quote FOUND. The page's article:published_time is 2020-04-29, and the body says the survey was 'released on 28 April during the UNCTAD eWeek'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-fetch CyberlawData.js: web.archive.org reset the connection, WebFetch refused the host, and the live unctad.org file returns 403. The 155/195 tally is therefore unreproduced. Only the column and status-code mapping was confirmed, from the page script in the cached 8 Sept 2026 capture."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "series",
+   "id": "us-state-comprehensive-privacy-laws",
+   "status": "FIXED",
+   "issues": [
+    "The 2024 point's quote is misleading support for 2024. It is contiguous chart text that includes 'Montana Consumer Data Privacy Act (2023; effective 1 Oct. 2024)', a 2023 law already counted in the 2023 point. It is replaced with the Maryland and Minnesota entries (both dated 2024, --check FOUND).",
+    "The label says 'by year signed', but the chart gives the year each law was enacted, and 'enacted' is the safer word for every law in the count. The label and first sentence of the notes are reworded.",
+    "Checked and correct: IAPP PDF re-fetched; 'Tracker last updated 8 Sept. 2026' FOUND. The chart lists 23 laws signed: AL, CA, CO, CT, DE, IN, IA, KY, LA, MD, MN, MT, NE, NH, NJ, OK, OR, RI, TN, TX, UT, VT, VA. Cumulative by year: 2018=1, 2021=3, 2022=5, 2023=12 (DE, IN, IA, MT, OR, TN, TX), 2024=19 (KY, MD, MN, NE, NH, NJ, RI), 2025=19, 2026=23 (AL, LA, OK, VT). All match. Florida is absent from the chart. The IAPP web page quote is FOUND, and the page also says 'Industry-specific, information-specific and narrowly scoped bills ... are not included'. WilmerHale's quote is FOUND, with 'On March 16, the Oklahoma legislature passed SB 546 ... Governor Kevin Stitt signing the bill into law on March 20'. Its 'twentieth' agrees with IAPP's 19 laws before 2026.",
+    "Independent check of a 2026 law: the Vermont Legislature's status page for S.71 (Act 145, 'An act relating to consumer data privacy and online surveillance') reads 'Signed by Governor June 16, 2026'. Added as a source. Louisiana's SB 386 page reads 'Signed by the Governor. Becomes Act No. 502.', but the fetched text did not show the bill's subject, so it was not added."
+   ],
+   "fieldFixes": {
+    "label": "US states with a comprehensive consumer privacy law (cumulative, by year enacted)",
+    "notes": "By the year the law was enacted (the year IAPP's chart gives for each law), not the year it took effect; effective dates lag by one to three years. Uses the IAPP Westin Research Center's definition of 'comprehensive': industry-specific, information-specific and narrowly scoped laws are excluded. There is still no comprehensive federal consumer privacy law. 2026 is a partial year (to 8 Sept. 2026).",
+    "points[6].source.quote": "Maryland Online Data Privacy Act (2024, effective Oct. 1, 2025) Minnesota Consumer Data Privacy Act (2024; effective 31 July 2025)",
+    "points[6].source.note": "Also dated 2024 in the chart: 'Kentucky Consumer Data Protection Act (2024; effective 1 Jan. 2026)', 'Nebraska Data Privacy Act (2024; effective 1 Jan. 2025)', 'Rhode Island Data Transparency and Privacy Protection Act (2024; effective 1 Jan. 2026)', New Hampshire and New Jersey. PDF chart linked from https://iapp.org/resources/article/us-state-privacy-legislation-tracker. In the PDF text layer the names of the New Hampshire, New Jersey and Oklahoma laws are separated from their date lines, which read '(2024; effective 1 Jan. 2025)', '(2024; effective 15 Jan. 2025)' and '(2026; effective 1 Jan. 2027)'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh from assets.contentstack.io. 'Tracker last updated 8 Sept. 2026' FOUND. The PDF is the one linked from the IAPP tracker page (link found in the page HTML). Every per-law quote used in the points is FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND. The passage and signing dates (16 and 20 March) are in the same paragraph."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Vermont General Assembly",
+     "title": "S.71 (Act 145): An act relating to consumer data privacy and online surveillance, bill status (2025-2026 session)",
+     "date": "2026-06-16",
+     "url": "https://legislature.vermont.gov/bill/status/2026/S.71",
+     "quote": "Signed by Governor June 16, 2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND; 'S.71 (Act 145)' and 'An act relating to consumer data privacy and online surveillance' also FOUND. Independent confirmation that Vermont's law (counted in the 2026 point) was enacted in 2026."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "pew-little-or-no-control-over-company-data",
+   "status": "OK",
+   "issues": [
+    "All three quotes re-fetched fresh and FOUND. The fieldwork dates and sample sizes are right: 2019 'survey of 4,272 U.S. adults ... June 3-17, 2019', and 2023 '5,101 U.S. adults from May 15 to 21, 2023'.",
+    "'Same question wording in both waves' holds for this item. Pew's 2023 topline prints CONTROLCO ('How much control do you think you have over the data that companies collect about you?') with a Jun 3-17, 2019 trend row and no wording footnote, and the 2019 topline has the identical wording. 2019 shows very little 51 + none 30 = 81. 2023 shows 51 + 23 (rounded components sum to 74; Pew's published net is 73). Pew draws the comparison itself: 'While these shares have ticked down compared with 2019'. The government figures 84% to 79% are correct.",
+    "The topline is added as a primary source for both waves."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND. The same page says 'While these shares have ticked down compared with 2019'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy: Topline questionnaire (American Trends Panel Wave 131, with June 2019 trend)",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2023/10/PI_2023.10.18_Data-Privacy_TOPLINE.pdf",
+     "quote": "CONTROLCO How much control do you think you have over the data that companies collect about you?",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The topline gives May 15-21, 2023: great deal 5, some 21, very little 51, none 23. Jun 3-17, 2019: 3, 15, 51, 30. There is no wording-change footnote for this item."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "pew-understand-little-or-nothing-company-data-use",
+   "status": "OK",
+   "issues": [
+    "All three quotes re-fetched fresh and FOUND. 59% and 67% match both reports, and +8 points is right.",
+    "The same wording in both waves is confirmed. The 2023 topline prints UNDERSTANDCO ('How much do you feel you understand what companies are doing with the data they collect about you?') with a Jun 3-17, 2019 trend row and no wording footnote, and the 2019 topline wording is identical. Components: 2019 very little 48 + nothing 11 = 59; 2023 49 + 18 = 67.",
+    "The topline is added as a primary source."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy: Topline questionnaire (American Trends Panel Wave 131, with June 2019 trend)",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2023/10/PI_2023.10.18_Data-Privacy_TOPLINE.pdf",
+     "quote": "UNDERSTANDCO How much do you feel you understand what companies are doing with the data they collect about you?",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. May 15-21, 2023: a great deal 6, some 26, very little 49, nothing 18. Jun 3-17, 2019: 6, 34, 48, 11. There is no wording-change footnote."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "pew-concerned-company-data-use",
+   "status": "FIXED",
+   "issues": [
+    "The notes wrongly say 'Same question wording in both waves per Pew's 2023 report'. Footnote 13 of Pew's 2023 topline says: 'In the June 2019 survey, the question wording was slightly different: “How concerned, if at all, are you about how companies are using the data they collect about you?”'. The 2023 wording is 'How concerned are you about how companies are using the data they collect about you?'. The 2019 topline confirms the 'if at all' wording. Pew still reports the two as a trend, but the notes must not claim identical wording. With a 2-point change, the wording difference matters for interpretation.",
+    "Values are correct: 2019 very 36 + somewhat 43 = 79; 2023 35 + 46 = 81. The government figures 64% to 71% are also correct, and the overview says 'has increased from 64% in 2019 to 71% today'. All quotes re-fetched fresh and FOUND."
+   ],
+   "fieldFixes": {
+    "notes": "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Pew reports the two waves as a trend, but its 2023 topline notes that the 2019 wording was slightly different ('How concerned, if at all, are you about...'; 2023 dropped 'if at all'). A 2-point change for companies (79% to 81%), within what such a wording change could produce. Pew's 2023 report highlights instead the rise in concern about government use, from 64% to 71%."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy: Topline questionnaire (American Trends Panel Wave 131, with June 2019 trend)",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2023/10/PI_2023.10.18_Data-Privacy_TOPLINE.pdf",
+     "quote": "In the June 2019 survey, the question wording was slightly different: “How concerned, if at all, are you about how companies are using the data they collect about you?”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (footnote 13 to CONCERNCO). May 15-21, 2023: very 35, somewhat 46, not too 16, not at all 3. Jun 3-17, 2019: 36, 43, 17, 4."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "pew-understand-little-privacy-laws",
+   "status": "FIXED",
+   "issues": [
+    "The label wording does not match the question's answer options. The question (PRIVACYREG, identical in 2019 and 2023) is 'How much do you feel you understand the laws and regulations that are currently in place to protect your data privacy?', with options 'A great deal / Some / Very little / Not at all'. There is no 'nothing' option. The label is reworded.",
+    "The notes' 'More laws, less understanding: the rise coincides with the spread of US state privacy laws' frames an unexamined link as a finding. Pew makes no such connection. The notes are softened so they say only that the timing overlaps.",
+    "Values are correct: 2019 very little 49 + not at all 14 = 63; 2023 51 + 21 = 72. The 2023 overview adds that 'some or a great deal' fell from 37% to 27%. The same wording in both waves is confirmed: the question is identical in the 2019 and 2023 toplines, with no footnote. All quotes re-fetched fresh and FOUND."
+   ],
+   "fieldFixes": {
+    "label": "Say they understand the laws that protect their data privacy very little or not at all",
+    "notes": "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question in both waves ('How much do you feel you understand the laws and regulations that are currently in place to protect your data privacy?'; answers 'very little' plus 'not at all'), and Pew's 2023 report draws the 63% to 72% comparison itself. The rise came while US states were passing their first comprehensive privacy laws (see us-state-comprehensive-privacy-laws); Pew does not link the two."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "How Americans View Data Privacy: Topline questionnaire (American Trends Panel Wave 131, with June 2019 trend)",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2023/10/PI_2023.10.18_Data-Privacy_TOPLINE.pdf",
+     "quote": "PRIVACYREG How much do you feel you understand the laws and regulations that are currently in place to protect your data privacy?",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. May 15-21, 2023: a great deal 3, some 24, very little 51, not at all 21. Jun 3-17, 2019: 3, 33, 49, 14. There is no wording-change footnote, and the 2019 topline wording is identical."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "privacy-policy-median-length-words",
+   "status": "FIXED",
+   "issues": [
+    "Wrong author name in every source title. The third author is 'Eli Lucherini', not 'Elena Lucherini', per the arXiv citation_author metadata and the ACM reference format in the v4 PDF ('Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, and Jonathan Mayer').",
+    "Checked and correct: 876 (2009A) and 1522 (2019B) in section 7.1, with Figure 5 as 'The median word count of policies binned by Alexa rank'. 'A' and 'B' are the first and second half-year intervals ('We refer to the first interval in a year as “A” and the second as “B”'). The 5th and 95th percentiles are 248 and '3404 words'. 'Because most of the privacy policies in our corpus are from 2009-2019' supports the notes. The corpus is 1,071,488 policies from over 130,000 sites. WWW '21 ran April 19-23, 2021, in Ljubljana; DOI 10.1145/3442381.3450048.",
+    "Caveat, no change needed: the abstract quote (source 1) says policies doubled in length 'over the last twenty years', but the paper's measured doubling runs from 2009A to 2019B, ten years. The series correctly uses 2009 and 2019."
+   ],
+   "fieldFixes": {
+    "points[0].source.title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+    "points[1].source.title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "note": "Re-fetched arXiv v4 PDF fresh; quote FOUND in section 7.1."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "note": "Re-fetched fresh; quote FOUND in the abstract. Note that this sentence's 'twenty years' does not apply to the length doubling, which the paper measures from 2009A to 2019B."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "note": "Re-fetched fresh; quote FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "series",
+   "id": "privacy-policy-median-reading-grade",
+   "status": "FIXED",
+   "issues": [
+    "Same author-name error: 'Elena Lucherini' should be 'Eli Lucherini' (arXiv metadata and the v4 ACM reference format).",
+    "Checked and correct: 'The median readability score has risen more than a grade level from 2000A (11.9) to 2019B (13.2). More popular websites have less readable policies.' This is the Flesch-Kincaid grade level (FKGL), section 7.1. Earlier versions (v1/v2) gave it as 'from around 12 to around 13 over 20 years', which is consistent.",
+    "Caveat worth adding to the page: Figure 6's caption covers only '2009 to 2019, binned by Alexa rank', and the paper says most of the corpus is 2009-2019. The 2000A median therefore rests on a much thinner early sample than the 2019B value. The figure is still the authors' stated number."
+   ],
+   "fieldFixes": {
+    "points[0].source.title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+    "points[1].source.title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+    "notes": "Grade 12 = final year of US high school; 13+ = college level. 2000 = first half of 2000 ('2000A'); 2019 = second half of 2019 ('2019B'). Most of the corpus dates from 2009-2019, so the 2000 value rests on far fewer policies. More popular websites have less readable policies."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "note": "Re-fetched arXiv v4 PDF fresh; quote FOUND (section 7.1, readability paragraph; Figure 6)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "title": "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+     "note": "Re-fetched fresh; quote FOUND."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

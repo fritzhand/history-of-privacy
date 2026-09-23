@@ -1,13 +1,13 @@
 {
  "slice": "personas-code",
- "notes": "IN PROGRESS",
+ "notes": "Scope: people of code and cryptography who shaped the privacy debate, 1976–2026 — public-key cryptography (Diffie, Hellman), anonymity and pseudonymity (Chaum, Syverson, Dingledine, Mathewson), user-held encryption (Zimmermann, Marlinspike), the cypherpunks (Hughes, May, Gilmore), the crypto wars (Blaze on Clipper, Bernstein on export controls), cryptocurrency's privacy model (Nakamoto, Back) and data-release privacy (Sweeney, Dwork). Method: each person and event was researched one at a time; every quote was copied from the fetched page and checked with tools/fetch-text.py --check (FOUND). Where the helper was blocked but curl could read the page (blog.whatsapp.com), the helper's cache was primed with the curl copy so --check ran on the real text; this is noted on that source. Primary texts preferred: the original papers (IEEE Trans. IT 1976, CACM 1981/1985, NRL 1996, USENIX 2004, bitcoin.pdf), mailing-list archives (cypherpunks 1992, or-dev 2002, metzdowd 2008), court records (9th Cir. Bernstein; C.D. Cal. status report in Apple/FBI; COPA v Wright), official statements (Clinton White House 1993; GCHQ; Census Bureau) and the actors' own sites. Could not verify / gaps: the ACM Turing Award pages (403) — Stanford's copy used instead; The New York Times's 2 June 1994 Clipper-flaw story (403; dated via an MIT course index); the Forbes 2010 Whisper Systems launch story (403; kept PENDING, used only for a location note); justice.gov's copy of the Apple status report (401; a law professor's hosted copy used); the 16 February 2016 order itself (scanned image, no text layer); DAO 216-26's number (only from search summaries). Location caveats: Satoshi Nakamoto and Adam Back have no verifiable place (lat/lng null), and the Bitcoin white-paper event is online-only (lat/lng null — do not map). Moxie Marlinspike, the Signal 2015 event and Let's Encrypt are placed at the IRS-listed cities of their organisations (Mountain View; Sacramento), which may be registered rather than operating addresses. Balance: controversies noted where on the record — May's manifesto on illicit markets; Gilmore's 2021 removal from EFF's board (both sides' words); DigiCash's commercial failure; the withdrawn Bernstein panel opinion; the 2026 Commerce order banning 'noise infusion' at the Census Bureau. Images: 17 openly licensed Wikimedia Commons files (public domain, CC0, CC BY, CC BY-SA), licences read from the Commons API extmetadata, downloaded as standard-size thumbnails (Wikimedia rejects script requests for originals) and converted to JPEG q82; alt text written after viewing each file. Portraits exist for 15 of 17 people — none was found for Timothy C. May, and none is sought for the pseudonymous Satoshi Nakamoto; Martin Hellman's is a 2008 RSA Conference panel photo in which he is third from left; Eric Hughes's shows a masked figure with a 'Luther Blissett' badge whose identity rests on the uploader's description. Two non-portrait images illustrate events: the 2004 Tor circuit diagram and Adam Back's 1997 'munitions' T-shirt. Known gaps: Julian Assange, Bruce Schneier, Zooko Wilcox-O'Hearn, Ron Rivest and Tim Berners-Lee (Solid) were considered and left out to keep the set to well-sourced cards; GCHQ pages are undated.",
  "people": [
   {
    "id": "whitfield-diffie",
    "name": "Whitfield Diffie",
    "handle": "",
    "roles": "cryptographer · co-inventor of public-key cryptography",
-   "years": "1974–present",
+   "years": "1970s–present",
    "place": "Stanford University, Stanford, California",
    "lat": 37.4275,
    "lng": -122.1697,
@@ -17,7 +17,7 @@
     "url": "https://ee.stanford.edu/~hellman/publications/24.pdf"
    },
    "contribution": "With Martin Hellman, Diffie published the 1976 paper that introduced public-key cryptography and digital signatures to the open literature. The scheme lets two people who have never met agree on a secret over an insecure channel, removing the need for a courier or other secure channel to deliver keys in advance. Diffie was a part-time researcher at Stanford at the time.",
-   "quote": "Cryptography is the one indispensable security technique. There are lots of other things needed, but if the government had succeeded in blocking people from having strong cryptographic systems … it would have meant you could not have had security on the Internet.",
+   "quote": "Cryptography is the one indispensable security technique … if the government had succeeded in blocking people from having strong cryptographic systems … it would have meant you could not have had security on the Internet.",
    "quoteSource": {
     "institution": "Stanford University School of Engineering",
     "title": "Stanford cryptography pioneers win the ACM 2015 A.M. Turing Award",
@@ -26,7 +26,7 @@
     "quote": "\"Cryptography is the one indispensable security technique,\" said Diffie, who was a part-time researcher at Stanford at the time he and Hellman invented public-key cryptography.",
     "verificationStatus": "CONFIRMED",
     "accessType": "FREE",
-    "note": "The card quote joins two consecutive sentences of Diffie's remark as printed in the article (the article interrupts it with the attribution); both parts --check FOUND. Date from the Stanford Report URL (030116) and the ACM announcement at the RSA Conference."
+    "note": "The article interrupts Diffie's remark with an attribution; the card joins its parts with ellipses (the second ellipsis is in the original). Each fragment --check FOUND. Date from the Stanford Report URL (030116) and the ACM announcement at the RSA Conference."
    },
    "influence": "Public-key cryptography moved strong encryption out of classified government research and into the open, provoking the first clash between academic cryptographers and the NSA — later called the first 'crypto war' — and became the basis of Internet security.",
    "thread": "In a public-key system each person generates and keeps a secret key and publishes only the matching public key, so the ability to read one's messages rests with the individual rather than with a central key authority.",
@@ -59,7 +59,7 @@
    "name": "Martin E. Hellman",
    "handle": "",
    "roles": "cryptographer · Stanford electrical-engineering professor",
-   "years": "1971–present",
+   "years": "1970s–present",
    "place": "Stanford University, Stanford, California",
    "lat": 37.4275,
    "lng": -122.1697,
@@ -102,7 +102,954 @@
      "accessType": "FREE"
     }
    ],
+   "portrait": "rsa-2008-cryptographers-panel-hellman"
+  },
+  {
+   "id": "david-chaum",
+   "name": "David Chaum",
+   "handle": "",
+   "roles": "cryptographer · inventor of mix networks and blind-signature e-cash · founder of DigiCash and the IACR",
+   "years": "1979–present",
+   "place": "Centrum Wiskunde & Informatica (CWI), Amsterdam",
+   "lat": 52.3563,
+   "lng": 4.9516,
+   "keyWork": {
+    "title": "Security without Identification: Transaction Systems to Make Big Brother Obsolete, Communications of the ACM 28(10), pp. 1030–1044",
+    "year": 1985,
+    "url": "https://web.archive.org/web/2024id_/https://chaum.com/security-without-identification/"
+   },
+   "contribution": "As a Berkeley researcher, Chaum published in February 1981 a public-key technique — the 'mix' — that hides who is writing to whom as well as what is said, without a universally trusted authority, and that supports untraceable return addresses and digital pseudonyms. His 1985 Communications of the ACM article proposed that individuals use a different, unlinkable 'digital pseudonym' with each organisation, held on a personal 'card computer'. He founded DigiCash to commercialise anonymous electronic cash; after bank pilots that never passed the pilot stage, the company filed for Chapter 11 bankruptcy in November 1998.",
+   "quote": "Computerization is robbing individuals of the ability to monitor and control the ways information about them is used.",
+   "quoteSource": {
+    "institution": "chaum.com (David Chaum's website; Internet Archive copy)",
+    "title": "Security without Identification: Card Computers to make Big Brother Obsolete (Communications of the ACM, vol. 28 no. 10, October 1985)",
+    "date": "1985-10",
+    "url": "https://web.archive.org/web/2024id_/https://chaum.com/security-without-identification/",
+    "quote": "Computerization is robbing individuals of the ability to monitor and control the ways information about them is used.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "chaum.com labels the text as the October 1985 CACM article, but its subtitle ('Card Computers…') and wording match Chaum's revised 1987 reprint (CWI copy: https://ir.cwi.nl/pub/5519/5519D.pdf, 'Copyright 1987 by David Chaum … A related earlier work appeared in Communications of the ACM, 28, 10, Oct. 1985'). The same opening sentence is visible, broken by column OCR, in the 1985 CACM scan at https://www.cs.ru.nl/~jhh/pub/secsem/chaum1985bigbrother.pdf. The live chaum.com page returned 403 to scripts."
+   },
+   "influence": "The International Association for Cryptologic Research named Chaum a 2004 Fellow for 'numerous seminal contributions to security and privacy research'; his mix networks are the ancestor of anonymous-remailer and onion-routing systems, and DigiCash showed both the promise and the commercial difficulty of anonymous payments.",
+   "thread": "Chaum's 1985 design puts the pseudonyms on 'a personal card computer that the individual completely controls', so that organisations cannot link a person's records into a dossier — an early architecture of individual control over personal data.",
+   "sources": [
+    {
+     "institution": "Communications of the ACM (copy in the Free Haven anonymity bibliography)",
+     "title": "David L. Chaum, 'Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms', vol. 24, no. 2",
+     "date": "1981-02",
+     "url": "https://www.freehaven.net/anonbib/cache/chaum-mix.pdf",
+     "quote": "The technique does not require a universally trusted authority. One correspondent can remain anonymous to a second, while allowing the second to respond via an untraceble return address.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'untraceble' is the spelling in the original. Author line: 'David L. Chaum, University of California, Berkeley'."
+    },
+    {
+     "institution": "chaum.com (David Chaum's website; Internet Archive copy)",
+     "title": "Security without Identification: Card Computers to make Big Brother Obsolete",
+     "date": "1985-10",
+     "url": "https://web.archive.org/web/2024id_/https://chaum.com/security-without-identification/",
+     "quote": "DIFFERENT NUMBERS OR DIGITAL PSEUDONYMS are used with each organization by a personal card computer that the individual completely controls",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Figure caption; text matches the 1987 revised reprint (see quoteSource note)."
+    },
+    {
+     "institution": "American Banker",
+     "title": "Electronic Commerce: Bankrupt Digicash to Seek Financing, New Allies",
+     "date": "1998-11-10",
+     "url": "https://www.americanbanker.com/news/electronic-commerce-bankrupt-digicash-to-seek-financing-new-allies",
+     "quote": "With the announcement last week that it filed for Chapter 11 bankruptcy protection, Digicash has embarked on yet another phase of a corporate saga that has won it acclaim and admiration in both the banking and Internet communities-but precious little business.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The article also says the licensee banks 'never got beyond pilot stages' and that the headquarters had moved 'from Mr. Chaum's base in Amsterdam to Silicon Valley'. IACR fellowship: https://www.iacr.org/fellows/2004/chaum.html — 'For numerous seminal contributions to security and privacy research and for visionary leadership in the role of IACR founder.' (--check FOUND)."
+    }
+   ],
+   "portrait": "david-chaum-web-summit-2018"
+  },
+  {
+   "id": "phil-zimmermann",
+   "name": "Philip R. Zimmermann",
+   "handle": "PRZ",
+   "roles": "software engineer · creator of PGP",
+   "years": "1991–present",
+   "place": "Boulder, Colorado",
+   "lat": 40.015,
+   "lng": -105.2705,
+   "keyWork": {
+    "title": "Pretty Good Privacy (PGP) 1.0 and its user's guide essay 'Why I Wrote PGP'",
+    "year": 1991,
+    "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html"
+   },
+   "contribution": "Zimmermann wrote Pretty Good Privacy, public-key email encryption for ordinary personal computers, and on 5 June 1991 sent the first release to friends who posted it to Peacenet, a Usenet source-code newsgroup and bulletin boards. He said a 1991 Senate anticrime bill urging that communications systems let the government obtain plaintext is what led him to publish it free. PGP 2.0 (September 1992) added what he calls 'the now-famous PGP trust model'; soon after, US Customs opened an export investigation that ran three years and was closed without charges in January 1996.",
+   "quote": "If privacy is outlawed, only outlaws will have privacy.",
+   "quoteSource": {
+    "institution": "Philip Zimmermann (philzimmermann.com)",
+    "title": "Why I Wrote PGP — part of the original 1991 PGP User's Guide (updated in 1999)",
+    "date": "1999",
+    "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+    "quote": "If privacy is outlawed, only outlaws will have privacy.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Essay signed 'Boulder, Colorado June 1991 (updated 1999)'; the page does not mark which sentences date from 1991 and which from the 1999 revision."
+   },
+   "influence": "PGP put strong public-key encryption into the hands of individuals worldwide, and the government's investigation of its spread helped ignite, in Zimmermann's words, 'a controversy that would eventually lead to the demise of the US export restrictions on strong cryptography'.",
+   "thread": "Zimmermann framed PGP as individual self-help — 'PGP empowers people to take their privacy into their own hands' — and, unlike the rival PEM standard, which required users to 'register a key with something called a policy certification authority', PGP 'requires no bureaucracy' (John Gilmore, 1993).",
+   "sources": [
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "PGP Marks 10th Anniversary",
+     "date": "2001-06-05",
+     "url": "https://www.philzimmermann.com/EN/essays/PGP_10thAnniversary.html",
+     "quote": "It was on this day in 1991 that I sent the first release of PGP to a couple of my friends for uploading to the Internet.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Fifteen months later, in September 1992, we released PGP 2.0' and 'It was shortly after PGP 2.0's release that US Customs took an interest in the case.'"
+    },
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com), reproducing the signed news release of defence counsel Philip L. Dubois",
+     "title": "Significant Moments in PGP's History: Zimmermann Case Dropped",
+     "date": "1996-01-12",
+     "url": "https://www.philzimmermann.com/EN/news/PRZ_case_dropped.html",
+     "quote": "The U.S. Attorney's Office for the Northern District of California has decided that your client, Philip Zimmermann, will not be prosecuted in connection with the posting to USENET in June 1991 of the encryption program Pretty Good Privacy. The investigation is closed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Text of Assistant U.S. Attorney William Keane's letter as quoted by Dubois."
+    },
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "Why I Wrote PGP",
+     "date": "1999",
+     "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+     "quote": "PGP empowers people to take their privacy into their own hands. There has been a growing social need for it. That's why I wrote it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'It was this bill that led me to publish PGP electronically for free that year, shortly before the measure was defeated after vigorous protest by civil libertarians and industry groups.' (Senate Bill 266, 1991)."
+    },
+    {
+     "institution": "Wired",
+     "title": "Steven Levy, 'Crypto Rebels'",
+     "date": "1993-02-01",
+     "url": "https://www.wired.com/1993/02/crypto-rebels/",
+     "quote": "PEM is technically cleaner but is bogged down in bureaucracy—for instance, before you use PEM you must first register a key with something called a policy certification authority,",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quoting John Gilmore, who continues: 'PGP is portable, requires no bureaucracy, and has more than a year's head- start.' The PGP 10th-anniversary essay says: 'PGP 2.0 had the now-famous PGP trust model, essentially in its present form.'"
+    }
+   ],
+   "portrait": "phil-zimmermann-hal-enschede-2001"
+  },
+  {
+   "id": "eric-hughes",
+   "name": "Eric Hughes",
+   "handle": "",
+   "roles": "mathematician · cypherpunk co-founder · author of 'A Cypherpunk's Manifesto'",
+   "years": "1992–1990s",
+   "place": "Berkeley, California (San Francisco Bay Area)",
+   "lat": 37.8716,
+   "lng": -122.2727,
+   "keyWork": {
+    "title": "A Cypherpunk's Manifesto",
+    "year": 1993,
+    "url": "https://www.activism.net/cypherpunk/manifesto.html"
+   },
+   "contribution": "Hughes and Timothy C. May instigated the first physical cypherpunk meeting in autumn 1992; Hughes then maintained the cypherpunks mailing list, which ran on John Gilmore's toad.com machine, and moderated the monthly meetings, the second of which was held at Gilmore's Cygnus offices. Within days of the list's start he posted the Perl script for a 'hopping' remailer he had written to forward mail stripped of its sender. His 'A Cypherpunk's Manifesto', dated 9 March 1993, defined privacy as selective self-disclosure and argued it would need anonymous transaction systems built and distributed by the people who wanted it.",
+   "quote": "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. … Privacy is the power to selectively reveal oneself to the world.",
+   "quoteSource": {
+    "institution": "activism.net (cypherpunk document archive)",
+    "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+    "date": "1993-03-09",
+    "url": "https://www.activism.net/cypherpunk/manifesto.html",
+    "quote": "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "The card quote joins the manifesto's first two sentences and its fourth ('Privacy is the power to selectively reveal oneself to the world.'), marked with an ellipsis; each part --check FOUND. Signed 'Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993'."
+   },
+   "influence": "The manifesto's credo that 'Cypherpunks write code' — privacy secured by building and distributing tools rather than by waiting for institutions to grant it — framed a movement whose members, as Wired reported in 1993, were 'hard at work creating remailers' and discussing anonymous digital money.",
+   "thread": "Hughes's manifesto locates privacy with the individual rather than institutions: 'We cannot expect governments, corporations, or other large, faceless organizations to grant us privacy out of their beneficence' — and asks that each party to a transaction learn 'only … that which is directly necessary', an early statement of data minimisation by design.",
+   "sources": [
+    {
+     "institution": "activism.net (cypherpunk document archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "We cannot expect governments, corporations, or other large, faceless organizations to grant us privacy out of their beneficence.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also on the page: 'Cypherpunks write code.' and 'Since we desire privacy, we must ensure that each party to a transaction have knowledge only of that which is directly necessary for that transaction.'"
+    },
+    {
+     "institution": "Cypherpunks mailing list archive (cryptoanarchy.wiki)",
+     "title": "Eric Hughes to cypherpunks@toad.com, 'No Subject' (list welcome message)",
+     "date": "1992-09-21",
+     "url": "https://mailing-list-archive.cryptoanarchy.wiki/archive/1992/09/fdf9c19e77ec3f1a9bbc6bc19266d565b89d19dbd0ad369f5a2e800af3fc9558/",
+     "quote": "Welcome to the cypherpunks mailing list. We have a real mailing list now, and not just a mail alias on my account. Thanks to John Gilmore for space on hoptoad and Hugh Daniel for setting things up.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Raw date: Mon, 21 Sep 92 22:47:51 PDT. The September 1992 index of the same archive lists Hughes's 'the hopping remailer is done' (25 Sep 1992). The message also announces: 'Second Meeting -- October 10, 1992 The second meeting will be held at the new Cygnus offices.'"
+    },
+    {
+     "institution": "Wired",
+     "title": "Steven Levy, 'Crypto Rebels'",
+     "date": "1993-02-01",
+     "url": "https://www.wired.com/1993/02/crypto-rebels/",
+     "quote": "The other founder, Eric Hughes, has become the moderator of the physical meetings, maintaining an agenda that mixes technical issues of Cypherpunk works-in-progress to reports from the political front.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "wired.com dates the web copy 1993-02-01; the article appeared in Wired issue 1.02 (May/June 1993). The same article: 'The first physical Cypherpunk meeting occurred early last autumn at the instigation of two software engineers who had developed an interest in crypto.' (Tim May and Eric Hughes); and 'This is why certain Cypherpunks are hard at work creating remailers that allow messages to be sent without any possible means of tracing who sent the message.'"
+    },
+    {
+     "institution": "Cypherpunks mailing list archive (cryptoanarchy.wiki)",
+     "title": "Eric Hughes to cypherpunks@toad.com, 'the hopping remailer is done'",
+     "date": "1992-09-25",
+     "url": "https://mailing-list-archive.cryptoanarchy.wiki/archive/1992/09/2fe5a28bc8c23820dc93de1603b58c1ac84c93a16bc852a9b51eb3faed1aa231/",
+     "quote": "The hopping remailer is finished. I wrote it this morning.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The script sets the outgoing header to 'From: nobody'."
+    }
+   ],
+   "portrait": "eric-hughes-cypherpunk-kspiers"
+  },
+  {
+   "id": "timothy-c-may",
+   "name": "Timothy C. May",
+   "handle": "tcmay",
+   "roles": "former Intel physicist · cypherpunk co-founder · author of 'The Crypto Anarchist Manifesto'",
+   "years": "1988–2018",
+   "place": "Silicon Valley, California",
+   "lat": 37.3861,
+   "lng": -122.0839,
+   "keyWork": {
+    "title": "The Crypto Anarchist Manifesto (posted to the cypherpunks list 22 November 1992)",
+    "year": 1988,
+    "url": "https://www.activism.net/cypherpunk/crypto-anarchy.html"
+   },
+   "contribution": "May, a physicist who had retired from Intel, wrote 'The Crypto Anarchist Manifesto' in mid-1988, handing it out at the Crypto '88 conference and that year's Hackers Conference; he read it at the September 1992 founding meeting of the cypherpunks and posted it to the list on 22 November 1992. With Eric Hughes he instigated the group's first meeting, and Wired called him its 'in-house theoretician'. His manifesto predicted anonymous, untraceable networked markets and acknowledged that they would also enable illicit trade, extortion and even 'abhorrent markets for assassinations'.",
+   "quote": "Computer technology is on the verge of providing the ability for individuals and groups to communicate and interact with each other in a totally anonymous manner.",
+   "quoteSource": {
+    "institution": "activism.net (cypherpunk document archive), reproducing May's cypherpunks-list post",
+    "title": "Timothy C. May, 'The Crypto Anarchist Manifesto'",
+    "date": "1992-11-22",
+    "url": "https://www.activism.net/cypherpunk/crypto-anarchy.html",
+    "quote": "Computer technology is on the verge of providing the ability for individuals and groups to communicate and interact with each other in a totally anonymous manner.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Post header: 'Date: Sun, 22 Nov 92 12:11:24 PST'. May's cover note: 'Here's the \"Crypto Anarchist Manifesto\" I read at the September 1992 founding meeting. It dates back to mid-1988 …'"
+   },
+   "influence": "The Register's obituary credits the manifesto with defining 'the contours and flavour of the Cypherpunks list', whose legacies it lists as Bitcoin, WikiLeaks, peer-to-peer software and information markets.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "activism.net (cypherpunk document archive), reproducing May's cypherpunks-list post",
+     "title": "Timothy C. May, 'The Crypto Anarchist Manifesto'",
+     "date": "1992-11-22",
+     "url": "https://www.activism.net/cypherpunk/crypto-anarchy.html",
+     "quote": "crypto anarchy will allow national secrets to be trade freely and will allow illicit and stolen materials to be traded. An anonymous computerized market will even make possible abhorrent markets for assassinations and extortion.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'trade freely' is the original wording."
+    },
+    {
+     "institution": "The Register",
+     "title": "Influential cypherpunk and crypto-anarchist Tim May dies aged 67",
+     "date": "2018-12-17",
+     "url": "https://www.theregister.com/2018/12/17/timothy_c_may/",
+     "quote": "The mailing list was started in September 1992. May had got to know cryptographer Eric Hughes and found a kindred spirit in John Gilmore, who had made a fortune as Sun's fifth employee and founded Cygnus Solutions to support free software. Gilmore hosted the list server.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The Register reports he died 'at his home in California on Friday' aged 67; other published birth and death dates (21 December 1951 – 13 December 2018) would make him 66, so the exact date and age are left out of the card. The same obituary: 'The cryptocurrency Bitcoin was informed by the cypherpunk principle of using cryptography to solve trust problems, and also its philosophy of decentralisation, bypassing the state.'"
+    },
+    {
+     "institution": "Wired",
+     "title": "Steven Levy, 'Crypto Rebels'",
+     "date": "1993-02-01",
+     "url": "https://www.wired.com/1993/02/crypto-rebels/",
+     "quote": "One was Tim May, a former Intel physicist who \"retired\" several years ago, at age 34, with stock options sufficient to assure that he would never flip a burger for Wendy's.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
    "portrait": ""
+  },
+  {
+   "id": "john-gilmore",
+   "name": "John Gilmore",
+   "handle": "gnu",
+   "roles": "programmer · EFF co-founder · cypherpunk list host · civil-liberties litigant",
+   "years": "1990–present",
+   "place": "San Francisco, California",
+   "lat": 37.7749,
+   "lng": -122.4194,
+   "keyWork": {
+    "title": "'Privacy, Technology, and the Open Society', speech at the First Conference on Computers, Freedom, and Privacy",
+    "year": 1991,
+    "url": "http://www.toad.com/gnu/cfp.talk.txt"
+   },
+   "contribution": "Gilmore, Sun Microsystems' fifth employee, co-founded the Electronic Frontier Foundation in July 1990 with Mitch Kapor and John Perry Barlow (with help from Steve Wozniak) and later co-founded the support company Cygnus. His toad.com machine hosted the cypherpunks mailing list from 1992. He used Freedom of Information Act suits to pry loose classified cryptography texts, helped initiate Bernstein v. DOJ against encryption export controls, and led EFF's DES Cracker project; he also sued the TSA, unsuccessfully, over demands that travellers show identification.",
+   "quote": "I want a guarantee -- with physics and mathematics, not with laws -- that we can give ourselves things like real privacy of personal communications.",
+   "quoteSource": {
+    "institution": "John Gilmore (toad.com)",
+    "title": "Privacy, Technology, and the Open Society — given at the First Conference on Computers, Freedom, and Privacy",
+    "date": "1991-03-28",
+    "url": "http://www.toad.com/gnu/cfp.talk.txt",
+    "quote": "I want a guarantee -- with physics and mathematics, not with laws -- that we can give ourselves things like real privacy of personal communications.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Transcript marked 'Public domain -- not copyrighted'. The same talk asks: 'What if we could build a society where the information was never collected?'"
+   },
+   "influence": "EFF credits Gilmore with helping start the Bernstein case, which produced a 1999 appeals-panel ruling (later withdrawn for rehearing) that source code is speech protected by the First Amendment, and with the DES Cracker, which publicly showed that the government-endorsed Data Encryption Standard could be broken in about a week. In October 2021 EFF's board voted to remove him from active governance after disagreements over 'how to best communicate and work together', naming him board member emeritus.",
+   "thread": "Gilmore's 1991 talk argued that rules controlling data after collection 'only works if you assume a good government', and proposed instead systems in which personal information is never collected at all.",
+   "sources": [
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "John Gilmore Leaves the EFF Board, Becomes Board Member Emeritus",
+     "date": "2021-10-22",
+     "url": "https://www.eff.org/deeplinks/2021/10/john-gilmore-leaves-eff-board-becomes-board-member-emeritus",
+     "quote": "In the 1990s, Gilmore found the government documents that confirmed the First Amendment problem with the government's export controls over encryption, and helped initiate the filing of Bernstein v DOJ",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Gilmore also led EFF's effort to design and build the DES Cracker' and 'That is why the EFF Board of Directors has recently made the difficult decision to vote to remove Gilmore from the Board.' Gilmore's own home page attributes his removal to 'a spasm of political correctness during the Covid pandemic'."
+    },
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "About EFF: History",
+     "date": "2026",
+     "url": "https://www.eff.org/about/history",
+     "quote": "Mitch Kapor, former president of Lotus Development Corporation, John Perry Barlow, Wyoming cattle rancher and lyricist for the Grateful Dead, and John Gilmore, an early employee of Sun Microsystems, with assistance from Steve Wozniak, decided to do something about it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'The Electronic Frontier Foundation was founded in July of 1990 in response to a basic threat to speech and privacy.' Page is undated; date is the access year."
+    },
+    {
+     "institution": "John Gilmore (toad.com)",
+     "title": "John Gilmore, Entrepreneur and Civil Libertarian (home page)",
+     "date": "2026",
+     "url": "http://www.toad.com/gnu/",
+     "quote": "I sued TSA to make them stop demanding that citizens identify themselves in order to travel.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page adds: 'I lost every one of these lawsuits.' Undated page; accessed 2026-09-23. Sun 'employee number five' and FOIA suits: Steven Levy, 'Crypto Rebels', Wired, https://www.wired.com/1993/02/crypto-rebels/ ('As Sun Microsystems employee number five, Gilmore retired with a bankroll in the millions.')."
+    }
+   ],
+   "portrait": "john-gilmore-joi-ito-2009"
+  },
+  {
+   "id": "matt-blaze",
+   "name": "Matt Blaze",
+   "handle": "",
+   "roles": "computer scientist · cryptographer · security researcher",
+   "years": "1990s–present",
+   "place": "AT&T Bell Laboratories, Murray Hill, New Jersey",
+   "lat": 40.684,
+   "lng": -74.4015,
+   "keyWork": {
+    "title": "Protocol Failure in the Escrowed Encryption Standard (2nd ACM Conference on Computer and Communications Security, Fairfax, Virginia, November 1994)",
+    "year": 1994,
+    "url": "https://www.mattblaze.org/papers/eesproto.pdf"
+   },
+   "contribution": "Blaze worked at AT&T Bell Laboratories; AT&T was the first, and ultimately the only, company to produce a full product (the TSD-3600 telephone security device) based on the government's Clipper escrow system. Blaze examined the Escrowed Encryption Standard and a prototype PCMCIA escrow card. He found that the Law Enforcement Access Field meant to give government wiretappers the session key was protected by only a 16-bit checksum, so a 'rogue' device could forge a valid-looking field by brute force in about 2^16 tries and communicate with legitimate Clipper devices while bypassing escrow. The paper was written in April 1994 and reported on the front page of The New York Times in June 1994.",
+   "quote": "While my paper may have helped accelerate its demise, key escrow would not have been likely to succeed even if the Clipper escrow mechanism had been more robust than it was.",
+   "quoteSource": {
+    "institution": "Matt Blaze (mattblaze.org), author copy of ACSAC 2011 paper",
+    "title": "Key Escrow from a Safe Distance: Looking Back at the Clipper Chip (ACSAC '11, Orlando, Florida, 5–9 December 2011)",
+    "date": "2011-12",
+    "url": "https://www.mattblaze.org/papers/escrow-acsac11.pdf",
+    "quote": "While my paper may have helped accelerate its demise, key escrow would not have been likely to succeed even if the Clipper escrow mechanism had been more robust than it was.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   "influence": "The flaw — that escrow could be bypassed with 'a 16 bit exhaustive search, a very low barrier even in 1993' — reached the front page of The New York Times and weakened the case for the government's flagship key-escrow design; Blaze himself judges that his paper at most 'helped accelerate its demise', since key escrow was economically and institutionally unworkable anyway.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "Matt Blaze (mattblaze.org), pre-print of paper for the 2nd ACM Conference on Computer and Communications Security",
+     "title": "Protocol Failure in the Escrowed Encryption Standard",
+     "date": "1994-08-20",
+     "url": "https://www.mattblaze.org/papers/eesproto.pdf",
+     "quote": "The LEAF checksum is, in fact, 16 bits.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract: 'This paper outlines various techniques that enable cryptographic communication among EES processors without transmission of the valid LEAF.' Author line: 'Matt Blaze, AT&T Bell Laboratories'. The brute-force figure '2^16' is printed as '216' in the PDF text layer."
+    },
+    {
+     "institution": "Matt Blaze (mattblaze.org), author copy of ACSAC 2011 paper",
+     "title": "Key Escrow from a Safe Distance: Looking Back at the Clipper Chip",
+     "date": "2011-12",
+     "url": "https://www.mattblaze.org/papers/escrow-acsac11.pdf",
+     "quote": "The only thing stopping you was a 16 bit exhaustive search, a very low barrier even in 1993.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'In April, 1994, I wrote a paper about all this' and the Times story ran at 'the top of the front page'. The page names AT&T as his employer and the TSD-3600 as the first Clipper product. On AT&T: '(and ultimately the only) company to produce a full product based on the ill-fated escrow system' (--check FOUND; the preceding 'the first' contains a ligature)."
+    },
+    {
+     "institution": "MIT course 6.805 (Ethics and the Law on the Electronic Frontier) reading index",
+     "title": "Selected items on Clipper — 1994",
+     "date": "1996",
+     "url": "https://groups.csail.mit.edu/mac/classes/6.805/articles/clipper/short-pieces/clipper-1994-index.html",
+     "quote": "June 2, 1994, New York Times, \"Scientist Finds Flaw In Code Technology\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Index of press items; dates the Times story to 2 June 1994. Blaze recalls the front-page headline as 'Flaw Found in Federal Plan for Wiretapping'. The nytimes.com archive copy (John Markoff) returned 403 to scripts and was not read. Index page date approximate (course materials, mid-1990s)."
+    }
+   ],
+   "portrait": "matt-blaze-def-con-20-2012"
+  },
+  {
+   "id": "paul-syverson",
+   "name": "Paul F. Syverson",
+   "handle": "",
+   "roles": "mathematician · computer scientist at the U.S. Naval Research Laboratory · co-inventor of onion routing · Tor co-designer",
+   "years": "1995–present",
+   "place": "U.S. Naval Research Laboratory, Washington, D.C.",
+   "lat": 38.8236,
+   "lng": -77.026,
+   "keyWork": {
+    "title": "Hiding Routing Information (with David M. Goldschlag and Michael G. Reed), Workshop on Information Hiding, Cambridge, UK",
+    "year": 1996,
+    "url": "https://www.onion-router.net/Publications/IH-1996.pdf"
+   },
+   "contribution": "With David Goldschlag and Michael Reed at the Naval Research Laboratory's Center for High Assurance Computer Systems, Syverson began work on onion routing in late 1995 and presented the first design at the Information Hiding Workshop in Cambridge in May 1996: traffic is wrapped in layers of encryption and relayed through proxies so that no one but the initiator's proxy knows more than the previous and next hop. In the early 2000s he worked with Roger Dingledine and Nick Mathewson on the second-generation design, Tor, published with them at USENIX Security in 2004. He has stressed that the aim was to separate identification from routing rather than to guarantee anonymity.",
+   "quote": "Applications can (and usually should) identify themselves to each other. But, the use of a public network should not automatically reveal the identities of communicating parties. The goal here is anonymous routing, not anonymity.",
+   "quoteSource": {
+    "institution": "U.S. Naval Research Laboratory / ACSAC 2011 (keynote paper, public domain)",
+    "title": "Paul Syverson, 'A Peel of Onion', 27th Annual Computer Security Applications Conference",
+    "date": "2011-12",
+    "url": "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
+    "quote": "Applications can (and usually should) identify themselves to each other. But, the use of a public network should not automatically reveal the identities of communicating parties. The goal here is anonymous routing, not anonymity.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Syverson is quoting his own 1996 ACSAC paper with Goldschlag and Reed. The 2011 paper states it 'is authored by an employee of the United States Government and is in the public domain'."
+   },
+   "influence": "Onion routing, conceived at a US Navy laboratory, became the basis of Tor, which Syverson described in 2011 as 'a global onion routing network with about a half million users on any given day'.",
+   "thread": "Onion routing's design goal was that the network itself should not reveal who is talking to whom, leaving it to the communicating parties to decide when to identify themselves.",
+   "sources": [
+    {
+     "institution": "U.S. Naval Research Laboratory (onion-router.net)",
+     "title": "D. M. Goldschlag, M. G. Reed and P. F. Syverson, 'Hiding Routing Information', Workshop on Information Hiding, Cambridge, UK, May 1996",
+     "date": "1996-05",
+     "url": "https://www.onion-router.net/Publications/IH-1996.pdf",
+     "quote": "This implies that neither the respondent nor his proxy server nor any external observer need know the identity of the initiator or his proxy server.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author affiliation: 'Naval Research Laboratory, Center For High Assurance Computer Systems, Washington, D.C.'"
+    },
+    {
+     "institution": "U.S. Naval Research Laboratory / ACSAC 2011 (keynote paper, public domain)",
+     "title": "Paul Syverson, 'A Peel of Onion'",
+     "date": "2011-12",
+     "url": "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
+     "quote": "We (David Goldschlag, Michael Reed, and I) began work on onion routing in late 1995",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract describes Tor as 'a global onion routing network with about a half million users on any given day'."
+    },
+    {
+     "institution": "The Tor Project",
+     "title": "History",
+     "date": "2026",
+     "url": "https://www.torproject.org/about/history/",
+     "quote": "In the early 2000s, Roger Dingledine, a recent Massachusetts Institute of Technology (MIT) graduate, began working on an NRL onion routing project with Paul Syverson.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated page; accessed 2026-09-23."
+    }
+   ],
+   "portrait": "paul-syverson-nrl-2012"
+  },
+  {
+   "id": "roger-dingledine",
+   "name": "Roger Dingledine",
+   "handle": "arma",
+   "roles": "computer scientist · Tor co-founder · Free Haven Project",
+   "years": "2000s–present",
+   "place": "Cambridge, Massachusetts",
+   "lat": 42.3601,
+   "lng": -71.0942,
+   "keyWork": {
+    "title": "Tor: The Second-Generation Onion Router (with Nick Mathewson and Paul Syverson), 13th USENIX Security Symposium, San Diego",
+    "year": 2004,
+    "url": "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf"
+   },
+   "contribution": "A recent MIT graduate, Dingledine began working in the early 2000s on a Naval Research Laboratory onion-routing project with Paul Syverson and named it Tor to distinguish NRL's original 'onion routing' from rival systems. On 20 September 2002 he told developers that 'the onion routing network is functional and deployed', and its code was released under a free-software licence. With Nick Mathewson and Syverson he published the Tor design at USENIX Security in August 2004, describing a volunteer network of more than 30 nodes; he co-founded the Tor Project, which became a 501(c)(3) nonprofit in 2006.",
+   "quote": "The onion routing network is functional and deployed. It's not terribly diverse yet, but heck, it's just for show for now.",
+   "quoteSource": {
+    "institution": "or-dev mailing list archive (archives.seul.org)",
+    "title": "Roger Dingledine, 'pre-alpha: run an onion proxy now!'",
+    "date": "2002-09-20",
+    "url": "https://archives.seul.org/or/dev/Sep-2002/msg00019.html",
+    "quote": "The onion routing network is functional and deployed. It's not terribly diverse yet, but heck, it's just for show for now.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Sent from arma@mit.edu, Fri, 20 Sep 2002 17:14:01 -0400; the message links a tarball named tor-0.0.0.tar.gz. The Tor Project's own history gives 'October 2002' for the initial deployment."
+   },
+   "influence": "Tor turned a navy research prototype into a free, volunteer-run public network; the Tor Project says it grew from about a dozen volunteer nodes at the end of 2003 to thousands of relays and millions of users, and was used during the Arab Spring and by Edward Snowden.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "The Tor Project",
+     "title": "History",
+     "date": "2026",
+     "url": "https://www.torproject.org/about/history/",
+     "quote": "To distinguish this original work at NRL from other onion routing efforts that were starting to pop up elsewhere, Roger called the project Tor, which stood for The Onion Routing. Nick Mathewson, a classmate of Roger's at MIT, joined the project soon after.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'That's why in October 2002 when the Tor network was initially deployed, its code was released under a free and open software license.' and 'By the end of 2003, the network had about a dozen volunteer nodes, mostly in the U.S., plus one in Germany.' Undated page; accessed 2026-09-23."
+    },
+    {
+     "institution": "USENIX Association, Proceedings of the 13th USENIX Security Symposium (San Diego, 9–13 August 2004)",
+     "title": "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router'",
+     "date": "2004-08",
+     "url": "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf",
+     "quote": "We present Tor, a circuit-based low-latency anonymous communication service.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract also: 'We briefly describe our experiences with an international network of more than 30 nodes.' Author affiliations: Dingledine and Mathewson, The Free Haven Project; Syverson, Naval Research Lab."
+    },
+    {
+     "institution": "The Tor Project (blog)",
+     "title": "Roger Dingledine Becomes Interim Executive Director of the Tor Project",
+     "date": "2015-05-01",
+     "url": "https://blog.torproject.org/roger-dingledine-becomes-interim-executive-director-tor-project/",
+     "quote": "Tor Project co-founder Roger Dingledine has been appointed Interim Executive Director of the organization by Tor's Board of Directors.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "portrait": "roger-dingledine-30c3-2013"
+  },
+  {
+   "id": "nick-mathewson",
+   "name": "Nick Mathewson",
+   "handle": "nickm",
+   "roles": "software engineer · Tor co-founder and co-designer",
+   "years": "2000s–present",
+   "place": "Cambridge, Massachusetts",
+   "lat": 42.3601,
+   "lng": -71.0942,
+   "keyWork": {
+    "title": "Anonymity Loves Company: Usability and the Network Effect (with Roger Dingledine), Free Haven Project position paper",
+    "year": 2006,
+    "url": "https://www.freehaven.net/doc/wupss04/usability.pdf"
+   },
+   "contribution": "Mathewson, an MIT classmate of Roger Dingledine, joined the Tor project soon after it began and co-authored the 2004 Tor design paper with Dingledine and Paul Syverson. With Dingledine he argued in 'Anonymity Loves Company' that in anonymity networks usability is itself a security property, because every additional user enlarges the crowd in which each user hides. He is a co-founder of the Tor Project and served as its interim deputy executive director from 2015.",
+   "quote": "When more users join the network, existing users become more secure, even if the new users never talk to the existing ones!",
+   "quoteSource": {
+    "institution": "The Free Haven Project (freehaven.net)",
+    "title": "Roger Dingledine and Nick Mathewson, 'Anonymity Loves Company: Usability and the Network Effect'",
+    "date": "2006",
+    "url": "https://www.freehaven.net/doc/wupss04/usability.pdf",
+    "quote": "When more users join the network, existing users become more secure, even if the new users never talk to the existing ones!",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Co-authored with Dingledine. The PDF carries no venue or date; the paper is generally cited to the Workshop on the Economics of Information Security (WEIS), June 2006 — that dating was not verified from a primary page. Its references include SOUPS 2005, so it is no earlier than July 2005."
+   },
+   "influence": "The 'anonymity loves company' argument — that privacy tools protect people only when many ordinary people use them — matches the Tor Project's own account of why, because Tor 'was still difficult for less-technically savvy people to use', it began building tools beyond the bare proxy in 2005 and Tor Browser in 2008.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "The Tor Project",
+     "title": "History",
+     "date": "2026",
+     "url": "https://www.torproject.org/about/history/",
+     "quote": "Nick Mathewson, a classmate of Roger's at MIT, joined the project soon after.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated page; accessed 2026-09-23. The page also says development of tools beyond the Tor proxy began in 2005 and 'Development of Tor Browser began in 2008'."
+    },
+    {
+     "institution": "The Tor Project (blog)",
+     "title": "Roger Dingledine Becomes Interim Executive Director of the Tor Project",
+     "date": "2015-05-01",
+     "url": "https://blog.torproject.org/roger-dingledine-becomes-interim-executive-director-tor-project/",
+     "quote": "During this period, Tor Project co-founder Nick Mathewson will take on the role of Interim Deputy Executive Director.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "USENIX Association, Proceedings of the 13th USENIX Security Symposium",
+     "title": "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router'",
+     "date": "2004-08",
+     "url": "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf",
+     "quote": "We present Tor, a circuit-based low-latency anonymous communication service.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "portrait": "nick-mathewson-tor-project-2021"
+  },
+  {
+   "id": "satoshi-nakamoto",
+   "name": "Satoshi Nakamoto",
+   "handle": "Satoshi Nakamoto (a pseudonym; identity unknown)",
+   "roles": "pseudonymous author of the Bitcoin white paper and first Bitcoin software",
+   "years": "2008–2010s",
+   "place": "Unknown (pseudonymous; the white paper was announced on the Cryptography mailing list at metzdowd.com)",
+   "lat": null,
+   "lng": null,
+   "locationNote": "No verifiable physical location: the persona is pseudonymous. Coordinates deliberately left empty.",
+   "keyWork": {
+    "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+    "year": 2008,
+    "url": "https://bitcoin.org/bitcoin.pdf"
+   },
+   "contribution": "On 31 October 2008 a person or group writing as Satoshi Nakamoto announced 'a new electronic cash system that's fully peer-to-peer, with no trusted third party' on the Cryptography mailing list and published the Bitcoin white paper, which uses a proof-of-work system 'similar to Adam Back's Hashcash' and cites Wei Dai's b-money. Because every transaction is announced publicly, the paper abandoned the banking model of privacy through restricted access and proposed instead to keep public keys unlinked to identities, recommending a new key pair for each transaction while conceding that some linking was unavoidable. The author's identity has never been established; in 2024 England's High Court declared that Craig Wright, who had claimed the role, is not Satoshi Nakamoto.",
+   "quote": "The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous.",
+   "quoteSource": {
+    "institution": "bitcoin.org",
+    "title": "Satoshi Nakamoto, 'Bitcoin: A Peer-to-Peer Electronic Cash System', section 10 'Privacy'",
+    "date": "2008-10-31",
+    "url": "https://bitcoin.org/bitcoin.pdf",
+    "quote": "The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "'This method' refers to the preceding sentence: 'The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party.' The PDF itself carries no date; 31 October 2008 is the date of the mailing-list announcement."
+   },
+   "influence": "Bitcoin turned the cypherpunk goal of cash without a trusted third party into a working system, but its public ledger made its privacy model pseudonymous rather than anonymous: a 2013 measurement study showed that 'an agency with subpoena power would be well placed to identify who is paying money to whom'.",
+   "thread": "The system rests on individuals holding their own private keys rather than on accounts held for them by an intermediary.",
+   "sources": [
+    {
+     "institution": "The Cryptography Mailing List (metzdowd.com archive)",
+     "title": "Satoshi Nakamoto, 'Bitcoin P2P e-cash paper'",
+     "date": "2008-10-31",
+     "url": "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html",
+     "quote": "I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Archive header: 'Fri Oct 31 14:10:00 EDT 2008', from 'satoshi at vistomail.com'. The message also claims 'Participants can be anonymous.' A mirror at mail-archive.com shows a header date of Sat, 01 Nov 2008 16:16:33 -0700. White paper abstract: 'A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.'"
+    },
+    {
+     "institution": "ACM Internet Measurement Conference (IMC '13, Barcelona, 23–25 October 2013); author copy, UC San Diego",
+     "title": "S. Meiklejohn, M. Pomarole, G. Jordan, K. Levchenko, D. McCoy, G. M. Voelker and S. Savage, 'A Fistful of Bitcoins: Characterizing Payments Among Men with No Names'",
+     "date": "2013-10",
+     "url": "https://cseweb.ucsd.edu/~smeiklejohn/files/imc13.pdf",
+     "quote": "Using the dissolution of a large Silk Road wallet and notable Bitcoin thefts as case studies, we demonstrate that an agency with subpoena power would be well placed to identify who is paying money to whom.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "High Court of Justice of England and Wales, Chancery Division (Mellor J)",
+     "title": "Crypto Open Patent Alliance v Wright, consequentials judgment [2024] EWHC 1809 (Ch)",
+     "date": "2024-07-16",
+     "url": "https://www.judiciary.uk/wp-content/uploads/2024/07/COPA-v-Wright-Judgment.pdf",
+     "quote": "First, that I have declared that Dr Wright is not the author of the Bitcoin White Paper nor the owner of copyright in it, is not Satoshi Nakamoto and is not the person who created Bitcoin and not the author of the initial versions of the Bitcoin Source Code.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The sentence summarises, in a submission recorded by the judge, the declarations Mellor J made at the end of the trial (March 2024); the main written judgment was handed down on 20 May 2024."
+    }
+   ],
+   "portrait": ""
+  },
+  {
+   "id": "moxie-marlinspike",
+   "name": "Moxie Marlinspike",
+   "handle": "moxie0",
+   "roles": "security researcher · founder of Open Whisper Systems · creator of Signal and co-author of the Signal Protocol",
+   "years": "2010–present",
+   "place": "Mountain View, California (registered city of the Signal Technology Foundation)",
+   "lat": 37.3861,
+   "lng": -122.0839,
+   "locationNote": "Coordinates: Mountain View, the city under which the IRS lists the Signal Technology Foundation (ProPublica Nonprofit Explorer, https://projects.propublica.org/nonprofits/organizations/824506840: 'Signal Technology Foundation Mountain View, CA'). Press reports place Whisper Systems in Pittsburgh in 2010 (Forbes, not readable by script).",
+   "keyWork": {
+    "title": "Signal and the Signal Protocol (TextSecure protocol), deployed in WhatsApp for all users on 5 April 2016",
+    "year": 2016,
+    "url": "https://signal.org/blog/whatsapp-complete/"
+   },
+   "contribution": "Marlinspike's mobile-security company Whisper Systems was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 licence, and in January 2013 he gave its continued open development a home as Open Whisper Systems. The project released Signal, encrypted calling for iPhone, in July 2014, and in November 2015 merged its Android apps TextSecure (private messaging) and RedPhone (private calls) into Signal for Android. From November 2014 it worked with WhatsApp to build the TextSecure — later Signal — Protocol into WhatsApp's clients, completing end-to-end encryption for all WhatsApp users on 5 April 2016; in 2018 WhatsApp co-founder Brian Acton funded the Signal Foundation, and Marlinspike stepped down as Signal's chief executive in January 2022.",
+   "quote": "Instead of teaching the rest of the world cryptography, we wanted to see if we could develop cryptography that worked for the rest of the world.",
+   "quoteSource": {
+    "institution": "Signal (signal.org blog)",
+    "title": "Moxie Marlinspike, 'Signal Foundation'",
+    "date": "2018-02-21",
+    "url": "https://signal.org/blog/signal-foundation/",
+    "quote": "Instead of teaching the rest of the world cryptography, we wanted to see if we could develop cryptography that worked for the rest of the world.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Post byline 'moxie0 on 21 Feb 2018'. The same post announces 'an emerging 501(c)(3) nonprofit created and made possible by Brian Acton, the co-founder of WhatsApp', 'Starting with an initial $50,000,000 in funding'."
+   },
+   "influence": "By licensing its protocol into WhatsApp, Open Whisper Systems made default end-to-end encryption a mass-market norm: on completion in April 2016 it reported that over a billion monthly active users were using the Signal Protocol.",
+   "thread": "In the Signal Protocol each device generates its own key pair; the public key is published through the server, 'while the private key remains private on the user's device' — confidentiality that depends on keys the user holds, not on the provider's policy.",
+   "sources": [
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'WhatsApp's Signal Protocol integration is now complete'",
+     "date": "2016-04-05",
+     "url": "https://signal.org/blog/whatsapp-complete/",
+     "quote": "Users running the most recent versions of WhatsApp on any platform now get full end-to-end encryption for every message they send and every WhatsApp call they make when communicating with each other.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: 'Over a billion monthly active users across the world are now using the Signal Protocol for end-to-end encryption.'"
+    },
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'A New Home'",
+     "date": "2013-01-21",
+     "url": "https://signal.org/blog/welcome/",
+     "quote": "Whisper Systems was a company focused on the development of mobile security software, which was acquired by Twitter in late 2011. Twitter very generously made some of the Whisper Systems software available under an Open Source license (GPLv3), which has since been under open development by the community.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Signal for iPhone: 'Free, Worldwide, Encrypted Phone Calls for iPhone' (29 Jul 2014), https://signal.org/blog/signal/; merger: 'Just Signal' (2 Nov 2015), https://signal.org/blog/just-signal/ ('This is the culmination of our effort to combine TextSecure and RedPhone into one app'); WhatsApp partnership announced 18 Nov 2014, https://signal.org/blog/whatsapp/; CEO transition: 'New year, new CEO' (10 Jan 2022), https://signal.org/blog/new-year-new-ceo/ ('It's a new year, and I've decided it's a good time to replace myself as the CEO of Signal.'). All --check FOUND."
+    },
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'There is no WhatsApp \"backdoor\"'",
+     "date": "2017-01-13",
+     "url": "https://signal.org/blog/there-is-no-whatsapp-backdoor/",
+     "quote": "The public key is advertised publicly, through the server, while the private key remains private on the user's device.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Forbes",
+     "title": "Andy Greenberg, 'Android App Aims to Allow Wiretap-Proof Cell Phone Calls'",
+     "date": "2010-05-25",
+     "url": "https://www.forbes.com/sites/firewall/2010/05/25/android-app-aims-to-allow-wiretap-proof-cell-phone-calls/",
+     "quote": "",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Contemporary report of the May 2010 public betas of RedPhone and TextSecure from Whisper Systems; forbes.com returned HTTP 403 to scripts, so no quote was captured. Not relied on for any claim in the card except the locationNote."
+    }
+   ],
+   "portrait": "moxie-marlinspike-techcrunch-2017"
+  },
+  {
+   "id": "cynthia-dwork",
+   "name": "Cynthia Dwork",
+   "handle": "",
+   "roles": "computer scientist · co-inventor of differential privacy",
+   "years": "1990s–present",
+   "place": "Cambridge, Massachusetts (Harvard University; the 2006 work was done at Microsoft Research)",
+   "lat": 42.377,
+   "lng": -71.1167,
+   "locationNote": "Coordinates: Harvard University, Cambridge, where Dwork is Gordon McKay Professor of Computer Science. Her 2006 differential-privacy papers carry a Microsoft Research affiliation; the lab's city is not stated on the paper.",
+   "keyWork": {
+    "title": "Differential Privacy (33rd International Colloquium on Automata, Languages and Programming, ICALP 2006)",
+    "year": 2006,
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf"
+   },
+   "contribution": "Working at Microsoft Research, Dwork showed in 2006 that the long-standing goal for statistical databases — that nothing about an individual be learnable that could not be learned without the database — cannot be achieved, and proposed instead 'differential privacy': any given disclosure should be almost equally likely whether or not a person's data are included. With colleagues she developed methods that add calibrated random noise to statistics to meet that guarantee. The technique is used by Apple on its devices and was the basis of the Disclosure Avoidance System for the 2020 US Census; she received the US National Medal of Science in January 2025.",
+   "quote": "The risk to one's privacy, or in general, any type of risk, such as the risk of being denied automobile insurance, should not substantially increase as a result of participating in a statistical database.",
+   "quoteSource": {
+    "institution": "Microsoft Research (author copy of ICALP 2006 paper, Springer LNCS)",
+    "title": "Cynthia Dwork, 'Differential Privacy'",
+    "date": "2006-07",
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf",
+    "quote": "the risk to one's privacy, or in general, any type of risk, such as the risk of being denied automobile insurance, should not substantially increase as a result of participating in a statistical database.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Venue confirmed on Springer's chapter page (https://link.springer.com/chapter/10.1007/11787006_1): 'International Colloquium on Automata, Languages, and Programming'. The card quote capitalises the first word."
+   },
+   "influence": "Differential privacy moved privacy protection from promises about data handling to a measurable mathematical guarantee; it was the backbone of the 2020 US Census's disclosure avoidance, although in 2026 the US Commerce Department ordered the Census Bureau to stop using 'noise infusion', including differential privacy.",
+   "thread": "The guarantee is framed around the individual's choice to take part: 'any given disclosure will be, within a small multiplicative factor, just as likely whether or not the individual participates in the database.'",
+   "sources": [
+    {
+     "institution": "Harvard John A. Paulson School of Engineering and Applied Sciences",
+     "title": "Pioneer of modern data privacy Cynthia Dwork wins National Medal of Science",
+     "date": "2025-01-08",
+     "url": "https://seas.harvard.edu/news/pioneer-modern-data-privacy-cynthia-dwork-wins-national-medal-science",
+     "quote": "This mathematical technique she and colleagues first pioneered in the mid-2000s is now widely deployed in industry, including in every Apple device, and was the backbone of the Disclosure Avoidance System for the 2020 U.S. Census",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Census Bureau",
+     "title": "Understanding Differential Privacy",
+     "date": "2026",
+     "url": "https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/process/disclosure-avoidance/differential-privacy.html",
+     "quote": "The Census Bureau is evaluating alternative approaches to comply with the U.S. Department of Commerce's administrative order prohibiting the use of noise infusion.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'For 2020 Census data we're applying noise using a newer protection framework based on \"differential privacy.\"' Page accessed 2026-09-23."
+    },
+    {
+     "institution": "NPR",
+     "title": "Hansi Lo Wang, 'A Trump push to cut \"statistical noise\" could mean less data from the Census Bureau'",
+     "date": "2026-06-12",
+     "url": "https://www.npr.org/2026/06/12/nx-s1-5855734/census-bureau-data-differential-privacy",
+     "quote": "A new Trump administration order bans the Census Bureau and the Bureau of Economic Analysis from using statistical \"noise,\" or data for fuzzing survey results, to protect people's privacy in their statistics.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Search results name the order Department Administrative Order 216-26; that number was not verified from a primary Commerce Department page."
+    }
+   ],
+   "portrait": "cynthia-dwork-safra-center-2017"
+  },
+  {
+   "id": "latanya-sweeney",
+   "name": "Latanya Sweeney",
+   "handle": "",
+   "roles": "computer scientist · re-identification researcher · creator of k-anonymity · former FTC Chief Technologist",
+   "years": "1997–present",
+   "place": "Carnegie Mellon University, Pittsburgh, Pennsylvania (later Harvard University, Cambridge, Massachusetts)",
+   "lat": 40.4433,
+   "lng": -79.9436,
+   "locationNote": "Coordinates: Carnegie Mellon University, the affiliation on her 2000 and 2002 papers. The re-identification demonstration she describes used the Cambridge, Massachusetts voter list; she later founded Harvard's Data Privacy Lab.",
+   "keyWork": {
+    "title": "k-anonymity: a model for protecting privacy, International Journal on Uncertainty, Fuzziness and Knowledge-based Systems 10(5), 557–570",
+    "year": 2002,
+    "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf"
+   },
+   "contribution": "Sweeney showed that 'anonymised' records could be re-identified by linking them to public data: for twenty dollars she bought the Cambridge, Massachusetts voter list and matched it to supposedly de-identified state-employee medical data, finding Governor William Weld's records because only one man in his five-digit ZIP code shared his birth date. Using 1990 census data she estimated in 2000 that 87% of the US population was likely unique on ZIP code, gender and date of birth alone. Her 2002 'k-anonymity' model required each released record to be indistinguishable from at least k−1 others.",
+   "quote": "It was found that 87% (216 million of 248 million) of the population in the United States had reported characteristics that likely made them unique based only on {5-digit ZIP, gender, date of birth}.",
+   "quoteSource": {
+    "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (author copy, Data Privacy Lab)",
+    "title": "Latanya Sweeney, 'Simple Demographics Often Identify People Uniquely'",
+    "date": "2000",
+    "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+    "quote": "It was found that 87% (216 million of 248 million) of the population in the United States had reported characteristics that likely made them unique based only on {5-digit ZIP, gender, date of birth}.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Header: 'Carnegie Mellon University, Data Privacy Working Paper 3. Pittsburgh 2000.' The underlying population figures are from the 1990 US census (the table total is 248,418,140)."
+   },
+   "influence": "Her demonstrations undercut the assumption that removing names makes data safe to share, and made re-identification a policy issue; in 2013 the US Federal Trade Commission appointed her its Chief Technologist, citing her 'groundbreaking work in the anonymization of sensitive consumer information and privacy technology'.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "International Journal on Uncertainty, Fuzziness and Knowledge-based Systems (author copy, Data Privacy Lab)",
+     "title": "L. Sweeney, 'k-anonymity: a model for protecting privacy', 10(5), 2002, 557–570",
+     "date": "2002",
+     "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf",
+     "quote": "According to the Cambridge Voter list, six people had his particular birth date; only three of them were men; and, he was the only one in his 5-digit ZIP code.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same paper: 'For twenty dollars I purchased the voter registration list for Cambridge Massachusetts and received the information on two diskettes' and 'A release provides k-anonymity protection if the information for each person contained in the release cannot be distinguished from at least k-1 individuals whose information also appears in the release.' 'Received May 2002'."
+    },
+    {
+     "institution": "U.S. Federal Trade Commission",
+     "title": "FTC Names Latanya Sweeney as Chief Technologist; Andrea Matwyshyn as Policy Advisor",
+     "date": "2013-11",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2013/11/ftc-names-latanya-sweeney-chief-technologist-andrea-matwyshyn-policy-advisor",
+     "quote": "She has done groundbreaking work in the anonymization of sensitive consumer information and privacy technology",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quoting FTC Chairwoman Edith Ramirez. Also: 'Dr. Sweeney is a professor of government and technology at Harvard University and the founder and director of Harvard's data privacy lab.' Day of month not shown in the fetched text."
+    }
+   ],
+   "portrait": "latanya-sweeney-knight-paley-center-2017"
+  },
+  {
+   "id": "adam-back",
+   "name": "Adam Back",
+   "handle": "",
+   "roles": "cryptographer · cypherpunk · inventor of Hashcash",
+   "years": "1990s–present",
+   "place": "Not verified (his papers give only the domain cypherspace.org)",
+   "lat": null,
+   "lng": null,
+   "locationNote": "No primary page read for this study gives a city for the work; coordinates left empty.",
+   "keyWork": {
+    "title": "Hashcash (proposed May 1997); 'Hashcash – A Denial of Service Counter-Measure' (2002)",
+    "year": 1997,
+    "url": "http://www.hashcash.org/papers/hashcash.pdf"
+   },
+   "contribution": "In May 1997 Back proposed Hashcash, a CPU 'cost-function' that makes a sender compute a proof-of-work token before sending, to throttle spam and abuse of anonymous remailers. His 2002 paper acknowledges that he had not known of Cynthia Dwork and Moni Naor's 1992 proposal of a similar CPU pricing function against junk mail. The Bitcoin white paper's timestamp server uses a proof-of-work system 'similar to Adam Back's Hashcash' and cites his paper.",
+   "quote": "Hashcash was originally proposed as a counter-measure against email spam, and against systematic abuse of anonymous remailers.",
+   "quoteSource": {
+    "institution": "hashcash.org (author's paper)",
+    "title": "Adam Back, 'Hashcash – A Denial of Service Counter-Measure'",
+    "date": "2002-08-01",
+    "url": "http://www.hashcash.org/papers/hashcash.pdf",
+    "quote": "Hashcash was originally proposed as a counter-measure against email spam, and against systematic abuse of anonymous remailers.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Reference [1]: 'Adam Back. Hashcash, May 1997. Published at http://www.cypherspace.org/hashcash/.'"
+   },
+   "influence": "Hashcash's proof-of-work, first aimed at keeping anonymous remailers usable, became a building block of Bitcoin, which cites it directly.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "hashcash.org (author's paper)",
+     "title": "Adam Back, 'Hashcash – A Denial of Service Counter-Measure'",
+     "date": "2002-08-01",
+     "url": "http://www.hashcash.org/papers/hashcash.pdf",
+     "quote": "At the time of publication of [1] the author was not aware of the prior work by Dwork and Naor in [2] who proposed a CPU pricing function for the application of combatting junk email.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reference [2]: Cynthia Dwork and Moni Naor, 'Pricing via processing or combatting junk mail', Proceedings of Crypto, 1992."
+    },
+    {
+     "institution": "bitcoin.org",
+     "title": "Satoshi Nakamoto, 'Bitcoin: A Peer-to-Peer Electronic Cash System'",
+     "date": "2008-10-31",
+     "url": "https://bitcoin.org/bitcoin.pdf",
+     "quote": "system similar to Adam Back's Hashcash [6], rather than newspaper or Usenet posts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Full sentence: 'To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash [6], rather than newspaper or Usenet posts.' (a PDF line break splits 'proof-of-work', so the checked fragment starts at 'system')."
+    }
+   ],
+   "portrait": "adam-back-joi-ito-2014"
+  },
+  {
+   "id": "daniel-j-bernstein",
+   "name": "Daniel J. Bernstein",
+   "handle": "djb",
+   "roles": "mathematician · cryptographer · plaintiff in Bernstein v. United States",
+   "years": "1990s–present",
+   "place": "Berkeley, California (UC Berkeley, where he developed Snuffle; later University of Illinois at Chicago)",
+   "lat": 37.8719,
+   "lng": -122.2585,
+   "locationNote": "Coordinates: UC Berkeley, where Bernstein developed Snuffle as a doctoral candidate. The case was heard in the Northern District of California and the Ninth Circuit (both in San Francisco).",
+   "keyWork": {
+    "title": "Snuffle and the lawsuit Bernstein v. United States (Ninth Circuit panel opinion, 176 F.3d 1132, 6 May 1999)",
+    "year": 1999,
+    "url": "https://law.resource.org/pub/us/case/reporter/F3/176/176.F3d.1132.97-16686.html"
+   },
+   "contribution": "As a doctoral candidate at UC Berkeley, Bernstein devised an encryption method he called Snuffle and asked whether he needed a licence to publish its description and source code; the State Department said it was a 'munition' under the arms-export rules. With lawyers backed by the Electronic Frontier Foundation he sued, and the district court held in December 1996 and again in August 1997 that the regulations were unconstitutional. A Ninth Circuit panel agreed on 6 May 1999 that the export rules were a prior restraint on scientific expression, but that opinion was withdrawn for rehearing en banc; the government then loosened the rules in January 2000 and the case ended in 2002 without a final appellate ruling.",
+   "quote": "Can you imagine how painful it would be to talk to someone if every new line out of your mouth had to be cleared with the government before you said it?",
+   "quoteSource": {
+    "institution": "D. J. Bernstein (cr.yp.to)",
+    "title": "Bernstein v. United States — Summary of the regulations",
+    "date": "2002",
+    "url": "https://cr.yp.to/export/problem.html",
+    "quote": "Can you imagine how painful it would be to talk to someone if every new line out of your mouth had to be cleared with the government before you said it?",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Undated page; it refers to the 11 September 2001 attacks, so it was written no earlier than late 2001."
+   },
+   "influence": "The case made the argument that publishing encryption code is protected speech a central front of the crypto wars; EFF credits it with the ruling that 'software source code was speech protected by the First Amendment', although the panel opinion was later withdrawn and the law was changed by regulation rather than by final judgment.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "U.S. Court of Appeals for the Ninth Circuit (via Public.Resource.Org)",
+     "title": "Bernstein v. U.S. Department of Justice, 176 F.3d 1132 (9th Cir. 1999)",
+     "date": "1999-05-06",
+     "url": "https://law.resource.org/pub/us/case/reporter/F3/176/176.F3d.1132.97-16686.html",
+     "quote": "We find that the EAR regulations (1) operate as a prepublication licensing scheme that burdens scientific expression, (2) vest boundless discretion in government officials, and (3) lack adequate procedural safeguards.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'Argued and Submitted Dec. 8, 1997. Decided May 6, 1999.' The opinion recounts that the State Department told Bernstein Snuffle was a munition under ITAR and that the district court held the ITAR rules invalid as a prior restraint."
+    },
+    {
+     "institution": "U.S. Court of Appeals for the Ninth Circuit (via Public.Resource.Org)",
+     "title": "Bernstein v. U.S. Department of Justice, 192 F.3d 1308 (9th Cir. 1999) (order granting rehearing en banc)",
+     "date": "1999-09-30",
+     "url": "https://law.resource.org/pub/us/case/reporter/F3/192/192.F3d.1308.97-16686.html",
+     "quote": "The three-judge panel opinion, Bernstein v. U.S. Dept. of Justice, 176 F.3d 1132 (9th Cir. 1999), is withdrawn.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "D. J. Bernstein (cr.yp.to)",
+     "title": "Bernstein v. United States — Summary of the case status",
+     "date": "2002",
+     "url": "https://cr.yp.to/export/status.html",
+     "quote": "At oral argument on 18 October 2002, the government backed away from its regulations. The District Court subsequently dismissed the case on ripeness grounds.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'The District Court denied the government's initial motion to dismiss, and then held in December 1996 that ITAR was unconstitutional' and 'Before en-banc review could happen, the government added a big exception to the regulations, and the case was sent back to the District Court.' The January 2000 date of the new exception is from https://cr.yp.to/export/problem.html ('In January 2000, the government added a big new exception')."
+    },
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "Bernstein v. US Department of Justice (case page)",
+     "date": "2026",
+     "url": "https://www.eff.org/cases/bernstein-v-us-dept-justice",
+     "quote": "After four years and one regulatory change, the Ninth Circuit Court of Appeals ruled that software source code was speech protected by the First Amendment and that the government's regulations preventing its publication were unconstitutional.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated case page; accessed 2026-09-23. EFF's summary does not mention that the panel opinion was withdrawn."
+    }
+   ],
+   "portrait": "dan-bernstein-27c3-2010"
   }
  ],
  "events": [
@@ -138,8 +1085,1273 @@
     }
    ],
    "locationNote": "Coordinates: Stanford University, where both authors worked. The journal was published by the IEEE (New York)."
+  },
+  {
+   "id": "chaum-untraceable-electronic-mail-mix-networks-1981",
+   "displayDate": "February 1981",
+   "year": 1981,
+   "title": "Chaum describes the 'mix' for untraceable electronic mail",
+   "place": "University of California, Berkeley",
+   "lat": 37.8719,
+   "lng": -122.2585,
+   "summary": "David L. Chaum of the University of California, Berkeley published 'Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms' in the February 1981 issue of Communications of the ACM (received February 1979, revised October 1980). It described a public-key technique that hides who is communicating with whom, not just the content, without a universally trusted authority, and extended it to untraceable return addresses, digital pseudonyms and verifiable elections.",
+   "significance": "It made metadata — who talks to whom — a problem that cryptography could address, the foundation of later anonymous remailers and onion routing.",
+   "sources": [
+    {
+     "institution": "Communications of the ACM (copy in the Free Haven anonymity bibliography)",
+     "title": "David L. Chaum, 'Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms', vol. 24, no. 2",
+     "date": "1981-02",
+     "url": "https://www.freehaven.net/anonbib/cache/chaum-mix.pdf",
+     "quote": "A technique based on public key cryptography is presented that allows an electronic mail system to hide who a participant communicates with as well as the content of the communication--in spite of an unsecured underlying telecommunication system.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page footer: 'February 1981 Volume 24 Number 2'; 'Received 2/79; accepted 4/80; revised 10/80'."
+    },
+    {
+     "institution": "Communications of the ACM (copy in the Free Haven anonymity bibliography)",
+     "title": "David L. Chaum, 'Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms', vol. 24, no. 2",
+     "date": "1981-02",
+     "url": "https://www.freehaven.net/anonbib/cache/chaum-mix.pdf",
+     "quote": "Elections in which any interested party can verify that the ballots have been properly counted are possible if anonymously mailed ballots are signed with pseudonyms from a roster of registered voters.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates: UC Berkeley, the author's affiliation. The journal was published by the ACM (New York)."
+  },
+  {
+   "id": "chaum-security-without-identification-1985",
+   "displayDate": "October 1985",
+   "year": 1985,
+   "title": "Chaum proposes 'security without identification'",
+   "place": "Centre for Mathematics and Computer Science (CWI), Kruislaan 413, Amsterdam",
+   "lat": 52.3563,
+   "lng": 4.9516,
+   "summary": "In the October 1985 issue of Communications of the ACM (vol. 28, no. 10), David Chaum, then at Amsterdam's Centre for Mathematics and Computer Science, argued that computerised transactions were letting organisations link personal records into dossiers. He proposed instead that each person use a different, unlinkable 'digital pseudonym' with each organisation, created with the individual's own input and held on a personal 'card computer', with blind signatures allowing untraceable payments and credentials.",
+   "significance": "It set out, in a mainstream computing journal, an architecture in which the individual — not the organisation — holds the identifiers and decides what is linked.",
+   "sources": [
+    {
+     "institution": "Communications of the ACM (scan hosted by Radboud University Nijmegen)",
+     "title": "David Chaum, 'Security without Identification: Transaction Systems to Make Big Brother Obsolete', vol. 28, no. 10, pp. 1030–1044",
+     "date": "1985-10",
+     "url": "https://www.cs.ru.nl/~jhh/pub/secsem/chaum1985bigbrother.pdf",
+     "quote": "Author's Present Address: David Chaum. Centre for Mathematics and Computer Science, Kruislaan 413, 1098 SJ Amsterdam, The Netherlands",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scanned article; the multi-column OCR text layer scrambles body sentences, so the body quote is taken from the author's web copy (next source). Footer on each page: 'October 1985 Volume 28 Number 10'."
+    },
+    {
+     "institution": "chaum.com (David Chaum's website; Internet Archive copy)",
+     "title": "Security without Identification: Card Computers to make Big Brother Obsolete",
+     "date": "1985-10",
+     "url": "https://web.archive.org/web/2024id_/https://chaum.com/security-without-identification/",
+     "quote": "Under the new approach, an individual uses a different account number or “digital pseudonym” with each organization.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Web text corresponds to Chaum's revised 1987 reprint of the 1985 article (see the Chaum person card)."
+    }
+   ],
+   "locationNote": "Coordinates: CWI's Amsterdam Science Park campus (the Kruislaan 413 address given in the article). The journal was published by the ACM (New York)."
+  },
+  {
+   "id": "zimmermann-releases-pgp-1-0-1991",
+   "displayDate": "5 June 1991",
+   "year": 1991,
+   "title": "Phil Zimmermann releases Pretty Good Privacy (PGP) 1.0",
+   "place": "Boulder, Colorado",
+   "lat": 40.015,
+   "lng": -105.2705,
+   "summary": "On 5 June 1991 Phil Zimmermann sent the first release of PGP, email encryption software for MS-DOS, to friends for uploading: Allan Hoeltje posted it to Peacenet, and Kelly Goen to a Usenet source-code newsgroup (marked 'US only') and bulletin-board systems; Zimmermann could not recall whether the Internet postings began on 5 or 6 June. Zimmermann said Senate Bill 266, a 1991 anticrime bill whose non-binding resolution would have had communications systems let the government obtain plaintext, led him to publish it free.",
+   "significance": "Strong public-key encryption became something an individual could download and run, rather than a service granted by a government or a bank.",
+   "sources": [
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "PGP Marks 10th Anniversary",
+     "date": "2001-06-05",
+     "url": "https://www.philzimmermann.com/EN/essays/PGP_10thAnniversary.html",
+     "quote": "It was on this day in 1991 that I sent the first release of PGP to a couple of my friends for uploading to the Internet.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Next sentence: 'First, I sent it to Allan Hoeltje, who posted it to Peacenet, an ISP that specialized in grassroots political organizations, mainly in the peace movement.' The page also says Kelly Goen uploaded it to a Usenet newsgroup marked 'US only', and 'I don't recall if the postings to the Internet began on June 5th or 6th.'"
+    },
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "Why I Wrote PGP — part of the original 1991 PGP User's Guide (updated in 1999)",
+     "date": "1999",
+     "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+     "quote": "It was this bill that led me to publish PGP electronically for free that year, shortly before the measure was defeated after vigorous protest by civil libertarians and industry groups.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates: Boulder, Colorado, where Zimmermann signed the 1991 user's-guide essay. The uploads were made by friends elsewhere; the page does not name their locations."
+  },
+  {
+   "id": "zimmermann-pgp-export-investigation-closed-1996",
+   "displayDate": "11 January 1996",
+   "year": 1996,
+   "title": "US prosecutors close the PGP export investigation without charges",
+   "place": "U.S. Attorney's Office, Northern District of California, San Jose",
+   "lat": 37.3337,
+   "lng": -121.8907,
+   "summary": "On 11 January 1996 Assistant U.S. Attorney William Keane in San Jose told Zimmermann's lawyer, Philip Dubois, that Zimmermann would not be prosecuted over the June 1991 Usenet posting of PGP, ending a three-year investigation. U.S. Attorney Michael J. Yamaguchi announced that his office had declined prosecution of any individuals and gave no reasons. Dubois speculated the government may not have wanted to risk a ruling that posting software on a US Internet site is not an 'export', or that the export-control law was unconstitutional.",
+   "significance": "The case made the export-control treatment of encryption as a munition a public controversy about whether citizens may communicate privately.",
+   "sources": [
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com), reproducing the signed news release of defence counsel Philip L. Dubois",
+     "title": "Significant Moments in PGP's History: Zimmermann Case Dropped",
+     "date": "1996-01-12",
+     "url": "https://www.philzimmermann.com/EN/news/PRZ_case_dropped.html",
+     "quote": "Yesterday morning, I received word from Assistant U.S. Attorney William Keane in San Jose, California, that the government's three-year investigation of Philip Zimmermann is over.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dubois's release is dated 'Fri, 12 Jan 1996'; Zimmermann's own Cypherpunks-list post is signed '11 Jan 96'."
+    },
+    {
+     "institution": "IEEE Computer Society Technical Committee on Security and Privacy, Cipher newsletter",
+     "title": "Case Closed on Zimmermann PGP Investigation",
+     "date": "1996-02-14",
+     "url": "https://www.ieee-security.org/Cipher/Newsbriefs/1996/960214.zimmerman.html",
+     "quote": "Zimmermann maintained thoughout the investigation that he did not put the software on the Internet.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The brief says Keane 'announced on January 11' that he had decided to drop the investigation, citing reports in the New York Times and Wall Street Journal."
+    }
+   ],
+   "locationNote": "Coordinates: federal building, San Jose, where Assistant U.S. Attorney Keane was based (approximate)."
+  },
+  {
+   "id": "cypherpunks-mailing-list-begins-1992",
+   "displayDate": "21 September 1992",
+   "year": 1992,
+   "title": "The cypherpunks mailing list opens",
+   "place": "San Francisco Bay Area (list maintained from Berkeley; hosted on John Gilmore's toad.com machine)",
+   "lat": 37.8716,
+   "lng": -122.2727,
+   "summary": "After a first physical meeting instigated by Timothy C. May and Eric Hughes in early autumn 1992, Hughes welcomed members to 'a real mailing list', cypherpunks@toad.com, on the evening of 21 September 1992 (Pacific time), thanking John Gilmore for machine space. The same message announced a second meeting for 10 October 1992 at Cygnus's new offices. Within four days Hughes had posted code for a 'hopping' anonymous remailer.",
+   "significance": "The list became the meeting place of programmers who treated privacy as something to be built into software and handed to individuals, rather than granted by institutions.",
+   "sources": [
+    {
+     "institution": "Cypherpunks mailing list archive (cryptoanarchy.wiki)",
+     "title": "Eric Hughes to cypherpunks@toad.com, 'No Subject' (list welcome message)",
+     "date": "1992-09-21",
+     "url": "https://mailing-list-archive.cryptoanarchy.wiki/archive/1992/09/fdf9c19e77ec3f1a9bbc6bc19266d565b89d19dbd0ad369f5a2e800af3fc9558/",
+     "quote": "Welcome to the cypherpunks mailing list. We have a real mailing list now, and not just a mail alias on my account. Thanks to John Gilmore for space on hoptoad and Hugh Daniel for setting things up.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Raw date 'Mon, 21 Sep 92 22:47:51 PDT' (22 September UTC). The message also says: 'Second Meeting -- October 10, 1992 The second meeting will be held at the new Cygnus offices.' The archive's September 1992 index lists one earlier post (21 Sep 1992, from Russell E. Whitaker), consistent with Hughes's remark that a mail alias existed before the 'real mailing list'."
+    },
+    {
+     "institution": "Wired",
+     "title": "Steven Levy, 'Crypto Rebels'",
+     "date": "1993-02-01",
+     "url": "https://www.wired.com/1993/02/crypto-rebels/",
+     "quote": "The first physical Cypherpunk meeting occurred early last autumn at the instigation of two software engineers who had developed an interest in crypto.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The article names the two as Tim May and Eric Hughes. wired.com dates the web copy 1993-02-01; print issue 1.02 (May/June 1993)."
+    }
+   ],
+   "locationNote": "Coordinates: Berkeley, California, where Hughes maintained the list from his soda.berkeley.edu account. The list server (toad.com) belonged to John Gilmore; meetings were held at Cygnus Support's offices near US 101 in Silicon Valley."
+  },
+  {
+   "id": "hughes-a-cypherpunks-manifesto-1993",
+   "displayDate": "9 March 1993",
+   "year": 1993,
+   "title": "Eric Hughes writes 'A Cypherpunk's Manifesto'",
+   "place": "Berkeley, California",
+   "lat": 37.8716,
+   "lng": -122.2727,
+   "summary": "Eric Hughes signed 'A Cypherpunk's Manifesto' on 9 March 1993 from his soda.berkeley.edu address. It distinguished privacy from secrecy, defined it as 'the power to selectively reveal oneself to the world', argued that an open society needs anonymous transaction systems, and declared that 'Cypherpunks write code'.",
+   "significance": "It recast privacy as selective disclosure controlled by the individual and enforced by software — a conceptual ancestor of person-held, machine-enforced terms.",
+   "sources": [
+    {
+     "institution": "activism.net (cypherpunk document archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. … Privacy is the power to selectively reveal oneself to the world.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Signature line: 'Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993'. Also on the page: 'Cypherpunks write code.'"
+    }
+   ],
+   "locationNote": "Coordinates: Berkeley, California (Hughes's berkeley.edu address); the manifesto was circulated online."
+  },
+  {
+   "id": "clinton-white-house-announces-clipper-chip-1993",
+   "displayDate": "16 April 1993",
+   "year": 1993,
+   "title": "The White House announces the Clipper chip and key escrow",
+   "place": "The White House, Office of the Press Secretary, Washington, D.C.",
+   "lat": 38.8977,
+   "lng": -77.0365,
+   "summary": "On 16 April 1993 the Clinton White House announced a 'voluntary program' built around the 'Clipper Chip', a government-designed microcircuit to encrypt telephone calls. Each device's two unique keys would be deposited in two separate 'key-escrow' databases established by the Attorney General, accessible to officials with legal authority to wiretap, and the Attorney General would buy several thousand devices. The chip used the NSA-designed Skipjack cipher with an 80-bit key and sent an encrypted copy of each session key at the start of every call.",
+   "significance": "Key escrow proposed that the individual's key be held in advance by the state — the opposite of user-held keys — and the backlash defined the 1990s 'crypto wars'.",
+   "sources": [
+    {
+     "institution": "The White House, Office of the Press Secretary (Clinton White House archive, National Archives)",
+     "title": "Statement by the Press Secretary (Clipper Chip encryption initiative)",
+     "date": "1993-04-16",
+     "url": "https://clintonwhitehouse6.archives.gov/1993/04/1993-04-16-press-release-on-clipper-chip-encryption-initiative.html",
+     "quote": "When the device is manufactured, the two keys will be deposited separately in two \"key-escrow\" data bases that will be established by the Attorney General. Access to these keys will be limited to government officials with legal authorization to conduct a wiretap.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Opening sentence: 'The President today announced a new initiative that will bring the Federal Government together with industry in a voluntary program to improve the security and privacy of telephone communications while meeting the legitimate needs of law enforcement.'"
+    },
+    {
+     "institution": "Matt Blaze (mattblaze.org), author copy of ACSAC 2011 paper",
+     "title": "Key Escrow from a Safe Distance: Looking Back at the Clipper Chip",
+     "date": "2011-12",
+     "url": "https://www.mattblaze.org/papers/escrow-acsac11.pdf",
+     "quote": "called Skipjack, designed by the National Security Agency and using an 80 bit key.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Full sentence: 'Clipper was intended as a drop-in replacement for a standard DES chip, but with a new symmetric-key cipher algorithm, called Skipjack, designed by the National Security Agency and using an 80 bit key.' (a PDF line break inside 'drop-in' defeats --check on the whole sentence)."
+    }
+   ],
+   "locationNote": "Coordinates: the White House, where the Press Secretary's statement was issued."
+  },
+  {
+   "id": "blaze-protocol-failure-clipper-escrow-1994",
+   "displayDate": "2 June 1994",
+   "year": 1994,
+   "title": "Matt Blaze shows Clipper's key escrow can be bypassed",
+   "place": "AT&T Bell Laboratories, Murray Hill, New Jersey",
+   "lat": 40.684,
+   "lng": -74.4015,
+   "summary": "In April 1994 Matt Blaze of AT&T Bell Laboratories wrote 'Protocol Failure in the Escrowed Encryption Standard', showing that the Law Enforcement Access Field (LEAF) carrying the escrowed session key was protected by only a 16-bit checksum. A rogue device could therefore search about 2^16 possibilities for a LEAF that passed the check and talk to legitimate Clipper devices without giving the government a usable key. The New York Times reported the flaw on 2 June 1994; the paper was presented at the ACM Conference on Computer and Communications Security in Fairfax, Virginia, in November 1994.",
+   "significance": "It showed in public that a mandated back door could be engineered around, strengthening the case for letting individuals hold their own keys.",
+   "sources": [
+    {
+     "institution": "Matt Blaze (mattblaze.org), pre-print of paper for the 2nd ACM Conference on Computer and Communications Security",
+     "title": "Protocol Failure in the Escrowed Encryption Standard",
+     "date": "1994-08-20",
+     "url": "https://www.mattblaze.org/papers/eesproto.pdf",
+     "quote": "This paper outlines various techniques that enable cryptographic communication among EES processors without transmission of the valid LEAF.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'The LEAF checksum is, in fact, 16 bits.' Footnote: 'This is a pre-print of a paper to appear at the 2nd ACM Conference on Computer and Communications Security, Fairfax, VA, November 1994.'"
+    },
+    {
+     "institution": "Matt Blaze (mattblaze.org), author copy of ACSAC 2011 paper",
+     "title": "Key Escrow from a Safe Distance: Looking Back at the Clipper Chip",
+     "date": "2011-12",
+     "url": "https://www.mattblaze.org/papers/escrow-acsac11.pdf",
+     "quote": "The only thing stopping you was a 16 bit exhaustive search, a very low barrier even in 1993.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Blaze: 'In April, 1994, I wrote a paper about all this'; the Times story ran at 'the top of the front page'."
+    },
+    {
+     "institution": "MIT course 6.805 (Ethics and the Law on the Electronic Frontier) reading index",
+     "title": "Selected items on Clipper — 1994",
+     "date": "1996",
+     "url": "https://groups.csail.mit.edu/mac/classes/6.805/articles/clipper/short-pieces/clipper-1994-index.html",
+     "quote": "June 2, 1994, New York Times, \"Scientist Finds Flaw In Code Technology\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The New York Times article itself (John Markoff) was not read: nytimes.com returned 403."
+    }
+   ],
+   "locationNote": "Coordinates: AT&T Bell Laboratories, Murray Hill, New Jersey, Blaze's affiliation on the paper."
+  },
+  {
+   "id": "nrl-onion-routing-hiding-routing-information-1996",
+   "displayDate": "May 1996",
+   "year": 1996,
+   "title": "Naval Research Laboratory scientists publish onion routing",
+   "place": "U.S. Naval Research Laboratory, Center for High Assurance Computer Systems, Washington, D.C.",
+   "lat": 38.8236,
+   "lng": -77.026,
+   "summary": "David Goldschlag, Michael Reed and Paul Syverson of the U.S. Naval Research Laboratory, who had begun the work in late 1995, presented 'Hiding Routing Information' at the Workshop on Information Hiding in Cambridge, UK, in May 1996. Their 'onion routing' architecture relayed traffic through proxy servers so that no one but the initiator's proxy knew more than the previous and next hop, and a prototype already worked with web (HTTP) proxies. The design built on David Chaum's layered mix of 1981.",
+   "significance": "It carried Chaum's idea of hiding who talks to whom from e-mail to the interactive web, the lineage that leads to Tor.",
+   "sources": [
+    {
+     "institution": "U.S. Naval Research Laboratory (onion-router.net)",
+     "title": "D. M. Goldschlag, M. G. Reed and P. F. Syverson, 'Hiding Routing Information', Workshop on Information Hiding, Cambridge, UK, May 1996",
+     "date": "1996-05",
+     "url": "https://www.onion-router.net/Publications/IH-1996.pdf",
+     "quote": "This implies that neither the respondent nor his proxy server nor any external observer need know the identity of the initiator or his proxy server.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract also: 'This prototype works with HTTP (World Wide Web) proxies.' The related-work section says Chaum [1] defines a layered object 'that routes data through intermediate nodes' (the PDF text layer splits 'object' and garbles the 'fi' ligature in 'defines')."
+    },
+    {
+     "institution": "U.S. Naval Research Laboratory / ACSAC 2011 (keynote paper, public domain)",
+     "title": "Paul Syverson, 'A Peel of Onion'",
+     "date": "2011-12",
+     "url": "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
+     "quote": "We (David Goldschlag, Michael Reed, and I) began work on onion routing in late 1995",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates: the Naval Research Laboratory, Washington, D.C., where the authors worked. The paper was presented at the Information Hiding workshop in Cambridge, UK."
+  },
+  {
+   "id": "tor-network-deployed-free-software-2002",
+   "displayDate": "20 September 2002",
+   "year": 2002,
+   "title": "The Tor onion-routing network goes live as free software",
+   "place": "Massachusetts Institute of Technology, Cambridge, Massachusetts",
+   "lat": 42.3601,
+   "lng": -71.0942,
+   "summary": "On 20 September 2002 Roger Dingledine, writing from an MIT address, told the or-dev list that 'the onion routing network is functional and deployed' and invited testers to download tor-0.0.0; the Tor Project dates the initial deployment to October 2002, when its code was released under a free-software licence. By the end of 2003 the network had about a dozen volunteer relays; Dingledine, Nick Mathewson and Paul Syverson published the design at USENIX Security in August 2004, the Electronic Frontier Foundation began funding the work in 2004, and the Tor Project became a 501(c)(3) nonprofit in 2006.",
+   "significance": "Anonymity moved from a laboratory prototype to a public, volunteer-run network that anyone could use without asking permission.",
+   "sources": [
+    {
+     "institution": "or-dev mailing list archive (archives.seul.org)",
+     "title": "Roger Dingledine, 'pre-alpha: run an onion proxy now!'",
+     "date": "2002-09-20",
+     "url": "https://archives.seul.org/or/dev/Sep-2002/msg00019.html",
+     "quote": "The onion routing network is functional and deployed. It's not terribly diverse yet, but heck, it's just for show for now.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Header: 'From : Roger Dingledine < arma@mit.edu >', 'Date : Fri, 20 Sep 2002 17:14:01 -0400'."
+    },
+    {
+     "institution": "The Tor Project",
+     "title": "History",
+     "date": "2026",
+     "url": "https://www.torproject.org/about/history/",
+     "quote": "That's why in October 2002 when the Tor network was initially deployed, its code was released under a free and open software license. By the end of 2003, the network had about a dozen volunteer nodes, mostly in the U.S., plus one in Germany.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Recognizing the benefit of Tor to digital rights, the Electronic Frontier Foundation (EFF) began funding Roger's and Nick's work on Tor in 2004. In 2006, the Tor Project, Inc., a 501(c)(3) nonprofit organization, was founded to maintain Tor's development.' The one-month difference from the mailing-list date is unexplained."
+    },
+    {
+     "institution": "USENIX Association, Proceedings of the 13th USENIX Security Symposium (San Diego, 9–13 August 2004)",
+     "title": "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router'",
+     "date": "2004-08",
+     "url": "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf",
+     "quote": "We present Tor, a circuit-based low-latency anonymous communication service.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates: MIT, Cambridge, Massachusetts (Dingledine's arma@mit.edu address on the announcement). The network itself ran on volunteer relays."
+  },
+  {
+   "id": "nakamoto-bitcoin-white-paper-2008",
+   "displayDate": "31 October 2008",
+   "year": 2008,
+   "title": "'Satoshi Nakamoto' publishes the Bitcoin white paper",
+   "place": "The Cryptography Mailing List (metzdowd.com), online",
+   "lat": null,
+   "lng": null,
+   "summary": "On 31 October 2008 a pseudonymous author, Satoshi Nakamoto, announced on the Cryptography mailing list 'a new electronic cash system that's fully peer-to-peer, with no trusted third party' and linked the white paper 'Bitcoin: A Peer-to-Peer Electronic Cash System'. Its privacy section conceded that announcing every transaction publicly ruled out the banks' model of restricted access, and proposed instead keeping public keys unlinked to identities, using a new key pair for each transaction; it acknowledged that multi-input transactions would still link addresses to a common owner.",
+   "significance": "It replaced the trusted intermediary with keys held by individuals, while showing that a public ledger offers pseudonymity, not anonymity.",
+   "sources": [
+    {
+     "institution": "The Cryptography Mailing List (metzdowd.com archive)",
+     "title": "Satoshi Nakamoto, 'Bitcoin P2P e-cash paper'",
+     "date": "2008-10-31",
+     "url": "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html",
+     "quote": "I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Archive header: 'Fri Oct 31 14:10:00 EDT 2008'."
+    },
+    {
+     "institution": "bitcoin.org",
+     "title": "Satoshi Nakamoto, 'Bitcoin: A Peer-to-Peer Electronic Cash System', section 10 'Privacy'",
+     "date": "2008-10-31",
+     "url": "https://bitcoin.org/bitcoin.pdf",
+     "quote": "As an additional firewall, a new key pair should be used for each transaction to keep them from being linked to a common owner. Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online-only and pseudonymous: no verifiable place. The mailing list ran on a machine of Perry Metzger's company, Metzger, Dowdeswell & Co. LLC (https://www.metzdowd.com/pipermail/cryptography/2003-April/004484.html), whose location was not verified. Coordinates deliberately left empty — do not map, or map only as 'online'."
+  },
+  {
+   "id": "open-whisper-systems-textsecure-becomes-signal-2015",
+   "displayDate": "2 November 2015",
+   "year": 2015,
+   "title": "TextSecure and RedPhone become Signal",
+   "place": "Open Whisper Systems (online; Signal's organisation is registered in Mountain View, California)",
+   "lat": 37.3861,
+   "lng": -122.0839,
+   "summary": "Whisper Systems, a mobile-security company, was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 open-source licence, and from January 2013 continued development was hosted as the open project Open Whisper Systems. The project released Signal, free encrypted calling for iPhone, on 29 July 2014, and on 2 November 2015 began rolling out Signal for Android, combining its Android apps TextSecure (private messaging) and RedPhone (private calling) in one app.",
+   "significance": "It put strong end-to-end encryption, with keys held on the user's own phone, into a free consumer app designed to be as easy as ordinary texting.",
+   "sources": [
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'Just Signal'",
+     "date": "2015-11-02",
+     "url": "https://signal.org/blog/just-signal/",
+     "quote": "This is the culmination of our effort to combine TextSecure and RedPhone into one app, which we began on iPhone and are now bringing to completion on Android.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The post opens: 'Today we’ve started rolling out Signal for Android, which unites simple private messaging and simple private calling into a single app on Android.' (the page's link markup inserts a space before the comma, so --check was run on the second sentence)."
+    },
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'A New Home'",
+     "date": "2013-01-21",
+     "url": "https://signal.org/blog/welcome/",
+     "quote": "Whisper Systems was a company focused on the development of mobile security software, which was acquired by Twitter in late 2011. Twitter very generously made some of the Whisper Systems software available under an Open Source license (GPLv3), which has since been under open development by the community.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Signal for iPhone: 'Free, Worldwide, Encrypted Phone Calls for iPhone', moxie0 on 29 Jul 2014, https://signal.org/blog/signal/ ('today we're releasing Signal – free, worldwide, encrypted voice calls for iPhone, and fully compatible with RedPhone for Android.' — --check FOUND)."
+    }
+   ],
+   "locationNote": "Online-only project. Coordinates: Mountain View, California, the city under which the IRS lists the Signal Technology Foundation (https://projects.propublica.org/nonprofits/organizations/824506840); the foundation was created in 2018, so this is the organisation's later seat, not a verified 2015 office."
+  },
+  {
+   "id": "whatsapp-end-to-end-encryption-all-users-2016",
+   "displayDate": "5 April 2016",
+   "year": 2016,
+   "title": "WhatsApp turns on end-to-end encryption for all users",
+   "place": "WhatsApp Inc. (now at Meta Platforms, Menlo Park, California)",
+   "lat": 37.4848,
+   "lng": -122.1484,
+   "summary": "On 5 April 2016 WhatsApp's founders announced that every call, message, photo, video, file and voice message sent between users of the latest app version, including group chats, was now end-to-end encrypted by default. Open Whisper Systems said the same day that its Signal Protocol integration, begun under a partnership announced in November 2014, was complete across all WhatsApp clients, and that over a billion monthly active users were now using the protocol.",
+   "significance": "Encryption the provider itself cannot read became the default for more than a billion people, shifting the privacy of messages from company policy to keys on users' devices.",
+   "sources": [
+    {
+     "institution": "WhatsApp (company blog)",
+     "title": "end-to-end encryption (signed 'Jan and Brian')",
+     "date": "2016-04-05",
+     "url": "https://blog.whatsapp.com/end-to-end-encryption",
+     "quote": "From now on when you and your contacts use the latest version of the app, every call you make, and every message, photo, video, file, and voice message you send, is end-to-end encrypted by default, including group chats.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The repo helper received HTTP 400 from this site; the page was fetched with curl (HTTP 200) and the helper's --check was run on that copy. Also: 'No one can see inside that message. Not cybercriminals. Not hackers. Not oppressive regimes. Not even us.'"
+    },
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'WhatsApp's Signal Protocol integration is now complete'",
+     "date": "2016-04-05",
+     "url": "https://signal.org/blog/whatsapp-complete/",
+     "quote": "Over a billion monthly active users across the world are now using the Signal Protocol for end-to-end encryption.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Partnership announced 18 Nov 2014: https://signal.org/blog/whatsapp/."
+    }
+   ],
+   "locationNote": "Online roll-out. Coordinates: Menlo Park, California, where WhatsApp's parent now receives legal notices (WhatsApp terms: '1 Meta Way, Menlo Park, CA 94025'); in April 2016 WhatsApp's own office is reported to have been in nearby Mountain View (not verified)."
+  },
+  {
+   "id": "apple-v-fbi-san-bernardino-iphone-order-2016",
+   "displayDate": "16 February 2016",
+   "year": 2016,
+   "title": "A US court orders Apple to help unlock an iPhone; Apple refuses publicly",
+   "place": "U.S. District Court for the Central District of California, Eastern Division, Riverside",
+   "lat": 33.9806,
+   "lng": -117.3755,
+   "summary": "On 16 February 2016, in case ED No. CM 16-10 (SP), the U.S. District Court for the Central District of California granted the government an order compelling Apple to assist the FBI in searching an iPhone used by San Bernardino shooter Syed Farook, which would have required Apple to write software disabling the phone's auto-erase and passcode delays. The same day Apple's chief executive, Tim Cook, published a letter calling the demand a 'backdoor' and an unprecedented use of the All Writs Act of 1789. On 28 March 2016 the government reported that it had accessed the data without Apple and asked that the order be vacated, leaving the legal question undecided.",
+   "significance": "It tested whether a state can compel a company to break the security of a device whose keys it had deliberately put 'out of our own reach'.",
+   "sources": [
+    {
+     "institution": "U.S. Attorney's Office, Central District of California (filing copy hosted by Prof. Clark D. Cunningham, Georgia State University College of Law)",
+     "title": "Government's Status Report, In the Matter of the Search of an Apple iPhone…, ED No. CM 16-10 (SP), Document 209",
+     "date": "2016-03-28",
+     "url": "http://www.clarkcunningham.org/Apple/Cases/Cal/GovtStatusReport.pdf",
+     "quote": "The government has now successfully accessed the data stored on Farook's iPhone and therefore no longer requires the assistance from Apple Inc. mandated by Court's Order Compelling Apple Inc. to Assist Agents in Search dated February 16, 2016.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The official justice.gov copy (https://www.justice.gov/usao-cdca/file/836311/download) returned HTTP 401 to scripts. The copy of the 16 February order on the same site is a scanned image without a text layer."
+    },
+    {
+     "institution": "Apple Inc.",
+     "title": "Tim Cook, 'A Message to Our Customers'",
+     "date": "2016-02-16",
+     "url": "https://www.apple.com/customer-letter/",
+     "quote": "But now the U.S. government has asked us for something we simply do not have, and something we consider too dangerous to create. They have asked us to build a backdoor to the iPhone.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'Rather than asking for legislative action through Congress, the FBI is proposing an unprecedented use of the All Writs Act of 1789 to justify an expansion of its authority.' and 'We have even put that data out of our own reach, because we believe the contents of your iPhone are none of our business.'"
+    },
+    {
+     "institution": "Georgia State University College of Law — FBI v Apple research resource (Prof. Clark D. Cunningham)",
+     "title": "Cases — In the Matter of the Search of an Apple iPhone (C.D. Cal. No. CM-16-10): iPhone Used by San Bernardino Shooter",
+     "date": "2016",
+     "url": "http://www.clarkcunningham.org/Apple/Cases/SanBernardino.html",
+     "quote": "A week later, on March 28, the FBI announced that it had been able to access Farook's iPhone and the order against Apple was vacated at the government's request.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page also describes the order as requiring Apple to create 'signed iPhone software' that would disable the auto-erase and time-delay features."
+    }
+   ],
+   "locationNote": "Coordinates: the federal courthouse in Riverside, seat of the Central District of California's Eastern Division ('ED' in the case number; the case number 5:16-cm-00010 also denotes that division). The U.S. Attorney's filing lists its office in Los Angeles."
+  },
+  {
+   "id": "lets-encrypt-leaves-beta-free-https-2016",
+   "displayDate": "12 April 2016",
+   "year": 2016,
+   "title": "Let's Encrypt leaves beta, making HTTPS certificates free and automatic",
+   "place": "Internet Security Research Group (ISRG), California",
+   "lat": 38.5816,
+   "lng": -121.4944,
+   "summary": "Let's Encrypt, a free, automated certificate authority run by the nonprofit Internet Security Research Group — founded in May 2013 with Mozilla, the Electronic Frontier Foundation, the University of Michigan, Cisco and Akamai as founding sponsors and partners — was announced on 18 November 2014 and opened a beta in September 2015. On 12 April 2016 it left beta, reporting more than 1.7 million certificates issued for more than 3.8 million websites and stating its aim to 'encrypt 100% of the Web'.",
+   "significance": "Removing the cost and hassle of certificates made encrypted browsing the default, shrinking what networks in the middle can read about ordinary web use.",
+   "sources": [
+    {
+     "institution": "Let's Encrypt (Internet Security Research Group)",
+     "title": "Leaving Beta, New Sponsors",
+     "date": "2016-04-12",
+     "url": "https://letsencrypt.org/2016/04/12/leaving-beta-new-sponsors.html",
+     "quote": "Since our beta began in September 2015 we've issued more than 1.7 million certificates for more than 3.8 million websites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The post opens 'Let's Encrypt is leaving beta today.' and states 'We set out to encrypt 100% of the Web.'"
+    },
+    {
+     "institution": "Let's Encrypt (Internet Security Research Group)",
+     "title": "Let's Encrypt: Delivering SSL/TLS Everywhere",
+     "date": "2014-11-18",
+     "url": "https://letsencrypt.org/2014/11/18/announcing-lets-encrypt.html",
+     "quote": "Let's Encrypt is a new free certificate authority, built on a foundation of cooperation and openness, that lets everyone be up and running with basic server certificates for their domains through a simple one-click process.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Internet Security Research Group",
+     "title": "About ISRG",
+     "date": "2026",
+     "url": "https://www.abetterinternet.org/about/",
+     "quote": "ISRG's founding directors were Josh Aas and Eric Rescorla. The group's founding sponsors and partners were Mozilla, the Electronic Frontier Foundation, the University of Michigan, Cisco, and Akamai.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'ISRG was founded in May of 2013 to serve as a home for public-benefit digital infrastructure projects' (--check FOUND; the rest of that sentence contains a link). Undated page; accessed 2026-09-23."
+    }
+   ],
+   "locationNote": "Online service. Coordinates: Sacramento, California, the city under which the IRS lists the Internet Security Research Group (ProPublica Nonprofit Explorer, https://projects.propublica.org/nonprofits/organizations/463344200 — 'Internet Security Research Group Sacramento, CA'); this may be a registered address rather than an operating office."
   }
  ],
- "images": [],
- "myths": []
+ "images": [
+  {
+   "id": "whitfield-diffie-royal-society-2017",
+   "era": "surveillance",
+   "year": 2017,
+   "title": "Whitfield Diffie (Royal Society portrait, cropped)",
+   "caption": "Whitfield Diffie, American cryptographer and one of the pioneers of public-key cryptography. Cropped from a portrait released by the Royal Society; file metadata dates the photograph 14 July 2017.",
+   "alt": "Head-and-shoulders portrait of Whitfield Diffie, a smiling man with long white hair and a white beard, in a dark suit and patterned tie",
+   "creator": "The Royal Society (original photograph); crop by Duncan.Hull",
+   "license": "CC BY-SA 4.0 (crop); original released by the Royal Society under CC BY-SA 3.0",
+   "creditLine": "The Royal Society / Duncan.Hull, via Wikimedia Commons (CC BY-SA 4.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitfield_Diffie_Royal_Society_(cropped).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Whitfield_Diffie_Royal_Society_%28cropped%29.jpg/330px-Whitfield_Diffie_Royal_Society_%28cropped%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Whitfield_Diffie_Royal_Society_%28cropped%29.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Duncan.Hull\"; Credit \"Own work\"; ImageDescription includes \"This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.Attribution: The Royal Society\"; Categories include \"Images released by the Royal Society\" and \"Items with VRTS permission confirmed\".",
+   "locationNote": "The file page does not say where the photograph was taken.",
+   "verified": true,
+   "localFile": "assets/media/whitfield-diffie-royal-society-2017.jpg",
+   "thumbPx": "330x338"
+  },
+  {
+   "id": "david-chaum-web-summit-2018",
+   "era": "surveillance",
+   "year": 2018,
+   "title": "David Chaum at Web Summit 2018, Lisbon",
+   "caption": "8 November 2018; David Chaum, Founder & CEO, Elixxir, on the CryptoConf stage during day three of Web Summit 2018 at the Altice Arena in Lisbon, Portugal. Photo by Diarmuid Greene/Web Summit via Sportsfile.",
+   "alt": "David Chaum, a grey-haired, bearded man in a dark jacket and jeans, speaking on a stage before a large seated audience under stage lights",
+   "creator": "Diarmuid Greene / Web Summit via Sportsfile",
+   "license": "CC BY 2.0",
+   "creditLine": "Diarmuid Greene / Web Summit via Sportsfile, via Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Web_Summit_2018_-_CryptoConf_-_Day_3,_November_8_DG2_2527_(30839820667).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Web_Summit_2018_-_CryptoConf_-_Day_3%2C_November_8_DG2_2527_%2830839820667%29.jpg/960px-Web_Summit_2018_-_CryptoConf_-_Day_3%2C_November_8_DG2_2527_%2830839820667%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Web_Summit_2018_-_CryptoConf_-_Day_3%2C_November_8_DG2_2527_%2830839820667%29.jpg",
+   "lat": 38.7684,
+   "lng": -9.094,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/2.0\"; Artist \"Web Summit\"; Credit \"DG2_2527\"; DateTimeOriginal \"2018-11-08 12:18\".",
+   "locationNote": "Altice Arena, Lisbon (named in the file description).",
+   "verified": true,
+   "localFile": "assets/media/david-chaum-web-summit-2018.jpg",
+   "thumbPx": "960x639"
+  },
+  {
+   "id": "phil-zimmermann-hal-enschede-2001",
+   "era": "cookies",
+   "year": 2001,
+   "title": "Phil Zimmermann lecturing at the HAL hacker event, Enschede",
+   "caption": "Phil Zimmermann, the author of PGP, during a lecture at the HAL (Hackers at Large) event at the University of Twente, Enschede, Netherlands. The file is dated 10 August 2001 and named HAL2001; its description says \"HAL2011\".",
+   "alt": "Phil Zimmermann, a bearded man with glasses in a floral shirt, seated and speaking into a hand-held microphone; his name tag reads 'Phil Zimmermann'",
+   "creator": "CEphoto, Uwe Aranas",
+   "license": "CC BY-SA 3.0",
+   "creditLine": "CEphoto, Uwe Aranas, via Wikimedia Commons (CC BY-SA 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enschede_Netherlands_Phil-Zimmermann-at-HAL2001-hacker-event-01.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Enschede_Netherlands_Phil-Zimmermann-at-HAL2001-hacker-event-01.jpg/960px-Enschede_Netherlands_Phil-Zimmermann-at-HAL2001-hacker-event-01.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Enschede_Netherlands_Phil-Zimmermann-at-HAL2001-hacker-event-01.jpg",
+   "lat": 52.2393,
+   "lng": 6.8508,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 3.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/3.0\"; Artist \"CEphoto, Uwe Aranas\"; Credit \"Own work\"; DateTimeOriginal \"2001-08-10\".",
+   "locationNote": "University of Twente, Enschede (named in the file description).",
+   "verified": true,
+   "localFile": "assets/media/phil-zimmermann-hal-enschede-2001.jpg",
+   "thumbPx": "960x1440"
+  },
+  {
+   "id": "eric-hughes-cypherpunk-kspiers",
+   "era": "agents",
+   "year": 2025,
+   "title": "Eric Hughes wearing a Luther Blissett name tag",
+   "caption": "Cypherpunk Eric Hughes wearing a black bandana and a name tag with the Luther Blissett pseudonym. The file metadata gives 9 November 2025, which may be the scan or upload date rather than the date the photograph was taken.",
+   "alt": "A person in a black wide-brimmed hat, glasses and a black bandana over the lower face, wearing a yellow name badge reading 'Luther Blissett'",
+   "creator": "Kspiers",
+   "license": "CC BY-SA 4.0",
+   "creditLine": "Kspiers, via Wikimedia Commons (CC BY-SA 4.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:EricHughes.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/EricHughes.jpg/960px-EricHughes.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/EricHughes.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Kspiers\"; Credit \"Own work\"; DateTimeOriginal \"2025-11-09 16:14:51\".",
+   "locationNote": "The file page does not say where or when the photograph was taken; era follows the metadata date and may be wrong.",
+   "verified": true,
+   "localFile": "assets/media/eric-hughes-cypherpunk-kspiers.jpg",
+   "thumbPx": "960x768"
+  },
+  {
+   "id": "john-gilmore-joi-ito-2009",
+   "era": "cookies",
+   "year": 2009,
+   "title": "John Gilmore, 2009",
+   "caption": "John Gilmore, a founder of the Electronic Frontier Foundation, photographed by Joi Ito (file dated 9 February 2009).",
+   "alt": "Close-up of John Gilmore, a smiling, balding man with glasses and a long grey beard, resting his head on his hand",
+   "creator": "Joi Ito",
+   "license": "CC BY 2.0",
+   "creditLine": "Joi Ito, via Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Gilmore_2009.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/John_Gilmore_2009.jpg/960px-John_Gilmore_2009.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/John_Gilmore_2009.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/2.0\"; Artist \"Joi Ito (Joi @ Flickr)\"; Credit \"https://www.flickr.com/photos/joi/3267039800/\"; DateTimeOriginal \"2009-02-09\".",
+   "locationNote": "The file page does not say where the photograph was taken.",
+   "verified": true,
+   "localFile": "assets/media/john-gilmore-joi-ito-2009.jpg",
+   "thumbPx": "960x646"
+  },
+  {
+   "id": "matt-blaze-def-con-20-2012",
+   "era": "cookies",
+   "year": 2012,
+   "title": "Matt Blaze at DEF CON 20",
+   "caption": "Matt Blaze, director of the Distributed Systems Lab at the University of Pennsylvania, debating whether and how open Wi-Fi sniffing should be regulated, at DEF CON 20 (2012).",
+   "alt": "Matt Blaze, a man with glasses in a black shirt, speaking on a conference panel with a microphone in front of him",
+   "creator": "DEF CON Communications (DEFCONConference)",
+   "license": "CC BY 3.0",
+   "creditLine": "DEF CON Communications, via Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matt_Blaze_DEF_CON_20.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Matt_Blaze_DEF_CON_20.jpg/250px-Matt_Blaze_DEF_CON_20.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Matt_Blaze_DEF_CON_20.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/3.0\"; Artist \"DEFCONConference\"; Credit \"DEF CON 20 - Bankston Blaze and Granick - Should the Wall of Sheep Be Illegal at…\"; DateTimeOriginal \"2013-10-30\" (upload of a 2012 video still).",
+   "locationNote": "Small source image (300 px wide); the file page does not name the venue.",
+   "verified": true,
+   "localFile": "assets/media/matt-blaze-def-con-20-2012.jpg",
+   "thumbPx": "250x243"
+  },
+  {
+   "id": "paul-syverson-nrl-2012",
+   "era": "cookies",
+   "year": 2012,
+   "title": "Paul Syverson, U.S. Naval Research Laboratory",
+   "caption": "Paul Syverson, computer scientist and mathematician at the US Naval Research Laboratory and inventor of onion routing. Photograph by Jamie J. Hartman, U.S. Naval Research Laboratory (file dated 24 October 2012).",
+   "alt": "Head-and-shoulders portrait of Paul Syverson, a smiling man with grey hair in a blue shirt, against a grey backdrop",
+   "creator": "Jamie J. Hartman / U.S. Naval Research Laboratory",
+   "license": "Public domain (work of the US federal government)",
+   "creditLine": "Jamie J. Hartman / U.S. Naval Research Laboratory, via Wikimedia Commons (public domain)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_Syverson.jpeg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Paul_Syverson.jpeg/500px-Paul_Syverson.jpeg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Paul_Syverson.jpeg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"Public domain\"; Artist \"Jamie J. Hartman/U.S. Naval Research Laboratory\"; Credit \"https://www.nrl.navy.mil/news/releases/nrls-paul-syverson-named-fellow-associati…\"; DateTimeOriginal \"2012-10-24 10:14\".",
+   "locationNote": "The file page does not say where the photograph was taken.",
+   "verified": true,
+   "localFile": "assets/media/paul-syverson-nrl-2012.jpg",
+   "thumbPx": "500x626"
+  },
+  {
+   "id": "roger-dingledine-30c3-2013",
+   "era": "surveillance",
+   "year": 2013,
+   "title": "Roger Dingledine at 30C3",
+   "caption": "Tor developer Roger Dingledine at 30C3, the 30th Chaos Communication Congress (file dated 27 December 2013).",
+   "alt": "Roger Dingledine, in a green Tor T-shirt, speaking on a stage in front of a projected slide",
+   "creator": "Ordercrazy",
+   "license": "CC0 1.0",
+   "creditLine": "Ordercrazy, via Wikimedia Commons (CC0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:30C3_Roger_Dingledine_3.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/30C3_Roger_Dingledine_3.jpg/960px-30C3_Roger_Dingledine_3.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/30C3_Roger_Dingledine_3.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC0\"; LicenseUrl \"http://creativecommons.org/publicdomain/zero/1.0/deed.en\"; Artist \"Ordercrazy\"; Credit \"Own work\"; ImageDescription \"Tor-Entwickler Roger Dingledine auf dem 30C3\"; DateTimeOriginal \"2013-12-27\".",
+   "locationNote": "The file page names the event (30C3) but not the venue.",
+   "verified": true,
+   "localFile": "assets/media/roger-dingledine-30c3-2013.jpg",
+   "thumbPx": "960x1280"
+  },
+  {
+   "id": "nick-mathewson-tor-project-2021",
+   "era": "surveillance",
+   "year": 2021,
+   "title": "Nick Mathewson (Tor Project image)",
+   "caption": "Nick Mathewson of the Tor Project; image published by the Tor Project in its \"PrivChat\" series (file dated 28 September 2021).",
+   "alt": "Black-and-white head-and-shoulders photograph of Nick Mathewson, a bearded man with glasses, outdoors in front of foliage",
+   "creator": "The Tor Project",
+   "license": "CC BY 3.0",
+   "creditLine": "The Tor Project, via Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nick_Mathewson_The_Tor_Project.png",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nick_Mathewson_The_Tor_Project.png/960px-Nick_Mathewson_The_Tor_Project.png",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Nick_Mathewson_The_Tor_Project.png",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/3.0\"; Artist \"The Tor Project\"; Credit \"https://www.torproject.org/de/privchat/chapter-4/\"; DateTimeOriginal \"2021-09-28\".",
+   "locationNote": "Online publication; no place.",
+   "verified": true,
+   "localFile": "assets/media/nick-mathewson-tor-project-2021.jpg",
+   "thumbPx": "960x1000"
+  },
+  {
+   "id": "moxie-marlinspike-techcrunch-2017",
+   "era": "surveillance",
+   "year": 2017,
+   "title": "Moxie Marlinspike, 2017",
+   "caption": "Moxie Marlinspike in 2017, photographed by Max Morse for TechCrunch (file dated 18 September 2017; cropped).",
+   "alt": "Moxie Marlinspike, a man with dreadlocks tied back and a short beard, in a dark zip-up hoodie in front of a TechCrunch backdrop",
+   "creator": "Max Morse for TechCrunch",
+   "license": "CC BY 2.0",
+   "creditLine": "Max Morse for TechCrunch, via Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moxie_Marlinspike_TC_2017-09-18_(cropped00).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Moxie_Marlinspike_TC_2017-09-18_%28cropped00%29.jpg/960px-Moxie_Marlinspike_TC_2017-09-18_%28cropped00%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Moxie_Marlinspike_TC_2017-09-18_%28cropped00%29.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/2.0\"; Artist \"Max Morse for TechCrunch\"; Credit \"https://www.flickr.com/photos/techcrunch/37137051592/in/album-72157686074797891/\"; DateTimeOriginal \"2017-09-18\".",
+   "locationNote": "The file page does not say where the photograph was taken.",
+   "verified": true,
+   "localFile": "assets/media/moxie-marlinspike-techcrunch-2017.jpg",
+   "thumbPx": "960x1280"
+  },
+  {
+   "id": "tor-design-circuit-diagram-2004",
+   "era": "cookies",
+   "year": 2004,
+   "title": "Tor circuit-building diagram from the 2004 design paper",
+   "caption": "Diagram of how a Tor client builds a circuit through relays and sends and receives data, from Dingledine, Mathewson and Syverson, \"Tor: The Second-Generation Onion Router\" (2004). The file description notes it is probably outdated in detail.",
+   "alt": "Protocol diagram showing messages passing between Alice, two onion routers (OR 1 and OR 2) and a website as a Tor circuit is built and data is sent and received",
+   "creator": "Roger Dingledine, Nick Mathewson, Paul Syverson",
+   "license": "CC BY 3.0",
+   "creditLine": "Roger Dingledine, Nick Mathewson and Paul Syverson, via Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tor-design_Tor_Circuit_building,_data_sending,_and_data_receiving_diagram.png",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Tor-design_Tor_Circuit_building%2C_data_sending%2C_and_data_receiving_diagram.png/960px-Tor-design_Tor_Circuit_building%2C_data_sending%2C_and_data_receiving_diagram.png",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Tor-design_Tor_Circuit_building%2C_data_sending%2C_and_data_receiving_diagram.png",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/3.0\"; Artist \"Roger Dingledine, Nick Mathewson, Paul Syverson\"; Credit \"https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf\"; DateTimeOriginal \"2004-08-02\".",
+   "locationNote": "Illustrates the event tor-network-deployed-free-software-2002.",
+   "verified": true,
+   "localFile": "assets/media/tor-design-circuit-diagram-2004.jpg",
+   "thumbPx": "960x513"
+  },
+  {
+   "id": "rsa-2008-cryptographers-panel-hellman",
+   "era": "cookies",
+   "year": 2008,
+   "title": "Cryptographers panel at RSA 2008 (Kaliski, Diffie, Hellman, Rivest, Shamir)",
+   "caption": "At the RSA 2008 Cryptographers Panel, from left to right: Burt Kaliski, RSA (moderator); Whitfield Diffie, Sun; Martin Hellman, Stanford University; Ronald Rivest, MIT; Adi Shamir, Weizmann Institute of Science (file dated 8 April 2008).",
+   "alt": "Five men seated in a row on a conference stage, with a large screen behind them showing a close-up of Whitfield Diffie",
+   "creator": "Dan Spisak",
+   "license": "CC BY-SA 2.0",
+   "creditLine": "Dan Spisak, via Wikimedia Commons (CC BY-SA 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cryptographers-2008.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Cryptographers-2008.jpg/960px-Cryptographers-2008.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Cryptographers-2008.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 2.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/2.0\"; Artist \"Dan Spisak\"; Credit \"Four biggest names in Crypto on stage\"; DateTimeOriginal \"2008-04-08 10:35\".",
+   "locationNote": "Group photograph; used as the portrait for Martin Hellman (third from left), and also shows Whitfield Diffie. The file page names the event (RSA 2008) but not the venue.",
+   "verified": true,
+   "localFile": "assets/media/rsa-2008-cryptographers-panel-hellman.jpg",
+   "thumbPx": "960x720"
+  },
+  {
+   "id": "cynthia-dwork-safra-center-2017",
+   "era": "surveillance",
+   "year": 2017,
+   "title": "Cynthia Dwork at the Edmond J. Safra Center for Ethics",
+   "caption": "Cynthia Dwork at the Edmond J. Safra Center for Ethics, Harvard (file dated 2 November 2017).",
+   "alt": "Cynthia Dwork, a woman with curly hair and glasses, speaking into a hand-held microphone and gesturing",
+   "creator": "Edmond J. Safra Center for Ethics",
+   "license": "CC BY 2.0",
+   "creditLine": "Edmond J. Safra Center for Ethics, via Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cynthia_Dwork_(38091746086).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cynthia_Dwork_%2838091746086%29.jpg/960px-Cynthia_Dwork_%2838091746086%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cynthia_Dwork_%2838091746086%29.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/2.0\"; Artist \"Edmond J. Safra Center for Ethics\"; Credit \"Tina Eliassi-Rad Lecture\"; DateTimeOriginal \"2017-11-02 18:02\".",
+   "locationNote": "The file page names the Safra Center but not the room or building.",
+   "verified": true,
+   "localFile": "assets/media/cynthia-dwork-safra-center-2017.jpg",
+   "thumbPx": "960x640"
+  },
+  {
+   "id": "latanya-sweeney-knight-paley-center-2017",
+   "era": "surveillance",
+   "year": 2017,
+   "title": "Latanya Sweeney at a Knight News Challenge event, New York, 2017",
+   "caption": "Latanya Sweeney takes part in a panel discussion at a Knight News Challenge event at the Paley Center for Media in New York City on November 16, 2017.",
+   "alt": "Latanya Sweeney, a woman with short grey hair and glasses in a grey jacket, seated and speaking in front of a Knight Foundation backdrop",
+   "creator": "Parker Higgins",
+   "license": "CC BY 4.0",
+   "creditLine": "Parker Higgins, via Wikimedia Commons (CC BY 4.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Latanya_Sweeney_at_a_Knight_News_Challenge_event_in_New_York_City,_November_2017.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Latanya_Sweeney_at_a_Knight_News_Challenge_event_in_New_York_City%2C_November_2017.jpg/960px-Latanya_Sweeney_at_a_Knight_News_Challenge_event_in_New_York_City%2C_November_2017.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Latanya_Sweeney_at_a_Knight_News_Challenge_event_in_New_York_City%2C_November_2017.jpg",
+   "lat": 40.7613,
+   "lng": -73.9786,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/4.0\"; Artist \"Parker Higgins\"; Credit \"Own work\"; DateTimeOriginal \"2017-11-16 15:59:00\".",
+   "locationNote": "Paley Center for Media, New York City (named in the file description).",
+   "verified": true,
+   "localFile": "assets/media/latanya-sweeney-knight-paley-center-2017.jpg",
+   "thumbPx": "960x960"
+  },
+  {
+   "id": "dan-bernstein-27c3-2010",
+   "era": "cookies",
+   "year": 2010,
+   "title": "Dan Bernstein at 27C3",
+   "caption": "Dan Bernstein at the 27th Chaos Communication Congress (file dated 29 December 2010).",
+   "alt": "Head-and-shoulders portrait of Daniel J. Bernstein, a smiling man with glasses and short dark hair, against a blue background",
+   "creator": "Alexander Klink",
+   "license": "CC BY 3.0",
+   "creditLine": "Alexander Klink, via Wikimedia Commons (CC BY 3.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dan_Bernstein_27C3.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Dan_Bernstein_27C3.jpg/960px-Dan_Bernstein_27C3.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Dan_Bernstein_27C3.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/3.0\"; Artist \"Alexander Klink\"; Credit \"Own work\"; DateTimeOriginal \"2010-12-29\".",
+   "locationNote": "The file page names the event (27C3) but not the venue.",
+   "verified": true,
+   "localFile": "assets/media/dan-bernstein-27c3-2010.jpg",
+   "thumbPx": "960x1441"
+  },
+  {
+   "id": "adam-back-joi-ito-2014",
+   "era": "surveillance",
+   "year": 2014,
+   "title": "Adam Back, 2014",
+   "caption": "Adam Back, photographed by Joi Ito (file dated 2 December 2014).",
+   "alt": "Adam Back, a man with glasses and a goatee in an olive jacket, seated against a dark padded backdrop",
+   "creator": "Joi Ito",
+   "license": "CC BY 2.0",
+   "creditLine": "Joi Ito, via Wikimedia Commons (CC BY 2.0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adam_Back_2014.jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Adam_Back_2014.jpg/960px-Adam_Back_2014.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Adam_Back_2014.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/2.0\"; Artist \"Joi Ito\"; Credit \"https://flickr.com/photos/joi/15753708050\"; DateTimeOriginal \"2014-12-02\".",
+   "locationNote": "The file page does not say where the photograph was taken.",
+   "verified": true,
+   "localFile": "assets/media/adam-back-joi-ito-2014.jpg",
+   "thumbPx": "960x707"
+  },
+  {
+   "id": "rsa-munitions-t-shirt-1997",
+   "era": "cookies",
+   "year": 1997,
+   "title": "The \"munitions\" T-shirt: export-restricted encryption code printed as protest",
+   "caption": "Export-restricted encryption code printed on a T-shirt as a protest against US encryption export restrictions (front of the shirt; 1997).",
+   "alt": "A black T-shirt, being worn, printed with 'WARNING This shirt is classified as a munition and may not be exported from the United States, or shown to a foreign national', the words 'RSA encryption in perl', a few lines of code and a large barcode",
+   "creator": "Adam Back",
+   "license": "CC0 1.0",
+   "creditLine": "Adam Back, via Wikimedia Commons (CC0)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munitions_T-shirt_(front).jpg",
+   "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Munitions_T-shirt_%28front%29.jpg/330px-Munitions_T-shirt_%28front%29.jpg",
+   "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Munitions_T-shirt_%28front%29.jpg",
+   "lat": null,
+   "lng": null,
+   "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC0\"; LicenseUrl \"http://creativecommons.org/publicdomain/zero/1.0/deed.en\"; Artist \"Adam Back <adam@cypherspace.org>\"; Credit \"http://www.cypherspace.org/adam/rsa/uk-shirt.html\"; ImageDescription \"Export-restricted encryption code printed on T-shirt as a protest against US encryption export restrictions.\"; DateTimeOriginal \"1997\".",
+   "locationNote": "Object photograph; no place. Illustrates the export-control events (zimmermann-pgp-export-investigation-closed-1996) and the Bernstein card.",
+   "verified": true,
+   "localFile": "assets/media/rsa-munitions-t-shirt-1997.jpg",
+   "thumbPx": "330x380"
+  }
+ ],
+ "myths": [
+  {
+   "id": "tor-stands-for-the-onion-router",
+   "claim": "'Tor' stands for 'The Onion Router'.",
+   "verdict": "MISLEADING",
+   "correction": "The name came from 'the onion routing' — the Naval Research Laboratory's original programme. Roger Dingledine used it to distinguish NRL's work from other onion-routing systems; co-designer Paul Syverson says the 2004 paper title 'Tor: The Second-Generation Onion Router' gave an 'implicit impression' of the expansion that is 'simply incorrect'. According to Syverson it was also Dingledine's decision that the name be written 'Tor', not 'TOR'.",
+   "sources": [
+    {
+     "institution": "U.S. Naval Research Laboratory / ACSAC 2011 (keynote paper, public domain)",
+     "title": "Paul Syverson, 'A Peel of Onion'",
+     "date": "2011-12",
+     "url": "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
+     "quote": "we gave an at least implicit impression that 'Tor' stood for 'the onion router'. This further exacerbated the confusion about the paper's scope and focus, but it is also simply incorrect.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same paper: 'He would respond that it was the onion routing, the original program of projects from NRL. It was Rachel Greenstadt who noted to him that this was a nice acronym and gave Tor its name.'"
+    },
+    {
+     "institution": "The Tor Project",
+     "title": "History",
+     "date": "2026",
+     "url": "https://www.torproject.org/about/history/",
+     "quote": "To distinguish this original work at NRL from other onion routing efforts that were starting to pop up elsewhere, Roger called the project Tor, which stood for The Onion Routing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "tor-built-by-nsa-as-spy-tool",
+   "claim": "Tor was built by the NSA (or 'the US military') as a surveillance tool.",
+   "verdict": "MISLEADING",
+   "correction": "Onion routing was invented in 1995–96 by David Goldschlag, Michael Reed and Paul Syverson at the U.S. Naval Research Laboratory — not the NSA — to 'separate identification from routing'. Tor itself was designed in the early 2000s by Roger Dingledine and Nick Mathewson of the Free Haven Project with Syverson; its code was released under a free-software licence when the network launched in 2002, the Electronic Frontier Foundation funded the work from 2004, and an independent nonprofit, the Tor Project, took it over in 2006. Navy origins are real; the NSA attribution and the 'spy tool' purpose are not supported by the record.",
+   "sources": [
+    {
+     "institution": "The Tor Project",
+     "title": "History",
+     "date": "2026",
+     "url": "https://www.torproject.org/about/history/",
+     "quote": "That's why in October 2002 when the Tor network was initially deployed, its code was released under a free and open software license.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'in 1995, David Goldschlag, Michael G. Reed, and Paul Syverson at the U.S. Naval Research Lab (NRL) asked themselves if there was a way to create internet connections that don't reveal who is talking to whom' and 'the Electronic Frontier Foundation (EFF) began funding Roger's and Nick's work on Tor in 2004. In 2006, the Tor Project, Inc., a 501(c)(3) nonprofit organization, was founded'."
+    },
+    {
+     "institution": "USENIX Association, Proceedings of the 13th USENIX Security Symposium",
+     "title": "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router'",
+     "date": "2004-08",
+     "url": "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf",
+     "quote": "We present Tor, a circuit-based low-latency anonymous communication service.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author affiliations on the paper: Dingledine and Mathewson, 'The Free Haven Project'; Syverson, 'Naval Research Lab'."
+    },
+    {
+     "institution": "U.S. Naval Research Laboratory / ACSAC 2011 (keynote paper, public domain)",
+     "title": "Paul Syverson, 'A Peel of Onion'",
+     "date": "2011-12",
+     "url": "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
+     "quote": "Applications can (and usually should) identify themselves to each other. But, the use of a public network should not automatically reveal the identities of communicating parties. The goal here is anonymous routing, not anonymity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "clipper-chip-mandatory-backdoor-in-every-phone",
+   "claim": "The Clipper chip was a mandatory government backdoor installed in every American phone.",
+   "verdict": "MISLEADING",
+   "correction": "The White House announced Clipper on 16 April 1993 as a 'voluntary program': a government-designed chip for add-on telephone encryption devices, each with keys deposited in two escrow databases set up by the Attorney General and released for lawful wiretaps. The government bought devices to seed a market and AT&T built one product around it, but industry and the public largely rejected it; critics' fear was that other encryption would eventually be outlawed. The scheme never became mandatory, and by the end of the decade the government had abandoned key escrow.",
+   "sources": [
+    {
+     "institution": "The White House, Office of the Press Secretary (Clinton White House archive, National Archives)",
+     "title": "Statement by the Press Secretary (Clipper Chip encryption initiative)",
+     "date": "1993-04-16",
+     "url": "https://clintonwhitehouse6.archives.gov/1993/04/1993-04-16-press-release-on-clipper-chip-encryption-initiative.html",
+     "quote": "The President today announced a new initiative that will bring the Federal Government together with industry in a voluntary program to improve the security and privacy of telephone communications while meeting the legitimate needs of law enforcement.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'To demonstrate the effectiveness of this new technology, the Attorney General will soon purchase several thousand of the new devices.'"
+    },
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "Why I Wrote PGP",
+     "date": "1999",
+     "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+     "quote": "The government initially claimed that using Clipper would be voluntary, that no one would be forced to use it instead of other types of cryptography.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "A critic's account; the same essay says 'AT&T put Clipper into its secure voice products' and 'to make Clipper completely effective, the next logical step would be to outlaw other forms of cryptography.'"
+    },
+    {
+     "institution": "Matt Blaze (mattblaze.org), author copy of ACSAC 2011 paper",
+     "title": "Key Escrow from a Safe Distance: Looking Back at the Clipper Chip",
+     "date": "2011-12",
+     "url": "https://www.mattblaze.org/papers/escrow-acsac11.pdf",
+     "quote": "By the end of the decade, however, the government gave up.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Blaze also records that AT&T was '(and ultimately the only) company to produce a full product based on the ill-fated escrow system', and that 'When the US government learned of AT&T's plans to market the TSD, it worried that criminals might use the devices to thwart wiretaps.'"
+    }
+   ]
+  },
+  {
+   "id": "blaze-flaw-killed-the-clipper-chip",
+   "claim": "Matt Blaze's 1994 discovery of the LEAF flaw killed the Clipper chip.",
+   "verdict": "MISLEADING",
+   "correction": "Blaze did show that Clipper's escrow could be bypassed with a 16-bit brute-force search, and the finding made the front page of The New York Times. But Blaze himself argues that his paper at most accelerated Clipper's demise: key escrow faced deeper problems — the risk of a growing database of escrowed keys and the cost of requiring special hardware when encryption was becoming cheap software.",
+   "sources": [
+    {
+     "institution": "Matt Blaze (mattblaze.org), author copy of ACSAC 2011 paper",
+     "title": "Key Escrow from a Safe Distance: Looking Back at the Clipper Chip",
+     "date": "2011-12",
+     "url": "https://www.mattblaze.org/papers/escrow-acsac11.pdf",
+     "quote": "While my paper may have helped accelerate its demise, key escrow would not have been likely to succeed even if the Clipper escrow mechanism had been more robust than it was.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same section lists 'the problem of securing a growing database of end-user keys' and 'the economic problem' of mandating hardware cryptography."
+    }
+   ]
+  },
+  {
+   "id": "bitcoin-is-anonymous-and-untraceable",
+   "claim": "Bitcoin payments are anonymous and untraceable.",
+   "verdict": "MISLEADING",
+   "correction": "Bitcoin is pseudonymous, not anonymous. Its own white paper says every transaction is announced publicly and privacy depends on keeping public keys unlinked to identities — while conceding that 'some linking is still unavoidable'. A 2013 measurement study clustered addresses and concluded that an agency with subpoena power 'would be well placed to identify who is paying money to whom'.",
+   "sources": [
+    {
+     "institution": "bitcoin.org",
+     "title": "Satoshi Nakamoto, 'Bitcoin: A Peer-to-Peer Electronic Cash System', section 10 'Privacy'",
+     "date": "2008-10-31",
+     "url": "https://bitcoin.org/bitcoin.pdf",
+     "quote": "As an additional firewall, a new key pair should be used for each transaction to keep them from being linked to a common owner. Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ACM Internet Measurement Conference (IMC '13, Barcelona); author copy, UC San Diego",
+     "title": "S. Meiklejohn et al., 'A Fistful of Bitcoins: Characterizing Payments Among Men with No Names'",
+     "date": "2013-10",
+     "url": "https://cseweb.ucsd.edu/~smeiklejohn/files/imc13.pdf",
+     "quote": "Using the dissolution of a large Silk Road wallet and notable Bitcoin thefts as case studies, we demonstrate that an agency with subpoena power would be well placed to identify who is paying money to whom.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "bitcoin-announced-on-cypherpunks-mailing-list",
+   "claim": "Satoshi Nakamoto announced Bitcoin on the cypherpunks mailing list.",
+   "verdict": "MISLEADING",
+   "correction": "The white paper was announced on 31 October 2008 on the Cryptography mailing list (cryptography@metzdowd.com), run on a machine of moderator Perry Metzger's company since 2003 — a separate list from the cypherpunks list that began in 1992, though it drew on the same community.",
+   "sources": [
+    {
+     "institution": "The Cryptography Mailing List (metzdowd.com archive)",
+     "title": "Satoshi Nakamoto, 'Bitcoin P2P e-cash paper'",
+     "date": "2008-10-31",
+     "url": "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html",
+     "quote": "I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Archive header: 'Fri Oct 31 14:10:00 EDT 2008'; the page footer reads 'More information about the cryptography mailing list'."
+    },
+    {
+     "institution": "The Cryptography Mailing List (metzdowd.com archive)",
+     "title": "Perry E. Metzger, 'ADMIN: The list has moved.'",
+     "date": "2003-04",
+     "url": "https://www.metzdowd.com/pipermail/cryptography/2003-April/004484.html",
+     "quote": "For the second time in its history, the mailing list has moved -- this time from Wasabi Systems to a machine run by my new company, Metzger, Dowdeswell & Co. LLC",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "craig-wright-is-satoshi-nakamoto",
+   "claim": "Satoshi Nakamoto has been unmasked as the Australian computer scientist Craig Wright.",
+   "verdict": "FALSE",
+   "correction": "In a case brought by the Crypto Open Patent Alliance, England's High Court (Mellor J) declared at the end of the trial in March 2024 — with the written judgment handed down on 20 May 2024 — that Craig Wright is not the author of the Bitcoin white paper and is not Satoshi Nakamoto. The real identity of the pseudonymous author remains unknown.",
+   "sources": [
+    {
+     "institution": "High Court of Justice of England and Wales, Chancery Division (Mellor J)",
+     "title": "Crypto Open Patent Alliance v Wright, consequentials judgment [2024] EWHC 1809 (Ch)",
+     "date": "2024-07-16",
+     "url": "https://www.judiciary.uk/wp-content/uploads/2024/07/COPA-v-Wright-Judgment.pdf",
+     "quote": "First, that I have declared that Dr Wright is not the author of the Bitcoin White Paper nor the owner of copyright in it, is not Satoshi Nakamoto and is not the person who created Bitcoin and not the author of the initial versions of the Bitcoin Source Code.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'On 20 May 2024 (the day the Court handed down its judgment and two months after the Court's declarations)'."
+    }
+   ]
+  },
+  {
+   "id": "zimmermann-was-prosecuted-for-exporting-pgp",
+   "claim": "Phil Zimmermann was prosecuted (or indicted) for exporting PGP as a munition.",
+   "verdict": "FALSE",
+   "correction": "Zimmermann was the target of a three-year US criminal investigation into the June 1991 Usenet posting of PGP, but he was never charged: on 11 January 1996 the U.S. Attorney for the Northern District of California declined prosecution and closed the case. Zimmermann maintained he did not upload PGP to the Internet himself; he gave it to friends who posted it.",
+   "sources": [
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com), reproducing the signed news release of defence counsel Philip L. Dubois",
+     "title": "Significant Moments in PGP's History: Zimmermann Case Dropped",
+     "date": "1996-01-12",
+     "url": "https://www.philzimmermann.com/EN/news/PRZ_case_dropped.html",
+     "quote": "The U.S. Attorney's Office for the Northern District of California has decided that your client, Philip Zimmermann, will not be prosecuted in connection with the posting to USENET in June 1991 of the encryption program Pretty Good Privacy. The investigation is closed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Computer Society Technical Committee on Security and Privacy, Cipher newsletter",
+     "title": "Case Closed on Zimmermann PGP Investigation",
+     "date": "1996-02-14",
+     "url": "https://www.ieee-security.org/Cipher/Newsbriefs/1996/960214.zimmerman.html",
+     "quote": "Zimmermann maintained thoughout the investigation that he did not put the software on the Internet.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "PGP Marks 10th Anniversary",
+     "date": "2001-06-05",
+     "url": "https://www.philzimmermann.com/EN/essays/PGP_10thAnniversary.html",
+     "quote": "It was on this day in 1991 that I sent the first release of PGP to a couple of my friends for uploading to the Internet.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "diffie-hellman-first-to-discover-public-key-cryptography",
+   "claim": "Diffie and Hellman were the first people to discover public-key cryptography.",
+   "verdict": "MISLEADING",
+   "correction": "Diffie and Hellman were the first to publish it openly, in 1976. At Britain's GCHQ, James Ellis had proposed 'non-secret encryption', and Clifford Cocks and Malcolm Williamson devised equivalents of RSA and of Diffie–Hellman key exchange in the early 1970s; the work stayed classified until GCHQ announced it in December 1997. GCHQ itself says the academics found key exchange independently 'at almost the same time', and it was the open publication that shaped the public privacy debate.",
+   "sources": [
+    {
+     "institution": "GCHQ (UK Government Communications Headquarters)",
+     "title": "Malcolm Williamson — one of the originators of Public Key Cryptography at GCHQ in the 1970s",
+     "date": "2026",
+     "url": "https://www.gchq.gov.uk/person/malcolm-williamson",
+     "quote": "This is now known as the Diffie-Hellmann key exchange after the academic researchers who independently found it at almost the same time.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Clifford Cocks devised the public-key encryption system now known as RSA, and shortly afterwards Malcolm Williamson devised a method of public key exchange, which allows two parties to obtain a common secret key while communicating only in public.' Undated page; accessed 2026-09-23."
+    },
+    {
+     "institution": "GCHQ (UK Government Communications Headquarters)",
+     "title": "James Ellis",
+     "date": "2026",
+     "url": "https://www.gchq.gov.uk/person/james-ellis",
+     "quote": "The discovery in 1973 remained classified for a long time and was, at first, only made available for official governmental communications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'Ellis died on the 25th November 1997 aged 73, ironically just a month before the public announcement of the GCHQ achievement was made.'"
+    }
+   ]
+  },
+  {
+   "id": "adam-back-invented-proof-of-work",
+   "claim": "Adam Back invented proof-of-work with Hashcash, the idea behind Bitcoin mining.",
+   "verdict": "MISLEADING",
+   "correction": "Back proposed Hashcash in May 1997 to throttle spam and abuse of anonymous remailers, and Bitcoin's white paper cites it. But Cynthia Dwork and Moni Naor had proposed a CPU 'pricing function' against junk mail in 1992 — prior work Back acknowledges he had not known about when he published.",
+   "sources": [
+    {
+     "institution": "hashcash.org (author's paper)",
+     "title": "Adam Back, 'Hashcash – A Denial of Service Counter-Measure'",
+     "date": "2002-08-01",
+     "url": "http://www.hashcash.org/papers/hashcash.pdf",
+     "quote": "At the time of publication of [1] the author was not aware of the prior work by Dwork and Naor in [2] who proposed a CPU pricing function for the application of combatting junk email.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reference [2]: Cynthia Dwork and Moni Naor, 'Pricing via processing or combatting junk mail', Proceedings of Crypto, 1992."
+    },
+    {
+     "institution": "Harvard John A. Paulson School of Engineering and Applied Sciences",
+     "title": "Pioneer of modern data privacy Cynthia Dwork wins National Medal of Science",
+     "date": "2025-01-08",
+     "url": "https://seas.harvard.edu/news/pioneer-modern-data-privacy-cynthia-dwork-wins-national-medal-science",
+     "quote": "Her research has fought email spam and formed the basis of cryptocurrencies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "whatsapp-encryption-has-a-backdoor-2017",
+   "claim": "WhatsApp's end-to-end encryption contains a 'backdoor' that lets Facebook or governments read messages (The Guardian, January 2017).",
+   "verdict": "MISLEADING",
+   "correction": "The Guardian's 13 January 2017 story described a design choice — WhatsApp by default re-encrypts and resends undelivered messages when a contact's key changes, without first asking the sender to verify. Signal's Moxie Marlinspike called the 'backdoor' label false, and after a review by its readers' editor the Guardian extensively amended the article, which now describes 'a design feature' and says systematic surveillance is unlikely.",
+   "sources": [
+    {
+     "institution": "The Guardian",
+     "title": "WhatsApp design feature means some encrypted messages could be read by third party (amended article, originally published 13 January 2017)",
+     "date": "2017-01-13",
+     "url": "https://www.theguardian.com/technology/2017/jan/13/whatsapp-backdoor-allows-snooping-on-encrypted-messages",
+     "quote": "This article was originally published on 13 January 2017. It has been extensively amended (see endnotes) following a review by the Guardian's readers' editor.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Current standfirst: 'Trade-off between security and usability unlikely to permit systematic surveillance, experts say'. The URL slug preserves the original 'backdoor' headline. The date of the amendment was not shown in the fetched text."
+    },
+    {
+     "institution": "Signal (signal.org blog)",
+     "title": "Moxie Marlinspike, 'There is no WhatsApp \"backdoor\"'",
+     "date": "2017-01-13",
+     "url": "https://signal.org/blog/there-is-no-whatsapp-backdoor/",
+     "quote": "Today, The Guardian published a story falsely claiming that WhatsApp's end-to-end encryption contains a \"backdoor.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "87-percent-of-americans-identifiable-by-zip-gender-birthdate",
+   "claim": "87% of Americans can be uniquely identified by ZIP code, gender and date of birth.",
+   "verdict": "MISLEADING",
+   "correction": "The 87% figure is Latanya Sweeney's estimate from 1990 census data — people who 'likely' had a unique combination. Re-running the analysis on 2000 census data, Philippe Golle (2006) broadly agreed with the finding but put the share at about 63%. The underlying point — that a few 'anonymous' attributes can single out most people — stands; the exact percentage depends on the census year and method.",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (author copy, Data Privacy Lab)",
+     "title": "Latanya Sweeney, 'Simple Demographics Often Identify People Uniquely'",
+     "date": "2000",
+     "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+     "quote": "It was found that 87% (216 million of 248 million) of the population in the United States had reported characteristics that likely made them unique based only on {5-digit ZIP, gender, date of birth}.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ACM Workshop on Privacy in the Electronic Society (WPES '06, Alexandria, Virginia, 30 October 2006); author copy, Stanford",
+     "title": "Philippe Golle, 'Revisiting the Uniqueness of Simple Demographics in the US Population'",
+     "date": "2006-10-30",
+     "url": "https://crypto.stanford.edu/~pgolle/papers/census.pdf",
+     "quote": "(63% of the US population) than reported in [10].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Full sentence (ligatures in the PDF text layer defeat --check on the whole): 'Our results generally agree with the findings of [10], although we find that disclosing one's gender, ZIP code and full date of birth allows for unique identification of fewer individuals (63% of the US population) than reported in [10].' Reference [10] is Sweeney's study; the abstract opens 'According to a famous study [10] of the 1990 census data, 87% of the US population can be uniquely' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "id": "bernstein-case-settled-that-code-is-speech",
+   "claim": "In Bernstein v. United States the courts settled, as binding appellate precedent, that software source code is speech protected by the First Amendment.",
+   "verdict": "MISLEADING",
+   "correction": "The district court held the export rules unconstitutional (1996, 1997), and a Ninth Circuit panel agreed on 6 May 1999 that they were a prior restraint on scientific expression. But on 30 September 1999 the Ninth Circuit withdrew that panel opinion for rehearing en banc; before the rehearing, the government loosened the regulations in January 2000, and in 2002 the district court dismissed the remaining case on ripeness grounds. The 1999 panel opinion is widely cited, but it was withdrawn and does not stand as binding precedent.",
+   "sources": [
+    {
+     "institution": "U.S. Court of Appeals for the Ninth Circuit (via Public.Resource.Org)",
+     "title": "Bernstein v. U.S. Department of Justice, 192 F.3d 1308 (9th Cir. 1999) (order granting rehearing en banc)",
+     "date": "1999-09-30",
+     "url": "https://law.resource.org/pub/us/case/reporter/F3/192/192.F3d.1308.97-16686.html",
+     "quote": "The three-judge panel opinion, Bernstein v. U.S. Dept. of Justice, 176 F.3d 1132 (9th Cir. 1999), is withdrawn.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "D. J. Bernstein (cr.yp.to)",
+     "title": "Bernstein v. United States — Summary of the case status",
+     "date": "2002",
+     "url": "https://cr.yp.to/export/status.html",
+     "quote": "Before en-banc review could happen, the government added a big exception to the regulations, and the case was sent back to the District Court.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'At oral argument on 18 October 2002, the government backed away from its regulations. The District Court subsequently dismissed the case on ripeness grounds.'"
+    },
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "Bernstein v. US Department of Justice (case page)",
+     "date": "2026",
+     "url": "https://www.eff.org/cases/bernstein-v-us-dept-justice",
+     "quote": "After four years and one regulatory change, the Ninth Circuit Court of Appeals ruled that software source code was speech protected by the First Amendment and that the government's regulations preventing its publication were unconstitutional.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Cited as an example of the popular version: the summary is accurate about the May 1999 panel ruling but omits its withdrawal."
+    }
+   ]
+  }
+ ]
 }

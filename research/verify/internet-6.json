@@ -1,0 +1,283 @@
+{
+  "slice": "internet",
+  "chunk": 6,
+  "verdicts": [
+    {
+      "kind": "myth",
+      "id": "myth-microsoft-exposed-facebook-p3p-bypass",
+      "status": "OK",
+      "issues": [
+        "No errors found. The Register (20 February 2012) quotes only Microsoft's post about Google and does not mention Facebook. Cubrilovic's post confirms the gap: 'Not mentioned in the Microsoft article is that Facebook are also setting an invalid header'. His post also shows Facebook's header, 'Facebook does not have a P3P policy. Learn why here: http://fb.me/p3p', and says Microsoft 'either neglected to mention or didn't investigate Facebook'.",
+        "Nuance, no change needed: Cubrilovic's post is timestamped 'Tue Feb 21 2012 15:40:52 GMT+1100' (04:40 UTC on 21 February). That is only hours after Microsoft's US-dated post of 20 February, so 'the next day' is true by the post's own date.",
+        "The correction says Carnegie Mellon documented 'thousands of such invalid policies in 2010', but none of the record's sources said so. The CMU report is added below. The Register also says the tactic had been flagged 'in academic papers in 2010'. That report's table already listed facebook.com's 2010 compact policy ('DSP LAW') as having missing tokens."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The page title and dek read 'Microsoft claims Google bypassed its browser privacy too' / 'P3P policy flaw gave automatic access'. article:published_time is 2012-02-20T22:26:45Z. The quote is attributed to Dean Hachamovitch, VP of Internet Explorer. The page also gives Google's header, 'This is not a P3P policy!' (FOUND). The article never mentions Facebook: its 7 'facebook' strings are all in page chrome."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The quote is the post's subtitle. The page metadata gives datePublished 'Tue Feb 21 2012 15:40:52 GMT+1100', so the date is correct. A stronger sentence in the post body also checks FOUND: 'Not mentioned in the Microsoft article is that Facebook are also setting an invalid header ('invalid' may not be the right terminology here, but they are setting a header that does not contain valid privacy policies).' The header text 'Facebook does not have a P3P policy' is also FOUND."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Future of Privacy Forum (hosted copy of CMU CyLab Technical Report CMU-CyLab-10-014)",
+          "title": "Leon, Cranor, McDonald & McGuire, 'Token Attempt: The Misrepresentation of Website Privacy Policies through the Misuse of P3P Compact Policy Tokens'",
+          "date": "2010-09-10",
+          "url": "https://fpf.org/wp-content/uploads/2021/05/Token-Attempt-The-Misrepresentation-of-Website-Privacy-Policies-through-the-Misuse-of-P3P-Compact-Policy-Tokens.pdf",
+          "quote": "We found thousands of sites using identical invalid CPs that had been recommended as workarounds for IE cookie blocking.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The cover gives the date 'September 10, 2010' and the number 'CMU-CyLab-10-014'. This source supports the correction's 2010 CMU clause."
+        }
+      ]
+    },
+    {
+      "kind": "myth",
+      "id": "myth-eu-cookie-law-requires-cookie-banners",
+      "status": "FIXED",
+      "issues": [
+        "The content is correct. Recital 66 says: 'Where it is technically possible and effective, in accordance with the relevant provisions of Directive 95/46/EC, the user's consent to processing may be expressed by using the appropriate settings of a browser or other application.' Article 2(5), which replaces Article 5(3) of Directive 2002/58/EC, requires consent 'having been provided with clear and comprehensive information', and exempts storage or access that is strictly necessary. The Directive's recitals and Article 2 never use the words 'banner' or 'pop-up'.",
+        "The cited Internet Archive snapshot could not be re-opened here. web.archive.org resets every connection from this sandbox (the agent proxy logs ws_closed_mid_exchange for web.archive.org:443), and eur-lex.europa.eu returns an empty HTTP 202 bot challenge. That source is set to PENDING. The same text is confirmed on legislation.gov.uk, the UK National Archives' copy of the Directive, which is added as a source, together with the Article 5(3) text.",
+        "Nuance, not an error: the last sentence ('Banners were how sites chose to implement it') leaves out that national regulators' guidance, and after 2018 the GDPR consent standard, pushed sites toward banners. It is still true that the Directive does not require them."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "PENDING",
+          "note": "Re-fetch failed on 2026-09-23. web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and live EUR-Lex returns an empty HTTP 202 challenge. The identical recital 66 wording checks FOUND on legislation.gov.uk (added source)."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "legislation.gov.uk (The National Archives, UK)",
+          "title": "Directive 2009/136/EC of the European Parliament and of the Council of 25 November 2009 (recitals)",
+          "date": "2009-11-25",
+          "url": "https://www.legislation.gov.uk/eudr/2009/136/introduction",
+          "quote": "the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The quote is from recital (66), which opens 'Third parties may wish to store information on the equipment of a user...'. The page title gives the full name of Directive 2009/136/EC of 25 November 2009."
+        },
+        {
+          "institution": "legislation.gov.uk (The National Archives, UK)",
+          "title": "Directive 2009/136/EC, Article 2 (amendments to Directive 2002/58/EC)",
+          "date": "2009-11-25",
+          "url": "https://www.legislation.gov.uk/eudr/2009/136/article/2",
+          "quote": "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. This is the replacement text of Article 5(3) of Directive 2002/58/EC ('Article 5(3) shall be replaced by the following'). The next sentence exempts storage or access 'strictly necessary in order for the provider of an information society service explicitly requested by the subscriber or user to provide the service'."
+        }
+      ]
+    },
+    {
+      "kind": "myth",
+      "id": "myth-removing-names-makes-data-anonymous",
+      "status": "FIXED",
+      "issues": [
+        "The correction says 'a few movie ratings and dates uniquely identified 99% of records'. That is vague and overstates what was needed. The paper's figure is: 'With 8 movie ratings (of which 2 may be completely wrong) and dates that may have a 14-day error, 99% of records can be uniquely identiﬁed in the dataset. For 68%, two ratings and dates (with a 3-day error) are sufﬁcient.' The cited arXiv abstract contains neither the 99% figure nor these conditions. The published Oakland 2008 paper is added as a source for them.",
+        "The NYT source's Wayback URL could not be re-opened: web.archive.org resets every connection from this sandbox, and nytimes.com returns 403. The NYT's own free archive host has the same article and passes --check for the quote, so the source URL is switched to it. The byline and date there match: 'By MICHAEL BARBARO and TOM ZELLER Jr.', pdate 20060809."
+      ],
+      "fieldFixes": {
+        "correction": "AOL's 2006 release replaced users with numbers, yet the New York Times identified user No. 4417749 as Thelma Arnold from her queries. Narayanan and Shmatikov showed that eight movie ratings (two of which could be wrong), with dates up to 14 days off, were enough to single out 99% of subscriber records in the name-stripped Netflix Prize data. Two ratings with dates within three days were enough for 68%."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "institution": "The New York Times (archive.nytimes.com)",
+          "url": "https://archive.nytimes.com/www.nytimes.com/2006/08/09/technology/09aol.html",
+          "accessType": "FREE",
+          "note": "The original web.archive.org/web/2021 snapshot could not be fetched on 2026-09-23: connection reset every time, and the proxy logged ws_closed_mid_exchange. On the NYT's own archive copy the quote checks FOUND. The page metadata gives hdl 'A Face Is Exposed for AOL Searcher No. 4417749', byl 'By MICHAEL BARBARO and TOM ZELLER Jr.' and dat 'August 9, 2006'. The same page also has 'The number was assigned by the company to protect the searcher’s anonymity, but it was not much of a shield.' (FOUND), which directly supports the myth's framing."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The title matches, and the page says 'Submitted on 18 Oct 2006 ... last revised 22 Nov 2007 (this version, v2)'. The abstract supports re-identification in general but not the 99% figure, which is sourced from the added Oakland 2008 paper."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "University of Texas at Austin (authors' copy, hosted at Cornell)",
+          "title": "Arvind Narayanan and Vitaly Shmatikov, 'Robust De-anonymization of Large Sparse Datasets', 2008 IEEE Symposium on Security and Privacy",
+          "date": "2008-05",
+          "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+          "quote": "With 8 movie ratings (of which 2 may be completely wrong) and dates that may have a 14-day error, 99% of records can be uniquely identiﬁed in the dataset.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The quote must keep the 'ﬁ' ligature as the PDF text layer has it; it does not match with a plain 'fi'. The same paragraph continues: 'For 68%, two ratings and dates (with a 3-day error) are sufﬁcient'. This source is already used, CONFIRMED, by the events/quant records netflix-prize-deanonymization-2008. Metadata matches the existing records that cite this PDF; the PDF itself carries only the title and authors (The University of Texas at Austin)."
+        }
+      ]
+    },
+    {
+      "kind": "signal",
+      "id": "signal-p3p-full-policy",
+      "status": "FIXED",
+      "issues": [
+        "legalForce puts in quotation marks a phrase the spec does not contain: 'no technical mechanism for making sure sites act according to their policies'. The spec reads: 'it does not provide a technical mechanism for making sure sites act according to their policies'. The record's paraphrase 'relies on laws and self-regulatory programmes' also has a verbatim source line: 'P3P is complementary to laws and self-regulatory programs that can provide enforcement mechanisms.'",
+        "The fate field says 'Little deployment beyond Internet Explorer's cookie filter'. That is wrong for this record: IE's cookie filter did not use full XML policies. It acted on compact policies, a separate signal with its own record. In the W3C's words, IE used 'the presence of a compact P3P policy as a broad gate'.",
+        "whatItSays says the policy is 'published at a well-known location'. The spec puts a policy reference file, not the policy itself, at the well-known path /w3c/p3p.xml, and makes that optional ('MAY'). Sites can instead point to it with a P3P HTTP header or a link tag.",
+        "Everything else checks out on the W3C pages. Recommendation 16 April 2002, 'obsoleted 30 August 2018'. 'fewer than 6% of the 10,000 most frequently visited websites support P3P' (2018, BuiltWith). 'no enforcement action followed'. Cranor (2012): 'no regulators have announced that they are investigating any website for a deceptive P3P policy'."
+      ],
+      "fieldFixes": {
+        "whatItSays": "The website's own data practices, in a fixed XML vocabulary: what it collects, for what purposes, for which recipients, how long it keeps data, whether people can access it and how disputes are resolved. A policy reference file tells user agents which policy covers which pages. A site may place that file at the well-known path /w3c/p3p.xml, or point to it with a P3P HTTP header or a link tag. The person's user agent fetches the policy and compares it with preferences the person has set. The person cannot send terms back.",
+        "legalForce": "None in itself. The specification says P3P 'does not provide a technical mechanism for making sure sites act according to their policies' and is 'complementary to laws and self-regulatory programs that can provide enforcement mechanisms'. No regulator is known to have acted against a deceptive P3P policy (Cranor, 2012; W3C, 2018).",
+        "fate": "Only limited deployment. Its main use, Internet Explorer's cookie filter, acted on the short compact policies rather than on full XML policies. Fewer than 6% of the 10,000 most-visited sites supported P3P in 2018, when the W3C declared it obsolete."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "W3C's Cloudflare returns 403 to the fetch-text User-Agent. The page was fetched with curl's default User-Agent into the fetch-text cache, then --check run on it: FOUND. The same paragraph continues: 'However, P3P is complementary to laws and self-regulatory programs that can provide enforcement mechanisms.' (FOUND). Section 2.2.1 reads: 'To do this, a policy reference file would be made available on the site at the path /w3c/p3p.xml' (FOUND)."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fetched as for source 0 (curl into the cache): --check FOUND. The header reads 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018' and 'This Version: http://www.w3.org/TR/2018/OBSL-P3P-20180830/'. Also FOUND: 'When Microsoft Internet Explorer was updated to use the presence of a compact P3P policy as a broad gate for deciding on the user's behalf to allow or reject third-party cookies, web site administrators chose to copy general policies rather than encode specific policies that reflected their sites' own privacy practices.' The page also says 'fewer than 6% of the 10,000 most frequently visited websites support P3P'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The title 'P3P is dead, long live P3P!' matches, the URL date is 2012/12/03, and the blog is 'This Thing'. The same paragraph says the FTC or state attorneys general 'could go after' sites with deceptive P3P policies."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "signal",
+      "id": "signal-p3p-compact-policy",
+      "status": "FIXED",
+      "issues": [
+        "whatItSays says IE's default Medium setting used compact policies 'to decide whether to accept, downgrade or block third-party cookies'. That misstates the rule. At Medium, third-party cookies were accepted or rejected: they were rejected if they had no compact policy or an unsatisfactory one. Downgrading to session cookies applied to unsatisfactory first-party cookies. CMU's report: 'Under the medium setting, unsatisfactory ﬁrst-party cookies are converted into session cookies and unsatisfactory third-party cookies are rejected. In addition, third-party cookies not accompanied by CPs are rejected.' Downgrading third-party cookies was only an optional custom template in the IEInternals post.",
+        "legalForce paraphrases the IEInternals footnote as the browser having 'no technical means' to 'verify' the claims. The source says 'enforce'. The same footnote also says 'a government or individual would have grounds to file a lawsuit' over a false policy, and Cranor (2012) argued the FTC or state attorneys general 'could go after' deceptive P3P policies. A bare 'None.' therefore overstates the case: the signal had no force of its own, but a false one was potentially actionable, and nobody acted on it.",
+        "The fate field has two problems. 'Google's and Facebook's non-policies were exposed in February 2012' overstates novelty: The Register's own report says the tactic had been 'pointed out by El Reg last year and in academic papers in 2010', and CMU's 2010 table already listed facebook.com's invalid 'DSP LAW' policy. And 'when no current browser acted on P3P' drops the attribution: the W3C wrote 'No current (2018) user agents are known to…'.",
+        "None of the record's sources supported the header text 'This is not a P3P policy!' or the Google/Facebook claim, so The Register and Cubrilovic are added. The numbers 11,176 of 33,139 and 98% are verbatim in the cited CMU abstract ('We collected CPs from 33,139 websites and detected errors in 11,176 of them'; '98% of invalid CPs resulted in cookies remaining unblocked by IE under it’s default cookie settings.'), both FOUND. 'three- and four-letter tokens' matches CMU's 'three-character and four-character tokens'.",
+        "Not verified here: the start year 2001 (IE6 shipped in August 2001). The sources say only 'used by IE 6, 7, and 8'."
+      ],
+      "fieldFixes": {
+        "whatItSays": "A string of three- and four-letter tokens summarising the site's cookie-related practices (purpose, recipients, retention, data categories), sent in the P3P HTTP response header that sets the cookie. Under Internet Explorer's default 'Medium' setting, a third-party cookie was blocked if it came with no compact policy or an unsatisfactory one. A first-party cookie with an unsatisfactory policy was downgraded to a session cookie.",
+        "legalForce": "None in itself. The browser had 'no technical means' to enforce the claims. A false policy might have been challenged as deceptive: Microsoft said it could ground a lawsuit, and Lorrie Cranor said the FTC or state attorneys general 'could go after' such sites. No regulator is known to have acted. Sites discovered that an invalid or even self-declared non-policy ('This is not a P3P policy!') still got their cookies accepted.",
+        "fate": "Widely gamed. In 2010, 11,176 of 33,139 sites had erroneous compact policies, and 98% of the invalid ones left cookies unblocked under IE's default setting. Google's and Facebook's non-policies drew wide attention in February 2012. The compact policy was retired with P3P in 2018, when the W3C said no current user agents were known to act on P3P policies."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "W3C returns 403 to the fetch-text User-Agent. The page was fetched with curl into the fetch-text cache, then --check run on it: FOUND. The spec also says 'Any HTTP resource MAY include a P3P compact policy through the P3P response header' and 'When a P3P compact policy is included in a HTTP response header, it applies to cookies set by the current response.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The quote is footnote [1]. That footnote continues: 'However, a government or individual would have grounds to file a lawsuit if it were determined that a website was failing to uphold their declared privacy policy.' (FOUND). The same post describes Medium as restricting 'third-party cookies (unless they're marked to be fairly innocuous to your privacy)'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The cover gives the date 'September 10, 2010' and the number CMU-CyLab-10-014. The same abstract carries the figures in fate: 'We collected CPs from 33,139 websites and detected errors in 11,176 of them' (FOUND) and '98% of invalid CPs resulted in cookies remaining unblocked by IE under it’s default cookie settings.' (FOUND)."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Future of Privacy Forum (hosted copy of CMU CyLab Technical Report CMU-CyLab-10-014)",
+          "title": "Leon, Cranor, McDonald & McGuire, 'Token Attempt: The Misrepresentation of Website Privacy Policies through the Misuse of P3P Compact Policy Tokens'",
+          "date": "2010-09-10",
+          "url": "https://fpf.org/wp-content/uploads/2021/05/Token-Attempt-The-Misrepresentation-of-Website-Privacy-Policies-through-the-Misuse-of-P3P-Compact-Policy-Tokens.pdf",
+          "quote": "Under the medium setting, unsatisfactory ﬁrst-party cookies are converted into session cookies and unsatisfactory third-party cookies are rejected. In addition, third-party cookies not accompanied by CPs are rejected.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23, with the 'ﬁ' ligature as in the PDF text layer. This is Section 2.3, 'Internet Explorer Cookie Blocking'. It supports the corrected whatItSays."
+        },
+        {
+          "institution": "The Register",
+          "title": "Microsoft claims Google bypassed its browser privacy too",
+          "date": "2012-02-20",
+          "url": "https://www.theregister.com/2012/02/20/microsoft_google_p3p_flaw/",
+          "quote": "However, if the code is not recognized, Internet Explorer will accept it anyway and allow the requester full access to the user for third-party cookie purposes.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The same article gives Google's header, 'P3P: CP=\"This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info.\"' (FOUND). It also says the tactic had been 'pointed out by El Reg last year and in academic papers in 2010' (FOUND). article:published_time is 2012-02-20T22:26:45Z."
+        },
+        {
+          "institution": "Nik Cubrilovic (personal blog)",
+          "title": "Facebook and many other sites also bypass Internet Explorer privacy controls",
+          "date": "2012-02-21",
+          "url": "https://nikcub.me/posts/facebook-also-doesnt-honor-p3p/",
+          "quote": "Not mentioned in the Microsoft article is that Facebook are also setting an invalid header ('invalid' may not be the right terminology here, but they are setting a header that does not contain valid privacy policies).",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The post also reproduces Facebook's header 'Facebook does not have a P3P policy. Learn why here: http://fb.me/p3p' (FOUND). Page metadata gives datePublished 'Tue Feb 21 2012 15:40:52 GMT+1100'."
+        }
+      ]
+    },
+    {
+      "kind": "signal",
+      "id": "signal-do-not-track-header",
+      "status": "FIXED",
+      "issues": [
+        "body says the header was 'Proposed by Christopher Soghoian and Sid Stamm'. That overstates their role and leaves out who wrote the specification the W3C used. Soghoian's own history says Stamm 'helped me to put together a prototype Firefox add-on' in July 2009, and credits earlier header suggestions (Mozilla's Mike Shaver, March 2009; a conversation with Dan Kaminsky). The W3C Note says: 'The DNT header field is based on the original Do Not Track submission by Jonathan Mayer (Stanford), Arvind Narayanan (Stanford), and Sid Stamm (Mozilla).'",
+        "Three dated claims in years and fate had no source on the record: 'prototype July 2009', 'Firefox 4, March 2011' and 'Microsoft stopped enabling it by default in 2015'. All three are true, and primary sources for them are added below.",
+        "Everything else checks out. The DNT value definitions ('1 This user prefers not to be tracked on this request.' / '0 This user prefers to allow tracking on this request.') and the Tk response header are in the W3C Note of 17 January 2019. The Note's status says there had 'not been sufficient deployment of these extensions' and 'The working group has therefore decided to conclude its work', which supports 'closed in January 2019 citing insufficient deployment'. The White House release (23 February 2012) has the FTC-enforcement sentence and 'agreed to comply when consumers choose to control online tracking'. Safari 12.1 was 'Released March 25, 2019' with DNT removed 'to prevent potential use as a fingerprinting variable'.",
+        "Minor, no change: 'One bit' simplifies the grammar, which is DNT-field-value = ( \"0\" / \"1\" ) *DNT-extension. The Note leaves room for extensions but defines none: 'Servers that do not implement DNT extensions SHOULD ignore anything beyond the first character'. So 'carries no purposes, conditions or terms' stands."
+      ],
+      "fieldFixes": {
+        "body": "Prototyped by Christopher Soghoian and Sid Stamm (2009). The header field was specified in a Do Not Track submission by Jonathan Mayer, Arvind Narayanan and Sid Stamm. It was shipped by Mozilla and other browser makers, and standardised by the W3C Tracking Protection Working Group (Tracking Preference Expression)."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "W3C returns 403 to the fetch-text User-Agent. The page was fetched with curl into the fetch-text cache, then --check run on it: FOUND for '1 This user prefers not to be tracked on this request.', for '0 This user prefers to allow tracking on this request.' and for 'the Tk response header field for confirming tracking status'. The header reads 'W3C Working Group Note 17 January 2019'. Also FOUND: 'The working group has therefore decided to conclude its work and republish the final product as this Note, with any future addendums to be published separately.' And: 'The DNT header field is based on the original Do Not Track submission by Jonathan Mayer (Stanford), Arvind Narayanan (Stanford), and Sid Stamm (Mozilla).'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The same paragraph says ad networks are 'committing to act on Do Not Track technology in most major web browsers' and 'have agreed to comply when consumers choose to control online tracking'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: --check FOUND. The JSON abstract reads 'Released March 25, 2019 — Version 12.1 (14607.1.40)'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Christopher Soghoian (blog 'slight paranoia')",
+          "title": "The History of the Do Not Track Header",
+          "date": "2011-01-21",
+          "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+          "quote": "In July of 2009, I decided to try and solve this problem. My friend and research collaborator Sid Stamm helped me to put together a prototype Firefox add-on that added two headers to outgoing HTTP requests",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Verbatim on the page, but fetch-text --check returns NOT-FOUND: the Blogger post body is bare text with <br /> breaks rather than <p> elements, and fetch-text's paragraph extractor skips it. It was verified 2026-09-23 on the same cached HTML with BeautifulSoup get_text: the sentence is intact, with only an <a> link around 'Sid Stamm', and the headers that follow are 'X-Behavioral-Ad-Opt-Out: 1 X-Do-Not-Track: 1'. The post is dated 'Friday, January 21, 2011'. The same source is already used, CONFIRMED, by the event do-not-track-header-prototype-soghoian-stamm-2009."
+        },
+        {
+          "institution": "Mozilla",
+          "title": "Firefox 4.0 Release Notes",
+          "date": "2011-03-22",
+          "url": "https://www.mozilla.org/en-US/firefox/4.0/releasenotes/",
+          "quote": "Support for the Do Not Track (\"DNT\") header that allows users to opt-out of behavioural advertising",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The page reads 'v.4.0, released March 22nd, 2011'."
+        },
+        {
+          "institution": "Microsoft (Microsoft On the Issues blog)",
+          "title": "An update on Microsoft’s approach to Do Not Track",
+          "date": "2015-04-03",
+          "url": "https://blogs.microsoft.com/on-the-issues/2015/04/03/an-update-on-microsofts-approach-to-do-not-track/",
+          "quote": "Microsoft is changing how Do Not Track (DNT) is implemented in future versions of our browsers: We will no longer enable it as the default state in Windows Express Settings.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. article:published_time is 2015-04-03T13:00:10Z. The post also says a site receiving a default-on DNT 'could argue that it doesn’t reflect the users’ preference, and therefore, choose not to honor it', which supports the legalForce clause about browser defaults."
+        }
+      ]
+    }
+  ]
+}

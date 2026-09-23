@@ -1,0 +1,231 @@
+{
+ "slice": "early",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "series",
+   "id": "us-census-population-schedule-questions-1790-1840",
+   "status": "OK",
+   "issues": [
+    "No errors found. Both endpoint values (6 in 1790, 80 in 1840), the 1790 posting rule, the end of posting in 1850 and the 1840 confidentiality limited to the economic schedule all match Ruggles and Magnuson word for word. 80/6 = 13.3, so 'thirteen-fold' holds.",
+    "Checked the source metadata on the PMC page: Population and Development Review 49(3):651, 24 Jul 2023, doi 10.1111/padr.12580, authors Steven Ruggles and Diana L. Magnuson.",
+    "Independent check: the Census Bureau's 'Measuring America' (2002) confirms the 'six inquiries in 1790'. It also says the posting requirement ('two of the most public places ... for the inspection of all concerned') came from an act that 'governed census-taking through 1840'. Added as a corroborating source."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched from a fresh cache: --check FOUND. The context ('Although the advocates for census expansion did not get everything they asked for, the number of questions ... expanded from six in 1790 to 80 in 1840') supports both points. The article also says the 80 population questions 'were still publicly posted' in 1840, while the new confidentiality policy 'applied only to the schedule covering mines, manufacturing, commerce, and agriculture'. This supports the 1840 point note."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The same article says the posting directive 'was discontinued in 1850', which supports the series note 'Until 1850'."}
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Census Bureau",
+     "title": "Measuring America: The Decennial Censuses From 1790 to 2000 (POL/02-MA)",
+     "date": "2002-04",
+     "url": "https://www2.census.gov/library/publications/2002/dec/pol_02-ma.pdf",
+     "quote": "The six inquiries in 1790 called for the name of the head of the family",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same paragraph says the 1790 act 'governed census-taking through 1840' and required schedules to be posted in 'two of the most public places within [each jurisdiction], there to remain for the inspection of all concerned'. That text breaks across PDF hyphenation, so only the first sentence is quoted. Independent corroboration of the 1790 value."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-1361-act-outlawed-peeping-toms-and-eavesdroppers",
+   "status": "FIXED",
+   "issues": [
+    "The correction says 'MPs in 1960 defended it as protection against peeping Toms and eavesdroppers'. In fact the phrase was one MP's, Peter Rawlinson (Epsom). He used it for the repeal bill, not the Act: 'a modest charter for peeping Toms and eavesdroppers'. The House then refused leave, Ayes 148, Noes 230 (HC Deb 26 January 1960 vol 616 cc50-60). The wording is made precise below.",
+    "The correction's claim that the binding-over power 'was later used against eavesdroppers' had no source. Blackstone (Book IV, 'Of the means of preventing offences') ties the power to 34 Edw. III c. 1 and lists 'eaves-droppers' among those a justice may bind over under its 'not of good fame' words. Added.",
+    "Checked OK: the revised text on legislation.gov.uk names offenders, rioters and barrators and sureties from those [not] of good Fame, and never mentions eavesdroppers or peeping toms. Note that 'not' is bracketed as an editorial insertion (X4), and in the 1960 debate Leslie Hale said the word is missing from the Parliament roll. That does not affect the myth verdict.",
+    "The GILC page is the 1998 Privacy and Human Rights survey. Its acknowledgements say it was written by Privacy International, with primary authors David Banisar (EPIC) and Simon Davies (PI). '1998' is the most frequent year cited on the page (943 times), so the approximate date holds."
+   ],
+   "fieldFixes": {
+    "correction": "The 1361 statute names neither peeping toms nor eavesdroppers. It lets justices restrain offenders, rioters and barrators, and take sureties of good behaviour from people 'not of good fame'. Later lawyers read those general words broadly: Blackstone's Commentaries (Book IV, 1769) says a justice may bind over 'eaves-droppers' under them. In 1960, opposing a bill to repeal the Act, the MP Peter Rawlinson called the repeal bill 'a modest charter for peeping Toms and eavesdroppers', and the Commons refused leave by 230 votes to 148. The privacy reading comes from later practice, not from the text."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND in the revised text of 34 Edw. 3 c. 1 (short title given by the Statute Law Revision Act 1948). The same sentence continues 'and to take of all them that be [not] of good Fame ... sufficient Surety and Mainprise of their good Behaviour'. There is no mention of eavesdroppers or peeping toms."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The claim sits under 'THE RIGHT TO PRIVACY' and is footnoted '[fn 17] James Michael'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The speaker is Mr. Peter Rawlinson (Epsom), opposing Leslie Hale's motion for leave. The page title is 'JUSTICES OF THE PEACE ACT, 1361 (REPEAL) (Hansard, 26 January 1960)', HC Deb vol 616 cc50-60. The division was Ayes 148, Noes 230."}
+   ],
+   "addSources": [
+    {
+     "institution": "William Blackstone, Commentaries on the Laws of England, Book IV (16th ed., ed. J. T. Coleridge, London: A. Strahan, 1825) — Internet Archive OCR",
+     "title": "Book IV, 'Of the means of preventing offences' (binding to good behaviour under 34 Edw. III c. 1)",
+     "date": "1769",
+     "url": "https://archive.org/download/commentaries_laws_england_book4/volume4_djvu.txt",
+     "quote": "Thus also a justice may bind over all nightwalkers; eaves-droppers^ such as keep suspicious company ... bring them within the general words of the statutes as persons not of good fame",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The quote is verbatim OCR: '^' is an OCR artifact for a comma, and 'nightwalkers' is hyphenated across a line break ('night-walkers') in the scan. The passage opens 'the justices are empowered by the statute 34 Ed. III c. 1 to bind over to the good behaviour ... all them that be not of good fame'. Book IV was first published in 1769; this scan is the 16th edition (1825)."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-coke-coined-a-mans-home-is-his-castle",
+   "status": "OK",
+   "issues": [
+    "No errors found. Semayne's Case was decided in the King's Bench in Michaelmas Term 1604 (5 Co Rep 91a). Coke was then Attorney General (1594–1606) and reported it; he was not a judge until 1606. Coke's Latin 'domus sua cuique est tutissimum refugium' is on the OLL page, and Digest 2.4.18 (Gaius, 1 ad l. xii tab.) reads 'quia domus tutissimum cuique refugium atque receptaculum sit'.",
+    "The Lambarde claim rested only on a party-aligned amicus brief. I found a primary check: the 1591 Eirenarcha (Internet Archive scan of the 1591 edition, Book 2, ch. 5 on Riots, p. 188) says a man may gather company to defend himself because 'his house, is his Hold and Castle'. That confirms Lambarde used the castle maxim before 1604. The exact sentence the brief quotes from p. 257 ('our law calleth a man's house, his castle ...') could not be found in the garbled OCR, so it stays attributed to the brief. Both Lambarde and Coke's report cite the Year Book 21 Hen. 7. 39, which shows the idea's older roots."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The brief was filed 15 Jan 2021 (per the docket URL) by the Firearms Policy Coalition, Firearms Policy Foundation and Independence Institute in support of the petitioner. The p. 257 wording was not found in the 1591 OCR (too garbled), but the same edition's 'his house, is his Hold and Castle' (p. 188) is now attached as a primary source."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The OLL page itself calls Coke 'The English judge' who 'declared in a ruling', which is the myth's framing. The record rightly uses the page only for the Latin text of the report. The page is undated; its source is 'Selected Writings of Sir Edward Coke, vol. I'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND under 'Dig. 2.4.18 Gaius 1 ad l. xii tab. Plerique putaverunt nullum de domo sua in ius vocari licere, quia domus tutissimum cuique refugium atque receptaculum sit'."}
+   ],
+   "addSources": [
+    {
+     "institution": "William Lambard, Eirenarcha: or the office of the justices of peace (London: Ralph Newbery, 1591) — Internet Archive OCR",
+     "title": "Eirenarcha, Book 2, ch. 5 (Riots, Routs, &c.), p. 188",
+     "date": "1591",
+     "url": "https://archive.org/download/bim_early-english-books-1475-1640_eirenarcha-or-the-offic_lambard-william_1591/bim_early-english-books-1475-1640_eirenarcha-or-the-offic_lambard-william_1591_djvu.txt",
+     "quote": "his houſe, is his Hold and Caſtle",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is verbatim OCR with long s. In context, a man threatened with violence in his house may assemble company to defend it without making an unlawful assembly, 'for his house, is his Hold and Castle', citing 21 H. 7. 39. Coke's Semayne report cites the same Year Book. IA metadata dates this scan 1591. It is primary evidence that the maxim predates Coke's 1604 report."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-otis-said-a-mans-house-is-his-castle-verbatim",
+   "status": "OK",
+   "issues": [
+    "No errors found. The Minutes page is dated 1761-02-24, and its text reads 'A Man, who is quiet, is as secure in his House, as a Prince in his Castle'. The Abstract page is dated 1761-04; the editors say it was 'probably made by him sometime in the spring of 1761'. It contains the polished sentence (with 'while', not 'whilst'). The editors confirm the Spy text is from 29 April 1773, p. 3. The letter to William Tudor is dated 29 March 1817.",
+    "Minor nuance, no change needed: Adams blamed the interpolations on Jonathan Williams Austin, who he says 'stole' the notes from his desk ('interpolated by himself'). The editors also say the printed text 'is not the rough notes' but Adams's own longer version of them. The correction's wording stays accurate."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The page date is 1761-02-24; the text runs 'Otis. This Writ is against the fundamental Principles of Law. The Priviledge of House. A Man, who is quiet ...'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The page date is 1761-04. The editorial headnote lists the five collated versions, including 'the Massachusetts Spy, 29 April 1773, p. 3, cols. 1–3'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The full sentence is '... those despicable Notes which you know that Jonathan Williams Austin your fellow student in my office, stole from my desk and [107] printed in the Massachusetts Spy, with two or three bombastic expressions interpolated by himself'. Note 1 dates the letter 'JA to William Tudor, 29 March 1817'."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-pitt-poorest-man-cottage-quote-recorded-1763",
+   "status": "FIXED",
+   "issues": [
+    "The correction calls the Parliamentary History 'contemporary'. It is not. Miller v. United States cites 'Hansard, Parliamentary History of England (1813), vol. 15, column 1307', which is Cobbett's compilation published 50 years after the 1763 debate. Reworded.",
+    "Checked OK: the 1813 volume 15 (Internet Archive scan) reads, under 'Proceedings in the Commons on the Cyder Tax' (March 1763): 'Mr. Pitt spoke against this measure, particularly against the dangerous precedent of admitting the officers of excise into private houses. Every man's house was his castle, he said.' Added as a primary source.",
+    "Checked OK: Brougham's Historical Sketches (Philadelphia: Lea & Blanchard, 1839) introduces the 'poorest man' passage only as 'his allusion to the maxim of English law, that every man's house is his castle'. It gives no date or debate. Miller (decided 23 June 1958) uses the word 'attributed'."
+   ],
+   "fieldFixes": {
+    "correction": "Cobbett's Parliamentary History (vol. 15, published 1813), in its account of the March 1763 cider-excise debate, records only that Pitt spoke against letting excise officers into private houses: 'Every man's house was his castle, he said.' The famous wording is 'attributed' (the U.S. Supreme Court's own word). It appears in Lord Brougham's Historical Sketches of Statesmen (1839), which gives no date or debate for it."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. Footnote 7 reads 'In Hansard, Parliamentary History of England (1813), vol. 15, column 1307, under the proceedings in the Commons on the cider tax in March, 1763, we find: ... Every man's house was his castle, he said.' The opinion was decided June 23, 1958."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. IA metadata: 'Historical sketches of statesmen who flourished in the time of George III', Brougham, Philadelphia, Lea & Blanchard, 1839. The context gives no date or occasion for the speech."}
+   ],
+   "addSources": [
+    {
+     "institution": "Cobbett's Parliamentary History of England, vol. 15 (London, 1813) — Internet Archive OCR",
+     "title": "Proceedings in the Commons on the Cyder Tax (March 1763), col. 1307",
+     "date": "1813",
+     "url": "https://archive.org/download/10279123bsb/10279123bsb_djvu.txt",
+     "quote": "Mr. Pitt spoke against this measure, particularly against the dangerous prece- dent of admitting the officers of excise into private houses. Every man’s house was his castle, he said.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. 'prece- dent' is a line-break hyphen kept as it appears in the OCR. The sentence continues: 'If this tax is endured, it will necessarily lead to introducing the laws of excise into the domestic concerns of every private family'. IA metadata: vol. 15, 1813. This is the passage the U.S. Supreme Court quotes in Miller n.7."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-entick-camden-dicta-certainly-spoken",
+   "status": "OK",
+   "issues": [
+    "No errors found. Lincoln's Inn says Hargrave's State Trials report 'did not appear until 1781', that two manuscript reports closer to the decision (Moore's, in the Hardwicke Papers at the British Library, and Lincoln's Inn MS Misc 562) lack the dicta, and that 'It has been argued that Moore's report ... is more authoritative'. Arvind and Burset (110 Ky. L.J. 265, 2022) say 'Moore's report contains neither of those statements' and argue it 'is more reliable than previously published reports'. They quote Moore's 'dearest property' passage, noting 'Like Hargrave, Moore has Camden describing papers as a man's dearest property'.",
+    "Context, no change needed: Wilson's short printed report (1770) also exists. Arvind and Burset treat the two famous passages as features of Hargrave's version. UNVERIFIED is the right verdict."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The page also names Arvind & Burset (2022) and Leeming (2020) 49 Australian Bar Review 199."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched from the White Rose eprint (accepted version): --check FOUND. The quote comes from the Appendix transcription of Moore's report and is also quoted in Part III. The paper says the report was 'prepared for Attorney General Charles Yorke based on notes taken in court by the barrister Edward Moore'."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-franklin-essential-liberty-quote-about-privacy",
+   "status": "FIXED",
+   "issues": [
+    "Source[0] could not be re-read. Every request to web.archive.org failed: fetch-text.py and curl got 'Connection reset by peer', the proxy logged 'ws_closed_mid_exchange', and WebFetch refuses web.archive.org. founders.archives.gov itself returns HTTP 202 with an empty body. The source is set to PENDING.",
+    "Source[0]'s URL uses the 'web/2024/' wildcard, but its note says the 20250106085121 snapshot was read. The exact snapshot URL is proposed so the two agree.",
+    "I found a readable primary copy to replace it: the Minutes of the Provincial Council of Pennsylvania (Colonial Records of Pennsylvania, vol. VI, Harrisburg: Theo. Fenn, 1851). It prints 'A Message to the Governor from the Assembly' containing 'Those who would give up essential Liberty to purchase a Little Temporary safety deserve neither Liberty nor safety.' The message is signed 'ISAAC NORRIS, Speaker. November 11th, 1755' and is addressed to Governor Robert Hunter Morris. This confirms the date, the author (the Assembly) and the addressee. Nearby text on the Proprietaries refusing to contribute and their 'Claim of Exemption' confirms the tax-and-defence context. Added.",
+    "The correction text is accurate and is unchanged."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "PENDING", "url": "https://web.archive.org/web/20250106085121/https://founders.archives.gov/documents/Franklin/01-06-02-0107", "note": "Could not be re-verified on 2026-09-23. Every attempt to reach web.archive.org (fetch-text.py, curl, WebFetch) failed with connection reset or a refused host, and founders.archives.gov returns HTTP 202 with an empty body. The URL is changed from the 'web/2024/' wildcard to the snapshot the original note says was read. The wording is independently confirmed by the Colonial Records source appended to this record and by the Lawfare article."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The page carries 'July 15, 2011'. It also quotes the sentence verbatim ('Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety') and calls it a 1755 letter 'Franklin is presumed to have written on behalf of the Pennsylvania Assembly to the colonial governor'."}
+   ],
+   "addSources": [
+    {
+     "institution": "Colonial Records of Pennsylvania, vol. VI: Minutes of the Provincial Council (Harrisburg: Theo. Fenn & Co., 1851) — Internet Archive OCR",
+     "title": "A Message to the Governor from the Assembly, 11 November 1755",
+     "date": "1755-11-11",
+     "url": "https://archive.org/download/colonialrecordsov6harr/colonialrecordsov6harr_djvu.txt",
+     "quote": "Those who would give up essential Liberty to purchase a Little Temporary safety deserve neither Liberty nor safety.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The message is entered in the Council minutes of 12 November 1755 and ends 'Signed by order of the House. \"ISAAC NORRIS, Speaker. \"November 11th, 1755.\"' (also --check FOUND). Governor Robert Hunter Morris presides in the surrounding minutes. The title page reads 'VOL. VI. Containing the proceedings of Council from April 2d, 1754, to January 29th, 1756 ... Harrisburg: Printed by Theo. Fenn & Co. 1851'. Punctuation and capitals differ slightly from the Votes of Assembly text used by Founders Online."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-warren-brandeis-coined-right-to-be-let-alone",
+   "status": "OK",
+   "issues": [
+    "No errors found. The MIT copy carries 'Harvard Law Review. Vol. IV December 15, 1890 No. 5' and the sentence 'what Judge Cooley calls the right \"to be let alone\"'. In Cooley's 3rd edition (1906, Cornell copy on the Internet Archive) the sentence 'The right to one's person may be said to be a right of complete immunity: to be let alone' comes right after the star-page marker [*29], which gives the first-edition page. The first-edition preface is dated 'Ann Arbor, December, 1878', which fits the 1879 publication date. I could not re-read an 1879 copy online (HathiTrust returned 403; the Internet Archive has only the 1906–07 editions)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The page header confirms HLR vol. IV, no. 5, December 15, 1890."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The title page reads 'A Treatise on the Law of Torts ... By Thomas M. Cooley ... Third Edition. By John Lewis ... Chicago: Callaghan & Company. 1906'. The passage follows the star marker [*29]."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-royer-collard-la-vie-privee-doit-etre-muree",
+   "status": "FIXED",
+   "issues": [
+    "The correction is wrong to call the maxim 'a paraphrase' and the words 'descriptive, not a command'. Royer-Collard used the exact words himself in the 1827 Chamber debate on the press bill (the 'loi de justice et d'amour'). Speaking against article 20, which let prosecutors pursue any publication about private life, he said: 'Je répéterai volontiers ce que j'ai dit en 1819 ...; oui, la vie privée doit être murée ... La vie privée doit être murée, mais contre quoi? contre ce qui lui est ennemi apparemment, c'est-à-dire contre la diffamation'. Source: Barante, La vie politique de M. Royer-Collard, vol. 2. So the maxim is his own, from 1827, presented as a restatement of 1819. The myth's real error is the date and wording given to the 1819 speech. The verdict stays MISLEADING; the correction is rewritten.",
+    "The claim that the 1819 law does not use 'vie privée' had no quote attached. Halpérin says it directly: 'L'expression « vie privée » n'apparaît pas dans la loi' (the press law of 17 May 1819). Added. The correction now names that law.",
+    "Checked OK: Halpérin gives the 1819 speech's date as 27 April 1819 and the wording 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons'. I could not reach an independent 1819 text (Archives parlementaires, 2e série, for 1819 is not on the Internet Archive), so the date rests on Halpérin."
+   ],
+   "fieldFixes": {
+    "correction": "The words are Royer-Collard's own, but not from 1819. In his speech of 27 April 1819 on the press laws he said, descriptively, 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — so there is private life walled in. The maxim 'la vie privée doit être murée' comes from his speech in the 1827 Chamber debate on a new press bill, where he said he was repeating what he had said in 1819. He then limited it at once: private life should be walled in against defamation, not against the publication of indifferent or honourable acts. The press law of 17 May 1819 itself does not use the expression 'vie privée'."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: --check FOUND. The context links the speech to the defamation provisions of the de Serre laws. Footnote 12 notes that Justice Minister Pleven alluded to the 'mur de la vie privée' in 1970."}
+   ],
+   "addSources": [
+    {
+     "institution": "Prosper de Barante, La vie politique de M. Royer-Collard, ses discours et ses écrits, vol. 2 (Paris: Didier, 1863) — Internet Archive OCR",
+     "title": "Loi sur la presse (1827): Royer-Collard on article 20 (publication of acts of private life)",
+     "date": "1827",
+     "url": "https://archive.org/download/laviepolitiquede02barauoft/laviepolitiquede02barauoft_djvu.txt",
+     "quote": "Je répéterai volontiers ce que j'ai dit en 1819, et ce que la commission a bien voulu rappeler; oui, la vie privée doit être ... La vie privée doit être murée , mais contre quoi? contre ce qui lui est ennemi apparemment",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The ellipsis covers an OCR-garbled 'murée' ('nmyx'e') and the sentences between. Barante introduces the speech: 'L'article 20 du projet amendé par la commission admettait que toute publication sur les actes de la vie privée pouvait être poursuivie par le ministère public. M. Royer-Collard demanda que l'article fût rejeté.' (--check FOUND). The bill is the one a Moniteur article called 'une loi de justice et d'amour', debated from 13 February (1827). Barante's vol. 1 also says Royer-Collard's domestic life 'selon son expression, doit rester murée'."
+    },
+    {
+     "institution": "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
+     "title": "Jean-Louis Halpérin, 'Protection de la vie privée et privacy : deux traditions juridiques différentes ?'",
+     "date": "2015",
+     "url": "https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/protection-de-la-vie-privee-et-privacy-deux-traditions-juridiques-differentes",
+     "quote": "L’expression « vie privée » n’apparaît pas dans la loi, mais elle n’était pas ignorée des contemporains.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The preceding sentence identifies 'la loi ... sur la presse du 17 mai 1819 (une des trois lois « de Serre »)'. Halpérin adds that the ephemeral law of 11 May 1868 was the one that mentioned private life."
+    }
+   ]
+  }
+ ]
+}

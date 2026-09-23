@@ -1,0 +1,366 @@
+{
+  "slice": "surveillance",
+  "chunk": 5,
+  "verdicts": [
+    {
+      "kind": "quant",
+      "id": "quant-carpenter-location-points-2018",
+      "status": "OK",
+      "issues": [
+        "No error. Fresh fetch 2026-09-23 of the slip opinion PDF: quote FOUND in the Syllabus; header reads 'No. 16–402. Argued November 29, 2017—Decided June 22, 2018'. 'Without a warrant' is right: the syllabus says the records were obtained under Stored Communications Act court orders (§2703(d)), and 'The Government did not obtain a warrant supported by probable cause before acquiring Carpenter's cell-site records.'",
+        "Minor nuance, no change needed: the majority opinion explains that MetroPCS produced 127 days of records and Sprint a further two days, and that 'Altogether the Government obtained 12,898 location points ... an average of 101 data points per day'. The '127 days' unit follows the Court's own syllabus wording."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim in the Syllabus. Decided June 22, 2018 (date correct); title/institution correct."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "quant",
+      "id": "quant-kochava-sample-devices-2022",
+      "status": "OK",
+      "issues": [
+        "No error. Press release (dated August 29, 2022 on the page) quote FOUND. The label's word 'free' is not in the press release (which says 'publicly available data sample') but is supported by the complaint, added below. The complaint (Doc. 1, filed 08/29/22) says the sample covered 'a rolling seven-day period' and that 'one day of the Kochava Data Sample contained over 327,480,000 rows ... corresponding to over 61,803,400 unique mobile devices' — i.e. one day's download of a seven-day sample; consistent with the press release's 'in the previous week'. Notes' 'hundreds of millions of devices' is verbatim in the press release ('derived from hundreds of millions of mobile devices')."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Page dated August 29, 2022."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "US Federal Trade Commission (complaint, US District Court for the District of Idaho)",
+          "title": "FTC v. Kochava Inc., Case No. 2:22-cv-377 — Complaint for Permanent Injunction and Other Relief",
+          "date": "2022-08-29",
+          "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/1.%20Complaint.pdf",
+          "quote": "Kochava typically charges a monthly subscription fee of thousands of dollars to access its location data feed but has also offered a free sample (the “Kochava Data Sample”).",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND (para. 12). Para. 14: 'The Kochava Data Sample consisted of a subset of the paid data feed, covering a rolling seven-day period.' and '... corresponding to over 61,803,400 unique mobile devices.' Linked from the FTC press release."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "quant-clearview-claimed-face-images-2022",
+      "status": "OK",
+      "issues": [
+        "No error. Garante press release (signed 'Roma, 9 marzo 2022') quote FOUND; 'dichiara di possedere' supports 'company's own claim'. The same page carries the Garante's own English version, added below for English readers. Context only: by September 2024 the Dutch DPA put the database at 'more than 30 billion photos', so the 10 billion figure must stay tied to 2022, as the record does."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Page dated 'Roma, 9 marzo 2022' / 'Rome, 9 March 2022'. Related decision: 'Ordinanza ingiunzione nei confronti di Clearview AI - 10 febbraio 2022 [9751362]'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Garante per la protezione dei dati personali (Italy) — English version of press release",
+          "title": "Facial recognition: Italian SA fines Clearview AI eur 20 million",
+          "date": "2022-03-09",
+          "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9751323",
+          "quote": "The company reportedly owns a database including over 10 billion facial images from all over the world, which are extracted from public web sources (media outlets, social media, online videos) via web scraping.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND. The English text is on the same docweb page below the Italian original, signed 'Rome, 9 March 2022'."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "quant-california-prop-24-yes-share-2020",
+      "status": "FIXED",
+      "issues": [
+        "Figures are correct but the source was left PENDING with a quote (the ballot label) that does not support the number. The PDF text layer does in fact carry the Proposition 24 State Totals row contiguously: '9,384,625 56.2% 7,305,431 43.8%' (checks FOUND), and the 'Official Declaration of the Vote Results on November 3, 2020, State Ballot Measures' lists Prop 24 'Amends Consumer Privacy Laws. Initiative Statute.' under 'The following proposed laws were approved by voters:'. 9,384,625 / (9,384,625 + 7,305,431) = 56.23%, so 56.2 is right. Independent cross-check: Ballotpedia's certified-results table shows Yes 56.23% 9,384,625, No 43.77% 7,305,431.",
+        "Notes field still says the figures could not be read as a continuous quotation; update it."
+      ],
+      "fieldFixes": {
+        "notes": "Yes 9,384,625 (56.2%); No 7,305,431 (43.8%) — the State Totals row for Proposition 24 in the Secretary of State's Statement of Vote for the 3 November 2020 general election, which also lists the measure among 'proposed laws ... approved by voters'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "quote": "9,384,625 56.2% 7,305,431 43.8%",
+          "note": "Fresh fetch 2026-09-23: FOUND. This is the Proposition 24 ('Amends Consumer Privacy Laws') column of the State Totals row of the county-by-county ballot-measure table (p. 66), read as Yes votes, Yes %, No votes, No %. The same figures appear in the Official Declaration of the Vote Results under 'The following proposed laws were approved by voters:' next to 'Amends Consumer Privacy Laws. Initiative Statute.' (both strings also check FOUND). Cover: 'Statement of Vote, General Election, November 3, 2020, Secretary of State Alex Padilla'; the certification date is not in the text layer, so the 2020-12 date is kept."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "myth",
+      "id": "myth-gdpr-requires-cookie-banners",
+      "status": "OK",
+      "issues": [
+        "No error found. All three quotes FOUND on fresh fetch. Checked: the Article 5(3) replacement is point (5) of Article 2 ('Amendments to Directive 2002/58/EC') of Directive 2009/136/EC of 25 November 2009, OJ L 337, 18.12.2009 — title correct. The GDPR text (OJ L 119, 4.5.2016, dated 27 April 2016) contains the word 'cookie' exactly once, in recital 30, so 'mentions cookie identifiers only as an example of online identifiers' holds. Planet49 (C-673/17) is a Grand Chamber judgment of 1 October 2019 and the operative ruling reads Art. 2(f) and 5(3) of Directive 2002/58 'read in conjunction with' Art. 4(11) and 6(1)(a) of the GDPR, so 'read the two together' is accurate.",
+        "Nit, no change required: 'seven years before the GDPR' is right if you count from adoption (2009 to 2016). The GDPR applied from 2018, nine years after 2009."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND, introduced by 'Article 5(3) shall be replaced by the following:' under point (5) of Article 2."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND at recital (30); only occurrence of 'cookie' in the Regulation."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND in operative point 1 after 'On those grounds, the Court (Grand Chamber) hereby rules:'. Header: 'JUDGMENT OF THE COURT (Grand Chamber) 1 October 2019'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "myth",
+      "id": "myth-gdpr-applies-only-in-the-eu",
+      "status": "FIXED",
+      "issues": [
+        "The correction's second example, 'the Dutch authority's €30.5 million fine (2024)', had no source and does not say whom it fined. The Dutch DPA page (dated 3 September 2024) confirms a €30.5 million fine on Clearview AI and says Clearview is 'an American company without an establishment in Europe', which is exactly the Article 3(2) situation. Sources added and the wording clarified.",
+        "Existing sources: Article 3(2) quote FOUND (continues with points (a) offering goods or services and (b) monitoring behaviour, as the note says); Garante quote FOUND, page signed 'Roma, 9 marzo 2022'."
+      ],
+      "fieldFixes": {
+        "correction": "Article 3(2) extends the GDPR to controllers and processors outside the Union that offer goods or services to people in the Union or monitor their behaviour there. EU authorities have fined non-EU firms on that basis — for example Italy's €20 million fine on the US company Clearview AI (2022) and the Dutch authority's €30.5 million fine on the same company (2024), which noted that Clearview has no establishment in Europe."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND as paragraph 2 of Article 3 'Territorial scope'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; page signed 'Roma, 9 marzo 2022'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
+          "title": "Dutch DPA imposes a fine on Clearview because of illegal data collection for facial recognition",
+          "date": "2024-09-03",
+          "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition",
+          "quote": "The Dutch Data Protection Authority (Dutch DPA) imposes a fine of 30.5 million euro and orders subject to a penalty for non-compliance up to more than 5 million euro on Clearview AI. Clearview is an American company that offers facial recognition services.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND. Page <time datetime=\"2024-09-03T12:00:00Z\">. (An older English URL slug, 'dutch-supervisory-authority-imposes-a-fine-on-clearview...', returns 404; this is the live English URL linked from the Dutch original.)"
+        },
+        {
+          "institution": "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
+          "title": "Dutch DPA imposes a fine on Clearview because of illegal data collection for facial recognition — non-EU establishment",
+          "date": "2024-09-03",
+          "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition",
+          "quote": "Clearview is an American company without an establishment in Europe.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND. The next sentence reads: 'Other data protection authorities have already fined Clearview at various earlier occasions, but the company does not seem to adapt its conduct.'"
+        }
+      ]
+    },
+    {
+      "kind": "myth",
+      "id": "myth-cambridge-analytica-hacked-facebook",
+      "status": "FIXED",
+      "issues": [
+        "'The Observer's first report called it a \"data breach\"' is wrong on 'first'. The Guardian first reported the harvesting on 11 December 2015 ('Ted Cruz using firm that harvested data on millions of unwitting Facebook users'). The Observer's own 17 March 2018 article says Facebook acted 'more than two years after the data breach was first reported'. The 2018 exposé's headline does say 'major data breach'. It was also unsourced; sources added.",
+        "'charged Cambridge Analytica, its CEO and Kogan': the FTC names Alexander Nix as Cambridge Analytica's FORMER chief executive ('its former Chief Executive Officer Alexander Nix').",
+        "The '270,000' figure was not supported by any quoted source. Facebook's newsroom post says 'Approximately 270,000 people downloaded the app'; that sentence is added as a source.",
+        "All three existing quotes FOUND on fresh fetch. The Facebook quote is in the 'Update on March 17, 2018, 9:50 AM PT' paragraph, which begins 'The claim that this is a data breach is completely false.' The FTC page is dated July 24, 2019."
+      ],
+      "fieldFixes": {
+        "correction": "No Facebook system was broken into. The data came through a personality-quiz app built by Aleksandr Kogan that about 270,000 people installed and that, under Facebook's platform rules of the time, could also collect information about their friends. The US FTC charged Facebook with deceiving users by sharing friends' data with app developers even when those friends had chosen more restrictive settings, and charged Cambridge Analytica, its former chief executive Alexander Nix and Kogan with using deceptive tactics to harvest the data. The Guardian first reported the harvesting in December 2015; the Observer's March 2018 exposé headlined it a 'major data breach'. The harm was a breach of trust and of stated preferences rather than a hack."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND in the 'Update on March 17, 2018, 9:50 AM PT' paragraph; post originally published March 16, 2018, by Paul Grewal."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; page dated July 24, 2019. Note the text says 'former Chief Executive Officer Alexander Nix'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Facebook (Meta) Newsroom",
+          "title": "Suspending Cambridge Analytica and SCL Group From Facebook (Paul Grewal) — how the data was obtained",
+          "date": "2018-03-16",
+          "url": "https://about.fb.com/news/2018/03/suspending-cambridge-analytica/",
+          "quote": "Approximately 270,000 people downloaded the app. In so doing, they gave their consent for Kogan to access information such as the city they set on their profile, or content they had liked, as well as more limited information about friends who had their privacy settings set to allow it.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND in the section 'Originally published on March 16, 2018'. The app was 'thisisyourdigitallife'."
+        },
+        {
+          "institution": "The Observer / The Guardian",
+          "title": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach (Carole Cadwalladr and Emma Graham-Harrison)",
+          "date": "2018-03-17",
+          "url": "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+          "quote": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND (headline); article:published_time 2018-03-17T22:03Z. Same article: 'On Friday, four days after the Observer sought comment for this story, but more than two years after the data breach was first reported, Facebook announced that it was suspending Cambridge Analytica'."
+        },
+        {
+          "institution": "The Guardian",
+          "title": "Ted Cruz using firm that harvested data on millions of unwitting Facebook users (Harry Davies)",
+          "date": "2015-12-11",
+          "url": "https://www.theguardian.com/us-news/2015/dec/11/senator-ted-cruz-president-campaign-facebook-user-data",
+          "quote": "Ted Cruz using firm that harvested data on millions of unwitting Facebook users",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND (headline); article:published_time 2015-12-11T22:22Z. Names Dr Aleksandr Kogan and SCL, which shows the harvesting was first reported in December 2015."
+        }
+      ]
+    },
+    {
+      "kind": "myth",
+      "id": "myth-prism-direct-access-to-servers",
+      "status": "FIXED",
+      "issues": [
+        "Substance checks out. PCLOB report is dated 'JULY 2, 2014' on its cover and the quote is FOUND (executive summary). The note's second quote is also verbatim at the body description: 'In PRISM collection, the government (specifically, the FBI on behalf of the NSA) sends selectors — such as an email address — to a United States–based electronic communications service provider ... that has been served a directive.' That supports 'served with a directive'.",
+        "Guardian source date is off by one. The page currently displays 'Fri 7 Jun 2013 15.23 EDT', a later republication timestamp. The story first ran on Thursday 6 June 2013: the URL path is /2013/jun/06/, the article's images were uploaded 6 June 2013 20:51–22:24 UTC, and the text refers to companies responding 'on Thursday' (6 June). PRISM is generally dated to its 6 June 2013 disclosure by the Guardian and the Washington Post.",
+        "The correction says 'the companies denied giving any such access'. The quoted Guardian line only says they 'denied knowledge of any such program'. Google's explicit 'no back door' denial in the same article is added."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Cover: 'Report on the Surveillance Program Operated Pursuant to Section 702 of the Foreign Intelligence Surveillance Act, JULY 2, 2014'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "date": "2013-06-06",
+          "note": "Fresh fetch 2026-09-23: FOUND. Date changed to first publication (URL /2013/jun/06/; image assets uploaded 6 June 2013 20:51 UTC; 'on Thursday' = 6 June). The page now shows a republication stamp 'Fri 7 Jun 2013 15.23 EDT'. The note's 'denied knowledge of any such program' sentence is verbatim."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "The Guardian",
+          "title": "NSA Prism program taps in to user data of Apple, Google and others — Google statement",
+          "date": "2013-06-06",
+          "url": "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
+          "quote": "From time to time, people allege that we have created a government 'back door' into our systems, but Google does not have a back door for the government to access private user data.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND. The article introduces it as 'In a statement, Google said:'."
+        }
+      ]
+    },
+    {
+      "kind": "myth",
+      "id": "myth-google-killed-third-party-cookies",
+      "status": "FIXED",
+      "issues": [
+        "Only one source, the CMA 2025 decision, and it covers only July 2024 and April 2025. The January 2020 announcement ('within two years') and the repeated delays had no source. Sources added: the CMA's 11 June 2021 notice quotes the 14 January 2020 announcement verbatim. (The Chromium Blog original keeps its post body inside a script template, so the checker cannot read it.) Google's June 2021 and July 2022 posts document the delays.",
+        "An important nuance was missing. Chrome did restrict third-party cookies by default for 1% of users globally, from 4 January 2024 (Google, 14 December 2023). The CMA's October 2025 decision records Google telling it those users' 'original 3PCs settings ... will be restored'. Chrome's Incognito mode also 'already blocks third-party cookies by default' (Google, April 2025). The verdict FALSE still stands for Chrome's general default, but the correction should state these facts so a reader who saw the 1% test or Incognito behaviour is not misled.",
+        "Existing source: quote FOUND; decision dated 17 October 2025 on its cover. Institution and title are correct."
+      ],
+      "fieldFixes": {
+        "correction": "Google announced on 14 January 2020 that it planned to phase out third-party cookies in Chrome 'within two years', then delayed the plan repeatedly (in June 2021 and July 2022, among others). From January 2024 it restricted third-party cookies by default for 1% of Chrome users as a test, but in July 2024 it dropped deprecation in favour of offering users a choice. In April 2025 it dropped even the standalone choice prompt and confirmed it would not go back to removing third-party cookies; it told the UK CMA that the 1% test group's original settings would be restored, and the CMA released its commitments in October 2025. Only Chrome's Incognito mode blocks third-party cookies by default."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND at para. 1.3; decision dated 17 October 2025. Para. 5.27 records Google's statement that the 1% of users with TPCs restricted will have their original settings restored."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "UK Competition and Markets Authority",
+          "title": "Notice of intention to accept commitments offered by Google in relation to its Privacy Sandbox Proposals (Case 50972)",
+          "date": "2021-06-11",
+          "url": "https://assets.publishing.service.gov.uk/media/60c21e54d3bf7f4bcc0652cd/Notice_of_intention_to_accept_binding_commitments_offered_by_Google_publication.pdf",
+          "quote": "On 14 January 2020 Google announced that “… we plan to phase out support for third-party cookies in Chrome. Our intention is to do this within two years.”",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND (para. 5.86). Para. 3.22(c): '14 January 2020: Google first announced its intent to remove TPCs from Chrome.' The CMA cites Chromium Blog, 'Building a more private web: A path towards making third-party cookies obsolete' (Justin Schuh, Tuesday, January 14, 2020). That original is at https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html; the words are in its raw HTML but the checker cannot read them."
+        },
+        {
+          "institution": "Google (The Keyword blog)",
+          "title": "An updated timeline for Privacy Sandbox milestones (Vinay Goel)",
+          "date": "2021-06-24",
+          "url": "https://blog.google/products/chrome/updated-timeline-privacy-sandbox-milestones/",
+          "quote": "While there’s considerable progress with this initiative, it's become clear that more time is needed across the ecosystem to get this right.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND; page dated Jun 24, 2021. The post moved the phase-out to 'Stage 2 (Starting mid-2023) ... finishing in late 2023'."
+        },
+        {
+          "institution": "Google (The Keyword blog)",
+          "title": "Expanding testing for the Privacy Sandbox for the web",
+          "date": "2022-07-27",
+          "url": "https://blog.google/products/chrome/update-testing-privacy-sandbox-web/",
+          "quote": "As developers adopt these APIs, we now intend to begin phasing out third-party cookies in Chrome in the second half of 2024.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND; page dated Jul 27, 2022."
+        },
+        {
+          "institution": "Google (The Keyword blog)",
+          "title": "The next step toward phasing out third-party cookies in Chrome",
+          "date": "2023-12-14",
+          "url": "https://blog.google/products/chrome/privacy-sandbox-tracking-protection/",
+          "quote": "On January 4, we'll begin testing Tracking Protection, a new feature that limits cross-site tracking by restricting website access to third-party cookies by default. We'll roll this out to 1% of Chrome users globally",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND; page dated Dec 14, 2023 (so 'January 4' = 4 January 2024)."
+        },
+        {
+          "institution": "Google (Privacy Sandbox)",
+          "title": "A new path for Privacy Sandbox on the web (Anthony Chavez)",
+          "date": "2024-07-22",
+          "url": "https://privacysandbox.com/news/privacy-sandbox-update/",
+          "quote": "Instead of deprecating third-party cookies, we would introduce a new experience in Chrome that lets people make an informed choice that applies across their web browsing, and they'd be able to adjust that choice at any time.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND; page dated Jul 22, 2024."
+        },
+        {
+          "institution": "Google (Privacy Sandbox)",
+          "title": "Next steps for Privacy Sandbox and tracking protections in Chrome (Anthony Chavez)",
+          "date": "2025-04-22",
+          "url": "https://privacysandbox.com/news/privacy-sandbox-next-steps/",
+          "quote": "we've made the decision to maintain our current approach to offering users third-party cookie choice in Chrome, and will not be rolling out a new standalone prompt for third-party cookies.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND; page dated April 22, 2025. Same post: 'We'll continue to enhance tracking protections in Chrome's Incognito mode, which already blocks third-party cookies by default.' (also FOUND)."
+        },
+        {
+          "institution": "UK Competition and Markets Authority",
+          "title": "Decision to release the commitments previously accepted by the CMA in respect of Google's Privacy Sandbox proposals — para. 5.27 (1% test group)",
+          "date": "2025-10-17",
+          "url": "https://assets.publishing.service.gov.uk/media/68f213ce06e6515f7914c728/Decision_to_release_the_commitments_previously_accepted_by_the_CMA_in_respect_of_Google_s_Privacy_Sandbox_proposals.pdf",
+          "quote": "Google has told the CMA that ‘the 1% of users who have TPCs restricted will be notified that their original 3PCs settings, which were changed by default, will be restored to their original state in line with Google’s decision to maintain the current approach to TPCs on Chrome.’",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND."
+        }
+      ]
+    }
+  ]
+}

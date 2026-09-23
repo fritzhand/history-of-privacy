@@ -1,0 +1,259 @@
+{
+ "slice": "agents",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "rfc-9309-robots-exclusion-protocol-2022",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes re-fetched from rfc-editor.org: --check FOUND. Date (September 2022), Standards Track status and title confirmed on the page.",
+    "Summary says the RFC was authored by Koster 'and three Google engineers'. The RFC lists Gary Illyes, Henner Zeller and Lizzi Sassman only as 'Google LLC' (Authors' Addresses); it gives no job titles, and Lizzi Sassman is not an engineer (Google Search Central technical writer). Reworded to 'three co-authors from Google'. Koster is listed with a private UK address, no affiliation.",
+    "Significance calls robots.txt 'the web's oldest machine-readable preference signal' - an unsourced superlative; softened to 'one of the web's oldest'.",
+    "Source index 1 note says the bracketed '[ ROBOTSTXT ]' is reproduced as on the page; the raw HTML actually reads '\"Robots Exclusion Protocol\" [ROBOTSTXT] that crawlers' with no inner spaces - the spaces are inserted by fetch-text.py at the link boundary. Quote left unchanged because the helper only matches the spaced form; cosmetic only.",
+    "Place: IETF Administration LLC postal address confirmed on ietf.org/contact as '1000 N West Street, Suite 1200 Wilmington, DE 19801'; coordinates are within ~300 m. Acceptable as a mapped proxy (locationNote already explains)."
+   ],
+   "fieldFixes": {
+    "summary": "The Robots Exclusion Protocol - the robots.txt convention that Martijn Koster defined in 1994 and that crawlers had followed informally ever since - was published as Standards Track RFC 9309 in September 2022, authored by Koster and three co-authors from Google (Gary Illyes, Henner Zeller and Lizzi Sassman). It specifies rules that 'crawlers are requested to honor' and states plainly that these rules 'are not a form of access authorization'.",
+    "significance": "One of the web's oldest machine-readable preference signals was standardised on the eve of generative AI - a publisher-side, request-only signal that later AI-era schemes would extend, and that no individual can use to state terms about themselves."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND (section 1, Introduction)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND. Raw HTML reads [ROBOTSTXT] without inner spaces; the spaces come from the text extractor."}
+   ],
+   "addSources": [
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force (IETF)",
+     "title": "RFC 9309: Robots Exclusion Protocol (Abstract)",
+     "date": "2022-09",
+     "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+     "quote": "This document specifies and extends the \"Robots Exclusion Protocol\" method originally defined by Martijn Koster in 1994 for service owners to control how content served by their services may be accessed, if at all, by automatic clients known as crawlers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Authors' Addresses on the same page: Martijn Koster (Wymondham, Norfolk, UK); Gary Illyes, Henner Zeller and Lizzi Sassman, all 'Google LLC'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "chatgpt-research-preview-2022",
+   "status": "OK",
+   "issues": [
+    "Both quotes --check FOUND on the Wayback capture 20221130180912 (30 Nov 2022, 18:09 UTC) of openai.com/blog/chatgpt/.",
+    "Same capture confirms 'We've trained a model called ChatGPT which interacts in a conversational way', 'ChatGPT is fine-tuned from a model in the GPT-3.5 series', and 'Try it now at chat.openai.com'. Date 30 November 2022 consistent with the capture date; BBC (31 Mar 2023) independently says ChatGPT 'launched in November 2022'.",
+    "Place: Wikipedia's OpenAI article confirms the company moved to the Pioneer Building in the Mission District in 2016 (its 'former headquarters'); coordinates are within ~100 m of 3180 18th Street. OK."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 via the Wayback capture: --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 via the Wayback capture: --check FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "garante-limits-chatgpt-2023",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND on garanteprivacy.it. The order text confirms 'Registro dei provvedimenti n. 112 del 30 marzo 2023', signed by the President (Stanzione) under the urgency procedure; it finds no information notice to users or data subjects, no suitable legal basis for training, inaccurate data, and no age verification; limitation applies to all data subjects established in Italy; 20 days to report measures. The English press release (doc. web 9870847) is signed 'Roma, 31 March 2023'.",
+    "The EUR 20 million / 4% figure is not in either quoted passage (the order itself only cites art. 83(5)(e) GDPR); it is stated in the press release. Added that sentence as a source so the number is backed.",
+    "Significance says it was 'The first regulator to stop a general-purpose chatbot' - overstated. BBC (31 Mar 2023) reports Italy was 'the first Western country to block' ChatGPT and notes ChatGPT was 'already blocked in a number of countries, including China, Iran, North Korea and Russia'. Reworded to 'first Western country'."
+   ],
+   "fieldFixes": {
+    "significance": "Italy became the first Western country to halt ChatGPT, and it did so through its data-protection authority on privacy grounds - establishing that training and running AI on people's data needs a lawful basis the person can see."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND in the order text (doc. web 9870832, Registro n. 112 del 30 marzo 2023)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND; English release signed 'Roma, 31 March 2023'."}
+   ],
+   "addSources": [
+    {
+     "institution": "Garante per la protezione dei dati personali (Italian Data Protection Authority)",
+     "title": "Artificial intelligence: stop to ChatGPT by the Italian SA (press release, doc. web n. 9870847) - deadline and fine",
+     "date": "2023-03-31",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870847",
+     "quote": "It will have to notify the Italian SA within 20 days of the measures implemented to comply with the order, otherwise a fine of up to EUR 20 million or 4% of the total worldwide annual turnover may be imposed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23."
+    },
+    {
+     "institution": "BBC News",
+     "title": "ChatGPT banned in Italy over privacy concerns (Shiona McCallum)",
+     "date": "2023-03-31",
+     "url": "https://www.bbc.com/news/technology-65139406",
+     "quote": "Italy has become the first Western country to block advanced chatbot ChatGPT.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23 (datePublished 2023-03-31T13:08Z). Same article: 'ChatGPT is already blocked in a number of countries, including China, Iran, North Korea and Russia.' (--check FOUND) - which is why the claim is 'first Western country', not 'first regulator'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "dpdp-act-india-2023",
+   "status": "FIXED",
+   "issues": [
+    "Gazette PDF re-fetched from meity.gov.in: section 2(g) quote --check FOUND; section 6(8) 'The Consent Manager shall be accountable to the Data Principal and shall act on...' FOUND; header 'NEW DELHI, FRIDAY, AUGUST 11, 2023' and 'received the assent of the President on the 11th August, 2023' confirmed. Summary is accurate.",
+    "PIB backgrounder quote --check FOUND; page shows 'Posted On: 17 NOV 2025 10:44AM by PIB Delhi' - date correct. Caveat: PIB's 'Parliament enacted ... on 11 August 2023' conflates enactment with assent (the Houses passed the Bill earlier that week); the Gazette is the controlling source for the 11 August date and the record correctly frames it as assent.",
+    "Significance opens with 'The largest new privacy law of the AI era' - an unsourced, undefined superlative (largest by what measure?). Removed.",
+    "Place 'Parliament House' for an assent given by the President is a loose mapping, but locationNote says 'Seat of the Parliament of India'; acceptable."
+   ],
+   "fieldFixes": {
+    "significance": "India's data-protection law wrote a regulated intermediary acting for the person into statute - a legal precedent for software that manages a person's permissions on the person's side."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: s.2(g) quote FOUND; s.6(8) and the 11 Aug 2023 Gazette header/assent line also found."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: FOUND; posted 17 Nov 2025. PIB's 'enacted' refers to the assent date."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "eu-parliament-adopts-ai-act-2024",
+   "status": "OK",
+   "issues": [
+    "Press release re-fetched: vote quote --check FOUND; page metadata datetime 2024-03-13T12:25, tagged 'Plenary session'; text says 'On Wednesday, Parliament approved' (13 March 2024 was a Wednesday). Ban on 'untargeted scraping of facial images from the internet or CCTV footage to create facial recognition databases' and GPAI duties 'including compliance with EU copyright law and publishing detailed summaries of the content used for training' both on the page - summary accurate.",
+    "Significance says the Act 'tied AI training to machine-readable rights reservations'. The press release does not say this; the Act's Article 53(1)(c) does tie GPAI providers to rights reservations under Article 4(3) of Directive 2019/790 'including through state-of-the-art technologies' (the 'machine-readable means' wording itself is in the 2019 copyright directive, not the AI Act). Defensible as written; added the Article 53 text as a supporting source.",
+    "'First comprehensive AI statute' echoes rapporteur Benifei's 'world's first binding law on artificial intelligence' on the same page; 'comprehensive' is the defensible qualifier and is already used."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND; page dated 13-03-2024 12:25, 'Plenary session'."}
+   ],
+   "addSources": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 53(1)(c)",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "put in place a policy to comply with Union law on copyright and related rights, and in particular to identify and comply with, including through state-of-the-art technologies, a reservation of rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23 on the Internet Archive capture of the EUR-Lex OJ text (eur-lex.europa.eu bot-challenges scripts)."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "colorado-universal-opt-out-mechanism-2024",
+   "status": "OK",
+   "issues": [
+    "Both quotes --check FOUND on coag.gov/resources/colorado-privacy-act/.",
+    "Neither quoted passage directly states that GPC was the first mechanism the state recognised (source 1 only says the AG would publish a list; source 2 calls GPC 'the state's first universal opt-out mechanism' in passing). Added the AG's UOOM list page, which says so explicitly and ties the 1 July 2024 duty to GPC and to C.R.S. 6-1-1306(1)(a)(IV).",
+    "Place: the Colorado AG sits in the Ralph L. Carr Colorado Judicial Center, 1300 Broadway, Denver; coordinates approximately right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Colorado Attorney General (Colorado Department of Law)",
+     "title": "Universal Opt-Out and the Colorado Privacy Act (Universal Opt-Out Mechanism list)",
+     "date": "n.d. (retrieved 2026-09-23)",
+     "url": "https://coag.gov/uoom/",
+     "quote": "The GPC was the first UOOM to be recognized to meet the standards of the CPA and CPA Rules.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Same page (FOUND): 'Beginning July 1, 2024, businesses falling within the CPA's application thresholds must allow Consumers to opt-out of the Sale of their Personal Data or use of their Personal Data for Targeted Advertising using GPC.' It also says GPC is currently the only UOOM the Department considers valid."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "eu-ai-act-enters-into-force-2024",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND (Commission news page; Wayback capture of EUR-Lex OJ text). OJ text confirms 'of 13 June 2024', 'Done at Brussels, 13 June 2024', OJ L 2024/1689 of 12.7.2024, and Article 113: apply from 2 August 2026; Chapters I-II from 2 February 2025; Chapter V (GPAI) etc. from 2 August 2025; Article 6(1) from 2 August 2027. Dates in the summary are right as enacted.",
+    "Out of date as of 2026-09-23: the Commission's AI Act page (last updated 3 Aug 2026) says the 'AI Omnibus' amendment reached political agreement on 7 May 2026 and entered into force on 27 July 2026, extending Annex III high-risk rules to 2 December 2027 and Annex I (product-embedded) high-risk rules to 2 August 2028. 'Most other provisions from 2 August 2026' without that caveat misleads readers about the high-risk obligations. Summary updated and a source added.",
+    "Significance calls it 'the world's first binding AI rulebook' - overstated (China's generative-AI interim measures were binding from August 2023); changed to 'first comprehensive AI law'. Its copyright hook (Art. 53(1)(c)) refers to reservations 'including through state-of-the-art technologies'; 'machine-readable' is the 2019 copyright directive's wording, so rephrased.",
+    "The two existing quotes end in ' .' - an artefact of fetch-text.py inserting a space at a <strong>/<span> boundary; the pages read 'enters into force.' and '...of the European Union.'. Trimmed the trailing ' .' so the quotes are verbatim (still --check FOUND)."
+   ],
+   "fieldFixes": {
+    "summary": "Regulation (EU) 2024/1689, signed on 13 June 2024 and published in the Official Journal on 12 July 2024, entered into force on 1 August 2024, twenty days after publication. As enacted, its obligations were phased: prohibitions and AI-literacy duties from 2 February 2025, general-purpose AI rules from 2 August 2025, most other provisions from 2 August 2026 and some high-risk rules from 2 August 2027. A 2026 amendment, the 'AI Omnibus' (in force 27 July 2026), then pushed the high-risk rules back to 2 December 2027 and 2 August 2028.",
+    "significance": "It began the clock on the world's first comprehensive AI law, whose copyright hook requires general-purpose AI providers to find and honour rights-holders' text-and-data-mining reservations 'including through state-of-the-art technologies' - a machine-read opt-out for works, not for people."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "quote": "On 1 August 2024, the European Artificial Intelligence Act (AI Act) enters into force", "note": "Re-fetched 2026-09-23: --check FOUND; trailing ' .' removed (extractor artefact)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union", "note": "Re-fetched 2026-09-23 on the Wayback capture: --check FOUND; trailing ' .' removed (extractor artefact at the italic span)."}
+   ],
+   "addSources": [
+    {
+     "institution": "European Commission (Shaping Europe's digital future)",
+     "title": "AI Act - application timeline",
+     "date": "2026-08-03",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+     "quote": "the rules for high-risk AI systems embedded into regulated products ( Annex I ) have an extended transition period until 2 August 2028 and the rules for high-risk use cases in certain sensitive areas ( Annex III ) have been extended to 2 December 2027 as a result of the political agreement on the proposal to simplify the AI Act – ' AI Omnibus '",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23; page 'Last update 3 August 2026'. Same page (FOUND): 'The AI Act entered into force on 1 August 2024 and became applicable on 2 August 2026, with some exceptions:' and 'a political agreement was reached on 7 May 2026 and entered into force on 27 July 2026 .' Spaces around '( Annex I )' and the quote marks are extractor artefacts at link boundaries."
+    },
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 113(b)",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Same article: 'It shall apply from 2 August 2026.', '(a) Chapters I and II shall apply from 2 February 2025;', '(c) Article 6(1) and the corresponding obligations in this Regulation shall apply from 2 August 2027.'"
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "anthropic-computer-use-2024",
+   "status": "OK",
+   "issues": [
+    "Quote --check FOUND on anthropic.com; page shows 'Oct 22, 2024'.",
+    "The summary's claims that Anthropic called it the first frontier model to offer the capability publicly and described it as experimental and error-prone are on the same page but were not in the quoted passage; added that sentence as a source. Page wording: 'Claude 3.5 Sonnet is the first frontier AI model to offer computer use in public beta. At this stage, it is still experimental—at times cumbersome and error-prone.' Summary attributes the 'first' claim to the company, which is correct.",
+    "Place: Wikipedia lists Anthropic's headquarters at 500 Howard Street, San Francisco; coordinates right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND; dated Oct 22, 2024."}
+   ],
+   "addSources": [
+    {
+     "institution": "Anthropic",
+     "title": "Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku (public beta claim)",
+     "date": "2024-10-22",
+     "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+     "quote": "Claude 3.5 Sonnet is the first frontier AI model to offer computer use in public beta.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Next sentence on the page: 'At this stage, it is still experimental—at times cumbersome and error-prone.' (the helper only matches it with a space before the dash because 'experimental' is a link)."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "model-context-protocol-2024",
+   "status": "OK",
+   "issues": [
+    "Both quotes --check FOUND (anthropic.com, dated 'Nov 25, 2024'; linuxfoundation.org release datelined 'SAN FRANCISCO, Dec. 9, 2025').",
+    "The list of pre-built connectors (Google Drive, Slack, GitHub, Git, Postgres, Puppeteer), SDKs and Claude Desktop local server support are on the Anthropic page but not in the quoted passage; added the sentence as a source. The page calls them 'pre-built MCP servers' - 'connectors' in the summary is an acceptable gloss.",
+    "'A year later' (25 Nov 2024 to 9 Dec 2025) is fine; the LF release quotes Anthropic's Mike Krieger on 'Donating MCP to the Linux Foundation as part of the AAIF', confirming the donation framing."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND; dated Nov 25, 2024."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23: --check FOUND; datelined Dec. 9, 2025."}
+   ],
+   "addSources": [
+    {
+     "institution": "Anthropic",
+     "title": "Introducing the Model Context Protocol (pre-built servers)",
+     "date": "2024-11-25",
+     "url": "https://www.anthropic.com/news/model-context-protocol",
+     "quote": "To help developers start exploring, we’re sharing pre-built MCP servers for popular enterprise systems like Google Drive, Slack, GitHub, Git, Postgres, and Puppeteer.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Same page lists 'The Model Context Protocol specification and SDKs' and 'Local MCP server support in the Claude Desktop apps'."
+    }
+   ]
+  }
+ ]
+}

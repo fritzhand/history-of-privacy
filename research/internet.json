@@ -1,6 +1,6 @@
 {
  "slice": "internet",
- "notes": "",
+ "notes": "Slice \"internet\" (1994 to 2012, with the 2018-2019 retirement of P3P and DNT as the closing record). Scope: the HTTP cookie and its standards track (Netscape 1994, RFC 2109 in 1997, RFC 6265 in 2011); notice-and-consent law and policy in the US (FTC 1998 survey, HIPAA and COPPA, the FTC's 2010 and 2012 reports, the 2012 Consumer Privacy Bill of Rights) and the EU (Directive 95/46/EC, Safe Harbor, the ePrivacy Directive and its 2009 consent amendment, the 2012 GDPR proposal); privacy shocks (FT cookie exposé 1996, McNealy 1999, DoubleClick-Abacus 2000-01, PATRIOT Act, AOL 2006, Facebook Beacon 2007, Netflix Prize 2008); the first machine-readable privacy mechanisms (P3P full and compact policies, IE6 cookie filtering, the 2010 CMU 'Token Attempt' study, the 2012 Google/Facebook P3P bypass; Do Not Track from the 2009 prototype through Firefox 4, the W3C working group, IE10's default and the 2019 end); and the birth of VRM (Cluetrain 1999, Searls's 'Intention Economy' 2006, ProjectVRM 2006, the 2012 book). Extra array 'signals' describes P3P full policies, P3P compact policies and DNT: who speaks, what the signal says, its legal force and its fate. The key contrast for the IEEE 7012 story: in P3P the SITE states its policy and the person only sets preferences; in DNT the PERSON's browser speaks, but only one bit, with no legal force; neither lets the person proffer terms.\n\nMethod: sources found with web search; every quote was captured from the page text printed by tools/fetch-text.py and checked with --check. All quotes pass --check except three that the helper's paragraph extractor cannot see because the blog body is in div elements (Montulli's 2013 cookie post, used twice, and Soghoian's 2011 DNT history); those were verified against the full page text and are flagged in their notes. EUR-Lex returns an empty bot-challenge page to scripts, so EU texts were read from Internet Archive copies of the official EUR-Lex HTML, and the 2012 GDPR material from the European Commission Press corner's document API and a European Parliament copy of COM(2012) 11. The New York Times articles (2001 cookie history, 2006 AOL) were read via the Internet Archive. Apple's Safari 12.1 release notes were read from the JSON data file behind the script-rendered page. Several records were merged to stay near the 22-30 event target (RFC 6265 into RFC 2109; the In re DoubleClick ruling into the DoubleClick-Abacus event; HIPAA with COPPA; Firefox 4 with the W3C Tracking Protection Working Group; the White House blueprint with the FTC's March 2012 report).\n\nNot verified or not read: the Financial Times original of 12 February 1996 (not online; a contemporaneous mailing-list repost of excerpts was used); Dean Hachamovitch's IEBlog post of 20 February 2012 (the MSDN original is not served to scripts and Internet Archive fetches kept failing with connection resets, so The Register's report quoting it is used); the FTC's 22 January 2001 DoubleClick closing letter is a scanned PDF with no text layer (read from the page image; its key sentence is also quoted in the In re DoubleClick opinion, which passes --check); the ACM WPES 2010 version of 'Token Attempt' (the CMU CyLab report copy hosted by the Future of Privacy Forum was used); the W3C APPEL preference-language draft (w3.org returned 403 late in the session); the exact date AOL posted its search file; the month the Cluetrain Manifesto went online; the publisher's own page for The Intention Economy (retail listings give 1 May 2012, not verified); whether Firefox 4 was the first browser to ship DNT (Internet Explorer 9 shipped DNT-related features in the same period; not verified, so no 'first' claim is made). The 'Microsoft revealed Facebook's P3P bypass' framing in the brief did not survive checking: Microsoft named Google; Facebook's header was publicised by Nik Cubrilovic (see myths). The optional Target pregnancy-prediction story (NYT Magazine, 16 February 2012) was not included.\n\nCoordinates: laws at the legislature's seat or the stated place of signature ('Done at Luxembourg/Brussels/Strasbourg'); court decisions at the court; publications at the publisher or, where it matters, the place of writing (Searls at ETech, San Diego); online-only work at the author's institution; each has a locationNote, and most building-level coordinates are approximate.",
  "events": [
   {
    "id": "montulli-invents-the-http-cookie-1994",
@@ -95,30 +95,6 @@
    "locationNote": "The FT's London headquarters at the time (Number One Southwark Bridge)."
   },
   {
-   "id": "hipaa-enacted-health-privacy-mandate-1996",
-   "displayDate": "21 August 1996",
-   "year": 1996,
-   "title": "HIPAA orders a plan for health-data privacy",
-   "place": "United States Congress, Capitol, Washington, D.C.",
-   "lat": 38.8899,
-   "lng": -77.0091,
-   "summary": "The Health Insurance Portability and Accountability Act (Public Law 104-191, H.R. 3103) became law on 21 August 1996. Section 264 required the Secretary of Health and Human Services to send Congress, within 12 months, detailed recommendations on standards for the privacy of individually identifiable health information, and to issue regulations if Congress had not legislated within 36 months.",
-   "significance": "An early sectoral answer: privacy rules written by and for the data holder (the health system), not terms set by the patient.",
-   "sources": [
-    {
-     "institution": "U.S. Government Publishing Office (GovInfo)",
-     "title": "Public Law 104-191 — Health Insurance Portability and Accountability Act of 1996",
-     "date": "1996-08-21",
-     "url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/html/PLAW-104publ191.htm",
-     "quote": "the Secretary of Health and Human Services shall submit to the Committee on Labor and Human Resources and the Committee on Finance of the Senate and the Committee on Commerce and the Committee on Ways and Means of the House of Representatives detailed recommendations on standards with respect to the privacy of individually identifiable health information.",
-     "verificationStatus": "CONFIRMED",
-     "accessType": "FREE",
-     "note": "Approval date from the margin note on the same page: '<<NOTE: Aug. 21, 1996 - [H.R. 3103]>>'."
-    }
-   ],
-   "locationNote": "Legislature's seat; the bill was signed by President Clinton."
-  },
-  {
    "id": "rfc-2109-unverifiable-third-party-cookies-1997",
    "displayDate": "February 1997",
    "year": 1997,
@@ -126,8 +102,8 @@
    "place": "RFC Editor, USC Information Sciences Institute, Marina del Rey, California",
    "lat": 33.9802,
    "lng": -118.44,
-   "summary": "In February 1997 the IETF published RFC 2109, 'HTTP State Management Mechanism', by David Kristol of Bell Laboratories and Lou Montulli of Netscape, as a proposed standard. It defined 'unverifiable' transactions — requests, such as for embedded images, whose address the user had no chance to review — and said a browser should enable a cookie session in them only within the domain of the page the user chose, with any override defaulting to 'off'. The two dominant browsers did not adopt that default, and advertising networks built cross-site tracking on third-party cookies.",
-   "significance": "The first standards-body attempt to encode a privacy expectation into the protocol — and an early lesson that a privacy default nobody ships has no force.",
+   "summary": "In February 1997 the IETF published RFC 2109, 'HTTP State Management Mechanism', by David Kristol of Bell Laboratories and Lou Montulli of Netscape, on the standards track. It defined 'unverifiable' transactions — requests, such as for embedded images, whose address the user had no chance to review — and said a browser must enable a cookie session in them only within the domain of the page the user chose, with any override defaulting to 'off'. The two dominant browsers did not adopt that default, and advertising networks built cross-site tracking on third-party cookies. When the IETF finally replaced the cookie standard in April 2011, RFC 6265 called third-party cookies 'particularly worrisome' but left browsers 'wide latitude to experiment' with their own policies.",
+   "significance": "The first standards-body attempt to encode a privacy expectation into the protocol — and an early lesson that a privacy default nobody ships has no force; by 2011 the standard simply described the tracking regime.",
    "sources": [
     {
      "institution": "RFC Editor / Internet Engineering Task Force",
@@ -148,43 +124,19 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "PAYWALL",
      "note": "The same article reports that 'neither Netscape nor Microsoft took to heart the recommendation'."
+    },
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force",
+     "title": "RFC 6265: HTTP State Management Mechanism (A. Barth)",
+     "date": "2011-04",
+     "url": "https://www.rfc-editor.org/rfc/rfc6265",
+     "quote": "Particularly worrisome are so-called \"third-party\" cookies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 7.1 continues: 'These third-party servers can use cookies to track the user even if the user never visits the server directly.' and 'This document grants user agents wide latitude to experiment with third-party cookie policies'."
     }
    ],
    "locationNote": "Publisher's location (the RFC Editor was hosted at USC/ISI in 1997); lead author Kristol worked at Bell Laboratories, Murray Hill, New Jersey."
-  },
-  {
-   "id": "coppa-enacted-parental-consent-1998",
-   "displayDate": "21 October 1998",
-   "year": 1998,
-   "title": "COPPA makes verifiable parental consent the rule for children under 13",
-   "place": "United States Congress, Capitol, Washington, D.C.",
-   "lat": 38.8899,
-   "lng": -77.0091,
-   "summary": "The Children's Online Privacy Protection Act was enacted on 21 October 1998. It required the FTC to write rules obliging operators of commercial websites directed to children under 13, or knowingly collecting their data, to notify parents and obtain verifiable parental consent before collecting, using or disclosing a child's personal information. The FTC's final rule was published on 3 November 1999 and took effect on 21 April 2000.",
-   "significance": "America's first online privacy statute put consent at the centre — but as a gate the site must pass, not terms the family sets.",
-   "sources": [
-    {
-     "institution": "Federal Trade Commission (Federal Register, 3 November 1999)",
-     "title": "Children's Online Privacy Protection Rule; Final Rule, 16 CFR Part 312",
-     "date": "1999-11-03",
-     "url": "https://www.ftc.gov/sites/default/files/documents/federal_register_notices/childrens-online-privacy-protection-rule-16-cfr-part-312/991103childrensonlineprivacy.pdf",
-     "quote": "Section 6502 of the Act requires the Commission to enact rules governing the online collection of personal information from children under 13 within one year of the date of the enactment of the COPPA, October 21, 1998.",
-     "verificationStatus": "CONFIRMED",
-     "accessType": "FREE",
-     "note": "Same notice: 'The rule will become effective on April 21, 2000.'"
-    },
-    {
-     "institution": "Federal Trade Commission",
-     "title": "Children's Online Privacy Protection Act (statute summary)",
-     "date": "2026",
-     "url": "https://www.ftc.gov/legal-library/browse/statutes/childrens-online-privacy-protection-act",
-     "quote": "(b) obtain verifiable parental consent for the collection, use, or disclosure of children’s personal information",
-     "verificationStatus": "CONFIRMED",
-     "accessType": "FREE",
-     "note": "Undated agency summary page; date is date consulted."
-    }
-   ],
-   "locationNote": "Legislature's seat. COPPA was enacted as part of the omnibus appropriations law of October 1998."
   },
   {
    "id": "ftc-privacy-online-report-1998",
@@ -208,6 +160,84 @@
      "note": "p. 27. Same report, p. 27: 'Only 14% of all sites in the Comprehensive Sample, 14% of all sites in the Health Sample, 13% of all sites in the Retail Sample, and 16% of all sites in the Financial Sample post any disclosure.' Figure 1 gives 92% collecting (base 674 sites, March 1998)."
     }
    ]
+  },
+  {
+   "id": "us-sectoral-privacy-laws-hipaa-coppa-1996-1998",
+   "displayDate": "21 August 1996 and 21 October 1998",
+   "year": 1998,
+   "title": "Congress legislates privacy sector by sector: HIPAA and COPPA",
+   "place": "United States Congress, Capitol, Washington, D.C.",
+   "lat": 38.8899,
+   "lng": -77.0091,
+   "summary": "The Health Insurance Portability and Accountability Act (Public Law 104-191), enacted on 21 August 1996, required the Secretary of Health and Human Services to recommend standards for the privacy of individually identifiable health information within 12 months, and to issue regulations if Congress had not legislated within 36 months. The Children's Online Privacy Protection Act, enacted on 21 October 1998, required the FTC to make rules obliging operators of websites directed to children under 13, or knowingly collecting their data, to obtain verifiable parental consent before collecting, using or disclosing a child's personal information; the FTC's rule took effect on 21 April 2000.",
+   "significance": "Instead of a general privacy law the US wrote sector-specific rules in which consent is a gate the data holder must pass — never terms the patient or family sets.",
+   "sources": [
+    {
+     "institution": "U.S. Government Publishing Office (GovInfo)",
+     "title": "Public Law 104-191 — Health Insurance Portability and Accountability Act of 1996",
+     "date": "1996-08-21",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/html/PLAW-104publ191.htm",
+     "quote": "the Secretary of Health and Human Services shall submit to the Committee on Labor and Human Resources and the Committee on Finance of the Senate and the Committee on Commerce and the Committee on Ways and Means of the House of Representatives detailed recommendations on standards with respect to the privacy of individually identifiable health information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Approval date from the margin note on the same page: '<<NOTE: Aug. 21, 1996 - [H.R. 3103]>>'."
+    },
+    {
+     "institution": "Federal Trade Commission (Federal Register, 3 November 1999)",
+     "title": "Children's Online Privacy Protection Rule; Final Rule, 16 CFR Part 312",
+     "date": "1999-11-03",
+     "url": "https://www.ftc.gov/sites/default/files/documents/federal_register_notices/childrens-online-privacy-protection-rule-16-cfr-part-312/991103childrensonlineprivacy.pdf",
+     "quote": "Section 6502 of the Act requires the Commission to enact rules governing the online collection of personal information from children under 13 within one year of the date of the enactment of the COPPA, October 21, 1998.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same notice: 'The rule will become effective on April 21, 2000.'"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Children's Online Privacy Protection Act (statute summary)",
+     "date": "2026",
+     "url": "https://www.ftc.gov/legal-library/browse/statutes/childrens-online-privacy-protection-act",
+     "quote": "(b) obtain verifiable parental consent for the collection, use, or disclosure of children’s personal information",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated agency summary page; date is date consulted."
+    }
+   ],
+   "locationNote": "Legislature's seat (both are Acts of Congress)."
+  },
+  {
+   "id": "cluetrain-manifesto-markets-are-conversations-1999",
+   "displayDate": "1999",
+   "year": 1999,
+   "title": "The Cluetrain Manifesto: 'Markets are conversations'",
+   "place": "cluetrain.com (online); book edition from Perseus Books, Cambridge, Massachusetts",
+   "lat": 42.3627,
+   "lng": -71.0862,
+   "summary": "In 1999 Rick Levine, Christopher Locke, Doc Searls and David Weinberger published The Cluetrain Manifesto on the web as 95 theses, opening with 'Markets are conversations' and 'Markets consist of human beings, not demographic sectors.' Perseus Books of Cambridge, Massachusetts, published it as a book in 2000.",
+   "significance": "Recast the networked customer as a speaking party rather than a target — the intellectual seed from which Doc Searls later grew VRM and, ultimately, person-proffered terms.",
+   "sources": [
+    {
+     "institution": "Levine, Locke, Searls & Weinberger (cluetrain.com)",
+     "title": "The Cluetrain Manifesto — 95 Theses",
+     "date": "1999",
+     "url": "https://www.cluetrain.com/",
+     "quote": "Markets are conversations. Markets consist of human beings, not demographic sectors.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same page carries 'Copyright © 1999 Levine, Locke, Searls & Weinberger.' The month of first posting is not stated on the site."
+    },
+    {
+     "institution": "Internet Archive (library catalogue record)",
+     "title": "The Cluetrain Manifesto: the end of business as usual",
+     "date": "2000",
+     "url": "https://archive.org/details/cluetrainmanife00levi",
+     "quote": "Cambridge, Mass. : Perseus Books",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Catalogue record: publication date 2000."
+    }
+   ],
+   "locationNote": "An online publication by four authors in different places; mapped to the book publisher's city (Cambridge, Massachusetts, approximate: Kendall Square)."
   },
   {
    "id": "mcnealy-zero-privacy-get-over-it-1999",
@@ -244,32 +274,1256 @@
    "locationNote": "The Jini launch venue (Sheraton Palace Hotel, New Montgomery Street)."
   },
   {
-   "id": "rfc-6265-cookie-standard-codifies-practice-2011",
-   "displayDate": "April 2011",
-   "year": 2011,
-   "title": "RFC 6265 standardises cookies as they actually work — third-party tracking included",
-   "place": "University of California, Berkeley (author's affiliation), Berkeley, California",
-   "lat": 37.8719,
-   "lng": -122.2585,
-   "summary": "In April 2011 the IETF published RFC 6265, by Adam Barth of UC Berkeley, which obsoleted RFC 2965 and described the Cookie and Set-Cookie headers as browsers actually implemented them. Its privacy section called third-party cookies 'particularly worrisome' because third-party servers such as advertising networks could track users across sites they never visited, but it left policy to browser makers, granting them 'wide latitude to experiment'.",
-   "significance": "Fourteen years after RFC 2109, the standard conceded the site-side tracking regime and left the person's protection to whatever each browser chose to do.",
+   "id": "doubleclick-abacus-profile-merger-retreat-2000",
+   "displayDate": "2 March 2000",
+   "year": 2000,
+   "title": "DoubleClick backs off merging web-browsing profiles with names and addresses",
+   "place": "DoubleClick Inc., New York City",
+   "lat": 40.7527,
+   "lng": -73.9985,
+   "summary": "In June 1999 the ad network DoubleClick bought Abacus Direct, a direct-marketing firm holding names, addresses and purchasing histories on about 90% of American households, for more than one billion dollars, amid plans to link that offline data to its online browsing profiles. After a public outcry and an FTC investigation begun in February 2000, chief executive Kevin O'Connor said on 2 March 2000 that the plan had been a 'mistake' and that no merger of the databases would happen until government and industry agreed privacy standards. On 22 January 2001 FTC staff closed the inquiry, finding DoubleClick had not combined Abacus data with clickstream data. On 28 March 2001 a federal judge in New York dismissed a class action over DoubleClick's cookie tracking, holding that the DoubleClick-affiliated websites were parties to users' communications and had given DoubleClick sufficient consent to intercept them.",
+   "significance": "The web's anonymous cookie profile and a person's real-world identity nearly fused; the backlash showed people cared, and the court showed whose consent counted — the website's, not the person's.",
    "sources": [
     {
-     "institution": "RFC Editor / Internet Engineering Task Force",
-     "title": "RFC 6265: HTTP State Management Mechanism (A. Barth)",
-     "date": "2011-04",
-     "url": "https://www.rfc-editor.org/rfc/rfc6265",
-     "quote": "Particularly worrisome are so-called \"third-party\" cookies.",
+     "institution": "United States District Court for the Southern District of New York (opinion hosted by Harvard's Berkman Center for a course reading)",
+     "title": "In re DoubleClick Inc. Privacy Litigation, 154 F. Supp. 2d 497 (S.D.N.Y. 2001)",
+     "date": "2001-03-28",
+     "url": "https://cyber.harvard.edu/is02/readings/doubleclick.html",
+     "quote": "On March 2, 2000, Kevin O'Connor, DoubleClick's CEO and Chairman of the Board, announced that he had made a \"mistake\" by planning to merge DoubleClick's and Abacus' databases and stated that DoubleClick would undertake no such merger until it reached an agreement with the United States government and Internet industry regarding privacy standards.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Section 7.1 continues: 'These third-party servers can use cookies to track the user even if the user never visits the server directly.' and 'This document grants user agents wide latitude to experiment with third-party cookie policies'."
+     "note": "Same opinion: 'In June 1999, DoubleClick purchased Abacus Direct Corp. (\"Abacus\") for more than one billion dollars.' and that Abacus held data 'on approximately ninety percent of American households'. The opinion also records that 'The FTC concluded its investigation on January 22, 2001' and quotes the FTC staff closing letter, including 'Specifically, it appears that DoubleClick did not combine PII from Abacus Direct with clickstream collected on client Web sites.' That letter (scanned, no text layer) is at https://www.ftc.gov/sites/default/files/documents/closing_letters/doubleclick-inc./doubleclick.pdf and was read from the page image."
+    },
+    {
+     "institution": "United States District Court for the Southern District of New York (opinion hosted by Harvard's Berkman Center for a course reading)",
+     "title": "In re DoubleClick Inc. Privacy Litigation, 154 F. Supp. 2d 497 (S.D.N.Y. 2001)",
+     "date": "2001-03-28",
+     "url": "https://cyber.harvard.edu/is02/readings/doubleclick.html",
+     "quote": "we find that the DoubleClick-affiliated Web sites are \"parties to the communication[s]\" from plaintiffs and have given sufficient consent to DoubleClick to intercept them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Header on the same page: 'March 28, 2001, Decided March 29, 2001, Filed'. The court declined supplemental jurisdiction over the state-law claims."
+    },
+    {
+     "institution": "ABC News",
+     "title": "FTC Closes DoubleClick Investigation",
+     "date": "2001-01-23",
+     "url": "https://abcnews.com/Technology/story?id=99060&page=1",
+     "quote": "The FTC began its investigation in February 2000, questioning whether DoubleClick improperly amassed personal information about Internet users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
     }
    ],
-   "locationNote": "Online standards-body publication; mapped to the author's affiliation as given in the RFC header (U.C. Berkeley)."
+   "locationNote": "DoubleClick's New York headquarters; coordinates approximate (West 33rd Street, Manhattan)."
+  },
+  {
+   "id": "eu-us-safe-harbor-decision-2000",
+   "displayDate": "26 July 2000",
+   "year": 2000,
+   "title": "Brussels deems the US 'Safe Harbor' adequate",
+   "place": "European Commission, Brussels",
+   "lat": 50.8433,
+   "lng": 4.3826,
+   "summary": "On 26 July 2000 the European Commission decided, under Article 25(2) of Directive 95/46/EC, that the 'Safe Harbor Privacy Principles' and frequently asked questions issued by the US Department of Commerce on 21 July 2000 ensured an adequate level of protection for personal data sent to US organisations that signed up to them. Companies joined by self-certifying their adherence, with the Commerce Department keeping a public list.",
+   "significance": "Europe's consent-based regime met America's notice-and-choice regime through corporate self-certification — a pact between institutions, not a term set by the individual.",
+   "sources": [
+    {
+     "institution": "EUR-Lex, Publications Office of the European Union (Internet Archive snapshot)",
+     "title": "Commission Decision 2000/520/EC of 26 July 2000 on the adequacy of the protection provided by the safe harbour privacy principles",
+     "date": "2000-07-26",
+     "url": "https://web.archive.org/web/20240428171017/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32000D0520",
+     "quote": "are considered to ensure an adequate level of protection for personal data transferred from the Community to organisations established in the United States",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 1(1). The decision ends 'Done at Brussels, 26 July 2000.' Recital 8 refers to 'a list of organisations self-certifying their adherence to the Principles'. EUR-Lex blocks scripts; read via the Internet Archive."
+    }
+   ],
+   "locationNote": "'Done at Brussels'; coordinates are the European Commission's Berlaymont district, approximate."
+  },
+  {
+   "id": "ie6-p3p-compact-policy-cookie-filtering-2001",
+   "displayDate": "21 March 2001 (announced); shipped later in 2001",
+   "year": 2001,
+   "title": "Internet Explorer 6 starts blocking third-party cookies that lack a P3P compact policy",
+   "place": "Microsoft Corporation, Redmond, Washington",
+   "lat": 47.6396,
+   "lng": -122.1283,
+   "summary": "On 21 March 2001 Microsoft announced that Internet Explorer 6, due later that year with Windows XP, would build privacy controls on the draft W3C Platform for Privacy Preferences. IE6 looked for a P3P 'compact policy' — a short string of tokens a site sends with its cookies — and, depending on it and the user's privacy slider, could deny, downgrade or accept a cookie. Its default 'Medium' setting restricted third-party cookies unless their compact policy marked them as fairly innocuous.",
+   "significance": "The only mass deployment of P3P turned a site-authored policy into a gate key: sites learned they had only to send the right tokens, true or not, to get their cookies through.",
+   "sources": [
+    {
+     "institution": "Microsoft (news.microsoft.com)",
+     "title": "Microsoft to Deliver on Privacy Tools in Internet Explorer",
+     "date": "2001-03-21",
+     "url": "https://news.microsoft.com/2001/03/21/microsoft-to-deliver-on-privacy-tools-in-internet-explorer/",
+     "quote": "The new settings in Internet Explorer 6 will incorporate the P3P specification by first looking for compact privacy policies from any site that utilizes third-party cookies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same release: 'Depending on the situation, Internet Explorer might deny, downgrade or accept a cookie.'"
+    },
+    {
+     "institution": "Microsoft (IEInternals blog, archived on Microsoft Learn)",
+     "title": "Understanding Cookie Controls (IEInternals blog post signed '-Eric')",
+     "date": "2010-06-05",
+     "url": "https://learn.microsoft.com/en-us/archive/blogs/ieinternals/understanding-cookie-controls",
+     "quote": "The default cookie setting is \"Medium\", a reasonable balance that allows first-party cookies (unless they're marked to be particularly impactful to your privacy) and restricts third-party cookies (unless they're marked to be fairly innocuous to your privacy).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Date from the archive's ms.date metadata (2010-06-05); the post was updated on 20 February 2012. It describes IE's behaviour from IE6 onward. Footnote: 'There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.'"
+    }
+   ],
+   "locationNote": "Company headquarters (Microsoft campus, Redmond); coordinates approximate."
+  },
+  {
+   "id": "usa-patriot-act-section-215-2001",
+   "displayDate": "26 October 2001",
+   "year": 2001,
+   "title": "The USA PATRIOT Act widens government access to records and internet metadata",
+   "place": "United States Congress, Capitol, Washington, D.C.",
+   "lat": 38.8899,
+   "lng": -77.0091,
+   "summary": "Enacted on 26 October 2001, six weeks after the September 11 attacks, the USA PATRIOT Act (Public Law 107-56) let the FBI seek court orders for 'any tangible things (including books, records, papers, documents, and other items)' in international-terrorism investigations (section 215), and extended pen-register and trap-and-trace orders to 'dialing, routing, addressing, or signaling information' of electronic communications (section 216).",
+   "significance": "Showed that the data trails built for commerce were also available to the state — privacy terms set by companies could not bind government access.",
+   "sources": [
+    {
+     "institution": "U.S. Government Publishing Office (GovInfo)",
+     "title": "Public Law 107-56 — Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism (USA PATRIOT Act) Act of 2001",
+     "date": "2001-10-26",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/html/PLAW-107publ56.htm",
+     "quote": "may make an application for an order requiring the production of any tangible things (including books, records, papers, documents, and other items) for an investigation to protect against international terrorism or clandestine intelligence activities",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 215. Approval date from the margin note: '<<NOTE: Oct. 26, 2001 - [H.R. 3162]>>'. Section 216 amends 18 U.S.C. 3127(3) to cover 'dialing, routing, addressing, or signaling information'."
+    }
+   ],
+   "locationNote": "Legislature's seat."
+  },
+  {
+   "id": "eprivacy-directive-2002-58-cookies-right-to-refuse-2002",
+   "displayDate": "12 July 2002",
+   "year": 2002,
+   "title": "The ePrivacy Directive: sites must inform users and offer a right to refuse cookies",
+   "place": "European Parliament and Council of the European Union, Brussels",
+   "lat": 50.8423,
+   "lng": 4.3822,
+   "summary": "Directive 2002/58/EC on privacy and electronic communications, signed at Brussels on 12 July 2002, included Article 5(3): storing information on, or accessing information stored in, a user's terminal equipment was allowed only if the user received clear and comprehensive information about the purposes and was 'offered the right to refuse such processing'. Strictly necessary storage for transmission or for a service the user explicitly requested was exempt.",
+   "significance": "Europe's first cookie rule was an opt-out: the person could refuse, but only one site at a time and only on the site's terms.",
+   "sources": [
+    {
+     "institution": "EUR-Lex, Publications Office of the European Union (Internet Archive snapshot)",
+     "title": "Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 (Directive on privacy and electronic communications)",
+     "date": "2002-07-12",
+     "url": "https://web.archive.org/web/20201224030937/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058",
+     "quote": "Member States shall ensure that the use of electronic communications networks to store information or to gain access to information stored in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned is provided with clear and comprehensive information in accordance with Directive 95/46/EC, inter alia about the purposes of the processing, and is offered the right to refuse such processing by the data controller.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 5(3). The text ends 'Done at Brussels, 12 July 2002.' EUR-Lex blocks scripts; read via the Internet Archive."
+    }
+   ],
+   "locationNote": "'Done at Brussels'; coordinates are the Council's then seat (Justus Lipsius building), approximate."
+  },
+  {
+   "id": "w3c-p3p-1-0-recommendation-2002",
+   "displayDate": "16 April 2002",
+   "year": 2002,
+   "title": "W3C makes P3P a Recommendation: websites publish machine-readable privacy policies",
+   "place": "World Wide Web Consortium (hosted at MIT Laboratory for Computer Science), Cambridge, Massachusetts",
+   "lat": 42.363,
+   "lng": -71.0916,
+   "summary": "On 16 April 2002 the W3C issued the Platform for Privacy Preferences 1.0 as a Recommendation, edited by Massimo Marchiori with authors including Lorrie Cranor (AT&T). P3P let a website express its privacy practices in a standard XML vocabulary that user agents could fetch automatically and compare with preferences the user had set, so the user need not read every policy. The specification itself stated that it offered no technical way to make sure sites acted according to their policies.",
+   "significance": "The closest ancestor of IEEE 7012 — but inverted: in P3P the site states the terms and the person's software only decides whether to accept them; the person never proffers terms of their own.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — W3C Recommendation 16 April 2002",
+     "date": "2002-04-16",
+     "url": "https://www.w3.org/TR/2002/REC-P3P-20020416/",
+     "quote": "The Platform for Privacy Preferences Project (P3P) enables Web sites to express their privacy practices in a standard format that can be retrieved automatically and interpreted easily by user agents.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 1, Introduction, continues: 'Thus users need not read the privacy policies at every site they visit. Although P3P provides a technical mechanism for ensuring that users can be informed about privacy policies before they release personal information, it does not provide a technical mechanism for making sure sites act according to their policies.'"
+    }
+   ],
+   "locationNote": "W3C's US host in 2002 was the MIT Laboratory for Computer Science; coordinates approximate (Technology Square, Cambridge)."
+  },
+  {
+   "id": "aol-search-logs-thelma-arnold-identified-2006",
+   "displayDate": "9 August 2006",
+   "year": 2006,
+   "title": "AOL releases 20 million 'anonymous' searches; the New York Times finds user No. 4417749",
+   "place": "The New York Times, 229 West 43rd Street, New York City",
+   "lat": 40.757,
+   "lng": -73.987,
+   "summary": "AOL had posted about 20 million web search queries from some 658,000 users, each identified only by a number, hoping to help academic researchers; it then withdrew the file and apologised, calling the release unauthorised. On 9 August 2006 the New York Times reported that user No. 4417749, whose queries included 'landscapers in Lilburn, Ga' and people named Arnold, was Thelma Arnold, a 62-year-old widow in Lilburn, Georgia. 'My goodness, it's my whole personal life,' she said.",
+   "significance": "Proof that a stream of intentions typed into a search box is itself identifying — 'anonymised' data held by the service offered the person no protection at all.",
+   "sources": [
+    {
+     "institution": "The New York Times (Internet Archive snapshot)",
+     "title": "Michael Barbaro and Tom Zeller Jr., 'A Face Is Exposed for AOL Searcher No. 4417749'",
+     "date": "2006-08-09",
+     "url": "https://web.archive.org/web/2021/https://www.nytimes.com/2006/08/09/technology/09aol.html",
+     "quote": "It did not take much investigating to follow that data trail to Thelma Arnold, a 62-year-old widow who lives in Lilburn, Ga., frequently researches her friends’ medical ailments and loves her three dogs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Read via the Internet Archive (the /web/2021/ address resolves to snapshot 20220106133752). Same article: 'Buried in a list of 20 million Web search queries collected by AOL and recently released on the Internet is user No. 4417749.' and 'AOL removed the search data from its site over the weekend and apologized for its release'. It refers to 'Ms. Arnold and 657,000 other Americans'. The exact posting date of the file is not given in the article."
+    }
+   ],
+   "locationNote": "Publisher's newsroom in 2006 (229 West 43rd Street). Thelma Arnold lived in Lilburn, Georgia."
+  },
+  {
+   "id": "projectvrm-launched-berkman-center-2006",
+   "displayDate": "2006",
+   "year": 2006,
+   "title": "ProjectVRM begins at Harvard's Berkman Center",
+   "place": "Berkman Center for Internet & Society, 23 Everett Street, Cambridge, Massachusetts",
+   "lat": 42.3791,
+   "lng": -71.1207,
+   "summary": "Doc Searls created ProjectVRM when he became a fellow at Harvard's Berkman Center for Internet & Society in 2006. Vendor Relationship Management is framed as the customer-side counterpart of CRM, and the project's published principles include that customers 'must be able to proffer their own terms of engagement' and keep auditable records of agreements.",
+   "significance": "The direct institutional ancestor of IEEE 7012: a programme built around letting individuals proffer their own terms to organisations.",
+   "sources": [
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University (ProjectVRM wiki)",
+     "title": "VRM History",
+     "date": "2026",
+     "url": "https://cyber.harvard.edu/projectvrm/VRM_History",
+     "quote": "It was created by Doc Searls when he became a fellow at the Center in 2006.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated wiki page; date is date consulted."
+    },
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University (ProjectVRM wiki)",
+     "title": "Project VRM — Main Page (VRM Principles)",
+     "date": "2026",
+     "url": "https://cyber.harvard.edu/projectvrm/Main_Page",
+     "quote": "Customers must be able to proffer their own terms of engagement —and to have auditable records of all contracts to which both sides agree.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated wiki page; the principles as currently published. Same page: 'For vendors and other service providers, VRM is the customer-side counterpart of CRM'."
+    }
+   ],
+   "locationNote": "Berkman Center's home at 23 Everett Street (Harvard Law School); coordinates approximate."
+  },
+  {
+   "id": "searls-intention-economy-linux-journal-2006",
+   "displayDate": "8 March 2006",
+   "year": 2006,
+   "title": "Doc Searls names 'The Intention Economy'",
+   "place": "O'Reilly Emerging Technology Conference, Manchester Grand Hyatt, San Diego",
+   "lat": 32.7106,
+   "lng": -117.1683,
+   "summary": "Writing from the audience at O'Reilly's ETech conference in San Diego, whose theme was 'The Attention Economy', Doc Searls published 'The Intention Economy' in Linux Journal on 8 March 2006. He argued that attention-based advertising was a seller-side idea and proposed instead an economy in which 'the buyer notifies the market of the intent to buy, and sellers compete for the buyer's purchase', illustrated by a skier broadcasting a car-rental request to the whole market.",
+   "significance": "The first statement of the idea that the customer, not the advertiser, should originate the signal — the conceptual root of VRM and of IEEE 7012's person-side terms.",
+   "sources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Doc Searls, 'The Intention Economy'",
+     "date": "2006-03-08",
+     "url": "https://www.linuxjournal.com/content/intention-economy",
+     "quote": "The Intention Economy grows around buyers, not sellers. It leverages the simple fact that buyers are the first source of money, and that they come ready-made. You don't need advertising to make them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Post date 'on March 8, 2006' from the page's date field. Same article: 'In The Intention Economy, the buyer notifies the market of the intent to buy, and sellers compete for the buyer's purchase.'"
+    },
+    {
+     "institution": "O'Reilly Media (Internet Archive snapshot of conferences.oreillynet.com/et2006)",
+     "title": "O'Reilly Emerging Technology Conference 2006",
+     "date": "2007-01-07",
+     "url": "https://web.archive.org/web/20070107050320/http://conferences.oreillynet.com/et2006/",
+     "quote": "The O'Reilly Emerging Technology Conference (ETech) will be held March 6-9, 2006 at the Manchester Grand Hyatt in San Diego, California",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Establishes the venue from which Searls wrote ('this year's eTech conference, where I am sitting in an audience, writing this')."
+    }
+   ],
+   "locationNote": "Where the article was written (ETech 2006 venue); Linux Journal was an online/print magazine."
+  },
+  {
+   "id": "facebook-beacon-launch-and-retreat-2007",
+   "displayDate": "6 November 2007",
+   "year": 2007,
+   "title": "Facebook Beacon broadcasts off-site purchases — then retreats to opt-in",
+   "place": "Facebook Social Advertising Event, New York City",
+   "lat": 40.758,
+   "lng": -73.9855,
+   "summary": "On 6 November 2007 Facebook announced that 44 websites, including Fandango and eBay, were using Beacon to send users' actions on their sites, such as purchases, to Facebook for display to friends. Beacon was initially opt-out: if a user forgot to decline, the action was shared. After weeks of protest Facebook switched it to opt-in, and on 5 December 2007 Mark Zuckerberg apologised — 'We simply did a bad job with this release, and I apologize for it' — and added a control to turn Beacon off completely.",
+   "significance": "A default set by the platform, not the person, exposed purchases across sites — a vivid case of why the person needs a standing, portable term rather than a per-site opt-out.",
+   "sources": [
+    {
+     "institution": "Meta (Facebook newsroom)",
+     "title": "Leading Websites Offer Facebook Beacon for Social Distribution",
+     "date": "2007-11-06",
+     "url": "https://about.fb.com/news/2007/11/leading-websites-offer-facebook-beacon-for-social-distribution/",
+     "quote": "Facebook announced today that 44 websites are using Facebook Beacon to allow users to share information from other websites for distribution to their friends on Facebook.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dateline: 'NEW YORK — Facebook Social Advertising Event, Nov. 6, 2007'."
+    },
+    {
+     "institution": "Meta (Facebook newsroom)",
+     "title": "Mark Zuckerberg, 'Thoughts on Beacon' (Announcement: Facebook Users Can Now Opt-Out of Beacon Feature)",
+     "date": "2007-12-05",
+     "url": "https://about.fb.com/news/2007/12/announcement-facebook-users-can-now-opt-out-of-beacon-feature/",
+     "quote": "The problem with our initial approach of making it an opt-out system instead of opt-in was that if someone forgot to decline to share something, Beacon still went ahead and shared it with their friends.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Newsroom URL gives the month (2007/12); the day is from TechCrunch, 5 December 2007 ('in a blog post this morning'). Same post: 'We simply did a bad job with this release, and I apologize for it.' and 'Last week we changed Beacon to be an opt-in system, and today we’re releasing a privacy control to turn off Beacon completely.'"
+    },
+    {
+     "institution": "TechCrunch",
+     "title": "Zuckerberg Saves Face, Apologizes For Beacon",
+     "date": "2007-12-05",
+     "url": "https://techcrunch.com/2007/12/05/zuckerberg-saves-face-apologies-for-beacon",
+     "quote": "Finally heeding calls to apologize for the privacy disaster surrounding Facebook’s Beacon advertising program, CEO Mark Zuckerberg took responsibility for the company’s mistakes in a blog post this morning.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Launch event city (New York); the venue is not named in the release, so coordinates are central Manhattan, approximate. Facebook was headquartered in Palo Alto."
+  },
+  {
+   "id": "netflix-prize-deanonymization-2008",
+   "displayDate": "May 2008",
+   "year": 2008,
+   "title": "Narayanan and Shmatikov re-identify 'anonymous' Netflix Prize raters",
+   "place": "IEEE Symposium on Security and Privacy, Oakland, California",
+   "lat": 37.8044,
+   "lng": -122.2712,
+   "summary": "Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin showed that the Netflix Prize dataset of movie ratings by 500,000 subscribers, released with names removed, could be de-anonymised: with 8 ratings (two of which could be wrong) and dates within 14 days, 99% of records could be uniquely identified. Using public IMDb reviews as background knowledge they identified known users' records, revealing apparent political preferences. A preprint appeared on arXiv on 18 October 2006; the paper was presented at the IEEE Symposium on Security and Privacy in Oakland in May 2008.",
+   "significance": "Showed that removing names does not make behavioural data anonymous — so protection has to attach to the person's terms of use, not to the data holder's promise of anonymisation.",
+   "sources": [
+    {
+     "institution": "University of Texas at Austin (authors' copy, hosted at Cornell)",
+     "title": "Arvind Narayanan and Vitaly Shmatikov, 'Robust De-anonymization of Large Sparse Datasets', 2008 IEEE Symposium on Security and Privacy",
+     "date": "2008-05",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+     "quote": "With 8 movie ratings (of which 2 may be completely wrong) and dates that may have a 14-day error, 99% of records can be uniquely identiﬁed in the dataset.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The 'ﬁ' ligature is as it appears in the PDF text layer. Abstract: 'We demonstrate that an adversary who knows only a little bit about an individual subscriber can easily identify this subscriber’s record in the dataset.'"
+    },
+    {
+     "institution": "arXiv (Cornell University)",
+     "title": "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' (arXiv:cs/0610105)",
+     "date": "2006-10-18",
+     "url": "https://arxiv.org/abs/cs/0610105",
+     "quote": "Using the Internet Movie Database as the source of background knowledge, we successfully identified the Netflix records of known users, uncovering their apparent political preferences and other potentially sensitive information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Submission history: v1 Wed, 18 Oct 2006; v2 Thu, 22 Nov 2007."
+    },
+    {
+     "institution": "Princeton University (research portal)",
+     "title": "Robust de-anonymization of large sparse datasets — publication record",
+     "date": "2008",
+     "url": "https://collaborate.princeton.edu/en/publications/robust-de-anonymization-of-large-sparse-datasets/",
+     "quote": "2008 IEEE Symposium on Security and Privacy, SP - Oakland, CA, United States",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Record gives the event dates as May 18–21, 2008, pages 111-125, DOI 10.1109/SP.2008.33."
+    }
+   ],
+   "locationNote": "Conference city (Oakland); coordinates are central Oakland, approximate. The authors were at the University of Texas at Austin."
+  },
+  {
+   "id": "do-not-track-header-prototype-soghoian-stamm-2009",
+   "displayDate": "July 2009",
+   "year": 2009,
+   "title": "Soghoian and Stamm prototype a 'Do Not Track' browser header",
+   "place": "Indiana University, Bloomington, Indiana",
+   "lat": 39.1682,
+   "lng": -86.523,
+   "summary": "In July 2009 privacy researcher Christopher Soghoian, with his collaborator Sid Stamm, built a prototype Firefox add-on that added two headers to every outgoing web request, 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. The idea replaced dozens of per-network opt-out cookies with one signal sent to every server, but it depended on advertisers choosing to honour it.",
+   "significance": "The first person-side machine-readable privacy signal on the web: the browser speaks for the person, but only a one-bit request with no legal force.",
+   "sources": [
+    {
+     "institution": "Christopher Soghoian (blog 'slight paranoia')",
+     "title": "The History of the Do Not Track Header",
+     "date": "2011-01-21",
+     "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+     "quote": "In July of 2009, I decided to try and solve this problem. My friend and research collaborator Sid Stamm helped me to put together a prototype Firefox add-on that added two headers to outgoing HTTP requests",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Inventor's own account. The post body is in div elements that tools/fetch-text.py does not extract (it returns only the quoted blocks, which include 'X-Behavioral-Ad-Opt-Out: 1 X-Do-Not-Track: 1'); the quote was verified against the full page text."
+    }
+   ],
+   "locationNote": "Approximate: Soghoian was then a doctoral student at Indiana University Bloomington; the add-on was distributed online."
+  },
+  {
+   "id": "eu-cookie-consent-rule-directive-2009-136-2009",
+   "displayDate": "25 November 2009",
+   "year": 2009,
+   "title": "The EU 'cookie law': storing cookies now needs the user's consent",
+   "place": "European Parliament, Strasbourg",
+   "lat": 48.5974,
+   "lng": 7.7686,
+   "summary": "Directive 2009/136/EC, signed at Strasbourg on 25 November 2009, replaced Article 5(3) of the ePrivacy Directive: storing or accessing information on a user's device became lawful only if the user 'has given his or her consent', after clear and comprehensive information, except where strictly necessary. Recital 66 added that, where technically possible and effective, consent 'may be expressed by using the appropriate settings of a browser or other application'.",
+   "significance": "Moved Europe from opt-out to opt-in and explicitly contemplated consent expressed by software on the person's side — the legal opening that browser signals, and later machine-readable personal terms, would try to use.",
+   "sources": [
+    {
+     "institution": "EUR-Lex, Publications Office of the European Union (Internet Archive snapshot)",
+     "title": "Directive 2009/136/EC of the European Parliament and of the Council of 25 November 2009",
+     "date": "2009-11-25",
+     "url": "https://web.archive.org/web/20260107085903/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32009L0136",
+     "quote": "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information, in accordance with Directive 95/46/EC, inter alia, about the purposes of the processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 2(5), replacing Article 5(3) of Directive 2002/58/EC. Recital 66: 'the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.' Signed 'Done at Strasbourg, 25 November 2009.' EUR-Lex blocks scripts; read via the Internet Archive."
+    }
+   ],
+   "locationNote": "'Done at Strasbourg'; coordinates are the European Parliament's Louise Weiss building."
+  },
+  {
+   "id": "cmu-token-attempt-p3p-compact-policy-misuse-2010",
+   "displayDate": "10 September 2010",
+   "year": 2010,
+   "title": "Carnegie Mellon finds a third of P3P compact policies are erroneous — many deliberately",
+   "place": "CyLab, Carnegie Mellon University, Pittsburgh",
+   "lat": 40.4443,
+   "lng": -79.9446,
+   "summary": "In a CyLab technical report dated 10 September 2010, Pedro Giovanni Leon, Lorrie Faith Cranor, Aleecia McDonald and Robert McGuire collected P3P compact policies from 33,139 websites and found errors in 11,176 of them, including 134 TRUSTe-certified sites and 21 of the 100 most-visited. Thousands of sites used identical invalid policies that had been circulated as workarounds for Internet Explorer's cookie blocking, and 98% of invalid policies left cookies unblocked under IE's default settings.",
+   "significance": "Documented how a site-authored machine-readable policy fails when nothing enforces its truth: the site 'spoke', the browser believed it, and the person was misled.",
+   "sources": [
+    {
+     "institution": "Future of Privacy Forum (hosted copy of CMU CyLab Technical Report CMU-CyLab-10-014)",
+     "title": "Leon, Cranor, McDonald & McGuire, 'Token Attempt: The Misrepresentation of Website Privacy Policies through the Misuse of P3P Compact Policy Tokens'",
+     "date": "2010-09-10",
+     "url": "https://fpf.org/wp-content/uploads/2021/05/Token-Attempt-The-Misrepresentation-of-Website-Privacy-Policies-through-the-Misuse-of-P3P-Compact-Policy-Tokens.pdf",
+     "quote": "We collected CPs from 33,139 websites and detected errors in 11,176 of them",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract continues: 'including 134 TRUSTe-certiﬁed websites and 21 of the top 100 most-visited sites' and 'We found thousands of sites using identical invalid CPs that had been recommended as workarounds for IE cookie blocking.' and '98% of invalid CPs resulted in cookies remaining unblocked by IE under it’s default cookie settings.' The paper was also published at the ACM Workshop on Privacy in the Electronic Society (WPES) 2010 (DOI 10.1145/1866919.1866932; ACM page not read)."
+    }
+   ],
+   "locationNote": "Authors' institution (CyLab, Carnegie Mellon University); coordinates approximate."
+  },
+  {
+   "id": "ftc-preliminary-report-calls-for-do-not-track-2010",
+   "displayDate": "1 December 2010",
+   "year": 2010,
+   "title": "The FTC staff calls for a browser-based 'Do Not Track' mechanism",
+   "place": "Federal Trade Commission, 600 Pennsylvania Avenue NW, Washington, D.C.",
+   "lat": 38.8927,
+   "lng": -77.0197,
+   "summary": "On 1 December 2010 FTC staff issued the preliminary report 'Protecting Consumer Privacy in an Era of Rapid Change', which judged industry self-regulation 'too slow' and proposed a universal choice mechanism for online behavioural advertising — most practically 'a persistent setting, similar to a cookie, on the consumer's browser' — which staff said it supported under the name 'Do Not Track'.",
+   "significance": "Put a regulator's weight behind a person-side signal — while leaving its meaning and enforcement to be worked out by industry.",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission (Bureau of Consumer Protection)",
+     "title": "Protecting Consumer Privacy in an Era of Rapid Change: A Proposed Framework for Businesses and Policymakers — Preliminary FTC Staff Report",
+     "date": "2010-12",
+     "url": "https://www.ftc.gov/sites/default/files/documents/reports/federal-trade-commission-bureau-consumer-protection-preliminary-ftc-staff-report-protecting-consumer/101201privacyreport.pdf",
+     "quote": "The most practical method of providing such universal choice would likely involve the placement of a persistent setting, similar to a cookie, on the consumer’s browser signaling the consumer’s choices about being tracked and receiving targeted ads.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Executive summary, continuing: 'Commission staff supports this approach, sometimes referred to as “Do Not Track.”'"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Staff Issues Privacy Report, Offers Framework for Consumers, Businesses, and Policymakers",
+     "date": "2010-12-01",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2010/12/ftc-staff-issues-privacy-report-offers-framework-consumers-businesses-policymakers",
+     "quote": "The proposed report also suggests implementation of a “Do Not Track” mechanism – likely a persistent setting on consumers’ browsers – so consumers can choose whether to allow the collection of data regarding their online searching and browsing activities.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Release date from the page's time element (December 1, 2010). Quotes the report: self-regulation efforts 'have been too slow, and up to now have failed to provide adequate and meaningful protection.'"
+    }
+   ]
+  },
+  {
+   "id": "do-not-track-in-firefox-and-at-the-w3c-2011",
+   "displayDate": "22 March 2011 and 21–22 September 2011",
+   "year": 2011,
+   "title": "Do Not Track ships in Firefox 4 and goes to the W3C for standardisation",
+   "place": "World Wide Web Consortium, MIT (Stata Center), Cambridge, Massachusetts",
+   "lat": 42.3616,
+   "lng": -71.0906,
+   "summary": "Mozilla released Firefox 4 on 22 March 2011 with support for the Do Not Track ('DNT') header, a switch asking sites not to track the user for behavioural advertising. The W3C also chartered a Tracking Protection Working Group, co-chaired by Aleecia McDonald (Mozilla) and Matthias Schunter (IBM), to standardise 'a simple machine-readable preference expression mechanism (\"Do Not Track\")'; its first face-to-face meeting was held at MIT on 21–22 September 2011. The charter expressly excluded 'mechanisms for the expression of complex or general-purpose policy statements'.",
+   "significance": "The person-side signal reached a mass-market browser and a standards body — but was standardised as a single preference bit, deliberately not a vocabulary of terms, the gap IEEE 7012 later set out to fill.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (Internet Archive snapshot)",
+     "title": "Tracking Protection Working Group Charter",
+     "date": "2013-01-20",
+     "url": "https://web.archive.org/web/20130126183511/http://www.w3.org/2011/tracking-protection/charter.html",
+     "quote": "The Working Group will produce Recommendation-track specifications for a simple machine-readable preference expression mechanism (\"Do Not Track\") and technologies for selectively allowing or blocking tracking elements.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Snapshot of the charter as extended on 1 August 2012. Same page: 'The first face-to-face meeting will take place 21-22 September 2011 at MIT.' and 'The Working Group will not design mechanisms for the expression of complex or general-purpose policy statements.' Initial co-chairs: 'Aleecia M. McDonald, Mozilla Matthias Schunter, IBM'."
+    },
+    {
+     "institution": "Mozilla",
+     "title": "Firefox 4 Release Notes",
+     "date": "2011-03-22",
+     "url": "https://www.mozilla.org/en-US/firefox/4.0/releasenotes/",
+     "quote": "Support for the Do Not Track (\"DNT\") header that allows users to opt-out of behavioural advertising",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: 'v.4.0, released March 22nd, 2011'. Whether Firefox was the first browser to ship DNT was not verified here, so no 'first browser' claim is made."
+    }
+   ],
+   "locationNote": "W3C's MIT host site, where the working group first met; coordinates approximate. Mozilla was headquartered in Mountain View, California."
+  },
+  {
+   "id": "eu-gdpr-proposal-right-to-be-forgotten-2012",
+   "displayDate": "25 January 2012",
+   "year": 2012,
+   "title": "The Commission proposes the GDPR, with a 'right to be forgotten' and explicit consent",
+   "place": "European Commission, Berlaymont, Brussels",
+   "lat": 50.8433,
+   "lng": 4.3826,
+   "summary": "On 25 January 2012 the European Commission proposed a General Data Protection Regulation (COM(2012) 11) to replace the 1995 Directive. Its press release promised that consent would have to be given explicitly rather than assumed, a right to data portability, and a 'right to be forgotten' letting people delete data where there were no legitimate grounds to keep it. Three days earlier, in Munich, Justice Commissioner Viviane Reding had said the individual 'should be in the best position to protect the privacy of their data'.",
+   "significance": "Europe's answer to the notice-and-choice era was stronger individual rights enforced by law — the regime into which person-proffered terms would later be offered.",
+   "sources": [
+    {
+     "institution": "European Commission (Press corner)",
+     "title": "Commission proposes a comprehensive reform of data protection rules to increase users' control of their data and to cut costs for businesses (IP/12/46)",
+     "date": "2012-01-25",
+     "url": "https://ec.europa.eu/commission/presscorner/api/documents?reference=IP/12/46&language=en",
+     "quote": "A ‘right to be forgotten' will help people better manage data protection risks online: people will be able to delete their data if there are no legitimate grounds for retaining it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Read through the Press corner's document API (the human page https://ec.europa.eu/commission/presscorner/detail/en/IP_12_46 is script-rendered). Same release: 'Brussels, 25 January 2012 – The European Commission has today proposed a comprehensive reform of the EU's 1995 data protection rules' and 'Wherever consent is required for data to be processed, it is clarified that it has to be given explicitly, rather than assumed.'"
+    },
+    {
+     "institution": "European Commission (Press corner)",
+     "title": "Viviane Reding, 'The EU Data Protection Reform 2012: Making Europe the Standard Setter for Modern Data Protection Rules in the Digital Age', Innovation Conference Digital, Life, Design, Munich (SPEECH/12/26)",
+     "date": "2012-01-22",
+     "url": "https://ec.europa.eu/commission/presscorner/api/documents?reference=SPEECH/12/26&language=en",
+     "quote": "It is the individual who should be in the best position to protect the privacy of their data by choosing whether or not to provide it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "European Parliament register (copy of the Commission proposal)",
+     "title": "Proposal for a Regulation ... (General Data Protection Regulation), COM(2012) 11 final",
+     "date": "2012-01-25",
+     "url": "https://www.europarl.europa.eu/RegData/docs_autres_institutions/commission_europeenne/com/2012/0011/COM_COM(2012)0011_EN.pdf",
+     "quote": "Brussels, 25.1.2012",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 17 is headed 'Right to be forgotten and to erasure'. The PDF's text layer inserts spaces inside words (e.g. 'sha ll'), so longer quotes from the article cannot pass tools/fetch-text.py --check; the heading and date were read directly."
+    }
+   ],
+   "locationNote": "European Commission headquarters (Berlaymont)."
+  },
+  {
+   "id": "ie10-do-not-track-on-by-default-2012",
+   "displayDate": "31 May 2012",
+   "year": 2012,
+   "title": "Microsoft turns Do Not Track on by default in Internet Explorer 10",
+   "place": "Microsoft Corporation, Redmond, Washington",
+   "lat": 47.6396,
+   "lng": -122.1283,
+   "summary": "On 31 May 2012 Microsoft announced that Internet Explorer 10 in Windows 8 would be the first browser to send the DNT signal by default. Some welcomed the move but others voiced concerns, and on 3 April 2015 Microsoft reversed course to follow the W3C draft's requirement that DNT express a user's own preference, saying that otherwise sites 'could argue that it doesn't reflect the users' preference, and therefore, choose not to honor it.'",
+   "significance": "Exposed DNT's core weakness: a signal with no legal force is worth only what the recipient agrees it means — so the recipient got to decide.",
+   "sources": [
+    {
+     "institution": "Microsoft (On the Issues blog)",
+     "title": "Brendon Lynch, 'Advancing Consumer Trust and Privacy: Internet Explorer in Windows 8'",
+     "date": "2012-05-31",
+     "url": "https://blogs.microsoft.com/on-the-issues/2012/05/31/advancing-consumer-trust-and-privacy-internet-explorer-in-windows-8/",
+     "quote": "Internet Explorer 10 on Windows 8 will be the first browser to have DNT on by default.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same post: 'Consumers can change this setting, but the default will be to send the DNT signal to websites that consumers visit.'"
+    },
+    {
+     "institution": "Microsoft (On the Issues blog)",
+     "title": "An update on Microsoft's approach to Do Not Track",
+     "date": "2015-04-03",
+     "url": "https://blogs.microsoft.com/on-the-issues/2015/04/03/an-update-on-microsofts-approach-to-do-not-track/",
+     "quote": "Without this change, websites that receive a DNT signal from the new browsers could argue that it doesn’t reflect the users’ preference, and therefore, choose not to honor it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Microsoft headquarters (Redmond); coordinates approximate."
+  },
+  {
+   "id": "microsoft-exposes-google-p3p-bypass-2012",
+   "displayDate": "20 February 2012",
+   "year": 2012,
+   "title": "Microsoft says Google's fake P3P policy bypasses IE privacy settings; Facebook does it too",
+   "place": "Microsoft Corporation, Redmond, Washington",
+   "lat": 47.6396,
+   "lng": -122.1283,
+   "summary": "On 20 February 2012 Dean Hachamovitch, Microsoft's vice-president for Internet Explorer, wrote that Google was circumventing IE's default privacy protection by sending a P3P compact policy reading 'This is not a P3P policy!', which IE treated as valid and so let Google's third-party cookies through. Google replied that complying with P3P was 'impractical'. The next day researcher Nik Cubrilovic showed that Facebook sent a similar non-policy ('Facebook does not have a P3P policy'), and Lorrie Cranor, a P3P author, later noted that no regulator had acted against any deceptive P3P policy.",
+   "significance": "The end of P3P's credibility: when the site is the only party that speaks, and nobody enforces what it says, a machine-readable policy can be a machine-readable lie.",
+   "sources": [
+    {
+     "institution": "The Register",
+     "title": "Microsoft claims Google bypassed its browser privacy too",
+     "date": "2012-02-20",
+     "url": "https://www.theregister.com/2012/02/20/microsoft_google_p3p_flaw/",
+     "quote": "“We’ve discovered the answer is yes: Google is employing similar methods to get around the default privacy protections in IE and track IE users with cookies.”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quoting Hachamovitch's IEBlog post of 20 February 2012 (the original MSDN blog is no longer served to scripts; an Internet Archive copy could not be fetched because of repeated connection resets). The article reproduces Google's header: 'P3P: CP=\"This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info.\"' and Google's statement that 'it is impractical to comply with Microsoft’s request while providing modern web functionality.'"
+    },
+    {
+     "institution": "Nik Cubrilovic (personal blog)",
+     "title": "Facebook and many other sites also bypass Internet Explorer privacy controls",
+     "date": "2012-02-21",
+     "url": "https://nikcub.me/posts/facebook-also-doesnt-honor-p3p/",
+     "quote": "Microsoft called out Google for P3P bypass but ignored Facebook doing the same thing - and a survey shows 5% of top sites set invalid P3P headers",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The post reproduces Facebook's response header: 'P3P: CP = \"Facebook does not have a P3P policy. Learn why here: http://fb.me/p3p\"'."
+    },
+    {
+     "institution": "Lorrie Faith Cranor (blog 'This Thing')",
+     "title": "P3P is dead, long live P3P!",
+     "date": "2012-12-03",
+     "url": "https://lorrie.cranor.org/blog/2012/12/03/p3p-is-dead-long-live-p3p/",
+     "quote": "However, to date, no regulators have announced that they are investigating any website for a deceptive P3P policy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Cranor: 'Having personally spent a good part of seven years working on the P3P 1.0 specification'; 'Sadly, the P3P standard is all but dead and practically useless to end users.'"
+    }
+   ],
+   "locationNote": "Microsoft headquarters (Redmond), where the IE team is based; coordinates approximate."
+  },
+  {
+   "id": "searls-intention-economy-book-hbr-press-2012",
+   "displayDate": "2012",
+   "year": 2012,
+   "title": "Searls publishes The Intention Economy: customers who 'dictate their own terms of service'",
+   "place": "Harvard Business Review Press, Boston, Massachusetts",
+   "lat": 42.3601,
+   "lng": -71.0589,
+   "summary": "In 2012 Harvard Business Review Press published Doc Searls's book The Intention Economy: When Customers Take Charge, reporting on companies and projects fostered by ProjectVRM. Promoting it at a Berkman Center talk on 11 June 2012, Harvard described a near future in which individuals could control the flow and use of personal data and 'dictate their own terms of service'.",
+   "significance": "Set out, six years after the idea's first statement, the programme that became machine-readable personal terms: the customer as first party, proffering terms that companies accept.",
+   "sources": [
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge — Doc Searls (event page)",
+     "date": "2012-06-11",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "also the title of his new book from Harvard Business Review Press",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page lists among the book's goals that individuals can 'Dictate their own terms of service', and says ProjectVRM was one 'which Doc launched at the Berkman Center in 2006'. Talk date 'Monday, June 11'; year from the page address (/events/2012/05/)."
+    },
+    {
+     "institution": "Internet Archive (library catalogue record)",
+     "title": "The intention economy : when customers take charge",
+     "date": "2012",
+     "url": "https://archive.org/details/intentioneconomy0000sear",
+     "quote": "Boston, Mass. : Harvard Business Review Press",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Catalogue record: publication date 2012. Retail listings give 1 May 2012, not verified from the publisher."
+    }
+   ],
+   "locationNote": "Publisher's city as given in the catalogue record; coordinates are central Boston, approximate."
+  },
+  {
+   "id": "white-house-privacy-bill-of-rights-and-ftc-report-2012",
+   "displayDate": "23 February 2012",
+   "year": 2012,
+   "title": "Washington backs consumer control: a Privacy Bill of Rights and an industry DNT pledge",
+   "place": "The White House, Washington, D.C.",
+   "lat": 38.8977,
+   "lng": -77.0365,
+   "summary": "On 23 February 2012 the Obama administration published 'Consumer Data Privacy in a Networked World', whose Consumer Privacy Bill of Rights began with Individual Control, and announced that advertising companies delivering nearly 90 percent of online behavioural ads, including Google, Yahoo!, Microsoft and AOL, had agreed to comply when consumers used Do Not Track. On 26 March 2012 the FTC's final privacy report endorsed Do Not Track and called on Congress to consider baseline privacy legislation; FTC chairman Jon Leibowitz predicted an effective Do Not Track option by the end of the year.",
+   "significance": "The high-water mark of official faith in a voluntary person-side signal — no baseline law followed, and the promised DNT never became effective.",
+   "sources": [
+    {
+     "institution": "The White House (Obama administration archive)",
+     "title": "We Can't Wait: Obama Administration Unveils Blueprint for a 'Privacy Bill of Rights' to Protect Consumers Online",
+     "date": "2012-02-23",
+     "url": "https://obamawhitehouse.archives.gov/the-press-office/2012/02/23/we-can-t-wait-obama-administration-unveils-blueprint-privacy-bill-rights",
+     "quote": "Companies that represent the delivery of nearly 90 percent of online behavioral advertisements, including Google, Yahoo!, Microsoft, and AOL have agreed to comply when consumers choose to control online tracking.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "The White House (Obama administration archive)",
+     "title": "Consumer Data Privacy in a Networked World: A Framework for Protecting Privacy and Promoting Innovation in the Global Digital Economy",
+     "date": "2012-02",
+     "url": "https://obamawhitehouse.archives.gov/sites/default/files/privacy-final.pdf",
+     "quote": "Individual Control: Consumers have a right to exercise control over what personal data companies collect from them and how they use it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The President's cover letter is dated February 23, 2012."
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Issues Final Commission Report on Protecting Consumer Privacy",
+     "date": "2012-03-26",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2012/03/ftc-issues-final-commission-report-protecting-consumer-privacy",
+     "quote": "We are confident that consumers will have an easy to use and effective Do Not Track option by the end of the year because companies are moving forward expeditiously to make it happen and because lawmakers will want to enact legislation if they don't.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Chairman Jon Leibowitz. The report itself (https://www.ftc.gov/sites/default/files/documents/reports/federal-trade-commission-report-protecting-consumer-privacy-era-rapid-change-recommendations/120326privacyreport.pdf) states: 'The Commission now also calls on Congress to consider enacting baseline privacy legislation and reiterates its call for data security legislation.'"
+    }
+   ],
+   "locationNote": "Where the blueprint was released; the FTC report came from FTC headquarters in Washington."
+  },
+  {
+   "id": "w3c-retires-p3p-and-do-not-track-2018-2019",
+   "displayDate": "30 August 2018 – 25 March 2019",
+   "year": 2019,
+   "title": "The W3C retires P3P and DNT; Safari drops the DNT switch",
+   "place": "World Wide Web Consortium, MIT (Stata Center), Cambridge, Massachusetts",
+   "lat": 42.3616,
+   "lng": -71.0906,
+   "summary": "On 30 August 2018 the W3C marked P3P 1.0 obsolete, noting that fewer than 6% of the 10,000 most-visited sites supported it and that no current browser acted on P3P policies. On 17 January 2019 the Tracking Protection Working Group closed, republishing its DNT specification as a Working Group Note because there had not been sufficient deployment or planned support. Apple's Safari 12.1, released on 25 March 2019, removed DNT support 'to prevent potential use as a fingerprinting variable'.",
+   "significance": "Both machine-readable privacy mechanisms of the web's first era — the site's policy (P3P) and the person's one-bit request (DNT) — ended as failed voluntary standards, clearing the ground for a person-proffered, agreement-based design.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — Obsolete Recommendation",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "This specification is obsolete and should no longer be used as a basis for implementation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Header: 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018'. Status section: 'fewer than 6% of the 10,000 most frequently visited websites support P3P' and 'No current (2018) user agents are known to provide interpretation of or implement decisions based upon P3P policies.'"
+    },
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note 17 January 2019",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Apple Developer Documentation (JSON data behind the Safari 12.1 Release Notes page)",
+     "title": "Safari 12.1 Release Notes",
+     "date": "2019-03-25",
+     "url": "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-12_1-release-notes.json",
+     "quote": "Removed support for the expired Do Not Track standard to prevent potential use as a fingerprinting variable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Read from the documentation data file behind https://developer.apple.com/documentation/safari-release-notes/safari-12_1-release-notes (script-rendered). Same file: 'Released March 25, 2019'."
+    }
+   ],
+   "locationNote": "W3C's MIT host site; coordinates approximate. Apple's change was made in Cupertino."
   }
  ],
  "series": [],
- "quant": [],
- "myths": [],
- "signals": []
+ "quant": [
+  {
+   "id": "ftc-1998-sites-with-privacy-policy-notice-pct",
+   "label": "Data-collecting commercial websites with a comprehensive privacy policy notice",
+   "value": 2,
+   "unit": "% of sites that collect personal information",
+   "year": 1998,
+   "geography": "United States (FTC Comprehensive Sample of commercial websites)",
+   "notes": "March 1998 survey; the FTC's random Comprehensive Sample had 674 sites, 92% of which collected personal information. The same figure (2%) is reported for the Health, Retail and Financial samples.",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Privacy Online: A Report to Congress",
+     "date": "1998-06",
+     "url": "https://www.ftc.gov/sites/default/files/documents/reports/privacy-online-report-congress/priv-23a.pdf",
+     "quote": "Only 2% of the sites that collect personal information in each of these samples have a Privacy Policy Notice.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "p. 27"
+    }
+   ]
+  },
+  {
+   "id": "ftc-1998-sites-with-any-information-practice-disclosure-pct",
+   "label": "Commercial websites posting any disclosure of their information practices",
+   "value": 14,
+   "unit": "% of sites",
+   "year": 1998,
+   "geography": "United States (FTC Comprehensive Sample, 674 sites)",
+   "notes": "Any disclosure = a Privacy Policy Notice or at least one Information Practice Statement. Health 14%, Retail 13%, Financial 16%.",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Privacy Online: A Report to Congress",
+     "date": "1998-06",
+     "url": "https://www.ftc.gov/sites/default/files/documents/reports/privacy-online-report-congress/priv-23a.pdf",
+     "quote": "Only 14% of all sites in the Comprehensive Sample, 14% of all sites in the Health Sample, 13% of all sites in the Retail Sample, and 16% of all sites in the Financial Sample post any disclosure.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "p. 27; Figure 4 base: 'All Web sites in Comprehensive Sample (674)'."
+    }
+   ]
+  },
+  {
+   "id": "cost-of-reading-privacy-policies-hours-per-user-2008",
+   "label": "Time it would take a US internet user to read the privacy policies of the sites they visit",
+   "value": 201,
+   "unit": "hours per year",
+   "year": 2008,
+   "geography": "United States",
+   "notes": "Model estimate, not a measurement: assumes each policy is read word-for-word once a year for every site visited. Valued at about $3,534 per user per year.",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University (authors' pre-press version; published in I/S: A Journal of Law and Policy for the Information Society, 2008)",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "cost-of-reading-privacy-policies-national-2008",
+   "label": "National value of time if Americans read online privacy policies word-for-word",
+   "value": 781,
+   "unit": "billion US dollars per year",
+   "year": 2008,
+   "geography": "United States",
+   "notes": "Model estimate (same assumptions as the 201-hour figure).",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University (authors' pre-press version; published in I/S: A Journal of Law and Policy for the Information Society, 2008)",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "p3p-compact-policies-with-errors-2010",
+   "label": "Websites whose P3P compact policies contained errors",
+   "value": 11176,
+   "unit": "websites (of 33,139 with compact policies collected; about 34%)",
+   "year": 2010,
+   "geography": "Worldwide web (sites crawled by CMU)",
+   "notes": "Errors included syntax errors and semantic conflicts, and identical invalid policies copied as IE workarounds. Share (33.7%) derived here from the two counts.",
+   "sources": [
+    {
+     "institution": "Future of Privacy Forum (hosted copy of CMU CyLab Technical Report CMU-CyLab-10-014)",
+     "title": "Leon, Cranor, McDonald & McGuire, 'Token Attempt: The Misrepresentation of Website Privacy Policies through the Misuse of P3P Compact Policy Tokens'",
+     "date": "2010-09-10",
+     "url": "https://fpf.org/wp-content/uploads/2021/05/Token-Attempt-The-Misrepresentation-of-Website-Privacy-Policies-through-the-Misuse-of-P3P-Compact-Policy-Tokens.pdf",
+     "quote": "We collected CPs from 33,139 websites and detected errors in 11,176 of them",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "p3p-invalid-compact-policies-left-unblocked-pct-2010",
+   "label": "Invalid P3P compact policies that still got cookies past Internet Explorer's default setting",
+   "value": 98,
+   "unit": "% of invalid compact policies",
+   "year": 2010,
+   "geography": "Worldwide web (sites crawled by CMU)",
+   "notes": "Under IE's default 'Medium' privacy setting.",
+   "sources": [
+    {
+     "institution": "Future of Privacy Forum (hosted copy of CMU CyLab Technical Report CMU-CyLab-10-014)",
+     "title": "Leon, Cranor, McDonald & McGuire, 'Token Attempt: The Misrepresentation of Website Privacy Policies through the Misuse of P3P Compact Policy Tokens'",
+     "date": "2010-09-10",
+     "url": "https://fpf.org/wp-content/uploads/2021/05/Token-Attempt-The-Misrepresentation-of-Website-Privacy-Policies-through-the-Misuse-of-P3P-Compact-Policy-Tokens.pdf",
+     "quote": "98% of invalid CPs resulted in cookies remaining unblocked by IE under it’s default cookie settings.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'it’s' [sic] in the original."
+    }
+   ]
+  },
+  {
+   "id": "p3p-support-top-10000-sites-2018",
+   "label": "Most-visited websites still supporting P3P when the W3C retired it",
+   "value": 6,
+   "unit": "% of the 10,000 most-visited sites (upper bound: 'fewer than')",
+   "year": 2018,
+   "geography": "Worldwide web (BuiltWith metrics cited by W3C)",
+   "notes": "An upper bound: the W3C says 'fewer than 6%'.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — Obsolete Recommendation",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "fewer than 6% of the 10,000 most frequently visited websites support P3P.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "netflix-prize-records-uniquely-identifiable-pct-2008",
+   "label": "Netflix Prize subscriber records uniquely identifiable from 8 ratings with dates",
+   "value": 99,
+   "unit": "% of records",
+   "year": 2008,
+   "geography": "Netflix Prize dataset (500,000 subscribers)",
+   "notes": "With 8 movie ratings, 2 of which may be wrong, and dates with up to a 14-day error.",
+   "sources": [
+    {
+     "institution": "University of Texas at Austin (authors' copy, hosted at Cornell)",
+     "title": "Arvind Narayanan and Vitaly Shmatikov, 'Robust De-anonymization of Large Sparse Datasets', 2008 IEEE Symposium on Security and Privacy",
+     "date": "2008-05",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+     "quote": "With 8 movie ratings (of which 2 may be completely wrong) and dates that may have a 14-day error, 99% of records can be uniquely identiﬁed in the dataset.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'ﬁ' ligature as in the PDF text layer."
+    }
+   ]
+  },
+  {
+   "id": "aol-search-queries-released-2006",
+   "label": "Search queries in the AOL release",
+   "value": 20,
+   "unit": "million queries",
+   "year": 2006,
+   "geography": "United States (AOL users)",
+   "notes": "From about 658,000 users ('Ms. Arnold and 657,000 other Americans'), covering three months.",
+   "sources": [
+    {
+     "institution": "The New York Times (Internet Archive snapshot)",
+     "title": "Michael Barbaro and Tom Zeller Jr., 'A Face Is Exposed for AOL Searcher No. 4417749'",
+     "date": "2006-08-09",
+     "url": "https://web.archive.org/web/2021/https://www.nytimes.com/2006/08/09/technology/09aol.html",
+     "quote": "Buried in a list of 20 million Web search queries collected by AOL and recently released on the Internet is user No. 4417749.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL"
+    }
+   ]
+  },
+  {
+   "id": "online-behavioral-ads-covered-by-2012-dnt-commitment-pct",
+   "label": "Share of online behavioural ads delivered by companies that pledged to honour Do Not Track",
+   "value": 90,
+   "unit": "% of online behavioural advertisements ('nearly')",
+   "year": 2012,
+   "geography": "United States",
+   "notes": "Industry commitment announced at the White House on 23 February 2012; approximate ('nearly 90 percent').",
+   "sources": [
+    {
+     "institution": "The White House (Obama administration archive)",
+     "title": "We Can't Wait: Obama Administration Unveils Blueprint for a 'Privacy Bill of Rights' to Protect Consumers Online",
+     "date": "2012-02-23",
+     "url": "https://obamawhitehouse.archives.gov/the-press-office/2012/02/23/we-can-t-wait-obama-administration-unveils-blueprint-privacy-bill-rights",
+     "quote": "Companies that represent the delivery of nearly 90 percent of online behavioral advertisements, including Google, Yahoo!, Microsoft, and AOL have agreed to comply when consumers choose to control online tracking.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "myths": [
+  {
+   "id": "myth-cookies-were-invented-to-track-people",
+   "claim": "Cookies were invented to track people across the web.",
+   "verdict": "MISLEADING",
+   "correction": "Lou Montulli designed the cookie in 1994 as a per-site memory (shopping carts, logins, preferences) and says he rejected a single browser-wide identifier precisely because it would allow tracking at every website. Cross-site tracking through third-party cookies was an unintended consequence he later called 'the one gotcha' — though he also defended leaving third-party cookies enabled, on the ground that trackers would otherwise use less visible methods.",
+   "sources": [
+    {
+     "institution": "Lou Montulli (personal blog)",
+     "title": "The reasoning behind Web Cookies",
+     "date": "2013-05-14",
+     "url": "https://montulli.blogspot.com/2013/05/the-reasoning-behind-web-cookies.html",
+     "quote": "I was very much against this concept because the unique identifier could be used to track a user at every website.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Verified against the full page text (the helper's paragraph extractor skips this blog's div layout)."
+    },
+    {
+     "institution": "The New York Times (Internet Archive snapshot)",
+     "title": "John Schwartz, 'Giving Web a Memory Cost Its Users Privacy'",
+     "date": "2001-09-04",
+     "url": "https://web.archive.org/web/20201206124432/https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html",
+     "quote": "Third-party cookies were precisely the kind of tracking mechanism Mr. Montulli had tried to prevent through his privacy measures.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL"
+    }
+   ]
+  },
+  {
+   "id": "myth-do-not-track-was-a-law",
+   "claim": "Do Not Track was a law: once your browser sent the signal, websites had to stop tracking you.",
+   "verdict": "FALSE",
+   "correction": "DNT was a voluntary HTTP header. The W3C never finished it as a standard — the working group closed in January 2019 for lack of deployment — and no law in the US required sites to honour it. Recipients decided what the signal meant: when Internet Explorer 10 sent it by default, Microsoft later conceded that sites could argue it did not reflect the user's preference 'and therefore, choose not to honor it'.",
+   "sources": [
+    {
+     "institution": "Microsoft (On the Issues blog)",
+     "title": "An update on Microsoft's approach to Do Not Track",
+     "date": "2015-04-03",
+     "url": "https://blogs.microsoft.com/on-the-issues/2015/04/03/an-update-on-microsofts-approach-to-do-not-track/",
+     "quote": "Without this change, websites that receive a DNT signal from the new browsers could argue that it doesn’t reflect the users’ preference, and therefore, choose not to honor it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note 17 January 2019",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-zuckerberg-said-privacy-is-dead",
+   "claim": "Mark Zuckerberg declared that 'privacy is dead'.",
+   "verdict": "MISLEADING",
+   "correction": "At the Crunchies awards in San Francisco in January 2010 Zuckerberg said people had grown comfortable sharing more, more openly, and that 'That social norm is just something that has evolved over time.' The Guardian summarised this as 'Privacy no longer a social norm'. The reported remarks do not contain the words 'privacy is dead'; the blunter line usually conflated with it is Scott McNealy's 1999 'You have zero privacy anyway. Get over it.'",
+   "sources": [
+    {
+     "institution": "The Guardian",
+     "title": "Bobbie Johnson, 'Privacy no longer a social norm, says Facebook founder'",
+     "date": "2010-01-11",
+     "url": "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy",
+     "quote": "\"People have really gotten comfortable not only sharing more information and different kinds, but more openly and with more people,\" he said. \"That social norm is just something that has evolved over time.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-mcnealy-said-privacy-is-dead-get-over-it",
+   "claim": "Scott McNealy said 'Privacy is dead. Get over it.'",
+   "verdict": "MISLEADING",
+   "correction": "Wired's contemporaneous report of the 25 January 1999 Jini launch gives his words as 'You have zero privacy anyway' followed by 'Get over it.' The paraphrase 'privacy is dead' is a later compression.",
+   "sources": [
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-p3p-let-people-set-their-own-privacy-terms",
+   "claim": "P3P let people set their own privacy terms for the websites they visited.",
+   "verdict": "MISLEADING",
+   "correction": "In P3P the website wrote the machine-readable policy; the person only configured preferences in their browser, which compared the site's policy with them and could warn or block cookies. The person could accept or refuse a site's stated practices but had no way to propose terms — the direction IEEE 7012 reverses.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — W3C Recommendation 16 April 2002",
+     "date": "2002-04-16",
+     "url": "https://www.w3.org/TR/2002/REC-P3P-20020416/",
+     "quote": "The Platform for Privacy Preferences Project (P3P) enables Web sites to express their privacy practices in a standard format that can be retrieved automatically and interpreted easily by user agents.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Lorrie Faith Cranor (blog 'This Thing')",
+     "title": "P3P is dead, long live P3P!",
+     "date": "2012-12-03",
+     "url": "https://lorrie.cranor.org/blog/2012/12/03/p3p-is-dead-long-live-p3p/",
+     "quote": "The idea was that websites would post their privacy policies in P3P format and web browsers would download them automatically and compare them with each user’s privacy settings.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-microsoft-exposed-facebook-p3p-bypass",
+   "claim": "In February 2012 Microsoft revealed that Google and Facebook were bypassing Internet Explorer's P3P privacy settings.",
+   "verdict": "MISLEADING",
+   "correction": "Microsoft's 20 February 2012 post named Google. Facebook's equivalent non-policy header ('Facebook does not have a P3P policy') was publicised the next day by researcher Nik Cubrilovic, who criticised Microsoft for ignoring it; Carnegie Mellon researchers had documented thousands of such invalid policies in 2010.",
+   "sources": [
+    {
+     "institution": "The Register",
+     "title": "Microsoft claims Google bypassed its browser privacy too",
+     "date": "2012-02-20",
+     "url": "https://www.theregister.com/2012/02/20/microsoft_google_p3p_flaw/",
+     "quote": "“We’ve discovered the answer is yes: Google is employing similar methods to get around the default privacy protections in IE and track IE users with cookies.”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Nik Cubrilovic (personal blog)",
+     "title": "Facebook and many other sites also bypass Internet Explorer privacy controls",
+     "date": "2012-02-21",
+     "url": "https://nikcub.me/posts/facebook-also-doesnt-honor-p3p/",
+     "quote": "Microsoft called out Google for P3P bypass but ignored Facebook doing the same thing - and a survey shows 5% of top sites set invalid P3P headers",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-eu-cookie-law-requires-cookie-banners",
+   "claim": "The 2009 EU 'cookie law' requires websites to show cookie banners.",
+   "verdict": "MISLEADING",
+   "correction": "Directive 2009/136/EC requires the user's consent, after clear and comprehensive information, before non-essential storage or access on the user's device. It does not prescribe banners; its recital 66 says that, where technically possible and effective, consent may be expressed through the settings of a browser or other application. Banners were how sites chose to implement it.",
+   "sources": [
+    {
+     "institution": "EUR-Lex, Publications Office of the European Union (Internet Archive snapshot)",
+     "title": "Directive 2009/136/EC of the European Parliament and of the Council of 25 November 2009",
+     "date": "2009-11-25",
+     "url": "https://web.archive.org/web/20260107085903/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32009L0136",
+     "quote": "the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Recital 66."
+    }
+   ]
+  },
+  {
+   "id": "myth-removing-names-makes-data-anonymous",
+   "claim": "Behavioural data is anonymous once names are replaced by numbers.",
+   "verdict": "FALSE",
+   "correction": "AOL's 2006 release replaced users with numbers, yet the New York Times identified user No. 4417749 as Thelma Arnold from her queries; Narayanan and Shmatikov showed that a few movie ratings and dates uniquely identified 99% of records in the name-stripped Netflix Prize data.",
+   "sources": [
+    {
+     "institution": "The New York Times (Internet Archive snapshot)",
+     "title": "Michael Barbaro and Tom Zeller Jr., 'A Face Is Exposed for AOL Searcher No. 4417749'",
+     "date": "2006-08-09",
+     "url": "https://web.archive.org/web/2021/https://www.nytimes.com/2006/08/09/technology/09aol.html",
+     "quote": "It did not take much investigating to follow that data trail to Thelma Arnold, a 62-year-old widow who lives in Lilburn, Ga., frequently researches her friends’ medical ailments and loves her three dogs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL"
+    },
+    {
+     "institution": "arXiv (Cornell University)",
+     "title": "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' (arXiv:cs/0610105)",
+     "date": "2006-10-18",
+     "url": "https://arxiv.org/abs/cs/0610105",
+     "quote": "We demonstrate that an adversary who knows only a little bit about an individual subscriber can easily identify this subscriber's record in the dataset.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "signals": [
+  {
+   "id": "signal-p3p-full-policy",
+   "name": "P3P 1.0 full policy (XML)",
+   "years": "2002–2018 (W3C Recommendation 16 April 2002; obsoleted 30 August 2018)",
+   "body": "World Wide Web Consortium (P3P Working Group)",
+   "whoSpeaks": "site",
+   "whatItSays": "The website's own data practices — what it collects, for what purposes, for which recipients, how long it keeps data, whether people can access it and how disputes are resolved — in a fixed XML vocabulary published at a well-known location. The person's user agent fetches it and compares it with preferences the person has set; the person cannot send terms back.",
+   "legalForce": "None in itself. The specification offers 'no technical mechanism for making sure sites act according to their policies' and relies on laws and self-regulatory programmes for enforcement; no regulator is known to have acted against a deceptive P3P policy (Cranor, 2012).",
+   "fate": "Little deployment beyond Internet Explorer's cookie filter; fewer than 6% of the top 10,000 sites supported it in 2018, when the W3C declared it obsolete.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — W3C Recommendation 16 April 2002",
+     "date": "2002-04-16",
+     "url": "https://www.w3.org/TR/2002/REC-P3P-20020416/",
+     "quote": "Although P3P provides a technical mechanism for ensuring that users can be informed about privacy policies before they release personal information, it does not provide a technical mechanism for making sure sites act according to their policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — Obsolete Recommendation",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "In addition, no enforcement action followed when a site's policy expressed in P3P failed to reflect their actual privacy practices.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Lorrie Faith Cranor (blog 'This Thing')",
+     "title": "P3P is dead, long live P3P!",
+     "date": "2012-12-03",
+     "url": "https://lorrie.cranor.org/blog/2012/12/03/p3p-is-dead-long-live-p3p/",
+     "quote": "However, to date, no regulators have announced that they are investigating any website for a deceptive P3P policy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "signal-p3p-compact-policy",
+   "name": "P3P compact policy (HTTP 'P3P: CP=' header)",
+   "years": "2001–c. 2018 (used by Internet Explorer 6 onward; defined in P3P 1.0)",
+   "body": "World Wide Web Consortium (part of P3P 1.0); implemented by Microsoft in Internet Explorer",
+   "whoSpeaks": "site",
+   "whatItSays": "A string of three- and four-letter tokens summarising the site's cookie-related practices (purpose, recipients, retention, data categories), sent with the cookie. Internet Explorer's default 'Medium' setting used it to decide whether to accept, downgrade or block third-party cookies.",
+   "legalForce": "None. The browser had 'no technical means' to verify the claims; sites discovered that an invalid or even self-declared non-policy ('This is not a P3P policy!') got their cookies accepted.",
+   "fate": "Widely gamed: 11,176 of 33,139 sites had erroneous compact policies in 2010 and 98% of invalid ones left cookies unblocked; Google's and Facebook's non-policies were exposed in February 2012; retired with P3P in 2018, when no current browser acted on P3P.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — W3C Recommendation 16 April 2002",
+     "date": "2002-04-16",
+     "url": "https://www.w3.org/TR/2002/REC-P3P-20020416/",
+     "quote": "Compact policies are summarized P3P policies that provide hints to user agents to enable the user agent to make quick, synchronous decisions about applying policy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Microsoft (IEInternals blog, archived on Microsoft Learn)",
+     "title": "Understanding Cookie Controls (IEInternals blog post signed '-Eric')",
+     "date": "2010-06-05",
+     "url": "https://learn.microsoft.com/en-us/archive/blogs/ieinternals/understanding-cookie-controls",
+     "quote": "There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Future of Privacy Forum (hosted copy of CMU CyLab Technical Report CMU-CyLab-10-014)",
+     "title": "Leon, Cranor, McDonald & McGuire, 'Token Attempt: The Misrepresentation of Website Privacy Policies through the Misuse of P3P Compact Policy Tokens'",
+     "date": "2010-09-10",
+     "url": "https://fpf.org/wp-content/uploads/2021/05/Token-Attempt-The-Misrepresentation-of-Website-Privacy-Policies-through-the-Misuse-of-P3P-Compact-Policy-Tokens.pdf",
+     "quote": "We found thousands of sites using identical invalid CPs that had been recommended as workarounds for IE cookie blocking.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "signal-do-not-track-header",
+   "name": "Do Not Track (HTTP 'DNT' request header)",
+   "years": "2009–2019 (prototype July 2009; Firefox 4, March 2011; W3C Note January 2019; removed from Safari March 2019)",
+   "body": "Proposed by Christopher Soghoian and Sid Stamm; shipped by Mozilla and other browser makers; W3C Tracking Protection Working Group (Tracking Preference Expression)",
+   "whoSpeaks": "person's browser",
+   "whatItSays": "One bit, sent with every request: 'DNT: 1' — 'This user prefers not to be tracked on this request' — or 'DNT: 0' to allow tracking. The W3C draft added a 'Tk' response header for sites to say whether they complied, and an API for site-specific exceptions. It carries no purposes, conditions or terms.",
+   "legalForce": "None: honouring it was voluntary. Industry pledged in February 2012 to comply (with the White House saying the commitment would be subject to FTC enforcement), but the meaning of the signal — and whether a browser default counted — was left to the recipients.",
+   "fate": "Never became a W3C Recommendation; the working group closed in January 2019 citing insufficient deployment, Microsoft stopped enabling it by default in 2015, and Apple removed it from Safari 12.1 in March 2019 as a potential fingerprinting variable.",
+   "sources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note 17 January 2019",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "1 This user prefers not to be tracked on this request.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same table: '0 This user prefers to allow tracking on this request.' Abstract: the specification also defines 'the Tk response header field for confirming tracking status'."
+    },
+    {
+     "institution": "The White House (Obama administration archive)",
+     "title": "We Can't Wait: Obama Administration Unveils Blueprint for a 'Privacy Bill of Rights' to Protect Consumers Online",
+     "date": "2012-02-23",
+     "url": "https://obamawhitehouse.archives.gov/the-press-office/2012/02/23/we-can-t-wait-obama-administration-unveils-blueprint-privacy-bill-rights",
+     "quote": "Companies that make this commitment will be subject to FTC enforcement.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Apple Developer Documentation (JSON data behind the Safari 12.1 Release Notes page)",
+     "title": "Safari 12.1 Release Notes",
+     "date": "2019-03-25",
+     "url": "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-12_1-release-notes.json",
+     "quote": "Removed support for the expired Do Not Track standard to prevent potential use as a fingerprinting variable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ]
 }

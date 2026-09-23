@@ -1,0 +1,437 @@
+{
+ "slice": "global",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "law",
+   "id": "fi-1987",
+   "status": "FIXED",
+   "issues": [
+    "The only source's quote is the Finlex page title ('Henkilörekisterilaki | 471/1987 | Suomen säädöskokoelma'). It supports the name, the number and the year and nothing more. The finlex.fi page renders the statute text by script, so the fetched page is only a title and menu. The note's claims about the supervising Data Protection Ombudsman and about replacement in 1999 by a Personal Data Act implementing the EU Directive had no source.",
+    "All the claims are correct. The original statute text in Finlex's open-data service gives the signing line 'Helsingissä 30 päivänä huhtikuuta 1987' and entry into force on 1 January 1988, and it makes the tietosuojavaltuutettu the supervisor. The Personal Data Act 523/1999 expressly repeals 471/1987. The government bill HE 96/1998 says the new act would replace the 1987 law and align it with the EU Data Protection Directive. Primary sources for each were added, and the note now gives the exact dates.",
+    "The coordinates (60.1725, 24.9335) are Parliament House in Helsinki, which is correct."
+   ],
+   "fieldFixes": {
+    "note": "Finland's first general law on personal data files, given on 30 April 1987 and in force from 1 January 1988, with the Data Protection Ombudsman (tietosuojavaltuutettu) as supervisor. It was repealed in 1999 by the Personal Data Act (523/1999), which brought Finnish law into line with the EU Data Protection Directive."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. It is only the page title (the statute text loads by script), so the dates, the supervisor and the 1999 repeal are sourced from Finlex open-data texts added below."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Finlex open data (Ministry of Justice, Finland)",
+     "title": "471/1987 Henkilörekisterilaki — original text",
+     "date": "1987-04-30",
+     "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/1987/471/fin@",
+     "quote": "Helsingissä 30 päivänä huhtikuuta 1987",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Helsinki, 30 April 1987'. This is the signing line, followed by 'Tasavallan Presidentti Mauno Koivisto Oikeusministeri Christoffer Taxell'. Finlex's open-data service serves the text of the original statute that the finlex.fi page renders by script."
+    },
+    {
+     "institution": "Finlex open data (Ministry of Justice, Finland)",
+     "title": "471/1987 Henkilörekisterilaki — original text",
+     "date": "1987-04-30",
+     "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/1987/471/fin@",
+     "quote": "Tämä laki tulee voimaan 1 päivänä tammikuuta 1988.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'This Act enters into force on 1 January 1988.'"
+    },
+    {
+     "institution": "Finlex open data (Ministry of Justice, Finland)",
+     "title": "471/1987 Henkilörekisterilaki — original text",
+     "date": "1987-04-30",
+     "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/1987/471/fin@",
+     "quote": "Tietosuojavaltuutettu valvoo henkilötietojen keräämistä, tallettamista, käyttöä ja luovuttamista tämän lain tavoitteiden toteuttamiseksi.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The Data Protection Ombudsman supervises the collection, storage, use and disclosure of personal data to achieve the aims of this Act.' The office itself was set up by the companion Act 474/1987, which the same statute cites."
+    },
+    {
+     "institution": "Finlex open data (Ministry of Justice, Finland)",
+     "title": "523/1999 Henkilötietolaki",
+     "date": "1999-04-22",
+     "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/1999/523/fin@",
+     "quote": "Tällä lailla kumotaan 30 päivänä huhtikuuta 1987 annettu henkilörekisterilaki (471/1987) siihen myöhemmin tehtyine muutoksineen.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'This Act repeals the Personal Data File Act (471/1987) given on 30 April 1987, together with its later amendments.' The Personal Data Act was signed in Helsinki on 22 April 1999 and entered into force on 1 June 1999 (both on the same page)."
+    },
+    {
+     "institution": "Finlex open data (Government of Finland)",
+     "title": "HE 96/1998 Hallituksen esitys Eduskunnalle henkilötietolaiksi ja eräiksi siihen liittyviksi laeiksi",
+     "date": "1998",
+     "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/doc/government-proposal/1998/96/fin@",
+     "quote": "Esityksessä ehdotetaan säädettäväksi henkilötietolaki, joka korvaisi vuoden 1987 henkilörekisterilain. Esityksellä saatetaan voimassa oleva henkilötietojen keräämistä, tallettamista, käyttöä ja luovuttamista koskeva yleislainsäädäntö vastaamaan yksilöiden suojelusta henkilötietojen käsittelyssä ja näiden tietojen vapaasta liikkuvuudesta annettua Euroopan parlamentin ja neuvoston direktiiviä",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Government bill. Translation: 'The bill proposes a Personal Data Act to replace the 1987 Personal Data File Act. It brings the current general legislation on the collection, storage, use and disclosure of personal data into line with the Directive of the European Parliament and of the Council on the protection of individuals with regard to the processing of personal data and on the free movement of such data'. That is Directive 95/46/EC."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ie-1988",
+   "status": "OK",
+   "issues": [
+    "No errors found. The long title, quoted verbatim (FOUND), gives effect to Convention 108. The page carries the date '[13 th July , 1988]', and the Act is Number 25 of 1988.",
+    "The claim that the Act created the Data Protection Commissioner rests on the page's table of contents ('The Data Protection Commissioner 9. The Commissioner.'), not on the quote. Section 9's own wording was added as a supporting source. 'Today the Data Protection Commission' is correct: section 10 of the Data Protection Act 2018 establishes 'An Coimisiún um Chosaint Sonraí or, in the English language, the Data Protection Commission'.",
+    "The coordinates (53.3409, -6.254) are Leinster House, which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND, and '[13 th July , 1988]' follows it on the page."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Office of the Attorney General (Irish Statute Book)",
+     "title": "Data Protection Act, 1988 — Section 9: The Commissioner",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/section/9/enacted/en/html",
+     "quote": "For the purposes of this Act, there shall be a person (referred to in this Act as the Commissioner) who shall be known as an Coimisinéir Cosanta Sonraí or, in the English language, the Data Protection Commissioner",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 9(1) of the Act as enacted, which creates the office of Data Protection Commissioner."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "cz-1992",
+   "status": "FIXED",
+   "issues": [
+    "No factual error. Re-fetched and FOUND on the page: 'ze dne 29. dubna 1992' [of 29 April 1992], 'Federální shromáždění České a Slovenské Federativní Republiky se usneslo' [the Federal Assembly of the ČSFR resolved], 'Platnost od 01.06.1992 Účinnost od 01.06.1992' [valid from, effective from] and 'Zrušeno k 01.06.2000 ( 101/2000 Sb. )' [repealed as of].",
+    "Unsupported claim: nothing sourced the statement that Act 101/2000 'created the Czech Office for Personal Data Protection'. Act 101/2000 Sb. was added. Its text says 'Zřizuje se Úřad pro ochranu osobních údajů' [the Office for Personal Data Protection is established] and expressly repeals 256/1992. It is dated 4 April 2000 and effective from 1 June 2000.",
+    "Minor: the coordinates (50.0875, 14.4213) are Old Town Square, a generic Prague point. The Federal Assembly sat about 1 km away on Vinohradská. This is acceptable at map scale, so no change was made."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The date, validity and repeal strings in the existing note were also FOUND. The site is a private reproduction of the Collection of Laws."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Zákony pro lidi (AION CS), consolidated Czech legislation",
+     "title": "Zákon č. 101/2000 Sb., o ochraně osobních údajů a o změně některých zákonů",
+     "date": "2000-04-04",
+     "url": "https://www.zakonyprolidi.cz/cs/2000-101",
+     "quote": "(1) Zřizuje se Úřad pro ochranu osobních údajů se sídlem v Praze (dále jen \"Úřad\").",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '(1) The Office for Personal Data Protection, with its seat in Prague, is established (hereinafter the \"Office\").' The page gives 'Účinnost od 01.06.2000' [effective from 1 June 2000]."
+    },
+    {
+     "institution": "Zákony pro lidi (AION CS), consolidated Czech legislation",
+     "title": "Zákon č. 101/2000 Sb., o ochraně osobních údajů a o změně některých zákonů",
+     "date": "2000-04-04",
+     "url": "https://www.zakonyprolidi.cz/cs/2000-101",
+     "quote": "Zrušuje se zákon č. 256/1992 Sb., o ochraně osobních údajů v informačních systémech.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Act No. 256/1992 Coll., on the protection of personal data in information systems, is repealed.'"
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "es-1992",
+   "status": "FIXED",
+   "issues": [
+    "Wording: 'Adopted 29 October 1992'. The date in the law's title is its date of royal sanction ('Jefatura del Estado'), not the date the Cortes voted for it. Changed to 'Dated'. The BOE page also gives the date of entry into force (31/01/1993), which was added.",
+    "The quote supports only the title. The claims that the law created the data-protection agency and was replaced in 1999 are on the same BOE page but were not quoted, so both lines were added as sources: '1. Se crea la Agencia de Protección de Datos.' and 'SE DEROGA, por Ley Orgánica 15/1999, de 13 de diciembre'. Publication in BOE núm. 262 on 31 October 1992 matches the source's date field.",
+    "The coordinates (40.4163, -3.6966) are the Congreso de los Diputados, which is fine."
+   ],
+   "fieldFixes": {
+    "note": "Dated 29 October 1992 and in force from 31 January 1993 (the 'LORTAD'); it created Spain's data-protection agency and was replaced by Organic Law 15/1999 of 13 December 1999, adopted after the EU Directive."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The page also shows '« BOE » núm. 262, de 31 de octubre de 1992' and 'Fecha de entrada en vigor: 31/01/1993'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Agencia Estatal Boletín Oficial del Estado (BOE)",
+     "title": "Ley Orgánica 5/1992, de 29 de octubre",
+     "date": "1992-10-31",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1992-24189",
+     "quote": "1. Se crea la Agencia de Protección de Datos.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '1. The Data Protection Agency is created.' This is Article 34(1) of the LORTAD."
+    },
+    {
+     "institution": "Agencia Estatal Boletín Oficial del Estado (BOE)",
+     "title": "Ley Orgánica 5/1992, de 29 de octubre — análisis",
+     "date": "1992-10-31",
+     "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1992-24189",
+     "quote": "SE DEROGA, por Ley Orgánica 15/1999, de 13 de diciembre (Ref. BOE-A-1999-23750 ).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "BOE's 'Análisis' metadata on the same page. Translation: 'REPEALED by Organic Law 15/1999 of 13 December'. The page also gives 'Fecha de entrada en vigor: 31/01/1993'."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ch-1992",
+   "status": "FIXED",
+   "issues": [
+    "No factual error, but two claims had no source. The Federal Office of Justice page supports the date of 19 June 1992 (the quote is FOUND) and the revised law's entry into force on 1 September 2023 ('Es ist am 1. September 2023 in Kraft getreten.', FOUND). It says nothing about entry into force in 1993 or about the law's scope, and the source note itself admits the 1993 date was not verified.",
+    "Fedlex (SR 235.1, version of 1 March 2019) was added. It shows 'Datum des Inkrafttretens: 1. Juli 1993' and Art. 2(1), under which the Act applies to processing by 'a. private Personen; b. Bundesorgane', which confirms 'federal bodies and private persons'. The note was sharpened to give the exact date of 1 July 1993.",
+    "Regulator: under the 1992 Act the office was the Eidgenössischer Datenschutzbeauftragter. It took the name EDÖB when the Transparency Act came in (2006). Giving the current name, as the other records do, is acceptable."
+   ],
+   "fieldFixes": {
+    "note": "Dated 19 June 1992 and in force from 1 July 1993; covered federal bodies and private persons. Replaced by a revised FADP in force from 1 September 2023."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The same page states 'Es ist am 1. September 2023 in Kraft getreten.' (FOUND). The page was published on 18 March 2026. The 1993 entry into force is now sourced from Fedlex (added)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Fedlex (Swiss Federal Chancellery)",
+     "title": "Bundesgesetz über den Datenschutz (DSG) vom 19. Juni 1992 (Stand am 1. März 2019), SR 235.1",
+     "date": "1992-06-19",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1993/1945_1945_1945/20190301/de/html/fedlex-data-admin-ch-eli-cc-1993-1945_1945_1945-20190301-de-html-1.html",
+     "quote": "Datum des Inkrafttretens: 1. Juli 1993",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Date of entry into force: 1 July 1993'. This is the official Fedlex HTML of the last consolidated version of the 1992 Act."
+    },
+    {
+     "institution": "Fedlex (Swiss Federal Chancellery)",
+     "title": "Bundesgesetz über den Datenschutz (DSG) vom 19. Juni 1992 (Stand am 1. März 2019), SR 235.1",
+     "date": "1992-06-19",
+     "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1993/1945_1945_1945/20190301/de/html/fedlex-data-admin-ch-eli-cc-1993-1945_1945_1945-20190301-de-html-1.html",
+     "quote": "1 Dieses Gesetz gilt für das Bearbeiten von Daten natürlicher und juristischer Personen durch: a. private Personen; b. Bundesorgane.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Art. 2(1). Translation: 'This Act applies to the processing of data of natural and legal persons by: a. private persons; b. federal bodies.'"
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "it-1996",
+   "status": "FIXED",
+   "issues": [
+    "The note's second clause ('the Garante ... publishes it as part of its founding legislation') is vague and is not what the page says. The page is the Garante's docweb copy of Law 675/1996, consolidated with Legislative Decree 467/2001. The substantive point, which the page does support, is that the law itself created the authority: 'Art. 30. Istituzione del Garante' / 'E´ istituito il Garante per la protezione dei dati personali' [the Garante for the protection of personal data is established]. Footnote 49 shows that this paragraph was amended by Legislative Decree 123/1997, so the Garante's current name comes from that amendment.",
+    "Rewritten with facts from the same page: published in the Gazzetta Ufficiale n. 5 on 8 January 1997, in force 120 days after publication (Art. 45), and repealed under Art. 183 of the Personal Data Protection Code (2003).",
+    "'Italy's first general data-protection law' matches the standard account. Italy had only sectoral rules before 1996, and the page does not contradict it. The coordinates (Montecitorio, Rome) are fine."
+   ],
+   "fieldFixes": {
+    "note": "Italy's first general data-protection law, dated 31 December 1996 and published in the Gazzetta Ufficiale on 8 January 1997; its Article 30 established the Garante per la protezione dei dati personali. It was repealed by the 2003 Personal Data Protection Code."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The page carries the text consolidated with d.lg. 467/2001, not the original Gazzetta text."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Garante per la protezione dei dati personali",
+     "title": "Legge n. 675 del 31 dicembre 1996 — Art. 30. Istituzione del Garante",
+     "date": "1996-12-31",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/28335",
+     "quote": "Art. 30. Istituzione del Garante",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The article heading ('Establishment of the Garante'); its paragraph 1 reads 'E´ istituito il Garante per la protezione dei dati personali' (as amended by d.lg. 123/1997)."
+    },
+    {
+     "institution": "Garante per la protezione dei dati personali",
+     "title": "Legge n. 675 del 31 dicembre 1996 — scheda",
+     "date": "1997-01-08",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/28335",
+     "quote": "(Pubblicato sulla Gazzetta Ufficiale n. 5 dell´8 gennaio 1997 - Suppl. Ordinario n. 3)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Publication details. The same page states 'Legge abrogata ai sensi dell´articolo 183, comma 1, lettera a), del Codice in materia di protezione dei dati personali' [law repealed under Art. 183(1)(a) of the Personal Data Protection Code]."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ru-2006",
+   "status": "FIXED",
+   "issues": [
+    "'Adopted 27 July 2006' is imprecise. The same Kremlin page says 'Принят Государственной Думой 8 июля 2006 года' [adopted by the State Duma on 8 July 2006] and 'Одобрен Советом Федерации 14 июля 2006 года' [approved by the Federation Council on 14 July 2006]. 27 July 2006 is the date the President signed it, which is the date the law carries.",
+    "The localisation paraphrase ('stored and processed in databases located in Russia') is too broad. Law 242-FZ requires operators to ensure 'запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение' [recording, systematisation, accumulation, storage, clarification (updating, changing) and retrieval] of Russian citizens' personal data using databases in Russia, with exceptions. It does not localise all 'processing' (обработка). The same correction was made to the event russia-personal-data-localisation-law-2014 in global-2.",
+    "The 2014 amendment and its date of entry into force had no source on this record. The 152-FZ page lists 'от 21.07.2014 № 242-ФЗ' among its amending laws. Sources were added: the 242-FZ text, whose Art. 4 as amended by 526-FZ gives 1 September 2015, and DLA Piper's authority page for Roskomnadzor.",
+    "The coordinates (55.7575, 37.615) are the State Duma on Okhotny Ryad, which is fine."
+   ],
+   "fieldFixes": {
+    "note": "Signed on 27 July 2006, after passage by the State Duma on 8 July. Amended in 2014 by Law 242-FZ (in force 1 September 2015) to require operators to record, store, update and retrieve Russian citizens' personal data using databases located in Russia, with some exceptions."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The same page shows 'О персональных данных', 'Принят Государственной Думой 8 июля 2006 года' and 'Одобрен Советом Федерации 14 июля 2006 года'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "President of Russia (kremlin.ru)",
+     "title": "Федеральный закон от 27.07.2006 г. № 152-ФЗ",
+     "date": "2006-07-27",
+     "url": "http://www.kremlin.ru/acts/bank/24154",
+     "quote": "Принят Государственной Думой 8 июля 2006 года",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Adopted by the State Duma on 8 July 2006'. The next line reads 'Одобрен Советом Федерации 14 июля 2006 года' [approved by the Federation Council on 14 July 2006]."
+    },
+    {
+     "institution": "President of Russia (kremlin.ru)",
+     "title": "Федеральный закон от 21.07.2014 г. № 242-ФЗ",
+     "date": "2014-07-21",
+     "url": "http://www.kremlin.ru/acts/bank/38728",
+     "quote": "оператор обязан обеспечить запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение персональных данных граждан Российской Федерации с использованием баз данных, находящихся на территории Российской Федерации",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'the operator is obliged to ensure the recording, systematisation, accumulation, storage, clarification (updating, changing) and retrieval of personal data of citizens of the Russian Federation using databases located in the territory of the Russian Federation'. This is the new Art. 18(5) of 152-FZ."
+    },
+    {
+     "institution": "President of Russia (kremlin.ru)",
+     "title": "Федеральный закон от 21.07.2014 г. № 242-ФЗ — Статья 4",
+     "date": "2014-07-21",
+     "url": "http://www.kremlin.ru/acts/bank/38728",
+     "quote": "Настоящий Федеральный закон вступает в силу с 1 сентября 2015 года. (В редакции Федерального закона от 31.12.2014 № 526-ФЗ)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'This Federal Law enters into force on 1 September 2015 (as amended by Federal Law No. 526-FZ of 31.12.2014)'."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Russia: Authority",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=RU",
+     "quote": "Federal Service for Supervision of Communications, Information Technologies and Mass Media or, in short, Roskomnadzor (the “Agency”)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Law-firm global guide (secondary); supports the regulator field."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ua-2010",
+   "status": "FIXED",
+   "issues": [
+    "The only source was a secondary law-firm guide (DLA Piper; quote FOUND), and it does not support the note's claim that the Ukrainian Parliament Commissioner for Human Rights supervises the law. The official Verkhovna Rada text can be read (print view), so primary sources were added. The Ukrainian original is signed 'м. Київ 1 червня 2010 року № 2297-VI' and the final provisions say 'Цей Закон набирає чинності з 1 січня 2011 року' [this Law enters into force on 1 January 2011]. The Commissioner has been a named actor under Art. 4 since Law No. 383-VII of 3 July 2013, which took effect on 1 January 2014.",
+    "The note was sharpened: supervision by the Commissioner dates from 2014, not from 2010.",
+    "The coordinates (50.4474, 30.5364) are the Verkhovna Rada building, which is fine."
+   ],
+   "fieldFixes": {
+    "note": "Adopted 1 June 2010 and in force from 1 January 2011; since 1 January 2014 (Law No. 383-VII of 2013) the Ukrainian Parliament Commissioner for Human Rights has supervised it."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Secondary; primary Verkhovna Rada sources added."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Verkhovna Rada of Ukraine (Legislation of Ukraine)",
+     "title": "On Personal Data Protection — Law of Ukraine No. 2297-VI (official English translation)",
+     "date": "2010-06-01",
+     "url": "https://zakon.rada.gov.ua/laws/show/en/2297-17/print",
+     "quote": "City of Kyiv 1 June 2010 No. 2297-VI",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Signing line of the Law (President V. Yanukovych). The Ukrainian original reads 'м. Київ 1 червня 2010 року № 2297-VI'."
+    },
+    {
+     "institution": "Verkhovna Rada of Ukraine (Legislation of Ukraine)",
+     "title": "On Personal Data Protection — Law of Ukraine No. 2297-VI (official English translation)",
+     "date": "2010-06-01",
+     "url": "https://zakon.rada.gov.ua/laws/show/en/2297-17/print",
+     "quote": "1. This Law shall enter into force on 1 January 2011.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Final provisions."
+    },
+    {
+     "institution": "Verkhovna Rada of Ukraine (Legislation of Ukraine)",
+     "title": "Про захист персональних даних — Закон України № 2297-VI",
+     "date": "2010-06-01",
+     "url": "https://zakon.rada.gov.ua/laws/show/2297-17/print",
+     "quote": "{Абзац шостий частини першої статті 4 в редакції Закону № 383-VII від 03.07.2013 }",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '{Paragraph six of Article 4(1) as worded by Law No. 383-VII of 03.07.2013}'. The paragraph it annotates reads 'Уповноважений Верховної Ради України з прав людини (далі - Уповноважений).' [the Ukrainian Parliament Commissioner for Human Rights (hereinafter the Commissioner)], which lists the Commissioner among the actors in personal-data relations. Art. 23 sets out the Commissioner's powers."
+    },
+    {
+     "institution": "Verkhovna Rada of Ukraine (Legislation of Ukraine)",
+     "title": "Закон України № 383-VII «Про внесення змін до деяких законодавчих актів України щодо удосконалення системи захисту персональних даних»",
+     "date": "2013-07-03",
+     "url": "https://zakon.rada.gov.ua/laws/show/383-18/print",
+     "quote": "1. Цей Закон набирає чинності з 1 січня 2014 року.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '1. This Law enters into force on 1 January 2014.' This is the 2013 amending law that gave personal-data supervision to the Parliament Commissioner for Human Rights."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "az-2010",
+   "status": "FIXED",
+   "issues": [
+    "The source's date field says '2026', but the DLA Piper Azerbaijan page states 'This content was last reviewed in 2022 and may not reflect recent legislative updates.' Corrected to 2022.",
+    "The date of 11 May 2010 is correct. Azerbaijan's official legal database (e-qanun.az, Ministry of Justice) gives 'Fərdi məlumatlar haqqında', acceptDate 11.05.2010, citation 998-IIIQ, status 'Qüvvədədir' [in force], published in the Azərbaycan newspaper on 06-06-2010. The human-readable page https://e-qanun.az/framework/19675 renders by script, and its full-text HTML returns 403, so the portal's JSON record was added as a primary source (quote FOUND). The law's number was added to the law field."
+   ],
+   "fieldFixes": {
+    "law": "Law No. 998-IIIQ on Personal Information (Fərdi məlumatlar haqqında)",
+    "note": "Law No. 998-IIIQ, dated 11 May 2010."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022",
+     "note": "Re-fetched; quote FOUND. The page says the content was last reviewed in 2022, so the date field was changed from 2026."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "e-qanun.az (Ministry of Justice of the Republic of Azerbaijan), legal-acts database",
+     "title": "Fərdi məlumatlar haqqında — Azərbaycan Respublikasının Qanunu № 998-IIIQ",
+     "date": "2010-05-11",
+     "url": "https://api.e-qanun.az/framework/19675",
+     "quote": "\"title\":\"Fərdi məlumatlar haqqında\",\"acceptDate\":\"11.05.2010\",\"typeName\":\"Qanunlar\",\"citation\":\"998-IIIQ\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The JSON record behind https://e-qanun.az/framework/19675 (that page renders by script). Translation: title 'On personal data/information', accepted 11.05.2010, type 'Laws', number 998-IIIQ. The same record gives the status 'Qüvvədədir' [in force] and publication in the Azərbaycan newspaper on 06-06-2010."
+    }
+   ]
+  }
+ ]
+}

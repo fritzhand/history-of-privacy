@@ -1,0 +1,246 @@
+{
+ "slice": "myterms",
+ "chunk": 11,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-myterms-requires-ai",
+   "status": "FIXED",
+   "issues": [
+    "The verdict (FALSE) and the correction hold. Both quotes are verbatim (re-fetched 2026-09-23, --check FOUND).",
+    "The FAQ quote starts with a bare 'No.', so a reader cannot tell what it answers. On the page it answers 'Do I need an AI to use MyTerms?' (FAQ 'For Individuals (The First Party)', item 10). The quote is extended to include the question (--check FOUND).",
+    "The correction says AI agents are 'one option the standard leaves open'. That rests on Searls's next sentence, 'The standard leaves these choices open.', which the recorded quote cut off. The quote is extended to include it (--check FOUND). Searls chairs the working group, so an IEEE source is added: the IEEE SA abstract says agents for both parties 'shall engage using any protocol that serves the purpose'. Note that the abstract names AI agents only among the service providers covered (the second-party side). No source says the standard requires AI on the person's side.",
+    "The FAQ source's date '2026' is loose. The page's WordPress schema gives datePublished 2025-11-11 and dateModified 2026-01-26, so the date is set to the last-modified date."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Do I need an AI to use MyTerms? No. But AI will likely be more involved as development of MyTerms products and services proceed and evolve.",
+     "date": "2026-01-26",
+     "note": "Re-fetched 2026-09-23; --check FOUND for the question plus the answer. <title> is 'MyTerms FAQs – Common Questions About the Privacy Standard | MyTerms'. The FAQ in the same section also says: 'You will have agents to engage with agents on the corporate side. Those can be as simple as browser plugins (and Web server plugins on the other side)' (--check FOUND). WP schema: datePublished 2025-11-11T15:42:29Z, dateModified 2026-01-26T16:26:24Z."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "These agents can be as simple as browser and web server plugins, or as fancy as personal and corporate AIs. The standard leaves these choices open.",
+     "note": "Re-fetched 2026-09-23 (from the helper cache; the site returns 403 to the helper's user agent); --check FOUND for the extended quote. article:published_time is 2026-01-29T22:40:00Z (WP local 14:40 on 29 Jan 2026), never modified. The sentence before it reads 'This ceremony is conducted by agents on both sides.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The published abstract on the IEEE SA page, re-fetched 2026-09-23; --check FOUND. This is IEEE's own text, independent of Searls. It says the standard does not fix the agent technology or protocol. It does not mention browser plug-ins or AI specifically for the person's agent."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-standard-is-paywalled",
+   "status": "FIXED",
+   "issues": [
+    "Verdict: the claim says 7012 'must be bought'. That is categorically false, because the PDF is free to read and download. 'MISLEADING' understates it, so the verdict is changed to FALSE. The true part (a paid edition also exists) now sits in the correction.",
+    "The correction says the free PDF needs 'a free IEEE account'. No source read confirms this. The IEEE GET Program page says only that the program website 'will require users accept of the Terms and Conditions of Use before access to the standard(s) PDF file is permitted'. The Xplore metadata has a getProgramTermsAccepted flag. Neither mentions an account. This is the same finding as the myterms-1 verdict on getProgramNote. The account clause is removed.",
+    "The correction says 'printed and store copies are sold', but no source on the record showed that. It is confirmed in the live Accuris store listing, which the 'Purchase' button on the IEEE SA standard page links to (store.accuristech.com/ieee/products/vendor_id/7192). Re-fetched with curl 2026-09-23 (HTTP 200), the raw HTML shows 'Delivery Options PDF Print', 'Price: $80.00', 'Member pricing is available for this product', ISBNs 9798855729450 and 9798855729443, product codes STDGT28515 and STDPD28515. The listing's own description adds '(Note: The PDF of this standard is available at no charge complements of the IEEE GET program ...)'. The helper returns NOT-FOUND for these strings because they are outside its extracted tags, so the listing cannot be added as a checked source. The finding is recorded here, and the correction's wording stays general (no price).",
+    "The quote on source 1 ('\"publicationDate\":\"20 January 2026\"') does not support the claim that the PDF is free. The same page's abstract metadata carries IEEE's own no-charge note, so that is now the quote."
+   ],
+   "fieldFixes": {
+    "verdict": "FALSE",
+    "correction": "Paid PDF and print copies are sold through IEEE's standards store (Accuris), but the PDF is also free to read and download through the IEEE GET Program for AI Ethics and Governance Standards."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 (helper cache); --check FOUND. This is Searls's own statement as working-group chair, not IEEE's. The clause 'of which MyTerms is the latest one' was true on 29 Jan 2026. IEEE Std 7014.1-2026 later superseded it (see the myterms-2 verdict), but that does not affect this myth."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "quote": "(Note: The PDF of this standard is available at no charge complements of the IEEE GET program https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93.)",
+     "note": "web.archive.org resets connections from this sandbox and live Xplore returns a bot challenge (HTTP 202), so the snapshot could not be re-fetched. The raw HTML cached earlier on 2026-09-23 (57,387 bytes) was re-read. The quoted note ends the abstract in <meta name=\"description\"> and in the xplGlobal.document.metadata JSON. The same JSON has getProgramFlag \"true\", isFreeDocument true, isPromo true, publicationDate \"20 January 2026\" and dateOfInsertion \"21 January 2026\". The Accuris store listing carries the same note. PENDING only because the helper drops <meta> and <script> content (--check NOT-FOUND)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Hey Europe: Make Privacy a Contract",
+     "date": "2026-09-21",
+     "url": "https://doc.searls.com/2026/09/21/hey-europe-lets-make-personal-privacy-online-a-contract-and-quit-trying-to-fix-consent/",
+     "quote": "It was published in January (after nine years of work), and is available to read and download for free.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched with curl into the helper cache on 2026-09-23 (the site returns 403 to the helper's user agent); --check FOUND. article:published_time is 2026-09-22T03:05:26Z (WP local 21 Sep 2026, 22:05). This is again Searls, not an independent source, but it confirms the PDF was still free eight months after publication."
+    }
+   ]
+  },
+  {
+   "kind": "milestone",
+   "id": "2022-06-02 Me2B/ISL P7012 pilot report",
+   "status": "FIXED",
+   "issues": [
+    "The label's facts check out against the report. The PDF cover is dated 'June 2, 2022' and the page's datePublished is 2022-06-02T16:00:02Z. The grant came from the 'IEEE Technical Activities Board Committee on Standards (TAB CoS)', a modest $10,000 per the report. The prototype is called 'MyMe2BAgent'. The report says 'The B in this project was the Me2B Alliance (Me2BA)'. ISL's year-end post confirms the 2022 change 'from the Me2B Alliance ... to Internet Safety Labs'.",
+    "The recorded quote supports none of those specifics. It also says P7012 had been working 'since 2018', which clashes with the 2017 start (PAR approved 6 Dec 2017) used elsewhere in this slice. It is replaced by the sentences on the same page that name the grant and the prototype (--check FOUND). The report PDF and the ISL renaming post are added as sources."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Thanks to a grant from the IEEE Technical Activities Board Committee on Standards (TAB CoS), we were able to explore the attitudes of people and one small business toward having the ability for people to send their own legally binding privacy terms to the business. The project entailed building a prototype “Relationship Manager” webservice called, “MyMe2BAgent”, and then performing validation testing with both types of users of the agent",
+     "note": "Re-fetched 2026-09-23; --check FOUND. Page metadata: datePublished 2022-06-02T16:00:02Z, dateModified 2022-07-05. The page title matches the record ('Spotlight Report #6: Proffering Machine-Readable Personal Privacy Research Agreements: Pilot Project Findings for IEEE P7012 WG'). The old quote ('...since 2018') is also verbatim, but it is the report's own loose dating of the WG, so it is not used."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Internet Safety Labs (formerly Me2B Alliance)",
+     "title": "Spotlight Report #6: Proffering Machine-Readable Personal Privacy Agreements: Pilot Project Findings for IEEE P7012 WG (PDF)",
+     "date": "2022-06-02",
+     "url": "https://internetsafetylabs.org/wp-content/uploads/2022/06/spotlight-report-6-ieee-p7012-pilot-project-report.pdf",
+     "quote": "The B in this project was the Me2B Alliance (Me2BA), a small, non-profit membership organization.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched 2026-09-23; --check FOUND. The cover reads 'Spotlight Report #6 June 2, 2022' (--check FOUND). The credits read 'This research was made possible by a grant from the IEEE Technical Activities Board Committee on Standards (TAB CoS), in order to support and advance the work of the IEEE P7012 WG on Machine-readable Personal Privacy Terms.' (--check FOUND). Implementation is credited to George Vo, Andrea Ausland and Lisa LeVasseur, and it was written by Noreen Y. Whysel and Lisa LeVasseur. Licence CC BY-NC-SA 4.0. PDF CreationDate is 2022-06-10."
+    },
+    {
+     "institution": "Internet Safety Labs",
+     "title": "2022: Pivot to Software Product Safety",
+     "date": "2022-12-23",
+     "url": "https://internetsafetylabs.org/blog/news-press/2022-pivot-to-software-product-safety/",
+     "quote": "Our transformation this year from the Me2B Alliance (a Standards Developing Organization) to Internet Safety Labs (a Product Safety organization) has proven itself invaluable",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched 2026-09-23; --check FOUND. article:published_time is 2022-12-24T00:51:18Z (WP local 23 Dec 2022). It supports '(now Internet Safety Labs)' and dates the renaming to 2022, without an exact day."
+    }
+   ]
+  },
+  {
+   "kind": "milestone",
+   "id": "2022-10-11 Searls as WG chair",
+   "status": "OK",
+   "issues": [
+    "No error found. The post (title 'The most important standard in development today', article:published_time 2022-10-11T14:56:02Z) contains the quote verbatim (--check FOUND). The label's phrase is the post's title.",
+    "'Now WG chair' is right. In December 2021 Searls wrote that Lisa LeVasseur 'now also chairs P7012'. The 2017 PAR names David Reed as chair, and the MyTerms FAQ lists Reed, LeVasseur, then Searls. So Searls took over between Dec 2021 and Oct 2022. The 2021 source is added to support 'now'.",
+    "The post was modified 2025-11-01, which added a flagged 'Update on 31 October 2025' line at the top. The quoted sentence sits in the original body, next to the 2022-era forecast 'It should become official sometime in 2025'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 (helper cache); --check FOUND. The same post also says 'P7012 is written by a group I chair at the IEEE (Institute of Electrical and Electronics Engineers) , which is the world’s largest association of technical professionals, and serious in the extreme.' (--check FOUND)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "Making Me2B happen",
+     "date": "2021-12-25",
+     "url": "https://projectvrm.org/2021/12/25/making-me2b-happen/",
+     "quote": "The most recent is the Me2B alliance, founded and run by Lisa LeVasseur , who now also chairs P7012.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched with curl into the helper cache on 2026-09-23 (projectvrm.org returns 403 to the helper's user agent); --check FOUND. WP API date 2021-12-25T17:43:30. It shows LeVasseur, not Searls, chaired P7012 ten months before this milestone, which supports 'now WG chair'."
+    }
+   ]
+  },
+  {
+   "kind": "milestone",
+   "id": "2025-04-06 PAR text published",
+   "status": "FIXED",
+   "issues": [
+    "The post (WP date 2025-04-06T19:48:19, title 'The MyTerms PAR') reproduces the PAR text, including 'This draft standard covers ... including websites.' It contains no AI wording ('I can’t share the draft before the final version is published'). The later published abstract reads 'including websites, applications and AI agents'. That much of the label is right.",
+    "The recorded quote is about the working group and Searls's chairmanship. It supports neither 'including websites' nor 'no AI-agent wording', which are the label's actual claims. It is replaced by the PAR sentence (--check FOUND).",
+    "'(modified)' is not stated in the post. Searls just calls it 'the PAR for EEE P7012'. It is an inference, but a sound one. The 2017 PAR (approved 06-Dec-2017) has a different one-sentence scope, 'The standard identifies/addresses the manner in which personal privacy terms are proffered...', contains no 'contractual interactions' text, and carries 'PAR Expiration Date: 31-Dec-2021'. So the text Searls posted must come from a later PAR revision. The 2017 PAR is added as a source, and the label now says what the sources show instead of asserting a modification with no source."
+   ],
+   "fieldFixes": {
+    "label": "Searls publishes the P7012 PAR text, reworded since the 2017 original; it still says 'including websites' — no AI-agent wording yet"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "This draft standard covers contractual interactions and agreements between individuals and the service providers they engage on a network, including websites.",
+     "note": "Re-fetched 2026-09-23 (helper cache); --check FOUND. The old quote ('It launched a working group in 2017 (that I now chair)...') is also verbatim. The post has no 'AI' anywhere in its text. It adds that the draft 'does not specify what tech or protocol to use'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "5.2 Scope: The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched 2026-09-23; --check FOUND. The same form reads 'PAR Expiration Date: 31-Dec-2021' (--check FOUND) and names David Reed as WG chair. The original PAR's scope and purpose do not contain the 'contractual interactions ... including websites' text Searls posted in 2025 (grep 'contractual' NO-MATCH), so his text is a later PAR wording. The exact date of the PAR modification or extension was not found; IEEE's myProject PAR page (pardetail/6324) is client-side only."
+    }
+   ]
+  },
+  {
+   "kind": "milestone",
+   "id": "2025-11-24 forecast publication 22 Jan 2026",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim (--check FOUND), and the title 'A New Era Begins' and date are right (article:published_time 2025-11-24T15:55:36Z).",
+    "The post was modified on 2025-12-18T06:21:15Z, after the milestone date, so the '22 January 2026' wording might have been added in that edit. The Wayback Machine is unreachable from here (connection reset). Instead, Searls's post of 7 December 2025, which has not been modified since that day, independently says 'MyTerms will be published on 22 January of next year'. That shows the 22 January forecast before the 18 December edit. It is added as a source.",
+    "The label's '(actual: 20 January 2026)' had no source on this record. IEEE SA's standard page reads 'Published: 2026-01-20' (--check FOUND), and that is added."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 (helper cache); --check FOUND. The full sentence continues: 'I chair the working group that wrote it.' Published 2025-11-24T15:55:36Z (WP local 07:55) and modified 2025-12-18T06:21:15Z, so see the added 7 Dec 2025 source for the forecast's timing."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "How to Civilize Digital Life",
+     "date": "2025-12-07",
+     "url": "https://doc.searls.com/2025/12/07/how-to-civilize-digital-life/",
+     "quote": "After years in the works, MyTerms will be published on 22 January of next year, a little over a month from now.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched with curl into the helper cache on 2026-09-23 (the site returns 403 to the helper's user agent); --check FOUND. WP API: date 2025-12-07T16:59:33, modified 2025-12-07T17:45:59. This shows the 22 January forecast before 'A New Era Begins' was edited on 18 Dec 2025."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Published: 2026-01-20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Re-fetched 2026-09-23; --check FOUND. The same page lists PAR Approval 2017-12-06, Board Approval 2025-11-04 and Working Group Chair Doc Searls. This supports '(actual: 20 January 2026)'."
+    }
+   ]
+  },
+  {
+   "kind": "milestone",
+   "id": "2026-01-20 MyData joins launch team",
+   "status": "OK",
+   "issues": [
+    "No error found. The post 'MyData, on MyTerms' shows '20 Jan 2026' (datePublished 2026-01-20T11:48:19Z), and the quote is verbatim (--check FOUND). The label says MyData 'announces it is part of the launch team', which is exactly what the post says. It does not claim MyData joined on that date, and the record id's word 'joins' is not in the label.",
+    "Context from the same post, for use elsewhere: it dates the public launch to 'Wednesday, 28th January 2026 – Data Privacy Day' in London and online. It says MyData Global 'supported this standard development in its final phases', and that 'Post-launch, MyData Global and Customer Commons are forming The MyTerms Alliance'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. <title> 'MyData, on MyTerms'; the institution and date are right."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "slice": "media",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "image",
+   "id": "hippocratic-oath-papyrus-oxyrhynchus-2547",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons file page re-fetched 2026-09-23. Machine-readable licence is CC BY 4.0 (licensetpl_short 'CC BY 4.0', link creativecommons.org/licenses/by/4.0), and the sentence 'This file is licensed under the Creative Commons Attribution 4.0 International license.' is verbatim in the page HTML. fetch-text.py --check reports NOT-FOUND only because its block extractor skips the licence-template table cell; the full page text contains it. Description quotes 'Fragment of Hippocratic oath: (verso). Oxyrhynchus papyrus no. 2547' and 'Library reference: WMS 5754 Photo number: L0029601' FOUND.",
+    "Checked OK: the Wellcome catalogue API (works/q2zmup8z) returns title 'Oxyrhynchus Papyrus 2547', production '3rd century AD', MS.5754, 'Purchased in 1968.', recto 'A business or official document in a fluent cursive hand, almost entirely illegible', and verso 'The Hippocratic Oath. Right hand section of a column of sixteen lines, written in an uncial hand.' Every clause of the caption matches. Independent: Wikipedia's Hippocratic Oath article also captions it 'the 3rd-century Papyrus Oxyrhynchus 2547'.",
+    "Checked OK: local file opens (607x1200 RGB JPEG) and shows a tall, torn papyrus strip with Greek writing, as the alt text says. Oxyrhynchus coordinates (28.53 N, 30.67 E) are right. thumbUrl returns HTTP 200."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "hippocratic-oath-byzantine-cross-manuscript",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons page re-fetched. Licence template 'Public domain' (PD-scan over a PD original, plus the PD-US-expired tag and Public Domain Mark 1.0). All three quoted sentences are verbatim in the page text. The description 'Twelfth-century Byzantine manuscript the oath was written out in the form of a cross, relating it visually to Christian ideas' and the source 'page 27 of Surgery: An Illustrated History by Ira M. Rutkow, M.D. published in 1993' ('Foto de la Biblioteca Vaticana') support the caption word for word.",
+    "Independent: Wikipedia's Hippocratic Oath article captions the same image 'A 12th-century Greek manuscript of the oath in the shape of a cross' and cites DigiVatLib Urb.gr.64, folio 116. The Vatican Library record for Urb.gr.64 (digi.vatlib.it/mss/detail/Urb.gr.64) lists M. Ceresa, 'Il giuramento di Ippocrate nell'Urbinate greco 64' (Studi e testi 477, 2013), which confirms the shelfmark and the Vatican location. That record gives no date, and its bibliography (Canart on Calabrian scriptoria and the 'style de Reggio'; Irigoin on southern Italy) points to a Greek manuscript made in southern Italy, so 'Byzantine' should be read in the broad sense. The twelfth-century date could not be checked against the Vatican catalogue. It rests on Commons/Rutkow, and Wikipedia agrees with it. No change is needed.",
+    "Checked OK: the local file opens (850x1200) and shows the text block laid out as a cross, as the alt text says. The Vatican coordinates are right. thumbUrl returns HTTP 200."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "dirc-van-delft-confession-to-a-bishop-c1404",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons page re-fetched. Licence template 'Public domain'. The Walters cooperation sentence is verbatim, and so is the text 'This folio from Walters manuscript W.171 depicts a confession to a bishop.' The page gives: Date between 1400 and 1404; ink and pigments on parchment; Accession number W.171.114V; Place of creation Utrecht, Netherlands; object history 'Albert, Duke of Bavaria and Count of Holland (1389-1404), Utrecht, ca. 1404-1405, by commission'.",
+    "Independent: The Digital Walters description of W.171 (thedigitalwalters.org/Data/WaltersManuscripts/html/W171/description.html) gives the title 'Duke Albrecht's Table of Christian faith (winter part)' and dates it '1400-1404 CE', Utrecht. It calls the book 'the actual copy prepared for the dedicatee of the text, Albrecht of Bavaria, Count of Holland ... dated to 1404 at the latest, when Albrecht died' and lists 'fol. 114v: Title: Episcopal confession before a bishop / Form: Historiated initial \"D,\" 14 lines / Text: Chapter 29'. Every caption claim holds. The rubric legible in the image reads 'Vanden zonden daer alleen die bisscop of aflooest ende absolueert of sijn ghewaerde penitencier', which fits the subject: sins reserved to the bishop.",
+    "Checked OK: the local file opens (881x1200). The alt text is accurate: a gilded initial D with a mitred bishop and a veiled penitent, two men kneeling at right, and a trefoil bar border. Utrecht coordinates are right. thumbUrl returns HTTP 200. Minor point: the Walters says two illuminators worked on the book and this folio falls in 'artist B' (fols. 112v-156r). 'Unknown illuminator' is still accurate."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "bomberg-talmud-bava-batra-venice-1522",
+   "status": "FIXED",
+   "issues": [
+    "The caption gives a single auction-catalogue interpretation as plain fact ('because Rashi's concise commentary stops at folio 29a ...'). The only source is the Sotheby's text reproduced in the Commons description ('Bava Batra's length is attributable to the fact that ...'). The tractate's Gemara is long in itself, and no independent source was found that makes Rashbam's commentary the cause of the page count. The explanation is now attributed to that description instead of stated flatly.",
+    "Checked OK: Commons page re-fetched. Licence template 'Public domain' (PD-Art, PD-US-expired, PDM 1.0). The quotes 'This is a faithful photographic reproduction of a two-dimensional, public domain work of art.' and 'Babylonian Talmud, Tractate Bava Batra, Venice: Daniel Bomberg, 1522.' are FOUND. The 'longest by printed pages' statement is FOUND. It is independently consistent with Wikipedia (Bava Batra: '176 folios ... making it the longest tractate of the Talmud'; 'The commentary of Rashi ... ends at the beginning of chapter 3; its place is taken by that of his grandson, Rashbam'). The date 1522 falls within Bomberg's first Talmud edition (Wikipedia, Daniel Bomberg: 'Publication of the Babylonian Talmud (1519–23)').",
+    "Checked OK: the local file opens (960x704). The image shows an open Hebrew folio. The legible running head reads 'בבא בתרא' with folio 'צב' (92) and 'המוכר פירות פרק ששי', and the right-hand page ends 'הדרן עלך המוכר את הספינה', so it is Bava Batra. Venice coordinates are right. thumbUrl returned 429 once (rate limit) and then HTTP 200 on retry."
+   ],
+   "fieldFixes": {
+    "caption": "An opening of Tractate Bava Batra of the Babylonian Talmud, printed in Venice by Daniel Bomberg in 1522. By number of printed pages Bava Batra is the longest tractate in the Bomberg Talmud. The Sotheby's description reproduced on Wikimedia Commons attributes this to its commentary: Rashi's concise commentary is printed only through folio 29a, after which the less succinct commentary of his grandson Rashbam takes over."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "edward-coke-engraving-van-de-passe",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons page re-fetched. Licence template CC0 (link creativecommons.org/publicdomain/zero/1.0), and the CC0 sentence is verbatim in the page text. The Rijksmuseum fields quoted in rightsEvidence are FOUND: 'Copyright: Publiek domein', 'prentmaker: Simon van de Passe', 'uitgever: Compton Holland', 'Plaats vervaardiging: Londen', 'Datering: 1605 - 1647'. So is the description 'In het randschrift van de omlijsting de naam en functie van de geportretteerde in het Latijn. In de hoeken het wapenschild van de geportretteerde en diverse boeken. In de marge een zesregelig lofdicht in het Latijn.', which supports the caption clause by clause.",
+    "Checked OK: the upstream handle hdl.handle.net/10934/RM0001.COLLECT.160894 resolves to Rijksmuseum linked data (id.rijksmuseum.nl/200240437). It gives the timespan '1605 - 1647', printmaker Simon van de Passe (London), publisher Compton Holland, and a rights statement of creativecommons.org/publicdomain/zero/1.0/.",
+    "Note, no change: the caption rightly attributes the broad 1605-1647 range to the Rijksmuseum. The lettering on the plate, legible in the image ('ILLUSTRISS: Dns EDOVARDUS COKUS EQV: AUR: SUMMs TOTs ANGL: IUDEX ET IUST:'; 'Si: Passæus sculp: Lon:'; 'Compto Holland excudit'; 'A.H.'), styles Coke chief justice of England. He held that office 1613-1616, and van de Passe worked in London only from about 1616, so the print is probably c. 1616. This is an inference and has not been sourced, so the field is left as it is. The local file opens (828x1200) and the alt text is accurate. thumbUrl returns HTTP 200."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "hogarth-john-wilkes-1763",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the Met Collection API (objects/392613) re-fetched. It returns isPublicDomain true, title 'John Wilkes, Esq.', objectDate 'May 16, 1763', medium 'Etching and engraving; first state of two', creditLine 'Gift of Sarah Lazarus, 1891', accession 91.1.8 and artist William Hogarth. The Commons copy (File:John_Wilkes,_Esq._MET_DP825173.jpg) carries the CC0 template and the verbatim CC0 sentence. The metmuseum.org object page (sourceUrl) answers HTTP 429 to scripts. The API gives it as objectURL, so it exists.",
+    "Checked OK: the lettering quoted in the caption is legible in the image: 'Drawn from the Life and Etch'd in Aquafortis by Willm Hogarth' and 'Publish'd according to Act of Parliament May ye 16 1763'. The papers 'NORTH BRITON NUMBER 45' and 'NORTH BRITON NUMBER 17' are on the table, and the pole carries a LIBERTY cap. Independent: Wikipedia's John Wilkes article describes the same print with 'two editions of his The North Briton: Numbers 17 ... and the famous 45'.",
+    "Checked OK: the local file opens (766x1200) and the alt text is accurate. images.metmuseum.org web-large returns HTTP 200. London coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "lord-camden-bartolozzi-drawing",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the Met Collection API (objects/338158) re-fetched. It returns isPublicDomain true, title 'Charles Pratt, Baron Camden (later 1st Earl Camden)', objectDate '1764–1802', medium 'Black and red chalk, varnished', creditLine 'Morris K. Jesup Fund, 1955', accession 55.106.7, artist Francesco Bartolozzi, and a constituent 'Formerly attributed to John Singleton Copley' (role 'Former Attribution'). The Commons copy carries the CC0 template and the verbatim CC0 sentence. The metmuseum.org object page (sourceUrl) answers HTTP 429 to scripts. The API gives it as objectURL.",
+    "Checked OK: locationNote. Pratt was Chief Justice of the Common Pleas and tried Entick v Carrington in Westminster Hall in 1765 (Wikipedia: 'The trial took place in Westminster Hall presided over by Lord Camden, the Chief Justice of the Common Pleas'; decided 2 November 1765). Wikipedia's infobox says 'King's Bench', but that is a known error; the locationNote's 'Common Pleas' is correct. Note, no change: Pratt was created Baron Camden only on 17 July 1765 (Wikipedia), so the Met's 1764 lower bound comes before the title in the drawing's name. The caption rightly attributes the date range to the Met.",
+    "Checked OK: the local file opens (960x1151). It shows an oval sheet with a chalk head in a curled wig turned to the right, as the caption and alt text say. images.metmuseum.org web-large returns HTTP 200."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "us-bill-of-rights-1789-nara",
+   "status": "FIXED",
+   "issues": [
+    "The caption says the twelve articles were proposed 'of which articles three to twelve became part of the Constitution'. That leaves out that Article the second (congressional pay) was ratified on 7 May 1992 as the Twenty-seventh Amendment, so a reader would think only ten of the twelve are in the Constitution. The Commons description the record cites says so itself ('\"Article the second\" is now the 27th Amendment.' FOUND), and so does the NARA catalogue record (general note: 'Article 2 was finally ratified on May 7, 1992, as the twenty-seventh Amendment to the Constitution. Article 1 was never ratified.').",
+    "Checked OK: Commons page re-fetched. Licence template 'Public domain' (PD-USGov) plus PDM 1.0. The PD-USGov sentence is verbatim in the page text (curly apostrophe in 'person’s'), and 'cataloged under the National Archives Identifier (NAID) 1408042' is FOUND. NARA catalogue JSON for NAID 1408042: title 'Bill of Rights', coverage date 1789-09-25, 'the enrolled original joint resolution of Congress, engrossed on parchment, proposing 12 amendments', and 'Articles 3 to 12, ratified December 15, 1791'. That confirms the 1791 correction already noted in rightsEvidence.",
+    "Checked OK: the local file opens (960x1021). The heading 'Congress of the United States begun and held at the City of New-York, on Wednesday the fourth of March, one thousand seven hundred and eighty nine' is legible, and 'Article the sixth' begins 'The right of the people to be secure in their persons, houses, papers and effects', so the Fourth Amendment mapping is right. Federal Hall coordinates (40.7074, -74.0104) are right. thumbUrl returns HTTP 200."
+   ],
+   "fieldFixes": {
+    "caption": "The Bill of Rights dated 25 September 1789: the enrolled original of the joint resolution in which the Congress 'begun and held at the City of New-York' proposed twelve articles of amendment to the United States Constitution. Articles three to twelve, ratified in 1791, became the first ten amendments; article two became the Twenty-seventh Amendment in 1992, and article one was never ratified. On this document the First Amendment is 'Article the third', so today's Fourth Amendment appears as 'Article the sixth'.",
+    "rightsEvidence": "Commons file page Permission/Licensing: \"This work is in the public domain in the United States because it is a work prepared by an officer or employee of the United States Federal Government as part of that person's official duties under the terms of Title 17, Chapter 1, Section 105 of the US Code.\" Source: \"This media is available in the holdings of the National Archives and Records Administration, cataloged under the National Archives Identifier (NAID) 1408042.\" NARA catalog record NAID 1408042 (catalog.archives.gov, JSON via /proxy/records/search?naId=1408042): coverage date 1789-09-25; scope note \"This item is the enrolled original joint resolution of Congress, engrossed on parchment, proposing 12 amendments to the United States Constitution.\"; general note \"Articles 3 to 12, ratified December 15, 1791, by three-fourths of the State Legislatures, constitute the first ten amendments of the United States Constitution. Article 2 was finally ratified on May 7, 1992, as the twenty-seventh Amendment to the Constitution. Article 1 was never ratified.\" The Commons description says the ten articles became part of the Constitution \"in 1794\"; NARA gives 15 December 1791, which the caption follows."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

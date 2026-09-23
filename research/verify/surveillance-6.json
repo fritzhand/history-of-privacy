@@ -1,0 +1,207 @@
+{
+  "slice": "surveillance",
+  "chunk": 6,
+  "verdicts": [
+    {
+      "kind": "myth",
+      "id": "myth-gpc-is-just-do-not-track-again",
+      "status": "FIXED",
+      "issues": [
+        "'Do Not Track was never made mandatory' is too absolute. On 24 August 2023 the Landgericht Berlin (16 O 420/19, vzbv v. LinkedIn; not final when announced) held that under the GDPR 'A DNT signal represents a valid objection' and barred LinkedIn from telling users it ignores DNT. No statute made DNT binding. The narrower claim holds, and the ruling is now noted in the correction.",
+        "'the Attorney General fined Sephora $1.2 million in 2022 partly for ignoring it' presents allegations as fact. It was a settlement 'resolving allegations', and the AG 'alleged' that Sephora 'failed to process user requests to opt out of sale via user-enabled global privacy controls'. The correction is reworded to say this.",
+        "The Colorado claim (honour universal opt-out mechanisms from 1 July 2024) had no source on this record. It is true, and a Colorado AG source is added.",
+        "The DNT quote did not itself say the working group stopped. The next sentence on the same page does: 'The working group has therefore decided to conclude its work'. The quote is extended to include it. The title and date (W3C Working Group Note 17 January 2019) are correct.",
+        "The OAG CCPA quote ('Under law, it must be honored by covered businesses ...') is verbatim and refers to the GPC. The verdict MISLEADING is fair."
+      ],
+      "fieldFixes": {
+        "correction": "Do Not Track never became a binding standard: the W3C working group concluded its work in January 2019 because there had not been sufficient deployment or planned support, and no privacy statute made honouring it an explicit duty (its one notable legal success came late, when a Berlin district court held in August 2023, in a judgment not final when announced, that under the GDPR a DNT signal is a valid objection). GPC differs in having explicit legal force in some places: California's CCPA regulations require covered businesses to treat it as a valid opt-out of sale or sharing, and in 2022 Sephora agreed to pay $1.2 million to settle the Attorney General's allegations, which included failing to process GPC opt-outs; Colorado has required controllers to honour recognised universal opt-out mechanisms, GPC first among them, since 1 July 2024. Where no such law applies, it remains a request."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large. The working group has therefore decided to conclude its work and republish the final product as this Note, with any future addendums to be published separately.",
+          "note": "Fresh fetch 2026-09-23. W3C again returned HTTP 403 to the helper's user agent, so the page was downloaded with curl into the helper cache. --check FOUND for the extended quote. Page header: 'W3C Working Group Note 17 January 2019', 'published by the Tracking Protection Working Group as a Working Group Note'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. The same paragraph names the GPC ('one acceptable method ... is via a user-enabled global privacy control, like the GPC')."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. Release dated August 24, 2022. The same page gives the basis of the settlement: 'the Attorney General alleged that Sephora failed to disclose to consumers that it was selling their personal information, that it failed to process user requests to opt out of sale via user-enabled global privacy controls in violation of the CCPA, and that it did not cure these violations within the 30-day period currently allowed by the CCPA.' These are allegations settled, not findings."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Verbraucherzentrale Bundesverband (vzbv)",
+          "title": "Court Prohibits Linkedin's Data Privacy Infringements",
+          "date": "2023-10-30",
+          "url": "https://www.vzbv.de/en/court-prohibits-linkedins-data-privacy-infringements",
+          "quote": "The Berlin District Court upheld vzbv’s view that the company’s statement was misleading, as it suggested that use of the DNT signal was legally irrelevant and that the company was under no obligation to observe it. This is, in fact, not the case. According to the General Data Protection Regulation (GDPR), the right to object to the processing of personal data can also be expressed using an automated procedure. A DNT signal represents a valid objection.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. The page is dated 30.10.2023 and is written by the claimant consumer organisation. The German version (https://www.vzbv.de/urteile/gericht-untersagt-datenschutzverstoesse-von-linkedin) gives 'Datum der Urteilsverkündung: 24.08.2023 Aktenzeichen: 16 O 420/19 – nicht rechtskräftig Gericht: Landgericht Berlin' (--check FOUND)."
+        },
+        {
+          "institution": "Colorado Attorney General",
+          "title": "Colorado Privacy Act (CPA)",
+          "date": "2026",
+          "url": "https://coag.gov/resources/colorado-privacy-act/",
+          "quote": "Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. The same page calls GPC 'the state’s first universal opt-out mechanism, Global Privacy Control'."
+        }
+      ]
+    },
+    {
+      "kind": "signal",
+      "id": "signal-iab-europe-tcf-tc-string",
+      "status": "FIXED",
+      "issues": [
+        "Belgian DPA source: the quote was cut at 'consented/'. The note claimed the page itself truncates the sentence with a slash, which is false: the page reads 'so that they know to what the user has consented/objected.' The quote now runs to the end of the sentence and the note is corrected.",
+        "CJEU source: the quote stopped before the operative condition. As cut, the holding read as unconditional ('constitutes personal data within the meaning of that provision'). The judgment goes on: 'in so far as, where those data may, by reasonable means, be associated with an identifier, such as, inter alia, the IP address of that user’s device, they allow the data subject to be identified.' The quote is extended. The record's legalForce text already stated the condition correctly.",
+        "'still the dominant consent signal in European ad tech' is an unsourced superlative. The Belgian DPA calls the TCF 'a widespread mechanism', and the fate text is reworded to match.",
+        "Confirmed on a fresh fetch: v1.1 on 25 April 2018, v2.0 on 21 August 2019, v2.1 on 19 August 2020 and v2.2 on 16 May 2023, which the page ties to 'the Action Plan submitted to and validated by the Belgian Data Protection Authority'. v2.3 came in April 2025, with participants to adopt it by 28 February 2026. The Belgian decision is dated 2 February 2022 (Decision 21/2022) with a €250,000 fine. The CJEU judgment in C-604/22 is dated 7 March 2024 (Fourth Chamber)."
+      ],
+      "fieldFixes": {
+        "fate": "Revised in line with an action plan validated by the Belgian DPA (v2.2, 2023) and again in 2025 (v2.3, which participants had to adopt by 28 February 2026); still widely used in European ad tech, which the Belgian DPA calls 'a widespread mechanism'. The person answers the site's questions; the person never sets the terms."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. Industry body describing its own standard. The same page gives v2.0 (21 August 2019), v2.1 (19 August 2020), v2.2 (16 May 2023, linked to the APD-validated Action Plan), v2.3 ('In April 2025') and 'TCF participants have until 28 February 2026 to adopt TCF v2.3'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "quote": "This is where the TCF comes in : it facilitates the capture, through the CMP, of the users’ preferences. These preferences are then coded and stored in a “TC string”, which will be shared with the organisations participating in the OpenRTB system so that they know to what the user has consented/objected.",
+          "note": "Fresh fetch 2026-09-23: FOUND. The earlier quote was cut by the researcher at 'consented/'; the page does not truncate it. The same page says 'The BE DPA imposed a €250.000 fine' and 'The TCF is a widespread mechanism that facilitates the management of users’ preferences for online personalised advertising', and refers to 'a decision of 2 February 2022' (Decision on the merits 21/2022)."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "quote": "must be interpreted as meaning that a string composed of a combination of letters and characters, such as the TC String (Transparency and Consent String), containing the preferences of a user of the internet or of an application relating to that user’s consent to the processing of personal data concerning him or her by website or application providers as well as by brokers of such data and by advertising platforms constitutes personal data within the meaning of that provision in so far as, where those data may, by reasonable means, be associated with an identifier, such as, inter alia, the IP address of that user’s device, they allow the data subject to be identified.",
+          "note": "Fresh fetch 2026-09-23: --check FOUND for the extended quote, which now includes the condition the holding depends on. Document header: 'JUDGMENT OF THE COURT (Fourth Chamber) 7 March 2024', Case C-604/22, IAB Europe v Gegevensbeschermingsautoriteit."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "signal",
+      "id": "signal-global-privacy-control",
+      "status": "FIXED",
+      "issues": [
+        "legalForce names only California and Colorado and then says 'Elsewhere a request'. That understates the position as of September 2026. Other state laws also require controllers to honour opt-out preference signals. For example, the Connecticut AG says: 'Starting January 1, 2025, all controllers subject to the CTDPA must honor opt out preference signals that are sent by consumers', and names GPC as an example. The fix adds this and a Connecticut AG source.",
+        "The Sephora matter was a settlement of allegations, not an adjudicated finding. The wording is tightened.",
+        "The two dates in 'years' had no sources on the record, and both are now sourced. The launch date of 7 October 2020 comes from the GPC announcement page (<time dateTime=\"2020-10-07\">Oct. 7, 2020</time>). The First Public Working Draft date of 21 November 2024 comes from the W3C publication history page.",
+        "Confirmed: the W3C TR page reads 'W3C Working Draft 17 September 2026', was 'published by the Privacy Working Group', and gives the header value as Sec-GPC-field-value = \"1\". The CPPA quote is §7025(b) of the final regulations text of 29 March 2023. The founders and partners (Soltani, Zimmeck, publishers, browsers, NGOs) match the GPC pages."
+      ],
+      "fieldFixes": {
+        "legalForce": "Binding in California as a valid opt-out under the CCPA regulations (2020; now 11 CCR §7025), in Colorado as a recognised universal opt-out mechanism from 1 July 2024, and in a growing number of other US states whose privacy laws require controllers to honour opt-out preference signals (Connecticut, for example, from 1 January 2025). In California it featured in the Attorney General's 2022 settlement with Sephora. Elsewhere a request."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. The GDPR sentence in the existing note is also on the page. The page says: 'In November 2024, GPC was adopted as an official work item of the W3C Privacy Working Group'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23. W3C returned HTTP 403 to the helper's user agent, so the page was downloaded with curl into the helper cache. --check FOUND. Header: 'W3C Working Draft 17 September 2026'; 'This document was published by the Privacy Working Group as a Working Draft using the Recommendation track'; the ABNF gives Sec-GPC-field-value = \"1\"."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. The quote is § 7025(b) ('§ 7025. Opt-out Preference Signals.') of the CPPA's 'FINAL REGULATIONS TEXT', 11 CCR Chapter 1."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Global Privacy Control",
+          "title": "Announcing Global Privacy Control: Making it Easy for Consumers to Exercise Their Privacy Rights",
+          "date": "2020-10-07",
+          "url": "https://globalprivacycontrol.org/press-release/20201007.html",
+          "quote": "One provision of our regulations intended to facilitate the submission of a request to opt-out of sale by requiring businesses to comply when a consumer has enabled a global privacy control at the device or browser level, which should be less time-consuming and burdensome.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. This is the launch announcement, dated 'Oct. 7, 2020' (time dateTime=2020-10-07). The quoted words are California AG Xavier Becerra's, as the release quotes them. The release lists Soltani and Zimmeck with the NYT, Washington Post, FT, Automattic, Glitch, DuckDuckGo, Brave, Mozilla, Disconnect, Abine, DCN, Consumer Reports and EFF. It also says 'We look forward to working with AG Becerra to make GPC legally binding under CCPA'."
+        },
+        {
+          "institution": "W3C",
+          "title": "Global Privacy Control (GPC) publication history",
+          "date": "2026-09-17",
+          "url": "https://www.w3.org/standards/history/gpc/",
+          "quote": "21 November 2024 First Public Working Draft",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "The page was downloaded with curl because W3C blocks the helper's user agent. --check FOUND 2026-09-23. The quote is a table row: the date cell followed by the status cell. The latest row is '17 September 2026 Working Draft'."
+        },
+        {
+          "institution": "Connecticut Office of the Attorney General",
+          "title": "The Connecticut Data Privacy Act",
+          "date": "2026",
+          "url": "https://portal.ct.gov/ag/sections/privacy/the-connecticut-data-privacy-act",
+          "quote": "Starting January 1, 2025, all controllers subject to the CTDPA must honor opt out preference signals that are sent by consumers.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. The same page says: 'As of January 1, 2025, Connecticut consumers can send an opt out preference signal ... Your “signal” can be sent by using, for example, the Global Privacy Control'."
+        }
+      ]
+    },
+    {
+      "kind": "signal",
+      "id": "signal-apple-app-tracking-transparency-prompt",
+      "status": "OK",
+      "issues": [
+        "No errors found. Both quotes are verbatim on a fresh fetch (2026-09-23).",
+        "The date 26 April 2021 in 'years' is confirmed by the Autorité release: 'The ATT framework introduced by Apple on 26 April 2021'. The release dates the infringement 'between 26 April 2021 and 25 July 2023', which matches 'between April 2021 and July 2023'. It was published on March 31, 2025 (article:published_time 2025-03-31). The fine was €150,000,000.",
+        "The Apple Developer page still describes the ATT requirement, so 'Still in place' is supported as of the fetch date. The page also says ATT lets users choose whether an app can track them 'across other companies’ apps and websites', which matches whatItSays."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. Published on March 31, 2025. The same page says 'The ATT framework introduced by Apple on 26 April 2021' and gives the infringement period 'between 26 April 2021 and 25 July 2023'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "signal",
+      "id": "signal-colorado-universal-opt-out-mechanism",
+      "status": "FIXED",
+      "issues": [
+        "All factual claims are confirmed on a fresh fetch of coag.gov (2026-09-23). The page says: 'On July 7, 2021, Governor Polis signed Senate Bill 21-190'; 'the final rules were filed with the Secretary of State March 15, 2023'; 'Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024'; and 'the state’s first universal opt-out mechanism, Global Privacy Control'.",
+        "Only fix: source index 1 is the same URL as source 0, but its title field reads 'Colorado Privacy Act (CPA) — rules', which is not the page's title. The page title is 'Colorado Privacy Act (CPA)'.",
+        "'a model followed by other US state laws' is editorial but reasonable. For example, Connecticut has required controllers to honour opt-out preference signals since 1 January 2025 (Connecticut AG CTDPA page)."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. The same page says 'On July 7, 2021, Governor Polis signed Senate Bill 21-190: Protect Personal Data Privacy establishing the Colorado Privacy Act (CPA).' (--check FOUND)."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "title": "Colorado Privacy Act (CPA)",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. It is the same page as source 0, so the title is set to the page's actual title. The same paragraph says 'the final rules were filed with the Secretary of State March 15, 2023'."
+        }
+      ],
+      "addSources": []
+    }
+  ]
+}

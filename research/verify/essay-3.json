@@ -1,0 +1,277 @@
+{
+ "slice": "essay",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "fact",
+   "id": "cohen-2013-emergent-subjectivity",
+   "status": "OK",
+   "issues": [
+    "No error found. Minor: the statement's 'finished' liberal self is a gloss. Cohen actually says this liberal self 'does not exist' and 'inherently possesses the capacity for autonomous choice'. That is a fair paraphrase, but the page's wording is stronger than 'matters less as'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim. The page header reads 'What Privacy is For / Julie E. Cohen / Volume 126 / Issue 7 / May 2013', so the institution, title and date are correct. The HLR page is the article's introduction; the full citation is 126 Harv. L. Rev. 1904 (2013), which is not shown on the page. The page also has 'It also must preserve breathing room for practices of boundary management by situated subjects.' (--check FOUND), which supports 'breathing room'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Julie E. Cohen, 'What Privacy Is For'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/what-privacy-is-for/",
+     "quote": "Like the broader tradition of liberal political theory within which it is situated, legal scholarship has conceptualized privacy as a form of protection for the liberal self.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This supports the statement's 'liberal self' framing, which is the view Cohen rejects. The next paragraph says 'the liberal self who is the subject of privacy theory and privacy policymaking does not exist'."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "hippocratic-oath-confidentiality",
+   "status": "FIXED",
+   "issues": [
+    "Both sources give the date as '2026', which is wrong. The page's own metadata reads DC.Date.Issued 2022-12-28 and DC.Date.Modified / NLMDC.Date.LastReviewed 2023-05-23.",
+    "The substance checks out. Both quotes are verbatim on the page. The Oath text shown is 'Translation of the Hippocratic Oath' with no translator named; the page credits the display to Michael North, then NLM Head of Rare Books."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022-12-28 (last reviewed 2023-05-23)",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim under 'Translation of the Hippocratic Oath'. The date comes from the page's meta tags (DC.Date.Issued 2022-12-28; LastReviewed 2023-05-23). The page says 'The display was curated by Michael North who was then Head of Rare Books at NLM.' Conventional dating (late 5th to 4th c. BCE) is not on the page, as the existing note says."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022-12-28 (last reviewed 2023-05-23)",
+     "note": "Re-fetched: quote FOUND verbatim (heading 'The Oath'). It supports 'perhaps the best-known Greek medical text'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "mishnah-windows-courtyard",
+   "status": "FIXED",
+   "issues": [
+    "The statement merges two separate rules in Bava Batra 3:7 and pins the privacy gloss on the wrong one. The Mishnah (a) bars a partner from opening new windows into a jointly owned courtyard, and (b) bars opening 'an entrance opposite another entrance or a window opposite another window toward a courtyard belonging to partners'. The translator's gloss 'so as to ensure that the residents will enjoy a measure of privacy' is attached to (b), not to a general ban on windows or doorways 'facing' the courtyard.",
+    "The quotes are verbatim, and the source note correctly marks the privacy clause as the Koren/Steinsaltz translator's unbolded interpolation. The dating context (c. 200 CE) is consistent with the standard account that Judah ha-Nasi compiled the Mishnah in the late 2nd or early 3rd century. The note's claim about hezek re'iyah in Bava Batra 2b is also correct: the Sefaria Davidson English for Bava Batra 2b discusses 'whether damage caused by sight is called damage'."
+   ],
+   "fieldFixes": {
+    "statement": "The Mishnah, the early rabbinic law code (compiled c. 200 CE), bars a person from opening new windows into a courtyard he shares with partners, and from opening a doorway opposite a neighbour's doorway or a window opposite a neighbour's window onto such a courtyard - a rule a modern English translation glosses as ensuring residents 'a measure of privacy'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Sefaria v3 API with the cache cleared: 'A person may not open his windows' FOUND (bold, i.e. the Mishnah's own words; the continuation reads 'into a courtyard belonging to partners'). The version returned is 'William Davidson Edition - English' (Koren Noé Talmud, commentary by Rabbi Adin Even-Israel Steinsaltz), licensed CC-BY-NC."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND. The clause directly follows the bold Mishnah words 'A person may not open an entrance opposite [another] entrance or a window opposite [another] window toward a courtyard belonging to partners'. It is the translator's unbolded explanation and glosses that rule specifically."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "coke-semayne-castle-1604",
+   "status": "FIXED",
+   "issues": [
+    "The source note says 'The same passage limits the principle: sheriffs could still enter...'. That is inaccurate. The OLL extract quoted does not mention sheriffs; the knock-and-announce limit is a separate resolution in the report (5 Co. Rep. 91b), which OLL describes only in its editorial 'Thoughts'.",
+    "The OLL page wrongly calls Coke 'the English judge' who 'declared in a ruling'. In 1604 Coke was Attorney General and only reported the case; the judges were Popham CJ and others of the King's Bench. The record's 'reported by Sir Edward Coke' is correct, but the cited page does not support it, so an independent source has been added.",
+    "Date: 1604 (Michaelmas Term) is standard. Note that the U.S. Supreme Court in Wilson v. Arkansas (1995) cites 'K.B.1603', so some U.S. sources date it 1603."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim in the OLL extract, 'Found in: Selected Writings of Sir Edward Coke, vol. I' (Liberty Fund, ed. Sheppard, 2003). Semayne's Case, 5 Co. Rep. 91a, 77 Eng. Rep. 194 (K.B., Michaelmas Term 1604). Coke, then Attorney General, reported the case; OLL's own commentary wrongly calls him the judge. The quoted passage does not contain the sheriff limit. That limit is a separate resolution in the report (5 Co. Rep. 91b): 'when the King is party, the sheriff (if the doors be not open) may break the party's house' after he 'ought to signify the cause of his coming'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Semayne's case",
+     "date": "2026",
+     "url": "https://en.wikipedia.org/wiki/Semayne%27s_case",
+     "quote": "is an English common law case reported by Sir Edward Coke",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same sentence continues 'who was then the Attorney General for England and Wales' (--check FOUND). The infobox gives the court as King's Bench, 'Decided Michaelmas Term, 1604', with judges Popham CJ, Gawdy, Fenner, Yelverton and Williams JJ. This supports 'reported by Coke' as against OLL's framing of Coke as the judge."
+    },
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Wilson v. Arkansas, 514 U.S. 927 (1995)",
+     "date": "1995-05-22",
+     "url": "https://www.law.cornell.edu/supremecourt/text/514/927",
+     "quote": "common-law admonition that an officer \"ought to signify the cause of his coming,\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This supports the knock-and-announce limit that the existing note attributes to the case. Wilson cites the case as 'Semayne's Case, 5 Co. Rep. 91a, 91b, 77 Eng.Rep. 194, 195 (K.B.1603)', a 1603 date that differs from the usual 1604."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "rooms-and-the-private-home",
+   "status": "DOWNGRADED",
+   "issues": [
+    "All four sources could not be re-fetched on 2026-09-23 (see the source notes): web.archive.org is unreachable through the proxy and the live GW PDF returns 403. They are set to PENDING until someone re-runs --check. No error was found in the substance.",
+    "Independent check: Wikipedia 'Hallway' says 'Prior to the 16th century, European aristocratic houses had a few great rooms used interchangeably as bedrooms, living rooms, and dining rooms. People walked through private spaces at any time.' and 'In 1597, John Thorpe was the first recorded architect to replace multiple connected rooms with rooms along a hallway'. This is broadly consistent with the statement. It also shows the dating is a generalisation: corridors appear from the late 16th century. The statement's 'until/from the seventeenth century' should stay credited to Solove's summary (of Rybczynski and Flaherty), as the record note already does."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "confessional-borromeo-1577",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim. Page metadata reads 'by Matthew E. Gallegos, Ph.D.', 'Sacred Architecture', 'Institute for Sacred Architecture, Notre Dame, IN, 2004 Issue 9', matching the record's institution, title and date. The same article says Borromeo published it 'fourteen years after the conclusion of the Council of Trent' (1563 + 14 = 1577) and wrote it 'to direct construction within the Archdiocese of Milan'. That supports 'After the Council of Trent' and 'Archbishop ... of Milan'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. It supports the 1577 date."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "letterlocking-and-the-brienne-trunk",
+   "status": "FIXED",
+   "issues": [
+    "'often with tamper-evident locks' overstates the source. The paper says only 'We observe built-in tamper-evident locking mechanisms' and assigns letterlocking formats a range of security scores; it does not say such locks were common. This is softened to 'some with'.",
+    "'still holds 577 letterpackets' is a figure from the 2021 paper (Table 1), so it is now dated to that study.",
+    "The note on source 2 names the holder as the 'Museum voor Communicatie collection'. The paper thanks 'Sound and Vision The Hague (Beeld en Geluid Den Haag)', which now holds the former Museum voor Communicatie collection."
+   ],
+   "fieldFixes": {
+    "statement": "Before mass-produced envelopes spread in the 1830s, most letters were 'letterlocked' - folded and secured to become their own envelopes, some with built-in tamper-evident locks; a European postmaster's trunk of 300-year-old undelivered post, the Brienne Collection, contained 577 letterpackets that had never been opened when researchers catalogued it for a 2021 study."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: FOUND verbatim. Page meta: citation_journal_title Nature Communications, volume 12, firstpage 1184, dc.date 2021-03-02, first author Dambrogio, Jana. All match the record."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "FOUND verbatim. It supports only that such mechanisms exist and were observed, not that they were 'often' used."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "FOUND verbatim. The paper's acknowledgments name the holder: 'We are grateful to Sound and Vision The Hague (Beeld en Geluid Den Haag)' (--check FOUND). The trunk is therefore held by Beeld en Geluid Den Haag, which took over the former Museum voor Communicatie collection."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "FOUND verbatim. Table 1 text agrees: '1706 opened items we count as letterlocking ... 865 opened items we do not count ... plus 577 unopened letterpackets'. This is the count as of the 2021 study."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "ex-parte-jackson-sealed-letters",
+   "status": "FIXED",
+   "issues": [
+    "'held' overstates it. The Court denied Jackson's petition and upheld his conviction under the ban on mailing lottery circulars (the opinion ends 'Denied.'). The sealed-letters passage is Justice Field's statement of the Fourth Amendment limit on postal power. Later courts often cite it as a holding, but in the case itself it is a declaration made while upholding the mail ban. The corrected text says so and adds the decision date.",
+    "Date: 'October Term 1877' is correct (the LII page shows it). CourtListener's API gives dateFiled 1878-05-13 (also '1877 U.S. LEXIS 1718'), so 1878 is the decision year."
+   ],
+   "fieldFixes": {
+    "statement": "In Ex parte Jackson (96 U.S. 727, October Term 1877, decided May 1878), the U.S. Supreme Court - while upholding a ban on mailing lottery circulars - declared that sealed letters in the mail are as protected from inspection 'as if they were retained by the parties forwarding them in their own domiciles', and may be opened only under a warrant - carrying the protection of the home to the sealed page."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim in Justice Field's opinion for the Court. The next sentences say such letters 'can only be opened and examined under like warrant ... as is required when papers are subjected to search in one's own household', which supports the 'home' framing. The page header reads '96 U.S. 727 / 24 L.Ed. 877 / October Term, 1877'. The disposition at the end is 'Denied.' Decision date 1878-05-13 is from the CourtListener API; courtlistener.com HTML pages return a JS challenge to scripts."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "privacy-of-letters-constructed",
+   "status": "DOWNGRADED",
+   "issues": [
+    "All four Solove sources could not be re-fetched on 2026-09-23 (see the source notes), so they are PENDING until someone re-runs --check. No error was found in the substance.",
+    "Independent check on 'later laws protected the mail': USPS Publication 100 (250th Anniversary Edition, 2025) says the Act of February 20, 1792 'prohibited postal officials from opening letters'. It also confirms that Franklin and William Hunter were made the Crown's deputy postmasters general for the colonies in 1753, which supports 'in charge of the colonial post' (he was joint deputy, not sole). This source has been added. The oath detail rests on Solove (citing Robert Ellis Smith); no primary source for it was found."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "United States Postal Service (Publication 100)",
+     "title": "The United States Postal Service: An American History, 1775-2025 (250th Anniversary Edition)",
+     "date": "2025",
+     "url": "https://about.usps.com/publications/pub100.pdf",
+     "quote": "prohibited postal officials from opening letters",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The full sentence is 'The Act of February 20, 1792, continued the Post Office for another two years and formally admitted newspapers to the mails, established specific post roads, and prohibited postal officials from opening letters.' The same PDF has 'Benjamin Franklin and William Hunter were appointed by the Crown as deputy postmasters general for the colonies.' (--check FOUND; 1753)."
+    }
+   ]
+  }
+ ]
+}

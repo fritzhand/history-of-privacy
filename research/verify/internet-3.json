@@ -1,0 +1,337 @@
+{
+ "slice": "internet",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "netflix-prize-deanonymization-2008",
+   "status": "FIXED",
+   "issues": [
+    "The arXiv source (index 1) was dated 2006-10-18, but its quote comes from the revised version v2 of 22 November 2007. The v1 abstract of 18 October 2006 contains no IMDb identification result. In v1 the IMDb attack is only hypothetical: 'With IMDb, there are some hurdles to overcome ... This is future work.' The quote is FOUND on the v2 page and NOT-FOUND on the v1 page. The URL is now pinned to v2 and re-dated.",
+    "Venue: the 2008 IEEE Symposium on Security and Privacy was held at The Claremont Resort, Oakland, on 18–21 May 2008 (the symposium's own home page). The record's coordinates were central Oakland, about 6 km away. The place and coordinates are corrected.",
+    "Summary precision: the paper used public IMDb ratings from 'a very small sample of around 50 IMDb users' as a proof of concept. It did not use 'IMDb reviews' at scale.",
+    "Everything else checks out against the paper and the Princeton record: 500,000 subscribers; 8 ratings, 2 of which may be wrong; a 14-day date error; 99% uniquely identified; University of Texas at Austin; pages 111–125; DOI 10.1109/SP.2008.33."
+   ],
+   "fieldFixes": {
+    "summary": "Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin showed that the Netflix Prize dataset of movie ratings by 500,000 subscribers, released with names removed, could be de-anonymised: with 8 ratings (two of which could be wrong) and dates within 14 days, 99% of records could be uniquely identified. Using public IMDb ratings from a small sample of about 50 IMDb users as background knowledge, they identified known users' Netflix records, revealing apparent political preferences. A first version appeared on arXiv on 18 October 2006, and the IMDb identifications were reported in the revision of 22 November 2007. The paper was presented at the IEEE Symposium on Security and Privacy, held at the Claremont Resort in Oakland on 18–21 May 2008.",
+    "place": "IEEE Symposium on Security and Privacy, The Claremont Resort, Oakland, California",
+    "lat": 37.8597,
+    "lng": -122.2425,
+    "locationNote": "Symposium venue (The Claremont Resort, on the Oakland–Berkeley line); coordinates approximate. The authors were at the University of Texas at Austin."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The abstract also gives '500,000 subscribers of Netflix', and the byline reads 'The University of Texas at Austin'. Section 5 notes 'a very small sample of around 50 IMDb users'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "url": "https://arxiv.org/abs/cs/0610105v2",
+     "date": "2007-11-22",
+     "title": "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' (arXiv:cs/0610105v2, revised version)",
+     "note": "The quote is FOUND on the v2 abstract page (and on the unversioned page, which shows v2). It is NOT-FOUND on https://arxiv.org/abs/cs/0610105v1. Submission history: '[v1] Wed, 18 Oct 2006 06:03:41 UTC', '[v2] Thu, 22 Nov 2007 05:13:06 UTC'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: --check FOUND. The record gives 'Duration: May 18 2008 → May 21 2008', pages 111-125 and DOI 10.1109/SP.2008.33."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Computer Society Technical Committee on Security and Privacy",
+     "title": "2008 IEEE Symposium on Security and Privacy — home page",
+     "date": "2008-05",
+     "url": "https://www.ieee-security.org/TC/SP2008/oakland08-home.html",
+     "quote": "May 18-21, 2008 2008 IEEE Symposium on Security and Privacy The Claremont Resort Oakland, California, USA",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. This is the content frame of https://www.ieee-security.org/TC/SP2008/oakland08.html, a frameset page."
+    },
+    {
+     "institution": "arXiv (Cornell University)",
+     "title": "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset', first version (arXiv:cs/0610105v1), PDF",
+     "date": "2006-10-18",
+     "url": "https://arxiv.org/pdf/cs/0610105v1",
+     "quote": "With IMDb, there are some hurdles to overcome",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. The same paragraph ends: '(although we expect a strong correlation). This is future work.' (also FOUND). This shows that the October 2006 version did not yet report IMDb-based identifications."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "do-not-track-header-prototype-soghoian-stamm-2009",
+   "status": "FIXED",
+   "issues": [
+    "The significance overstates: 'The first person-side machine-readable privacy signal on the web.' The record's own source says ad-network opt-out cookies had existed 'For more than a decade', 'through which consumers could signal to the companies' their choice. It also says a header had been proposed months earlier: Dan Kaminsky suggested an 'X-No-Track' header, and in March 2009 Mozilla's Mike Shaver asked 'Could we not just standardize/promote a header like X-Tracking-Opt-Out'. The Soghoian–Stamm add-on was an early implemented prototype of the header, not the first signal.",
+    "The summary said the idea 'replaced dozens of per-network opt-out cookies'. It replaced nothing. Soghoian pitched it in mid-July 2009 and 'none of the advertising firms showed any interest in the header', and he 'ultimately decided against including the header in TACO'. 'Dozens' also understates: TACO 'eventually grew to include more than 100 different opt out cookies'.",
+    "Source quote: tools/fetch-text.py returns NOT-FOUND on the HTML page because it does not extract Blogger's post-body div. I extracted that div with BeautifulSoup, and the quote is verbatim. The date 2011-01-21 is confirmed by the page header and the feed entry (published 2011-01-21T16:00:00-05:00).",
+    "Place: the source does not locate the work. Indiana University Bloomington is Soghoian's doctoral institution (PhD 2012, per Wikipedia). The existing locationNote flags this as approximate, and it is left as is."
+   ],
+   "fieldFixes": {
+    "summary": "In July 2009 privacy researcher Christopher Soghoian, with his research collaborator Sid Stamm, built a prototype Firefox add-on that added two headers to outgoing web requests: 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. It was meant to replace per-company opt-out cookies with one signal sent to every server; Soghoian's own TACO add-on had grown to more than 100 of them. Dan Kaminsky and Mozilla's Mike Shaver had urged the header approach earlier that year. When Soghoian pitched it to industry in mid-July 2009, none of the advertising firms showed any interest, and he never added it to TACO.",
+    "significance": "The seed of the browser's Do Not Track header: the person's browser would send one machine-readable preference to every server, instead of the person collecting an opt-out from each company. But it was only a yes/no request with no legal force, and advertisers were free to ignore it."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache on 2026-09-23. fetch-text.py --check returns NOT-FOUND because the tool does not extract the post-body div. The quote is verbatim in the div's text, extracted with BeautifulSoup. The following are also verbatim there: 'In the end, none of the advertising firms showed any interest in the header.'; 'eventually grew to include more than 100 different opt out cookies'; 'Could we not just standardize/promote a header like X-Tracking-Opt-Out, and ask the tracking groups to honour it?'. The last two are also FOUND by fetch-text.py on the blog's feed, http://paranoia.dubfire.net/feeds/posts/default?published-min=2011-01-20T00:00:00&published-max=2011-01-23T00:00:00."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "eu-cookie-consent-rule-directive-2009-136-2009",
+   "status": "FIXED",
+   "issues": [
+    "The record's claims are correct: Article 2(5) of Directive 2009/136/EC replaced Article 5(3) of Directive 2002/58/EC; the consent wording and the 'strictly necessary' exception are as stated; so is Recital 66's browser-settings sentence; and the Directive was 'Done at Strasbourg, 25 November 2009.'",
+    "The only source, an Internet Archive copy of EUR-Lex, could not be re-fetched: web.archive.org reset every connection on 2026-09-23. Live EUR-Lex (the TXT/HTML and LexUriServ PDF URLs) returns a page without the text. The source is set to PENDING. The Official Journal text on legislation.gov.uk is added in its place, and all quotes are FOUND there.",
+    "The significance's 'opt-out to opt-in' is supported. The 2002 text allowed storage if the user 'is offered the right to refuse such processing by the data controller'. A source for that wording is added."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified on 2026-09-23. tools/fetch-text.py got 'URLError: [Errno 104] Connection reset by peer', and the agent proxy logged ws_closed_mid_exchange for web.archive.org:443. Live EUR-Lex (https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0136 and the LexUriServ OJ PDF) returns a page without the Directive text (NOT-FOUND). The same wording is FOUND on the added legislation.gov.uk copies."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "legislation.gov.uk (The National Archives), Directives originating from the EU",
+     "title": "Directive 2009/136/EC of the European Parliament and of the Council of 25 November 2009 — Article 2",
+     "date": "2009-11-25",
+     "url": "https://www.legislation.gov.uk/eudr/2009/136/article/2",
+     "quote": "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information, in accordance with Directive 95/46/EC, inter alia, about the purposes of the processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. Preceded on the page by 'Article 5(3) shall be replaced by the following:' (FOUND). The replacement text continues: 'or as strictly necessary in order for the provider of an information society service explicitly requested by the subscriber or user to provide the service.'"
+    },
+    {
+     "institution": "legislation.gov.uk (The National Archives), Directives originating from the EU",
+     "title": "Directive 2009/136/EC — Introductory Text (recitals)",
+     "date": "2009-11-25",
+     "url": "https://www.legislation.gov.uk/eudr/2009/136/introduction",
+     "quote": "Where it is technically possible and effective, in accordance with the relevant provisions of Directive 95/46/EC, the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. Recital (66)."
+    },
+    {
+     "institution": "legislation.gov.uk (The National Archives), facsimile of the Official Journal of the European Union L 337",
+     "title": "Directive 2009/136/EC as adopted (OJ L 337, 18.12.2009, p. 11), PDF",
+     "date": "2009-11-25",
+     "url": "https://www.legislation.gov.uk/eudr/2009/136/pdfs/eudr_20090136_adopted_en.pdf",
+     "quote": "Done at Strasbourg, 25 November 2009.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. Also FOUND in this PDF: '5) Article 5(3) shall be replaced by the following:'. The full Article 5(3) sentence does not pass --check here only because of soft hyphens in the PDF text layer ('infor­mation'); it is FOUND on the HTML Article 2 page."
+    },
+    {
+     "institution": "legislation.gov.uk (The National Archives), facsimile of the Official Journal of the European Union L 201",
+     "title": "Directive 2002/58/EC (Directive on privacy and electronic communications) as adopted, PDF",
+     "date": "2002-07-12",
+     "url": "https://www.legislation.gov.uk/eudr/2002/58/pdfs/eudr_20020058_adopted_en.pdf",
+     "quote": "offered the right to refuse such processing by the data controller",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. This is the original Article 5(3), the opt-out rule that the 2009 amendment replaced with consent. Same PDF: 'Done at Brussels, 12 July 2002.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "cmu-token-attempt-p3p-compact-policy-misuse-2010",
+   "status": "OK",
+   "issues": [
+    "No errors found. The cover page reads 'September 10, 2010 CMU-CyLab-10-014 CyLab Carnegie Mellon University Pittsburgh, PA 15213'. The authors are 'Pedro Giovanni Leon, Lorrie Faith Cranor, Aleecia M. McDonald, Robert McGuire'. The abstract numbers are exact: 33,139 sites; 11,176 with errors; 134 TRUSTe-certified; 21 of the top 100; 98%. 11,176 / 33,139 = 33.7%, which supports 'a third' of the compact policies in the sample. The title's 'many deliberately' is supported by the paper's 'practices that appear to be deliberately designed to bypass IE default privacy filters'. The CyLab-hosted copies of the report return 404, so the FPF-hosted copy is the reachable one."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The note's other abstract quotes were re-read and are verbatim."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "ftc-preliminary-report-calls-for-do-not-track-2010",
+   "status": "OK",
+   "issues": [
+    "No errors found. The report cover reads 'PRELIMINARY FTC STAFF REPORT DECEMBER 2010'. The executive summary contains the 'persistent setting, similar to a cookie' sentence, followed by 'Commission staff supports this approach, sometimes referred to as \"Do Not Track.\"' (FOUND). 'industry efforts to address privacy through self-regulation have been too slow' is verbatim. The press release's time element reads 2010-12-01. The FTC headquarters coordinates are correct."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. Also FOUND: 'Commission staff supports this approach, sometimes referred to as \"Do Not Track.\"'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The page's <time datetime=\"2010-12-01T12:00:00Z\"> reads December 1, 2010."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "do-not-track-in-firefox-and-at-the-w3c-2011",
+   "status": "FIXED",
+   "issues": [
+    "The claims are correct, but source 0 (an Internet Archive snapshot of the charter) could not be re-fetched: web.archive.org reset every connection. It is set to PENDING. Live W3C pages are added in its place: the charter, the minutes of the first meeting, and two public-tracking mailing-list messages. W3C returns HTTP 403 to fetch-text.py's Chrome user agent, so each page was fetched with curl (user agent 'curl/8') into the tool's cache, and fetch-text.py --check was then run on it.",
+    "The first face-to-face meeting is independently confirmed as held, not just planned: the minutes are headed 'Tracking Protection WG F2F - Day 1 - 21 September 2011' and record the 'first in person meeting 9/21-9/22 in Cambridge, MA'. McDonald's 12 September 2011 message says the meeting is 'at MIT'. The minutes list 'StarConferenceRoom', the Star conference room in the Stata Center, which fits the record's place.",
+    "The co-chairs are confirmed as Aleecia McDonald ('Senior Privacy Researcher @ Mozilla') and Matthias Schunter ('IBM Research in Zurich').",
+    "The record correctly avoids a 'first browser' claim. Microsoft's 31 May 2012 post says it added 'DNT to IE9 in February 2011', before Firefox 4's release on 22 March 2011."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified on 2026-09-23. tools/fetch-text.py got 'URLError: [Errno 104] Connection reset by peer', and the agent proxy logged ws_closed_mid_exchange for web.archive.org:443. The scope sentence, the exclusion sentence and the first-meeting sentence are all FOUND on the live charter (added source). The initial co-chairs are confirmed by the added W3C minutes and mailing-list messages."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The page also reads 'v.4.0, released March 22nd, 2011'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "World Wide Web Consortium",
+     "title": "Tracking Protection Working Group Charter (final revision, extended to 31 December 2016)",
+     "date": "2016-09",
+     "url": "https://www.w3.org/2011/tracking-protection/charter.html",
+     "quote": "The Working Group will produce Recommendation-track specifications for a simple machine-readable preference expression mechanism (\"Do Not Track\") and technologies for selectively allowing or blocking tracking elements.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py gets HTTP 403 with its Chrome user agent. The page was fetched with curl (UA 'curl/8') into the tool's cache, and --check returned FOUND for this sentence and for 'The Working Group will not design mechanisms for the expression of complex or general-purpose policy statements.' and 'The first face-to-face meeting will take place 21-22 September 2011 at MIT.' This is the live, last-revised charter, which lists later co-chairs; its history notes 'the change of co-chair from Aleecia M. McDonald to Peter Swire'."
+    },
+    {
+     "institution": "World Wide Web Consortium",
+     "title": "Tracking Protection WG F2F - Day 1 - 21 September 2011 (minutes)",
+     "date": "2011-09-21",
+     "url": "https://www.w3.org/2011/09/21-dnt-minutes.html",
+     "quote": "first in person meeting 9/21-9/22 in Cambridge, MA",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched with curl (UA 'curl/8') into the fetch-text.py cache because W3C returns 403 to the tool's user agent; --check FOUND. Also FOUND: 'Chair Aleecia M. McDonald (aleecia), Matthias Schunter (schunter)'. Day 2 minutes: https://www.w3.org/2011/09/22-dnt-minutes.html."
+    },
+    {
+     "institution": "World Wide Web Consortium (public-tracking mailing list archive)",
+     "title": "Aleecia M. McDonald, 'Welcome to Matthias, co-chair'",
+     "date": "2011-09-20",
+     "url": "https://lists.w3.org/Archives/Public/public-tracking/2011Sep/0021.html",
+     "quote": "Please join me in welcoming Matthias Schunter as co-Chair of the Tracking Protection Working Group. Matthias is Research Staff Member at the Network Security and Cryptography Research Group at IBM Research in Zurich.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched with curl (UA 'curl/8') into the fetch-text.py cache because lists.w3.org returns 403 to the tool's user agent; --check FOUND. The signature 'Aleecia M. McDonald // Senior Privacy Researcher @ Mozilla' is also FOUND."
+    },
+    {
+     "institution": "World Wide Web Consortium (public-tracking mailing list archive)",
+     "title": "Aleecia M. McDonald, open call before the first face-to-face meeting",
+     "date": "2011-09-12",
+     "url": "https://lists.w3.org/Archives/Public/public-tracking/2011Sep/0001.html",
+     "quote": "Please join us for an open conference call prior to the first face-to-face kickoff meeting for the Tracking Protection Working Group on 21/22 September at MIT.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched with curl (UA 'curl/8') into the fetch-text.py cache because lists.w3.org returns 403 to the tool's user agent; --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "eu-gdpr-proposal-right-to-be-forgotten-2012",
+   "status": "OK",
+   "issues": [
+    "No errors found. IP/12/46 is datelined 'Brussels, 25 January 2012' and contains the right-to-be-forgotten, explicit-consent and data-portability passages. SPEECH/12/26 is headed 'Viviane Reding, Vice-President of the European Commission, EU Justice Commissioner ... Innovation Conference Digital, Life, Design, Munich, 22 January 2012', which is three days before 25 January. The COM(2012) 11 final PDF reads 'Brussels, 25.1.2012' and 'Article 17 Right to be forgotten and to erasure'. The Berlaymont coordinates are correct."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. Also verbatim: 'Wherever consent is required for data to be processed, it is clarified that it has to be given explicitly, rather than assumed.' and '(right to data portability)'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. Header: 'Munich, 22 January 2012'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. --grep also shows 'Article 17 Right to be forgotten and to erasure'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "ie10-do-not-track-on-by-default-2012",
+   "status": "FIXED",
+   "issues": [
+    "The record's claims are correct. The 31 May 2012 post is dated 'May 31, 2012' and says 'Internet Explorer 10 on Windows 8 will be the first browser to have DNT on by default.' The 3 April 2015 post ('Apr 3, 2015') says the 2012 implementation 'was welcomed by many, others voiced concerns'. It quotes the W3C draft ('the signal sent MUST reflect the user’s preference') and contains the quoted sentence verbatim.",
+    "Source 0's title credits the post to Brendon Lynch as author. The page's visible byline and schema author are 'Microsoft Corporate Blogs'; Lynch appears only as a post tag. The title is adjusted so it does not assert a byline the page does not show."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "'Advancing Consumer Trust and Privacy: Internet Explorer in Windows 8' (Microsoft On the Issues; post tagged 'Brendon Lynch', byline 'Microsoft Corporate Blogs')",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The page is dated 'May 31, 2012'. The author in the page metadata is 'Microsoft Corporate Blogs', with the keyword/tag 'Brendon Lynch'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The page is dated 'Apr 3, 2015'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "microsoft-exposes-google-p3p-bypass-2012",
+   "status": "FIXED",
+   "issues": [
+    "'The next day' is wrong. The Register article was published 2012-02-20T22:26:45Z. Cubrilovic's post has published_time 'Tue Feb 21 2012 15:40:52 GMT+1100', which is 04:40 UTC on 21 February, still the evening of 20 February in the US. It opens 'There is a post today on a Microsoft MSDN blog'. His post came within hours of Microsoft's, not the next day.",
+    "The Cranor claim is overstated. Her words are 'no regulators have announced that they are investigating any website for a deceptive P3P policy', which is not the same as 'no regulator had acted'. Her post is dated 3 December 2012.",
+    "Mechanism wording: IE did not 'treat as valid' a policy reading 'This is not a P3P policy!'. The Register explains that 'if the code is not recognized, Internet Explorer will accept it anyway', and Cubrilovic says IE by default accepts third-party cookies with 'a header that doesn't state policy'. Google's reply is quoted more exactly: it was 'impractical to comply with Microsoft’s request while providing modern web functionality'.",
+    "The original IEBlog post (blogs.msdn.microsoft.com/ie/2012/02/20/google-bypassing-user-privacy-settings/) now redirects to a learn.microsoft.com archive URL that returns an authorization or index page, so it could not be read directly. Hachamovitch's post of 20 February 2012 is corroborated by The Register and by Cubrilovic."
+   ],
+   "fieldFixes": {
+    "summary": "On 20 February 2012 Dean Hachamovitch, Microsoft's vice-president for Internet Explorer, wrote that Google was circumventing IE's default privacy protection by sending a P3P compact policy reading 'This is not a P3P policy!'. Because IE accepts a compact policy whose tokens it does not recognise, Google's third-party cookies got through. Google replied that it was 'impractical to comply with Microsoft's request while providing modern web functionality'. Within hours, researcher Nik Cubrilovic showed that Facebook sent a similar non-policy ('Facebook does not have a P3P policy'). In December 2012 Lorrie Cranor, who had spent seven years working on the P3P 1.0 specification, noted that no regulator had announced an investigation of any website for a deceptive P3P policy."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The page's published_time is 2012-02-20T22:26:45Z. Also verbatim: 'if the code is not recognized, Internet Explorer will accept it anyway' and Google's statement 'it is impractical to comply with Microsoft’s request while providing modern web functionality.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The published_time is 'Tue Feb 21 2012 15:40:52 GMT+1100', which is 20 February in US time. The post begins 'There is a post today on a Microsoft MSDN blog'. The Facebook header 'Facebook does not have a P3P policy. Learn why here: http://fb.me/p3p' is verbatim."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: --check FOUND. The quote says no regulator had 'announced that they are investigating', not that none had acted. Also verbatim: 'Having personally spent a good part of seven years working on the P3P 1.0 specification'."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

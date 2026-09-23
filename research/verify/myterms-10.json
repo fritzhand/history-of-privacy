@@ -1,0 +1,418 @@
+{
+ "slice": "myterms",
+ "chunk": 10,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "myterms-pipeline-agreements-2026",
+   "status": "DOWNGRADED",
+   "issues": [
+    "The quote is verbatim. I fetched myterms.info/faqs/ fresh on 2026-09-23 and --check returned FOUND. It is the answer to FAQ 13, 'How many agreements are there; of what types?'. The page was last modified on 2026-01-26 (schema.org dateModified; first published 2025-11-11).",
+    "The figure is a forward-looking plan the MyTerms team reports about itself. It is not a count of published agreements, and the sources give three different numbers. In October 2025 Customer Commons was 'preparing to introduce 11 more agreements'. The FAQ (January 2026) says 5 at launch and '8 more in the pipeline'. The live Customer Commons 'Choose MyTerms' page (read 2026-09-23) now says 'we have introduced 13 more agreements located in Annex A' of the published standard. That makes '8 in the pipeline' out of date as a 2026 status. 5 + 8 = 13 suggests Annex A lists 13 agreements in all, but I could not read the standard's normative text, so that is unconfirmed. The record should be dated to January 2026 and presented as the project's own figure.",
+    "The Wayback source (index 1) could not be re-fetched today. Every connection to web.archive.org through the agent proxy was reset (curl error 35, ws_closed_mid_exchange). I checked the quote against the helper's cached raw HTML of that snapshot, fetched earlier today (2026-09-23 10:23), which carries the Wayback timestamp 20251006120755: FOUND. The live page's reworded successor sentence ('In alignment with the now published IEEE 7012 standard, we have introduced 13 more agreements') corroborates that the earlier 'forthcoming ... preparing to introduce' version existed."
+   ],
+   "fieldFixes": {
+    "label": "Further MyTerms agreements 'in the pipeline' beyond the 5 at launch (MyTerms FAQ, January 2026)",
+    "notes": "This is the project's own planning figure, not a count of published agreements, and it changes by source and date. In October 2025 Customer Commons' 'Choose My Terms' page said it was preparing to introduce 11 more agreements. The MyTerms FAQ (last modified 26 Jan 2026) says 5 at launch and 8 more in the pipeline. In September 2026 the live Customer Commons page says 13 more agreements have been introduced and are 'located in Annex A' of the published standard. 5 + 8 = 13 suggests Annex A lists 13 in all, but the standard's text was not read. Only the 5 launch agreements (SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT) are described on myterms.info."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND (answer to FAQ 13). Page last modified 2026-01-26 per schema.org dateModified, first published 2025-11-11."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetch failed on 2026-09-23: every connection to web.archive.org was reset by the proxy. I ran --check on the helper's cached raw HTML of this exact snapshot, fetched 2026-09-23 10:23 and containing timestamp 20251006120755: FOUND, in the 'Upcoming Agreements' section. The live page's successor wording corroborates it."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Customer Commons",
+     "title": "Choose MyTerms",
+     "date": "2026",
+     "url": "https://customercommons.org/choose-myterms/",
+     "quote": "In alignment with the now published IEEE 7012 standard, we have introduced 13 more agreements located in Annex A.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Live page, undated (it refers to the standard as 'now published', so it was updated after 20 Jan 2026). Fetched 2026-09-23 with curl (HTTP 200) plus --check: FOUND. Title tag: 'Choose MyTerms - Customer Commons'."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "p3p-top10k-support-2018",
+   "status": "FIXED",
+   "issues": [
+    "The value, unit, year and quote are correct. w3.org returns 403 to the helper's user agent, so I fetched it with curl (HTTP 200) into the helper cache on 2026-09-23 and ran --check: FOUND. The page header reads 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018'. The obsoletion version is TR/2018/OBSL-P3P-20180830.",
+    "The notes misstate W3C's reason. 'A machine-readable policy nobody enforced' is not what W3C says. The obsoletion notice gives insufficient ecosystem uptake as the reason: fewer than 6% of the top 10,000 sites, and 'No current (2018) user agents' interpreting or acting on P3P policies. The word 'current' matters, because in the 2000s Internet Explorer's cookie filtering did act on P3P compact policies. So 'nobody enforced' overstates the case.",
+    "Caveat for the page: the BuiltWith figure counts sites that 'support' P3P, which in practice largely means sending compact-policy headers. It measures deployment, not accurate or honoured policies."
+   ],
+   "fieldFixes": {
+    "notes": "W3C's stated reason for obsoleting P3P on 30 Aug 2018 was too little uptake: fewer than 6% of the 10,000 most-visited sites supported it, and no browser still in use in 2018 interpreted or acted on P3P policies. It was a machine-readable privacy policy from the site's side, with no agreement from the person."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "curl fetch on 2026-09-23 (HTTP 200; the helper's UA gets 403) plus --check: FOUND. The header reads 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — obsoleted 30 August 2018",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "W3C concludes that P3P itself has not seen sufficient ecosystem uptake to continue to recommend that the community implement the 2002 specification.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same obsoletion notice paragraph; --check FOUND 2026-09-23. It is preceded by: 'No current (2018) user agents are known to provide interpretation of or implement decisions based upon P3P policies.'"
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "tcf-founding-working-groups-2017",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim. I fetched it fresh on 2026-09-23 and --check returned FOUND. Page title: 'TCF – Transparency & Consent Framework - IAB Europe'. The page is undated, but it mentions TCF v2.3 and a 28 February 2026 adoption deadline, so '2026' is a plausible current date.",
+    "The label over-dates the figure. IAB Europe says it 'launched in February 2017 a collaborative effort by organising dedicated working groups attended by more than 70 member companies and sectoral trade associations'. The 70+ describes who attended the working groups, not who was there at the February 2017 launch. The label should not say 'at launch'. The number is IAB Europe's own and I found no independent count.",
+    "The notes overstate the relationship. 'the industry consent framework MyTerms positions itself against' is not supported. Doc Searls, the MyTerms working-group chair, discusses TCF in his proof-of-concept post. He says TC Strings 'are not designed as a mutually signed/identical contract record ... which MyTerms requires', but that they 'at least point in the right direction'. The MyTerms FAQ criticises consent ceremonies and adtech in general, but does not name TCF."
+   ],
+   "fieldFixes": {
+    "label": "Member companies and trade associations attending IAB Europe's TCF working groups (effort launched Feb 2017)",
+    "notes": "IAB Europe's own figure for the industry effort that produced the TCF (v1.1 launched 25 April 2018). Doc Searls contrasts TCF consent strings, which capture preferences and pass them to vendors, with the mutually signed, identical records MyTerms requires. He also grants that TCF's compact encoding and tooling 'at least point in the right direction'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Page title 'TCF – Transparency & Consent Framework - IAB Europe'. The page is undated and current to TCF v2.3 (deadline 28 Feb 2026)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "They create a “TC String” and record storage/access details, but they are not designed as a mutually signed/identical contract record between the individual and the site, which MyTerms requires.",
+     "note": "curl fetch on 2026-09-23 (the helper's UA gets 403) plus --check: FOUND. The next sentences are: 'They do, however, provide compact and interoperable encoding and widespread use of tooling. So they at least point in the right direction.'"
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-myterms-is-browser-setting",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes are verbatim. On 2026-09-23 I fetched the FAQ and IEEE pages fresh and fetched w3.org/TR/tracking-dnt/ with curl (the helper gets 403); every --check returned FOUND.",
+    "The correction's description of DNT overstates the case. The W3C DNT Note's own abstract says it 'also defines mechanisms for sites to communicate whether and how they honor a received preference', including a tracking-status resource and the Tk response header, plus APIs for user-granted exceptions. So DNT did include a site response and exceptions stored in the browser. What it lacked was a signed agreement and a matching record kept by both sides. 'No agreement or record' should be narrowed.",
+    "Two sub-claims had no source on the record: that browsers or plug-ins may carry the signal as a header like DNT and GPC, and that the W3C working group closed for lack of deployment. Both are now sourced, from the MyTerms FAQ and the DNT Note's status section. Note that the FAQ misspells 'Global Privacy Conrol' [sic], so the correction paraphrases it rather than quoting.",
+    "'Public roster' is loose. The standard says the roster is 'kept by an independent and neutral non-business entity'."
+   ],
+   "fieldFixes": {
+    "correction": "Browsers or plug-ins may carry the signal; the MyTerms FAQ mentions browser headers on the model of Do Not Track and Global Privacy Control. But IEEE 7012 is about a contract. The person proffers a standard-form agreement from a roster kept by a neutral non-business body, and the organisation accepts it. Both sign electronically, and both keep matching records for audit or dispute. DNT was a one-way preference. Sites could answer with a tracking-status signal and browsers could store user-granted exceptions, but nothing was signed and no matching record was kept by both sides. Its W3C working group concluded its work in January 2019 for lack of deployment."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Last modified 2026-01-26."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND (abstract on the standard page)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "curl fetch on 2026-09-23 (HTTP 200) plus --check: FOUND. Header: 'W3C Working Group Note 17 January 2019'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "On the Web, browsers or their plug-ins will signal MyTerms options to sites several possible means, including browser headers (on the model of Do Not Track and Global Privacy Conrol).",
+     "note": "Verbatim, including the page's typo 'Conrol'. --check FOUND on 2026-09-23 (For Individuals, Q6)."
+    },
+    {
+     "institution": "W3C",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note 17 January 2019",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large. The working group has therefore decided to conclude its work and republish the final product as this Note, with any future addendums to be published separately.",
+     "note": "Status section of the Note. curl fetch plus --check: FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-7012-is-a-law",
+   "status": "OK",
+   "issues": [
+    "No error in the correction. On 2026-09-23 I fetched all three sources fresh (projectvrm.org with curl, because the helper gets 403) and every --check returned FOUND. The SASB approvals page for 04 November 2025 lists '7012-2025 (SSIT/SC) IEEE Standard for Machine Readable Personal Privacy Terms' under the 'New Standards' heading. The ProjectVRM post is dated January 13, 2026 and is by Doc Searls.",
+    "Two sub-claims were unsourced on the record, so I have added sources. The standard's voluntary character is covered by IEEE SA's 'Use of an IEEE standard is wholly voluntary.' The proponents' view that regulation has failed is covered by the same ProjectVRM post, which opens 'No regulation to make organizations respect personal privacy will work.'",
+    "The contract-enforceability claim is correctly framed as the proponents' claim. I found no court test either."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. The entry sits under 'New Standards' on the 04 November 2025 approvals page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Last modified 2026-01-26."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "curl fetch on 2026-09-23 (HTTP 200) plus --check: FOUND. Post date January 13, 2026; author Doc Searls."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "Important Notices and Disclaimers Concerning IEEE Standards Documents",
+     "date": "2026-07-07",
+     "url": "https://standards.ieee.org/ipr/disclaimers/",
+     "quote": "Use of an IEEE standard is wholly voluntary.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "IEEE SA 'Document Notices & Disclaimers' page (dateModified 2026-07-07). It says these notices appear in all IEEE standards. curl fetch plus --check: FOUND on 2026-09-23."
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The Only Way to Get Privacy Online",
+     "date": "2026-01-13",
+     "url": "https://projectvrm.org/2026/01/13/the-only-way-to-get-privacy-online/",
+     "quote": "No regulation to make organizations respect personal privacy will work.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Opening line of the post by Doc Searls. The next line reads: 'We’ve had cookie laws since the ’00s, the GDPR since the ’10s, and the CCPA since 2020. None of them has worked.' --check FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-myterms-is-cookie-consent",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes are verbatim. On 2026-09-23 I fetched the FAQ, the MyData post and the HL7-hosted PAR PDF fresh, and every --check returned FOUND. The PAR PDF shows 'PAR Request Date: 16-Oct-2017' and 'PAR Approval Date: 06-Dec-2017', which matches the title. The MyData post is dated 20 Jan 2026.",
+    "One sentence is unsupported: 'Consent-management platforms could add a module that responds to MyTerms'. None of the record's sources says it, and neither do the MyTerms FAQ, the Standard page, the Benefits page, the MyData post or Searls's proof-of-concept post. The nearest is the POC post's list of possible productisers, 'Browser, Web/CMP server, and plugin/extension/module makers', which is ambiguous and may be a typo for CMS. I have replaced it with the FAQ's own sourced statement that consent tooling 'might prove useful in development of MyTerms ceremonies and post-engagement auditing of compliance'.",
+    "'MyData likens SD-BASE to Strictly Necessary Only' is a fair paraphrase. MyData says the default 'Service Delivery Only' agreement makes 'MyTerms ... the direct equivalent of ‘Strictly Necessary Only’'. I have tightened the wording.",
+    "'The 2017 PAR explicitly excludes privacy policies' is slightly strong. The PAR says 'the purpose of this standard is not to address privacy policies'. I have reworded it to match."
+   ],
+   "fieldFixes": {
+    "correction": "Cookie banners and consent-management platforms present the organisation's choices to the person. Under MyTerms the person presents terms and the organisation agrees. MyData calls the default 'Service Delivery Only' agreement (SD-BASE) the direct equivalent of 'Strictly Necessary Only', but expressed by the person before any banner can be shown. The MyTerms FAQ allows that tech from consent tools might prove useful in building MyTerms ceremonies and compliance audits. The 2017 PAR says the standard does not address privacy policies, because they are one-sided and need no agreement."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Answer to 'How is MyTerms different from “Do Not Track,” “Global Privacy Control,” cookie banners, and preference centers?'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Post dated 20 Jan 2026. The preceding sentence is 'MyTerms is the direct equivalent of ‘Strictly Necessary Only’.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch of the PDF on 2026-09-23 plus --check: FOUND (section 5.4, Purpose). The form shows PAR Approval Date 06-Dec-2017."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "But there is surely tech involved in those options that might prove useful in development of MyTerms ceremonies and post-engagement auditing of compliance—or measures of progress though relationships built on top of initial MyTerms agreements.",
+     "note": "'Those options' are DNT, GPC, cookie banners and preference centres (same FAQ answer). --check FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-published-january-2025",
+   "status": "OK",
+   "issues": [
+    "The correction is right. On 2026-09-23 I fetched all three sources fresh and every --check returned FOUND. The IEEE page reads 'PAR Approval 2017-12-06 / Board Approval 2025-11-04 / Published: 2026-01-20'. The Crossref JSON has approved 2025-11-04 and created 2026-01-21T21:08:54Z, with publisher IEEE, electronic ISBN 9798855729443 and type 'standard'. The FAQ says 20 January 2026. Doc Searls's ProjectVRM post of 13 Jan 2026 independently says it 'will be published next week'.",
+    "Two sub-claims were unsourced on the record, so I have added sources. The 28 January 2026 public launch is covered by Searls's 'Now We Begin', published 2026-01-29, which says 'Yesterday ... launched MyTerms at a London event'. The claim that approval year gives the '-2025' is only inferred. The IEEE SA Standards Style Manual indirectly supports it ('Search for standard number and year of approval to access the web page of the published standard'), and it is consistent with the SASB approvals page listing '7012-2025' on 4 Nov 2025 and with the DOI prefix IEEESTD.2025."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. The page also lists Status Active Standard, WG MRPT-WG, chair Doc Searls and program manager Malia Zaman."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. created 2026-01-21T21:08:54Z; no published-online date is deposited."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND (FAQ 9). Last modified 2026-01-26."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "Yesterday, Customer Commons and MyData Global launched MyTerms at a London event correctly titled The Only Way to Get Real Privacy Online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "article:published_time 2026-01-29T22:40:00+00:00, i.e. the afternoon of 29 Jan in Searls's US time zone, so 'yesterday' means 28 January 2026. curl fetch plus --check: FOUND on 2026-09-23. MyData's 20 Jan 2026 post also announces the launch 'in London and online on Wednesday, 28th January 2026 – Data Privacy Day'."
+    },
+    {
+     "institution": "IEEE SA",
+     "title": "2021 IEEE SA Standards Style Manual",
+     "date": "2021",
+     "url": "https://development.standards.ieee.org/myproject/Public/mytools/draft/styleman.pdf",
+     "quote": "Search for standard number and year of approval to access the web page of the published standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Indirect support for 'the year in the designation is the approval year'. The style manual refers to published standards by number and year of approval; I found no explicit rule sentence. curl fetch of the PDF plus --check: FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-standard-mandates-a-protocol",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes are verbatim. On 2026-09-23 I fetched the IEEE page fresh, and fetched the projectvrm.org and doc.searls.com posts with curl (the helper gets 403); every --check returned FOUND. The ProjectVRM post is titled 'The MyTerms PAR' and is dated April 6, 2025.",
+    "'The form of the shared record is left open' had no source on the record. The MyTerms FAQ says it directly: 'This is an option left open by the MyTerms standard, to maximize development choices'. The claim that the MyTerms Agreement Record is only an idea is supported by Searls: 'Note that this is something I just made up'. His POC post also floats a blockchain log only 'to attract developers who are fond of those'.",
+    "The correction slightly overstates the standard's neutrality. The standard does impose requirements: an agreed contract 'shall be signed electronically by both parties or their agents' and 'a matching record shall be kept by both sides'. Neutral on technology is not the same as requiring nothing. I have added this to the correction.",
+    "Caveat: the Searls quote on identity ('MyTerms should not be dependent on a universal identity system') is the chair's opinion in a brainstorming post, not the standard's text. The standard's normative text was not read. The protocol-neutral claim rests on the official abstract ('any protocol that serves the purpose') and on the chair's account of the draft."
+   ],
+   "fieldFixes": {
+    "correction": "The standard does not specify a technology. Agents may use 'any protocol that serves the purpose', and the form of the shared record is left open. What it does require is that an agreed contract be signed electronically by both parties or their agents, and that both keep matching records. Header signalling, plug-ins, a transparency log and Doc Searls's 'MyTerms Agreement Record' are implementation ideas, not requirements. Searls, the working-group chair, says MyTerms should not depend on a universal identity system."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND (official abstract)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "curl fetch on 2026-09-23 (HTTP 200) plus --check: FOUND. Title 'The MyTerms PAR – ProjectVRM'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "curl fetch on 2026-09-23 (HTTP 200) plus --check: FOUND. The sentence sits in the 'Parties' field of Searls's sketched MAR. It is his opinion, not standard text."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "What does an “agreement record kept by both sides” look like, and where is it stored? This is an option left open by the MyTerms standard, to maximize development choices.",
+     "note": "FAQ For Individuals, Q7, question plus answer. --check FOUND on 2026-09-23."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "For that combination, we might define a canonical MyTerms Agreement Record, or MAR . Note that this is something I just made up.",
+     "note": "Extractor spacing before the period is preserved ('MAR .'). curl fetch plus --check: FOUND on 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-individuals-write-custom-terms",
+   "status": "OK",
+   "issues": [
+    "No error in the correction. On 2026-09-23 I fetched both sources fresh and both --check runs returned FOUND. The FAQ quote keeps the page's typo 'CutomerCommons.org'; it answers 'Can I change my terms for different websites?'.",
+    "Two parts of the correction were not covered by the record's quotes: 'on the Creative Commons model' and 'the organisation accepts one of those the person points to'. I have added the standard's own abstract sentences for both.",
+    "Nuance for the page. MyData says an organisation can also 'propose an alternative from the same list' or reject, 'and have that recorded as such'. Searls says a person may offer 'a first and second choice of agreement, but no more than that'. Neither contradicts the correction. 'Neutral nonprofit' matches the FAQ; the standard itself says 'independent and neutral non-business entity'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND (official abstract)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND (For Individuals, Q4; the typo 'CutomerCommons.org' is on the page). Last modified 2026-01-26."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "These terms shall be chosen from a collection of standard-form agreements in a roster kept by an independent and neutral non-business entity.(This is similar to how artists might choose Creative Commons licenses allowing or restricting certain kinds of uses for artists' creative work.)",
+     "note": "Official abstract, with the missing space after the period as on the page. --check FOUND on 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one.",
+     "note": "Official abstract. --check FOUND on 2026-09-23."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "quote": "Note that the MyTerms standard is not about negotiation. It’s about choice, and that one is provided by the individual as the first party.",
+     "note": "Working-group chair's gloss. curl fetch plus --check: FOUND on 2026-09-23. It continues: 'they can provide the second party—a site or service—with a first and second choice of agreement, but no more than that.'"
+    }
+   ]
+  }
+ ]
+}

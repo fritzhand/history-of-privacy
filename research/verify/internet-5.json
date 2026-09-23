@@ -1,0 +1,271 @@
+{
+ "slice": "internet",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "p3p-support-top-10000-sites-2018",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. Context: 'In 2018, according to BuiltWith metrics, fewer than 6% of the 10,000 most frequently visited websites support P3P.' Page header: 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018' (This Version: http://www.w3.org/TR/2018/OBSL-P3P-20180830/). Value (upper bound 6%), year, BuiltWith attribution and the retirement date all match."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "netflix-prize-records-uniquely-identifiable-pct-2008",
+   "status": "FIXED",
+   "issues": [
+    "Population precision: the paper's own section 5 says Netflix released '100, 480, 507 movie ratings, created by 480, 189 Netflix subscribers'. The '500,000 subscribers' in the abstract is a rounding. The geography field now gives the exact count.",
+    "Everything else checks out. The quote is verbatim in section 5 (the next sentence gives 68% for two ratings and dates with a 3-day error). The byline is 'The University of Texas at Austin'. The venue is the 2008 IEEE Symposium on Security and Privacy."
+   ],
+   "fieldFixes": {
+    "geography": "Netflix Prize dataset (480,189 subscribers, which the paper rounds to 500,000)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "fetch-text.py --check FOUND on 2026-09-23 (with the 'ﬁ' ligature). --grep '480' returns 'a dataset containing 100, 480, 507 movie ratings, created by 480, 189 Netflix subscribers between December 1999 and December 2005.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "aol-search-queries-released-2006",
+   "status": "OK",
+   "issues": [
+    "The live re-fetch of the Wayback URL failed: web.archive.org connections were reset through the agent proxy, three tries plus curl. nytimes.com returns 403. The quote was instead checked against a copy of the same NYT article in the fetch-text.py cache, fetched by the tool earlier on 2026-09-23. That copy has canonical https://www.nytimes.com/2006/08/09/technology/09aol.html, meta byl 'By MICHAEL BARBARO and TOM ZELLER Jr.' and pdate 20060809. The quote is verbatim there. It also has 'Ms. Arnold and 657,000 other Americans' and 'a three-month period', which support the notes.",
+    "An independent source is added: TechCrunch (6 August 2006) gives '20 million web queries from 650,000 AOL users', which agrees with the value."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "The quote is verbatim in the tool-cached copy of the NYT article from 2026-09-23 (byline and pdate 20060809 match). The live Wayback re-fetch failed on this run with 'Connection reset by peer' (proxy tunnel closed); retry the Wayback URL when the proxy allows."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "TechCrunch",
+     "title": "Michael Arrington, 'AOL Proudly Releases Massive Amounts of Private Data'",
+     "date": "2006-08-06",
+     "url": "https://techcrunch.com/2006/08/06/aol-proudly-releases-massive-amounts-of-user-search-data/",
+     "quote": "That’s the only way to explain their release of data that includes 20 million web queries from 650,000 AOL users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23; article:published_time 2006-08-07T01:17:59+00:00 (evening of 6 August, US time). An independent contemporaneous report of the 20 million figure."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "online-behavioral-ads-covered-by-2012-dnt-commitment-pct",
+   "status": "FIXED",
+   "issues": [
+    "The label says the companies pledged to honour 'Do Not Track', but the quoted sentence only says they 'agreed to comply when consumers choose to control online tracking'. DNT is named in the preceding sentence of the release. The quote is extended so that it supports the label. FOUND.",
+    "The ~90% is the coverage figure announced by the industry and the White House, not an independent measurement. The notes now say so. The release's subhead is 'Internet Advertising Networks Announces Commitment to \"Do-Not-Track\" Technology'. Title, date and URL are correct."
+   ],
+   "fieldFixes": {
+    "notes": "Industry commitment announced at the White House on 23 February 2012: companies committed 'to act on Do Not Track technology in most major web browsers'. The share is approximate ('nearly 90 percent') and is the figure announced by the administration and the ad networks, not an independent measurement."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "In addition, advertising networks announced that leading Internet companies and online advertising networks are committing to act on Do Not Track technology in most major web browsers to make it easier for users to control online tracking. Companies that represent the delivery of nearly 90 percent of online behavioral advertisements, including Google, Yahoo!, Microsoft, and AOL have agreed to comply when consumers choose to control online tracking.",
+     "note": "fetch-text.py --check FOUND on 2026-09-23 for both the original sentence and this extended quote."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-cookies-were-invented-to-track-people",
+   "status": "FIXED",
+   "issues": [
+    "Misquote: the correction says Montulli 'later called [it] the one gotcha'. The NYT (2001) has: ''That's the one 'gotcha' we had,'' he recalls with chagrin. The correction now quotes it exactly. The NYT source quote is extended to cover it.",
+    "Overstated detail: the correction lists 'logins, preferences'. Montulli's post names 'a random session identifier, a username, a shopping cart'. It is now aligned with the source.",
+    "Verdict: the inventor's stated design goal was the opposite of the claim. It was a mechanism 'that didn't allow for cross site tracking', and he opposed a per-browser unique ID because it 'could be used to track a user at every website'. The NYT independently says third-party cookies were 'precisely the kind of tracking mechanism Mr. Montulli had tried to prevent'. The claim ('invented to track people across the web') is therefore FALSE rather than MISLEADING.",
+    "Checked OK: the 1994 date (the NYT has 'One day in June 1994', and the blog says the meeting was 'around July of 1994'), and his defence of leaving third-party cookies on (blog: the other 'mechanism would not have the same level of visibility and control as cookies')."
+   ],
+   "fieldFixes": {
+    "verdict": "FALSE",
+    "correction": "Lou Montulli designed the cookie at Netscape in 1994 as a per-site memory (a session identifier, a username, a shopping cart). He says he opposed the idea then circulating, a unique identifier for every browser, because it 'could be used to track a user at every website'. His goal was a mechanism 'that didn't allow for cross site tracking'. Cross-site tracking through third-party cookies was an unforeseen consequence: 'That's the one \"gotcha\" we had,' he told The New York Times in 2001. He also defended leaving third-party cookies enabled, on the ground that trackers would otherwise use less visible methods."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "The quote is verbatim in the page's full text (BeautifulSoup get_text + the tool's norm()). fetch-text.py --check returns NOT-FOUND only because its paragraph extractor skips this Blogger div layout, as the existing note says. The full text also has 'didn't allow for cross site tracking' and the third-party-cookie decision passage. The post is dated Tuesday, May 14, 2013."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Third-party cookies were precisely the kind of tracking mechanism Mr. Montulli had tried to prevent through his privacy measures. He describes it today as a surprise -- and something of an embarrassment. ''That's the one 'gotcha' we had,'' he recalls with chagrin.",
+     "note": "The live Wayback re-fetch failed on 2026-09-23 (web.archive.org connection reset through the proxy). Both the original and the extended quote are verbatim in the tool-cached copy of this exact snapshot, retrieved that morning ('FILE ARCHIVED ON 12:44:32 Dec 06, 2020'). meta byl 'By John Schwartz', published_time 2001-09-04."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-do-not-track-was-a-law",
+   "status": "FIXED",
+   "issues": [
+    "Conflation: the correction says that 'when Internet Explorer 10 sent it by default, Microsoft later conceded that sites could argue' the signal did not reflect user preference. The 2015 Microsoft post says this about its NEW browsers ('websites that receive a DNT signal from the new browsers could argue...'), as the reason for dropping the default going forward. About IE10 it says only that the default 'was welcomed by many, others voiced concerns'. The correction now keeps the two apart.",
+    "The 'no US law' claim was unsourced. Support is added: the GPC FAQ records that the California Attorney General, in the CCPA Final Statement of Reasons, 'determined that the AG could not require businesses to comply with DNT requests'.",
+    "The correction was incomplete outside the US. On 24 August 2023 the Landgericht Berlin (vzbv v. LinkedIn, 16 O 420/19, not final when announced) held that 'A DNT signal represents a valid objection' under the GDPR. This does not make DNT a law, so the verdict FALSE stands. But the absolute 'recipients decided what the signal meant' no longer holds everywhere. A sourced sentence is added.",
+    "Checked OK: W3C Note of 17 January 2019 ('The working group has therefore decided to conclude its work'). The quote is FOUND. The Microsoft quote is FOUND, dated 3 April 2015."
+   ],
+   "fieldFixes": {
+    "correction": "DNT was a voluntary HTTP header, not a law. The W3C never finished it as a standard: in January 2019 the working group concluded its work for lack of deployment. No US law required sites to honour it. When drafting the CCPA regulations, California's attorney general concluded he could not require businesses to comply with DNT requests. In practice recipients decided what the signal meant. When Microsoft turned DNT on by default in Internet Explorer 10, 'others voiced concerns'. In 2015 Microsoft dropped the default, conceding that otherwise websites receiving the signal from its new browsers 'could argue that it doesn't reflect the users' preference, and therefore, choose not to honor it'. The one later legal twist came in Europe. In 2023 a Berlin regional court, in a judgment not final when announced, held that a DNT signal is a valid objection under the GDPR. That was a reading of the GDPR, not a DNT law."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. The context shows the concession concerns 'future versions of our browsers' and Windows Express Settings, not IE10 retroactively. About IE10 the post says: 'While our implementation of DNT two years ago in Internet Explorer 10 (IE 10) was welcomed by many, others voiced concerns'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "fetch-text.py --check FOUND on the first run on 2026-09-23. Later tool fetches got intermittent W3C 403s. A curl copy confirms the Status section, including 'The working group has therefore decided to conclude its work and republish the final product as this Note'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Global Privacy Control (globalprivacycontrol.org)",
+     "title": "GPC FAQ — Why not just use Do Not Track (DNT)?",
+     "date": "2026",
+     "url": "https://globalprivacycontrol.org/faq",
+     "quote": "Unfortunately, in the appendices to their Final Statement of Reasons, the California Attorney General (AG) determined that the AG could not require businesses to comply with DNT requests because the requests do not clearly convey users’ intent to opt out of the sale of their data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. The GPC project's own FAQ, so an interested party, but it reports the California AG's CCPA rulemaking finding. The page is undated; the date is the access year."
+    },
+    {
+     "institution": "Verbraucherzentrale Bundesverband (vzbv, Federation of German Consumer Organisations)",
+     "title": "Court Prohibits Linkedin's Data Privacy Infringements (Landgericht Berlin, 16 O 420/19, judgment of 24 August 2023)",
+     "date": "2023",
+     "url": "https://www.vzbv.de/en/court-prohibits-linkedins-data-privacy-infringements",
+     "quote": "The Berlin District Court upheld vzbv’s view that the company’s statement was misleading, as it suggested that use of the DNT signal was legally irrelevant and that the company was under no obligation to observe it. This is, in fact, not the case. According to the General Data Protection Regulation (GDPR), the right to object to the processing of personal data can also be expressed using an automated procedure. A DNT signal represents a valid objection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. The claimant's own report of the ruling. The page lists 'Teil- und Schlussurteil Landgericht Berlin | 16 O 420/19 | 24.08.2023'; the judgment PDF sits in the /2023-10/ upload folder. The press page is undated in its text."
+    },
+    {
+     "institution": "Verbraucherzentrale Bundesverband (vzbv)",
+     "title": "Gericht untersagt Datenschutzverstöße von LinkedIn (German version, key data of the judgment)",
+     "date": "2023",
+     "url": "https://www.vzbv.de/urteile/gericht-untersagt-datenschutzverstoesse-von-linkedin",
+     "quote": "Datum der Urteilsverkündung: 24.08.2023 Aktenzeichen: 16 O 420/19 – nicht rechtskräftig Gericht: Landgericht Berlin",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. It supports the date, the case number and 'nicht rechtskräftig' (not final) as of the announcement. The page also has 'Ein DNT-Signal stelle einen wirksamen Widerspruch dar.'"
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-zuckerberg-said-privacy-is-dead",
+   "status": "FIXED",
+   "issues": [
+    "Unsupported assertion: 'the blunter line usually conflated with it is Scott McNealy's 1999 ...'. Neither source shows that the two are 'usually conflated'. It is reworded as a plain comparison.",
+    "The Crunchies venue and date were not in the quoted text. The Guardian quote is extended to include 'Talking at the Crunchie awards in San Francisco this weekend'. FOUND. The article is dated Monday 11 January 2010, and the Crunchies took place on Friday 8 January 2010. The correction's 'January 2010' is right.",
+    "Checked OK: the Guardian page has no 'privacy is dead' (--grep 'dead' gives NO-MATCH). Byline Bobbie Johnson, published 2010-01-11. Headline 'Privacy no longer a social norm, says Facebook founder'. The Wired quote is FOUND (Polly Sprenger, 1999-01-26)."
+   ],
+   "fieldFixes": {
+    "correction": "At the Crunchies awards in San Francisco in January 2010, Zuckerberg said people had grown comfortable sharing more, more openly. He added: 'That social norm is just something that has evolved over time.' The Guardian summarised this as 'Privacy no longer a social norm'. The reported remarks do not contain the words 'privacy is dead'. A far blunter line had come a decade earlier, from Sun's Scott McNealy in 1999: 'You have zero privacy anyway. Get over it.'"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Talking at the Crunchie awards in San Francisco this weekend, the 25-year-old chief executive of the world's most popular social network said that privacy was no longer a \"social norm\". \"People have really gotten comfortable not only sharing more information and different kinds, but more openly and with more people,\" he said. \"That social norm is just something that has evolved over time.\"",
+     "note": "fetch-text.py --check FOUND for the original and extended quotes on 2026-09-23. Author meta 'Bobbie Johnson'; article:published_time 2010-01-11T01:58:24Z."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology. \"Get over it.\"",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. The quote is extended so that it covers 'Get over it.' as quoted in the correction. Author Polly Sprenger; datePublished 1999-01-26."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-mcnealy-said-privacy-is-dead-get-over-it",
+   "status": "FIXED",
+   "issues": [
+    "The correction says Wired gives 'You have zero privacy anyway' followed by 'Get over it.', but the source quote stopped before 'Get over it.'. The quote is extended; the two-paragraph span is FOUND.",
+    "Checked OK: 'Monday night' in an article dated Tuesday 26 January 1999 means Monday 25 January 1999, which matches the correction. The event was the launch of Sun's Jini technology, and the author is Polly Sprenger. The page has no 'privacy is dead'. The claim that 'privacy is dead' is a later compression is interpretive but consistent with the source."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology. \"Get over it.\"",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. datePublished 1999-01-26T12:00:00-05:00. 25 January 1999 was a Monday."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-p3p-let-people-set-their-own-privacy-terms",
+   "status": "FIXED",
+   "issues": [
+    "Overstated for P3P as a whole. 'Had no way to propose terms' is true of the final P3P 1.0 Recommendation (2002), whose text contains neither 'proposal' nor 'negotiat'. It is not true of P3P's early design. The W3C Working Draft of 2 July 1998 let a user agent that disliked a site's proposal 'Return a Proposal of its own', a counter-proposal, and said P3P provided for 'a user agent and service to automatically negotiate and to come to an agreement satisfactory to both parties'. P3P author Lorrie Cranor later wrote that 'The negotiation protocol was not included in the final specification'. This matters for the IEEE 7012 story: person-side proposals were designed into P3P and then dropped. The correction and sources are updated.",
+    "Checked OK: the P3P 1.0 abstract quote (the site expresses its practices; user agents interpret them) and Cranor's blog (browsers compare policies with 'each user's privacy settings' and 'could alert the user, block cookies') are both verbatim."
+   ],
+   "fieldFixes": {
+    "correction": "In the P3P 1.0 standard (W3C Recommendation, 2002) the website wrote the machine-readable policy. The person only configured preferences in their browser, which compared the site's policy with them and could alert the user or block cookies. The person could accept or refuse a site's stated practices but had no way to propose terms. Early drafts had gone further: a 1998 working draft let the user's agent 'Return a Proposal of its own'. As P3P co-author Lorrie Cranor later wrote, 'The negotiation protocol was not included in the final specification.' That is the direction IEEE 7012 reverses, with the person proffering the terms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "On 2026-09-23 fetch-text.py got intermittent W3C 403s. The quote was FOUND by the tool on a later retry and via a curl copy run through the tool's to_text/norm. Header: 'W3C Recommendation 16 April 2002'. Neither the text nor the raw HTML contains 'proposal' or 'negotiat', so the final standard has no negotiation."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "fetch-text.py --check FOUND on 2026-09-23. The same paragraph continues: 'In the event that a privacy policy did not match the user’s settings, the browser could alert the user, block cookies, or take other actions automatically.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "World Wide Web Consortium (W3C)",
+     "title": "Platform for Privacy Preferences (P3P) Syntax Specification — W3C Working Draft 2 July 1998 (eds. Massimo Marchiori and Dan Jaye)",
+     "date": "1998-07-02",
+     "url": "https://www.w3.org/TR/1998/WD-P3P10-syntax-19980702/",
+     "quote": "Return a Proposal of its own. This implies a refusal, but provides an alternate that the user considers acceptable if accepted by the service.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "FOUND on 2026-09-23 via a curl copy (UA 'Mozilla/5.0') run through fetch-text.py's own to_text() and norm(). The tool's own fetch got W3C 403s on three tries. The same draft's section 1.1 also says P3P provides mechanisms 'For a user agent and service to automatically negotiate and to come to an agreement satisfactory to both parties', and notes 'the creation of a counter-proposal by the user agent is not required for P3P1.0 compliance.'"
+    },
+    {
+     "institution": "Journal on Telecommunications and High Technology Law (University of Colorado)",
+     "title": "Lorrie Faith Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice', vol. 10, no. 2",
+     "date": "2012",
+     "url": "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+     "quote": "The original idea for P3P involved a protocol in which web browsers would negotiate with websites over privacy on behalf of their users. The negotiation protocol was not included in the final specification, largely due to the added implementation complexity and lack of interest from industry, but also due to concerns that negotiations would not benefit consumers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND on 2026-09-23 (http URL; the https host has a self-signed certificate). Cranor was an author of the P3P 1.0 specification. Her 2012 blog post (source index 1) announces this paper."
+    }
+   ]
+  }
+ ]
+}

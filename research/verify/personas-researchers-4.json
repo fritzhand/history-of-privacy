@@ -1,0 +1,246 @@
+{
+ "slice": "personas-researchers",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "first-agentic-internet-workshop-mountain-view-2025",
+   "status": "OK",
+   "issues": [
+    "No error found. Both sources were re-fetched with the cache cleared, and both quotes --check FOUND.",
+    "The 6 Nov 2025 post supports every claim in the summary: AIW1 was held on 24 October 2025, 'the day after IIW 41 wrapped up', 'at the Computer History Museum', in the 'Open Space unconference format', 'With more than 40 sessions across four time slots', with attendees 'from 10 countries'. Its topics included 'agentic browsers, agent identity protocols', 'AI agent policy enforcement' and 'legal frameworks that support human-centric agency', so the single-quoted phrase 'human-centric agency' is verbatim.",
+    "The 18 Sep 2025 post puts IIW on 'October 21–23, 2025 at the Computer History Museum in Mountain View' and AIW on 'Friday, October 24 ... at the same venue', which matches the displayDate. The Windley quote in the summary is verbatim.",
+    "The coordinates (37.4143, -122.0775) match the Computer History Museum, 1401 N Shoreline Blvd.",
+    "No independent source could be reached. agenticinternetworkshop.com reset the connection and returned 503 via WebFetch, and the web-search budget is exhausted. Both sources are first-hand posts by an organiser, which is acceptable for the date and venue of a small workshop."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. Byline 'Phil Windley // Thu Nov 6 10:00:00 2025'. The note's quotes ('IIW 41 was about the state of identity...' and 'With more than 40 sessions across four time slots') are also on the page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. Byline 'Thu Sep 18 08:31:00 2025'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-87-percent-identified-by-zip-birthdate-gender",
+   "status": "FIXED",
+   "issues": [
+    "Sources 0 and 1 are correct. Sweeney's 87% ('216 million of 248 million') comes from '1990 U.S. Census summary data', and the header reads 'Carnegie Mellon University, Data Privacy Working Paper 3. Pittsburgh 2000.' Golle's abstract gives 63% on the 2000 census and is headed 'WPES'06, October 30, 2006, Alexandria, Virginia'.",
+    "Source 2's quote is weak support. The correction cites Barth-Jones for the argument that 'incomplete lists make many such matches uncertain', but the quote only says Weld was re-identifiable because he was a public figure. The same abstract states the list argument directly: 'most re-identification attempts face a strong challenge in being able to create a complete and accurate population register', and it says the Cambridge voter data 'had missing data for a large proportion of the population'. The quote is swapped for the one that supports the claim. Both --check FOUND.",
+    "The correction text needs no change. Golle says 'Our results generally agree with the findings of [10]', which supports 'The core point ... survived the re-analysis'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. The abstract says 'experiments I conducted using 1990 U.S. Census summary data'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND (ligature text). The footer reads 'WPES'06, October 30, 2006, Alexandria, Virginia, USA.' and the author line reads 'Palo Alto Research Center'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "quote": "most re-identification attempts face a strong challenge in being able to create a complete and accurate population register",
+     "note": "Re-fetched with a fresh cache. The new quote --check FOUND in the abstract, where Barth-Jones calls this 'the myth of the perfect population register'. The earlier quote ('Weld was most likely re-identifiable only because he was a public figure who experienced a highly publicized hospitalization') is also FOUND and continues '...rather than there being any certainty underlying his re-identification using the Cambridge voter data, which had missing data for a large proportion of the population'. Footer 'July, 2012 ... ssrn.com/abstract=2076397'. Barth-Jones's critique is itself disputed by re-identification researchers (e.g. Narayanan and Felten, 2014)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-soghoian-invented-do-not-track-used-by-all-browsers",
+   "status": "OK",
+   "issues": [
+    "No factual error found. The Soghoian post (dated 'Friday, January 21, 2011') supports every claim: the 2007 'Do Not Track list' proposal to the FTC by public-interest groups, Kaminsky's 'X-No-Track' suggestion, Mike Shaver's email preferring a header, and 'In July of 2009 ... Sid Stamm helped me to put together a prototype Firefox add-on that added two headers ... X-Do-Not-Track: 1'. The post also says 'I assumed that any header-based system would be voluntary', which supports 'DNT was a request, not a blocking tool'.",
+    "Tooling caveat for source 0: fetch-text.py --check returns NOT-FOUND on this Blogger page. Its paragraph extractor skips the div-based post-body and keeps only blockquotes and comments. The quote is verbatim in the post-body of the freshly fetched raw HTML, extracted with BeautifulSoup. The ?m=1 mobile URL behaves the same way. The https URL fails with an SSL EOF.",
+    "Tooling caveat for source 1: tools/fetch-text.py (Python urllib) gets HTTP 403 from w3.org. curl fetches the page (HTTP 200), and the quote is FOUND by running the tool's own to_text() and norm() functions on that HTML. The header reads 'W3C Working Group Note 17 January 2019', and the dated URL /TR/2019/NOTE-tracking-dnt-20190117/ gives the same text.",
+    "Source 2: the WebKit post is dated 'Feb 6, 2019' (article:published_time 2019-02-06). 'Began removing' is fair because this was Safari Technology Preview, before a stable release."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. The quote is verbatim in the page's post-body div, confirmed by BeautifulSoup extraction of the raw HTML. fetch-text.py's --check reports NOT-FOUND only because its extractor drops Blogger's div-only post body. Post dated Friday, January 21, 2011. Kaminsky's and Shaver's quoted emails and the July 2009 Stamm prototype are also in the post body."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "urllib gets HTTP 403 from w3.org. curl returns 200, and the quote is FOUND with fetch-text's own to_text()/norm() on the curl-fetched HTML. The header reads 'W3C Working Group Note 17 January 2019', with editors Roy T. Fielding (Adobe) and David Singer (Apple)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. Dated Feb 6, 2019, by Jon Davis."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-first-iiw-mountain-view-computer-history-museum",
+   "status": "OK",
+   "issues": [
+    "No error found. All three quotes --check FOUND after a fresh re-fetch.",
+    "The announcement is dated 'Mon Aug 1 05:35:00 2005'. It names the four hosts and 'Berkeley on October 26 and 27th'. It also says the workshop 'will comprise a day of presentations ... followed by a day of structured open space', which supports 'the open-space day held at the Hillside Club'.",
+    "The Day Two wrap-up is dated 'Thu Oct 27 20:27:00 2005'. It describes the structured open space and 'different spaces at the Hillside Club' (the Hillside Club is in Berkeley).",
+    "The About page confirms the present-tense venue ('We meet in the Computer History Museum in Mountain View, CA') and 'twice every year since 2005'.",
+    "Minor wording point: 'reports from the time' rests on Windley's own posts only. No independent contemporaneous report could be reached. The IIW wiki (iiw.idcommons.net) returned 502, internetidentityworkshop.com/past-workshops/ has no 2005 entry, and web search is exhausted. This does not change the verdict."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. Dated Mon Aug 1 2005."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. Dated Thu Oct 27 2005."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-oauth-created-at-internet-identity-workshop",
+   "status": "FIXED",
+   "issues": [
+    "Conflation: the correction speaks of 'a November 2006 conversation between Twitter and Ma.gnolia developers at a CitizenSpace OpenID meeting'. The oauth.net page says only that 'OAuth started around November 2006, while Blaine Cook was working on the Twitter OpenID implementation'. It then says Cook contacted Chris Messina, and 'They met with David Recordon, Larry Halff, and others at a CitizenSpace OpenID meeting'. The meeting is not dated, and 'The conversation continued online and off for a few months.' Wikipedia's account (from the same source) likewise gives no date for the meeting. Reworded so that the November 2006 date attaches to the start of the work, not to the meeting.",
+    "Misattribution: the correction ends 'IIW was one of several forums where this ... work was discussed and advanced, as its co-founder Phil Windley says'. Windley does not say 'one of several forums'. His words are 'IIW gave us space to define protocols like OAuth, OpenID Connect, and Decentralized Identifiers', and the correction should quote that rather than paraphrase it into something he did not say.",
+    "Title of source 0: the page <title> is 'Introduction — OAuth', and the date 2007-09-05 is the date of the Hammer-Lahav original that the page adapts. Title corrected.",
+    "Checked OK: the April 2007 Google group and the 'October 3rd, 2007 the OAuth Core 1.0 final draft' dates are verbatim. The KuppingerCole page title is 'Speaker Profile: Kaliya Young | KuppingerCole Analysts' and it carries the 'where OpenID Connect and OAuth were created' quote. The Windley quote is verbatim in the 18 Sep 2025 post. A grep of oauth.net/about/, oauth.net/about/introduction/, Hammer's 'Explaining OAuth' and Wikipedia's OAuth article finds no mention of IIW or the Internet Identity Workshop, which supports 'without mentioning IIW'."
+   ],
+   "fieldFixes": {
+    "correction": "Speaker biographies often say OAuth and OpenID Connect were 'created' at IIW. OAuth's own published history says it 'started around November 2006', while Twitter's Blaine Cook was working on an OpenID implementation. He, Chris Messina, Ma.gnolia's Larry Halff, David Recordon and others then met at a CitizenSpace OpenID meeting. A Google group followed in April 2007, and the final draft of OAuth Core 1.0 was released on 3 October 2007. That history does not mention IIW. IIW co-founder Phil Windley's own, more careful wording is that IIW 'gave us space to define' protocols such as OAuth. That makes IIW a forum where the work was discussed and advanced, not the place where it began."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Introduction — OAuth",
+     "note": "Re-fetched with a fresh cache and --check FOUND. The page header reads 'Adapted from Explaining OAuth, published on September 05, 2007 by Eran Hammer-Lahav'. The CitizenSpace meeting is not dated on the page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. The page title is 'Speaker Profile: Kaliya Young | KuppingerCole Analysts'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. The full sentence is FOUND in the 18 Sep 2025 post."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-young-people-do-not-care-about-privacy",
+   "status": "OK",
+   "issues": [
+    "No error found. The Pew quote --check FOUND after a fresh re-fetch, and so do all the figures in the note: 'survey of 802 teens', '60% of teen Facebook users keep their profiles private', '74% of teen social media users have deleted people from their network or friends list' and 'just 9% say they are “very” concerned'. The page also says 'For the five different types of personal information that we measured in both 2006 and 2012, each is significantly more likely to be shared', which matches the correction. Berkman involvement is confirmed: the report uses 'focus groups conducted by the Youth and Media team at the Berkman Center for Internet & Society at Harvard University'.",
+    "boyd quote --check FOUND. The correction also says teens control 'who could understand a post rather than who could see it'. The same PDF supports this: 'teens recognize that limiting access to meaning can be a much more powerful tool for achieving privacy than trying to limit access to the content itself.' (--check FOUND, 'Social Steganography' section). The copyright page confirms Yale University Press."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. All four figures in the existing note are verbatim on the page."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. The same PDF supports the 'understand rather than see' point: 'teens recognize that limiting access to meaning can be a much more powerful tool for achieving privacy than trying to limit access to the content itself.' (--check FOUND)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-zuboff-coined-surveillance-capitalism",
+   "status": "FIXED",
+   "issues": [
+    "The core claim is right: Foster and McChesney's 'Surveillance Capitalism' appeared in Monthly Review dated July–August 2014. The Monthly Review archive page gives 'Issue Vol. 66, No. 3: July-August 2014', 'Published 2014-07-01' and DOI 10.14452/MR-066-03-2014-07_1. The author page's 'no. 11' is an error, as the source note already says. The archive gives pp. 1–31, while the author page says 1–32.",
+    "Imprecise timeline: 'made the term famous with her 2019 book' leaves out that Zuboff was using the term in print by September 2014, which is the 'coined five years ago' the Intercept quote refers to. FAZ.net's page 'Shoshana Zuboff: A Digital Declaration' carries the standfirst 'Against the Surveillance Capitalism of „Big Data“.' and is datePublished 2014-09-15T09:03:40Z. So Foster–McChesney came about two months before that essay. Adding this makes the myth's correction precise and fair to both sides. The FAZ essay is added as a source.",
+    "PublicAffairs quote re-fetched with a fresh cache and --check FOUND. It is attributed on the page to 'Sam Biddle, The Intercept'."
+   ],
+   "fieldFixes": {
+    "correction": "Zuboff developed the best-known theory of surveillance capitalism and made the term famous with her 2019 book, and reviewers often credit her with coining it. She set out the concept in a Frankfurter Allgemeine Zeitung essay published on 15 September 2014. But about two months earlier, John Bellamy Foster and Robert W. McChesney had published 'Surveillance Capitalism: Monopoly-Finance Capital, the Military-Industrial Complex, and the Digital Age' in the July–August 2014 issue of the socialist magazine Monthly Review. Their analysis was different, centred on monopoly capital and the military-industrial complex. The phrase has more than one origin; Zuboff's meaning, the extraction of behavioural data to sell predictions, is her own."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. The page's 'no. 11' is wrong. The Monthly Review archive (https://monthlyreviewarchives.org/index.php/mr/article/view/MR-066-03-2014-07_1) shows 'Issue Vol. 66, No. 3: July-August 2014', 'Published 2014-07-01', citation pages 1–31 and DOI 10.14452/MR-066-03-2014-07_1."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache and --check FOUND. The quote belongs to a praise blurb attributed to 'Sam Biddle, The Intercept'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Frankfurter Allgemeine Zeitung (FAZ.net)",
+     "title": "Shoshana Zuboff: A Digital Declaration",
+     "date": "2014-09-15",
+     "url": "https://www.faz.net/aktuell/feuilleton/debatten/the-digital-debate/shoshan-zuboff-on-big-data-as-surveillance-capitalism-13152525.html",
+     "quote": "If the digital future is to be our home, then it is we who must make it so. Against the Surveillance Capitalism of „Big Data“.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "The standfirst is free and the essay body is paywalled. urllib gets stuck in a 302 redirect loop, so the page was fetched with curl -L (HTTP 200). The quote is FOUND with fetch-text's own to_text()/norm() on that HTML. JSON-LD gives datePublished 2014-09-15T09:03:40Z and author Shoshana Zuboff."
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "id": "latanya-sweeney-knight-news-challenge-2017",
+   "status": "OK",
+   "issues": [
+    "No error found. Re-queried the Commons API (extmetadata). LicenseShortName 'CC BY 4.0', License 'cc-by-4.0', LicenseUrl https://creativecommons.org/licenses/by/4.0, Artist 'Parker Higgins', Credit 'Own work', DateTimeOriginal '2017-11-16 15:59:00', AttributionRequired true. The categories include 'CC-BY-4.0' and 'Photographs by Parker Higgins'. The file was uploaded by ParkerHiggins on 2017-11-17.",
+    "The caption matches the Commons ImageDescription word for word: 'Latanya Sweeney takes part in a panel discussion at a Knight News Challenge event at the Paley Center for Media in New York City on November 16, 2017.'",
+    "The local file assets/media/latanya-sweeney-knight-news-challenge-2017.jpg exists and opens (960x960 RGB JPEG, matching thumbPx). Visual check: glasses, grey jacket, seated on a chair with a Knight Foundation backdrop behind. The alt text is accurate.",
+    "The coordinates (40.7609, -73.9784) are within about 70 m of the Paley Center at 25 W 52nd St, which is acceptable."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "arvind-narayanan-stanford-2010",
+   "status": "FIXED",
+   "issues": [
+    "The rights check passes. The Commons wikitext has {{cc-by-2.0}}, author Robert Scoble, date 2010-10-21 16:19:08, source flickr.com/photos/scobleizer/5115027150, and the note 'Extracted from' the parent file 'Stanford's privacy guys - Arvind Narayanan, left, and professor Dan Boneh.jpg'. The parent carries {{FlickrVerifiedByUploadWizard|cc-by-2.0}}. The Flickr page itself shows license id 4 (CC BY 2.0) and 'Taken on October 21, 2010'. The Commons API returned HTTP 429 (rate-limited) on re-query, so the extmetadata was not re-read. The license was confirmed from the file-page wikitext and from Flickr.",
+    "Overstated location. The caption says 'Arvind Narayanan in the computer science department at Stanford University', and the locationNote places the photo in the 'Gates Building'. The source description says only that the two men 'work in the computer science department at Stanford University'. It does not say where the photo was taken, and the Flickr page has no geotag. The caption and locationNote are reworded so they do not state the place as fact.",
+    "The local file assets/media/arvind-narayanan-stanford-2010.jpg exists and opens (960x870 RGB JPEG, matching thumbPx). Visual check: red plaid shirt, window blinds behind. The alt text is accurate. The Commons filename's 'Narayana' typo is in the real file name, so sourceUrl, thumbUrl and fullUrl are correct as given."
+   ],
+   "fieldFixes": {
+    "caption": "Arvind Narayanan, then at Stanford University's computer science department, photographed by Robert Scoble on 21 October 2010 alongside professor Dan Boneh. Scoble's post described the pair's system for letting people 'check in' and tell friends where they are in a secure, private way (cropped to Narayanan).",
+    "locationNote": "Stanford University, California (approximate). Narayanan and Boneh worked in the computer science department (Gates Building), but the Flickr record has no geotag, so where the photo was taken is not recorded."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

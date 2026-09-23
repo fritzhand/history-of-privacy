@@ -1,0 +1,284 @@
+{
+ "slice": "personas-code",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "chaum-untraceable-electronic-mail-mix-networks-1981",
+   "status": "OK",
+   "issues": [
+    "Checked OK: both quotes --check FOUND in the live Free Haven PDF (HTTP 200). The page footer reads 'February 1981 Volume 24 Number 2'. The header line reads 'Received 2/79; accepted 4/80; revised 10/80'. The byline reads 'David L. Chaum, University of California, Berkeley', with the author address at the Computer Science Division, UC Berkeley.",
+    "Checked OK: the claim 'without a universally trusted authority' is confirmed by the abstract ('The technique does not require a universally trusted authority'). The abstract also mentions untraceable return addresses, digital pseudonyms and elections. The Naval Research Laboratory's 1996 onion-routing paper cites this article as ref. [1], 'Communications of the ACM, v. 24, n. 2, Feb. 1981, pages 84-88', and describes it as a layered object that routes data through intermediate nodes. This independently supports the date and the lineage claim in the significance. The Berkeley coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 (HTTP 200); abstract sentence --check FOUND; footer and received/revised dates confirmed via --grep."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; elections sentence --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "chaum-security-without-identification-1985",
+   "status": "FIXED",
+   "issues": [
+    "Source 1 has the wrong date. The chaum.com web text is the revised 1987 version, not the October 1985 article. Its title is 'Security without Identification: Card Computers to make Big Brother Obsolete', and the page says 'Copyright 1987 by David Chaum. (A related earlier work appeared in Communications of the ACM, 28, 10, Oct. 1985; ACM is acknowledged.)'. The date field should be 1987, not 1985-10.",
+    "Source 1 could not be re-fetched live. On 2026-09-23 web.archive.org connections through the agent proxy were reset (curl error 35, 'ws_closed_mid_exchange'), and WebFetch cannot reach web.archive.org. The live chaum.com page returns a captcha. The quote was verified (--check FOUND) against the fetch-text cached copy of the same archive URL. Status stays CONFIRMED, with that caveat noted.",
+    "Added a quote from the 1985 original that supports the summary's pseudonym and card-computer claim. Until now only the 1987 revision supported it, and the 1985 scan was cited only for the author's address. The figure caption 'Different numbers or digital pseudonyms are used with each organization by a personal card computer held and trusted only by the individual' --check FOUND in the Radboud scan.",
+    "Checked OK: in the 1985 scan, the author address (Kruislaan 413, Amsterdam), the footer 'October 1985 Volume 28 Number 10' and the copyright line '0001-0782/85/1000-1030' are all present. The title 'Security without Identification: Transaction Systems to Make Big Brother Obsolete' --check FOUND. 'Blind signatures' and the dossier discussion also appear in the 1985 text. The CWI coordinates (Science Park, the former Kruislaan 413) are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); author-address quote --check FOUND; title and 'October 1985 Volume 28 Number 10' footer confirmed; first-page code '0001-0782/85/1000-1030' matches pp. 1030-1044."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "1987",
+     "note": "Page text is Chaum's 1987 revision ('Copyright 1987 by David Chaum. (A related earlier work appeared in Communications of the ACM, 28, 10, Oct. 1985 ...)'), so the date is changed to 1987. The quote was checked (--check FOUND) against the fetch-text cached copy of this exact archive URL. A live re-fetch on 2026-09-23 failed: web.archive.org connections through the proxy were reset, and live chaum.com serves a captcha."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Communications of the ACM (scan hosted by Radboud University Nijmegen)",
+     "title": "David Chaum, 'Security without Identification: Transaction Systems to Make Big Brother Obsolete', vol. 28, no. 10, pp. 1030–1044 (figure caption)",
+     "date": "1985-10",
+     "url": "https://www.cs.ru.nl/~jhh/pub/secsem/chaum1985bigbrother.pdf",
+     "quote": "Different numbers or digital pseudonyms are used with each organization by a personal card computer held and trusted only by the individual",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND in the 1985 scan's text layer. This is the caption of the 'new approach' figure. The scrambled body text also contains '...account number or “digital pseudonym” with each organization.'"
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "zimmermann-releases-pgp-1-0-1991",
+   "status": "FIXED",
+   "issues": [
+    "Unsourced claim: 'for MS-DOS'. Neither cited page (PGP 10th Anniversary, Why I Wrote PGP) mentions MS-DOS or DOS. It is also absent from the PGP 30th Anniversary essay, the Wired 'Crypto Rebels' article and the English Wikipedia articles on PGP and Zimmermann. An independent search was not possible because the session's web-search budget was exhausted. The phrase is removed from the summary; restore it only with a source.",
+    "The summary is incomplete on the upload date. In 2001 Zimmermann wrote that he did not recall whether the Internet postings began on 5 or 6 June. His 'PGP Marks 30th Anniversary' essay, dated 6 June 2021, says: 'It was on this day in 1991 that Pretty Good Privacy was uploaded to the Internet. I had sent it to a couple of my friends for distribution the day before.' So Zimmermann sent it out on 5 June and it was uploaded on 6 June. The displayDate of 5 June 1991 (the day he sent it out) is kept. The summary is updated and the 2021 essay is added as a source.",
+    "Checked OK: the Hoeltje/Peacenet, Kelly Goen, Usenet 'US only' and BBS details --check FOUND on the 10th-anniversary page. The Senate Bill 266 'omnibus anticrime bill', the 'non-binding resolution' and the 'plain text contents' wording are on Why I Wrote PGP. The page is signed 'Philip R. Zimmermann Boulder, Colorado June 1991 (updated 1999)'. Independently, Wired (Levy, 1993) says: 'In June, 1991, it was ready for release.'"
+   ],
+   "fieldFixes": {
+    "summary": "On 5 June 1991 Phil Zimmermann sent the first release of PGP, email encryption software, to friends for uploading: Allan Hoeltje posted it to Peacenet, and Kelly Goen to a Usenet source-code newsgroup (marked 'US only') and bulletin-board systems. In 2001 Zimmermann could not recall whether the Internet postings began on 5 or 6 June; in his 2021 anniversary essay he dated the upload to 6 June, the day after he sent it out. Zimmermann said Senate Bill 266, a 1991 anticrime bill whose non-binding resolution would have had communications systems let the government obtain plaintext, led him to publish it free."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; page heading 'PGP Marks 10th Anniversary 5 June 2001'; Hoeltje, Goen, 'US only' and 'June 5th or 6th' sentences present. No mention of MS-DOS."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; SB 266 'sense of Congress ... obtain the plain text contents' passage present; signature 'Philip R. Zimmermann Boulder, Colorado June 1991 (updated 1999)'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Philip Zimmermann (philzimmermann.com)",
+     "title": "PGP Marks 30th Anniversary",
+     "date": "2021-06-06",
+     "url": "https://www.philzimmermann.com/EN/essays/PGP_30thAnniversary.html",
+     "quote": "It was on this day in 1991 that Pretty Good Privacy was uploaded to the Internet. I had sent it to a couple of my friends for distribution the day before.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Page heading: 'PGP Marks 30th Anniversary 6 June 2021'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "zimmermann-pgp-export-investigation-closed-1996",
+   "status": "FIXED",
+   "issues": [
+    "Source 1 (IEEE Cipher) quoted a sentence that supports no claim in the record: 'Zimmermann maintained thoughout the investigation that he did not put the software on the Internet.' The summary does not mention this. The same page has a verbatim sentence that supports the record's date, prosecutor and outcome, so the quote is replaced with it (--check FOUND).",
+    "Checked OK: Dubois's release is dated 'Fri, 12 Jan 1996 23:37:22 -0700' and says 'Yesterday morning' (11 January). Zimmermann's list post is signed '11 Jan 96' and says the fax came 'this morning'. Keane's letter covers 'the posting to USENET in June 1991'. The investigation spanned 'three years'. Yamaguchi's statement that his office 'declined prosecution of any individuals', with 'No further comment ... on the reasons', and Dubois's speculation about an 'export' ruling and the constitutionality of the export-control law are all verbatim on the page. The Cipher brief independently gives 'announced on January 11'. Zimmermann's 2021 30th-anniversary essay says 'The government dropped the investigation in early 1996' (--check FOUND). The San Jose coordinates are approximate but reasonable."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; 'Date: Fri, 12 Jan 1996 23:37:22 -0700' header and Zimmermann's '11 Jan 96' signature confirmed; Yamaguchi statement and Dubois's speculation present verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "William P. Keane, an assistant U.S. Attorney in San Jose, announced on January 11 that, in consultation with the Justice Department and other administration officials, he had decided to drop the investigation of Philip Zimmermann.",
+     "note": "Re-fetched (HTTP 200). The replacement quote --check FOUND; the previous quote ('Zimmermann maintained thoughout ...') is also present but supports no claim in the record. The brief is dated [14 February 1996] and cites the New York Times and the Wall Street Journal."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "cypherpunks-mailing-list-begins-1992",
+   "status": "FIXED",
+   "issues": [
+    "Unsourced claim: 'Within four days Hughes had posted code for a \"hopping\" anonymous remailer' was not supported by either cited source. It is true: in the same archive, Hughes's post 'the hopping remailer is done' (Raw Date 'Fri, 25 Sep 92 11:37:12 PDT', about 3.5 days after the welcome message) contains the perl script. Added it as a source (--check FOUND).",
+    "Checked OK: the welcome quote --check FOUND. Raw Date is 'Mon, 21 Sep 92 22:47:51 PDT' (UTC 1992-09-22 05:47:51). The same message announces 'Second Meeting -- October 10, 1992 ... at the new Cygnus offices' and thanks John Gilmore 'for space on hoptoad'. Hughes is named as 'list maintainer'. The September 1992 index has one earlier post (Whitaker, 21 Sep 1992 13:24 UTC).",
+    "Checked OK: the Wired quote --check FOUND. The article names Tim May and Eric Hughes as the founders and places Cygnus 'within earshot of US 101', which supports the locationNote. Note: the welcome message already refers to 'the first meeting' in the past tense, so the first meeting took place on or before 21 September 1992. Levy's 'early last autumn' is loose but not wrong.",
+    "No change to the summary."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; raw date, second-meeting announcement and 'list maintainer (me, Eric Hughes)' confirmed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; names Tim May and Eric Hughes; Cygnus 'within earshot of US 101'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Cypherpunks mailing list archive (cryptoanarchy.wiki)",
+     "title": "Eric Hughes to cypherpunks@toad.com, 'the hopping remailer is done'",
+     "date": "1992-09-25",
+     "url": "https://mailing-list-archive.cryptoanarchy.wiki/archive/1992/09/2fe5a28bc8c23820dc93de1603b58c1ac84c93a16bc852a9b51eb3faed1aa231/",
+     "quote": "The hopping remailer is finished. I wrote it this morning. The change to make a hopping remailer is very easy. Here's the new perl script:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Raw Date 'Fri, 25 Sep 92 11:37:12 PDT' (UTC 1992-09-25 18:37:12). The message contains the perl script and a multi-hop test. An earlier post, 'New! Eric's Cheap Remailing Service. Free!', came from nobody@soda.berkeley.edu on 23 Sep 92."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "hughes-a-cypherpunks-manifesto-1993",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the ellipsis quote --check FOUND. The full passage is: 'Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world.' The ellipsis leaves out one explanatory sentence, and the meaning is intact. The signature 'Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993', the sentence 'Therefore, privacy in an open society requires anonymous transaction systems' and the words 'Cypherpunks write code.' are all on the page."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; signature and date in page HTML; 'Cypherpunks write code.' --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "clinton-white-house-announces-clipper-chip-1993",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the press release is headed 'For Immediate Release April 16, 1993 STATEMENT BY THE PRESS SECRETARY'. The escrow quote and the opening 'voluntary program' sentence both --check FOUND. 'Each device containing the chip will have two unique \"keys\"' and 'the Attorney General will soon purchase several thousand of the new devices' are verbatim. The release does not name Skipjack, give a key length, or describe the session-key mechanism. Those details come correctly from Blaze 2011: 'called Skipjack, designed by the National Security Agency and using an 80 bit key' (FOUND). Blaze's abstract also says 'a copy of the current session key, itself encrypted with a key known to the government, was sent at the beginning of every encrypted communication stream' (FOUND), which supports the claim about 'the start of every call'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); escrow quote and opening sentence --check FOUND; 'two unique \"keys\"' and 'several thousand' present."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); Skipjack fragment --check FOUND. Session-key support in the same paper: 'a copy of the current session key, itself encrypted with a key known to the government, was sent at the beginning of every encrypted communication stream.' (--check FOUND)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "blaze-protocol-failure-clipper-escrow-1994",
+   "status": "FIXED",
+   "issues": [
+    "Wrong place: Blaze was not at Murray Hill. The EES paper gives only 'AT&T Bell Laboratories', and no source cited Murray Hill. Blaze's own papers from the same period give his postal address as 'AT&T Bell Laboratories, 101 Crawfords Corner Rd., Room 4G-634, Holmdel, NJ 07733'. These are the June 1994 USENIX pre-publication draft 'Key Management in an Encrypting File System' and the November 1993 CCS paper 'A Cryptographic File System for Unix'; both addresses --check FOUND. The place is changed to Holmdel. The new coordinates are those of the Bell Labs Holmdel Complex (Wikipedia coord 40.3651 N, 74.1675 W).",
+    "The summary overstated how practical the attack was. The paper measured about 2^16 trials on the prototype PCMCIA card and says '42 minutes obviously adds too much latency to channel setup time to be useful in real-time applications such as secure telephone calls' (--check FOUND). The NSA's response, quoted in the 2 June 1994 newspaper story, called such efforts 'very unlikely to be employed'. The summary now gives this caveat and says the Times story ran on the front page (Blaze 2011).",
+    "Source 2's note was wrong about what the MIT index links to. The index is titled '6.095/STS095: Selected items on Clipper -- 1994'. Its 2 June 1994 item links to a text copy headed 'San Jose Mercury News, Front Page June 2, 1994 / SCIENTIST FINDS FLAW IN CODE TECHNOLOGY / New York Times', which is a same-day reprint of the Times story, so that headline is the Mercury News's. Blaze (2011) gives the Times's own front-page headline as 'Flaw Found in Federal Plan for Wiretapping' (--check FOUND). The reprint is added as a source.",
+    "Checked OK: the EES paper's abstract quote and 'The LEAF checksum is, in fact, 16 bits.' both --check FOUND. The paper is dated August 20, 1994, with the footnote 'pre-print of a paper to appear at the 2nd ACM Conference on Computer and Communications Security, Fairfax, VA, November 1994'. The ACSAC 2011 quote --check FOUND, and 'In April, 1994, I wrote a paper about all this' is FOUND."
+   ],
+   "fieldFixes": {
+    "place": "AT&T Bell Laboratories, Holmdel, New Jersey",
+    "lat": 40.3651,
+    "lng": -74.1675,
+    "locationNote": "Coordinates: AT&T Bell Laboratories' Holmdel complex, New Jersey. Blaze's 1993–94 papers give his address as 101 Crawfords Corner Rd., Holmdel, NJ 07733; the EES paper itself names only 'AT&T Bell Laboratories'.",
+    "summary": "In April 1994 Matt Blaze of AT&T Bell Laboratories wrote 'Protocol Failure in the Escrowed Encryption Standard', showing that the Law Enforcement Access Field (LEAF), which carries an encrypted copy of the session key, was protected by only a 16-bit checksum. A rogue application could therefore search about 2^16 possibilities for a LEAF that passed the check and communicate with legitimate Clipper devices without giving the government a usable key — though on the prototype card he tested the search took about 42 minutes, too slow for real-time phone calls. The New York Times reported the flaw on its front page on 2 June 1994; the paper was presented at the ACM Conference on Computer and Communications Security in Fairfax, Virginia, in November 1994."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); abstract quote and 'The LEAF checksum is, in fact, 16 bits.' --check FOUND; dated August 20, 1994; byline 'AT&T Bell Laboratories' (no town). Also FOUND: '42 minutes obviously adds too much latency to channel setup time to be useful in real-time applications such as secure telephone calls.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; 'In April, 1994, I wrote a paper about all this' FOUND; 'the top of the front page, under the headline Flaw Found in Federal Plan for Wiretapping' FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "institution": "MIT course 6.095/STS095 reading index (hosted with the course pages later numbered 6.805)",
+     "title": "6.095/STS095: Selected items on Clipper -- 1994",
+     "note": "Re-fetched (HTTP 200); index quote --check FOUND. The linked item (blaze-june2.txt) is a San Jose Mercury News front-page reprint of the New York Times story of 2 June 1994, headlined 'Scientist Finds Flaw In Code Technology'. The Times's own headline, per Blaze 2011, was 'Flaw Found in Federal Plan for Wiretapping'. See the added source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Matt Blaze (mattblaze.org), pre-publication draft for the USENIX Summer 1994 Technical Conference",
+     "title": "Key Management in an Encrypting File System",
+     "date": "1994-06",
+     "url": "https://www.mattblaze.org/papers/cfskey.pdf",
+     "quote": "The author can be reached via email at mab@research.att.com and via postal mail at AT&T Bell Laboratories, 101 Crawfords Corner Rd., Room 4G-634, Holmdel, NJ 07733.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page says 'This paper will appear in Proc. Summer 1994 USENIX Technical Conference, Boston, MA, June 1994.' Blaze's November 1993 CCS paper (mattblaze.org/papers/cfs.pdf) gives the same Holmdel address. This source supports the corrected place."
+    },
+    {
+     "institution": "San Jose Mercury News, reprinting the New York Times (text copy in the MIT 6.095/6.805 course archive)",
+     "title": "Scientist Finds Flaw in Code Technology",
+     "date": "1994-06-02",
+     "url": "https://groups.csail.mit.edu/mac/classes/6.805/articles/clipper/short-pieces/blaze-june2.txt",
+     "quote": "A computer scientist at AT&T Bell Laboratories has discovered a basic flaw in the technology that the Clinton administration has been promoting to allow law-enforcement officials to eavesdrop on electronically scrambled telephone and computer conversations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Header: 'San Jose Mercury News, Front Page June 2, 1994 ... New York Times'. The copy also quotes the NSA's Michael A. Smith: such efforts 'are very unlikely to be employed'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "nrl-onion-routing-hiding-routing-information-1996",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the IH-1996 quote --check FOUND. So does 'This prototype works with HTTP (World Wide Web) proxies.' The abstract has 'no-one but the initiator's proxy server knows anything but previous and next hops'. The header reads 'Workshop on Information Hiding, Cambridge, UK, May, 1996', with the affiliation 'Naval Research Laboratory, Center For High Assurance Computer Systems, Washington, D.C.'. Ref. [1] is Chaum, 'Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms', CACM 24(2), Feb. 1981, which supports 'built on David Chaum's layered mix of 1981'.",
+    "Checked OK: the Syverson 2011 quote --check FOUND. The paper is marked public domain (U.S. Government employee). It independently describes IH 1996 as 'the first onion routing design', published 'in May of 1996' (a ligature in 'first' defeats --check, but --grep shows the sentence). Its reference [27] gives LNCS 1174, pages 137–150, May 1996. The NRL coordinates (Overlook Ave SW, Washington, D.C.) are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; venue/date header and Chaum ref. [1] (CACM Feb. 1981) confirmed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (HTTP 200); quote --check FOUND; public-domain notice present."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

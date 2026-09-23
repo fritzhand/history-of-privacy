@@ -1,0 +1,243 @@
+{
+ "slice": "letalone",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-census-only-aggregate-japanese-americans",
+   "status": "FIXED",
+   "issues": [
+    "Wrong history in the correction. It says 'For decades the Bureau acknowledged releasing block-level data'. The opposite is true. The acknowledgement dates only from 2000: Anderson and Seltzer documented the tract and block data that year, and director Kenneth Prewitt apologised in 2000. SciAm opens with 'Despite decades of denials', and Seltzer and Anderson (Social Research 2001, p. 492) say the bureau 'has denied the charge' that microdata were released.",
+    "Overreach by omission. The correction does not say that the 2007 records cover only the Washington, D.C., area. SciAm: 'The records, however, do not indicate that the Bureau was asked for or divulged such information for Japanese-Americans in other parts of the country.' Added, so readers do not infer that name lists were used for the West Coast removal.",
+    "Typo: 'an 4 August 1943' should be 'a 4 August 1943'. The request came from Treasury Secretary Henry Morgenthau, which is now named.",
+    "Checked OK: the SciAm quote is verbatim (FOUND); the title, the 30 March 2007 date and the author JR Minkel match; the data were released seven days after the request; the documents were found in the records of the Commerce Department's chief clerk; Prewitt was Census director 1998-2000 and said 'The [new] evidence is convincing'. The FALSE verdict on the claim 'never names' stands."
+   ],
+   "fieldFixes": {
+    "correction": "For decades the Census Bureau denied giving other agencies individual “microdata”. By 2000 it had acknowledged, and director Kenneth Prewitt had apologised for, releasing neighbourhood-level (tract and block) data used in the removal of Japanese Americans. In 2007 Margo Anderson and William Seltzer found Commerce Department records showing that the Bureau gave the Treasury, for the Secret Service, the names and locations of people of Japanese ancestry in the Washington, D.C., area. It did so seven days after a 4 August 1943 request from Treasury Secretary Henry Morgenthau. The records show no such lists for other parts of the country. Prewitt, Census director from 1998 to 2000, called the new evidence convincing."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Also FOUND on the page: 'Despite decades of denials, government records confirm that the U.S. Census Bureau provided the U.S. Secret Service with names and addresses of Japanese-Americans during World War II'; the Morgenthau request of 4 August 1943 for the Washington, D.C., area; 'The records, however, do not indicate that the Bureau was asked for or divulged such information for Japanese-Americans in other parts of the country'; release 'just seven days after it was requested'; Prewitt 'issued a public apology in 2000 for the Bureau's release of neighborhood data'. The title, date (30 March 2007) and byline (JR Minkel) match."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Social Research (William Seltzer and Margo Anderson)",
+     "title": "The Dark Side of Numbers: The Role of Population Data Systems in Human Rights Abuses",
+     "date": "2001",
+     "url": "https://jlgodwin.github.io/CSDE502-Sp23/Readings/Week%204/SeltzerAnderson2001.pdf",
+     "quote": "Despite accusations that microdata were released (Toland, 1982), the bureau has denied the charge and no definitive evidence to the contrary has emerged. Nevertheless, there now seems to be general agreement that the provision of mesodata and professional expertise violated the spirit, if not the letter, of the promises embodied in the census confidentiality laws (Prewitt, 2000).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Social Research 68(2):481-513, at 492 (JSTOR 40971467); read from a free course-reader copy (--check FOUND). An independent peer-reviewed account written before the 2007 discovery. It shows that the Bureau still denied releasing microdata in 2001, and that it had given the West Coast military authorities tract-level tabulations (January 1942) and census-block maps, also FOUND: 'making available census-block maps showing the number of Japanese American enumerated as residing in each block'."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-ibm-punch-cards-located-holocaust-victims",
+   "status": "FIXED",
+   "issues": [
+    "The last sentence overstates the case and conflicts with a source used elsewhere in this slice. It lists '1939 supplementary cards' and 'census returns' among 'the decisive tools'. The Bundesarchiv essay on those cards (Zimmermann) says their use for the deportations 'could not be proved so far ... and is rather unlikely', because the cards reached the registration offices only in April/May 1941 and the Reich Office of Genealogy in January 1942. USHMM, the source cited here, names 'paper records and local knowledge': Jewish community records, parish records, tax records, police records and registries, compulsory self-identification, and denunciation. It does not name census returns. Rewritten to follow USHMM. The Dutch example is kept: Seltzer and Anderson (p. 487) say the Dutch registers and identity cards 'played an important role'.",
+    "Minor precision: the machines were introduced at the concentration-camp headquarters in 1942 and tracked living prisoners, 'particularly' their occupational skills. The date is now given.",
+    "Checked OK: the USHMM quote is verbatim (FOUND) and the title 'Locating the Victims' is right; the 1939 census recorded 'race'; Hollerith was an IBM subsidiary; 'About 75%, or 4.5 million of the 6 million Jews killed ... lived in Poland, the Baltics ... and the Soviet Union'. Edwin Black's IBM and the Holocaust is from 2001. The MISLEADING verdict is appropriate."
+   ],
+   "fieldFixes": {
+    "correction": "Hollerith punch-card machines, made by IBM's German subsidiary, did tabulate German census data, including the 1939 census's “race” data. From 1942 they were used at the headquarters of the concentration-camp system to track living prisoners, especially their occupational skills. But the US Holocaust Memorial Museum stresses that locating and identifying victims “did not rely on modern technology”. That was done with paper records (Jewish community lists, church, tax and police records, compulsory self-registration) and with local knowledge and denunciation. About 4.5 million of the 6 million Jews killed lived in Poland, the Baltics and the Soviet Union, where such machines would not have been found. In the occupied Netherlands, the population register and its identity cards played an important role in rounding Jews up. Edwin Black's IBM and the Holocaust (2001) argues for a larger role for the machines."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Also on the page (read in full): 'The Germans and their collaborators used paper records and local knowledge to identify Jews to be rounded up or killed. Records included those created by Jewish communities of their members, parish records of Protestant and Catholic churches (for converted Jews), government tax records, and police records, including registries of Jews compiled by local, collaborating police.' The 1942 camp-headquarters sentence and the 75% / 4.5 million sentence quoted in the existing note are verbatim."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "roll-film-cameras-in-amateur-hands-1898",
+   "status": "DOWNGRADED",
+   "issues": [
+    "The source could not be re-fetched. Every connection to web.archive.org was reset at the agent proxy for the whole session (proxy log: ws_closed_mid_exchange, repeatedly). The live metmuseum.org essay and the old /toah/hd/kodk/hd_kodk.htm URL both return HTTP 429 behind a Vercel Security Checkpoint challenge, which headless Chromium also failed. The r.jina.ai reader and archive.ph also failed. The quote, the author (Mia Fineman) and the '2004-10' date are therefore unconfirmed, and no local cache of the page exists. The web-search budget was also exhausted, so no alternative source for the 1.5 million figure could be found.",
+    "Geography is unsupported as written. The quoted sentence says only that 'one photography journal estimated' 1.5 million roll-film cameras had reached amateurs. It names no country and does not say the journal was American. 'United States' is an inference. Changed to 'not stated in the source' until the essay can be read in context.",
+    "The label's '(contemporary estimate)' and the notes' 'a lower bound, not a census' are fair framings. The phrase 'over 1.5 million' makes it a floor."
+   ],
+   "fieldFixes": {
+    "geography": "Not stated in the source (a contemporary photography journal's estimate, reported by the Metropolitan Museum)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Not re-verified. web.archive.org (every snapshot form tried: /web/2025/, /web/2025id_/, /web/2024/ of the old toah URL) was reset by the agent proxy all session. metmuseum.org returns 429 behind a Vercel bot challenge that headless Chromium could not pass. r.jina.ai returned 429 and archive.ph was reset. Re-run: python3 tools/fetch-text.py 'https://web.archive.org/web/2025/https://www.metmuseum.org/essays/kodak-and-the-rise-of-amateur-photography' --check 'By 1898, just ten years after the first Kodak was introduced, one photography journal estimated that over 1.5 million roll-film cameras had reached the hands of amateur shutterbugs.' Also confirm the byline (Mia Fineman) and the 'Originally published October 2004' line, and check whether the essay names the journal or its country."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "roberson-flour-ad-lithographs-1902",
+   "status": "FIXED",
+   "issues": [
+    "Wrong year for the metric. 25,000 is the number of prints the complaint alleges had been circulated 'before the commencement of the action'. The action was already being decided on demurrer at Monroe County Special Term in August 1900 (32 Misc. 344), so the prints were in circulation by 1900. The Appellate Division ruled in July 1901 (64 A.D. 30). 1902 is only the year of the Court of Appeals opinion that repeats the figure. Year changed to 1900. The record id can stay.",
+    "Geography too narrow. The complaint alleged the lithographs were posted 'throughout the United States and other countries, and particularly in the vicinity where the plaintiff resides' (Special Term, 1900; the Appellate Division and Gray's dissent say the same). 'New York State (Rochester area)' understates the allegation.",
+    "Framing: the figure and 'without consent' are allegations in the complaint, which the Court of Appeals took as true on demurrer. They are not findings of fact. The notes say so, but the label states it as fact, so the label is now qualified.",
+    "Checked OK: the quote is verbatim on the Hofstra copy (FOUND); the opinion date of 27 June 1902, the citation 171 N.Y. 538 and 'about 25,000' match the Caselaw Access Project text of 171 N.Y. 538."
+   ],
+   "fieldFixes": {
+    "label": "Lithographed likenesses of Abigail Roberson circulated without her consent in Franklin Mills flour advertising (as alleged in her complaint)",
+    "year": 1900,
+    "geography": "United States, especially around Rochester, New York (as alleged in the complaint)",
+    "notes": "Figure from the complaint ('about 25,000'), taken as true on demurrer. The complaint was decided at Monroe County Special Term in August 1900 and the figure was repeated in the Court of Appeals opinion of 27 June 1902. The prints therefore circulated by 1900."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The header reads '171 N.Y. 538 / Court of Appeals of New York. / ROBERSON v. ROCHESTER FOLDING BOX CO. et al. / June 27, 1902. / PARKER, C. J.' The same sentence opens 'before the commencement of the action', so the figure predates the 1902 opinion. Cross-checked against the Caselaw Access Project JSON of 171 N.Y. 538 (decision_date 1902-06-27), which has the same wording."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Supreme Court of New York, Monroe Special Term (opinion text via Harvard Law School Caselaw Access Project)",
+     "title": "Roberson v. Rochester Folding Box Co., 32 Misc. 344 (1900)",
+     "date": "1900-08",
+     "url": "https://static.case.law/misc/32/html/0344-01.html",
+     "quote": "The complaint also alleges that the defendants have caused the said lithographs to be conspicuously posted and displayed in stores, warehouses, saloons and other public places throughout the United States and other countries, and particularly in the vicinity where the plaintiff resides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Also FOUND on the same page: '(Supreme Court, Monroe Special Term, August, 1900.)' and 'The plaintiff alleges in her complaint that without her knowledge or consent the defendants have made, printed, sold and circulated about 25,000 lithographic likenesses of her for the purpose of profit and gain to themselves.' These establish that the 25,000 figure was already pleaded by August 1900. The Appellate Division affirmed on 64 A.D. 30 (decision date 1901-07 on static.case.law/ad/64/cases/0030-01.json)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "people-tabulated-by-hollerith-1890",
+   "status": "FIXED",
+   "issues": [
+    "The label is slightly overstated. 'People counted with Hollerith punch-card tabulators' implies that the headcount itself was made from punch cards. The Census Bureau source says 'tabulated data for nearly 63 million people using Hollerith's tabulators'. Wikipedia's article on the 1890 census says the rough family count of 62,947,714 was produced in six weeks on Hollerith tabulators with the card reader replaced by a keyboard: 'punched cards were not used for this tabulation'. Punched cards were used for the detailed population tabulations. The label now follows the source wording.",
+    "Checked OK: the quote is verbatim (FOUND); the page title 'History and the Census: Herman Hollerith and Mechanical Tabulation' (by Jason G. Gauthier) and the January 2016 date match the URL. The value of 63,000,000 ('nearly 63 million') agrees with the independently reported 1890 totals of 62,947,714 (rough count) and 62,979,766 (final resident population)."
+   ],
+   "fieldFixes": {
+    "label": "People whose 1890 US census data were tabulated on Hollerith's electric tabulating machines",
+    "notes": "Census Bureau gives 'nearly 63 million'; value rounded. The official 1890 count was 62,947,714 (rough count), later 62,979,766. The rough count was run on Hollerith tabulators fitted with keyboards, and punched cards were used for the detailed tabulations."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The page also says the Bureau 'used these \"Hollerith Machines\" to capture and tabulate data from the 1890 Census'. Independent check: en.wikipedia.org/wiki/1890_United_States_census gives 62,979,766 and says the rough count of 62,947,714 'was announced after only six weeks of processing (punched cards were not used for this tabulation)'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "minority-census-1939-people-on-supplementary-cards",
+   "status": "FIXED",
+   "issues": [
+    "The population is ambiguous. 277,500 (Table 1: 277,531) is the essay's 'Total number of people of Jewish origin' under the Nazi classification. It is made up of 203,765 'Jews' (at least three Jewish grandparents), 45,982 'Jewish half-breeds of first degree' (two Jewish grandparents) and 27,784 'of second degree' (one Jewish grandparent). A reader of the label 'People of Jewish origin' could take all 277,500 as Jews. The label now names the Nazi classification, and the notes give the breakdown.",
+    "Wrong territory. 'German Reich' should be the pre-1938 Reich (the 'Altreich'). The essay's official comparison figures are the census results for the Reich in its borders of 1 January 1938, without Austria and the Sudetenland: 52,005 first-degree and 32,669 second-degree 'Mischlinge', which exactly match the Altreich column of de.wikipedia's Volkszählung 1939 table. Austria alone counted a further 94,530 'Volljuden'. So the 87.2% coverage figure refers to the Altreich only.",
+    "Missing areas incomplete. Besides Thuringia and the Rhine Province, the cards for the administrative districts of Erfurt and Minden and for some Bavarian districts were not passed on. 'some other areas' is acceptable but vague, so the notes are now more precise.",
+    "Checked OK: the quote is verbatim (FOUND); author Nicolai M. Zimmermann; title matches the PDF header; about 130,000 households; 87.2% (Table 1 gives 87.21%). Note that the cards covered every person in the household, so they also list 126,599 non-Jewish persons (Table 1 total 410,920). The 277,500 figure correctly excludes them."
+   ],
+   "fieldFixes": {
+    "label": "People classed as of Jewish origin under the Nazi racial laws (including so-called 'Mischlinge'), recorded by name and address on surviving 1939 census supplementary cards",
+    "geography": "German Reich in its pre-1938 borders (the 'Altreich', without Austria and the Sudetenland)",
+    "notes": "Table 1 gives 277,531, in about 130,000 households: 203,765 classed as 'Jews' (three or more Jewish grandparents), 45,982 as first-degree and 27,784 as second-degree 'Mischlinge'. The same cards also list 126,599 non-Jewish household members. The surviving cards name about 87.2% of the 318,320 people of Jewish origin in the official census result. Cards for Thuringia, the Rhine Province, the districts of Erfurt and Minden and some Bavarian districts were never passed on."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Table 1, read from the same PDF: official result 233,646 / 52,005 / 32,669 = 318,320; cards passed on 203,765 / 45,982 / 27,784 = 277,531; non-Jews 126,599; unclear 6,790; total 410,920. Also FOUND: 'the supplementary cards for the state of Thuringia, the Rhine Province, the adminstrative districts Erfurt and Minden as well as some Bavarian districts have not been passed on'. The essay is undated, so the date field '2026' (access year) is acceptable."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia (German)",
+     "title": "Volkszählung 1939",
+     "date": "2026",
+     "url": "https://de.wikipedia.org/wiki/Volksz%C3%A4hlung_1939",
+     "quote": "Deutsches Reich (in den Grenzen vom 1. Januar 1938",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Tertiary cross-check for the territory (--check FOUND). This is the heading of the 'Angaben zu Juden' table column, which reads in full 'Deutsches Reich (in den Grenzen vom 1. Januar 1938, ohne Ostmark, sudetendeutsche Gebiete und Memelland)', i.e. the German Reich in its 1 January 1938 borders, without Austria, the Sudeten German areas and the Memel territory. Its rows ('Mischlinge 1. Grades' 52.005; '2. Grades' 32.669) match the official figures in Zimmermann's Table 1 exactly, so his comparison, and the 87.2%, cover the Altreich only. Austria is tabulated separately (94.530 'Volljuden')."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "dutch-jewish-death-rate-holocaust",
+   "status": "OK",
+   "issues": [
+    "No error found. The quote is verbatim (FOUND) at p. 487 of the course-reader copy. The comparison figures of Belgium 40 percent and France 25 percent are in the same sentence. The link to the registration system is Seltzer and Anderson's own (the preceding sentences on the Lentz registers and identity cards).",
+    "Independent check: the USHMM Holocaust Encyclopedia ('The Netherlands') says 'Less than 25 percent of Dutch Jewry survived the Holocaust', consistent with a death rate of about 73 to 75 percent. The same article gives about 107,000 deported, of whom 5,200 survived. The 73 percent figure is Seltzer and Anderson's and is correctly attributed.",
+    "Minor, not changed: accessType is PAYWALL (the JSTOR original), but the URL given is a freely readable course copy. Year 1945 as the end point is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Full sentence: 'Dutch Jews had the highest death rate (73 percent) of Jews residing in any occupied western European country - far higher than the death rate among the Jewish population of Belgium (40 percent) and France (25 percent), for example.' Running head and page 487; the JSTOR cover sheet on the copy confirms Social Research."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+     "title": "The Netherlands",
+     "date": "2026",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/the-netherlands",
+     "quote": "Less than 25 percent of Dutch Jewry survived the Holocaust.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent corroboration (--check FOUND). The same article says that in January 1941 'A total of 159,806 persons registered', and that the Germans and their Dutch collaborators 'deported some 107,000 Jews, mostly to Auschwitz and Sobibor', of whom 'Only 5,200 survived'."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "stasi-full-time-staff-1989",
+   "status": "OK",
+   "issues": [
+    "No error found. The quote is verbatim (FOUND) on the Bundesarchiv MfS-Lexikon page titled 'Hauptamtlicher Mitarbeiter'. The value 91,015 and the reference date 31.10.1989 match.",
+    "Independent check: en.wikipedia.org/wiki/Stasi says 'In 1989, the Stasi employed 91,015 people full-time'. Wikipedia's sentence goes on 'including 2,000 fully employed unofficial collaborators, 13,073 soldiers and 2,232 officers of the GDR army'. The label 'Full-time employees' is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The full sentence continues '... und war damit - gemessen an der Bevölkerungszahl - einer der größten geheimen Sicherheitsapparate der Welt'. The page h1 is 'Hauptamtlicher Mitarbeiter'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "stasi-unofficial-informers-1989",
+   "status": "FIXED",
+   "issues": [
+    "The geography double-counts. It says 'German Democratic Republic (plus about 1,550 run by the HV A in West Germany)'. The source counts those 1,550 inside the 189,000: 'ungefähr 189.000 IM, darunter 173.000 IM der Abwehrdiensteinheiten, ferner 13.400 IM in der DDR und 1.550 IM in der Bundesrepublik, die von der Hauptverwaltung A (HV A) geführt wurden, sowie diverse andere'. 'darunter' means 'among them'. So the West German IMs are part of the total, not additional to it.",
+    "Context: other published counts differ by definition. Wikipedia gives 173,081 informants inside the GDR plus 1,553 in West Germany, counting only the counter-intelligence lines. The Bundesarchiv's 189,000 is the broader total and is correctly quoted.",
+    "Checked OK: the quote is verbatim (FOUND); 'Auf 89 DDR-Bürger kam somit ein IM' (one IM per 89 citizens) and 'In der Zeit von 1950 bis 1989 gab es insgesamt ca. 620.000 IM' match the notes; the page title is 'Inoffizieller Mitarbeiter (IM)'."
+   ],
+   "fieldFixes": {
+    "geography": "German Democratic Republic (the total includes about 1,550 IM run by the HV A in West Germany)",
+    "notes": "'Ungefähr 189.000': about 173,000 IM of the counter-intelligence units, 13,400 run by the HV A in the GDR and 1,550 in West Germany, plus others such as cell informers. That is one IM for every 89 GDR citizens, and about 620,000 IM in total between 1950 and 1989."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The continuation is also FOUND on the page: 'darunter 173.000 IM der Abwehrdiensteinheiten, ferner 13.400 IM in der DDR und 1.550 IM in der Bundesrepublik, die von der Hauptverwaltung A' (translation: 'among them 173,000 IM of the counter-intelligence units, and also 13,400 IM in the GDR and 1,550 IM in the Federal Republic run by Main Directorate A'). The sentence ends '... geführt wurden, sowie diverse andere wie Zelleninformatoren usw.' The page's extracted text puts a space before the comma after '189.000 IM', so quote from 'darunter' on. The 1,550 West German IMs are inside the 189,000."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

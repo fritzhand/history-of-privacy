@@ -1955,9 +1955,11 @@ body.nav-open #main-nav { z-index: 970; }
 .concepts-grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-bottom: 28px;
 }
+@media (max-width: 960px) { .concepts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .concepts-grid { grid-template-columns: minmax(0, 1fr); } }
 .concept-card {
   display: flex; flex-direction: column; min-width: 0;
   background: var(--bg-card);
@@ -2406,3 +2408,20 @@ tr.is-destination td:first-child { box-shadow: inset 3px 0 0 var(--who-person); 
   --dec-1970: #6A4A9E; --dec-1980: #2A64A0; --dec-1990: #2C7680;
   --dec-2000: #2F7A4E; --dec-2010: #8A6412; --dec-2020: #A4501E;
 }
+
+/* The significance line under each narrative step. */
+.step-why { font-size: 12.5px; line-height: 1.6; color: var(--text-secondary); margin: -4px 0 12px; padding-left: 10px; border-left: 2px solid var(--border); }
+.step-why span { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); margin-right: 4px; }
+
+/* The "Terms set by" chip on each narrative step: brass, not the crisis red. */
+.step-metric-chip strong { color: var(--v5); }
+/* Four scrubber cards sit in one row on a desktop. */
+#stat-cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+/* The people cards fold their longer notes away. */
+.person-more { margin: 2px 0 6px; }
+.person-more summary { cursor: pointer; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); list-style: none; padding: 3px 0; }
+.person-more summary::-webkit-details-marker { display: none; }
+.person-more summary::before { content: '+ '; color: var(--person-accent, var(--v5)); }
+.person-more[open] summary::before { content: '\2212  '; }
+.person-more summary:hover { color: var(--text-primary); }
+.person-more > *:not(summary) { margin-top: 6px; }

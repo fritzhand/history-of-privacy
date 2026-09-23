@@ -1,0 +1,354 @@
+{
+ "slice": "essay",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "fact",
+   "id": "zuboff-2015-surveillance-capitalism",
+   "status": "FIXED",
+   "issues": [
+    "'In 2015 Shoshana Zuboff named surveillance capitalism' reads as a claim that she coined the term in 2015. She did not. Zuboff first used it in her FAZ essay 'A Digital Declaration: Big Data as Surveillance Capitalism' (15 September 2014). Separately, Foster and McChesney had already published an article titled 'Surveillance Capitalism' in Monthly Review on 1 July 2014, using it in a different sense. I checked the Monthly Review page's <title> and its JSON-LD datePublished 2014-07-01; the body text is not in the served HTML. Wikipedia's 'Surveillance capitalism' article (--check FOUND) also says the term was 'popularized' by Zuboff and dates her essay to 2014. The 2015 JIT article develops the concept; it does not name it for the first time.",
+    "The quoted mechanisms that 'effectively exile persons from their own behavior' are, in the abstract, what constitutes 'Big Other'. That is the new expression of power produced by the architecture surveillance capitalism depends on, not surveillance capitalism itself. The statement assigns them to the logic of accumulation directly.",
+    "Minor: the institution field says 'Springer Nature'. The page metadata gives citation_publisher 'Palgrave Macmillan UK' (dc.publisher 'Palgrave') and dc.source 'Journal of Information Technology 2015 30:1'. The DOI now resolves to SAGE (journals.sagepub.com), which is the journal's current publisher. The Springer page date 2015-04-09 is right for that page, while Crossref gives the issue as March 2015. The page offers the abstract free, but the full text is subscription content."
+   ],
+   "fieldFixes": {
+    "statement": "In 2015 Shoshana Zuboff set out 'surveillance capitalism' (a term she had first used in a 2014 essay) as an emergent logic of accumulation, read through Google's practices, and argued that the architecture it depends on produces a new power she christened 'Big Other', made of mechanisms of extraction, commodification and control that 'effectively exile persons from their own behavior' while producing new markets of behavioural prediction and modification."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Journal of Information Technology (vol. 30, no. 1, pp. 75-89), Palgrave Macmillan UK - SpringerLink",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND in the abstract. The page shows 'Published: 09 April 2015', 'Volume 30, pages 75-89 (2015)'. Meta tags: citation_publisher 'Palgrave Macmillan UK', dc.source 'Journal of Information Technology 2015 30:1'. The sentence begins 'It is constituted by...', and 'It' refers to 'Big Other' (the preceding sentence), not to surveillance capitalism. The abstract is free; the full text is subscription content."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Journal of Information Technology (vol. 30, no. 1, pp. 75-89), Palgrave Macmillan UK - SpringerLink",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND verbatim in the abstract. It supports 'read through Google's practices'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Journal of Information Technology (vol. 30, no. 1, pp. 75-89), Palgrave Macmillan UK - SpringerLink",
+     "title": "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
+     "date": "2015-04-09",
+     "url": "https://link.springer.com/article/10.1057/jit.2015.5",
+     "quote": "This architecture produces a distributed and largely uncontested new expression of power that I christen: ‘Big Other.’",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23 (abstract). This is the antecedent of 'It is constituted by ... mechanisms ... that effectively exile persons from their own behavior'."
+    },
+    {
+     "institution": "Journal of Information Technology (vol. 30, no. 1, pp. 75-89), Palgrave Macmillan UK - SpringerLink",
+     "title": "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
+     "date": "2015-04-09",
+     "url": "https://link.springer.com/article/10.1057/jit.2015.5",
+     "quote": "This article describes an emergent logic of accumulation in the networked sphere",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. On the page the sentence continues \"'surveillance capitalism,' and considers its implications for 'information civilization.'\". The helper inserts spaces inside the curly quotes because of italic markup, so only the clean prefix is quoted here."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "hughes-1993-privacy-not-secrecy",
+   "status": "OK",
+   "issues": [
+    "No error found. All three quotes are verbatim, and the page is signed 'Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993'. The claim 'with code and cryptography' was only indirectly supported by the existing quotes. I have added the manifesto's own sentences on cryptography and code."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND (opening paragraph under the heading 'A Cypherpunk's Manifesto')."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. The signature line 'Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993' is on the page."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "activism.net (Cypherpunks archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "We the Cypherpunks are dedicated to building anonymous systems. We are defending our privacy with cryptography, with anonymous mail forwarding systems, with digital signatures, and with electronic money.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. It supports 'defend it themselves ... with cryptography'."
+    },
+    {
+     "institution": "activism.net (Cypherpunks archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "Cypherpunks write code.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. It is followed by 'We know that someone has to write software to defend privacy ... we're going to write it.' This supports 'with code'."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "zimmermann-1991-pgp",
+   "status": "FIXED",
+   "issues": [
+    "The title is imprecise for 1991. In the original PGP 1.0 User's Guide (dated 'Version 1.0 - 5 Jun 91') this text is the section 'Why Do You Need PGP?'. 'Why I Wrote PGP' is the title of the later, revised essay, which the author's site describes as 'Part of the Original 1991 PGP User's Guide (updated in 1999)'.",
+    "The record's hedging note ('wording may differ from the 1991 original') can now be resolved. The 1991 guide, as preserved on the Internet Archive, contains 'If privacy is outlawed, only outlaws will have privacy.' verbatim. The email sentence differs slightly: 1991 reads 'private electronic mail (E-mail)', while the 1999 update reads '(email)'.",
+    "Context: in the 1999 online text the 'outlaws' line follows 'Throughout the 1990s, I figured...', which is later wording. In 1991 it followed the quotation of Senate Bill 266's 'sense of Congress' language."
+   ],
+   "fieldFixes": {
+    "statement": "Phil Zimmermann's user's guide for PGP 1.0 (5 June 1991) argued, in a section titled 'Why Do You Need PGP?' (later revised as the essay 'Why I Wrote PGP'), that people need strong encryption to keep their electronic mail and documents private, warning: 'If privacy is outlawed, only outlaws will have privacy.'",
+    "note": "The 'outlaws' line is verbatim in the PGP 1.0 User's Guide of 5 June 1991 (section 'Why Do You Need PGP?', Internet Archive copy of PGP10.ZIP/PGPGUIDE.LST). The author's site carries the essay as 'Why I Wrote PGP', updated in 1999; the email sentence there reads '(email)' where 1991 had '(E-mail)'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The page header reads 'Why I Wrote PGP / Part of the Original 1991 PGP User's Guide (updated in 1999)'. In this 1999 text the line follows 'Throughout the 1990s, I figured...'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. This is the 1999 wording. The 1991 original reads '...your private electronic mail (E-mail) or confidential documents read by anyone else.' (see added source)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Internet Archive (copy of PGP10.ZIP/PGPGUIDE.LST from the PGP 1.0 distribution)",
+     "title": "Philip Zimmermann, 'PGP User's Guide', Version 1.0 - section 'Why Do You Need PGP?'",
+     "date": "1991-06-05",
+     "url": "https://archive.org/download/pgpguide.-lst/PGPGUIDE.LST.txt",
+     "quote": "If privacy is outlawed, only outlaws will have privacy. Intelligence agencies have access to good cryptographic technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The file header reads 'PGPGUIDE.DOC Wednesday, June 5, 1991' and 'Version 1.0 - 5 Jun 91'. The line appears under 'Why Do You Need PGP?' (page 28-29 of the guide). The archive.org item 'pgpguide.-lst' says it is a re-upload of PGP10.ZIP/PGPGUIDE.LST from the item 'pgp_sourcecode'."
+    },
+    {
+     "institution": "Internet Archive (copy of PGP10.ZIP/PGPGUIDE.LST from the PGP 1.0 distribution)",
+     "title": "Philip Zimmermann, 'PGP User's Guide', Version 1.0 - section 'Why Do You Need PGP?'",
+     "date": "1991-06-05",
+     "url": "https://archive.org/download/pgpguide.-lst/PGPGUIDE.LST.txt",
+     "quote": "Whatever it is, you don't want your private electronic mail (E-mail) or confidential documents read by anyone else.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. This is the 1991 wording of the email sentence."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "mcnealy-1999-zero-privacy",
+   "status": "OK",
+   "issues": [
+    "No error found. The Wired JSON-LD gives datePublished 1999-01-26 and author Polly Sprenger. 'Monday night' is 25 January 1999 (a Monday), at the Jini launch, so 'January 1999' is right. On the page 'You have zero privacy anyway' and 'Get over it.' are consecutive paragraphs, so the joined quote is accurate. Jodie Bernstein is named as director of the FTC's Bureau of Consumer Protection. He told 'a group of reporters and analysts'; 'reporters' is a fair shortening."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The next paragraph is '\"Get over it.\"' (--check FOUND). datePublished 1999-01-26; author Polly Sprenger."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. This is the article's opening sentence."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "solove-2013-privacy-self-management",
+   "status": "FIXED",
+   "issues": [
+    "Causal conflation. The statement says privacy self-management fails 'because consent legitimises nearly any use of data and there are too many data collectors'. In Solove, 'Consent legitimizes nearly any form of collection, use, or disclosure of personal data' describes how the model works: it 'takes refuge in consent'. It is not one of his reasons for its failure. The reasons he gives are (1) 'severe cognitive problems' and (2) 'several structural problems', including that there are too many entities to manage one by one.",
+    "The quotes, the page (Volume 126, Issue 7, May 2013) and the 'since the 1970s' claim are correct. The page also has 'These rights consist primarily of rights to notice, access, and consent ...' and 'I will refer to this approach to privacy regulation as \"privacy self-management.\"', which directly support 'named' and 'notice, access and consent'."
+   ],
+   "fieldFixes": {
+    "statement": "Solove (2013) named the dominant model 'privacy self-management' - rights to notice, access and consent, an approach largely unchanged since the 1970s, under which consent 'legitimizes nearly any form of collection, use, or disclosure of personal data' - and argued that it 'does not provide people with meaningful control' over their data, because of people's cognitive limits and structural problems: there are too many data collectors to manage one by one."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The page header reads 'Daniel J. Solove / Volume 126 / Issue 7 / May 2013'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. The next sentences give the reasons: 'First ... severe cognitive problems' and 'Second ... several structural problems'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. Context: 'Privacy self-management takes refuge in consent ...'. This describes the model; it is not one of the reasons for its failure."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. It is the first of the structural problems."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "These rights consist primarily of rights to notice, access, and consent regarding the collection, use, and disclosure of personal data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. It supports 'notice, access and consent'."
+    },
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "Second, and more troubling, even well-informed and rational individuals cannot appropriately self-manage their privacy due to several structural problems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The first reason on the page is 'First, empirical and social science research demonstrates that there are severe cognitive problems that undermine privacy self-management.' (also FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "nissenbaum-2011-transparency-paradox",
+   "status": "OK",
+   "issues": [
+    "No error found. Both quotes are verbatim. The PDF shows 'Dædalus 140 (4) Fall 2011' and '© 2011 by Helen Nissenbaum'. The gloss 'detailed notices go unread, simple ones leave out what matters' faithfully paraphrases the paragraph that defines the transparency paradox. I have added the defining sentence."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The paragraph continues: a notice that 'finely details every flow ... is unlikely to be understood, let alone read', while nutrition-label summaries 'drain away important details'. The footer reads '140 (4) Fall 2011'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND in the abstract."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Daedalus (vol. 140, no. 4), American Academy of Arts & Sciences - copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'A Contextual Approach to Privacy Online'",
+     "date": "2011",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf",
+     "quote": "Thus the transparency paradox: transparency of textual meaning and transparency of practice conflict in all but rare instances.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The PDF hyphenates 'par-adox' across a line, and the helper's normalised text matches the unhyphenated form."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "mcdonald-cranor-2008-201-hours",
+   "status": "OK",
+   "issues": [
+    "No error found. The abstract gives 201 hours and $3,534 'per American Internet user', and $781 billion as the national 'value of time lost'. The author note on page 1 places both authors at Carnegie Mellon University (McDonald a PhD candidate, Cranor an Associate Professor). The PDF says 'Please cite to the published paper in: I/S ... 2008 Privacy Year in Review issue'. The estimate assumes each site's policy is read once a year, as the record note says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The first page carries 'AUTHOR'S PRE-PRESS VERSION' and the CMU author note."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "searls-2019-proffer-as-first-parties",
+   "status": "OK",
+   "issues": [
+    "No error found. The Linux Journal page carries the byline 'by Doc Searls' and the date 'on January 9, 2019'. The 'grace of privacy policies' quote is verbatim; on the page it continues with an em dash ('...true control—especially when...'). The phrase 'proffer as first parties' is verbatim in the sentence before the second quote. The bio supports ProjectVRM (launched at BKC in 2006) and co-founder of Customer Commons. Caveat: the page says 'The original version of this post was published on the Private Internet Access blog'. I could not locate that original or its date (guessed PIA URLs return 404 and Wayback CDX was unreachable), so '2019' rests on the Linux Journal date. A later footnote on the page mentions mid-June 2019, which shows the LJ text was updated after publication."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The page shows 'by Doc Searls' and 'on January 9, 2019' (node-post-date field). It is a republication of a post first published on the Private Internet Access blog, date not confirmed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. The preceding text reads 'We (a few colleagues and I) created Customer Commons as a place for terms that individuals can proffer as first parties, just by pointing at them, much as licenses at Creative Common s can be pointed at.' (a link splits 'Commons')."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "ieee-7012-2025-published",
+   "status": "OK",
+   "issues": [
+    "No error found. The IEEE SA page shows Status Active Standard, PAR Approval 2017-12-06, Board Approval 2025-11-04 and Published 2026-01-20. The abstract quote is verbatim, and so is the 'first party shall point to a preferred agreement' sentence, which appears in the same scope/abstract text. This text is the page's abstract, not the standard's normative text, but the statement's 'it describes' is accurate. The approval date is confirmed independently by the IEEE SA Standards Board Approvals page for 04 November 2025 (listed under New Standards) and by the Crossref DOI record (approved 2025-11-04)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. Page fields: Standard Committee SSIT/SC, Status Active Standard, PAR Approval 2017-12-06, Board Approval 2025-11-04, Published 2026-01-20, WG MRPT-WG. The scope names 'websites, applications and AI agents'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND in the same abstract. The abstract goes on to say that, if both parties agree, 'a matching record shall be kept by both sides', which supports 'both sides record'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA Standards Board Approvals - 04 November 2025",
+     "date": "2025-11-04",
+     "url": "https://standards.ieee.org/about/sasb/sba/04nov2025/",
+     "quote": "7012-2025 (SSIT/SC) IEEE Standard for Machine Readable Personal Privacy Terms",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The line is listed under 'New Standards' on the page headed 'IEEE SA Standards Board Approvals / 04 November 2025'."
+    },
+    {
+     "institution": "Crossref (DOI registration metadata deposited by IEEE)",
+     "title": "Crossref record for DOI 10.1109/IEEESTD.2025.11360682",
+     "date": "2026-01-21",
+     "url": "https://api.crossref.org/works/10.1109/IEEESTD.2025.11360682",
+     "quote": "\"approved\":{\"date-parts\":[[2025,11,4]]}",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The record's title is 'IEEE Standard for Machine Readable Personal Privacy Terms', its publisher is IEEE, and it was created 2026-01-21."
+    }
+   ]
+  }
+ ]
+}

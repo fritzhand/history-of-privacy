@@ -1,0 +1,346 @@
+{
+ "slice": "agents",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "ai-act-gpai-obligations-apply-2025",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes re-fetched with fetch-text.py --check: FOUND (Internet Archive capture 20251221015235 of the EUR-Lex OJ text; Commission PDF document/118115). Article 113 third paragraph point (b) does apply Chapter V (general-purpose AI models) from 2 August 2025. The Code's publication date is confirmed on digital-strategy.ec.europa.eu/en/policies/contents-code-gpai: 'The code was published on July 10, 2025'. The PDF's Measure 1.3 reads 'Signatories commit ... a) to employ web-crawlers that read and follow ... robots.txt ... RFC 9309', so 'commits signatories' is accurate (the Code is voluntary).",
+    "Significance overstates what changed on 2 August 2025. A text-and-data-mining reservation already had legal effect under Article 4(3) of Directive 2019/790. The AI Act adds a duty for GPAI providers to have a policy to identify and comply with it. The quoted Article 113(b) itself excepts Article 101 (fines on GPAI providers), which applies only with the rest of the Regulation from 2 August 2026. Article 111(3) gives models placed on the market before 2 August 2025 until 2 August 2027. 'Now makes ... binding' is reworded, and the transition is added to the summary with an Article 111(3) source."
+   ],
+   "fieldFixes": {
+    "summary": "From 2 August 2025 the AI Act's chapter on general-purpose AI models applied. Article 53(1)(c) requires providers to have a copyright policy that identifies and complies, 'including through state-of-the-art technologies', with rights reservations made under Article 4(3) of the 2019 copyright directive, which allows text-and-data-mining opt-outs by 'machine-readable means'. Providers of models already on the market before that date have until 2 August 2027 to comply. The Commission's GPAI Code of Practice, published on 10 July 2025, commits signatories to crawlers that follow robots.txt as specified in RFC 9309.",
+    "significance": "From August 2025 EU law required AI model providers to have a policy for detecting and honouring a publisher's machine-readable 'no'. The Commission can fine providers only from August 2026, and models already on the market have until August 2027. No comparable duty yet attaches to a person's machine-readable terms about their own data."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND on the Internet Archive capture of the EUR-Lex OJ text (eur-lex.europa.eu itself returns a bot challenge to scripts). The quote is Article 113, third paragraph, point (b); the exception for Article 101 means fines on GPAI providers apply from 2 August 2026."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND on the same capture; Article 53(1)(c)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND in the Copyright Chapter PDF (Measure 1.3(a), 'Signatories commit ...'). The Commission page https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai states 'The code was published on July 10, 2025'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex)",
+     "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 111(3)",
+     "date": "2024-07-12",
+     "url": "https://web.archive.org/web/20251221015235/https://eur-lex.europa.eu/legal-content/en/TXT/HTML/?uri=OJ:L_202401689",
+     "quote": "Providers of general-purpose AI models that have been placed on the market before 2 August 2025 shall take the necessary steps in order to comply with the obligations laid down in this Regulation by 2 August 2027.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on the Internet Archive capture of the EUR-Lex OJ text. This source supports the transition period added to the summary."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "google-agent-payments-protocol-ap2-2025",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes FOUND (--check) on the Google Cloud blog. The page metadata datePublished is 2025-09-16, and the protocol site ap2-protocol.org lists 'Agent Payments Protocol Announcement (9/16/2025)', so the date is right.",
+    "The summary merged two separate statements. The page says AP2 was 'developed with leading payments and technology companies'. Separately, Google says it is 'collaborating with a diverse group of more than 60 organizations to help shape the future of agentic payments, including ... American Express ... Coinbase ... Mastercard ... Paypal'. The page also says the protocol 'can be used as an extension of' A2A and MCP, not that it is one. The summary is reworded to match.",
+    "The protocol has changed since the launch: ap2-protocol.org now describes 'Checkout Mandate' and 'Payment Mandate' types, lists an 'AP2 v0.2 Release and FIDO Alliance Donation', and names A2A and the Universal Commerce Protocol as hosts. The record's Intent/Cart Mandate description is correct for the September 2025 announcement, which is what the record dates.",
+    "The significance says IEEE 7012 asks for a signed agreement with records on both sides. That matches the IEEE 7012 scope text recorded in myterms.json: 'shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides'."
+   ],
+   "fieldFixes": {
+    "summary": "Google announced the Agent Payments Protocol (AP2), an open protocol for agent-led payments that can be used as an extension of A2A and MCP, saying it was collaborating with more than 60 organisations, including Mastercard, American Express, PayPal and Coinbase. AP2 records a user's instructions as 'Mandates' - tamper-proof, cryptographically signed digital contracts - so that intent, cart and payment form 'a non-repudiable audit trail'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND; the page's datePublished is 2025-09-16."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND in the 'How it works' section."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Agent Payments Protocol project site (ap2-protocol.org)",
+     "title": "Agent Payments Protocol (AP2) - home page",
+     "date": "2026",
+     "url": "https://ap2-protocol.org/",
+     "quote": "Agent Payments Protocol Announcement (9/16/2025)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The protocol's own site (Google-originated, so not fully independent) dates the announcement to 16 September 2025. Read 2026-09-23. The site now describes later versions (v0.2, the FIDO Alliance donation, Checkout/Payment Mandates)."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "cloudflare-content-signals-policy-2025",
+   "status": "OK",
+   "issues": [
+    "Both quotes FOUND (--check). The post's published_time is 2025-09-24T13:10:00Z (modified 2026-07-15; the quotes are still present). The author is Will Allen, and the title matches the H1.",
+    "The summary's claim that access is made conditional on the signals is supported by the policy text on the page: 'As a condition of accessing this website, you agree to abide by the following content signals'. That quote is added as a source. The page also says Cloudflare will update the managed robots.txt it 'already serve[s]' for those customers with 'search=yes, ai-train=no', which matches the summary.",
+    "Place: Cloudflare's HQ is at 101 Townsend St, San Francisco, and the coordinates are within about 50 m."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND. The next sentence says those customers 'have chosen to instruct companies that they do not want the content on those domains to be used for AI training'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Cloudflare (The Cloudflare Blog, Will Allen)",
+     "title": "Giving users choice with Cloudflare’s new Content Signals Policy (policy text)",
+     "date": "2025-09-24",
+     "url": "https://blog.cloudflare.com/content-signals-policy/",
+     "quote": "As a condition of accessing this website, you agree to abide by the following content signals",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the licence-style preamble of the Content Signals Policy as reproduced in the post (a robots.txt comment block). It supports the summary's 'conditional on abiding by them'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "agentic-commerce-protocol-instant-checkout-2025",
+   "status": "OK",
+   "issues": [
+    "Quote FOUND (--check). The page has date 2025-09-29 in its metadata and 'SAN FRANCISCO' as the dateline. The page supports every summary claim: 'ChatGPT users in the US can buy goods from US-based Etsy businesses—and, coming soon, over a million Shopify merchants'.",
+    "OpenAI's own post is still blocked to scripts (403). As an independent check, the ACP project site (agenticcommerce.dev) confirms that Stripe and OpenAI developed ACP and that 'OpenAI is the first AI platform to implement ACP with ChatGPT'. It is added as a source.",
+    "Place: Stripe's headquarters is on Oyster Point Blvd, South San Francisco; the coordinates are about 300 m away. The locationNote already explains the dateline."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND; the page date is 2025-09-29 ('September 29, 2025')."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Agentic Commerce Protocol project site (agenticcommerce.dev)",
+     "title": "Agentic Commerce Protocol - An open standard for programmatic commerce flows",
+     "date": "2026",
+     "url": "https://www.agenticcommerce.dev/",
+     "quote": "Stripe and OpenAI developed the Agentic Commerce Protocol to define a common language for how agents and businesses transact—including coordinating checkout and securely sharing payment credentials.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND; read 2026-09-23. The same page says: 'OpenAI is the first AI platform to implement ACP with ChatGPT' and that ACP is under the Apache 2.0 license."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "california-opt-me-out-act-ab566-2025",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes FOUND (--check). The leginfo page shows 'CHAPTER 465 ... [ Approved by Governor October 08, 2025. Filed with Secretary of State October 08, 2025. ]', new Civil Code section 1798.136(a)(1), and '(f) This section shall become operative on January 1, 2027.' The CPPA release confirms the Agency sponsored the bill ('sponsored by the California Privacy Protection Agency'). The summary is accurate.",
+    "The significance calls it 'the first law to force the software that acts for a person to carry that person's privacy choice automatically'. No source supports a world-first. The CPPA claims only 'first state in the nation to require browsers ...'. The GDPR has since 2016 let people object 'by automated means using technical specifications', although it did not oblige browsers. The law also requires a consumer-configurable setting, not an automatic default. The significance is narrowed to a US-state first."
+   ],
+   "fieldFixes": {
+    "significance": "It made California the first US state to require the software that acts for a person - the browser - to offer a setting that carries that person's privacy choice to every site. That is the legal pattern an agent proffering IEEE 7012 terms would extend from opt-out to full terms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND. The chaptered text header reads 'CHAPTER 465 ... Approved by Governor October 08, 2025'. Section 1798.136(f) sets the operative date of 1 January 2027."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND (the space before the comma is as extracted from the page)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "chatgpt-atlas-browser-2025",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes FOUND (--check) on the Internet Archive copy of the OpenAI page, which is dated 'October 21, 2025'. The same page says 'ChatGPT Atlas is launching worldwide on macOS today' and 'Agent mode in Atlas is available today in preview for Plus, Pro, and Business users', which supports the summary. Wikipedia independently gives the macOS release as 21 October 2025. The URL uses the unpinned form 'web/2025/'. Re-resolving the capture timestamp failed because archive.org returned HTTP 429, so the URL is left as it is.",
+    "The record is out of date as of 2026-09-23. OpenAI discontinued Atlas on 9 August 2026 and pointed users to its ChatGPT desktop app (Lifehacker Australia, 5 August 2026; Wikipedia cites TechRepublic and CNBC, both 403 to scripts). A sentence is added to the summary with a source.",
+    "The significance says Atlas is owned by the company that 'trains on and monetises the conversation'. The cited page says the opposite for browsing: 'By default, we don't use the content you browse to train our models', with opt-in through 'include web browsing'. 'Monetises' has no source in the record. The significance is reworded to what the sources support."
+   ],
+   "fieldFixes": {
+    "summary": "OpenAI launched ChatGPT Atlas on macOS, a web browser with ChatGPT at its core and the user's ChatGPT memory built in, so that it can draw on past chats. Optional 'browser memories' let ChatGPT remember context from sites a user visits, and 'agent mode' (in preview for paid tiers) lets it act on the user's behalf while they browse. OpenAI shut Atlas down on 9 August 2026, pointing users to its ChatGPT desktop app.",
+    "significance": "When the browser itself becomes an agent that remembers what you read, the software that would carry a person's own machine-readable terms belongs to the AI company it serves. Whether browsing feeds model training becomes a setting in that company's data controls, not a term the person proffers."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND on the Internet Archive copy (openai.com is 403 to scripts); the page is dated October 21, 2025. The capture timestamp behind 'web/2025/' could not be re-resolved (archive.org 429)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND; the 'Agent mode in Atlas is available today in preview for Plus, Pro, and Business users.' sentence is also FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "OpenAI (Internet Archive capture)",
+     "title": "Introducing ChatGPT Atlas (privacy controls)",
+     "date": "2025-10-21",
+     "url": "https://web.archive.org/web/2025/https://openai.com/index/introducing-chatgpt-atlas/",
+     "quote": "By default, we don’t use the content you browse to train our models. If you choose to opt-in this content, you can enable “include web browsing” in your data controls settings.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on the Internet Archive copy (openai.com is 403 to scripts). This source supports the reworded significance."
+    },
+    {
+     "institution": "Lifehacker Australia (Jake Peterson)",
+     "title": "Here's When ChatGPT Atlas Will Shut Down for Good",
+     "date": "2026-08-05",
+     "url": "https://au.lifehacker.com/ai/119278/heres-when-chatgpt-atlas-will-shut-down-for-good",
+     "quote": "OpenAI will officially shut down ChatGPT Atlas on Sunday, Aug. 9.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND; article:published_time 2026-08-05. The same article says 'The company is pointing users to its ChatGPT desktop app'. Wikipedia's ChatGPT Atlas article also says 'On August 9, 2026, ChatGPT Atlas officially shut down', citing TechRepublic, which is 403 to scripts."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "dpdp-rules-notified-india-2025",
+   "status": "FIXED",
+   "issues": [
+    "Both PIB quotes FOUND (--check); the backgrounder is 'Posted On: 17 NOV 2025' (Release ID 2190655). The 6,915 inputs, the eighteen-month phased compliance and the right to nominate are all on the page.",
+    "The title says the Rules bring the law 'into operation', which overstates it. The Gazette text (G.S.R. 846(E)) phases commencement: 'Rules 1, 2 and 17 to 21 shall come into force on the date of their publication', 'Rule 4 [Consent Managers] shall come into force one year after', and 'Rules 3, 5 to 16, 22 and 23 shall come into force eighteen months after'. The title and summary are reworded, and the Gazette is added as a primary source.",
+    "Date nuance: the Gazette notification is headed 'New Delhi, the 13th November, 2025', but its e-Gazette number CG-DL-E-14112025-267650 shows publication on 14 November 2025, and PIB gives 14 November. The displayDate of 14 November is kept, and the 13th is mentioned so readers who see '13 November' elsewhere are not confused.",
+    "PIB's 'companies based in India' is a paraphrase. The First Schedule condition reads 'The applicant is a company incorporated in India.' The summary uses the legal wording."
+   ],
+   "fieldFixes": {
+    "title": "India notifies the DPDP Rules, 2025, starting the phased entry into force of its data-protection law",
+    "summary": "The Government of India notified the Digital Personal Data Protection Rules, 2025 (G.S.R. 846(E), dated 13 November and published in the Gazette on 14 November 2025) after consultations that drew 6,915 inputs. The Consent Manager rule takes effect after one year and most other duties after eighteen months. The Rules require Consent Managers - the regulated intermediaries that help people give, manage and withdraw consent - to be companies incorporated in India, and let individuals nominate another person to exercise their rights."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND; 'Posted On: 17 NOV 2025 10:44AM by PIB Delhi'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND. PIB's wording is a paraphrase; the legal condition is 'The applicant is a company incorporated in India' (First Schedule, Part A, item 1), added as a separate source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India, Extraordinary, Part II, Sec. 3(i))",
+     "title": "Digital Personal Data Protection Rules, 2025 - G.S.R. 846(E), rule 1 (commencement)",
+     "date": "2025-11-13",
+     "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+     "quote": "(4) Rules 3, 5 to 16, 22 and 23 shall come into force eighteen months after the date of publication of this Gazette.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The notification is headed 'New Delhi, the 13th November, 2025'; the e-Gazette number CG-DL-E-14112025-267650 shows publication on 14 November 2025. Rule 1(3), also FOUND: '(3) Rule 4 shall come into force one year after the date of publication of this Gazette.' The PDF is linked from the PIB backgrounder's references."
+    },
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India, Extraordinary, Part II, Sec. 3(i))",
+     "title": "Digital Personal Data Protection Rules, 2025 - First Schedule, Part A (conditions for registration of Consent Manager)",
+     "date": "2025-11-13",
+     "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+     "quote": "1. The applicant is a company incorporated in India.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "eu-digital-omnibus-article-88b-2025",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes FOUND (--check). The Council document ST 15698/25 is dated 'Brussels, 20 November 2025' and encloses COM(2025) 837 final dated 'Brussels, 19.11.2025'. Proposed Article 88b(2) ('Controllers shall respect the choices ...'), (4) (a standardisation request to European standardisation organisations), (5) (24 months), (6) (browsers 'which are not SMEs') and (7) (48 months) are all confirmed. Article 88c ends '... providing data subjects with an unconditional right to object to the processing of their personal data.' The EDPB-EDPS Joint Opinion 2/2026 is 'Adopted on 10 February 2026'; paragraph 108 opens 'The EDPB and the EDPS strongly welcome proposed Article 88b GDPR', and paragraph 115 makes the recommendation about operating systems.",
+    "The significance's 'For the first time an EU legislative text would oblige organisations to accept a person's own machine-readable signal' ignores GDPR Article 21(5) (2016): the data subject 'may exercise his or her right to object by automated means using technical specifications'. The agents slice's own argument section cites this provision. Reworded without the 'first time' claim, and a GDPR source is added.",
+    "The summary says 'large browser providers'; the text says browser providers 'which are not SMEs', which includes medium-sized firms. The summary also leaves out that Article 88b(3) exempts media service providers when providing a media service; EDPB-EDPS paragraph 116 asks the co-legislators to reconsider that exemption. Both points are corrected in the summary."
+   ],
+   "fieldFixes": {
+    "summary": "The Commission's Digital Omnibus proposal, COM(2025) 837 of 19 November 2025, would insert Article 88b into the GDPR. Controllers' online interfaces would have to let people give consent, and refuse it or object, 'through automated and machine-readable means', and controllers would have to respect those choices (media service providers are exempt). European standardisation organisations would be asked to draft standards for interpreting the signals, and web-browser providers that are not SMEs would have to support them 48 months after entry into force. A proposed Article 88c would let AI development rely on legitimate interests, with data subjects given an 'unconditional right to object'. On 10 February 2026 the EDPB and EDPS 'strongly welcome[d]' Article 88b.",
+    "significance": "Since 2016 the GDPR had let people object 'by automated means using technical specifications' without requiring anyone to build for it. This text would require controllers' interfaces to accept and respect a person's own machine-readable signals, and browsers to send them - the regulatory opening an IEEE 7012 agent needs."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND in Council ST 15698/25 (20 November 2025), which encloses COM(2025) 837 final dated 'Brussels, 19.11.2025'. Paragraph 2 reads 'Controllers shall respect the choices made by data subjects in accordance with paragraph 1.' Paragraph 3 exempts media service providers."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND. Paragraph 7 applies paragraph 6 from 48 months after entry into force; paragraph 5 applies paragraphs 1-2 after 24 months."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND. The document is 'Adopted on 10 February 2026'. Paragraph 108 opens 'The EDPB and the EDPS strongly welcome proposed Article 88b GDPR' (also FOUND). Paragraph 114 opposes the SME exclusion, paragraph 115 recommends extending the duty to operating systems, and paragraph 116 asks for reconsideration of the media exemption."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Official Journal of the European Union (via EUR-Lex, Internet Archive capture)",
+     "title": "Regulation (EU) 2016/679 (General Data Protection Regulation), Article 21(5)",
+     "date": "2016-05-04",
+     "url": "https://web.archive.org/web/2025/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679",
+     "quote": "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same URL and quote are used by argument arg-5 in agents.json; the wording is also FOUND on legislation.gov.uk/eur/2016/679/article/21. This source supports the reworded significance."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "rsl-1-0-ai-licensing-standard-2025",
+   "status": "OK",
+   "issues": [
+    "Quote FOUND (--check). The page has the dateline 'SAN FRANCISCO — December 10, 2025', announces 'the publication of the official standards specification for Really Simple Licensing (RSL) 1.0', and names Cloudflare, Akamai, Creative Commons and the IAB Tech Lab as supporters. It says '1500+ media organizations, brands, and technology companies worldwide now endorse RSL' and describes the standard as 'Based on the widely adopted RSS (Really Simple Syndication) standard'. The summary is accurate.",
+    "Independent check: the specification page rslstandard.org/rsl (RSL-SPEC-1.0, Status 'Recommendation', Published 2025-12-10, previous version 0.9) confirms the date and describes RSL as 'an open, XML-based standard' building on RSS and the Robots Exclusion Protocol. It is added as a source. RSL itself (version 0.9) had launched on 10 September 2025 (Wikipedia); the record correctly dates only the 1.0 specification.",
+    "'Six weeks later': IEEE 7012-2025 was published in Xplore on 20 January 2026 (myterms.json), 41 days after 10 December 2025. That is acceptable."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-checked 2026-09-23: --check FOUND; dateline 'SAN FRANCISCO — December 10, 2025'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "RSL Technical Steering Committee (rslstandard.org)",
+     "title": "Really Simple Licensing (RSL) 1.0 Specification (RSL-SPEC-1.0), Published 2025-12-10",
+     "date": "2025-12-10",
+     "url": "https://rslstandard.org/rsl",
+     "quote": "Really Simple Licensing (RSL) is an open, XML-based standard that enables publishers and platforms to define machine-readable usage, licensing, and legal terms of service for digital assets on the web.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The header block gives Status 'Recommendation', Published '2025-12-10' and Previous Version 'https://rslstandard.org/rsl/0.9/'. The same section says RSL 'builds on the ideas of the RSS syndication format and the Robots Exclusion Protocol [ RFC 9309 ]'."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,436 @@
+{
+ "slice": "myterms",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "mechanics",
+   "id": "roster-neutral-nonprofit",
+   "status": "OK",
+   "issues": [
+    "All three quotes re-fetched on 2026-09-23 and --check FOUND. The IEEE abstract sentence is verbatim on standards.ieee.org/ieee/7012/7192/ (Published 2026-01-20; Board Approval 2025-11-04). The abstract does not name Customer Commons, and the summary does not claim it does.",
+    "Two claims in the summary were not carried by any quoted text: that Customer Commons is a US 501(c)(3), and that a European MyTerms Alliance will contribute regional variants. Both are on the same FAQ answer ('How does the naming of agreements such as SD-BASE work?'). Sources carrying them are added. 'Spun out of ProjectVRM' is supported by FAQ answer 8 ('its nonprofit spinoff, Customer Commons, in 2013').",
+    "Hosting check: the FAQ says the roster is 'posted at a neutral nonprofit site such as CutomerCommons.org or MyTerms.info' (typo on the page), and the myterms.info footer reads '© 2026 Customer Commons'. The source institution label is therefore right.",
+    "Caveat, not an error: the FAQ says the Alliance is 'forming in Europe', but the myterms.info home page now calls the Alliance 'a global network'. Its founding members are Customer Commons (US) and MyData Global (Helsinki). 'European' is accurate to the FAQ as a description of where it is forming."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the abstract. Page shows Status Active Standard, PAR Approval 2017-12-06, Board Approval 2025-11-04, Published 2026-01-20, WG chair Doc Searls. Title and date fields correct."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND (FAQ 'For Individuals' Q3). WP API gives the FAQ page modified date 2026-01-26."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND (FAQ Q8). The sentence continues '—a role patterned after the successful one established by Creative Commons for personal copyright licenses', so the quote is a clean prefix."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Customer Commons is a US-based 501(c)3 nonprofit.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. Supports the 501(c)(3) claim. Date is the page's WordPress modified date."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "At this writing there is also a MyTerms Alliance forming in Europe, to establish a presence there. That body will also contribute to the naming and shaping of MyTerms agreements, which will differ in various countries and jurisdictions, in respect to differing contract laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. Supports the 'European MyTerms Alliance ... regional variants' clause."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "You can choose an agreement from a small roster of terms posted at a neutral nonprofit site such as CutomerCommons.org or MyTerms.info.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23 ('CutomerCommons' is a typo on the page, quoted verbatim). Supports 'hosts'."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "records-both-sides",
+   "status": "OK",
+   "issues": [
+    "All three quotes re-fetched on 2026-09-23 and --check FOUND. The IEEE abstract says 'a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed'. The summary paraphrases it faithfully.",
+    "The FAQ quote answers 'What does an “agreement record kept by both sides” look like, and where is it stored?'. It therefore supports the claim that format and storage are left open. The claim that protocol is left open rests on the abstract ('any protocol that serves the purpose') and on the PAR post in any-protocol.",
+    "The Searls post (doc.searls.com, 7 Jan 2026; the date is also listed on myterms.info/news) calls the MAR 'something I just made up'. Characterising it as his own proposal and not part of the standard is correct."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND verbatim, including '--and which is available to do so easily.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND as the full answer to FAQ 'For Individuals' Q7 about what the record looks like and where it is stored."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND. The live site now returns 403 to the helper; the check was against the helper's cache of the page fetched earlier today. myterms.info/news lists 'Toward a Proof of Concept for MyTerms (Doc Searls, 7 Jan. 2026)'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "mechanics",
+   "id": "any-protocol",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND on 2026-09-23. The FAQ quote carries the page's own typo 'Conrol', which is verbatim.",
+    "Overstatement: no source says the proponents expect plug-ins 'first'. The FAQ says agents 'can be as simple as browser plugins (and Web server plugins on the other side)'. Searls's January 2026 proof-of-concept sketch lists a browser plugin and a CMS server plugin. The first implementation MyData Global actually describes (August 2026) is 'one mobile app-based implementation'. That paper also lists 'personal data services, fiduciary data intermediaries, apps, browser plug-ins, digital wallets or agentic AI' as possible agents.",
+    "Minor wording: the FAQ says 'browser headers', not 'HTTP headers'. DNT and GPC are HTTP request headers, so the gloss is defensible, but the corrected text follows the source.",
+    "'AI agents later' is supported only loosely, by the FAQ's 'AI will likely be more involved as development of MyTerms products and services proceed and evolve'. The published abstract, unlike the 2017 PAR, already names 'AI agents' among the covered services. The rewritten summary reflects this."
+   ],
+   "fieldFixes": {
+    "summary": "Agents for both parties may use any protocol that serves the purpose; the standard does not specify the technology. The proponents' early sketches centre on browser and web-server plug-ins (the FAQ suggests signalling through browser headers on the model of Do Not Track and Global Privacy Control), and they expect AI to play a larger part as products develop; MyData Global (August 2026) lists apps, digital wallets and agentic AI among possible agents and says personal agents have been built for release in Q4 2026."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the IEEE abstract. The same abstract names 'websites, applications and AI agents' as covered services."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND verbatim, including the page typos ('several possible means', 'Conrol')."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND. The post 'The MyTerms PAR' is dated 6 April 2025 by its URL. projectvrm.org now 403s the helper; checked against the helper's cache from earlier today."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Those can be as simple as browser plugins (and Web server plugins on the other side)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23 (FAQ 'For Individuals' Q1)."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "No. But AI will likely be more involved as development of MyTerms products and services proceed and evolve.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. This is the answer to 'Do I need an AI to use MyTerms?'"
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData and MyTerms Hub Position Paper on ‘Privacy Signals’ and EU Omnibus Article 88b",
+     "date": "2026-08-13",
+     "url": "https://mydata.org/2026/08/13/mydata-and-myterms-hub-position-paper-on-privacy-signals-and-eu-omnibus-article-88b/",
+     "quote": "It does not mandate the form that the personal agent or entity agent must take. But it is reasonable to assume that individuals may use personal data services, fiduciary data intermediaries, apps, browser plug-ins, digital wallets or agentic AI.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. MyData Global's August 2026 position paper, written with the MyTerms Hub."
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData and MyTerms Hub Position Paper on ‘Privacy Signals’ and EU Omnibus Article 88b",
+     "date": "2026-08-13",
+     "url": "https://mydata.org/2026/08/13/mydata-and-myterms-hub-position-paper-on-privacy-signals-and-eu-omnibus-article-88b/",
+     "quote": "Personal Agents that enact standardised, machine-readable privacy signals, as envisaged in EU Digital Omnibus Article 88b have now been built and will be brought to market via MyData Global and others in Q4 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "choice-not-negotiation",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND on 2026-09-23. The DPV page is 'Extension for IEEE P7012 (P7012) version 2.1, Draft Community Group Report 16 March 2025' (editor H. J. Pandit; authors Esteves, Pandit, Henderson), and it cites IEEE-P7012, the draft.",
+    "Misleading framing: the summary presents the single counter-offer as a DPV-only reading that 'differs from the published abstract'. In fact the MyTerms proponents describe the same limited back-and-forth after publication. MyData Global, part of the launch team, wrote on 20 Jan 2026 that the standard 'enables organisations to accept these proposals, or to propose an alternative from the same list'. Doc Searls, the WG chair, wrote on 7 Jan 2026 that the standard 'is not about negotiation. It’s about choice'. He added that a person may offer 'a first and second choice of agreement, but no more than that', and his MAR sketch lists an 'accept / refuse / counter-offer choice'. The DPV text also was not superseded: v2.2 (Draft CG Report, 01 August 2025) repeats 'negotiations are limited to a single counter-offer'.",
+    "The corrected summary keeps the scope rule from the abstract. It says the permitted moves are a choice among roster agreements, not bargaining over their terms, and names v2.2 alongside the March 2025 draft."
+   ],
+   "fieldFixes": {
+    "summary": "The person points to a preferred agreement (or a set) and the organisation accepts one; party-to-party negotiation over the terms of any agreement is out of scope. If the organisation says no, the person's agent can record the refusal. What the proponents describe is choice among roster agreements, not bargaining: Doc Searls (January 2026) says a person may offer 'a first and second choice of agreement, but no more than that'; MyData Global says organisations may accept or propose an alternative from the same list; and the W3C DPV community group's P7012 extension (v2.1, March 2025, repeated in v2.2, August 2025), written against a draft, allows the organisation's agent a single counter-offer drawn from the registry. The published abstract itself does not mention counter-offers."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the IEEE abstract. The PAR text on projectvrm.org carries the same two sentences."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND (FAQ 'For Individuals' Q5, 'What happens if a company says \"No\" to my terms?')."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. Header reads 'version 2.1 / Draft Community Group Report 16 March 2025'. It is a Community Group draft, not a W3C Standard."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.2 — Draft Community Group Report 01 August 2025",
+     "date": "2025-08-01",
+     "url": "https://w3c-cg.github.io/dpv/2.2/standards/p7012/",
+     "quote": "As per [ IEEE-P7012 ], negotiations are limited to a single counter-offer.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. Also on the page, --check FOUND: 'If not, the entity agent makes a counter-offer to negotiate using an agreement of its choice from the registry.'"
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "Then, in turn, it enables organisations to accept these proposals, or to propose an alternative from the same list. Or indeed they can reject or fail to acknowledge the signal; and have that recorded as such.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. MyData Global calls itself 'part of the launch and ‘go to market’ team'."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "At the person’s discretion, they can provide the second party—a site or service—with a first and second choice of agreement, but no more than that.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND (helper cache from 2026-09-23; the live site now 403s the helper). The preceding sentence, also FOUND, reads: 'Note that the MyTerms standard is not about negotiation. It’s about choice, and that one is provided by the individual as the first party.'"
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "launch-mode",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND on 2026-09-23. The archived Customer Commons page came from the helper cache because web.archive.org reset connections during this check.",
+    "Tense and support: the only source for 'launched' is the Standard page, which is still in the future tense ('MyTerms will launch with 5 ... We will then update'; the page was last modified 2026-02-14). That the launch actually happened is shown by myterms.info/news: 'MyTerms Kicked Off to large online and in-person crowd at Imperial College London' and 'Re-watch our Launch on YouTube from January 28, 2026'. MyData Global's 20 Jan 2026 post gave the date as Wednesday 28 January 2026 (Data Privacy Day), 'in London and online', with SD-BASE plus 'four further agreements available at launch'. Those sources are added. The six-month feedback window is still only a stated plan. As of 2026-09-23 no source found announces the updated agreements or the 'full market launch'.",
+    "'A 2025 Customer Commons page' overstates what we know about the page's date. The Wayback availability API returns 2025-10-06 as the closest snapshot even for 2023 and 2024 timestamps, so no earlier capture exists. The page carries old '0.9' agreements (NoStalking, P2B1) in 'demo phase', so its text may predate 2025. Reworded to 'a Customer Commons page archived in October 2025'.",
+    "The five agreements named on the Standard page are SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD and PDC-INTENT. The FAQ says '5 agreements when we launch MyTerms, and 8 more in the pipeline' (FOUND)."
+   ],
+   "fieldFixes": {
+    "summary": "MyTerms said it would launch with five standardised agreements (SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD and PDC-INTENT) and run in that mode for up to six months to gather market feedback before updating them for a full market launch. The public launch took place on 28 January 2026 at Imperial College London and online. The FAQ says eight more agreements are in the pipeline; a Customer Commons page archived in October 2025 had said eleven more."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. Page (title 'The Standard') last modified 2026-02-14 per WP API; still future tense. Lists SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND (FAQ Q13)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND against the helper's cached copy of the 2025-10-06 snapshot. web.archive.org reset connections live on 2026-09-23. The availability API confirms 20251006120755 is the only or closest capture, and the live customercommons.org sits behind a captcha. The page footer reads '© 2025'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "NEWS",
+     "date": "2026",
+     "url": "https://myterms.info/news/",
+     "quote": "Re-watch our Launch on YouTube from January 28, 2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. The heading above it, also FOUND, reads 'MyTerms Kicked Off to large online and in-person crowd at Imperial College London'. The WP API gives the page's modified date as 2026-05-31."
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "There are then four further agreements available at launch.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. It follows the description of the default 'Service Delivery Only' agreement, making five in total. The same post, also FOUND: 'The public launch of the MyTerms standard takes place in London and online on Wednesday, 28th January 2026 – Data Privacy Day.'"
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "myterms-alliance",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND on 2026-09-23. The Get Involved page was last modified 2026-05-20 and the MyData post is dated 20 Jan 2026.",
+    "The 'planned trustmark' clause was not in any quoted text. MyData's next sentence, 'That will include a trust mark through which organisations can embed MyTerms in their processes and policies.', supports it, as does the FAQ ('there will also be a trustmark for sites that do agree to MyTerms'). Both are added.",
+    "'Certify compliance' goes beyond the Alliance's own wording, which is 'overarching responsibility for ... the promotion, development, and compliance with the IEEE 7012 standard'. Certification programmes appear only as a goal of the separate IEEE Industry Connections activity ('identify and implement certification programs').",
+    "'Formed after the launch' is too definite. MyData on 20 Jan 2026 said the two bodies 'are forming' it post-launch. But the name was already in use before the launch: the FAQ (modified 2026-01-26) says an Alliance is 'forming in Europe', and the pre-publication privacy page names 'The MyTerms Alliance'. Get Involved still says the outreach team is 'working to start the MyTerms movement through the MyTerms Alliance'."
+   ],
+   "fieldFixes": {
+    "summary": "An informal association that Customer Commons and MyData Global, its founding members, began forming around the January 2026 launch. It takes 'overarching responsibility' for promoting and developing MyTerms and for compliance with IEEE 7012, and is to include a trust mark for organisations that adopt MyTerms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND (last line of Get Involved)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND verbatim including '->'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. Post dated '20 Jan 2026 · News , Update · MyTerms'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "That will include a trust mark through which organisations can embed MyTerms in their processes and policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. It immediately follows the 'Post-launch, MyData Global and Customer Commons are forming The MyTerms Alliance' sentence."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "However, there will also be a trustmark for sites that do agree to MyTerms, which sites can wear as a badge of honor.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23 (FAQ 'For Individuals' Q5)."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "industry-connections",
+   "status": "FIXED",
+   "issues": [
+    "Source 0: --check FOUND on 2026-09-23. The raw HTML carries datePublished 2026-04-08T17:21:58 and dateModified 2026-06-10T17:23:41. The page also lists 'IC Chair: Justin Byrd' and 'IC Vice Chair: Kari McMullen' (both --check FOUND), and its goals sentence names training, road maps, certification programs and a white paper (FOUND). The summary is accurate.",
+    "Source 1 was left PENDING only because the helper's paragraph extractor skips the banner. The text is a visible button label, not an HTML comment: it sits in <span class=\"button_label\"> inside an <a> that links to the IEEE IC page. A full-page BeautifulSoup get_text() of the same cached page contains the quote verbatim ('1 JUNE: The IEEE Industry Connections Effort kicks off the 1st of June 2026. All welcome! Submit an interest form to participate -->'). Upgraded to CONFIRMED. The WP API gives the home page's modified date as 2026-05-28.",
+    "Added --check-able sources for the chair and for the goals list, which the summary relies on but no quoted text carried."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. datePublished 2026-04-08, dateModified 2026-06-10 confirmed in page JSON-LD."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "The quote is verbatim in the visible text of https://myterms.info/, as a button label linking to the IEEE IC activity page. It was confirmed by full-page get_text() on the helper's cached copy of 2026-09-23 and by a raw-HTML grep. It is not inside an HTML comment. fetch-text.py --check alone returns NOT-FOUND because its block extractor ignores <span> inside <a>."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "Individual Defined Privacy Terms Roadmap (Industry Connections activity)",
+     "date": "2026-04-08",
+     "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+     "quote": "The Industry Connections activity can help define and pilot practical training, develop strategic road maps, identify and implement certification programs, and document an industry white paper advancing standard awareness and understanding.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "Individual Defined Privacy Terms Roadmap (Industry Connections activity)",
+     "date": "2026-04-08",
+     "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+     "quote": "IC Chair: Justin Byrd",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23; 'IC Vice Chair: Kari McMullen' also FOUND on the same page."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "fipps-hew-1973",
+   "status": "OK",
+   "issues": [
+    "The quote was re-fetched on 2026-09-23 and --check FOUND on the ASPE copy of Records, Computers and the Rights of Citizens (Secretary's Advisory Committee on Automated Personal Data Systems, chair Willis H. Ware; transmitted to Secretary Caspar W. Weinberger). The same summary paragraph says the report 'recommends the enactment of a Federal \"Code of Fair Information Practice\" for all automated personal data systems'. That supports the legalForce field: the report recommends legislation and has no force of its own.",
+    "An independent check agrees. Robert Gellman's 'Fair Information Practices: A Basic History' (bobgellman.com PDF) says: 'In a 1973 report, a U.S. government advisory committee initially proposed and named Fair Information Practices ... The Secretary's Advisory Committee on Automated Personal Data Systems issued the report, Records, Computers and the Rights of Citizens.' This confirms the year, the body and the name.",
+    "The source 'date' of '1973' is right for the report. The ASPE page is a later re-hosting, and the institution label reflects that."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND. The page also carries the recommendation 'We recommend the enactment of legislation establishing a Code of Fair Information practice for all automated personal data systems.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "lineage",
+   "id": "p3p-w3c-2002",
+   "status": "OK",
+   "issues": [
+    "Both quotes re-fetched on 2026-09-23 and --check FOUND on https://www.w3.org/TR/P3P/. The page header reads 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018' (This Version: TR/2018/OBSL-P3P-20180830/). That matches year 2002, yearEnd 2018 and the fate text.",
+    "The fate's 'limited deployment' was not in any quoted text, although the same status section says it. That sentence is added as a source. The same section notes that fewer than 6% of the top 10,000 sites supported P3P in 2018, that no current user agents implemented it, and that IE's use of compact policies as a cookie gate led sites to copy generic policies.",
+    "The note ('users' agents could only accept or reject them') is a fair simplification of the W3C description. User agents would 'accept some practices automatically ... or ... prompt the user for further instruction'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND in the Status of This Document section of the obsoleted Recommendation."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — W3C Recommendation 16 April 2002 obsoleted 30 August 2018",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "Since 2002 P3P has had only limited deployment; its utility depends both on adoption by web sites and informative implementation in user agents.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND 2026-09-23. Supports 'limited deployment' in the fate field."
+    }
+   ]
+  }
+ ]
+}

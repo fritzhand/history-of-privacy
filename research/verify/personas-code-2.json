@@ -1,0 +1,345 @@
+{
+  "slice": "personas-code",
+  "chunk": 2,
+  "verdicts": [
+    {
+      "kind": "person",
+      "id": "roger-dingledine",
+      "status": "FIXED",
+      "issues": [
+        "All four quotes re-fetched with a fresh cache and found verbatim: or-dev post of Fri, 20 Sep 2002 17:14:01 -0400, the Tor Project History page, the USENIX 2004 PDF and the 1 May 2015 Tor blog post (byline 'ailanthus | May 1, 2015').",
+        "The contribution runs two things together: 'On 20 September 2002 he told developers ... and its code was released under a free-software licence.' The 20 Sep 2002 post is a 'pre-alpha' call to download tor-0.0.0.tar.gz ('it's just for show for now'). The free-licence release comes from the Tor Project History page, which dates the network's initial deployment, with its code 'released under a free and open software license', to October 2002, not 20 September.",
+        "'describing a volunteer network of more than 30 nodes': the abstract actually says 'an international network of more than 30 nodes', and the body gives '32 nodes (24 in the US, 8 in Europe)' as of mid-May 2004. 'Volunteer' appears only in the paper's design discussion. Changed to 'international' to match the source.",
+        "Checked and correct: MIT graduate, NRL project with Syverson, the reason for the Tor name, the 501(c)(3) in 2006, 'about a dozen volunteer nodes' at the end of 2003, the Arab Spring and Snowden claims, co-founder, and USENIX Security 2004 in San Diego on 9–13 August 2004."
+      ],
+      "fieldFixes": {
+        "contribution": "A recent MIT graduate, Dingledine began working in the early 2000s on a Naval Research Laboratory onion-routing project with Paul Syverson and named it Tor to distinguish NRL's original 'onion routing' from rival systems. On 20 September 2002 he told the project's developer list that 'the onion routing network is functional and deployed' and invited them to download a pre-alpha release; the Tor Project dates the network's initial deployment, with its code released under a free and open-source licence, to October 2002. With Nick Mathewson and Syverson he published the Tor design at USENIX Security in August 2004, describing an international network of more than 30 nodes; he co-founded the Tor Project, which became a 501(c)(3) nonprofit in 2006."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched fresh and the quote is verbatim. The same page has 'in October 2002 when the Tor network was initially deployed, its code was released under a free and open software license', 'In 2006, the Tor Project, Inc., a 501(c)(3) nonprofit organization, was founded' and 'Today, the network has thousands of relays run by volunteers and millions of users worldwide.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The cover page reads 'Proceedings of the 13th USENIX Security Symposium, San Diego, CA, USA, August 9–13, 2004'. The body says 'As of mid-May 2004, the Tor network consists of 32 nodes (24 in the US, 8 in Europe)'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The byline reads 'by ailanthus | May 1, 2015'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "person",
+      "id": "nick-mathewson",
+      "status": "FIXED",
+      "issues": [
+        "All quotes re-fetched fresh and found verbatim: the usability.pdf quote, the Tor History page, the 1 May 2015 Tor blog post and the USENIX 2004 PDF.",
+        "keyWork.title calls the paper a 'Free Haven Project position paper', and the quoteSource note says the WEIS 2006 venue 'was not verified from a primary page'. The Free Haven Project's own Anonymity Bibliography (anonbib, BibTeX page) gives the venue: Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006), Cambridge, UK, June 2006, editor Ross Anderson. keyWork.title and the quoteSource note are corrected, and the anonbib entry is added as a source.",
+        "Checked and correct: MIT classmate who 'joined the project soon after', co-founder, Interim Deputy Executive Director from May 2015, Tor tools beyond the proxy from 2005, Tor Browser from 2008."
+      ],
+      "fieldFixes": {
+        "keyWork.title": "Anonymity Loves Company: Usability and the Network Effect (with Roger Dingledine), Fifth Workshop on the Economics of Information Security (WEIS 2006), Cambridge, UK",
+        "quoteSource.note": "Co-authored with Dingledine; the paper calls itself a 'position paper'. The PDF carries no venue or date. The Free Haven Project's anonbib BibTeX entry (https://www.freehaven.net/anonbib/bibtex.html) gives 'Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006)', Cambridge, UK, June 2006."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The same page has 'starting in 2005, development of tools beyond just the Tor proxy began. Development of Tor Browser began in 2008'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The byline reads 'May 1, 2015'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "The Free Haven Project, Selected Papers in Anonymity (anonbib)",
+          "title": "BibTeX entry usability:weis2006, 'Anonymity Loves Company: Usability and the Network Effect'",
+          "date": "2006-06",
+          "url": "https://www.freehaven.net/anonbib/bibtex.html",
+          "quote": "title = {Anonymity Loves Company: Usability and the Network Effect}, author = {Roger Dingledine and Nick Mathewson}, booktitle = {Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006)}, year = {2006}, month = {June}, location = {Cambridge, UK}",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The anonbib HTML list (https://www.freehaven.net/anonbib/) gives the same venue: 'In the Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006), Cambridge, UK, June 2006.'"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "satoshi-nakamoto",
+      "status": "FIXED",
+      "issues": [
+        "All quotes re-fetched fresh and found verbatim: white paper §10, the metzdowd post (header 'Fri Oct 31 14:10:00 EDT 2008'), Meiklejohn et al. (IMC'13, October 23–25, 2013, Barcelona) and the COPA v Wright judgment.",
+        "Source [2]: the quote is not the judge's own finding. It comes from para 122, where the judge records the submissions of Mr Orr KC, counsel for Dr Wright. The same judgment has the judge's own statement that on 14 March 2024 he 'announced the result – that Dr Craig Wright was not Satoshi Nakamoto', with reasons handed down on 20 May 2024 ([2024] EWHC 1198 (Ch)). The quote is replaced with that primary wording. Neutral citation [2024] EWHC 1809 (Ch) and the date 16 July 2024 are confirmed on the PDF.",
+        "'England's High Court' is imprecise. The court is the High Court of Justice, Business and Property Courts of England and Wales (Chancery Division). Minor wording fix.",
+        "Checked and correct: the white paper cites W. Dai 'b-money' [1] and A. Back 'Hashcash' [6]. It recommends 'a new key pair should be used for each transaction' and says 'Some linking is still unavoidable'."
+      ],
+      "fieldFixes": {
+        "contribution": "On 31 October 2008 a person or group writing as Satoshi Nakamoto announced 'a new electronic cash system that's fully peer-to-peer, with no trusted third party' on the Cryptography mailing list and published the Bitcoin white paper, which uses a proof-of-work system 'similar to Adam Back's Hashcash' and cites Wei Dai's b-money. Because every transaction is announced publicly, the paper abandoned the banking model of privacy through restricted access and proposed instead to keep public keys unlinked to identities, recommending a new key pair for each transaction while conceding that some linking was unavoidable. The author's identity has never been established; in 2024 the High Court of England and Wales declared that Craig Wright, who had claimed the role, is not Satoshi Nakamoto.",
+        "sources[2].note": "Mellor J announced the result at the end of the joint trial on 14 March 2024 and handed down the main judgment, [2024] EWHC 1198 (Ch), on 20 May 2024. This later consequentials judgment records both. It also records, at para 122, counsel for Dr Wright accepting 'that I have declared that Dr Wright is not the author of the Bitcoin White Paper nor the owner of copyright in it, is not Satoshi Nakamoto and is not the person who created Bitcoin'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The archive header in the raw HTML is 'Fri Oct 31 14:10:00 EDT 2008'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The PDF has 'IMC'13, October 23–25, 2013, Barcelona, Spain.'"
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "quote": "At the conclusion of argument on 14 March 2024 in the Joint Trial of the Identity Issue in the COPA and BTC Core Claims, I announced the result – that Dr Craig Wright was not Satoshi Nakamoto, contrary to his claim. I handed down the reasons for that result on 20 May 2024: see [2024] EWHC 1198 (Ch) (my ‘Main COPA Judgment’).",
+          "note": "The new quote is the judge's own statement (para 2), and --check returns FOUND. The PDF header reads 'Neutral Citation Number: [2024] EWHC 1809 (Ch) ... Date: 16th July 2024 ... MR JUSTICE MELLOR'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "person",
+      "id": "moxie-marlinspike",
+      "status": "FIXED",
+      "issues": [
+        "All confirmed quotes re-fetched fresh and found verbatim. Bylines checked: Signal Foundation 21 Feb 2018, A New Home 21 Jan 2013, WhatsApp complete 05 Apr 2016, No WhatsApp backdoor 13 Jan 2017, Signal for iPhone 29 Jul 2014, Just Signal 02 Nov 2015, WhatsApp partnership 18 Nov 2014, New CEO 10 Jan 2022.",
+        "'From November 2014 it worked with WhatsApp' is wrong. The 18 Nov 2014 post publicly announced the partnership and says 'We’ve been working with WhatsApp for the past half year', so the work began around May 2014.",
+        "'completing end-to-end encryption for all WhatsApp users on 5 April 2016' (and keyWork.title 'deployed in WhatsApp for all users') overstates the source. The post says the integration across all clients was complete and that 'Users running the most recent versions of WhatsApp on any platform now get full end-to-end encryption'. It adds: 'Before all users have updated ... there will still be some plaintext on the network.'",
+        "'in January 2013 he gave its continued open development a home as Open Whisper Systems' is slightly off. The 21 Jan 2013 post says the community continuation was already 'we’ve been calling ... “Open Whisper Systems.”' and that the new site is 'the project’s new home'. The wording is adjusted.",
+        "Source [3] (Forbes, 2010): forbes.com returns HTTP 403 to both the script and WebFetch, and web.archive.org connections were reset by the proxy, so it is still unconfirmed. It is only used for the Pittsburgh remark in locationNote. The ProPublica page confirms 'Signal Technology Foundation / Mountain View, CA'."
+      ],
+      "fieldFixes": {
+        "keyWork.title": "Signal and the Signal Protocol (TextSecure protocol), whose integration into all WhatsApp clients was completed on 5 April 2016",
+        "contribution": "Marlinspike's mobile-security company Whisper Systems was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 licence, and in January 2013 he launched a new home for the community project continuing that work, which he called Open Whisper Systems. The project released Signal, encrypted calling for iPhone, in July 2014, and in November 2015 merged its Android apps TextSecure (private messaging) and RedPhone (private calls) into Signal for Android. In November 2014, after about half a year of joint work, it announced a partnership to build the TextSecure — later Signal — Protocol into WhatsApp's clients; on 5 April 2016 it reported the integration complete across every WhatsApp platform, so that users of the latest app versions got end-to-end encryption by default. In 2018 WhatsApp co-founder Brian Acton funded the Signal Foundation with an initial $50 million, and Marlinspike stepped down as Signal's chief executive in January 2022."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The same post has 'Over the past year, we’ve been progressively rolling out Signal Protocol support for all WhatsApp communication across all WhatsApp clients.' and 'Over a billion monthly active users across the world are now using the Signal Protocol for end-to-end encryption.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The byline reads 'moxie0 on 21 Jan 2013'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The byline reads 'moxie0 on 13 Jan 2017'."
+        },
+        {
+          "index": 3,
+          "verificationStatus": "PENDING",
+          "note": "Re-tried 2026-09-23. forbes.com gave HTTP 403 to fetch-text.py and to WebFetch. The Wayback availability API lists a snapshot (20260806221406), but every connection to web.archive.org was reset by the agent proxy, so no quote could be captured. The source supports only the Pittsburgh remark in locationNote."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Signal (signal.org blog)",
+          "title": "Moxie Marlinspike, 'Open Whisper Systems partners with WhatsApp to provide end-to-end encryption'",
+          "date": "2014-11-18",
+          "url": "https://signal.org/blog/whatsapp/",
+          "quote": "We’ve been working with WhatsApp for the past half year, and have learned a lot through the process of deploying the TextSecure protocol at the scale of hundreds of millions of users.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The byline reads 'moxie0 on 18 Nov 2014'. The same post says: 'Today we’re excited to publicly announce a partnership with WhatsApp ... to incorporate the TextSecure protocol into their clients and provide end-to-end encryption for their users by default.'"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "cynthia-dwork",
+      "status": "FIXED",
+      "issues": [
+        "All quotes re-fetched fresh and found verbatim. The thread quote ('any given disclosure will be, within a small multiplicative factor, just as likely whether or not the individual participates in the database') is FOUND in the ICALP PDF. Harvard SEAS is dated January 8, 2025 and says she received the medal 'last week'. NPR's datePublished is 2026-06-12.",
+        "The contribution credits the 2006 results to Dwork alone ('Dwork showed ... and proposed instead differential privacy'). Her own acknowledgements say: 'The impossibility result is joint work with Moni Naor ... The definition, the differential privacy mechanism, and Theorems 4 and 5 are joint work with Frank McSherry.' The co-credit is added and the acknowledgement is added as a source.",
+        "The influence line says the 2026 Commerce order banned noise infusion 'including differential privacy'. NPR and the Census Bureau page describe the order as banning 'noise infusion' and do not name differential privacy. The Census page does say the 2020 noise was applied 'using a newer protection framework based on “differential privacy”' and that its DP page 'is no longer current' because of the order. The wording is tightened so it does not attribute the words 'differential privacy' to the order."
+      ],
+      "fieldFixes": {
+        "contribution": "Working at Microsoft Research, Dwork showed in 2006 — in an impossibility result she credits as joint work with Moni Naor — that the long-standing goal for statistical databases, that nothing about an individual be learnable that could not be learned without the database, cannot be achieved, and proposed instead 'differential privacy', a definition she credits as joint work with Frank McSherry: any given disclosure should be almost equally likely whether or not a person's data are included. With colleagues she developed methods that add calibrated random noise to statistics to meet that guarantee. The technique is used by Apple on its devices and was the basis of the Disclosure Avoidance System for the 2020 US Census; she received the US National Medal of Science in January 2025.",
+        "influence": "Differential privacy moved privacy protection from promises about data handling to a measurable mathematical guarantee; it was the backbone of the 2020 US Census's disclosure avoidance, although in 2026 the US Commerce Department ordered the Census Bureau to stop using 'noise infusion', the method on which its differential-privacy protections rely."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "date": "2025-01-08",
+          "note": "Re-fetched and the quote is verbatim. The page datetime is 2025-01-08 and it calls her 'the Gordon McKay Professor of Computer Science'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The page opens 'Please note that the information on this page is no longer current.'"
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. datePublished is 2026-06-12T18:01:19-04:00. The article says the order 'bans \"noise infusion\"' and does not say it names differential privacy."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Microsoft Research (author copy of ICALP 2006 paper, Springer LNCS)",
+          "title": "Cynthia Dwork, 'Differential Privacy', Acknowledgements",
+          "date": "2006-07",
+          "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf",
+          "quote": "The impossibility result is joint work with Moni Naor, and diﬀerential privacy was motivated by this result. The deﬁnition, the diﬀerential privacy mechanism, and Theorems 4 and 5 are joint work with Frank McSherry.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. 'ﬀ' and 'ﬁ' are the PDF text layer's ligature glyphs. In plain text: 'differential', 'definition'. The same acknowledgement: 'Kobbi Nissim introduced me to the topic of interactive privacy mechanisms.'"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "latanya-sweeney",
+      "status": "FIXED",
+      "issues": [
+        "All quotes re-fetched fresh and found verbatim: the 2000 working paper, the 2002 k-anonymity paper and the FTC press release.",
+        "The contribution misstates the Weld finding: 'because only one man in his five-digit ZIP code shared his birth date'. That reads as if one other man shared it. The source says: 'six people had his particular birth date; only three of them were men; and, he was the only one in his 5-digit ZIP code'. Weld was unique, and no other man in his ZIP code had his birth date.",
+        "FTC source date '2013-11' is incomplete. The page metadata has article:published_time 2013-11-18T15:10:13-05:00.",
+        "Checked and correct: 'For twenty dollars I purchased the voter registration list for Cambridge Massachusetts', the GIC state-employee data, the 87% (216 million of 248 million) figure from 1990 census data in 'Data Privacy Working Paper 3. Pittsburgh 2000', the k-anonymity definition, IJUFKS 10(5), 2002, 557–570, and the CMU affiliation."
+      ],
+      "fieldFixes": {
+        "contribution": "Sweeney showed that 'anonymised' records could be re-identified by linking them to public data: for twenty dollars she bought the Cambridge, Massachusetts voter list and matched it to supposedly de-identified state-employee medical data, finding Governor William Weld's records because, of the six voters who shared his birth date, only three were men and he was the only one in his five-digit ZIP code. Using 1990 census data she estimated in 2000 that 87% of the US population was likely unique on ZIP code, gender and date of birth alone. Her 2002 'k-anonymity' model required each released record to be indistinguishable from at least k−1 others."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The header reads 'International Journal on Uncertainty, Fuzziness and Knowledge-based Systems, 10 (5), 2002; 557-570', and the paper has 'Received May 2002'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "date": "2013-11-18",
+          "note": "Re-fetched and the quote is verbatim. article:published_time is 2013-11-18T15:10:13-05:00."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "person",
+      "id": "adam-back",
+      "status": "FIXED",
+      "issues": [
+        "All quotes re-fetched fresh and found verbatim. The Hashcash paper is dated '1st August 2002' and says Hashcash was 'originally proposed as a mechanism to throttle systematic abuse of un-metered internet resources such as email, and anonymous remailers in May 1997'. Bitcoin reference [6] reads 'A. Back, \"Hashcash - a denial of service counter-measure,\" http://www.hashcash.org/papers/hashcash.pdf, 2002.'",
+        "The influence line says Hashcash was 'first aimed at keeping anonymous remailers usable'. That narrows the source, which says it was proposed 'as a counter-measure against email spam, and against systematic abuse of anonymous remailers'. The line now names both targets.",
+        "Checked and correct: the Dwork–Naor 1992 prior-art acknowledgement, 'cost-function' and proof-of-work wording, May 1997."
+      ],
+      "fieldFixes": {
+        "influence": "Hashcash's proof-of-work, first aimed at email spam and at systematic abuse of anonymous remailers, became a building block of Bitcoin, which cites it directly."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The paper is dated '1st August 2002'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the fragment is verbatim. Reference [6] cites Back's 2002 hashcash.pdf."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "person",
+      "id": "daniel-j-bernstein",
+      "status": "FIXED",
+      "issues": [
+        "All quotes re-fetched fresh and found verbatim: the cr.yp.to problem and status pages, 176 F.3d 1132 ('Decided May 6, 1999'), the 192 F.3d 1308 order ('Filed September 30, 1999') and the EFF case page.",
+        "Wrong date: 'the case ended in 2002'. The 18 October 2002 date on the status page is the oral argument at which the government backed away from its regulations. Bernstein's own press release of 15 October 2003 (https://cr.yp.to/export/2003/10.15-bernstein.txt, the last item in his chronological documents list) reports that Chief Judge Marilyn Hall Patel 'dismissed Bernstein's case without deciding the constitutionality of the current regulations'. The case ended in October 2003.",
+        "Checked and correct: doctoral candidate at UC Berkeley; he asked the State Department whether he needed a licence and was told Snuffle was a munition under ITAR; district court rulings in December 1996 (ITAR) and August 1997 (EAR); panel opinion on 6 May 1999; withdrawn for en banc rehearing on 30 Sep 1999; new exception in January 2000; lawsuit filed February 1995 (per the 2003 press release)."
+      ],
+      "fieldFixes": {
+        "contribution": "As a doctoral candidate at UC Berkeley, Bernstein devised an encryption method he called Snuffle and asked whether he needed a licence to publish its description and source code; the State Department said it was a 'munition' under the arms-export rules. With lawyers backed by the Electronic Frontier Foundation he sued in February 1995, and the district court held in December 1996 and again in August 1997 that the regulations were unconstitutional. A Ninth Circuit panel agreed on 6 May 1999 that the export rules were a prior restraint on scientific expression, but that opinion was withdrawn for rehearing en banc; the government then loosened the rules in January 2000, and after it promised in October 2002 not to enforce several provisions, the district court dismissed the case in October 2003 as unripe, without a final ruling on the constitutionality of the current rules."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The page says 'Argued and Submitted Dec. 8, 1997. Decided May 6, 1999.' and 'Bernstein asked the State Department whether he needed a license to publish Snuffle'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The page says 'Filed September 30, 1999'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The page does not date the dismissal. The date is supplied by the added 15 October 2003 press release."
+        },
+        {
+          "index": 3,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "D. J. Bernstein (cr.yp.to)",
+          "title": "Press release, 'Crypto case on indefinite hold'",
+          "date": "2003-10-15",
+          "url": "https://cr.yp.to/export/2003/10.15-bernstein.txt",
+          "quote": "As observers predicted after the hearing, Chief Judge Marilyn Hall Patel of the United States District Court for the Northern District of California relied on the government's promises and dismissed Bernstein's case without deciding the constitutionality of the current regulations.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The release is datelined 'Chicago, 15 October 2003 - The longest-running court case against the government's encryption regulations has come to an end, for now.' It also says 'Bernstein filed his lawsuit in February 1995'. Linked as the final entry of https://cr.yp.to/export/docs.html ('2003.10.15: B to public')."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "diffie-hellman-new-directions-in-cryptography-1976",
+      "status": "OK",
+      "issues": [
+        "Both quotes re-fetched fresh and found verbatim. The PDF masthead reads 'IEEE TRANSACTIONS ON INFORMATION THEORY, VOL. IT-22, NO. 6, NOVEMBER 1976', page 644, with the footnote 'Manuscript received June 3,1976'. Both authors are listed with the Department of Electrical Engineering, Stanford University (Diffie also with the Stanford Artificial Intelligence Laboratory). The Stanford Engineering article is dated 2016-03-01.",
+        "The NSA claims come from a secondary source (the Stanford article: 'the NSA waged a concerted campaign to limit the distribution of Diffie and Hellman's research' and 'An NSA employee even sent a letter to the publishers'). The letter is historically the July 1977 letter to the IEEE about papers for a 1977 symposium, not about this paper alone, so the summary's 'later' is right. Hellman's own page is added as an independent primary confirmation of the ITAR prosecution threat. No field changes needed.",
+        "Checked and correct: displayDate November 1976, year 1976, Stanford coordinates, the public-key and public-key-distribution descriptions."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. The PDF has 'Manuscript received June 3,1976' and 'VOL. IT-22, NO. 6, NOVEMBER 1976'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched and the quote is verbatim. article:published_time is 2016-03-01."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Martin E. Hellman (Stanford University Electrical Engineering)",
+          "title": "Martin E. Hellman, 'Work on Cryptography'",
+          "date": "undated",
+          "url": "https://ee.stanford.edu/~hellman/crypto.html",
+          "quote": "There was even a threat that we could be prosecuted under the International Traffic in Arms Regulations (ITAR), since technical literature on cryptography was considered an implement of war by the ITAR.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. Hellman's own account. He adds that on Stanford's counsel's advice he presented two papers himself at a 1977 symposium at Cornell rather than his student co-authors, and that 'various forces within the government, and especially the intelligence community, agitated for such papers to be \"born classified\"'. Undated page; accessed 2026-09-23."
+        }
+      ]
+    }
+  ]
+}

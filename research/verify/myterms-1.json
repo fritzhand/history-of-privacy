@@ -1,0 +1,264 @@
+{
+ "slice": "myterms",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "standard",
+   "id": "IEEE 7012-2025",
+   "status": "FIXED",
+   "issues": [
+    "All 17 sources re-fetched. 15 quotes --check FOUND (doc.searls.com and projectvrm.org refuse the helper's Chrome user agent with HTTP 403; re-fetched with a plain 'Mozilla/5.0' UA through the same extraction code: FOUND).",
+    "Core facts hold: designation, title, SSIT/SC sponsor, MRPT-WG, chair Doc Searls, PAR 16 Oct / 6 Dec 2017 (PAR form + SASB 6 Dec 2017 approvals page), initial ballot done by 17 Apr 2025 (SSIT/SC minutes, item 8.3 under P7012), SASB approval 4 Nov 2025 ('New Standards'), published 20 Jan 2026 (IEEE SA page, MyTerms FAQ), Xplore insertion 21 Jan 2026, DOI, e-ISBN 979-8-8557-2944-3 (Crossref: electronic), Accuris 43 pages / two ISBNs, purpose/scope/abstract verbatim, Xplore keywords, officers per MyTerms FAQ.",
+    "getProgramNote and normativeTextNote assert that the free GET PDF requires 'sign-in with a free IEEE account' on Xplore; no source read says so. The GET program page says only that users must accept its Terms and Conditions of Use before the PDF is released; Doc Searls's post says the 7000-series GET standards 'are free'. Softened to what the sources show.",
+    "normativeTextNote calls clauses 4 and 5 'normative clauses'; Searls lists 'Sections 4 and 5, starting on page 14' and says the Introduction and Annexes are informative — he does not himself label 4-5 normative (and in IEEE style clauses 1-3 are normative too). Reworded to quote what he actually says.",
+    "Xplore snapshot (index 5): web.archive.org now resets connections from this sandbox, so it could not be re-fetched live; the raw HTML cached today by the research agent was re-read and does contain publicationDate '20 January 2026', dateOfInsertion '21 January 2026', e-ISBN 979-8-8557-2944-3, doi, pages 1-50, getProgramFlag 'true', isFreeDocument true, and the full three-sentence scope and purpose. Stays PENDING only because the helper strips <script>.",
+    "Accuris (index 16): re-fetched live with curl; raw HTML contains the scope sentence, 'Published: 01/20/2026', 'ISBN(s): 9798855729450, 9798855729443', 'Number of Pages: 43', product codes STDGT28515/STDPD28515. Helper still returns NOT-FOUND (description block not in an extracted tag); stays PENDING.",
+    "parSubmitter is an inference from the PAR's 'Submitter Email: johnchavens@gmail.com' (no name is printed on the form); the field already says so — acceptable."
+   ],
+   "fieldFixes": {
+    "getProgramNote": "Free PDF through the IEEE GET Program for AI Ethics and Governance Standards (Doc Searls: the 7000-series GET standards 'are free'; the Xplore page metadata flags the document as GET/free). The GET program page says users must accept IEEE's Terms and Conditions of Use before the PDF is released; whether an IEEE-account sign-in is also required was not confirmed in a source read.",
+    "normativeTextNote": "The standard's PDF (free via the GET program) was not read for this slice. Doc Searls describes its layout: the Introduction starting on p. 8, 'Sections 4 and 5, starting on page 14', and the Annexes starting on p. 21, adding that the Introduction and the Annexes are informative, 'meaning not part of the standard itself' (post of 29 Jan 2026). Anything below that goes beyond the abstract, scope and purpose comes from Customer Commons / MyTerms materials, Doc Searls, MyData Global and the W3C DPV extension, not from the normative text."
+   },
+   "sourceFixes": [
+    {
+     "index": 5,
+     "verificationStatus": "PENDING",
+     "note": "Re-checked 2026-09-23: web.archive.org resets connections from this sandbox (live Xplore is bot-challenged), so the snapshot could not be re-fetched; the raw HTML cached earlier the same day was re-read and contains \"publicationDate\":\"20 January 2026\", \"dateOfInsertion\":\"21 January 2026\", Electronic ISBN 979-8-8557-2944-3, doi 10.1109/IEEESTD.2025.11360682, startPage 1 / endPage 50, getProgramFlag \"true\", isFreeDocument true, and the full scope and purpose strings. Helper --check NOT-FOUND only because it strips <script> content."
+    },
+    {
+     "index": 12,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND, but it only names the program: the GET page does not list 7012 itself (grep '7012' NO-MATCH). 7012's inclusion is supported by the Searls 'Now We Begin' source and the Xplore getProgramFlag. The same page also says: \"The website will require users accept of the Terms and Conditions of Use before access to the standard(s) PDF file is permitted.\" (--check FOUND)."
+    },
+    {
+     "index": 13,
+     "verificationStatus": "CONFIRMED",
+     "note": "doc.searls.com returns 403 to the helper's Chrome UA; re-fetched with a plain 'Mozilla/5.0' UA through identical extraction: FOUND."
+    },
+    {
+     "index": 14,
+     "verificationStatus": "CONFIRMED",
+     "note": "doc.searls.com returns 403 to the helper's Chrome UA; re-fetched with a plain UA: FOUND. Same post lists 'The Introduction, starting on page 8', 'Sections 4 and 5, starting on page 14', 'The top Annexes, starting on page 21'."
+    },
+    {
+     "index": 15,
+     "verificationStatus": "CONFIRMED",
+     "note": "projectvrm.org returns 403 to the helper's Chrome UA; re-fetched with a plain UA: FOUND. Post is dated 6 April 2025 (URL path) and presents the text as the PAR for P7012."
+    },
+    {
+     "index": 16,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetched live 2026-09-23 with curl: the raw HTML contains this scope sentence, 'Published: 01/20/2026', 'ISBN(s): 9798855729450, 9798855729443', 'Number of Pages: 43', product codes STDGT28515 and STDPD28515. The helper's extractor does not capture the description block, so --check is NOT-FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE SA Standards Board",
+     "title": "IEEE SA Standards Board Approvals — 6 December 2017",
+     "date": "2017-12-06",
+     "url": "https://standards.ieee.org/about/sasb/sba/dec2017/",
+     "quote": "P7012 (SSIT/SC) Standard for Machine Readable Personal Privacy Terms",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Listed under the heading \"New PARs\" on the page dated \"6 December 2017\" (next to P7011, the news-trustworthiness PAR). Independent IEEE primary confirmation of the PAR approval date, beyond the HL7-hosted copy of the PAR form."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "searls-intention-economy-essay-2006",
+   "status": "OK",
+   "issues": [
+    "Linux Journal quotes FOUND; raw page carries 'March 8, 2006'. Essay text says eTech's theme was 'The Attention Economy' and that Searls was 'sitting in an audience, writing this, right now'; the car-rental example (tell the market, sellers compete) is in the text.",
+    "O'Reilly ETech 2006 page (Wayback): web.archive.org now resets connections from this sandbox; the copy cached earlier today (a genuine Wayback capture, title 'O'Reilly Emerging Technology Conference - March 6-9, 2006 - San Diego, CA') was checked with the helper: FOUND; the same page says 'It's time to build The Attention Economy'.",
+    "Independent: Wikipedia (The Intention Economy; Doc Searls) says Searls coined the term in a March 2006 / 'March 8, 2006' Linux Journal article. Coordinates match the Manchester Grand Hyatt."
+   ],
+   "sourceFixes": [
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live web.archive.org unreachable from this sandbox (connection reset); checked against the helper's cached capture from earlier today: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "projectvrm-launched-berkman-2006",
+   "status": "OK",
+   "issues": [
+    "All three quotes FOUND. Berkman event page: Berkman Fellow 2006-2010, launched and led ProjectVRM; the same page says ProjectVRM was launched 'at the Berkman Center in 2006'. VRM principle on proffering terms and auditable records FOUND on the wiki main page. MyTerms FAQ dates ProjectVRM to 2006.",
+    "Independent: Wikipedia (Vendor relationship management) says the term VRM was first used in this sense on a 1 September 2006 Gillmor Gang podcast about the project Searls had recently started as a Berkman fellow, after which it became ProjectVRM — consistent with a 2006 launch; Wikipedia (Doc Searls) gives Berkman 2006-2010."
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "intention-economy-book-harvard-talk-2012",
+   "status": "FIXED",
+   "issues": [
+    "All quotes FOUND; event page reads 'Monday, June 11, 6:00 pm Austin East Classroom, Austin Hall, Harvard Law School'; 11 June 2012 was a Monday. Year independently confirmed by Ethan Zuckerman's liveblog dated June 11, 2012 (linked from the event page), added as a source.",
+    "significance says 'six years before the IEEE work began': the book appeared in 2012 and the IEEE work began in 2017 (Havens's approach and the P7012 PAR, requested 16 Oct / approved 6 Dec 2017) — five years, not six.",
+    "summary says 'the book was framed around a near future...'; the event page says Doc 'will share progress toward a near future where individuals can' control data, build loyalty programs and dictate terms — it frames the talk, not the book. Reworded."
+   ],
+   "fieldFixes": {
+    "summary": "Harvard Business Review Press published Doc Searls's The Intention Economy: When Customers Take Charge in 2012. At a Berkman Center talk on the book in Austin Hall on Monday 11 June 2012, Searls promised progress toward a near future in which individuals control the flow and use of personal data, build their own loyalty programmes and dictate their own terms of service.",
+    "significance": "Put person-set terms of service into a mainstream business book five years before the IEEE work on P7012 began in 2017."
+   },
+   "addSources": [
+    {
+     "institution": "Ethan Zuckerman (ethanzuckerman.com, blog)",
+     "title": "Doc Searls on “The Intention Economy”",
+     "date": "2012-06-11",
+     "url": "https://ethanzuckerman.com/2012/06/11/doc-searls-on-the-intention-economy/",
+     "quote": "Friend and fellow Berkmanite Doc Searls is presenting his new book, The Intention Economy , at Harvard this evening.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Liveblog linked from the Berkman event page ('Ethan Zuckerman liveblogged the talk'); post dated June 11, 2012. Zuckerman says he hosted the event."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "customer-commons-spun-out-2013",
+   "status": "FIXED",
+   "issues": [
+    "Quotes FOUND (archived About page checked via the helper's cache from earlier today because web.archive.org resets connections from this sandbox; the live customercommons.org/about-us/ page, fetched with curl, carries the same 501(c)3 spin-off sentence and the no-commercial-contributions mission).",
+    "The 2013 date rests only on the MyTerms FAQ and is contradicted by Customer Commons' own site: its footer reads 'Established in 2012, Customer Commons is a public-facing organization focused on emerging issues at the intersection of empowered individuals and the public good!' (seen in raw HTML of customercommons.org/about-us/ and /team/; not helper-checkable because the helper drops <footer>). ProjectVRM wrote on 18 Jan 2012 that Customer Commons was 'just in the planning stages now' with the aim of having it 'up and running' when The Intention Economy came out in May 2012; ProjectVRM's May 2012 IIW post lists a 'Customer Commons Salon'; the site logo was uploaded in 2012/04. The date should be shown as 2012-13 with the conflict stated, not as 2013.",
+    "'spun out ... as a 501(c)(3) nonprofit' is anachronistic as written: ProPublica Nonprofit Explorer (IRS data, EIN 45-4510869, San Rafael CA) gives 'Tax exemption issued: Nov. 2018'. Customer Commons is a 501(c)(3) now; when it first held that status is not established.",
+    "Board sentence is supported, but the FAQ also lists Nitin Badjatia on the original board; the record's wording implies these four are the board. Reworded."
+   ],
+   "fieldFixes": {
+    "displayDate": "2012–2013",
+    "year": 2012,
+    "summary": "Customer Commons was spun out of ProjectVRM as a nonprofit that takes no contributions from commercial entities; it is now a 501(c)(3) (the IRS exemption on record was issued in November 2018). The date is reported inconsistently: in January 2012 ProjectVRM called it 'just in the planning stages', aiming to have it running when The Intention Economy came out that May, and Customer Commons' own website says it was established in 2012, while the MyTerms FAQ dates the spin-off to 2013. MyTerms says it was created to host a roster of standard personal privacy terms, on the model Creative Commons set for copyright licences. Four of its board members — Mary Hodder, Iain Henderson, Joyce Searls and Doc Searls — were involved in IEEE 7012 from the start.",
+    "locationNote": "Customer Commons' own office is not given in the sources; mapped to its Berkman/ProjectVRM origin (approximate; its IRS address today is San Rafael, California). Founding date: customercommons.org was live by November 2011 (Internet Archive), ProjectVRM described it as in planning in January 2012, the site's footer says 'Established in 2012', and the MyTerms FAQ says 2013 — shown as 2012–2013."
+   },
+   "sourceFixes": [
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org unreachable from this sandbox (connection reset); helper check against today's cached capture: FOUND. Live page (curl) has the equivalent sentence: 'Customer Commons is a 501(c)3 nonprofit, formed as a spin-off of ProjectVRM at Harvard University's Berkman Klein Center for Internet and Society.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "SOPA and Customer Commons",
+     "date": "2012-01-18",
+     "url": "https://projectvrm.org/2012/01/18/sopa-and-customer-commons/",
+     "quote": "Customer Commons is just in the planning stages now. We want it up and running by the time The Intention Economy: When Customers Take Charge comes out in May.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Post dated January 18, 2012 (datetime 2012-01-18T14:10:48-05:00). Same post: 'Customer Commons is a companion organization to ProjectVRM, and in the long run will be its successor.' projectvrm.org 403s the helper's Chrome UA; the page was fetched with curl into the helper cache and --check returned FOUND."
+    },
+    {
+     "institution": "ProPublica Nonprofit Explorer (IRS Exempt Organizations data)",
+     "title": "Customer Commons — San Rafael, CA (EIN 45-4510869)",
+     "date": "2026",
+     "url": "https://projects.propublica.org/nonprofits/organizations/454510869",
+     "quote": "Tax exemption issued: Nov. 2018",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Also: 'EIN: 45-4510869' and designated a 501(c)(3). The API gives ruling_date 2018-11-01. Shows the 501(c)(3) exemption currently on record dates from 2018, not from the 2012/2013 spin-off."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "ieee-p7012-par-approved-2017",
+   "status": "OK",
+   "issues": [
+    "PAR form re-read in full: Submitter Email johnchavens@gmail.com; PAR Request Date 16-Oct-2017; PAR Approval Date 06-Dec-2017; WG chair 'Name: David Reed'; sponsor SSIT/SC (sponsor chair Victoria Hailey); 'Expected Date of submission of draft to the IEEE-SA for Initial Sponsor Ballot: 07/2019'; purpose on first/second parties. All quotes FOUND; MyTerms FAQ Havens quote FOUND.",
+    "Independent IEEE primary added: the SASB approvals page for 6 December 2017 lists 'P7012 (SSIT/SC) Standard for Machine Readable Personal Privacy Terms' under New PARs.",
+    "Minor: 'projected an initial sponsor ballot by July 2019' is the PAR's expected date for submitting the draft for initial sponsor ballot — acceptable paraphrase. Coordinates match IEEE's Hoes Lane operations center (approximate, as the locationNote says)."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE SA Standards Board",
+     "title": "IEEE SA Standards Board Approvals — 6 December 2017",
+     "date": "2017-12-06",
+     "url": "https://standards.ieee.org/about/sasb/sba/dec2017/",
+     "quote": "P7012 (SSIT/SC) Standard for Machine Readable Personal Privacy Terms",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Listed under the heading \"New PARs\" on the page dated \"6 December 2017\" (next to P7011, the news-trustworthiness PAR). Independent IEEE primary confirmation of the PAR approval date, beyond the HL7-hosted copy of the PAR form."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "linux-journal-nostalking-readers-terms-2018",
+   "status": "FIXED",
+   "issues": [
+    "Summary checks out against the article: 'first issue of the reborn Linux Journal ... our first issue to contain no advertising'; reverse terms so publishers agree to readers' terms; 'The first of those is #P2B1(beta), aka #NoStalking'; legal code 'being baked by ... the Cyberlaw Clinic at the Berkman Klein Center'; machine-readable code via IEEE 7012; proof-of-concept deadline 25 May 2018 (GDPR); JLINC Labs protocol. Page date 'March 14, 2018' is the web-posting date (the article ran in the March 2018 issue).",
+    "Archived Customer Commons P2B1 page: checked via today's cached capture (web.archive.org unreachable from this sandbox): FOUND.",
+    "significance overclaims. 'The first working prototype of a person-proffered privacy term' — the sources describe a beta term and a deadline for a proof of concept, not a working prototype, and the P2B1 page itself says it 'does not constitute a binding agreement'. 'The direct ancestor of MyTerms' SD-BASE' is not stated in any source read (P2B1 = don't track me off your site or let others track me; SD-BASE = service delivery only, no sharing with third parties). Rewritten to what the sources support: Customer Commons calls P2B1 'the first term of its kind'."
+   ],
+   "fieldFixes": {
+    "significance": "An early public commitment by a publisher to accept a reader-proffered privacy term: Customer Commons' P2B1 ('the first term of its kind') was a beta forerunner of the MyTerms agreements, with its machine readability explicitly left to IEEE P7012."
+   },
+   "sourceFixes": [
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org unreachable from this sandbox (connection reset); helper check against today's cached capture: FOUND. Same page: 'P2B1 means P erson 2 Business . The 1 means this is the first term of its kind, and that there will be more' and 'Machine-readability of P2B1 will be guided by P7012'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "Legal Code is being baked by Customer Commons' counsel: Harvard Law School students and teachers working for the Cyberlaw Clinic at the Berkman Klein Center.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the 'place' (Cyberlaw Clinic). Same page, also FOUND: 'This is the first issue of the reborn Linux Journal , and my first as Editor in Chief. This is also our first issue to contain no advertising.' and 'At Linux Journal , we have set a deadline for standing up a working proof of concept: 25 May 2018.'"
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "kantara-consent-receipt-v1-1-2018",
+   "status": "OK",
+   "issues": [
+    "Both quotes FOUND. PDF revision history: '1.1.0 2018-05-02 Candidate Kantara Initiative Technical Specification Recommendation' then '1.1.0 2018-05-25 Final Recommendation approved by Kantara All-Member Ballot'; document date 2018-02-20; contributors include Iain Henderson and Mary Hodder; editors Mark Lizar and David Turner.",
+    "'handed to the individual' is supported by the spec: 'a CR MUST be provided to the PII Principal in a human-readable format either on screen or delivered to the PII Principal, or both. A JSON encoded CR MAY also be delivered'.",
+    "Kantara's current US office is '585 Grove Street, Suite 145 PMB 990, Herndon, VA 20170' (kantarainitiative.org); coordinates approximate, and the locationNote already flags that the 2018 address may differ. The official kantarainitiative.org download URL linked from the wiki now 404s, so the surveillancetrust.org copy is the usable full text."
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "w3c-dpvcg-launched-2018",
+   "status": "OK",
+   "issues": [
+    "lists.w3.org 403s the helper's Chrome UA; re-fetched with a plain UA through identical extraction: both quotes FOUND. Message dated Thu, 24 May 2018 10:14:39 +0000 says the group 'has been launched' and 'shall officially start on 25th of May 2018'; tentative chairs Bert Bos (ERCIM W3C) and Axel Polleres (WU).",
+    "'machine-readable taxonomy' is a light gloss: the charter says 'a taxonomy of privacy terms' plus vocabularies for exchanging and representing personal data, purposes/processing, disclosure/consent 'interoperably' — acceptable.",
+    "significance (MyTerms agreements link to DPV) was unsourced on this record; added the MyTerms page that says so."
+   ],
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a plain UA (helper UA gets 403): FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a plain UA (helper UA gets 403): FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "In all cases, where useful, the MyTerms agreements include links to the Data Privacy Vocabulary .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the significance line: MyTerms agreements link their key words to DPV definitions."
+    }
+   ]
+  }
+ ]
+}

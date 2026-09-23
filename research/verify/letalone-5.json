@@ -1,0 +1,195 @@
+{
+ "slice": "letalone",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "stasi-records-kilometres",
+   "status": "OK",
+   "issues": [
+    "No error found. The German quote is verbatim (--check FOUND) on the Bundesarchiv page 'Aufgaben und Struktur'. The page says the Stasi Records Archive has been part of the Bundesarchiv since 17 June 2021, so 'held by the Federal Archives' is right. The value (more than 111 km), the unit (km of files, 'Aktenmaterial') and the notes (more than 1.7 million photos) all match.",
+    "Independent checks: the English version of the same page says 'more than 111 kilometres of files and more than 1.7 million photos' (FOUND, added as a source because the site is in English). The English Stasi Records Archive landing page says '111 kilometres of documents are in the Stasi Records Archives. A total of almost 50 kilometres of material is held in the Berlin archive.' (FOUND). en.wikipedia 'Stasi Records Agency' says 'The archive holds 111 kilometres (69 mi) of files in total.'",
+    "Caveat for the page text, not an error: the value is a floor ('more than 111'), so any chart label should read '111+ km' or 'more than 111 km'. The year 2026 is the access year; the Bundesarchiv page has no date."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND. Page h1 'Aufgaben und Struktur'. The page has no publication date, so 2026 stands as the access year."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Bundesarchiv – Stasi Records Archive",
+     "title": "Tasks and structure",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/en/stasi-records-archive/tasks-and-structure/",
+     "quote": "In addition to index cards, films, audio documents and microfiches, the archives contain more than 111 kilometres of files and more than 1.7 million photos.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Official English version of the German page already cited. The page has no date; 2026 is the access year."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "warren-brandeis-case-citations-1890-1960",
+   "status": "DOWNGRADED",
+   "issues": [
+    "The only source could not be re-fetched on 2026-09-23. web.archive.org reset every connection (fetch-text.py, including the exact snapshot and the id_ raw variant; the agent proxy logged ws_closed_mid_exchange), and WebFetch cannot reach web.archive.org. The live BrooklynWorks PDF returns HTTP 403 (fetch-text.py and WebFetch). SSRN abstract 1026680 returns 403, the old educationnewyork.com SSRN mirror returns 404, the Michigan State Law Review digital commons returns connection reset or 503, and OpenAlex, Semantic Scholar, scholar.archive.org and Google Scholar were rate-limited. So the verbatim quote and both counts (about 80 in 1890-1960, more than 400 in 1960-2007) are unverified. This matches the letalone-2 and letalone-3 verdicts, which set the same Gajda source to PENDING.",
+    "Bibliographic details are confirmed independently. The Harvard Law Review Forum (Colman, 'About Ned', vol. 129, January 2016) cites 'Amy Gajda, What If Samuel D. Warren Hadn't Married a Senator's Daughter?: Uncovering the Press Coverage that Led to \"The Right to Privacy,\" 2008 Mich. St. L. Rev. 35, 37' (FOUND). So the author, title, journal and 2008 date in the source object are right. The title omits the subtitle.",
+    "URL precision: the Wayback availability API gives the only relevant capture as 20240412210044 (12 April 2024). The 'web/2025/' URL is a redirect to it, so the source now uses the exact snapshot URL.",
+    "Framing caveat for the page: 'only about eighty' is Gajda's framing, and a count of cases that name the article understates its influence. Colman's footnote quotes Huw Beverley-Smith (2002), citing David Leebron (1991): 'Leebron has persuasively shown that the article's impact in academic circles, and in the courts, was immediate and significant' (FOUND). The notes now attribute the count and give this counterpoint, so readers do not take the value as a measure of neglect.",
+    "The value 80 stays in the record as a count Gajda reports, labelled approximate. Until the PDF can be re-read it should not be shown as verified."
+   ],
+   "fieldFixes": {
+    "notes": "Count reported by Amy Gajda (2008 Mich. St. L. Rev. 35) from a LexisNexis search: 'only about eighty' cases named Warren and Brandeis's article in 1890-1960, against 'more than 400' in 1960-2007. Not re-verified on 2026-09-23 because the source was unreachable. Cases that name the article are a narrow measure of influence: Huw Beverley-Smith (2002), citing David Leebron (1991), judged its impact 'in the courts' to have been 'immediate and significant'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "url": "https://web.archive.org/web/20240412210044/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
+     "title": "What If Samuel D. Warren Hadn't Married a Senator's Daughter?: Uncovering the Press Coverage That Led to \"The Right to Privacy\"",
+     "note": "Could not re-fetch on 2026-09-23. web.archive.org reset every connection (error 104 / ws_closed_mid_exchange), including this exact snapshot and its id_ variant. The live brooklynworks.brooklaw.edu PDF returns HTTP 403, SSRN 1026680 returns 403, the educationnewyork.com mirror returns 404, and digitalcommons.law.msu.edu returns reset or 503. The quote and both counts are unverified. The Wayback availability API confirms a 200 capture of this PDF dated 2024-04-12, which is the URL now given. Citation 2008 Mich. St. L. Rev. 35 confirmed via Harvard Law Review Forum vol. 129 (FOUND). Re-check the quote when web.archive.org is reachable."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Harvard Law Review Forum (Charles E. Colman)",
+     "title": "About Ned",
+     "date": "2016-01",
+     "url": "https://harvardlawreview.org/forum/vol-129/about-ned/",
+     "quote": "Leebron has persuasively shown that the article's impact in academic circles, and in the courts, was immediate and significant.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Context only: this source does NOT give the case count. The sentence is Colman quoting Huw Beverley-Smith, The Commercial Appropriation of Personality 150 n.29 (2002), which cites David W. Leebron, 41 Case W. Res. L. Rev. 769, 792-94 (1991). It supports the counterpoint in the notes. The same page cites Gajda's article as '2008 Mich. St. L. Rev. 35, 37' (FOUND), confirming the bibliographic details. Vol. 129, issue 3, January 2016."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "stasi-full-time-staff",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes are verbatim (FOUND), and all three values match their sources: 2,700 in 1950 (Themenmappe 1), 'rund 16.000' in 1956 and 91,015 at 31.10.1989 (MfS-Lexikon). The Themenmappe imprint 'Berlin 2022' confirms the date. The Lexikon entry is signed by Jens Gieseke.",
+    "Precision issue on the 1950 point. It is marked estimate: false, but 2,700 is a rounded year-end figure. German Wikipedia, citing Gieseke in Dümmel/Piepenschneider (eds.), Was war die Stasi? (KAS 2014), p. 68, says: 'Bis Ende des Jahres beschäftigte das neu gegründete Ministerium bereits rund 2700 Mitarbeiter' (FOUND). The MfS was founded on 8 February 1950 (law in force 21 February), so the 1950 point is an end-of-year figure of 'about' 2,700, not a founding-day strength. The point is now marked as an estimate with a note.",
+    "Clarity for readers: 'hauptamtliche Mitarbeiter' is broader than career officers. The same Themenmappe gives the 1989 make-up as about 79% career officers and NCOs, 14% fixed-term NCOs and soldiers, 2.5% officers on special assignment (OibE), 2.3% full-time unofficial collaborators and 0.2% civilian staff (FOUND). The Lexikon says the fixed-term soldiers served mainly in the Feliks Dzierzynski guard regiment. This is added to the notes so the 91,015 is not read as 91,000 spies.",
+    "No other problems. The Lexikon's 'Am stärksten wuchs der Stasi-Apparat von 1968 bis 1982' (FOUND) confirms that the three points must not be joined by a straight line as if growth were linear; the existing notes already warn that intermediate years were not read."
+   ],
+   "fieldFixes": {
+    "notes": "Three verified points only; intermediate years exist in Gieseke (2000) but were not read. Growth was not linear: the MfS-Lexikon says the apparatus grew fastest from 1968 to 1982, so do not interpolate. 1950 is an approximate year-end figure (the ministry was founded on 8 February 1950); 1956 is 'rund' (about) 16,000; 1989 is the exact count at 31 October 1989. 'Full-time staff' includes, in 1989, about 79% career officers and NCOs, 14% fixed-term NCOs and soldiers (chiefly the Feliks Dzierzynski guard regiment), 2.5% officers on special assignment (OibE), 2.3% full-time unofficial collaborators and 0.2% civilian employees (Bundesarchiv Themenmappe 1).",
+    "points": [
+     {
+      "year": 1950,
+      "value": 2700,
+      "source": "Bundesarchiv Themenmappe 1 (2022)",
+      "estimate": true,
+      "note": "About 2,700 by the end of the founding year 1950 (round figure)"
+     },
+     {
+      "year": 1956,
+      "value": 16000,
+      "source": "Bundesarchiv MfS-Lexikon, Hauptamtlicher Mitarbeiter",
+      "estimate": true,
+      "note": "'rund' (about) 16,000"
+     },
+     {
+      "year": 1989,
+      "value": 91015,
+      "source": "Bundesarchiv MfS-Lexikon, Hauptamtlicher Mitarbeiter",
+      "estimate": false,
+      "note": "Reference date 31 October 1989"
+     }
+    ]
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND (the PDF's line-break hyphens are removed by the checker). Imprint 'Berlin 2022', publisher 'Bundesarchiv, Stasi-Unterlagen-Archiv, Bildungsteam', cover title 'Hauptamtliche Mitarbeiter: Offiziere und Unteroffiziere der Stasi', Themenmappe 1. Also FOUND on the same page: 'Der Frauenanteil betrug 1989 16 Prozent.' and the 79% / 14% / 2.5% / 2.3% / 0.2% category breakdown now used in the notes."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Bundesarchiv – Stasi-Unterlagen-Archiv (MfS-Lexikon, entry by Jens Gieseke)",
+     "note": "Re-fetched 2026-09-23: quote FOUND. Also FOUND: 'Der hauptamtliche Apparat des Ministeriums für Staatssicherheit hatte 1989 einen Umfang von 91.015 Mitarbeitern (Stichdatum: 31.10.1989)' and 'Am stärksten wuchs der Stasi -Apparat von 1968 bis 1982.' The entry is signed Jens Gieseke and cites his 2000 monograph. The page has no date; 2026 is the access year."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia (German)",
+     "title": "Ministerium für Staatssicherheit",
+     "date": "accessed 2026-09-23",
+     "url": "https://de.wikipedia.org/wiki/Ministerium_f%C3%BCr_Staatssicherheit",
+     "quote": "Bis Ende des Jahres beschäftigte das neu gegründete Ministerium bereits rund 2700 Mitarbeiter.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. A secondary source, used only to show that the 1950 figure is an approximate year-end count. The same passage gives the founding law (Volkskammer, 8 February 1950; in force 21 February 1950) and 'zählte im Jahr 1956 bereits rund 16.000 Mitarbeiter', citing Jens Gieseke, 'Hauptamtliche Mitarbeiter', in Dümmel/Piepenschneider (eds.), Was war die Stasi? (Konrad-Adenauer-Stiftung, 5th ed. 2014), p. 68. The KAS PDF returned 403, so Gieseke's page was not read directly."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "hollerith-1888-trial-hours",
+   "status": "FIXED",
+   "issues": [
+    "Wrong year. The trial was in 1889, not 1888. The Census Bureau's own history, Leon E. Truesdell's The Development of Punch Card Tabulation in the Bureau of the Census 1890-1940 (GPO 1965), pp. 40-42, has a section headed 'The 1889 test'. It says that 'In compliance with a suggestion made by the Secretary of the Interior in 1889, the Superintendent of the Census, Robert P. Porter, appointed a committee', and that 'The report of the committee, dated November 30, 1889, describes the test' (both FOUND). Porter was superintendent only from 1889. The '1888' on census.gov (and on IBM's heritage page, which copies census.gov) is an error; the letalone-1 verdict on hollerith-punch-cards-1890-census-1890 found the same.",
+    "Wrong value for the second contestant. census.gov gives 100.5 hours, but Truesdell's table of the test records gives 110 h 56 min. The OCR row reads '110 [OCR: no] 56 | 44 41 | 155 37', and the row total proves it: 110:56 + 44:41 = 155:37, while 100:56 + 44:41 would be 145:37. The other rows also add up: Hollerith 72:27 + 5:28 = 77:55, and 144:25 + 55:22 = 199:47. The table check is FOUND. So the values should be 144.4 (144 h 25 min), 110.9 (110 h 56 min) and 72.5 (72 h 27 min). census.gov's 144.5 and 72.5 are roundings; its 100.5 is not.",
+    "Wrong pairing in the notes. 'Sorting times were 44.5, 55.5 and 5.5 hours respectively' pairs 44.5 with the 144.5-hour contestant. Truesdell's rows pair 55 h 22 min with the 144 h 25 min system and 44 h 41 min with the 110 h 56 min system. Hollerith's tabulation time was 5 h 28 min, and Truesdell notes the test table was 'barely enough for one run of the cards'. Also, 'sorting' is not the source's term: Truesdell has 'To tabulate' and census.gov 'prepare data for tabulation'.",
+    "Missing context, now added: the rivals were William C. Hunt's card or slip system and Charles F. Pidgin's chip system (both FOUND in Truesdell). The OCR'd table has lost its row labels, so the page must not say which rival took 144 or 110 hours. The test used four enumeration districts of St. Louis, 'selected from the re-enumeration of 1880', with 10,491 inhabitants (FOUND). The geography and label are updated.",
+    "The source's date is wrong: the census.gov page footer says 'Last Revised - August 14, 2024', not 2026.",
+    "The id keeps '1888' for referential stability, but the label, notes and point years must say 1889. Cross-record flag: the event hollerith-punch-cards-1890-census-1890 (and the letalone-1 fixed summary) still says the rivals needed '144.5 and 100.5 hours'. The 100.5 should become about 111 hours (110 h 56 min) there too."
+   ],
+   "fieldFixes": {
+    "label": "1889 Census Office test: hours to transcribe 1880 St. Louis census returns onto cards or chips, by system",
+    "geography": "Four enumeration districts of St. Louis, Missouri (10,491 inhabitants; returns from the 1880 re-enumeration)",
+    "notes": "Not a time series: all three points are the same test, whose committee report is dated 30 November 1889 (Truesdell 1965, pp. 40-42). Census Bureau and IBM web pages date it 1888 and give the middle rival as 100.5 hours; Truesdell's table (110 h 56 min + 44 h 41 min = 155 h 37 min total) shows 110 h 56 min. Value is transcription time (schedules to punched cards, written cards or chips). Tabulation times were 55 h 22 min (for the 144 h 25 min system), 44 h 41 min (for the 110 h 56 min system) and 5 h 28 min (Hollerith). The rivals were William C. Hunt's slip system and Charles F. Pidgin's chip system; the OCR'd table does not show which row is which.",
+    "points": [
+     {
+      "year": 1889,
+      "value": 144.4,
+      "source": "Truesdell, Development of Punch Card Tabulation (U.S. Bureau of the Census, 1965), p. 42",
+      "estimate": false,
+      "note": "Rival system: transcription 144 h 25 min; tabulation 55 h 22 min; total 199 h 47 min (census.gov rounds to 144.5)"
+     },
+     {
+      "year": 1889,
+      "value": 110.9,
+      "source": "Truesdell, Development of Punch Card Tabulation (U.S. Bureau of the Census, 1965), p. 42",
+      "estimate": false,
+      "note": "Rival system: transcription 110 h 56 min; tabulation 44 h 41 min; total 155 h 37 min (census.gov's 100.5 is inconsistent with this row total)"
+     },
+     {
+      "year": 1889,
+      "value": 72.5,
+      "source": "Truesdell (1965), p. 42; U.S. Census Bureau, The Hollerith Machine",
+      "estimate": false,
+      "note": "Herman Hollerith: transcription (punching) 72 h 27 min; tabulation 5 h 28 min; total 77 h 55 min"
+     }
+    ]
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2024-08-14",
+     "note": "Re-fetched 2026-09-23: quote FOUND, and 'Two contestants required 44.5 hours and 55.5 hours. Hollerith astounded Census Bureau officials by completing the task in just 5.5 hours!' FOUND. Page footer: 'Last Revised - August 14, 2024'. CAUTION: the page's 'competition in 1888' (FOUND) and its '100.5 hours' are contradicted by the Bureau's own 1965 history (added source), which dates the test to 1889 and records 110 h 56 min. This page is used only for Hollerith's 72.5 hours and the rounded 144.5; the corrected points rely on Truesdell."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Bureau of the Census (Leon E. Truesdell), via Internet Archive",
+     "title": "The Development of Punch Card Tabulation in the Bureau of the Census, 1890–1940",
+     "date": "1965",
+     "url": "https://archive.org/download/bub_gb_MGZqAAAAMAAJ/bub_gb_MGZqAAAAMAAJ_djvu.txt",
+     "quote": "The report of the committee, dated November 30, 1889, describes the test as follows: To test these various methods, four enumeration districts in the city of St. Louis, selected from the re-enumeration of 1880, were selected. These districts contained 10,491 inhabitants.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND for the full quote. OCR text of the Census Bureau's 1965 history (Washington: GPO), section 'The 1889 test', pp. 40-42. The results table is FOUND in the OCR layer as '72 27 5 28 77 55 no 56 44 41 155 37 144 25 55 22 199 47' (hours and minutes to transcribe, to tabulate and in total; 'no' is OCR for '110', which the row total proves). Also FOUND: 'the time recorded for the tabulation in the test, 5 hours and 28 minutes'; 'The two methods at first considered were the Hollerith system and the chip system, proposed by Charles F. Pidgin.'; and Hunt resigned from the committee 'in order to present, independently, a card or slip system'. Scan: https://archive.org/details/bub_gb_MGZqAAAAMAAJ."
+    }
+   ]
+  }
+ ]
+}

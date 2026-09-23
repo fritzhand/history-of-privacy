@@ -299,6 +299,12 @@ function renderSourceLine(elId, source, prefix = 'Source: ') {
    from one archive (thirty Government of India statistics scans, say) is one
    entry with a count, not thirty links; each point's own tooltip still names
    its exact volume. */
+/* A publisher named with its issue ("... Report no. 169, pp. 1, 3-5 (...)")
+   is one institution for the source line; each point keeps its own. */
+function instKey(inst) {
+  return String(inst || '').replace(/\s*\(.*$/, '').replace(/,?\s+(no\.|vol\.|pp\.|issue)\s.*$/i, '').trim();
+}
+
 function seriesSourceLine(elId, rows, prefix = 'Sources: ') {
   const el = document.getElementById(elId);
   if (!el) return;
@@ -306,14 +312,14 @@ function seriesSourceLine(elId, rows, prefix = 'Sources: ') {
   (rows || []).forEach(r => {
     [].concat(r.source || []).forEach(s => {
       if (!s || !s.url) return;
-      const k = (s.institution || s.url) + '|' + s.verificationStatus;
+      const k = instKey(s.institution || s.url) + '|' + s.verificationStatus;
       const e = byInst.get(k) || { s, urls: new Set() };
       e.urls.add(s.url);
       byInst.set(k, e);
     });
   });
   el.innerHTML = byInst.size ? prefix + [...byInst.values()].map(({ s, urls }) =>
-    sourceHtml({ ...s, date: urls.size > 1 ? `${urls.size} documents` : s.date })).join(' · ') : '';
+    sourceHtml({ ...s, institution: urls.size > 1 ? instKey(s.institution) : s.institution, date: urls.size > 1 ? `${urls.size} documents` : s.date })).join(' · ') : '';
 }
 
 function series(id) {
@@ -556,6 +562,7 @@ function buildScrollSteps() {
       <h3 class="step-headline">${esc(step.headline)}</h3>
       ${ev.place ? `<p class="step-place">${esc(ev.place)}</p>` : ''}
       <p class="step-narrative">${esc(step.narrative)}</p>
+      ${step.why ? `<p class="step-why"><span>Why it matters</span> ${esc(step.why)}</p>` : ''}
       ${stepMediaHtml(step)}
       ${chips ? `<div class="step-metrics">${chips}</div>` : ''}
       <p class="step-source">${sourceHtml(ev.source)}</p>`;
@@ -1416,11 +1423,11 @@ function buildConceptCards() {
 const FLIP_ICONS = {
   policy: `<svg class="flip-svg" viewBox="0 0 120 64" aria-hidden="true">
       <rect class="f-org" x="4" y="16" width="20" height="34" rx="1.5"/>
-      <rect class="f-doc" x="34" y="4" width="46" height="56" rx="2"/>
-      <path class="f-line" d="M41 13 H73 M41 19 H73 M41 25 H73 M41 31 H73 M41 37 H66"/>
-      <rect class="f-doc" x="41" y="45" width="8" height="8" rx="1"/>
-      <path class="f-sig" style="stroke:var(--who-org)" d="M42.6 49 L44.8 51.2 L48 46.6"/>
-      <text x="53" y="52">I agree</text>
+      <rect class="f-doc" x="30" y="4" width="56" height="56" rx="2"/>
+      <path class="f-line" d="M37 13 H79 M37 19 H79 M37 25 H79 M37 31 H79 M37 37 H70"/>
+      <rect class="f-doc" x="37" y="45" width="8" height="8" rx="1"/>
+      <path class="f-sig" style="stroke:var(--who-org)" d="M38.6 49 L40.8 51.2 L44 46.6"/>
+      <text x="49" y="52">I agree</text>
       <circle class="f-actor" cx="102" cy="22" r="6"/><path class="f-actor" d="M92 50 C 92 36, 112 36, 112 50 Z"/></svg>`,
   signal: `<svg class="flip-svg" viewBox="0 0 120 64" aria-hidden="true">
       <circle class="f-actor" cx="14" cy="22" r="6"/><path class="f-actor" d="M4 50 C 4 36, 24 36, 24 50 Z"/>
@@ -1538,6 +1545,17 @@ function buildStandard() {
   if (ad && st.agreementsDesc) ad.textContent = st.agreementsDesc;
   const coda = document.getElementById('myterms-coda');
   if (coda) coda.innerHTML = st.coda ? esc(st.coda) + (st.codaSource ? ' ' + sourceHtml(st.codaSource) : '') : '';
+}
+
+/* Primary-source pull quotes between sections, declared in the data layer
+   (D().pullQuotes[key]) and dropped where a section has none. */
+function buildPullQuotes() {
+  const pq = D().pullQuotes || {};
+  document.querySelectorAll('blockquote[data-pq]').forEach(el => {
+    const q = pq[el.dataset.pq];
+    if (!q) { el.remove(); return; }
+    el.innerHTML = `<p>&ldquo;${esc(q.text)}&rdquo;</p><cite>${esc(q.cite)} · ${sourceHtml(q.source, { badge: false })}</cite>`;
+  });
 }
 
 function quoteLine(src) {
@@ -1812,9 +1830,10 @@ function buildPeople() {
           <div class="person-body">
             ${q}
             <p class="person-text">${esc(p.contribution || '')}</p>
-            ${p.influence ? `<p class="person-text">${esc(p.influence)}</p>` : ''}
             ${kw}
-            ${p.thread ? `<p class="person-thread">${esc(p.thread)}</p>` : ''}
+            ${p.influence || p.thread ? `<details class="person-more"><summary>Why it mattered</summary>
+              ${p.influence ? `<p class="person-text">${esc(p.influence)}</p>` : ''}
+              ${p.thread ? `<p class="person-thread">${esc(p.thread)}</p>` : ''}</details>` : ''}
             ${a ? `<p class="person-src">Portrait: ${esc(a.creditLine || '')}</p>` : ''}
             <p class="person-src">${sourceHtml(p.source)}</p>
           </div>
@@ -1846,7 +1865,7 @@ function buildMediaGrid() {
   const filter = document.getElementById('archive-filter');
   const render = era => {
     grid.innerHTML = '';
-    assets.filter(a => !era || a.era === era).forEach(a => {
+    assets.filter(a => a.archive !== false && (!era || a.era === era)).forEach(a => {
       const eraColor = PC[a.era];
       const card = document.createElement('div');
       card.className = 'photo-card';
@@ -1870,9 +1889,10 @@ function buildMediaGrid() {
     });
   };
   if (filter) {
-    const present = ERAS.filter(e => assets.some(a => a.era === e.slug));
-    filter.innerHTML = `<button type="button" class="archive-chip is-on" data-era="">All ${assets.length}</button>` +
-      present.map(e => `<button type="button" class="archive-chip" data-era="${esc(e.slug)}" style="--chip:${PC[e.slug]}">${esc(e.label)} · ${assets.filter(a => a.era === e.slug).length}</button>`).join('');
+    const shown = assets.filter(a => a.archive !== false);
+    const present = ERAS.filter(e => shown.some(a => a.era === e.slug));
+    filter.innerHTML = `<button type="button" class="archive-chip is-on" data-era="">All ${shown.length}</button>` +
+      present.map(e => `<button type="button" class="archive-chip" data-era="${esc(e.slug)}" style="--chip:${PC[e.slug]}">${esc(e.label)} · ${shown.filter(a => a.era === e.slug).length}</button>`).join('');
     filter.onclick = ev => {
       const b = ev.target.closest('.archive-chip');
       if (!b) return;
@@ -2064,6 +2084,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider();
 
   buildEssay();
+  buildPullQuotes();
   buildConceptCards();
   buildFlipSteps();
   buildFipps();

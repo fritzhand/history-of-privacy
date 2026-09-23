@@ -1,0 +1,244 @@
+{
+  "slice": "myterms",
+  "chunk": 3,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "myterms-public-launch-london-2026",
+      "status": "FIXED",
+      "issues": [
+        "All 3 sources re-fetched on 2026-09-23 with a fresh cache (doc.searls.com and projectvrm.org return HTTP 403 to the helper's Chrome user agent; fetched with a plain 'Mozilla/5.0' UA through the same extraction code). All 3 quotes --check FOUND. Searls post article:published_time 2026-01-29; InfoQ dated Feb 02, 2026, by Sergio De Simone; the InfoQ quote is attributed to Jamie Smith ('MyTerms is even more relevant in our age, Smith says...').",
+        "Speaker name misspelled: the summary has 'Dan Leninger', copied from InfoQ's typo. The Eventbrite listing for the London event lists the performer as 'Dan Leininger, Consumer Reports', and Consumer Reports' own Innovation Lab post names 'Dan Leininger (Consumer Reports)'. Corrected to Leininger.",
+        "The significance overstates the framing. The event was titled 'The Only Way to Get Real Privacy Online: Introducing MyTerms' (Eventbrite, YouTube). InfoQ reports Searls presenting it as bringing real-world privacy norms online and as something that 'obsolesces cookie notice[s]'. Two of the four speakers InfoQ reports (Jamie Smith and Dan Leininger) talked about agents or agentic purchasing, and John Abbott talked about children and age verification. The debut was not 'framed around agentic commerce'. Reworded.",
+        "Independent confirmation: the Eventbrite JSON-LD gives startDate 2026-01-28T15:30 (London), location 'Imperial Business School', 'Exhibition Road, Lecture Theatre LGR on the Lower Ground Floor, London, SW7 2AZ'. The YouTube recording is titled 'MyTerms Announcement and Launch on Data Privacy Day Jan 28 2026'. The MyData post of 20 Jan 2026 says 'London and online on Wednesday, 28th January 2026 – Data Privacy Day'. The coordinates match OSM's geocode for Imperial College Business School (51.4993, -0.1747).",
+        "John Abbott's Yoti role (chief commercial officer, per InfoQ) matches Yoti's author page. Eventbrite's performer list does not include Abbott, but InfoQ reports his remarks, so the summary's hedge 'reported by InfoQ' is appropriate."
+      ],
+      "fieldFixes": {
+        "summary": "Customer Commons and MyData Global launched MyTerms on 28 January 2026 (Data Privacy Day) at an event at Imperial College Business School and online, titled 'The Only Way to Get Real Privacy Online'. Speakers reported by InfoQ included Doc Searls, Jamie Smith of Customer Futures, who called MyTerms a likely cornerstone for trusting AI agents as a customer channel, Dan Leininger of Consumer Reports and John Abbott of Yoti.",
+        "significance": "At its public debut, speakers tied the standard to agentic commerce (AI agents acting for customers) as well as to replacing cookie notices.",
+        "locationNote": "Imperial College Business School, Exhibition Road, South Kensington. Eventbrite gives Lecture Theatre LGR, Lower Ground Floor, SW7 2AZ, 15:30-17:00 London time, plus a Zoom webinar. Coordinates match the OpenStreetMap geocode of the building. MyData's 20 Jan 2026 post also dates the launch to 28 Jan 2026, 'Data Privacy Day'."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (plain UA; site 403s the helper's UA). --check FOUND. article:published_time 2026-01-29T22:40Z. 'event' links to the Eventbrite listing 'the-only-way-to-get-real-privacy-online-introducing-myterms'." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (plain UA). --check FOUND. The 'this event in the Imperial Business School' link goes to Eventbrite event 1980096117791." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23. --check FOUND. InfoQ spells the Consumer Reports speaker 'Dan Leninger', a typo for Leininger." }
+      ],
+      "addSources": [
+        {
+          "institution": "Eventbrite (event listing by the organiser 'MyTerms')",
+          "title": "The Only Way to Get Real Privacy Online: Introducing MyTerms",
+          "date": "2026-01-28",
+          "url": "https://www.eventbrite.com/e/announcing-ieee-p7012-welcome-to-myterms-tickets-1980096117791",
+          "quote": "The Only Way to Get Real Privacy Online: Introducing MyTerms",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND (page heading). Page JSON-LD, read in raw HTML because the helper does not extract it: startDate 2026-01-28T15:30:00Z, endDate 17:00Z; location 'Imperial Business School', 'Exhibition Road, Lecture Theatre LGR on the Lower Ground Floor, London, SW7 2AZ'. Performers: John C. Havens (IEEE), Doc Searls (MyTerms Working Group Chair), Kari McMullen, John Bruce (Inrupt), Christopher Wilson (MyData Global), 'Dan Leininger, Consumer Reports', Tristra Yeager, Jamie Smith (Customer Futures Ltd)."
+        },
+        {
+          "institution": "MyTerms (YouTube channel @MyTermsTV)",
+          "title": "MyTerms Announcement and Launch on Data Privacy Day Jan 28 2026",
+          "date": "2026-01-29",
+          "url": "https://www.youtube.com/watch?v=Nphd8l7KLek",
+          "quote": "MyTerms Announcement and Launch on Data Privacy Day Jan 28 2026",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND (video title; also confirmed by YouTube oEmbed). uploadDate 2026-01-29. Description begins 'The Only Way to Get Real Privacy Online: IEEE 7012-2025 'MyTerms''. Searls's 'Now We Begin' links to this video as 'Yesterday's event in London and online'."
+        },
+        {
+          "institution": "Consumer Reports Innovation Lab",
+          "title": "Encoding Loyalty Principles into AI Agents' Behavior",
+          "date": "2025-12-08",
+          "url": "https://innovation.consumerreports.org/encoding-loyalty-principles-into-ai-agents-behavior/",
+          "quote": "The research team includes Dan Leininger (Consumer Reports)",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. Cited only to establish the spelling 'Leininger' (InfoQ misspells it 'Leninger')."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "ieee-industry-connections-myterms-2026",
+      "status": "FIXED",
+      "issues": [
+        "Sources 0 and 1 were re-fetched 2026-09-23 and --check FOUND. The page JSON-LD has datePublished 2026-04-08T17:21:58Z and dateModified 2026-06-10, as the note says. The chair (Justin Byrd) and vice chair (Kari McMullen) are on the page, and the goals sentence matches the summary.",
+        "The displayed date is only a plan. 1 June 2026 appears only as a future-tense banner on myterms.info ('kicks off the 1st of June 2026... Submit an interest form'), and no source read shows a kick-off on that day. The documented date is the approval: the ICAID linked from the IEEE page ('View the ICAID (PDF)') is filed as 'IC26-005-01 Individual Defined Privacy Terms Roadmap ICAID Approved 260408.pdf', which matches the page's datePublished of 8 Apr 2026. displayDate changed to 8 April 2026. The summary keeps 1 June as the announced kick-off.",
+        "Significance conflation: 'certification and a trustmark'. The IEEE activity page lists training, road maps, certification programmes and a white paper, and never mentions a trust mark. The trust mark is a separate MyTerms Alliance / Customer Commons plan (MyData 20 Jan 2026 post, ProjectVRM post, MyTerms FAQ). 'Moves the standard...' also states an aim as a result. Reworded.",
+        "Source 2 (myterms.info banner): the live page re-fetched 2026-09-23 contains the quote verbatim as a visible button label linking to the IEEE activity page: <span class=\"button_label\">1 JUNE: The IEEE Industry Connections Effort kicks off the 1st of June 2026. All welcome! Submit an interest form to participate --></span>. The helper extracts only p/li/h-type blocks, so --check returns NOT-FOUND, but the text is visible on the page. Marked CONFIRMED on the raw-HTML reading. Page dateModified is 2026-05-28.",
+        "Coordinates 40.5563, -74.464 are about 1.7 km from IEEE's offices at 445 Hoes Lane, Piscataway. The OpenStreetMap geocode for 'IEEE, 445 Hoes Lane' is 40.5417, -74.4702. Corrected."
+      ],
+      "fieldFixes": {
+        "displayDate": "8 April 2026",
+        "summary": "On 8 April 2026 IEEE SA approved an Industry Connections activity, 'Individual Defined Privacy Terms Roadmap' (ICAID IC26-005-01; its page went up the same day). The activity is to help Customer Commons, MyData Global and the MyTerms Alliance move IEEE 7012 from standard to real-world adoption by piloting training, developing road maps, identifying certification programmes and writing an industry white paper. Justin Byrd chairs it and Kari McMullen is vice chair. myterms.info announced its kick-off for 1 June 2026.",
+        "significance": "Aims to move the standard from text to adoption through training, road maps and certification, the adoption step that P3P and Do Not Track never completed. The MyTerms Alliance separately plans a trust mark.",
+        "lat": 40.5417,
+        "lng": -74.4702,
+        "locationNote": "Industry Connections activities are run by IEEE SA. Mapped to IEEE's offices at 445 Hoes Lane, Piscataway, NJ (OpenStreetMap geocode). Meetings are presumably online. The date shown is the ICAID approval (file name 'Approved 260408', matching the activity page's datePublished). The 1 June 2026 kick-off is attested only as an announcement on myterms.info.",
+        "sources[2].note": "Home-page button label, verified verbatim in the live page's HTML on 2026-09-23 (page dateModified 2026-05-28). The helper extracts only paragraph/list/heading blocks, not <a><span> button labels, so --check returns NOT-FOUND. Future tense: an announcement of the kick-off, not evidence that it took place."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND; JSON-LD datePublished 2026-04-08T17:21:58Z, dateModified 2026-06-10T17:23:41Z." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "date": "2026-05-28", "note": "Verbatim in the raw HTML of the live page (button label); not extractable by the helper." }
+      ],
+      "addSources": [
+        {
+          "institution": "IEEE Standards Association (IEEE SA document share, ieee-sa.imeetcentral.com)",
+          "title": "IC26-005-01 Individual Defined Privacy Terms Roadmap ICAID Approved 260408.pdf",
+          "date": "2026-04-08",
+          "url": "https://ieee-sa.imeetcentral.com/p/eAAAAAAATSucAAAAAAjv2WY",
+          "quote": "IC26-005-01 Individual Defined Privacy Terms Roadmap ICAID Approved 260408.pdf",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "REGISTRATION",
+          "note": "--check FOUND (the share page's title). Linked from the IEEE activity page as 'View the ICAID (PDF)'. Only the file name can be read without logging in; the PDF body was not read. '260408' (2026-04-08) matches the activity page's datePublished."
+        },
+        {
+          "institution": "IEEE Standards Association",
+          "title": "Individual Defined Privacy Terms Roadmap (Industry Connections activity)",
+          "date": "2026-04-08",
+          "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+          "quote": "IC Vice Chair: Kari McMullen",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. Supports the vice-chair claim in the summary."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "cpdp-myterms-in-practice-workshop-2026",
+      "status": "FIXED",
+      "issues": [
+        "Both sources were re-fetched 2026-09-23 and --check FOUND. The workshop page shows 'Friday 22.05 — 14:15 - 15:30', Music Room, and hosts Iain Henderson (MyTerms Alliance) and Eric Pol (MyData Global). 22 May 2026 is a Friday. The MyTerms news page confirms the workshop took place, with slides, on 22 May 2026 (the page's 'CDPD' typo is kept verbatim).",
+        "Independent check: CPDP's FAQ says 'CPDP 2026: 19-22 May 2026, Brussels' and that 'The conference will be held at Maison de la Poste Rue Picard 7, 1000 Bruxelles' (Tour & Taxis site). The CPDP 2026 recap page also shows 19.05.2026 - 22.05.2026. The record's coordinates (50.8467, 4.3525) are Grand-Place, about 2 km from the venue. OSM geocodes Maison de la Poste at 50.8639, 4.3457. The venue that the notes say was not confirmed is now confirmed. Place and coordinates corrected.",
+        "Significance overstates: 'Europe's main data-protection policy forum' (CPDP calls itself 'one of the world's leading conferences on privacy, data protection, and digital rights'). The clause 'where regulators weigh the failings of consent banners' is not in any source. The workshop description, in raw HTML because the helper does not extract its div, says the organisers aimed to reach deployers and 'privacy and data protection regulators'. Reworded to match.",
+        "The CPDP workshop page's HTML <title> now reads 'CPDP Conference 2027' because the site has rolled over to the next edition. The workshop content and 'Sponsors 2026' block are unchanged."
+      ],
+      "fieldFixes": {
+        "place": "Computers, Privacy and Data Protection (CPDP) conference, Maison de la Poste (Tour & Taxis), Brussels",
+        "lat": 50.8639,
+        "lng": 4.3457,
+        "significance": "Brought the standard to one of Europe's leading privacy and data-protection conferences, where its authors sought feedback from would-be deployers and from privacy and data-protection regulators.",
+        "locationNote": "CPDP 2026 (19-22 May 2026) was held at Maison de la Poste, Rue Picard 7, on the Tour & Taxis site in Brussels, per the CPDP FAQ. Coordinates are the OpenStreetMap geocode of Maison de la Poste. The workshop was in the 'Music Room'."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. Description (raw HTML, not helper-extractable) names regulators and deployers as target audiences." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." }
+      ],
+      "addSources": [
+        {
+          "institution": "CPDP Conferences",
+          "title": "FAQ",
+          "date": "2026",
+          "url": "https://www.cpdpconferences.org/faq-2",
+          "quote": "The conference will be held at Maison de la Poste Rue Picard 7, 1000 Bruxelles.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The same page says 'CPDP 2026: 19-22 May 2026, Brussels' (--check FOUND)."
+        }
+      ]
+    },
+    {
+      "kind": "agreement",
+      "id": "SD-BASE",
+      "status": "FIXED",
+      "issues": [
+        "All 3 sources re-fetched 2026-09-23 and --check FOUND, as is the record quote. myterms.info/agreements/ carries the same text.",
+        "The plainSummary goes beyond the sources in two places. (1) 'It is the agreement a person's agent proposes first': the sources say it is the 'base/ default' agreement for anyone proposing MyTerms (MyData: 'The default agreement...'). Nothing says it is proposed first, and the FAQ describes choosing SD-BASE and offering alternates. (2) 'no tracking beyond the service': the MyTerms FAQ's own gloss is a shop's tacit deal, where the site will 'provide their services and nothing else, and may observe you while you are there, and not share information about you to other parties'. So first-party observation is allowed and only sharing with others is ruled out. Rewritten to match, with the FAQ added as a source.",
+        "Caution for the editorial layer (no field change): the five agreements are Customer Commons / MyTerms Alliance launch-phase texts, not normative content of IEEE 7012. The FAQ says 'The names are chosen by Customer Commons'. Searls says the agreement is 'one of a short list posted at the website of a neutral nonprofit'. ProjectVRM calls them 'five draft agreements'. The FAQ says 5 at launch and '8 more in the pipeline'."
+      ],
+      "fieldFixes": {
+        "plainSummary": "The default: the site or service provides what the person came for and nothing else. Like the tacit deal in a shop, it may observe the person while they are there but does not share information about them with other parties. It is the base/default agreement for anyone whose agent proposes MyTerms to an organisation."
+      },
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (plain UA); --check FOUND." },
+        { "index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." }
+      ],
+      "addSources": [
+        {
+          "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+          "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+          "date": "2026",
+          "url": "https://myterms.info/faqs/",
+          "quote": "Think of SD-BASE as the same kind of tacit agreement you have in a retail store when you walk in: that they will provide their services and nothing else, and may observe you while you are there, and not share information about you to other parties.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The FAQ also glosses the name: 'That one says \"Service Delivery\" and \"Basic.\"'"
+        }
+      ]
+    },
+    {
+      "kind": "agreement",
+      "id": "SD-BASE-DP",
+      "status": "OK",
+      "issues": [
+        "Source and record quote re-fetched 2026-09-23 and --check FOUND. The same text is on myterms.info/agreements/. The plainSummary ('own copy' for 'own instance') is faithful, and InfoQ independently lists 'service delivery only with data portability'.",
+        "Advisory: this is a Customer Commons / MyTerms Alliance launch-phase agreement, not normative text of IEEE 7012 (see SD-BASE verdict)."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "agreement",
+      "id": "PDC-AI",
+      "status": "OK",
+      "issues": [
+        "Both sources and the record quote were re-fetched 2026-09-23 and --check FOUND. PDC is the one-off type: the FAQ says 'Personal Data Contribution (PDC) agreements are for when a person is providing data on a one off basis'. InfoQ independently lists 'AI training and operations' among one-time contributions. The FAQ adds 'anonymously' (training AI). The plainSummary omits that but does not contradict it.",
+        "Advisory: this is a launch-phase Customer Commons / MyTerms agreement, not normative text of IEEE 7012."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "agreement",
+      "id": "PDC-GOOD",
+      "status": "OK",
+      "issues": [
+        "Source and record quote re-fetched 2026-09-23 and --check FOUND. The plainSummary is faithful. The MyData 20 Jan 2026 post independently lists 'one for Data for Good projects'.",
+        "Advisory: this is a launch-phase Customer Commons / MyTerms agreement, not normative text of IEEE 7012."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "agreement",
+      "id": "PDC-INTENT",
+      "status": "OK",
+      "issues": [
+        "Both sources and the record quote were re-fetched 2026-09-23 (doc.searls.com with a plain UA) and --check FOUND. 'A New Era Begins' has article:published_time 2025-11-24. The gloss '(e.g. what they want to buy)' is consistent with the FAQ ('shopping intentions'). 'Lets a person gather, curate and share' paraphrases the source's 'An enabler of The Intention Economy in which people can gather, curate and share intent data'. Strictly, the agreement governs the sharing, but this is within tolerance.",
+        "Advisory: this is a launch-phase Customer Commons / MyTerms agreement, not normative text of IEEE 7012."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." },
+        { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (plain UA); --check FOUND." }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "agreementType",
+      "id": "Relationship",
+      "status": "OK",
+      "issues": [
+        "Source and record quote re-fetched 2026-09-23 and --check FOUND. The same text is on myterms.info/agreements/. The FAQ calls this type 'Service Delivery (SD) agreements [that] assume an ongoing digital relationship', which is consistent.",
+        "Tooling note: agreementTypes records carry 'type' rather than 'id'/'code', so tools/apply-verdicts.py find() will report this verdict as missing. There are no fixes to apply."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND." }
+      ],
+      "addSources": []
+    }
+  ]
+}

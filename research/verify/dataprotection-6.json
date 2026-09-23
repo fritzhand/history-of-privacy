@@ -1,0 +1,292 @@
+{
+ "slice": "dataprotection",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "fipps",
+   "id": "hew-1973-individual-access",
+   "status": "OK",
+   "issues": [
+    "No error found. Quote verbatim on the ASPE full text (--check FOUND). It is the second of the five principles in the report's Summary, so order 2 is right.",
+    "Independent check: the scanned original report (DOJ-hosted PDF) carries the identical sentence in the Summary (FOUND) and dates the report 'July 1973'. The report states the principles a second time in Chapter III ('Safeguards for Privacy', p. 41) with a stray comma: 'There must be a way for an individual, to find out ...'; the record correctly uses the Summary wording.",
+    "The short name 'Individual access' is editorial, as the source note says; the report does not name the principles. The original scan is added as a corroborating source because the ASPE page's own date field shows 'Jun 30, 1973'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live 2026-09-23 (HTTP 200); quote verbatim (fetch-text.py --check FOUND). ASPE page title 'Records, Computers and the Rights of Citizens'; its 'Publication Date' field shows 'Jun 30, 1973' (datetime 1973-06-30T20:00-04:00, i.e. 1 July 1973 UTC, a timezone artefact); the original report's title page reads 'July 1973', so date 1973-07 stands. Same sentence appears twice on the page (Summary, and Chapter III with an extra comma)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Department of Health, Education & Welfare (scan of the original report hosted by the U.S. Department of Justice, Office of Privacy and Civil Liberties)",
+     "title": "Records, Computers, and the Rights of Citizens: Report of the Secretary's Advisory Committee on Automated Personal Data Systems, DHEW Publication No. (OS) 73-94",
+     "date": "1973-07",
+     "url": "https://www.justice.gov/opcl/docs/rec-com-rights.pdf",
+     "quote": "There must be a way for an individual to find out what information about him is in a record and how it is used.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (PDF fetched live 2026-09-23 11:33 UTC; justice.gov intermittently answers scripted requests with HTTP 401, so a re-check may need a retry). Title page: 'Report of the Secretary's Advisory Committee on Automated Personal Data Systems ... July 1973' (FOUND). The five principles appear in the 'Summary and Recommendations' (pp. xx-xxi), right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' "
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "hew-1973-secondary-use-consent",
+   "status": "OK",
+   "issues": [
+    "No error found. Quote verbatim on the ASPE full text (--check FOUND); third of the five principles in the Summary, so order 3 is right.",
+    "Independent check: identical sentence in the scanned original report's Summary (DOJ-hosted PDF, FOUND). Chapter III (p. 41) words it slightly differently: 'information about him obtained for one purpose' (without 'that was'); the record uses the Summary wording, which is verbatim.",
+    "The name 'No secondary use without consent' is editorial (the report does not name the principles), as the source note says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live 2026-09-23 (HTTP 200); quote verbatim (fetch-text.py --check FOUND). ASPE page title 'Records, Computers and the Rights of Citizens'; its 'Publication Date' field shows 'Jun 30, 1973' (datetime 1973-06-30T20:00-04:00, i.e. 1 July 1973 UTC, a timezone artefact); the original report's title page reads 'July 1973', so date 1973-07 stands. The Chapter III restatement on the same page reads 'information about him obtained for one purpose'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Department of Health, Education & Welfare (scan of the original report hosted by the U.S. Department of Justice, Office of Privacy and Civil Liberties)",
+     "title": "Records, Computers, and the Rights of Citizens: Report of the Secretary's Advisory Committee on Automated Personal Data Systems, DHEW Publication No. (OS) 73-94",
+     "date": "1973-07",
+     "url": "https://www.justice.gov/opcl/docs/rec-com-rights.pdf",
+     "quote": "There must be a way for an individual to prevent information about him that was obtained for one purpose from being used or made available for other purposes without his consent.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (PDF fetched live 2026-09-23 11:33 UTC; justice.gov intermittently answers scripted requests with HTTP 401, so a re-check may need a retry). Title page: 'Report of the Secretary's Advisory Committee on Automated Personal Data Systems ... July 1973' (FOUND). The five principles appear in the 'Summary and Recommendations' (pp. xx-xxi), right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' "
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "hew-1973-correction",
+   "status": "OK",
+   "issues": [
+    "No error found. Quote verbatim on the ASPE full text (--check FOUND); fourth of the five principles, so order 4 is right. Chapter III repeats it word for word.",
+    "Independent check: identical sentence in the scanned original report's Summary (DOJ-hosted PDF, FOUND).",
+    "The name 'Correction and amendment' is editorial, as the source note says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live 2026-09-23 (HTTP 200); quote verbatim (fetch-text.py --check FOUND). ASPE page title 'Records, Computers and the Rights of Citizens'; its 'Publication Date' field shows 'Jun 30, 1973' (datetime 1973-06-30T20:00-04:00, i.e. 1 July 1973 UTC, a timezone artefact); the original report's title page reads 'July 1973', so date 1973-07 stands."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Department of Health, Education & Welfare (scan of the original report hosted by the U.S. Department of Justice, Office of Privacy and Civil Liberties)",
+     "title": "Records, Computers, and the Rights of Citizens: Report of the Secretary's Advisory Committee on Automated Personal Data Systems, DHEW Publication No. (OS) 73-94",
+     "date": "1973-07",
+     "url": "https://www.justice.gov/opcl/docs/rec-com-rights.pdf",
+     "quote": "There must be a way for an individual to correct or amend a record of identifiable information about him.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (PDF fetched live 2026-09-23 11:33 UTC; justice.gov intermittently answers scripted requests with HTTP 401, so a re-check may need a retry). Title page: 'Report of the Secretary's Advisory Committee on Automated Personal Data Systems ... July 1973' (FOUND). The five principles appear in the 'Summary and Recommendations' (pp. xx-xxi), right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' "
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "hew-1973-reliability-misuse",
+   "status": "OK",
+   "issues": [
+    "No error found. Quote verbatim on the ASPE full text (--check FOUND); fifth of the five principles, so order 5 is right.",
+    "Nuance, not an error: the report states this principle twice. The Summary (pp. xx-xxi), which the record quotes, says 'must take precautions to prevent misuse of the data'; Chapter III ('Safeguards for Privacy', p. 41) says 'must take reasonable precautions to prevent misuse of the data'. Both are on the ASPE page and in the original scan. Any page copy that paraphrases this principle should not silently mix the two.",
+    "Independent check: the scanned original report (DOJ-hosted PDF) has the Summary wording; its OCR reads 'maiIitaining' and hyphenates 'dis-seminating' across a line, so the verbatim check was run on the second half of the sentence (FOUND).",
+    "The name 'Data reliability and prevention of misuse' is editorial, as the source note says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live 2026-09-23 (HTTP 200); quote verbatim (fetch-text.py --check FOUND). ASPE page title 'Records, Computers and the Rights of Citizens'; its 'Publication Date' field shows 'Jun 30, 1973' (datetime 1973-06-30T20:00-04:00, i.e. 1 July 1973 UTC, a timezone artefact); the original report's title page reads 'July 1973', so date 1973-07 stands. The Chapter III restatement on the same page reads 'must take reasonable precautions to prevent misuse of the data' (the record quotes the Summary version)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Department of Health, Education & Welfare (scan of the original report hosted by the U.S. Department of Justice, Office of Privacy and Civil Liberties)",
+     "title": "Records, Computers, and the Rights of Citizens: Report of the Secretary's Advisory Committee on Automated Personal Data Systems, DHEW Publication No. (OS) 73-94",
+     "date": "1973-07",
+     "url": "https://www.justice.gov/opcl/docs/rec-com-rights.pdf",
+     "quote": "must assure the reliability of the data for their intended use and must take precautions to prevent misuse of the data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (PDF fetched live 2026-09-23 11:33 UTC; justice.gov intermittently answers scripted requests with HTTP 401, so a re-check may need a retry). Title page: 'Report of the Secretary's Advisory Committee on Automated Personal Data Systems ... July 1973' (FOUND). The five principles appear in the 'Summary and Recommendations' (pp. xx-xxi), right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' The full Summary sentence begins 'Any organization creating, maintaining, using, or disseminating records of identifiable personal data' (OCR 'maiIitaining', 'dis-seminating'). Chapter III, p. 41, has 'must take reasonable precautions to prevent misuse of the data.'"
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "oecd-1980-collection-limitation",
+   "status": "FIXED",
+   "issues": [
+    "The only source (a Wayback copy of the old OECD page) could not be re-fetched: web.archive.org reset every connection this session, WebFetch cannot reach it and live oecd.org returns 403. It is set to PENDING, and the OECD's own 2002 edition PDF, which reproduces the 1980 text, is added as a CONFIRMED source.",
+    "Record text checks out against the 2002 edition: heading 'Collection Limitation Principle', para. 7, identical wording. pdfminer puts the number '7.' after the PDF's first line, so the full numbered sentence cannot be matched as one string there. Both halves are FOUND: 'There should be limits to the collection of personal data and any such' and 'data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.' The complete numbered sentence exactly as in the record is FOUND in the current OECD legal-instrument PDF (OECD/LEGAL/0188), where para. 7 is unchanged.",
+    "year 1980, order 1 (first of the eight Part Two principles) and the name are correct.",
+    "The source note 'Principles were revised in 2013; this is the 1980 text' overstates the 2013 change. The Guidelines were revised in 2013, but the OECD says the eight Part Two principles were reaffirmed, not rewritten. The recorded text is the 1980 wording, which is correct. The clarification is appended to the source note."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed 2026-09-23: web.archive.org reset every connection (fetch-text.py Errno 104, three attempts; curl exit 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), WebFetch reports it cannot fetch from web.archive.org, and the live oecd.org URL returns HTTP 403. The archive.org availability API lists a capture at 20191223162352, but its text could not be read. The same paragraph text is confirmed in the OECD's own 2002 edition PDF (added source). Correction to this note: the Guidelines were revised in 2013, but the eight Part Two principles were reaffirmed, not rewritten (OECD/LEGAL/0188: 'there was no need to fundamentally rethink the core principles of the 1980 Guidelines'; 'The validity and pertinence of these basic principles were reaffirmed through both the 2013 revision and the 2021 report'). Paras 7, 9, 10 and 11 read the same in the 2013 text; para 8 differs only in 'kept up to date' (no hyphens)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, reproducing the 1980 Recommendation, Guidelines and Explanatory Memorandum), Part Two: Basic Principles of National Application",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). This is the second half of para. 7 under the heading 'Collection Limitation Principle'. The opening 'There should be limits to the collection of personal data and any such' is also FOUND; the PDF text layer puts '7.' between the two lines."
+    },
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD Legal Instruments)",
+     "title": "Recommendation of the Council concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data, OECD/LEGAL/0188 (as revised 2013), Part Two",
+     "date": "2025",
+     "url": "https://legalinstruments.oecd.org/public/doc/114/114.en.pdf",
+     "quote": "7. There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live PDF, 2026-09-23). This is the current (2013-revised) instrument; para. 7 is word-for-word the 1980 text. The same PDF: 'it was determined that there was no need to fundamentally rethink the core principles of the 1980 Guidelines' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "oecd-1980-data-quality",
+   "status": "FIXED",
+   "issues": [
+    "The only source (a Wayback copy of the old OECD page) could not be re-fetched: web.archive.org reset every connection this session, WebFetch cannot reach it and live oecd.org returns 403. It is set to PENDING, and the OECD's own 2002 edition PDF, which reproduces the 1980 text, is added as a CONFIRMED source.",
+    "Record text, including the number and 'kept up-to-date', matches the 2002 edition verbatim (--check FOUND). The 2013 text reads 'kept up to date' without hyphens, so the hyphenated form is right for a 1980 record.",
+    "year 1980, order 2 and the name 'Data Quality Principle' (the heading in the PDF) are correct.",
+    "The source note 'Principles were revised in 2013; this is the 1980 text' overstates the 2013 change. The Guidelines were revised in 2013, but the OECD says the eight Part Two principles were reaffirmed, not rewritten. The recorded text is the 1980 wording, which is correct. The clarification is appended to the source note."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed 2026-09-23: web.archive.org reset every connection (fetch-text.py Errno 104, three attempts; curl exit 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), WebFetch reports it cannot fetch from web.archive.org, and the live oecd.org URL returns HTTP 403. The archive.org availability API lists a capture at 20191223162352, but its text could not be read. The same paragraph text is confirmed in the OECD's own 2002 edition PDF (added source). Correction to this note: the Guidelines were revised in 2013, but the eight Part Two principles were reaffirmed, not rewritten (OECD/LEGAL/0188: 'there was no need to fundamentally rethink the core principles of the 1980 Guidelines'; 'The validity and pertinence of these basic principles were reaffirmed through both the 2013 revision and the 2021 report'). Paras 7, 9, 10 and 11 read the same in the 2013 text; para 8 differs only in 'kept up to date' (no hyphens)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, reproducing the 1980 Recommendation, Guidelines and Explanatory Memorandum), Part Two: Basic Principles of National Application",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "8. Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be accurate, complete and kept up-to-date.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). Under the heading 'Data Quality Principle' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "oecd-1980-purpose-specification",
+   "status": "FIXED",
+   "issues": [
+    "The only source (a Wayback copy of the old OECD page) could not be re-fetched: web.archive.org reset every connection this session, WebFetch cannot reach it and live oecd.org returns 403. It is set to PENDING, and the OECD's own 2002 edition PDF, which reproduces the 1980 text, is added as a CONFIRMED source.",
+    "Record text matches the 2002 edition verbatim, including the number (--check FOUND).",
+    "year 1980, order 3 and the name 'Purpose Specification Principle' (the heading in the PDF) are correct.",
+    "The source note 'Principles were revised in 2013; this is the 1980 text' overstates the 2013 change. The Guidelines were revised in 2013, but the OECD says the eight Part Two principles were reaffirmed, not rewritten. The recorded text is the 1980 wording, which is correct. The clarification is appended to the source note."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed 2026-09-23: web.archive.org reset every connection (fetch-text.py Errno 104, three attempts; curl exit 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), WebFetch reports it cannot fetch from web.archive.org, and the live oecd.org URL returns HTTP 403. The archive.org availability API lists a capture at 20191223162352, but its text could not be read. The same paragraph text is confirmed in the OECD's own 2002 edition PDF (added source). Correction to this note: the Guidelines were revised in 2013, but the eight Part Two principles were reaffirmed, not rewritten (OECD/LEGAL/0188: 'there was no need to fundamentally rethink the core principles of the 1980 Guidelines'; 'The validity and pertinence of these basic principles were reaffirmed through both the 2013 revision and the 2021 report'). Paras 7, 9, 10 and 11 read the same in the 2013 text; para 8 differs only in 'kept up to date' (no hyphens)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, reproducing the 1980 Recommendation, Guidelines and Explanatory Memorandum), Part Two: Basic Principles of National Application",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "9. The purposes for which personal data are collected should be specified not later than at the time of data collection and the subsequent use limited to the fulfilment of those purposes or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). Under the heading 'Purpose Specification Principle' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "oecd-1980-use-limitation",
+   "status": "FIXED",
+   "issues": [
+    "The only source (a Wayback copy of the old OECD page) could not be re-fetched: web.archive.org reset every connection this session, WebFetch cannot reach it and live oecd.org returns 403. It is set to PENDING, and the OECD's own 2002 edition PDF, which reproduces the 1980 text, is added as a CONFIRMED source.",
+    "Record text matches the 2002 edition verbatim, including the number, the capitalised 'Paragraph 9' and the a)/b) exceptions (--check FOUND).",
+    "year 1980, order 4 and the name 'Use Limitation Principle' (the heading in the PDF) are correct.",
+    "The source note 'Principles were revised in 2013; this is the 1980 text' overstates the 2013 change. The Guidelines were revised in 2013, but the OECD says the eight Part Two principles were reaffirmed, not rewritten. The recorded text is the 1980 wording, which is correct. The clarification is appended to the source note."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed 2026-09-23: web.archive.org reset every connection (fetch-text.py Errno 104, three attempts; curl exit 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), WebFetch reports it cannot fetch from web.archive.org, and the live oecd.org URL returns HTTP 403. The archive.org availability API lists a capture at 20191223162352, but its text could not be read. The same paragraph text is confirmed in the OECD's own 2002 edition PDF (added source). Correction to this note: the Guidelines were revised in 2013, but the eight Part Two principles were reaffirmed, not rewritten (OECD/LEGAL/0188: 'there was no need to fundamentally rethink the core principles of the 1980 Guidelines'; 'The validity and pertinence of these basic principles were reaffirmed through both the 2013 revision and the 2021 report'). Paras 7, 9, 10 and 11 read the same in the 2013 text; para 8 differs only in 'kept up to date' (no hyphens)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, reproducing the 1980 Recommendation, Guidelines and Explanatory Memorandum), Part Two: Basic Principles of National Application",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "10. Personal data should not be disclosed, made available or otherwise used for purposes other than those specified in accordance with Paragraph 9 except: a) with the consent of the data subject; or b) by the authority of law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). Under the heading 'Use Limitation Principle' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fipps",
+   "id": "oecd-1980-security-safeguards",
+   "status": "FIXED",
+   "issues": [
+    "The only source (a Wayback copy of the old OECD page) could not be re-fetched: web.archive.org reset every connection this session, WebFetch cannot reach it and live oecd.org returns 403. It is set to PENDING, and the OECD's own 2002 edition PDF, which reproduces the 1980 text, is added as a CONFIRMED source.",
+    "Record text checks out against the 2002 edition: heading 'Security Safeguards Principle', para. 11, identical wording including British 'unauthorised'. pdfminer puts '11.' after the first line, so the numbered sentence cannot be matched as one string. Both halves are FOUND: 'Personal data should be protected by reasonable security safeguards' and 'against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.'",
+    "year 1980, order 5 and the name are correct.",
+    "The source note 'Principles were revised in 2013; this is the 1980 text' overstates the 2013 change. The Guidelines were revised in 2013, but the OECD says the eight Part Two principles were reaffirmed, not rewritten. The recorded text is the 1980 wording, which is correct. The clarification is appended to the source note."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed 2026-09-23: web.archive.org reset every connection (fetch-text.py Errno 104, three attempts; curl exit 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), WebFetch reports it cannot fetch from web.archive.org, and the live oecd.org URL returns HTTP 403. The archive.org availability API lists a capture at 20191223162352, but its text could not be read. The same paragraph text is confirmed in the OECD's own 2002 edition PDF (added source). Correction to this note: the Guidelines were revised in 2013, but the eight Part Two principles were reaffirmed, not rewritten (OECD/LEGAL/0188: 'there was no need to fundamentally rethink the core principles of the 1980 Guidelines'; 'The validity and pertinence of these basic principles were reaffirmed through both the 2013 revision and the 2021 report'). Paras 7, 9, 10 and 11 read the same in the 2013 text; para 8 differs only in 'kept up to date' (no hyphens)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, reproducing the 1980 Recommendation, Guidelines and Explanatory Memorandum), Part Two: Basic Principles of National Application",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "Personal data should be protected by reasonable security safeguards",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). First line of para. 11 under the heading 'Security Safeguards Principle' (FOUND together with the heading). The rest of the sentence, 'against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.', is also FOUND; the PDF text layer puts '11.' between the two lines."
+    }
+   ]
+  }
+ ]
+}

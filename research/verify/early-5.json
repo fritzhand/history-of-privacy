@@ -1,0 +1,107 @@
+{
+ "slice": "early",
+ "chunk": 5,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-1792-post-office-act-required-search-warrant",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK: the MTSU First Amendment Encyclopedia article by John R. Vile ('published on August 24, 2024', updated 12 Sept 2024) makes the claim verbatim. Section 16 of the Act (1 Stat. 232, Chap. VII, approved 20 Feb 1792) does punish 'any person, employed in any of the departments of the general post-office' who 'shall unlawfully detain, delay, or open' letters. The only uses of 'warrant' in the whole Act (NJPHS OCR text) are 'warrant of the treasury' and 'bond or warrant' in the list of money instruments in the same section, so 'no warrant procedure' is correct. The MISLEADING verdict fits: the ban on opening is real, the warrant condition is not in the Act. The Ex parte Jackson date of 1878-05-13 matches CourtListener (dateFiled 1878-05-13; October Term 1877).",
+    "Wording is too strong: 'did the Supreme Court hold'. Ex parte Jackson upheld a federal ban on mailing lottery circulars. Its statement that sealed letters can be opened only under a warrant was part of the Court's reasoning, not the question it decided, and it is often called dictum. 'State' is accurate either way. The Court also based the warrant rule on the Fourth Amendment, and the correction now says so.",
+    "Small addition: the 1792 Act itself did allow letters to be opened without any warrant in one case. Section 18 sends unclaimed dead letters to the General Post Office, 'where the same shall be opened and inspected'. Not required for the correction, noted for the essay writer."
+   ],
+   "fieldFixes": {
+    "correction": "Section 16 of the 1792 Act punishes post-office employees who 'unlawfully' detain, delay or open letters, with a fine of up to $300, up to six months in prison, or both. It contains no warrant procedure. The warrant rule came later, from the Supreme Court: in Ex parte Jackson (1878), relying on the Fourth Amendment, the Court stated that sealed letters in the mail can be opened only under a warrant issued on oath or affirmation, as for papers kept at home."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Source of the claim. Re-fetched: quote FOUND verbatim. The byline reads 'Written by John R. Vile, published on August 24, 2024 last updated on September 12, 2024', which matches the title and date fields. The article cites 'Balkin 2012, 3' (Balkin, 'The First Amendment Is an Information Policy', Hofstra L. Rev. 41). Hofstra's PDF returned 403 and the Wayback copy reset the connection, so whether Balkin himself mentions a warrant was not checked."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "PDF re-fetched: quote FOUND. It is in 'Sec. 16' (margin note 'detaining, delaying, or secreting letters, &c.'). Header: 'SECOND CONGRESS. Sess. I. Ch. 7. 1792', '[p. 232]', 'Feb. 20, 1792', 'APPROVED, February 20, 1792'. The penalty clause 'be fined not exceeding three hundred dollars, or imprisoned not exceeding six months, or both' is also FOUND, which supports the penalty in the revised correction. 'warrant' appears only in the list of money instruments. The text is an OCR transcription by the New Jersey Postal History Society."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The sentence before it, 'The constitutional guaranty of the right of the people to be secure in their papers against unreasonable searches and seizures extends to their papers, thus closed against inspection, wherever they may be.', ties the rule to the Fourth Amendment. The LII page shows 'October Term, 1877' but no decision date. CourtListener's API gives dateFiled 1878-05-13 for 96 U.S. 727, so the date field is correct. The case was a habeas petition over a conviction for mailing a lottery circular, and the Court upheld the exclusion, so the warrant passage is reasoning (often called dictum), not the holding."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-hippocrates-wrote-the-oath-5th-century-bce",
+   "status": "FIXED",
+   "issues": [
+    "The correction leans too far toward a late date. Paul Martin (2019) says 'Scholarly opinion still dates Oath to the classical period.' He also quotes W.H.S. Jones: 'It is indeed hard to believe that the nucleus, at least, of Oath does not go back to the ‘great’ Hippocrates himself.' The Hellenistic origin is a minority hypothesis. The UNVERIFIED verdict is right, because authorship is unknown, not disproved. But readers should not come away thinking a Hellenistic date is now the consensus.",
+    "'linguistic studies point to affinities with Hellenistic writing' overstates the evidence. Tolsa cites one study, H. von Staden's 2008 analysis of the Oath's language and style, and notes Jouanna's counterarguments.",
+    "'The Hippocratic Corpus had many authors': the NLM source says 'several authors, however, probably scattered over several centuries'. The wording is aligned with the source.",
+    "'long dated to around 400 BCE' had no source on this record. Paul Martin (FMU 2019), already used on the Oath event, is added: 'until recently been thought to date to the end of the fifth or beginning of the fourth century BC'.",
+    "Missing point on the secrecy clause the myth names: Tolsa's hypothesis is that the ethical paragraphs 2–7, which include 'misuse of secrets (7)', were added after the first paragraph, between the 2nd century BCE and the 1st century CE. So the confidentiality promise may be later than the Oath's core. Added with a hedge.",
+    "Checked OK: NLM page title and content. The page says its content is 'drawn from a display ... March 6 through June 15, 2008', so the date 2008 is fine; DC metadata gives page issue date 2022-12-28. The Tolsa running head confirms 'Greek, Roman, and Byzantine Studies 59 (2019) 621–645'."
+   ],
+   "fieldFixes": {
+    "correction": "Authorship and date are unknown. The Hippocratic Corpus is thought to have had several authors, probably spread over several centuries. The Oath has usually been dated to the end of the fifth or the start of the fourth century BCE. Most scholars still place it in the classical period, and some think its core may go back to Hippocrates. But H. von Staden's study of its language found affinities with Hellenistic writings, and Cristian Tolsa (2019) proposes that its ethical paragraphs, including the promise of secrecy, were added later, between the second century BCE and the first century CE."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND under 'Hippocrates / Rationality and Medicine' on NLM's 'Greek Medicine' page. It refers to the Hippocratic Corpus ('about sixty works'), not to the Oath specifically. The page says its content is drawn from an NLM History of Medicine Division display (March 6 to June 15, 2008), curated by Michael North. The same page says 'It was in the 5th century BCE, however, that Hippocrates’ name and image began to emerge'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "PDF re-fetched: quote FOUND on p. 623. The running head confirms Greek, Roman, and Byzantine Studies 59 (2019) 621–645. The sentence presents a Hellenistic origin as an 'alternative hypothesis' (footnote 5, Ducatillon 2001), not a consensus. The correction's 'some scholars' is consistent with that."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Fukushima Medical University, Bulletin of the Center for Integrated Science and Humanities, vol. 8",
+     "title": "Paul Martin, 'Healing Heroes: surveying the Greek text of the Hippocratic Oath (Part I)'",
+     "date": "2019",
+     "url": "https://www.fmu.ac.jp/about/centers/icsh/publications/file/kiyoo/2019-11-01.pdf",
+     "quote": "the composition date of the oath, which has until recently been thought to date to the end of the fifth or beginning of the fourth century BC.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "From the abstract. --check FOUND. Supports the traditional dating to about 400 BCE."
+    },
+    {
+     "institution": "Fukushima Medical University, Bulletin of the Center for Integrated Science and Humanities, vol. 8",
+     "title": "Paul Martin, 'Healing Heroes: surveying the Greek text of the Hippocratic Oath (Part I)'",
+     "date": "2019",
+     "url": "https://www.fmu.ac.jp/about/centers/icsh/publications/file/kiyoo/2019-11-01.pdf",
+     "quote": "Scholarly opinion still dates Oath to the classical period.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The next sentence quotes W.H.S. Jones: 'It is indeed hard to believe that the nucleus, at least, of Oath does not go back to the ‘great’ Hippocrates himself.' (also --check FOUND). Supports 'most scholars still place it in the classical period' and 'some think its core may go back to Hippocrates'."
+    },
+    {
+     "institution": "Greek, Roman, and Byzantine Studies 59 (Duke University)",
+     "title": "Cristian Tolsa, 'On the Origins of the Hippocratic Oath'",
+     "date": "2019",
+     "url": "https://grbs.library.duke.edu/index.php/grbs/article/download/16290/7250/20277",
+     "quote": "Intriguing evidence allowing this possibility comes from H. von Staden’s comparative analysis of its language and style both with other ancient oaths and with the medical terminology in the Hippocratic corpus, revealing specific textual affinities with writings from the Hellenistic age.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "p. 623. --check FOUND. It cites von Staden, '“The Oath”, the Oaths, and the Hippocratic Corpus' (2008), and notes Jouanna's counterarguments in footnote 6."
+    },
+    {
+     "institution": "Greek, Roman, and Byzantine Studies 59 (Duke University)",
+     "title": "Cristian Tolsa, 'On the Origins of the Hippocratic Oath'",
+     "date": "2019",
+     "url": "https://grbs.library.duke.edu/index.php/grbs/article/download/16290/7250/20277",
+     "quote": "I have put forward the hypothesis that the second part of the Oath was added after the first paragraph in the context of the transmission of the Hippocratic texts to Rome (Cato read them in Athens) between the second century B.C. and the first A.D.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Conclusion, p. 645. --check FOUND. The 'second part' is the section headed 'Ethical standards in medical practice (paragraphs 2–7)' (--check FOUND). Tolsa lists 'misuse of secrets (7)' among its duties (--check FOUND), so the secrecy clause falls in the part he dates later. This is Tolsa's own hypothesis."
+    }
+   ]
+  }
+ ]
+}

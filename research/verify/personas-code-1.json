@@ -1,0 +1,319 @@
+{
+ "slice": "personas-code",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "person",
+   "id": "whitfield-diffie",
+   "status": "FIXED",
+   "issues": [
+    "Overstated 'first' in influence: the record says the paper provoked 'the first clash between academic cryptographers and the NSA'. The cited Stanford article says only that 'Diffie and Hellman clashed with the NSA over their publications' and 'These skirmishes became known as the first of the \"crypto wars.\"' It does not say this was the first clash between academics and the NSA. Reworded to match the source.",
+    "Checked OK: quoteSource (Stanford Engineering, 1 March 2016, confirmed by published_time metadata 2016-03-01). Both joined fragments --check FOUND: 'Cryptography is the one indispensable security technique' and 'if the government had succeeded in blocking people from having strong cryptographic systems … it would have meant you could not have had security on the Internet.' The first ellipsis leaves out the attribution and 'There are lots of other things needed, but'; the second ellipsis is in the original. The meaning is intact.",
+    "Checked OK: IEEE Trans. Inf. Theory IT-22 no. 6, November 1976, p. 644 header confirmed in the PDF text layer. Contribution claims (public-key cryptography and digital signatures, agreement over an open channel with no prearrangement, part-time researcher at Stanford) all appear on the Stanford page. Stanford coordinates are right."
+   ],
+   "fieldFixes": {
+    "influence": "Public-key cryptography moved strong encryption out of classified government research and into the open. The NSA's attempts to limit the spread of Diffie and Hellman's work led to clashes that became known as the first of the 'crypto wars', and public-key cryptography went on to become the backbone of Internet security."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched ee.stanford.edu PDF; quote --check FOUND; header 'IEEE TRANSACTIONS ON INFORMATION THEORY, VOL. IT-22, NO. 6, NOVEMBER 1976', p. 644."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND; 'These skirmishes became known as the first of the' also FOUND. Page metadata published_time 2016-03-01."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "martin-hellman",
+   "status": "FIXED",
+   "issues": [
+    "The contribution misstates the DES dispute. It says the pair clashed with the NSA over a key length 'which they argued had been limited to 56 bits', but the 56-bit key length was a fact, not their argument. The source says their paper 'claimed that the agency had pressured IBM to weaken ... (DES) by limiting the key size to 56 bits instead of a stronger option of 64 bits or higher.' Reworded.",
+    "Checked OK: quoteSource sentence 'In order to use cryptography to insure privacy, however, it is currently necessary for the communicating parties to share a key which is known to no one else.' --check FOUND in the 1976 PDF ('insure' is the original spelling). Turing Award 2015 (announced 1 March 2016) and the Apple/FBI stance are confirmed on the Stanford page."
+   ],
+   "fieldFixes": {
+    "contribution": "Hellman, a Stanford professor of electrical engineering, co-authored with Whitfield Diffie the 1976 paper that proposed public-key cryptography and digital signatures. The pair also clashed with the NSA over the government's Data Encryption Standard, arguing that the agency had pressured IBM to weaken it by limiting its key to 56 bits. The two shared the 2015 ACM A.M. Turing Award."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched Stanford Engineering article; DES sentence --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; Apple/FBI sentence --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "david-chaum",
+   "status": "FIXED",
+   "issues": [
+    "Wrong-edition wording in the thread. The thread credits 'Chaum's 1985 design' with putting pseudonyms on 'a personal card computer that the individual completely controls'. That phrase comes from Chaum's revised 1987 text, which chaum.com reproduces (CWI copy: 'Copyright 1987 by David Chaum ... A related earlier work appeared in Communications of the ACM, 28, 10, Oct. 1985'). The October 1985 CACM original's figure caption reads 'Different numbers or digital pseudonyms are used with each organization by a personal card computer held and trusted only by the individual' (--check FOUND in the 1985 scan at cs.ru.nl). The thread now uses the 1985 wording, and the 1985 scan is added as a source. sources[1] quotes the 1987 caption wording under a '1985-10' date; its existing note already says so, so it is left as is.",
+    "Checked OK: the quoteSource sentence 'Computerization is robbing individuals of the ability to monitor and control the ways information about them is used.' --check FOUND on the chaum.com archive copy. All of its words are also in the 1985 CACM scan, though the two-column OCR breaks them up, so it is the 1985 opening sentence.",
+    "Checked OK: 1981 mix paper, CACM 24(2), February 1981 (copyright line '0001-0782/81/0200'); author 'University of California, Berkeley'; abstract quote FOUND. American Banker article dated 1998-11-10 (datePublished metadata); the Chapter 11 quote, 'never got beyond pilot stages', and 'eight-year-old venture created by David Chaum' are FOUND. IACR 2004 Fellow citation --check FOUND. CWI coordinates (Science Park, the former Kruislaan 413 address that appears on the 1987 reprint) are right."
+   ],
+   "fieldFixes": {
+    "thread": "Chaum's 1985 design puts the pseudonyms on 'a personal card computer held and trusted only by the individual', so that organisations cannot link a person's records into a dossier — an early architecture of individual control over personal data. (His revised 1987 text sharpens this to a card computer 'that the individual completely controls'.)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched freehaven PDF; quote --check FOUND (the 'untraceble' typo is in the original)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched Wayback copy; quote --check FOUND. The wording is the 1987 revision, not the 1985 CACM caption, which reads '... by a personal card computer held and trusted only by the individual'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND; datePublished 1998-11-10T07:00:00Z. IACR fellows page citation --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Communications of the ACM (scanned copy on a Radboud University Nijmegen course page, cs.ru.nl)",
+     "title": "David Chaum, 'Security without Identification: Transaction Systems to Make Big Brother Obsolete', vol. 28, no. 10, pp. 1030–1044",
+     "date": "1985-10",
+     "url": "https://www.cs.ru.nl/~jhh/pub/secsem/chaum1985bigbrother.pdf",
+     "quote": "Different numbers or digital pseudonyms are used with each organization by a personal card computer held and trusted only by the individual",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Figure caption in the original 1985 article (scan with OCR text layer; --check FOUND). The revised 1987 text on chaum.com changes it to '... a personal card computer that the individual completely controls'."
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "phil-zimmermann",
+   "status": "OK",
+   "issues": [
+    "Checked OK: every claim is supported. The 10th-anniversary essay (5 June 2001) says he sent the first release on 5 June 1991 to Allan Hoeltje (Peacenet) and Kelly Goen (a Usenet source-code newsgroup and BBSes), and gives 'September 1992, we released PGP 2.0', 'the now-famous PGP trust model', and US Customs taking an interest 'shortly after PGP 2.0's release'. The influence quote 'a controversy that would eventually lead to the demise of the US export restrictions on strong cryptography' --check FOUND on the same page.",
+    "Checked OK: case-dropped page. Dubois's release of 12 Jan 1996 says Keane's letter came 'Yesterday morning' (11 Jan) and calls it 'the government's three-year investigation'. 'Closed without charges in January 1996' and 'ran three years' are right.",
+    "Checked OK: 'Why I Wrote PGP' quotes all FOUND. The quote 'If privacy is outlawed, only outlaws will have privacy.' is on the page signed 'Boulder, Colorado June 1991 (updated 1999)'. Senate Bill 266 and the plaintext language are present. Wired 'Crypto Rebels' Gilmore quotes on PEM and PGP --check FOUND (Wired metadata keywords 'magazine-1.02'). Boulder coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND, along with 'Fifteen months later, in September 1992, we released PGP 2.0' and 'PGP 2.0 had the now-famous PGP trust model, essentially in its present form.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; Keane letter text --check FOUND; release dated 12 Jan 1996."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND; S.266 sentence FOUND."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND; continuation 'PGP is portable, requires no bureaucracy, and has more than a year's head- start.' FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "eric-hughes",
+   "status": "OK",
+   "issues": [
+    "Checked OK: manifesto quotes all FOUND on activism.net ('Privacy is necessary for an open society in the electronic age. Privacy is not secrecy.', 'Privacy is the power to selectively reveal oneself to the world.', the 'faceless organizations' sentence, 'Cypherpunks write code.', the 'directly necessary' sentence) and signed '9 March 1993'. The card quote joins sentences 1–2 and 4 with an ellipsis, as the note says.",
+    "Checked OK: welcome message raw date 'Mon, 21 Sep 92 22:47:51 PDT'. It names Hughes as list maintainer, thanks Gilmore for 'space on hoptoad', and announces the second meeting for 10 October 1992 'at the new Cygnus offices'. The hopping-remailer message of 25 Sep 1992 contains 'here's the new perl script' with 'From: nobody', so 'within days' and 'Perl script' are right. Wired supports 'moderator of the physical meetings', the May/Hughes instigation 'early last autumn', 'hard at work creating remailers' and 'anonymous digital money'.",
+    "Minor, left as is: 'monthly meetings' does not appear in the cited sources; it matches standard accounts of the Bay Area meetings. Berkeley coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND; raw date Mon, 21 Sep 92 22:47:51 PDT (archive lists it as 1992-09-22 UTC)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND; published_time 1993-02-01 (print issue 1.02)."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND; Perl script with 'From: nobody' header confirmed."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "timothy-c-may",
+   "status": "OK",
+   "issues": [
+    "Checked OK: activism.net copy of the list post. The header 'Date: Sun, 22 Nov 92 12:11:24 PST' --check FOUND. The cover note says he read the manifesto 'at the September 1992 founding meeting' and that it 'dates back to mid-1988', distributed at 'Crypto '88' and the 'Hackers Conference' that year. The opening quote and the 'abhorrent markets for assassinations and extortion' sentence ('trade freely' is in the original) FOUND.",
+    "Checked OK: The Register obituary quote FOUND. The influence paraphrase matches 'this would define the contours and flavour of the Cypherpunks list' and 'Bitcoin and blockchain, WikiLeaks, P2P software and information markets all owe a debt to the list'. Wired 'in-house theoretician' and the 'former Intel physicist ... retired ... at age 34' quote FOUND. 'years' 1988–2018 is right (died December 2018).",
+    "Minor, left as is: place 'Silicon Valley' with Mountain View coordinates is approximate. May's Intel work and the meetings were in Silicon Valley, but he lived in Santa Cruz County."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "john-gilmore",
+   "status": "FIXED",
+   "issues": [
+    "Chronology error: the contribution says Gilmore co-founded EFF in July 1990 'and later co-founded the support company Cygnus'. Cygnus came first. Gilmore's own home page says 'In 1989 I co-founded Cygnus Support, the first company dedicated to supporting free software.' (--check FOUND), and Wired (1993) likewise puts Cygnus before his cryptography activism. Reordered, with the year added and a source attached.",
+    "Imprecise date: the influence says 'In October 2021 EFF's board voted to remove him'. EFF's post of 22 Oct 2021 (published_time metadata) says only that the board 'has recently made the difficult decision to vote to remove Gilmore'. The vote date is not given, so the text now says EFF announced it in October 2021 and uses EFF's own words ('not seen eye-to-eye on how to best communicate and work together').",
+    "The unsourced claim 'later withdrawn for rehearing' about the 1999 Bernstein panel ruling is correct: 192 F.3d 1308 (9th Cir. 1999) granted en banc rehearing and withdrew 176 F.3d 1132. A source is added.",
+    "Checked OK: CFP talk header 'Given at the First Conference on Computers, Freedom, and Privacy / March 28, 1991 / Public domain -- not copyrighted'. The quote, 'only works if you assume a good government' and 'What if we could build a society where the information was never collected?' are FOUND. EFF history quotes (founded July 1990; Kapor, Barlow, Gilmore 'with assistance from Steve Wozniak') FOUND. EFF's DES Cracker 'broken in one week' supports 'about a week'. Home page: 'I was its fifth employee' (Sun), TSA suit, 'I lost every one of these lawsuits', and 'I originally hosted the mailing list (cypherpunks@toad.com)' are FOUND."
+   ],
+   "fieldFixes": {
+    "contribution": "Gilmore, Sun Microsystems' fifth employee, co-founded the free-software support company Cygnus in 1989 and, in July 1990, the Electronic Frontier Foundation, with Mitch Kapor and John Perry Barlow (with help from Steve Wozniak). His toad.com machine hosted the cypherpunks mailing list from 1992. He used Freedom of Information Act suits to pry loose classified cryptography texts, helped initiate Bernstein v. DOJ against encryption export controls, and led EFF's DES Cracker project; he also sued the TSA, unsuccessfully, over demands that travellers show identification.",
+    "influence": "EFF credits Gilmore with helping start the Bernstein case, which produced a 1999 appeals-panel ruling (later withdrawn for rehearing) that source code is speech protected by the First Amendment, and with the DES Cracker, which publicly showed that the government-endorsed Data Encryption Standard could be broken in about a week. In October 2021 EFF announced that its board had voted to remove him from the board, saying they had 'not seen eye-to-eye on how to best communicate and work together', and named him board member emeritus."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; Bernstein sentence --check FOUND; published_time 2021-10-22. Same page: 'we have not seen eye-to-eye on how to best communicate and work together' and 'could be broken in one week with an investment of less than $350,000'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; both quotes --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; TSA sentence and 'I lost every one of these lawsuits.' --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "John Gilmore (toad.com)",
+     "title": "John Gilmore, Entrepreneur and Civil Libertarian (home page)",
+     "date": "2026",
+     "url": "http://www.toad.com/gnu/",
+     "quote": "In 1989 I co-founded Cygnus Support, the first company dedicated to supporting free software.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Dates Cygnus to 1989, before EFF (July 1990). The same page says 'I was its fifth employee, and later a consultant.' about Sun. Undated page; accessed 2026-09-23."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "Bernstein v. United States",
+     "date": "2026",
+     "url": "https://en.wikipedia.org/wiki/Bernstein_v._United_States",
+     "quote": "the Ninth Circuit ordered that this case be reheard by the en banc court, and withdrew the three-judge panel opinion",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary source for the withdrawal. It cites Bernstein v. U.S. Dept. of Justice, 192 F.3d 1308 (9th Cir. 1999), which withdrew 176 F.3d 1132 (9th Cir., decided 6 May 1999). Justia and OpenJurist copies returned 403 to scripts. Accessed 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "person",
+   "id": "matt-blaze",
+   "status": "OK",
+   "issues": [
+    "Checked OK: eesproto.pdf is dated 'August 20, 1994' ('pre-print of a paper to appear at the 2nd ACM Conference on Computer and Communications Security, Fairfax, VA, November 1994'), with author line 'Matt Blaze, AT&T Bell Laboratories'. The abstract confirms the prototype PCMCIA device and 'interoperate with legal EES users'. 'The LEAF checksum is, in fact, 16 bits.' FOUND, and the paper gives 'an expected average of 2^16 trials' (printed '216'), so 'about 2^16 tries' is right.",
+    "Checked OK: ACSAC '11 paper (Orlando, 5–9 Dec 2011). Quotes FOUND: the demise quote, the 16-bit exhaustive search, 'In April, 1994, I wrote a paper about all this', 'the first (and ultimately the only) company to produce a full product based on the ill-fated escrow system' (AT&T TSD-3600), and 'the top of the front page, under the headline Flaw Found in Federal Plan for Wiretapping'. The influence paraphrase that key escrow was unworkable anyway matches the postscript: 'inherently unworkable', key-database risk, and the economic argument.",
+    "Minor note: the MIT 6.805 index (quote FOUND) lists the 2 June 1994 Times item under a different headline ('Scientist Finds Flaw In Code Technology'), perhaps a syndicated or index title. The record text names no headline, so nothing changes. The nytimes.com archive page and its Wayback copies returned 403 or reset and could not be read. Murray Hill coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote and abstract sentence --check FOUND; dated August 20, 1994."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; all quoted phrases --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; index entry --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "person",
+   "id": "paul-syverson",
+   "status": "OK",
+   "issues": [
+    "Checked OK: IH-1996 paper header 'Workshop on Information Hiding, Cambridge, UK, May, 1996', affiliation 'Naval Research Laboratory, Center For High Assurance Computer Systems, Washington, D.C.'. The abstract supports 'no-one but the initiator's proxy server knows anything but previous and next hops', and the quote --check FOUND.",
+    "Checked OK: in 'A Peel of Onion' (ACSAC 2011), the quote, 'began work on onion routing in late 1995', 'about a half million users on any given day' and the public-domain notice are all FOUND. The quote is Syverson quoting 'our paper at ACSAC ’96', as the note says. Tor Project history quote FOUND ('Nick Mathewson ... joined the project soon after').",
+    "The claim about the USENIX Security 2004 Tor paper had no source. It is correct, and the USENIX page is added (author line and abstract --check FOUND; 13th USENIX Security Symposium, San Diego, 9–13 August 2004). NRL coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote and abstract phrase --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "USENIX Association",
+     "title": "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router', Proceedings of the 13th USENIX Security Symposium, San Diego, pp. 303–320",
+     "date": "2004-08",
+     "url": "https://www.usenix.org/legacy/event/sec04/tech/dingledine.html",
+     "quote": "This second-generation Onion Routing system addresses limitations in the original design",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Author line on the page: 'Roger Dingledine and Nick Mathewson, The Free Haven Project; Paul Syverson, Naval Research Lab' (--check FOUND). Symposium held August 9–13, 2004."
+    }
+   ]
+  }
+ ]
+}

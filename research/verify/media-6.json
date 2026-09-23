@@ -1,0 +1,72 @@
+{
+ "slice": "media",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "image",
+   "id": "ai-index-2024-nervousness-about-ai-by-country",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata (re-queried 2026-09-23) returns LicenseShortName 'CC BY-SA 4.0' and LicenseUrl creativecommons.org/licenses/by-sa/4.0, AttributionRequired true, Artist 'Stanford Institute for Human-Centered Artificial Intelligence (permission obtained by email from the AI index research manager)', DateTimeOriginal 2024-04-15. The page HTML contains 'This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.' The rightsEvidence quotes (VRT permission sentence, ticket #2024060510011799, Author line, Description) all return FOUND with fetch-text.py --check. The licence is free (CC BY-SA 4.0), so the image can be used.",
+    "Checked OK, local file: assets/media/ai-index-2024-nervousness-about-ai-by-country.jpg opens as a 960x640 JPEG. The title, source line and all ten bars match the alt text exactly (AU 69, GB 65, CA 63, US 63, IN 58, FR 52, ES 51, BE 50, DE 46, KR 44). thumbUrl returns HTTP 200 image/jpeg.",
+    "Checked OK, upstream: hai.stanford.edu/news/ai-index-state-ai-13-charts exists ('AI Index: State of AI in 13 Charts', Shana Lynch, April 15, 2024) and embeds the same chart (AIIndex_2024_StateofAI_BLOG_13.jpg). 'When asked in a survey about whether AI products and services make you nervous, 69% of Aussies and 65% of Brits said yes.' returns FOUND. Stanford campus coordinates (37.4275, -122.1697) are right.",
+    "Independent check of the numbers: AI Index 2024 Chapter 9 (Figure 'Opinions about AI by country (% agreeing with statement), 2023', Source: Ipsos, 2023) and Ipsos 'Global Views on A.I. 2023' (July 2023), p.10, both give Australia 69%, Great Britain 65%, Canada 63%, United States 63%, India 58%, France 52%, Spain 51%, Belgium 50%, Germany 46%, South Korea 44%. Every figure in the caption and alt text is correct.",
+    "Precision problem 1, population and wording: the survey statement was 'Products and services using artificial intelligence make me nervous' (% agree very or somewhat). Ipsos asked 22,816 adults under 75 in 31 countries between May 26 and June 9, 2023. The survey was online-only except in India, and the India sample is 'more urban, more educated, and/or more affluent than the general population'. The caption says 'people ... who say AI makes them nervous', which repeats the chart's shorthand title rather than the question actually asked.",
+    "Precision problem 2, selection: the chart shows 10 of the 31 countries surveyed. It leaves out New Zealand (63%, tied with Canada and the US) and Ireland (62%), both of which rank above India. The caption's 'in each country' could be read as covering every country, and HAI's own alt text ('Australia ..., Great Britain ..., and Canada at 63% top the list') can make the chart look like a complete ranking. The corrected caption states that the chart is a selection, so the page does not present it as 'the most nervous countries'. Japan was lowest at 23% and is not shown.",
+    "Minor: 'Stanford HAI licensed the chart ... by email permission' is basically right. More exactly, the uploader got permission by email from the AI Index research manager, and Wikimedia's Volunteer Response Team archived it under ticket #2024060510011799, approving publication under CC BY-SA 4.0. The corrected caption uses that wording."
+   ],
+   "fieldFixes": {
+    "caption": "A chart from Stanford University's 2024 AI Index covering ten of the 31 countries Ipsos surveyed online in May and June 2023. It shows the share of adults who agreed that 'products and services using artificial intelligence make me nervous': 69% in Australia, 65% in Great Britain and 63% in Canada and the United States (New Zealand, also at 63%, is not shown). Stanford HAI gave emailed permission for the chart to be published on Wikimedia Commons under CC BY-SA 4.0."
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "Ipsos",
+     "title": "Global Views on A.I. 2023 (Ipsos AI Monitor), July 2023",
+     "date": "2023-07",
+     "url": "https://www.ipsos.com/sites/default/files/ct/news/documents/2023-07/Ipsos%20Global%20AI%202023%20Report-WEB_0.pdf",
+     "quote": "Base: 22,816 adults under the age of 75 across 31 countries, interviewed May 26 – June 9, 2023 -- online only in all countries except India.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. On the same page (p.10), under 'Products and services using artificial intelligence make me nervous' (FOUND), the country values are Australia 69%, Great Britain 65%, Canada 63%, New Zealand 63%, United States 63%, Ireland 62%, India 58% ... Japan 23%, with a global country average of 52%. The report also says 'Nervousness is highest in all predominantly Anglophone countries and lowest in Japan, Korea and Eastern Europe.' (FOUND)."
+    },
+    {
+     "institution": "Stanford Institute for Human-Centered Artificial Intelligence (AI Index)",
+     "title": "Artificial Intelligence Index Report 2024, Chapter 9: Public Opinion",
+     "date": "2024-04-15",
+     "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter9.pdf",
+     "quote": "Opinions about AI by country (% agreeing with statement), 2023",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND, as is 'Source: Ipsos, 2023 | Chart: 2024 AI Index report' and 'level of nervousness about AI (23%)' (Japan). The heat-map row 'Products and services using artificial intelligence make me nervous' gives the same ten values as the Commons chart. The aiindex.stanford.edu copy of this PDF returns 403 to scripts, so the HAI S3 copy was used."
+    },
+    {
+     "institution": "Stanford Institute for Human-Centered Artificial Intelligence",
+     "title": "AI Index: State of AI in 13 Charts (Shana Lynch)",
+     "date": "2024-04-15",
+     "url": "https://hai.stanford.edu/news/ai-index-state-ai-13-charts",
+     "quote": "When asked in a survey about whether AI products and services make you nervous, 69% of Aussies and 65% of Brits said yes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the upstream page named as the Commons file's Source, and it embeds the same chart image."
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "id": "doc-searls-2020",
+   "status": "OK",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata (re-queried 2026-09-23) returns LicenseShortName 'CC BY 2.0' and LicenseUrl creativecommons.org/licenses/by/2.0, Artist 'Doc Searls' (linked to flickr.com/people/52614599@N00), ImageDescription 'A headshot of Doc Searls', DateTimeOriginal '2020-03-09 11:36', GPS 40.855677 / -73.934967. The page HTML contains 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' The FlickreviewR sentence ('... reviewed on 14 October 2022 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.') and 'A headshot of Doc Searls' return FOUND with fetch-text.py --check.",
+    "Checked OK, upstream: the Flickr photo page (flickr.com/photos/52614599@N00/49794830927, which redirects to /photos/docsearls/) is live. Its embedded data shows ownerNsid 52614599@N00, realname 'Doc Searls', username 'dsearls', license id 4 (links to creativecommons.org/licenses/by/2.0/), title '2020_03_09_headshots_cr_03', description 'A headshot of Doc Searls' (--check FOUND) and 'Taken on March 9, 2020'. The date and CC BY 2.0 appear in the raw HTML, but fetch-text's block extractor misses them because the page is rendered by script. So the claim that 'Searls posted it to his own Flickr account under a CC BY 2.0 licence' holds.",
+    "Checked OK, creator: the EXIF data on the Commons page gives an Apple iPhone 11 with a 2.71 mm lens, which is the phone's front (selfie) camera. That supports crediting Searls himself as the photographer, not just the uploader.",
+    "Checked OK, place: reverse-geocoding the file's GPS (OpenStreetMap Nominatim) gives Overlook Terrace, Hudson Heights, Manhattan, New York, NY 10033. 'New York City' is correct, and lat/lng 40.8557, -73.935 match. The 'from Santa Barbara, USA' in the Commons Author line is the location on Searls's Flickr profile, not where the photo was taken, so it does not conflict. The caption rightly attributes the location to the camera GPS.",
+    "Checked OK, local file: assets/media/doc-searls-2020.jpg opens as a 900x1200 JPEG (from a 2316x3088 original) showing Searls in a hat and denim shirt/jacket in front of a white door. thumbUrl returns HTTP 200 image/jpeg.",
+    "Nit, optional: the hat's crown samples as dark navy (mean RGB about 31,40,66) and the brim is near black. 'black wide-brimmed hat' in the alt text is acceptable, but 'dark navy wide-brimmed hat' would be more exact. The record makes no claim about Searls's role in IEEE 7012 or MyTerms, so there was nothing further to verify on that."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

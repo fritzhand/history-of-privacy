@@ -1,0 +1,498 @@
+{
+ "slice": "global",
+ "chunk": 7,
+ "verdicts": [
+  {
+   "kind": "law",
+   "id": "mx-2010",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes were re-fetched fresh (cache cleared) and are verbatim on their pages. The dates hold: DOF publication on 5 July 2010, and a replacement law of the same name published on 20 March 2025.",
+    "Off-by-one precision: the note says the law 'was abrogated' on 20 March 2025. The 2025 decree was published that day, but its first transitional article puts it in force the day after publication, and its second says the 2010 law is abrogated 'a la entrada en vigor del presente Decreto', which is 21 March 2025. The note now says the decree was published on 20 March and took effect the next day.",
+    "Three claims in the note had no source: IFAI supervision, the 2017 public-sector general law and the dissolution of the INAI. The DLA Piper quotes only say that the Ministry is now the data authority. Primary texts from the Cámara de Diputados were added. They are the 2010 DOF original (IFAI defined as 'Instituto'; Art. 38 supervision; in force the next day), the 2025 decree (its abrogation list names the 2010 law and the 2017 Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados; 'Secretaría' is defined as the Secretaría Anticorrupción y Buen Gobierno), and the 20 December 2024 constitutional decree on 'simplificación orgánica', which extinguishes the bodies it covers, the INAI among them.",
+    "DLA Piper's own page has an error that is not quoted in the record. It says the 2010 law 'was in force until July 6, 2010', when that is the day it entered into force. The quotes used in the record are unaffected.",
+    "Coordinates (19.4353, -99.1178) are central Mexico City, which is fine."
+   ],
+   "fieldFixes": {
+    "note": "Private-sector law published in the Diario Oficial on 5 July 2010 and in force the next day, supervised by the IFAI (later INAI); a separate general law for the public sector followed in 2017. A decree published on 20 March 2025 and in force the next day abrogated both and replaced the 2010 law with a new federal law of the same name; the INAI was dissolved and the Ministry of Anticorruption and Good Governance (Secretaría Anticorrupción y Buen Gobierno) became the data authority."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. The page is the Cámara de Diputados entry for the abrogated law. 'Ley abrogada DOF 20-03-2025' gives the publication date of the abrogating decree; that decree took effect on 21 March 2025."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. The paragraph's first sentence wrongly says the 2010 law 'was in force until July 6, 2010' (it should say 'since'). That sentence is not quoted."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. It supports the Ministry being the new authority but not the INAI's dissolution itself, which is sourced to the constitutional decree added below."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Cámara de Diputados, Mexico (DOF original publication)",
+     "title": "Decreto por el que se expide la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (DOF 5 July 2010)",
+     "date": "2010-07-05",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/abro/lfpdppp_2010/LFPDPPP_orig_05jul10.pdf",
+     "quote": "PRIMERO.- El presente Decreto entrará en vigor al día siguiente al de su publicación en el Diario Oficial de la Federación.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'FIRST. This Decree enters into force on the day after its publication in the Diario Oficial de la Federación.' The page header reads 'Lunes 5 de julio de 2010'. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (DOF original publication)",
+     "title": "Decreto por el que se expide la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (DOF 5 July 2010)",
+     "date": "2010-07-05",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/abro/lfpdppp_2010/LFPDPPP_orig_05jul10.pdf",
+     "quote": "Instituto: Instituto Federal de Acceso a la Información y Protección de Datos, a que hace referencia la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Art. 3(XI) definition. Translation: 'Institute: the Federal Institute for Access to Information and Data Protection [IFAI] referred to in the Federal Law on Transparency…'. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (DOF original publication)",
+     "title": "Decreto por el que se expide la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (DOF 5 July 2010)",
+     "date": "2010-07-05",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/abro/lfpdppp_2010/LFPDPPP_orig_05jul10.pdf",
+     "quote": "Artículo 38.- El Instituto, para efectos de esta Ley, tendrá por objeto difundir el conocimiento del derecho a la protección de datos personales en la sociedad mexicana, promover su ejercicio y vigilar por la debida observancia de las disposiciones previstas en la presente Ley",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'For the purposes of this Law, the Institute shall disseminate knowledge of the right to personal data protection, promote its exercise and oversee due observance of this Law.' This supports IFAI as supervisor. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (Leyes Federales vigentes)",
+     "title": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares (2025)",
+     "date": "2025-03-20",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+     "quote": "Nueva Ley publicada en el Diario Oficial de la Federación el 20 de marzo de 2025",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'New law published in the Diario Oficial de la Federación on 20 March 2025'. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (Leyes Federales vigentes)",
+     "title": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares (2025)",
+     "date": "2025-03-20",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+     "quote": "Primero.- El presente Decreto entrará en vigor al día siguiente de su publicación en el Diario Oficial de la Federación, con excepción de lo previsto en el transitorio Tercero de este instrumento.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'This Decree enters into force the day after its publication…', so on 21 March 2025. The next article, Segundo, opens 'A la entrada en vigor del presente Decreto se abrogan las disposiciones siguientes:'. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (Leyes Federales vigentes)",
+     "title": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares (2025)",
+     "date": "2025-03-20",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+     "quote": "La Ley Federal de Protección de Datos Personales en Posesión de los Particulares, publicada en el Diario Oficial de la Federación el 5 de julio de 2010;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Item I of the second transitional article's list of abrogated laws. Item IV is 'La Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, publicada en el Diario Oficial de la Federación el 26 de enero de 2017' (also --check FOUND), which is the 2017 public-sector law the note mentions. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (Leyes Federales vigentes)",
+     "title": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares (2025)",
+     "date": "2025-03-20",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+     "quote": "Secretaría: Secretaría Anticorrupción y Buen Gobierno;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Art. 2 definition in the 2025 law, which makes the Ministry of Anticorruption and Good Governance the authority. --check FOUND."
+    },
+    {
+     "institution": "Cámara de Diputados, Mexico (Constitución Política, texto vigente)",
+     "title": "Decreto … en materia de simplificación orgánica (DOF 20 December 2024), transitorios",
+     "date": "2024-12-20",
+     "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+     "quote": "Sexto.- Los Comisionados de la Comisión Reguladora de Energía y de la Comisión Nacional de Hidrocarburos; del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales y de los Organismos garantes de las entidades federativas, que a la entrada en vigor del presente Decreto continúen en su encargo, concluirán sus funciones a la entrada en vigor de la legislación a que aluden los artículos Segundo y Cuarto transitorios, respectivamente",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'The INAI commissioners … shall conclude their functions when the legislation referred to in the Second and Fourth transitional articles enters into force.' Article Quinto of the same decree adds: 'se entenderán extintos los entes públicos a los que hace referencia el presente Decreto' (--check FOUND). The decree is headed 'Publicado en el Diario Oficial de la Federación el 20 de diciembre de 2024'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "pe-2011",
+   "status": "FIXED",
+   "issues": [
+    "Out of date: the note says only that regulations followed in 2013 (Supreme Decree 003-2013-JUS). That decree was replaced by a new Regulation, Supreme Decree 016-2024-JUS, dated 30 November 2024 and in force from 30 March 2025. As of 2026 the note reads as if the 2013 decree were still in force.",
+    "Dates: the DLA Piper quote says the law was 'enacted in June 2011'. The official text shows Congress approved it on 21 June 2011, the President promulgated it on 2 July 2011, and it was published on 3 July 2011, the date gob.pe lists. The year 2011 is correct, and the note now gives the full sequence.",
+    "No independent or primary source was attached. The official text from gob.pe (ANPD) and the ANPD's listing of DS 016-2024-JUS were added.",
+    "The regulator (the Autoridad Nacional de Protección de Datos Personales, within the Ministry of Justice) is correct; Title VI of the law creates it. The coordinates are Lima."
+   ],
+   "fieldFixes": {
+    "note": "Approved by Congress on 21 June 2011, promulgated on 2 July and published on 3 July 2011. Its first implementing regulation (Supreme Decree 003-2013-JUS, March 2013) was replaced by a new Regulation, Supreme Decree 016-2024-JUS of 30 November 2024, in force since 30 March 2025, which added duties such as data protection officers and breach notification."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. 'Enacted in June 2011' means Congress's approval on 21 June 2011; promulgation was on 2 July and publication on 3 July 2011 (official text added). The same DLA paragraph goes on to report the 2024 New Regulation (added below)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Autoridad Nacional de Protección de Datos Personales (gob.pe), Peru",
+     "title": "Ley N.° 29733 — Ley de protección de datos personales (official text)",
+     "date": "2011-07-03",
+     "url": "https://cdn.www.gob.pe/uploads/document/file/2011398/Ley%20N%C2%BA%2029733%20-%20Ley%20de%20protecci%C3%B3n%20de%20datos%20personales.pdf.pdf?v=1683928275",
+     "quote": "En Lima, a los veintiún días del mes de junio de dos mil once.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Signature line of Congress. Translation: 'In Lima, on the twenty-first day of June 2011.' The promulgation line follows: 'Dado en la Casa de Gobierno, en Lima, a los dos días del mes de julio del año dos mil once' (2 July 2011; also --check FOUND). --check FOUND."
+    },
+    {
+     "institution": "Autoridad Nacional de Protección de Datos Personales (gob.pe), Peru",
+     "title": "Ley N.° 29733 - 2011",
+     "date": "2011-07-03",
+     "url": "https://www.gob.pe/institucion/anpd/normas-legales/2018427-29733-2011",
+     "quote": "Ley N.° 29733 - 2011 Ley de protección de datos personales 3 de julio de 2011",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The ANPD's legal-norms page, which dates the law to its publication on 3 July 2011. --check FOUND."
+    },
+    {
+     "institution": "Autoridad Nacional de Protección de Datos Personales (gob.pe), Peru",
+     "title": "Decreto Supremo N.° 16-2024-JUS",
+     "date": "2024-11-30",
+     "url": "https://www.gob.pe/institucion/anpd/normas-legales/6554453-16-2024-jus",
+     "quote": "Decreto Supremo N.° 16-2024-JUS Reglamento de la Ley Nº 29733, Ley de Protección de Datos Personales 30 de noviembre de 2024",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The official listing of the new Regulation. --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Peru",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=PE",
+     "quote": "The New Regulation entered into force on March 30, 2025, replacing the 2013 Regulation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Law-firm global guide (secondary). --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "cr-2011",
+   "status": "FIXED",
+   "issues": [
+    "The RIPD quote was re-fetched and is verbatim. It supports the name, the number and the date of 7 July 2011, but not the note's only claim, that the law created PRODHAB, which had no source.",
+    "The PRODHAB's own site says it was created by Ley 8968 of 7 July 2011, published in La Gaceta No. 170 of 5 September 2011. Its legislation page adds that the Assembly approved the law on 27 June 2011. Both are added as sources. The year 2011 and the regulator are correct.",
+    "Coordinates (9.9333, -84.0773) are in San José, which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. RIPD (Ibero-American Data Protection Network) legislation entry, which also lists implementing Decree 37554-JP of 30 October 2012."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Agencia de Protección de Datos de los Habitantes (PRODHAB), Costa Rica",
+     "title": "Acerca de PRODHAB",
+     "date": "2026",
+     "url": "https://www.prodhab.go.cr/acercade/",
+     "quote": "La Prodhab fue creada mediante la Ley N.°8968 del 7 de julio del 2011, publicada en el diario oficial La Gaceta N.°170 del 5 de setiembre del 2011.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Prodhab was created by Law No. 8968 of 7 July 2011, published in the official gazette La Gaceta No. 170 of 5 September 2011.' --check FOUND."
+    },
+    {
+     "institution": "Agencia de Protección de Datos de los Habitantes (PRODHAB), Costa Rica",
+     "title": "Normativa — Protección de datos personales vigente en Costa Rica",
+     "date": "2026",
+     "url": "https://www.prodhab.go.cr/acercade/normativa/",
+     "quote": "Fue aprobado el 27 de junio de 2011 y publicada en La Gaceta N.º 170 de 05 de setiembre de 2011.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'It was approved on 27 June 2011 and published in La Gaceta No. 170 of 5 September 2011.' The date of 7 July 2011 is the date of the law itself. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ni-2012",
+   "status": "OK",
+   "issues": [
+    "No error was found. The DLA Piper quote was re-fetched fresh and is verbatim. The official text in the National Assembly's legislation database confirms the law was approved on 21 March 2012 and published in La Gaceta No. 61 on 29 March 2012. Art. 56 puts it in force from publication. Primary sources were added.",
+    "Note for the editors: the law creates a regulator, the Dirección de Protección de Datos Personales attached to the Ministry of Finance and Public Credit (Art. 28), but the record has no regulator field. It would be optional to add one, sourced to the Art. 28 quote below. The promulgation line in the official text reads 'veintisiete de Marzo del año dos mil once' [sic], an obvious slip for 2012 in the source.",
+    "Coordinates (12.115, -86.2362) are Managua, which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. Confirmed against the official text added below."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Asamblea Nacional de Nicaragua (Legislación de Nicaragua)",
+     "title": "Ley N° 787, Ley de Protección de Datos Personales",
+     "date": "2012-03-29",
+     "url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+     "quote": "LEY N°. 787, aprobada el 21 de marzo de 2012 Publicada en La Gaceta, Diario Oficial N°. 61 del 29 de marzo de 2012",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Law No. 787, approved on 21 March 2012, published in La Gaceta, Diario Oficial No. 61 of 29 March 2012.' --check FOUND."
+    },
+    {
+     "institution": "Asamblea Nacional de Nicaragua (Legislación de Nicaragua)",
+     "title": "Ley N° 787, Ley de Protección de Datos Personales",
+     "date": "2012-03-29",
+     "url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+     "quote": "Art. 56. Vigencia La presente Ley entrará en vigencia a partir de su publicación en La Gaceta, Diario Oficial.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'This Law enters into force upon its publication in La Gaceta.' --check FOUND."
+    },
+    {
+     "institution": "Asamblea Nacional de Nicaragua (Legislación de Nicaragua)",
+     "title": "Ley N° 787, Ley de Protección de Datos Personales",
+     "date": "2012-03-29",
+     "url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+     "quote": "Créase la Dirección de Protección de Datos Personales adscrita al Ministerio de Hacienda y Crédito Público",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Art. 28. Translation: 'The Directorate for the Protection of Personal Data is created, attached to the Ministry of Finance and Public Credit.' This supports an optional regulator field. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "co-2012",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes were re-fetched fresh and are verbatim. The date of 17 October 2012, the Diario Oficial issue of 18 October 2012 and the name 'Ley Estatutaria' are correct.",
+    "The claim that the SIC supervises the law (in the regulator field and the note) had no source. Art. 19 of the law, on the Senate page already cited, names the SIC as the data protection authority, and a source was added.",
+    "The 2008 precursor was sourced only to a secondary guide. The Senate text of Ley Estatutaria 1266 was added. Dated 31 December 2008, its title covers habeas data and in particular financial, credit, commercial and services data. This confirms the note's 'sectoral habeas data law for financial and credit data', though the law also covers commercial, services and third-country data.",
+    "Coordinates (4.5981, -74.076) are the Plaza de Bolívar in Bogotá, which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. Corroborated by the primary text of Ley 1266 added below."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Secretaría General del Senado, Colombia",
+     "title": "Ley 1581 de 2012",
+     "date": "2012-10-17",
+     "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html",
+     "quote": "ARTÍCULO 19. AUTORIDAD DE PROTECCIÓN DE DATOS. <Artículo CONDICIONALMENTE exequible> La Superintendencia de Industria y Comercio, a través de una Delegatura para la Protección de Datos Personales, ejercerá la vigilancia para garantizar que en el Tratamiento de datos personales se respeten los principios, derechos, garantías y procedimientos previstos en la presente ley.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Art. 19. Data protection authority. The Superintendency of Industry and Commerce, through a Delegation for the Protection of Personal Data, shall supervise…'. The angle-bracket note is the Senate editor's annotation (conditionally upheld by the Constitutional Court). --check FOUND."
+    },
+    {
+     "institution": "Secretaría General del Senado, Colombia",
+     "title": "Ley Estatutaria 1266 de 2008",
+     "date": "2008-12-31",
+     "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1266_2008.html",
+     "quote": "Por la cual se dictan las disposiciones generales del hábeas data y se regula el manejo de la información contenida en bases de datos personales, en especial la financiera, crediticia, comercial, de servicios y la proveniente de terceros países y se dictan otras disposiciones.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Title of the law. Translation: 'Which sets out the general provisions on habeas data and regulates the handling of information in personal databases, especially financial, credit, commercial, services and third-country information…'. The page header reads 'Diario Oficial No. 47.219 de 31 de diciembre de 2008'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "tt-2011",
+   "status": "FIXED",
+   "issues": [
+    "The note is incomplete. It gives only the 6 January 2012 proclamation, but the official Digital Legislative Library (laws.gov.tt) lists a second one. Legal Notice 220 of 2021, a proclamation dated 20 August 2021, brought section 42(a) and (b) of Part III into operation on 23 August 2021. That section covers disclosure of personal information by public bodies.",
+    "DLA Piper's second quote is verbatim, but it runs the two proclamations together. It lists '42(a),(b) of Part III' in the same sentence as 'partially enacted on January 6, 2012 by Legal Notice 2 of 2012'. Legal Notice 2 of 2012 itself names only Part I and sections 7 to 18, 22, 23, 25(1), 26 and 28 of Part II. DLA also says 'enacted' where the event was a proclamation, and the page notes it was 'last reviewed in 2023'. Source index 1 is repointed to the primary Legal Notice 2 of 2012.",
+    "The Act was assented to on 22 June 2011 (Act No. 13 of 2011), so yearEnacted 2011 is correct. The official database still marks the Act 'only … partially proclaimed'. Part IV (private sector) and Part V (enforcement) are not among the proclaimed provisions, so the claim 'only partly proclaimed' stands.",
+    "Coordinates (10.6549, -61.5019) are Port of Spain, which is fine."
+   ],
+   "fieldFixes": {
+    "note": "Assented to on 22 June 2011 but only partly proclaimed. Part I and sections 7–18, 22, 23, 25(1), 26 and 28 of Part II (the Office of the Information Commissioner) came into operation on 6 January 2012 (Legal Notice 2 of 2012), and section 42(a)–(b) of Part III, on disclosure of personal information by public bodies, followed on 23 August 2021 (Legal Notice 220 of 2021). The rules for the private sector (Part IV) have not been proclaimed."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. The DLA page carries a banner saying it was 'last reviewed in 2023'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Government of the Republic of Trinidad and Tobago (Legal Supplement Part B; Digital Legislative Library)",
+     "title": "Legal Notice No. 2 of 2012 — Proclamation under the Data Protection Act, 2011",
+     "date": "2012-01-05",
+     "url": "https://laws.gov.tt/ttdll-web2/revision/download/80864?type=amendment",
+     "quote": "do hereby fix the 6th day of January, 2012 as the date on which Part I and sections 7 to 18, 22, 23, 25(1), 26 and 28 of Part II of the Act shall come into operation.",
+     "note": "Replaces DLA Piper's sentence, which presents section 42(a),(b) as part of the January 2012 proclamation; that section came into operation only in 2021 (LN 220/2021, added below). This is the primary proclamation signed by President George Maxwell Richards on 5 January 2012. --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of the Republic of Trinidad and Tobago (Legal Supplement Part B; Digital Legislative Library)",
+     "title": "Legal Notice No. 220 of 2021 — Proclamation under the Data Protection Act, Chap. 22:04",
+     "date": "2021-08-20",
+     "url": "https://laws.gov.tt/ttdll-web2/revision/download/112042?type=amendment",
+     "quote": "do hereby fix the 23rd day of August, 2021, as the day on which section 42(a) and (b) shall come into operation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Proclamation by Acting President Christine Kangaloo, dated 20 August 2021. --check FOUND."
+    },
+    {
+     "institution": "Parliament of the Republic of Trinidad and Tobago (via Digital Legislative Library)",
+     "title": "Data Protection Act, 2011 (Act No. 13 of 2011) — original Act",
+     "date": "2011-06-22",
+     "url": "https://laws.gov.tt/ttdll-web2/revision/download/80860?type=act",
+     "quote": "[Assented to 22nd June, 2011]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "From the Legal Supplement Part A to the Gazette of 27 June 2011. Part IV of the Act is headed 'PROTECTION OF PERSONAL DATA BY THE PRIVATE SECTOR'. --check FOUND."
+    },
+    {
+     "institution": "Ministry of the Attorney General and Legal Affairs, Trinidad and Tobago (Digital Legislative Library)",
+     "title": "Data Protection, Chap. 22:04",
+     "date": "2026",
+     "url": "https://laws.gov.tt/ttdll-web2/revision/list?offset=0&q=data+protection&currentid=80855",
+     "quote": "This Act has only been partially proclaimed",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The database entry lists Act 13 of 2011, 'Commencement Date - Fri, 6 Jan 2012' (also --check FOUND), and Legal Notices LN 2/2012 and LN 220/2021 as its only proclamations. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "do-2013",
+   "status": "OK",
+   "issues": [
+    "No error was found. The DLA Piper quote was re-fetched fresh and is verbatim, and the RIPD legislation entry independently confirms the date of 13 December 2013 and the title. It was added.",
+    "The official PDF the RIPD links to (digeig.gob.do/wp-content/uploads/2021/01/ley_172_13.pdf) now returns 404, so a primary gazette text could not be read.",
+    "Coordinates (18.4861, -69.9312) are Santo Domingo, which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Red Iberoamericana de Protección de Datos (RIPD)",
+     "title": "Ley Nº 172-13, de 13 de diciembre de 2013, sobre Protección de Datos de Carácter Personal",
+     "date": "2013-12-13",
+     "url": "https://www.redipd.org/legislacion/ley-172-13",
+     "quote": "Ley Nº 172-13, de 13 de diciembre de 2013, sobre Protección de Datos de Carácter Personal",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent corroboration of the date and title from the Ibero-American Data Protection Network. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "br-2018",
+   "status": "FIXED",
+   "issues": [
+    "Planalto source (index 0): after the cache was cleared, a fresh fetch gave NOT-FOUND for 'Lei Geral de Proteção de Dados Pessoais (LGPD)'. The cause is the page's Windows-1252 encoding with no charset header, which makes fetch-text.py decode the accents as U+FFFD; the quote is not missing. Decoding the raw bytes as cp1252 shows the exact string in the ementa. The page marks the LGPD short title as '(Redação dada pela Lei nº 13.853, de 2019)', so the name was added by the 2019 amendment. An accent-free fragment from the same page, '13.709, DE 14 DE AGOSTO DE 2018', passes --check and confirms the signing date.",
+    "The claim that the 1988 Constitution had already created the habeas data writ had no source. The Câmara dos Deputados text of the Constitution's original publication (DOU, 5 October 1988) gives Art. 5 LXXII(a): the writ is granted to ensure knowledge of information about the petitioner held in government or public-character databases. This was added.",
+    "The dates are correct: signed 14 August 2018, in force 18 September 2020 per DLA Piper. The RIPD entry was added as independent corroboration. A nuance that is not wrong: the administrative-sanctions articles took effect only on 1 August 2021, and the ANPD provisions earlier, in December 2018.",
+    "Coordinates (-15.7998, -47.8645) are Brasília (Praça dos Três Poderes area), which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23. The helper returns NOT-FOUND only because the page is served as Windows-1252 without a charset header, so accents decode as U+FFFD. The raw bytes decoded as cp1252 contain the exact quote in the ementa: 'Lei Geral de Proteção de Dados Pessoais (LGPD). (Redação dada pela Lei nº 13.853, de 2019)'. The short title was therefore added in 2019. The accent-free heading fragment '13.709, DE 14 DE AGOSTO DE 2018' passes --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. DLA's 'EU General Data Protection Act' is their wording (sic) for the Regulation."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Red Iberoamericana de Protección de Datos (RIPD)",
+     "title": "Lei nº 13.709, de 14 de agosto de 2018 – Lei Geral de Proteção de Dados (LGPD)",
+     "date": "2018-08-14",
+     "url": "https://www.redipd.org/legislacion/ley-13709",
+     "quote": "Lei nº 13.709, de 14 de agosto de 2018 – Lei Geral de Proteção de Dados (LGPD)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent corroboration of the number, date and name. The page links to Planalto's compiled text. --check FOUND."
+    },
+    {
+     "institution": "Câmara dos Deputados, Brazil (Legislação Informatizada)",
+     "title": "Constituição de 1988 — Publicação Original",
+     "date": "1988-10-05",
+     "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-publicacaooriginal-1-pl.html",
+     "quote": "para assegurar o conhecimento de informações relativas à pessoa do impetrante, constantes de registros ou bancos de dados de entidades governamentais ou de caráter público;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Art. 5, LXXII(a) as originally published (DOU, Seção 1, 5 October 1988). It is preceded in the raw HTML by 'LXXII - conceder-se-á habeas data :', a bare text node that the helper does not extract. Translation: '[habeas data shall be granted] (a) to ensure knowledge of information relating to the petitioner held in records or databases of government or public entities.' --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "pa-2019",
+   "status": "OK",
+   "issues": [
+    "No error was found. The DLA Piper quote was re-fetched fresh and is verbatim. The date of 26 March 2019 and Executive Decree 285 of 28 May 2021 are right.",
+    "Independent corroboration was added. The RIPD entry confirms 'Ley nº 81, de 26 de marzo de 2019'. The official Gazette PDF hosted by ANTAI (Panama's data authority) is a scan whose only machine-readable text is its header, 'No. 28743-A Gaceta Oficial Digital, viernes 29 de marzo de 2019', which confirms publication on 29 March 2019.",
+    "Coordinates (8.9824, -79.5199) are Panama City, which is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Red Iberoamericana de Protección de Datos (RIPD)",
+     "title": "Ley nº 81, de 26 de marzo de 2019, sobre Protección de Datos Personales",
+     "date": "2019-03-26",
+     "url": "https://www.redipd.org/legislacion/ley-81-2019",
+     "quote": "Ley nº 81, de 26 de marzo de 2019, sobre Protección de Datos Personales",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent corroboration of the number and date. --check FOUND."
+    },
+    {
+     "institution": "Autoridad Nacional de Transparencia y Acceso a la Información (ANTAI), Panama",
+     "title": "Ley 81 de 2019 — Gaceta Oficial Digital No. 28743-A",
+     "date": "2019-03-29",
+     "url": "https://www.antai.gob.pa/wp-content/uploads/2019/04/Ley-81-de-2019-Proteccion-de-Datos-Personales.pdf",
+     "quote": "No. 28743-A Gaceta Oficial Digital, viernes 29 de marzo de 2019",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The running header of the scanned gazette, which is the only text layer in the PDF. It confirms publication on 29 March 2019. --check FOUND."
+    }
+   ]
+  }
+ ]
+}

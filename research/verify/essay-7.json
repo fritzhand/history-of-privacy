@@ -1,0 +1,179 @@
+{
+ "slice": "essay",
+ "chunk": 7,
+ "verdicts": [
+  {
+   "kind": "quote",
+   "id": "q-hughes-1993-selectively-reveal",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim. The page signature reads 'Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993'. 'We the Cypherpunks are dedicated to building anonymous systems' and 'Cypherpunks write code' are both on the page, so the record note is accurate."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-mcnealy-1999-get-over-it",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim. The page metadata gives author 'Polly Sprenger' and datePublished 1999-01-26, so the 'Monday night' Jini event was 25 January 1999. 'McNealy's comments came only hours after competitor Intel ( INTC ) reversed course under pressure and disabled identification features in its forthcoming Pentium III chip.' is FOUND, which supports the note. The record's joined quote ('You have zero privacy anyway. Get over it.') joins two fragments of the same speech, and the note says so."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-solove-2013-no-meaningful-control",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim. It is Solove's own thesis sentence ('I contend that it is being tasked with doing work beyond its capabilities. Privacy self-management does not provide people with meaningful control over their data.'), not a view he rebuts. The page header reads 'Volume 126 / Issue 7 / May 2013' (datePublished 2013-05-20). The published title begins 'Introduction:', and the source title already has it."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-nissenbaum-2011-transparency-paradox",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF 2026-09-23: quote FOUND verbatim. The running footer reads '140 (4) Fall 2011' and the copyright line '(c) 2011 by Helen Nissenbaum'. The 'futile effort' is 'the need for brief and clear policies that capture the essence of privacy practices in ways ordinary people can grasp' (FOUND). The note's gloss, 'both short and complete', fairly states the paradox she goes on to describe: full detail goes unread, while a summary 'drains away important details'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-zuboff-2015-exile",
+   "status": "FIXED",
+   "issues": [
+    "The note calls Big Other 'the architecture of surveillance capitalism'. The abstract separates the two: the 'global architecture of computer mediation' upon which surveillance capitalism depends 'produces a distributed and largely uncontested new expression of power that I christen: \"Big Other.\"' So 'It' in the quote is that expression of power, not the architecture itself.",
+    "Minor: Springer's citation metadata names the publisher as Palgrave Macmillan UK (a Springer Nature imprint) and the issue as vol. 30, no. 1, pp. 75-89 (issue dated March 2015, online 9 April 2015). The full article is paywalled (isAccessibleForFree: false). The quoted sentence is in the free abstract, so accessType FREE holds for the quote."
+   ],
+   "fieldFixes": {
+    "note": "\"It\" is what Zuboff christens \"Big Other\": the \"distributed and largely uncontested new expression of power\" produced by the global architecture of computer mediation on which surveillance capitalism depends. The sentence is from the article's abstract."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Journal of Information Technology (vol. 30, no. 1), Palgrave Macmillan / Springer Nature",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim in the abstract, immediately after 'This architecture produces a distributed and largely uncontested new expression of power that I christen: 'Big Other.'' (FOUND). citation_online_date 2015/04/09, citation_publication_date 2015/03, volume 30, issue 1, pp. 75-89, publisher Palgrave Macmillan UK."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-searls-2019-empty-promise",
+   "status": "OK",
+   "issues": [
+    "Informational, no change needed. The Linux Journal piece (byline Doc Searls, 'on January 9, 2019') says 'The original version of this post was published on the Private Internet Access blog' (FOUND). That original, dated 2018-12-17, ends 'Without work like this, privacy will remain an empty promise by a legion of violators.' (FOUND there). The #OwnRoot wording quoted here first appears in the January 2019 Linux Journal version, so year 2019 is correct for this wording."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim. The title tag reads 'If Your Privacy Is in the Hands of Others Alone, You Don't Have Any | Linux Journal', with byline Doc Searls, 'on January 9, 2019'. The author bio reads 'Doc Searls is editor-in-chief of Linux Journal'. The #OwnRoot credit is FOUND: 'Devon Loffreto (who coined the term self-sovereign identity ...) puts the issue in simple geek terms: we need root authority over our lives . Hashtag: #OwnRoot .'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quote",
+   "id": "q-projectvrm-2025-first-party",
+   "status": "FIXED",
+   "issues": [
+    "The note says the post was 'Posted by the ProjectVRM account, not signed by an individual'. That is wrong. The post carries the byline 'Doc Searls' (<span class=\"post-author\"><a href=\"https://projectvrm.org/author/vrm/\" rel=\"author\">Doc Searls</a></span>), and it is written in the first person: 'It launched a working group in 2017 (that I now chair), and is expected to go from draft to done by early 2026.' The speaker should therefore be Doc Searls, not ProjectVRM as an institution.",
+    "The quoted sentence is Searls's own lead framing. It is not text from the IEEE P7012 PAR, which the post quotes afterwards, sentence by sentence."
+   ],
+   "fieldFixes": {
+    "speaker": "Doc Searls (founder of ProjectVRM; chair of the IEEE P7012 working group)",
+    "note": "The thesis of the site in one sentence: a reversal of who writes the terms. The post carries Doc Searls's byline on ProjectVRM's blog and is in the first person: the P7012 working group launched in 2017 is one \"that I now chair\". This sentence is his framing; the post then quotes the IEEE P7012 Project Authorization Request sentence by sentence."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Doc Searls, 'The MyTerms PAR'",
+     "note": "Fetched 2026-09-23: quote FOUND verbatim as the post's first sentence. The page shows the date 'April 6, 2025' and the byline Doc Searls (author link /author/vrm/). 'It launched a working group in 2017 (that I now chair)' was read in the same fetch. A later re-fetch got HTTP 403 (rate limit); WebFetch confirmed the byline, the date and that sentence."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-warren-brandeis-coined-let-alone",
+   "status": "FIXED",
+   "issues": [
+    "The correction gives '2nd edition, 1888, p. 29'. The only source, the Louisville transcript, shows footnote 10 as 'Cooley on Torts , 2d ed., p. 29.' with no year. The 1888 date was unsupported, so a source for it is added: the 1888 second edition, whose p. 29 carries the phrase. The verdict FALSE stands. Cooley's first edition dates from 1879, and the correction does not claim that Cooley was the first ever to use the words."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim. Footnote 10 reads '10. Cooley on Torts , 2d ed., p. 29.' (FOUND). The page header reads 'Originally published in 4 Harvard Law Review 193 (1890)'. The day, 15 December 1890, matches the issue date recorded in the letalone verification."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Callaghan & Company, Chicago (digitised by the North Dakota Constitution project, ndconst.org)",
+     "title": "Thomas M. Cooley, A Treatise on the Law of Torts, or the Wrongs Which Arise Independent of Contract, 2nd edition",
+     "date": "1888",
+     "url": "https://www.ndconst.org/_media/laws/1888_cooley_torts_2d.pdf",
+     "quote": "The right to one's person may be said to be a right of complete immunity : to be let alone.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. It sits on p. 29 under 'Personal Immunity', in the chapter 'Classification of Legal Rights'. The title page reads 'SECOND EDITION. ... CALLAGHAN & COMPANY. 1888.' The OCR text layer has a space before the colon."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-warren-daughter-wedding",
+   "status": "FIXED",
+   "issues": [
+    "The correction states flatly that scholars repeated the story 'in part because' of Prosser's 1960 article. The source hedges: 'likely due, in part, to its appearance in another influential law review article on privacy, written by Dean William Prosser in 1960'. The hedge is restored.",
+    "Everything else checks out. Colman reports Banner: 'Warren's daughter was only six years old'. Warren married Mabel Bayard on 25 January 1883 (Wikipedia, citing the NYT of 26 January 1883), so no daughter of his could have married by 1890. Prosser's text ('the newspapers had a field day on the occasion of the wedding of a daughter') is quoted on Wikipedia's 'The Right to Privacy (article)' page, and Colman's footnote 9 cites Prosser, Privacy, 48 Calif. L. Rev. 383, 383 (1960)."
+   ],
+   "fieldFixes": {
+    "correction": "The story cannot be true: Warren's daughter was about six years old in 1890. Scholars repeated it for decades, likely in part because Dean William Prosser's influential 1960 article on privacy told it."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim. The preceding sentence quotes Banner: 'The traditional explanation of the origin of 'The Right to Privacy' emphasizes Warren's irritation with sensationalist press coverage of his daughter's wedding.' The page header reads 'Volume 129 / Issue 3 / January 2016' (datePublished 2016-01-29)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim, including the footnote marker '9'. Footnote 9 cites William L. Prosser, Privacy, 48 Calif. L. Rev. 383, 383 (1960)."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

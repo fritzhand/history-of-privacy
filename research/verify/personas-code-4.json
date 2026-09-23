@@ -1,0 +1,214 @@
+{
+  "slice": "personas-code",
+  "chunk": 4,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "tor-network-deployed-free-software-2002",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched with a fresh cache; --check FOUND. Header confirmed: 'Subject : pre-alpha: run an onion proxy now!', 'From : Roger Dingledine < arma@mit.edu >', 'Date : Fri, 20 Sep 2002 17:14:01 -0400', To or-dev@freehaven.net. The body's step 1 is 'wget http://freehaven.net/or/tor-0.0.0.tar.gz', which supports 'invited testers to download tor-0.0.0'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; both the quoted passage (October 2002, free and open software license, about a dozen volunteer nodes by end of 2003) and the EFF 2004 / 501(c)(3) 2006 sentence --check FOUND. The record already hedges the September vs October 2002 difference."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched PDF; --check FOUND. Front matter reads 'Proceedings of the 13th USENIX Security Symposium, San Diego, CA, USA, August 9–13, 2004', matching the institution field and the 'August 2004' claim; authors Dingledine, Mathewson, Syverson."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "nakamoto-bitcoin-white-paper-2008",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. Raw HTML shows sender 'Satoshi Nakamoto' (satoshi at vistomail.com) and '<I>Fri Oct 31 14:10:00 EDT 2008</I>'; the post links http://www.bitcoin.org/bitcoin.pdf."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched PDF; --check FOUND. Section 10 also says 'The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained ... by keeping public keys anonymous', which supports the summary's paraphrase. The PDF carries no date; 2008-10-31 is the announcement date."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "open-whisper-systems-textsecure-becomes-signal-2015",
+      "status": "FIXED",
+      "issues": [
+        "Summary says 'from January 2013 continued development was hosted as the open project Open Whisper Systems', which implies the project began then. The 21 Jan 2013 post 'A New Home' says the community had already been calling the continued work 'Open Whisper Systems' ('we've been calling the project for this continued work \"Open Whisper Systems.\" Welcome to the project's new home'). January 2013 is when the project got its own website, not when it started under that name."
+      ],
+      "fieldFixes": {
+        "summary": "Whisper Systems, a mobile-security company, was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 open-source licence, and the community's continued open development, already known as Open Whisper Systems, got its own home in January 2013. The project released Signal, free encrypted calling for iPhone, on 29 July 2014, and on 2 November 2015 began rolling out Signal for Android, combining its Android apps TextSecure (private messaging) and RedPhone (private calling) in one app."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. Byline 'moxie0 on 02 Nov 2015'; opens 'Today we've started rolling out Signal for Android, which unites simple private messaging and simple private calling into a single app on Android.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. Byline 'moxie0 on 21 Jan 2013'. The same paragraph continues: 'we've been calling the project for this continued work \"Open Whisper Systems.\" Welcome to the project's new home.' (basis for the summary fix). The iPhone Signal post (https://signal.org/blog/signal/, 'moxie0 on 29 Jul 2014') was also re-fetched and its quoted sentence --check FOUND."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "whatsapp-end-to-end-encryption-all-users-2016",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "The repo helper again got HTTP 400 with its default headers. curl with a curl or Safari user agent and 'Accept: text/html' got HTTP 200. That copy was put into the helper's cache and --check was run on it: FOUND. The page is signed 'Jan and Brian' and dated 'April 5, 2016', and it also contains 'No one can see inside that message. Not cybercriminals. Not hackers. Not oppressive regimes. Not even us.' The title's 'all users' matches WhatsApp's own framing; the summary correctly limits it to users of the latest app version."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. Byline 'moxie0 on 05 Apr 2016'; 'As of today, the integration is fully complete.' The partnership post https://signal.org/blog/whatsapp/ is bylined 'moxie0 on 18 Nov 2014', which supports 'announced in November 2014'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "apple-v-fbi-san-bernardino-iphone-order-2016",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched PDF; --check FOUND. Header 'Case 5:16-cm-00010-SP Document 209 Filed 03/28/16'; caption 'ED No. CM 16-10 (SP)'. It also says 'Accordingly, the government hereby requests that the Order Compelling Apple Inc. to Assist Agents in Search dated February 16, 2016 be vacated. Dated: March 28, 2016', which supports 'asked that the order be vacated'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; the page is headed 'February 16, 2016 A Message to Our Customers'. The quote and both extra sentences in the note (All Writs Act of 1789; 'out of our own reach') --check FOUND."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. The page also states 'On February 16, 2016, the U.S. Department of Justice (DOJ) obtained an unprecedented court order' and that the order required \"signed iPhone software\" disabling 'the auto-erase and time delay features', which supports the summary."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "lets-encrypt-leaves-beta-free-https-2016",
+      "status": "FIXED",
+      "issues": [
+        "Summary says Let's Encrypt 'opened a beta in September 2015'. The beta that began in September 2015 was an invitation-only Limited Beta (started 12 September 2015). Let's Encrypt only opened to anyone with its Public Beta on 3 December 2015 (Let's Encrypt, 'Public Beta: December 3, 2015' and 'Entering Public Beta'). 'Opened' overstates the September start.",
+        "The title 'leaves beta, making HTTPS certificates free and automatic' implies that leaving beta made certificates free. Free, automated certificates had been available to everyone since the public beta of 3 December 2015; on 12 April 2016 Let's Encrypt only dropped the beta label ('The beta label is simply not necessary any more')."
+      ],
+      "fieldFixes": {
+        "title": "Let's Encrypt leaves beta with free, automated HTTPS certificates",
+        "summary": "Let's Encrypt, a free, automated certificate authority run by the nonprofit Internet Security Research Group — founded in May 2013 with Mozilla, the Electronic Frontier Foundation, the University of Michigan, Cisco and Akamai as founding sponsors and partners — was announced on 18 November 2014, started an invitation-only Limited Beta on 12 September 2015 and opened a Public Beta to anyone on 3 December 2015. On 12 April 2016 it left beta, reporting that since the beta began it had issued more than 1.7 million certificates for more than 3.8 million websites, and stating its aim to 'encrypt 100% of the Web'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. 'Let's Encrypt is leaving beta today.' and 'We set out to encrypt 100% of the Web.' also FOUND. The 1.7 million / 3.8 million figures are cumulative since September 2015, as the fixed summary now says."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; --check FOUND. The URL path (2014/11/18) matches the date field."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched; both the quote and 'ISRG was founded in May of 2013 to serve as a home for public-benefit digital infrastructure projects' --check FOUND. Location check: ProPublica Nonprofit Explorer lists 'Internet Security Research Group, Sacramento, CA', EIN 46-3344200, matching the locationNote."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Let's Encrypt (Internet Security Research Group)",
+          "title": "Public Beta: December 3, 2015",
+          "date": "2015-11-12",
+          "url": "https://letsencrypt.org/2015/11/12/public-beta-timing.html",
+          "quote": "Our Limited Beta started on September 12, 2015.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND; page <time datetime=\"2015-11-12\">. Same post: 'Let's Encrypt will enter Public Beta on December 3, 2015. Once we've entered Public Beta our systems will be open to anyone who would like to request a certificate. There will no longer be a requirement to sign up and wait for an invitation.' (--check FOUND)."
+        },
+        {
+          "institution": "Let's Encrypt (Internet Security Research Group)",
+          "title": "Entering Public Beta",
+          "date": "2015-12-03",
+          "url": "https://letsencrypt.org/2015/12/03/entering-public-beta.html",
+          "quote": "We're happy to announce that Let's Encrypt has entered Public Beta. Invitations are no longer needed in order to get free certificates from Let's Encrypt.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND; page datetime 2015-12-03."
+        }
+      ]
+    },
+    {
+      "kind": "image",
+      "id": "whitfield-diffie-royal-society-2017",
+      "status": "FIXED",
+      "issues": [
+        "The creator field credits the crop to Duncan.Hull, which is wrong. According to the Commons file history and the API 'user' field, the cropped file was uploaded by Jochen Burghardt on 29 February 2020 ('File:Whitfield Diffie Royal Society.jpg cropped 29 % horizontally, 52 % vertically using CropTool'). Duncan.Hull uploaded the uncropped original (File:Whitfield_Diffie_Royal_Society.jpg) on 21 December 2017. He is listed on Commons as 'Author' with 'Own work', but the image is a Royal Society portrait released under VRT ticket #2014062710019796.",
+        "The licence is attributed imprecisely. 'CC BY-SA 4.0 (crop)' is not a licence on the crop specifically: the CC BY-SA 4.0 self-publication tag comes from Duncan.Hull's original upload and was copied to the crop page. The rights holder's grant is CC BY-SA 3.0 with 'Attribution: The Royal Society' (VRT-confirmed). Both are acceptable free licences, so the image stays usable. The credit line should name the Royal Society under CC BY-SA 3.0 rather than present Duncan.Hull as co-author."
+      ],
+      "fieldFixes": {
+        "creator": "The Royal Society (photograph; uploaded to Wikimedia Commons by Duncan.Hull, cropped by Jochen Burghardt)",
+        "license": "CC BY-SA 3.0 (released by the Royal Society, VRT ticket #2014062710019796); the Commons page also carries a CC BY-SA 4.0 tag",
+        "creditLine": "The Royal Society, via Wikimedia Commons (CC BY-SA 3.0)",
+        "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Duncan.Hull\"; Credit \"Own work\"; DateTimeOriginal \"2017-07-14 14:38:12\"; crop uploaded by Jochen Burghardt (CropTool, 29 February 2020) from File:Whitfield_Diffie_Royal_Society.jpg (uploaded by Duncan.Hull, 21 December 2017). The file page's description carries \"Creative Commons Attribution-Share Alike 3.0 Unported license. Attribution: The Royal Society\" with VRT ticket #2014062710019796; categories include \"Images released by the Royal Society\" and \"Items with VRTS permission confirmed\"."
+      },
+      "sourceFixes": [],
+      "addSources": [],
+      "note": "Commons API extmetadata re-read: LicenseShortName 'CC BY-SA 4.0', Artist 'Duncan.Hull', DateTimeOriginal '2017-07-14 14:38:12', uploader 'Jochen Burghardt'. The file page shows the CC BY-SA 3.0 Royal Society template, the VRT ticket and the categories 'Images released by the Royal Society' and 'Items with VRTS permission confirmed'. EXIF shows a Canon EOS 5D Mark III, 'Date and time of data generation 14:38, 14 July 2017', which supports the caption's date. The local file assets/media/whitfield-diffie-royal-society-2017.jpg opens (JPEG 330x338). It is a re-encode of the Commons 330px thumb (mean pixel difference under 2/255) and the alt text matches the image."
+    },
+    {
+      "kind": "image",
+      "id": "david-chaum-web-summit-2018",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": [],
+      "note": "Commons API extmetadata re-read: LicenseShortName 'CC BY 2.0', LicenseUrl https://creativecommons.org/licenses/by/2.0, Artist 'Web Summit', Credit 'DG2_2527', DateTimeOriginal '2018-11-08 12:18'. FlickreviewR 2 confirmed cc-by-2.0 on 19 November 2018 (Flickr 74711243@N06/30839820667). File description: '8 November 2018; David Chaum, Founder & CEO, Elixxir on CryptoConf Stage during day three of Web Summit 2018 at the Altice Arena in Lisbon, Portugal. Photo by Diarmuid Greene/Web Summit via Sportsfile'. The caption matches, and the coordinates (38.7684, -9.094) are the Altice Arena. The local file opens (JPEG 960x639), matches the Commons 960px thumb (re-encode, mean pixel difference about 1/255), and the alt text matches."
+    },
+    {
+      "kind": "image",
+      "id": "phil-zimmermann-hal-enschede-2001",
+      "status": "FIXED",
+      "issues": [
+        "The credit line does not follow the attribution the author requires on the file page. The Permission field says the image must be credited 'Photo by CEphoto, Uwe Aranas' or '© CEphoto, Uwe Aranas', and the CC BY-SA 3.0 template repeats 'Attribution: Photo by CEphoto, Uwe Aranas'. The record's creditLine 'CEphoto, Uwe Aranas, via Wikimedia Commons (CC BY-SA 3.0)' leaves out the required wording. The file page also carries a personality-rights warning."
+      ],
+      "fieldFixes": {
+        "creditLine": "Photo by CEphoto, Uwe Aranas, via Wikimedia Commons (CC BY-SA 3.0)"
+      },
+      "sourceFixes": [],
+      "addSources": [],
+      "note": "Commons API extmetadata re-read: LicenseShortName 'CC BY-SA 3.0', Artist 'CEphoto, Uwe Aranas', Credit 'Own work', DateTimeOriginal '2001-08-10', uploader Cccefalon; category 'Hackers at Large (HAL 2001)'. The description reads 'University of Twente, Enschede, Netherlands: Phil Zimmermann, the author of PGP during a lecture at HAL2011 (Hackers at large)', which the caption reports accurately. Independent check: Wikipedia's 'Hackers at Large' article says HAL2001 was held at the University of Twente, Enschede, from 10 to 12 August 2001, consistent with the 10 August 2001 date. The coordinates (52.2393, 6.8508) are the Twente campus. The local file opens (JPEG 960x1440), matches the Commons 960px thumb (re-encode), and the alt text (floral shirt, glasses, hand-held microphone, 'PHIL ZIMMERMANN' name tag) matches."
+    }
+  ]
+}

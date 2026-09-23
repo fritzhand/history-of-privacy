@@ -1,0 +1,286 @@
+{
+ "slice": "personas-code",
+ "chunk": 7,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "bitcoin-is-anonymous-and-untraceable",
+   "status": "OK",
+   "issues": [
+    "Both sources re-fetched live (cache cleared): both quotes --check FOUND. White paper section 10 is headed 'Privacy' and says 'The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained ... by keeping public keys anonymous', which supports the correction's paraphrase. The Meiklejohn et al. PDF carries 'IMC'13, October 23-25, 2013, Barcelona, Spain' and describes 'heuristic clustering to group Bitcoin wallets', so the venue, month and 'clustered addresses' wording hold. The quote is from the introduction, not the abstract, which is fine. Minor point: bitcoin.pdf itself carries no date; 2008-10-31 is the date of the announcement. Acceptable."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. Section '10. Privacy' confirmed. The PDF is undated; 2008-10-31 is the date of the announcement on the metzdowd list."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND (Introduction). The PDF footer reads 'IMC'13, October 23-25, 2013, Barcelona, Spain', doi 10.1145/2504730.2504747."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "bitcoin-announced-on-cypherpunks-mailing-list",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND. The raw archive headers read 'Fri Oct 31 14:10:00 EDT 2008' (Satoshi Nakamoto) and 'Mon Apr 14 19:25:25 EDT 2003' (Perry E. Metzger). The footers read 'The Cryptography Mailing List' at metzdowd.com.",
+    "The correction says the cypherpunks list 'began in 1992', but no source on the record supports that. Added Tim May's Cyphernomicon (1994), which says the Cypherpunks formed in September 1992 and 'The mailing list began almost immediately'. Wikipedia's 'Cypherpunk' article also gives 1992.",
+    "Source 1's date '2003-04' made precise to 2003-04-14 from the archive header.",
+    "The verdict MISLEADING rather than FALSE is defensible. The announcement was not on the cypherpunks list, but the cryptography@metzdowd.com list is often described as descended from it, and the correction already says it 'drew on the same community'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The raw HTML header gives 'Satoshi Nakamoto' and 'Fri Oct 31 14:10:00 EDT 2008'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2003-04-14",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The raw HTML header gives 'Perry E. Metzger' and 'Mon Apr 14 19:25:25 EDT 2003'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Satoshi Nakamoto Institute (hosted text of Timothy C. May's Cyphernomicon, v0.666)",
+     "title": "Timothy C. May, 'The Cyphernomicon: Cypherpunks FAQ and More', version 0.666",
+     "date": "1994-09-10",
+     "url": "https://nakamotoinstitute.org/static/docs/cyphernomicon.txt",
+     "quote": "The Cypherpunks have existed since September, 1992.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Same document, section 3.3.3: 'John Gilmore offered his site to host a mailing list, and his company's offices to hold monthly meetings - The mailing list began almost immediately' (--check FOUND). The version and date line 'THE CYPHERNOMICON: Cypherpunks FAQ and More, Version 0.666, 1994-09-10, Copyright Timothy C. May.' is also FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "craig-wright-is-satoshi-nakamoto",
+   "status": "OK",
+   "issues": [
+    "Quote --check FOUND in the consequentials judgment. The PDF header reads 'Neutral Citation Number: [2024] EWHC 1809 (Ch)', 'Date: 16th July 2024', 'MR JUSTICE MELLOR', with the COPA Claim as IL-2021-000019. The same judgment says: 'At the conclusion of argument on 14 March 2024 in the Joint Trial of the Identity Issue ... I announced the result – that Dr Craig Wright was not Satoshi Nakamoto ... I handed down the reasons for that result on 20 May 2024: see [2024] EWHC 1198 (Ch)'. So the correction's March 2024 declaration and 20 May 2024 written judgment are both confirmed."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The header confirms [2024] EWHC 1809 (Ch), dated 16 July 2024, before Mellor J. The declaration was announced on 14 March 2024 and the main judgment is [2024] EWHC 1198 (Ch) of 20 May 2024 (both are in the text of this PDF)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "zimmermann-was-prosecuted-for-exporting-pgp",
+   "status": "OK",
+   "issues": [
+    "All three quotes --check FOUND. The Dubois release is dated 'Fri, 12 Jan 1996' and says 'Yesterday morning, I received word ... that the government's three-year investigation of Philip Zimmermann is over'. Zimmermann's own post is signed '11 Jan 96', and IEEE Cipher says Keane 'announced on January 11'. So the date of 11 January 1996, 'three-year' and 'June 1991 Usenet posting' all hold.",
+    "The 10th-anniversary essay (dated 5 June 2001) supports the claim that friends did the upload: he 'sent it to Allan Hoeltje, who posted it to Peacenet' and 'uploaded it to Kelly Goen, who proceeded to upload it to a Usenet newsgroup'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The release is dated Fri, 12 Jan 1996 and says the word came 'Yesterday morning' (11 January). The U.S. Attorney's press statement names Michael J. Yamaguchi, N.D. Cal."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The page is dated [14 February 1996] and says Keane 'announced on January 11'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The essay is dated 5 June 2001."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "diffie-hellman-first-to-discover-public-key-cryptography",
+   "status": "OK",
+   "issues": [
+    "Both GCHQ quotes --check FOUND. The Williamson page says Cocks and Williamson worked on 'Non-Secret Encryption, following a question by James Ellis', that Cocks devised RSA and Williamson key exchange, and that the academics found it 'at almost the same time'. The Ellis page gives 'The discovery in 1973' and says Ellis died 25 November 1997, 'just a month before the public announcement', which is consistent with December 1997.",
+    "Nuance, not an error: Williamson's key exchange dates from about 1974, so 'early 1970s' is at the edge of that description, but GCHQ itself dates the discovery to 1973. Diffie and Hellman's 'New Directions' (November 1976) was the first open publication; Merkle's puzzles paper was submitted in 1975 but published in 1978. The claim holds."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The page is undated. GCHQ's own spelling 'Diffie-Hellmann' is verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The page is undated."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "adam-back-invented-proof-of-work",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND. The paper is dated '1st August 2002', its reference [2] is Dwork and Naor, 'Pricing via processing or combatting junk mail', and the Harvard SEAS page carries datePublished 2025-01-08.",
+    "'Back proposed Hashcash in May 1997' follows the 2002 paper, which says 'in May 1997' and cites '[1] Adam Back. Hashcash, May 1997'. But Back's original announcement, archived on hashcash.org, was posted to cypherpunks@toad.com on 'Fri, 28 Mar 1997' as '[ANNOUNCE] hash cash postage implementation', and it says he had been discussing the scheme 'on the crypto lists for the last few days'. So the first public proposal was March 1997. Corrected to give the announcement date and to note the paper's 'May 1997'."
+   ],
+   "fieldFixes": {
+    "correction": "Back announced Hashcash on the cypherpunks mailing list on 28 March 1997 (his 2002 paper dates the proposal to 'May 1997'), as a postage scheme to throttle spam and abuse of anonymous remailers, and Bitcoin's white paper cites it. But Cynthia Dwork and Moni Naor had proposed a CPU 'pricing function' against junk mail in 1992 — prior work Back acknowledges he had not known about when he published."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The paper is dated 1st August 2002. Its abstract says Hashcash was 'originally proposed ... in May 1997', which conflicts with the 28 March 1997 cypherpunks announcement (see added source). Reference [2] is Dwork and Naor, Crypto 1992."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The raw HTML gives datePublished 2025-01-08. This is supporting context only: it does not date Dwork and Naor's pricing function."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "hashcash.org (archived cypherpunks mailing-list post)",
+     "title": "Adam Back, '[ANNOUNCE] hash cash postage implementation', to cypherpunks@toad.com",
+     "date": "1997-03-28",
+     "url": "http://www.hashcash.org/papers/announce.txt",
+     "quote": "I've been talking about a partial hash collision based postage scheme on the crypto lists for the last few days.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The headers 'To: cypherpunks@toad.com' and 'Date: Fri, 28 Mar 1997 16:52:26 GMT' are both FOUND. The post discusses remailer postage and a spam filter as applications."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "whatsapp-encryption-has-a-backdoor-2017",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND. The Signal post byline is 'moxie0 on 13 Jan 2017'.",
+    "Source 0's note says the date of the amendment 'was not shown in the fetched text'. The raw HTML <footer> of the article, which the helper strips, reads: 'This article was amended on 13 January 2017 to remove the word \"backdoor\" to describe the design feature; on 25 January 2017 to summarise and link to concerns of security experts about the article; and on 28 June 2017 following the findings of a review by the Guardian readers' editor'. The note is updated.",
+    "As written, the correction implies the 'backdoor' label stayed until the readers' editor review. In fact the word was removed on the day of publication (the readers' editor says 'within eight hours'), and the extensive amendment followed on 28 June 2017. The text is tightened and the readers' editor column (Paul Chadwick, 28 June 2017) is added as a source."
+   ],
+   "fieldFixes": {
+    "correction": "The Guardian's 13 January 2017 story described a design choice — WhatsApp by default re-encrypts and resends undelivered messages when a contact's key changes, without first asking the sender to verify. Signal's Moxie Marlinspike called the 'backdoor' label false. The Guardian dropped the word within hours, and after a review by its readers' editor, who found the story 'overstated its case', it extensively amended the article on 28 June 2017. The article now describes 'a design feature' and says systematic surveillance is unlikely."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The standfirst reads 'Trade-off between security and usability unlikely to permit systematic surveillance, experts say'. The raw-HTML footer, which fetch-text strips as <footer>, gives the amendment dates: 13 January 2017 (the word 'backdoor' removed), 25 January 2017, and 28 June 2017 (after the readers' editor review, linked at /technology/commentisfree/2017/jun/28/flawed-reporting-about-whatsapp)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The byline reads 'moxie0 on 13 Jan 2017'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "The Guardian (readers' editor)",
+     "title": "Paul Chadwick, 'Flawed reporting about WhatsApp'",
+     "date": "2017-06-28",
+     "url": "https://www.theguardian.com/technology/commentisfree/2017/jun/28/flawed-reporting-about-whatsapp",
+     "quote": "The most serious inaccuracy was a claim that WhatsApp had a “backdoor”, an intentional, secret way for third parties to read supposedly private messages. This claim was withdrawn within eight hours of initial publication online, but withdrawn incompletely.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The raw HTML gives datePublished 2017-06-28 and author Paul Chadwick. The same page says 'Cumulatively they produced an article that overstated its case.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "87-percent-of-americans-identifiable-by-zip-gender-birthdate",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes --check FOUND. The Sweeney header reads 'Carnegie Mellon University, Data Privacy Working Paper 3. Pittsburgh 2000' and the paper uses 1990 census data. The Golle PDF reads 'WPES'06, October 30, 2006, Alexandria, Virginia, USA'.",
+    "The correction is incomplete in a way that misleads. It suggests the gap between 87% and 63% comes from a different census year ('Re-running the analysis on 2000 census data'; 'depends on the census year'). But Golle also re-ran the 1990 data himself and got 61%: 'We found that in 1990 (resp. 2000), only 61% (resp. 63%) of the US population was uniquely' identifiable. He says he 'can not explain this discrepancy' and speculates it comes partly from how the 1990 census tabulates ZIP codes. So the gap is methodological, not a change over time. The correction is rewritten to say so."
+   ],
+   "fieldFixes": {
+    "correction": "The 87% figure is Latanya Sweeney's estimate from 1990 census data, counting people who 'likely' had a unique combination. Philippe Golle (2006) broadly agreed with her finding. Re-running the analysis himself, though, he found about 61% on the same 1990 data and 63% on 2000 census data. He could not explain the gap and suspected it lay partly in how the 1990 census tabulated data by ZIP code. The underlying point stands: a few 'anonymous' attributes can single out most people. But the exact percentage depends on the data and the method."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The header reads 'Carnegie Mellon University, Data Privacy Working Paper 3. Pittsburgh 2000', and the text says 'experiments I conducted using 1990 U.S. Census summary data'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. Also FOUND: 'We found that in 1990 (resp. 2000), only 61% (resp. 63%) of the US population was uniquely' and 'We speculate however that the discrepancy might come in part from the fact that the 1990 census does not directly tabulate data by ZIP codes'. The venue line reads 'WPES'06, October 30, 2006, Alexandria, Virginia, USA'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "bernstein-case-settled-that-code-is-speech",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND. The en banc order is 'Filed September 30, 1999' and withdraws 176 F.3d 1132. The panel opinion reads 'Decided May 6, 1999'.",
+    "WRONG DATE: the correction says 'in 2002 the district court dismissed the remaining case on ripeness grounds'. Only the oral argument was in 2002 (18 October 2002). Bernstein's own press release is dated 'Chicago, 15 October 2003' and reports that Chief Judge Marilyn Hall Patel 'dismissed Bernstein's case without deciding the constitutionality of the current regulations'. Wikipedia likewise gives 15 October 2003. The document index at cr.yp.to/export/docs.html lists '2002.10.18: B to public' and '2003.10.15: B to public'. Corrected to October 2003.",
+    "The panel holding is paraphrased as 'a prior restraint on scientific expression'. The opinion actually holds the rules 'constitute a prior restraint on speech that offends the First Amendment', and says they 'burden[] scientific expression'. Reworded.",
+    "Missing context that could mislead readers into thinking no appellate court has bound itself on the question: the Sixth Circuit in Junger v. Daley, 209 F.3d 481 (4 April 2000), held that 'computer source code ... is protected by the First Amendment', which is binding in that circuit. Added with its source.",
+    "Source 1 (cr.yp.to status page) is dated '2002', but the page describes the 2003 dismissal. It is undated, so the date is changed to the access year."
+   ],
+   "fieldFixes": {
+    "correction": "The district court held that source code was speech (April 1996) and struck down the export rules (December 1996 for the ITAR, August 1997 for the EAR). A Ninth Circuit panel affirmed on 6 May 1999, holding that the rules were a prior restraint on speech. But on 30 September 1999 the Ninth Circuit withdrew that panel opinion for rehearing en banc. Before the rehearing, the government loosened the regulations in January 2000 and the case went back to the district court. In October 2003 that court dismissed it without ruling on the new rules, telling Bernstein he could return if there was 'a concrete threat of enforcement'. The 1999 panel opinion is widely cited, but it was withdrawn and is not binding precedent. A binding appellate holding that source code is protected by the First Amendment came instead from the Sixth Circuit in Junger v. Daley (4 April 2000)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The order reads 'Filed September 30, 1999', HUG, Chief Judge. The withdrawn panel opinion (176 F.3d 1132, 'Decided May 6, 1999') holds that 'the challenged regulations constitute a prior restraint on speech that offends the First Amendment' (--check FOUND at law.resource.org/pub/us/case/reporter/F3/176/176.F3d.1132.97-16686.html)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The page is undated and gives no date for the dismissal. It describes the dismissal that followed the 18 October 2002 hearing, which Bernstein's press release of 15 October 2003 reports, so '2002' was wrong as the page date. Now dated as accessed."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: --check FOUND. The page also promotes EFF's 2015 post, which calls Bernstein 'a landmark case that resulted in establishing code as speech'. That is a good example of the popular version the myth rebuts."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "D. J. Bernstein (cr.yp.to), press release",
+     "title": "'Crypto case on indefinite hold'",
+     "date": "2003-10-15",
+     "url": "https://cr.yp.to/export/2003/10.15-bernstein.txt",
+     "quote": "As observers predicted after the hearing, Chief Judge Marilyn Hall Patel of the United States District Court for the Northern District of California relied on the government's promises and dismissed Bernstein's case without deciding the constitutionality of the current regulations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Dateline: 'Chicago, 15 October 2003 - The longest-running court case against the government's encryption regulations has come to an end, for now.' (FOUND). It also quotes Patel: 'If and when there is a concrete threat of enforcement against Bernstein for a specific activity, Bernstein may return for judicial resolution of that dispute,' (FOUND)."
+    },
+    {
+     "institution": "U.S. Court of Appeals for the Sixth Circuit (via Public.Resource.Org)",
+     "title": "Junger v. Daley, 209 F.3d 481 (6th Cir. 2000)",
+     "date": "2000-04-04",
+     "url": "https://law.resource.org/pub/us/case/reporter/F3/209/209.F3d.481.98-4045.html",
+     "quote": "Because computer source code is an expressive means for the exchange of information and ideas about computer programming, we hold that it is protected by the First Amendment.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page reads 'Argued: December 17, 1999 Decided and Filed: April 4, 2000', Martin, Chief Judge."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2771 @@
+{
+ "slice": "myterms",
+ "notes": "Slice 'myterms' — IEEE 7012-2025 (MyTerms) and its lineage; the destination of the study. METHOD: every quote was fetched and checked with tools/fetch-text.py --check. Several sites refuse the helper's user agent (doc.searls.com, projectvrm.org, w3.org, lists.w3.org): their pages were fetched with curl into the helper's cache (/tmp/fetch-text-cache) and then checked with the helper, so the text checked is the real page. iso.org and customercommons.org block scripts; Internet Archive snapshots were used (URLs cited). IEEE Xplore returns a bot challenge; its 28 Jan 2026 Internet Archive snapshot was read in raw HTML (metadata JSON) and is marked PENDING because the helper strips script content. DATES RESOLVED: PAR requested 16 Oct 2017, approved 6 Dec 2017; initial ballot completed by 17 Apr 2025; IEEE SA Standards Board approval 4 Nov 2025 (hence '-2025'); published in Xplore 20 Jan 2026 (inserted 21 Jan); public launch 28 Jan 2026 (London + online); IEEE Industry Connections activity page published 8 Apr 2026, kick-off announced for 1 Jun 2026. 'Published January 2025' is wrong. NOT VERIFIED / GAPS: (1) the normative text of the standard (free PDF via GET behind IEEE sign-in) was not read — details of how agreements are signed, recorded or signalled beyond the abstract/scope/purpose come from MyTerms/Customer Commons, Doc Searls, MyData and the W3C DPV draft extension; (2) scope sentences 2-3 are from Xplore/Accuris page source (not helper-checkable); (3) the full legal text and machine-readable encodings of the five agreements were not found on public pages read; (4) Customer Commons founding: MyTerms says 2013 (nonprofit spin-off) but customercommons.org existed by Nov 2011 — not reconciled; (5) the second chair's tenure dates (Lisa LeVasseur) and David Reed's end date were not found; (6) JLINC is sourced only as a 2018 proposal (Linux Journal) and as Iain Henderson's affiliation on the DPV extension — no evidence it is the protocol used by MyTerms; (7) Me2B Alliance founding year (2019) not confirmed from a primary source (only its 2022 P7012 pilot report); (8) coordinates are approximate geocodes of named buildings or cities, explained in locationNote; blog-post events are mapped to the author's stated base (Bloomington, Indiana); (9) the IEEE rule that the designation year equals the approval year is inferred from the approvals record, not read as a stated rule; (10) Privacy Icons year (2010) not confirmed in a dated primary; (11) web-search budget ran out before the CPDP 2026 venue could be confirmed. Quote text from W3C/DPV and Doc Searls pages preserves spaces the extractor inserts before punctuation next to links (e.g. 'MAR .') so that --check matches.",
+ "standard": {
+  "designation": "IEEE 7012-2025 (IEEE Std 7012-2025)",
+  "nickname": "MyTerms",
+  "title": "IEEE Standard for Machine Readable Personal Privacy Terms",
+  "parNumber": "P7012",
+  "parTitle2017": "Standard for Machine Readable Personal Privacy Terms",
+  "parRequestDate": "2017-10-16",
+  "parApprovalDate": "2017-12-06",
+  "parSubmitter": "John C. Havens (submitter e-mail on the PAR form)",
+  "workingGroup": "MRPT-WG — Machine Readable Privacy Terms (named on the 2017 PAR as 'Working Group on Machine Readable Privacy Terms (SSIT/SC/MachReadPrivacy)')",
+  "chair": "Doc Searls (working-group chair of record at publication; third chair)",
+  "chairHistory": [
+   {
+    "name": "David P. Reed",
+    "role": "first chair (named as WG chair on the 2017 PAR)"
+   },
+   {
+    "name": "Lisa LeVasseur",
+    "role": "second chair (spelled 'Lisa LaVasseur' in the MyTerms FAQ)"
+   },
+   {
+    "name": "Doc Searls",
+    "role": "third chair; chair at publication"
+   }
+  ],
+  "otherOfficers": "Vice Chair Justin Byrd; technical editor Mary Hodder; secretary Scott Mace (MyTerms FAQ); IEEE Program Manager Malia Zaman (IEEE SA page)",
+  "sponsor": "Social Implications of Technology Standards Committee (SSIT/SC) of the IEEE Society on Social Implications of Technology",
+  "sponsorChairAtPAR": "Victoria Hailey",
+  "initialBallot": "Draft had 'successfully completed initial ballot, now in comment resolution process' when reported to SSIT/SC on 17 April 2025",
+  "standardsBoardApprovalDate": "2025-11-04",
+  "publicationDate": "2026-01-20",
+  "xploreInsertionDate": "2026-01-21",
+  "publicLaunch": "2026-01-28 (Data Privacy Day), Imperial College Business School, London, and online",
+  "xploreDocument": "11360682",
+  "doi": "10.1109/IEEESTD.2025.11360682",
+  "isbn": "979-8-8557-2944-3 (electronic, per IEEE Xplore and Crossref); the Accuris store listing also gives 979-8-8557-2945-0 (print-on-demand edition — inferred from the store's two product codes STDGT28515/STDPD28515)",
+  "pages": "Xplore lists pages 1-50; the Accuris store lists 43 pages (count conventions differ)",
+  "status": "Active Standard",
+  "getProgram": true,
+  "getProgramNote": "Free PDF through the IEEE GET Program for AI Ethics and Governance Standards (sign-in with a free IEEE account required on Xplore).",
+  "purpose": "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world. In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others--mostly companies--operating as second parties.",
+  "purposeNote2017": "Note that the purpose of this standard is not to address privacy policies, since these are one-sided and need no agreement. (Terms require agreement; privacy policies do not.)",
+  "scope": "The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines. The scope of this draft standard is confined to routines in which persons acting as first parties arrive at contractual agreements with organizational entities acting as second-party service providers. It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity, with identical copies of that contract kept by both parties.",
+  "scopeNote": "The first sentence is the 2017 PAR scope verbatim (CONFIRMED in the PAR). The second and third sentences were read in the IEEE Xplore page metadata and the Accuris store listing but could not be machine-checked with the repo helper (script-rendered text) — treat those two sentences as PENDING.",
+  "abstract": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard. It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides. These terms shall be chosen from a collection of standard-form agreements in a roster kept by an independent and neutral non-business entity.(This is similar to how artists might choose Creative Commons licenses allowing or restricting certain kinds of uses for artists' creative work.) Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose. The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one. Party-to-party negotiations over terms in any of these contracts or other agreements are outside the scope of this standard. If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+  "abstractNote": "Verbatim from the IEEE SA standard page. The PAR text Doc Searls published on 6 April 2025 reads 'including websites' where the published abstract reads 'including websites, applications and AI agents' — the explicit AI-agent language appears in the final text.",
+  "keywordsAuthor": [
+   "automation",
+   "ethics",
+   "IEEE 7012(TM)",
+   "machine-readable",
+   "privacy",
+   "terms and conditions",
+   "transparency"
+  ],
+  "keywordsIEEE": [
+   "IEEE Standards",
+   "Automation",
+   "Privacy",
+   "Social implications of technology",
+   "Readability metrics",
+   "Ethics"
+  ],
+  "keywordsNote": "Read in the Xplore page metadata (see PENDING note on that source).",
+  "normativeTextRead": false,
+  "normativeTextNote": "The standard's PDF (free via GET, behind an IEEE-account sign-in) was not read for this slice. Doc Searls describes its layout: Introduction from p. 8, normative clauses 4 and 5 from p. 14, informative annexes from p. 21 (post of 29 Jan 2026). Anything below that goes beyond the abstract, scope and purpose comes from Customer Commons / MyTerms materials, Doc Searls, MyData Global and the W3C DPV extension, not from the normative text.",
+  "designationConflictResolved": "'7012-2025' carries the year in which the IEEE SA Standards Board approved it (4 November 2025: listed under 'New Standards' on the SASB approvals page, and recorded as 'approved' 2025-11-04 in the DOI metadata; the DOI itself is 10.1109/IEEESTD.2025.11360682). It was published in IEEE Xplore on 20 January 2026 (inserted 21 January 2026) and publicly launched on 28 January 2026. 'Published January 2026' (myterms.info, IEEE Industry Connections page) is therefore correct; 'published January 2025' is wrong — no source read shows any publication in 2025. Doc Searls had forecast publication 'on 22 January 2026' (24 Nov 2025 post) and, in 2022, 'sometime in 2025'. That the designation year follows the approval year is consistent with IEEE practice but was not read as a stated rule in any source.",
+  "sources": [
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+    "date": "2026-01-20",
+    "url": "https://standards.ieee.org/ieee/7012/7192/",
+    "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+    "date": "2026-01-20",
+    "url": "https://standards.ieee.org/ieee/7012/7192/",
+    "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Standard page lists: Status Active Standard; Standard Committee SSIT/SC; Working Group MRPT-WG; Working Group Chair Doc Searls; IEEE Program Manager Malia Zaman."
+   },
+   {
+    "institution": "IEEE-SA (Project Authorization Request form)",
+    "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+    "date": "2017-12-06",
+    "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+    "quote": "PAR Request Date: 16-Oct-2017 PAR Approval Date: 06-Dec-2017",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+   },
+   {
+    "institution": "IEEE SA Standards Board",
+    "title": "IEEE SA Standards Board Approvals — 04 November 2025",
+    "date": "2025-11-04",
+    "url": "https://standards.ieee.org/about/sasb/sba/04nov2025/",
+    "quote": "7012-2025 (SSIT/SC) IEEE Standard for Machine Readable Personal Privacy Terms",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Listed under the heading \"New Standards\" on the approvals page."
+   },
+   {
+    "institution": "Crossref (DOI registration metadata deposited by IEEE)",
+    "title": "Crossref record for DOI 10.1109/IEEESTD.2025.11360682",
+    "date": "2026-01-21",
+    "url": "https://api.crossref.org/works/10.1109/IEEESTD.2025.11360682",
+    "quote": "\"approved\":{\"date-parts\":[[2025,11,4]]}",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "API",
+    "note": "JSON record: publisher IEEE, publisher-location \"Piscataway, NJ, USA\"; electronic ISBN 9798855729443; created 2026-01-21; standards-body \"Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology\"."
+   },
+   {
+    "institution": "IEEE Xplore (archived by the Internet Archive, snapshot 28 January 2026)",
+    "title": "7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document 11360682)",
+    "date": "2026-01-20",
+    "url": "https://web.archive.org/web/20260128202024/https://ieeexplore.ieee.org/document/11360682",
+    "quote": "\"publicationDate\":\"20 January 2026\"",
+    "verificationStatus": "PENDING",
+    "accessType": "FREE",
+    "note": "Read in the raw HTML of the snapshot (page metadata object xplGlobal.document.metadata): publicationDate \"20 January 2026\", dateOfInsertion \"21 January 2026\", ISBN 979-8-8557-2944-3 (electronic), doi 10.1109/IEEESTD.2025.11360682, pages 1-50, getProgramFlag \"true\", isFreeDocument true. PENDING only because the repo helper strips <script> content, so --check cannot see the metadata; live ieeexplore.ieee.org returns a bot challenge (HTTP 202)."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+    "date": "2026-01-20",
+    "url": "https://standards.ieee.org/ieee/7012/7192/",
+    "quote": "Working Group Chair Doc Searls",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+    "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+    "date": "2026",
+    "url": "https://myterms.info/faqs/",
+    "quote": "Doc was the last of three chairs of the working group. First and second were David P. Reed and Lisa LaVasseur.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+    "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+    "date": "2026",
+    "url": "https://myterms.info/faqs/",
+    "quote": "Doc is also the person first approached by John C. Havens of the IEEE in 2017 with the idea of starting the workgroup.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "IEEE-SA (Project Authorization Request form)",
+    "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+    "date": "2017-12-06",
+    "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+    "quote": "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+   },
+   {
+    "institution": "IEEE-SA (Project Authorization Request form)",
+    "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+    "date": "2017-12-06",
+    "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+    "quote": "5.2 Scope: The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+   },
+   {
+    "institution": "IEEE Society on Social Implications of Technology Standards Committee (SSIT/SC)",
+    "title": "IEEE SSIT SC Meeting 77 — Meeting Minutes, 17 April 2025 (v2)",
+    "date": "2025-04-17",
+    "url": "https://sagroups.ieee.org/ssit/wp-content/uploads/sites/283/2025/12/IEEE_SSIT_SC_Meeting-77-Meeting-Minutes-17-Apr-2025-v2.pdf",
+    "quote": "Draft successfully completed initial ballot, now in comment resolution process.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE GET Program",
+    "date": "2026",
+    "url": "https://standards.ieee.org/products-programs/ieee-get-program/",
+    "quote": "GET Program for AI Ethics and Governance Standards",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "Doc Searls Weblog (doc.searls.com)",
+    "title": "Now We Begin",
+    "date": "2026-01-29",
+    "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+    "quote": "The IEEE’s GET Program for AI Ethics and Governance Standards . Below is the 7000 series of standards, of which MyTerms is the latest one. All are free.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "Doc Searls Weblog (doc.searls.com)",
+    "title": "Now We Begin",
+    "date": "2026-01-29",
+    "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+    "quote": "Note that the Introduction and the Annexes are informative , meaning not part of the standard itself.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "ProjectVRM blog (projectvrm.org)",
+    "title": "The MyTerms PAR",
+    "date": "2025-04-06",
+    "url": "https://projectvrm.org/2025/04/06/myterms/",
+    "quote": "This draft standard covers contractual interactions and agreements between individuals and the service providers they engage on a network, including websites.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE"
+   },
+   {
+    "institution": "Accuris (IEEE standards store)",
+    "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms",
+    "date": "2026-01-20",
+    "url": "https://store.accuristech.com/standards/ieee-7012-2025?product_id=2921410",
+    "quote": "The scope of this draft standard is confined to routines in which persons acting as first parties arrive at contractual agreements with organizational entities acting as second-party service providers.",
+    "verificationStatus": "PENDING",
+    "accessType": "PAYWALL",
+    "note": "Read in the page source (store listing also shows Published 01/20/2026, ISBN(s) 9798855729450, 9798855729443, 43 pages, product codes STDGT28515, STDPD28515); the helper's paragraph extractor does not capture this page's description block, so --check returns NOT-FOUND."
+   }
+  ]
+ },
+ "agreements": [
+  {
+   "code": "SD-BASE",
+   "name": "Service Delivery — base relationship agreement",
+   "type": "Relationship",
+   "plainSummary": "The default: the site or service provides what the person came for, and nothing more — no tracking beyond the service and no sharing of the person's data with other parties. It is the agreement a person's agent proposes first.",
+   "quote": "It is the base/ default relationship agreement that should be in place for any individual using an agent to propose a MyTerms agreement to an organisation.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "It is the base/ default relationship agreement that should be in place for any individual using an agent to propose a MyTerms agreement to an organisation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The Only Way to Get Privacy Online",
+     "date": "2026-01-13",
+     "url": "https://projectvrm.org/2026/01/13/the-only-way-to-get-privacy-online/",
+     "quote": "SD-BASE says “Service Delivery only.” This one requires that the site or service provide the visitor only what the visitor came for, and not to share personal data with third parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "The default agreement for any individual proposing ‘MyTerms’ to an organisation is ‘Service Delivery Only’.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Launch-phase agreement; the full legal text and machine-readable encodings were not published on the pages read (see notes)."
+  },
+  {
+   "code": "SD-BASE-DP",
+   "name": "Service Delivery — base, with data portability",
+   "type": "Relationship",
+   "plainSummary": "SD-BASE plus a data-portability request: the person also asks for their own copy of the data generated within the relationship.",
+   "quote": "A variant of the SD BASE agreement with the added requirement that the individual wishes to include a data portability request in their terms. They wish to have their own instance of the data generated within the relationship.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "A variant of the SD BASE agreement with the added requirement that the individual wishes to include a data portability request in their terms. They wish to have their own instance of the data generated within the relationship.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Launch-phase agreement; the full legal text and machine-readable encodings were not published on the pages read (see notes)."
+  },
+  {
+   "code": "PDC-AI",
+   "name": "Personal Data Contribution — AI",
+   "type": "Personal Data Contribution",
+   "plainSummary": "A one-off contribution: the person is willing to give access to specific data under their control for training and operating AI technologies.",
+   "quote": "An agreement that indicates you are willing to provide access to specific data under your control for the purposes of Training and Operating AI technologies.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "An agreement that indicates you are willing to provide access to specific data under your control for the purposes of Training and Operating AI technologies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "For example, you can choose SD-BASE, but as an alternate such as PDC-AI or PDC-GOOD, which respectively allow use of data for anonymously training AI, or Data For Good.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Launch-phase agreement; the full legal text and machine-readable encodings were not published on the pages read (see notes)."
+  },
+  {
+   "code": "PDC-GOOD",
+   "name": "Personal Data Contribution — Data for Good",
+   "type": "Personal Data Contribution",
+   "plainSummary": "A one-off contribution of specific data under the person's control to a Data for Good project.",
+   "quote": "An agreement that indicates you are willing to provide access to specific data under your control to enable a Data for Good project.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "An agreement that indicates you are willing to provide access to specific data under your control to enable a Data for Good project.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Launch-phase agreement; the full legal text and machine-readable encodings were not published on the pages read (see notes)."
+  },
+  {
+   "code": "PDC-INTENT",
+   "name": "Personal Data Contribution — Intent",
+   "type": "Personal Data Contribution",
+   "plainSummary": "Lets a person gather, curate and share their own intent data (e.g. what they want to buy) — the 'intentcasting' idea of The Intention Economy.",
+   "quote": "An enabler of The Intention Economy in which people can gather, curate and share intent data under their control.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "An enabler of The Intention Economy in which people can gather, curate and share intent data under their control.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "A New Era Begins",
+     "date": "2025-11-24",
+     "url": "https://doc.searls.com/2025/11/24/a-new-era-begins/",
+     "quote": "Other agreements cover data portability, data use for AI training, data for good , and data for intentcasting .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Launch-phase agreement; the full legal text and machine-readable encodings were not published on the pages read (see notes)."
+  }
+ ],
+ "agreementTypes": [
+  {
+   "type": "Relationship",
+   "quote": "These agreements are designed to support ongoing digital relationships, i.e. where this is an ongoing exchange of data between an individual and an organisational entity.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "These agreements are designed to support ongoing digital relationships, i.e. where this is an ongoing exchange of data between an individual and an organisational entity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "type": "Personal Data Contribution",
+   "quote": "These agreements are designed to support one-off contributions of data for a particular purpose. So, non-repeating data donations.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "These agreements are designed to support one-off contributions of data for a particular purpose. So, non-repeating data donations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "principles": [
+  {
+   "name": "Transparency",
+   "quote": "Be transparent about what you are asking for and plan to do with my data (The Principle of Transparency)",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Agreements",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "Be transparent about what you are asking for and plan to do with my data (The Principle of Transparency)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "name": "Data minimisation",
+   "quote": "Do not ask for more of my data than you need for the purposes we are agreeing to (The Principle of Data Minimisation)",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Agreements",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "Do not ask for more of my data than you need for the purposes we are agreeing to (The Principle of Data Minimisation)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "name": "Purpose limitation",
+   "quote": "Do not do more with the data I give you access to than we have agreed to (The Principle of Purpose limitation)",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Agreements",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "Do not do more with the data I give you access to than we have agreed to (The Principle of Purpose limitation)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "name": "Reciprocity",
+   "quote": "Recognise that data should flow two ways, and that I should have ongoing access to my data with no barriers (The Principle of Reciprocity)",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Agreements",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "Recognise that data should flow two ways, and that I should have ongoing access to my data with no barriers (The Principle of Reciprocity)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "It means that both parties have equal access and ability to use personal data shared by the person (the first party) and processed by the organization (the second party).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "formats": [
+  {
+   "name": "Plain language",
+   "quote": "Plain language - maximum one page, designed to be in very simple and clear language (*) for everday audiences",
+   "note": "'everday' [sic] in source. Master agreements are published in English (UK).",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "Plain language - maximum one page, designed to be in very simple and clear language (*) for everday audiences",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "name": "Machine readable",
+   "quote": "Machine readable - a range of formats designed to enable access to and interaction with the agreements by computers and agents",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "Machine readable - a range of formats designed to enable access to and interaction with the agreements by computers and agents",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "name": "Legal agreement",
+   "quote": "Legal agreement format - the canonical interpretation of each agreement with levels of detail that support legal interpretation and reliance.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "Legal agreement format - the canonical interpretation of each agreement with levels of detail that support legal interpretation and reliance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "dpv-links",
+   "topic": "Links to the W3C Data Privacy Vocabulary",
+   "summary": "Where useful, MyTerms agreements link key words to DPV perma-link definitions; the draft standard's appendix cites DPV as an example vocabulary, and the W3C DPVCG drafted a DPV extension for P7012.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "That enables us to link to clear, expert-built perma-link definitions of all of the key words in our agreements",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "The [ IEEE-P7012 ] draft standard references [ DPV ] in its appendix as an example of a vocabulary that can be used to express the relevant information for the creation and use of privacy terms in its defined processes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "roster-neutral-nonprofit",
+   "topic": "Roster kept by a neutral, non-commercial entity (Customer Commons)",
+   "summary": "The standard requires terms to be chosen from a roster kept by an independent, neutral non-business entity; Customer Commons, a US 501(c)(3) spun out of ProjectVRM, names and hosts the MyTerms agreements on the Creative Commons model, and a European MyTerms Alliance is to contribute regional variants.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "These terms shall be chosen from a collection of standard-form agreements in a roster kept by an independent and neutral non-business entity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The names are chosen by Customer Commons, working on the model established by Creative Commons for personal copyright licenses.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Customer Commons was created for the express purpose of fulfilling a role that would come to be specified in the standard: to host a roster of standardized personal privacy terms people could proffer as first parties to sites and services as second parties",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "records-both-sides",
+   "topic": "How agreements are recorded by both sides",
+   "summary": "If both parties agree, the agreement is signed electronically by both (or their agents) and each keeps a matching record that can be retrieved, audited or disputed. The standard deliberately leaves the record format, storage and protocol open; Doc Searls's January 2026 'MyTerms Agreement Record' (MAR) sketch is his own proposal, not part of the standard.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "This is an option left open by the MyTerms standard, to maximize development choices.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "For that combination, we might define a canonical MyTerms Agreement Record, or MAR . Note that this is something I just made up.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "any-protocol",
+   "topic": "Protocol-neutral; agents on both sides",
+   "summary": "Agents for both parties may use any protocol that serves the purpose; the proponents expect browser/server plug-ins first (possibly signalling via HTTP headers on the model of DNT and GPC) and AI agents later.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "On the Web, browsers or their plug-ins will signal MyTerms options to sites several possible means, including browser headers (on the model of Do Not Track and Global Privacy Conrol).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The MyTerms PAR",
+     "date": "2025-04-06",
+     "url": "https://projectvrm.org/2025/04/06/myterms/",
+     "quote": "It also does not specify what tech or protocol to use. This is to leave development as open as possible.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "choice-not-negotiation",
+   "topic": "Choice, not negotiation",
+   "summary": "The person points to a preferred agreement (or a set) and the organisation accepts one; party-to-party negotiation is out of scope. Refusals can be recorded by the person's agent. Note: the W3C DPV extension (March 2025), written against a draft, describes a single counter-offer from the organisation's agent drawn from the registry — wording that differs from the published abstract.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one. Party-to-party negotiations over terms in any of these contracts or other agreements are outside the scope of this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Your agent can record that outcome, and it or other programs can keep track of it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "As per [ IEEE-P7012 ], negotiations are limited to a single counter-offer.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "launch-mode",
+   "topic": "Launch mode: five agreements for up to six months",
+   "summary": "MyTerms launched with five standardised agreements to run for up to six months of market feedback before updated agreements and a full market launch; the FAQ says eight more are in the pipeline (a 2025 Customer Commons page had said eleven more).",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "MyTerms will launch with 5 standardized personal privacy agreements and run in that mode for up to 6 months in order to gain market feedback. We will then update those agreements in advance of a full market launch.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "There will be 5 agreements when we launch MyTerms, and 8 more in the pipeline.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Customer Commons (archived by the Internet Archive, 6 October 2025)",
+     "title": "Choose My Terms",
+     "date": "2025-10-06",
+     "url": "https://web.archive.org/web/20251006120755/https://customercommons.org/choose-myterms/",
+     "quote": "In alignment with the forthcoming IEEE P7012 standard, we are preparing to introduce 11 more agreements.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myterms-alliance",
+   "topic": "The MyTerms Alliance",
+   "summary": "An informal association formed after the launch by Customer Commons and MyData Global to promote, develop and certify compliance with IEEE 7012, including a planned trustmark.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Get Involved",
+     "date": "2026",
+     "url": "https://myterms.info/get-involved/",
+     "quote": "Founding members of the MyTerms Alliance include the Customer Commons Organisation and MyData Global",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "Get Involved",
+     "date": "2026",
+     "url": "https://myterms.info/get-involved/",
+     "quote": "This is the informal association taking overarching responsibility for the MyTerms movement -> the promotion, development, and compliance with the IEEE 7012 standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "Post-launch, MyData Global and Customer Commons are forming The MyTerms Alliance; the industry association and partner programme that will be the channel for products and services built to the MyTerms standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "industry-connections",
+   "topic": "IEEE Industry Connections activity 'Individual Defined Privacy Terms Roadmap'",
+   "summary": "An IEEE SA Industry Connections activity to move MyTerms from standard to implementation (training, road maps, certification, white paper), chaired by Justin Byrd with Kari McMullen as vice chair; myterms.info announced its kick-off for 1 June 2026.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "Individual Defined Privacy Terms Roadmap (Industry Connections activity)",
+     "date": "2026-04-08",
+     "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+     "quote": "This IC activity, “MyTerms”, is to support the MyTerms Alliance to move from industry standard to implementation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page metadata: datePublished 2026-04-08, dateModified 2026-06-10. Also lists \"IC Chair: Justin Byrd\" and \"IC Vice Chair: Kari McMullen\"."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms — A New Global Privacy Standard (home page)",
+     "date": "2026",
+     "url": "https://myterms.info/",
+     "quote": "1 JUNE: The IEEE Industry Connections Effort kicks off the 1st of June 2026.",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Text of the home-page banner, read in the page source; the helper does not extract this banner block, so --check returns NOT-FOUND."
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "searls-intention-economy-essay-2006",
+   "displayDate": "8 March 2006",
+   "year": 2006,
+   "title": "Doc Searls names 'The Intention Economy'",
+   "place": "O'Reilly Emerging Technology Conference (ETech), Manchester Grand Hyatt, San Diego, California",
+   "lat": 32.7101,
+   "lng": -117.1685,
+   "summary": "Writing for Linux Journal from the audience of O'Reilly's ETech conference, whose theme was 'The Attention Economy', Doc Searls proposed the opposite: an economy that grows around buyers' expressed intentions rather than sellers' pursuit of attention. In his example, a car-rental customer tells the whole rental market what they want and the sellers compete for the business.",
+   "significance": "The customer-side idea that MyTerms would later encode: the individual speaks first, and the market responds to terms and intentions the person sets.",
+   "sources": [
+    {
+     "institution": "Linux Journal",
+     "title": "The Intention Economy (Doc Searls)",
+     "date": "2006-03-08",
+     "url": "https://www.linuxjournal.com/content/intention-economy",
+     "quote": "The Intention Economy grows around buyers, not sellers. It leverages the simple fact that buyers are the first source of money, and that they come ready-made. You don't need advertising to make them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Date \"March 8, 2006\" appears in the page byline markup (outside the helper's extracted text)."
+    },
+    {
+     "institution": "Linux Journal",
+     "title": "The Intention Economy (Doc Searls)",
+     "date": "2006-03-08",
+     "url": "https://www.linuxjournal.com/content/intention-economy",
+     "quote": "In The Intention Economy, the buyer notifies the market of the intent to buy, and sellers compete for the buyer's purchase.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "O'Reilly Media (archived by the Internet Archive)",
+     "title": "O'Reilly Emerging Technology Conference 2006 — conference home page",
+     "date": "2005-12-03",
+     "url": "https://web.archive.org/web/20051203011535/http://conferences.oreillynet.com:80/et2006/",
+     "quote": "The O'Reilly Emerging Technology Conference (ETech) will be held March 6-9, 2006 at the Manchester Grand Hyatt in San Diego, California, U.S.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "The essay says it was written while sitting in the ETech audience; ETech 2006 venue from O'Reilly's conference page. Coordinates approximate (hotel)."
+  },
+  {
+   "id": "projectvrm-launched-berkman-2006",
+   "displayDate": "2006",
+   "year": 2006,
+   "title": "ProjectVRM launches at Harvard's Berkman Center",
+   "place": "Berkman Center for Internet & Society, Harvard Law School, Cambridge, Massachusetts",
+   "lat": 42.3779,
+   "lng": -71.119,
+   "summary": "Doc Searls launched ProjectVRM (Vendor Relationship Management) during his Berkman fellowship (2006–2010) to encourage tools that let individuals manage their own relationships with companies. Its stated principles include that customers must be able to proffer their own terms of engagement and keep auditable records of agreements. MyTerms describes ProjectVRM as the place where the ideas behind IEEE 7012 were worked out.",
+   "significance": "Names the two ingredients IEEE 7012 later standardises: person-proffered terms and records kept by both sides.",
+   "sources": [
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge (event page, Doc Searls)",
+     "date": "2012",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "Doc Searls served as a Berkman Fellow from 2006 to 2010, during which he launched and led ProjectVRM , which encourages the development of new tools by which individuals create and control their relationships with companies and other organizations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM wiki, hosted by the Berkman Klein Center, Harvard University",
+     "title": "ProjectVRM — Main Page (VRM Principles)",
+     "date": "2026",
+     "url": "https://cyber.harvard.edu/projectvrm/Main_Page",
+     "quote": "Customers must be able to proffer their own terms of engagement —and to have auditable records of all contracts to which both sides agree.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The ideas directly behind 7012 were worked out in ProjectVRM, which was launched at the Berkman (now Berkman Klein) Center at Harvard in 2006, and its nonprofit spinoff, Customer Commons, in 2013.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to the Harvard Law School campus (approximate); the Berkman Center's 2006 office building is not specified in the sources."
+  },
+  {
+   "id": "intention-economy-book-harvard-talk-2012",
+   "displayDate": "11 June 2012",
+   "year": 2012,
+   "title": "The Intention Economy book: customers 'dictate their own terms of service'",
+   "place": "Austin Hall, Harvard Law School, Cambridge, Massachusetts",
+   "lat": 42.3776,
+   "lng": -71.1193,
+   "summary": "Harvard Business Review Press published Doc Searls's The Intention Economy: When Customers Take Charge in 2012. At a Berkman Center talk in Austin Hall on Monday 11 June, the book was framed around a near future in which individuals control the flow of personal data, build their own loyalty programmes and dictate their own terms of service.",
+   "significance": "Put person-set terms of service into a mainstream business book six years before the IEEE work began.",
+   "sources": [
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge (event page, Doc Searls)",
+     "date": "2012",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "Dictate their own terms of service",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Event page lists \"Monday, June 11, 6:00 pm Austin East Classroom, Austin Hall, Harvard Law School\"; the year 2012 is from the page URL (/events/2012/05/) and the book's publication year; 11 June 2012 was a Monday."
+    },
+    {
+     "institution": "Berkman Klein Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge (event page, Doc Searls)",
+     "date": "2012",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "also the title of his new book from Harvard Business Review Press",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "It is described in The Intention Economy: When Customers Take Charge, by Doc Searls, which was published by Harvard Business Review Press, in 2012.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "customer-commons-spun-out-2013",
+   "displayDate": "2013",
+   "year": 2013,
+   "title": "Customer Commons spun out to host person-proffered terms",
+   "place": "Customer Commons (spun out of ProjectVRM, Berkman Center), Cambridge, Massachusetts",
+   "lat": 42.3779,
+   "lng": -71.119,
+   "summary": "Customer Commons was spun out of ProjectVRM as a 501(c)(3) nonprofit that takes no contributions from commercial entities. MyTerms materials date the spin-off to 2013 and say it was created to host a roster of standard personal privacy terms, on the model Creative Commons set for copyright licences. Its board members Mary Hodder, Iain Henderson, Joyce Searls and Doc Searls were involved in IEEE 7012 from the start.",
+   "significance": "Created the 'neutral non-business entity' that the published standard requires to keep the roster of agreements.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Customer Commons was created for the express purpose of fulfilling a role that would come to be specified in the standard: to host a roster of standardized personal privacy terms people could proffer as first parties to sites and services as second parties—a role patterned after the successful one established by Creative Commons for personal copyright licenses.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Customer Commons (archived by the Internet Archive, 15 February 2025)",
+     "title": "About The Commons",
+     "date": "2025-02-15",
+     "url": "https://web.archive.org/web/20250215033741/https://customercommons.org/about-us/",
+     "quote": "Customer Commons is a 501(c)3 nonprofit, formed as a spin-off of ProjectVRM at Harvard’s Berkman Klein Center for Internet and Society at Harvard University",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: \"Customer Commons’ mission is to restore the balance of power, respect and trust between individuals and organizations that serve them, and does not take contributions from commercial entities .\""
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "A few involved from the start are board members of Customer Commons. These are Mary Hodder, Iain Henderson, Joyce Searls, and Doc Searls.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Customer Commons' own office is not given in the sources; mapped to its Berkman/ProjectVRM origin (approximate). The customercommons.org domain was already live in November 2011 (Internet Archive), so 2013 likely marks the nonprofit spin-off rather than the first web presence — dates not reconciled in a primary document."
+  },
+  {
+   "id": "ieee-p7012-par-approved-2017",
+   "displayDate": "6 December 2017",
+   "year": 2017,
+   "title": "IEEE approves the P7012 project for machine-readable personal privacy terms",
+   "place": "IEEE Standards Association (IEEE Operations Center), Piscataway, New Jersey",
+   "lat": 40.5563,
+   "lng": -74.464,
+   "summary": "The IEEE-SA approved the Project Authorization Request for P7012, Standard for Machine Readable Personal Privacy Terms, on 6 December 2017, after a request dated 16 October 2017. Sponsored by the Social Implications of Technology Standards Committee, with David Reed as working-group chair, it aimed to let individuals act as first parties and companies as second parties, and projected an initial sponsor ballot by July 2019. According to MyTerms, John C. Havens of the IEEE had approached Doc Searls with the idea in 2017.",
+   "significance": "The moment the person-as-first-party idea entered a formal standards process, inside IEEE's P7000 ethics series.",
+   "sources": [
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "PAR Request Date: 16-Oct-2017 PAR Approval Date: 06-Dec-2017",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+    },
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "The norm on the Net thus far has been for server operators to proffer all terms of engagement, including respect for privacy, and to force individuals engaging those servers to agree to those terms, with no alternative but to go away.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself. The same form names \"Name: David Reed\" as working-group chair, the sponsor as SSIT/SC (sponsor chair Victoria Hailey), and \"Expected Date of submission of draft to the IEEE-SA for Initial Sponsor Ballot: 07/2019\"."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "Doc is also the person first approached by John C. Havens of the IEEE in 2017 with the idea of starting the workgroup.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to IEEE's Piscataway, NJ operations center (publisher location in the standard's DOI metadata); PAR approvals are board actions, not tied to a building in the source. Coordinates approximate."
+  },
+  {
+   "id": "linux-journal-nostalking-readers-terms-2018",
+   "displayDate": "14 March 2018",
+   "year": 2018,
+   "title": "Linux Journal pledges to agree to its readers' terms (#NoStalking)",
+   "place": "Cyberlaw Clinic, Harvard Law School, Cambridge, Massachusetts (drafters of the term's legal code)",
+   "lat": 42.3787,
+   "lng": -71.1195,
+   "summary": "In the first ad-free issue of the relaunched Linux Journal, editor-in-chief Doc Searls said the magazine would reverse terms of use so that the publisher agrees to readers' terms. The first was Customer Commons' #P2B1(beta), '#NoStalking', whose legal code was being drafted by Harvard's Cyberlaw Clinic, with machine readability to come from IEEE P7012; he set 25 May 2018, the GDPR's start date, as the deadline for a proof of concept and cited a JLINC Labs protocol for recording agreements.",
+   "significance": "The first working prototype of a person-proffered privacy term — the direct ancestor of MyTerms' SD-BASE.",
+   "sources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "Instead of readers always agreeing to publishers' terms, publishers will agree to readers' terms .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Date \"March 14, 2018\" from the page byline markup."
+    },
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "A protocol from JLINCLabs by which readers can proffer terms, plus a way to record agreements that leaves an audit trail for both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Customer Commons (archived by the Internet Archive, 23 March 2025)",
+     "title": "P2b1 0.9 — #NoStalking (beta)",
+     "date": "2025-03-23",
+     "url": "https://web.archive.org/web/20250323194152/https://customercommons.org/agreements/p2b1/0.9/",
+     "quote": "#NoStalking , known officially as P2B1(beta), is a personal privacy term that can be proffered by people to websites and services. It is designed to be read by lawyers, ordinary people, and machines.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to Harvard Law School's Wasserstein Hall, home of the Cyberlaw Clinic (approximate); Linux Journal was an online publication and its office is not given in the source."
+  },
+  {
+   "id": "kantara-consent-receipt-v1-1-2018",
+   "displayDate": "25 May 2018",
+   "year": 2018,
+   "title": "Kantara's Consent Receipt becomes a final recommendation",
+   "place": "Kantara Initiative (all-member ballot); mapped to its office, Herndon, Virginia",
+   "lat": 38.9608,
+   "lng": -77.3869,
+   "summary": "The Kantara Initiative's Consent Receipt Specification 1.1.0, a human-readable record of consent that can be represented as standard JSON and handed to the individual, was approved as a final recommendation by all-member ballot on 25 May 2018. Its contributors included Iain Henderson and Mary Hodder, later central to MyTerms.",
+   "significance": "Gave the person a machine-readable receipt — but still a receipt for consent to the organisation's processing, not a contract the person proffers.",
+   "sources": [
+    {
+     "institution": "Kantara Initiative (archived groups wiki)",
+     "title": "Consent Receipt Specification",
+     "date": "2018-02-20",
+     "url": "https://kantara.atlassian.net/wiki/spaces/archive/pages/3508790/Consent+Receipt+Specification",
+     "quote": "A Consent Receipt is record of authority granted by a Personally Identifiable Information (PII) Principal to a PII Controller for processing of the Principal's PII. The record of consent is human-readable and can be represented as standard JSON.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Kantara Initiative — Consent & Information Sharing Work Group (copy hosted by surveillancetrust.org)",
+     "title": "Consent Receipt Specification, Version 1.1.0",
+     "date": "2018-02-20",
+     "url": "https://www.surveillancetrust.org/wp-content/uploads/2023/10/Consent-Receipt-Specification.pdf",
+     "quote": "Final Recommendation approved by Kantara All-Member Ballot",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Revision history entry dated 2018-05-25. Contributors list includes Iain Henderson and Mary Hodder. Document date 2018-02-20."
+    }
+   ],
+   "locationNote": "Ballot was conducted among members, not at a venue; mapped to Kantara's current address (585 Grove Street, Herndon, VA, per kantarainitiative.org), which may differ from its 2018 address. Coordinates approximate."
+  },
+  {
+   "id": "w3c-dpvcg-launched-2018",
+   "displayDate": "25 May 2018",
+   "year": 2018,
+   "title": "W3C Data Privacy Vocabularies community group starts on GDPR day",
+   "place": "WU (Vienna University of Economics and Business), Vienna",
+   "lat": 48.2135,
+   "lng": 16.4081,
+   "summary": "The W3C Data Privacy Vocabularies and Controls Community Group was announced on 24 May 2018 and set to start on 25 May 2018, the day the GDPR applied, following a W3C workshop in Vienna. Its mission was a machine-readable taxonomy of privacy terms, personal data, purposes, consent and processing; Axel Polleres of WU Vienna and Bert Bos of ERCIM/W3C were its tentative chairs.",
+   "significance": "Started the shared vocabulary (DPV) that MyTerms agreements now link to for their key words.",
+   "sources": [
+    {
+     "institution": "W3C (public-new-work mailing list)",
+     "title": "Data Privacy Vocabularies and Controls Community Group created",
+     "date": "2018-05-24",
+     "url": "https://lists.w3.org/Archives/Public/public-new-work/2018May/0006.html",
+     "quote": "The Community Group shall officially start on 25th of May 2018, the official data of the GDPR coming into force, as a result of the W3C Workshop on Data Privacy Controls and Vocabularies in Vienna earlier this year.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C (public-new-work mailing list)",
+     "title": "Data Privacy Vocabularies and Controls Community Group created",
+     "date": "2018-05-24",
+     "url": "https://lists.w3.org/Archives/Public/public-new-work/2018May/0006.html",
+     "quote": "Axel Polleres , WU (Wirschaftsuniversitat Wien) - Vienna University of Economics and Business (chair)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Listed under \"Chairs (tentative)\" together with Bert Bos (ERCIM/W3C). \"official data\" [sic] in source."
+    }
+   ],
+   "locationNote": "A W3C community group works online; mapped to WU Vienna (tentative chair's institution; the founding workshop was in Vienna). Coordinates approximate (WU campus)."
+  },
+  {
+   "id": "iso-iec-29184-online-notices-2020",
+   "displayDate": "2 June 2020",
+   "year": 2020,
+   "title": "ISO/IEC 29184 standardises online privacy notices and consent",
+   "place": "ISO Central Secretariat, Vernier (Geneva), Switzerland",
+   "lat": 46.2214,
+   "lng": 6.0975,
+   "summary": "ISO/IEC 29184:2020, from JTC 1/SC 27, was published on 2 June 2020. It specifies controls for the content and structure of online privacy notices and for the process of asking PII principals for consent.",
+   "significance": "The high-water mark of the notice-and-consent model that MyTerms sets out to invert: the organisation writes the notice and the person responds.",
+   "sources": [
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC 29184:2020 — Information technology — Online privacy notices and consent",
+     "date": "2020-06",
+     "url": "https://web.archive.org/web/20260128031228/https://www.iso.org/standard/70331.html",
+     "quote": "This document specifies controls which shape the content and the structure of online privacy notices as well as the process of asking for consent to collect and process personally identifiable information (PII) from PII principals.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC 29184:2020 — life cycle",
+     "date": "2020-06",
+     "url": "https://web.archive.org/web/20260128031228/https://www.iso.org/standard/70331.html",
+     "quote": "60.60 2020-06-02 International Standard published",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "ISO publishes from its Central Secretariat (Chemin de Blandonnet 8, Vernier); coordinates approximate. iso.org blocks scripts, so the Internet Archive copy was read."
+  },
+  {
+   "id": "iso-iec-ts-27560-consent-records-2023",
+   "displayDate": "8 August 2023",
+   "year": 2023,
+   "title": "ISO/IEC TS 27560 turns consent receipts into an international structure",
+   "place": "ISO Central Secretariat, Vernier (Geneva), Switzerland",
+   "lat": 46.2214,
+   "lng": 6.0975,
+   "summary": "ISO/IEC TS 27560:2023, an interoperable, open and extensible information structure for recording a PII principal's consent, was published on 8 August 2023. It covers giving the individual a record of consent, exchanging consent information between systems and managing the consent life cycle; ISO marked it 'to be revised' on 3 April 2025.",
+   "significance": "Consent records reached ISO — yet, as Doc Searls notes, they record consent to processing rather than a reciprocal contract with identical copies on both sides.",
+   "sources": [
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC TS 27560:2023 — Privacy technologies — Consent record information structure",
+     "date": "2023-08",
+     "url": "https://web.archive.org/web/20260128031229/https://www.iso.org/standard/80392.html",
+     "quote": "This document specifies an interoperable, open and extensible information structure for recording PII principals' consent to PII processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC TS 27560:2023 — life cycle",
+     "date": "2023-08",
+     "url": "https://web.archive.org/web/20260128031229/https://www.iso.org/standard/80392.html",
+     "quote": "60.60 2023-08-08 International Standard published",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "What we have in the world so far, however, is framed around consent to processing, not reciprocal agreement to contractual terms . We still need bitwise-identical records on both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates approximate (ISO Central Secretariat)."
+  },
+  {
+   "id": "w3c-dpv-version-2-2024",
+   "displayDate": "1 August 2024",
+   "year": 2024,
+   "title": "Data Privacy Vocabulary 2.0 released",
+   "place": "ADAPT Centre, Dublin City University, Dublin",
+   "lat": 53.3856,
+   "lng": -6.2564,
+   "summary": "The W3C Data Privacy Vocabularies and Controls Community Group published DPV version 2.0 as a Final Community Group Report on 1 August 2024, edited by Harshvardhan J. Pandit of the ADAPT Centre, Dublin City University. DPV lets systems express machine-readable metadata about the use and processing of personal data based on laws such as the GDPR; version 2.3 followed on 25 February 2026.",
+   "significance": "Supplies the expert-defined terms that MyTerms agreements link to, so a person's agent and a company's agent read the same words the same way.",
+   "sources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Data Privacy Vocabulary (DPV), version 2.0 — Final Community Group Report 01 August 2024",
+     "date": "2024-08-01",
+     "url": "https://www.w3.org/community/reports/dpvcg/CG-FINAL-dpv-20240801/",
+     "quote": "The Data Privacy Vocabulary [ DPV ] enables expressing machine-readable metadata about the use and processing of personal data based on legislative requirements such as the General Data Protection Regulation [ GDPR ].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "DPV specifications index",
+     "date": "2026-02-25",
+     "url": "https://w3c-cg.github.io/dpv/",
+     "quote": "DPV — Version 2.3 (25 February 2026)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Community-group reports are published online; mapped to the editor's institution (ADAPT Centre, DCU Glasnevin campus; approximate)."
+  },
+  {
+   "id": "w3c-dpv-p7012-extension-draft-2025",
+   "displayDate": "16 March 2025",
+   "year": 2025,
+   "title": "W3C privacy-vocabulary group drafts a P7012 extension",
+   "place": "ADAPT Centre, Dublin City University, Dublin",
+   "lat": 53.3856,
+   "lng": -6.2564,
+   "summary": "The DPV community group published a draft 'Extension for IEEE P7012' (version 2.1) on 16 March 2025, authored by Beatriz Esteves, Harshvardhan J. Pandit and Iain Henderson (JLINC Labs). It models a Person, a PersonAgent, an Entity and an EntityAgent, an agreement registry, and interaction records kept by both agents, and notes that the draft standard cites DPV in an appendix.",
+   "significance": "Shows the standard being wired into a shared, machine-readable vocabulary before publication — the layer AI agents need to read terms consistently.",
+   "sources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "PersonAgent is a software or machine agent that acts on behalf of the Person , and interacts with the EntityAgent which acts on behalf of the Entity .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "The PersonAgent and EntityAgent keep a record of the request, negotiation, and contract by logging each step (as required or when relevant) within a AgreementInteractionRecord .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "The [ IEEE-P7012 ] draft standard references [ DPV ] in its appendix as an example of a vocabulary that can be used to express the relevant information for the creation and use of privacy terms in its defined processes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to the editor's institution (approximate). The extension's example agreement names (SD-BY, SD-BY-A, SD-BY-AT) predate the launch names (SD-BASE etc.)."
+  },
+  {
+   "id": "searls-case-for-myterms-agents-2025",
+   "displayDate": "14 August 2025",
+   "year": 2025,
+   "title": "Searls makes 'The Case for MyTerms' — contracts, agents and AI on both sides",
+   "place": "Bloomington, Indiana (Ostrom Workshop, Indiana University — author's base)",
+   "lat": 39.1712,
+   "lng": -86.5243,
+   "summary": "Doc Searls argued that the only way to secure privacy online is by contract, with people proffering terms as first parties, and that the finished P7012 draft (nicknamed MyTerms) was due to become official by early 2026. He wrote that the IEEE had approached Customer Commons in 2017 and that, on top of a base agreement, both sides could use AI agents: personal AI for customers and corporate AI for companies.",
+   "significance": "Explicitly frames MyTerms as the agreement layer for personal and corporate AI agents.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "The Case for MyTerms",
+     "date": "2025-08-14",
+     "url": "https://doc.searls.com/2025/08/14/the-case-for-myterms/",
+     "quote": "Both can also use AI agents : personal AI for customers and corporate AI for companies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "The Case for MyTerms",
+     "date": "2025-08-14",
+     "url": "https://doc.searls.com/2025/08/14/the-case-for-myterms/",
+     "quote": "The IEEE approached Customer Commons with the idea for making personal privacy terms machine-readable in 2017. Today the draft is done and due to become official by early next year.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "About",
+     "date": "2026",
+     "url": "https://doc.searls.com/about/",
+     "quote": "Visiting scholar with the Ostrom Workshop at Indiana University in Bloomington.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online post; mapped to the author's stated base (Ostrom Workshop, Bloomington), approximate."
+  },
+  {
+   "id": "ieee-sasb-approves-7012-2025",
+   "displayDate": "4 November 2025",
+   "year": 2025,
+   "title": "IEEE SA Standards Board approves IEEE 7012-2025",
+   "place": "IEEE SA Standards Board, IEEE Standards Association, Piscataway, New Jersey",
+   "lat": 40.5563,
+   "lng": -74.464,
+   "summary": "After the draft completed its initial ballot (reported to the SSIT Standards Committee on 17 April 2025) and comment resolution, the IEEE SA Standards Board approved 7012-2025 as a new standard on 4 November 2025. The approval year is the '2025' in its designation.",
+   "significance": "Turned person-proffered, machine-readable privacy terms from a proposal into an approved international technical standard.",
+   "sources": [
+    {
+     "institution": "IEEE SA Standards Board",
+     "title": "IEEE SA Standards Board Approvals — 04 November 2025",
+     "date": "2025-11-04",
+     "url": "https://standards.ieee.org/about/sasb/sba/04nov2025/",
+     "quote": "7012-2025 (SSIT/SC) IEEE Standard for Machine Readable Personal Privacy Terms",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Listed under the heading \"New Standards\" on the approvals page."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Standard page lists: Status Active Standard; Standard Committee SSIT/SC; Working Group MRPT-WG; Working Group Chair Doc Searls; IEEE Program Manager Malia Zaman."
+    },
+    {
+     "institution": "IEEE Society on Social Implications of Technology Standards Committee (SSIT/SC)",
+     "title": "IEEE SSIT SC Meeting 77 — Meeting Minutes, 17 April 2025 (v2)",
+     "date": "2025-04-17",
+     "url": "https://sagroups.ieee.org/ssit/wp-content/uploads/sites/283/2025/12/IEEE_SSIT_SC_Meeting-77-Meeting-Minutes-17-Apr-2025-v2.pdf",
+     "quote": "Draft successfully completed initial ballot, now in comment resolution process.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Board approvals are recorded by IEEE SA; mapped to IEEE's Piscataway operations center (approximate). Whether the 4 Nov 2025 meeting was in person or virtual is not stated."
+  },
+  {
+   "id": "searls-myterms-summary-ai-agents-2025",
+   "displayDate": "8 December 2025",
+   "year": 2025,
+   "title": "'A MyTerms Summary': agents must work only for their principals",
+   "place": "Bloomington, Indiana (Ostrom Workshop, Indiana University — author's base)",
+   "lat": 39.1712,
+   "lng": -86.5243,
+   "summary": "On the ProjectVRM blog Doc Searls summarised the standard: individuals proffer a contract from a list kept by a neutral nonprofit, the company agrees or declines, both sign and keep matching records, and both sides use machine agents. He wrote that these could be AI agents, which made publication timely, and that such agents must work privately and exclusively for each party.",
+   "significance": "States the design condition for the agent era: an agent that carries your terms must not be an instrument of someone else's surveillance.",
+   "sources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "A MyTerms Summary",
+     "date": "2025-12-08",
+     "url": "https://projectvrm.org/2025/12/08/a-myterms-summary/",
+     "quote": "They can also be AI agents, which is why it is opportune for the standard to be published in an age when AI is still a new and rapidly evolving—for both companies and individuals.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "A MyTerms Summary",
+     "date": "2025-12-08",
+     "url": "https://projectvrm.org/2025/12/08/a-myterms-summary/",
+     "quote": "For maximized agency on both sides, AI agents must be private instruments of full sovereignty, meaning they work privately and exclusively for each party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online post; mapped to the author's stated base (approximate)."
+  },
+  {
+   "id": "searls-myterms-agreement-record-sketch-2026",
+   "displayDate": "7 January 2026",
+   "year": 2026,
+   "title": "Searls sketches a 'MyTerms Agreement Record' and compares TCF, Kantara, ISO 27560 and DPV",
+   "place": "Bloomington, Indiana (Ostrom Workshop, Indiana University — author's base)",
+   "lat": 39.1712,
+   "lng": -86.5243,
+   "summary": "Thinking aloud about a proof of concept, Doc Searls listed three pieces — a browser plug-in, a web-server (CMS) plug-in, and data storage and retrieval. He reviewed IAB Europe's TCF consent strings, the Kantara Consent Receipt, ISO/IEC TS 27560:2023 and the W3C DPV (which he says P7012 cites), concluded they record consent rather than reciprocal agreement, and floated a 'MyTerms Agreement Record' (MAR) that he said he had just made up.",
+   "significance": "Maps the whole machine-readable lineage onto the one gap MyTerms must fill: identical records of a reciprocal agreement on both sides.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "They create a “TC String” and record storage/access details, but they are not designed as a mutually signed/identical contract record between the individual and the site, which MyTerms requires.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "W3C DPV (Data Privacy Vocabulary) is cited in MyTerms (IEEE P7012) and is good for indicating privacy preferences and maintaining records.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Online post; mapped to the author's stated base (approximate)."
+  },
+  {
+   "id": "ieee-7012-published-xplore-2026",
+   "displayDate": "20 January 2026",
+   "year": 2026,
+   "title": "IEEE 7012-2025 is published — free to read",
+   "place": "IEEE (publisher), Piscataway, New Jersey",
+   "lat": 40.5563,
+   "lng": -74.464,
+   "summary": "IEEE published 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, on 20 January 2026 as IEEE Xplore document 11360682 (DOI 10.1109/IEEESTD.2025.11360682). It is available at no charge through the IEEE GET Program for AI Ethics and Governance Standards, the latest of the IEEE 7000 series. Its abstract names 'websites, applications and AI agents' among the service providers covered.",
+   "significance": "The destination of this study: a published standard in which the person proffers the terms and machines — including AI agents — read, sign and record them.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Standard page lists: Status Active Standard; Standard Committee SSIT/SC; Working Group MRPT-WG; Working Group Chair Doc Searls; IEEE Program Manager Malia Zaman."
+    },
+    {
+     "institution": "Crossref (DOI registration metadata deposited by IEEE)",
+     "title": "Crossref record for DOI 10.1109/IEEESTD.2025.11360682",
+     "date": "2026-01-21",
+     "url": "https://api.crossref.org/works/10.1109/IEEESTD.2025.11360682",
+     "quote": "\"approved\":{\"date-parts\":[[2025,11,4]]}",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "JSON record: publisher IEEE, publisher-location \"Piscataway, NJ, USA\"; electronic ISBN 9798855729443; created 2026-01-21; standards-body \"Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology\"."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "The IEEE’s GET Program for AI Ethics and Governance Standards . Below is the 7000 series of standards, of which MyTerms is the latest one. All are free.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Mapped to the publisher location in the DOI metadata ('Piscataway, NJ, USA'); coordinates approximate (IEEE Operations Center). Xplore number, DOI, 21 Jan insertion date and free GET access are also in the Xplore page metadata (see standard.sources, PENDING)."
+  },
+  {
+   "id": "myterms-public-launch-london-2026",
+   "displayDate": "28 January 2026",
+   "year": 2026,
+   "title": "MyTerms launched in London on Data Privacy Day",
+   "place": "Imperial College Business School, South Kensington, London",
+   "lat": 51.4995,
+   "lng": -0.1749,
+   "summary": "Customer Commons and MyData Global launched MyTerms on 28 January 2026 (Data Privacy Day) at an event at Imperial College Business School and online, titled 'The Only Way to Get Real Privacy Online'. Speakers reported by InfoQ included Doc Searls, Jamie Smith of Customer Futures, who called MyTerms a likely cornerstone for trusting AI agents as a customer channel, Dan Leninger of Consumer Reports and John Abbott of Yoti.",
+   "significance": "The standard's public debut was framed around agentic commerce — AI agents acting for customers — not just cookie banners.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "Yesterday, Customer Commons and MyData Global launched MyTerms at a London event correctly titled The Only Way to Get Real Privacy Online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The Only Way to Get Privacy Online",
+     "date": "2026-01-13",
+     "url": "https://projectvrm.org/2026/01/13/the-only-way-to-get-privacy-online/",
+     "quote": "MyTerms will be announced on 28 January at this event in the Imperial Business School and online .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "InfoQ (C4Media)",
+     "title": "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies (Sergio De Simone)",
+     "date": "2026-02-02",
+     "url": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
+     "quote": "I really believe that as agents become the new customer channel, MyTerms is going to be a cornerstone of how we can trust those agents and how business are going to interact with them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quote attributed by InfoQ to Jamie Smith, founder of Customer Futures Ltd. InfoQ calls Searls \"co-chair of its committee\"; IEEE lists him as working-group chair."
+    }
+   ],
+   "locationNote": "Imperial College Business School, Exhibition Road, South Kensington (approximate). MyData's 20 Jan 2026 post also dates the launch to 28 Jan 2026, 'Data Privacy Day'."
+  },
+  {
+   "id": "ieee-industry-connections-myterms-2026",
+   "displayDate": "1 June 2026",
+   "year": 2026,
+   "title": "IEEE Industry Connections effort to take MyTerms to market",
+   "place": "IEEE Standards Association, Piscataway, New Jersey",
+   "lat": 40.5563,
+   "lng": -74.464,
+   "summary": "IEEE SA opened an Industry Connections activity, 'Individual Defined Privacy Terms Roadmap' (page first published 8 April 2026), to help Customer Commons, MyData Global and the MyTerms Alliance move IEEE 7012 from standard to adoption through training, road maps, certification programmes and an industry white paper. Justin Byrd chairs it and Kari McMullen is vice chair; myterms.info announced the kick-off for 1 June 2026.",
+   "significance": "Moves the standard from text to implementations, certification and a trustmark — the step P3P and DNT never completed.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "Individual Defined Privacy Terms Roadmap (Industry Connections activity)",
+     "date": "2026-04-08",
+     "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+     "quote": "Our (Customer Commons, MyData Global, and the MyTerms Alliance) goal is to bridge the gap between the 7012-2025 standard and real-world adoption.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page metadata: datePublished 2026-04-08; dateModified 2026-06-10."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "Individual Defined Privacy Terms Roadmap (Industry Connections activity)",
+     "date": "2026-04-08",
+     "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+     "quote": "IC Chair: Justin Byrd",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms — A New Global Privacy Standard (home page)",
+     "date": "2026",
+     "url": "https://myterms.info/",
+     "quote": "1 JUNE: The IEEE Industry Connections Effort kicks off the 1st of June 2026.",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Home-page banner text read in the page source; the helper does not extract this block, so --check returns NOT-FOUND."
+    }
+   ],
+   "locationNote": "Industry Connections activities are run by IEEE SA; mapped to Piscataway (approximate). Meetings are presumably online."
+  },
+  {
+   "id": "cpdp-myterms-in-practice-workshop-2026",
+   "displayDate": "22 May 2026",
+   "year": 2026,
+   "title": "'IEEE 7012/MyTerms in Practice' workshop at CPDP Brussels",
+   "place": "Computers, Privacy and Data Protection (CPDP) conference, Brussels",
+   "lat": 50.8467,
+   "lng": 4.3525,
+   "summary": "MyData Global and the MyTerms Alliance ran a workshop, 'IEEE 7012/ MyTerms in Practice', at the Computers, Privacy and Data Protection conference in Brussels on Friday 22 May 2026, hosted by Iain Henderson and Eric Pol.",
+   "significance": "Brought the standard to Europe's main data-protection policy forum, where regulators weigh the failings of consent banners.",
+   "sources": [
+    {
+     "institution": "CPDP Conferences",
+     "title": "IEEE 7012/ MyTerms in Practice (workshop page)",
+     "date": "2026-05-22",
+     "url": "https://www.cpdpconferences.org/workshops/ieee-7012-myterms-in-practice",
+     "quote": "Organising Institution MyData Global and the MyTerms Alliance",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page lists \"Friday 22.05 — 14:15 - 15:30\", Music Room; hosts Iain Henderson (MyTerms Alliance) and Eric Pol (MyData Global)."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "News",
+     "date": "2026",
+     "url": "https://myterms.info/news/",
+     "quote": "Here are the MyTerms for CDPD 22nd May 2026 slides from our IEEE 7012/ MyTerms workshop at The Computers Privacy and Data Protection Conference in Brussels, 22nd May 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Venue building not stated on the pages read; mapped to central Brussels (Grand-Place), approximate."
+  }
+ ],
+ "lineage": [
+  {
+   "id": "fipps-hew-1973",
+   "name": "Fair Information Practice principles (HEW \"Code of Fair Information Practice\")",
+   "year": 1973,
+   "body": "US Department of Health, Education and Welfare — Secretary's Advisory Committee on Automated Personal Data Systems",
+   "whoProffers": "organisation",
+   "machineReadable": false,
+   "legalForce": "Recommended as federal legislation (a \"Code of Fair Information Practice\"); the report itself has no legal force",
+   "recordKeptBy": "organisation",
+   "fate": "The foundation of notice-based privacy law; obligations fall on record-keepers, the person has no terms of their own.",
+   "sources": [
+    {
+     "institution": "US Department of Health and Human Services — ASPE",
+     "title": "Records, Computers and the Rights of Citizens (1973)",
+     "date": "1973",
+     "url": "https://aspe.hhs.gov/reports/records-computers-rights-citizens",
+     "quote": "The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Not machine-readable; included as the starting point of the notice-and-consent lineage."
+  },
+  {
+   "id": "p3p-w3c-2002",
+   "name": "Platform for Privacy Preferences (P3P 1.0)",
+   "year": 2002,
+   "yearEnd": 2018,
+   "body": "W3C",
+   "whoProffers": "organisation",
+   "machineReadable": true,
+   "legalForce": "None of its own; no enforcement followed when P3P policies misstated practices",
+   "recordKeptBy": "nobody",
+   "fate": "W3C Recommendation 16 April 2002; limited deployment; W3C marked it obsolete on 30 August 2018.",
+   "sources": [
+    {
+     "institution": "W3C",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — W3C Recommendation 16 April 2002 obsoleted 30 August 2018",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "In addition, no enforcement action followed when a site's policy expressed in P3P failed to reflect their actual privacy practices.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "This specification is obsolete and should no longer be used as a basis for implementation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Sites proffered machine-readable policies; users' agents could only accept or reject them."
+  },
+  {
+   "id": "do-not-track-2009",
+   "name": "Do Not Track (DNT) HTTP header / W3C Tracking Preference Expression",
+   "year": 2009,
+   "yearEnd": 2019,
+   "body": "Researchers (Soghoian & Stamm prototype, 2009); W3C Tracking Protection Working Group",
+   "whoProffers": "person's software, as a signal",
+   "machineReadable": true,
+   "legalForce": "None under the W3C spec; honouring it was voluntary",
+   "recordKeptBy": "nobody",
+   "fate": "W3C working group concluded in January 2019 for lack of deployment and republished its spec as a Working Group Note (17 January 2019).",
+   "sources": [
+    {
+     "institution": "W3C",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note 17 January 2019",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "slight paranoia (Christopher Soghoian's blog)",
+     "title": "The History of the Do Not Track Header",
+     "date": "2011-01",
+     "url": "http://paranoia.dubfire.net/2011/01/history-of-do-not-track-header.html",
+     "quote": "In July of 2009, I decided to try and solve this problem. My friend and research collaborator Sid Stamm helped me to put together a prototype Firefox add-on that added two headers to outgoing HTTP requests",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Read in the raw page HTML; the helper's extractor misses this blog's post body, so --check returns NOT-FOUND."
+    }
+   ]
+  },
+  {
+   "id": "mozilla-privacy-icons-2011",
+   "name": "Privacy Icons (Mozilla / Aza Raskin)",
+   "year": 2011,
+   "body": "Mozilla-convened working groups",
+   "whoProffers": "organisation",
+   "machineReadable": false,
+   "legalForce": "Intended as legal declarations \"bolted on\" to a site's privacy policy; never finalised",
+   "recordKeptBy": "organisation",
+   "fate": "An alpha set (Aza Raskin) and a beta set (Mozilla wiki, updated 28 June 2011); machine readability promised \"soon\"; adoption not measured in sources read.",
+   "sources": [
+    {
+     "institution": "Mozilla Wiki",
+     "title": "Privacy Icons",
+     "date": "2011-06-28",
+     "url": "https://wiki.mozilla.org/Privacy_Icons",
+     "quote": "Privacy Icons are legal declarations, written in cooperation with privacy experts and a coalition of industry stakeholders. And soon, they will be machine readable—enabling users to communicate their preferences through trusted agents (like web browsers).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Aza Raskin (archived by the Internet Archive)",
+     "title": "Privacy Icons: Alpha Release",
+     "date": "2010",
+     "url": "https://web.archive.org/web/20111227080129/http://www.azarask.in:80/blog/post/privacy-icons/",
+     "quote": "We are now ready to propose an alpha version of Privacy Icons that takes into account the feedback and participation we’ve received along the way.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Post undated on page; the Mozilla privacy workshop it refers to (\"earlier this year\") and the alpha are commonly dated 2010 — year not confirmed in a primary source read."
+    }
+   ],
+   "note": "Year = the dated beta page (2011); the alpha is commonly dated 2010 but that was not confirmed. Modelled explicitly on Creative Commons — as MyTerms is — but proffered by the site, not the person."
+  },
+  {
+   "id": "tosdr-2012",
+   "name": "Terms of Service; Didn't Read (ToS;DR)",
+   "year": 2012,
+   "body": "Volunteer project (ToS;DR)",
+   "whoProffers": "organisation",
+   "machineReadable": true,
+   "legalForce": "None; ratings of organisations' terms",
+   "recordKeptBy": "nobody",
+   "fate": "Active; rates and summarises companies' terms rather than letting people set their own.",
+   "sources": [
+    {
+     "institution": "ToS;DR",
+     "title": "About ToS;DR",
+     "date": "2026",
+     "url": "https://tosdr.org/en/about",
+     "quote": "“Terms of Service; Didn't Read” (short: ToS;DR) is a young project started in June 2012 to help fix the “biggest lie on the web”: almost no one really reads the terms of service we agree to all the time.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "machineReadable = ratings are published as open data (per its About page); the underlying terms remain the organisation's."
+  },
+  {
+   "id": "customer-commons-nostalking-p2b1-2018",
+   "name": "#NoStalking / P2B1(beta) personal privacy term",
+   "year": 2018,
+   "body": "Customer Commons (legal code drafted with the Harvard Law School Cyberlaw Clinic)",
+   "whoProffers": "person",
+   "machineReadable": false,
+   "legalForce": "Drafted as a contract; Customer Commons calls its page informational, not binding",
+   "recordKeptBy": "both parties (intended)",
+   "fate": "Beta; kept as a demo on Customer Commons; superseded by the MyTerms launch agreements (SD-BASE etc.).",
+   "sources": [
+    {
+     "institution": "Customer Commons (archived by the Internet Archive, 23 March 2025)",
+     "title": "P2b1 0.9 — #NoStalking (beta)",
+     "date": "2025-03-23",
+     "url": "https://web.archive.org/web/20250323194152/https://customercommons.org/agreements/p2b1/0.9/",
+     "quote": "Machine-readability of P2B1 will be guided by P7012 – Standard for Machine Readable Personal Privacy Terms , at this writing a working group of the IEEE.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "The first of those is #P2B1(beta), aka #NoStalking .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "machineReadable false: the term was designed to be machine-readable, with that layer deferred to P7012."
+  },
+  {
+   "id": "kantara-consent-receipt-2018",
+   "name": "Kantara Consent Receipt Specification 1.1.0",
+   "year": 2018,
+   "body": "Kantara Initiative",
+   "whoProffers": "organisation",
+   "machineReadable": true,
+   "legalForce": "Evidence of consent under data-protection law; not a contract",
+   "recordKeptBy": "organisation",
+   "fate": "Final Kantara recommendation 25 May 2018; ISO/IEC TS 27560:2023 later standardised a consent record/receipt structure (a direct hand-over from Kantara to ISO is often reported but was not confirmed in a primary source read).",
+   "sources": [
+    {
+     "institution": "Kantara Initiative (archived groups wiki)",
+     "title": "Consent Receipt Specification",
+     "date": "2018-02-20",
+     "url": "https://kantara.atlassian.net/wiki/spaces/archive/pages/3508790/Consent+Receipt+Specification",
+     "quote": "This specification defines the requirements for the creation of a consent record and the provision of a human-readable receipt.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "The receipt is issued by the controller and given to the individual, so both may hold a copy; it records consent to processing, not a reciprocal contract."
+  },
+  {
+   "id": "iab-europe-tcf-2018",
+   "name": "IAB Europe Transparency & Consent Framework (TCF) and TC String",
+   "year": 2018,
+   "body": "IAB Europe (industry)",
+   "whoProffers": "industry framework",
+   "machineReadable": true,
+   "legalForce": "Voluntary industry standard; CJEU (C-604/22, 7 March 2024) held the TC String is personal data and IAB Europe may be a joint controller",
+   "recordKeptBy": "organisation",
+   "fate": "Active: v1.1 (25 April 2018), v2.0 (21 August 2019), v2.2 (16 May 2023), v2.3 (April 2025).",
+   "sources": [
+    {
+     "institution": "IAB Europe",
+     "title": "Transparency & Consent Framework",
+     "date": "2026",
+     "url": "https://iabeurope.eu/transparency-consent-framework/",
+     "quote": "On 25 April 2018, TCF v1.1 was launched after an extensive industry consultation with IAB Europe and IAB Tech Lab members, and the broader digital advertising industry.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Court of Justice of the European Union",
+     "title": "Press Release No 44/24 — Judgment in Case C-604/22 IAB Europe",
+     "date": "2024-03-07",
+     "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2024-03/cp240044en.pdf",
+     "quote": "In its judgment, the Court of Justice confirms that the TC String contains information concerning an identifiable user and therefore constitutes personal data within the meaning of the GDPR.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "w3c-dpv-2018",
+   "name": "W3C Data Privacy Vocabulary (DPV)",
+   "year": 2018,
+   "body": "W3C Data Privacy Vocabularies and Controls Community Group",
+   "whoProffers": "organisation",
+   "machineReadable": true,
+   "legalForce": "None (a vocabulary; not a W3C Standard)",
+   "recordKeptBy": "nobody",
+   "fate": "Active: v2.0 (1 Aug 2024), v2.3 (25 Feb 2026); a draft extension for IEEE P7012 (16 Mar 2025); MyTerms agreements link to it.",
+   "sources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Data Privacy Vocabulary (DPV), version 2.0",
+     "date": "2024-08-01",
+     "url": "https://www.w3.org/community/reports/dpvcg/CG-FINAL-dpv-20240801/",
+     "quote": "The Data Privacy Vocabulary [ DPV ] enables expressing machine-readable metadata about the use and processing of personal data based on legislative requirements such as the General Data Protection Regulation [ GDPR ].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "whoProffers is not really applicable: DPV is shared vocabulary usable by either party; set to \"organisation\" because most deployments describe controllers' processing."
+  },
+  {
+   "id": "iso-iec-29184-2020",
+   "name": "ISO/IEC 29184:2020 Online privacy notices and consent",
+   "year": 2020,
+   "body": "ISO/IEC JTC 1/SC 27",
+   "whoProffers": "organisation",
+   "machineReadable": false,
+   "legalForce": "Voluntary international standard",
+   "recordKeptBy": "organisation",
+   "fate": "Published 2 June 2020; systematic review closed 3 September 2025.",
+   "sources": [
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC 29184:2020",
+     "date": "2020-06",
+     "url": "https://web.archive.org/web/20260128031228/https://www.iso.org/standard/70331.html",
+     "quote": "This document is applicable in any online context where a PII controller or any other entity processing PII informs PII principals of processing.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "global-privacy-control-2020",
+   "name": "Global Privacy Control (GPC)",
+   "year": 2020,
+   "body": "Browser makers, publishers and advocates; now W3C Privacy Working Group",
+   "whoProffers": "person's software, as a signal",
+   "machineReadable": true,
+   "legalForce": "Enforceable where law recognises opt-out preference signals (e.g. California CCPA regulations; universal opt-out mechanisms in Colorado and other states)",
+   "recordKeptBy": "nobody",
+   "fate": "Announced 7 October 2020; W3C Working Draft (latest 17 September 2026).",
+   "sources": [
+    {
+     "institution": "W3C Privacy Working Group",
+     "title": "Global Privacy Control (GPC) — W3C Working Draft 17 September 2026",
+     "date": "2026-09-17",
+     "url": "https://www.w3.org/TR/gpc/",
+     "quote": "This document defines a signal, transmitted over HTTP and through the DOM, that conveys a person's request to websites and services to not sell or share their personal information with third parties. This standard is intended to work with existing and upcoming legal frameworks that render such requests enforceable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Global Privacy Control",
+     "title": "Press & Announcements",
+     "date": "2026",
+     "url": "https://globalprivacycontrol.org/press",
+     "quote": "Oct 7th, 2020 Announcing Global Privacy Control: Making it Easy for Consumers to Exercise Their Privacy Rights",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "iso-iec-ts-27560-2023",
+   "name": "ISO/IEC TS 27560:2023 Consent record information structure",
+   "year": 2023,
+   "body": "ISO/IEC JTC 1/SC 27",
+   "whoProffers": "organisation",
+   "machineReadable": true,
+   "legalForce": "Voluntary technical specification",
+   "recordKeptBy": "organisation",
+   "fate": "Published 8 August 2023; marked \"to be revised\" 3 April 2025.",
+   "sources": [
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC TS 27560:2023",
+     "date": "2023-08",
+     "url": "https://web.archive.org/web/20260128031229/https://www.iso.org/standard/80392.html",
+     "quote": "provision of a record of the consent to the PII principal;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "The consent record is kept by the controller and a copy may be provided to the individual."
+  },
+  {
+   "id": "ietf-aipref-2025",
+   "name": "IETF AI Preferences (AIPREF) vocabulary and attachment",
+   "year": 2025,
+   "body": "IETF AIPREF Working Group",
+   "whoProffers": "organisation",
+   "machineReadable": true,
+   "legalForce": "None (technical enforcement explicitly out of scope)",
+   "recordKeptBy": "nobody",
+   "fate": "Working group chartered 7 January 2025; vocabulary draft-08 (14 September 2026) still an Internet-Draft.",
+   "sources": [
+    {
+     "institution": "IETF Datatracker",
+     "title": "AI Preferences (aipref) — charter",
+     "date": "2025-01-07",
+     "url": "https://datatracker.ietf.org/wg/aipref/about/",
+     "quote": "The AI Preferences Working Group will standardize building blocks that allow for the expression of preferences about how content is collected and processed for Artificial Intelligence (AI) model development, deployment, and use.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IETF Datatracker",
+     "title": "AI Preferences (aipref) — history",
+     "date": "2025-01-07",
+     "url": "https://datatracker.ietf.org/wg/aipref/history/",
+     "quote": "Charter approved, group active",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IETF Datatracker",
+     "title": "A Vocabulary For Expressing AI Usage Preferences (draft-ietf-aipref-vocab-08)",
+     "date": "2026-09-14",
+     "url": "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/",
+     "quote": "This document defines a vocabulary for expressing preferences regarding how digital assets are used by automated processing systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Preferences are attached to content by whoever publishes it (usually an organisation); AIPREF addresses AI use of content, whereas MyTerms addresses personal data in a relationship."
+  },
+  {
+   "id": "ieee-7012-2025",
+   "name": "IEEE 7012-2025 Machine Readable Personal Privacy Terms (MyTerms)",
+   "year": 2025,
+   "body": "IEEE SA (SSIT Standards Committee); roster kept by Customer Commons",
+   "whoProffers": "person",
+   "machineReadable": true,
+   "legalForce": "Voluntary technical standard; agreements made under it are designed as contracts — proponents say enforceable by contract law (untested in court in sources read)",
+   "recordKeptBy": "both parties",
+   "fate": "Approved 4 November 2025; published 20 January 2026; launched 28 January 2026 with five agreements in a market-feedback phase.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "MyTerms are also contracts: legal agreements, enforceable by contract law. That makes them binding.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "firstParty": [
+  {
+   "id": "par-2017-first-parties",
+   "speaker": "IEEE P7012 PAR (2017)",
+   "quote": "In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others--mostly companies--operating as second parties.",
+   "sources": [
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others--mostly companies--operating as second parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+    }
+   ]
+  },
+  {
+   "id": "par-2017-anybody-proffer",
+   "speaker": "IEEE P7012 PAR (2017), need for the project",
+   "quote": "On the Internet, however, anybody should be able to proffer terms, including individuals who wish to obtain agreements respecting information they wish to keep private.",
+   "sources": [
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "On the Internet, however, anybody should be able to proffer terms, including individuals who wish to obtain agreements respecting information they wish to keep private.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+    }
+   ]
+  },
+  {
+   "id": "abstract-2026-proffer",
+   "speaker": "IEEE 7012-2025 abstract",
+   "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "projectvrm-principle",
+   "speaker": "ProjectVRM principles (Berkman Klein Center wiki)",
+   "quote": "Customers must be able to proffer their own terms of engagement —and to have auditable records of all contracts to which both sides agree.",
+   "sources": [
+    {
+     "institution": "ProjectVRM wiki, hosted by the Berkman Klein Center, Harvard University",
+     "title": "ProjectVRM — Main Page (VRM Principles)",
+     "date": "2026",
+     "url": "https://cyber.harvard.edu/projectvrm/Main_Page",
+     "quote": "Customers must be able to proffer their own terms of engagement —and to have auditable records of all contracts to which both sides agree.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "searls-2022-your-terms",
+   "speaker": "Doc Searls (2022)",
+   "quote": "This standard will guide how companies online agree to your terms. Not how you agree to theirs.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "The most important standard in development today",
+     "date": "2022-10-11",
+     "url": "https://doc.searls.com/2022/10/11/p7012/",
+     "quote": "This standard will guide how companies online agree to your terms. Not how you agree to theirs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "searls-2018-readers-terms",
+   "speaker": "Doc Searls, Linux Journal (2018)",
+   "quote": "Instead of readers always agreeing to publishers' terms, publishers will agree to readers' terms .",
+   "sources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "Instead of readers always agreeing to publishers' terms, publishers will agree to readers' terms .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "searls-par-post-first-party",
+   "speaker": "Doc Searls, ProjectVRM (2025)",
+   "quote": "With MyTerms, the person (and their electronic agent) is the first party, and the corporate entity (with its agent) is the second party.",
+   "sources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The MyTerms PAR",
+     "date": "2025-04-06",
+     "url": "https://projectvrm.org/2025/04/06/myterms/",
+     "quote": "With MyTerms, the person (and their electronic agent) is the first party, and the corporate entity (with its agent) is the second party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "faq-second-parties",
+   "speaker": "MyTerms FAQ — vs DNT, GPC, cookie banners",
+   "quote": "In all those cases, the person responds to choices provided by corporate systems. In legal language, persons are second parties, not first parties.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In all those cases, the person responds to choices provided by corporate systems. In legal language, persons are second parties, not first parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "faq-first-parties",
+   "speaker": "MyTerms FAQ",
+   "quote": "With MyTerms, persons are first parties and sites and services are second parties. The person is the one proffering the terms, not the corporate side.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "With MyTerms, persons are first parties and sites and services are second parties. The person is the one proffering the terms, not the corporate side.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "faq-full-agency",
+   "speaker": "MyTerms FAQ — \"Why must I be the first party?\"",
+   "quote": "As the first party, you are independent and working at full agency. As the second party, you are dependent and working with no more agency than the other party allows.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "As the first party, you are independent and working at full agency. As the second party, you are dependent and working with no more agency than the other party allows.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "searls-new-era",
+   "speaker": "Doc Searls (Nov 2025)",
+   "quote": "MyTerms describes how the sites and services of the world agree to your terms, rather than how you agree to theirs.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "A New Era Begins",
+     "date": "2025-11-24",
+     "url": "https://doc.searls.com/2025/11/24/a-new-era-begins/",
+     "quote": "MyTerms describes how the sites and services of the world agree to your terms, rather than how you agree to theirs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "searls-only-way-flip",
+   "speaker": "Doc Searls, ProjectVRM (Jan 2026)",
+   "quote": "And the only way to make contracts work, at scale, is if we are the ones proffering those terms as first parties , and organizations agree to them as second parties . This flips the script on business-as-usual online.",
+   "sources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The Only Way to Get Privacy Online",
+     "date": "2026-01-13",
+     "url": "https://projectvrm.org/2026/01/13/the-only-way-to-get-privacy-online/",
+     "quote": "And the only way to make contracts work, at scale, is if we are the ones proffering those terms as first parties , and organizations agree to them as second parties . This flips the script on business-as-usual online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "mydata-signal",
+   "speaker": "MyData Global (Jan 2026)",
+   "quote": "It enables individuals to signal their privacy preferences by selecting from a small number of standardised, easy-to-understand, legally valid agreements written from the individual perspective; and to share these with organisations they are engaging with online.",
+   "sources": [
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "It enables individuals to signal their privacy preferences by selecting from a small number of standardised, easy-to-understand, legally valid agreements written from the individual perspective; and to share these with organisations they are engaging with online.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "aiAgents": [
+  {
+   "id": "abstract-names-ai-agents",
+   "claim": "The published standard names AI agents among the service providers whose agreements with individuals it covers.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "agents-both-sides",
+   "claim": "Agents on both sides conduct the agreement; they can be simple plug-ins or personal and corporate AIs, and the standard leaves the choice open.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "This ceremony is conducted by agents on both sides. These agents can be as simple as browser and web server plugins, or as fancy as personal and corporate AIs. The standard leaves these choices open.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "machine-readable-for-agents",
+   "claim": "The machine-readable format of each agreement is designed for computers and agents.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "Machine readable - a range of formats designed to enable access to and interaction with the agreements by computers and agents",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "agents-private-instruments",
+   "claim": "Proponents' condition: AI agents must work privately and exclusively for their own party, not as instruments of outside surveillance.",
+   "sources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "A MyTerms Summary",
+     "date": "2025-12-08",
+     "url": "https://projectvrm.org/2025/12/08/a-myterms-summary/",
+     "quote": "They cannot be instruments of surveillance or control by outside actors of any kind.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "pdc-ai-training",
+   "claim": "One launch agreement, PDC-AI, lets a person contribute specific data for training and operating AI on their own terms.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "IEEE 7012 — The Standard",
+     "date": "2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "quote": "An agreement that indicates you are willing to provide access to specific data under your control for the purposes of Training and Operating AI technologies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "agentic-commerce-cookies",
+   "claim": "At the launch, Customer Futures' Jamie Smith argued cookies will not suit agentic commerce and that agents will need their own terms (as reported by InfoQ).",
+   "sources": [
+    {
+     "institution": "InfoQ (C4Media)",
+     "title": "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies (Sergio De Simone)",
+     "date": "2026-02-02",
+     "url": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
+     "quote": "Cookies will not be suitable for agentic commerce. Instead, each agent will have its own identity and publish its own terms, a.k.a. contracts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "InfoQ's paraphrase of Jamie Smith's remarks, not a direct quote of Smith."
+    }
+   ]
+  },
+  {
+   "id": "no-ai-required",
+   "claim": "AI is not required to use MyTerms.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "No. But AI will likely be more involved as development of MyTerms products and services proceed and evolve.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "dpv-person-agent",
+   "claim": "The W3C DPV draft extension for P7012 models a PersonAgent and an EntityAgent that exchange agreements from a shared registry.",
+   "sources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "To avoid arbitrary terms and challenges associated with reasoning over unknown terms, an AgreementRegistry hosts terms or agreements for agents to use and refer to when interacting with each other.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "milestones": [
+  {
+   "date": "2022-06-02",
+   "label": "Me2B Alliance (now Internet Safety Labs) publishes pilot findings for the IEEE P7012 WG ('MyMe2BAgent' prototype, funded by an IEEE TAB Committee on Standards grant)",
+   "sources": [
+    {
+     "institution": "Internet Safety Labs (formerly Me2B Alliance)",
+     "title": "Spotlight Report #6: Proffering Machine-Readable Personal Privacy Research Agreements: Pilot Project Findings for IEEE P7012 WG",
+     "date": "2022-06-02",
+     "url": "https://internetsafetylabs.org/resources/reports/spotlight-report-6-proffering-machine-readable-personal-privacy-research-agreements-pilot-project-findings-for-ieee-p7012-wg/",
+     "quote": "The IEEE P7012 has been working on an interoperability specification for machine-readable personal privacy terms to support this ability since 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Publication date from page metadata (datePublished 2022-06-02). Not mapped as an event because the organisation's location was not established from a primary source."
+    }
+   ]
+  },
+  {
+   "date": "2022-10-11",
+   "label": "Doc Searls, now WG chair, calls P7012 'the most important standard in development today'",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "The most important standard in development today",
+     "date": "2022-10-11",
+     "url": "https://doc.searls.com/2022/10/11/p7012/",
+     "quote": "The group was started in 2017 by invitation from the IEEE, and I am its chair.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "date": "2025-04-06",
+   "label": "Searls publishes the (modified) PAR text; still 'including websites' — no AI-agent wording yet",
+   "sources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The MyTerms PAR",
+     "date": "2025-04-06",
+     "url": "https://projectvrm.org/2025/04/06/myterms/",
+     "quote": "It launched a working group in 2017 (that I now chair), and is expected to go from draft to done by early 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "date": "2025-11-24",
+   "label": "Searls forecasts publication on 22 January 2026 (actual: 20 January 2026)",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "A New Era Begins",
+     "date": "2025-11-24",
+     "url": "https://doc.searls.com/2025/11/24/a-new-era-begins/",
+     "quote": "It has been in the works since 2017, and is due to be published on 22 January 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "date": "2026-01-20",
+   "label": "MyData Global announces it is part of the launch team",
+   "sources": [
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "And MyData Global is part of the launch and ‘go to market’ team.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "quant": [
+  {
+   "id": "p7012-par-to-publication-years",
+   "label": "Time from P7012 PAR approval (6 Dec 2017) to publication (20 Jan 2026)",
+   "value": 8.1,
+   "unit": "years",
+   "year": 2026,
+   "geography": "IEEE (international)",
+   "notes": "Computed: 6 December 2017 to 20 January 2026 = 2,967 days. The PAR had projected submittal to RevCom by 02/2020.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Standard page lists: Status Active Standard; Standard Committee SSIT/SC; Working Group MRPT-WG; Working Group Chair Doc Searls; IEEE Program Manager Malia Zaman."
+    },
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "4.3 Projected Completion Date for Submittal to RevCom",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself. Value given on the form: 02/2020."
+    }
+   ]
+  },
+  {
+   "id": "p7012-par-expected-participants-2017",
+   "label": "People expected to be actively involved in developing P7012 (PAR estimate)",
+   "value": 20,
+   "unit": "people",
+   "year": 2017,
+   "geography": "IEEE (international)",
+   "notes": "Estimate on the 2017 PAR form, not a head-count of the eventual working group.",
+   "sources": [
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "5.1 Approximate number of people expected to be actively involved in the development of this project: 20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+    }
+   ]
+  },
+  {
+   "id": "myterms-launch-agreements-2026",
+   "label": "Standard agreements at MyTerms launch",
+   "value": 5,
+   "unit": "agreements",
+   "year": 2026,
+   "geography": "Global (roster kept by Customer Commons)",
+   "notes": "SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT; launch mode of up to six months for market feedback.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "There will be 5 agreements when we launch MyTerms, and 8 more in the pipeline.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myterms-pipeline-agreements-2026",
+   "label": "Further MyTerms agreements in the pipeline",
+   "value": 8,
+   "unit": "agreements",
+   "year": 2026,
+   "geography": "Global",
+   "notes": "Customer Commons' 'Choose My Terms' page (Oct 2025 snapshot) had said 11 more agreements were being prepared; figures differ.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "There will be 5 agreements when we launch MyTerms, and 8 more in the pipeline.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Customer Commons (archived by the Internet Archive, 6 October 2025)",
+     "title": "Choose My Terms",
+     "date": "2025-10-06",
+     "url": "https://web.archive.org/web/20251006120755/https://customercommons.org/choose-myterms/",
+     "quote": "In alignment with the forthcoming IEEE P7012 standard, we are preparing to introduce 11 more agreements.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "p3p-top10k-support-2018",
+   "label": "Share of the 10,000 most-visited websites supporting P3P, 2018 (upper bound)",
+   "value": 6,
+   "unit": "% (fewer than)",
+   "year": 2018,
+   "geography": "Global web (BuiltWith metrics, as cited by W3C)",
+   "notes": "W3C's reason for obsoleting P3P: a machine-readable policy nobody enforced and few implemented.",
+   "sources": [
+    {
+     "institution": "W3C",
+     "title": "The Platform for Privacy Preferences 1.0 (P3P1.0) Specification — obsoleted 30 August 2018",
+     "date": "2018-08-30",
+     "url": "https://www.w3.org/TR/P3P/",
+     "quote": "In 2018, according to BuiltWith metrics , fewer than 6% of the 10,000 most frequently visited websites support P3P.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "tcf-founding-working-groups-2017",
+   "label": "Member companies and trade associations in IAB Europe's TCF working groups at launch of the effort (Feb 2017)",
+   "value": 70,
+   "unit": "organisations (more than)",
+   "year": 2017,
+   "geography": "Europe",
+   "notes": "Scale of the industry consent framework MyTerms positions itself against.",
+   "sources": [
+    {
+     "institution": "IAB Europe",
+     "title": "Transparency & Consent Framework",
+     "date": "2026",
+     "url": "https://iabeurope.eu/transparency-consent-framework/",
+     "quote": "In anticipation of the entry into force of the GDPR, IAB Europe launched in February 2017 a collaborative effort by organising dedicated working groups attended by more than 70 member companies and sectoral trade associations",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "myths": [
+  {
+   "id": "myth-myterms-is-browser-setting",
+   "claim": "MyTerms is just a browser privacy setting, a new Do Not Track.",
+   "verdict": "FALSE",
+   "correction": "Browsers or plug-ins may carry the signal (perhaps as an HTTP header, as DNT and GPC do), but IEEE 7012 is about a contract: the person proffers a standard agreement from a public roster, the organisation accepts it, both sign electronically and both keep matching records for audit or dispute. DNT was a preference signal with no agreement or record, and its W3C working group closed for lack of deployment.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In addition, MyTerms requires that both sides keep identical records of their agreement, so compliance can be audited, and disputes adjudicated, should the need arise.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "W3C",
+     "title": "Tracking Preference Expression (DNT) — W3C Working Group Note 17 January 2019",
+     "date": "2019-01-17",
+     "url": "https://www.w3.org/TR/tracking-dnt/",
+     "quote": "This specification defines the DNT request header field as an HTTP mechanism for expressing a user's preference regarding tracking",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-7012-is-a-law",
+   "claim": "IEEE 7012 is a privacy law or regulation that companies must obey.",
+   "verdict": "FALSE",
+   "correction": "It is a voluntary technical standard approved by the IEEE SA Standards Board. It binds nobody by itself; an organisation is bound only if it agrees to a person's MyTerms agreement. Its proponents say such agreements are contracts enforceable under contract law; no court test of that claim was found. They also argue regulation has failed to give people privacy.",
+   "sources": [
+    {
+     "institution": "IEEE SA Standards Board",
+     "title": "IEEE SA Standards Board Approvals — 04 November 2025",
+     "date": "2025-11-04",
+     "url": "https://standards.ieee.org/about/sasb/sba/04nov2025/",
+     "quote": "7012-2025 (SSIT/SC) IEEE Standard for Machine Readable Personal Privacy Terms",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Listed under the heading \"New Standards\" on the approvals page."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "MyTerms are also contracts: legal agreements, enforceable by contract law. That makes them binding.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The Only Way to Get Privacy Online",
+     "date": "2026-01-13",
+     "url": "https://projectvrm.org/2026/01/13/the-only-way-to-get-privacy-online/",
+     "quote": "The only way we will get privacy is with contracts , which are laws that two parties make for themselves.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-myterms-is-cookie-consent",
+   "claim": "MyTerms is another cookie-consent (CMP) scheme.",
+   "verdict": "MISLEADING",
+   "correction": "Cookie banners and consent-management platforms present the organisation's choices to the person; under MyTerms the person presents terms and the organisation agrees. Consent-management platforms could add a module that responds to MyTerms, and MyData likens SD-BASE to 'Strictly Necessary Only' — but expressed by the person before a banner is shown. The 2017 PAR explicitly excludes privacy policies because they are one-sided.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "In all those cases, the person responds to choices provided by corporate systems. In legal language, persons are second parties, not first parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyData Global",
+     "title": "MyData, on MyTerms",
+     "date": "2026-01-20",
+     "url": "https://mydata.org/2026/01/20/mydata-on-myterms/",
+     "quote": "And when delivered as the initial call from a device to a web server to ‘send me your content’, then that privacy preference is expressed BEFORE the organisation needs to or can serve up a cookie banner or consent checkbox.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE-SA (Project Authorization Request form)",
+     "title": "P7012 PAR: Standard for Machine Readable Personal Privacy Terms (PAR approved 06-Dec-2017)",
+     "date": "2017-12-06",
+     "url": "https://confluence.hl7.org/download/attachments/40733041/IEEE%20P7012%20-%20Standard%20for%20Machine%20Readable%20Personal%20Privacy%20Terms.pdf?version=1&modificationDate=1548607614535&api=v2",
+     "quote": "Note that the purpose of this standard is not to address privacy policies, since these are one-sided and need no agreement. (Terms require agreement; privacy policies do not.)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Copy of the original IEEE-SA PAR form, hosted as an attachment on HL7 International's Confluence (uploaded January 2019); the text is the IEEE form itself."
+    }
+   ]
+  },
+  {
+   "id": "myth-published-january-2025",
+   "claim": "IEEE 7012 was published in January 2025 (it is called '7012-2025').",
+   "verdict": "FALSE",
+   "correction": "The Standards Board approved it on 4 November 2025, which gives the '-2025'; IEEE published it on 20 January 2026, and it was launched publicly on 28 January 2026.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Standard page lists: Status Active Standard; Standard Committee SSIT/SC; Working Group MRPT-WG; Working Group Chair Doc Searls; IEEE Program Manager Malia Zaman."
+    },
+    {
+     "institution": "Crossref (DOI registration metadata deposited by IEEE)",
+     "title": "Crossref record for DOI 10.1109/IEEESTD.2025.11360682",
+     "date": "2026-01-21",
+     "url": "https://api.crossref.org/works/10.1109/IEEESTD.2025.11360682",
+     "quote": "\"approved\":{\"date-parts\":[[2025,11,4]]}",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "JSON record: publisher IEEE, publisher-location \"Piscataway, NJ, USA\"; electronic ISBN 9798855729443; created 2026-01-21; standards-body \"Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology\"."
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "The publication date for MyTerms (IEEE 7012) is 20 January 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-standard-mandates-a-protocol",
+   "claim": "The standard specifies a particular technology — a header, a blockchain or an identity system.",
+   "verdict": "FALSE",
+   "correction": "The standard is protocol-neutral: agents may use any protocol that serves the purpose, and the form of the shared record is left open. Header signalling, plug-ins and Doc Searls's 'MyTerms Agreement Record' are implementation ideas, not requirements.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The MyTerms PAR",
+     "date": "2025-04-06",
+     "url": "https://projectvrm.org/2025/04/06/myterms/",
+     "quote": "It also does not specify what tech or protocol to use. This is to leave development as open as possible.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Toward a Proof of Concept for MyTerms",
+     "date": "2026-01-07",
+     "url": "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
+     "quote": "Important: MyTerms should not be dependent on a universal identity system.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-individuals-write-custom-terms",
+   "claim": "With MyTerms each person writes and negotiates custom privacy terms with every site.",
+   "verdict": "FALSE",
+   "correction": "People choose from a short roster of standard-form agreements kept by a neutral nonprofit (on the Creative Commons model); the organisation accepts one of those the person points to, and negotiation is outside the standard's scope.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Party-to-party negotiations over terms in any of these contracts or other agreements are outside the scope of this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "You can choose an agreement from a small roster of terms posted at a neutral nonprofit site such as CutomerCommons.org or MyTerms.info.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-myterms-requires-ai",
+   "claim": "You need an AI agent to use MyTerms.",
+   "verdict": "FALSE",
+   "correction": "Agents can be as simple as browser and web-server plug-ins; AI agents are one option the standard leaves open.",
+   "sources": [
+    {
+     "institution": "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
+     "title": "MyTerms FAQs – Common Questions About the Privacy Standard",
+     "date": "2026",
+     "url": "https://myterms.info/faqs/",
+     "quote": "No. But AI will likely be more involved as development of MyTerms products and services proceed and evolve.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "These agents can be as simple as browser and web server plugins, or as fancy as personal and corporate AIs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-standard-is-paywalled",
+   "claim": "Like most IEEE standards, 7012 must be bought.",
+   "verdict": "MISLEADING",
+   "correction": "Printed and store copies are sold, but the PDF is free (with a free IEEE account) through the IEEE GET Program for AI Ethics and Governance Standards.",
+   "sources": [
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "Now We Begin",
+     "date": "2026-01-29",
+     "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+     "quote": "The IEEE’s GET Program for AI Ethics and Governance Standards . Below is the 7000 series of standards, of which MyTerms is the latest one. All are free.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE Xplore (archived by the Internet Archive, snapshot 28 January 2026)",
+     "title": "7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document 11360682)",
+     "date": "2026-01-20",
+     "url": "https://web.archive.org/web/20260128202024/https://ieeexplore.ieee.org/document/11360682",
+     "quote": "\"publicationDate\":\"20 January 2026\"",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Read in the raw HTML of the snapshot (page metadata object xplGlobal.document.metadata): publicationDate \"20 January 2026\", dateOfInsertion \"21 January 2026\", ISBN 979-8-8557-2944-3 (electronic), doi 10.1109/IEEESTD.2025.11360682, pages 1-50, getProgramFlag \"true\", isFreeDocument true. PENDING only because the repo helper strips <script> content, so --check cannot see the metadata; live ieeexplore.ieee.org returns a bot challenge (HTTP 202)."
+    }
+   ]
+  }
+ ]
+}

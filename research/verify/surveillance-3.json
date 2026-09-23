@@ -1,0 +1,263 @@
+{
+  "slice": "surveillance",
+  "chunk": 3,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "brazil-lgpd-in-force-2020",
+      "status": "OK",
+      "issues": [
+        "No factual errors found. Art. 65 I-A (inserted by Lei 14.010/2020) sets 1 August 2021 for Arts. 52-54 (sanctions); Art. 2, II lists 'a autodeterminação informativa'; the Agência Senado article of 18/09/2020 confirms entry into force 'nesta sexta-feira (18)' and explains it followed the Senate president declaring the postponement provision of MP 959/2020 (PLV 34/2020, art. 4) 'prejudicado', the bill becoming Lei 14.058/2020. 18 September 2020 was a Friday.",
+        "Tooling note: the Planalto page is served as Windows-1252; the helper decodes it as UTF-8 and reports NOT-FOUND for accented quotes unless the cached file is transcoded first. After transcoding cp1252->UTF-8 both Planalto quotes check FOUND."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23, cache transcoded from cp1252: FOUND. Line reads 'I-A – dia 1º de agosto de 2021, quanto aos arts. 52, 53 e 54; (Incluído pela Lei nº 14.010, de 2020)' under Art. 65."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Article dated '18/09/2020, 16h09'; same article: 'A entrada em vigor da LGPD nesta sexta-feira (18) ocorreu devido à aprovação pelo Senado da MP 959/2020 (PLV 34/2020)...' and says Lei 14.010/2020 moved the sanctions to 1º de agosto de 2021."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cp1252 transcoded): FOUND under 'Art. 2º A disciplina da proteção de dados pessoais tem como fundamentos:'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "global-privacy-control-launched-2020",
+      "status": "FIXED",
+      "issues": [
+        "Summary checks out: the press release is dated 'Oct. 7, 2020', names Soltani (Georgetown Law) and Zimmeck (Wesleyan) as having 'initially spearheaded' the effort, lists the NYT, Washington Post, FT, DuckDuckGo, Brave, Mozilla, EFF and others, uses the phrase 'do not sell or share' preference, and quotes AG Becerra on the regulation 'requiring businesses to comply when a consumer has enabled a global privacy control'. The W3C FPWD of 21 November 2024 was published by the Privacy Working Group and defines 'Sec-GPC-field-name = \"Sec-GPC\" Sec-GPC-field-value = \"1\"'; the current TR draft is dated 17 September 2026.",
+        "Significance overstates with an unsourced superlative: 'The first widely deployed machine-readable privacy signal with legal force behind it'. No source establishes 'first' (Do Not Track was widely deployed earlier without legal force; P3P was machine-readable). Hedged below.",
+        "W3C still returns HTTP 403 to the helper's user agent; the page was re-downloaded with curl into the helper cache and then checked."
+      ],
+      "fieldFixes": {
+        "significance": "One of the first widely deployed machine-readable privacy signals with legal force behind it — but it can say only one thing (don't sell or share), which is exactly the limit that fuller person-proffered terms aim to overcome."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Page dated 'Oct. 7, 2020'; also says users can 'communicate their “do not sell or share” preference to participating publishers'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 via curl (helper UA gets 403): FOUND. Page header 'W3C First Public Working Draft 21 November 2024'; defines Sec-GPC-field-name = \"Sec-GPC\" Sec-GPC-field-value = \"1\". https://www.w3.org/TR/gpc/ now resolves to 'W3C Working Draft 17 September 2026', which carries the same header definition."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "california-privacy-rights-act-proposition-24-2020",
+      "status": "FIXED",
+      "issues": [
+        "Record claims are correct: Statement of Vote shows Proposition 24 'Amends Consumer Privacy Laws' Yes 9,384,625 (56.2%), No 7,305,431 (43.8%); CPPA FAQ confirms CPRA amended the CCPA, established the Agency, and took effect 1 January 2023.",
+        "Source 1 was PENDING because only the ballot label was matched. The numeric pair '9,384,625 56.2% 7,305,431 43.8%' is continuous in the PDF text layer (in the 'Official Declaration of the Vote Results on November 3, 2020, State Ballot Measures' table, where it is the fifth yes/no pair after Props 14, 17, 19 and 22, i.e. Prop 24 'Amends Consumer Privacy Laws. Initiative Statute.', and again in the State Totals row). Quote replaced and upgraded to CONFIRMED.",
+        "Significance calls CPPA 'the first US agency dedicated to privacy'; no primary source cited, but this is the standard description (e.g. Wikipedia: 'the first dedicated privacy regulator in the United States'). CPPA regulations §7025 on opt-out preference signals exist in the 29 March 2023 final text. Left unchanged."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Same paragraph: 'The CPRA amendments to the CCPA went into effect on January 1, 2023.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "quote": "9,384,625 56.2% 7,305,431 43.8%",
+          "note": "Fresh fetch 2026-09-23: FOUND (and 'Amends Consumer Privacy Laws. Initiative Statute.' also FOUND). In the Official Declaration of the Vote Results table of approved measures (Props 14, 17, 19, 22, 24), this is the fifth yes/no pair, belonging to Prop 24; the same figures appear in the State Totals row for Proposition 24. Cover: 'Statement of Vote, General Election, November 3, 2020, Secretary of State Alex Padilla'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "apple-app-tracking-transparency-ios-14-5-2021",
+      "status": "FIXED",
+      "issues": [
+        "Summary checks out: Apple's page gives the iOS 14.5 ATT permission rule; the Autorité release (31 March 2025, Decision 25-D-02) has the heading 'The ATT framework introduced by Apple on 26 April 2021', fines Apple €150,000,000, sets the infringement 'between 26 April 2021 and 25 July 2023', finds 'multiple consent pop-ups', and has a section 'Asymmetry of treatment between Apple and publishers'.",
+        "Significance ends 'which is why regulators treated it as the platform's rule rather than the user's term'. No source says this. The Autorité's actual finding was a competition-law abuse: Apple required double consent from third-party publishers but did not ask users of its own apps for consent until iOS 15. Rewritten to match the source."
+      ],
+      "fieldFixes": {
+        "significance": "A privacy choice at operating-system scale — but one whose wording, timing and exceptions are set by the platform, not the person. France's competition authority found that Apple made third-party publishers collect consent twice while not asking users of its own apps for consent until iOS 15."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Page title 'User privacy and data use'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND (section heading). Page 'Published on March 31, 2025'; 'duration of the infringement (between 26 April 2021 and 25 July 2023)'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Same release: 'While publishers were required to obtain double consent from users for tracking on third-party sites and applications, Apple did not ask for consent from users of its own applications (until the implementation of iOS 15).'"
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "colorado-privacy-act-universal-opt-out-2021",
+      "status": "OK",
+      "issues": [
+        "No errors found. The AG page confirms signing on 7 July 2021, effect on 1 July 2023, mandatory universal opt-out acceptance from 1 July 2024, and AG rules detailing UOOM technical specifications (6-1-1313(2), C.R.S.). The main page wording is 'the state’s first universal opt-out mechanism, Global Privacy Control'. The record's 'first recognised' is supported directly by the AG's UOOM page, which is added as a source."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; same page 'went into effect July 1, 2023'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; same page: final rules filed March 15, 2023 'include the required rules that detail the technical specifications for one or more universal opt-out mechanisms'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Colorado Attorney General (Colorado Department of Law)",
+          "title": "Universal Opt-Out and the Colorado Privacy Act",
+          "date": "2026",
+          "url": "https://coag.gov/uoom/",
+          "quote": "The GPC was the first UOOM to be recognized to meet the standards of the CPA and CPA Rules.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND. Same page: 'Beginning July 1, 2024, businesses falling within the CPA's application thresholds must allow Consumers to opt-out ... using GPC. C.R.S. § 6-1-1306(1)(a)(IV).'"
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "china-personal-information-protection-law-2021",
+      "status": "FIXED",
+      "issues": [
+        "Summary checks out on the NPC text: adopted at the 30th session of the 13th NPC Standing Committee on 20 August 2021; Art. 74 in force 1 November 2021; Art. 15 (right to withdraw consent, convenient withdrawal); Art. 24, second paragraph (non-personalised option or convenient refusal for automated push/marketing).",
+        "Significance says the opt-out was legislated 'for the private sector'. That is inaccurate: PIPL binds all personal-information processors, and Art. 33 ('国家机关处理个人信息的活动，适用本法' — the law applies to state organs' processing, subject to special rules) extends it to the state. Rewritten without the qualifier."
+      ],
+      "fieldFixes": {
+        "significance": "Even a state with pervasive public surveillance legislated a right to withdraw consent and an opt-out from algorithmic targeting — evidence that the vocabulary of individual control had become global."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (http): FOUND. '第七十四条 本法自2021年11月1日起施行。' also FOUND."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND as the second paragraph of 第二十四条. The Article 15 text in the note is also FOUND verbatim."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "belgian-dpa-iab-europe-tcf-decision-2022",
+      "status": "FIXED",
+      "issues": [
+        "Summary checks out. The APD/GBA release finds the TCF 'fails to comply with a number of provisions of the GDPR', finds IAB Europe 'acting as a data controller', and imposes a €250,000 fine with corrective measures. Its 11/01/2023 update cites 'a decision of 2 February 2022'. The CJEU judgment is the Fourth Chamber, 7 March 2024, Case C-604/22, on a reference from the 'hof van beroep te Brussel (Court of Appeal, Brussels, Belgium)'. Operative point 1 is quoted verbatim.",
+        "Significance overstates the CJEU holding. It says a preference string 'is itself personal data' and applies 'to any person-proffered terms signal'. The Court made this conditional: only 'in so far as' the string can, by reasonable means, be associated with an identifier such as an IP address. Rewritten to carry the condition."
+      ],
+      "fieldFixes": {
+        "significance": "The industry's machine-readable consent signal was found to breach the GDPR as built — and the Court of Justice confirmed that a string encoding a person's privacy preferences is itself personal data when it can reasonably be linked to an identifier such as an IP address, a principle that bears on any person-proffered terms signal."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; same page 'The BE DPA imposed a €250.000 fine' and update 11/01/2023 'In a decision of 2 February 2022, the Litigation Chamber had found a series of breaches'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND. Header 'JUDGMENT OF THE COURT (Fourth Chamber) 7 March 2024'; 'In Case C‑604/22'; reference 'from the hof van beroep te Brussel (Court of Appeal, Brussels, Belgium), made by decision of 7 September 2022'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "garante-fines-clearview-ai-2022",
+      "status": "OK",
+      "issues": [
+        "No errors found. The Garante release is signed 'Roma, 9 marzo 2022' and says: a €20 million fine; the company 'dichiara di possedere un database di oltre 10 miliardi di immagini di volti' taken 'da fonti web pubbliche'; it was ordered 'di cancellare i dati relativi a persone che si trovano in Italia' and 'ne ha vietato l’ulteriore raccolta e trattamento'. The linked injunction is headed 'Registro dei provvedimenti n. 50 del 10 febbraio 2022'. The Dutch AP release is dated 03 September 2024: a €30.5 million fine and 'Clearview has built an illegal database with billions of photos of faces'."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; release dated 'Roma, 9 marzo 2022'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; document reads 'Registro dei provvedimenti n. 50 del 10 febbraio 2022'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; page HTML date 2024-09-03 ('03 September 2024'). The same release says Clearview's database holds 'more than 30 billion photos'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "dobbs-overrules-roe-privacy-2022",
+      "status": "FIXED",
+      "issues": [
+        "Summary checks out. The slip opinion syllabus reads 'Argued December 1, 2021—Decided June 24, 2022' and 'Held: The Constitution does not confer a right to abortion; Roe and Casey are overruled'. Both quotes are verbatim in the Opinion of the Court (Alito, J.).",
+        "The title asserts that Dobbs 'turns health and location data into evidence'. No cited source supports this as a fact; neither the opinion nor anything cited documents such data being used as evidence. Title softened to 'potential evidence'. A primary source for the data-privacy concern is added: Executive Order 14076 of 8 July 2022, Sec. 4(b). A matching sentence is added to the summary.",
+        "Minor: the opinion now has a bound citation, 597 U.S. 215 (2022). The source title's '597 U.S. ___' slip form is acceptable and was not changed."
+      ],
+      "fieldFixes": {
+        "title": "Dobbs overrules Roe — and health and location data become potential evidence",
+        "summary": "In Dobbs v. Jackson Women's Health Organization the Supreme Court overruled Roe v. Wade and Planned Parenthood v. Casey, holding that the Constitution makes no reference to abortion and implicitly protects no such right. The majority noted that Roe had held the abortion right to be part of a right to privacy which is itself not mentioned in the Constitution. Two weeks later, Executive Order 14076 (8 July 2022) asked the FTC and HHS to consider action against 'the potential threat to patient privacy caused by the transfer and sale of sensitive health-related data and by digital surveillance related to reproductive healthcare services'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND in the Opinion of the Court, followed by 'See 410 U. S., at 152–153'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND; preceded by 'We hold that Roe and Casey must be overruled.'"
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Executive Office of the President, published in the Federal Register (via GovInfo)",
+          "title": "Executive Order 14076 of July 8, 2022 — Protecting Access to Reproductive Healthcare Services, 87 Fed. Reg. 42053 (13 July 2022)",
+          "date": "2022-07-08",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2022-07-13/pdf/2022-15138.pdf",
+          "quote": "To address the potential threat to patient privacy caused by the transfer and sale of sensitive health-related data and by digital surveillance related to reproductive healthcare services",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Fresh fetch 2026-09-23: FOUND (Sec. 4(b)). It continues: '(i) The Chair of the Federal Trade Commission (FTC) is encouraged to consider actions ... to protect consumers’ privacy when seeking information about and provision of reproductive healthcare services. (ii) The Secretary of Health and Human Services shall consider actions, including providing guidance under the Health Insurance Portability and Accountability Act...'. Section 1 refers to 'Eliminating the right recognized in Roe'. The federalregister.gov HTML is CAPTCHA-blocked for the helper, so the GovInfo PDF is used."
+        }
+      ]
+    }
+  ]
+}

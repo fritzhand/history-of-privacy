@@ -1,0 +1,312 @@
+{
+ "slice": "essay",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "fact",
+   "id": "arabic-islamic-hurma-and-quran",
+   "status": "OK",
+   "issues": [
+    "No error found. The statement's key claim (hurma is the idea closest to privacy) was not quoted by any source; the paper says so almost word for word, so that sentence is added as a source.",
+    "Checked OK: arXiv 1604.03626 is Abokhodair & Vieweg, DOI 10.1145/2901790.2901873. Crossref gives 'Proceedings of the 2016 ACM Conference on Designing Interactive Systems', event DIS '16, Brisbane, published 2016-06-04, so the 'ACM DIS 2016' label is right.",
+    "Checked OK: the paper glosses awrah as 'the intimate parts of one's body' that people are 'instructed to cover', which supports 'what must be covered'. It links the Qur'anic rule on entering homes to protecting the hurma of the house.",
+    "Checked OK: api.quran.com resource 20 is 'Saheeh International'. 24:27 and 49:12 are quoted verbatim, and the Uthmani text of 49:12 contains وَلَا تَجَسَّسُوا۟ as the note says.",
+    "Caveat, already in the record's note: the paper is about Gulf (GCC) users, so 'often' is the right hedge. It should not be read as a claim about all Muslim societies."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the arXiv PDF with the cache cleared: quote FOUND verbatim. It sits in the paragraph that opens 'Hurma (ةمرح) is an Arabic word that symbolizes the concept closest to the notion of privacy in the English vocabulary.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim. It is in 'The Islamic vision of privacy' section."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the API with the cache cleared: quote FOUND. In the raw text a footnote marker '1' falls between 'greet' and 'their inhabitants', which the [...] stands for. The API meta confirms translation_name 'Saheeh International'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim. The Arabic in the note was confirmed on api.quran.com/api/v4/quran/verses/uthmani?verse_key=49:12."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "arXiv (preprint of a paper presented at ACM DIS 2016, Designing Interactive Systems)",
+     "title": "Norah Abokhodair and Sarah Vieweg, 'Privacy & Social Media in the Context of the Arab Gulf'",
+     "date": "2016",
+     "url": "https://arxiv.org/pdf/1604.03626",
+     "quote": "is an Arabic word that symbolizes the concept closest to the notion of privacy in the English vocabulary.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The sentence's subject is 'Hurma (ةمرح)'. The Arabic in parentheses breaks the PDF text layer, so the quote starts at the verb. --check FOUND. The same paper says: 'In Islam, awrah literally means the intimate parts of one's body. In the GCC, everyone is instructed to cover certain body parts' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "westin-1967-definition",
+   "status": "OK",
+   "issues": [
+    "No error found. The definition is Westin's (Privacy and Freedom, 1967, p. 7, per Solove n. 111, 'Westin, supra note 4, at 7'). The Bar committee and Carnegie funding come from a 1968 review written soon after the book appeared.",
+    "Minor, no change needed: 'release from role-playing' is the 1968 book note's paraphrase. Westin's own name for this function is 'emotional release', and his four functions are personal autonomy, emotional release, self-evaluation, and limited and protected communication. The paraphrase is fair."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the surrounding passage and footnotes were read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the Solove PDF, which carries the GW Law Scholarly Commons cover sheet. A cache-cleared re-fetch then failed: every connection to web.archive.org (and wayback.archive.org) was reset at the agent proxy for about 10 minutes. The live GW repository and SSRN return 403, the Berkeley lawcat copy (DOI 10.15779/Z382H8Q) sits behind a WAF challenge, and the Brandeis mirror fails TLS verification. The id_ snapshot cannot change, so the result stands. Solove's text reads: 'According to Alan Westin: \"Privacy is the claim of individuals...\"' with n. 111 'Westin, supra note 4, at 7' (n. 4: ALAN F. WESTIN, PRIVACY AND FREEDOM 7 (1967))."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the whole note was read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the W&L Scholarly Commons PDF. A cache-cleared re-fetch then failed: every connection to web.archive.org was reset at the agent proxy for about 10 minutes, and the live repository returns 403. The id_ snapshot cannot change, so the result stands. The cover sheet reads 'Washington and Lee Law Review, Volume 25, Issue 1, Spring 3-1-1968', '25 Wash. & Lee L. Rev. 166 (1968)', and 'Book Notes'. The note is unsigned (the repository lists Westin as the book's author)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Same archived PDF as source 1: quote FOUND verbatim in the note's opening paragraph."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "westin-animal-origins",
+   "status": "FIXED",
+   "issues": [
+    "Wrong author on source[0]: the Frontiers article is by Patrizia Paci, Clara Mancini and Bashar Nuseibeh. Paci is first author (the page's own citation line is 'Paci P, Mancini C and Nuseibeh B (2022)', and Crossref and the SEP bibliography agree). 'Clara Mancini et al.' is incorrect.",
+    "The note on source[0] says the claim is at Westin p. 26. On p. 26 Frontiers cites the territoriality definitions. Westin's animal-origins sentence is on p. 8 (a 2017 University of North Bengal thesis quotes it and cites Privacy and Freedom p. 8).",
+    "The statement slightly overstates Westin's hedge. Westin wrote that man's need for privacy 'may well be rooted in his animal origins', which Frontiers paraphrases as 'likely'. The statement's 'probably' is changed to 'may well be' to match his words.",
+    "Only one secondary source was attached. Added the SEP (Roessler & DeCew 2023: Westin 'surveyed several studies of animals, demonstrating that a desire for privacy is not restricted to humans') and a thesis that quotes Westin's sentence verbatim."
+   ],
+   "fieldFixes": {
+    "statement": "Westin argued, drawing on studies of animal behaviour and territoriality, that the human need for privacy 'may well be rooted' in our animal origins, and that people and animals share several basic mechanisms for claiming privacy.",
+    "sources[0].note": "Secondary (peer-reviewed) summary of Westin 1967, ch. 1. Frontiers cites p. 26 for Westin's territoriality definitions. The animal-origins sentence itself is on p. 8 of Privacy and Freedom. Westin's book was not read directly."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Patrizia Paci, Clara Mancini and Bashar Nuseibeh, 'The Case for Animal Privacy in the Design of Technologically Supported Environments'",
+     "note": "Re-fetched with the cache cleared: quote FOUND verbatim. The page's citation line is 'Paci P, Mancini C and Nuseibeh B (2022) ... Front. Vet. Sci. 8:784794'. Crossref gives the same three authors, vol. 8, published 2022-01-07. The title field is corrected to name the first author."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Alan Westin (1967) surveyed several studies of animals, demonstrating that a desire for privacy is not restricted to humans.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "From §4.8, 'The Privacy of Animals'. --check FOUND."
+    },
+    {
+     "institution": "University of North Bengal (PhD thesis, institutional repository)",
+     "title": "Sangeeta Chatterjee, 'Right to privacy and its current trends: a comparative study under the legal systems of U.S.A, U.K. and India', ch. 2",
+     "date": "2017",
+     "url": "https://ir.nbu.ac.in/server/api/core/bitstreams/361ffe40-890e-4696-8de2-fcdeb1d64cb3/content",
+     "quote": "studies of animal behavior and social organization suggest that man's need for Privacy may well be rooted in his animal origins, and that men and animal share several basic mechanisms for claiming privacy among",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The thesis quotes Westin directly and cites Privacy and Freedom p. 8 (n. 8 and n. 10, 'Supra Note 8 at p.8'). The quotation runs over a page break ('...among their own followers'), so only the part on one page is quoted. 'men and animal' is the thesis's transcription. Item metadata: handle 123456789/2641, author Chatterjee, Sangeeta, advisor Rathin Bandyopadhyay, University of North Bengal, 2017. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "altman-1977-universal-process",
+   "status": "OK",
+   "issues": [
+    "No error found. The Crossref deposit confirms Irwin Altman, 'Privacy Regulation: Culturally Universal or Culturally Specific?', Journal of Social Issues 33(3): 66-84, July 1977, and both abstract quotes.",
+    "Checked OK: Acquisti, Brandimarte & Loewenstein, 'Secrets and Likes', J. Consumer Psychology 30(4): 736-758 (Oct 2020), per Crossref DOI 10.1002/jcpy.1191. It attributes the four ethnographic examples to Altman (1977). The next sentence in the PDF reads 'Privacy regulation encompasses both the opening and the closing of [the self] to others', which supports 'opening as well as closing'.",
+    "Nuance, no change needed: the boundary-regulation model is first set out in Altman's 1975 book (The Environment and Social Behavior). The statement dates only the cross-cultural conclusion to 1977, which is correct."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Crossref API with the cache cleared: abstract quote FOUND verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: FOUND verbatim. It is the abstract's last sentence."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the CMU PDF with the cache cleared: quote FOUND verbatim in the section 'The Evidence for Privacy-Seeking Behavior'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: FOUND verbatim."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "moore-1984-socially-created-need",
+   "status": "OK",
+   "issues": [
+    "No error found. Solove quotes Moore with n. 75 'Barrington Moore, Jr., Privacy: Studies in Social and Cultural History 73 (1984)', so the p. 73 in the note is right. The Internet Archive catalogue record (privacy00barr) confirms the book: Armonk, N.Y.: M.E. Sharpe, 1984. The book's text is lending-only and could not be searched, so the wording rests on Solove's quotation."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the surrounding passage and footnotes were read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the Solove PDF, which carries the GW Law Scholarly Commons cover sheet. A cache-cleared re-fetch then failed: every connection to web.archive.org (and wayback.archive.org) was reset at the agent proxy for about 10 minutes. The live GW repository and SSRN return 403, the Berkeley lawcat copy (DOI 10.15779/Z382H8Q) sits behind a WAF challenge, and the Brandeis mirror fails TLS verification. The id_ snapshot cannot change, so the result stands. The quote sits in Solove's critique of limited-access theories (the O'Brien 'deserted island' passage), with n. 75 citing Moore p. 73."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "thomson-1975-reductionism",
+   "status": "OK",
+   "issues": [
+    "No error found. The SEP bibliography gives 'Thomson, Judith Jarvis, 1975, \"The Right to Privacy\", Philosophy & Public Affairs, 4(4): 295-314'. Solove quotes the reprint (Schoeman 1984, p. 272).",
+    "The 'cluster of rights' claim had no direct quote. Added the SEP sentence quoting Thomson ('the right to privacy is itself a cluster of rights', 1975: 306) together with property and the right over the person."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the surrounding passage and footnotes were read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the Solove PDF, which carries the GW Law Scholarly Commons cover sheet. A cache-cleared re-fetch then failed: every connection to web.archive.org (and wayback.archive.org) was reset at the agent proxy for about 10 minutes. The live GW repository and SSRN return 403, the Berkeley lawcat copy (DOI 10.15779/Z382H8Q) sits behind a WAF challenge, and the Brandeis mirror fails TLS verification. The id_ snapshot cannot change, so the result stands. The quote is in Solove n. 6. Solove also writes at p. 1124-25 that Thomson calls privacy 'overlapped by other rights' that are 'analogous to rights we have over our property'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the SEP entry with the cache cleared: FOUND verbatim in §2.1 'Thomson's Reductionism'. The page header reads 'First published Tue May 14, 2002; substantive revision Thu Oct 19, 2023', copyright Beate Roessler and Judith DeCew."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Instead, she suggests that \"the right to privacy is itself a cluster of rights\" (1975: 306), such as the right to property or the right over the person",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the 'cluster of other rights - over property and over one's own person' part of the statement. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "gavison-1980-limited-access",
+   "status": "OK",
+   "issues": [
+    "No error found. Solove n. 80 ('Id. at 433') puts the three-elements sentence at 89 Yale L.J. 433. The SEP bibliography gives Yale Law Journal 89(3): 421-471 (1980).",
+    "Only one source was attached, and Gavison's article could not be fetched (CORE copy 404, Yale repository 403). Added two independent secondary sources: the SEP's quotation of Gavison's limited-access formulation (1980: 428), and a McGill Law Journal case comment that also cites Gavison at 433 for the three 'irreducible elements'. The comment writes 'seclusion' where Gavison says 'solitude'; the statement keeps Gavison's own word."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the surrounding passage and footnotes were read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the Solove PDF, which carries the GW Law Scholarly Commons cover sheet. A cache-cleared re-fetch then failed: every connection to web.archive.org (and wayback.archive.org) was reset at the agent proxy for about 10 minutes. The live GW repository and SSRN return 403, the Berkeley lawcat copy (DOI 10.15779/Z382H8Q) sits behind a WAF challenge, and the Brandeis mirror fails TLS verification. The id_ snapshot cannot change, so the result stands. Solove p. 1105: 'Further, Gavison explains what constitutes limited access...' with n. 80 'Id. at 433'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "A classic formulation has been offered by Ruth Gavison: \"An individual enjoys perfect privacy when he is completely inaccessible to others\" (1980: 428).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'limited access to a person'. From the SEP's discussion of access-based approaches. --check FOUND."
+    },
+    {
+     "institution": "McGill Law Journal (vol. 61, no. 1), case comment",
+     "title": "Chris Hunt and Micah Rankin, 'R. v. Spencer: Anonymity, the Rule of Law, and the Shrivelling of the Biographical Core'",
+     "date": "2015-09-01",
+     "url": "https://lawjournal.mcgill.ca/article/r-v-spencer-anonymity-the-rule-of-law-and-the-shrivelling-of-the-biographical-core/",
+     "quote": "In her seminal work on the privacy, Ruth Gavison defined \"privacy\" by reference to three \"irreducible elements\": secrecy, seclusion, and anonymity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Footnote 56 cites Gavison, 89:3 Yale LJ 421 at 433. The comment says 'seclusion' where Gavison's text (as Solove quotes it) says 'solitude'. The page is labelled 'Volume 61:1', and its schema.org datePublished is 2015-09-01. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "solove-2002-no-single-definition",
+   "status": "OK",
+   "issues": [
+    "No error found. 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (2002). The 'sweeping concept' sentence opens the article, and the family-resemblances sentence is on p. 1091, followed by 'certain concepts might not have a single common characteristic', which supports 'no single common core'. The SEP sentence is the entry's own framing in its introduction.",
+    "Minor: the SEP's discussion of Solove's family-resemblance approach cites his 2008 book (Understanding Privacy), not the 2002 article. That does not affect the statement."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the surrounding passage and footnotes were read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the Solove PDF, which carries the GW Law Scholarly Commons cover sheet. A cache-cleared re-fetch then failed: every connection to web.archive.org (and wayback.archive.org) was reset at the agent proxy for about 10 minutes. The live GW repository and SSRN return 403, the Berkeley lawcat copy (DOI 10.15779/Z382H8Q) sits behind a WAF challenge, and the Brandeis mirror fails TLS verification. The id_ snapshot cannot change, so the result stands. FOUND as the article's first sentence (Introduction, p. 1088)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim with --check earlier in this session, and the surrounding passage and footnotes were read. That run read a cached copy of this timestamped (id_) Wayback snapshot of the Solove PDF, which carries the GW Law Scholarly Commons cover sheet. A cache-cleared re-fetch then failed: every connection to web.archive.org (and wayback.archive.org) was reset at the agent proxy for about 10 minutes. The live GW repository and SSRN return 403, the Berkeley lawcat copy (DOI 10.15779/Z382H8Q) sits behind a WAF challenge, and the Brandeis mirror fails TLS verification. The id_ snapshot cannot change, so the result stands. FOUND on p. 1091. The sentence goes on: 'As Wittgenstein suggests, certain concepts might not have a single common characteristic; rather they draw from a common pool of similar elements.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the SEP entry with the cache cleared: FOUND verbatim in the introduction."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "nissenbaum-2004-contextual-integrity",
+   "status": "OK",
+   "issues": [
+    "No error found. The PDF cover sheet reads 'Washington Law Review, Volume 79, Number 1, Symposium: Technology, Values, and the Justice System, 2-1-2004', and the citation is 79 Wash. L. Rev. 119 (2004). The abstract says the article 'posits a new construct, \"contextual integrity\"' and 'extends earlier work on the problem of privacy in public', so dating the theory to 2004 is right. Nissenbaum later reformulated the two norm types as context-relative informational norms with four parameters (Privacy in Context, 2010, per the SEP). That does not make the 2004 statement wrong.",
+    "Added the sentence that states the violation condition outright ('violated when either of the norms is violated'), since the statement paraphrases it."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Cornell Tech PDF with the cache cleared: FOUND verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared: FOUND verbatim. The same paragraph holds the central-thesis sentence."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Washington Law Review (vol. 79, no. 1), copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'Privacy as Contextual Integrity'",
+     "date": "2004-02-01",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/H.%20Nissenbaum,%20_Privacy%20as%20Contextual%20Integrity.pdf",
+     "quote": "Contextual integrity is maintained when both types of norms are upheld, and it is violated when either of the norms is violated.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND."
+    }
+   ]
+  }
+ ]
+}

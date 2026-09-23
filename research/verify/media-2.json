@@ -1,0 +1,123 @@
+{
+ "slice": "media",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "image",
+   "id": "bentham-panopticon-plan-1791",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons API extmetadata (re-fetched 2026-09-23) gives LicenseShortName 'Public domain', License 'pd', Copyrighted False, DateTimeOriginal 1843, Credit 'The works of Jeremy Bentham vol. IV, 172-3', Artist Jeremy Bentham, ImageDescription 'Plan of the Panopticon'. On the file page, 'Date 1843 (originally 1791)', 'Public Domain Mark 1.0' and the licensing sentence \"This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.\" are all present. fetch-text --check says NOT-FOUND only because its extractor puts a space before the final full stop; a full-page text check finds the sentence.",
+    "Independent check: archive.org item worksofjeremyben0004unse is vol. 4 of The Works of Jeremy Bentham, dated 1843, which matches 'printed 1843'. The 'drawn by Willey Reveley' credit in the creator field is not on the Commons page. English Wikipedia supports it: the Panopticon article says 'This plan of Jeremy Bentham's panopticon prison was drawn by Willey Reveley in 1791.' and the Willey Reveley article says 'About 1791 he received his first professional fee as an architect, £10, for assisting philosopher Jeremy Bentham in preparing architectural drawings for Bentham's scheme for a Panopticon prison.' (UCL Bentham Project returned 403.)",
+    "Checked OK: the local file opens (960x1058 RGB JPEG). It shows an elevation at upper left, a section at upper right and a semicircular half-plan below, with cells lettered A around the outer wall and a central core. Caption and alt text match the image. thumbUrl returns HTTP 200. London coordinates at city level are reasonable."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "kodak-advert-you-press-the-button-1891",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons API extmetadata gives LicenseShortName 'CC BY 2.0', LicenseUrl creativecommons.org/licenses/by/2.0, Artist Tekniska museet, ImageDescription 'DIG128045 Annons för Kodak från 1891.', DateTimeOriginal 1891. The file page contains both the licence sentence and the FlickreviewR sentence ('reviewed on 21 July 2023 by FlickreviewR 2 ... cc-by-2.0') (full-page check FOUND; fetch-text NOT-FOUND only because of spacing before punctuation). The Flickr page (flickr.com/photos/tekniskamuseet/37249349200) still shows licence id 4, a link to creativecommons.org/licenses/by/2.0 and 'Some rights reserved', with the description 'DIG128045 Annons för Kodak från 1891.'",
+    "Checked OK: the local file opens (960x546). The ad reads 'THE KODAK CAMERA.', '\"You press the button, we do the rest.\"', '(OR YOU CAN DO IT YOURSELF.)', 'Eight Styles and Sizes', 'ALL LOADED WITH Transparent Films.' and 'THE EASTMAN COMPANY, Rochester, N.Y.', so the caption's quotes and advertiser are right.",
+    "Independent date check: Wikipedia's Kodak article says the firm was 'renamed the Eastman Company' in November 1889 and 'renamed Eastman Kodak' on 23 May 1892. The 'Eastman Company' imprint therefore fits the museum's 1891 date. Nothing on DigitaltMuseum could be found (Cloudflare challenge; the DiMu API returned no hit for DIG128045), so 'dated 1891 by Tekniska museet' rests on the museum's own Flickr description, which the caption attributes correctly. Rochester coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "hollerith-census-machines-scientific-american-1890",
+   "status": "FIXED",
+   "issues": [
+    "Wrong caption detail: the stacks beside the clerk are not punched cards, and the machine is not the card tabulator. The engraving is labelled 'Electrical Counting Machines' and shows the keyboard counting machine used for the 1890 census's first count. The article it illustrates, 'The Census of the United States' in Scientific American vol. 63 no. 9 (30 Aug 1890; OCR at archive.org), says: 'The first operation was the enumeration in gross of the population of the United States, and by the same operation the enumeration of families and of their size. We illustrate the machine on which this work was done. It comprises a key board with a number of keys, numbered from 1 to 20, and upon the face of the machine in front of the operator, 21 dials.' It adds: 'Having a schedule at hand, the operator we may assume sees in it a family of six members; he strikes upon the key number 6.' The same article describes the enumerators' schedules arriving in piles, one pile per enumerator, and says 'The bundle was then corded together'. Punched cards belonged to the later, separate tabulating stage. The Commons file's own cited source, officemuseum.com, captions this exact file (1890_Census_Hollerith_Electrical_Counting_Machines_Sci_Amer.jpg): 'The Hollerith electric tabulating machine could be used with a keyboard rather than a card reader. In this illustration, a clerk working on the 1890 Census is manually entering the number of people in each household.' A close look at the image agrees: her right hand is on a small keyboard, and the stacks are cross-tied bundles of folded papers, not cards.",
+    "Checked OK otherwise: Commons API extmetadata gives Public domain (pd), Copyrighted False, Artist 'Artist not credited.', DateTimeOriginal 1890-08. The quoted PD-US sentence, the description 'The Hollerith electric tabulating machine being used for the 1890 U.S. A. Census.' and the source 'Illustration in \"Scientific American\" magazine, Aug. 30, 1890.' are all verbatim on the file page. The issue date is confirmed by archive.org item scientific-american-1890-08-30 ('Scientific American Volume 63 Number 09'). The local file opens (500x386). thumbUrl returns HTTP 200. Washington coordinates at city level are fine. The article credits the apparatus to 'Mr. Herman Hollerith, of Washington, D. C.'"
+   ],
+   "fieldFixes": {
+    "caption": "Scientific American illustrated Hollerith's electrical counting machine at work on the 1890 United States census in its issue of 30 August 1890. This keyboard machine made the first, gross count of the population and of family sizes: a clerk reads an enumerator's schedule and presses the key for the number of people in each family, while tied bundles of schedules are stacked beside her and more operators work behind.",
+    "alt": "Engraving of a woman seated at a desk-like counting machine with a panel of dials, a ruled schedule in her left hand and her right hand on a small keyboard, tall tied bundles of papers stacked beside her and other clerks working in the background",
+    "rightsEvidence": "Commons file page Permission section: \"This media file is in the public domain in the United States. This applies to U.S. works where the copyright has expired, often because its first publication occurred prior to January 1, 1931\". Description: \"The Hollerith electric tabulating machine being used for the 1890 U.S. A. Census.\" Source: \"Illustration in 'Scientific American' magazine, Aug. 30, 1890.\" Caption facts checked against the article the engraving illustrates, 'The Census of the United States', Scientific American vol. 63 no. 9 (30 August 1890), OCR text at archive.org: \"The first operation was the enumeration in gross of the population of the United States, and by the same operation the enumeration of families and of their size. We illustrate the machine on which this work was done.\" \"It comprises a key board with a number of keys, numbered from 1 to 20, and upon the face of the machine in front of the operator, 21 dials.\" \"Having a schedule at hand, the operator we may assume sees in it a family of six members\". The Commons file's own source (officemuseum.com/data_processing_machines.htm) describes this image as: \"In this illustration, a clerk working on the 1890 Census is manually entering the number of people in each household.\""
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "Scientific American (via Internet Archive)",
+     "title": "The Census of the United States, Scientific American vol. 63 no. 9",
+     "date": "1890-08-30",
+     "url": "https://archive.org/download/scientific-american-1890-08-30/scientific-american-v63-n09-1890-08-30_djvu.txt",
+     "quote": "The first operation was the enumeration in gross of the population of the United States, and by the same operation the enumeration of families and of their size. We illustrate the machine on which this work was done.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "OCR text of the issue. fetch-text --check FOUND for this quote and for 'It comprises a key board with a number of keys, numbered from 1 to 20, and upon the face of the machine in front of the operator, 21 dials.' and 'Having a schedule at hand, the operator we may assume sees in it a family of six members'."
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "id": "right-to-privacy-harvard-law-review-1890",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons API extmetadata gives Public domain (pd), Copyrighted False, DateTimeOriginal 1890-12-15, Credit 'Harvard Law Review, Vol. 4, No. 5 (Dec. 15, 1890), pp. 193-220', Artist 'Samuel D. Warren, Louis D. Brandeis'. The quoted PD-US sentence is verbatim on the file page. The DjVu has 28 pages, which matches pp. 193-220.",
+    "Checked OK against the image itself (local file 757x1200 opens): the masthead reads 'HARVARD LAW REVIEW. VOL. IV. DECEMBER 15, 1890. NO. 5.' and the title 'THE RIGHT TO PRIVACY.' The text contains 'now the right to life has come to mean the right to enjoy life,—the right to be let alone'. This is a real first page, not a JSTOR cover sheet. Independent transcription: the University of Louisville Brandeis School of Law page has the same passage and 'Originally published in 4 Harvard Law Review 193 (1890)'. thumbUrl returns HTTP 200. The Cambridge coordinates are fine for where the Review was published."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "house-office-building-telephone-exchange-1912",
+   "status": "OK",
+   "issues": [
+    "Checked OK: the LoC JSON for item 2016864178 gives title 'HOUSE OFFICE BUILDING. TELEPHONE EXCHANGE', created_published '1912.', contributor 'Harris & Ewing, photographer', medium '1 negative : glass ; 5 x 7 in. or smaller', reproduction number LC-DIG-hec-01830 and rights_advisory 'No known restrictions on publication. For more information, see Harris & Ewing Photographs - Rights and Restrictions Information'. The Commons page shows Public domain and has the Harris & Ewing sentence verbatim. The LoC reference image hec/01800/01830r.jpg is the same photograph as the local file (960x710, opens).",
+    "Caveat, no change needed: LoC notes 'Title from unverified caption data received with the Harris & Ewing Collection.' So the House Office Building location and the 1912 date rest on the studio's own caption, not on a check by LoC staff. The building (opened 1908, now Cannon) is the only House office building that existed in 1912. The record's coordinates (38.8872, -77.0079) are about 80 m from Wikipedia's point for the Cannon building (38.88694, -77.00694), which is within building level. The alt text matches the image: a man in a suit at a cord switchboard with a mouthpiece on a curved arm."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "louis-brandeis-harris-ewing-c1916",
+   "status": "FIXED",
+   "issues": [
+    "Imprecise wording: LC-DIG-ppmsca-06024 is not the print's number. The LoC record gives 'LC-DIG-ppmsca-06024 (digital file from original photo)' and 'LC-USZ62-31230 (b&w film copy neg.)' as reproduction numbers, and the print itself is filed under call number 'BIOG FILE - Brandeis, Louis Dembitz, 1856-1941 [item] [P&P]'. Also, the Commons file shown is a restored copy. The Commons page says: 'Restored version of Image:Brandeisa.jpg with dust, scratches, stains, and chemical damage corrected. Levels adjusted.' Its Source field is LC-USZ62-31230 and its Credit gives digital ID ppmsca.06024. The caption should say it is a cleaned copy of the LoC image.",
+    "Checked OK otherwise: the LoC JSON for item 2004673443 gives title '[Louis Brandeis, head-and-shoulders studio portrait, facing front]', created_published '[1916?]', notes 'Photograph by Harris and Ewing.', medium '1 photographic print.' and rights_advisory 'No known restrictions on publication.' Commons extmetadata gives Public domain (pd), Artist Harris & Ewing, date circa 1916, and the Harris & Ewing sentence is verbatim on the file page. The LoC reference image ppmsca/06000/06024r.jpg is the same portrait as the local file (839x1200, opens), which shows judicial robes, consistent with Brandeis joining the Court in 1916. The Washington coordinates are fine."
+   ],
+   "fieldFixes": {
+    "caption": "Louis Brandeis, co-author with Samuel D. Warren of 'The Right to Privacy' (1890), in a head-and-shoulders studio portrait by Harris & Ewing, dated [1916?] by the Library of Congress. The Library holds the original print (digital file LC-DIG-ppmsca-06024) and advises 'No known restrictions on publication'; the copy shown was cleaned of dust, scratches and stains by a Wikimedia Commons contributor."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "council-of-europe-first-session-plaque-1949",
+   "status": "OK",
+   "issues": [
+    "Checked OK: Commons API extmetadata gives LicenseShortName 'CC BY-SA 3.0', Artist Ji-Elle, Credit 'Own work', DateTimeOriginal 2010-08-26, and a French description matching the rightsEvidence. The file page has, verbatim, 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license.', 'GNU Free Documentation License' and '26 August 2010'. The file is multi-licensed, so choosing CC BY-SA 3.0 is valid.",
+    "Checked OK against the image itself (local file 500x622 opens): the plaque reads 'The Council of Europe Assembly held its first session on 10 August 1949 in the Grand Hall of the Palais universitaire in Strasbourg. Inaugurated on 5 May 1989', with the French text above and a ring of twelve gold stars. Independent: French Wikipedia (Palais universitaire de Strasbourg) says 'Du 10 août 1949, au 8 septembre 1949, dans l'aula du palais, se tient la première session du Conseil de l'Europe' and gives coordinates 48.5848, 7.76242. The record's 48.5845, 7.7623 matches. thumbUrl returns HTTP 200."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "eleanor-roosevelt-udhr-poster-1949",
+   "status": "FIXED",
+   "issues": [
+    "The creator field overstates authorship. The FDR Presidential Library & Museum is the holding institution and the Flickr uploader (the Flickr title is its photo number '64-165'), not the photographer. Commons lists the library in its Author field only as the source of the upload. No photographer is credited on Commons or on Flickr.",
+    "Checked OK otherwise: Commons API extmetadata gives LicenseShortName 'CC BY 2.0' (cc-by-2.0), Artist FDR Presidential Library & Museum, and the description 'Eleanor Roosevelt holding poster of the Universal Declaration of Human Rights (in English), Lake Success, New York. November 1949.' Both the Leoboudv review sentence (9 October 2019) and the licence sentence are verbatim on the file page. The Flickr page flickr.com/photos/fdrlibrary/27758131387 still has licence id 4, a link to creativecommons.org/licenses/by/2.0, 'Some rights reserved' and the same description. Independent: Wikipedia's UDHR article captions the image 'Eleanor Roosevelt holding the English-language version of the Universal Declaration of Human Rights in November 1949'. Its UN Headquarters article says the UN used the Sperry plant at Lake Success 'for most of its operations ... between 1946 and 1952', which supports 'interim headquarters'. Lake Success coordinates (Wikipedia 40.77028, -73.71333) match the record at village level. The local file opens (960x753) and matches the alt text. thumbUrl returns HTTP 200."
+   ],
+   "fieldFixes": {
+    "creator": "Photographer not credited; FDR Presidential Library & Museum (collection, photo 64-165)"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

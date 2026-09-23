@@ -1,0 +1,296 @@
+{
+  "slice": "personas-researchers",
+  "chunk": 3,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "cameron-laws-of-identity-2005",
+      "status": "FIXED",
+      "issues": [
+        "The coordinates (47.674, -122.1215) are downtown Redmond, but the locationNote says 'Microsoft's headquarters in Redmond'. OpenStreetMap puts Microsoft Building 1 (One Microsoft Way) at 47.6412, -122.1267, about 3.7 km south. Corrected lat/lng to the campus.",
+        "Checked OK: the PDF is headed '…as of 5/11/2005' and 'Kim Cameron, Architect of Identity, Microsoft Corporation'. It lists seven laws (User Control and Consent; Minimal Disclosure for a Constrained Use; Justifiable Parties; Directed Identity; Pluralism of Operators; Human Integration; Consistent Experience). It says the ideas 'were extensively refined through the Blogosphere in a wide-ranging conversation documented at www.identityblog.com'. It says the Law of Justifiable Parties can 'account for the successes and failures of Microsoft's Passport identity system' and that 'Passport failed in its mission of being an identity system for the Internet.' The summary is supported."
+      ],
+      "fieldFixes": {
+        "lat": 47.6412,
+        "lng": -122.1267
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the identityblog PDF. The quote --check FOUND, with exact case. Header '…as of 5/11/2005', author line 'Architect of Identity, Microsoft Corporation', the seven law titles and the Passport passages all confirmed in the text layer."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND. Page metadata date.published is 'Sun Dec 5 17:23:00 2021', so the date 2021-12-05 is right. The same post says 'With his laws, Kim was telling us things about identity in 2004', which is consistent with the laws being drafted on the blog before the May 2005 paper."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "first-internet-identity-workshop-berkeley-2005",
+      "status": "OK",
+      "issues": [
+        "No errors found. The dates (26–27 October 2005, moved from 25–26), the four hosts, the proposals compared (InfoCard, OpenID, XRI/XDI i-names), the day-two 'structured open space' at the Hillside Club ('Kaliya Hamlin was anxious that we use it'), and the Identity Rights Agreements session with its 'What's missing is the legal framework' conclusion are all verbatim in Windley's posts.",
+        "Precision note: the published audio list starts with 'Opening remarks by Phil Windley' (13:58) before Searls's talk. Windley's live post of 26 Oct 2005 says 'Doc is leading out today', so it is fair to say Searls opened the first day's programme. That post is added as a direct source for the claim.",
+        "Coordinates checked: OpenStreetMap puts the Hillside Club (2286 Cedar St) at 37.8788, -122.2649, about 160 m from the record's point. That is acceptable as approximate."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND, with exact case. The post is dated 'Mon Aug 1 05:35:00 2005'. The proposal list includes 'Microsoft's InfoCard system', 'OpenID' and 'XRI/XDI (i-names)'. The announcement already planned 'a day of structured open space' for day two."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND. The post is dated 'Thu Oct 27 14:42:00 2005'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND. 'Kaliya Hamlin was anxious that we use it as a way of creating discussion' is confirmed. The November 2005 talks list is at https://www.windley.com/archives/2005/11/iiw2005_talks.shtml ('Identity in the Marketplace: The Rise of the Fully Empowered Customer, featuring Doc Searls ... Oct. 26, 2005')."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Phil Windley, Technometria",
+          "title": "IIW2005: Doc Searls",
+          "date": "2005-10-26",
+          "url": "https://www.windley.com/archives/2005/10/iiw2005_doc_sea.shtml",
+          "quote": "Doc is leading out today giving a foundation for why identity matters.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Live post dated 'Wed Oct 26 10:09:00 2005'; --check FOUND. It supports 'the first day opened with Searls'. Windley's own short opening remarks came first."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "searls-projectvrm-launched-berkman-2006",
+      "status": "FIXED",
+      "issues": [
+        "Misattribution in the significance field. It says 'IEEE 7012's own FAQ' says the ideas 'were worked out in ProjectVRM'. The FAQ is on myterms.info, whose footer reads '© 2026 Customer Commons'. It is published by the standard's promoters, not by IEEE or the standard itself. Reworded.",
+        "Wrong date on source 1 (ProjectVRM Main Page). The date '2022-09' cannot be right: the page says 'The blog was hosted at Harvard from 2007 to 2023', and its footer says 'This page was last edited on 3 March 2024'. Corrected to 2024-03-03.",
+        "Source 0 (VRM History) date '2010' was inferred. The wiki footer says 'This page was last edited on 12 October 2011'. Corrected to 2011-10-12.",
+        "No source was attached for 'The Intention Economy (Harvard Business Review Press, 2012)'. Added one. It is Wikipedia, a tertiary source; the HBR store page returned 404. The ProjectVRM Main Page also mentions a 2012 'Intention Economy Mashup Event' named after 'Doc's new book'.",
+        "Checked OK: the Main Page says 'VRM is the customer-side counterpart of CRM (or Customer Relationship Management)' and lists the principles quoted in the summary (control of data they generate; share data selectively; proffer their own terms). The Berkman coordinates are close to 23 Everett St (42.3802, -71.1180)."
+      ],
+      "fieldFixes": {
+        "significance": "This is where the idea of person-proffered terms was named and organised; the MyTerms FAQ, published by Customer Commons (the standard's promoters), says the ideas directly behind IEEE 7012 'were worked out in ProjectVRM'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "date": "2011-10-12",
+          "note": "Re-fetched. The quote --check FOUND, with exact case. The page is undated, but its MediaWiki footer says 'This page was last edited on 12 October 2011, at 00:30.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "date": "2024-03-03",
+          "note": "Re-fetched. The quote --check FOUND, with exact case. Footer: 'This page was last edited on 3 March 2024, at 16:40.' The same page says 'VRM is the customer-side counterpart of CRM'."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND, with exact case. The site footer is '© 2026 Customer Commons', so this is the promoters' FAQ, not an IEEE document."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Wikipedia",
+          "title": "Doc Searls",
+          "date": "2026",
+          "url": "https://en.wikipedia.org/wiki/Doc_Searls",
+          "quote": "In April 2012, his book The Intention Economy: When Customers Take Charge was published by Harvard Business Review Press",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Tertiary source; --check FOUND. The same article says he 'founded ProjectVRM at the Berkman Klein Center' during his 2006–2010 fellowship. The Wikipedia VRM article gives May 2012, so keep the year only."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "howe-nissenbaum-trackmenot-2006",
+      "status": "FIXED",
+      "issues": [
+        "Source 1 is misdescribed. https://cs.nyu.edu/trackmenot/ now returns 301 redirects to https://www.trackmenot.io/, so the page is no longer 'hosted at New York University'. The quote is on trackmenot.io (--check FOUND). The project credits Howe (now School of Creative Media, Hong Kong), Nissenbaum (Cornell Tech) and Vincent Toubiana. URL and institution corrected.",
+        "The summary's '350,000 downloads' has no date. The source is the 2009 book chapter ('Since August 2006 ... over 350,000 downloads'), so the summary now says 'by 2009'.",
+        "The 2010 study's claim was loosely paraphrased as 'could often separate the decoys'. The abstract says a search engine 'equipped with only a short-term history of a user's search queries, can break the privacy guarantees of TMN by only utilizing off-the-shelf machine learning classifiers'. Reworded to match.",
+        "Checked OK: August 2006 first release and NYU affiliations are in the chapter header. The August 2005 DOJ subpoena to Google and the NYT AOL coverage are on the project page. The Oxford University Press publication in 2009 is confirmed by the Creative Commons post of 21 April 2009."
+      ],
+      "fieldFixes": {
+        "summary": "Daniel Howe and Helen Nissenbaum of New York University released TrackMeNot, a free Firefox extension that periodically sends randomised 'ghost' queries to search engines so that a user's real searches are harder to profile. Its authors cited the U.S. Justice Department's 2005 subpoena to Google for search records and the New York Times coverage of AOL's release of search logs. By their count it had passed 350,000 downloads by 2009; a 2010 study showed that a search engine holding only a short history of a user's queries could break its privacy guarantees using off-the-shelf machine-learning classifiers."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the trackmenot.io PDF. The quote --check FOUND, with exact case. Header: 'In: On the Identity Trail ... (Forthcoming, Oxford University Press)'. Authors are listed at New York University."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "url": "https://www.trackmenot.io/",
+          "institution": "TrackMeNot project (Daniel C. Howe, Helen Nissenbaum and Vincent Toubiana)",
+          "note": "The old URL cs.nyu.edu/trackmenot/ 301-redirects here. The quote --check FOUND on trackmenot.io. The 'background' section cites the DOJ subpoena to Google 'initiated August 2005'. The 'why we created TMN' section cites the front-page NYT article on AOL's release of search data."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the Springer page (free abstract). The quote --check FOUND, with exact case. PETS 2010, LNCS vol. 6205, pp. 19–37."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "narayanan-shmatikov-netflix-deanonymization-2008",
+      "status": "FIXED",
+      "issues": [
+        "The title and summary overstate the real-world matching. The title says ratings were 'matched to named people', and the summary says the authors 'identified the Netflix records of known users' as a general result. In fact the IMDb test was a proof of concept. The paper says 'we worked with a very small sample of around 50 IMDb users', and 'our algorithm identiﬁed the records of two users in the Netﬂix Prize dataset'. IMDb accounts are not necessarily in real names. The paper warns its results 'do not imply anything about the percentage of IMDb users who can be identiﬁed'. Title and summary are reworded; the 99% statistical result stands.",
+        "Checked OK: '500,000 subscribers' is in the abstract (the FTC letter says 'over 480,000', so 'about' is right). Names were replaced with numbers (FTC letter: 'replaced customers' names with unique numbers'). The 8-ratings/14-day/99% figure is verbatim. Princeton gives the venue as S&P 2008 in Oakland, 18–21 May 2008. The arXiv v1 is dated 18 Oct 2006 and v2 22 Nov 2007. The FTC closing letter of 12 March 2010 says Netflix 'intended to suspend plans for Prize 2' after staff raised the research on 13 Oct and 3 Nov 2009."
+      ],
+      "fieldFixes": {
+        "title": "Netflix's 'anonymous' ratings are shown to be re-identifiable",
+        "summary": "Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin presented a statistical attack on the Netflix Prize dataset, which held movie ratings of about 500,000 subscribers with names replaced by numbers. They calculated that eight ratings (two of which may be wrong) with dates accurate to 14 days single out 99% of records. As a proof of concept they compared the public Internet Movie Database ratings of about 50 users with the dataset and matched two of them to their Netflix records with high statistical confidence, uncovering what the authors called apparent political preferences and other potentially sensitive information. In March 2010, after FTC staff raised the research with the company, Netflix suspended plans for a second prize dataset."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the Cornell PDF. The quote --check FOUND, with exact case (ﬁ ligature). The same PDF has 'we worked with a very small sample of around 50 IMDb users.' and 'Given our small sample of IMDb users, our algorithm identiﬁed the records of two users in the Netﬂix Prize dataset' (both --check FOUND)."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched arXiv abs page. The quote --check FOUND. Submission history: v1 Wed 18 Oct 2006, v2 Thu 22 Nov 2007. The date 2007-11-22 matches the v2 revision."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the FTC PDF (OCR). The quote --check FOUND. The letter is dated 'March 12,2010' and signed by Maneesha Mithal, Division of Privacy & Identity Protection. It confirms 'over 480,000 Netflix customers' and that names were replaced with unique numbers."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "mcdonald-cranor-cost-of-reading-privacy-policies-2008",
+      "status": "OK",
+      "issues": [
+        "No errors found. Table 7 of the paper gives the individual time to read as 181 / 244 / 304 hours a year (lower / point / upper) and the time to skim as 81 / 154 / 293. Table 8 gives the national cost to read as $559.7 billion / $781 billion / $1.1 trillion. The conclusion does say 'approximately 201 hours a year, worth about $3,534 annually'. $3,534 is Table 8's point estimate for the cost to read, while 201 hours matches no table value, so the summary's note about the mismatch is right.",
+        "Journal details confirmed from running heads '[Vol. 4:3' and '2008]'. The authors' CMU / CyLab affiliations are on page 1."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the Stanford-hosted PDF. The quote --check FOUND, with exact case. The '$781 billion' sentence --check FOUND. The conclusion's '201 hours' and '$3,534' sentence was confirmed with --grep."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the JTHTL PDF. The quote --check FOUND, with exact case. Article title 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice' confirmed."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "soghoian-stamm-do-not-track-header-prototype-2009",
+      "status": "FIXED",
+      "issues": [
+        "Overstated 'replacing'. The prototype added headers but did not replace the opt-out cookies. Soghoian's TACO add-on kept using cookies, and the post says that after joining the FTC he 'ultimately decided against including the header in TACO'. The summary now says 'as an alternative to'.",
+        "Overstated 'first' in the significance field ('For the first time a person's own software stated a tracking preference to every site at once'). The source describes only a prototype pitched to industry, not a deployed tool; browsers shipped DNT only from 2011. Dan Kaminsky had suggested an 'X-No-Track' header earlier in 2009, and Mozilla's Mike Shaver had proposed an 'X-Tracking-Opt-Out' header. Reworded without 'first'.",
+        "The locationNote's 'The add-on itself was distributed online' is not supported. The post describes a prototype, and says Soghoian decided against adding the header to his public TACO add-on. Removed.",
+        "Checked OK: the July 2009 prototype with Sid Stamm and both header names; the mid-July 2009 FPF 'meeting and conference call'; 'none of the advertising firms showed any interest in the header'; the 2007 public-interest proposal that the FTC compile a Do Not Track list; Leibowitz's 27 July 2010 Senate Commerce testimony; and the header displacing the list idea. The W3C Working Group Note is dated 17 January 2019."
+      ],
+      "fieldFixes": {
+        "summary": "In July 2009 Christopher Soghoian and Sid Stamm built a prototype Firefox add-on that added 'X-Do-Not-Track: 1' and 'X-Behavioral-Ad-Opt-Out: 1' headers to outgoing web requests, as an alternative to the per-company opt-out cookies that were erased whenever users cleared their cookies. In mid-July Soghoian pitched the header at a meeting and conference call organised by the Future of Privacy Forum; none of the advertising firms showed interest, and after joining the FTC a couple of months later he decided against adding the header to his TACO opt-out add-on. After FTC chairman Jon Leibowitz revived the 'do not track' idea in July 2010, the header approach displaced a 2007 advocacy proposal for an FTC-compiled Do Not Track list, and W3C worked on it as the DNT standard until 2019.",
+        "significance": "It moved the tracking choice from one cookie per ad company to a single signal a person's own software sends to every site: the one-bit ancestor of machine-readable personal terms.",
+        "locationNote": "Soghoian's account does not say where the meeting was held; the coordinates are FPF's home city, Washington, D.C. (city centre, approximate)."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The repo helper returns NOT-FOUND because its extractor skips the Blogger post body. Checked instead with BeautifulSoup on the post-body div, with whitespace normalised: the quote is present verbatim and case-exact. Also present: 'In mid July 2009, the Future of Privacy Forum organized a meeting and conference call in which I pitched the header concept', 'In the end, none of the advertising firms showed any interest in the header.' and 'A couple months later, I started working at the Federal Trade Commission, and ultimately decided against including the header in TACO'. Blogger datePublished is 2011-01-21T16:00:00-05:00."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. One helper attempt returned 403; curl and a later helper run succeeded and the quote --check FOUND, with exact case. Page <time class=dt-published datetime=2019-01-17>. The next sentence says there has not been 'sufficient deployment of these extensions ... to justify further advancement'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "berners-lee-solid-inrupt-announced-2018",
+      "status": "FIXED",
+      "issues": [
+        "Source 0 quote case is wrong. The Common Dreams text reads 'founded a company called inrupt' with a lowercase i. The helper's --check is case-insensitive, which hid this. Corrected to verbatim.",
+        "Source 1 date: the Inrupt blog copy displays 'October 22, 2018', not 2018-09-29. The essay itself first appeared on 29 September 2018; Common Dreams datePublished 2018-09-29 links the original Medium post. Changed the source date to the page's own date.",
+        "Misleading title. 'Goes public with Solid' implies Solid was first revealed in 2018. Solid had been public since at least 2016: the cited Sambra et al. paper and a Solid demo at WWW 2016 predate it. What was new in September 2018 was Inrupt and Berners-Lee's sabbatical. Title reworded.",
+        "Checked OK: the essay says he has 'been working with a few people at MIT and elsewhere to develop Solid'. It says he took a sabbatical from MIT and founded Inrupt, and 'My partner and Inrupt co-founder is John Bruce'. The pod and switching-providers wording is verbatim in the MIT CSAIL/QCRI paper. The Stata Center coordinates are right."
+      ],
+      "fieldFixes": {
+        "title": "The web's inventor launches Inrupt to build out Solid personal data pods"
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "quote": "So I have taken a sabbatical from MIT, reduced my day-to-day involvement with the World Wide Web Consortium (W3C) and founded a company called inrupt",
+          "note": "Re-fetched. The corrected quote --check FOUND and is case-exact. Page datePublished is 2018-09-29T04:00:00Z. The page links the original at medium.com/@timberners_lee/one-small-step-for-the-web-87f92217d085, which returns 403 to scripted fetches."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "date": "2018-10-22",
+          "note": "Re-fetched. The quote and 'My partner and Inrupt co-founder is John Bruce' --check FOUND, case-exact on this page. The page displays 'October 22, 2018'. The essay was first published 29 September 2018 (see source 0)."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the PDF. The quote --check FOUND, with exact case (ﬀ ligature). Authors are affiliated with the 'Decentralized Information Group, MIT CSAIL' and the 'Qatar Computing Research Institute'. It cites a Solid demo at WWW 2016."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "zuboff-age-of-surveillance-capitalism-2019",
+      "status": "OK",
+      "issues": [
+        "No errors found. The author site gives the German edition as October 2018, the US edition as 15 January 2019, and the writing period as 2011–2018. The publisher page gives 'On Sale Jan 15, 2019', 704 pages and 'An International Bestseller'. The author bio calls her 'Charles Edward Wilson Professor Emeritus at Harvard Business School', which supports 'professor emerita'. The description of the economic order matches the bio's wording. The coordinates match Hachette's building at 1290 Avenue of the Americas (40.7605, -73.9789)."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND, with exact case."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND, with exact case. 'Jan 15, 2019', '704 pages' and 'An International Bestseller' are present."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote --check FOUND, with exact case. Same page: 'Zuboff is the Charles Edward Wilson Professor Emeritus at Harvard Business School'."
+        }
+      ],
+      "addSources": []
+    }
+  ]
+}

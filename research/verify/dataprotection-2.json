@@ -1,0 +1,269 @@
+{
+ "slice": "dataprotection",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "privacy-protection-study-commission-1977",
+   "status": "OK",
+   "issues": [
+    "No factual error found. Minor: the title 'reports on the private sector' is narrower than the report, whose chapters 9-16 also cover government access, education, benefits, the Privacy Act, taxpayers, research and the SSN (EPIC table of contents); the summary's chapter list is accurate.",
+    "Significance claim that 'most of its private-sector proposals were never enacted' is interpretive and carries no source; not refuted."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (cache cleared); quote FOUND. Page note confirms transmission to President Carter on July 12, 1977. The quote is the first of the report's 'three concurrent objectives', so 'the first' in the summary is correct."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND in ERIC abstract (publication date 1977-Jul, 659 pages). Abstract lists the credit, depository, mailing-list, insurance, employment and medical-care chapters, supporting the summary."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "loi-informatique-et-libertes-cnil-1978",
+   "status": "FIXED",
+   "issues": [
+    "Source metadata only: source 0 is dated '2026' but the CNIL page shows '15 novembre 2024'.",
+    "Source 1 is dated '2020-12' and its note says the exact day is not shown; the page shows '03 décembre 2020'.",
+    "Claims check out: Article 1 wording is verbatim on both CNIL pages; the CNIL calls itself the 'première autorité administrative indépendante en France' and ties the vote to the SAFARI debate. (The CNIL page says the law was 'votée en 1978'; the record wisely does not repeat that - Parliament's final votes were in December 1977 and the law is dated 6 January 1978.)"
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2024-11-15",
+     "note": "Re-fetched; quote FOUND. Page header: 'La loi Informatique et Libertés - 15 novembre 2024 - Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés.' The same Article 1 text also appears on the CNIL's 3 December 2020 page, labelled 'Article 1 er de la loi Informatique et Libertés'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2020-12-03",
+     "note": "Re-fetched; quote FOUND. Page dated '03 décembre 2020'. Same page: 'Face au débat relatif aux enjeux émergents pour la vie privée et les libertés individuelles suite, notamment, à l'annonce du projet SAFARI, la loi Informatique et Libertés est votée en 1978.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "austria-datenschutzgesetz-fundamental-right-1978",
+   "status": "OK",
+   "issues": [
+    "No error found. Gazette header 'Ausgegeben am 28. November 1978', title 'Bundesgesetz vom 18. Oktober 1978', 'Artikel 1 (Verfassungsbestimmung) GRUNDRECHT AUF DATENSCHUTZ', § 1(3) access right and § 58(1) entry into force 1 January 1980 'soweit in den folgenden Absätzen nicht anderes bestimmt ist' all confirmed on the RIS PDF. § 1(4) also gave rectification and erasure rights, which the summary omits but does not misstate. 'One of the first' constitutional-rank rights is appropriately hedged (Portugal's 1976 constitution, Art. 35, is earlier)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the RIS PDF (cache cleared); quote FOUND in the text layer. Header, law date, constitutional-provision heading and § 58(1) verified as stated in the existing note."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "norway-personregisterloven-1978",
+   "status": "FIXED",
+   "issues": [
+    "Significance overstates: 'turned data protection from a Hessian and Swedish experiment into a European norm with a licensing regulator in each country'. West Germany already had a federal act (BDSG, 1977; Paperjam lists Germany in 1977), and the 1978-79 laws did not all license: West Germany's federal commissioner, Austria's register and commission, and France's CNIL were not uniform licensing systems. Norway itself did use licensing (konsesjon), per the Føyen article.",
+    "Date nuance: Norwegian statutes carry the date of royal sanction in the Council of State, and 9 June 1978 was a Friday (the Council's regular day), so the Lagting's vote may have come a few days earlier. The Lov & Data source does literally say 'vedtatt av Stortinget den 9. juni 1978', so the quote stands, but the summary is reworded so it is true either way. Lovdata's statute page (HTTP 405) could not be read to settle this."
+   ],
+   "fieldFixes": {
+    "summary": "Norway's Personal Data Registers Act (personregisterloven) is dated 9 June 1978; it followed two government inquiries, NOU 1974: 22 on personal data and privacy and NOU 1975: 10 on public personal-data systems. Before it could take effect, regulations had to be drafted and a Data Inspectorate (Datatilsynet) set up. A working group did both so that the law could enter into force with its regulations on 1 January 1980. Businesses then needed a licence (konsesjon) from Datatilsynet to set up new personal registers. In the same year, 1978, Denmark, France and Austria also legislated.",
+    "significance": "Part of the 1978-79 wave that spread data protection from Hesse, Sweden and West Germany's 1977 federal act across Western Europe, usually with a dedicated supervisory authority. Norway, like Sweden, chose a licensing model."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The same article names both inquiries ('NOU 1974: 22 - Persondata og personvern' and 'NOU 1975: 10 Offentlige persondatasystem og personvern'), describes the working group and the target 'pr. 1. januar 1980', and says 'Virksomheter måtte søke om konsesjon fra Datatilsynet før de kunne opprette nye personregistre.' Author bio: 'ansatt som kontorsjef i Datatilsynet fra 1979-1982 under Helge Seip'. Norwegian Wikipedia (Datatilsynet) gives the inspectorate's creation as 1 January 1980, consistent with this. Caveat on 'vedtatt ... den 9. juni': see issues."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND; JSON-LD datePublished 2005-01-21. Supports France, Norway, Denmark and Austria legislating in 1978. (Paperjam's 'only seven other countries' omits the US Privacy Act of 1974; the record does not rely on that claim.)"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "fisa-signed-1978",
+   "status": "FIXED",
+   "issues": [
+    "Location: the event is the President's signature, but the pin is the US Capitol. Carter's Daily Diary for 25 October 1978 places him at the White House for most of the day but does not record the signing, so the exact signing site is unconfirmed. The place is kept, but the note now says what the coordinates mark.",
+    "Otherwise confirmed: date, S. 1566, Public Law 95-511 and Carter's words (attributed to him, so his 'for the first time ... all electronic surveillance' is correctly framed as his claim)."
+   ],
+   "fieldFixes": {
+    "locationNote": "Coordinates are the US Capitol, where Congress passed the act. The President signed it separately; the signing statement does not say where."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Page note: 'As enacted, S. 1566 is Public Law 95511, approved October 25.' Statement opens 'I am pleased to sign into law today the Foreign Intelligence Surveillance Act of 1978.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The paragraph opens 'Congress approved legislation to provide for greater checks and balances of the intelligence community', following the Church Committee's recommendations, which supports the 'reforms that followed the Church Committee' framing. The page carries no date."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "luxembourg-donnees-nominatives-1979",
+   "status": "OK",
+   "issues": [
+    "No error found. CNPD confirms the official title, the 1992 amendments and repeal by the 2 August 2002 law, which transposed Directive 95/46/EC and entered into force on 1 December 2002. Paperjam (datePublished 2005-01-21) confirms the Minister of Justice authorisation and the consultative commission. Nuance: the CNPD says 'La plupart des dispositions de la loi de 1979 ont été mises hors vigueur' and that regulations under the 1979 law stayed in force where compatible, so 'replaced' is a fair summary."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. The same page on the 2002 law: 'Elle transposait en droit luxembourgeois les dispositions de la Directive 95/46/CE ... Elle avait abrogé l'ancienne loi sur la protection des données de 1979.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND; article datePublished 2005-01-21."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "oecd-privacy-guidelines-1980",
+   "status": "FIXED",
+   "issues": [
+    "The only source (a Wayback copy of the OECD page) could not be re-fetched: web.archive.org connections were reset repeatedly this session (the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch also cannot reach web.archive.org. It is marked PENDING and two live first-party OECD PDFs are added. Together they confirm every claim in the summary: adoption on 23 September 1980, effect from that date, the Kirby expert group, the eight Part Two principles, 'uninterrupted and secure' in para. 16, and 'not legally binding'.",
+    "No factual error found in the record's text."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed: web.archive.org returned 'Connection reset by peer' on every attempt (tools/fetch-text.py and curl, several tries; proxy status shows ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. The quote could not be re-verified here; the same facts are now covered by the two added OECD sources."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD Legal Instruments)",
+     "title": "Recommendation of the Council concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data, OECD/LEGAL/0188",
+     "date": "2025",
+     "url": "https://legalinstruments.oecd.org/public/doc/114/114.en.pdf",
+     "quote": "The Recommendation concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data was adopted by the OECD Council on 23 September 1980, and revised on 11 July 2013",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text.py --check: FOUND. Background section of the official PDF (© OECD 2025). The same page says 'an expert group chaired by the Honoroble Michael Kirby of Australia was convened' (sic) and that Recommendations 'are not legally binding'."
+    },
+    {
+     "institution": "Organisation for Economic Co-operation and Development (OECD)",
+     "title": "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, with the 1980 Explanatory Memorandum)",
+     "date": "2002",
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+     "quote": "To begin with, the OECD Guidelines are not legally binding, whereas the Council of Europe has produced a convention which will be legally binding among those countries which ratify it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check: FOUND. The same PDF says 'They came into effect on 23 September 1980.' (FOUND), 'The Expert Group, under the chairmanship of the Honourable Mr. Justice Kirby, Australia' (FOUND), and in para. 16 'Member countries should take all reasonable and appropriate steps to ensure that transborder flows of personal data, including transit through a Member country, are uninterrupted and secure.' Part Two lists the eight principles: Collection Limitation, Data Quality, Purpose Specification, Use Limitation, Security Safeguards, Openness, Individual Participation and Accountability."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "council-of-europe-convention-108-1981",
+   "status": "FIXED",
+   "issues": [
+    "Sources 0 and 1 are Wayback copies that could not be re-fetched: web.archive.org connections were reset all session, and the live rm.coe.int and coe.int pages return HTTP 403. Both are marked PENDING. The Article 1 text and the 28 January 1981 date are re-sourced to the Convention as scheduled to Ireland's Data Protection Act 1988 (Irish Statute Book), and the 'first binding instrument' title is backed by bpb.",
+    "The claim 'in 2006 the Committee of Ministers designated 28 January as Data Protection Day' now rests only on the unverifiable Wayback source. The confirmed sources (bpb, English and German Wikipedia) support only that the day has been observed since 2007, so the summary is reworded to that.",
+    "Significance overstates slightly: 'a treaty obligation that any state, in Europe or beyond, could join'. Under Article 23, non-member states accede only on invitation by the Committee of Ministers. Reworded."
+   ],
+   "fieldFixes": {
+    "summary": "The Council of Europe's Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data (ETS No. 108) was opened for signature in Strasbourg on 28 January 1981. Its purpose is to secure for every individual, whatever their nationality or residence, respect for their rights and freedoms, in particular their right to privacy, with regard to automatic processing of personal data, which it calls 'data protection'. Seven states signed it first, and it entered into force in 1985. Since 2007 the anniversary, 28 January, has been marked each year as European Data Protection Day.",
+    "significance": "Data protection became a binding treaty obligation, open to non-European states by invitation, and 28 January is still marked as Data Protection Day."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed: web.archive.org reset every connection this session (fetch-text.py, curl and WebFetch all failed), and live rm.coe.int returns HTTP 403. Not re-verified here. The same Article 1 wording is confirmed on the Irish Statute Book copy (added source)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed: web.archive.org reset every connection, and live coe.int returns HTTP 403 (also through WebFetch). The archive.org availability API does list a 2026-01-23 snapshot of this page, but its content could not be read. The 2006 Committee of Ministers designation is therefore unverified here, and the summary now uses the 'since 2007' formulation, which confirmed sources support."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND; page dated 26.01.2021. The same page: 'Seit 2007 wird der Europäische Datenschutztag jährlich am 28. Januar begangen.' and 'Das auch als Datenschutzkonvention bezeichnete Abkommen war das erste rechtsverbindliche und internationale Instrument zum Schutz personenbezogener Daten.' (bpb loosely says the convention was 'angenommen' on 28 January 1981; it was opened for signature that day.)",
+     "date": "2021-01-26"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Government of Ireland, Irish Statute Book",
+     "title": "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+     "date": "1988-07-13",
+     "url": "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+     "quote": "The purpose of this convention is to secure in the territory of each Party for every individual, whatever his nationality or residence, respect for his rights and fundamental freedoms, and in particular his right to privacy, with regard to automatic processing of personal data relating to him (“data protection”).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check: FOUND. Article 1 of the Convention as scheduled to the Irish Act. The schedule heading ('... done at Strasbourg on the 28th day of January, 1981') is also FOUND. Act date is the enactment date of Data Protection Act 1988 (No. 25)."
+    },
+    {
+     "institution": "Bundeszentrale für politische Bildung (bpb)",
+     "title": "40 Jahre Europäische Datenschutzkonvention",
+     "date": "2021-01-26",
+     "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/326057/40-jahre-europaeische-datenschutzkonvention/",
+     "quote": "Seit 2007 wird der Europäische Datenschutztag jährlich am 28. Januar begangen.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check: FOUND. Translation: 'Since 2007 European Data Protection Day has been observed every year on 28 January.' Corroborated by English Wikipedia (Data Privacy Day): 'The Council of Europe first held a European Data Protection Day in 2007.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "census-judgment-informational-self-determination-1983",
+   "status": "FIXED",
+   "issues": [
+    "Imprecise: 'It voided the census act's provisions for passing data to population registers'. The operative part voids § 9(1) to (3), which covered transfers of census data to other authorities. § 9(1) allowed comparison with municipal civil registers, and (2) and (3) allowed further transfers; headnote 3 reads 'The legal provisions governing the transfer of data under § 9(1) to (3) ... (including the comparison of census data with civil registry records)'. The court also upheld the survey programme itself (§ 2 nos. 1-7, §§ 3-5), which the summary leaves out. Reworded.",
+    "Everything else is confirmed: 15 December 1983, First Senate, the file numbers, the headnote language, the 27 April 1983 census date, the injunction, the 'Meine Daten gehören mir' slogan and the 1987 census (bpb: May 1987)."
+   ],
+   "fieldFixes": {
+    "summary": "Citizens' initiatives and public figures had called for a boycott of the West German census set for 27 April 1983, with slogans such as 'Meine Daten gehören mir' ('My data belongs to me'). The Federal Constitutional Court suspended the count by injunction. In its judgment of 15 December 1983 (1 BvR 209/83 and others), the First Senate held that in the context of modern data processing, the general right of personality protects the individual against the unlimited collection, storage, use and sharing of personal data. It gives each person the authority, in principle, to decide on the disclosure and use of their data. The court upheld the survey itself. It voided § 9(1)-(3) of the census act, which let census data be passed to other authorities, including for comparison with population registers, and it required additional procedural safeguards. The census was finally held in 1987."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND in headnote 1. Operative part no. 1 upholds '§ 2 nos. 1 to 7 and §§ 3 to 5' subject to 'additional organisational and procedural rules'; no. 2: '§ 9(1) to (3) of the 1983 Census Act ... is thus void.' The 'who knows what' passage is also FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2012-03-02",
+     "note": "Re-fetched; quote FOUND. Page dated 02.03.2012. Confirms the census 'für den 27. April 1983' was halted by 'einstweilige Verfügung', the Bundestag's unanimous passage of the act on 4 March 1982, and 'Erst im Jahr 1987 ... konnte die Volkszählung durchgeführt werden.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND; page dated 22.05.2017. Also: the injunction came 'zwei Wochen vor dem geplanten Termin', and 'Im Mai 1987 wurde die Volkszählung schließlich durchgeführt'. The existing note is right that bpb misdates the act's passage to 1983."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

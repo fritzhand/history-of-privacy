@@ -1,0 +1,317 @@
+{
+ "slice": "internet",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "eu-us-safe-harbor-decision-2000",
+   "status": "FIXED",
+   "issues": [
+    "Wrong legal basis in the summary. The summary says the Commission decided 'under Article 25(2) of Directive 95/46/EC'. The decision was adopted 'having regard to ... Directive 95/46/EC ... and in particular Article 25(6) thereof'. Article 25(6) is the provision that empowers the Commission to find a third country adequate. Article 1(1) of the decision refers to Article 25(2) only for the purposes of the adequacy test.",
+    "Source note error. The note says the self-certification list is in Recital 8. It is in Recital (7) ('...maintain and make available to the public a list of organisations self-certifying their adherence to the Principles...'). Recital (8) is about suspending data flows.",
+    "Location note is misleading for 2000. The Commission did not sit in the Berlaymont in 2000: the commissioners moved to the Breydel building at the end of 1991, and the Berlaymont was handed back only from 1 July 2004 (Wikipedia, Berlaymont building). The coordinates are in the right quarter, a few hundred metres off, so only the note needs rewording.",
+    "Everything else checks out on the Publications Office text of OJ L 215, 25.8.2000: the date, 'Done at Brussels, 26 July 2000', the Article 1 quote, the Principles and FAQs issued by the US Department of Commerce on 21 July 2000, self-certification, and the public list (FAQ 6: 'The Department (or its designee) will maintain a list of all organizations that file such letters'). The UK National Archives facsimile PDF (legislation.gov.uk/eudn/2000/520/pdfs/eudn_20000520_adopted_en.pdf) also has the Article 1 quote and the signing line.",
+    "The cited Wayback URL could not be re-opened: web.archive.org resets connections from this sandbox. That source is set to PENDING, and the official Publications Office (CELLAR) copy is added as a CONFIRMED source."
+   ],
+   "fieldFixes": {
+    "summary": "On 26 July 2000 the European Commission, acting under Article 25(6) of Directive 95/46/EC, decided that the 'Safe Harbor Privacy Principles' and frequently asked questions issued by the US Department of Commerce on 21 July 2000 ensured an adequate level of protection for personal data sent to US organisations that signed up to them. Companies joined by self-certifying their adherence, with the Commerce Department keeping a public list.",
+    "locationNote": "'Done at Brussels'. In 2000 the Commission sat in the Breydel building while the Berlaymont was being renovated (1991-2004). The coordinates mark the Berlaymont/Schuman quarter and are approximate."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. The same Official Journal text on the EU Publications Office (CELLAR) HTML checks FOUND for this exact quote, for 'Done at Brussels, 26 July 2000.' and for 'For the purposes of Article 25(2) of Directive 95/46/EC'. The list of self-certifying organisations is in Recital (7), not Recital 8. See the added source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Publications Office of the European Union (EUR-Lex text served from CELLAR)",
+     "title": "2000/520/EC: Commission Decision of 26 July 2000 pursuant to Directive 95/46/EC on the adequacy of the protection provided by the safe harbour privacy principles and related frequently asked questions issued by the US Department of Commerce (OJ L 215, 25.8.2000, p. 7)",
+     "date": "2000-07-26",
+     "url": "https://publications.europa.eu/resource/cellar/10e48a32-d701-4524-b7e9-8f270365c5c0.0005.01/DOC_1",
+     "quote": "are considered to ensure an adequate level of protection for personal data transferred from the Community to organisations established in the United States",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 1(1). Checked with fetch-text --check on 2026-09-23: FOUND. Also FOUND on the same page: 'and in particular Article 25(6) thereof' (the legal basis); 'For the purposes of Article 25(2) of Directive 95/46/EC'; 'issued by the US Department of Commerce on 21 July 2000'; Recital (7) 'To this end the US Department of Commerce or its designee should undertake to maintain and make available to the public a list of organisations self-certifying their adherence to the Principles implemented in accordance with the FAQs'; 'Done at Brussels, 26 July 2000.' The URL is what http://publications.europa.eu/resource/celex/32000D0520 resolves to when HTML is requested."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "ie6-p3p-compact-policy-cookie-filtering-2001",
+   "status": "FIXED",
+   "issues": [
+    "Overstated 'only' in the significance. It calls IE6 'The only mass deployment of P3P'. Internet Explorer was the only mainstream browser to act on P3P, but it was not the only deployment: Mozilla shipped some P3P features for a few years before removing the code by 2007 (Wikipedia, P3P). 'By far the largest' is accurate.",
+    "The significance also says sites 'learned they had only to send the right tokens, true or not'. No cited source documents sites actually doing this. The IEInternals footnote supports the underlying point: 'There's no technical means by which the browser can enforce the claims in the P3P statement'. The corrected wording rests on that footnote.",
+    "Both quotes were re-fetched and are verbatim (FOUND). The press release is dated 'REDMOND, Wash., March 21, 2001' and says IE6 will ship 'as part of the Windows XP operating system later this year'. It confirms the deny/downgrade/accept logic and the Medium (default) rule: 'If a third party has no compact policy, third-party cookies will be rejected.' The IEInternals page's ms.date is 2010-06-05, and it carries the 2/20/2012 update. IE6 was released in August 2001 (Wikipedia gives August 24, 2001), which fits 'shipped later in 2001'."
+   ],
+   "fieldFixes": {
+    "significance": "By far the largest deployment of P3P (Internet Explorer was the only mainstream browser to act on it) turned a site-authored policy into a gate key. As Microsoft itself noted, the browser had no technical means to check what a site's tokens claimed, so the right tokens got cookies through whether or not they were true."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: FOUND. 'Depending on the situation, Internet Explorer might deny, downgrade or accept a cookie.' is also on the page. The dateline is March 21, 2001."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND. The footnote 'There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.' also checks FOUND. The page metadata is ms.date 2010-06-05."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "P3P",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/P3P",
+     "quote": "Mozilla supported some P3P features for a few years, but all P3P related source code was removed by 2007.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Tertiary source, used to qualify 'only'. The same article says 'Internet Explorer and Microsoft Edge Legacy were the only major browsers to support P3P.' (FOUND). The date field is the date accessed."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "usa-patriot-act-section-215-2001",
+   "status": "FIXED",
+   "issues": [
+    "The summary narrows section 215. It says the FBI could seek orders 'in international-terrorism investigations'. As enacted, new FISA section 501(a)(1) covered 'an investigation to protect against international terrorism or clandestine intelligence activities'. The quote on the record already includes that wording; the summary drops the second limb.",
+    "Where it happened: the Act was enacted when President Bush signed it in the East Room of the White House on 26 October 2001 (White House release, 'Remarks by the President at Signing of the Patriot Act, Anti-Terrorism Legislation'). The Capitol is an acceptable seat for an Act of Congress, but the location note should say where it was signed.",
+    "Everything else was re-fetched from GovInfo and checks out. The quote is verbatim, with a fresh cache. The margin note '<<NOTE: Oct. 26, 2001 - [H.R. 3162]>>' is present. Section 216's amendment of 18 U.S.C. 3127(3) inserts 'dialing, routing, addressing, or signaling information transmitted by an instrument or facility from which a wire or electronic communication is transmitted'. '26 October 2001, six weeks after 11 September' is 45 days, so six weeks is fair."
+   ],
+   "fieldFixes": {
+    "summary": "Enacted on 26 October 2001, six weeks after the September 11 attacks, the USA PATRIOT Act (Public Law 107-56) let the FBI apply for court orders requiring the production of 'any tangible things (including books, records, papers, documents, and other items)' for an investigation to protect against international terrorism or clandestine intelligence activities (section 215). It also extended pen-register and trap-and-trace orders to the 'dialing, routing, addressing, or signaling information' of wire and electronic communications (section 216).",
+    "locationNote": "The legislature's seat. President Bush signed the Act into law in the East Room of the White House."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched from GovInfo with a fresh cache: quote FOUND. The section 501(a)(1) text as enacted, the margin date note and the section 216 wording were all confirmed."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "The White House (George W. Bush administration archive)",
+     "title": "President Signs Anti-Terrorism Bill: Remarks by the President at Signing of the Patriot Act, Anti-Terrorism Legislation",
+     "date": "2001-10-26",
+     "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2001/10/20011026-5.html",
+     "quote": "Remarks by the President at Signing of the Patriot Act, Anti-Terrorism Legislation",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. The page header reads 'For Immediate Release Office of the Press Secretary October 26, 2001' and gives the place as 'The East Room'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "eprivacy-directive-2002-58-cookies-right-to-refuse-2002",
+   "status": "FIXED",
+   "issues": [
+    "The record's content is correct. The full Article 5(3) quote, the exemption for strictly necessary storage ('This shall not prevent any technical storage or access for the sole purpose of carrying out or facilitating the transmission of a communication ... or as strictly necessary in order to provide an information society service explicitly requested by the subscriber or user.') and 'Done at Brussels, 12 July 2002.' all check FOUND on the EU Publications Office (CELLAR) copy of OJ L 201, 31.7.2002. The UK National Archives OJ facsimile PDF agrees; its two-column extraction scrambles the long sentence, but the shorter segments check FOUND.",
+    "The cited Wayback URL could not be re-opened: web.archive.org resets every connection from this sandbox. That source is set to PENDING, and the official Publications Office copy is added as CONFIRMED."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. The same quote, verbatim, and 'Done at Brussels, 12 July 2002.' check FOUND on the EU Publications Office CELLAR text of OJ L 201, 31.7.2002 (added source). Live EUR-Lex returns an HTTP 202 bot challenge."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Publications Office of the European Union (EUR-Lex text served from CELLAR)",
+     "title": "Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector (Directive on privacy and electronic communications), OJ L 201, 31.7.2002, p. 37",
+     "date": "2002-07-12",
+     "url": "https://publications.europa.eu/resource/cellar/cb5af945-9d9f-40e6-acee-bd0c5bb4ed0a.0004.01/DOC_1",
+     "quote": "Member States shall ensure that the use of electronic communications networks to store information or to gain access to information stored in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned is provided with clear and comprehensive information in accordance with Directive 95/46/EC, inter alia about the purposes of the processing, and is offered the right to refuse such processing by the data controller.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 5(3), original text as adopted, before the 2009 amendment that introduced consent. Checked with fetch-text --check on 2026-09-23: FOUND. The exemption sentence and 'Done at Brussels, 12 July 2002.' are also FOUND. The URL is what http://publications.europa.eu/resource/celex/32002L0058 resolves to when HTML is requested."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "w3c-p3p-1-0-recommendation-2002",
+   "status": "OK",
+   "issues": [
+    "No error found. fetch-text.py gets HTTP 403 from w3.org, a Cloudflare challenge triggered by the tool's Chrome user-agent string. Fetched with curl and a plain 'Mozilla/5.0' user agent, the page returns HTTP 200, and the tool's own to_text/norm check finds the quote verbatim (FOUND).",
+    "Confirmed on the page: the title 'W3C Recommendation 16 April 2002'; 'Editor: Massimo Marchiori, W3C / MIT / University of Venice'; the authors include 'Lorrie Cranor, AT&T'; 'Thus users need not read the privacy policies at every site they visit.' (FOUND); 'it does not provide a technical mechanism for making sure sites act according to their policies' (FOUND); and 'a machine-readable XML format known as a P3P policy', which supports 'standard XML vocabulary'.",
+    "The location (the W3C host at MIT LCS, Technology Square) is right for 2002."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 via curl (UA 'Mozilla/5.0'; the tool's Chrome UA gets a Cloudflare 403) and checked with the fetch-text normaliser: FOUND. The editor, authors, date and the no-enforcement sentence were confirmed."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "aol-search-logs-thelma-arnold-identified-2006",
+   "status": "FIXED",
+   "issues": [
+    "The record's content is correct. Every claim was verified verbatim on the New York Times' own archive copy of the article (archive.nytimes.com, byline 'By MICHAEL BARBARO and TOM ZELLER Jr.', pdate 20060809): '20 million Web search queries'; 'Ms. Arnold and 657,000 other Americans' (658,000 users in total, which matches AOL's own statement, 'roughly 658,000 anonymized users'); 'landscapers in Lilburn, Ga,' and 'several people with the last name Arnold'; 'a 62-year-old widow who lives in Lilburn, Ga.'; 'saying it was an unauthorized move by a team that had hoped it would benefit academic researchers'; and 'My goodness, it's my whole personal life'.",
+    "The cited Wayback URL (/web/2021/...) could not be re-opened: web.archive.org resets every connection from this sandbox, and www.nytimes.com returns 403. That source is set to PENDING. The NYT's own archive copy (free, no paywall) is added as CONFIRMED, and AOL's statement as republished by TechCrunch is added as independent confirmation of the figures.",
+    "The release date is not stated. The file was posted in late July or early August 2006: CNET on 7 August said 'posted 10 days ago', and Wikipedia gives 4 August. The summary's wording avoids committing to a date, which is correct."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. www.nytimes.com returns HTTP 403 to scripts. The same article on the NYT's own archive host (added source) checks FOUND for this exact quote and for every other sentence the note cites."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "The New York Times (archive.nytimes.com)",
+     "title": "Michael Barbaro and Tom Zeller Jr., 'A Face Is Exposed for AOL Searcher No. 4417749'",
+     "date": "2006-08-09",
+     "url": "https://archive.nytimes.com/www.nytimes.com/2006/08/09/technology/09aol.html",
+     "quote": "AOL removed the search data from its site over the weekend and apologized for its release, saying it was an unauthorized move by a team that had hoped it would benefit academic researchers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check on 2026-09-23: FOUND. Also FOUND on this page: 'It did not take much investigating to follow that data trail to Thelma Arnold, a 62-year-old widow who lives in Lilburn, Ga., frequently researches her friends’ medical ailments and loves her three dogs.'; 'There are queries for “landscapers in Lilburn, Ga,” several people with the last name Arnold and “homes sold in shadow lake subdivision gwinnett county georgia.”'; '“My goodness, it’s my whole personal life,” she said.'; 'Ms. Arnold and 657,000 other Americans'. Page metadata: byl 'By MICHAEL BARBARO and TOM ZELLER Jr.', dat 'August 9, 2006'."
+    },
+    {
+     "institution": "TechCrunch (reproducing AOL's statement)",
+     "title": "AOL: “This was a screw up”",
+     "date": "2006-08-07",
+     "url": "https://techcrunch.com/2006/08/07/aol-this-was-a-screw-up/",
+     "quote": "Search data for roughly 658,000 anonymized users over a three month period from March to May.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. The same statement by AOL spokesman Andrew Weinstein gives 'Roughly 20 million search records over that period' (FOUND) and 'It was an innocent enough attempt to reach out to the academic community with new research tools' (FOUND). The page's datePublished is 2006-08-07."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "projectvrm-launched-berkman-center-2006",
+   "status": "FIXED",
+   "issues": [
+    "The coordinates are about 240 m off. 42.3791, -71.1207 lies west of Massachusetts Avenue, near Cambridge Common. The Wikimedia Commons photo 'Berkman Center.jpg' ('Berkman Center for Internet & Society at 23 Everett Street, Cambridge MA') gives its camera location as 42°22′47.6″N 71°07′04.7″W, about 42.3799, -71.1180. The fix moves the point there.",
+    "Not verified: that the Berkman Center was already at 23 Everett Street in 2006. The Commons photo is from 2011, and the archived Berkman contact pages could not be read because web.archive.org is unreachable. The location note already says 'approximate'.",
+    "Both quotes were re-fetched with a fresh cache: FOUND. 'For vendors and other service providers, VRM is the customer-side counterpart of CRM' is also FOUND. Independent check: Wikipedia's Vendor relationship management article says Mike Vizard first used the term, in a 1 September 2006 Gillmor Gang conversation with Searls about 'the project Searls had recently started as a fellow at the Berkman Center'. That is consistent with a 2006 start; the ProjectVRM name followed."
+   ],
+   "fieldFixes": {
+    "lat": 42.3799,
+    "lng": -71.118
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND. The page also says Searls 'has been an alumnus fellow since September 2010'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND, with the em dash ('engagement —and')."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Vendor relationship management",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Vendor_relationship_management",
+     "quote": "on September 1, 2006, in a conversation with Doc Searls about the project Searls had recently started as a fellow at the Berkman Center for Internet & Society at Harvard University",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent tertiary corroboration of the 2006 start at Berkman; it credits Mike Vizard (Gillmor Gang podcast) with first using 'VRM' in this sense. Checked with fetch-text --check: FOUND. The date field is the date accessed."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "searls-intention-economy-linux-journal-2006",
+   "status": "FIXED",
+   "issues": [
+    "Overstated 'first' in the significance. It calls the article 'The first statement of the idea that the customer ... should originate the signal'. The article itself says the car-rental example is 'one I've used to illustrate what would be made possible by \"user-centric\" or \"independent\" identity' in 'various keynotes I've given at Digital Identity World, going back to 2002'. What was new in 2006 was the name 'The Intention Economy', not the idea.",
+    "Everything else checks out on the Linux Journal page (re-fetched with a fresh cache: quote FOUND). The post date is 'on March 8, 2006'. The theme and setting are confirmed: '\"The Attention Economy\", which is the theme of this year's eTech conference, where I am sitting in an audience, writing this, right now.' 'the buyer notifies the market of the intent to buy, and sellers compete for the buyer's purchase' and the Park City skiing car-rental request are on the page. Wikipedia (Doc Searls; Vendor relationship management) also dates the article to 8 March 2006.",
+    "The ETech source's Wayback snapshot (20070107050320) could not be re-opened: web.archive.org resets every connection. That source is set to PENDING. The same page, fetched from the Wayback Machine earlier on 2026-09-23 at the /web/2006/ address and held in the fetch-text cache, contains the quote verbatim (FOUND); it is added as a CONFIRMED source. The venue coordinates are right for the Manchester Grand Hyatt."
+   ],
+   "fieldFixes": {
+    "significance": "Named the idea that the customer, not the advertiser, should originate the signal. Searls had been making the case since 2002 with the same car-rental example, and the name made it the conceptual root of VRM and of IEEE 7012's person-side terms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: FOUND. The page shows 'on March 8, 2006'. Also FOUND: 'This car rental use case is one I've used to illustrate what would be made possible by \"user-centric\" or \"independent\" identity' and 'various keynotes I've given at Digital Identity World, going back to 2002'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. The live conferences.oreillynet.com and oreilly.com addresses return 403. The quote is FOUND in the Wayback copy of the same page at https://web.archive.org/web/2006/http://conferences.oreillynet.com/et2006/, retrieved earlier on 2026-09-23 and held in the fetch-text cache (added source)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "O'Reilly Media (Internet Archive, 2006 capture of conferences.oreillynet.com/et2006)",
+     "title": "O'Reilly Emerging Technology Conference - March 6-9, 2006 - San Diego, CA",
+     "date": "2006",
+     "url": "https://web.archive.org/web/2006/http://conferences.oreillynet.com/et2006/",
+     "quote": "The O'Reilly Emerging Technology Conference (ETech) will be held March 6-9, 2006 at the Manchester Grand Hyatt in San Diego, California",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text --check: FOUND. The page was retrieved from web.archive.org earlier on 2026-09-23 and served from the tool's cache; web.archive.org later reset connections. It is the post-event version of the page ('Thanks to everyone who participated in ETech 2006'). The date field is the capture year; the /web/2006/ address redirects to the nearest 2006 capture."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "facebook-beacon-launch-and-retreat-2007",
+   "status": "FIXED",
+   "issues": [
+    "Overstated eBay's role. The summary says 44 websites 'including Fandango and eBay' were using Beacon. The 6 November 2007 release says 'eBay plans to use Beacon' for sellers' listings and 'eBay expects to make this feature available to sellers on eBay.com in early 2008'. Fandango and Travelocity were implementing it at launch.",
+    "Wrong date on source [1]. The Meta newsroom page for Zuckerberg's 'Thoughts on Beacon' shows 'December 6, 2007' (time datetime=2007-12-06T08:00:00-08:00). The source has 2007-12-05. The record's own 5 December date for the apology is still right: TechCrunch, datePublished 2007-12-05T19:47Z, reports the blog post 'this morning', and Wikipedia's Facebook Beacon article says 'On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.'",
+    "All three quotes were re-fetched with a fresh cache and are verbatim (FOUND). Also confirmed: 'We simply did a bad job with this release, and I apologize for it.'; 'Last week we changed Beacon to be an opt-in system, and today we’re releasing a privacy control to turn off Beacon completely.'; and the dateline 'NEW YORK — Facebook Social Advertising Event, Nov. 6, 2007'."
+   ],
+   "fieldFixes": {
+    "summary": "On 6 November 2007 Facebook announced that 44 websites, including Fandango and Travelocity, were using Beacon to send users' actions on their sites, such as purchases, to Facebook for display to friends. eBay said it would add Beacon for its sellers' listings in early 2008. Beacon was initially opt-out: if a user forgot to decline, the action was shared. After weeks of protest Facebook switched it to opt-in, and on 5 December 2007 Mark Zuckerberg apologised ('We simply did a bad job with this release, and I apologize for it') and added a control to turn Beacon off completely."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND. Also FOUND: 'eBay expects to make this feature available to sellers on eBay.com in early 2008.' and 'As a way to let travelers tell their Facebook friends about upcoming travel plans, Travelocity is implementing Facebook Beacon on its website.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2007-12-06",
+     "note": "Re-fetched: FOUND. The newsroom page's own publication date is December 6, 2007 (visible date and datePublished 2007-12-06). Zuckerberg's blog post itself appeared on 5 December 2007 (TechCrunch, source [2])."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND. datePublished is 2007-12-05T19:47:46Z, and the headline 'Zuckerberg Saves Face, Apologizes For Beacon' is confirmed."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Facebook Beacon",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Facebook_Beacon",
+     "quote": "On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent tertiary corroboration of the 5 December date. The same article gives the launch as November 6, 2007, with 44 partner websites. Checked with fetch-text --check: FOUND. The date field is the date accessed."
+    }
+   ]
+  }
+ ]
+}

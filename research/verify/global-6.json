@@ -1,0 +1,271 @@
+{
+ "slice": "global",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "law",
+   "id": "ge-2011",
+   "status": "FIXED",
+   "issues": [
+    "The record is correct, but its only quote covered just the 2011 law and its replacement. The note's other claims (new law adopted 14 June 2023, main provisions in force 1 March 2024) come from the next sentences on the same DLA Piper page, so the quote has been extended to the full paragraph (--check FOUND).",
+    "Independent primary check: the official Legislative Herald of Georgia (matsne.gov.ge) gives the English text of Law No. 5669-რს. It shows 'Date of issuing 28/12/2011', publication on 16/01/2012 and 'Expiration Date 01/03/2024'. Article 57 says the law 'shall enter into force from 1 May 2012'. Added as a source, and inForce 2012 added.",
+    "Regulator: 'Personal Data Protection Service' is today's name and appears in the consolidated 2011 law. Under the original 2011 law the supervisor was the Personal Data Protection Inspector, later the State Inspector's Service. Acceptable as 'current regulator', but worth knowing.",
+    "Coordinates (41.6975, 44.7992) are central Tbilisi, near the Rustaveli Avenue parliament building. OK."
+   ],
+   "fieldFixes": {
+    "inForce": 2012
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "The primary legal framework governing the protection of personal data in Georgia is the Law of Georgia on Personal Data Protection, adopted on 14 June 2023. This law replaced the previous Law on Personal Data Protection of 2011 and represents a significant reform of the national data protection regime. The main provisions of the new law entered into force on 1 March 2024.",
+     "note": "Re-fetched 2026-09-23. Extended quote --check FOUND. It now covers the 2023 adoption and 1 March 2024 entry into force stated in the note. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Legislative Herald of Georgia (matsne.gov.ge), Ministry of Justice of Georgia",
+     "title": "Law of Georgia on Personal Data Protection (No. 5669-რს), English consolidated text",
+     "date": "2011-12-28",
+     "url": "https://matsne.gov.ge/en/document/view/1561437",
+     "quote": "Date of issuing 28/12/2011 … Expiration Date 01/03/2024 … This Law, except for Articles 43–55 of this Law, shall enter into force from 1 May 2012.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official gazette portal, document metadata plus Article 57. The page also gives 'Source and date of publishing: Website, 16/01/2012' and the signature block 'President of Georgia M. Saakashvili, Tbilisi, 28 December 2011, No 5669-რს'. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "am-2015",
+   "status": "FIXED",
+   "issues": [
+    "Wrong law and year for the slice's definition ('first comprehensive law'). The 2015 Law on Personal Data Protection (ՀՕ-49-Ն) was not Armenia's first general data-protection statute. The Law 'On Personal Data' ('Անհատական տվյալների մասին', ՀՕ-422-Ն) was adopted by the National Assembly on 8 October 2002, signed on 7 November 2002 and in force from 14 February 2003.",
+    "The 2002 law was general, not sectoral. Article 1 applies it to processing by state and local self-government bodies, state or community institutions, and legal or natural persons. It was repealed by Article 30(2) of the 2015 law with effect from 1 July 2015. Both texts were read on ARLIS, Armenia's official legal information system.",
+    "The DLA Piper source is accurate but describes only the 2015 successor law, which has been moved into the note. It was adopted on 18 May 2015 and in force from 1 July 2015 (ARLIS: 'Սույն օրենքն ուժի մեջ է մտնում 2015 թվականի հուլիսի 1-ից').",
+    "The id 'am-2015' no longer matches the year. It has been left unchanged so that this verdict still applies, but the editorial layer may rename it to am-2002. Any per-decade counts built from the laws table should move Armenia from the 2010s to the 2000s.",
+    "Coordinates (40.1813, 44.5144) are central Yerevan (the capital), which the slice convention allows."
+   ],
+   "fieldFixes": {
+    "law": "Law on Personal Data (ՀՕ-422-Ն, 2002); replaced by the Law on Personal Data Protection (ՀՕ-49-Ն, 2015)",
+    "yearEnacted": 2002,
+    "inForce": 2003,
+    "note": "Armenia's first general data-protection statute was the Law on Personal Data (ՀՕ-422-Ն). The National Assembly adopted it on 8 October 2002 and it came into force on 14 February 2003. It covered processing by state and local self-government bodies, state and community institutions, and legal and natural persons. It was repealed and replaced by the Law on Personal Data Protection (ՀՕ-49-Ն) of 18 May 2015, which came into force on 1 July 2015."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23, quote --check FOUND. Supports the 2015 successor law (ՀՕ-49-Ն of 18 May 2015) only, not the first law. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ARLIS — Armenian Legal Information System (official legal database of the Republic of Armenia)",
+     "title": "ՀՀ օրենքը «Անհատական տվյալների մասին» (Law of the Republic of Armenia on Personal Data), original text of 8 October 2002",
+     "date": "2002-10-08",
+     "url": "https://www.arlis.am/hy/acts/1231",
+     "quote": "Ընդունված է 2002 թվականի հոկտեմբերի 8-ին ԱՆՀԱՏԱԿԱՆ ՏՎՅԱԼՆԵՐԻ ՄԱՍԻՆ … Սույն օրենքը կարգավորում է պետական և տեղական ինքնակառավարման մարմինների, պետական կամ համայնքային հիմնարկների, իրավաբանական կամ ֆիզիկական անձանց կողմից անհատական տվյալների մշակմանն առնչվող հարաբերությունները:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Adopted on 8 October 2002. ON PERSONAL DATA … This Law regulates relations connected with the processing of personal data by state and local self-government bodies, state or community institutions, and legal or natural persons.' --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "ARLIS — Armenian Legal Information System (official legal database of the Republic of Armenia)",
+     "title": "ՀՀ օրենքը Անհատական տվյալների մասին (ՀՕ-422-Ն), act details",
+     "date": "2002-10-08",
+     "url": "https://www.arlis.am/hy/acts/98399/latest",
+     "quote": "(օրենքն ուժը կորցրել է 18.05.15 ՀՕ-49-Ն) … Ընդունման ամսաթիվ 08.10.2002 … Ուժի մեջ մտնելու ամսաթիվ 14.02.2003 Ուժը կորցրել է 01.07.2015",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: '(the law lost force by 18.05.15 ՀՕ-49-Ն) … Date of adoption 08.10.2002 … Date of entry into force 14.02.2003; lost force 01.07.2015'. The same page gives the signature date 07.11.2002 and the official source ՀՀՊՏ 2002.11.14/49(224). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "ARLIS — Armenian Legal Information System (official legal database of the Republic of Armenia)",
+     "title": "ՀՀ օրենքը «Անձնական տվյալների պաշտպանության մասին» (Law on Personal Data Protection, ՀՕ-49-Ն)",
+     "date": "2015-05-18",
+     "url": "https://www.arlis.am/hy/acts/229131",
+     "quote": "Ընդունված է 2015 թվականի մայիսի 18-ին ԱՆՁՆԱԿԱՆ ՏՎՅԱԼՆԵՐԻ ՊԱՇՏՊԱՆՈՒԹՅԱՆ ՄԱՍԻՆ … Սույն օրենքն ուժի մեջ է մտնում 2015 թվականի հուլիսի 1-ից: … Սույն օրենքն ուժի մեջ մտնելու պահից ուժը կորցրած ճանաչել «Անհատական տվյալների մասին» Հայաստանի Հանրապետության 2002 թվականի հոկտեմբերի 8-ի ՀՕ-422-Ն օրենքը:",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Adopted on 18 May 2015. ON PERSONAL DATA PROTECTION … This Law enters into force on 1 July 2015 … From the entry into force of this Law, the Law of the Republic of Armenia \"On Personal Data\" of 8 October 2002 ՀՕ-422-Ն is declared void.' Final provisions, Article 30. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "tr-2016",
+   "status": "OK",
+   "issues": [
+    "Both quotes re-fetched and found word for word.",
+    "The KVKK English text header reads 'Law Number : 6698 / Date of Ratification : 24/3/2016 / Published in Official Gazette : Date: 7/4/2016 (DD/MM/YYYY) Number: 29677'. 'Ratification' is KVKK's rendering of the parliament's adoption date (Kabul Tarihi). The record uses only the gazette date, which is correct.",
+    "DLA Piper: 'The LPPD is primarily based on EU Directive 95/46/EC' supports 'based largely on'. Turkey had no earlier general data-protection statute (the 2010 constitutional amendment to Art. 20 is a constitutional clause).",
+    "Coordinates (39.911, 32.851) match the Grand National Assembly in Ankara."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. Law-firm global guide (secondary)."}
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "by-2021",
+   "status": "OK",
+   "issues": [
+    "Quote re-fetched and found word for word. The dates (7 May 2021, No. 99-Z, in force 15 November 2021) are right.",
+    "The quote has been extended to include DLA Piper's next sentence, 'It is the first Belarusian legal act intended specifically for regulation of personal data protection issues'. That sentence supports treating it as Belarus's first comprehensive law. Earlier personal-data rules sat in the 2008 information law.",
+    "Regulator confirmed. The DLA Piper authority page and the regulator's own site (cpd.by) both name the National Personal Data Protection Center of the Republic of Belarus.",
+    "Coordinates are central Minsk. OK."
+   ],
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "The fundamental legal act regulating personal data protection in Belarus is the Law on Personal Data Protection of 7 May 2021 No. 99-Z which entered into force on 15 November 2021 (Data Protection Law). It is the first Belarusian legal act intended specifically for regulation of personal data protection issues.",
+     "note": "Re-fetched 2026-09-23. Extended quote --check FOUND. Law-firm global guide (secondary)."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ca-1983",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes re-fetched and found word for word.",
+    "No source supported yearEnacted 1982, or the claim that the Act was 'passed with the Access to Information Act in 1982'. The Justice Laws citation (1980-81-82-83, c. 111, Sch. II) gives only the parliamentary session. Added The Canadian Encyclopedia (Ken Rubin, 'Privacy', last edited 8 June 2015): 'the 1982 Privacy Act (which supplanted and reinforced provisions regarding privacy in the Canadian Human Rights Act of 1977)'. Its 'Access to Information Act' article also says that Act 'was enacted by Parliament in 1982 and took effect in July of 1983' (--check FOUND).",
+    "No source supported the Québec claim. The Commission d'accès à l'information du Québec says the private-sector Act came into force on 1 January 1994 and made Québec the first government in North America to protect personal information in both sectors. The Act was passed in 1993 (S.Q. 1993, c. 17), so 'legislated in 1993' is right. The note now gives the in-force date the source supports.",
+    "'Replacing privacy provisions in Part IV' is close enough: the OPC says 'expanding', the Encyclopedia 'supplanted and reinforced'. Reworded to 'replacing and expanding'.",
+    "Coordinates (45.4236, -75.7009) are Parliament Hill. OK."
+   ],
+   "fieldFixes": {
+    "note": "Federal public sector only: the Act was passed with the Access to Information Act in 1982 and came into force on 1 July 1983. It replaced and expanded the privacy provisions in Part IV of the 1977 Canadian Human Rights Act. At federal level the private sector was covered only from 2000, by PIPEDA (S.C. 2000, c. 5, assented to 13 April 2000). Québec's private-sector act, passed in 1993, took effect on 1 January 1994."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. Page heading is 'OPC sources of federal government and employee information'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "The Canadian Encyclopedia (Historica Canada)",
+     "title": "Privacy (by Ken Rubin)",
+     "date": "2015-06-08",
+     "url": "https://www.thecanadianencyclopedia.ca/en/article/privacy",
+     "quote": "Federal legislation regarding privacy includes the 1982 Privacy Act (which supplanted and reinforced provisions regarding privacy in the Canadian Human Rights Act of 1977)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article first published 7 February 2006, last edited 8 June 2015. Supports yearEnacted 1982. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "Commission d'accès à l'information du Québec",
+     "title": "À propos de la Commission (historique)",
+     "date": "2026",
+     "url": "https://www.cai.gouv.qc.ca/a-propos/historique",
+     "quote": "Le 1 er janvier 1994 marque l’entrée en vigueur de la Loi sur la protection des renseignements personnels dans le secteur privé , en même temps que le Code civil du Québec. Le Québec devient alors le premier gouvernement en Amérique du Nord à assurer la protection des renseignements personnels aussi bien dans le secteur public que dans le secteur privé.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Québec's regulator. Supports the Québec private-sector sentence in the note. The spacing in '1 er' is copied as the page gives it. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "us-1974",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes re-fetched and found word for word. The DOJ page gives Pub. L. 93-579 (Dec. 31, 1974), in effect September 27, 1975. The two extra DOJ sentences in the source note (Watergate/COINTELPRO, 'passed in great haste') are also on the page.",
+    "The note's main claim, 'The United States has no comprehensive federal data-privacy law', was not in any quote. The DLA Piper sentences just before the existing quote say so, and the quote has been extended to include them (--check FOUND).",
+    "CCPA as the first comprehensive state law (2018) is supported by DLA Piper ('beginning with California in 2018') and the California AG page, which shows 'Updated on August 28, 2026' and matches the source date. The regulator is still called the California Privacy Protection Agency (cppa.ca.gov).",
+    "Coordinates are the US Capitol. OK."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND for the quote and both sentences cited in the note."},
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "There is no comprehensive national privacy law in the United States. However, the US does have a number of largely sector-specific privacy and data security laws at the federal level, as well as many more at the state (and local) level. In recent years, beginning with California in 2018, states have begun to introduce and enact their own comprehensive privacy laws.",
+     "note": "Re-fetched 2026-09-23. Extended quote --check FOUND. Now supports 'no comprehensive federal law' and 'sectoral statutes'. Law-firm global guide (secondary)."
+    },
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. The page shows 'Updated on August 28, 2026'."}
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "cl-1999",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes re-fetched and found word for word. The 28 August 1999 publication date and the public-and-private scope are confirmed.",
+    "'Latin America's first general data-protection statute' had no supporting quote. Added the Future of Privacy Forum overview (27 Feb 2025): 'adopted in 1999 as Chile's first national data protection framework, as well as the first such law in Latin America'. This matches the source global-1 added to the parallel Chile event.",
+    "Misleading tense. 'Law 21.719 (2024) … created an Agency' and 'for 25 years it had no dedicated supervisory authority' suggest the Agency already exists. Law 21.719 was published on 13 December 2024 and takes effect on 1 December 2026 (DLA Piper; FPF: 'fully effective … in December 2026'), which is still in the future on 2026-09-23. Note reworded, and the DLA quote extended to include the effective date.",
+    "Coordinates (-33.0472, -71.6127) are the National Congress in Valparaíso. OK."
+   ],
+   "fieldFixes": {
+    "note": "Latin America's first general data-protection statute (published 28 August 1999), covering public and private databases. It never had a dedicated supervisory authority. Law 21.719, published on 13 December 2024, rewrites it and creates an Agency for the Protection of Personal Data; the new regime takes full effect on 1 December 2026. Coordinates are the National Congress in Valparaíso."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. Law-firm global guide (secondary)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. Law-firm global guide (secondary)."},
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Law 21.719, regulating the protection and processing of personal data and creating the Agency for the Protection of Personal Data … Law 21.719, effective December 1, 2026, modernizes the PDPL to align it with international standard.",
+     "note": "Re-fetched 2026-09-23. Extended quote --check FOUND. Adds the 1 December 2026 effective date. Law-firm global guide (secondary)."
+    },
+    {"index": 3, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Future of Privacy Forum (FPF)",
+     "title": "Chile's New Data Protection Law: Context, Overview, and Key Takeaways",
+     "date": "2025-02-27",
+     "url": "https://fpf.org/blog/chiles-new-data-protection-law-context-overview-and-key-takeaways/",
+     "quote": "The legislation was published on December 13, 2024, and will become fully effective twenty-four months after that date (in December 2026). … which was adopted in 1999 as Chile’s first national data protection framework, as well as the first such law in Latin America. … the LPPD creates, for the first time, a DPA vested with supervisory, regulatory, and sanctioning powers to enforce the data protection framework",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Policy think-tank analysis (secondary). Supports 'Latin America's first', the lack of any earlier supervisory authority, and the 2024 publication and December 2026 effect. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ar-2000",
+   "status": "FIXED",
+   "issues": [
+    "Source 0 (InfoLEG) re-fetched: 'Sancionada: Octubre 4 de 2000.' FOUND. The page also gives 'Promulgada Parcialmente: Octubre 30 de 2000.'",
+    "Source 1 could not be re-fetched. The Internet Archive copy of EUR-Lex returned 'connection reset' on five attempts, and live EUR-Lex serves a script wall (NOT-FOUND). The same Official Journal text (English HTML) is served by the EU Publications Office Cellar, and the quote is on it word for word as recital 8. URL replaced.",
+    "The existing quote supported only the 4 October 2000 date, not the 2003 adequacy finding in the note. Extended it with Article 1 of the Decision (--check FOUND). The decision is dated 'Done at Brussels, 30 June 2003'.",
+    "Regulator confirmed: DLA Piper's authority page says 'Pursuant to Decree 746 of 2017, it is the Agency for Access to Public Information'. Law 25.326 is Argentina's first general data-protection statute.",
+    "Coordinates are the Congress in Buenos Aires. OK."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND."},
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "url": "https://publications.europa.eu/resource/cellar/9c3b2bdb-685c-4c5c-9e06-71dd3daf2918.0004.01/DOC_1",
+     "institution": "European Commission (Official Journal L 168, 5 July 2003), via the EU Publications Office (Cellar)",
+     "title": "Commission Decision 2003/490/EC of 30 June 2003 on the adequate protection of personal data in Argentina (recital 8 and Article 1)",
+     "quote": "The Personal Data Protection Act No 25.326 of 4 October 2000 (hereinafter \"the Act\") develops and widens the Constitutional provisions. … For the purposes of Article 25(2) of Directive 95/46/EC, Argentina is regarded as providing an adequate level of protection for personal data transferred from the Community.",
+     "note": "The Internet Archive copy of EUR-Lex (the old URL) was unreachable on 2026-09-23 and EUR-Lex blocks scripts, so the official Publications Office Cellar copy of the same OJ text (CELEX 32003D0490, English HTML) was used. Recital 8 and Article 1 both --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "uy-2008",
+   "status": "OK",
+   "issues": [
+    "Both quotes re-fetched and FOUND. The IMPO quote is made of two accent-free fragments ('LEY DE PROTECCION DE DATOS PERSONALES' is the page heading; '18.331 de 11/08/2008' comes from IMPO's 'TEXTO ORIGINAL: Ley N° 18.331 de 11/08/2008' notes). Both are on the page. The page is still served in Latin-1, so accented text is garbled.",
+    "Checked in the law text on IMPO: Article 31 creates the 'Unidad Reguladora y de Control de Datos Personales' as a body of AGESIC, and Chapter VIII regulates the habeas data action. The regulator field and the law title are right.",
+    "Is this the first comprehensive law? Yes. Article 48 repeals Ley 17.838 of 24 September 2004, which was sectoral (data for commercial reports, plus habeas data), so 18.331 is Uruguay's first general law. Mentioning 17.838 in the note would be optional context.",
+    "'First non-European state to adopt Convention 108 (2013)' agrees with the Ferrere source used by the Uruguay event (re-fetched). Strictly, Uruguay acceded to the Convention rather than adopted it.",
+    "Coordinates are the Palacio Legislativo in Montevideo. OK."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND (both fragments)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; --check FOUND. Law-firm global guide (secondary)."}
+   ]
+  }
+ ]
+}

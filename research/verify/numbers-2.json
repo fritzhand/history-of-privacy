@@ -1,0 +1,209 @@
+{
+ "slice": "numbers",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "series",
+   "id": "eu-websites-with-cookie-consent-notices",
+   "status": "FIXED",
+   "issues": [
+    "The geography says '(6,579 sites)', but that is only the abstract's figure for all sites monitored. The 46.1% (January 2018) to 62.1% (after 25 May 2018) comparison in Table III is computed over 6,357 sites ('Total 6357 46.1 % 62.1 % 16.0 %'). The paper also says the percentages are averages across the 28 national top-500 lists ('Grouped by Alexa country list, the percentage of sites featuring a consent notice, on average, has increased'). The paper is inconsistent with itself: the abstract says 6,579 sites, but Section IV says the January 2018 lists 'contained 6,759 different domains'.",
+    "Checked and correct: all three quotes were re-fetched from the NDSS PDF and FOUND (the first contains the 'ﬁ' ligature from the PDF text layer). The 16 points are percentage points (Table III diff 16.0%). 84.5% of sites had privacy policies after 25 May 2018 and 72.6% of existing policies were updated around that date; both are in the abstract. The NDSS 2019 venue, authors and DOI 10.14722/ndss.2019.23378 (printed in the PDF) are correct. The same abstract figures appear on the NDSS paper page and in arXiv:1808.05096."
+   ],
+   "fieldFixes": {
+    "geography": "EU-28: the 500 most popular websites in each member state (6,579 sites monitored per the paper's abstract; the January-vs-May 2018 cookie-notice comparison covers 6,357 sites and averages the 28 national lists)"
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched PDF 2026-09-23; quote FOUND verbatim (with the 'ﬁ' ligature)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND in abstract. Identical sentence on the NDSS paper page."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND in abstract. Note the comparison base in Table III is 6,357 sites."}
+   ],
+   "addSources": [
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "Total 6357 46.1 % 62.1 % 16.0 %",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Total row of Table III ('Availability of cookie consent notices in the top 500 websites by country, pre- (January 2018) and post-GDPR (after May 25, 2018)'): n = 6,357 sites, pre 46.1%, post 62.1%, difference 16.0 percentage points. Checked with --check: FOUND."
+    },
+    {
+     "institution": "Network and Distributed System Security (NDSS) Symposium 2019, San Diego, 24-27 February 2019 (Internet Society)",
+     "title": "Martin Degeling, Christine Utz, Christopher Lentzsch, Henry Hosseini, Florian Schaub, Thorsten Holz, 'We Value Your Privacy ... Now Take Some Cookies: Measuring the GDPR's Impact on Web Privacy'",
+     "date": "2019-02",
+     "url": "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-2_Degeling_paper.pdf",
+     "quote": "On average, 62.1 % of the analyzed websites now use such cookie banners (46.1 % in January 2018).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Says the figures are averages. Checked with --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "california-registered-data-brokers",
+   "status": "FIXED",
+   "issues": [
+    "The notes say 'Registration year = the January in which brokers registered'. That is imprecise. The yearly files include late registrations made during the rest of the year. In registry2024.csv, 409 of the 543 rows have a 'Completion time' in January 2024. The other 134 were completed from February to December 2024, and one on 18 January 2025. The year label is the annual registry year, not the month of registration.",
+    "The 2026 registry is a live file. The page reads 'Last Updated: 7/29/2026', so the 603 count applies to that version and may change.",
+    "Checked and correct: I downloaded all four CSVs linked from the registry page and recounted them. registry.csv (the 2026 registry, download name 'California Data Broker Registry 2026.csv') has 603 data rows with 603 distinct names. registry2024.csv has 543 rows (542 distinct names; 'BoardEx, LLC' appears twice). registry2025.csv has 543 rows after a note row and a header row (540 distinct names). complete-reg-data-brokers.csv (the 2020-2023 DOJ file) has 549 rows. All four quotes were re-fetched and FOUND. The DROP dates (1 January 2026 for consumers, 1 August 2026 for broker processing) match the page."
+   ],
+   "fieldFixes": {
+    "notes": "Year = the annual registry the broker appears in. Registration is due 1-31 January and covers the previous calendar year, but late registrations are added through the year: in the 2024 file, 409 of 543 rows were completed in January 2024 and 134 later. 2020-2023 registrations were run by the California Department of Justice and are published as one combined file (549 rows), so they are not split by year here. Since 1 January 2026 Californians can send one deletion request to every registered broker through the DROP platform (the Delete Act), and brokers must process requests from 1 August 2026. Counts are rows in CalPrivacy's own CSV downloads, computed by this study; the 2026 file is the version on the registry page marked 'Last Updated: 7/29/2026'."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND verbatim."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND verbatim."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "series",
+   "id": "gdpr-fines-cumulative-eur",
+   "status": "FIXED",
+   "issues": [
+    "The notes list the wrong annual totals. They say the 2022-2024 estimates come from 'nearly EUR 1.1bn, EUR 1.64bn, EUR 1.78bn'. The back-calculation from the January 2025 cumulative figure (EUR 5.88bn) actually subtracts EUR 1.2bn (year from 28 Jan 2024), EUR 1.78bn (from 28 Jan 2023) and EUR 1.64bn (from 28 Jan 2022). That gives 4.68, 2.90 and 1.26, which match the plotted points. The EUR 1.1bn figure is only used in the forward-sum cross-check.",
+    "The notes for points 2022-2024 say 'DLA Piper did not state a cumulative figure in this edition'. That is only confirmed for the public web summaries: the 2022, 2023 and 2024 pages state no cumulative total. The full reports sit behind a registration form (inform.dlapiper.com / inform-new.dlapiper.com 'download the report' landing pages), so I could not check whether they state one. The wording should be limited to the public page.",
+    "The 2021 point's source title is wrong. The page title is 'DLA Piper GDPR fines and data breach survey: January 2021', not '... survey 2021'.",
+    "Checked and correct: all 10 quotes were re-fetched with a fresh cache and FOUND. Page dates match: 20 Jan 2020, 19 Jan 2021, 18 Jan 2022, 25 Jan 2023, 17 Jan 2024, 21 Jan 2025 and 21 Jan 2026. EUR 272.5m is cumulative since 25 May 2018; it agrees with the 2022 page's 'nearly a sevenfold increase on last year's total' (1.1bn / (272.5m - 114m) ≈ 6.9). The arithmetic is right: 5.88-1.2=4.68, -1.78=2.90, -1.64=1.26. The forward sum 0.2725+1.1+1.64+1.78+1.2 = 5.99 is about EUR 0.1bn above 5.88, as the notes say. The 2026 total of EUR 7.1bn runs to 10 January 2026. The CMS figures (2,685 fines, about EUR 6.11bn, cut-off 1 March 2026) were FOUND. The countries surveyed (EU-27 plus UK, Norway, Iceland, Liechtenstein) are stated on the 2022 and 2023 pages. The EUR 1.2bn Meta fine in 2023 is confirmed on the 2024 page."
+   ],
+   "fieldFixes": {
+    "notes": "Totals are as at each annual January survey, so '2026' means fines to 10 January 2026. The 2022-2024 points are estimates computed by this study. They subtract DLA Piper's stated annual totals (EUR 1.64bn for the year from 28 January 2022, EUR 1.78bn from 28 January 2023, EUR 1.2bn from 28 January 2024) from its January 2025 cumulative figure (EUR 5.88bn). An independent count, CMS's GDPR Enforcement Tracker (publicly known fines only), gives about EUR 6.11bn across 2,685 fines to 1 March 2026. That is lower than DLA Piper's EUR 7.1bn, a reminder that the totals depend on method.",
+    "points[1].source.title": "DLA Piper GDPR fines and data breach survey: January 2021",
+    "points[2].note": "About EUR 1.26bn to January 2022. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper's public summary of this edition states no cumulative figure (the full report is gated). Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
+    "points[3].note": "About EUR 2.90bn to January 2023. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper's public summary of this edition states no cumulative figure (the full report is gated). Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
+    "points[4].note": "About EUR 4.68bn to January 2024 (includes the EUR 1.2bn fine on Meta imposed in 2023). Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper's public summary of this edition states no cumulative figure (the full report is gated). Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); FOUND."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "series",
+   "id": "gdpr-fines-annual-eur",
+   "status": "FIXED",
+   "issues": [
+    "The notes claim the 2025 survey year is '(2025: calendar 2025 to 10 January 2026)'. The January 2026 page does not say that. It gives fines of about EUR 1.2bn 'in 2025' and a cumulative total 'to 10 January 2026'. DLA Piper's earlier editions also label the year from 28 January as 'in 2024', so 'calendar 2025' is an unsupported reading. Reworded to what the page states.",
+    "Checked and correct: all 3 top-level quotes and all 5 point quotes were re-fetched with a fresh cache and FOUND. The values are nearly EUR 1.1bn (from 28 Jan 2021), EUR 1.64bn (from 28 Jan 2022), EUR 1.78bn (from 28 Jan 2023, 'an increase of over 14%'), EUR 1.2bn (from 28 Jan 2024, '33% decrease'; 1.78 x 0.67 ≈ 1.19) and about EUR 1.2bn (2025). The 2023 peak including the EUR 1.2bn Meta fine by the Irish DPC is confirmed on the January 2024 and January 2025 pages. Missing years (2018-2020) are omitted rather than misstated."
+   ],
+   "fieldFixes": {
+    "notes": "DLA Piper survey years run from 28 January to late January of the following year. The January 2026 edition reports fines 'in 2025' with a cumulative cut-off of 10 January 2026. Year label = the calendar year in which most of the period falls. The 2023 peak includes the record EUR 1.2bn fine on Meta Platforms Ireland by the Irish Data Protection Commission."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); FOUND."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 (fresh cache); FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "series",
+   "id": "pew-us-adults-under-30-used-chatgpt",
+   "status": "OK",
+   "issues": [
+    "No errors found. All 3 quotes were re-fetched and FOUND on the 25 June 2025 Pew short read. The 58% (2025), 43% (2024) and 33% (2023) figures, the 34% of all adults, and the fieldwork (5,123 adults, 24 Feb - 2 Mar 2025) all match.",
+    "Independent cross-check: Pew's 28 Aug 2023 short read ('Most Americans haven't used ChatGPT...') reports 18% of all adults and 'about four-in-ten adults under 30' among those who had heard of ChatGPT. That base differs from the all-adults base the 2025 page uses for its 33% re-statement, and the series correctly uses the 2025 page's all-adults figures. The 2024 short-read URL now redirects to the 2025 page."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "unctad-countries-with-data-protection-legislation-2022",
+   "status": "OK",
+   "issues": [
+    "The core claim holds. '137 out of 194 countries had put in place legislation to secure the protection of data and privacy.' is FOUND in both the 1 April 2022 and the 5 January 2025 Wayback captures, and 137/194 = 70.6%. Caveat: web.archive.org reset every connection from this environment throughout this pass (proxy 'ws_closed_mid_exchange'), and unctad.org returns a Cloudflare 403. So I checked against the raw capture HTML cached earlier today in /tmp/fetch-text-cache, which contains the Wayback playback markup. Wayback captures are immutable.",
+    "Year 2022 is supported. The companion series' sources show the page read '128 out of 194' from May 2021 to Feb 2022, so 137 first appeared between Feb and Apr 2022.",
+    "Source 1 (CyberlawData.js, February 2026) stays PENDING and could not be re-fetched. Partly checked: in the September 2026 capture of the page script (cached), 'var arrayIndex=2;' with sections[2] = 'Privacy and Data Protection', and statusLabels = ['No Data','Legislation','Draft Legislation','No Legislation']. That matches the code mapping given in the note. The 155/5/33/2 of 195 counts could not be checked; they add up to 195 and 155/195 = 79.5%."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Quote FOUND 2026-09-23 in the 20220401054637 and 20250105191814 captures (raw capture HTML from the shared fetch cache; a live Wayback re-fetch failed with connection resets)."},
+    {"index": 1, "verificationStatus": "PENDING", "note": "2026-09-23: could not re-fetch. web.archive.org reset every connection (proxy ws_closed_mid_exchange, repeated), and unctad.org/sites/default/files/data-file/CyberlawData.js returns a Cloudflare 403 challenge. The archive.org availability API lists no snapshot of the bare file URL. From the cached 8 Sep 2026 page capture: the page loads CyberlawData.js?20250620 and sets arrayIndex=2 ('Privacy and Data Protection'), and statusLabels maps 0-3 to No Data/Legislation/Draft/No Legislation, which is consistent with the note. The 155/5/33/2 counts themselves remain unverified."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "pew-2019-never-read-privacy-policy",
+   "status": "OK",
+   "issues": [
+    "No errors found. The quote was re-fetched and FOUND. The 36% is a share of all U.S. adults (9 always + 13 often + 38 sometimes + 36 never ≈ 97% who are ever asked). The fieldwork (4,272 adults, 3-17 June 2019) is confirmed on the page. The same report's chapter 4 independently repeats the figure ('More than a third of adults (36%)...'), so it is added as a second source."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "4. Americans' attitudes and experiences with privacy policies and laws (chapter of 'Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information')",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-attitudes-and-experiences-with-privacy-policies-and-laws/",
+     "quote": "There is also a segment of the population who forgo reading these policies altogether: More than a third of adults (36%) say they never read a privacy policy before agreeing to it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check 2026-09-23: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "pew-2019-readers-read-all-the-way-through",
+   "status": "OK",
+   "issues": [
+    "No errors found. The quote was re-fetched and FOUND, and the base (adults who ever read privacy policies) is stated correctly in the unit. Chapter 4 of the same report adds context. Of those readers, 43% glance over policies without reading closely. Among all U.S. adults, 13% read policies all the way through. That chapter is added as a source so the page can give the all-adults figure too."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "4. Americans' attitudes and experiences with privacy policies and laws (chapter of 'Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information')",
+     "date": "2019-11-15",
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-attitudes-and-experiences-with-privacy-policies-and-laws/",
+     "quote": "Among all U.S. adults, 13% say they read privacy policies all the way through, 21% read part of the way through and 26% glance over them.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check 2026-09-23: FOUND. The same paragraph restates the 22% figure: 'only a minority (22%) say they read them all the way through'."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "pew-2023-click-agree-without-reading",
+   "status": "OK",
+   "issues": [
+    "No errors found. The quote was re-fetched and FOUND. The 69% and 61% in the notes and the fieldwork (5,101 adults, 15-21 May 2023) are confirmed on the page. Pew's 'frequently' is defined in chapter 2 as 'always, almost always or often'. Another 22% do it 'sometimes' and 18% 'rarely or never'. Chapter 2 is added as a source with that exact wording."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23; FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Pew Research Center",
+     "title": "2. How Americans protect their online data (chapter of 'How Americans View Data Privacy')",
+     "date": "2023-10-18",
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-protect-their-online-data/",
+     "quote": "Some 56% of Americans say they always, almost always or often click “agree” right away, without reading what privacy policies say. Another 22% say they do this sometimes. And 18% say they rarely or never agree without reading.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with --check 2026-09-23: FOUND. Defines 'frequently' as always/almost always/often."
+    }
+   ]
+  }
+ ]
+}

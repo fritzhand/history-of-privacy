@@ -1,12 +1,12 @@
 {
  "slice": "essay",
- "notes": "draft",
+ "notes": "Slice 'essay': source material for the opening prose 'What Privacy Is: A Short History of an Idea'. Contents: 45 facts (one-sentence statements, each with 1-4 sources carrying verbatim quotes), 16 pull quotes, a 7-paragraph outline (every fact is placed once), 2 quantities and 5 myths. No mapped events - chronology lives in the other slices; facts here overlap with some of them (Warren and Brandeis, BVerfG 1983, UDHR/ICCPR, IEEE 7012, the cypherpunks) by design so the essay can stand alone. METHOD: every CONFIRMED quote was fetched with tools/fetch-text.py and passed --check (all 2026-09-23). Where the canonical host blocks scripts (bepress/Digital Commons repositories, Legifrance, OHCHR, Wiley), the quote was read from an Internet Archive copy (URL given as read) or from another official copy (French Interior Ministry PDF for Code civil art. 9; University of Minnesota Human Rights Library for General Comment 16; Crossref API for the Altman 1977 abstract; Quran.com API for Qur'an translations). Several classic statements are quoted through reliable secondary scholarship because the books are in copyright and not openly online: Westin 1967 (via Solove 2002 and Frontiers in Veterinary Science 2022), Thomson 1975, Gavison 1980, Moore 1984 and Miller 1971 (via Solove 2002), Arendt 1958 (via Komamura 2019, Washington University Law Review), Altman 1977 (publisher abstract plus Acquisti et al. 2020). Each such source note says so. COULD NOT VERIFY / GAPS: OED first-use dates (subscription) - Etymonline and Merriam-Webster disagree on the earliest 'privacy' form (Etymonline: privatie late 14c., privacy 1590s; M-W: 15th century), stated as such; Lewis & Short (Perseus) entry text for privo is not extractable by the helper; the attribution of 'la vie privée doit être murée' to Royer-Collard (1819) or Talleyrand is unverified - Littré gives it unattributed; Rybczynski's Home and Ariès/Duby's History of Private Life were not read directly (architecture facts rest on Solove 2002, which cites them); the Mishnah fact's 'measure of privacy' is a modern translator's gloss; the Constitute count (171/188) is our own computation from its API and reflects text-based coding; Fred Cate's critique of notice-and-choice was not added; Doc Searls's own weblog returns 403 to scripts, so his 2019 Linux Journal column and the ProjectVRM post are used instead. Contested points are flagged contested:true (Chinese yinsi and traditional Chinese privacy; Littré maxim attribution). HOUSEKEEPING: the session scratchpad is shared between researchers; during this run I inadvertently executed another researcher's scratchpad build.py (which had overwritten mine), which rewrote research/verify/dataprotection-2.json from that researcher's own script - the content should be identical to what their script produces, but the owner may wish to re-run it.",
  "events": [],
  "facts": [
   {
-   "id": "latin-privatus-set-apart",
+   "id": "latin-privatus-privare",
    "topic": "words",
-   "statement": "The English word 'private' comes from the Latin privatus, 'set apart (from what is public), belonging to oneself (not to the state)', which was used in contrast to publicus and communis.",
+   "statement": "The English word 'private' comes from Latin privatus, 'set apart (from what is public), belonging to oneself (not to the state)', the past participle of privare, 'to bereave, deprive, rob, strip' - so the root carries both 'one's own' and 'deprived of'.",
    "sources": [
     {
      "institution": "Online Etymology Dictionary (Douglas Harper)",
@@ -17,14 +17,7 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Etymonline is a compiled dictionary that draws on the OED, Barnhart and Klein; spacing before commas is as rendered on the page. Lewis & Short (Perseus) gives privo as \"To bereave, deprive, rob, strip\" but its entry text is not extractable by the repo helper."
-    }
-   ]
-  },
-  {
-   "id": "latin-privare-deprive",
-   "topic": "words",
-   "statement": "Latin privatus is the past participle of privare, 'to bereave, deprive, rob, strip', built on privus, 'one's own, individual' - so the root of 'private' carries a sense of being separated or deprived.",
-   "sources": [
+    },
     {
      "institution": "Online Etymology Dictionary (Douglas Harper)",
      "title": "private (adj.)",
@@ -55,9 +48,9 @@
    "note": "Merriam-Webster (https://www.merriam-webster.com/dictionary/privacy) shows \"15th century, in the meaning defined at sense 1a\"; the OED was not consulted (subscription)."
   },
   {
-   "id": "arendt-privative-trait",
+   "id": "arendt-privative-to-intimate",
    "topic": "words",
-   "statement": "Hannah Arendt argued in The Human Condition (1958) that in ancient Greek feeling privacy was 'privative': to live only a private life was to be deprived of the public realm and so 'not fully human'.",
+   "statement": "Hannah Arendt argued in The Human Condition (1958) that for the ancient Greeks privacy was 'privative' - a life lived only in private was deprived of the public realm and 'not fully human' - whereas modern privacy's 'most relevant function' is 'to shelter the intimate'.",
    "sources": [
     {
      "institution": "Washington University Law Review (vol. 96, no. 6)",
@@ -68,13 +61,23 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Komamura quotes Arendt verbatim (Hannah Arendt, The Human Condition, University of Chicago Press, 1958; p. 38 of the 2nd ed., 1998). The book itself is in copyright and was not read from a publisher copy."
+    },
+    {
+     "institution": "Washington University Law Review (vol. 96, no. 6)",
+     "title": "Keigo Komamura, 'Privacy's Past: The Ancient Concept and Its Implications for the Current Law of Privacy'",
+     "date": "2019",
+     "url": "https://journals.library.wustl.edu/lawreview/article/6219/galley/23052/download/",
+     "quote": "The decisive historical fact is that modern privacy in its most relevant function, to shelter the intimate, was discovered as the opposite not of the political sphere but of the social, to which it is therefore more closely and authentically related.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Komamura (pp. 1344-45) quotes Arendt, The Human Condition (1958), p. 38, verbatim. His own abstract adds: \"privacy has been a relational concept since the beginnings of western political thought.\""
     }
    ]
   },
   {
-   "id": "greek-oikos-polis",
+   "id": "greek-oikos-polis-idion-koinon",
    "topic": "words",
-   "statement": "Arendt located the origin of the public/private distinction in the ancient city-state's split between the household (oikos) and the political realm (polis).",
+   "statement": "Greek thought drew the first map: Aristotle's split between the household (oikos) and the political community (polis) is the usual starting point for philosophical discussions of privacy, and his Politics contrasts what is one's own (idion) with what is common (koinon).",
    "sources": [
     {
      "institution": "Washington University Law Review (vol. 96, no. 6)",
@@ -85,24 +88,1233 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Komamura, p. 1341, paraphrasing Arendt, The Human Condition (1998 ed.), p. 28: \"the distinction between a private and a public sphere of life corresponds to the household and the political realms\"."
-    }
-   ],
-   "note": "For the Greek idion/koinon vocabulary see the Aristotle fact."
-  },
-  {
-   "id": "modern-privacy-shelters-intimate",
-   "topic": "words",
-   "statement": "Arendt contrasted the ancient view with modern privacy, whose 'most relevant function' she said was 'to shelter the intimate', and which arose as the opposite of the social rather than the political sphere.",
-   "sources": [
+    },
     {
-     "institution": "Washington University Law Review (vol. 96, no. 6)",
-     "title": "Keigo Komamura, 'Privacy's Past: The Ancient Concept and Its Implications for the Current Law of Privacy'",
-     "date": "2019",
-     "url": "https://journals.library.wustl.edu/lawreview/article/6219/galley/23052/download/",
-     "quote": "The decisive historical fact is that modern privacy in its most relevant function, to shelter the intimate, was discovered as the opposite not of the political sphere but of the social, to which it is therefore more closely and authentically related.",
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Aristotle's distinction between the public sphere of politics and political activity, the polis , and the private or domestic sphere of the family, the oikos , is the starting point for philosophical discussions of privacy ( Politics 1253b, 1259b).",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Komamura (pp. 1344-45) quotes Arendt, The Human Condition (1958), p. 38, verbatim. His own abstract adds: \"privacy has been a relational concept since the beginnings of western political thought.\""
+     "note": "Spacing around \"polis ,\" and \"( Politics\" is as extracted from the HTML (italic tags)."
+    },
+    {
+     "institution": "MIT Internet Classics Archive (Benjamin Jowett translation)",
+     "title": "Aristotle, Politics, Book Two, Part III",
+     "date": "c. 350 BCE (trans. 1885)",
+     "url": "https://classics.mit.edu/Aristotle/politics.2.two.html",
+     "quote": "For that which is common to the greatest number has the least care bestowed upon it. Every one thinks chiefly of his own, hardly at all of the common interest; and only when he is himself concerned as an individual.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Politics 2.1261b33-35. Greek (Perseus, Perseus:text:1999.01.0057): \"ἥκιστα γὰρ ἐπιμελείας τυγχάνει τὸ πλείστων κοινόν: τῶν γὰρ ἰδίων μάλιστα φροντίζουσιν, τῶν δὲ κοινῶν ἧττον\" - koinon (common) against idion (one's own). The Greek was read on Perseus but the repo helper cannot extract it, so the English is quoted."
+    }
+   ],
+   "note": "For the Greek idion/koinon vocabulary see the Aristotle fact. Aristotle here argues about property and care, not \"privacy\" in the modern sense; use it for the vocabulary of own vs common, not as an ancient privacy right."
+  },
+  {
+   "id": "chinese-yinsi-shameful-secret",
+   "topic": "words",
+   "statement": "The Chinese word for privacy, yinsi (隐私), joins yin, 'hide', and si, 'private'; legal scholar Cao Jingchun wrote in 2005 that it has been translated as 'privacy', 'personal secret' or 'shameful secret' and that Chinese people initially often misunderstood privacy as relating to shameful secrets.",
+   "sources": [
+    {
+     "institution": "Victoria University of Wellington Law Review (vol. 36, no. 3)",
+     "title": "Cao Jingchun, 'Protecting the Right to Privacy in China'",
+     "date": "2005",
+     "url": "https://ojs.victoria.ac.nz/vuwlr/article/download/5610/4977/7913",
+     "quote": "Yin and si are two words in Chinese: yin means \"hide\" and si means \"private\".",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The PDF text has lost the Chinese characters; Cao distinguishes two near-homophones (commonly written 阴私, a shameful secret, and 隐私, privacy). Characters in the statement are supplied from the NPC source below, not from Cao."
+    },
+    {
+     "institution": "Victoria University of Wellington Law Review (vol. 36, no. 3)",
+     "title": "Cao Jingchun, 'Protecting the Right to Privacy in China'",
+     "date": "2005",
+     "url": "https://ojs.victoria.ac.nz/vuwlr/article/download/5610/4977/7913",
+     "quote": "It was initially common for Chinese to misunderstand privacy as relating to shameful secrets.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "contested": true,
+   "note": "Contested: whether traditional China lacked a privacy concept is debated; Cao himself argues privacy \"was protected, to some extent, in ancient China\" though neither the word nor the modern concept existed."
+  },
+  {
+   "id": "china-civil-code-1032-defines-privacy",
+   "topic": "words",
+   "statement": "China's Civil Code (2020), Article 1032, gives the word a legal definition: privacy (隐私) is a natural person's tranquillity of private life and the private space, private activities and private information that they do not wish others to know.",
+   "sources": [
+    {
+     "institution": "National People's Congress of the People's Republic of China (npc.gov.cn)",
+     "title": "“典”亮我们的生活丨“个人隐私”不可侵扰 (Civil Code explainer, with text of Arts. 1032-1033)",
+     "date": "2020-12-16",
+     "url": "http://www.npc.gov.cn/npc/c2/c30834/202012/t20201216_309218.html",
+     "quote": "隐私是自然人的私人生活安宁和不愿为他人知晓的私密空间、私密活动、私密信息。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: \"Privacy is a natural person's tranquillity of private life and the private space, private activities and private information that he or she does not wish others to know.\" The page also states that before the Civil Code Chinese law used the term 隐私权 without defining it."
+    }
+   ]
+  },
+  {
+   "id": "japan-puraibashii-1964",
+   "topic": "words",
+   "statement": "Japanese uses the loanword puraibashii (プライバシー), a phonetic rendering of the English 'privacy'; Japan's data-protection chairman Masao Horibe has said it spread after the Tokyo District Court recognised a right to privacy for the first time in 1964, in a suit over Yukio Mishima's novel After the Banquet.",
+   "sources": [
+    {
+     "institution": "Personal Information Protection Commission, Japan (speech by Chairman Masao Horibe, ICDPPC, Hong Kong)",
+     "title": "Privacy Culture and Data Protection Laws in Japan",
+     "date": "2017-09",
+     "url": "https://www.ppc.go.jp/files/pdf/290928_en_horibespeech.pdf",
+     "quote": "In the ruling on the case in 1964, the Tokyo District Court recognized privacy as a right to be protected under the Japanese law for the first time in history.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Personal Information Protection Commission, Japan (speech by Chairman Masao Horibe, ICDPPC, Hong Kong)",
+     "title": "Privacy Culture and Data Protection Laws in Japan",
+     "date": "2017-09",
+     "url": "https://www.ppc.go.jp/files/pdf/290928_en_horibespeech.pdf",
+     "quote": "Due to this court decision and many other backgrounds, the Japanese term of \"puraibashii\", which is a phonetic spelling of an English word \"privacy\", has been widely used in our society.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Japan Institute for Labour Policy and Training (JILPT Report No. 14)",
+     "title": "Ryoko Sakuraba, 'Protection of Personal Information and Privacy in the Japanese Workplace'",
+     "date": "2014",
+     "url": "https://www.jil.go.jp/english/reports/documents/jilpt-reports/no.14_japan.pdf",
+     "quote": "Tokyo District Court (28 September 1964), 15-9 Kaminshu 2317.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Gives the exact date of the \"Utage no Ato\" (After the Banquet) judgment. The katakana プライバシー is standard Japanese orthography and is not quoted from these sources."
+    }
+   ]
+  },
+  {
+   "id": "german-privatsphaere-and-informational-self-determination",
+   "topic": "words",
+   "statement": "German has two words for two ideas: the everyday Privatsphäre, a protected 'narrower realm of personal life', and informationelle Selbstbestimmung, the right to 'informational self-determination' that the Federal Constitutional Court recognised on 15 December 1983 - the individual's authority, in principle, to decide on the disclosure and use of their personal data.",
+   "sources": [
+    {
+     "institution": "Bundesverfassungsgericht (Federal Constitutional Court of Germany), official English translation",
+     "title": "Judgment of the First Senate of 15 December 1983, 1 BvR 209/83 et al. (Census Act)",
+     "date": "1983-12-15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html",
+     "quote": "This fundamental right confers upon the individual the authority to, in principle, decide themselves on the disclosure and use of their personal data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Bundesverfassungsgericht (Federal Constitutional Court of Germany), official English translation",
+     "title": "Judgment of the First Senate of 15 December 1983, 1 BvR 209/83 et al. (Census Act)",
+     "date": "1983-12-15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html",
+     "quote": "Restrictions of this right to 'informational self-determination' are only permissible if they serve an overriding public interest.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Digitales Wörterbuch der deutschen Sprache (DWDS), Berlin-Brandenburgische Akademie der Wissenschaften",
+     "title": "Privatsphäre",
+     "date": "2026",
+     "url": "https://www.dwds.de/wb/Privatsph%C3%A4re",
+     "quote": "engerer Bereich der persönlichen Lebensführung, der gegenüber anderen Personen bzw. der Öffentlichkeit besonderen (zum Teil rechtlichen) Schutz genießt",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: \"narrower sphere of personal conduct of life, which enjoys special (in part legal) protection against other persons or the public\"."
+    }
+   ]
+  },
+  {
+   "id": "french-vie-privee-walled",
+   "topic": "words",
+   "statement": "French speaks of vie privée, 'private life', and pictures it walled: Littré's 19th-century dictionary illustrates the term with the maxim 'private life must be walled in', and since the law of 17 July 1970 Article 9 of the Civil Code has given everyone 'the right to respect for his private life' - without defining it.",
+   "sources": [
+    {
+     "institution": "Ministère de l'Intérieur (France)",
+     "title": "Article 9 du code civil (loi du 17 juillet 1970)",
+     "date": "2026",
+     "url": "https://www.interieur.gouv.fr/content/download/109402/871455/file/article-9-code-civil.pdf",
+     "quote": "Chacun a droit au respect de sa vie privée.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: \"Everyone has the right to respect for his private life.\" Legifrance (the official code site) blocks scripted access; this is a French government reproduction."
+    },
+    {
+     "institution": "Ministère de l'Intérieur (France)",
+     "title": "Article 9 du code civil (loi du 17 juillet 1970)",
+     "date": "2026",
+     "url": "https://www.interieur.gouv.fr/content/download/109402/871455/file/article-9-code-civil.pdf",
+     "quote": "La notion de vie privée n'est pas définie par la loi.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: \"The notion of private life is not defined by the law.\" The page adds that case law has filled it in (health, love life, image, religion, family relations, intimacy)."
+    },
+    {
+     "institution": "Littré, Dictionnaire de la langue française (online edition, littre.org)",
+     "title": "privé",
+     "date": "1872-1877 (online 2026)",
+     "url": "https://www.littre.org/definition/priv%C3%A9",
+     "quote": "La vie privée doit être murée, il n'est pas permis de chercher et de faire connaître ce qui se passe dans la maison d'un particulier.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Littré gives the maxim without attribution. It is widely attributed to Pierre-Paul Royer-Collard (c. 1819) and sometimes to Talleyrand (Stendhal, 1823); the attribution was not verified from a primary source."
+    }
+   ],
+   "contested": true,
+   "note": "Attribution contested - quote it as Littré's, not Royer-Collard's."
+  },
+  {
+   "id": "arabic-islamic-hurma-and-quran",
+   "topic": "words",
+   "statement": "In Arabic-Islamic usage the idea closest to privacy is often hurma - what is sacred or unlawful to look at without permission, including the home - alongside awrah, what must be covered; the Qur'an tells believers not to enter others' houses until welcomed (24:27) and forbids spying (49:12).",
+   "sources": [
+    {
+     "institution": "arXiv (preprint of a paper presented at ACM DIS 2016, Designing Interactive Systems)",
+     "title": "Norah Abokhodair and Sarah Vieweg, 'Privacy & Social Media in the Context of the Arab Gulf'",
+     "date": "2016",
+     "url": "https://arxiv.org/pdf/1604.03626",
+     "quote": "Depending on the context, hurma has two meanings: 1) anything that is unlawful to obtain or look at without permission or 2) a woman, a sacred space (mosque or home) or a sacred time (holy month).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "arXiv (preprint of a paper presented at ACM DIS 2016, Designing Interactive Systems)",
+     "title": "Norah Abokhodair and Sarah Vieweg, 'Privacy & Social Media in the Context of the Arab Gulf'",
+     "date": "2016",
+     "url": "https://arxiv.org/pdf/1604.03626",
+     "quote": "We suggest that privacy as practiced in traditional Islamic cultures, especially in the Gulf, involves three aspects; awrah, hurma, and haq al-khososyah.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Quran.com API (Saheeh International translation)",
+     "title": "Qur'an 24:27 (Surat an-Nur)",
+     "date": "c. 7th century CE (trans. 1997)",
+     "url": "https://api.quran.com/api/v4/quran/translations/20?verse_key=24:27",
+     "quote": "O you who have believed, do not enter houses other than your own houses until you ascertain welcome and greet [...] their inhabitants.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "[...] marks only the translator's footnote marker in the API text; no words are omitted."
+    },
+    {
+     "institution": "Quran.com API (Saheeh International translation)",
+     "title": "Qur'an 49:12 (Surat al-Hujurat)",
+     "date": "c. 7th century CE (trans. 1997)",
+     "url": "https://api.quran.com/api/v4/quran/translations/20?verse_key=49:12",
+     "quote": "And do not spy or backbite each other.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Arabic: وَلَا تَجَسَّسُوا۟ (wa-lā tajassasū, \"do not spy\"), from api.quran.com/api/v4/quran/verses/uthmani?verse_key=49:12."
+    }
+   ],
+   "note": "Scholarship based on interviews with Gulf (GCC) users; it describes one regional reading, not all Muslim societies."
+  },
+  {
+   "id": "westin-1967-definition",
+   "topic": "definitions",
+   "statement": "Alan Westin's Privacy and Freedom (1967), written for a New York City Bar committee on science and law, defined privacy as 'the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others', and argued that it preserves autonomy, release from role-playing, self-evaluation and protected communication.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Solove p. 1109-10 quotes Westin, Privacy and Freedom (Atheneum, 1967), p. 7: \"Privacy is the claim of individuals...\"; the opening words sit before a page break in the PDF, so only the contiguous part is quoted. Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "Washington and Lee Law Review (vol. 25, no. 1), book note (archived copy)",
+     "title": "Book note: 'Privacy and Freedom' by Alan F. Westin",
+     "date": "1968-03-01",
+     "url": "https://web.archive.org/web/20260829044658id_/https://scholarlycommons.law.wlu.edu/cgi/viewcontent.cgi?context=wlulr&article=3659",
+     "quote": "Privacy, he contends, provides individuals and groups in society with a preservation of autonomy, a release from role-playing, a time for self-evaluation and for protected communication.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Unsigned book note, 25 Wash. & Lee L. Rev. 166 (1968), read from the Internet Archive copy (the live repository returns 403 to scripts)."
+    },
+    {
+     "institution": "Washington and Lee Law Review (vol. 25, no. 1), book note (archived copy)",
+     "title": "Book note: 'Privacy and Freedom' by Alan F. Westin",
+     "date": "1968-03-01",
+     "url": "https://web.archive.org/web/20260829044658id_/https://scholarlycommons.law.wlu.edu/cgi/viewcontent.cgi?context=wlulr&article=3659",
+     "quote": "The book was written under the auspices of the Special Committee on Science and Law of the Association of the Bar of the City of New York, with financial support from the Carnegie Corporation, and will undoubtedly stand as a major reference work on the subject.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "westin-animal-origins",
+   "topic": "universality",
+   "statement": "Westin argued, drawing on studies of animal territoriality, that the human need for privacy is probably rooted in our animal origins and that people and animals share basic privacy-claiming mechanisms.",
+   "sources": [
+    {
+     "institution": "Frontiers in Veterinary Science (vol. 8)",
+     "title": "Clara Mancini et al., 'The Case for Animal Privacy in the Design of Technologically Supported Environments'",
+     "date": "2022-01-07",
+     "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.784794/full",
+     "quote": "In his seminal work on Privacy and Freedom, Westin ( 1 ) made direct reference to Ardrey ( 11 )'s writings on territoriality to argue that humans' need for privacy is likely rooted in our animal origins, and that humans and animals share a number of basic privacy-claiming mechanisms.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary (peer-reviewed) summary of Westin 1967, ch. 1 (p. 26 cited). Westin's book was not read directly."
+    }
+   ]
+  },
+  {
+   "id": "altman-1977-universal-process",
+   "topic": "universality",
+   "statement": "Psychologist Irwin Altman concluded in 1977, from ethnographic data on many cultures, that privacy is a universal process regulated by culturally specific means - from secret forest paths among some Brazilian peoples and soft speech in Java to the Tuareg face veil - and he treated it as dynamic boundary regulation, opening as well as closing.",
+   "sources": [
+    {
+     "institution": "Journal of Social Issues (vol. 33, no. 3), abstract via Crossref",
+     "title": "Irwin Altman, 'Privacy Regulation: Culturally Universal or Culturally Specific?'",
+     "date": "1977-07",
+     "url": "https://api.crossref.org/works/10.1111/j.1540-4560.1977.tb01883.x",
+     "quote": "Ethnographic data are examined from a variety of cultures, particularly from societies with apparently maximum and minimum privacy",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Publisher abstract as deposited with Crossref; the Wiley page blocks scripts."
+    },
+    {
+     "institution": "Journal of Social Issues (vol. 33, no. 3), abstract via Crossref",
+     "title": "Irwin Altman, 'Privacy Regulation: Culturally Universal or Culturally Specific?'",
+     "date": "1977-07",
+     "url": "https://api.crossref.org/works/10.1111/j.1540-4560.1977.tb01883.x",
+     "quote": "It is concluded that privacy is a universal process that involves culturally unique regulatory mechanisms.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API"
+    },
+    {
+     "institution": "Journal of Consumer Psychology (vol. 30, no. 4), author copy hosted by Carnegie Mellon University",
+     "title": "Alessandro Acquisti, Laura Brandimarte and George Loewenstein, 'Secrets and Likes: The Drive for Privacy and the Difficulty of Achieving It in the Digital Age'",
+     "date": "2020",
+     "url": "https://www.cmu.edu/dietrich/sds/docs/loewenstein/secretslikes.pdf",
+     "quote": "the evidence of \"privacy\"-seeking behaviors across cultures and historical periods is ample (Moore, 1984; Murphy, 1964), from the use of secret paths in the woods by some tribes in Brazil, to Javanese people hiding their emotions and speaking softly, and from the rearranging of the huts by the Pygmies of Zaire in response to the arrival of new people to the camp, to the covering of almost their entire face by the Tuareg of Northern Africa (Altman, 1977).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The examples are Altman's (1977); the source uses the dated ethnonym \"Pygmies\" (the Mbuti of the Ituri forest)."
+    },
+    {
+     "institution": "Journal of Consumer Psychology (vol. 30, no. 4), author copy hosted by Carnegie Mellon University",
+     "title": "Alessandro Acquisti, Laura Brandimarte and George Loewenstein, 'Secrets and Likes: The Drive for Privacy and the Difficulty of Achieving It in the Digital Age'",
+     "date": "2020",
+     "url": "https://www.cmu.edu/dietrich/sds/docs/loewenstein/secretslikes.pdf",
+     "quote": "Altman construed privacy as a dialectic and dynamic process of boundary regulation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "moore-1984-socially-created-need",
+   "topic": "universality",
+   "statement": "Sociologist Barrington Moore Jr., in Privacy: Studies in Social and Cultural History (1984), called the need for privacy 'a socially created need', arguing that without society there would be no need for privacy.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "According to sociologist Barrington Moore, \"the need for privacy is a socially created need. Without society there would be no need for privacy.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quoting Moore, Privacy (1984), p. 73. Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    }
+   ]
+  },
+  {
+   "id": "thomson-1975-reductionism",
+   "topic": "definitions",
+   "statement": "Philosopher Judith Jarvis Thomson (Philosophy & Public Affairs, 1975) observed that nobody seemed to have a clear idea what the right to privacy is, and argued that it is really a cluster of other rights - over property and over one's own person.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "(\"Perhaps the most striking thing about the right to privacy is that nobody seems to have any very clear idea what it is.\")",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Solove n. 6 quotes Thomson from the reprint in Schoeman (ed.), Philosophical Dimensions of Privacy (1984), p. 272. Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Probably the most famous fundamental critique of a right to privacy stems from the work of Judith Jarvis Thomson (1975).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "SEP bibliography: Thomson, \"The Right to Privacy\", Philosophy & Public Affairs 4(4): 295-314 (1975)."
+    }
+   ]
+  },
+  {
+   "id": "gavison-1980-limited-access",
+   "topic": "definitions",
+   "statement": "Legal philosopher Ruth Gavison (Yale Law Journal, 1980) defined privacy as limited access to a person, made up of three irreducible elements: secrecy, anonymity and solitude.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Further, Gavison explains what constitutes limited access, which consists of \"three independent and irreducible elements: secrecy, anonymity, and solitude.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Quoting Gavison, 89 Yale L.J. 421, 433 (1980). The Yale repository copy could not be fetched (403). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    }
+   ]
+  },
+  {
+   "id": "solove-2002-no-single-definition",
+   "topic": "definitions",
+   "statement": "Daniel Solove argued in 2002 that privacy had become a 'sweeping concept' - from freedom of thought to freedom from surveillance - with no single common core, and proposed understanding it through Wittgenstein's 'family resemblances'; the Stanford Encyclopedia of Philosophy likewise finds no single definition.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Currently, privacy is a sweeping concept, encompassing (among other things) freedom of thought, control over one's body, solitude in one's home, control over information about oneself, freedom from surveillance, protection of one's reputation, and protection from searches and interrogations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "In contrast, I argue that privacy is better understood by drawing from Ludwig Wittgenstein's notion of \"family resemblances.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Against this background, we can see that there is no single definition, analysis or meaning of the term \"privacy\", either in ordinary language or in philosophical, political and legal discourse.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "nissenbaum-2004-contextual-integrity",
+   "topic": "definitions",
+   "statement": "Helen Nissenbaum's theory of contextual integrity (2004) holds that privacy is violated when information flows break the norms of the context in which it was shared - norms of appropriateness and norms of distribution.",
+   "sources": [
+    {
+     "institution": "Washington Law Review (vol. 79, no. 1), copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'Privacy as Contextual Integrity'",
+     "date": "2004-02-01",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/H.%20Nissenbaum,%20_Privacy%20as%20Contextual%20Integrity.pdf",
+     "quote": "The central thesis of this Article is that the benchmark of privacy is contextual integrity; that in any given situation, a complaint that privacy has been violated is sound in the event that one or the other types of the informational norms has been transgressed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Washington Law Review (vol. 79, no. 1), copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'Privacy as Contextual Integrity'",
+     "date": "2004-02-01",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/H.%20Nissenbaum,%20_Privacy%20as%20Contextual%20Integrity.pdf",
+     "quote": "I posit two types of informational norms: norms of appropriateness, and norms of flow or distribution.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "cohen-2013-emergent-subjectivity",
+   "topic": "definitions",
+   "statement": "Julie Cohen (Harvard Law Review, 2013) argued that privacy matters less as protection for a finished 'liberal self' than as breathing room in which a self develops, shielding 'dynamic, emergent subjectivity' from commercial and government efforts to make people fixed, transparent and predictable.",
+   "sources": [
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Julie E. Cohen, 'What Privacy Is For'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/what-privacy-is-for/",
+     "quote": "Privacy shelters dynamic, emergent subjectivity from the efforts of commercial and government actors to render individuals and communities fixed, transparent, and predictable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "hippocratic-oath-confidentiality",
+   "topic": "early-norms",
+   "statement": "The Hippocratic Oath, perhaps the best-known Greek medical text, binds the physician to keep secret whatever he sees or hears in patients' lives that ought not to be spoken of - an early professional duty of confidentiality.",
+   "sources": [
+    {
+     "institution": "U.S. National Library of Medicine, History of Medicine Division",
+     "title": "Greek Medicine: The Oath",
+     "date": "2026",
+     "url": "https://www.nlm.nih.gov/hmd/topics/greek-medicine/index.html",
+     "quote": "Whatever I see or hear in the lives of my patients, whether in connection with my professional practice or not, which ought not to be spoken of outside, I will keep secret, as considering all such things to be private.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page says its display was curated by Michael North, then Head of Rare Books at NLM; the translator is not otherwise named. The Oath is conventionally dated to the late 5th or 4th century BCE; the page does not date it."
+    },
+    {
+     "institution": "U.S. National Library of Medicine, History of Medicine Division",
+     "title": "Greek Medicine: The Oath",
+     "date": "2026",
+     "url": "https://www.nlm.nih.gov/hmd/topics/greek-medicine/index.html",
+     "quote": "The Hippocratic Oath (Ορκος) is perhaps the most widely known of Greek medical texts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "mishnah-windows-courtyard",
+   "topic": "early-norms",
+   "statement": "The Mishnah, the early rabbinic law code, forbids a person to open a window or doorway facing a courtyard shared with neighbours - a rule a modern English translation glosses as ensuring residents 'a measure of privacy'.",
+   "sources": [
+    {
+     "institution": "Sefaria (William Davidson Edition - English, Steinsaltz)",
+     "title": "Mishnah Bava Batra 3:7",
+     "date": "c. 200 CE (trans. 2017)",
+     "url": "https://www.sefaria.org/api/v3/texts/Mishnah_Bava_Batra.3.7?version=english",
+     "quote": "A person may not open his windows",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API"
+    },
+    {
+     "institution": "Sefaria (William Davidson Edition - English, Steinsaltz)",
+     "title": "Mishnah Bava Batra 3:7",
+     "date": "c. 200 CE (trans. 2017)",
+     "url": "https://www.sefaria.org/api/v3/texts/Mishnah_Bava_Batra.3.7?version=english",
+     "quote": "so as to ensure that the residents will enjoy a measure of privacy",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "This clause is the translator's explanatory interpolation (unbolded in the Davidson edition), not the Mishnah's own words. The phrase \"damage by seeing\" (hezek re'iyah) is from the Talmud (Bava Batra 2b-3a) and is not quoted from this page."
+    }
+   ],
+   "note": "The \"c. 200 CE\" compilation date and the term hezek re'iyah are standard but not stated on the cited page; treat them as context."
+  },
+  {
+   "id": "coke-semayne-castle-1604",
+   "topic": "home",
+   "statement": "In Semayne's Case (1604), reported by Sir Edward Coke, English law declared that 'the house of every one is to him as his Castle and Fortress' - protection both from violence and 'for his repose'.",
+   "sources": [
+    {
+     "institution": "Online Library of Liberty (Liberty Fund), from Selected Writings of Sir Edward Coke, vol. I",
+     "title": "Sir Edward Coke declares that your house is your 'Castle and Fortress' (1604)",
+     "date": "1604 (reprinted 2003)",
+     "url": "https://oll.libertyfund.org/quotes/sir-edward-coke-declares-that-your-house-is-your-castle-and-fortress-1604",
+     "quote": "That the house of every one is to him as his Castle and Fortress as well for defence against injury and violence, as for his repose;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Semayne's Case, 5 Co. Rep. 91a (K.B. 1604); Coke was Attorney General and reported the case. The same passage limits the principle: sheriffs could still enter, after announcing themselves, to execute the King's process."
+    }
+   ]
+  },
+  {
+   "id": "rooms-and-the-private-home",
+   "topic": "home",
+   "statement": "For most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one large multipurpose space and beds were shared, even with guests; from the seventeenth century houses were partitioned into rooms with distinct purposes, though without corridors people still walked through each other's rooms.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Until the seventeenth century, many homes merely consisted of a large, multipurpose space.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Citing N.Y. Times/Gass (1986) and Rybczynski, Home (1986). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Not only would a couple sleep with their children, but even guests would share the bed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Citing Flaherty, Privacy in Colonial New England (1972), and Gottlieb."
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Beginning in the seventeenth century, homes began to be partitioned into rooms, each assigned a distinct purpose and some even becoming personalized according to their occupants.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Citing Rybczynski, Home: A Short History of an Idea (1986), and Flaherty (1972). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Even with rooms, solitude would often be disrupted because there were no corridors, and people would shuffle through rooms to move about the house.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Solove stresses these are generalisations that varied by class, place and period; solitude within the home \"developed first among the wealthy\"."
+  },
+  {
+   "id": "confessional-borromeo-1577",
+   "topic": "home",
+   "statement": "After the Council of Trent, Archbishop Charles Borromeo of Milan published the Instructiones Fabricae et Supellectilis Ecclesiasticae (1577), whose rules for the confessional aimed to give the penitent privacy while preventing misconduct by the confessor.",
+   "sources": [
+    {
+     "institution": "Sacred Architecture (Institute for Sacred Architecture, Notre Dame), issue 9, via CatholicCulture.org",
+     "title": "Matthew E. Gallegos, 'Charles Borromeo and Catholic Tradition Regarding the Design of Catholic Churches'",
+     "date": "2004",
+     "url": "https://www.catholicculture.org/culture/library/view.cfm?recnum=6445",
+     "quote": "The directives regarding confessionals focus on providing privacy for the penitent while simultaneously removing any appearance or avenue for inappropriate conduct or pecuniary gain on the part of the confessor.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Sacred Architecture (Institute for Sacred Architecture, Notre Dame), issue 9, via CatholicCulture.org",
+     "title": "Matthew E. Gallegos, 'Charles Borromeo and Catholic Tradition Regarding the Design of Catholic Churches'",
+     "date": "2004",
+     "url": "https://www.catholicculture.org/culture/library/view.cfm?recnum=6445",
+     "quote": "Borromeo published the document in 1577, and it was reprinted without major revisions at least nineteen times between 1577 and 1952.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Popular accounts credit Borromeo with \"inventing\" the confessional box; this source supports only that his 1577 directives regulated confessionals for privacy and propriety."
+  },
+  {
+   "id": "letterlocking-and-the-brienne-trunk",
+   "topic": "letters",
+   "statement": "Before mass-produced envelopes spread in the 1830s, most letters were 'letterlocked' - folded and secured into their own envelopes, often with tamper-evident locks; a European postmaster's trunk of 300-year-old undelivered post, the Brienne Collection, still holds 577 letterpackets that have never been opened.",
+   "sources": [
+    {
+     "institution": "Nature Communications (vol. 12, article 1184)",
+     "title": "Jana Dambrogio et al., 'Unlocking history through automated virtual unfolding of sealed documents imaged by X-ray microtomography'",
+     "date": "2021-03-02",
+     "url": "https://www.nature.com/articles/s41467-021-21326-w",
+     "quote": "Before the proliferation of mass-produced envelopes in the 1830s, most letters were sent via letterlocking, the process of folding and securing writing substrates to become their own envelopes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Nature Communications (vol. 12, article 1184)",
+     "title": "Jana Dambrogio et al., 'Unlocking history through automated virtual unfolding of sealed documents imaged by X-ray microtomography'",
+     "date": "2021-03-02",
+     "url": "https://www.nature.com/articles/s41467-021-21326-w",
+     "quote": "We observe built-in tamper-evident locking mechanisms that deter potential interceptors by irreversibly damaging a letterpacket on opening, enabling the intended recipient to detect so-called \"man-in-the-middle\" attacks.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Nature Communications (vol. 12, article 1184)",
+     "title": "Jana Dambrogio et al., 'Unlocking history through automated virtual unfolding of sealed documents imaged by X-ray microtomography'",
+     "date": "2021-03-02",
+     "url": "https://www.nature.com/articles/s41467-021-21326-w",
+     "quote": "A European postmaster's trunk preserving 300-year-old undelivered post, the Brienne Collection 4 , provides a rare opportunity to study sealed locked letters.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The trunk is held in The Hague (Museum voor Communicatie collection); that location is not stated in the quoted sentence."
+    },
+    {
+     "institution": "Nature Communications (vol. 12, article 1184)",
+     "title": "Jana Dambrogio et al., 'Unlocking history through automated virtual unfolding of sealed documents imaged by X-ray microtomography'",
+     "date": "2021-03-02",
+     "url": "https://www.nature.com/articles/s41467-021-21326-w",
+     "quote": "The trunk contains 3148 cataloged items, including 2571 opened letters, fragments, and other documents, and 577 letterpackets that have never been opened.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "ex-parte-jackson-sealed-letters",
+   "topic": "letters",
+   "statement": "In Ex parte Jackson (96 U.S. 727, October Term 1877) the U.S. Supreme Court held that sealed letters in the mail are as protected from inspection 'as if they were retained by the parties forwarding them in their own domiciles' - carrying the protection of the home to the sealed page.",
+   "sources": [
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Ex parte Jackson, 96 U.S. 727 (1878)",
+     "date": "1878",
+     "url": "https://www.law.cornell.edu/supremecourt/text/96/727",
+     "quote": "Letters and sealed packages of this kind in the mail are as fully guarded from examination and inspection, except as to their outward form and weight, as if they were retained by the parties forwarding them in their own domiciles.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reported as October Term 1877 and usually cited as decided in 1878 (the LII page shows \"October Term, 1877\"); Solove (2002) dates it 1877."
+    }
+   ]
+  },
+  {
+   "id": "privacy-of-letters-constructed",
+   "topic": "letters",
+   "statement": "In colonial America seals were weak and postal clerks were suspected of reading mail; Benjamin Franklin, in charge of the colonial post, made employees swear not to open letters, and later laws protected the mail - from which Solove concludes that privacy is 'not just found but constructed'.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "This example illustrates that privacy is not just found but constructed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "In the late eighteenth and early nineteenth centuries, Congress passed several laws prohibiting the improper opening of mail.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "In colonial America, mail was often insecure; it was difficult to seal letters; and the wax often used to keep letters sealed was not very effective.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Citing Robert Ellis Smith and Flaherty (1972). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Benjamin Franklin, who was in charge of the colonial mails, required his employees to swear an oath not to open mail.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "warren-brandeis-1890-right-to-privacy",
+   "topic": "law",
+   "statement": "On 15 December 1890 Samuel Warren and Louis Brandeis argued in the Harvard Law Review that 'instantaneous photographs and newspaper enterprise' had invaded 'the sacred precincts of private and domestic life' and that the common law should protect what Judge Thomas Cooley had called the right 'to be let alone'.",
+   "sources": [
+    {
+     "institution": "University of Louisville, Louis D. Brandeis School of Law Library (Brandeis Collection)",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harvard Law Review 193",
+     "date": "1890-12-15",
+     "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+     "quote": "Instantaneous photographs and newspaper enterprise have invaded the sacred precincts of private and domestic life; and numerous mechanical devices threaten to make good the prediction that \"what is whispered in the closet shall be proclaimed from the house-tops.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Harvard Law Review vol. 4, no. 5, pp. 193-220; the issue date 15 December 1890 is from Crossref metadata for DOI 10.2307/1321160 (https://api.crossref.org/works/10.2307/1321160, published-print 1890-12-15). The Louisville page gives \"4 Harvard Law Review 193 (1890)\"."
+    },
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy (substantive revision 19 October 2023)",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "Focusing in large part on increasing levels of publicity enabled by the burgeoning newspaper industry and recent inventions such as photography, they emphasized the invasion of privacy brought about by the public dissemination of details relating to a person's private life.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "University of Louisville, Louis D. Brandeis School of Law Library (Brandeis Collection)",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harvard Law Review 193",
+     "date": "1890-12-15",
+     "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+     "quote": "Recent inventions and business methods call attention to the next step which must be taken for the protection of the person, and for securing to the individual what Judge Cooley calls the right \"to be let alone.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Footnote 10 of the article: \"Cooley on Torts, 2d ed., p. 29.\" (1888)."
+    }
+   ]
+  },
+  {
+   "id": "brandeis-olmstead-1928",
+   "topic": "law",
+   "statement": "Dissenting in Olmstead v. United States (4 June 1928), a wiretapping case, Justice Brandeis called the right to be let alone 'the most comprehensive of rights and the right most valued by civilized men'.",
+   "sources": [
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Olmstead v. United States, 277 U.S. 438 (1928), Brandeis J. dissenting",
+     "date": "1928-06-04",
+     "url": "https://www.law.cornell.edu/supremecourt/text/277/438",
+     "quote": "They conferred, as against the government, the right to be let alone-the most comprehensive of rights and the right most valued by civilized men.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The LII text renders the dash as a hyphen (\"alone-the\"). Decided June 4, 1928."
+    }
+   ]
+  },
+  {
+   "id": "griswold-1965-penumbras",
+   "topic": "law",
+   "statement": "The U.S. Constitution contains no express right to privacy; in Griswold v. Connecticut (7 June 1965) the Supreme Court found 'zones of privacy' in the penumbras of the Bill of Rights, while Justice Black, dissenting, called privacy 'a broad, abstract and ambiguous concept'.",
+   "sources": [
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965)",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "The foregoing cases suggest that specific guarantees in the Bill of Rights have penumbras, formed by emanations from those guarantees that help give them life and substance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965)",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "Various guarantees create zones of privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Black J. dissenting",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "'Privacy' is a broad, abstract and ambiguous concept which can easily be shrunken in meaning but which can also, on the other hand, easily be interpreted as a constitutional ban against many things other than searches and seizures.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of India, via Indian Kanoon",
+     "title": "Justice K.S. Puttaswamy (Retd.) v. Union of India (survey of US Supreme Court decisions)",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "The US Constitution does not contain an express right to privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "udhr-article-12-1948",
+   "topic": "law",
+   "statement": "The Universal Declaration of Human Rights, proclaimed by the UN General Assembly in Paris on 10 December 1948, made privacy an international human right: 'No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence'.",
+   "sources": [
+    {
+     "institution": "United Nations",
+     "title": "Universal Declaration of Human Rights, Article 12",
+     "date": "1948-12-10",
+     "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+     "quote": "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "United Nations",
+     "title": "Universal Declaration of Human Rights (introduction)",
+     "date": "1948-12-10",
+     "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+     "quote": "the Declaration was proclaimed by the United Nations General Assembly in Paris on 10 December 1948 ( General Assembly resolution 217 A ) as a common standard of achievements for all peoples and all nations.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "echr-1950-and-iccpr-1966",
+   "topic": "law",
+   "statement": "Treaties followed the Declaration: the European Convention on Human Rights (signed in Rome, 4 November 1950) protects 'private and family life', home and correspondence in Article 8, and the UN's International Covenant on Civil and Political Rights (adopted 16 December 1966) does so in Article 17.",
+   "sources": [
+    {
+     "institution": "UN Office of the High Commissioner for Human Rights (archived copy)",
+     "title": "International Covenant on Civil and Political Rights, Article 17",
+     "date": "1966-12-16",
+     "url": "https://web.archive.org/web/2025/https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights",
+     "quote": "1. No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour and reputation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "OHCHR returns 403 to scripts; read from the Internet Archive copy. The page header gives \"ADOPTED 16 December 1966 BY General Assembly resolution 2200A (XXI)\". The Covenant entered into force in 1976."
+    },
+    {
+     "institution": "Council of Europe / European Court of Human Rights",
+     "title": "Convention for the Protection of Human Rights and Fundamental Freedoms, Article 8",
+     "date": "1950-11-04",
+     "url": "https://www.echr.coe.int/documents/d/echr/convention_ENG",
+     "quote": "Everyone has the right to respect for his private and family life, his home and his correspondence.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "gc16-1988-data-banks",
+   "topic": "information-turn",
+   "statement": "In 1988 the UN Human Rights Committee's General Comment 16 read Article 17 as covering data: holding personal information on computers and data banks must be regulated by law, and every individual should be able to learn, in intelligible form, whether data about them is stored and for what purposes.",
+   "sources": [
+    {
+     "institution": "University of Minnesota Human Rights Library (text of UN document HRI/GEN/1/Rev.1)",
+     "title": "Human Rights Committee, General Comment No. 16: Article 17 (Right to Privacy)",
+     "date": "1988",
+     "url": "https://hrlibrary.umn.edu/gencomm/hrcom16.htm",
+     "quote": "The gathering and holding of personal information on computers, databanks and other devices, whether by public authorities or private individuals or bodies, must be regulated by law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Adopted 8 April 1988 at the Committee's thirty-second session (the UMN header says \"Twenty-third session, 1988\", an apparent error). The UN treaty-body database offers only a .doc file."
+    },
+    {
+     "institution": "University of Minnesota Human Rights Library (text of UN document HRI/GEN/1/Rev.1)",
+     "title": "Human Rights Committee, General Comment No. 16: Article 17 (Right to Privacy)",
+     "date": "1988",
+     "url": "https://hrlibrary.umn.edu/gencomm/hrcom16.htm",
+     "quote": "In order to have the most effective protection of his private life, every individual should have the right to ascertain in an intelligible form, whether, and if so, what personal data is stored in automatic data files, and for what purposes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "constitutions-with-privacy-171-of-188",
+   "topic": "law",
+   "statement": "Of the 188 national constitutions in force in the Comparative Constitutions Project's Constitute database, 171 (about nine in ten) are coded as providing a right to privacy; the exceptions include countries such as India, France and Japan where courts rather than the text protect it.",
+   "sources": [
+    {
+     "institution": "Constitute Project (Comparative Constitutions Project, University of Texas at Austin / University of Chicago)",
+     "title": "Topics: Right to privacy",
+     "date": "2026-09-23",
+     "url": "https://www.constituteproject.org/topics/privacy?lang=en",
+     "quote": "Grants individuals protection against government intrusion into their property, papers, person, or communications without proper authorization. Also protects against such intrusions by private individuals.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Topic definition. Counts computed on 2026-09-23 from the Constitute API: 171 in-force constitutions returned by https://www.constituteproject.org/service/constopicsearch?key=privacy&in_force=true&lang=en out of 188 in force (https://www.constituteproject.org/service/constitutions?in_force=true&lang=en). In-force constitutions not coded for privacy: Afghanistan, Antigua and Barbuda, Australia, Austria, Bahamas, Brunei, Canada, Czech Republic, France, India, Indonesia, Japan, Malaysia, Palau, Samoa, Singapore, Sri Lanka. Coding is of constitutional text only."
+    }
+   ],
+   "note": "The count is our computation from the Constitute API, not a figure the project publishes; it depends on Constitute's coding and on which constitutions it holds. The claim that courts protect privacy in India, France and Japan rests on the Puttaswamy, Article 9 and 1964 facts elsewhere in this file."
+  },
+  {
+   "id": "puttaswamy-2017-nine-judges",
+   "topic": "law",
+   "statement": "On 24 August 2017 all nine judges of a Supreme Court of India bench signed the order in Justice K.S. Puttaswamy (Retd.) v. Union of India overruling earlier cases and holding that privacy is protected as an intrinsic part of the right to life and personal liberty under Article 21.",
+   "sources": [
+    {
+     "institution": "Supreme Court of India, via Indian Kanoon",
+     "title": "Justice K.S. Puttaswamy (Retd.) v. Union of India, Order of the Court, 24 August 2017",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "(iii) The right to privacy is protected as an intrinsic part of the right to life and personal liberty under Article 21 and as a part of the freedoms guaranteed by Part III of the Constitution.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The Order of the Court is signed by all nine judges; it also overrules M P Sharma (1954) and Kharak Singh (1962) to the extent they held privacy unprotected."
+    },
+    {
+     "institution": "Supreme Court of India, via Indian Kanoon",
+     "title": "Justice K.S. Puttaswamy (Retd.) v. Union of India, Order of the Court, 24 August 2017",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "(i) The decision in M P Sharma which holds that the right to privacy is not protected by the Constitution stands over-ruled;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of India, via Indian Kanoon",
+     "title": "Justice K.S. Puttaswamy (Retd.) v. Union of India, judgment of 24 August 2017",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "On 18 July 2017, a Constitution Bench presided over by the learned Chief Justice considered it appropriate that the issue be resolved by a Bench of nine judges",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "miller-1971-assault-on-privacy",
+   "topic": "information-turn",
+   "statement": "By 1971 the threat was framed as the computer file: Arthur R. Miller's book was titled The Assault on Privacy: Computers, Data Banks, and Dossiers, and in it he called privacy 'exasperatingly vague and evanescent'.",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "Arthur Miller has declared that privacy is \"difficult to define because it is exasperatingly vague and evanescent.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    },
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "ARTHUR R. MILLER, THE ASSAULT ON PRIVACY: COMPUTERS, DATA BANKS, AND DOSSIERS 25 (1971).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Solove footnote 2 (citation of the quoted page)."
+    }
+   ],
+   "note": "Miller's book itself was not read; both the title and the quotation come from Solove's citation."
+  },
+  {
+   "id": "zuboff-2015-surveillance-capitalism",
+   "topic": "information-turn",
+   "statement": "In 2015 Shoshana Zuboff named 'surveillance capitalism': a logic of accumulation, read through Google's practices, whose mechanisms of extraction and control 'exile persons from their own behavior' while creating markets in behavioural prediction.",
+   "sources": [
+    {
+     "institution": "Journal of Information Technology (vol. 30), Springer Nature",
+     "title": "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
+     "date": "2015-04-09",
+     "url": "https://link.springer.com/article/10.1057/jit.2015.5",
+     "quote": "It is constituted by unexpected and often illegible mechanisms of extraction, commodification, and control that effectively exile persons from their own behavior while producing new markets of behavioral prediction and modification.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, as shown on the Springer landing page (published 9 April 2015). The abstract also says Google's practices are \"the primary lens for this analysis\"."
+    },
+    {
+     "institution": "Journal of Information Technology (vol. 30), Springer Nature",
+     "title": "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
+     "date": "2015-04-09",
+     "url": "https://link.springer.com/article/10.1057/jit.2015.5",
+     "quote": "The institutionalizing practices and operational assumptions of Google Inc. are the primary lens for this analysis as they are rendered in two recent articles authored by Google Chief Economist Hal Varian.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "hughes-1993-privacy-not-secrecy",
+   "topic": "personas",
+   "statement": "On 9 March 1993 Eric Hughes's 'A Cypherpunk's Manifesto' distinguished privacy from secrecy - 'the power to selectively reveal oneself to the world' - and argued that people must defend it themselves, with code and cryptography.",
+   "sources": [
+    {
+     "institution": "activism.net (Cypherpunks archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "activism.net (Cypherpunks archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "We must defend our own privacy if we expect to have any.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page is signed \"Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993\"."
+    },
+    {
+     "institution": "activism.net (Cypherpunks archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "Cypherpunks deplore regulations on cryptography, for encryption is fundamentally a private act.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "zimmermann-1991-pgp",
+   "topic": "personas",
+   "statement": "Phil Zimmermann's essay 'Why I Wrote PGP', part of the original 1991 PGP user's guide, argued that people need strong encryption for private email, warning: 'If privacy is outlawed, only outlaws will have privacy.'",
+   "sources": [
+    {
+     "institution": "Philip Zimmermann (author's site)",
+     "title": "Phil Zimmermann, 'Why I Wrote PGP' (Part of the Original 1991 PGP User's Guide, updated in 1999)",
+     "date": "1991 (updated 1999)",
+     "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+     "quote": "If privacy is outlawed, only outlaws will have privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Philip Zimmermann (author's site)",
+     "title": "Phil Zimmermann, 'Why I Wrote PGP' (Part of the Original 1991 PGP User's Guide, updated in 1999)",
+     "date": "1991 (updated 1999)",
+     "url": "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
+     "quote": "Whatever it is, you don't want your private electronic mail (email) or confidential documents read by anyone else.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "The online text is the 1999 update of the 1991 essay; wording may differ from the 1991 original."
+  },
+  {
+   "id": "mcnealy-1999-zero-privacy",
+   "topic": "personas",
+   "statement": "In January 1999 Sun Microsystems chief executive Scott McNealy told reporters that consumer privacy was a 'red herring': 'You have zero privacy anyway. Get over it.' - a line the FTC's consumer-protection chief called out of line.",
+   "sources": [
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "Jodie Bernstein, director of the Bureau of Consumer Protection at the Federal Trade Commission, said that McNealy's remarks were out of line.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "The chief executive officer of Sun Microsystems said Monday that consumer privacy issues are a \"red herring.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "solove-2013-privacy-self-management",
+   "topic": "consent",
+   "statement": "Solove (2013) named the dominant model 'privacy self-management' - notice, access and consent, largely unchanged since the 1970s - and argued it 'does not provide people with meaningful control', because consent legitimises nearly any use of data and there are too many data collectors to manage one by one.",
+   "sources": [
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "Policymakers have proposed and passed significant new regulation in the United States and abroad, yet the basic approach to protecting privacy has remained largely unchanged since the 1970s.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "Privacy self-management does not provide people with meaningful control over their data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "Consent legitimizes nearly any form of collection, use, or disclosure of personal data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "There are too many entities collecting and using personal data to make it feasible for people to manage their privacy separately with each entity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "nissenbaum-2011-transparency-paradox",
+   "topic": "consent",
+   "statement": "Nissenbaum (2011) called notice-and-consent's core flaw its assumption that individuals can grasp every relevant fact at the moment of 'pair-wise contracting' with a data gatherer, and named the 'transparency paradox': detailed notices go unread, simple ones leave out what matters.",
+   "sources": [
+    {
+     "institution": "Daedalus (vol. 140, no. 4), American Academy of Arts & Sciences - copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'A Contextual Approach to Privacy Online'",
+     "date": "2011",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf",
+     "quote": "I view this as a futile effort because of what I call the transparency paradox.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Daedalus (vol. 140, no. 4), American Academy of Arts & Sciences - copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'A Contextual Approach to Privacy Online'",
+     "date": "2011",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf",
+     "quote": "Proposals to improve and fortify notice-and-consent, such as clearer privacy policies and fairer information practices, will not overcome a fundamental flaw in the model, namely, its assumption that individuals can understand all facts relevant to true choice at the moment of pair-wise contracting between individuals and data gatherers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "mcdonald-cranor-2008-201-hours",
+   "topic": "consent",
+   "statement": "Researchers at Carnegie Mellon University estimated in 2008 that reading the privacy policies of the sites an American visits would take about 201 hours a year, worth about $3,534 per internet user and about $781 billion nationally.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society (2008 Privacy Year in Review) - authors' pre-press version",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society (2008 Privacy Year in Review) - authors' pre-press version",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "note": "Both authors were at Carnegie Mellon University (author note on the first page of the pre-press PDF). The estimate assumes each policy is read once a year."
+  },
+  {
+   "id": "searls-2019-proffer-as-first-parties",
+   "topic": "personas",
+   "statement": "Doc Searls, founder of ProjectVRM and co-founder of Customer Commons, wrote in 2019 that privacy online cannot be 'a grace of privacy policies' written by each company, and that individuals should proffer terms 'as first parties' which sites agree to, with both keeping records.",
+   "sources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Doc Searls, 'If Your Privacy Is in the Hands of Others Alone, You Don't Have Any'",
+     "date": "2019-01-09",
+     "url": "https://www.linuxjournal.com/content/if-your-privacy-hands-others-alone-you-dont-have-any",
+     "quote": "And we need to be clear that privacy is not a grace of privacy policies and terms of service that differ with every company and over which none of us have true control",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Linux Journal",
+     "title": "Doc Searls, 'If Your Privacy Is in the Hands of Others Alone, You Don't Have Any'",
+     "date": "2019-01-09",
+     "url": "https://www.linuxjournal.com/content/if-your-privacy-hands-others-alone-you-dont-have-any",
+     "quote": "Sites and services can agree to those terms, and both can keep records and follow audit trails.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Preceding sentence (split by a link in the page text): \"We (a few colleagues and I) created Customer Commons as a place for terms that individuals can proffer as first parties, just by pointing at them\". His bio on the page: he \"continues to run ProjectVRM, which he launched at the BKC in 2006, and is a co-founder and board member of its nonprofit spinoff, Customer Commons.\""
+    }
+   ]
+  },
+  {
+   "id": "ieee-7012-2025-published",
+   "topic": "terms",
+   "statement": "IEEE 7012-2025, the Standard for Machine Readable Personal Privacy Terms, was approved by the IEEE Standards Board on 4 November 2025 and published on 20 January 2026; it describes how individuals, 'acting as first parties', proffer privacy terms that the other side accepts and both sides record.",
+   "sources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: \"PAR Approval 2017-12-06\", \"Board Approval 2025-11-04\", \"Published: 2026-01-20\"; scope names \"websites, applications and AI agents\"."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
     }
    ]
   }
@@ -128,8 +1340,588 @@
      "note": "Secondary reproduction of the 1958 text (p. 38)."
     }
    ]
+  },
+  {
+   "id": "q-littre-vie-privee-muree",
+   "quote": "La vie privée doit être murée, il n'est pas permis de chercher et de faire connaître ce qui se passe dans la maison d'un particulier.",
+   "speaker": "Maxim quoted in Littré (commonly attributed to Royer-Collard)",
+   "work": "Dictionnaire de la langue française, entry \"privé\"",
+   "year": 1872,
+   "url": "https://www.littre.org/definition/priv%C3%A9",
+   "note": "The wall as the emblem of privacy, in one line. Translation: \"Private life must be walled in; it is not permitted to seek out and make known what happens in a private person's house.\" Attribution to Royer-Collard (1819) is conventional but unverified - credit it to Littré.",
+   "sources": [
+    {
+     "institution": "Littré, Dictionnaire de la langue française (online edition, littre.org)",
+     "title": "privé",
+     "date": "1872-1877 (online 2026)",
+     "url": "https://www.littre.org/definition/priv%C3%A9",
+     "quote": "La vie privée doit être murée, il n'est pas permis de chercher et de faire connaître ce qui se passe dans la maison d'un particulier.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "translation": "Private life must be walled in; it is not permitted to seek out and make known what happens in a private person's house."
+  },
+  {
+   "id": "q-bverfg-1983-who-knows-what",
+   "quote": "A societal order, and its underlying legal order, would not be compatible with the right to informational self-determination if citizens were no longer able to tell who knows what kind of personal information about them, at what time and on which occasion.",
+   "speaker": "Federal Constitutional Court of Germany (First Senate)",
+   "work": "Census Act judgment, 1 BvR 209/83",
+   "year": 1983,
+   "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html",
+   "note": "The line that moved privacy from the walls of the home to the flow of records. German original: \"...in der Bürger nicht mehr wissen können, wer was wann und bei welcher Gelegenheit über sie weiß.\"",
+   "sources": [
+    {
+     "institution": "Bundesverfassungsgericht (Federal Constitutional Court of Germany), official English translation",
+     "title": "Judgment of the First Senate of 15 December 1983, 1 BvR 209/83 et al. (Census Act)",
+     "date": "1983-12-15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html",
+     "quote": "A societal order, and its underlying legal order, would not be compatible with the right to informational self-determination if citizens were no longer able to tell who knows what kind of personal information about them, at what time and on which occasion.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Bundesverfassungsgericht",
+     "title": "Urteil des Ersten Senats vom 15. Dezember 1983 - 1 BvR 209/83 (Volkszählung)",
+     "date": "1983-12-15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1983/12/rs19831215_1bvr020983.html",
+     "quote": "Mit dem Recht auf informationelle Selbstbestimmung wären eine Gesellschaftsordnung und eine diese ermöglichende Rechtsordnung nicht vereinbar, in der Bürger nicht mehr wissen können, wer was wann und bei welcher Gelegenheit über sie weiß.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "German original."
+    }
+   ]
+  },
+  {
+   "id": "q-westin-1967-claim",
+   "quote": "Privacy is the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others.",
+   "speaker": "Alan F. Westin",
+   "work": "Privacy and Freedom (Atheneum), p. 7",
+   "year": 1967,
+   "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+   "note": "The definition that framed privacy as control over information for the computer age. Westin wrote the book under the auspices of the Special Committee on Science and Law of the Association of the Bar of the City of New York (Washington and Lee Law Review book note, 1968). Quoted verbatim by Solove (2002).",
+   "sources": [
+    {
+     "institution": "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
+     "title": "Daniel J. Solove, 'Conceptualizing Privacy'",
+     "date": "2002",
+     "url": "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
+     "quote": "According to Alan Westin: \"Privacy is the ... claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "A page break (p. 1109/1110) falls between \"Privacy is the\" and \"claim\" in the PDF; the ellipsis marks that break only - no words are omitted. Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/"
+    }
+   ]
+  },
+  {
+   "id": "q-cohen-2013-emergent",
+   "quote": "Privacy shelters dynamic, emergent subjectivity from the efforts of commercial and government actors to render individuals and communities fixed, transparent, and predictable.",
+   "speaker": "Julie E. Cohen",
+   "work": "'What Privacy Is For', Harvard Law Review 126",
+   "year": 2013,
+   "url": "https://harvardlawreview.org/print/vol-126/what-privacy-is-for/",
+   "note": "Cohen recasts privacy as the room a self needs in order to develop - useful for the essay's turn to data-driven prediction.",
+   "sources": [
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Julie E. Cohen, 'What Privacy Is For'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/what-privacy-is-for/",
+     "quote": "Privacy shelters dynamic, emergent subjectivity from the efforts of commercial and government actors to render individuals and communities fixed, transparent, and predictable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-coke-1604-castle",
+   "quote": "That the house of every one is to him as his Castle and Fortress as well for defence against injury and violence, as for his repose;",
+   "speaker": "Sir Edward Coke (reporting Semayne's Case)",
+   "work": "Semayne's Case, 5 Co. Rep. 91a",
+   "year": 1604,
+   "url": "https://oll.libertyfund.org/quotes/sir-edward-coke-declares-that-your-house-is-your-castle-and-fortress-1604",
+   "note": "The source of \"a man's home is his castle\" - privacy as a wall the law will defend. Note \"for his repose\": rest and quiet, not only safety.",
+   "sources": [
+    {
+     "institution": "Online Library of Liberty (Liberty Fund), from Selected Writings of Sir Edward Coke, vol. I",
+     "title": "Sir Edward Coke declares that your house is your 'Castle and Fortress' (1604)",
+     "date": "1604 (reprinted 2003)",
+     "url": "https://oll.libertyfund.org/quotes/sir-edward-coke-declares-that-your-house-is-your-castle-and-fortress-1604",
+     "quote": "That the house of every one is to him as his Castle and Fortress as well for defence against injury and violence, as for his repose;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-warren-brandeis-1890-sacred-precincts",
+   "quote": "Instantaneous photographs and newspaper enterprise have invaded the sacred precincts of private and domestic life; and numerous mechanical devices threaten to make good the prediction that \"what is whispered in the closet shall be proclaimed from the house-tops.\"",
+   "speaker": "Samuel D. Warren and Louis D. Brandeis",
+   "work": "'The Right to Privacy', Harvard Law Review 4:193",
+   "year": 1890,
+   "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+   "note": "The founding text of American privacy law: new technology (the portable camera) plus a new business (the mass press) broke the walls of the home. The \"prediction\" alludes to Luke 12:3.",
+   "sources": [
+    {
+     "institution": "University of Louisville, Louis D. Brandeis School of Law Library (Brandeis Collection)",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harvard Law Review 193",
+     "date": "1890-12-15",
+     "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+     "quote": "Instantaneous photographs and newspaper enterprise have invaded the sacred precincts of private and domestic life; and numerous mechanical devices threaten to make good the prediction that \"what is whispered in the closet shall be proclaimed from the house-tops.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-brandeis-1928-let-alone",
+   "quote": "They conferred, as against the government, the right to be let alone-the most comprehensive of rights and the right most valued by civilized men.",
+   "speaker": "Louis D. Brandeis (dissenting)",
+   "work": "Olmstead v. United States, 277 U.S. 438",
+   "year": 1928,
+   "url": "https://www.law.cornell.edu/supremecourt/text/277/438",
+   "note": "Brandeis, now a Supreme Court justice, dissents when the majority holds that tapping telephone wires outside the home is not a search. \"They\" are the makers of the Constitution. Print as an em dash: \"let alone - the most\".",
+   "sources": [
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Olmstead v. United States, 277 U.S. 438 (1928), Brandeis J. dissenting",
+     "date": "1928-06-04",
+     "url": "https://www.law.cornell.edu/supremecourt/text/277/438",
+     "quote": "They conferred, as against the government, the right to be let alone-the most comprehensive of rights and the right most valued by civilized men.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-puttaswamy-2017-dignity",
+   "quote": "Privacy is the constitutional core of human dignity.",
+   "speaker": "Supreme Court of India (nine-judge bench)",
+   "work": "Justice K.S. Puttaswamy (Retd.) v. Union of India",
+   "year": 2017,
+   "url": "https://indiankanoon.org/doc/91938676/",
+   "note": "From the conclusions of the lead opinion, delivered by Dr Justice D Y Chandrachud for himself, Chief Justice Khehar and Justices Agrawal and Nazeer; five other judges wrote separately.",
+   "sources": [
+    {
+     "institution": "Supreme Court of India, via Indian Kanoon",
+     "title": "Justice K.S. Puttaswamy (Retd.) v. Union of India, judgment of 24 August 2017",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "Privacy is the constitutional core of human dignity. Privacy has both a normative and descriptive function.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-hughes-1993-selectively-reveal",
+   "quote": "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world.",
+   "speaker": "Eric Hughes",
+   "work": "A Cypherpunk's Manifesto",
+   "year": 1993,
+   "url": "https://www.activism.net/cypherpunk/manifesto.html",
+   "note": "Written in the voice of the Cypherpunks (\"We the Cypherpunks are dedicated to building anonymous systems... Cypherpunks write code\"); its definition of privacy as the power to selectively reveal oneself anticipates person-controlled terms. Signed and dated 9 March 1993 on the page.",
+   "sources": [
+    {
+     "institution": "activism.net (Cypherpunks archive)",
+     "title": "Eric Hughes, 'A Cypherpunk's Manifesto'",
+     "date": "1993-03-09",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "quote": "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-mcnealy-1999-get-over-it",
+   "quote": "You have zero privacy anyway. Get over it.",
+   "speaker": "Scott McNealy (CEO, Sun Microsystems)",
+   "work": "Remarks to reporters at the Jini launch, reported by Wired",
+   "year": 1999,
+   "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+   "note": "The industry view of privacy as already lost, said, Wired reported, \"only hours after\" Intel disabled identification features in its forthcoming Pentium III under pressure. Wired prints it as two quoted fragments (\"You have zero privacy anyway,\" ... \"Get over it.\").",
+   "sources": [
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology. \"Get over it.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-solove-2013-no-meaningful-control",
+   "quote": "Privacy self-management does not provide people with meaningful control over their data.",
+   "speaker": "Daniel J. Solove",
+   "work": "'Privacy Self-Management and the Consent Dilemma', Harvard Law Review 126",
+   "year": 2013,
+   "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+   "note": "The standard academic statement of why \"notice and choice\" fails.",
+   "sources": [
+    {
+     "institution": "Harvard Law Review (vol. 126, no. 7)",
+     "title": "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
+     "date": "2013-05",
+     "url": "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
+     "quote": "Privacy self-management does not provide people with meaningful control over their data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-nissenbaum-2011-transparency-paradox",
+   "quote": "I view this as a futile effort because of what I call the transparency paradox.",
+   "speaker": "Helen Nissenbaum",
+   "work": "'A Contextual Approach to Privacy Online', Daedalus 140(4)",
+   "year": 2011,
+   "url": "https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf",
+   "note": "The \"futile effort\" is making privacy policies both short and complete. Pair with her contextual-integrity definition.",
+   "sources": [
+    {
+     "institution": "Daedalus (vol. 140, no. 4), American Academy of Arts & Sciences - copy on the author's Cornell Tech site",
+     "title": "Helen Nissenbaum, 'A Contextual Approach to Privacy Online'",
+     "date": "2011",
+     "url": "https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf",
+     "quote": "I view this as a futile effort because of what I call the transparency paradox.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-zuboff-2015-exile",
+   "quote": "It is constituted by unexpected and often illegible mechanisms of extraction, commodification, and control that effectively exile persons from their own behavior while producing new markets of behavioral prediction and modification.",
+   "speaker": "Shoshana Zuboff",
+   "work": "'Big other: surveillance capitalism and the prospects of an information civilization', Journal of Information Technology 30",
+   "year": 2015,
+   "url": "https://link.springer.com/article/10.1057/jit.2015.5",
+   "note": "\"It\" is what Zuboff calls \"Big Other\", the architecture of surveillance capitalism.",
+   "sources": [
+    {
+     "institution": "Journal of Information Technology (vol. 30), Springer Nature",
+     "title": "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
+     "date": "2015-04-09",
+     "url": "https://link.springer.com/article/10.1057/jit.2015.5",
+     "quote": "It is constituted by unexpected and often illegible mechanisms of extraction, commodification, and control that effectively exile persons from their own behavior while producing new markets of behavioral prediction and modification.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-searls-2019-empty-promise",
+   "quote": "Unless we #OwnRoot for our own lives online, privacy will remain an empty promise by a legion of violators.",
+   "speaker": "Doc Searls",
+   "work": "'If Your Privacy Is in the Hands of Others Alone, You Don't Have Any', Linux Journal",
+   "year": 2019,
+   "url": "https://www.linuxjournal.com/content/if-your-privacy-hands-others-alone-you-dont-have-any",
+   "note": "Searls, editor-in-chief of Linux Journal and founder of ProjectVRM, argues the person must be the first party. \"#OwnRoot\" borrows the Unix term for full administrative control, a phrase he credits to Devon Loffreto.",
+   "sources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Doc Searls, 'If Your Privacy Is in the Hands of Others Alone, You Don't Have Any'",
+     "date": "2019-01-09",
+     "url": "https://www.linuxjournal.com/content/if-your-privacy-hands-others-alone-you-dont-have-any",
+     "quote": "Unless we #OwnRoot for our own lives online, privacy will remain an empty promise by a legion of violators.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "q-projectvrm-2025-first-party",
+   "quote": "With MyTerms, the person (and their electronic agent) is the first party, and the corporate entity (with its agent) is the second party.",
+   "speaker": "ProjectVRM (Berkman Klein Center project founded by Doc Searls)",
+   "work": "'The MyTerms PAR'",
+   "year": 2025,
+   "url": "https://projectvrm.org/2025/04/06/myterms/",
+   "note": "The thesis of the site in one sentence: a reversal of who writes the terms. Posted by the ProjectVRM account, not signed by an individual.",
+   "sources": [
+    {
+     "institution": "ProjectVRM",
+     "title": "'The MyTerms PAR'",
+     "date": "2025-04-06",
+     "url": "https://projectvrm.org/2025/04/06/myterms/",
+     "quote": "With MyTerms, the person (and their electronic agent) is the first party, and the corporate entity (with its agent) is the second party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
   }
  ],
- "outline": [],
- "myths": []
+ "outline": [
+  {
+   "heading": "1. A word that meant 'deprived'",
+   "points": [
+    "latin-privatus-privare",
+    "privacy-enters-english-1590s",
+    "greek-oikos-polis-idion-koinon",
+    "arendt-privative-to-intimate"
+   ]
+  },
+  {
+   "heading": "2. Every culture draws the line somewhere",
+   "points": [
+    "westin-animal-origins",
+    "altman-1977-universal-process",
+    "moore-1984-socially-created-need",
+    "hippocratic-oath-confidentiality",
+    "mishnah-windows-courtyard",
+    "arabic-islamic-hurma-and-quran"
+   ]
+  },
+  {
+   "heading": "3. Walls, rooms and seals",
+   "points": [
+    "coke-semayne-castle-1604",
+    "rooms-and-the-private-home",
+    "confessional-borromeo-1577",
+    "french-vie-privee-walled",
+    "letterlocking-and-the-brienne-trunk",
+    "privacy-of-letters-constructed",
+    "ex-parte-jackson-sealed-letters"
+   ]
+  },
+  {
+   "heading": "4. From the wall to the right",
+   "points": [
+    "warren-brandeis-1890-right-to-privacy",
+    "brandeis-olmstead-1928",
+    "griswold-1965-penumbras",
+    "udhr-article-12-1948",
+    "echr-1950-and-iccpr-1966",
+    "constitutions-with-privacy-171-of-188",
+    "puttaswamy-2017-nine-judges",
+    "japan-puraibashii-1964",
+    "chinese-yinsi-shameful-secret",
+    "china-civil-code-1032-defines-privacy"
+   ]
+  },
+  {
+   "heading": "5. From the house to the record",
+   "points": [
+    "westin-1967-definition",
+    "miller-1971-assault-on-privacy",
+    "german-privatsphaere-and-informational-self-determination",
+    "gc16-1988-data-banks",
+    "hughes-1993-privacy-not-secrecy",
+    "zimmermann-1991-pgp",
+    "mcnealy-1999-zero-privacy",
+    "zuboff-2015-surveillance-capitalism"
+   ]
+  },
+  {
+   "heading": "6. What privacy is: a concept in dispute",
+   "points": [
+    "thomson-1975-reductionism",
+    "gavison-1980-limited-access",
+    "solove-2002-no-single-definition",
+    "nissenbaum-2004-contextual-integrity",
+    "cohen-2013-emergent-subjectivity"
+   ]
+  },
+  {
+   "heading": "7. Consent, its critics, and terms the person writes",
+   "points": [
+    "solove-2013-privacy-self-management",
+    "nissenbaum-2011-transparency-paradox",
+    "mcdonald-cranor-2008-201-hours",
+    "searls-2019-proffer-as-first-parties",
+    "ieee-7012-2025-published"
+   ]
+  }
+ ],
+ "quant": [
+  {
+   "id": "constitutions-with-privacy-right-2026",
+   "label": "National constitutions in force coded as providing a right to privacy",
+   "value": 171,
+   "unit": "constitutions (of 188 in force in the Constitute database)",
+   "year": 2026,
+   "geography": "World",
+   "notes": "Computed on 2026-09-23 from the Constitute Project API (topic key \"privacy\", in_force=true) against its list of 188 in-force constitutions: 171/188 = 91%. Text-based coding: countries whose courts, not their constitutional text, protect privacy (e.g. India, France, Japan) are among the 17 not coded.",
+   "sources": [
+    {
+     "institution": "Constitute Project (Comparative Constitutions Project)",
+     "title": "Topics: Right to privacy",
+     "date": "2026-09-23",
+     "url": "https://www.constituteproject.org/topics/privacy?lang=en",
+     "quote": "Grants individuals protection against government intrusion into their property, papers, person, or communications without proper authorization. Also protects against such intrusions by private individuals.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Count endpoints (API): https://www.constituteproject.org/service/constopicsearch?key=privacy&in_force=true&lang=en and https://www.constituteproject.org/service/constitutions?in_force=true&lang=en"
+    }
+   ]
+  },
+  {
+   "id": "hours-to-read-privacy-policies-2008",
+   "label": "Time an American internet user would need to read the privacy policies of sites visited",
+   "value": 201,
+   "unit": "hours per year",
+   "year": 2008,
+   "geography": "United States",
+   "notes": "McDonald and Cranor's central estimate; valued at about $3,534 per user and about $781 billion nationally. Assumes each policy is read once a year.",
+   "sources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society (2008 Privacy Year in Review) - authors' pre-press version",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ],
+ "myths": [
+  {
+   "id": "myth-warren-brandeis-coined-let-alone",
+   "claim": "Warren and Brandeis coined the phrase 'the right to be let alone' in 1890.",
+   "verdict": "FALSE",
+   "correction": "Their article itself credits the phrase to Judge Thomas Cooley's treatise on torts (2nd edition, 1888, p. 29). What Warren and Brandeis did was to argue that the common law already contained a general right to privacy.",
+   "sources": [
+    {
+     "institution": "University of Louisville, Louis D. Brandeis School of Law Library (Brandeis Collection)",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harvard Law Review 193",
+     "date": "1890-12-15",
+     "url": "https://louisville.edu/law/library/special-collections/the-louis-d.-brandeis-collection/the-right-to-privacy",
+     "quote": "securing to the individual what Judge Cooley calls the right \"to be let alone.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-warren-daughter-wedding",
+   "claim": "Samuel Warren wrote 'The Right to Privacy' because Boston newspapers intruded on his daughter's wedding.",
+   "verdict": "FALSE",
+   "correction": "The story cannot be true: Warren's daughter was about six years old in 1890. Scholars repeated it for decades, in part because Dean William Prosser's influential 1960 article on privacy told it.",
+   "sources": [
+    {
+     "institution": "Harvard Law Review Forum (vol. 129)",
+     "title": "Charles E. Colman, 'About Ned'",
+     "date": "2016-01",
+     "url": "https://harvardlawreview.org/forum/vol-129/about-ned/",
+     "quote": "As Banner notes, this conventional account must be apocryphal, given that Warren's daughter was only six years old when her father took the lead on the 1890 article.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Colman cites the legal historian Stuart Banner."
+    },
+    {
+     "institution": "Harvard Law Review Forum (vol. 129)",
+     "title": "Charles E. Colman, 'About Ned'",
+     "date": "2016-01",
+     "url": "https://harvardlawreview.org/forum/vol-129/about-ned/",
+     "quote": "Despite the chronological impossibility of this story, scholars echoed it for decades (likely due, in part, to its appearance in another influential law review article on privacy, written by Dean William Prosser in 1960 9 ).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "\"9\" is a footnote marker in the page text."
+    }
+   ]
+  },
+  {
+   "id": "myth-us-constitution-says-privacy",
+   "claim": "The U.S. Constitution guarantees a right to privacy in so many words.",
+   "verdict": "MISLEADING",
+   "correction": "The Constitution contains no express right to privacy. The Fourth Amendment protects 'persons, houses, papers, and effects' against unreasonable searches; the Supreme Court inferred wider 'zones of privacy' from the Bill of Rights in Griswold v. Connecticut (1965), over dissents objecting that no specific provision named it.",
+   "sources": [
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Black J. dissenting",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "I like my privacy as well as the next one, but I am nevertheless compelled to admit that government has a right to invade it unless prohibited by some specific constitutional provision.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of India, via Indian Kanoon",
+     "title": "Justice K.S. Puttaswamy (Retd.) v. Union of India (survey of US Supreme Court decisions)",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "The US Constitution does not contain an express right to privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965)",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "Various guarantees create zones of privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Legal Information Institute, Cornell Law School",
+     "title": "U.S. Constitution, Fourth Amendment",
+     "date": "1791",
+     "url": "https://www.law.cornell.edu/constitution/fourth_amendment",
+     "quote": "The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  },
+  {
+   "id": "myth-privacy-modern-western-invention",
+   "claim": "Privacy is a modern Western invention that other cultures lack.",
+   "verdict": "MISLEADING",
+   "correction": "Privacy norms appear in ancient and non-Western sources - the Hippocratic Oath, the Mishnah's rule on windows, the Qur'an's command to seek permission before entering a house - and anthropologists such as Irwin Altman found privacy regulation in every culture they examined, though by culturally specific means. What is modern is the legal 'right to privacy' (from 1890) and the idea of privacy as control over data.",
+   "sources": [
+    {
+     "institution": "Journal of Social Issues (vol. 33, no. 3), abstract via Crossref",
+     "title": "Irwin Altman, 'Privacy Regulation: Culturally Universal or Culturally Specific?'",
+     "date": "1977-07",
+     "url": "https://api.crossref.org/works/10.1111/j.1540-4560.1977.tb01883.x",
+     "quote": "It is concluded that privacy is a universal process that involves culturally unique regulatory mechanisms.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API"
+    },
+    {
+     "institution": "Quran.com API (Saheeh International translation)",
+     "title": "Qur'an 24:27 (Surat an-Nur)",
+     "date": "c. 7th century CE (trans. 1997)",
+     "url": "https://api.quran.com/api/v4/quran/translations/20?verse_key=24:27",
+     "quote": "O you who have believed, do not enter houses other than your own houses until you ascertain welcome and greet [...] their inhabitants.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "[...] marks only the translator's footnote marker in the API text."
+    }
+   ]
+  },
+  {
+   "id": "myth-chinese-japanese-no-word-for-privacy",
+   "claim": "Chinese and Japanese have no word for privacy.",
+   "verdict": "MISLEADING",
+   "correction": "Chinese has yinsi (隐私), long carrying a connotation of shameful secrets but now defined in Article 1032 of China's 2020 Civil Code; Japanese adopted the loanword puraibashii, which spread after a 1964 Tokyo court judgment. The words are newer or differently weighted than the English one - not absent.",
+   "sources": [
+    {
+     "institution": "National People's Congress of the People's Republic of China (npc.gov.cn)",
+     "title": "“典”亮我们的生活丨“个人隐私”不可侵扰 (Civil Code explainer, with text of Arts. 1032-1033)",
+     "date": "2020-12-16",
+     "url": "http://www.npc.gov.cn/npc/c2/c30834/202012/t20201216_309218.html",
+     "quote": "隐私是自然人的私人生活安宁和不愿为他人知晓的私密空间、私密活动、私密信息。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: \"Privacy is a natural person's tranquillity of private life and the private space, private activities and private information that he or she does not wish others to know.\""
+    },
+    {
+     "institution": "Personal Information Protection Commission, Japan (speech by Chairman Masao Horibe, ICDPPC, Hong Kong)",
+     "title": "Privacy Culture and Data Protection Laws in Japan",
+     "date": "2017-09",
+     "url": "https://www.ppc.go.jp/files/pdf/290928_en_horibespeech.pdf",
+     "quote": "Due to this court decision and many other backgrounds, the Japanese term of \"puraibashii\", which is a phonetic spelling of an English word \"privacy\", has been widely used in our society.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ]
+  }
+ ]
 }

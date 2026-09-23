@@ -1,0 +1,222 @@
+{
+  "slice": "internet",
+  "chunk": 4,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "searls-intention-economy-book-hbr-press-2012",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND. The same page lists 'Dictate their own terms of service' among the goals of a 'near future', says ProjectVRM was one 'which Doc launched at the Berkman Center in 2006', and gives the talk as 'Monday, June 11, 6:00 pm Austin East Classroom, Austin Hall, Harvard Law School'. The page itself shows no year; 11 June 2012 was a Monday, and the URL path is /events/2012/05/, which fits."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND. The archive.org metadata API gives date '2012', ISBN 9781422158524 and LCCN 2011053277. The catalogue description also says consumers will be able to 'dictate their own terms of service'. Retail listings give 1 May 2012; that day was not checked against the publisher."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "white-house-privacy-bill-of-rights-and-ftc-report-2012",
+      "status": "OK",
+      "issues": [
+        "No errors found. One nuance: the 90% commitment was announced by the advertising networks (the Digital Advertising Alliance) and reported in the White House release. The release puts it as 'committing to act on Do Not Track technology in most major web browsers'. The summary's wording is a fair compression of this."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND. The page <title> and <h1> match the source title (with curly quotes on the page), and the page is dated February 23, 2012. The same paragraph says the networks are 'committing to act on Do Not Track technology in most major web browsers'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND. The cover is dated 'FEBRUARY 2012' and the President's letter 'February 23, 2012'. Individual Control is the first principle listed in the Consumer Privacy Bill of Rights."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND. The quote is attributed on the page to 'Jon Leibowitz, Chairman of the FTC', and the page carries datetime 2012-03-26. The release lists Do-Not-Track as an action item. The report PDF named in the source note was also re-fetched: 'The Commission now also calls on Congress to consider enacting baseline privacy legislation and reiterates its call for data security legislation.' --check FOUND."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "w3c-retires-p3p-and-do-not-track-2018-2019",
+      "status": "FIXED",
+      "issues": [
+        "The summary says the Tracking Protection Working Group 'closed' on 17 January 2019, but none of the cited sources says so. The DNT Note says only that it 'was published by the Tracking Protection Working Group as a Working Group Note', with no mention of the group closing. The W3C's own working-group page confirms the date, so it is added as a source. All other claims checked out: P3P 'obsoleted 30 August 2018'; 'fewer than 6% of the 10,000 most frequently visited websites'; 'No current (2018) user agents'; the DNT Note of 17 January 2019; and Safari 12.1, 'Released March 25, 2019', removing DNT."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND for the quote and for both status-section phrases in the note. The header reads 'W3C Recommendation 16 April 2002 obsoleted 30 August 2018', and the 6% figure is attributed to 'BuiltWith metrics'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND. The header reads 'W3C Working Group Note 17 January 2019', and the page says 'This document was published by the Tracking Protection Working Group as a Working Group Note.' The closure of the group itself is sourced separately (the added source)."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the JSON data file: --check FOUND for the quote and for 'Released March 25, 2019'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "World Wide Web Consortium (W3C)",
+          "title": "Tracking Protection Working Group",
+          "date": "2019-01-17",
+          "url": "https://www.w3.org/2011/tracking-protection/",
+          "quote": "It closed on 17 January 2019.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The full line reads 'The working group is currently closed. It closed on 17 January 2019.' The page lists 'Tracking Preference Expression (DNT)' and 'Tracking Compliance and Scope (TCS)' as retired specifications."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "ftc-1998-sites-with-privacy-policy-notice-pct",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND on p. 27. The report defines 'Privacy Policy Notice' as 'a comprehensive description of a site's information practices that is located in one place on the site', so the label's 'comprehensive' is right. 'These samples' are the Comprehensive, Health, Retail and Financial random samples. Footnote 107 gives '92% of the sites in the Comprehensive Sample' collecting personal information, and the report gives 674 sites in the Comprehensive Sample and 'March 1998' as the survey date. The cover reads 'JUNE 1998'."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "quant",
+      "id": "ftc-1998-sites-with-any-information-practice-disclosure-pct",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND on p. 27. The base of Figure 4 is 'All Web sites in Comprehensive Sample (674)' (Disclosure 14%, No Disclosure 86%). The percentages are of all sites, not only of sites that collect data (that rate is 15%), so the unit '% of sites' is right."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "quant",
+      "id": "cost-of-reading-privacy-policies-hours-per-user-2008",
+      "status": "FIXED",
+      "issues": [
+        "The paper contradicts itself. The '201 hours' in its Discussion and Conclusions section matches neither its tables nor its own arithmetic. Table 7 gives a point estimate of 244 hours a year per user to read (range 181-304) and 154 hours to skim. The text says 'using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day'.",
+        "The $3,534 that the record pairs with 201 hours is actually computed from 244 hours. Table 8 splits it as work $2,791 at $35.86/hour plus home $743 at $4.48/hour, which is 243.7 hours. The national totals rest on the same figure: 221 million users x $3,534 = $781 billion, and 53.8 billion hours / 221 million = 243 hours. The published I/S version (4 I/S 543) has the same inconsistency. The numbers slice (mcdonald-cranor-hours-per-year-reading-privacy-policies) already uses 244.",
+        "The notes said 201 hours assumes word-for-word reading, but the paper's word-for-word point estimate is 244 hours."
+      ],
+      "fieldFixes": {
+        "value": 244,
+        "unit": "hours per year (point estimate)",
+        "notes": "Model estimate, not a measurement. It assumes each American internet user reads, word for word, the privacy policy of every site visited, once a year. Point estimate from the paper's Table 7: 244 hours to read (range 181-304) and 154 hours to skim, about 40 minutes a day. At 25% of wages for time at home and twice wages for time at work, this is worth about $3,534 per user per year. The paper's abstract and conclusion give 'approximately 201 hours a year, worth about $3,534', but 201 hours matches neither its tables nor its $3,534 and $781 billion figures, which are built on 244 hours."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "quote": "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+          "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+          "note": "--check FOUND. The previous quote ('approximately 201 hours a year, worth about $3,534 annually') is also on the page (Section 4), but it contradicts Table 7 (Point Estimate: '244 hours / year' to read, '154 hours / year' to skim). Table 8's $3,534 reading point estimate works out to 244 hours. The URL is Cranor's personal site, not a CMU server, so the institution field is corrected."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (published version; copy hosted by Stanford Law School's Center for Internet and Society)",
+          "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies', 4 I/S 543",
+          "date": "2008",
+          "url": "https://cyberlaw.stanford.edu/content/files/bitstream/handle/1811/72839/isjlp_v4n3_543.pdf",
+          "quote": "using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND in the published version (running head '[Vol. 4:3'). Its conclusion also says 'approximately 201 hours a year, worth about $3,534 annually', so the inconsistency is in the published paper too, not only in the draft."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "cost-of-reading-privacy-policies-national-2008",
+      "status": "FIXED",
+      "issues": [
+        "The value and quote are correct: $781 billion is the national point estimate for reading in Table 8, and --check FOUND. The notes, however, tie it to 'the 201-hour figure'. In fact $781 billion = 221 million users x $3,534, and $3,534 is the value of the 244-hour reading estimate (53.8 billion hours nationally). The 201-hour figure in the paper's conclusion does not match its own tables (see the hours-per-user record)."
+      ],
+      "fieldFixes": {
+        "notes": "Model estimate, not a measurement. It assumes every American internet user (estimated at 221 million) reads, word for word, the privacy policy of every new site visited, once a year. That is about 53.8 billion hours, valued at about $3,534 per user (25% of wages at home, twice wages at work). The paper's range runs from $559.7 billion to $1.1 trillion a year; skimming instead would cost $492 billion."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+          "note": "Re-fetched: --check FOUND (Section 4). Table 8: point estimate for national cost to read '$781 billion / year (work: $617 B; home: $164 B)'; lower bound $559.7 billion; upper bound $1.1 trillion; skimming point estimate $492 billion. Section 3.2 has the same claim: 'the nation would lose the value of about $781 billion from the opportunity cost value of the time to read privacy policies.' The URL is Cranor's personal site, so the institution field is corrected."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (published version; copy hosted by Stanford Law School's Center for Internet and Society)",
+          "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies', 4 I/S 543",
+          "date": "2008",
+          "url": "https://cyberlaw.stanford.edu/content/files/bitstream/handle/1811/72839/isjlp_v4n3_543.pdf",
+          "quote": "Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND in the published version."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "p3p-compact-policies-with-errors-2010",
+      "status": "OK",
+      "issues": [
+        "No errors found. 11,176 / 33,139 = 33.7%. The report's cover gives 'September 10, 2010' and 'CMU-CyLab-10-014', and the authors are Leon, Cranor, McDonald and McGuire. Methodology: CPs were collected in an August 2010 crawl of 55,636 URLs (drawn from the Privacy Finder cache, TRUSTe seal holders, the Quantcast top 100 and 75 opt-out network advertisers), and CPs came back from 33,139 sites."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND in the abstract. The abstract also mentions 'identical invalid CPs that had been recommended as workarounds for IE cookie blocking' and errors that are 'syntax errors or semantic conflicts', which supports the notes."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "quant",
+      "id": "p3p-invalid-compact-policies-left-unblocked-pct-2010",
+      "status": "OK",
+      "issues": [
+        "No errors found. Section 2.3 names the IE levels, including 'Medium (default level)'. Section 5 says that of the 33,139 CPs only '263 CPs with errors were considered unsatisfactory'. (11,176 - 263) / 11,176 = 97.6%, which rounds to the stated 98%."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: --check FOUND in the abstract ('it’s' [sic]). The default 'Medium' setting is confirmed in Section 2.3: 'Medium (default level)'."
+        }
+      ],
+      "addSources": []
+    }
+  ]
+}

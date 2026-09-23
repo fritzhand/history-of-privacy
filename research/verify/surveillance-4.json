@@ -1,0 +1,326 @@
+{
+  "slice": "surveillance",
+  "chunk": 4,
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "sephora-ccpa-settlement-global-privacy-control-2022",
+      "status": "FIXED",
+      "issues": [
+        "The latitude is wrong by one degree. The record gives lat 38.8052, which is in the Sierra foothills. Downtown Oakland, where the California DOJ office at 1515 Clay Street stands, is at about 37.805 N, -122.273 W. The corrected latitude is 37.8052.",
+        "'It was the first publicly disclosed CCPA settlement' is overstated. Private class-action settlements that included CCPA data-breach claims came before August 2022. The sources support something narrower. The AG's own DoorDash release of 21 February 2024 says 'Today’s settlement with DoorDash marks Attorney General Bonta’s second CCPA enforcement settlement'. Arnold & Porter call it the 'second publicly disclosed settlement by the OAG'. The summary now says it was the Attorney General's first publicly disclosed CCPA enforcement settlement.",
+        "The summary said the AG sent notices to businesses 'that were not processing such signals', which states allegations as fact. The release says the notices were 'alleging non-compliance'. The same applies to the title: Sephora settled allegations and did not admit to ignoring GPC. The title and summary are reworded to say this.",
+        "Everything else is confirmed on a fresh fetch. Both OAG quotes are verbatim. The release is dated Wednesday, August 24, 2022 (dc:date 2022-08-24) and datelined OAKLAND. The $1.2 million penalty and the injunctive term to provide an opt-out 'including via the Global Privacy Control' are on the page.",
+        "Arnold & Porter source: the quote is verbatim, and the page date is April 15, 2024, not just '2024-04'."
+      ],
+      "fieldFixes": {
+        "lat": 37.8052,
+        "title": "Sephora pays $1.2 million to settle claims it ignored Global Privacy Control",
+        "summary": "California Attorney General Rob Bonta announced a settlement with Sephora resolving allegations that it failed to disclose that it sold consumers' personal information, failed to process opt-out requests sent via user-enabled global privacy controls, and did not cure these violations within the 30-day period the CCPA then allowed. Sephora agreed to pay $1.2 million in penalties and to provide ways for consumers to opt out of sale, including via the Global Privacy Control; the same day the Attorney General sent notices to other businesses alleging that they were failing to process such signals. It was the Attorney General's first publicly disclosed CCPA enforcement settlement; the second, with DoorDash, came in February 2024."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Page dc:date 2022-08-24 ('Wednesday, August 24, 2022'), datelined OAKLAND. The note's quotes ($1.2 million; 'game changer') are also on the page."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "date": "2024-04-15",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim. The page date is 'April 15, 2024'. It supports only the OAG's ordering (Sephora first, DoorDash second), not 'first CCPA settlement of any kind'."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "California Office of the Attorney General",
+          "title": "Attorney General Bonta Announces Settlement with DoorDash, Investigation Finds Company Violated Multiple Consumer Privacy Laws",
+          "date": "2024-02-21",
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-doordash-investigation-finds-company",
+          "quote": "Today’s settlement with DoorDash marks Attorney General Bonta’s second CCPA enforcement settlement.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Primary source for the ordering. The same release says: 'In August 2022, the Attorney General announced a settlement with Sephora resolving allegations that it failed to disclose to consumers that it was selling their personal information and failed to process opt-out requests via user-enabled global privacy controls in violation of the CCPA.' Release date 'Wednesday, February 21, 2024'. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "ftc-sues-kochava-location-data-broker-2022",
+      "status": "OK",
+      "issues": [
+        "No errors in the record. Both quotes are verbatim on a fresh fetch. The release date is August 29, 2022 (article:published_time 2022-08-29). The 4-1 vote, with Commissioner Phillips voting no, and the filing in the U.S. District Court for the District of Idaho are both on the page.",
+        "The press release does not use the word 'free' for the data sample; it says 'anyone with little effort' could obtain it. The complaint supports 'free': Case 2:22-cv-00377-DCN, Document 1, filed 08/29/22, says Kochava 'has also offered a free sample'. The complaint is added as a source. It also gives the exact figure: 'over 61,803,400 unique mobile devices'.",
+        "The claim that the sample covered the previous week ('in one week') matches the release. The list of sensitive locations (reproductive health clinics, places of worship, homeless and domestic violence shelters, addiction recovery facilities) matches. The FTC HQ coordinates are about right."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Page date August 29, 2022. The note's quotes on the 4-1 vote and the District of Idaho are verbatim on the page."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "US Federal Trade Commission (Complaint, FTC v. Kochava Inc., D. Idaho, Case 2:22-cv-00377-DCN)",
+          "title": "Complaint for Permanent Injunction and Other Relief, FTC v. Kochava Inc.",
+          "date": "2022-08-29",
+          "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/1.%20Complaint.pdf",
+          "quote": "Kochava typically charges a monthly subscription fee of thousands of dollars to access its location data feed but has also offered a free sample (the “Kochava Data Sample”).",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Paragraph 12. Supports 'free data sample'. Page headers read 'Document 1 Filed 08/29/22'. Paragraph 14 gives the exact figure: '327,480,000 rows and 11 columns of data, corresponding to over 61,803,400 unique mobile devices'. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "dpc-fines-meta-1-2-billion-transfers-2023",
+      "status": "OK",
+      "issues": [
+        "No factual errors. Both DPC quotes are verbatim on a fresh fetch, and the release is dated '22nd May 2023'. The following are all on the page: the inquiry commenced in August 2020; the Article 46(1) infringement; the Article 65 referral with the EDPB decision of 13 April 2023; the final decision of 12 May 2023; the suspension order within five months under Art. 58(2)(j); the €1.2 billion fine; and a third order to cease unlawful processing, including storage, within six months, which the summary leaves out.",
+        "displayDate 22 May 2023 is the announcement date. The decision itself was adopted on 12 May 2023. The summary says 'announced', so this is accurate. The source note already records 12 May.",
+        "Neither DPC source supports the 'record' in the title or 'the largest GDPR penalty' in the significance. An independent BBC report of 22 May 2023 is added for that claim. It was the largest at the time.",
+        "The coordinates for Fitzwilliam Square, Dublin are about right."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Release dated '22nd May 2023'; final decision adopted 12 May 2023; EDPB Art. 65 decision 13 April 2023; the Art. 58(2)(j) five-month suspension order is on the page."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23: FOUND verbatim."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "BBC News",
+          "title": "Meta: Facebook owner fined €1.2bn for mishandling data",
+          "date": "2023-05-22",
+          "url": "https://www.bbc.com/news/technology-65669839",
+          "quote": "Issued by Ireland's Data Protection Commission (DPC), it is the largest fine imposed under the EU's General Data Protection Regulation privacy law.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Independent support for 'record' and 'largest GDPR penalty' as of May 2023. Page datePublished 2023-05-22T09:44:52Z. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "eu-us-data-privacy-framework-adopted-2023",
+      "status": "FIXED",
+      "issues": [
+        "The summary said Executive Order 14086 created a Data Protection Review Court. The decision itself says the redress mechanism 'is established, under EO 14086, complemented by the AG Regulation establishing the Data Protection Review Court' (28 CFR part 201). So the court was established by the Attorney General's regulation, not by the EO itself. The summary is corrected.",
+        "The significance called it 'The third transatlantic arrangement in eight years', which is wrong. The three arrangements are Safe Harbor (2000), Privacy Shield (2016) and the DPF (2023), spread over 23 years. What happened within eight years was two replacements after Safe Harbor was struck down in 2015. The significance is corrected.",
+        "Source [1] quote is recital 7, not an operative article. It is also cut off mid-sentence before 'to certified organisations in the United States.' The operative adequacy finding is Article 1, and the summary's wording ('organisations certified under the EU-US Data Privacy Framework') paraphrases Article 1. The quote is replaced with Article 1.",
+        "Also confirmed: recital 6 quote is verbatim; 'Done at Brussels, 10 July 2023'; OJ L 231/118, 20.9.2023; document C(2023)4745. The Berlaymont coordinates are about right."
+      ],
+      "fieldFixes": {
+        "summary": "After Schrems II, the United States adopted Executive Order 14086 on 7 October 2022, setting new limits and safeguards on signals-intelligence activities and a new redress mechanism for Europeans, complemented by an Attorney General regulation establishing a Data Protection Review Court. On 10 July 2023 the Commission adopted Implementing Decision (EU) 2023/1795, finding that the United States ensures an adequate level of protection for personal data transferred from the Union to organisations on the Data Privacy Framework List kept by the US Department of Commerce.",
+        "significance": "The third transatlantic arrangement since 2000 — and the second replacement in eight years after the Court of Justice struck down Safe Harbor in 2015 — it shows how contested the legal plumbing under every data flow remains, and why terms that travel with the person, not the pipe, are attractive."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim in recital 6. The document is the English OJ L 231/118 of 20.9.2023 and ends 'Done at Brussels, 10 July 2023.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "title": "Commission Implementing Decision (EU) 2023/1795 of 10 July 2023, Article 1 — adequacy finding",
+          "quote": "For the purpose of Article 45 of Regulation (EU) 2016/679, the United States ensures an adequate level of protection for personal data transferred from the Union to organisations in the United States that are included in the ‘Data Privacy Framework List’, maintained and made publicly available by the U.S. Department of Commerce, in accordance with Section I.3 of Annex I.",
+          "note": "The old quote was from recital 7 and cut off mid-sentence. It was FOUND, but it is not the operative text. Replaced with Article 1, the operative finding. --check FOUND."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "European Commission (Official Journal of the European Union L 231, 20.9.2023), via EU Publications Office (Cellar)",
+          "title": "Commission Implementing Decision (EU) 2023/1795 — redress mechanism and Data Protection Review Court",
+          "date": "2023-07-10",
+          "url": "https://publications.europa.eu/resource/cellar/abb0ba05-5750-11ee-9220-01aa75ed71a1.0006.03/DOC_1",
+          "quote": "First, a specific redress mechanism is established, under EO 14086, complemented by the AG Regulation establishing the Data Protection Review Court, to handle and resolve complaints from individuals concerning U.S. signals intelligence activities.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Supports the corrected summary: the DPRC was established by the AG Regulation (28 CFR part 201), not by EO 14086 itself. Another recital says EO 14086 sets 'limitations and safeguards for all U.S. signals intelligence activities'. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "quant-equifax-people-affected-2017",
+      "status": "FIXED",
+      "issues": [
+        "Source [0] date '2026' is wrong. The FTC refunds page has article:published_time 2019-07-11 and article:modified_time 2024-11-04. It is corrected to the last-modified date.",
+        "The notes quote the FTC as saying 'approximately 147 million', but the cited page says '147 million people' without 'approximately'. The FTC's own settlement press release of 22 July 2019 has the 'approximately' wording and is added as a source.",
+        "The notes say Equifax's first estimate, on 7 September 2017, was about 143 million US consumers. No source supported this. Equifax's own release is added: 'potentially impacting approximately 143 million U.S. consumers'.",
+        "Geography 'United States (mainly)' is imprecise. The 147 million are US consumers. Equifax said that, in addition, limited information on 'certain UK and Canadian residents' was accessed. Corrected to 'United States' with a note."
+      ],
+      "fieldFixes": {
+        "geography": "United States",
+        "notes": "FTC figure ('approximately 147 million'), for people in the United States; Equifax's first estimate on 7 September 2017 was about 143 million US consumers. Equifax also said limited personal information of certain UK and Canadian residents was accessed."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "date": "2024-11-04",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Page published 2019-07-11, last modified 2024-11-04. It was not dated 2026."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "US Federal Trade Commission",
+          "title": "Equifax to Pay $575 Million as Part of Settlement with FTC, CFPB, and States Related to 2017 Data Breach",
+          "date": "2019-07-22",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+          "quote": "a data breach in 2017 that affected approximately 147 million people",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Source for the 'approximately 147 million' wording. The same release says 'hackers stole at least 147 million names and dates of birth, 145.5 million Social Security numbers, and 209,000 payment card numbers'. --check FOUND."
+        },
+        {
+          "institution": "Equifax Inc. (investor relations press release)",
+          "title": "Equifax Announces Cybersecurity Incident Involving Consumer Information",
+          "date": "2017-09-07",
+          "url": "https://investor.equifax.com/news-events/press-releases/detail/240/equifax-announces-cybersecurity-incident-involving-consumer",
+          "quote": "Equifax Inc. (NYSE: EFX) today announced a cybersecurity incident potentially impacting approximately 143 million U.S. consumers.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Datelined 'ATLANTA, Sept. 7, 2017'. The same release says: 'Equifax also identified unauthorized access to limited personal information for certain UK and Canadian residents.' --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "quant-facebook-users-cambridge-analytica-2018",
+      "status": "OK",
+      "issues": [
+        "No errors. The quote is verbatim on a fresh fetch. The post is by Mike Schroepfer, CTO, datePublished 2018-04-04. The value of 87,000,000, the upper-estimate framing and 'mostly in the US' all match.",
+        "Two claims in the notes had no source. The Observer's first report said 50 million profiles, and about 270,000 people installed the app. Primary sources are added for both: the Observer/Guardian article of 17 March 2018, and Facebook's 16 March 2018 post ('Approximately 270,000 people downloaded the app')."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Byline Mike Schroepfer; article:published_time 2018-04-04."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "The Observer (The Guardian)",
+          "title": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+          "date": "2018-03-17",
+          "url": "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+          "quote": "However, at the time it failed to alert users and took only limited steps to recover and secure the private information of more than 50 million individuals.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "By Carole Cadwalladr and Emma Graham-Harrison. The page metadata gives the publication as 'The Observer' and datePublished 2018-03-17T22:03Z. Supports the 'first report said 50 million' claim in the notes. --check FOUND."
+        },
+        {
+          "institution": "Facebook (Meta) Newsroom",
+          "title": "Suspending Cambridge Analytica and SCL Group from Facebook",
+          "date": "2018-03-16",
+          "url": "https://about.fb.com/news/2018/03/suspending-cambridge-analytica/",
+          "quote": "Approximately 270,000 people downloaded the app.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "By Paul Grewal. The page says 'Originally published on March 16, 2018'. Supports the claim that about 270,000 people installed the app. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "quant-ftc-facebook-penalty-2019",
+      "status": "OK",
+      "issues": [
+        "No errors. The quote is verbatim on a fresh fetch and the release date is July 24, 2019. The value of US$5,000,000,000 and the 'largest ever imposed on any company for violating consumers’ privacy' characterisation in the notes both match the FTC's own wording. This is the FTC's claim as of 2019. A possible addition, not required: the settlement order was approved by the US District Court for D.C. in April 2020. This was not checked here."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Page time datetime 2019-07-24."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "quant",
+      "id": "quant-dpc-meta-transfer-fine-2023",
+      "status": "FIXED",
+      "issues": [
+        "The notes say 'Imposed on 22 May 2023', which is imprecise. The DPC release says the final decision imposing the fine was adopted on 12 May 2023 and announced on 22 May 2023, and that the EDPB's binding Article 65 decision was adopted on 13 April 2023. The notes are corrected.",
+        "The value (€1.2 billion) and the quote are confirmed verbatim. A BBC source is added for the claim that it was the largest GDPR fine at the time."
+      ],
+      "fieldFixes": {
+        "notes": "Final decision adopted 12 May 2023 and announced 22 May 2023, following a binding EDPB decision of 13 April 2023 under Article 65 GDPR; the largest GDPR fine at the time."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim. Release dated '22nd May 2023'. It says the DPC 'adopted its final decision in this inquiry on 12 May 2023' and that 'The EDPB adopted its decision on 13 April 2023.'"
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "BBC News",
+          "title": "Meta: Facebook owner fined €1.2bn for mishandling data",
+          "date": "2023-05-22",
+          "url": "https://www.bbc.com/news/technology-65669839",
+          "quote": "Issued by Ireland's Data Protection Commission (DPC), it is the largest fine imposed under the EU's General Data Protection Regulation privacy law.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Independent confirmation of the fine and of its record status as of May 2023. datePublished 2023-05-22. --check FOUND."
+        }
+      ]
+    },
+    {
+      "kind": "quant",
+      "id": "quant-gdpr-maximum-fine-share-of-turnover-2016",
+      "status": "OK",
+      "issues": [
+        "No errors. The quote is verbatim on a fresh fetch and sits in Article 83, paragraph 5, the €20m / 4% tier. Paragraph 4 is the €10m / 2% tier. Paragraph 6 applies the same €20m / 4% cap to non-compliance with a supervisory-authority order under Art. 58(2). The document is the OJ L 119, 4.5.2016 English text of the Regulation of 27 April 2016.",
+        "'Whichever is higher' applies to undertakings, as the unit implies. The 'applicable from 25 May 2018' in the notes had no source, so Article 99(2) is added."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Fresh fetch 2026-09-23 (cache cleared): FOUND verbatim in Article 83(5)."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+          "title": "Regulation (EU) 2016/679, Article 99(2) — Entry into force and application",
+          "date": "2016-04-27",
+          "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+          "quote": "It shall apply from 25 May 2018.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Article 99(2). Supports 'applicable from 25 May 2018' in the notes. --check FOUND."
+        }
+      ]
+    }
+  ]
+}

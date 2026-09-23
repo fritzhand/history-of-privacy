@@ -1,0 +1,203 @@
+{
+ "slice": "essay",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "fact",
+   "id": "warren-brandeis-1890-right-to-privacy",
+   "status": "OK",
+   "issues": [
+    "No error found. Crossref (api.crossref.org/works/10.2307/1321160) gives Harvard Law Review vol. 4, issue 5, p. 193, published-print 1890-12-15, authors Samuel D. Warren and Louis D. Brandeis, so the date in the statement is right.",
+    "Checked OK: the Louisville page carries the text 'Originally published in 4 Harvard Law Review 193 (1890)', and footnote 10 reads 'Cooley on Torts, 2d ed., p. 29.' Thomas M. Cooley's Treatise on the Law of Torts, 2nd ed. (1888), is the book cited, so 'Judge Thomas Cooley' is right.",
+    "Checked OK: the SEP entry's meta tags list authors Roessler, Beate and DeCew, Judith. The page shows 'First published Tue May 14, 2002; substantive revision Thu Oct 19, 2023', so the title and date fields are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim in the same paragraph as the Cooley sentence. Issue date 1890-12-15 confirmed on Crossref."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim. Authors and the 19 Oct 2023 revision date confirmed from the page header and meta tags."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim, with footnote marker [10] and footnote 10 'Cooley on Torts, 2d ed., p. 29.'"}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "brandeis-olmstead-1928",
+   "status": "OK",
+   "issues": [
+    "No error found. The LII page reads 'Decided June 4, 1928.' The quoted sentence sits inside the section headed 'Mr. Justice BRANDEIS (dissenting).', which runs before the Butler and Stone dissents, so the attribution to Brandeis is right. The case concerned wiretapping, as the statement says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim at character 45888, inside Brandeis's dissent, which starts at 32654 and ends at the Butler dissent at 53330. 'Decided June 4, 1928.' is on the page."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "griswold-1965-penumbras",
+   "status": "OK",
+   "issues": [
+    "No error found. The LII page reads 'Decided June 7, 1965.' The 'penumbras' and 'zones of privacy' sentences are in the opinion Justice Douglas delivered for the Court. The 'broad, abstract and ambiguous concept' sentence is in the section headed 'Mr. Justice BLACK, with whom Mr. Justice STEWART joins, dissenting', so it is attributed correctly to Black.",
+    "Checked OK: the claim that the Constitution has 'no express right to privacy' is supported by the Puttaswamy survey quote. It is also well established, since the word appears nowhere in the Constitution's text."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim in Douglas's opinion for the Court."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim. It follows directly after the penumbras passage."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim at character 52558, inside Black's dissent (which starts at 47962)."},
+    {"index": 3, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim on the Indian Kanoon text of the 24 Aug 2017 judgment."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "udhr-article-12-1948",
+   "status": "OK",
+   "issues": [
+    "No error found. The un.org page prints the quoted text directly under the heading 'Article 12', and its introduction gives Paris, 10 December 1948 and resolution 217 A.",
+    "Nuance, no change needed: the UDHR is a declaration and does not bind states; binding force came later through the ICCPR (Art. 17). The statement makes no 'first' claim, which is correct. The American Declaration of the Rights and Duties of Man (Bogota, May 1948) protected 'private and family life' a few months earlier, so no future edit should call the UDHR the first international text on privacy."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim under the 'Article 12' heading."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim in the page's introductory paragraph."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "echr-1950-and-iccpr-1966",
+   "status": "FIXED",
+   "issues": [
+    "The statement is correct. The ECHR PDF has 'Rome, 4.XI.1950' and Article 8 headed 'Right to respect for private and family life'. The UN Treaty Collection gives 'New York, 16 December 1966' for the ICCPR, with entry into force on 23 March 1976.",
+    "Source 0 (the Internet Archive copy of the OHCHR page) could not be re-fetched. web.archive.org reset every connection on 2026-09-23 (the proxy logged ws_closed_mid_exchange), and the live ohchr.org page returns 403 to scripts. It is replaced with the University of Minnesota Human Rights Library text of the Covenant, where the same Article 17 wording is FOUND verbatim. A UN Treaty Collection source is added for the adoption date."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "url": "https://hrlibrary.umn.edu/instree/b3ccpr.htm", "institution": "University of Minnesota Human Rights Library (text of UN General Assembly resolution 2200A (XXI))", "note": "The Internet Archive copy of the OHCHR page could not be fetched (connection reset on every try, 2026-09-23), and live OHCHR returns 403. The quote was --check FOUND verbatim on the UMN text, which reads 'Article 17 1. No one shall be subjected ...'. The UMN header cites 'G.A. res. 2200A (XXI) ... 999 U.N.T.S. 171, entered into force Mar. 23, 1976'. The UMN site was archived on 2023-02-01 but is still served."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim under 'ARTICLE 8 Right to respect for private and family life'. The PDF also has 'Rome, 4.XI.1950' and 'signed at Rome on 4 November 1950' (--check FOUND)."}
+   ],
+   "addSources": [
+    {
+     "institution": "United Nations Treaty Collection",
+     "title": "Chapter IV.4: International Covenant on Civil and Political Rights (status page)",
+     "date": "1966-12-16",
+     "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-4&chapter=4&clang=_en",
+     "quote": "International Covenant on Civil and Political Rights New York, 16 December 1966",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page says 'Entry into force : 23 March 1976' (--check FOUND) and 'The Covenant was opened for signature at New York on 19 December 1966.'"
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "gc16-1988-data-banks",
+   "status": "OK",
+   "issues": [
+    "No error found. Both quotes are verbatim, and together they support the statement's two claims: storage of personal data must be regulated by law, and individuals have a right to learn what is stored and why.",
+    "Checked OK: the year is right, and the record's note is correct that the UMN header ('Twenty-third session, 1988') is wrong. The official OHCHR Treaty Body Database English file (INT_CCPR_GEC_6624_E.doc, from https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/Download.aspx?symbolno=INT%2fCCPR%2fGEC%2f6624&Lang=en) begins 'Thirty-second session (1988) General comment No. 16: Article 17 (Right to privacy)' and contains the same 'intelligible form' paragraph. It was read with strings because fetch-text cannot parse .doc files.",
+    "Not verified: the note's exact day, 8 April 1988. No fetchable page stating the day could be reached (refworld returns 403). The statement itself says only 'In 1988', so nothing needs to change."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim (para. 10). The session (thirty-second, 1988) is confirmed on the official OHCHR .doc."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim (para. 10). The same sentence appears in the official OHCHR .doc."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "constitutions-with-privacy-171-of-188",
+   "status": "FIXED",
+   "issues": [
+    "The count reproduces. On 2026-09-23 the Constitute API returned 171 constitutions for key=privacy&in_force=true and 188 in-force constitutions (188 distinct countries). All 171 are among the 188, and the 17 uncoded ones match the note's list exactly. 171/188 = 91%, so 'about nine in ten' is right.",
+    "Wrong example: Japan is not a country where 'courts rather than the text' protect privacy. Japan's 1946 Constitution, as printed on Constitute itself, says in Art. 35 'The right of all persons to be secure in their homes, papers and effects against entries, searches and seizures shall not be impaired except upon warrant' and in Art. 21 'nor shall the secrecy of any means of communication be violated'. Both fall squarely within Constitute's own topic definition ('protection against government intrusion into their property, papers, person, or communications'), and the near-identical US Fourth Amendment is coded for privacy (United_States_of_America_1992 is among the 171). Japan's absence is a coding gap, not missing text. Canada is the same case: Charter s. 8, 'Everyone has the right to be secure against unreasonable search or seizure', is in Canada_2011 but not coded.",
+    "India and France are good examples. A search of Constitute's English texts of India_2023 and France_2024 finds no 'privacy' or 'private life'. For France, the right comes from statute (Civil Code art. 9) and from Conseil constitutionnel rulings, not from the courts alone, so the wording should say 'courts and statute'.",
+    "The record note says the Japan claim 'rests on the ... 1964 facts'. That 1964 Tokyo District Court tort ruling does not show the constitutional text is silent, so the note needs the same correction."
+   ],
+   "fieldFixes": {
+    "statement": "Of the 188 national constitutions in force in the Comparative Constitutions Project's Constitute database, 171 (about nine in ten) are coded as providing a right to privacy. Among the 17 exceptions are India and France, whose constitutional texts are silent on privacy and where courts and statute protect it instead; others, such as Japan and Canada, do guard homes, papers or searches in their texts but are not coded under this topic, so the count reflects Constitute's coding.",
+    "note": "The count is our computation from the Constitute API (re-run 2026-09-23: 171 of 188), not a figure the project publishes; it depends on Constitute's coding and on which constitutional documents it holds (e.g. Czechia's separate Charter of Fundamental Rights and Austria's constitutional-rank ECHR are not in the texts coded). Japan (Art. 35 searches, Art. 21 secrecy of communication) and Canada (Charter s. 8) have search-and-seizure text that Constitute does not code as privacy, while the similar US Fourth Amendment is coded, so 171 is a conservative count. The claim that courts protect privacy in India and France rests on the Puttaswamy and Article 9 facts elsewhere in this file."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: topic definition FOUND verbatim. Both API endpoints were re-queried on 2026-09-23 and returned 171 and 188. The set difference is Afghanistan, Antigua and Barbuda, Australia, Austria, Bahamas, Brunei, Canada, Czech Republic, France, India, Indonesia, Japan, Malaysia, Palau, Samoa, Singapore and Sri Lanka, matching the note."}
+   ],
+   "addSources": [
+    {
+     "institution": "Constitute Project (Comparative Constitutions Project)",
+     "title": "Japan's Constitution of 1946, Article 35",
+     "date": "1946-11-03",
+     "url": "https://www.constituteproject.org/constitution/Japan_1946?lang=en",
+     "quote": "The right of all persons to be secure in their homes, papers and effects against entries, searches and seizures shall not be impaired except upon warrant issued for adequate cause",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page has Art. 21: 'No censorship shall be maintained, nor shall the secrecy of any means of communication be violated.' (--check FOUND). Japan_1946 is nevertheless absent from the privacy topic list, which shows that the 17 exceptions include coding gaps as well as constitutions that are silent on privacy. The date is promulgation (3 Nov 1946); the Constitution took effect on 3 May 1947."
+    },
+    {
+     "institution": "Constitute Project (Comparative Constitutions Project)",
+     "title": "Canada's Constitution of 1867 with Amendments through 2011 (Canadian Charter of Rights and Freedoms, s. 8)",
+     "date": "1982-04-17",
+     "url": "https://www.constituteproject.org/constitution/Canada_2011?lang=en",
+     "quote": "Everyone has the right to be secure against unreasonable search or seizure.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Canada_2011 is not in the privacy topic list, although this clause matches Constitute's topic definition."
+    }
+   ]
+  },
+  {
+   "kind": "fact",
+   "id": "puttaswamy-2017-nine-judges",
+   "status": "OK",
+   "issues": [
+    "No error found. The Indian Kanoon text contains the 'ORDER OF THE COURT', with signature lines for all nine judges (Khehar CJI, Chelameswar, Bobde, Agrawal, Nariman, Sapre, Chandrachud, Kaul, Nazeer) and the line 'New Delhi; AUGUST 24, 2017'. Item (i) overrules M P Sharma outright, and item (ii) overrules Kharak Singh 'to the extent that it holds that the right to privacy is not protected'. 'Overruling earlier cases' is a fair summary.",
+    "Checked OK: the 18 July 2017 referral to a nine-judge bench is FOUND. The page header lists the nine judges on the bench."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim as item (iii) of the Order of the Court, followed by nine signature lines."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim as item (i) of the Order of the Court."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched with the cache cleared: quote FOUND verbatim."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "fact",
+   "id": "miller-1971-assault-on-privacy",
+   "status": "OK",
+   "issues": [
+    "No error found in the claims. The title and year are confirmed independently. The Internet Archive catalog record assaultonpriv00mill gives 'The assault on privacy: computers, data banks, and dossiers', Ann Arbor, University of Michigan Press, 1971. Solove's 'A Taxonomy of Privacy' (154 U. Pa. L. Rev., 2006) cites 'ARTHUR R. MILLER, THE ASSAULT ON PRIVACY: COMPUTERS, DATA BANKS, AND DOSSIERS 25 (1971) (citation omitted)' for the phrase 'vague and evanescent'.",
+    "Source access: the web.archive.org copy of the Solove 2002 PDF could not be re-fetched live on 2026-09-23 (connection reset on every attempt; the proxy logged ws_closed_mid_exchange), and the live GW repository returns 403. Both quotes were instead matched, after the tool's normalisation, against a text extraction of the same PDF made earlier the same day (scratchpad solove2002.txt; lines 116-117 and footnote 2 at lines 127-129). The confirmation stands, but the next link check should re-fetch the PDF live.",
+    "Miller's book itself remains unread, as the record's note says; the Internet Archive copies are lending-only, and full text returns 401."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "The live re-fetch failed on 2026-09-23 (web.archive.org connection reset; GW direct returns 403). The quote was confirmed verbatim against a same-day text extraction of this PDF: 'Arthur Miller has declared that privacy is \"difficult to define because it is exasperatingly vague and evanescent.\"2'. It was also corroborated by Solove's Taxonomy (added source), which quotes 'vague and evanescent' and cites Miller, p. 25."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "The live re-fetch failed (same outage). Confirmed verbatim against the same-day extraction as footnote 2: 'ARTHUR R. MILLER, THE ASSAULT ON PRIVACY: COMPUTERS, DATA BANKS, AND DOSSIERS 25 (1971).' The Taxonomy's footnote 5 independently gives the same title, page and year."}
+   ],
+   "addSources": [
+    {
+     "institution": "University of Pennsylvania Law Review (vol. 154), copy hosted by Yale University Computer Science course CS457",
+     "title": "Daniel J. Solove, 'A Taxonomy of Privacy'",
+     "date": "2006-01",
+     "url": "https://zoo.cs.yale.edu/classes/cs457/fall13/SoloveTaxonomy.pdf",
+     "quote": "ARTHUR R. MILLER, THE ASSAULT ON PRIVACY: COMPUTERS, DATA BANKS, AND DOSSIERS 25 (1971) (citation omitted).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Footnote 5, --check FOUND. It is attached to the body sentence 'Other commentators have lamented that privacy is \"vague and evanescent,\"' (--check FOUND). The PDF header reads 'University of Pennsylvania Law Review ... VOL. 154 JANUARY 2006 NO. 3'."
+    },
+    {
+     "institution": "Internet Archive (catalog record)",
+     "title": "Arthur R. Miller, The Assault on Privacy: Computers, Data Banks, and Dossiers (University of Michigan Press, 1971)",
+     "date": "1971",
+     "url": "https://archive.org/details/assaultonpriv00mill",
+     "quote": "The assault on privacy: computers, data banks, and dossiers",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The page also gives 'Ann Arbor, University of Michigan Press' and '1971' (--grep). The book is lending-only, so the text itself was not read."
+    }
+   ]
+  }
+ ]
+}

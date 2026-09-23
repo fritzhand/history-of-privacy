@@ -1,0 +1,215 @@
+{
+ "slice": "myterms",
+ "chunk": 8,
+ "verdicts": [
+  {
+   "kind": "firstParty",
+   "id": "searls-par-post-first-party",
+   "status": "OK",
+   "issues": [
+    "No error found. I re-fetched the page on 2026-09-23. projectvrm.org returns 403 to the helper's user agent, so I fetched it with curl (HTTP 200) into the helper cache and ran fetch-text.py --check: FOUND.",
+    "Metadata confirmed. The <title> is 'The MyTerms PAR – ProjectVRM'. The post-date reads 'April 6, 2025' and the WordPress REST API gives date 2025-04-06T19:48:19. The post-author link reads 'Doc Searls' (projectvrm.org/author/vrm/).",
+    "Context: the sentence is the caption (wp-caption-text) of the post's lead illustration, 2robot-lawyers-myterms.png, uploaded 2025/04. It is not a body paragraph. The post was modified on 2025-09-19, and the Wayback snapshot from 7 Apr 2025 could not be fetched (web.archive.org connections reset), so it is not proven that the caption was there on day one. The speaker's '(2025)' is correct either way.",
+    "The record's claim matches the post body, which says MyTerms bases 'privacy agreements on contracts that individuals proffer as first parties, and sites and services agree to as second parties'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch on 2026-09-23 (HTTP 200) into the helper cache, then --check: FOUND. The post is dated April 6, 2025, the author is Doc Searls, and the title is 'The MyTerms PAR'. The quote is the caption of the post's lead image."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "faq-second-parties",
+   "status": "OK",
+   "issues": [
+    "No error found in the record. Fresh fetch on 2026-09-23 plus --check: FOUND. The quote answers the FAQ question 'How is MyTerms different from \"Do Not Track,\" \"Global Privacy Control,\" cookie banners, and preference centers?'. The speaker label leaves out 'preference centers', which is acceptable shorthand.",
+    "Source date: the page's schema.org metadata gives datePublished 2025-11-11 and dateModified 2026-01-26 (the WordPress API agrees). '2026' is correct as the last-modified year, and I have narrowed it to 2026-01-26.",
+    "Editorial caution: this is MyTerms' own framing, not a neutral fact. DNT and GPC are signals the person's own browser sends, not choices a site offers. The same FAQ elsewhere plans to signal MyTerms 'on the model of Do Not Track and Global Privacy Conrol' [sic]. GPC also has legal effect under California's CCPA regulations. The page should present this as MyTerms' argument, attributed as it is here, and not as settled law."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. The <title> is 'MyTerms FAQs – Common Questions About the Privacy Standard | MyTerms'. The page was first published on 2025-11-11 and last modified on 2026-01-26 (schema.org dateModified). The footer reads '© 2026 Customer Commons', and the site hosts the MyTerms Alliance sign-up."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "faq-first-parties",
+   "status": "OK",
+   "issues": [
+    "No error found. Fresh fetch on 2026-09-23 plus --check: FOUND. The quote is the second paragraph of the answer to the DNT/GPC/cookie-banner question. The next sentence on the page is 'MyTerms are also contracts: legal agreements, enforceable by contract law. That makes them binding.'. That is the FAQ's own claim and is not part of this record.",
+    "Source date narrowed from '2026' to 2026-01-26, the last-modified date. The page was first published on 2025-11-11."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Page last modified 2026-01-26 (schema.org dateModified), first published 2025-11-11."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "faq-full-agency",
+   "status": "OK",
+   "issues": [
+    "No error found. Fresh fetch on 2026-09-23 plus --check: FOUND. The quote comes right after the heading 'Why must I be the first party?' in the 'For Individuals (The First Party)' section, preceded by 'Because MyTerms are your terms. Simple as that.'. The speaker label is exact.",
+    "Source date narrowed from '2026' to 2026-01-26, the last-modified date. The page was first published on 2025-11-11."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2026-01-26",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. The question heading 'Why must I be the first party?' is on the page. Page last modified 2026-01-26, first published 2025-11-11."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "searls-new-era",
+   "status": "OK",
+   "issues": [
+    "No error found. doc.searls.com returns 403 to the helper's user agent, so I fetched the page with curl (HTTP 200) on 2026-09-23 into the helper cache and ran --check: FOUND.",
+    "Metadata confirmed. The title is 'A New Era Begins', the <time datetime> is '2025-11-24T07:55:36-05:00', the WordPress API gives date 2025-11-24, and the page reads 'Posted by: Doc Searls'.",
+    "Context: the same post says the standard 'is due to be published on 22 January 2026'. It was actually published on 20 January 2026 (IEEE SA page: 'Published: 2026-01-20'). Do not reuse the 22 January date from this post anywhere on the page."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch on 2026-09-23 (HTTP 200), then --check: FOUND. Dated 24 Nov 2025, 'Posted by: Doc Searls'. The next sentence reads 'It says your agreements with those sites and services are contracts, rather than the empty promises that come when you click on cookie notice \"choices.\"'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "searls-only-way-flip",
+   "status": "FIXED",
+   "issues": [
+    "The displayed quote is not verbatim. It has spaces before the comma and the full stop ('first parties , and', 'second parties .'). The page has none. The raw HTML is 'is if <strong>we are the ones proffering those terms as first parties</strong>, and <strong>organizations agree to them as second parties</strong>. This flips the script on business-as-usual online.' The helper inserts the spaces when it strips the <strong> tags. I corrected the displayed quote. I left the source quote unchanged, because the helper's --check needs the spaced version: the corrected text returns NOT-FOUND with the helper but is an exact substring of the page text extracted without separators. This follows the precedent in myterms-7.",
+    "Otherwise confirmed. projectvrm.org returns 403 to the helper, so I fetched the page with curl (HTTP 200) on 2026-09-23 into the helper cache and ran --check on the stored quote: FOUND. The title is 'The Only Way to Get Privacy Online', the post-date reads 'January 13, 2026', and the post-author is 'Doc Searls'. The speaker label 'Doc Searls, ProjectVRM (Jan 2026)' is right.",
+    "Context: the post says the standard 'will be published next week after eight years in the works'. That fits the IEEE publication date of 20 Jan 2026."
+   ],
+   "fieldFixes": {
+    "quote": "And the only way to make contracts work, at scale, is if we are the ones proffering those terms as first parties, and organizations agree to them as second parties. This flips the script on business-as-usual online."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch on 2026-09-23 (HTTP 200) into the helper cache, then --check on the stored quote: FOUND. The stored quote keeps the helper's extractor spaces before ',' and '.'. The page itself reads '...as first parties, and organizations agree to them as second parties. This flips the script...' (bold on the two clauses). Post dated January 13, 2026, author Doc Searls."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "firstParty",
+   "id": "mydata-signal",
+   "status": "OK",
+   "issues": [
+    "No error found. Fresh fetch on 2026-09-23 plus --check: FOUND. The <title> is 'MyData, on MyTerms'. The entry-time datetime is '2026-01-20T11:48:19+00:00', which the WordPress API confirms. The post is under News/Update/MyTerms on mydata.org, and no individual byline is shown, so crediting 'MyData Global' is right.",
+    "Context: the quote answers the question '…. and what does it enable?' about 'IEEE P7012'. 'Legally valid agreements' is MyData's own description. The same post says organisations can accept, 'propose an alternative from the same list', or 'reject or fail to acknowledge the signal; and have that recorded as such'. It also says MyData Global and Customer Commons are forming the MyTerms Alliance after the launch, and gives the public launch as 'Wednesday, 28th January 2026 – Data Privacy Day'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Dated 20 Jan 2026 (datePublished 2026-01-20T11:48:19Z). Title 'MyData, on MyTerms'. Published by MyData Global on mydata.org."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "aiAgents",
+   "id": "abstract-names-ai-agents",
+   "status": "FIXED",
+   "issues": [
+    "The claim overstates what was read. It says 'The published standard names AI agents'. The only text checked is the standard's official abstract, on the IEEE SA page and, identically, on IEEE Xplore. The normative text was not read (the slice notes say so: the GET PDF sits behind IEEE sign-in). The scope sentences read from Xplore metadata speak only of 'organizational entities acting as second-party service providers' and do not mention AI agents. I reworded the claim so it cites the abstract.",
+    "Nuance for the page: in the abstract, AI agents are listed as service providers that individuals engage, so they are second-party counterparties. They are not named as the individual's own agent. Agents acting for the parties are covered separately: 'Computing devices and software performing as agents for both first and second parties'. Do not read this sentence as 'the standard provides for personal AI agents'.",
+    "The quote itself is confirmed. Fresh fetch of standards.ieee.org on 2026-09-23 plus --check: FOUND. The page title is 'IEEE 7012-2025 / IEEE Standard for Machine Readable Personal Privacy Terms', and it reads 'Published: 2026-01-20', 'Board Approval 2025-11-04', 'PAR Approval 2017-12-06'. Source date 2026-01-20 is correct.",
+    "Independent check: the Xplore document-metadata abstract, in the Internet Archive snapshot of 28 Jan 2026 read from the helper cache, has the same sentence. Live web.archive.org and ieeexplore.ieee.org were unreachable (connection reset, and a bot challenge returning 202 with an empty body), and the text sits in a script block the helper cannot --check, so I have not added it as a source. The PAR text Doc Searls posted on 6 Apr 2025 reads only 'including websites', so the AI-agent wording is new in the final text. That PAR text is added below as a contrast source, --check FOUND. The 2017 PAR form never mentions agents or AI."
+   ],
+   "fieldFixes": {
+    "claim": "The standard's official abstract (IEEE SA standard page; the same text appears on IEEE Xplore) lists AI agents, alongside websites and applications, among the service providers individuals engage on a network whose agreements with those individuals the standard covers. The PAR text Doc Searls posted in April 2025 said only 'including websites'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. This is the first sentence of the abstract on the IEEE SA page, which reads 'Published: 2026-01-20', 'Board Approval 2025-11-04', Working Group Chair Doc Searls. The same abstract is in the IEEE Xplore document metadata (document 11360682, publicationDate '20 January 2026'), read in the Internet Archive snapshot of 28 Jan 2026."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ProjectVRM blog (projectvrm.org)",
+     "title": "The MyTerms PAR",
+     "date": "2025-04-06",
+     "url": "https://projectvrm.org/2025/04/06/myterms/",
+     "quote": "This draft standard covers contractual interactions and agreements between individuals and the service providers they engage on a network, including websites.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Contrast source: the PAR text as Doc Searls, the working-group chair, published it in April 2025 names only 'websites'. The published abstract adds 'applications and AI agents'. Fetched with curl on 2026-09-23 (the site returns 403 to the helper's user agent), then --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "agents-both-sides",
+   "status": "OK",
+   "issues": [
+    "No error found. doc.searls.com returns 403 to the helper, so I fetched the page with curl (HTTP 200) on 2026-09-23 into the helper cache and ran --check: FOUND. The title is 'Now We Begin' and the <time datetime> is '2026-01-29T14:40:00-05:00'. The quote is in Searls's 'This is how it works' list, which describes the standard beside a diagram 'that predates the one in the standard, but says the same thing'.",
+    "The claim leans on the working-group chair's own summary, so I added a primary source. The IEEE abstract confirms agents on both sides and an open protocol: 'Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.' The abstract does not itself mention AI as the parties' agents. The 'personal and corporate AIs' range is Searls's reading, repeated in his 24 Nov 2025 post ('as simple as browser and server plug-ins, or as complex as AI agents on both sides'). The MyTerms FAQ says 'Both parties use agents, which can be as simple as browser and website add-ons.'",
+    "Caution: the abstract also says the agreement 'shall be signed electronically by both parties or their agents'. So agents are how parties may act, not a separate requirement."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh curl fetch on 2026-09-23 (HTTP 200), then --check: FOUND. Dated January 29, 2026. The post opens 'Yesterday, Customer Commons and MyData Global launched MyTerms at a London event', which is consistent with the 28 Jan 2026 launch."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official abstract. It supports 'agents on both sides' and the open choice of protocol. It does not name AI as the parties' agents. Fresh fetch on 2026-09-23, --check: FOUND."
+    },
+    {
+     "institution": "Doc Searls Weblog (doc.searls.com)",
+     "title": "A New Era Begins",
+     "date": "2025-11-24",
+     "url": "https://doc.searls.com/2025/11/24/a-new-era-begins/",
+     "quote": "You make your choice, and the second party agrees or declines, using agents. These can be as simple as browser and server plug-ins, or as complex as AI agents on both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Searls's earlier statement of the same point. Fetched with curl on 2026-09-23 (the site returns 403 to the helper's user agent), then --check: FOUND."
+    }
+   ]
+  }
+ ]
+}

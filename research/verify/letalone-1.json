@@ -1,0 +1,305 @@
+{
+ "slice": "letalone",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "cooley-torts-right-to-be-let-alone-1879",
+   "status": "OK",
+   "issues": [
+    "No factual error found. Cross-slice duplicate: research/early.json has event 'cooley-right-to-be-let-alone-torts-treatise-1879' for the same passage (placed in Chicago, 41.8781,-87.6298). Keep one at assembly; this letalone record is the better-sourced one (page 29 and the Dec. 1878 preface confirmed in the scan).",
+    "Minor: the coordinates are the Law Quadrangle, which was built in the 1920s–30s; in 1878 the Law Department met in the old law building on the central campus a few hundred metres north. That is close enough at map scale, but the locationNote could say 'central campus'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND. The PDF title page reads 'SECOND EDITION. CHICAGO: CALLAGHAN & COMPANY. 1888.' The passage is on printed page 29 (running head 'CLASSIFICATION OF LEGAL RIGHTS. 29', PDF page 169) under 'Personal Immunity', and it goes on to the duty not to attempt a battery, so 'a passage on assault' holds. The first-edition preface is signed 'UNIVERSITY OF MICHIGAN, ANN ARBOR, December, 1878.' (FOUND). The HathiTrust catalog API for Record 010461084 returns publishDates ['1879'] (U. Michigan copy, full view). babel.hathitrust.org returned 403, so the 1879 page itself was not read."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: '10. Cooley on Torts , 2d ed., p. 29.' FOUND. Its anchor text is also FOUND: 'securing to the individual what Judge Cooley calls the right \"to be let alone.\" [10]'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "kodak-camera-you-press-the-button-1888",
+   "status": "FIXED",
+   "issues": [
+    "The Met Heilbrunn essay (source 1) could not be re-fetched: web.archive.org reset every connection through the proxy, and metmuseum.org returned HTTP 429 to both scripts and curl. It is set to PENDING, and a confirmed Smithsonian source covering 1888, mail-back processing and the slogan is added.",
+    "Every claim in the summary is confirmed on Kodak's own page ($25, 100 exposures, the $10 return-to-Rochester service, the slogan Eastman coined, and the 1888 trademark)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The same page says 'He coined the slogan, \"you press the button, we do the rest,\"' and 'The word \"Kodak\" was first registered as a trademark in 1888.' Both are FOUND, so the page supports every part of the summary."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-fetch: web.archive.org connections were reset ('ws_closed_mid_exchange') on three attempts, and the live metmuseum.org essay returned HTTP 429. So the quote, the slogan attribution and the October 2004 date could not be re-checked."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Smithsonian Magazine / History News Network",
+     "title": "How the Rise of the Camera Launched a Fight to Protect Gilded Age Americans' Privacy (Sohini Desai)",
+     "date": "2024-07-05",
+     "url": "https://www.smithsonianmag.com/history/how-the-rise-of-the-camera-launched-a-fight-to-protect-gilded-age-americans-privacy-180984656/",
+     "quote": "The camera’s first great age—which began in 1888 when George Eastman debuted the Kodak—is full of stories like this one.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same article: 'Instead of developing their own pictures, customers could mail their devices to the Kodak factory and have their rolls of film developed, printed, and replaced.' (FOUND), followed by the ad line 'You press the button,' Kodak ads promised, 'we do the rest.' The page metadata gives datePublished 2024-07-05."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "hollerith-punch-cards-1890-census-1890",
+   "status": "FIXED",
+   "issues": [
+    "Wrong year for the competition. Both Census Bureau web pages (and IBM's history page) say it was '1888', but the Census Bureau's own book-length history puts the test in 1889: Truesdell, The Development of Punch Card Tabulation in the Bureau of the Census 1890–1940 (1965), pp. 40–41. There, Superintendent Robert P. Porter (in office from 1889) named the committee at the suggestion of the Secretary of the Interior 'in 1889', and its report on the St. Louis test is dated November 30, 1889. The January 2016 Census page is also internally unreliable: it says Hollerith filed his patent application in September 1888 'after his decisive win', but the application 'Art of Compiling Statistics' was filed in 1884.",
+    "The run-on sentence with two nested dashes hides the order of events, and 'after a 1911 merger it was renamed IBM' makes it sound as if the Tabulating Machine Company itself was renamed. In fact the 1911 merger created the Computing-Tabulating-Recording Company, and CTR was renamed IBM in 1924.",
+    "The numbers (72.5, 5.5, 144.5, 100.5 hours; nearly 63 million people; patent of 8 January 1889) are all confirmed."
+   ],
+   "fieldFixes": {
+    "summary": "In a test run for the Census Office in 1889, Herman Hollerith's punch-card system transcribed data from four St. Louis enumeration districts in 72.5 hours and tabulated it in 5.5 hours; his two rivals needed 144.5 and 100.5 hours just to transcribe. Hollerith, whose electro-mechanical tabulating machine had been patented on 8 January 1889, won the contract to supply tabulators for the 1890 census. Clerks punched each person's answers into cards that the machine read electrically, and census clerks tabulated data for nearly 63 million people this way. Hollerith founded the Tabulating Machine Company in 1896; a 1911 merger folded it into the Computing-Tabulating-Recording Company, which was renamed International Business Machines (IBM) in 1924."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. The '63 million', 1896 and 1911/1924 sentences are also FOUND. Caution: this page dates the competition to 1888 and says the patent application was filed in September 1888 'after his decisive win'. Truesdell (1965) contradicts the first (the test was in 1889), and the 1884 filing date contradicts the second. Neither error is used in the corrected summary."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND, and 'completing the task in just 5.5 hours' FOUND. The page's '1888 Competition' heading is contradicted by the Bureau's 1965 history (added source), so the corrected summary uses only this page's timings."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Bureau of the Census (Leon E. Truesdell), via Internet Archive",
+     "title": "The Development of Punch Card Tabulation in the Bureau of the Census, 1890–1940",
+     "date": "1965",
+     "url": "https://archive.org/download/bub_gb_MGZqAAAAMAAJ/bub_gb_MGZqAAAAMAAJ_djvu.txt",
+     "quote": "In compliance with a suggestion made by the Secretary of the Interior in 1889, the Superintendent of the Census, Robert P. Porter, appointed a committee to consider the method of tabulation to be employed in the Eleventh (1890) Census",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND in the OCR text of the Census Bureau's 1965 history (Washington: GPO), pp. 40–41, section 'The 1889 test'. The same passage has 'The report of the committee, dated November 30, 1889, describes the test as follows: To test these various methods, four enumeration districts in the city of St. Louis, selected from the re-enumeration of 1880, were selected.' (FOUND) and gives the Hollerith tabulation time as '5 hours and 28 minutes' (FOUND). Scan: https://archive.org/details/bub_gb_MGZqAAAAMAAJ."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "warren-brandeis-right-to-privacy-1890",
+   "status": "DOWNGRADED",
+   "issues": [
+    "Prosser (source 3) could not be re-fetched. The Wayback snapshot connection was reset, the live lawcat.berkeley.edu PDF returns an HTTP 202 bot challenge with an empty body, and the Wayback availability API lists no snapshot. The descriptor 'a Boston paper manufacturer' therefore has no source confirmed this session. The Brandeis University archive confirms that the Warren & Brandeis partnership lasted until 1889, so 'recently left the law' and 'former law partner' stand.",
+    "All other claims are confirmed: vol. IV, no. 5, dated 15 December 1890; 4 Harv. L. Rev. 193; the Cooley citation; and both quotations."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Also FOUND: 'what Judge Cooley calls the right \"to be let alone.\"' and 'The common law secures to each individual the right of determining, ordinarily, to what extent his thoughts, sentiments, and emotions shall be communicated to others.' The header reads 'Originally published in 4 Harvard Law Review 193 (1890)'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: 'HARVARD LAW REVIEW VOL. IV. DECEMBER 15, 1890. No. 5.' FOUND. The catalogue fields read DATE 12/15/1890, LOCATION Cambridge, MA, BOX, SERIES 67, II.I.a.4."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-fetch. web.archive.org reset every connection through the proxy (3 tries). The live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 (AWS WAF challenge) with an empty body. archive.org/wayback/available reports no snapshot. So the 'paper manufacturer ... given up the practice of law' quote is unverified this session."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Robert D. Farber University Archives & Special Collections, Brandeis University Library",
+     "title": "Career (LDB-100 exhibit)",
+     "date": "2026",
+     "url": "https://www.brandeis.edu/library/archives/exhibits/ldb-100/career/index.shtml",
+     "quote": "He also established and worked at the firm Warren & Brandeis with Samuel D. Warren, Jr. until 1889.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The page is undated, so the date is the access date. It supports 'former law partner' and the end of the partnership in 1889, but it does not mention the paper business. The same page repeats the contested story that the article 'was inspired by increasing gossip about Warren's marriage'; that story is not used."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "roberson-v-rochester-folding-box-1902",
+   "status": "FIXED",
+   "issues": [
+    "Wrong place. In 1902 the Court of Appeals sat in the New York State Capitol, in H. H. Richardson's courtroom, used from 1884. It moved to Court of Appeals Hall at 20 Eagle Street only in 1917. The place, the coordinates and the locationNote ('In 1902 the Court of Appeals sat in Court of Appeals Hall') are therefore wrong.",
+    "The summary states as fact what the opinion recites as the complaint's allegations (the case was decided on demurrer). It also credits the printing to the Franklin Mills Company alone, but the complaint names 'defendants' (the flour company and the Rochester Folding Box Co., whose name was on the print).",
+    "The Historical Society source's date is the access year; the page is an event listing for October 18, 2022."
+   ],
+   "fieldFixes": {
+    "summary": "According to her complaint, the Franklin Mills Company and the Rochester Folding Box Company had printed and circulated about 25,000 lithographs of teenager Abigail Roberson's likeness, captioned “Flour of the Family”, without her knowledge or consent. On 27 June 1902 the Court of Appeals, in an opinion by Chief Judge Alton B. Parker, held that the “so-called ‘right of privacy’” had “not as yet found an abiding place in our jurisprudence”. Parker added that the legislature could forbid using another's picture or name for advertising without consent.",
+    "place": "New York Court of Appeals, New York State Capitol, Albany, New York",
+    "lat": 42.6526,
+    "lng": -73.7573,
+    "locationNote": "In 1902 the Court of Appeals sat in the New York State Capitol (in H. H. Richardson's courtroom, used from 1884); it moved to Court of Appeals Hall, 20 Eagle Street, only in 1917."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Header: '171 N.Y. 538 ... June 27, 1902. PARKER, C. J.' Also FOUND: the complaint recital '... without the knowledge or consent of plaintiff, defendants ... had obtained, made, printed, sold, and circulated about 25,000 lithographic prints', the words 'Flour of the Family', and 'The legislative body could very well interfere ...'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022-10-18",
+     "note": "Re-fetched: quote FOUND; the page gives '17-year-old Abigail Roberson'. The page is an event listing dated October 18, 2022, so the date is changed from the access year."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Historical Society of the New York Courts",
+     "title": "New York State Court of Appeals Hall",
+     "date": "2026",
+     "url": "https://history.nycourts.gov/history-new-york-courthouses/legal-history-new-york-history-new-york-courthouses-court-appeals/",
+     "quote": "The Court of Appeals originally sat in the State Capitol. It moved to its present home at 20 Eagle Street a short distance away in 1917.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The page is undated, so the date is the access date. It supports the corrected place and locationNote."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "new-york-privacy-statute-1903",
+   "status": "FIXED",
+   "issues": [
+    "The title ('the first privacy statute') and significance ('The first privacy statute was a consent rule') overstate the case. Earlier statutes protected privacy interests, and this dataset records several of them: the U.S. Post Office Act of 1792 (opening letters), California's 1862 ban on tapping telegraph lines, and France's 1868 press-law offence of publishing 'a fact of private life'. What was new in 1903 was a statutory right of privacy in likeness and name.",
+    "The NY Senate source for § 50 (source 2) could not be re-fetched: the Wayback connection was reset and nysenate.gov, Justia and FindLaw all returned 403. A confirmed Court of Appeals opinion is added for §§ 50–51 and the written-consent rule."
+   ],
+   "fieldFixes": {
+    "title": "New York writes a “right of privacy” into statute: no use of a name or picture without written consent",
+    "significance": "New York's statutory right of privacy was a consent rule: using a person's identity required their prior written permission — an ancestor of person-set terms."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND. Header: 'Argued April 19, 20, 1911 ... Decided May 1, 1911'. Opinion by Holmes, J.: 'using her photographed portrait for advertising purposes without her written consent first obtained'. The due-process and equal-protection challenge was rejected: 'Judgment affirmed.' The line 'The statute in this case was enacted soon after Chief Judge Parker's decision in the Roberson case' is FOUND in the argument for the plaintiff in error."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-fetch. web.archive.org connections were reset (3 tries). The live nysenate.gov page, the Justia and FindLaw copies all returned HTTP 403. newyork.public.law loads, but its HTML has no statute text. The current wording ('likeness, or voice') is therefore unverified this session."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022-10-18",
+     "note": "Re-fetched: quote FOUND. The page is an event listing dated October 18, 2022, so the date is changed from the access year. Its 'first state privacy law' supports a narrower claim than 'the first privacy statute'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Court of Appeals of New York (via Legal Information Institute, Cornell Law School)",
+     "title": "Messenger v. Gruner + Jahr Printing and Publishing (2000 NY Int. 1)",
+     "date": "2000-02-17",
+     "url": "https://www.law.cornell.edu/nyctap/I00_0001.htm",
+     "quote": "In response to Roberson, the Legislature enacted Civil Rights Law §§ 50 and 51, which provide a limited statutory right of privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same per curiam opinion: 'Section 50 makes it a misdemeanor to use a living person's \"name, portrait or picture\" for advertising or trade purposes \"without having first obtained the written consent of such person, or if a minor of his or her parent or guardian.\"' (FOUND). It supports the §§ 50–51 codification, the written-consent rule and the law's continued force."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "pavesich-v-new-england-life-1905",
+   "status": "FIXED",
+   "issues": [
+    "No factual error. On vLex: decision date 'March 3, 1905'; 'Writing for the Court COBB, J.'; syllabus 5 ('the right \"to be let alone\"'); syllabus 8 (waiver for one purpose); syllabus 10 (the Roberson majority 'criticised and disapproved'); syllabus 11 (a picture used in an advertisement without consent violates privacy); and syllabus 15 (an ad stating he held policies and was pleased with his investment). All match the summary.",
+    "The Smithsonian source date is only the year. The page metadata gives datePublished 2024-07-05."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: 'The right of privacy has its foundation in the instincts of nature.' FOUND in Cobb, J.'s opinion text. The syllabus points cited in the note are FOUND as described."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2024-07-05",
+     "note": "Re-fetched: quote FOUND. The date is taken from the page's datePublished metadata (2024-07-05T09:20:59-04:00)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "olmstead-brandeis-dissent-1928",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND on printed page 478 (PDF page 41, Brandeis, J., dissenting). 'The progress of science ... is not likely to stop with wire-tapping.' is FOUND on page 474. Syllabus: 'Argued February 20, 21, 1928.--Decided June 4, 1928.' and '... no trespass was committed upon any property of the defendants. Held, that the obtaining of the evidence and its use at the trial did not violate the Fourth Amendment.' Dissents found: Holmes, Brandeis, Butler and 'MR. JUSTICE STONE, dissenting.', which makes the split 5–4."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "census-act-confidentiality-1929",
+   "status": "FIXED",
+   "issues": [
+    "The summary's last sentence ('The same principle — no publication identifying any individual — was later codified') points back to a principle the summary never states. It also leaves out the 1929 act's main novelty, which its own source records: it was 'the first to extend the promise to individuals', i.e. 'No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified'.",
+    "The 'to the detriment of the person or persons to whom such information relates' wording is attributed by Ruggles & Magnuson to how 'the Census Bureau further clarified' the 1929 act. The 13 U.S.C. § 8 derivation notes (Cornell LII) trace the later 'detriment' proviso to the transcript section of the 1929 act (June 18, 1929, ch. 28, § 18, 46 Stat. 25), so it is narrower than a general bar. The corrected wording attributes the reading to the Bureau.",
+    "The 1954 Title 13 codification is confirmed by the Census Bureau's own 2001 monograph (added). The significance claim about wartime breach is supported by the same article (Second War Powers Act 1942; wartime disclosures documented by Seltzer and Anderson 2007)."
+   ],
+   "fieldFixes": {
+    "summary": "Earlier census acts had required that census information “shall be used only for the statistical purposes for which it is supplied” (1909) and that only sworn census employees examine individual reports (the act for the 1920 census). The act providing for the Fifteenth Census, approved 18 June 1929, was the first census law to extend the no-identification promise to individuals: “No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified.” As the Census Bureau read it, the act also protected the information from being used “to the detriment of the person or persons to whom such information relates”. Congress codified the 1929 law in 1954 as Title 13 of the U.S. Code, which carries virtually the same language."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache: quote FOUND. Also FOUND: 'Section 25 of the 1909 Census Act specified that the information collected “shall be used only for the statistical purposes for which it is supplied.”' and 'Virtually the same language appears in Title 13 (1954), which has governed the censuses taken since 1960.' The page metadata gives Population and Development Review 49(3):651, doi 10.1111/padr.12580, published online 2023 Jul 24 (September 2023 issue)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Population and Development Review (Steven Ruggles and Diana L. Magnuson), via PubMed Central",
+     "title": "“It's None of Their Damn Business”: Privacy and Disclosure Control in the U.S. Census, 1790–2020",
+     "date": "2023-09",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10621322/",
+     "quote": "The 1929 census law was the first to extend the promise to individuals, specifying that “No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The article cites Census Act 1929, p. 25. This is the quote that backs the corrected summary's no-identification sentence."
+    },
+    {
+     "institution": "U.S. Census Bureau (George Gatewood, Policy Office)",
+     "title": "A Monograph on Confidentiality and Privacy in the U.S. Census",
+     "date": "2001-07",
+     "url": "https://www2.census.gov/library/publications/2001/communications/monograph-on-confidentiality-and-privacy.pdf",
+     "quote": "In 1929, Congress enacted the law which formed the basis for what was codified in 1954 as Title 13, United States Code, and the Census Bureau has operated under this law ever since.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same monograph: 'In light of the 1929 Census Act imposing strict confidentiality, the Census Bureau referred the request to the U.S. Attorney General.' (FOUND). That was the 1930 Women's Bureau request for names of women in Rochester, and the Attorney General ruled they could not be released (36 Op. Att'y Gen. 362, 1930)."
+    }
+   ]
+  }
+ ]
+}

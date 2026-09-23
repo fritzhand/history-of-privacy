@@ -1,0 +1,348 @@
+{
+ "slice": "global",
+ "chunk": 3,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "un-human-rights-council-creates-special-rapporteur-privacy-2015",
+   "status": "FIXED",
+   "issues": [
+    "Source 0's note wrongly says the adoption date is not in the resolution and marks it '(PENDING)'. The last page of A/HRC/RES/28/16 reads '56th meeting 26 March 2015 [Adopted without a vote.]' (FOUND), so 26 March 2015 is confirmed by the primary source. The note is corrected and a source for the adoption line is added.",
+    "The summary says the first mandate-holder 'was appointed on 1 August 2015'. That is imprecise. The HRC President selected Joseph Cannataci on 3 July 2015 (EPIC, dated July 3, 2015; EFF, 8 July 2015: 'appointed Mr. Cannataci last week'). 1 August 2015 is the date the mandate began: A/HRC/31/64 para 42 says 'the mandate commenced on 1 August 2015'. Para 3 of the same report loosely calls it 'the appointment ... on 1 August 2015'. The sentence is reworded.",
+    "'It was the first UN mandate dedicated to privacy' had no source. EFF ('the first-ever UN Special Rapporteur on the Right to Privacy') and EPIC ('the first UN Special Rapporteur on the Right to Privacy') support it, so both are added.",
+    "Checked and correct: resolution number and title, the three-year term (verbatim), the task of gathering information 'including on international and national frameworks, national practices and experience' (verbatim), the Distr. date of 1 April 2015, the A/HRC/31/64 Distr. date of 24 November 2016, and the Palais des Nations coordinates. Both existing quotes were re-fetched with a cleared cache and FOUND."
+   ],
+   "fieldFixes": {
+    "summary": "The UN Human Rights Council's resolution 28/16, 'The right to privacy in the digital age', adopted without a vote on 26 March 2015, decided to appoint for three years a special rapporteur on the right to privacy, tasked among other things with gathering information on international and national frameworks and practices. It was the first UN mandate dedicated to privacy. The first mandate-holder, Joseph Cannataci of Malta, was selected in July 2015, and his mandate began on 1 August 2015.",
+    "sources[0].note": "Distributed 1 April 2015. The final page records adoption at the Council's '56th meeting 26 March 2015 [Adopted without a vote.]'. The first mandate-holder, Joseph Cannataci of Malta, is named in the EPIC and EFF sources added to this record."
+   },
+   "sourceFixes": [
+    { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a cleared cache; quote FOUND. The adoption date is on the same PDF: '56th meeting 26 March 2015 [Adopted without a vote.]' (FOUND)." },
+    { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched; quote FOUND. Distr. date on the PDF is 24 November 2016. Para 42 of the same report says 'the mandate commenced on 1 August 2015'. The HRC President's selection was on 3 July 2015 (EPIC)." }
+   ],
+   "addSources": [
+    {
+     "institution": "United Nations Human Rights Council",
+     "title": "A/HRC/RES/28/16 — The right to privacy in the digital age",
+     "date": "2015-03-26",
+     "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/28/16&l=en&t=pdf",
+     "quote": "56th meeting 26 March 2015 [Adopted without a vote.]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Adoption line at the end of the resolution (page 4). --check FOUND."
+    },
+    {
+     "institution": "United Nations Human Rights Council",
+     "title": "A/HRC/31/64 — Report of the Special Rapporteur on the right to privacy",
+     "date": "2016-11-24",
+     "url": "https://documents.un.org/api/symbol/access?s=A/HRC/31/64&l=en&t=pdf",
+     "quote": "since the mandate commenced on 1 August 2015",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Para 42. --check FOUND."
+    },
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "EFF Welcomes The United Nations' New Privacy Watchdog",
+     "date": "2015-07-08",
+     "url": "https://www.eff.org/deeplinks/2015/07/eff-welcomes-united-nations-new-privacy-watchdog",
+     "quote": "The Electronic Frontier Foundation welcomes the appointment of Mr. Joseph Cannataci as the first-ever UN Special Rapporteur on the Right to Privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The next sentence, also FOUND, reads: 'The President of the UN Human Rights Council (HRC) appointed Mr. Cannataci last week following the March 2015 HRC resolution'. The page is dated July 8, 2015."
+    },
+    {
+     "institution": "Electronic Privacy Information Center (EPIC)",
+     "title": "UN Appoints Special Rapporteur on Right to Privacy",
+     "date": "2015-07-03",
+     "url": "https://archive.epic.org/2015/07/un-appoints-special-rapporteur.html",
+     "quote": "The President of the UN Human Rights Council has selected Mr. Joseph Cannataci to serve as the first UN Special Rapporteur on the Right to Privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page is dated 'July 3, 2015' (FOUND). EPIC's president Marc Rotenberg was one of the candidates for the post."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "china-cybersecurity-law-adopted-2016",
+   "status": "FIXED",
+   "issues": [
+    "The DLA Piper quote was truncated mid-word ('data privacy prot'). The page carries the full sentence, and the quote is replaced with it (FOUND).",
+    "Source 0's note says the CAC page shows only the first part of the law, so the Article 37 localisation duty was 'summarised from the DLA Piper overview'. In fact the CAC article continues on c_1119867116_2.htm and _3.htm. Article 37 (page 2) and Article 79 on the effective date (page 3) were both read there verbatim and are added as primary sources.",
+    "The summary understated Article 37. It covers 'personal information and important data' that critical-information-infrastructure operators collect and generate in their operations inside China, and it requires a security assessment before any necessary transfer abroad. The summary is refined.",
+    "'The first national-level law addressing both cyber security and the protection of personal information' is DLA Piper's characterisation. An earlier national-level instrument on personal electronic information existed (the NPC Standing Committee's 2012 Decision on Strengthening Network Information Protection, a decision rather than a law). The claim is now attributed rather than stated as bare fact.",
+    "Checked and correct: adopted 7 November 2016 at the 24th session of the 12th NPC Standing Committee (verbatim), in force 1 June 2017 (Article 79, verbatim). Great Hall of the People coordinates are right."
+   ],
+   "fieldFixes": {
+    "summary": "The Standing Committee of China's National People's Congress adopted the Cybersecurity Law on 7 November 2016, and it took effect on 1 June 2017. The law firm DLA Piper describes it as the first national-level law to address both cybersecurity and data-privacy protection. Its Article 37 required operators of critical information infrastructure to store within China the personal information and important data they collect and generate in their operations there, and to pass a security assessment before any necessary transfer abroad.",
+    "sources[0].note": "Translation: '(Adopted at the 24th session of the Standing Committee of the 12th National People's Congress on 7 November 2016)'. The law text continues on pages 2 and 3 of the same CAC article (c_1119867116_2.htm and c_1119867116_3.htm), where Articles 37 and 79 are quoted in the sources added to this record.",
+    "sources[1].note": "Law-firm overview (secondary)."
+   },
+   "sourceFixes": [
+    { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a cleared cache; FOUND." },
+    { "index": 1, "verificationStatus": "CONFIRMED", "quote": "On June 1, 2017, the CSL came into effect and became the first national-level law to address cybersecurity and data privacy protection.", "note": "Full sentence restored; --check FOUND." }
+   ],
+   "addSources": [
+    {
+     "institution": "Cyberspace Administration of China (reprinting Xinhua)",
+     "title": "中华人民共和国网络安全法 (Cybersecurity Law of the People's Republic of China), page 2",
+     "date": "2016-11-07",
+     "url": "http://www.cac.gov.cn/2016-11/07/c_1119867116_2.htm",
+     "quote": "第三十七条 关键信息基础设施的运营者在中华人民共和国境内运营中收集和产生的个人信息和重要数据应当在境内存储。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Article 37: Personal information and important data collected and generated by operators of critical information infrastructure in the course of their operations within the People's Republic of China shall be stored within the territory.' The article continues: where transfer abroad is truly necessary for business, a security assessment must be carried out under measures set by the national cyberspace department and the State Council. --check FOUND."
+    },
+    {
+     "institution": "Cyberspace Administration of China (reprinting Xinhua)",
+     "title": "中华人民共和国网络安全法 (Cybersecurity Law of the People's Republic of China), page 3",
+     "date": "2016-11-07",
+     "url": "http://www.cac.gov.cn/2016-11/07/c_1119867116_3.htm",
+     "quote": "第七十九条 本法自2017年6月1日起施行。",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'Article 79: This Law shall take effect as of 1 June 2017.' --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "india-supreme-court-puttaswamy-privacy-fundamental-right-2017",
+   "status": "OK",
+   "issues": [
+    "All three quotes were re-fetched with a cleared cache and FOUND. Quote 0 is item (iii) of the order of the Court disposing of the reference. Quote 1 is para 185 of Chandrachud J's plurality opinion. Quote 2 does open Bobde J's separate opinion ('S. A. BOBDE, J. The Origin of the Reference 1. ...'), so the attribution is correct.",
+    "Checked and correct: the date is 24 August 2017 (Indian Kanoon header, and a digital signature dated 2017.08.24). The nine-judge bench is supported by 'Nine judges of this Court assembled...' and by the 18 July 2017 order referring the case to a Bench of nine judges, so a source for it is added. The Aadhaar context and the Srikrishna committee (Office Memorandum of 31 July 2017) are verbatim. The Supreme Court coordinates are right. '1.3 billion people' in the significance line matches India's 2017 population."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "Supreme Court of India (via Indian Kanoon) — opinion of Chandrachud J.",
+     "title": "Justice K.S. Puttaswamy (Retd) And Anr. vs Union Of India And Ors., 24 August 2017",
+     "date": "2017-08-24",
+     "url": "https://indiankanoon.org/doc/91938676/",
+     "quote": "Nine judges of this Court assembled to determine whether privacy is a constitutionally protected value.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'nine-judge bench'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "council-of-europe-convention-108-plus-2018",
+   "status": "FIXED",
+   "issues": [
+    "False claim: 'Uruguay was the first non-European state to approve it, in 2021.' Mauritius signed and deposited its instrument of ratification of CETS 223 on 4 September 2020, becoming 'the 6th State after Bulgaria, Croatia, Lithuania, Poland and Serbia as well as the first country in Africa' to ratify (Data Protection Office of Mauritius communiqué, FOUND). All five earlier ratifiers are European, so Mauritius, not Uruguay, was the first state outside Europe. Uruguay's parliament approved the protocol only in April 2021. The Ferrere headline repeats the error, probably carried over from Uruguay being the first non-European state to accede to the original Convention 108 (2013), which the article's first paragraph mentions.",
+    "The Ferrere quote is verbatim and still supports 'signed in Strasbourg in October 2018', so it is kept for that fact only. Its note is corrected.",
+    "displayDate 'October 2018' is correct. The protocol opened for signature on 10 October 2018, but the exact day could not be read by script (coe.int and rm.coe.int return 403), so the month-level date is kept. Adoption by the Committee of Ministers on 18 May 2018 is now sourced verbatim from the Council of Europe's own Convention 108+ booklet (June 2018), hosted by the European Parliament.",
+    "Checked and correct: Slovakia deposited its ratification on 15 June 2023 as the 25th state (FOUND on the Slovak DPA page). The significance line's 'only candidate for a binding global privacy treaty' matches the Mauritius communiqué's 'the only existing legally binding international treaty with global relevance in this field' (FOUND). Strasbourg coordinates are right."
+   ],
+   "fieldFixes": {
+    "summary": "The protocol modernising Convention 108 (CETS No. 223), known as Convention 108+, was adopted by the Council of Europe's Committee of Ministers on 18 May 2018 and opened for signature in Strasbourg in October 2018, updating the 1981 treaty for the GDPR era. Ratification has been slow: Slovakia's, deposited on 15 June 2023, was the 25th. The first state outside Europe to ratify was Mauritius, which deposited its ratification on 4 September 2020 as the sixth state overall.",
+    "sources[0].note": "Translation: 'Parliament has just approved the Protocol amending the Convention..., signed in Strasbourg in October 2018, known as Convention 108+'. Used only for the October 2018 signing in Strasbourg. The article's headline claim that Uruguay was the first non-European country to adhere to Convention 108+ is wrong: Mauritius ratified on 4 September 2020. The exact opening date (10 October 2018) could not be read on coe.int, which blocks scripts."
+   },
+   "sourceFixes": [
+    { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched; quote FOUND; page dated 08/04/2021. Supports October 2018 / Strasbourg only. Its headline's 'first non-European country' claim is contradicted by Mauritius's 4 September 2020 ratification." },
+    { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched; quote FOUND. Same page: 'On June 15, 2023, the ratification document was deposited by the Ambassador of the Permanent Mission of the Slovak Republic to the Council of Europe in Strasbourg'." }
+   ],
+   "addSources": [
+    {
+     "institution": "Data Protection Office, Republic of Mauritius",
+     "title": "Communiqué — Ratification of the Protocol amending Convention for the Protection of individuals with regard to automatic processing of personal data (CETS 223) by Mauritius",
+     "date": "2020-09",
+     "url": "https://dataprotection.govmu.org/Communique/Communique%20on%20Ratification%20of%20Mauritius%20on%20the%20Protocol%20amending%20Convention%20108%20%20(CETS%20223).pdf",
+     "quote": "Mauritius has thus become the 6th State after Bulgaria, Croatia, Lithuania, Poland and Serbia as well as the first country in Africa to ratify the modernised Convention 108 (Convention 108 +).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The preceding sentence, also FOUND, reads: 'Mauritius has signed and deposited, on 4 September 2020, its instrument of ratification of the Protocol amending Convention for the Protection of individuals with regard to automatic processing of personal data (CETS 223).'"
+    },
+    {
+     "institution": "Council of Europe (copy hosted by the European Parliament, LIBE committee)",
+     "title": "Convention 108 + — Convention for the protection of individuals with regard to the processing of personal data",
+     "date": "2018-06",
+     "url": "https://www.europarl.europa.eu/meetdocs/2014_2019/plmrep/COMMITTEES/LIBE/DV/2018/09-10/Convention_108_EN.pdf",
+     "quote": "The Protocol was adopted by the Committee of Ministers on 18 May 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Council of Europe booklet, '© Council of Europe, June 2018'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "china-personal-information-protection-law-2021",
+   "status": "OK",
+   "issues": [
+    "All three quotes were re-fetched with a cleared cache and FOUND. The Chinese Article 40 text in source 1's note is also verbatim on the NPC page (FOUND).",
+    "The summary's rights and Article 40 claims were supported only by a note in Chinese. English primary text from page 2 of the same NPC translation (c_694559_2.htm) is added. Article 40 limits localisation to CIIOs and to processors handling personal information 'up to the amount prescribed by the national cyberspace department', with a security assessment for exports. Articles 45–47 give the rights to consult and duplicate, to rectify or supplement, and to deletion. The summary's wording is accurate.",
+    "Checked and correct: adopted 20 August 2021 (30th meeting of the 13th NPC Standing Committee) and in force 1 November 2021 (Article 74). The English translation page shows 'Updated: 2021-12-29', matching the source date. Beijing coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "National People's Congress of the PRC (translation for reference only)",
+     "title": "Personal Information Protection Law of the People's Republic of China (page 2)",
+     "date": "2021-12-29",
+     "url": "http://en.npc.gov.cn.cdurl.cn/2021-12/29/c_694559_2.htm",
+     "quote": "Critical information infrastructure operators and the personal information processors that process personal information up to the amount prescribed by the national cyberspace department shall store domestically the personal information collected and generated within the territory of the People's Republic of China.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 40. The next sentence requires 'security assessment organized by the national cyberspace department' for necessary exports. --check FOUND."
+    },
+    {
+     "institution": "National People's Congress of the PRC (translation for reference only)",
+     "title": "Personal Information Protection Law of the People's Republic of China (page 2)",
+     "date": "2021-12-29",
+     "url": "http://en.npc.gov.cn.cdurl.cn/2021-12/29/c_694559_2.htm",
+     "quote": "Individuals shall have the right to consult and duplicate their personal information from personal information processors",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 45. The same page also has, verbatim and FOUND, Article 46 ('he shall have the right to request the personal information processors to rectify or supplement relevant information') and Article 47 ('an individual has the right to request the deletion of his personal information')."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "global-cbpr-forum-declaration-2022",
+   "status": "FIXED",
+   "issues": [
+    "Wrong population: the summary calls the seven signatories 'the economies then participating in APEC's CBPR system'. In April 2022 nine economies participated. Australia and Mexico were also in the APEC CBPR System but did not sign the 21 April declaration. The declaration's phrase 'as current economies participating in the APEC CBPR System' describes the seven as participants, not as all of them. The Global CBPR Forum's own About page now lists all nine as founders, 'as jurisdictions participating in the APEC CBPR System at the time' (FOUND). That source is added.",
+    "Checked and correct: both declaration quotes re-fetched with a cleared cache and FOUND. The declaration is dated April 21, 2022. The objective of 'an international certification system based on the APEC ... CBPR and ... PRP Systems' is verbatim. The Washington coordinates match the Commerce Department HQ, which announced it, and the locationNote properly says the declaration names no venue."
+   ],
+   "fieldFixes": {
+    "summary": "On 21 April 2022 Canada, Japan, the Republic of Korea, the Philippines, Singapore, Chinese Taipei and the United States, seven of the nine economies then participating in APEC's CBPR system, declared the establishment of a Global CBPR Forum. Its aim is an international certification system based on the APEC CBPR and Privacy Recognition for Processors systems, open beyond APEC. The other two CBPR economies, Australia and Mexico, did not sign the April declaration, but the Forum now counts all nine as its founders."
+   },
+   "sourceFixes": [
+    { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched; FOUND. The seven are described as 'current economies participating', not as the whole membership. Australia and Mexico were also participating." },
+    { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched; FOUND." }
+   ],
+   "addSources": [
+    {
+     "institution": "Global CBPR Forum",
+     "title": "About the Global CBPR Forum",
+     "date": "2026",
+     "url": "https://www.globalcbpr.org/about/",
+     "quote": "The Global CBPR Forum was established in 2022, by Australia, Canada, Japan, the Republic of Korea, Mexico, the Philippines, Singapore, Chinese Taipei, and the United States of America, as jurisdictions participating in the APEC CBPR System at the time",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Shows that nine economies, not seven, were in the APEC CBPR System in 2022. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "sri-lanka-first-south-asian-data-protection-act-2022",
+   "status": "FIXED",
+   "issues": [
+    "Wrong date. Parliament passed the Personal Data Protection Bill on Wednesday 9 March 2022, per News 1st, 09-03-2022: 'The Personal Data Protection Bill was passed in Parliament with amendments on Wednesday (9).' (FOUND) 19 March 2022 is the date the Speaker certified it, which is when the bill became law; the Act's own header reads '[Certified on 19th of March, 2022]' (FOUND). The DLA Piper source conflates the two dates.",
+    "The title states 'South Asia's first dedicated data-protection law' as fact. That is the Data Protection Authority's own description. Nepal's Individual Privacy Act, 2018 (2075), which includes personal-information provisions, predates it (listed by DLA Piper as Nepal's data-protection law, FOUND). So 'first' should be attributed, as the summary already does, and not asserted in the title. The title is reworded. The record id still contains 'first' but is not user-facing.",
+    "Checked and correct: the Act's name and number (No. 9 of 2022, published in the Gazette supplement of 25 March 2022). Amendment Act No. 22 of 2025 is confirmed from its text on dpa.gov.lk ('[Certified on 30th of October, 2025]'). The DPA homepage quote is FOUND. The Kotte parliament coordinates are right. The significance line's 'about a quarter of humanity' is right for South Asia."
+   ],
+   "fieldFixes": {
+    "displayDate": "9 March 2022",
+    "title": "Sri Lanka passes a dedicated personal-data protection law",
+    "summary": "Sri Lanka's Parliament passed the Personal Data Protection Bill with amendments on 9 March 2022, and the Speaker certified it on 19 March as the Personal Data Protection Act No. 9 of 2022. The country's Data Protection Authority describes it as the first independent personal-data legislation in South Asia; Nepal's broader Individual Privacy Act of 2018 also covers personal information. The Act was amended by Act No. 22 of 2025.",
+    "sources[1].note": "Law-firm global guide (secondary). Its date is wrong: 19 March 2022 is the date the Speaker certified the Act, not the date Parliament passed the bill (9 March 2022, per News 1st). The quote is verbatim but is kept only for the Act's name and number."
+   },
+   "sourceFixes": [
+    { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched; FOUND. The 'first' claim is the DPA's own; attributed in the summary." },
+    { "index": 1, "verificationStatus": "CONFIRMED", "note": "Quote FOUND verbatim, but its 'passed ... on 19 March, 2022' misdates the passage (9 March); 19 March is certification." }
+   ],
+   "addSources": [
+    {
+     "institution": "Parliament of Sri Lanka (Act text hosted by the Data Protection Authority of Sri Lanka)",
+     "title": "Personal Data Protection Act, No. 9 of 2022",
+     "date": "2022-03-19",
+     "url": "https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20(2).pdf",
+     "quote": "PERSONAL DATA PROTECTION ACT, No. 9 OF 2022 [Certified on 19th of March, 2022]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Published as a Supplement to Part II of the Gazette of March 25, 2022. --check FOUND."
+    },
+    {
+     "institution": "News 1st (Newsfirst.lk)",
+     "title": "Personal Data Protection Bill passed with amendments",
+     "date": "2022-03-09",
+     "url": "https://www.newsfirst.lk/2022/03/09/personal-data-protection-bill-passed-with-amendments/",
+     "quote": "The Personal Data Protection Bill was passed in Parliament with amendments on Wednesday (9).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Page dated 09-03-2022. The URL without the trailing slash returned HTTP 429 once; the trailing-slash form fetched cleanly. --check FOUND."
+    },
+    {
+     "institution": "Parliament of Sri Lanka (Act text hosted by the Data Protection Authority of Sri Lanka)",
+     "title": "Personal Data Protection (Amendment) Act, No. 22 of 2025",
+     "date": "2025-10-30",
+     "url": "https://www.dpa.gov.lk/acts/22-2025_E_251104_201549%20(1).pdf",
+     "quote": "PERSONAL DATA PROTECTION (AMENDMENT) ACT, No. 22 OF 2025",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Header also reads '[Certified on 30th of October, 2025]'. --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Nepal",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=NP",
+     "quote": "Individual Privacy Act, 2018 (2075) (“Privacy Act”)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Shows that Nepal had a privacy statute covering personal information before Sri Lanka's 2022 Act, so the 'first in South Asia' claim is attributed to Sri Lanka's DPA, not asserted. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "india-digital-personal-data-protection-act-2023",
+   "status": "FIXED",
+   "issues": [
+    "The summary's 'relied on the Information Technology Act 2000 and rules made in 2011' was not covered by any quoted text. The DLA Piper page continues with exactly that point, so the quote is extended (FOUND).",
+    "Source 0's note says section 1(2) cannot be quoted verbatim because the PDF text layer runs words together. The fragment '(2) It shall come into force on such date as the Central Government may, by notification' and the assent line '11th August, 2023 and is hereby published for general information' both --check FOUND. They are added as a source for 'provisions take effect on dates the central government notifies' and for the 11 August date (assent and publication on the same day).",
+    "Checked and correct: short title and Act No. 22 of 2023 (gazette header '[11th August, 2023.]'). The President's assent on 11 August 2023. The Parliament House coordinates. The significance line's 'world's most populous country' holds from 2023."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a cleared cache; FOUND." },
+    { "index": 1, "verificationStatus": "CONFIRMED", "quote": "Until 2023, India did not have a standalone law or framework to govern data protection. The Information Technology Act, 2000 (IT Act) and rules notified thereunder formed the basis around which the data protection framework revolved.", "note": "Quote extended to cover the IT Act claim; --check FOUND. The next sentence on the page names the 2011 Sensitive Personal Data or Information Rules ('Privacy Rules')." }
+   ],
+   "addSources": [
+    {
+     "institution": "Ministry of Electronics and Information Technology (Gazette of India copy)",
+     "title": "The Digital Personal Data Protection Act, 2023",
+     "date": "2023-08-11",
+     "url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
+     "quote": "(2) It shall come into force on such date as the Central Government may, by notification",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 1(2). The gazette notice on the same page reads, in two FOUND fragments, 'The following Act of Parliament received the assent of the President on the' / '11th August, 2023 and is hereby published for general information'."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "vietnam-personal-data-protection-law-2025",
+   "status": "OK",
+   "issues": [
+    "Both quotes re-fetched with a cleared cache and FOUND. Báo Điện tử Chính phủ article dated 2025-12-31 (datePublished 2025-12-31T15:58+07:00), matching the source date.",
+    "Checked and correct: Law No. 91/2025/QH15 passed 26 June 2025, in force 1 January 2026. The listed rights (informed, consent, access, correction, deletion) are verbatim in translation. 'Raising the country's rules from a 2023 government decree' is supported: DLA Piper names the replaced instrument as Decree No. 13/2023/ND-CP of 17 April 2023 (FOUND), and that source is added. The Hanoi coordinates are right."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Vietnam",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=VN",
+     "quote": "Decree 356 formally announced the replacement of the Decree No. 13/2023/ND-CP of the Government dated 17 April 2023 on Personal Data Protection",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Identifies the 2023 decree that the 2025 statute superseded. --check FOUND."
+    }
+   ]
+  }
+ ]
+}

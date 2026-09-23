@@ -1,0 +1,202 @@
+{
+ "slice": "early",
+ "chunk": 1,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "hippocratic-oath-confidentiality-clause-c-400-bce",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched with a fresh cache: quote FOUND verbatim in NLM's 'Translation of the Hippocratic Oath'. It is the last duty before the closing imprecation, so 'ends its list of duties' holds. The page says it comes from an NLM History of Medicine display (6 March to 15 June 2008) curated by Michael North; it also names 'the Asclepiads of Kos'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "PDF re-fetched: quote FOUND. Header confirms Paul Martin, Fukushima Medical University, Bulletin vol. 8, 2019, 'Healing Heroes: surveying the Greek text of the Hippocratic Oath (Part I...)'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "PDF re-fetched: quote FOUND. Running head confirms Greek, Roman, and Byzantine Studies 59 (2019) 621–645, Cristian Tolsa. It supports the claim about a Hellenistic origin (the article cites von Staden)."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "cicero-de-domo-sua-home-as-sanctuary-57-bce",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the Latin is FOUND verbatim and falls under the section marker [109], so '§109' is right. The translation is fair: 'fas' means divinely lawful, so 'no one may lawfully be dragged from it' holds."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND. The same abstract says Clodius demolished Cicero's Palatine domus and consecrated the site with a shrine to Libertas, which supports the summary."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "mishnah-talmud-hezek-reiyah-damage-by-sight-c-200-ce",
+   "status": "FIXED",
+   "issues": [
+    "The note on source[1] says Bava Batra 59b 'gives the Gemara's statement on the Mishnah's window rule'. That is wrong. On 59b the 'everyone agrees' line comes in the Gemara on the next mishna, about a projection (ledge) jutting over a neighbour's courtyard (Rav Huna v. Rav Yehuda), not the window rule of Mishnah 3:7.",
+    "The summary's 'later records that everyone agrees it does' overstates the passage. 'Everyone' there means the two amoraim in that dispute (Rav Huna and Rav Yehuda), not a general consensus. Reworded to give the context.",
+    "The summary says the tractate 'opens' with the hezek re'iyah question (2b), but no source was attached for 2b. A Sefaria 2b source is added.",
+    "Dating is inconsistent: source[1] date is 'c. 500–600 CE' while its own note cites Sefaria's catalogue as 450–550 CE (confirmed: Sefaria index compDate [450, 550], compPlace 'Talmudic Babylon'). The source date and displayDate are aligned to the cited catalogue.",
+    "Checked OK: Mishnah Bava Batra 3:7 wording (Sefaria API, versionTitle 'William Davidson Edition - English'), and Sefaria's Mishnah category text ('compiled by Rabbi Yehuda HaNasi around 200 CE'; index compDate 190–230). Tzippori coordinates are fine as a representative location."
+   ],
+   "fieldFixes": {
+    "displayDate": "c. 200 CE (Mishnah); Babylonian Talmud c. 450–550 CE",
+    "summary": "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance, or a window opposite another's window, onto a courtyard shared by partners, so that residents keep a measure of privacy (Bava Batra 3:7). The Babylonian Talmud's tractate Bava Batra opens (2b) by asking whether hezek re'iyah counts as legal damage. Hezek re'iyah is the harm of being exposed to others' gaze in one's own private domain. Later (59b), in a dispute over a ledge overlooking a neighbour's courtyard, the Gemara says both disputing sages agree that damage caused by sight is damage.",
+    "sources[1].note": "Bava Batra 59b: the line comes in the Gemara on the mishna about a projection (ledge) over a neighbour's courtyard, where Rav Huna and Rav Yehuda disagree. The Gemara rejects the idea that they differ on damage by sight: both hold that it is damage. Sefaria's catalogue dates the Bavli tractate to 450–550 CE, Talmudic Babylon."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched via Sefaria API: ref 'Mishnah Bava Batra 3:7', version 'William Davidson Edition - English' (Koren Noé). Quote FOUND once the <b> tags are stripped."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "date": "c. 450–550 CE", "note": "Re-fetched: quote FOUND. Context: the Gemara on the projection mishna, not the window rule (see fieldFixes for the note)."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: enDesc contains the quote verbatim."}
+   ],
+   "addSources": [
+    {
+     "institution": "Sefaria (William Davidson Edition, English)",
+     "title": "Babylonian Talmud, Bava Batra 2b",
+     "date": "c. 450–550 CE",
+     "url": "https://www.sefaria.org/api/v3/texts/Bava_Batra.2b?version=english",
+     "quote": "Apparently, it may be concluded that damage caused by sight, that is, the discomfort suffered by someone because he is exposed to the gaze of others while he is in his own private domain, is not called damage.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Opening sugya of the tractate. The Gemara first infers that damage by sight is 'not called damage', then challenges this ('The Gemara asks: And is damage caused by sight in fact not called damage?'). --check FOUND for both sentences. The gloss on hezek re'iyah in the summary follows this passage."
+    },
+    {
+     "institution": "Sefaria (William Davidson Edition, English)",
+     "title": "Babylonian Talmud, Bava Batra 59b (context of the 'everyone agrees' line)",
+     "date": "c. 450–550 CE",
+     "url": "https://www.sefaria.org/api/v3/texts/Bava_Batra.59b?version=english",
+     "quote": "He can also demand that the owner of the roof not use an existing projection, since it leads to damage caused by sight.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Shows that the 59b discussion concerns a projection overlooking a courtyard (Rav Huna's view), just before 'Shall we say that they disagree with regard to damage caused by sight?' and 'No, everyone agrees...'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "justinian-digest-domus-tutissimum-refugium-533",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the page reads 'Dig. 2.4.18 Gaius 1 ad l. xii tab. Plerique putaverunt ... vim inferre videri.' The quote is FOUND and the fragment number and attribution to Gaius, book 1 on the Twelve Tables, are correct. D.2.4.19 (Paul) adds that a man who admits visitors or can be seen from a public place may be summoned. This does not contradict the summary."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "PDF re-fetched: quote FOUND. The author is Halcyon Weber, Roman Legal Tradition 11 (2015) 42–117. Footnotes also give c. Tanta and c. Omnem as 16 Dec. 533."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: 'And the reason of all the same is, because domus sua cuique est tutissimum refugium.' FOUND."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "quran-surah-an-nur-al-hujurat-permission-and-no-spying-c-627",
+   "status": "OK",
+   "issues": [
+    "Source[2] (web.archive.org snapshot of sunnah.com) could not be re-fetched from this sandbox. web.archive.org resets the connection (curl error 35) and WebFetch refuses the domain; sunnah.com itself returns 403 to scripts. The archive.org availability API confirms that snapshots of sunnah.com/bukhari:6241 exist (latest 2026-09-19). The previously fetched copy in the shared fetch cache contains the quote and the USC-MSA reference 'Vol. 8, Book 74, Hadith 258'. The same English text is FOUND verbatim in an independent mirror (fawazahmed0 hadith-api via jsDelivr), added as a corroborating source."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: resource_id 20 is 'Saheeh International' (checked via /api/v4/resources/translations); quote FOUND."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND; the full verse continues 'their inhabitants'. Chapter info (Maududi, Tafhim al-Qur'an) puts Surah 24 after the Bani al-Mustaliq campaign, 5 or 6 AH. For Surah 49 it says most commands came 'during the final stage of the Holy Prophet's life at Madinah'. That supports c. 626–631 CE."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Archive URL not re-fetchable today (connection reset). Wording confirmed from the cached earlier fetch of the same snapshot and from an independent mirror of the same Muhsin Khan text (see addSources)."}
+   ],
+   "addSources": [
+    {
+     "institution": "hadith-api (fawazahmed0, open dataset on GitHub, served via jsDelivr) — Muhsin Khan English",
+     "title": "Sahih al-Bukhari 6241, Book 79 'Asking Permission'",
+     "date": "2026-09-23",
+     "url": "https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/6241.json",
+     "quote": "Verily! The order of taking permission to enter has been enjoined because of that sight, (that one should not look unlawfully at the state of others).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "A mirror that corroborates the sunnah.com text, which is unreachable to scripts. The same record reads: 'A man peeped through a round hole into the dwelling place of the Prophet'. --check FOUND. Undated dataset; 'date' is the access date."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "fourth-lateran-council-canon-21-seal-of-confession-1215",
+   "status": "FIXED",
+   "issues": [
+    "The summary says canon 21 bound 'every adult Christian'. The canon (Tanner translation on the cited page) says 'All the faithful of either sex, after they have reached the age of discernment'. The age of discernment (anni discretionis) is not adulthood; medieval canonists put it well below majority. Corrected to the canon's own wording, with a source for that sentence.",
+    "The title 'makes the seal of confession universal Church law' can read as if Lateran IV created the seal. It did not. The Catholic Encyclopedia notes that Gratian's Decretum already ordered the deposition of a priest who revealed a penitent's sins, and that 'neither this canon nor the law of the Decretum purports to enact for the first time the secrecy of confession'. It does call canon 21 'binding on the whole Church'. Title and summary are reworded to keep the 'whole Church' point without implying a first.",
+    "Checked OK: the 30 November 1215 third session (introduction on the same page, credited to Tanner, Decrees of the Ecumenical Councils); the betrayal/deposition/monastery wording; the St John Lateran coordinates."
+   ],
+   "fieldFixes": {
+    "title": "The Fourth Lateran Council binds the whole Church to yearly confession and the confessional seal",
+    "summary": "Canon 21 of the Fourth Lateran Council required all the faithful of either sex who had reached the age of discernment to confess their sins to their own priest at least once a year. The council's constitutions were read and approved at its third session on 30 November 1215. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance. The duty of secrecy was older: Gratian's twelfth-century Decretum already ordered the deposition of a priest who revealed a penitent's sins. Canon 21 restated it as a conciliar decree binding on the whole Latin Church and fixed its penalty."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim in constitution 21. The page credits 'Introduction and translation taken from Decrees of the Ecumenical Councils, ed. Norman P. Tanner'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND. The same paragraph dates the opening to 11 November and the second session to 20 November."}
+   ],
+   "addSources": [
+    {
+     "institution": "Papal Encyclicals Online (text after Tanner, Decrees of the Ecumenical Councils)",
+     "title": "Fourth Lateran Council: 1215 — Constitution 21 (opening sentence)",
+     "date": "1215-11-30",
+     "url": "https://www.papalencyclicals.net/councils/ecum12-2.htm",
+     "quote": "All the faithful of either sex, after they have reached the age of discernment, should individually confess all their sins in a faithful manner to their own priest at least once a year",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports who was bound: the age of discernment, not adulthood. --check FOUND."
+    },
+    {
+     "institution": "The Catholic Encyclopedia (Robert Appleton Company), via New Advent",
+     "title": "R. Nolan, 'The Law of the Seal of Confession'",
+     "date": "1912",
+     "url": "https://www.newadvent.org/cathen/13649b.htm",
+     "quote": "Canon 21 of the Fourth Lateran Council (1215), binding on the whole Church, lays down the obligation of secrecy in the following words",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same paragraph adds: 'It is to be noted that neither this canon nor the law of the \"Decretum\" purports to enact for the first time the secrecy of confession.' It cites Gratian's Decretum ('Deponatur sacerdos qui peccata poenitentis publicare praesumit'). Both sentences --check FOUND. Author and date are from the page's APA citation line."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "semaynes-case-house-as-castle-and-fortress-1604",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND. The page says 'Found in: Selected Writings of Sir Edward Coke, vol. I'. The page's commentary wrongly calls this Coke's 'ruling'; Coke, then Attorney General, reported the case. The record correctly says 'Coke's report'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched the concurrence PDF: quote FOUND. Minnesota v. Carter was decided 1 December 1998."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND. Wilson cites the case as '5 Co. Rep. 91a, 91b, 77 Eng.Rep. 194, 195 (K.B.1603)', which matches the note on source[1]. Decided 22 May 1995."}
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Semayne's case",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Semayne%27s_case",
+     "quote": "Michaelmas Term, 1604",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "An independent check of the displayDate term. The infobox gives the full case name as Peter Semayne v Richard Gresham, Court of King's Bench, 5 Co Rep 91a, 77 ER 194. --check FOUND. Tertiary source; the date is the access date."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "james-otis-writs-of-assistance-argument-1761",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: the page heading reads 'Adams' Minutes of the Argument: Suffolk Superior Court, Boston, 24 February 1761' (document date 1761-02-24). The quote is FOUND and sits directly under the speaker label 'Otis.', so the attribution to Otis is correct."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND. The same note has 'In the Council Chamber of what is now the Old State House in Boston' and says Gridley spoke first, then Thacher and Otis."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "pitt-cider-excise-every-mans-house-his-castle-1763",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: footnote 7 quote FOUND. The opinion's text calls the 'poorest man' words 'Remarks attributed to William Pitt', which supports the record's caution. Decided 23 June 1958."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched the OCR text: quote FOUND. The title page reads 'PHILADELPHIA: LEA & BLANCHARD, SUCCESSORS TO CAREY & CO. 1839', vol. I, first series. It is introduced as 'his allusion to the maxim of English law, that every man's house is his castle', with no date or debate given, as the note says."}
+   ],
+   "addSources": []
+  }
+ ]
+}

@@ -41,10 +41,13 @@ const research = Object.fromEntries(SLICES
 
 /* ── sources ─────────────────────────────────────────────── */
 const SRC_KEYS = ['institution', 'title', 'date', 'url', 'quote', 'note', 'verificationStatus', 'accessType'];
+/* Page-text extraction leaves a space before punctuation where a quoted
+   word was in italics or bold ("first parties , and"); close it up. */
+const tidy = t => String(t).replace(/\s+([,;:!?])/g, '$1').replace(/\s+\.(?!\.)/g, '.').replace(/\s{2,}/g, ' ').trim();
 function cleanSource(s, extra = {}) {
   if (!s || typeof s !== 'object') return null;
   const o = {};
-  for (const k of SRC_KEYS) if (s[k] != null && s[k] !== '') o[k] = typeof s[k] === 'string' ? s[k].trim() : s[k];
+  for (const k of SRC_KEYS) if (s[k] != null && s[k] !== '') o[k] = typeof s[k] === 'string' ? (k === 'quote' ? tidy(s[k]) : s[k].trim()) : s[k];
   Object.assign(o, extra);
   if (!o.verificationStatus) o.verificationStatus = 'PENDING';
   if (!o.accessType) o.accessType = 'FREE';
@@ -124,7 +127,7 @@ function allImages() {
   const seen = new Set(), out = [];
   for (const k of ['media', 'personas-code', 'personas-advocates', 'personas-researchers']) for (const a of ((research[k] || {}).images || [])) {
     if (!a || !a.id || seen.has(a.id)) continue;
-    seen.add(a.id); out.push(a);
+    seen.add(a.id); out.push(k === 'media' ? a : { ...a, _portrait: true });
   }
   return out;
 }
@@ -164,6 +167,7 @@ const H = {
   media: id => allImages().find(a => a.id === id),
   hasMedia: id => !!allImages().find(a => a.id === id),
   cleanSource,
+  tidy,
 };
 
 const E = editorial(H);
@@ -231,7 +235,9 @@ for (const [id, def] of Object.entries(E.series)) {
     if (!p) throw new Error(`series ${id}: patch year ${year} missing`);
     Object.assign(p, rest);
   });
-  series[id] = { label: def.label, unit: def.unit, geography: def.geography, note: def.note, points: pts };
+  const rs = def.from ? need(seriesIdx, def.from, 'series') : {};
+  series[id] = { label: def.label ?? rs.label, unit: def.unit ?? rs.unit, geography: def.geography ?? rs.geography,
+    note: def.note ?? rs.notes, points: pts };
 }
 
 /* ── media ───────────────────────────────────────────────── */
@@ -259,6 +265,7 @@ const mediaAssets = images.map(a => {
     upstreamUrl: a.upstreamUrl,
     lat: a.lat, lng: a.lng,
     rightsEvidence: a.rightsEvidence,
+    archive: (E.archiveExclude || []).includes(a.id) || a._portrait ? false : undefined,
     verificationStatus: a.verified ? 'CONFIRMED' : 'PENDING',
   };
   for (const k of Object.keys(m)) if (m[k] == null || m[k] === '' || Number.isNaN(m[k])) delete m[k];
@@ -278,7 +285,9 @@ const scrollSteps = E.scrollSteps.map(st => {
   const ev = evById.get(st.eventId);
   if (!ev) throw new Error(`step ${st.eventId}: event not selected in editorial events`);
   const media = (st.media || []).filter(id => mediaIds.has(id));
-  return { eventId: st.eventId, date: st.date ?? ev.date, phase: ev.phase, headline: st.headline, narrative: st.narrative,
+  const rec = H.event(st.eventId);
+  return { eventId: st.eventId, date: st.date ?? ev.date, phase: ev.phase, headline: st.headline ?? ev.title,
+    narrative: st.narrative ?? ev.body, ...(st.why !== false && (st.why || rec.significance) ? { why: st.why || rec.significance } : {}),
     ...(media.length ? { media } : {}), ...(st.chips ? { chips: st.chips } : {}),
     flyTo: st.flyTo ?? [ev.lat, ev.lng], zoom: st.zoom ?? 4 };
 });
@@ -303,6 +312,7 @@ const data = {
   frameworks: E.frameworks,
   policyModels: E.policyModels,
   figures: E.figures,
+  pullQuotes: E.pullQuotes,
   people: (E.people || []).map(p => (p.portrait && !mediaIds.has(p.portrait) ? { ...p, portrait: undefined } : p)),
   peopleGroups: E.peopleGroups,
   lineage: E.lineage,

@@ -1,0 +1,296 @@
+{
+ "slice": "dataprotection",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "french-police-index-cards-1974",
+   "status": "OK",
+   "issues": [
+    "No factual error found. The page was re-fetched with a fresh cache and the quote is verbatim (--check FOUND). It sits in the free opening of an article otherwise marked 'Article réservé aux abonnés'. Byline 'Par PHILIPPE BOUCHER.'; the URL date is 21 March 1974.",
+    "The notes' Iris-80 sentence matches the article: the C.I.I. 10070 'a servi à tester les programmes devant être fournis à l'Iris-80, afin de rendre cohérentes entre elles, les données contenues dans les 400 fichiers que possèdent les services de police'. The 100 million figure is hedged in the article ('selon la confidence faite par un très haut magistrat'), and the record already says so.",
+    "Independent check: the French Wikipedia article on SAFARI confirms the author, the date (21 March 1974), the headline with its subtitle, and the '400 fichiers que possèdent les services de police' passage. No independent source for the 100 million count was found, which the record already says ('not independently verified').",
+    "Minor, source title only: the page headline is 'Une division de l'informatique est créée à la chancellerie', and '\"Safari\" ou la chasse aux Français' is its subtitle. The title field is expanded to give both."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Philippe Boucher, 'Une division de l'informatique est créée à la chancellerie. \"Safari\" ou la chasse aux Français'",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). Page headline: 'Une division de l'informatique est créée à la chancellerie \" Safari \" ou la chasse aux Français'; byline 'Par PHILIPPE BOUCHER.' The quoted sentence is in the free opening; the rest is for subscribers only ('Il vous reste 74.89% de cet article à lire')."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "church-committee-recommendations-1976",
+   "status": "FIXED",
+   "issues": [
+    "96 is the count for Book II alone. Book II, 'Intelligence Activities and the Rights of Americans', numbers its recommendations 1 to 96, and Recommendation 96, on Senate oversight, is the last. Book I of the same final report ('Foreign and Military Intelligence', S. Rep. 94-755) has another 87 numbered recommendations, ending with '87. Federal Register for Classified Executive Orders'. So the Senate Historical Office's line 'The final report included 96 recommendations' understates the total. The phrase it quotes, 'to place intelligence activities within the constitutional scheme for controlling government power', comes from Book II's foreword ('Our recommendations are designed to place intelligence activities within the constitutional scheme for controlling government power'). The label and unit are narrowed to Book II.",
+    "The notes repeat a unit error from the Senate page. The committee's own reports count pages, not documents: Book II has 'Approximately 110,000 document pages were obtained' and Book I has 'documentation in excess of 110,000 pages'. '40 subcommittee hearings' is also the Senate page's wording; Book II says 'over 40 subcommittee meetings devoted to drafting the two volumes of our final report'. The notes are rewritten on the primary wording.",
+    "Date detail, no field change: the Senate page gives 29 April 1976 as the issue date. The printed Books I and II are dated 'APRIL 26 (legislative day, APRIL 14), 1976'. The record gives only the year 1976, which is correct."
+   ],
+   "fieldFixes": {
+    "label": "Recommendations in Book II of the Church Committee's final report (domestic intelligence and the rights of Americans)",
+    "unit": "recommendations (legislative and regulatory), Book II only",
+    "notes": "Book II, 'Intelligence Activities and the Rights of Americans', numbers its recommendations 1 to 96. Book I, on foreign and military intelligence, has another 87 numbered recommendations. The Senate Historical Office gives 96 for the final report as a whole. The committee held 126 full committee meetings, examined some 800 witnesses and obtained about 110,000 pages of documents."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). The count is right for Book II only. The report's primary text shows Book I has 87 more recommendations. The page's '110,000 documents' is 'document pages' in the committee's own report. Page undated; 2026 is the access year."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (S. Rep. No. 94-755), hosted by the Senate Select Committee on Intelligence",
+     "title": "Final Report, Book II: Intelligence Activities and the Rights of Americans",
+     "date": "1976-04-26",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-ii.pdf",
+     "quote": "Recommendation 96.-The Committee reendorses the concept of vigorous Senate oversight to review the conduct of domestic security activities through a new permanent intelligence oversight committee.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. It is the last numbered recommendation in Book II. The table of contents lists '12. Congressional Oversight Should Be Intensified (Recommendation 96)' and then only '13. Definitions'. The foreword on the same PDF has 'Our recommendations are designed to place intelligence activities within the constitutional scheme for controlling government power' (FOUND). Title page: 'APRIL 26 (legislative day, APRIL 14), 1976'."
+    },
+    {
+     "institution": "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (S. Rep. No. 94-755), hosted by the Senate Select Committee on Intelligence",
+     "title": "Final Report, Book I: Foreign and Military Intelligence",
+     "date": "1976-04-26",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-i.pdf",
+     "quote": "87. Federal Register for Classified Executive Orders-In the course of its investigation, the Committee often had difficulty locating",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. It is the last of Book I's numbered recommendations (1 to 87) in Chapter XVIII, 'Summary: Findings and Recommendations'. It shows that the final report had recommendations beyond Book II's 96."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "church-committee-documents-reviewed-1976",
+   "status": "FIXED",
+   "issues": [
+    "Wrong unit. The committee's own final report counts pages, not documents. Book II: 'Approximately 110,000 document pages were obtained from the various intelligence agencies (still more were preliminarily reviewed at the agencies), as well as from the White House, presidential libraries, and other sources.' Book I: 'documentation in excess of 110,000 pages'. The Senate Historical Office's '110,000 documents' is a paraphrase that changes the unit. 110,000 documents would be many times more material than 110,000 pages.",
+    "'Reviewed' is also imprecise. The report says the pages were 'obtained', and that more material was only 'preliminarily reviewed at the agencies'.",
+    "The value (110,000), year (1976) and '800 witnesses' are correct. Book II: 'Some 800 witnesses were examined, approximately 250 under oath in executive sessions, 50 in public sessions, and the balance in interviews.'"
+   ],
+   "fieldFixes": {
+    "label": "Pages of documents obtained by the Church Committee",
+    "unit": "document pages (approximately)",
+    "notes": "The committee's own report counts pages: 'Approximately 110,000 document pages were obtained from the various intelligence agencies', and more were 'preliminarily reviewed at the agencies'. The Senate Historical Office's summary says '110,000 documents'. Some 800 witnesses were examined, about 250 of them under oath in executive session."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). But the page's '110,000 documents' conflicts with the committee's primary text, which says '110,000 document pages' (Book II) and 'in excess of 110,000 pages' (Book I). The Senate page is kept as a secondary source, and the unit follows the primary text."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (S. Rep. No. 94-755), hosted by the Senate Select Committee on Intelligence",
+     "title": "Final Report, Book II: Intelligence Activities and the Rights of Americans",
+     "date": "1976-04-26",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-ii.pdf",
+     "quote": "Some 800 witnesses were examined, approximately 250 under oath in executive sessions, 50 in public sessions, and the balance in interviews. The aggregate number of transcript pages is almost 30,000. Approximately 110,000 document pages were obtained from the various intelligence agencies (still more were preliminarily reviewed at the agencies), as well as from the White House, presidential libraries, and other sources.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. This is a footnote to the Book II foreword."
+    },
+    {
+     "institution": "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (S. Rep. No. 94-755), hosted by the Senate Select Committee on Intelligence",
+     "title": "Final Report, Book I: Foreign and Military Intelligence",
+     "date": "1976-04-26",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-i.pdf",
+     "quote": "involved more than 800 interviews, over 250 executive hearings, and documentation in excess of 110,000 pages.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. Book I foreword: 'The Committee staff of 100, including 60 professionals, has assisted the 11 members of the Committee in this in-depth inquiry which involved ...'"
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "bork-video-rentals-1987",
+   "status": "DOWNGRADED",
+   "issues": [
+    "The cited Wayback copy of Dolan's article cannot be re-fetched from this environment. web.archive.org resets the connection (curl error 35, 'Connection reset by peer', on repeated tries and on the id_ variant). WebFetch reports 'unable to fetch from web.archive.org'. The live theamericanporch.com fails DNS / 502. perma.cc/37V2-T2ZD, the Harvard Law Review's perma link, returns 403. The archive.org availability API does confirm snapshots exist (e.g. 20160407083358). The chunk-3 verifier reports confirming this quote at this URL earlier the same day. I could not repeat that check, so the source is set to PENDING.",
+    "The value is independently supported. The Harvard Law Review page (live, --check FOUND) says: 'The list of 146 videotapes Judge Bork had rented over the course of two years, leaked by a store clerk, revealed nothing particularly salacious.' It is added as a CONFIRMED source. HLR says 'over the course of two years' where Dolan says 'in less than two years'. The label follows Dolan, which is acceptable.",
+    "Notes wording: the record quotes Bork as an 'Other User'. The chunk-3 reading of Dolan's text, and the dataprotection event record, give the plural heading 'Other Users'. The notes are rephrased so they do not put an unverified singular in quotation marks."
+   ],
+   "fieldFixes": {
+    "notes": "The account was in Mrs. Bork's name, with Robert Bork listed under 'Other Users'. The Harvard Law Review also gives 146 videotapes over about two years, leaked by a store clerk."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "Could not re-fetch on 2026-09-23. web.archive.org connection reset (curl 35) on the cited URL and on the id_ raw variant. WebFetch cannot reach web.archive.org. theamericanporch.com: DNS failure / 502. perma.cc/37V2-T2ZD: 403. Snapshots exist per the archive.org availability API. The URL is the one Harvard Law Review footnote 2 cites for Dolan, 'The Bork Tapes', Wash. City Paper (Sept. 25-Oct. 1, 1987). Re-run fetch-text --check from a network that reaches the Wayback Machine."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Harvard Law Review, vol. 131, issue 6 (Developments in the Law - More Data, More Problems)",
+     "title": "Chapter Three: The Video Privacy Protection Act as a Model Intellectual Privacy Statute",
+     "date": "2018-04",
+     "url": "https://harvardlawreview.org/print/vol-131/the-video-privacy-protection-act-as-a-model-intellectual-privacy-statute/",
+     "quote": "The list of 146 videotapes Judge Bork had rented over the course of two years, leaked by a store clerk, revealed nothing particularly salacious.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched live (HTTP 200) and checked with fetch-text --check: FOUND. Footnote 2 cites 'Michael Dolan, The Bork Tapes, Wash. City Paper (Sept. 25-Oct. 1, 1987)' at the same Wayback URL as source 0."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "lotus-marketplace-consumers-1990",
+   "status": "OK",
+   "issues": [
+    "No factual error found. Re-fetched without the cache; quote verbatim (--check FOUND). Culnan attributes the figure to the trade press ('According to the trade press, MarketPlace was expected to ...'). The same page gives the announcement date as 10 April 1990, which matches the year 1990. It also gives the joint cancellation press release as 23 January 1991, which matches the notes.",
+    "Independent check: the English Wikipedia article 'Lotus Marketplace' gives '120 million people and 80 million households', announcement on 10 April 1990 and cancellation on 23 January 1991.",
+    "Source metadata, minor: the page title reads '... in the 1990's' (with an apostrophe). The CPSR index page places the paper among the 'Pre-Conference Papers' of CFP'91, 'March 26-28, 1991 in Burlingame, CA', chaired by Jim Warren. The page carries a later editor's note dated 8 August 1991, so the online text was revised after the conference."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Mary J. Culnan, 'The Lessons of the Lotus MarketPlace: Implications for Consumer Privacy in the 1990's'",
+     "institution": "First Conference on Computers, Freedom and Privacy (CFP'91, Burlingame, CA, 26-28 March 1991), pre-conference paper; archived by Computer Professionals for Social Responsibility",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). CFP'91 dates are from the CPSR index page http://cpsr.org/prevsite/conferences/cfp91/home.html/ ('March 26-28, 1991 in Burlingame, CA Chair: Jim Warren')."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "lotus-marketplace-opt-outs-1991",
+   "status": "OK",
+   "issues": [
+    "No factual error found. Both quotes are verbatim on fresh fetches (--check FOUND). TidBITS supports the notes: 'Lotus announced on the 23rd of January that it has canceled Lotus MarketPlace:Households', and Manzi's 'more than 30,000 calls to our name removal service'. The record correctly treats 30,000 as a lower bound and says they were calls, not confirmed removals.",
+    "Independent check: the English Wikipedia article 'Lotus Marketplace' has 'more than 30,000 people would eventually do so'.",
+    "Source 0 metadata, minor: same title and institution refinement as in lotus-marketplace-consumers-1990 ('1990's'; CFP'91 pre-conference paper, 26-28 March 1991)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Mary J. Culnan, 'The Lessons of the Lotus MarketPlace: Implications for Consumer Privacy in the 1990's'",
+     "institution": "First Conference on Computers, Freedom and Privacy (CFP'91, Burlingame, CA, 26-28 March 1991), pre-conference paper; archived by Computer Professionals for Social Responsibility",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). Same article: 'Lotus announced on the 23rd of January that it has canceled Lotus MarketPlace:Households'. The URL date is 28 January 1991."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "hew-committee-witnesses-1973",
+   "status": "OK",
+   "issues": [
+    "No error found. Re-fetched without the cache; quote verbatim (--check FOUND). The full sentence: 'Shared concerns took root as we heard testimony from over 100 witnesses representing more than 50 different organizations, and as we reviewed a substantial collection of written materials ...'. The notes' '250' matches the next sentence: 'a special inquiry to approximately 250 trade and professional associations and public interest groups', with 'our letter of inquiry' in the parenthetical. The value 100 is correctly treated as a lower bound ('more than').",
+    "The ASPE page does not print a publication date. 'July 1973' is the report's standard date (DHEW publication, transmitted to Secretary Weinberger), and the text refers to events up to mid-1973, such as Sweden's Data Law taking effect on 1 July 1973. It is consistent."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). The same paragraph gives 'approximately 250 trade and professional associations and public interest groups'. No date is printed on the ASPE page."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "convention-108-first-signatories-1981",
+   "status": "OK",
+   "issues": [
+    "No error found in the record. Re-fetched without the cache; quote verbatim (--check FOUND). The same bpb page says 'Am 28. Januar 1981 wurde die Europäische Datenschutzkonvention unterschrieben', so the seven are the opening-day signatories. The page is dated 26.01.2021.",
+    "The Council of Europe Treaty Office chart could not be used as an independent check: every coe.int host returns HTTP 403 here, through both fetch-text and WebFetch. German Wikipedia ('Europäische Datenschutzkonvention') confirms Germany was among the first signatories ('gehörte zu den Erstunterzeichnern') and that the treaty entered into force on 1 October 1985. English Wikipedia also gives 'Effective 1 October 1985'.",
+    "Caution for the writers: bpb's wording, '1981 zunächst von sieben Ländern', means 'initially' (the 28 January 1981 opening). It does not mean only seven states signed during 1981. From memory of the CoE chart, which I could not check here, Norway, the UK and Portugal also signed later in 1981. Prose should say 'seven states signed on the day it opened', not 'seven states signed in 1981'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2021-01-26",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). The page is dated '26.01.2021' and also says 'Am 28. Januar 1981 wurde die Europäische Datenschutzkonvention unterschrieben.'"
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "myth-us-has-no-privacy-law",
+   "status": "FIXED",
+   "issues": [
+    "The parenthesis 'the Privacy Act (1974, which binds federal agencies only)' overstates. Section 552a governs federal agencies' records. But section 7 of the enacted Privacy Act (Pub. L. 93-579, uncodified) also binds state and local agencies: 'It shall be unlawful for any Federal, State or local government agency to deny to any individual any right, benefit, or privilege provided by law because of such individual's refusal to disclose his social security account number.' Reworded so it is accurate and still makes the point that the Act does not cover companies.",
+    "'no single, comprehensive data protection law covering companies' should say federal. Several US states now have comprehensive consumer-privacy statutes. The absence is at the national level.",
+    "Source 0 (DOJ OPCL) cannot be re-fetched with fetch-text: justice.gov returns HTTP 401 with a bot-challenge page, also with browser headers. WebFetch shows the sentence as quoted, but WebFetch is not a verbatim check, so the source is set to PENDING. The Privacy Act as enacted in the Statutes at Large is added as a CONFIRMED primary source. Its section 8 makes sections 3 and 4 effective '270 days following the day on which this Act is enacted'. That is 27 September 1975, which matches DOJ.",
+    "Sources 1 (FCRA) and 2 (VPPA) were re-fetched and are verbatim. The FCRA PDF also has 'This title may be cited as the Fair Credit Reporting Act.' (Title VI of Pub. L. 91-508, 26 October 1970). The VPPA PDF has 'PUBLIC LAW 100-618—NOV. 5, 1988' and 'Approved November 5, 1988.'",
+    "The Electronic Communications Privacy Act (1986) and the Computer Matching and Privacy Protection Act (1988) are named but had no source. Statutes at Large sources are added and checked: Pub. L. 99-508, approved 21 October 1986; Pub. L. 100-503, approved 18 October 1988. All dates in the correction are right."
+   ],
+   "fieldFixes": {
+    "correction": "The US has no single, comprehensive federal data protection law covering companies, but Congress passed a string of sector-by-sector statutes in this period: the Fair Credit Reporting Act (1970), the Privacy Act (1974, which governs records held by federal agencies, not companies), the Electronic Communications Privacy Act (1986), and the Computer Matching and Privacy Protection Act and Video Privacy Protection Act (both 1988). The gap is breadth, not existence."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "PENDING",
+     "note": "fetch-text on 2026-09-23 got HTTP 401 Unauthorized. justice.gov serves a bot-challenge page, also to curl with browser headers. web.archive.org, where the archive.org availability API lists a 2026-05-24 snapshot, resets the connection here. WebFetch returned the sentence as quoted, but that is not a verbatim check. The Statutes at Large source added to this record gives the same facts."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). It is at 84 Stat. 1128, section 602(a)(4). The same PDF: 'This title may be cited as the Fair Credit Reporting Act.' (FOUND); header 'PUBLIC LAW 91-508-OCT. 26, 1970'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched without the cache; quote verbatim (--check FOUND). Header 'PUBLIC LAW 100-618—NOV. 5, 1988'; 'Approved November 5, 1988.'; short title 'Video Privacy Protection Act of 1988'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Government Publishing Office (govinfo), United States Statutes at Large vol. 88",
+     "title": "Public Law 93-579, December 31, 1974, 88 Stat. 1896 (Privacy Act of 1974)",
+     "date": "1974-12-31",
+     "url": "https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf",
+     "quote": "SEC. 8. The provisions of this Act shall be effective on and after the date of enactment, except that the amendments made by sections 3 and 4 shall become effective 270 days following the day on which this Act is enacted.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. Also FOUND on the same PDF: 'to safeguard individual privacy from the misuse of Federal records' (long title); 'individual against an invasion of personal privacy by requiring Federal agencies, except as otherwise provided by law' (section 2(b)); 'SEC. 7. (a) (1) It shall be unlawful for any Federal, State or local' (the SSN provision). 270 days after 31 December 1974 is 27 September 1975."
+    },
+    {
+     "institution": "U.S. Government Publishing Office (govinfo), United States Statutes at Large vol. 100",
+     "title": "Public Law 99-508, October 21, 1986, 100 Stat. 1848 (Electronic Communications Privacy Act of 1986)",
+     "date": "1986-10-21",
+     "url": "https://www.govinfo.gov/content/pkg/STATUTE-100/pdf/STATUTE-100-Pg1848.pdf",
+     "quote": "To amend title 18, United States Code, with respect to the interception of certain communications, other forms of surveillance, and for other purposes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. 'Approved October 21, 1986.' is also FOUND. The short title reads 'Electronic Communications Privacy Act of 1986' in the PDF, but OCR splits 'A ct', so it is not used as the quote."
+    },
+    {
+     "institution": "U.S. Government Publishing Office (govinfo), United States Statutes at Large vol. 102",
+     "title": "Public Law 100-503, October 18, 1988, 102 Stat. 2507 (Computer Matching and Privacy Protection Act of 1988)",
+     "date": "1988-10-18",
+     "url": "https://www.govinfo.gov/content/pkg/STATUTE-102/pdf/STATUTE-102-Pg2507.pdf",
+     "quote": "This Act may be cited as the \"Computer Matching and Privacy Protection Act of 1988\".",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Checked with fetch-text --check: FOUND. 'Approved October 18, 1988.' is also FOUND. Header: 'PUBLIC LAW 100-503—OCT. 18, 1988'."
+    }
+   ]
+  }
+ ]
+}

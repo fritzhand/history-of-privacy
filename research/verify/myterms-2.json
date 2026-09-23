@@ -1,0 +1,227 @@
+{
+ "slice": "myterms",
+ "chunk": 2,
+ "verdicts": [
+  {
+   "kind": "event",
+   "id": "iso-iec-29184-online-notices-2020",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this web.archive.org snapshot failed today (connection reset by peer, 8 attempts; iso.org itself returns 403), so the check ran on the same snapshot as fetched earlier today into the shared fetch cache: --check FOUND. Quote is the first sentence of the Abstract; <title> is 'ISO/IEC 29184:2020 - Information technology — Online privacy notices and consent'; committee ISO/IEC JTC 1/SC 27. Independently corroborated by ISO Open Data (isopublicstorageprod.blob.core.windows.net/opendata/_latest/iso_deliverables_metadata/json/iso_deliverables_metadata.jsonl, fetched live 2026-09-23): id 70331, reference 'ISO/IEC 29184:2020', publicationDate '2020-06-02', ownerCommittee 'ISO/IEC JTC 1/SC 27', scope begins with the quoted sentence."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this web.archive.org snapshot failed today (connection reset by peer, 8 attempts; iso.org itself returns 403), so the check ran on the same snapshot as fetched earlier today into the shared fetch cache: --check FOUND. Life-cycle block reads '60.60 2020-06-02 International Standard published'. ISO Open Data independently gives publicationDate '2020-06-02' for id 70331 (currentStage now 9093 = confirmed after the 2025 systematic review; not needed by the record)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "iso-iec-ts-27560-consent-records-2023",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this web.archive.org snapshot failed today (connection reset by peer, 8 attempts; iso.org itself returns 403), so the check ran on the same snapshot as fetched earlier today into the shared fetch cache: --check FOUND. Quote is the first Abstract sentence; the same Abstract lists the three aims (record to the PII principal, exchange between systems, life-cycle management) paraphrased in the summary. <title> 'ISO/IEC TS 27560:2023 - Privacy technologies — Consent record information structure'. ISO Open Data (live, 2026-09-23): id 80392, deliverableType TS, publicationDate '2023-08-08', ownerCommittee ISO/IEC JTC 1/SC 27."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this web.archive.org snapshot failed today (connection reset by peer, 8 attempts; iso.org itself returns 403), so the check ran on the same snapshot as fetched earlier today into the shared fetch cache: --check FOUND. Life cycle reads '60.60 2023-08-08 International Standard published' and '90.92 2025-04-03 International Standard to be revised' (--check FOUND), supporting the summary's 3 April 2025 'to be revised' claim. ISO Open Data corroborates: currentStage 9092, replacedBy [91775] (ISO/IEC CD 27560.2, stage 30.60). Note 'International Standard published' is ISO's generic stage label; the document itself is a Technical Specification, which the record correctly calls TS."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (curl; the Python UA gets 403 from doc.searls.com, but a fresh fetch into a separate cache returned 200). Quote FOUND verbatim. article:published_time 2026-01-07T16:23:56Z. Supports the significance line (consent to processing vs reciprocal contract with bitwise-identical records)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "w3c-dpv-version-2-2024",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). Quote FOUND. Page header: 'version 2.0', 'Final Community Group Report 01 August 2024' (FOUND), 'Editor: Harshvardhan J. Pandit ( ADAPT Centre, Dublin City University )' (FOUND). Title/date/institution fields correct."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). 'DPV — Version 2.3 (25 February 2026)' FOUND on the DPVCG index. Independently confirmed by the versioned 2.3 spec page (added below), header 'Final Community Group Report 25 February 2026'. The summary skips 2.1 (16 Mar 2025) and 2.2, but 'followed' is not wrong."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Data Privacy Vocabulary (DPV), version 2.3 — Final Community Group Report 25 February 2026",
+     "date": "2026-02-25",
+     "url": "https://w3c-cg.github.io/dpv/2.3/dpv/",
+     "quote": "Final Community Group Report 25 February 2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Versioned release page (the w3.org 'This version' URL CG-FINAL-dpv-20260225 returns 404). Page also reads 'version 2.3'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "event",
+   "id": "w3c-dpv-p7012-extension-draft-2025",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). Quote FOUND. Header: 'Extension for IEEE P7012 (P7012)', 'version 2.1', 'Draft Community Group Report 16 March 2025' (FOUND); authors Beatriz Esteves (IDLab, IMEC, Ghent University), Harshvardhan J. Pandit (ADAPT Centre, DCU), Iain Henderson (JLINC Labs) (FOUND). The extension is absent from DPV 2.0 (/dpv/2.0/standards/p7012/ = 404) and the DPV 2.1 core release is also dated 16 March 2025, so 16 March 2025 is its first published release; v2.2 draft followed 1 Aug 2025."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND; supports 'interaction records kept by both agents'. The page also defines AgreementRegistry, supporting 'an agreement registry'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. Independently, the published IEEE 7012-2025 text (IEEE Xplore full text, rest/document/11360682) still defines DPV and lists 'Data Privacy Vocabulary (DPV), Version 1, Dec.2022' in its Annex E bibliography; it also uses the SD-BASE family of short codes, consistent with the locationNote."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "searls-case-for-myterms-agents-2025",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (curl, 200). Quote FOUND verbatim. article:published_time 2025-08-14T15:25:13Z (article:modified_time 2025-10-11, so the text read today may include later edits). Same post: 'there is only one way for people to secure a measure of privacy online, and that is through contract' and 'People need to be able to proffer their own privacy terms as first parties' support the summary."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND; 'early next year' = early 2026, matching the summary. Consistent with the IEEE standard page (PAR approved 2017-12-06)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live; quote FOUND on doc.searls.com/about/. Supports the Bloomington mapping only as the author's base."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "ieee-sasb-approves-7012-2025",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). Page titled 'IEEE SA Standards Board Approvals 04 November 2025'; the quoted line appears under the 'New Standards' heading (FOUND)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). Quote FOUND; page also lists Status Active Standard, SSIT/SC, MRPT-WG, Chair Doc Searls, Program Manager Malia Zaman, as the note says. Crossref record for 10.1109/IEEESTD.2025.11360682 independently gives approved 2025-11-04."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live PDF (200). Minutes of SSIT SC Meeting #77, 'Thursday, 17th April 2025', electronic meeting; item 8.3 'P7012 - Standard for Machine Readable Personal Privacy Terms' followed by the quoted sentence (FOUND). IEEE Xplore also lists later drafts D13 (May 2025), D14 (June 2025) and D15 (September 2025), consistent with comment resolution and recirculation before approval."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "searls-myterms-summary-ai-agents-2025",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). Quote FOUND verbatim (including the source's own missing noun after 'rapidly evolving'). WordPress REST API gives date 2025-12-08T08:23:08; byline 'Doc Searls' (rel=author). Same post: individuals 'proffer a contract they choose from a limited list posted on a public website by a neutral nonprofit organization', 'Both sign the agreement electronically and keep matching records', and 'both sides will use machine agents'; all support the summary."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim; supports 'work privately and exclusively for each party'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "searls-myterms-agreement-record-sketch-2026",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (curl, 200). Quote FOUND. article:published_time 2026-01-07T16:23:56Z. Post lists 'Browser plugin', 'Web (content management system, or CMS) server plugin', 'Data storage and retrieval'; reviews IAB Europe TCF, Kantara Consent Receipt, ISO/IEC TS 27560:2023 and W3C DPV; proposes 'MyTerms Agreement Record, or MAR . Note that this is something I just made up.' All summary claims check out."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim. Searls's claim that P7012 cites DPV is borne out by the published IEEE 7012-2025 text (DPV defined in clause 3 and listed in the Annex E bibliography)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "event",
+   "id": "ieee-7012-published-xplore-2026",
+   "status": "FIXED",
+   "issues": [
+    "The summary says the standard is 'the latest of the IEEE 7000 series' as a flat fact. That was Doc Searls's description on 29 January 2026, and it is now out of date: IEEE Std 7014.1-2026 (Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based ...) was published on IEEE Xplore on 12 June 2026, according to an IEEE Xplore search API query run 2026-09-23.",
+    "The claim that it is free 'through the IEEE GET Program for AI Ethics and Governance Standards' rests only on Searls, who chaired the working group; IEEE's GET program listing could not be fetched (it is a client-side app). The IEEE Xplore search API marks document 11360682 as accessType 'promotional', 'Freely Available from IEEE', which confirms free access but not the GET label. The claim is now attributed to Searls."
+   ],
+   "fieldFixes": {
+    "summary": "IEEE published 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, on 20 January 2026 as IEEE Xplore document 11360682 (DOI 10.1109/IEEESTD.2025.11360682). It is free to read; Doc Searls, who chaired the working group, wrote at launch that it is part of the IEEE GET Program for AI Ethics and Governance Standards and the latest of the IEEE 7000 series. Its abstract names 'websites, applications and AI agents' among the service providers covered."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (200). Quote FOUND; abstract on the same page reads 'including websites, applications and AI agents' (FOUND). IEEE Xplore search API (POST rest/search, 2026-09-23) independently returns articleNumber 11360682, publicationDate '20 Jan. 2026', doi 10.1109/IEEESTD.2025.11360682, displayPublicationTitle 'IEEE Std 7012-2025', accessType 'Freely Available from IEEE'. That is not checkable with fetch-text.py because it needs a POST."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live from api.crossref.org (200). Quote FOUND. JSON also has publisher-location 'Piscataway, NJ, USA', ISBN 9798855729443 (electronic), created 2026-01-21T21:08:54Z, standards-body 'Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology', resource URL ieeexplore.ieee.org/document/11360682/. The note is accurate."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched live (curl, 200; WordPress API date 2026-01-29T14:40:00). Quote FOUND verbatim. It is Searls's own statement, so the summary now attributes the GET-program and 'latest of the 7000 series' claims to him. The 'latest' claim was true on 29 Jan 2026 (the previous 7000-series publication, IEEE Std 7003-2024, appeared on 24 Jan 2025) but was overtaken by IEEE Std 7014.1-2026 on 12 June 2026."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

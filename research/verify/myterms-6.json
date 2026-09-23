@@ -1,0 +1,364 @@
+{
+ "slice": "myterms",
+ "chunk": 6,
+ "verdicts": [
+  {
+   "kind": "lineage",
+   "id": "do-not-track-2009",
+   "status": "FIXED",
+   "issues": [
+    "Source 1 (Soghoian blog) was PENDING. I confirmed it: a live curl fetch on 2026-09-23 returned the post, dated 'Friday, January 21, 2011', and the quote is verbatim in its text once tags are stripped. fetch-text.py --check still returns NOT-FOUND because the helper's extractor skips this Blogger template's post body (div-only markup). The source date can be narrowed from 2011-01 to 2011-01-21.",
+    "No factual errors. The W3C Note says the Tracking Protection Working Group 'decided to conclude its work and republish the final product as this Note' and is dated 17 January 2019, which supports fate and yearEnd. The Soghoian post supports the July 2009 Soghoian/Stamm prototype. The same post says the 'Do Not Track' name goes back to a 2007 proposal by public-interest groups for an FTC Do Not Track list. The header, which is what this record covers, dates from 2009, so the year is right.",
+    "Caution on legalForce: 'honouring it was voluntary' holds for the US and the W3C spec. GDPR Art. 21(5) allows objection 'by automated means', so do not write that DNT could never have legal effect anywhere. No change required."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "www.w3.org returns 403 (Cloudflare) to the helper's Chrome user agent. The page was fetched live with curl on 2026-09-23 (HTTP 200) and checked with the helper's own to_text/norm functions: FOUND. The status line reads 'W3C Working Group Note 17 January 2019' and the <title> is 'Tracking Preference Expression (DNT)'. The next sentence on the page, 'The working group has therefore decided to conclude its work and republish the final product as this Note', directly supports the fate text."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2011-01-21",
+     "note": "Live curl fetch on 2026-09-23 (HTTP 200). The quote is verbatim in the page text after stripping tags (Python substring test: True). It is followed by the two header names 'X-Behavioral-Ad-Opt-Out: 1 X-Do-Not-Track: 1'. The post's date-header reads 'Friday, January 21, 2011' and the <title> is 'slight paranoia: The History of the Do Not Track Header'. fetch-text.py --check returns NOT-FOUND only because its extractor does not read this Blogger post body. That is an extractor limitation, not a missing quote."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "lineage",
+   "id": "mozilla-privacy-icons-2011",
+   "status": "FIXED",
+   "issues": [
+    "legalForce says the icons were 'never finalised'. That is overstated. The cited beta page says only 'They are not yet final.' (June 2011), and no source read shows the project's final state. A later Mozilla wiki draft, 'Privacy Icons v0.2' (Aug-Sep 2011), shows the project still active and refocused on the web-app store, add-ons and mobile apps.",
+    "The year needs context. 2011 is the date of the beta page, but the Mozilla project began earlier. The 'Drumbeat/Challenges/Privacy Icons' wiki page was created on 12 Nov 2009 (MediaWiki revision history, first edit by David Eaves), and Aza Raskin's alpha post refers to a Mozilla privacy workshop held 'earlier this year'. The alpha's exact date is still unconfirmed: the archived post has no date. Keep year 2011 as the record's documented convention, but the note should not imply the idea began in 2011.",
+    "body 'Mozilla-convened working groups' is acceptable. The beta page says the icons 'are the result of a number of working groups convened by Aza Raskin' (then at Mozilla; 'Owner: Ben Moskowitz, Mozilla; Aza Raskin (initiator)'), and Raskin's post says 'Mozilla convened a privacy workshop'."
+   ],
+   "fieldFixes": {
+    "legalForce": "Intended as legal declarations \"bolted on\" to a site's privacy policy; the beta set was \"not yet final\" (June 2011) and no final, binding set was found in sources read",
+    "fate": "An alpha set (Aza Raskin, c. 2010), a beta set (Mozilla wiki, updated 28 June 2011, \"not yet final\") and a v0.2 draft (Aug-Sep 2011) refocused on the web-app store, add-ons and mobile apps; machine readability promised \"soon\"; no final set or adoption figures found in sources read.",
+    "note": "Year = the dated beta page (2011). The Mozilla project is older: a Drumbeat 'Privacy Icons' challenge page was created on the Mozilla wiki on 12 November 2009, and the alpha followed a Mozilla privacy workshop (alpha commonly dated 2010; not confirmed in a dated primary source). Modelled explicitly on Creative Commons, as MyTerms is, but proffered by the site, not the person."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 (cache cleared) plus fetch-text.py --check: FOUND. The page footer reads 'last edited on 28 June 2011, at 03:33', which matches the MediaWiki API (last revision 2011-06-28T03:33:16Z by Benmoskowitz; first commit 2011-06-15). The same page carries 'Privacy Icons project (beta release)' and 'They are not yet final.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this Internet Archive snapshot failed on 2026-09-23 (web.archive.org connections reset by the egress tunnel, 3 retries). Checked with fetch-text.py against its cache of the same immutable snapshot, fetched earlier the same day: FOUND. The snapshot's raw HTML carries no post date. The 2010 date is still unconfirmed, and the post's own 'Earlier this year, Mozilla convened a privacy workshop' does not fix a year. The post credits Mozilla Associate General Counsel Julie Martin with the icon texts."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Mozilla Wiki",
+     "title": "Drumbeat/Challenges/Privacy Icons",
+     "date": "2009-11-12",
+     "url": "https://wiki.mozilla.org/Drumbeat/Challenges/Privacy_Icons",
+     "quote": "Design a simple set of icons that can educate users of the privacy policies of websites. (Think of something as simple as the Fair Trade Coffee label on food or creative commons logos for copyright)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. The quote is on the current page (last revision 2010-08-27). The MediaWiki API shows it already in the page's first revision, 2009-11-12T03:13:20Z by 'David a eaves'. That revision also records that a Japanese design firm had been commissioned and a Stanford-Harvard law class engagement was planned for January. This shows the Mozilla Privacy Icons effort predates the 2011 beta."
+    },
+    {
+     "institution": "Mozilla Wiki",
+     "title": "Privacy Icons v0.2",
+     "date": "2011-09-29",
+     "url": "https://wiki.mozilla.org/Privacy_Icons_v0.2",
+     "quote": "We aim to create a feature that works well for mobile and web apps first, then expand the scope outwards towards more mature and sophisticated general web policies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. Page revisions run from 2011-08-09 to 2011-09-29 (MediaWiki API). The page lists 'the web-app store, addons, and mobile apps' as targets and calls itself a 'planned feature' open for discussion. It supports the fate fix."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "tosdr-2012",
+   "status": "OK",
+   "issues": [
+    "No errors found. The About page states 'started in June 2012', that the idea emerged at the 2011 Chaos Communication Camp, and that its work 'gets released as free software and open data', which supports machineReadable. Independent confirmation: The Verge covered the project on 14 Aug 2012, and English Wikipedia gives its founding as June 2012 by Hugo Roy, Michiel de Jong and Jan-Christoph Borchardt."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 plus --check: FOUND. Same paragraph: 'In the summer of 2012, Hugo Roy started the legal analysis and brought the project to life' and '...gets released as free software and open data.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "The Verge",
+     "title": "ToS;DR reads the terms of service so you don't have to (Jeff Blagdon)",
+     "date": "2012-08-14",
+     "url": "https://www.theverge.com/2012/8/14/3241572/tos-dr-terms-of-service",
+     "quote": "A new project called ToS;DR (Terms of Service; Didn’t Read) aims to fix the problem of indecipherable terms of service agreements by pointing out unfavorable terms. Services are assigned a rating, from A (best) to E (worst).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent contemporaneous report. fetch-text.py --check FOUND. article:published_time is 2012-08-14T12:23:01+00:00. Confirms the 2012 launch and that the project rates organisations' terms rather than offering people their own."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "customer-commons-nostalking-p2b1-2018",
+   "status": "FIXED",
+   "issues": [
+    "The fate text 'superseded by the MyTerms launch agreements (SD-BASE etc.)' is the author's inference. No source read says P2B1 was superseded. The MyTerms agreements page lists the five launch agreements (SD-BASE, SD-BASE-DP, PDC-AI, ...) and does not mention #NoStalking or P2B1. Soften to 'not among'.",
+    "The claim 'kept as a demo on Customer Commons' was unsourced in the record. It is supported by the Customer Commons 'Choose My Terms' page (Internet Archive, 6 Oct 2025). That page lists 'NoStalking Agreement 0.9' and says the tool and its agreements 'are currently in demo phase'. The source is added below.",
+    "The body claim (legal code drafted with the Harvard Law School Cyberlaw Clinic) and recordKeptBy 'both parties (intended)' were not supported by the quotes on the record. Both are supported by the same Linux Journal article, and quotes are added below. Doc Searls (doc.searls.com, 11 Oct 2022) also writes that '#NoStalking was developed with help from the Cyberlaw Clinic at Harvard Law School and the Berkman Klein Center'.",
+    "Year 2018 = the first dated public mention found (Linux Journal, 14 March 2018). An earlier coinage was not ruled out.",
+    "The live customercommons.org page is behind a SiteGround captcha (HTTP 202 captcha / 403 Forbidden to curl), so only the archived copy can be read."
+   ],
+   "fieldFixes": {
+    "fate": "Beta; still listed (Oct 2025 snapshot) as a demo-phase agreement on Customer Commons' 'Choose My Terms' page; not among the five MyTerms launch agreements (SD-BASE etc.)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this Internet Archive snapshot failed on 2026-09-23 (web.archive.org connections reset by the egress tunnel, 3 retries). Checked with fetch-text.py against its cache of the same immutable snapshot, fetched earlier the same day: FOUND. The live customercommons.org page returns a SiteGround captcha. The same snapshot also says the page 'is informational and does not constitute a binding agreement', which supports legalForce."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 (cache cleared) plus --check: FOUND. The page shows 'on March 14, 2018', matching the source date. The author is Doc Searls, editor in chief."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "Legal Code is being baked by Customer Commons' counsel: Harvard Law School students and teachers working for the Cyberlaw Clinic at the Berkman Klein Center.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. Supports the body claim about the Cyberlaw Clinic. In March 2018 the legal code was still being drafted."
+    },
+    {
+     "institution": "Linux Journal",
+     "title": "Help Us Cure Online Publishing of Its Addiction to Personal Data (Doc Searls)",
+     "date": "2018-03-14",
+     "url": "https://www.linuxjournal.com/content/help-us-cure-online-publishing-its-addiction-personal-data-0",
+     "quote": "A protocol from JLINCLabs by which readers can proffer terms, plus a way to record agreements that leaves an audit trail for both sides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. Supports recordKeptBy 'both parties (intended)'. This was a plan in 2018, not a deployed system."
+    },
+    {
+     "institution": "Customer Commons (archived by the Internet Archive, 6 October 2025)",
+     "title": "Choose My Terms",
+     "date": "2025-10-06",
+     "url": "https://web.archive.org/web/20251006120755/https://customercommons.org/choose-myterms/",
+     "quote": "Current Phase : The “ Choose Your Agreement ” tool and its associated agreements are currently in demo phase.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Live re-fetch of this Internet Archive snapshot failed on 2026-09-23 (web.archive.org connections reset by the egress tunnel, 3 retries). Checked with fetch-text.py against its cache of the same immutable snapshot, fetched earlier the same day: FOUND. The page lists 'NoStalking Agreement 0.9' / 'P2B1 0.9' as the current agreement. It also says 'In alignment with the forthcoming IEEE P7012 standard, we are preparing to introduce 11 more agreements.'"
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "kantara-consent-receipt-2018",
+   "status": "FIXED",
+   "issues": [
+    "The record's only source does not support its key date. The Kantara wiki page gives 'Version: 1.1.0, Date: 2018-02-20' and says it was approved by the Membership, but it does not give the 25 May 2018 final-recommendation date stated in fate. That date is correct: the specification PDF's revision history has '2018-05-25 Final Recommendation approved by Kantara All-Member Ballot'. That source is added below; the sibling event record kantara-consent-receipt-v1-1-2018 already cites it.",
+    "The ISO/IEC TS 27560:2023 part of fate was unsourced on this record. The ISO page (archived 28 Jan 2026) says the TS covers 'consent receipts and consent records', which supports 'consent record/receipt structure'. The hedge on a direct Kantara-to-ISO hand-over is appropriate; no primary source read states it."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 (cache cleared) plus --check: FOUND. The page gives 'Version: 1.1.0', 'Date: 2018-02-20' and 'Editors: Mark Lizar, David Turner', and marks the space 'HISTORICAL STATUS'. The source date 2018-02-20 is the document date, not the final-approval date."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Kantara Initiative — Consent & Information Sharing Work Group (copy hosted by surveillancetrust.org)",
+     "title": "Consent Receipt Specification, Version 1.1.0",
+     "date": "2018-05-25",
+     "url": "https://www.surveillancetrust.org/wp-content/uploads/2023/10/Consent-Receipt-Specification.pdf",
+     "quote": "Final Recommendation approved by Kantara All-Member Ballot",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch on 2026-09-23 plus fetch-text.py --check FOUND. In the revision-history table this line sits against the date 2018-05-25. The copy is hosted by a third party, not by Kantara."
+    },
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC TS 27560:2023 — Privacy technologies — Consent record information structure",
+     "date": "2023-08",
+     "url": "https://web.archive.org/web/20260128031229/https://www.iso.org/standard/80392.html",
+     "quote": "This document provides requirements and recommendations on the use of consent receipts and consent records associated with a PII principal's PII processing consent",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Live re-fetch of this Internet Archive snapshot failed on 2026-09-23 (web.archive.org connections reset by the egress tunnel, 3 retries). Checked with fetch-text.py against its cache of the same immutable snapshot, fetched earlier the same day: FOUND. iso.org itself serves a Cloudflare challenge (403). The page does not mention Kantara."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "iab-europe-tcf-2018",
+   "status": "OK",
+   "issues": [
+    "No errors. Every version date in fate (v1.1 25 April 2018, v2.0 21 August 2019, v2.2 16 May 2023, v2.3 April 2025) is verbatim on the cited IAB Europe page. Only v1.1 was in the record's quote, so a same-page source for the later dates is added. The fate omits v2.1 (19 August 2020, Planet49 alignment). That omission is not an error.",
+    "Independent check: the IAB Tech Lab GitHub spec 'Consent string and vendor list formats v1.1 Final' gives '2018/04/24 - Version 1.1 final publication', which is consistent with a 25 April 2018 launch.",
+    "CJEU claim: the press release says the TC String 'constitutes personal data' and that IAB Europe 'must be regarded as a joint controller', subject to verification by the referring court. The record's 'may be a joint controller' is a fair rendering. Strictly, the Court tied personal-data status to the string being associable with an identifier such as an IP address."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 (cache cleared) plus --check: FOUND. The HTML <title> is 'TCF – Transparency & Consent Framework - IAB Europe'. The page also states 'TCF participants have until 28 February 2026 to adopt TCF v2.3'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 (cache cleared) plus --check: FOUND. The PDF header reads 'PRESS RELEASE No 44/24 Luxembourg, 7 March 2024 Judgment of the Court in Case C-604/22 | IAB Europe'. The next paragraph: 'IAB Europe must be regarded as a ‘joint controller’ within the meaning of the GDPR. Subject to the verifications which are for the referring court to carry out...'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IAB Europe",
+     "title": "Transparency & Consent Framework",
+     "date": "2026",
+     "url": "https://iabeurope.eu/transparency-consent-framework/",
+     "quote": "On 21 August 2019, TCF v2.0 was launched following extensive industry consultation particularly with publishers and the industry associations who represent all aspects of the industry.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. The same page also has 'On 16 May 2023, TCF v2.2 was launched to respond to the changes and needs of the industry' (FOUND) and 'In April 2025, TCF v2.3 was launched to resolve the legitimate interest ambiguity by repurposing and making the ‘Disclosed Vendors’ section a mandatory section of the TC string.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "w3c-dpv-2018",
+   "status": "OK",
+   "issues": [
+    "No errors. The record's single source supports only v2.0 (1 Aug 2024) and the DPV description. The other claims in fate were unsourced on this record, and I confirmed each: v2.3 (25 Feb 2026) from the DPV index and the 2.3 spec; the P7012 draft extension (Draft Community Group Report 16 March 2025, version 2.1); MyTerms agreements linking to DPV (myterms.info/agreements). The year 2018 is the Community Group's start ('initiated the DPVCG on 25th May 2018'), not the vocabulary's first release. Sources are added below.",
+    "Optional update, not required: in DPV 2.3 (25 Feb 2026) the extension is republished as a draft 'Extension for IEEE 7012' supporting the published IEEE 7012-2025 (w3id.org/dpv/standards/ieee/7012; authors Esteves, Pandit, Henderson)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "w3.org blocks the helper's Chrome user agent (403). Fetched live with curl on 2026-09-23 (HTTP 200) and checked with the helper's to_text/norm: FOUND. The status line reads 'Final Community Group Report 01 August 2024', the version string is 'version 2.0', and the page says 'It is not a W3C Standard nor is it on the W3C Standards Track', which supports legalForce."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "DPV specifications index",
+     "date": "2026-02-25",
+     "url": "https://w3c-cg.github.io/dpv/",
+     "quote": "DPV — Version 2.3 (25 February 2026)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. https://w3id.org/dpv resolves to the 2.3 spec, which reads 'Final Community Group Report 25 February 2026'."
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Extension for IEEE P7012 (P7012), version 2.1 — Draft Community Group Report 16 March 2025",
+     "date": "2025-03-16",
+     "url": "https://w3c-cg.github.io/dpv/2.1/standards/p7012/",
+     "quote": "Draft Community Group Report 16 March 2025",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND (fresh). The same page has 'The [ IEEE-P7012 ] draft standard references [ DPV ] in its appendix as an example of a vocabulary...' (FOUND)."
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "Agreements | MyTerms",
+     "date": "2026",
+     "url": "https://myterms.info/agreements/",
+     "quote": "In all cases, where useful, the MyTerms agreements include links to the Data Privacy Vocabulary.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "fetch-text.py --check FOUND. Supports 'MyTerms agreements link to it'."
+    },
+    {
+     "institution": "W3C Data Privacy Vocabularies and Controls Community Group",
+     "title": "Data Privacy Vocabularies and Controls Community Group (group home page)",
+     "date": "2026",
+     "url": "https://www.w3.org/community/dpvcg/",
+     "quote": "initiated the DPVCG on 25th May 2018 – the date of the enforcement of GDPR",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "w3.org blocks the helper's user agent. Fetched live with curl on 2026-09-23 (HTTP 200) and checked with the helper's to_text/norm: FOUND. Supports year 2018, which is the group's start, not the first DPV release."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "iso-iec-29184-2020",
+   "status": "OK",
+   "issues": [
+    "No errors. The title ('Information technology — Online privacy notices and consent'), the committee (ISO/IEC JTC 1/SC 27), 'Publication date : 2020-06', the life-cycle entry '60.60 2020-06-02 International Standard published' and '90.60 2025-09-03 Close of review' are all on the archived ISO page. The fate dates were not in the record's quote, so a same-page source for them is added.",
+    "Live re-fetch was not possible: iso.org returns a Cloudflare challenge (403) and web.archive.org connections were reset. Verified against the helper's same-day cache of the immutable 28 Jan 2026 snapshot. The snapshot shows the review closed but no outcome recorded (confirmed or to be revised). Do not claim the standard was 'confirmed' in 2025."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Live re-fetch of this Internet Archive snapshot failed on 2026-09-23 (web.archive.org connections reset by the egress tunnel, 3 retries). Checked with fetch-text.py against its cache of the same immutable snapshot, fetched earlier the same day: FOUND. <title> is 'ISO/IEC 29184:2020 - Information technology — Online privacy notices and consent'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ISO (archived by the Internet Archive, 28 January 2026)",
+     "title": "ISO/IEC 29184:2020 — life cycle",
+     "date": "2020-06",
+     "url": "https://web.archive.org/web/20260128031228/https://www.iso.org/standard/70331.html",
+     "quote": "60.60 2020-06-02 International Standard published",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Live re-fetch of this Internet Archive snapshot failed on 2026-09-23 (web.archive.org connections reset by the egress tunnel, 3 retries). Checked with fetch-text.py against its cache of the same immutable snapshot, fetched earlier the same day: FOUND. The same page also has '90.60 2025-09-03 Close of review' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "global-privacy-control-2020",
+   "status": "OK",
+   "issues": [
+    "No errors. The W3C document at /TR/gpc/ reads 'W3C Working Draft 17 September 2026' and was 'published by the Privacy Working Group as a Working Draft using the Recommendation track'. The GPC press page lists 'Oct 7th, 2020 Announcing Global Privacy Control', with same-day coverage from Wired, TechCrunch, Ars Technica, CNET and IAPP.",
+    "legalForce names California and Colorado. Neither was supported by the record's quotes, but the same W3C spec names both ('opt out preferences signals' in the CCPA regulations and 'universal opt-out mechanisms' in laws in Colorado and other states), so a same-page source is added.",
+    "Note: /TR/gpc/ is an undated 'latest version' URL, so the title and date on this source will go stale when W3C publishes a new draft."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "w3.org blocks the helper's Chrome user agent. Fetched live with curl on 2026-09-23 (HTTP 200) and checked with the helper's to_text/norm: FOUND. The status line reads 'W3C Working Draft 17 September 2026' and the <title> is 'Global Privacy Control (GPC)'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Fresh fetch on 2026-09-23 (cache cleared) plus --check: FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "W3C Privacy Working Group",
+     "title": "Global Privacy Control (GPC) — W3C Working Draft 17 September 2026",
+     "date": "2026-09-17",
+     "url": "https://www.w3.org/TR/gpc/",
+     "quote": "or similar provisions for \"universal opt-out mechanisms\" in laws in Colorado and other states to allow users to opt out of the sale of their information or its use for cross-organization targeted advertising.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fetched live with curl (w3.org blocks the helper's user agent) and checked with the helper's to_text/norm: FOUND. The preceding clause on the page reads 'such as, for example, the provisions relating to \"opt out preferences signals\" in the California Consumer Privacy Act ... [ CCPA-REGULATIONS ]'."
+    }
+   ]
+  }
+ ]
+}

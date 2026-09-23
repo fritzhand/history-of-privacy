@@ -110,12 +110,22 @@ and ProjectVRM pages. The full text was then read and the site corrected:
 
 ## Link audit (2026-09-23)
 
-`tools/check-links.mjs` over `js/data.js`. The first run: 1,190 URLs, 1,018
-answer, 98 rate-limited or bot-gated (Council of Europe, EUR-Lex, Légifrance,
-the New York Times, SSRN, the Library of Congress, Flickr and similar; they
-resolve in a browser). The one genuinely dead link, NSF's deleted Flickr page
-for the Cranor portrait, was retired; the Commons record and its licence
-review remain. The site's own URL answers 404 until GitHub Pages is enabled.
+`tools/check-links.mjs` over the final `js/data.js`: 1,443 URLs, 1,321 answer,
+103 are rate-limited or bot-gated (Council of Europe, EUR-Lex, Légifrance, the
+New York Times, SSRN, the Library of Congress, Flickr and similar; they resolve
+in a browser). Of the 19 flagged, none is dead:
+
+- 7 answer HTTP 200 to a browser user agent (WhatsApp's blog, the Riksdag's
+  open data, Wiktionary, three W3C mailing-list archives, Ghana's ministry);
+- 6 are Internet Archive snapshots, and web.archive.org reset every connection
+  from the build environment;
+- gnu.org and sfu.ca reset connections from the build environment, their home
+  pages included;
+- `fb.me/p3p` is text inside Facebook's quoted P3P header, not a link;
+- the site's own two URLs answer 404 until GitHub Pages is enabled.
+
+The one genuinely dead link found earlier, NSF's deleted Flickr page for the
+Cranor portrait, was retired; the Commons record and its licence review remain.
 
 ## Next
 

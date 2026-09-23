@@ -57,7 +57,7 @@ const CHALLENGE_HOSTS = new Set(['www.loc.gov', 'tile.loc.gov', 'www.jstor.org',
   'leg.colorado.gov', 'doc.searls.com', 'www.justice.gov', 'www.oxfordreference.com', 'www.smithsonianmag.com',
   'postalmuseum.si.edu', 'www.bentham-project.org', 'www.ucl.ac.uk', 'journals.sagepub.com', 'link.springer.com',
   'doi.org', 'flickr.com', 'www.flickr.com', 'github.com', 'www.sec.gov', 'www.nrl.navy.mil', 'www.lemonde.fr',
-  'www.linkedin.com']);
+  'www.linkedin.com', 'lists.w3.org', 'en.wiktionary.org']);
 
 /* Hosts where a 429 means "you are auditing too fast", not "this link is dead". */
 const THROTTLE_HOSTS = new Set(['upload.wikimedia.org', 'commons.wikimedia.org', 'www.metmuseum.org', 'web.archive.org']);

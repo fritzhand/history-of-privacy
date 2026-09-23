@@ -1547,6 +1547,52 @@ function buildStandard() {
   if (coda) coda.innerHTML = st.coda ? esc(st.coda) + (st.codaSource ? ' ' + sourceHtml(st.codaSource) : '') : '';
 }
 
+/* IEEE 7012 among its siblings in the GET Program for AI Ethics and
+   Governance: one tile per standard in publication order, coloured by whom
+   the standard addresses (from its own scope text), then the organisation's
+   privacy process (7002) beside the person's terms (7012). */
+const GET_WHO = { organisation: ['who-org', 'An organisation\'s process'], system: ['who-industry', 'The system\'s design'], person: ['who-person', 'The person\'s own terms'] };
+const GET_PD = { central: 'Personal data: its subject', partial: 'Personal data: one concern', none: '' };
+function buildGetSeries() {
+  const g = D().getSeries;
+  const sec = document.getElementById('get-grid');
+  if (!g || !sec) {
+    ['get-title', 'get-desc', 'get-legend', 'get-grid', 'get-pair', 'get-coda'].forEach(id => document.getElementById(id)?.remove());
+    return;
+  }
+  const desc = document.getElementById('get-desc');
+  if (desc && g.desc) desc.innerHTML = esc(g.desc) + (g.descSource ? ' ' + sourceHtml(g.descSource) : '');
+  const legend = document.getElementById('get-legend');
+  if (legend) legend.innerHTML = Object.entries(GET_WHO)
+    .filter(([k]) => g.standards.some(s => s.who === k))
+    .map(([k, [cls, label]]) => `<span class="who-badge ${cls}">${esc(label)}</span>`).join(' ');
+  sec.innerHTML = g.standards.map(s => {
+    const [cls, label] = GET_WHO[s.who] || ['who-industry', s.who];
+    const pd = GET_PD[s.personalData] || '';
+    return `<li class="get-tile get-${esc(s.who)}${s.destination ? ' is-destination' : ''}${s.focus ? ' is-focus' : ''}">
+      <div class="get-num"><a href="${esc(s.url)}" target="_blank" rel="noopener">IEEE ${esc(s.number)}</a>${s.kind && s.kind !== 'Standard' ? ` <span class="get-kind">${esc(s.kind)}</span>` : ''}</div>
+      <div class="get-name">${esc(s.title)}</div>
+      <div class="get-summary">${esc(s.summary)}</div>
+      <div class="get-meta"><span class="who-badge ${cls}">${esc(label)}</span>${pd ? `<span class="get-pd get-pd-${esc(s.personalData)}">${esc(pd)}</span>` : ''}</div>
+      <div class="get-src">${esc(s.publishedLabel || '')}${s.source ? ' · ' + sourceHtml(s.source) : ''}</div>
+    </li>`;
+  }).join('');
+  const pair = document.getElementById('get-pair');
+  if (pair) {
+    if (g.pair && g.pair.length === 2) {
+      pair.innerHTML = g.pair.map(p => `
+        <div class="get-side get-${esc(p.who)}">
+          <div class="get-side-role">${esc(p.role)}</div>
+          <div class="get-side-num">IEEE ${esc(p.number)}</div>
+          <div class="get-side-title">${esc(p.title)}</div>
+          <p class="get-side-text">${quoteLine(p.source)}</p>
+        </div>`).join('<div class="get-pair-vs" aria-hidden="true">and</div>');
+    } else pair.remove();
+  }
+  const coda = document.getElementById('get-coda');
+  if (coda) coda.innerHTML = g.coda ? esc(g.coda) + (g.codaSource ? ' ' + sourceHtml(g.codaSource) : '') : '';
+}
+
 /* Primary-source pull quotes between sections, declared in the data layer
    (D().pullQuotes[key]) and dropped where a section has none. */
 function buildPullQuotes() {
@@ -2095,6 +2141,7 @@ document.addEventListener('DOMContentLoaded', () => {
   buildLineageTable();
   buildHarmsTable();
   buildStandard();
+  buildGetSeries();
   buildArgument();
   buildScenario();
   buildCounterpoints();

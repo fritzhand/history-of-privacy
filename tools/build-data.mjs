@@ -34,7 +34,7 @@ import editorial from './editorial.mjs';
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const SLICES = ['early', 'letalone', 'dataprotection', 'internet', 'surveillance',
   'numbers', 'myterms', 'agents', 'concepts', 'global',
-  'personas-code', 'personas-advocates', 'personas-researchers', 'essay', 'media'];
+  'personas-code', 'personas-advocates', 'personas-researchers', 'essay', 'media', 'ieee-get'];
 const research = Object.fromEntries(SLICES
   .filter(k => fs.existsSync(path.join(root, 'research', k + '.json')))
   .map(k => [k, JSON.parse(fs.readFileSync(path.join(root, 'research', k + '.json'), 'utf8'))]));
@@ -340,6 +340,7 @@ const data = {
   lineageNote: E.lineageNote,
   harms: E.harms,
   standard: E.standard,
+  getSeries: E.getSeries,
   agentsLede: E.agentsLede,
   argument: E.argument,
   scenario: E.scenario,

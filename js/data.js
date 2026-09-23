@@ -22319,6 +22319,8 @@ window.privacyData = {
     ]
   },
 
+  getSeries: null,
+
   agentsLede: null,
 
   argument: [

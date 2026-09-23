@@ -2149,6 +2149,73 @@ tr.is-destination td:first-child { box-shadow: inset 3px 0 0 var(--who-person); 
 .agreement-src { font-size: 9.5px; color: var(--text-muted); margin-top: auto; padding-top: 10px; line-height: 1.5; }
 .agreement-src a { color: var(--v4); text-decoration: underline; }
 
+/* ─── WHERE 7012 SITS: the GET AI-ethics series ─── */
+.get-legend { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 14px; }
+.get-grid {
+  list-style: none; margin: 0 0 20px; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: 12px;
+}
+.get-tile {
+  --get-accent: var(--who-industry);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--get-accent);
+  border-radius: var(--card-radius);
+  padding: 12px 14px;
+  min-width: 0;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.get-tile.get-organisation { --get-accent: var(--who-org); }
+.get-tile.get-person       { --get-accent: var(--who-person); }
+.get-tile.is-destination {
+  background: color-mix(in srgb, var(--who-person) 9%, var(--bg-card));
+  border-color: var(--who-person);
+  box-shadow: 0 0 0 1px var(--who-person);
+}
+.get-tile.is-focus { border-color: color-mix(in srgb, var(--who-org) 60%, var(--border)); }
+.get-num { font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; color: var(--get-accent); letter-spacing: .01em; }
+.get-num a { color: inherit; text-decoration: none; }
+.get-num a:hover { text-decoration: underline; }
+.get-kind { font-family: var(--font-body); font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); margin-left: 4px; }
+.get-name { font-size: 13px; font-weight: 600; line-height: 1.35; color: var(--text-primary); }
+.get-summary { font-size: 12px; line-height: 1.5; color: var(--text-secondary); }
+.get-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: auto; padding-top: 4px; }
+.get-pd { font-size: 9.5px; font-weight: 600; letter-spacing: .04em; color: var(--text-muted); }
+.get-pd-central { color: var(--text-primary); }
+.get-src { font-size: 9.5px; color: var(--text-muted); line-height: 1.5; }
+.get-src a { color: var(--v4); text-decoration: underline; }
+.get-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 14px; align-items: stretch;
+  margin: 8px 0 12px;
+}
+.get-side {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--who-industry);
+  border-radius: var(--card-radius);
+  padding: 14px 16px;
+  min-width: 0;
+}
+.get-side.get-organisation { border-left-color: var(--who-org); }
+.get-side.get-person       { border-left-color: var(--who-person); }
+.get-side-role { font-size: 9.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); }
+.get-side.get-organisation .get-side-role { color: var(--who-org); }
+.get-side.get-person .get-side-role { color: var(--who-person); }
+.get-side-num { font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 15px; font-weight: 700; color: var(--text-primary); margin-top: 4px; }
+.get-side-title { font-family: var(--font-display); font-size: 17px; line-height: 1.25; color: var(--text-primary); margin: 2px 0 8px; }
+.get-side-text { font-size: 12px; line-height: 1.6; color: var(--text-secondary); }
+.get-side-text q { color: var(--text-primary); }
+.get-side-text a { color: var(--v4); text-decoration: underline; }
+.get-pair-vs { align-self: center; font-family: var(--font-display); font-style: italic; font-size: 16px; color: var(--text-muted); }
+@media (max-width: 760px) {
+  .get-pair { grid-template-columns: minmax(0, 1fr); }
+  .get-pair-vs { justify-self: center; }
+}
+
 /* ─── THE ARGUMENT: why it matters now ─── */
 .arg-list { display: grid; gap: 14px; counter-reset: arg; margin-bottom: 28px; }
 .arg-card {

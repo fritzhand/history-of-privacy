@@ -505,24 +505,30 @@
      "note": "Date from the archive's ms.date metadata (2010-06-05); the post was updated on 20 February 2012. It describes IE's behaviour from IE6 onward. Footnote: 'There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.'"
     },
     {
-     "institution": "Wikipedia",
-     "title": "P3P",
-     "date": "2026-09-23",
-     "url": "https://en.wikipedia.org/wiki/P3P",
-     "quote": "Mozilla supported some P3P features for a few years, but all P3P related source code was removed by 2007.",
+     "institution": "Mozilla (Bugzilla@Mozilla)",
+     "title": "Bug 366611 - Remove extensions/p3p from the tree (comment 16, dwitte)",
+     "date": "2007-06-11",
+     "url": "https://bugzilla.mozilla.org/show_bug.cgi?ctype=xml&id=366611",
+     "quote": "removed extensions/p3p. the only remaining references to it are the ui components in suite (bug 383993) and the p3p hooks in cookie code (bug 383994), which can be taken care of separately.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Tertiary source, used to qualify 'only'. The same article says 'Internet Explorer and Microsoft Edge Legacy were the only major browsers to support P3P.' (FOUND). The date field is the date accessed."
+     "note": "Replaces a Wikipedia citation (P3P, which cites Mozilla bug 225287). Quote checked with fetch-text --check on Bugzilla's XML export of the bug: FOUND. The URL is the XML view because the human-readable page (https://bugzilla.mozilla.org/show_bug.cgi?id=366611) puts comments in markup the checker cannot read; the comment text is the same. Comment dated 2007-06-11 06:50:42 -0700. Bugzilla's REST API shows both follow-ups RESOLVED FIXED in 2007: bug 383994 'remove p3p hooks from cookies' (2007-06-21) and bug 383993 'remove p3p ui from suite' (2007-09-03). So P3P code was gone from Mozilla by the end of 2007. The earlier bug 225287 comment 27 (2007-06-09) also says 'neither firefox nor seamonkey build p3p anymore. marking fixed.' (FOUND in that bug's XML export)."
     }
    ],
    "locationNote": "Company headquarters (Microsoft campus, Redmond); coordinates approximate.",
    "_verify": {
     "status": "FIXED",
     "issues": [
-     "Overstated 'only' in the significance. It calls IE6 'The only mass deployment of P3P'. Internet Explorer was the only mainstream browser to act on P3P, but it was not the only deployment: Mozilla shipped some P3P features for a few years before removing the code by 2007 (Wikipedia, P3P). 'By far the largest' is accurate.",
-     "The significance also says sites 'learned they had only to send the right tokens, true or not'. No cited source documents sites actually doing this. The IEInternals footnote supports the underlying point: 'There's no technical means by which the browser can enforce the claims in the P3P statement'. The corrected wording rests on that footnote.",
-     "Both quotes were re-fetched and are verbatim (FOUND). The press release is dated 'REDMOND, Wash., March 21, 2001' and says IE6 will ship 'as part of the Windows XP operating system later this year'. It confirms the deny/downgrade/accept logic and the Medium (default) rule: 'If a third party has no compact policy, third-party cookies will be rejected.' The IEInternals page's ms.date is 2010-06-05, and it carries the 2/20/2012 update. IE6 was released in August 2001 (Wikipedia gives August 24, 2001), which fits 'shipped later in 2001'."
-    ]
+     "Cited Wikipedia (P3P) for Mozilla's removal of P3P code by 2007. Replaced with the primary record: Mozilla's own Bugzilla bug 366611, 'Remove extensions/p3p from the tree', where the P3P module was removed on 11 June 2007."
+    ],
+    "earlier": {
+     "status": "FIXED",
+     "issues": [
+      "Overstated 'only' in the significance. It calls IE6 'The only mass deployment of P3P'. Internet Explorer was the only mainstream browser to act on P3P, but it was not the only deployment: Mozilla shipped some P3P features for a few years before removing the code by 2007 (Wikipedia, P3P). 'By far the largest' is accurate.",
+      "The significance also says sites 'learned they had only to send the right tokens, true or not'. No cited source documents sites actually doing this. The IEInternals footnote supports the underlying point: 'There's no technical means by which the browser can enforce the claims in the P3P statement'. The corrected wording rests on that footnote.",
+      "Both quotes were re-fetched and are verbatim (FOUND). The press release is dated 'REDMOND, Wash., March 21, 2001' and says IE6 will ship 'as part of the Windows XP operating system later this year'. It confirms the deny/downgrade/accept logic and the Medium (default) rule: 'If a third party has no compact policy, third-party cookies will be rejected.' The IEInternals page's ms.date is 2010-06-05, and it carries the 2/20/2012 update. IE6 was released in August 2001 (Wikipedia gives August 24, 2001), which fits 'shipped later in 2001'."
+     ]
+    }
    }
   },
   {
@@ -724,24 +730,30 @@
      "note": "Undated wiki page; the principles as currently published. Same page: 'For vendors and other service providers, VRM is the customer-side counterpart of CRM'."
     },
     {
-     "institution": "Wikipedia",
-     "title": "Vendor relationship management",
-     "date": "2026-09-23",
-     "url": "https://en.wikipedia.org/wiki/Vendor_relationship_management",
-     "quote": "on September 1, 2006, in a conversation with Doc Searls about the project Searls had recently started as a fellow at the Berkman Center for Internet & Society at Harvard University",
+     "institution": "Berkman Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge (event page for Doc Searls' talk, Harvard Law School, 11 June 2012)",
+     "date": "2012",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "The book reports on progress by dozens of companies and development projects fostered by ProjectVRM, which Doc launched at the Berkman Center in 2006.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Independent tertiary corroboration of the 2006 start at Berkman; it credits Mike Vizard (Gillmor Gang podcast) with first using 'VRM' in this sense. Checked with fetch-text --check: FOUND. The date field is the date accessed."
+     "note": "Replaces a Wikipedia citation. Quote checked with fetch-text --check: FOUND. The same page also says 'Doc Searls served as a Berkman Fellow from 2006 to 2010, during which he launched and led ProjectVRM' (FOUND), and that VRM is 'a term coined as a counterpart to CRM'. The Berkman announcement 'Welcome Doc Searls, new Berkman Fellow' (cyber.harvard.edu/node/93388) confirms the fellowship. It shows Searls already working on the customer-side answer to CRM, but it does not name ProjectVRM."
     }
    ],
    "locationNote": "Berkman Center's home at 23 Everett Street (Harvard Law School); coordinates approximate.",
    "_verify": {
     "status": "FIXED",
     "issues": [
-     "The coordinates are about 240 m off. 42.3791, -71.1207 lies west of Massachusetts Avenue, near Cambridge Common. The Wikimedia Commons photo 'Berkman Center.jpg' ('Berkman Center for Internet & Society at 23 Everett Street, Cambridge MA') gives its camera location as 42°22′47.6″N 71°07′04.7″W, about 42.3799, -71.1180. The fix moves the point there.",
-     "Not verified: that the Berkman Center was already at 23 Everett Street in 2006. The Commons photo is from 2011, and the archived Berkman contact pages could not be read because web.archive.org is unreachable. The location note already says 'approximate'.",
-     "Both quotes were re-fetched with a fresh cache: FOUND. 'For vendors and other service providers, VRM is the customer-side counterpart of CRM' is also FOUND. Independent check: Wikipedia's Vendor relationship management article says Mike Vizard first used the term, in a 1 September 2006 Gillmor Gang conversation with Searls about 'the project Searls had recently started as a fellow at the Berkman Center'. That is consistent with a 2006 start; the ProjectVRM name followed."
-    ]
+     "Cited Wikipedia (Vendor relationship management) as independent corroboration of the 2006 start at Berkman. Replaced with the Berkman Center's own 2012 event page, which says Searls launched ProjectVRM at the Center in 2006. Wikipedia's source for the Vizard/Gillmor Gang detail is a dead mevio.com podcast page, reachable only through the Wayback Machine, which is unreachable from here. The record's text does not rely on the Vizard detail."
+    ],
+    "earlier": {
+     "status": "FIXED",
+     "issues": [
+      "The coordinates are about 240 m off. 42.3791, -71.1207 lies west of Massachusetts Avenue, near Cambridge Common. The Wikimedia Commons photo 'Berkman Center.jpg' ('Berkman Center for Internet & Society at 23 Everett Street, Cambridge MA') gives its camera location as 42°22′47.6″N 71°07′04.7″W, about 42.3799, -71.1180. The fix moves the point there.",
+      "Not verified: that the Berkman Center was already at 23 Everett Street in 2006. The Commons photo is from 2011, and the archived Berkman contact pages could not be read because web.archive.org is unreachable. The location note already says 'approximate'.",
+      "Both quotes were re-fetched with a fresh cache: FOUND. 'For vendors and other service providers, VRM is the customer-side counterpart of CRM' is also FOUND. Independent check: Wikipedia's Vendor relationship management article says Mike Vizard first used the term, in a 1 September 2006 Gillmor Gang conversation with Searls about 'the project Searls had recently started as a fellow at the Berkman Center'. That is consistent with a 2006 start; the ProjectVRM name followed."
+     ]
+    }
    }
   },
   {
@@ -837,24 +849,30 @@
      "accessType": "FREE"
     },
     {
-     "institution": "Wikipedia",
-     "title": "Facebook Beacon",
-     "date": "2026-09-23",
-     "url": "https://en.wikipedia.org/wiki/Facebook_Beacon",
-     "quote": "On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.",
+     "institution": "Forbes (Andy Greenberg)",
+     "title": "Facebook's Overblown Privacy Problems",
+     "date": "2007-12-05",
+     "url": "https://www.forbes.com/2007/12/05/facebook-beacon-opt-tech-internet-cx_ag_1205techfacebook.html",
+     "quote": "In a blog post, the 23-year-old founder of the social networking site apologized Wednesday for privacy violations by its controversial Beacon advertising program, which broadcasts users' online purchases to friends in their networks. Zuckerberg announced that Facebook will add a Beacon opt-out button to the site's privacy settings",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Independent tertiary corroboration of the 5 December date. The same article gives the launch as November 6, 2007, with 44 partner websites. Checked with fetch-text --check: FOUND. The date field is the date accessed."
+     "note": "Replaces a Wikipedia citation. Quote checked with fetch-text --check: FOUND. Page metadata: author Andy Greenberg, datePublished 2007-12-05T22:47:17-05:00. 5 December 2007 was a Wednesday, which fixes the date of the apology and the opt-out announcement independently of TechCrunch [2]. The article also quotes 'We simply did a bad job with this release, and I apologize for it'. Fortune's 'about facebook' (fortune.com/2007/12/05/about-facebook) also reports that Zuckerberg 'broke his silence Wednesday' and 'allowed members to turn off Beacon'."
     }
    ],
    "locationNote": "Launch event city (New York); the venue is not named in the release, so coordinates are central Manhattan, approximate. Facebook was headquartered in Palo Alto.",
    "_verify": {
     "status": "FIXED",
     "issues": [
-     "Overstated eBay's role. The summary says 44 websites 'including Fandango and eBay' were using Beacon. The 6 November 2007 release says 'eBay plans to use Beacon' for sellers' listings and 'eBay expects to make this feature available to sellers on eBay.com in early 2008'. Fandango and Travelocity were implementing it at launch.",
-     "Wrong date on source [1]. The Meta newsroom page for Zuckerberg's 'Thoughts on Beacon' shows 'December 6, 2007' (time datetime=2007-12-06T08:00:00-08:00). The source has 2007-12-05. The record's own 5 December date for the apology is still right: TechCrunch, datePublished 2007-12-05T19:47Z, reports the blog post 'this morning', and Wikipedia's Facebook Beacon article says 'On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.'",
-     "All three quotes were re-fetched with a fresh cache and are verbatim (FOUND). Also confirmed: 'We simply did a bad job with this release, and I apologize for it.'; 'Last week we changed Beacon to be an opt-in system, and today we’re releasing a privacy control to turn off Beacon completely.'; and the dateline 'NEW YORK — Facebook Social Advertising Event, Nov. 6, 2007'."
-    ]
+     "Cited Wikipedia (Facebook Beacon) to corroborate the 5 December 2007 apology and opt-out. Wikipedia cites Zuckerberg's 'Thoughts on Beacon' post, which the record already cites from the Meta newsroom. Replaced with contemporary independent press: Forbes, 5 December 2007."
+    ],
+    "earlier": {
+     "status": "FIXED",
+     "issues": [
+      "Overstated eBay's role. The summary says 44 websites 'including Fandango and eBay' were using Beacon. The 6 November 2007 release says 'eBay plans to use Beacon' for sellers' listings and 'eBay expects to make this feature available to sellers on eBay.com in early 2008'. Fandango and Travelocity were implementing it at launch.",
+      "Wrong date on source [1]. The Meta newsroom page for Zuckerberg's 'Thoughts on Beacon' shows 'December 6, 2007' (time datetime=2007-12-06T08:00:00-08:00). The source has 2007-12-05. The record's own 5 December date for the apology is still right: TechCrunch, datePublished 2007-12-05T19:47Z, reports the blog post 'this morning', and Wikipedia's Facebook Beacon article says 'On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.'",
+      "All three quotes were re-fetched with a fresh cache and are verbatim (FOUND). Also confirmed: 'We simply did a bad job with this release, and I apologize for it.'; 'Last week we changed Beacon to be an opt-in system, and today we’re releasing a privacy control to turn off Beacon completely.'; and the dateline 'NEW YORK — Facebook Social Advertising Event, Nov. 6, 2007'."
+     ]
+    }
    }
   },
   {
@@ -2326,5 +2344,8 @@
     ]
    }
   }
+ ],
+ "_verdictsApplied": [
+  "internet-f302.json"
  ]
 }

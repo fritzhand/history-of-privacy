@@ -1727,24 +1727,30 @@
      "note": "Checked with fetch-text.py --check: FOUND (live fetch). The same page, in a bold lead span that fetch-text's paragraph extraction skips, reads: 'In 2006, the Committee of Ministers of the Council of Europe decided to designate the 28th of January as Data Protection Day. This day is now celebrated worldwide, under the name \"Privacy Day\" outside Europe.' (seen in the page HTML)."
     },
     {
-     "institution": "Wikipedia",
-     "title": "Council of Europe",
+     "institution": "UK Government (GOV.UK), UK Delegation to the Council of Europe",
+     "title": "UK Delegation to the Council of Europe",
      "date": "2026",
-     "url": "https://en.wikipedia.org/wiki/Council_of_Europe",
-     "quote": "The Committee of Ministers , comprising the Ministers of Foreign Affairs of all 46 member states",
+     "url": "https://www.gov.uk/world/organisations/uk-delegation-to-the-council-of-europe",
+     "quote": "The Council of Europe (CoE) is a pan-European organisation of 46 member states, including all 27 member states of the European Union.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Checked with --check: FOUND (the space before the comma is how the page text extracts). Supports the '46-member' figure. The same article: 'The Council of Europe is not to be confused with the Council of the European Union ... or the European Council, which belong to the European Union, an entirely separate body from the Council of Europe'. Tertiary source, used only for the member count because coe.int returns 403."
+     "note": "Replaces a Wikipedia citation (Council of Europe article). --check FOUND on 2026-09-23. Supports the '46-member' figure in the correction and shows the Council of Europe is a separate organisation whose membership includes, but goes beyond, the EU's 27. Undated organisation page; 'date' is the access year. coe.int itself (portal and treaty office) returns HTTP 403 to scripts."
     }
    ],
    "_verify": {
     "status": "FIXED",
     "issues": [
-     "Source 0 (Wayback copy of the coe.int Data Protection Day page) could not be re-fetched. web.archive.org reset every connection this session (fetch-text.py, curl and WebFetch all failed), and live coe.int returns HTTP 403. It is marked PENDING, and two confirmed sources are added that carry the same facts.",
-     "Source 1 (IAPP) quote verbatim. But its date is wrong: 2023-11-13 is the CMS datePublished (the page's dateModified is 2026-05-28). The article text opens 'Friday, Jan. 28, is Data Protection Day' and has a section 'Data Privacy Day 2022' ('This year will be the 16th Data Protection/Privacy Day'). 28 January 2022 was a Friday, so the article dates from January 2022. The author is Müge Fazlioglu.",
-     "All claims in the correction are supported by confirmed sources. IAPP: 'The day was initiated by the Committee of Ministers of the Council of Europe in 2006' and the date 'marks the anniversary of the opening for signature of the Council of Europe's Convention 108 in 1981'. The European Parliament DPO page: 'In 2006, the Committee of Ministers of the Council of Europe decided to designate the 28th of January as Data Protection Day.' '46-member': Wikipedia's Council of Europe article (the Committee of Ministers comprises 'the Ministers of Foreign Affairs of all 46 member states'). This matches a cached Dec 2024 coe.int header ('46 Member States'); the count has been 46 since Russia's exclusion in March 2022.",
-     "Nuance, not an error: EU institutions do mark the day (the European Parliament DPO publishes a Data Protection Day page, and IAPP itself labels it 'Data Protection Day (in the EU)'). The FALSE verdict is right about its origin, which is the Council of Europe and Convention 108, not EU law."
-    ]
+     "Source 3 cited Wikipedia ('Council of Europe') for the '46-member' figure. Wikipedia's own reference for the count is coe.int, which returns HTTP 403 to scripts. It is replaced with the UK Government's page for its Delegation to the Council of Europe, which gives the 46 member states and says they include all 27 EU member states, so the CoE is a separate and wider body (--check FOUND)."
+    ],
+    "earlier": {
+     "status": "FIXED",
+     "issues": [
+      "Source 0 (Wayback copy of the coe.int Data Protection Day page) could not be re-fetched. web.archive.org reset every connection this session (fetch-text.py, curl and WebFetch all failed), and live coe.int returns HTTP 403. It is marked PENDING, and two confirmed sources are added that carry the same facts.",
+      "Source 1 (IAPP) quote verbatim. But its date is wrong: 2023-11-13 is the CMS datePublished (the page's dateModified is 2026-05-28). The article text opens 'Friday, Jan. 28, is Data Protection Day' and has a section 'Data Privacy Day 2022' ('This year will be the 16th Data Protection/Privacy Day'). 28 January 2022 was a Friday, so the article dates from January 2022. The author is Müge Fazlioglu.",
+      "All claims in the correction are supported by confirmed sources. IAPP: 'The day was initiated by the Committee of Ministers of the Council of Europe in 2006' and the date 'marks the anniversary of the opening for signature of the Council of Europe's Convention 108 in 1981'. The European Parliament DPO page: 'In 2006, the Committee of Ministers of the Council of Europe decided to designate the 28th of January as Data Protection Day.' '46-member': Wikipedia's Council of Europe article (the Committee of Ministers comprises 'the Ministers of Foreign Affairs of all 46 member states'). This matches a cached Dec 2024 coe.int header ('46 Member States'); the count has been 46 since Russia's exclusion in March 2022.",
+      "Nuance, not an error: EU institutions do mark the day (the European Parliament DPO publishes a Data Protection Day page, and IAPP itself labels it 'Data Protection Day (in the EU)'). The FALSE verdict is right about its origin, which is the Council of Europe and Convention 108, not EU law."
+     ]
+    }
    }
   },
   {
@@ -2899,5 +2905,8 @@
     ]
    }
   }
+ ],
+ "_verdictsApplied": [
+  "dataprotection-f301.json"
  ]
 }

@@ -179,7 +179,10 @@ def apply_slice(slice_):
             for add in vd.get('addSources') or []:
                 if isinstance(add, dict) and add.get('url'):
                     srcs.append(add)
-            rec['_verify'] = {'status': st, 'issues': vd.get('issues') or []}
+            stamp = {'status': st, 'issues': vd.get('issues') or []}
+            if rec.get('_verify'):  # a later pass keeps the earlier stamp
+                stamp['earlier'] = rec['_verify']
+            rec['_verify'] = stamp
         done.append(os.path.basename(f))
     for arr, rec, key, vd in drops:
         if rec in arr:

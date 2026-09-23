@@ -368,20 +368,26 @@
      "accessType": "FREE"
     },
     {
-     "institution": "Wikipedia",
-     "title": "Semayne's case",
-     "date": "2026-09-23",
-     "url": "https://en.wikipedia.org/wiki/Semayne%27s_case",
-     "quote": "Michaelmas Term, 1604",
+     "institution": "Liberty Fund, Online Library of Liberty: The Selected Writings and Speeches of Sir Edward Coke, vol. 1, ed. Steve Sheppard",
+     "title": "Semayne's Case, (1604) Michaelmas Term, 2 James 1, King's Bench (5 Co. Rep. 91a)",
+     "date": "2003",
+     "url": "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/911/0462-01_LFeBk.pdf",
+     "quote": "Semayne’s Case. (1604) Michaelmas Term, 2 James 1 In the Court of King’s Bench. First Published in the Reports, volume 5, page 91a.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "An independent check of the displayDate term. The infobox gives the full case name as Peter Semayne v Richard Gresham, Court of King's Bench, 5 Co Rep 91a, 77 ER 194. --check FOUND. Tertiary source; the date is the access date."
+     "note": "Replaces a Wikipedia citation (Semayne's case). The Online Library of Liberty's PDF of the printed edition (© 2003 Liberty Fund); --check FOUND on 2026-09-23. The editor's heading dates the case to Michaelmas Term of 2 James I (1604), in the King's Bench. The report then opens 'In an Action on the Case by Peter Semayne, Plaintiff, and Richard Gresham, Defendant' (--check FOUND), which gives the full case name. The 1826 edition of Coke's Reports, vol. 3 (archive.org item reportssiredwar00cokegoog), heads the case 'Mich. 2. Jac. 1. In the King's Bench'. That was read in OCR text, so it could not be checked with --check."
     }
    ],
    "locationNote": "The King's Bench sat in Westminster Hall; coordinates are the Hall.",
    "_verify": {
-    "status": "OK",
-    "issues": []
+    "status": "FIXED",
+    "issues": [
+     "Source 3 cited Wikipedia ('Semayne's case' infobox, 'Michaelmas Term, 1604') for the displayDate term. Wikipedia's own reference for the case is Sheppard's Liberty Fund edition of Coke's writings; it is replaced with that edition's case heading, '(1604) Michaelmas Term, 2 James 1 In the Court of King's Bench', read in the Online Library of Liberty's PDF (--check FOUND)."
+    ],
+    "earlier": {
+     "status": "OK",
+     "issues": []
+    }
    }
   },
   {
@@ -1088,26 +1094,32 @@
      "note": "Transcribed from the page image at PDF page 641 (printed p. 594); no text layer, so --check cannot run. The resolution names the meeting place as 'the hall of the building on Battery street, between Washington and Jackson streets, known as the \"Exchange Building\"'."
     },
     {
-     "institution": "Wikipedia",
-     "title": "Great Flood of 1862",
-     "date": "2026-09-23",
-     "url": "https://en.wikipedia.org/wiki/Great_Flood_of_1862",
-     "quote": "As a result of the flooding, from January 23, 1862, the state capital was moved temporarily from Sacramento to San Francisco.",
+     "institution": "California State Capitol Museum (State of California)",
+     "title": "Construction — History of the Capitol",
+     "date": "2026",
+     "url": "https://capitolmuseum.ca.gov/about-the-capitol/history-of-the-capitol/construction/",
+     "quote": "They briefly adjourned before completing the session in San Francisco’s Merchants Exchange Building from January 24 th until May 15 th , 1862.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "--check FOUND. Tertiary corroboration of the San Francisco sitting; 'date' is the access date."
+     "note": "Replaces a Wikipedia citation (Great Flood of 1862). --check FOUND on 2026-09-23; the spaces in '24 th' and '15 th ,' are how the page's superscript ordinals extract. The same page says 'On January 6 th , 1862, the Legislature convened in the midst of the deluge. The fourth in a series of floods inundated the city on January 11 th , and the Senate passed a resolution to adjourn to San Francisco for the remainder of the session.' (--check FOUND). Undated page; 'date' is the access year. The 'Merchants Exchange Building' matches the 'Exchange Building' on Battery Street named in Concurrent Resolution No. XI."
     }
    ],
    "locationNote": "Concurrent Resolution No. XI (22 January 1862) moved the Legislature from flooded Sacramento to San Francisco for the rest of the 1862 session. It met in the 'Exchange Building' on Battery Street between Washington and Jackson streets, and coordinates are that block (approximate). The act was approved on 18 April 1862, during the San Francisco sitting.",
    "_verify": {
     "status": "FIXED",
     "issues": [
-     "Wrong place. The record puts the legislature in Sacramento, but the 1862 session left flooded Sacramento. Concurrent Resolution No. XI (adopted 22 January 1862; Statutes of California 1862, p. 594) moved it to San Francisco 'there to remain during the remainder of the present session', meeting in the 'Exchange Building' on Battery Street between Washington and Jackson streets. The act was approved on 18 April 1862, so it was passed in San Francisco. Place, coordinates and locationNote are corrected. Wikipedia's 'Great Flood of 1862' agrees: the capital moved to San Francisco from 23 January 1862 (--check FOUND).",
-     "The primary text was found, so the gap in the record's own note is closed. It is Statutes of California 1862, ch. CCLXII (262), 'An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages', approved 18 April 1862, pp. 288–293. Section 6 (pp. 289–290) is the wiretap clause. It makes it a misdemeanour, with a fine of up to $1,000 and/or up to one year's imprisonment, for anyone 'not connected with any telegraph company' to read or learn a message 'by means of any machine, instrument, or contrivance' while it is being sent. displayDate is narrowed to 18 April 1862 and the summary now describes the statute.",
-     "The significance states 'The first law against intercepting electronic messages' as fact. The only source for that is historian Brian Hochman's 'earliest statute' remark in a magazine interview, so the claim is now attributed to him.",
-     "Method caveat: the Assembly Clerk's 1862 Statutes PDF is a scan with no text layer, so fetch-text.py --check cannot run on it. The two primary-source quotes added below were transcribed by reading the page images: PDF pages 335–337 (printed pp. 288–290) and PDF page 641 (printed p. 594). The index entry 'TELEGRAPHS. Act for the regulation of companies, 288–293 ... Clandestinely learning contents, penalty, 290' was read from 1862_Index.pdf. The Wikipedia source is added as a --check-able corroboration of the San Francisco sitting.",
-     "Checked OK: the Smithsonian quote is verbatim (--check FOUND). The page metadata gives author April White, datePublished 2018-03-22, title 'A Brief History of Surveillance in America'. The D. C. Williams 1864 story rests on Hochman alone and stays attributed to him."
-    ]
+     "Source 4 cited Wikipedia ('Great Flood of 1862') to corroborate the San Francisco sitting. Wikipedia's reference is a San Joaquin County Historical Society article, whose PDF now returns 404. It is replaced with the California State Capitol Museum's history page, which says the flood-bound Legislature completed its 1862 session in San Francisco's Merchants Exchange Building from 24 January to 15 May 1862 (--check FOUND). This agrees with Concurrent Resolution No. XI (source 3) and puts the 18 April 1862 approval inside the San Francisco sitting."
+    ],
+    "earlier": {
+     "status": "FIXED",
+     "issues": [
+      "Wrong place. The record puts the legislature in Sacramento, but the 1862 session left flooded Sacramento. Concurrent Resolution No. XI (adopted 22 January 1862; Statutes of California 1862, p. 594) moved it to San Francisco 'there to remain during the remainder of the present session', meeting in the 'Exchange Building' on Battery Street between Washington and Jackson streets. The act was approved on 18 April 1862, so it was passed in San Francisco. Place, coordinates and locationNote are corrected. Wikipedia's 'Great Flood of 1862' agrees: the capital moved to San Francisco from 23 January 1862 (--check FOUND).",
+      "The primary text was found, so the gap in the record's own note is closed. It is Statutes of California 1862, ch. CCLXII (262), 'An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages', approved 18 April 1862, pp. 288–293. Section 6 (pp. 289–290) is the wiretap clause. It makes it a misdemeanour, with a fine of up to $1,000 and/or up to one year's imprisonment, for anyone 'not connected with any telegraph company' to read or learn a message 'by means of any machine, instrument, or contrivance' while it is being sent. displayDate is narrowed to 18 April 1862 and the summary now describes the statute.",
+      "The significance states 'The first law against intercepting electronic messages' as fact. The only source for that is historian Brian Hochman's 'earliest statute' remark in a magazine interview, so the claim is now attributed to him.",
+      "Method caveat: the Assembly Clerk's 1862 Statutes PDF is a scan with no text layer, so fetch-text.py --check cannot run on it. The two primary-source quotes added below were transcribed by reading the page images: PDF pages 335–337 (printed pp. 288–290) and PDF page 641 (printed p. 594). The index entry 'TELEGRAPHS. Act for the regulation of companies, 288–293 ... Clandestinely learning contents, penalty, 290' was read from 1862_Index.pdf. The Wikipedia source is added as a --check-able corroboration of the San Francisco sitting.",
+      "Checked OK: the Smithsonian quote is verbatim (--check FOUND). The page metadata gives author April White, datePublished 2018-03-22, title 'A Brief History of Surveillance in America'. The D. C. Williams 1864 story rests on Hochman alone and stays attributed to him."
+     ]
+    }
    }
   },
   {
@@ -1895,5 +1907,8 @@
     ]
    }
   }
+ ],
+ "_verdictsApplied": [
+  "early-f301.json"
  ]
 }

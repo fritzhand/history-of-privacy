@@ -471,7 +471,7 @@ window.privacyData = {
       },
       {
         heading: "Walls, rooms and seals",
-        text: "In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.{1,2} Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.{3} Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and secured to become their own envelopes, some with built-in tamper-evident locks;{4} in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.{5,6} In 1878 the US Supreme Court, while upholding a ban on mailing lottery circulars, carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.{7} French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.{8,9,10}",
+        text: "In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.{1,2,3} Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.{4} Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and secured to become their own envelopes, some with built-in tamper-evident locks;{5} in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.{6,7} In 1878 the US Supreme Court, while upholding a ban on mailing lottery circulars, carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.{8} French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.{9,10,11}",
         source: [
           {
             institution: "Online Library of Liberty (Liberty Fund), from Selected Writings of Sir Edward Coke, vol. I",
@@ -480,6 +480,16 @@ window.privacyData = {
             url: "https://oll.libertyfund.org/quotes/sir-edward-coke-declares-that-your-house-is-your-castle-and-fortress-1604",
             quote: "That the house of every one is to him as his Castle and Fortress as well for defence against injury and violence, as for his repose;",
             note: "Semayne's Case, 5 Co. Rep. 91a (K.B. 1604); Coke was Attorney General and reported the case. The same passage limits the principle: sheriffs could still enter, after announcing themselves, to execute the King's process.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Liberty Fund, Online Library of Liberty: The Selected Writings and Speeches of Sir Edward Coke, vol. 1, ed. Steve Sheppard",
+            title: "Note on 'The Fifth Part of the Reports' (published 1605), which contains Semayne's Case",
+            date: "2003",
+            url: "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/911/0462-01_LFeBk.pdf",
+            quote: "In English, The Fifth part of the reports of Sr. Edward Coke, Knight, the Kings Attorney Generall.",
+            note: "Replaces a Wikipedia citation (Semayne's case). The Online Library of Liberty's PDF of the printed edition (© 2003 Liberty Fund); --check FOUND on 2026-09-23. The same passage begins 'The Fifth Part of Coke’s Reports was published in 1605.' The edition heads the case 'Semayne’s Case. (1604) Michaelmas Term, 2 James 1 In the Court of King’s Bench. First Published in the Reports, volume 5, page 91a.', and its introduction says Coke 'served Elizabeth I as Attorney General'. All three are --check FOUND. Together they support 'reported by Coke', who was then Attorney General, as against OLL's quote page, which calls him the judge.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -1933,6 +1943,16 @@ window.privacyData = {
           quote: "To this rule, however, common-law courts appended an important qualification: \"But before he breaks it, he ought to signify the cause of his coming, and to make request to open doors..., for the law without a default in the owner abhors the destruction or breaking of any house (which is for the habitation and safety of man) by which",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Liberty Fund, Online Library of Liberty: The Selected Writings and Speeches of Sir Edward Coke, vol. 1, ed. Steve Sheppard",
+          title: "Semayne's Case, (1604) Michaelmas Term, 2 James 1, King's Bench (5 Co. Rep. 91a)",
+          date: "2003",
+          url: "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/911/0462-01_LFeBk.pdf",
+          quote: "Semayne’s Case. (1604) Michaelmas Term, 2 James 1 In the Court of King’s Bench. First Published in the Reports, volume 5, page 91a.",
+          note: "Replaces a Wikipedia citation (Semayne's case). The Online Library of Liberty's PDF of the printed edition (© 2003 Liberty Fund); --check FOUND on 2026-09-23. The editor's heading dates the case to Michaelmas Term of 2 James I (1604), in the King's Bench. The report then opens 'In an Action on the Case by Peter Semayne, Plaintiff, and Richard Gresham, Defendant' (--check FOUND), which gives the full case name. The 1826 edition of Coke's Reports, vol. 3 (archive.org item reportssiredwar00cokegoog), heads the case 'Mich. 2. Jac. 1. In the King's Bench'. That was read in OCR text, so it could not be checked with --check.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -2548,6 +2568,16 @@ window.privacyData = {
           note: "Transcribed from the page image at PDF page 641 (printed p. 594); no text layer, so --check cannot run. The resolution names the meeting place as 'the hall of the building on Battery street, between Washington and Jackson streets, known as the \"Exchange Building\"'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "California State Capitol Museum (State of California)",
+          title: "Construction — History of the Capitol",
+          date: "2026",
+          url: "https://capitolmuseum.ca.gov/about-the-capitol/history-of-the-capitol/construction/",
+          quote: "They briefly adjourned before completing the session in San Francisco’s Merchants Exchange Building from January 24 th until May 15 th, 1862.",
+          note: "Replaces a Wikipedia citation (Great Flood of 1862). --check FOUND on 2026-09-23; the spaces in '24 th' and '15 th ,' are how the page's superscript ordinals extract. The same page says 'On January 6 th , 1862, the Legislature convened in the midst of the deluge. The fourth in a series of floods inundated the city on January 11 th , and the Senate passed a resolution to adjourn to San Francisco for the remainder of the session.' (--check FOUND). Undated page; 'date' is the access year. The 'Merchants Exchange Building' matches the 'Exchange Building' on Battery Street named in Concurrent Resolution No. XI.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -3065,6 +3095,16 @@ window.privacyData = {
           note: "Social Research 68(2), Summer 2001, pp. 481-513, at 487-488 (JSTOR stable URL https://www.jstor.org/stable/40971467). Read from a copy posted for a University of Washington course (CSDE 502). Same page: 'By early 1941 Methorst's successor as head of the population registration office, J. L. Lentz, had quickly adapted this general \"cradle to grave\" system to create special registration systems covering the Jewish and Gypsy populations' and 'Dutch Jews had the highest death rate (73 percent) of Jews residing in any occupied western European country'. They explain the refugees' lower death rate by the fact that they 'avoided registration'. Seltzer's fuller treatment (Population and Development Review 24(3), 1998) was not read.",
           verificationStatus: "CONFIRMED",
           accessType: "PAYWALL"
+        },
+        {
+          institution: "De Groene Amsterdammer (Jurriën Rood)",
+          title: "Een man met bedoelingen: Sjaak Lentz en het persoonsbewijs",
+          date: "2022-03-23",
+          url: "https://www.groene.nl/artikel/een-man-met-bedoelingen",
+          quote: "Het was het werk van een Nederlander: Jacques ‘Sjaak’ Lentz (1894-1963), hoofd van de rijksinspectie van de bevolkingsregisters.",
+          note: "Replaces a Wikipedia citation. Translation: 'It was the work of a Dutchman: Jacques \"Sjaak\" Lentz (1894-1963), head of the State Inspectorate of Population Registers.' Checked with fetch-text --check: FOUND. JSON-LD gives the date 2022-03-23 and the author Jurriën Rood. The full text was served to a script, though groene.nl also sells subscriptions. Also FOUND: CBS director Methorst put Lentz forward 'als ideale kandidaat voor de nieuwe functie van inspecteur van de bevolkingsregisters'; and the persoonskaart 'werd in 1938 definitief verplicht gesteld, als nieuwe basis van de Nederlandse bevolkingsregistratie'. The article says the copy register was kept in the former Kleykamp art gallery, which was bombed in April 1944 ('Ten slotte werd Kleykamp in april 1944 gebombardeerd', FOUND). It does not name the city, so the Hague location still rests on the record's locationNote.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -5952,6 +5992,16 @@ window.privacyData = {
           note: "Date from the archive's ms.date metadata (2010-06-05); the post was updated on 20 February 2012. It describes IE's behaviour from IE6 onward. Footnote: 'There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Mozilla (Bugzilla@Mozilla)",
+          title: "Bug 366611 - Remove extensions/p3p from the tree (comment 16, dwitte)",
+          date: "2007-06-11",
+          url: "https://bugzilla.mozilla.org/show_bug.cgi?ctype=xml&id=366611",
+          quote: "removed extensions/p3p. the only remaining references to it are the ui components in suite (bug 383993) and the p3p hooks in cookie code (bug 383994), which can be taken care of separately.",
+          note: "Replaces a Wikipedia citation (P3P, which cites Mozilla bug 225287). Quote checked with fetch-text --check on Bugzilla's XML export of the bug: FOUND. The URL is the XML view because the human-readable page (https://bugzilla.mozilla.org/show_bug.cgi?id=366611) puts comments in markup the checker cannot read; the comment text is the same. Comment dated 2007-06-11 06:50:42 -0700. Bugzilla's REST API shows both follow-ups RESOLVED FIXED in 2007: bug 383994 'remove p3p hooks from cookies' (2007-06-21) and bug 383993 'remove p3p ui from suite' (2007-09-03). So P3P code was gone from Mozilla by the end of 2007. The earlier bug 225287 comment 27 (2007-06-09) also says 'neither firefox nor seamonkey build p3p anymore. marking fixed.' (FOUND in that bug's XML export).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -6516,6 +6566,16 @@ window.privacyData = {
           date: "2007-12-05",
           url: "https://techcrunch.com/2007/12/05/zuckerberg-saves-face-apologies-for-beacon",
           quote: "Finally heeding calls to apologize for the privacy disaster surrounding Facebook’s Beacon advertising program, CEO Mark Zuckerberg took responsibility for the company’s mistakes in a blog post this morning.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Forbes (Andy Greenberg)",
+          title: "Facebook's Overblown Privacy Problems",
+          date: "2007-12-05",
+          url: "https://www.forbes.com/2007/12/05/facebook-beacon-opt-tech-internet-cx_ag_1205techfacebook.html",
+          quote: "In a blog post, the 23-year-old founder of the social networking site apologized Wednesday for privacy violations by its controversial Beacon advertising program, which broadcasts users' online purchases to friends in their networks. Zuckerberg announced that Facebook will add a Beacon opt-out button to the site's privacy settings",
+          note: "Replaces a Wikipedia citation. Quote checked with fetch-text --check: FOUND. Page metadata: author Andy Greenberg, datePublished 2007-12-05T22:47:17-05:00. 5 December 2007 was a Wednesday, which fixes the date of the apology and the opt-out announcement independently of TechCrunch [2]. The article also quotes 'We simply did a bad job with this release, and I apologize for it'. Fortune's 'about facebook' (fortune.com/2007/12/05/about-facebook) also reports that Zuckerberg 'broke his silence Wednesday' and 'allowed members to turn off Beacon'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7330,6 +7390,16 @@ window.privacyData = {
           note: "URL dated 6 June 2013; the page timestamp (7 June 2013 15.23 EDT) reflects a later update.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "HuffPost (Michael Calderone)",
+          title: "Washington Post Began PRISM Story Three Weeks Ago, Heard Guardian's 'Footsteps'",
+          date: "2013-06-07",
+          url: "https://www.huffpost.com/entry/washington-post-prism-guardian_n_3402883",
+          quote: "But roughly 20 minutes after the Post story appeared online Thursday, The Guardian –- which had already broken a major story the previous night on the NSA’s seizure of millions of Verizon customers’ phone records –- published its own story on PRISM",
+          note: "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. Also FOUND: 'The Washington Post revealed on Thursday the existence of a secret National Security Agency program code-named PRISM'. The page's datePublished is 2013-06-07T15:58:58Z, so 'Thursday' is 6 June 2013. The article names Barton Gellman and Laura Poitras (Post) and Glenn Greenwald and Ewen MacAskill (Guardian). It also agrees with the record's 5 June date for the Verizon story ('the previous night'). Official corroboration: the ODNI's 'DNI Statement on Activities Authorized Under Section 702 of FISA', dated June 6, 2013, begins 'The Guardian and The Washington Post articles refer to collection of communications pursuant to Section 702' (read on the GlobalSecurity.org mirror; the dni.gov and intelligence.gov copies return 403).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -7376,6 +7446,16 @@ window.privacyData = {
           url: "https://documents.un.org/api/symbol/access?s=A/RES/68/167&l=en&t=pdf",
           quote: "Affirms that the same rights that people have offline must also be protected online, including the right to privacy … Resolution adopted by the General Assembly on 18 December 2013 … Requests the United Nations High Commissioner for Human Rights to submit a report on the protection and promotion of the right to privacy in the context of domestic and extraterritorial surveillance and/or the interception of digital communications and the collection of personal data, including on a mass scale",
           note: "Document header: 'Resolution adopted by the General Assembly on 18 December 2013'; distributed 21 January 2014. Operative paragraph 5; supports the revised significance.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "United Nations General Assembly (report of the Secretary-General)",
+          title: "A/69/360 — Twelfth annual progress report on the implementation of the capital master plan",
+          date: "2014-08-27",
+          url: "https://documents.un.org/api/symbol/access?s=A/69/360&l=en&t=pdf",
+          quote: "The renovation work on the General Assembly Building began in June 2013, following the reconfiguration of the temporary North Lawn Building to house the interim General Assembly Hall, a step which followed the completion of the renovation of the Conference Building.",
+          note: "Replaces a Wikipedia citation (United Nations General Assembly Building). Paragraph 16; --check FOUND on 2026-09-23. The same report's summary says the plan 'will begin to draw to a close with the completion and occupancy of the General Assembly Building in September 2014' (--check FOUND). The eleventh report (A/68/352, 27 August 2013, para. 20) says 'the renovation of the General Assembly Building commenced on 1 June 2013' (--check FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -13219,6 +13299,16 @@ window.privacyData = {
           note: "§ 47 opens 'Dieses Gesetz tritt am 1. Januar 1978 in Kraft. Abweichend davon treten in Kraft:' (that sentence --check FOUND separately), followed by this item. § 17 is headed 'Bestellung eines Bundesbeauftragten für den Datenschutz' and begins 'Es ist ein Bundesbeauftragter für den Datenschutz zu bestellen.' Item 3 puts § 6 (technical and organisational measures) into force on 1 January 1979. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Hessisches Hauptstaatsarchiv Wiesbaden (Hessian State Archives), Arcinsys",
+          title: "HHStAW Fonds 557: Datenschutzbeauftragter — finding-aid introduction",
+          date: "2026",
+          url: "https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=b2988",
+          quote: "Das 'Datenschutzgesetz' von 1970 (GVBl. I S. 625; Inkrafttreten am 13.10.1970; Änderung zum 01.01.1975 durch Gesetz vom 04.09.1974; außer Kraft gesetzt und ersetzt zum 08.02.1978 durch HDSG vom 31.01.1978)",
+          note: "Replaces a Wikipedia citation (de: Hessisches Datenschutzgesetz). --check FOUND on 2026-09-23. Translation: 'The 1970 Data Protection Act (GVBl. I p. 625; in force on 13.10.1970; amended with effect from 01.01.1975 by the Act of 04.09.1974; repealed and replaced with effect from 08.02.1978 by the HDSG of 31.01.1978)'. The same introduction says 'Am 7. Oktober 1970 verabschiedete der Hessische Landtag das 'Datenschutzgesetz' (GVBl. I S. 625).' (--check FOUND). 7 October 1970 is the Act's official date; calling it the day the Landtag passed the Act is loose, and the record's note rightly avoids that. Undated archival description; 'date' is the access year.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -13325,6 +13415,16 @@ window.privacyData = {
           url: "https://snl.no/personregisterloven",
           quote: "Trådt i kraft 01.01.1980, 01.07.1980 Lovdata-ID NLO/lov/1978-06-09-48",
           note: "Fact box: in force 1 January 1980 (some provisions 1 July 1980); Lovdata ID for the Act of 9 June 1978 No. 48. Full name 'lov om personregistre m.m.'. The page is marked 'Sist oppdatert: 26. november 2024'. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Datatilsynet (Personvernbloggen, the Norwegian Data Protection Authority's blog)",
+          title: "Knut Kaspersen, 'Personvernlovgivningen er 40 år'",
+          date: "2018-06-08",
+          url: "https://www.personvernbloggen.no/2018/06/08/personvernlovgivningen-er-40-ar/",
+          quote: "Loven trådte i kraft 1. januar 1980. I forbindelse med dette ble det også opprettet et eget Datatilsyn.",
+          note: "Replaces a Wikipedia citation (no: Datatilsynet). The site describes itself as 'Datatilsynets blogg om personvernspørsmål'. --check FOUND on 2026-09-23. Translation: 'The Act entered into force on 1 January 1980. In connection with this, a separate Data Inspectorate was also set up.' The post names the first director as 'Helge Seip (1980-1989)' (--check FOUND). Datatilsynet's English page https://www.datatilsynet.no/en/about-us/ says 'We are an independent body set up in 1980 to protect the individual right to privacy.' (--check FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -14768,6 +14868,16 @@ window.privacyData = {
           note: "Full text of the organic law (Art. 6 definitions). The signature line 'Tunis, le 27 juillet 2004' was also --check FOUND. This is a reproduction by DCAF, not the JORT itself. --check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "DCAF – Geneva Centre for Security Sector Governance (Tunisian legislation database, legislation-securite.tn)",
+          title: "Loi organique n° 2017-42 du 30 mai 2017, portant approbation de l'adhésion de la République Tunisienne à la convention n° 108 du Conseil de l'Europe et de son protocole additionnel n° 181",
+          date: "2017-05-30",
+          url: "https://legislation-securite.tn/latest-laws/loi-organique-n-2017-42-du-30-mai-2017-portant-approbation-de-ladhesion-de-la-republique-tunisienne-a-la-convention-n-108-du-conseil-de-leurope-pour-la-protection-des-personnes-a-le/",
+          quote: "Article unique – Est approuvée, l’adhésion de la République Tunisienne à la convention n° 108 du conseil de l’Europe pour la protection des personnes à l’égard du traitement automatisé des données à caractère personnel, adoptée à Strasbourg le 28 janvier 1981",
+          note: "Replaces a Wikipedia citation (Convention 108 article). Primary text as reproduced by DCAF, not the JORT itself; --check FOUND on 2026-09-23, signature line 'Tunis, le 30 mai 2017.' also FOUND. Translation: 'Sole article – The accession of the Republic of Tunisia to Council of Europe Convention No. 108 for the protection of individuals with regard to automatic processing of personal data, adopted at Strasbourg on 28 January 1981, is approved'. Presidential Decree No. 2017-75 of 30 May 2017 ratifies the accession: 'Article premier – Est ratifiée, l’adhésion de la République Tunisienne' (--check FOUND at https://legislation-securite.tn/latest-laws/decret-presidentiel-n-2017-75-du-30-mai-2017-portant-ratification-de-ladhesion-de-la-republique-tunisienne-a-la-convention-n-108-du-conseil-de-leurope-pour-la-protection-des-pe/). For the date Tunisia became a party, the DLA Piper Tunisia page (source 0) says 'Tunisia became the 51st Member State of the Council of Europe Convention 108 on November 1, 2017' (--check FOUND). coe.int returns HTTP 403 to scripts, so the treaty office's record was not read.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15132,6 +15242,16 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
+          institution: "Présidence du Faso (Presidency of Burkina Faso)",
+          title: "Commission de l’Informatique et des Libertés (CIL)",
+          date: "2026",
+          url: "https://www.presidencedufaso.bf/commission-de-linformatique-de-des-libertes-cil/",
+          quote: "La Commission de l’Informatique et des Libertés (CIL) est une autorité administrative indépendante créée par la loi N°010-2004/AN du 20 avril 2004 portant protection des données à caractère personnel. Elle est fonctionnelle depuis décembre 2007.",
+          note: "Replaces a Wikipedia citation (fr: Commission de l’Informatique et des Libertés). --check FOUND on 2026-09-23. Translation: 'The CIL is an independent administrative authority created by Law No. 010-2004/AN of 20 April 2004 on the protection of personal data. It has been operational since December 2007.' The CIL's own Présentation page (source 1) carries the same two sentences. Its 'Elle est fonctionnelle depuis décembre 2007.' is --check FOUND, but its first sentence sits in a styled box that fetch-text does not extract (it was seen in the page HTML). Undated page; 'date' is the access year.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
           institution: "Data Protection Africa (ALT Advisory)",
           title: "Burkina Faso — Fact Sheet",
           date: "2026",
@@ -15194,6 +15314,16 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=SN",
           quote: "Act No. 2008-12 of 25 January 2008 Concerning Personal Data Protection ('the Act')",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Direction générale du Chiffre et de la Sécurité des Systèmes d'Information, Senegal (copy of the Act)",
+          title: "Loi n° 2008-12 du 25 janvier 2008 portant sur la protection des données à caractère personnel, art. 5",
+          date: "2008-01-25",
+          url: "https://stcc-ssi.sn/wp-content/uploads/2025/03/protection-des-donnees-personnelles.pdf",
+          quote: "Il est créé une Commission de Protection des Données à Caractère Personnel dite « Commission des Données Personnelles » en abrégé la « CDP ».",
+          note: "Replaces a Wikipedia citation (fr: Commission de protection des données personnelles (Sénégal)). This is the full text of the Act on a Senegalese government directorate's site, not the Journal officiel itself: jo.gouv.sn returned 503 or reset the connection, and the CDP's own site (cdp.sn) is a script-rendered app with no readable text. --check FOUND on 2026-09-23. Article 5 (Chapter II, Section 1). Translation: 'A Commission for the Protection of Personal Data, called the \"Commission des Données Personnelles\" and abbreviated \"CDP\", is created.' The exposé des motifs adds 'Le chapitre II institue une autorité administrative indépendante dénommée « Commission des Données Personnelles » (CDP).' (--check FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -19099,6 +19229,16 @@ window.privacyData = {
           note: "The page adds: 'I lost every one of these lawsuits.' Undated page; accessed 2026-09-23. Sun 'employee number five' and FOIA suits: Steven Levy, 'Crypto Rebels', Wired, https://www.wired.com/1993/02/crypto-rebels/ ('As Sun Microsystems employee number five, Gilmore retired with a bankroll in the millions.'). Dates Cygnus to 1989, before EFF (July 1990). The same page says 'I was its fifth employee, and later a consultant.' about Sun. Undated page; accessed 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "United States Court of Appeals for the Ninth Circuit (order; text via Harvard Law School Library, Caselaw Access Project)",
+          title: "Bernstein v. United States Department of Justice, No. 97-16686, 192 F.3d 1308 (9th Cir. 1999) (order granting rehearing en banc)",
+          date: "1999-09-30",
+          url: "https://static.case.law/f3d/192/html/1308-01.html",
+          quote: "Upon the vote of a majority of nonre-cused regular active judges of this court, it is ordered that this case be reheard by the en banc court pursuant to Circuit Rule 35-3. The three-judge panel opinion, Bernstein v. U.S. Dept. of Justice, 176 F.3d 1132 (9th Cir.1999), is withdrawn.",
+          note: "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The hyphen in 'nonre-cused' is in the reporter text. The order is signed by Chief Judge Hug and dated Sept. 30, 1999. CAP metadata gives decision_date 1999-09-30 and cites_to 176 F.3d 1132 (the 6 May 1999 panel opinion). CourtListener carries the same text but returned an empty 202 challenge to scripts.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -19487,6 +19627,16 @@ window.privacyData = {
           url: "https://www.cs.princeton.edu/~arvindn/publications/no-silver-bullet-de-identification.pdf",
           quote: "A new report by Ann Cavoukian and Daniel Castro is full of such inaccuracies, despite its claims of “setting the record straight.”",
           note: "Response to Cavoukian and Castro, 'Big Data and Innovation, Setting the Record Straight: De-identification Does Work' (ITIF, 2014).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Information Technology and Innovation Foundation (ITIF), author biography",
+          title: "Ann Cavoukian, Information and Privacy Commissioner, Ontario, Canada",
+          date: "2026-09-23",
+          url: "https://itif.org/person/ann-cavoukian-0/",
+          quote: "Dr. Cavoukian joined the Office of the Information and Privacy Commissioner in 1987, during its start-up phase, as its first Director of Compliance. In 1990, she was appointed Assistant Commissioner.",
+          note: "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The date field is the date accessed, because the page is undated; its text runs to November 2011 and says her term was 'extended to 2014'. The same biography text, with the same two sentences, was published by Women of Influence in 2006 (womenofinfluence.ca/2006/09/09/…). That confirms it is the IPC's standard official bio and not ITIF's own research. It also says she was 'Initially appointed in 1997'. Consistent with the record: she was Assistant Commissioner when the IPC co-published the 1995 PET report.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -25796,6 +25946,16 @@ window.privacyData = {
           accessType: "API"
         },
         {
+          institution: "Springer, Modern Socio-Technical Perspectives on Privacy (open-access book)",
+          title: "Pamela J. Wisniewski and Xinru Page, 'Privacy Theories and Frameworks', pp. 15–41",
+          date: "2022",
+          url: "https://link.springer.com/chapter/10.1007/978-3-030-82786-1_2",
+          quote: "Social psychologist Irwin Altman defined privacy as “an interpersonal boundary process by which a person or group regulates interaction with others,” by altering the degree of openness of the self to others",
+          note: "Replaces a Wikipedia citation (Irwin Altman). Open-access chapter, Springer (Cham), 2022, DOI 10.1007/978-3-030-82786-1_2. --check FOUND on 2026-09-23. It supports his discipline only. The University of Utah's College of Social and Behavioral Science profile also says 'Irv came to the University of Utah in 1969 as a professor of psychology' (https://csbs.utah.edu/alumni-spotlights/altman.php, --check FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
           institution: "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
           title: "Jean-Louis Halpérin, 'Protection de la vie privée et privacy : deux traditions juridiques différentes ?'",
           date: "2015",
@@ -25963,6 +26123,26 @@ window.privacyData = {
           quote: "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
           note: "The source of the myth, at p. 383. Verification: Could not re-fetch: web.archive.org reset every connection, and the live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 with header x-amzn-waf-action: challenge and an empty body. The quoted sentence is confirmed verbatim on Wikipedia's 'The Right to Privacy (article)', which reproduces it with a citation to 48 Cal. L. Rev. 383 (see addSources). The original page and page number remain unverified.",
           verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Massachusetts Historical Society",
+          title: "Warren-Clarke Family Papers, 1814-1945 (collection guide; revised May 1992)",
+          date: "1992",
+          url: "https://www.masshist.org/collection-guides/view/fa0316",
+          quote: "Samuel Dennis Warren (1852-1910) married in 1883 Mabel Ashton Bayard. Their children were: Mabel Bayard Warren (b. 1884), Samuel Dennis Warren (b. 1885), Katherine Lee Bayard Warren (b. 1889), Bayard Warren (b. 1891), Sylvia Warren (b. 1896), and Henry Warren (b. 1900).",
+          note: "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The guide says: 'Collection processed by Priscilla Ritter, March 1973. Revised by Katherine H. Griffin, May 1992.' It gives the year of the marriage but not the day. For the exact date: the Evening Star (Washington, D.C.) of 26 January 1883, p. 1 ('Society Notes'), reports 'The marriage of Miss Mabel Bayard, the eldest daughter of Senator Bayard, and Mr. Samuel D. Warren, of Boston, yesterday nogp [noon], at the Ascension church'. That gives 25 January 1883. The page was read through the Library of Congress Chronicling America API (loc.gov/resource/sn83045462/1883-01-26/ed-1/?sp=1). fetch-text is refused by loc.gov (403), so that newspaper quote has no --check.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Cambridge University Press (reprint of William L. Prosser, 'Privacy', 48 California Law Review 383 (1960))",
+          title: "William L. Prosser, 'Privacy [a legal analysis]', in Ferdinand David Schoeman (ed.), Philosophical Dimensions of Privacy: An Anthology, pp. 104-155",
+          date: "1984",
+          url: "https://www.cambridge.org/core/books/abs/philosophical-dimensions-of-privacy/privacy-a-legal-analysis/0F9A247383F2AB71CC200A575B08165E",
+          quote: "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed. It was an annoyance for which the press, the advertisers and the entertainment industry of America were to pay dearly over the next seventy years.",
+          note: "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The Cambridge Core chapter page shows the opening of the chapter without payment ('In the year 1890 Mrs. Samuel D. Warren, a young matron of Boston…', FOUND); the full chapter is paywalled. DOI 10.1017/CBO9780511625138.006; print publication year 1984; 'By William L. Prosser; Edited by Ferdinand David Schoeman'. The wording matches the record's Prosser quote exactly, so this is a publisher-hosted check of Prosser's text while the Berkeley copy of the 1960 article [1] stays unreachable.",
+          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
       ]

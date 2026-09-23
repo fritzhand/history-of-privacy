@@ -498,25 +498,31 @@
      "note": "Dates Cygnus to 1989, before EFF (July 1990). The same page says 'I was its fifth employee, and later a consultant.' about Sun. Undated page; accessed 2026-09-23."
     },
     {
-     "institution": "Wikipedia",
-     "title": "Bernstein v. United States",
-     "date": "2026",
-     "url": "https://en.wikipedia.org/wiki/Bernstein_v._United_States",
-     "quote": "the Ninth Circuit ordered that this case be reheard by the en banc court, and withdrew the three-judge panel opinion",
+     "institution": "United States Court of Appeals for the Ninth Circuit (order; text via Harvard Law School Library, Caselaw Access Project)",
+     "title": "Bernstein v. United States Department of Justice, No. 97-16686, 192 F.3d 1308 (9th Cir. 1999) (order granting rehearing en banc)",
+     "date": "1999-09-30",
+     "url": "https://static.case.law/f3d/192/html/1308-01.html",
+     "quote": "Upon the vote of a majority of nonre-cused regular active judges of this court, it is ordered that this case be reheard by the en banc court pursuant to Circuit Rule 35-3. The three-judge panel opinion, Bernstein v. U.S. Dept. of Justice, 176 F.3d 1132 (9th Cir.1999), is withdrawn.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Secondary source for the withdrawal. It cites Bernstein v. U.S. Dept. of Justice, 192 F.3d 1308 (9th Cir. 1999), which withdrew 176 F.3d 1132 (9th Cir., decided 6 May 1999). Justia and OpenJurist copies returned 403 to scripts. Accessed 2026-09-23."
+     "note": "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The hyphen in 'nonre-cused' is in the reporter text. The order is signed by Chief Judge Hug and dated Sept. 30, 1999. CAP metadata gives decision_date 1999-09-30 and cites_to 176 F.3d 1132 (the 6 May 1999 panel opinion). CourtListener carries the same text but returned an empty 202 challenge to scripts."
     }
    ],
    "portrait": "john-gilmore-joi-ito-2009",
    "_verify": {
     "status": "FIXED",
     "issues": [
-     "Chronology error: the contribution says Gilmore co-founded EFF in July 1990 'and later co-founded the support company Cygnus'. Cygnus came first. Gilmore's own home page says 'In 1989 I co-founded Cygnus Support, the first company dedicated to supporting free software.' (--check FOUND), and Wired (1993) likewise puts Cygnus before his cryptography activism. Reordered, with the year added and a source attached.",
-     "Imprecise date: the influence says 'In October 2021 EFF's board voted to remove him'. EFF's post of 22 Oct 2021 (published_time metadata) says only that the board 'has recently made the difficult decision to vote to remove Gilmore'. The vote date is not given, so the text now says EFF announced it in October 2021 and uses EFF's own words ('not seen eye-to-eye on how to best communicate and work together').",
-     "The unsourced claim 'later withdrawn for rehearing' about the 1999 Bernstein panel ruling is correct: 192 F.3d 1308 (9th Cir. 1999) granted en banc rehearing and withdrew 176 F.3d 1132. A source is added.",
-     "Checked OK: CFP talk header 'Given at the First Conference on Computers, Freedom, and Privacy / March 28, 1991 / Public domain -- not copyrighted'. The quote, 'only works if you assume a good government' and 'What if we could build a society where the information was never collected?' are FOUND. EFF history quotes (founded July 1990; Kapor, Barlow, Gilmore 'with assistance from Steve Wozniak') FOUND. EFF's DES Cracker 'broken in one week' supports 'about a week'. Home page: 'I was its fifth employee' (Sun), TSA suit, 'I lost every one of these lawsuits', and 'I originally hosted the mailing list (cypherpunks@toad.com)' are FOUND."
-    ]
+     "Cited Wikipedia (Bernstein v. United States) for the withdrawal of the 1999 panel opinion. Replaced with the Ninth Circuit's order itself, Bernstein v. U.S. Dept. of Justice, 192 F.3d 1308 (9th Cir. 30 Sept. 1999), in the Harvard Law School Caselaw Access Project's copy of the reporter."
+    ],
+    "earlier": {
+     "status": "FIXED",
+     "issues": [
+      "Chronology error: the contribution says Gilmore co-founded EFF in July 1990 'and later co-founded the support company Cygnus'. Cygnus came first. Gilmore's own home page says 'In 1989 I co-founded Cygnus Support, the first company dedicated to supporting free software.' (--check FOUND), and Wired (1993) likewise puts Cygnus before his cryptography activism. Reordered, with the year added and a source attached.",
+      "Imprecise date: the influence says 'In October 2021 EFF's board voted to remove him'. EFF's post of 22 Oct 2021 (published_time metadata) says only that the board 'has recently made the difficult decision to vote to remove Gilmore'. The vote date is not given, so the text now says EFF announced it in October 2021 and uses EFF's own words ('not seen eye-to-eye on how to best communicate and work together').",
+      "The unsourced claim 'later withdrawn for rehearing' about the 1999 Bernstein panel ruling is correct: 192 F.3d 1308 (9th Cir. 1999) granted en banc rehearing and withdrew 176 F.3d 1132. A source is added.",
+      "Checked OK: CFP talk header 'Given at the First Conference on Computers, Freedom, and Privacy / March 28, 1991 / Public domain -- not copyrighted'. The quote, 'only works if you assume a good government' and 'What if we could build a society where the information was never collected?' are FOUND. EFF history quotes (founded July 1990; Kapor, Barlow, Gilmore 'with assistance from Steve Wozniak') FOUND. EFF's DES Cracker 'broken in one week' supports 'about a week'. Home page: 'I was its fifth employee' (Sun), TSA suit, 'I lost every one of these lawsuits', and 'I originally hosted the mailing list (cypherpunks@toad.com)' are FOUND."
+     ]
+    }
    }
   },
   {
@@ -3073,5 +3079,8 @@
     ]
    }
   }
+ ],
+ "_verdictsApplied": [
+  "personas-code-f302.json"
  ]
 }

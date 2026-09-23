@@ -10,7 +10,7 @@
    "place": "The Guardian, Kings Place, London",
    "lat": 51.5352,
    "lng": -0.1222,
-   "summary": "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. A second story reported an NSA programme called PRISM, described in a 41-slide training presentation, that collected search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies; the companies denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden.",
+   "summary": "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. On 6 June The Guardian and The Washington Post both reported an NSA programme called PRISM. The Guardian's story drew on a 41-slide training presentation which said the programme let officials collect search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies. Every company that answered the Guardian denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden.",
    "significance": "Showed that privacy's walls had moved inside the phone network and the cloud, where people could neither see nor object to collection — the grievance that later drove Schrems, the GDPR's enforcement and demands for user-side controls.",
    "sources": [
     {
@@ -36,15 +36,33 @@
     {
      "institution": "The Guardian",
      "title": "NSA Prism program taps in to user data of Apple, Google and others",
-     "date": "2013-06-07",
+     "date": "2013-06-06",
      "url": "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
      "quote": "The NSA access is part of a previously undisclosed program called Prism , which allows officials to collect material including search history, the content of emails, file transfers and live chats, the document says.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "URL dated 6 June 2013; the page timestamp (7 June 2013 15.23 EDT) reflects a later update."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "PRISM",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/PRISM",
+     "quote": "The disclosures were published by The Guardian and The Washington Post on June 6, 2013.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent corroboration (tertiary) that PRISM was first reported on 6 June 2013 by both papers. It cites Gellman & Poitras, Washington Post, June 6, 2013, and Greenwald & MacAskill, The Guardian, June 6, 2013. The Washington Post URL refused scripted access. The date field is the date accessed."
     }
    ],
-   "locationNote": "The Guardian's London headquarters at Kings Place; the Verizon story was reported by Glenn Greenwald from Hong Kong and edited in London and New York."
+   "locationNote": "The Guardian's London headquarters at Kings Place; the Verizon story was reported by Glenn Greenwald from Hong Kong and edited in London and New York.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Source [2] (Guardian PRISM story) is dated 2013-06-07, which is the page's later-update timestamp (article:published_time 2013-06-07T19:23Z). The story was first published on 6 June 2013: the URL path is /2013/jun/06/, and Wikipedia's PRISM article cites Greenwald & MacAskill, The Guardian, June 6, 2013.",
+     "The summary implies The Guardian alone broke PRISM. The Washington Post (Gellman & Poitras) published its own PRISM story the same day, 6 June 2013. The summary also stated as fact that PRISM 'collected' data 'from' the companies. The Guardian attributes that to the document ('the document says'), and the companies denied it.",
+     "Every quote was re-fetched with a fresh cache and each one is verbatim. The FISC order date (25 April), '41-slide PowerPoint presentation' and 'denied knowledge of any such program' are all confirmed on the Guardian pages. The PCLOB report title and its date (January 23, 2014) are confirmed on the PDF's title page."
+    ]
+   }
   },
   {
    "id": "snowden-identifies-himself-hong-kong-2013",
@@ -77,7 +95,15 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "City-level coordinates (Tsim Sha Tsui, Kowloon), where Snowden met the journalists; the exact hotel is not cited here."
+   "locationNote": "City-level coordinates (Tsim Sha Tsui, Kowloon), where Snowden met the journalists; the exact hotel is not cited here.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No substantive error. Both quotes were re-fetched and are verbatim. 'The Guardian, after several days of interviews, is revealing his identity at his request.' also checks FOUND.",
+     "The page metadata now reads article:published_time 2013-06-11T13:00Z, a later update. The original 9 June 2013 date is supported by the URL path (/2013/jun/09/) and by Wikipedia's Edward Snowden article ('his identity was made public by The Guardian at his request on June 9, 2013').",
+     "Age check: Snowden was born 21 June 1983, so he was 29 on 9 June 2013. The Tsim Sha Tsui coordinates are roughly right for the Mira Hotel area. Sources [0] and [1] cite the same URL; the second is redundant but not wrong."
+    ]
+   }
   },
   {
    "id": "cjeu-google-spain-costeja-2014",
@@ -87,7 +113,7 @@
    "place": "Court of Justice of the European Union, Kirchberg, Luxembourg",
    "lat": 49.6207,
    "lng": 6.1396,
-   "summary": "In Case C-131/12, brought after Mario Costeja González complained in 2010 to Spain's data protection agency about search results linking to 1998 La Vanguardia pages announcing a real-estate auction, the Grand Chamber held that a search engine operator processes personal data and can be obliged to remove links to lawful third-party pages from results for a person's name. It held that the data subject's rights under Articles 7 and 8 of the Charter override, as a rule, both the operator's economic interest and the public's interest in finding the information, unless the person's role in public life justifies access.",
+   "summary": "In Case C-131/12, brought after Mario Costeja González complained in 2010 to Spain's data protection agency about search results linking to 1998 La Vanguardia pages announcing a real-estate auction, the Grand Chamber held that a search engine operator processes personal data and can be obliged to remove links to lawful third-party pages from results for a person's name. It held that the data subject's rights under Articles 7 and 8 of the Charter override, as a rule, both the operator's economic interest and the public's interest in finding the information, unless there are particular reasons, such as the person's role in public life, why the public's interest in access prevails.",
    "significance": "Established that an individual can make a claim directly against a global platform about how information on them is surfaced — a person-initiated request with legal force, the first widely used 'right to be forgotten'.",
    "sources": [
     {
@@ -110,7 +136,14 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Seat of the Court of Justice, Luxembourg."
+   "locationNote": "Seat of the Court of Justice, Luxembourg.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary narrows the Court's exception to 'unless the person's role in public life justifies access'. Paragraph 97 says the rule does not apply 'if it appeared, for particular reasons, such as the role played by the data subject in public life', that the interference is justified by the public's preponderant interest. Public role is one example, not the only ground.",
+     "Everything else checks out. Paragraph 97 is the right paragraph number. Operative point 3 confirms delisting 'even, as the case may be, when its publication in itself on those pages is lawful'. The press release confirms the 2010 AEPD complaint and the La Vanguardia pages of January and March 1998 announcing a real-estate auction for social security debts."
+    ]
+   }
   },
   {
    "id": "cjeu-schrems-i-safe-harbour-invalid-2015",
@@ -120,8 +153,8 @@
    "place": "Court of Justice of the European Union, Kirchberg, Luxembourg",
    "lat": 49.6207,
    "lng": 6.1396,
-   "summary": "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law did not protect data transferred there from surveillance. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
-   "significance": "One individual's complaint dismantled the legal basis for transatlantic data flows, proving that a person could force the system to answer for where their data goes.",
+   "summary": "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law and practice did not offer sufficient protection against surveillance by public authorities of data transferred there. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
+   "significance": "One individual's complaint knocked out Safe Harbour, the main framework for transatlantic data flows, proving that a person could force the system to answer for where their data goes.",
    "sources": [
     {
      "institution": "Court of Justice of the European Union (Grand Chamber), via EU Publications Office (Cellar)",
@@ -143,7 +176,15 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Seat of the Court of Justice, Luxembourg."
+   "locationNote": "Seat of the Court of Justice, Luxembourg.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary overstates the complaint as 'US law did not protect data transferred there from surveillance'. The press release says he complained that 'the law and practice of the United States do not offer sufficient protection against surveillance by the public authorities of the data transferred to that country'.",
+     "The significance overstates the effect by calling Safe Harbour 'the legal basis for transatlantic data flows'. It was a principal basis, but standard contractual clauses (Commission Decision 2010/87) and binding corporate rules stayed available. The Schrems II press release of 2020 confirms that Decision 2010/87 on SCCs was still in force and valid.",
+     "Checks passed: the paragraph 94 quote is verbatim with its number, 'Decision 2000/520 is invalid.' checks FOUND, and the Safe Harbour decision date of 26 July 2000 appears in the press release."
+    ]
+   }
   },
   {
    "id": "gdpr-adopted-regulation-2016-679-2016",
@@ -154,7 +195,7 @@
    "lat": 50.8385,
    "lng": 4.3752,
    "summary": "Regulation (EU) 2016/679, the General Data Protection Regulation, was signed at Brussels on 27 April 2016 and published in the Official Journal on 4 May 2016, to apply from 25 May 2018. Article 21(5) lets a person exercise the right to object to processing, in the context of information society services, 'by automated means using technical specifications'. Article 25 requires data protection by design and by default, so that by default only the personal data necessary for each specific purpose are processed.",
-   "significance": "Article 21(5) is the first clause in a major privacy law that anticipates a person's software stating their objection for them — the legal hook on which machine-readable signals such as Global Privacy Control and person-proffered terms can hang.",
+   "significance": "Article 21(5) was among the first provisions in a major privacy law to give a person a right that their software can exercise for them, objecting 'by automated means using technical specifications'. It is the legal hook on which machine-readable signals such as Global Privacy Control and person-proffered terms can hang.",
    "sources": [
     {
      "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
@@ -186,7 +227,14 @@
      "note": "The act closes 'Done at Brussels, 27 April 2016.' The Official Journal header dates publication 4.5.2016."
     }
    ],
-   "locationNote": "The regulation was signed at Brussels; coordinates are the European Parliament's Brussels seat. The Parliament's final plenary vote took place in Strasbourg."
+   "locationNote": "The regulation was signed at Brussels; coordinates are the European Parliament's Brussels seat. The Parliament's final plenary vote took place in Strasbourg.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance claims that Article 21(5) is 'the first clause in a major privacy law' to anticipate a person's software stating their objection. That 'first' cannot be supported. Recital 66 of Directive 2009/136/EC (the 2009 ePrivacy amendment) already contemplated consent 'expressed by using the appropriate settings of a browser or other application'. California's 2013 amendment to CalOPPA (AB 370) required websites to disclose how they respond to browser 'Do Not Track' signals. Neither is a right to object by automated means, so Article 21(5) may still be the first binding right of its kind, but the unqualified 'first clause' is overstated. EUR-Lex blocked scripted access, so these precedents could not be quote-checked; they are cited only to justify softening the claim.",
+     "All factual claims check out: signed 'Done at Brussels, 27 April 2016', OJ L 119 of 4.5.2016, Article 99(2) 'It shall apply from 25 May 2018.', and the texts of Article 21(5) and Article 25(2), with article numbers confirmed in the extracted text. Brussels as the signing place fits the Parliament's Brussels mini-plenary of 27–28 April 2016."
+    ]
+   }
   },
   {
    "id": "eu-us-privacy-shield-adopted-2016",
@@ -208,9 +256,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Recital 141; signed 'Done at Brussels, 12 July 2016.' Official text via the EU Publications Office repository (CELEX 32016D1250)."
+    },
+    {
+     "institution": "Court of Justice of the European Union",
+     "title": "Press Release No 91/20: Judgment in Case C-311/18 Data Protection Commissioner v Facebook Ireland and Maximillian Schrems",
+     "date": "2020-07-16",
+     "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+     "quote": "However, the Court declares Decision 2016/1250 invalid.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Headline: 'The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield'. Dated 'Luxembourg, 16 July 2020'. Both phrases check FOUND."
     }
    ],
-   "locationNote": "Commission headquarters, Brussels."
+   "locationNote": "Commission headquarters, Brussels.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Source [0]'s note says the quote is from 'Recital 141'. It is actually from recital (13) of the decision. Recital (141) reads 'The Commission concludes that this meets the standards of Article 25 of Directive 95/46/EC ...'.",
+     "The summary claims the Court of Justice invalidated the decision four years later in Schrems II, but no source supported that. A source is added: CJEU Press Release No 91/20 of 16 July 2020, re-fetched and checked FOUND.",
+     "Checks passed: the decision is dated 12 July 2016 ('Done at Brussels, 12 July 2016.') and published in OJ L 207 of 1.8.2016. 'Nine months after Safe Harbour fell' holds (6 October 2015 to 12 July 2016). Schrems II came on 16 July 2020, four years later."
+    ]
+   }
   },
   {
    "id": "puttaswamy-privacy-fundamental-right-india-2017",
@@ -221,7 +287,7 @@
    "lat": 28.6225,
    "lng": 77.2396,
    "summary": "In Justice K S Puttaswamy (Retd.) v Union of India, a challenge arising from the Aadhaar biometric identity programme, a nine-judge bench unanimously overruled M P Sharma and, in part, Kharak Singh and held that privacy is protected as an intrinsic part of the right to life and personal liberty under Article 21. The lead opinion by Justice D Y Chandrachud recognised informational privacy, warned that threats come from non-state actors as well as the state, and urged the government to put in place a robust data protection regime.",
-   "significance": "Extended constitutional privacy to the world's most populous democracy — and explicitly to threats from private, non-state actors holding data, not only the state.",
+   "significance": "Extended constitutional privacy to the world's most populous democracy. Its opinions explicitly recognised that threats to informational privacy come from private, non-state actors holding data as well as from the state, though they noted that enforcing privacy claims against such actors may require legislation.",
    "sources": [
     {
      "institution": "Supreme Court of India",
@@ -253,7 +319,14 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Supreme Court building, New Delhi."
+   "locationNote": "Supreme Court building, New Delhi.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance overstates the holding. It says the judgment extended constitutional privacy 'explicitly to threats from private, non-state actors'. The Court's order declares a right under Article 21 and Part III. Chandrachud J's opinion recognises that dangers 'can originate not only from the state but from non-state actors as well' and commends a data protection law to the Government. Kaul J writes: 'The right to privacy is claimed qua the State and non-State actors. Recognition and enforcement of claims qua non-state actors may require legislative intervention by the State.' So the judgment recognised non-state threats but did not make the constitutional right directly enforceable against them.",
+     "Checks passed: the Order of the Court overrules M P Sharma outright and Kharak Singh 'to the extent that it holds that the right to privacy is not protected by the Constitution'. It is signed by all nine judges and dated 'New Delhi; AUGUST 24, 2017'. The order confirms the Chandrachud judgment was delivered for Khehar CJI, Agrawal and Nazeer JJ and himself. Wikipedia independently confirms the 24 August 2017 date and the nine-judge bench."
+    ]
+   }
   },
   {
    "id": "equifax-breach-disclosed-2017",
@@ -264,7 +337,7 @@
    "lat": 33.7935,
    "lng": -84.3887,
    "summary": "On 7 September 2017 the credit bureau Equifax announced that criminals had exploited a website application vulnerability between mid-May and July 2017, initially estimating that about 143 million US consumers were affected; names, Social Security numbers, birth dates and addresses were taken. On 22 July 2019 the FTC announced a global settlement with the FTC, the CFPB and 50 US states and territories of at least $575 million and potentially up to $700 million, putting the number affected at approximately 147 million.",
-   "significance": "People whose data was taken had never chosen to deal with Equifax at all — a stark case of data held about people without any relationship or terms of their own.",
+   "significance": "Most of the people whose data was taken had never chosen to deal with Equifax at all, a stark case of data held about people without any relationship or terms of their own.",
    "sources": [
     {
      "institution": "US Federal Trade Commission",
@@ -286,7 +359,14 @@
      "note": "The initial estimate (143 million) was later revised upward; the FTC settlement uses approximately 147 million."
     }
    ],
-   "locationNote": "Equifax corporate headquarters, 1550 Peachtree Street NW, Atlanta, Georgia."
+   "locationNote": "Equifax corporate headquarters, 1550 Peachtree Street NW, Atlanta, Georgia.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance says people whose data was taken 'had never chosen to deal with Equifax at all'. That is too broad. Equifax's own release says dispute documents for about 182,000 US consumers were accessed, and those people had contacted Equifax. It also says credit card numbers for about 209,000 consumers were taken. Most victims had no direct relationship with Equifax, but not all of them.",
+     "Checks passed: 'Released September 7, 2017'. The release gives 143 million, mid-May through July 2017, and 'names, Social Security numbers, birth dates, addresses'. The FTC release gives $575 million, up to $700 million, and approximately 147 million people. Wikipedia independently confirms the upward revision to 147.9 million US consumers."
+    ]
+   }
   },
   {
    "id": "cambridge-analytica-revealed-2018",
@@ -329,7 +409,15 @@
      "note": "Company statement, cited for Facebook's own account of the app. Updated 17 March 2018 to say 'The claim that this is a data breach is completely false.'"
     }
    ],
-   "locationNote": "The Observer's newsroom at Kings Place, London (shared with The Guardian)."
+   "locationNote": "The Observer's newsroom at Kings Place, London (shared with The Guardian).",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No substantive error. All three quotes were re-fetched and are verbatim. The Guardian page title matches exactly, and the same article names the app 'thisisyourdigitallife' built by 'academic Aleksandr Kogan' and says 'the app also collected the information of the test-takers' Facebook friends'.",
+     "The Facebook sources check out. The Grewal post has 'Originally published on March 16, 2018' and 'Update on March 17, 2018, 9:50 AM PT: The claim that this is a data breach is completely false.' The Schroepfer post has article:published_time 2018-04-04. Wikipedia independently confirms 270,000 downloads and up to 87 million users.",
+     "Minor context, not an error: The New York Times published its Cambridge Analytica story the same day as The Observer."
+    ]
+   }
   },
   {
    "id": "gdpr-applies-forced-consent-complaints-2018",
@@ -369,9 +457,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "noyb is an advocacy organisation; cited for what it itself did. The complaints went to the French, Belgian, Hamburg and Austrian authorities."
+    },
+    {
+     "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+     "title": "Regulation (EU) 2016/679, Article 99(2) — Entry into force and application",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "It shall apply from 25 May 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 99(2); Article 99(1) sets entry into force on the twentieth day after publication (i.e. 2016). The quote is short but it is the operative date provision."
     }
    ],
-   "locationNote": "The regulation applied simultaneously in every member state; coordinates are the European Commission in Brussels."
+   "locationNote": "The regulation applied simultaneously in every member state; coordinates are the European Commission in Brussels.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. All three quotes were re-fetched with a fresh cache and are verbatim. The Article 83(5) quote sits under Article 83, paragraph 5 (the EUR 20m / 4% tier; paragraph 4 is the EUR 10m / 2% tier). The Article 7(3) quote sits under Article 7. The Cellar document is the English OJ L 119, 4.5.2016 text of the Regulation of 27 April 2016.",
+     "The noyb page is dated 2018-05-25 (datePublished 2018-05-25T09:09:22+0200). It names the four authorities: CNIL (Google Android), the Belgian DPA (Instagram), Hamburg (WhatsApp) and the Austrian DSB (Facebook). This matches the source note.",
+     "No source directly supported the 25 May 2018 application date. Article 99(2) of the same document is added as a source."
+    ]
+   }
   },
   {
    "id": "carpenter-v-united-states-cell-site-location-2018",
@@ -381,12 +487,12 @@
    "place": "Supreme Court of the United States, Washington, D.C.",
    "lat": 38.8906,
    "lng": -77.0044,
-   "summary": "Without a warrant, prosecutors had obtained from wireless carriers 12,898 location points cataloguing Timothy Carpenter's movements over 127 days — an average of 101 a day. In a 5–4 opinion by Chief Justice Roberts, the Court held that acquiring cell-site location information (CSLI) was a Fourth Amendment search and that the government must generally obtain a warrant supported by probable cause before acquiring such records.",
+   "summary": "Using court orders under the Stored Communications Act — which required only 'reasonable grounds', well short of the probable cause needed for a warrant — prosecutors had obtained from wireless carriers 12,898 location points cataloguing Timothy Carpenter's movements over 127 days, an average of 101 a day. In a 5–4 opinion by Chief Justice Roberts, the Court held that the Government's acquisition of Carpenter's cell-site location information (CSLI) was a Fourth Amendment search — deciding no more than that accessing seven days of CSLI is one — and that the government must generally obtain a warrant supported by probable cause before acquiring such records.",
    "significance": "Cracked the US 'third-party doctrine': data a person generates just by carrying a phone, and that a company holds, can still be the person's private sphere.",
    "sources": [
     {
      "institution": "Supreme Court of the United States",
-     "title": "Carpenter v. United States, 585 U.S. ___ (2018), No. 16–402, slip opinion",
+     "title": "Carpenter v. United States, 585 U.S. ___ (2018), No. 16–402, slip opinion — Opinion of the Court, Part IV",
      "date": "2018-06-22",
      "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
      "quote": "Having found that the acquisition of Carpenter’s CSLI was a search, we also conclude that the Government must generally obtain a warrant supported by probable cause before acquiring such records.",
@@ -403,9 +509,48 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The syllabus is not part of the opinion; the figures also appear in the opinion."
+    },
+    {
+     "institution": "Supreme Court of the United States",
+     "title": "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, Part I-B",
+     "date": "2018-06-22",
+     "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+     "quote": "Based on that information, the prosecutors applied for court orders under the Stored Communications Act to obtain cell phone records for petitioner Timothy Carpenter and several other suspects.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The orders were issued under 18 U.S.C. §2703(d) ('reasonable grounds'), not warrants."
+    },
+    {
+     "institution": "Supreme Court of the United States",
+     "title": "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, Part IV",
+     "date": "2018-06-22",
+     "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+     "quote": "That showing falls well short of the probable cause required for a warrant.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Refers to the Stored Communications Act 'reasonable grounds' showing."
+    },
+    {
+     "institution": "Supreme Court of the United States",
+     "title": "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, footnote 3",
+     "date": "2018-06-22",
+     "url": "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+     "quote": "It is sufficient for our purposes today to hold that accessing seven days of CSLI constitutes a Fourth Amendment search.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The Court expressly declined to decide whether a shorter period of historical CSLI can be obtained without Fourth Amendment scrutiny."
     }
    ],
-   "locationNote": "Supreme Court Building, 1 First Street NE, Washington, D.C."
+   "locationNote": "Supreme Court Building, 1 First Street NE, Washington, D.C.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Source [0] note locates the quote in 'Opinion of the Court, Part III-B'. In the slip opinion it is the first sentence of Part IV ('IV Having found that the acquisition of Carpenter’s CSLI was a search…'). The source title is corrected to name Part IV.",
+     "The summary overstated the holding as 'acquiring cell-site location information (CSLI) was a Fourth Amendment search' in general. The syllabus holds that 'The Government’s acquisition of Carpenter’s cell-site records was a Fourth Amendment search'. Footnote 3 of the opinion says the Court decides no more than that 'accessing seven days of CSLI constitutes a Fourth Amendment search'.",
+     "'Without a warrant' is accurate but incomplete. The records were obtained with Stored Communications Act court orders (18 U.S.C. §2703(d)) on a 'reasonable grounds' showing, which the Court said 'falls well short of the probable cause required for a warrant'. The summary now says this.",
+     "The 12,898 points, 101 per day and 127 days are from the syllabus and are verbatim. The opinion itself says MetroPCS produced records spanning 127 days and Sprint two more days, 'Altogether … 12,898 location points'. The 127-day span in the syllabus is its own summary. The 5–4 split (Roberts with Ginsburg, Breyer, Sotomayor, Kagan; Kennedy, Thomas, Alito and Gorsuch dissenting) and the decision date of 22 June 2018 are confirmed on the PDF."
+    ]
+   }
   },
   {
    "id": "california-consumer-privacy-act-signed-2018",
@@ -433,23 +578,41 @@
      "date": "2018-06-28",
      "url": "https://web.archive.org/web/2024/https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=201720180AB375",
      "quote": "Chaptered by Secretary of State - Chapter 55, Statutes of 2018.",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "History table rows dated 06/28/18 read 'Chaptered by Secretary of State - Chapter 55, Statutes of 2018.' and 'Approved by the Governor.' The live leginfo site timed out for scripted access; the Internet Archive copy was read. Verification: Not re-verified 2026-09-23: web.archive.org reset the connection on every attempt (Errno 104, 6 tries), and live leginfo.legislature.ca.gov returned HTTP 502 or timed out. The Wayback availability API lists a snapshot at 20260702234430 but its text could not be read. Chapter 55 is confirmed instead by the AG ISOR (added source)."
+    },
+    {
+     "institution": "California Office of the Attorney General",
+     "title": "Initial Statement of Reasons (ISOR): Proposed Adoption of California Consumer Privacy Act Regulations",
+     "date": "2019-10-11",
+     "url": "https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-isor-appendices.pdf",
+     "quote": "(Stats. 2018, Ch. 55 [AB 375], as amended by Stats. 2018, Ch. 735 [SB 1121])",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "History table rows dated 06/28/18 read 'Chaptered by Secretary of State - Chapter 55, Statutes of 2018.' and 'Approved by the Governor.' The live leginfo site timed out for scripted access; the Internet Archive copy was read."
+     "note": "Heading of the ISOR, which was issued with the Notice of Proposed Rulemaking '(Notice to be Published on October 11, 2019)'. The same PDF's appended Standardized Regulatory Impact Assessment (Berkeley Economic Advising and Research) reads: 'On June 28, 2018, AB 375 passed unanimously and was signed into law.'"
     }
    ],
-   "locationNote": "State Capitol, Sacramento, where the Governor signs bills."
+   "locationNote": "State Capitol, Sacramento, where the Governor signs bills.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Source [1] (Internet Archive copy of the leginfo AB-375 bill history) could not be re-fetched on 2026-09-23. web.archive.org reset the connection on every attempt (6 tries, including the id_ raw variant), and the agent proxy logged ws_closed_mid_exchange. The live leginfo page returned HTTP 502 or timed out. The archive.org availability API does list a snapshot (20260702234430), but the quote could not be read, so the source is set to PENDING.",
+     "The claim itself (Chapter 55, Statutes of 2018; signed 28 June 2018) is confirmed independently from the Attorney General's Initial Statement of Reasons, which is added as a source. Its heading cites '(Stats. 2018, Ch. 55 [AB 375] …)', and its appended economic impact assessment says 'On June 28, 2018, AB 375 passed unanimously and was signed into law.'",
+     "The AG press release quote (signed 28 June 2018; amended by SB 1121 and the 2019 bills; in effect 1 January 2020) was re-fetched and is verbatim. The same release supports the rights to know, delete and opt out. The date, place and coordinates are right."
+    ]
+   }
   },
   {
    "id": "zuboff-age-of-surveillance-capitalism-2019",
    "displayDate": "15 January 2019",
    "year": 2019,
-   "title": "Shoshana Zuboff names 'surveillance capitalism'",
+   "title": "Shoshana Zuboff's The Age of Surveillance Capitalism",
    "place": "PublicAffairs (Hachette Book Group), 1290 Avenue of the Americas, New York",
    "lat": 40.7614,
    "lng": -73.9793,
-   "summary": "PublicAffairs published Shoshana Zuboff's The Age of Surveillance Capitalism on 15 January 2019. Zuboff argued that surveillance capitalism 'unilaterally claims human experience as free raw material for translation into behavioural data', part of which is declared a proprietary 'behavioural surplus' and fabricated into prediction products traded in what she calls 'behavioural futures markets'.",
-   "significance": "Gave the public a name for the business model that consent banners were papering over — and framed privacy as a question of who sets the terms for human experience.",
+   "summary": "PublicAffairs published Shoshana Zuboff's The Age of Surveillance Capitalism on 15 January 2019, expanding a concept she had set out in a 2015 journal article, 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization'. Zuboff argued that surveillance capitalism 'unilaterally claims human experience as free raw material for translation into behavioural data', part of which is declared a proprietary 'behavioural surplus' and fabricated into prediction products traded in what she calls 'behavioural futures markets'.",
+   "significance": "Popularised a name for the business model that consent banners were papering over — and framed privacy as a question of who sets the terms for human experience.",
    "sources": [
     {
      "institution": "The Guardian (The Observer)",
@@ -470,9 +633,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The 'On Sale' date shown on the publisher's page for ISBN 9781610395694 (hardcover, PublicAffairs imprint)."
+    },
+    {
+     "institution": "SAGE Publications (Journal of Information Technology), via Crossref metadata API",
+     "title": "Big other: Surveillance Capitalism and the Prospects of an Information Civilization (Shoshana Zuboff), Journal of Information Technology 30(1): 75–89, doi:10.1057/jit.2015.5",
+     "date": "2015-03",
+     "url": "https://api.crossref.org/works/10.1057/jit.2015.5",
+     "quote": "Surveillance capitalism challenges democratic norms and departs in key ways from the centuries-long evolution of market capitalism.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Last sentence of the article's abstract in the publisher-deposited Crossref record. The title string 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization' is also FOUND on this page. The record gives published-print 2015-03. The SAGE landing page returns 403 to scripts."
     }
    ],
-   "locationNote": "Publisher's offices, New York."
+   "locationNote": "Publisher's offices, New York.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The title 'Shoshana Zuboff names surveillance capitalism' overstates the 2019 book. Zuboff introduced the term in 2014–15: the FAZ essay 'A Digital Declaration: Big Data as Surveillance Capitalism' (15 September 2014) and 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization' (Journal of Information Technology 30(1), March 2015). The Crossref record for the 2015 article is added. Foster and McChesney had also used 'Surveillance Capitalism' as a Monthly Review title in July 2014, with a different meaning. The book popularised the term; it did not name it.",
+     "Both quotes were re-fetched and are verbatim. Hachette gives 'On Sale Jan 15, 2019' for the PublicAffairs hardcover, ISBN 9781610395694. The Guardian/Observer piece is by John Naughton, published 2019-01-20T07:00Z.",
+     "Minor: the summary's quoted words use UK spelling ('behavioural'), taken from The Observer's quotation. The PublicAffairs (US) edition named in the summary spells it 'behavioral'. The wording otherwise matches the book as quoted, and the source note already flags UK spelling."
+    ]
+   }
   },
   {
    "id": "ftc-facebook-5-billion-order-2019",
@@ -502,9 +683,27 @@
      "quote": "The FTC alleges that Facebook violated the 2012 order by deceiving its users when the company shared the data of users’ Facebook friends with third-party app developers, even when those friends had set more restrictive privacy settings.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "US Federal Trade Commission",
+     "title": "FTC Imposes $5 Billion Penalty and Sweeping New Privacy Restrictions on Facebook",
+     "date": "2019-07-24",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+     "quote": "In a related, but separate development, the FTC also announced today separate law enforcement actions against data analytics company Cambridge Analytica , its former Chief Executive Officer Alexander Nix, and Aleksandr Kogan, an app developer who worked with the company, alleging they used false and deceptive tactics to harvest personal information from millions of Facebook users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The space before the comma is a link boundary in the page text. The same page records the in-person press conference at FTC Headquarters on July 24, 2019."
     }
    ],
-   "locationNote": "FTC headquarters, Washington, D.C., where the settlement was announced at a press conference."
+   "locationNote": "FTC headquarters, Washington, D.C., where the settlement was announced at a press conference.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. Both quotes were re-fetched and are verbatim. The release also calls the penalty 'the largest ever imposed on any company for violating consumers’ privacy', which supports the significance line.",
+     "The claim about the Cambridge Analytica, Nix and Kogan actions was in the summary without a quote. It is on the same page and is added as a source.",
+     "The locationNote's press conference is confirmed. The page says: 'The FTC hosted an IN-PERSON press conference at FTC Headquarters, 600 Pennsylvania Ave, NW, Washington D.C., on July 24, 2019.'"
+    ]
+   }
   },
   {
    "id": "cjeu-planet49-pre-ticked-cookie-consent-2019",
@@ -526,9 +725,26 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Operative part, point 1 (interpreting Article 2(f) and 5(3) of Directive 2002/58/EC and Articles 4(11) and 6(1)(a) GDPR). Official text via the EU Publications Office repository (CELEX 62017CJ0673)."
+    },
+    {
+     "institution": "Court of Justice of the European Union (Grand Chamber), via EU Publications Office (Cellar)",
+     "title": "Judgment of 1 October 2019, Planet49, Case C-673/17, EU:C:2019:801 — paragraph 2",
+     "date": "2019-10-01",
+     "url": "https://publications.europa.eu/resource/cellar/3d6585b3-e42f-11e9-9c4e-01aa75ed71a1.0022.05/DOC_1",
+     "quote": "Planet49 GmbH, an online gaming company, concerning the consent of participants in a promotional lottery organised by that company to the transfer of their personal data to the company’s sponsors and partners",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Describes the parties. The Federation is 'Federal Union of Consumer Organisations and Associations — Federation of Consumer Organisations, Germany'."
     }
    ],
-   "locationNote": "Seat of the Court of Justice, Luxembourg."
+   "locationNote": "Seat of the Court of Justice, Luxembourg.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The operative-part quote is verbatim in point 1 of the English Grand Chamber judgment of 1 October 2019, Case C‑673/17. The reference came from the Bundesgerichtshof.",
+     "The summary's description of Planet49 as 'an online gaming company that had run a promotional lottery' had no quoted support. Paragraph 2 of the judgment says so, and it is added as a source."
+    ]
+   }
   },
   {
    "id": "google-third-party-cookie-plan-announced-abandoned-2020",
@@ -572,7 +788,14 @@
      "note": "Same decision: 'Third, on 22 April 2025, Google announced that it no longer intends to proceed with introducing a standalone prompt giving users a choice whether to restrict or maintain TPCs.' The CMA case page records: 'On 17 October 2025, the CMA issued its Decision to release the commitments.'"
     }
    ],
-   "locationNote": "Google headquarters (Googleplex), Mountain View; the CMA is in London."
+   "locationNote": "Google headquarters (Googleplex), Mountain View; the CMA is in London.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. All three quotes were re-fetched and are verbatim. The CMA notice is dated 11 June 2021 (Case 50972). It records that the CMA opened its investigation on 7 January 2021 and lists '14 January 2020: Google first announced its intent to remove TPCs'.",
+     "The CMA release decision is dated 17 October 2025. It confirms that the commitments were accepted on 11 February 2022, and gives the 22 July 2024 blog post and the 22 April 2025 announcement. The Privacy Sandbox post is by Anthony Chavez and dated 2024-07-22."
+    ]
+   }
   },
   {
    "id": "cjeu-schrems-ii-privacy-shield-invalid-2020",
@@ -582,7 +805,7 @@
    "place": "Court of Justice of the European Union, Kirchberg, Luxembourg",
    "lat": 49.6207,
    "lng": 6.1396,
-   "summary": "On a reference from the Irish High Court in Case C-311/18, the Grand Chamber declared Commission Implementing Decision (EU) 2016/1250 on the EU-US Privacy Shield invalid, while holding that the Commission's standard contractual clauses (Decision 2010/87) remained valid. It was Schrems's second successful challenge to the legal basis of EU-US data transfers.",
+   "summary": "On a reference from the Irish High Court in Case C-311/18 — proceedings brought by the Irish Data Protection Commissioner over Max Schrems's complaint against Facebook's transfers of his data to the United States — the Grand Chamber declared Commission Implementing Decision (EU) 2016/1250 on the EU-US Privacy Shield invalid, while holding that the Commission's standard contractual clauses (Decision 2010/87) remained valid. It was the second time a Schrems complaint led the Court to strike down an EU-US transfer framework: in 2015 (Schrems I, Case C-362/14) it had invalidated the Safe Harbour decision.",
    "significance": "Confirmed that under the GDPR the individual's rights travel with the data, and that no political deal can override them without real redress.",
    "sources": [
     {
@@ -603,9 +826,26 @@
      "quote": "However, it considers that Commission Decision 2010/87 on standard contractual clauses for the transfer of personal data to processors established in third countries is valid.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Court of Justice of the European Union",
+     "title": "Press Release No 91/20: The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield",
+     "date": "2020-07-16",
+     "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+     "quote": "In a judgment delivered on 6 October 2015, the Court of Justice, before which the High Court (Ireland) had referred questions for a preliminary ruling, declared that decision invalid (‘the Schrems I judgment’).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'That decision' is Decision 2000/520 (Safe Harbour), Case C-362/14. The release goes on to say that Schrems's reformulated complaint concerned transfers under the standard data protection clauses in the Annex to Decision 2010/87."
     }
    ],
-   "locationNote": "Seat of the Court of Justice, Luxembourg (judgment delivered during COVID-19 restrictions)."
+   "locationNote": "Seat of the Court of Justice, Luxembourg (judgment delivered during COVID-19 restrictions).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary's closing line, 'It was Schrems's second successful challenge to the legal basis of EU-US data transfers', is imprecise. The C-311/18 proceedings were brought in the Irish High Court by the Data Protection Commissioner, not by Schrems. Schrems's reformulated complaint targeted Facebook's transfers under the standard contractual clauses, and the Court upheld those clauses. Privacy Shield fell because of the questions the High Court referred. The summary now describes the proceedings accurately and points to Schrems I (6 October 2015, C-362/14, Safe Harbour), with a source added.",
+     "Both quotes were re-fetched and are verbatim. The Privacy Shield quote is operative point 5 and the SCC-validity finding is point 4. 'Delivered in open court in Luxembourg on 16 July 2020.' The press release number (91/20) and title are correct."
+    ]
+   }
   },
   {
    "id": "ccpa-regulations-global-privacy-controls-2020",
@@ -616,7 +856,7 @@
    "lat": 38.5807,
    "lng": -121.4929,
    "summary": "The Office of Administrative Law approved the Attorney General's final CCPA regulations, which took effect immediately. Section 999.315(c) required any business collecting personal information online to treat 'user-enabled global privacy controls, such as a browser plug-in or privacy setting, device setting, or other mechanism' signalling an opt-out of sale as a valid consumer request. The California Privacy Protection Agency's 2023 rules re-codified the duty as 11 CCR §7025, 'Opt-out Preference Signals', which gives an HTTP header field or JavaScript object as an example format.",
-   "significance": "The first regulation anywhere to make a signal sent by the person's own software legally binding on the businesses that receive it — the direct precedent for honouring machine-readable, person-proffered terms.",
+   "significance": "The first US rule to require businesses to honour an opt-out signal sent by the person's own software (the GDPR had already let people object 'by automated means using technical specifications') — the direct precedent for honouring machine-readable, person-proffered terms.",
    "sources": [
     {
      "institution": "California Office of the Attorney General",
@@ -646,9 +886,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "§7025(b)(1)."
+    },
+    {
+     "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+     "title": "Regulation (EU) 2016/679, Article 21(5) — Right to object",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "An earlier EU provision recognising machine-sent objections. It is cited to qualify the 'first' claim for the California rule."
     }
    ],
-   "locationNote": "California Department of Justice headquarters, 1300 I Street, Sacramento."
+   "locationNote": "California Department of Justice headquarters, 1300 I Street, Sacramento.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance line 'The first regulation anywhere to make a signal sent by the person's own software legally binding' overstates. GDPR Article 21(5), in force since 2016 and applicable from 25 May 2018, already provided that 'the data subject may exercise his or her right to object by automated means using technical specifications'. California's rule was the first US rule of this kind. The GDPR provision is added as a source.",
+     "The §999.315(c) lettering was checked and is correct for the approved text. The OAL Amended Notice of Approval in Part and Withdrawal in Part (effective 8/14/2020) withdrew proposed §999.315(c), and the FSOR Addendum says 'the subsequent sections re-lettered accordingly'. The cited PDF, which the AG's CCPA regs page labels 'Final Text of Regulations', is the post-withdrawal text: the withdrawn 'minimal steps' clause is absent and the global privacy control duty is (c).",
+     "All three quotes were re-fetched and are verbatim. The CPPA §7025(b)(1) quote was checked in context. The CPPA's rulemaking page confirms: 'On March 29, 2023, the Office of Administrative Law approved the California Privacy Protection Agency’s regulations … The regulations became effective on March 29, 2023.'"
+    ]
+   }
   },
   {
    "id": "brazil-lgpd-in-force-2020",
@@ -692,7 +950,14 @@
      "note": "Art. 2: 'A disciplina da proteção de dados pessoais tem como fundamentos: ... II - a autodeterminação informativa' ('The regulation of personal data protection is founded on: ... II – informational self-determination')."
     }
    ],
-   "locationNote": "Federal Senate, Brasília, whose vote on MP 959/2020 determined the start date."
+   "locationNote": "Federal Senate, Brasília, whose vote on MP 959/2020 determined the start date.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No factual errors found. Art. 65 I-A (inserted by Lei 14.010/2020) sets 1 August 2021 for Arts. 52-54 (sanctions); Art. 2, II lists 'a autodeterminação informativa'; the Agência Senado article of 18/09/2020 confirms entry into force 'nesta sexta-feira (18)' and explains it followed the Senate president declaring the postponement provision of MP 959/2020 (PLV 34/2020, art. 4) 'prejudicado', the bill becoming Lei 14.058/2020. 18 September 2020 was a Friday.",
+     "Tooling note: the Planalto page is served as Windows-1252; the helper decodes it as UTF-8 and reports NOT-FOUND for accented quotes unless the cached file is transcoded first. After transcoding cp1252->UTF-8 both Planalto quotes check FOUND."
+    ]
+   }
   },
   {
    "id": "global-privacy-control-launched-2020",
@@ -703,7 +968,7 @@
    "lat": 38.8981,
    "lng": -77.0128,
    "summary": "A coalition spearheaded by Ashkan Soltani (Georgetown Law) and Sebastian Zimmeck (Wesleyan University), with The New York Times, The Washington Post, the Financial Times, DuckDuckGo, Brave, Mozilla, the EFF and others, announced Global Privacy Control, a browser signal communicating a person's 'do not sell or share' request, in answer to California's regulation requiring businesses to honour such controls. The specification later moved to the W3C, whose Privacy Working Group published it as a First Public Working Draft on 21 November 2024; it defines a 'Sec-GPC: 1' HTTP header.",
-   "significance": "The first widely deployed machine-readable privacy signal with legal force behind it — but it can say only one thing (don't sell or share), which is exactly the limit that fuller person-proffered terms aim to overcome.",
+   "significance": "One of the first widely deployed machine-readable privacy signals with legal force behind it — but it can say only one thing (don't sell or share), which is exactly the limit that fuller person-proffered terms aim to overcome.",
    "sources": [
     {
      "institution": "Global Privacy Control",
@@ -726,7 +991,15 @@
      "note": "The current Working Draft (17 September 2026, https://www.w3.org/TR/gpc/) defines 'Sec-GPC-field-name = \"Sec-GPC\" Sec-GPC-field-value = \"1\"'. W3C blocked the helper's user agent; the page was downloaded with curl into the helper's cache and then checked."
     }
    ],
-   "locationNote": "An online launch; coordinates are Georgetown Law in Washington, D.C., affiliation of co-founder Ashkan Soltani."
+   "locationNote": "An online launch; coordinates are Georgetown Law in Washington, D.C., affiliation of co-founder Ashkan Soltani.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary checks out: the press release is dated 'Oct. 7, 2020', names Soltani (Georgetown Law) and Zimmeck (Wesleyan) as having 'initially spearheaded' the effort, lists the NYT, Washington Post, FT, DuckDuckGo, Brave, Mozilla, EFF and others, uses the phrase 'do not sell or share' preference, and quotes AG Becerra on the regulation 'requiring businesses to comply when a consumer has enabled a global privacy control'. The W3C FPWD of 21 November 2024 was published by the Privacy Working Group and defines 'Sec-GPC-field-name = \"Sec-GPC\" Sec-GPC-field-value = \"1\"'; the current TR draft is dated 17 September 2026.",
+     "Significance overstates with an unsourced superlative: 'The first widely deployed machine-readable privacy signal with legal force behind it'. No source establishes 'first' (Do Not Track was widely deployed earlier without legal force; P3P was machine-readable). Hedged below.",
+     "W3C still returns HTTP 403 to the helper's user agent; the page was re-downloaded with curl into the helper cache and then checked."
+    ]
+   }
   },
   {
    "id": "california-privacy-rights-act-proposition-24-2020",
@@ -754,13 +1027,21 @@
      "title": "Statement of Vote, November 3, 2020, General Election",
      "date": "2020-12",
      "url": "https://elections.cdn.sos.ca.gov/sov/2020-general/sov/complete-sov.pdf",
-     "quote": "Amends Consumer Privacy Laws",
-     "verificationStatus": "PENDING",
+     "quote": "9,384,625 56.2% 7,305,431 43.8%",
+     "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "PENDING: the statewide summary table for Proposition 24 ('Amends Consumer Privacy Laws') reads Yes 9,384,625 (56.2%), No 7,305,431 (43.8%), but the PDF's text layer interleaves table cells, so the counts cannot be verified as a continuous quotation; only the ballot label was matched."
     }
    ],
-   "locationNote": "The Secretary of State certifies statewide results in Sacramento."
+   "locationNote": "The Secretary of State certifies statewide results in Sacramento.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Record claims are correct: Statement of Vote shows Proposition 24 'Amends Consumer Privacy Laws' Yes 9,384,625 (56.2%), No 7,305,431 (43.8%); CPPA FAQ confirms CPRA amended the CCPA, established the Agency, and took effect 1 January 2023.",
+     "Source 1 was PENDING because only the ballot label was matched. The numeric pair '9,384,625 56.2% 7,305,431 43.8%' is continuous in the PDF text layer (in the 'Official Declaration of the Vote Results on November 3, 2020, State Ballot Measures' table, where it is the fifth yes/no pair after Props 14, 17, 19 and 22, i.e. Prop 24 'Amends Consumer Privacy Laws. Initiative Statute.', and again in the State Totals row). Quote replaced and upgraded to CONFIRMED.",
+     "Significance calls CPPA 'the first US agency dedicated to privacy'; no primary source cited, but this is the standard description (e.g. Wikipedia: 'the first dedicated privacy regulator in the United States'). CPPA regulations §7025 on opt-out preference signals exist in the 29 March 2023 final text. Left unchanged."
+    ]
+   }
   },
   {
    "id": "apple-app-tracking-transparency-ios-14-5-2021",
@@ -771,7 +1052,7 @@
    "lat": 37.3349,
    "lng": -122.009,
    "summary": "From iOS 14.5, released on 26 April 2021, apps must obtain the user's permission through Apple's App Tracking Transparency framework before tracking them across other companies' apps and websites or accessing the device's advertising identifier. In March 2025 France's competition authority fined Apple €150 million, finding that ATT's implementation between April 2021 and July 2023 multiplied consent pop-ups and treated Apple and third-party publishers asymmetrically.",
-   "significance": "A privacy choice at operating-system scale — but one whose wording, timing and exceptions are set by the platform, not the person, which is why regulators treated it as the platform's rule rather than the user's term.",
+   "significance": "A privacy choice at operating-system scale — but one whose wording, timing and exceptions are set by the platform, not the person. France's competition authority found that Apple made third-party publishers collect consent twice while not asking users of its own apps for consent until iOS 15.",
    "sources": [
     {
      "institution": "Apple Developer",
@@ -803,7 +1084,14 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Apple headquarters, Cupertino. Apple's own newsroom post (apple.com/newsroom/2021/04/…) was read in raw HTML but its body is not extractable by the helper, so it is not cited."
+   "locationNote": "Apple headquarters, Cupertino. Apple's own newsroom post (apple.com/newsroom/2021/04/…) was read in raw HTML but its body is not extractable by the helper, so it is not cited.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary checks out: Apple's page gives the iOS 14.5 ATT permission rule; the Autorité release (31 March 2025, Decision 25-D-02) has the heading 'The ATT framework introduced by Apple on 26 April 2021', fines Apple €150,000,000, sets the infringement 'between 26 April 2021 and 25 July 2023', finds 'multiple consent pop-ups', and has a section 'Asymmetry of treatment between Apple and publishers'.",
+     "Significance ends 'which is why regulators treated it as the platform's rule rather than the user's term'. No source says this. The Autorité's actual finding was a competition-law abuse: Apple required double consent from third-party publishers but did not ask users of its own apps for consent until iOS 15. Rewritten to match the source."
+    ]
+   }
   },
   {
    "id": "colorado-privacy-act-universal-opt-out-2021",
@@ -835,9 +1123,25 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same page refers to 'the state’s first universal opt-out mechanism, Global Privacy Control'."
+    },
+    {
+     "institution": "Colorado Attorney General (Colorado Department of Law)",
+     "title": "Universal Opt-Out and the Colorado Privacy Act",
+     "date": "2026",
+     "url": "https://coag.gov/uoom/",
+     "quote": "The GPC was the first UOOM to be recognized to meet the standards of the CPA and CPA Rules.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND. Same page: 'Beginning July 1, 2024, businesses falling within the CPA's application thresholds must allow Consumers to opt-out ... using GPC. C.R.S. § 6-1-1306(1)(a)(IV).'"
     }
    ],
-   "locationNote": "State Capitol, Denver."
+   "locationNote": "State Capitol, Denver.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The AG page confirms signing on 7 July 2021, effect on 1 July 2023, mandatory universal opt-out acceptance from 1 July 2024, and AG rules detailing UOOM technical specifications (6-1-1313(2), C.R.S.). The main page wording is 'the state’s first universal opt-out mechanism, Global Privacy Control'. The record's 'first recognised' is supported directly by the AG's UOOM page, which is added as a source."
+    ]
+   }
   },
   {
    "id": "china-personal-information-protection-law-2021",
@@ -848,7 +1152,7 @@
    "lat": 39.9036,
    "lng": 116.3877,
    "summary": "The Standing Committee of the 13th National People's Congress adopted the Personal Information Protection Law at its 30th session on 20 August 2021, with effect from 1 November 2021. It requires processors relying on consent to provide a convenient way to withdraw it (Article 15) and, where automated decision-making is used to push information or marketing to individuals, to offer an option not based on personal characteristics or a convenient way to refuse (Article 24).",
-   "significance": "Even a state with pervasive public surveillance legislated consent withdrawal and an opt-out from algorithmic targeting for the private sector — evidence that the vocabulary of individual control had become global.",
+   "significance": "Even a state with pervasive public surveillance legislated a right to withdraw consent and an opt-out from algorithmic targeting — evidence that the vocabulary of individual control had become global.",
    "sources": [
     {
      "institution": "National People's Congress of the People's Republic of China",
@@ -871,7 +1175,14 @@
      "note": "Translation: 'Where information push or commercial marketing is directed at individuals by means of automated decision-making, an option not targeting their personal characteristics shall be provided at the same time, or individuals shall be given a convenient way to refuse.' Article 15: '基于个人同意处理个人信息的，个人有权撤回其同意。个人信息处理者应当提供便捷的撤回同意的方式。' ('Where processing is based on consent, the individual has the right to withdraw it; processors shall provide a convenient way to withdraw consent.')"
     }
    ],
-   "locationNote": "The NPC Standing Committee meets in the Great Hall of the People, Beijing."
+   "locationNote": "The NPC Standing Committee meets in the Great Hall of the People, Beijing.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary checks out on the NPC text: adopted at the 30th session of the 13th NPC Standing Committee on 20 August 2021; Art. 74 in force 1 November 2021; Art. 15 (right to withdraw consent, convenient withdrawal); Art. 24, second paragraph (non-personalised option or convenient refusal for automated push/marketing).",
+     "Significance says the opt-out was legislated 'for the private sector'. That is inaccurate: PIPL binds all personal-information processors, and Art. 33 ('国家机关处理个人信息的活动，适用本法' — the law applies to state organs' processing, subject to special rules) extends it to the state. Rewritten without the qualifier."
+    ]
+   }
   },
   {
    "id": "belgian-dpa-iab-europe-tcf-decision-2022",
@@ -882,7 +1193,7 @@
    "lat": 50.8508,
    "lng": 4.3689,
    "summary": "The Belgian Data Protection Authority's Litigation Chamber found that IAB Europe's Transparency & Consent Framework — which records users' consent choices from cookie pop-ups in a 'TC String' shared across real-time bidding — failed to comply with the GDPR, that IAB Europe acted as a controller, and fined it €250,000 with orders to fix the framework. On a reference from the Brussels Court of Appeal, the EU Court of Justice held on 7 March 2024 (Case C-604/22) that such a string, capturing a user's preferences, constitutes personal data where it can be associated with an identifier such as an IP address.",
-   "significance": "The industry's machine-readable consent signal was ruled unlawful as built — and the Court of Justice confirmed that a string encoding a person's privacy preferences is itself personal data, a principle that applies to any person-proffered terms signal.",
+   "significance": "The industry's machine-readable consent signal was found to breach the GDPR as built — and the Court of Justice confirmed that a string encoding a person's privacy preferences is itself personal data when it can reasonably be linked to an identifier such as an IP address, a principle that bears on any person-proffered terms signal.",
    "sources": [
     {
      "institution": "Belgian Data Protection Authority (APD/GBA)",
@@ -905,7 +1216,14 @@
      "note": "Operative part, point 1 (interpreting Article 4(1) GDPR). Official text via the EU Publications Office repository (CELEX 62022CJ0604)."
     }
    ],
-   "locationNote": "Seat of the Belgian Data Protection Authority, Brussels."
+   "locationNote": "Seat of the Belgian Data Protection Authority, Brussels.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary checks out. The APD/GBA release finds the TCF 'fails to comply with a number of provisions of the GDPR', finds IAB Europe 'acting as a data controller', and imposes a €250,000 fine with corrective measures. Its 11/01/2023 update cites 'a decision of 2 February 2022'. The CJEU judgment is the Fourth Chamber, 7 March 2024, Case C-604/22, on a reference from the 'hof van beroep te Brussel (Court of Appeal, Brussels, Belgium)'. Operative point 1 is quoted verbatim.",
+     "Significance overstates the CJEU holding. It says a preference string 'is itself personal data' and applies 'to any person-proffered terms signal'. The Court made this conditional: only 'in so far as' the string can, by reasonable means, be associated with an identifier such as an IP address. Rewritten to carry the condition."
+    ]
+   }
   },
   {
    "id": "garante-fines-clearview-ai-2022",
@@ -948,17 +1266,23 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Garante headquarters, Piazza Venezia 11, Rome."
+   "locationNote": "Garante headquarters, Piazza Venezia 11, Rome.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The Garante release is signed 'Roma, 9 marzo 2022' and says: a €20 million fine; the company 'dichiara di possedere un database di oltre 10 miliardi di immagini di volti' taken 'da fonti web pubbliche'; it was ordered 'di cancellare i dati relativi a persone che si trovano in Italia' and 'ne ha vietato l’ulteriore raccolta e trattamento'. The linked injunction is headed 'Registro dei provvedimenti n. 50 del 10 febbraio 2022'. The Dutch AP release is dated 03 September 2024: a €30.5 million fine and 'Clearview has built an illegal database with billions of photos of faces'."
+    ]
+   }
   },
   {
    "id": "dobbs-overrules-roe-privacy-2022",
    "displayDate": "24 June 2022",
    "year": 2022,
-   "title": "Dobbs overrules Roe — and turns health and location data into evidence",
+   "title": "Dobbs overrules Roe — and health and location data become potential evidence",
    "place": "Supreme Court of the United States, Washington, D.C.",
    "lat": 38.8906,
    "lng": -77.0044,
-   "summary": "In Dobbs v. Jackson Women's Health Organization the Supreme Court overruled Roe v. Wade and Planned Parenthood v. Casey, holding that the Constitution makes no reference to abortion and implicitly protects no such right. The majority noted that Roe had held the abortion right to be part of a right to privacy which is itself not mentioned in the Constitution.",
+   "summary": "In Dobbs v. Jackson Women's Health Organization the Supreme Court overruled Roe v. Wade and Planned Parenthood v. Casey, holding that the Constitution makes no reference to abortion and implicitly protects no such right. The majority noted that Roe had held the abortion right to be part of a right to privacy which is itself not mentioned in the Constitution. Two weeks later, Executive Order 14076 (8 July 2022) asked the FTC and HHS to consider action against 'the potential threat to patient privacy caused by the transfer and sale of sensitive health-related data and by digital surveillance related to reproductive healthcare services'.",
    "significance": "Showed how quickly the legal meaning of ordinary data can change — health, search and location data collected under one set of expectations could become evidence under another, which is the case for terms that travel with the data.",
    "sources": [
     {
@@ -979,19 +1303,37 @@
      "quote": "The Constitution makes no reference to abortion, and no such right is implicitly protected by any constitutional provision",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Executive Office of the President, published in the Federal Register (via GovInfo)",
+     "title": "Executive Order 14076 of July 8, 2022 — Protecting Access to Reproductive Healthcare Services, 87 Fed. Reg. 42053 (13 July 2022)",
+     "date": "2022-07-08",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2022-07-13/pdf/2022-15138.pdf",
+     "quote": "To address the potential threat to patient privacy caused by the transfer and sale of sensitive health-related data and by digital surveillance related to reproductive healthcare services",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND (Sec. 4(b)). It continues: '(i) The Chair of the Federal Trade Commission (FTC) is encouraged to consider actions ... to protect consumers’ privacy when seeking information about and provision of reproductive healthcare services. (ii) The Secretary of Health and Human Services shall consider actions, including providing guidance under the Health Insurance Portability and Accountability Act...'. Section 1 refers to 'Eliminating the right recognized in Roe'. The federalregister.gov HTML is CAPTCHA-blocked for the helper, so the GovInfo PDF is used."
     }
    ],
-   "locationNote": "Supreme Court Building, Washington, D.C."
+   "locationNote": "Supreme Court Building, Washington, D.C.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary checks out. The slip opinion syllabus reads 'Argued December 1, 2021—Decided June 24, 2022' and 'Held: The Constitution does not confer a right to abortion; Roe and Casey are overruled'. Both quotes are verbatim in the Opinion of the Court (Alito, J.).",
+     "The title asserts that Dobbs 'turns health and location data into evidence'. No cited source supports this as a fact; neither the opinion nor anything cited documents such data being used as evidence. Title softened to 'potential evidence'. A primary source for the data-privacy concern is added: Executive Order 14076 of 8 July 2022, Sec. 4(b). A matching sentence is added to the summary.",
+     "Minor: the opinion now has a bound citation, 597 U.S. 215 (2022). The source title's '597 U.S. ___' slip form is acceptable and was not changed."
+    ]
+   }
   },
   {
    "id": "sephora-ccpa-settlement-global-privacy-control-2022",
    "displayDate": "24 August 2022",
    "year": 2022,
-   "title": "Sephora pays $1.2 million for ignoring Global Privacy Control",
+   "title": "Sephora pays $1.2 million to settle claims it ignored Global Privacy Control",
    "place": "California Department of Justice, Oakland",
-   "lat": 38.8052,
+   "lat": 37.8052,
    "lng": -122.2727,
-   "summary": "California Attorney General Rob Bonta announced a settlement with Sephora, alleging that it failed to disclose that it sold consumers' personal information and failed to process opt-out requests sent via user-enabled global privacy controls. Sephora agreed to pay $1.2 million in penalties and to honour the Global Privacy Control; the same day the Attorney General sent notices to other businesses that were not processing such signals. It was the first publicly disclosed CCPA settlement.",
+   "summary": "California Attorney General Rob Bonta announced a settlement with Sephora resolving allegations that it failed to disclose that it sold consumers' personal information, failed to process opt-out requests sent via user-enabled global privacy controls, and did not cure these violations within the 30-day period the CCPA then allowed. Sephora agreed to pay $1.2 million in penalties and to provide ways for consumers to opt out of sale, including via the Global Privacy Control; the same day the Attorney General sent notices to other businesses alleging that they were failing to process such signals. It was the Attorney General's first publicly disclosed CCPA enforcement settlement; the second, with DoorDash, came in February 2024.",
    "significance": "The moment a machine-readable signal from the person's browser was enforced with a penalty — proof that a person-side signal can bind a business.",
    "sources": [
     {
@@ -1016,15 +1358,35 @@
     {
      "institution": "Arnold & Porter (Enforcement Edge blog)",
      "title": "DoorDash Fined $375,000 by California AG in Second-Ever Publicly Disclosed CCPA Settlement",
-     "date": "2024-04",
+     "date": "2024-04-15",
      "url": "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2024/04/doordash-ccpa-settlement",
      "quote": "This is the second publicly disclosed settlement by the OAG of CCPA violation claims, following the OAG’s 2022 settlement with makeup retailer Sephora .",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Law-firm commentary, cited for the ordering (Sephora first, DoorDash second)."
+    },
+    {
+     "institution": "California Office of the Attorney General",
+     "title": "Attorney General Bonta Announces Settlement with DoorDash, Investigation Finds Company Violated Multiple Consumer Privacy Laws",
+     "date": "2024-02-21",
+     "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-doordash-investigation-finds-company",
+     "quote": "Today’s settlement with DoorDash marks Attorney General Bonta’s second CCPA enforcement settlement.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary source for the ordering. The same release says: 'In August 2022, the Attorney General announced a settlement with Sephora resolving allegations that it failed to disclose to consumers that it was selling their personal information and failed to process opt-out requests via user-enabled global privacy controls in violation of the CCPA.' Release date 'Wednesday, February 21, 2024'. --check FOUND."
     }
    ],
-   "locationNote": "The release is datelined Oakland, where the Attorney General announced it."
+   "locationNote": "The release is datelined Oakland, where the Attorney General announced it.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The latitude is wrong by one degree. The record gives lat 38.8052, which is in the Sierra foothills. Downtown Oakland, where the California DOJ office at 1515 Clay Street stands, is at about 37.805 N, -122.273 W. The corrected latitude is 37.8052.",
+     "'It was the first publicly disclosed CCPA settlement' is overstated. Private class-action settlements that included CCPA data-breach claims came before August 2022. The sources support something narrower. The AG's own DoorDash release of 21 February 2024 says 'Today’s settlement with DoorDash marks Attorney General Bonta’s second CCPA enforcement settlement'. Arnold & Porter call it the 'second publicly disclosed settlement by the OAG'. The summary now says it was the Attorney General's first publicly disclosed CCPA enforcement settlement.",
+     "The summary said the AG sent notices to businesses 'that were not processing such signals', which states allegations as fact. The release says the notices were 'alleging non-compliance'. The same applies to the title: Sephora settled allegations and did not admit to ignoring GPC. The title and summary are reworded to say this.",
+     "Everything else is confirmed on a fresh fetch. Both OAG quotes are verbatim. The release is dated Wednesday, August 24, 2022 (dc:date 2022-08-24) and datelined OAKLAND. The $1.2 million penalty and the injunctive term to provide an opt-out 'including via the Global Privacy Control' are on the page.",
+     "Arnold & Porter source: the quote is verbatim, and the page date is April 15, 2024, not just '2024-04'."
+    ]
+   }
   },
   {
    "id": "ftc-sues-kochava-location-data-broker-2022",
@@ -1055,9 +1417,27 @@
      "quote": "The data sample the FTC examined included precise, timestamped location data collected from more than 61 million unique mobile devices in the previous week.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "US Federal Trade Commission (Complaint, FTC v. Kochava Inc., D. Idaho, Case 2:22-cv-00377-DCN)",
+     "title": "Complaint for Permanent Injunction and Other Relief, FTC v. Kochava Inc.",
+     "date": "2022-08-29",
+     "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/1.%20Complaint.pdf",
+     "quote": "Kochava typically charges a monthly subscription fee of thousands of dollars to access its location data feed but has also offered a free sample (the “Kochava Data Sample”).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Paragraph 12. Supports 'free data sample'. Page headers read 'Document 1 Filed 08/29/22'. Paragraph 14 gives the exact figure: '327,480,000 rows and 11 columns of data, corresponding to over 61,803,400 unique mobile devices'. --check FOUND."
     }
    ],
-   "locationNote": "Announced at FTC headquarters, Washington, D.C.; the complaint was filed in the District of Idaho."
+   "locationNote": "Announced at FTC headquarters, Washington, D.C.; the complaint was filed in the District of Idaho.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors in the record. Both quotes are verbatim on a fresh fetch. The release date is August 29, 2022 (article:published_time 2022-08-29). The 4-1 vote, with Commissioner Phillips voting no, and the filing in the U.S. District Court for the District of Idaho are both on the page.",
+     "The press release does not use the word 'free' for the data sample; it says 'anyone with little effort' could obtain it. The complaint supports 'free': Case 2:22-cv-00377-DCN, Document 1, filed 08/29/22, says Kochava 'has also offered a free sample'. The complaint is added as a source. It also gives the exact figure: 'over 61,803,400 unique mobile devices'.",
+     "The claim that the sample covered the previous week ('in one week') matches the release. The list of sensitive locations (reproductive health clinics, places of worship, homeless and domestic violence shelters, addiction recovery facilities) matches. The FTC HQ coordinates are about right."
+    ]
+   }
   },
   {
    "id": "dpc-fines-meta-1-2-billion-transfers-2023",
@@ -1088,9 +1468,28 @@
      "quote": "an administrative fine in the amount of €1.2 billion",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "BBC News",
+     "title": "Meta: Facebook owner fined €1.2bn for mishandling data",
+     "date": "2023-05-22",
+     "url": "https://www.bbc.com/news/technology-65669839",
+     "quote": "Issued by Ireland's Data Protection Commission (DPC), it is the largest fine imposed under the EU's General Data Protection Regulation privacy law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent support for 'record' and 'largest GDPR penalty' as of May 2023. Page datePublished 2023-05-22T09:44:52Z. --check FOUND."
     }
    ],
-   "locationNote": "Data Protection Commission, Fitzwilliam Square, Dublin."
+   "locationNote": "Data Protection Commission, Fitzwilliam Square, Dublin.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No factual errors. Both DPC quotes are verbatim on a fresh fetch, and the release is dated '22nd May 2023'. The following are all on the page: the inquiry commenced in August 2020; the Article 46(1) infringement; the Article 65 referral with the EDPB decision of 13 April 2023; the final decision of 12 May 2023; the suspension order within five months under Art. 58(2)(j); the €1.2 billion fine; and a third order to cease unlawful processing, including storage, within six months, which the summary leaves out.",
+     "displayDate 22 May 2023 is the announcement date. The decision itself was adopted on 12 May 2023. The summary says 'announced', so this is accurate. The source note already records 12 May.",
+     "Neither DPC source supports the 'record' in the title or 'the largest GDPR penalty' in the significance. An independent BBC report of 22 May 2023 is added for that claim. It was the largest at the time.",
+     "The coordinates for Fitzwilliam Square, Dublin are about right."
+    ]
+   }
   },
   {
    "id": "eu-us-data-privacy-framework-adopted-2023",
@@ -1100,8 +1499,8 @@
    "place": "European Commission, Berlaymont, Brussels",
    "lat": 50.8435,
    "lng": 4.3826,
-   "summary": "After Schrems II, the United States adopted Executive Order 14086 on 7 October 2022, limiting signals-intelligence collection and creating a Data Protection Review Court. On 10 July 2023 the Commission adopted Implementing Decision (EU) 2023/1795, finding that the United States ensures an adequate level of protection for data transferred to organisations certified under the EU-US Data Privacy Framework.",
-   "significance": "The third transatlantic arrangement in eight years, it shows how contested the legal plumbing under every data flow remains — and why terms that travel with the person, not the pipe, are attractive.",
+   "summary": "After Schrems II, the United States adopted Executive Order 14086 on 7 October 2022, setting new limits and safeguards on signals-intelligence activities and a new redress mechanism for Europeans, complemented by an Attorney General regulation establishing a Data Protection Review Court. On 10 July 2023 the Commission adopted Implementing Decision (EU) 2023/1795, finding that the United States ensures an adequate level of protection for personal data transferred from the Union to organisations on the Data Privacy Framework List kept by the US Department of Commerce.",
+   "significance": "The third transatlantic arrangement since 2000 — and the second replacement in eight years after the Court of Justice struck down Safe Harbor in 2015 — it shows how contested the legal plumbing under every data flow remains, and why terms that travel with the person, not the pipe, are attractive.",
    "sources": [
     {
      "institution": "European Commission (Official Journal of the European Union L 231, 20.9.2023), via EU Publications Office (Cellar)",
@@ -1115,15 +1514,34 @@
     },
     {
      "institution": "European Commission (Official Journal of the European Union L 231, 20.9.2023), via EU Publications Office (Cellar)",
-     "title": "Commission Implementing Decision (EU) 2023/1795 of 10 July 2023 — adequacy finding",
+     "title": "Commission Implementing Decision (EU) 2023/1795 of 10 July 2023, Article 1 — adequacy finding",
      "date": "2023-07-10",
      "url": "https://publications.europa.eu/resource/cellar/abb0ba05-5750-11ee-9220-01aa75ed71a1.0006.03/DOC_1",
-     "quote": "Based on the findings set out in recitals 9-200, the Commission concludes that the United States ensures an adequate level of protection for personal data transferred under the EU-U.S. DPF from a controller or a processor in the Union",
+     "quote": "For the purpose of Article 45 of Regulation (EU) 2016/679, the United States ensures an adequate level of protection for personal data transferred from the Union to organisations in the United States that are included in the ‘Data Privacy Framework List’, maintained and made publicly available by the U.S. Department of Commerce, in accordance with Section I.3 of Annex I.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "European Commission (Official Journal of the European Union L 231, 20.9.2023), via EU Publications Office (Cellar)",
+     "title": "Commission Implementing Decision (EU) 2023/1795 — redress mechanism and Data Protection Review Court",
+     "date": "2023-07-10",
+     "url": "https://publications.europa.eu/resource/cellar/abb0ba05-5750-11ee-9220-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "First, a specific redress mechanism is established, under EO 14086, complemented by the AG Regulation establishing the Data Protection Review Court, to handle and resolve complaints from individuals concerning U.S. signals intelligence activities.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the corrected summary: the DPRC was established by the AG Regulation (28 CFR part 201), not by EO 14086 itself. Another recital says EO 14086 sets 'limitations and safeguards for all U.S. signals intelligence activities'. --check FOUND."
     }
    ],
-   "locationNote": "Commission headquarters, Brussels."
+   "locationNote": "Commission headquarters, Brussels.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary said Executive Order 14086 created a Data Protection Review Court. The decision itself says the redress mechanism 'is established, under EO 14086, complemented by the AG Regulation establishing the Data Protection Review Court' (28 CFR part 201). So the court was established by the Attorney General's regulation, not by the EO itself. The summary is corrected.",
+     "The significance called it 'The third transatlantic arrangement in eight years', which is wrong. The three arrangements are Safe Harbor (2000), Privacy Shield (2016) and the DPF (2023), spread over 23 years. What happened within eight years was two replacements after Safe Harbor was struck down in 2015. The significance is corrected.",
+     "Source [1] quote is recital 7, not an operative article. It is also cut off mid-sentence before 'to certified organisations in the United States.' The operative adequacy finding is Article 1, and the summary's wording ('organisations certified under the EU-US Data Privacy Framework') paraphrases Article 1. The quote is replaced with Article 1.",
+     "Also confirmed: recital 6 quote is verbatim; 'Done at Brussels, 10 July 2023'; OJ L 231/118, 20.9.2023; document C(2023)4745. The Berlaymont coordinates are about right."
+    ]
+   }
   }
  ],
  "series": [],
@@ -1134,19 +1552,48 @@
    "value": 147000000,
    "unit": "people",
    "year": 2017,
-   "geography": "United States (mainly)",
-   "notes": "FTC figure ('approximately 147 million'); Equifax's first estimate on 7 September 2017 was about 143 million US consumers.",
+   "geography": "United States",
+   "notes": "FTC figure ('approximately 147 million'), for people in the United States; Equifax's first estimate on 7 September 2017 was about 143 million US consumers. Equifax also said limited personal information of certain UK and Canadian residents was accessed.",
    "sources": [
     {
      "institution": "US Federal Trade Commission",
      "title": "Equifax Data Breach Settlement",
-     "date": "2026",
+     "date": "2024-11-04",
      "url": "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement",
      "quote": "In September of 2017, Equifax announced a data breach that exposed the personal information of 147 million people.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "US Federal Trade Commission",
+     "title": "Equifax to Pay $575 Million as Part of Settlement with FTC, CFPB, and States Related to 2017 Data Breach",
+     "date": "2019-07-22",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+     "quote": "a data breach in 2017 that affected approximately 147 million people",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Source for the 'approximately 147 million' wording. The same release says 'hackers stole at least 147 million names and dates of birth, 145.5 million Social Security numbers, and 209,000 payment card numbers'. --check FOUND."
+    },
+    {
+     "institution": "Equifax Inc. (investor relations press release)",
+     "title": "Equifax Announces Cybersecurity Incident Involving Consumer Information",
+     "date": "2017-09-07",
+     "url": "https://investor.equifax.com/news-events/press-releases/detail/240/equifax-announces-cybersecurity-incident-involving-consumer",
+     "quote": "Equifax Inc. (NYSE: EFX) today announced a cybersecurity incident potentially impacting approximately 143 million U.S. consumers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Datelined 'ATLANTA, Sept. 7, 2017'. The same release says: 'Equifax also identified unauthorized access to limited personal information for certain UK and Canadian residents.' --check FOUND."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Source [0] date '2026' is wrong. The FTC refunds page has article:published_time 2019-07-11 and article:modified_time 2024-11-04. It is corrected to the last-modified date.",
+     "The notes quote the FTC as saying 'approximately 147 million', but the cited page says '147 million people' without 'approximately'. The FTC's own settlement press release of 22 July 2019 has the 'approximately' wording and is added as a source.",
+     "The notes say Equifax's first estimate, on 7 September 2017, was about 143 million US consumers. No source supported this. Equifax's own release is added: 'potentially impacting approximately 143 million U.S. consumers'.",
+     "Geography 'United States (mainly)' is imprecise. The 147 million are US consumers. Equifax said that, in addition, limited information on 'certain UK and Canadian residents' was accessed. Corrected to 'United States' with a note."
+    ]
+   }
   },
   {
    "id": "quant-facebook-users-cambridge-analytica-2018",
@@ -1165,8 +1612,35 @@
      "quote": "In total, we believe the Facebook information of up to 87 million people — mostly in the US — may have been improperly shared with Cambridge Analytica.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "The Observer (The Guardian)",
+     "title": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+     "date": "2018-03-17",
+     "url": "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+     "quote": "However, at the time it failed to alert users and took only limited steps to recover and secure the private information of more than 50 million individuals.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "By Carole Cadwalladr and Emma Graham-Harrison. The page metadata gives the publication as 'The Observer' and datePublished 2018-03-17T22:03Z. Supports the 'first report said 50 million' claim in the notes. --check FOUND."
+    },
+    {
+     "institution": "Facebook (Meta) Newsroom",
+     "title": "Suspending Cambridge Analytica and SCL Group from Facebook",
+     "date": "2018-03-16",
+     "url": "https://about.fb.com/news/2018/03/suspending-cambridge-analytica/",
+     "quote": "Approximately 270,000 people downloaded the app.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "By Paul Grewal. The page says 'Originally published on March 16, 2018'. Supports the claim that about 270,000 people installed the app. --check FOUND."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors. The quote is verbatim on a fresh fetch. The post is by Mike Schroepfer, CTO, datePublished 2018-04-04. The value of 87,000,000, the upper-estimate framing and 'mostly in the US' all match.",
+     "Two claims in the notes had no source. The Observer's first report said 50 million profiles, and about 270,000 people installed the app. Primary sources are added for both: the Observer/Guardian article of 17 March 2018, and Facebook's 16 March 2018 post ('Approximately 270,000 people downloaded the app')."
+    ]
+   }
   },
   {
    "id": "quant-ftc-facebook-penalty-2019",
@@ -1186,7 +1660,13 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors. The quote is verbatim on a fresh fetch and the release date is July 24, 2019. The value of US$5,000,000,000 and the 'largest ever imposed on any company for violating consumers’ privacy' characterisation in the notes both match the FTC's own wording. This is the FTC's claim as of 2019. A possible addition, not required: the settlement order was approved by the US District Court for D.C. in April 2020. This was not checked here."
+    ]
+   }
   },
   {
    "id": "quant-dpc-meta-transfer-fine-2023",
@@ -1195,7 +1675,7 @@
    "unit": "euros",
    "year": 2023,
    "geography": "European Union (Ireland lead authority)",
-   "notes": "Imposed on 22 May 2023 following an EDPB binding decision.",
+   "notes": "Final decision adopted 12 May 2023 and announced 22 May 2023, following a binding EDPB decision of 13 April 2023 under Article 65 GDPR; the largest GDPR fine at the time.",
    "sources": [
     {
      "institution": "Data Protection Commission (Ireland)",
@@ -1205,8 +1685,25 @@
      "quote": "an administrative fine in the amount of €1.2 billion",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "BBC News",
+     "title": "Meta: Facebook owner fined €1.2bn for mishandling data",
+     "date": "2023-05-22",
+     "url": "https://www.bbc.com/news/technology-65669839",
+     "quote": "Issued by Ireland's Data Protection Commission (DPC), it is the largest fine imposed under the EU's General Data Protection Regulation privacy law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent confirmation of the fine and of its record status as of May 2023. datePublished 2023-05-22. --check FOUND."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The notes say 'Imposed on 22 May 2023', which is imprecise. The DPC release says the final decision imposing the fine was adopted on 12 May 2023 and announced on 22 May 2023, and that the EDPB's binding Article 65 decision was adopted on 13 April 2023. The notes are corrected.",
+     "The value (€1.2 billion) and the quote are confirmed verbatim. A BBC source is added for the claim that it was the largest GDPR fine at the time."
+    ]
+   }
   },
   {
    "id": "quant-gdpr-maximum-fine-share-of-turnover-2016",
@@ -1225,8 +1722,25 @@
      "quote": "Infringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+     "title": "Regulation (EU) 2016/679, Article 99(2) — Entry into force and application",
+     "date": "2016-04-27",
+     "url": "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+     "quote": "It shall apply from 25 May 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Article 99(2). Supports 'applicable from 25 May 2018' in the notes. --check FOUND."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors. The quote is verbatim on a fresh fetch and sits in Article 83, paragraph 5, the €20m / 4% tier. Paragraph 4 is the €10m / 2% tier. Paragraph 6 applies the same €20m / 4% cap to non-compliance with a supervisory-authority order under Art. 58(2). The document is the OJ L 119, 4.5.2016 English text of the Regulation of 27 April 2016.",
+     "'Whichever is higher' applies to undertakings, as the unit implies. The 'applicable from 25 May 2018' in the notes had no source, so Article 99(2) is added."
+    ]
+   }
   },
   {
    "id": "quant-carpenter-location-points-2018",
@@ -1246,7 +1760,14 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error. Fresh fetch 2026-09-23 of the slip opinion PDF: quote FOUND in the Syllabus; header reads 'No. 16–402. Argued November 29, 2017—Decided June 22, 2018'. 'Without a warrant' is right: the syllabus says the records were obtained under Stored Communications Act court orders (§2703(d)), and 'The Government did not obtain a warrant supported by probable cause before acquiring Carpenter's cell-site records.'",
+     "Minor nuance, no change needed: the majority opinion explains that MetroPCS produced 127 days of records and Sprint a further two days, and that 'Altogether the Government obtained 12,898 location points ... an average of 101 data points per day'. The '127 days' unit follows the Court's own syllabus wording."
+    ]
+   }
   },
   {
    "id": "quant-kochava-sample-devices-2022",
@@ -1265,8 +1786,24 @@
      "quote": "The data sample the FTC examined included precise, timestamped location data collected from more than 61 million unique mobile devices in the previous week.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "US Federal Trade Commission (complaint, US District Court for the District of Idaho)",
+     "title": "FTC v. Kochava Inc., Case No. 2:22-cv-377 — Complaint for Permanent Injunction and Other Relief",
+     "date": "2022-08-29",
+     "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/1.%20Complaint.pdf",
+     "quote": "Kochava typically charges a monthly subscription fee of thousands of dollars to access its location data feed but has also offered a free sample (the “Kochava Data Sample”).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND (para. 12). Para. 14: 'The Kochava Data Sample consisted of a subset of the paid data feed, covering a rolling seven-day period.' and '... corresponding to over 61,803,400 unique mobile devices.' Linked from the FTC press release."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error. Press release (dated August 29, 2022 on the page) quote FOUND. The label's word 'free' is not in the press release (which says 'publicly available data sample') but is supported by the complaint, added below. The complaint (Doc. 1, filed 08/29/22) says the sample covered 'a rolling seven-day period' and that 'one day of the Kochava Data Sample contained over 327,480,000 rows ... corresponding to over 61,803,400 unique mobile devices' — i.e. one day's download of a seven-day sample; consistent with the press release's 'in the previous week'. Notes' 'hundreds of millions of devices' is verbatim in the press release ('derived from hundreds of millions of mobile devices')."
+    ]
+   }
   },
   {
    "id": "quant-clearview-claimed-face-images-2022",
@@ -1286,8 +1823,24 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Translation: 'The company — which says it has a database of more than 10 billion images of faces of people from all over the world, extracted from public web sources by web scraping — offers a search service that, using AI systems, allows the creation of profiles based on biometric data extracted from the images.'"
+    },
+    {
+     "institution": "Garante per la protezione dei dati personali (Italy) — English version of press release",
+     "title": "Facial recognition: Italian SA fines Clearview AI eur 20 million",
+     "date": "2022-03-09",
+     "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9751323",
+     "quote": "The company reportedly owns a database including over 10 billion facial images from all over the world, which are extracted from public web sources (media outlets, social media, online videos) via web scraping.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND. The English text is on the same docweb page below the Italian original, signed 'Rome, 9 March 2022'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error. Garante press release (signed 'Roma, 9 marzo 2022') quote FOUND; 'dichiara di possedere' supports 'company's own claim'. The same page carries the Garante's own English version, added below for English readers. Context only: by September 2024 the Dutch DPA put the database at 'more than 30 billion photos', so the 10 billion figure must stay tied to 2022, as the record does."
+    ]
+   }
   },
   {
    "id": "quant-california-prop-24-yes-share-2020",
@@ -1296,19 +1849,26 @@
    "unit": "percent of votes cast on the measure",
    "year": 2020,
    "geography": "California",
-   "notes": "Yes 9,384,625; No 7,305,431 (Statement of Vote, 3 November 2020 general election). The PDF text layer interleaves table cells, so the figures were read from the table rather than as a continuous quotation.",
+   "notes": "Yes 9,384,625 (56.2%); No 7,305,431 (43.8%) — the State Totals row for Proposition 24 in the Secretary of State's Statement of Vote for the 3 November 2020 general election, which also lists the measure among 'proposed laws ... approved by voters'.",
    "sources": [
     {
      "institution": "California Secretary of State",
      "title": "Statement of Vote, November 3, 2020, General Election",
      "date": "2020-12",
      "url": "https://elections.cdn.sos.ca.gov/sov/2020-general/sov/complete-sov.pdf",
-     "quote": "Amends Consumer Privacy Laws",
-     "verificationStatus": "PENDING",
+     "quote": "9,384,625 56.2% 7,305,431 43.8%",
+     "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "PENDING because the vote counts cannot be quoted verbatim from the PDF's scrambled text layer; the quoted label is Proposition 24's ballot title in the statewide summary table."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Figures are correct but the source was left PENDING with a quote (the ballot label) that does not support the number. The PDF text layer does in fact carry the Proposition 24 State Totals row contiguously: '9,384,625 56.2% 7,305,431 43.8%' (checks FOUND), and the 'Official Declaration of the Vote Results on November 3, 2020, State Ballot Measures' lists Prop 24 'Amends Consumer Privacy Laws. Initiative Statute.' under 'The following proposed laws were approved by voters:'. 9,384,625 / (9,384,625 + 7,305,431) = 56.23%, so 56.2 is right. Independent cross-check: Ballotpedia's certified-results table shows Yes 56.23% 9,384,625, No 43.77% 7,305,431.",
+     "Notes field still says the figures could not be read as a continuous quotation; update it."
+    ]
+   }
   }
  ],
  "myths": [
@@ -1346,13 +1906,20 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. All three quotes FOUND on fresh fetch. Checked: the Article 5(3) replacement is point (5) of Article 2 ('Amendments to Directive 2002/58/EC') of Directive 2009/136/EC of 25 November 2009, OJ L 337, 18.12.2009 — title correct. The GDPR text (OJ L 119, 4.5.2016, dated 27 April 2016) contains the word 'cookie' exactly once, in recital 30, so 'mentions cookie identifiers only as an example of online identifiers' holds. Planet49 (C-673/17) is a Grand Chamber judgment of 1 October 2019 and the operative ruling reads Art. 2(f) and 5(3) of Directive 2002/58 'read in conjunction with' Art. 4(11) and 6(1)(a) of the GDPR, so 'read the two together' is accurate.",
+     "Nit, no change required: 'seven years before the GDPR' is right if you count from adoption (2009 to 2016). The GDPR applied from 2018, nine years after 2009."
+    ]
+   }
   },
   {
    "id": "myth-gdpr-applies-only-in-the-eu",
    "claim": "The GDPR only applies to companies based in the EU.",
    "verdict": "FALSE",
-   "correction": "Article 3(2) extends the GDPR to controllers and processors outside the Union that offer goods or services to people in the Union or monitor their behaviour there. EU authorities have fined non-EU firms on that basis — for example Italy's €20 million fine on the US company Clearview AI (2022) and the Dutch authority's €30.5 million fine (2024).",
+   "correction": "Article 3(2) extends the GDPR to controllers and processors outside the Union that offer goods or services to people in the Union or monitor their behaviour there. EU authorities have fined non-EU firms on that basis — for example Italy's €20 million fine on the US company Clearview AI (2022) and the Dutch authority's €30.5 million fine on the same company (2024), which noted that Clearview has no establishment in Europe.",
    "sources": [
     {
      "institution": "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
@@ -1373,14 +1940,41 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Translation: 'The Italian Data Protection Authority has imposed a fine of 20 million euros on the American company Clearview AI for carrying out real biometric monitoring, including of people on Italian territory.'"
+    },
+    {
+     "institution": "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
+     "title": "Dutch DPA imposes a fine on Clearview because of illegal data collection for facial recognition",
+     "date": "2024-09-03",
+     "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition",
+     "quote": "The Dutch Data Protection Authority (Dutch DPA) imposes a fine of 30.5 million euro and orders subject to a penalty for non-compliance up to more than 5 million euro on Clearview AI. Clearview is an American company that offers facial recognition services.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND. Page <time datetime=\"2024-09-03T12:00:00Z\">. (An older English URL slug, 'dutch-supervisory-authority-imposes-a-fine-on-clearview...', returns 404; this is the live English URL linked from the Dutch original.)"
+    },
+    {
+     "institution": "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
+     "title": "Dutch DPA imposes a fine on Clearview because of illegal data collection for facial recognition — non-EU establishment",
+     "date": "2024-09-03",
+     "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition",
+     "quote": "Clearview is an American company without an establishment in Europe.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND. The next sentence reads: 'Other data protection authorities have already fined Clearview at various earlier occasions, but the company does not seem to adapt its conduct.'"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The correction's second example, 'the Dutch authority's €30.5 million fine (2024)', had no source and does not say whom it fined. The Dutch DPA page (dated 3 September 2024) confirms a €30.5 million fine on Clearview AI and says Clearview is 'an American company without an establishment in Europe', which is exactly the Article 3(2) situation. Sources added and the wording clarified.",
+     "Existing sources: Article 3(2) quote FOUND (continues with points (a) offering goods or services and (b) monitoring behaviour, as the note says); Garante quote FOUND, page signed 'Roma, 9 marzo 2022'."
+    ]
+   }
   },
   {
    "id": "myth-cambridge-analytica-hacked-facebook",
    "claim": "Cambridge Analytica hacked Facebook.",
    "verdict": "MISLEADING",
-   "correction": "No Facebook system was broken into. The data came through a personality-quiz app built by Aleksandr Kogan that about 270,000 people installed and that, under Facebook's platform rules of the time, could also collect information about their friends. The US FTC charged Facebook with deceiving users by sharing friends' data with app developers even when those friends had chosen more restrictive settings, and charged Cambridge Analytica, its CEO and Kogan with using deceptive tactics to harvest the data. The Observer's first report called it a 'data breach'; the harm was a breach of trust and of stated preferences rather than a hack.",
+   "correction": "No Facebook system was broken into. The data came through a personality-quiz app built by Aleksandr Kogan that about 270,000 people installed and that, under Facebook's platform rules of the time, could also collect information about their friends. The US FTC charged Facebook with deceiving users by sharing friends' data with app developers even when those friends had chosen more restrictive settings, and charged Cambridge Analytica, its former chief executive Alexander Nix and Kogan with using deceptive tactics to harvest the data. The Guardian first reported the harvesting in December 2015; the Observer's March 2018 exposé headlined it a 'major data breach'. The harm was a breach of trust and of stated preferences rather than a hack.",
    "sources": [
     {
      "institution": "Facebook (Meta) Newsroom",
@@ -1409,8 +2003,47 @@
      "quote": "The FTC alleges that Facebook violated the 2012 order by deceiving its users when the company shared the data of users’ Facebook friends with third-party app developers, even when those friends had set more restrictive privacy settings.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Facebook (Meta) Newsroom",
+     "title": "Suspending Cambridge Analytica and SCL Group From Facebook (Paul Grewal) — how the data was obtained",
+     "date": "2018-03-16",
+     "url": "https://about.fb.com/news/2018/03/suspending-cambridge-analytica/",
+     "quote": "Approximately 270,000 people downloaded the app. In so doing, they gave their consent for Kogan to access information such as the city they set on their profile, or content they had liked, as well as more limited information about friends who had their privacy settings set to allow it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND in the section 'Originally published on March 16, 2018'. The app was 'thisisyourdigitallife'."
+    },
+    {
+     "institution": "The Observer / The Guardian",
+     "title": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach (Carole Cadwalladr and Emma Graham-Harrison)",
+     "date": "2018-03-17",
+     "url": "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+     "quote": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND (headline); article:published_time 2018-03-17T22:03Z. Same article: 'On Friday, four days after the Observer sought comment for this story, but more than two years after the data breach was first reported, Facebook announced that it was suspending Cambridge Analytica'."
+    },
+    {
+     "institution": "The Guardian",
+     "title": "Ted Cruz using firm that harvested data on millions of unwitting Facebook users (Harry Davies)",
+     "date": "2015-12-11",
+     "url": "https://www.theguardian.com/us-news/2015/dec/11/senator-ted-cruz-president-campaign-facebook-user-data",
+     "quote": "Ted Cruz using firm that harvested data on millions of unwitting Facebook users",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND (headline); article:published_time 2015-12-11T22:22Z. Names Dr Aleksandr Kogan and SCL, which shows the harvesting was first reported in December 2015."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "'The Observer's first report called it a \"data breach\"' is wrong on 'first'. The Guardian first reported the harvesting on 11 December 2015 ('Ted Cruz using firm that harvested data on millions of unwitting Facebook users'). The Observer's own 17 March 2018 article says Facebook acted 'more than two years after the data breach was first reported'. The 2018 exposé's headline does say 'major data breach'. It was also unsourced; sources added.",
+     "'charged Cambridge Analytica, its CEO and Kogan': the FTC names Alexander Nix as Cambridge Analytica's FORMER chief executive ('its former Chief Executive Officer Alexander Nix').",
+     "The '270,000' figure was not supported by any quoted source. Facebook's newsroom post says 'Approximately 270,000 people downloaded the app'; that sentence is added as a source.",
+     "All three existing quotes FOUND on fresh fetch. The Facebook quote is in the 'Update on March 17, 2018, 9:50 AM PT' paragraph, which begins 'The claim that this is a data breach is completely false.' The FTC page is dated July 24, 2019."
+    ]
+   }
   },
   {
    "id": "myth-prism-direct-access-to-servers",
@@ -1431,20 +2064,38 @@
     {
      "institution": "The Guardian",
      "title": "NSA Prism program taps in to user data of Apple, Google and others",
-     "date": "2013-06-07",
+     "date": "2013-06-06",
      "url": "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
      "quote": "The document claims \"collection directly from the servers\" of major US service providers.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same article: 'all those who responded to a Guardian request for comment on Thursday denied knowledge of any such program.'"
+    },
+    {
+     "institution": "The Guardian",
+     "title": "NSA Prism program taps in to user data of Apple, Google and others — Google statement",
+     "date": "2013-06-06",
+     "url": "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
+     "quote": "From time to time, people allege that we have created a government 'back door' into our systems, but Google does not have a back door for the government to access private user data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND. The article introduces it as 'In a statement, Google said:'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Substance checks out. PCLOB report is dated 'JULY 2, 2014' on its cover and the quote is FOUND (executive summary). The note's second quote is also verbatim at the body description: 'In PRISM collection, the government (specifically, the FBI on behalf of the NSA) sends selectors — such as an email address — to a United States–based electronic communications service provider ... that has been served a directive.' That supports 'served with a directive'.",
+     "Guardian source date is off by one. The page currently displays 'Fri 7 Jun 2013 15.23 EDT', a later republication timestamp. The story first ran on Thursday 6 June 2013: the URL path is /2013/jun/06/, the article's images were uploaded 6 June 2013 20:51–22:24 UTC, and the text refers to companies responding 'on Thursday' (6 June). PRISM is generally dated to its 6 June 2013 disclosure by the Guardian and the Washington Post.",
+     "The correction says 'the companies denied giving any such access'. The quoted Guardian line only says they 'denied knowledge of any such program'. Google's explicit 'no back door' denial in the same article is added."
+    ]
+   }
   },
   {
    "id": "myth-google-killed-third-party-cookies",
    "claim": "Google got rid of third-party cookies in Chrome.",
    "verdict": "FALSE",
-   "correction": "Google announced in January 2020 that it would phase out third-party cookies within two years, delayed the plan several times, and in July 2024 switched to offering users a choice instead. In April 2025 it dropped even the standalone choice prompt and confirmed it would not return to removing third-party cookies; the UK CMA released its commitments in October 2025.",
+   "correction": "Google announced on 14 January 2020 that it planned to phase out third-party cookies in Chrome 'within two years', then delayed the plan repeatedly (in June 2021 and July 2022, among others). From January 2024 it restricted third-party cookies by default for 1% of Chrome users as a test, but in July 2024 it dropped deprecation in favour of offering users a choice. In April 2025 it dropped even the standalone choice prompt and confirmed it would not go back to removing third-party cookies; it told the UK CMA that the 1% test group's original settings would be restored, and the CMA released its commitments in October 2025. Only Chrome's Incognito mode blocks third-party cookies by default.",
    "sources": [
     {
      "institution": "UK Competition and Markets Authority",
@@ -1454,21 +2105,99 @@
      "quote": "In April 2025, Google announced that it no longer planned to roll out such a prompt, and also confirmed that it is not going back to its original plans to remove TPCs.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "UK Competition and Markets Authority",
+     "title": "Notice of intention to accept commitments offered by Google in relation to its Privacy Sandbox Proposals (Case 50972)",
+     "date": "2021-06-11",
+     "url": "https://assets.publishing.service.gov.uk/media/60c21e54d3bf7f4bcc0652cd/Notice_of_intention_to_accept_binding_commitments_offered_by_Google_publication.pdf",
+     "quote": "On 14 January 2020 Google announced that “… we plan to phase out support for third-party cookies in Chrome. Our intention is to do this within two years.”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND (para. 5.86). Para. 3.22(c): '14 January 2020: Google first announced its intent to remove TPCs from Chrome.' The CMA cites Chromium Blog, 'Building a more private web: A path towards making third-party cookies obsolete' (Justin Schuh, Tuesday, January 14, 2020). That original is at https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html; the words are in its raw HTML but the checker cannot read them."
+    },
+    {
+     "institution": "Google (The Keyword blog)",
+     "title": "An updated timeline for Privacy Sandbox milestones (Vinay Goel)",
+     "date": "2021-06-24",
+     "url": "https://blog.google/products/chrome/updated-timeline-privacy-sandbox-milestones/",
+     "quote": "While there’s considerable progress with this initiative, it's become clear that more time is needed across the ecosystem to get this right.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND; page dated Jun 24, 2021. The post moved the phase-out to 'Stage 2 (Starting mid-2023) ... finishing in late 2023'."
+    },
+    {
+     "institution": "Google (The Keyword blog)",
+     "title": "Expanding testing for the Privacy Sandbox for the web",
+     "date": "2022-07-27",
+     "url": "https://blog.google/products/chrome/update-testing-privacy-sandbox-web/",
+     "quote": "As developers adopt these APIs, we now intend to begin phasing out third-party cookies in Chrome in the second half of 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND; page dated Jul 27, 2022."
+    },
+    {
+     "institution": "Google (The Keyword blog)",
+     "title": "The next step toward phasing out third-party cookies in Chrome",
+     "date": "2023-12-14",
+     "url": "https://blog.google/products/chrome/privacy-sandbox-tracking-protection/",
+     "quote": "On January 4, we'll begin testing Tracking Protection, a new feature that limits cross-site tracking by restricting website access to third-party cookies by default. We'll roll this out to 1% of Chrome users globally",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND; page dated Dec 14, 2023 (so 'January 4' = 4 January 2024)."
+    },
+    {
+     "institution": "Google (Privacy Sandbox)",
+     "title": "A new path for Privacy Sandbox on the web (Anthony Chavez)",
+     "date": "2024-07-22",
+     "url": "https://privacysandbox.com/news/privacy-sandbox-update/",
+     "quote": "Instead of deprecating third-party cookies, we would introduce a new experience in Chrome that lets people make an informed choice that applies across their web browsing, and they'd be able to adjust that choice at any time.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND; page dated Jul 22, 2024."
+    },
+    {
+     "institution": "Google (Privacy Sandbox)",
+     "title": "Next steps for Privacy Sandbox and tracking protections in Chrome (Anthony Chavez)",
+     "date": "2025-04-22",
+     "url": "https://privacysandbox.com/news/privacy-sandbox-next-steps/",
+     "quote": "we've made the decision to maintain our current approach to offering users third-party cookie choice in Chrome, and will not be rolling out a new standalone prompt for third-party cookies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND; page dated April 22, 2025. Same post: 'We'll continue to enhance tracking protections in Chrome's Incognito mode, which already blocks third-party cookies by default.' (also FOUND)."
+    },
+    {
+     "institution": "UK Competition and Markets Authority",
+     "title": "Decision to release the commitments previously accepted by the CMA in respect of Google's Privacy Sandbox proposals — para. 5.27 (1% test group)",
+     "date": "2025-10-17",
+     "url": "https://assets.publishing.service.gov.uk/media/68f213ce06e6515f7914c728/Decision_to_release_the_commitments_previously_accepted_by_the_CMA_in_respect_of_Google_s_Privacy_Sandbox_proposals.pdf",
+     "quote": "Google has told the CMA that ‘the 1% of users who have TPCs restricted will be notified that their original 3PCs settings, which were changed by default, will be restored to their original state in line with Google’s decision to maintain the current approach to TPCs on Chrome.’",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Fresh fetch 2026-09-23: FOUND."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Only one source, the CMA 2025 decision, and it covers only July 2024 and April 2025. The January 2020 announcement ('within two years') and the repeated delays had no source. Sources added: the CMA's 11 June 2021 notice quotes the 14 January 2020 announcement verbatim. (The Chromium Blog original keeps its post body inside a script template, so the checker cannot read it.) Google's June 2021 and July 2022 posts document the delays.",
+     "An important nuance was missing. Chrome did restrict third-party cookies by default for 1% of users globally, from 4 January 2024 (Google, 14 December 2023). The CMA's October 2025 decision records Google telling it those users' 'original 3PCs settings ... will be restored'. Chrome's Incognito mode also 'already blocks third-party cookies by default' (Google, April 2025). The verdict FALSE still stands for Chrome's general default, but the correction should state these facts so a reader who saw the 1% test or Incognito behaviour is not misled.",
+     "Existing source: quote FOUND; decision dated 17 October 2025 on its cover. Institution and title are correct."
+    ]
+   }
   },
   {
    "id": "myth-gpc-is-just-do-not-track-again",
    "claim": "Global Privacy Control is just 'Do Not Track' again — a browser flag websites can ignore.",
    "verdict": "MISLEADING",
-   "correction": "Do Not Track was never made mandatory; the W3C closed its work in January 2019 for lack of deployment and support. GPC differs in having legal force in some places: California's CCPA regulations require covered businesses to treat it as a valid opt-out of sale or sharing, the Attorney General fined Sephora $1.2 million in 2022 partly for ignoring it, and Colorado requires controllers to honour recognised universal opt-out mechanisms from 1 July 2024. Where no such law applies, it remains a request.",
+   "correction": "Do Not Track never became a binding standard: the W3C working group concluded its work in January 2019 because there had not been sufficient deployment or planned support, and no privacy statute made honouring it an explicit duty (its one notable legal success came late, when a Berlin district court held in August 2023, in a judgment not final when announced, that under the GDPR a DNT signal is a valid objection). GPC differs in having explicit legal force in some places: California's CCPA regulations require covered businesses to treat it as a valid opt-out of sale or sharing, and in 2022 Sephora agreed to pay $1.2 million to settle the Attorney General's allegations, which included failing to process GPC opt-outs; Colorado has required controllers to honour recognised universal opt-out mechanisms, GPC first among them, since 1 July 2024. Where no such law applies, it remains a request.",
    "sources": [
     {
      "institution": "W3C Tracking Protection Working Group",
      "title": "Tracking Preference Expression (DNT), W3C Working Group Note 17 January 2019",
      "date": "2019-01-17",
      "url": "https://www.w3.org/TR/tracking-dnt/",
-     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
+     "quote": "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large. The working group has therefore decided to conclude its work and republish the final product as this Note, with any future addendums to be published separately.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "W3C blocked the helper's user agent; the page was downloaded with curl into the helper's cache and then checked."
@@ -1491,8 +2220,38 @@
      "quote": "Today's settlement requires Sephora to pay $1.2 million in penalties and comply with important injunctive terms.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Verbraucherzentrale Bundesverband (vzbv)",
+     "title": "Court Prohibits Linkedin's Data Privacy Infringements",
+     "date": "2023-10-30",
+     "url": "https://www.vzbv.de/en/court-prohibits-linkedins-data-privacy-infringements",
+     "quote": "The Berlin District Court upheld vzbv’s view that the company’s statement was misleading, as it suggested that use of the DNT signal was legally irrelevant and that the company was under no obligation to observe it. This is, in fact, not the case. According to the General Data Protection Regulation (GDPR), the right to object to the processing of personal data can also be expressed using an automated procedure. A DNT signal represents a valid objection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page is dated 30.10.2023 and is written by the claimant consumer organisation. The German version (https://www.vzbv.de/urteile/gericht-untersagt-datenschutzverstoesse-von-linkedin) gives 'Datum der Urteilsverkündung: 24.08.2023 Aktenzeichen: 16 O 420/19 – nicht rechtskräftig Gericht: Landgericht Berlin' (--check FOUND)."
+    },
+    {
+     "institution": "Colorado Attorney General",
+     "title": "Colorado Privacy Act (CPA)",
+     "date": "2026",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same page calls GPC 'the state’s first universal opt-out mechanism, Global Privacy Control'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "'Do Not Track was never made mandatory' is too absolute. On 24 August 2023 the Landgericht Berlin (16 O 420/19, vzbv v. LinkedIn; not final when announced) held that under the GDPR 'A DNT signal represents a valid objection' and barred LinkedIn from telling users it ignores DNT. No statute made DNT binding. The narrower claim holds, and the ruling is now noted in the correction.",
+     "'the Attorney General fined Sephora $1.2 million in 2022 partly for ignoring it' presents allegations as fact. It was a settlement 'resolving allegations', and the AG 'alleged' that Sephora 'failed to process user requests to opt out of sale via user-enabled global privacy controls'. The correction is reworded to say this.",
+     "The Colorado claim (honour universal opt-out mechanisms from 1 July 2024) had no source on this record. It is true, and a Colorado AG source is added.",
+     "The DNT quote did not itself say the working group stopped. The next sentence on the same page does: 'The working group has therefore decided to conclude its work'. The quote is extended to include it. The title and date (W3C Working Group Note 17 January 2019) are correct.",
+     "The OAG CCPA quote ('Under law, it must be honored by covered businesses ...') is verbatim and refers to the GPC. The verdict MISLEADING is fair."
+    ]
+   }
   }
  ],
  "signals": [
@@ -1504,7 +2263,7 @@
    "whoSpeaks": "The website's consent management platform (CMP), recording what the person clicked in a pop-up the site designed",
    "whatItSays": "Per-purpose and per-vendor consents and legitimate-interest objections, encoded in a 'TC String' that is passed to the companies taking part in real-time bidding",
    "legalForce": "None of its own — an industry compliance tool under the GDPR and ePrivacy rules. The Belgian DPA found it non-compliant (2 February 2022, €250,000 fine); the CJEU held the TC String itself is personal data where it can be linked to an identifier (C-604/22, 7 March 2024).",
-   "fate": "Revised under a Belgian-approved action plan (v2.2, 2023) and again in 2025; still the dominant consent signal in European ad tech. The person answers the site's questions; the person never sets the terms.",
+   "fate": "Revised in line with an action plan validated by the Belgian DPA (v2.2, 2023) and again in 2025 (v2.3, which participants had to adopt by 28 February 2026); still widely used in European ad tech, which the Belgian DPA calls 'a widespread mechanism'. The person answers the site's questions; the person never sets the terms.",
    "sources": [
     {
      "institution": "IAB Europe",
@@ -1521,7 +2280,7 @@
      "title": "IAB Europe held responsible for a mechanism that infringes the GDPR",
      "date": "2022-02-02",
      "url": "https://www.dataprotectionauthority.be/citizen/iab-europe-held-responsible-for-a-mechanism-that-infringes-the-gdpr",
-     "quote": "This is where the TCF comes in : it facilitates the capture, through the CMP, of the users’ preferences. These preferences are then coded and stored in a “TC string”, which will be shared with the organisations participating in the OpenRTB system so that they know to what the user has consented/",
+     "quote": "This is where the TCF comes in : it facilitates the capture, through the CMP, of the users’ preferences. These preferences are then coded and stored in a “TC string”, which will be shared with the organisations participating in the OpenRTB system so that they know to what the user has consented/objected.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The sentence is truncated with a slash in the original page."
@@ -1531,11 +2290,20 @@
      "title": "IAB Europe, Case C-604/22, judgment of 7 March 2024",
      "date": "2024-03-07",
      "url": "https://publications.europa.eu/resource/cellar/e87758fb-dc64-11ee-b9d9-01aa75ed71a1.0011.05/DOC_1",
-     "quote": "must be interpreted as meaning that a string composed of a combination of letters and characters, such as the TC String (Transparency and Consent String), containing the preferences of a user of the internet or of an application relating to that user’s consent to the processing of personal data concerning him or her by website or application providers as well as by brokers of such data and by advertising platforms constitutes personal data within the meaning of that provision",
+     "quote": "must be interpreted as meaning that a string composed of a combination of letters and characters, such as the TC String (Transparency and Consent String), containing the preferences of a user of the internet or of an application relating to that user’s consent to the processing of personal data concerning him or her by website or application providers as well as by brokers of such data and by advertising platforms constitutes personal data within the meaning of that provision in so far as, where those data may, by reasonable means, be associated with an identifier, such as, inter alia, the IP address of that user’s device, they allow the data subject to be identified.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Belgian DPA source: the quote was cut at 'consented/'. The note claimed the page itself truncates the sentence with a slash, which is false: the page reads 'so that they know to what the user has consented/objected.' The quote now runs to the end of the sentence and the note is corrected.",
+     "CJEU source: the quote stopped before the operative condition. As cut, the holding read as unconditional ('constitutes personal data within the meaning of that provision'). The judgment goes on: 'in so far as, where those data may, by reasonable means, be associated with an identifier, such as, inter alia, the IP address of that user’s device, they allow the data subject to be identified.' The quote is extended. The record's legalForce text already stated the condition correctly.",
+     "'still the dominant consent signal in European ad tech' is an unsourced superlative. The Belgian DPA calls the TCF 'a widespread mechanism', and the fate text is reworded to match.",
+     "Confirmed on a fresh fetch: v1.1 on 25 April 2018, v2.0 on 21 August 2019, v2.1 on 19 August 2020 and v2.2 on 16 May 2023, which the page ties to 'the Action Plan submitted to and validated by the Belgian Data Protection Authority'. v2.3 came in April 2025, with participants to adopt it by 28 February 2026. The Belgian decision is dated 2 February 2022 (Decision 21/2022) with a €250,000 fine. The CJEU judgment in C-604/22 is dated 7 March 2024 (Fourth Chamber)."
+    ]
+   }
   },
   {
    "id": "signal-global-privacy-control",
@@ -1544,7 +2312,7 @@
    "body": "Founded by Ashkan Soltani and Sebastian Zimmeck with publishers, browsers and NGOs; now the W3C Privacy Working Group",
    "whoSpeaks": "The person, through a browser or extension setting that sends the signal to every site visited",
    "whatItSays": "One thing: do not sell or share my personal information (under the GDPR, a general request to limit sale or sharing)",
-   "legalForce": "Binding in California as a valid opt-out under the CCPA regulations (2020; now 11 CCR §7025) and in Colorado as a universal opt-out mechanism from 1 July 2024; enforced against Sephora (2022). Elsewhere a request.",
+   "legalForce": "Binding in California as a valid opt-out under the CCPA regulations (2020; now 11 CCR §7025), in Colorado as a recognised universal opt-out mechanism from 1 July 2024, and in a growing number of other US states whose privacy laws require controllers to honour opt-out preference signals (Connecticut, for example, from 1 January 2025). In California it featured in the Attorney General's 2022 settlement with Sephora. Elsewhere a request.",
    "fate": "In force and spreading across US state laws; still a W3C Working Draft (17 September 2026). A single yes/no bit — it cannot express conditions, durations or other terms.",
    "sources": [
     {
@@ -1574,8 +2342,47 @@
      "quote": "A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing: (1) The signal shall be in a format commonly used and recognized by businesses. An example would be an HTTP header field or JavaScript object.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Global Privacy Control",
+     "title": "Announcing Global Privacy Control: Making it Easy for Consumers to Exercise Their Privacy Rights",
+     "date": "2020-10-07",
+     "url": "https://globalprivacycontrol.org/press-release/20201007.html",
+     "quote": "One provision of our regulations intended to facilitate the submission of a request to opt-out of sale by requiring businesses to comply when a consumer has enabled a global privacy control at the device or browser level, which should be less time-consuming and burdensome.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is the launch announcement, dated 'Oct. 7, 2020' (time dateTime=2020-10-07). The quoted words are California AG Xavier Becerra's, as the release quotes them. The release lists Soltani and Zimmeck with the NYT, Washington Post, FT, Automattic, Glitch, DuckDuckGo, Brave, Mozilla, Disconnect, Abine, DCN, Consumer Reports and EFF. It also says 'We look forward to working with AG Becerra to make GPC legally binding under CCPA'."
+    },
+    {
+     "institution": "W3C",
+     "title": "Global Privacy Control (GPC) publication history",
+     "date": "2026-09-17",
+     "url": "https://www.w3.org/standards/history/gpc/",
+     "quote": "21 November 2024 First Public Working Draft",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The page was downloaded with curl because W3C blocks the helper's user agent. --check FOUND 2026-09-23. The quote is a table row: the date cell followed by the status cell. The latest row is '17 September 2026 Working Draft'."
+    },
+    {
+     "institution": "Connecticut Office of the Attorney General",
+     "title": "The Connecticut Data Privacy Act",
+     "date": "2026",
+     "url": "https://portal.ct.gov/ag/sections/privacy/the-connecticut-data-privacy-act",
+     "quote": "Starting January 1, 2025, all controllers subject to the CTDPA must honor opt out preference signals that are sent by consumers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same page says: 'As of January 1, 2025, Connecticut consumers can send an opt out preference signal ... Your “signal” can be sent by using, for example, the Global Privacy Control'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "legalForce names only California and Colorado and then says 'Elsewhere a request'. That understates the position as of September 2026. Other state laws also require controllers to honour opt-out preference signals. For example, the Connecticut AG says: 'Starting January 1, 2025, all controllers subject to the CTDPA must honor opt out preference signals that are sent by consumers', and names GPC as an example. The fix adds this and a Connecticut AG source.",
+     "The Sephora matter was a settlement of allegations, not an adjudicated finding. The wording is tightened.",
+     "The two dates in 'years' had no sources on the record, and both are now sourced. The launch date of 7 October 2020 comes from the GPC announcement page (<time dateTime=\"2020-10-07\">Oct. 7, 2020</time>). The First Public Working Draft date of 21 November 2024 comes from the W3C publication history page.",
+     "Confirmed: the W3C TR page reads 'W3C Working Draft 17 September 2026', was 'published by the Privacy Working Group', and gives the header value as Sec-GPC-field-value = \"1\". The CPPA quote is §7025(b) of the final regulations text of 29 March 2023. The founders and partners (Soltani, Zimmeck, publishers, browsers, NGOs) match the GPC pages."
+    ]
+   }
   },
   {
    "id": "signal-apple-app-tracking-transparency-prompt",
@@ -1605,7 +2412,15 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. Both quotes are verbatim on a fresh fetch (2026-09-23).",
+     "The date 26 April 2021 in 'years' is confirmed by the Autorité release: 'The ATT framework introduced by Apple on 26 April 2021'. The release dates the infringement 'between 26 April 2021 and 25 July 2023', which matches 'between April 2021 and July 2023'. It was published on March 31, 2025 (article:published_time 2025-03-31). The fine was €150,000,000.",
+     "The Apple Developer page still describes the ATT requirement, so 'Still in place' is supported as of the fetch date. The page also says ATT lets users choose whether an app can track them 'across other companies’ apps and websites', which matches whatItSays."
+    ]
+   }
   },
   {
    "id": "signal-colorado-universal-opt-out-mechanism",
@@ -1628,7 +2443,7 @@
     },
     {
      "institution": "Colorado Attorney General",
-     "title": "Colorado Privacy Act (CPA) — rules",
+     "title": "Colorado Privacy Act (CPA)",
      "date": "2026",
      "url": "https://coag.gov/resources/colorado-privacy-act/",
      "quote": "These include the required rules that detail the technical specifications for one or more universal opt-out mechanisms that clearly communicate a consumer’s affirmative, freely given, and unambiguous choice to opt out of the processing of personal data for purposes of targeted advertising or the sale of personal data (6-1-1313(2), C.R.S.).",
@@ -1636,7 +2451,15 @@
      "accessType": "FREE",
      "note": "Same page: 'the final rules were filed with the Secretary of State March 15, 2023' and refers to 'the state’s first universal opt-out mechanism, Global Privacy Control'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "All factual claims are confirmed on a fresh fetch of coag.gov (2026-09-23). The page says: 'On July 7, 2021, Governor Polis signed Senate Bill 21-190'; 'the final rules were filed with the Secretary of State March 15, 2023'; 'Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024'; and 'the state’s first universal opt-out mechanism, Global Privacy Control'.",
+     "Only fix: source index 1 is the same URL as source 0, but its title field reads 'Colorado Privacy Act (CPA) — rules', which is not the page's title. The page title is 'Colorado Privacy Act (CPA)'.",
+     "'a model followed by other US state laws' is editorial but reasonable. For example, Connecticut has required controllers to honour opt-out preference signals since 1 January 2025 (Connecticut AG CTDPA page)."
+    ]
+   }
   }
  ]
 }

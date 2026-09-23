@@ -34,7 +34,14 @@
      "note": "Warren and Brandeis's own citation for 'what Judge Cooley calls the right \"to be let alone\"' — the second edition, page 29."
     }
    ],
-   "locationNote": "Cooley taught at the University of Michigan in Ann Arbor, where the preface is signed; the publisher was in Chicago. Coordinates: the Law Quadrangle area, Ann Arbor."
+   "locationNote": "Cooley taught at the University of Michigan in Ann Arbor, where the preface is signed; the publisher was in Chicago. Coordinates: the Law Quadrangle area, Ann Arbor.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No factual error found. Cross-slice duplicate: research/early.json has event 'cooley-right-to-be-let-alone-torts-treatise-1879' for the same passage (placed in Chicago, 41.8781,-87.6298). Keep one at assembly; this letalone record is the better-sourced one (page 29 and the Dec. 1878 preface confirmed in the scan).",
+     "Minor: the coordinates are the Law Quadrangle, which was built in the 1920s–30s; in 1878 the Law Department met in the old law building on the central campus a few hundred metres north. That is close enough at map scale, but the locationNote could say 'central campus'."
+    ]
+   }
   },
   {
    "id": "kodak-camera-you-press-the-button-1888",
@@ -63,12 +70,29 @@
      "date": "2004",
      "url": "https://web.archive.org/web/2025/https://www.metmuseum.org/essays/kodak-and-the-rise-of-amateur-photography",
      "quote": "By far the most significant event in the history of amateur photography was the introduction of the Kodak #1 camera in 1888.",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "The live metmuseum.org page returned HTTP 429 to scripts; read via the Wayback Machine. The same essay says Eastman 'coined the memorable slogan: “You press the button, we do the rest.”' Essay first published October 2004 (Heilbrunn Timeline). Verification: Could not re-fetch: web.archive.org connections were reset ('ws_closed_mid_exchange') on three attempts, and the live metmuseum.org essay returned HTTP 429. So the quote, the slogan attribution and the October 2004 date could not be re-checked."
+    },
+    {
+     "institution": "Smithsonian Magazine / History News Network",
+     "title": "How the Rise of the Camera Launched a Fight to Protect Gilded Age Americans' Privacy (Sohini Desai)",
+     "date": "2024-07-05",
+     "url": "https://www.smithsonianmag.com/history/how-the-rise-of-the-camera-launched-a-fight-to-protect-gilded-age-americans-privacy-180984656/",
+     "quote": "The camera’s first great age—which began in 1888 when George Eastman debuted the Kodak—is full of stories like this one.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "The live metmuseum.org page returned HTTP 429 to scripts; read via the Wayback Machine. The same essay says Eastman 'coined the memorable slogan: “You press the button, we do the rest.”' Essay first published October 2004 (Heilbrunn Timeline)."
+     "note": "--check FOUND. Same article: 'Instead of developing their own pictures, customers could mail their devices to the Kodak factory and have their rolls of film developed, printed, and replaced.' (FOUND), followed by the ad line 'You press the button,' Kodak ads promised, 'we do the rest.' The page metadata gives datePublished 2024-07-05."
     }
    ],
-   "locationNote": "Kodak's offices and works were on State Street, Rochester (later Kodak Tower, 343 State St.); coordinates approximate."
+   "locationNote": "Kodak's offices and works were on State Street, Rochester (later Kodak Tower, 343 State St.); coordinates approximate.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The Met Heilbrunn essay (source 1) could not be re-fetched: web.archive.org reset every connection through the proxy, and metmuseum.org returned HTTP 429 to both scripts and curl. It is set to PENDING, and a confirmed Smithsonian source covering 1888, mail-back processing and the slogan is added.",
+     "Every claim in the summary is confirmed on Kodak's own page ($25, 100 exposures, the $10 return-to-Rochester service, the slogan Eastman coined, and the 1888 trademark)."
+    ]
+   }
   },
   {
    "id": "hollerith-punch-cards-1890-census-1890",
@@ -78,7 +102,7 @@
    "place": "U.S. Census Office, Washington, D.C.",
    "lat": 38.8951,
    "lng": -77.0364,
-   "summary": "After winning an 1888 Census Office competition — his system transcribed test data from St. Louis in 72.5 hours and sorted it in 5.5 hours, against 144.5 and 100.5 hours for transcription by the two rivals — Herman Hollerith — whose tabulating machine was patented on 8 January 1889 — supplied electro-mechanical tabulators for the 1890 census. Clerks punched each person's answers into cards that the machine read electrically; census clerks tabulated data for nearly 63 million people this way. Hollerith founded the Tabulating Machine Company in 1896; after a 1911 merger it was renamed International Business Machines (IBM) in 1924.",
+   "summary": "In a test run for the Census Office in 1889, Herman Hollerith's punch-card system transcribed data from four St. Louis enumeration districts in 72.5 hours and tabulated it in 5.5 hours; his two rivals needed 144.5 and 100.5 hours just to transcribe. Hollerith, whose electro-mechanical tabulating machine had been patented on 8 January 1889, won the contract to supply tabulators for the 1890 census. Clerks punched each person's answers into cards that the machine read electrically, and census clerks tabulated data for nearly 63 million people this way. Hollerith founded the Tabulating Machine Company in 1896; a 1911 merger folded it into the Computing-Tabulating-Recording Company, which was renamed International Business Machines (IBM) in 1924.",
    "significance": "The census became the first mass machine-readable record of individuals — the technical root of every later databank and data-protection fight.",
    "sources": [
     {
@@ -100,9 +124,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Undated page; date is the access date. Same page: 'Hollerith astounded Census Bureau officials by completing the task in just 5.5 hours!'"
+    },
+    {
+     "institution": "U.S. Bureau of the Census (Leon E. Truesdell), via Internet Archive",
+     "title": "The Development of Punch Card Tabulation in the Bureau of the Census, 1890–1940",
+     "date": "1965",
+     "url": "https://archive.org/download/bub_gb_MGZqAAAAMAAJ/bub_gb_MGZqAAAAMAAJ_djvu.txt",
+     "quote": "In compliance with a suggestion made by the Secretary of the Interior in 1889, the Superintendent of the Census, Robert P. Porter, appointed a committee to consider the method of tabulation to be employed in the Eleventh (1890) Census",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND in the OCR text of the Census Bureau's 1965 history (Washington: GPO), pp. 40–41, section 'The 1889 test'. The same passage has 'The report of the committee, dated November 30, 1889, describes the test as follows: To test these various methods, four enumeration districts in the city of St. Louis, selected from the re-enumeration of 1880, were selected.' (FOUND) and gives the Hollerith tabulation time as '5 hours and 28 minutes' (FOUND). Scan: https://archive.org/details/bub_gb_MGZqAAAAMAAJ."
     }
    ],
-   "locationNote": "The temporary Census Office (Department of the Interior) in Washington; exact 1890 building not established, coordinates are central Washington."
+   "locationNote": "The temporary Census Office (Department of the Interior) in Washington; exact 1890 building not established, coordinates are central Washington.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong year for the competition. Both Census Bureau web pages (and IBM's history page) say it was '1888', but the Census Bureau's own book-length history puts the test in 1889: Truesdell, The Development of Punch Card Tabulation in the Bureau of the Census 1890–1940 (1965), pp. 40–41. There, Superintendent Robert P. Porter (in office from 1889) named the committee at the suggestion of the Secretary of the Interior 'in 1889', and its report on the St. Louis test is dated November 30, 1889. The January 2016 Census page is also internally unreliable: it says Hollerith filed his patent application in September 1888 'after his decisive win', but the application 'Art of Compiling Statistics' was filed in 1884.",
+     "The run-on sentence with two nested dashes hides the order of events, and 'after a 1911 merger it was renamed IBM' makes it sound as if the Tabulating Machine Company itself was renamed. In fact the 1911 merger created the Computing-Tabulating-Recording Company, and CTR was renamed IBM in 1924.",
+     "The numbers (72.5, 5.5, 144.5, 100.5 hours; nearly 63 million people; patent of 8 January 1889) are all confirmed."
+    ]
+   }
   },
   {
    "id": "warren-brandeis-right-to-privacy-1890",
@@ -141,22 +183,39 @@
      "date": "1960-08",
      "url": "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
      "quote": "her husband was a wealthy young paper manufacturer, who only the year before had given up the practice of law to devote himself to an inherited business.",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Prosser, p. 383, on Warren; the next paragraph: 'Mr. Warren turned to his recent law partner, Louis D. Brandeis'. Verification: Could not re-fetch. web.archive.org reset every connection through the proxy (3 tries). The live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 (AWS WAF challenge) with an empty body. archive.org/wayback/available reports no snapshot. So the 'paper manufacturer ... given up the practice of law' quote is unverified this session."
+    },
+    {
+     "institution": "Robert D. Farber University Archives & Special Collections, Brandeis University Library",
+     "title": "Career (LDB-100 exhibit)",
+     "date": "2026",
+     "url": "https://www.brandeis.edu/library/archives/exhibits/ldb-100/career/index.shtml",
+     "quote": "He also established and worked at the firm Warren & Brandeis with Samuel D. Warren, Jr. until 1889.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Prosser, p. 383, on Warren; the next paragraph: 'Mr. Warren turned to his recent law partner, Louis D. Brandeis'."
+     "note": "--check FOUND. The page is undated, so the date is the access date. It supports 'former law partner' and the end of the partnership in 1889, but it does not mention the paper business. The same page repeats the contested story that the article 'was inspired by increasing gossip about Warren's marriage'; that story is not used."
     }
    ],
-   "locationNote": "Place of publication: the Harvard Law Review at Harvard Law School, Cambridge (the authors practised law in Boston)."
+   "locationNote": "Place of publication: the Harvard Law Review at Harvard Law School, Cambridge (the authors practised law in Boston).",
+   "_verify": {
+    "status": "DOWNGRADED",
+    "issues": [
+     "Prosser (source 3) could not be re-fetched. The Wayback snapshot connection was reset, the live lawcat.berkeley.edu PDF returns an HTTP 202 bot challenge with an empty body, and the Wayback availability API lists no snapshot. The descriptor 'a Boston paper manufacturer' therefore has no source confirmed this session. The Brandeis University archive confirms that the Warren & Brandeis partnership lasted until 1889, so 'recently left the law' and 'former law partner' stand.",
+     "All other claims are confirmed: vol. IV, no. 5, dated 15 December 1890; 4 Harv. L. Rev. 193; the Cooley citation; and both quotations."
+    ]
+   }
   },
   {
    "id": "roberson-v-rochester-folding-box-1902",
    "displayDate": "27 June 1902",
    "year": 1902,
    "title": "New York's top court finds no right of privacy in Abigail Roberson's case",
-   "place": "New York Court of Appeals, Court of Appeals Hall, Albany, New York",
-   "lat": 42.6533,
-   "lng": -73.7566,
-   "summary": "The Franklin Mills Company had printed and circulated about 25,000 lithographs of teenager Abigail Roberson's likeness, captioned “Flour of the Family”, without her knowledge or consent. On 27 June 1902 the Court of Appeals, in an opinion by Chief Judge Alton B. Parker, held that the “so-called ‘right of privacy’” had “not as yet found an abiding place in our jurisprudence”. Parker added that the legislature could forbid using another's picture or name for advertising without consent.",
+   "place": "New York Court of Appeals, New York State Capitol, Albany, New York",
+   "lat": 42.6526,
+   "lng": -73.7573,
+   "summary": "According to her complaint, the Franklin Mills Company and the Rochester Folding Box Company had printed and circulated about 25,000 lithographs of teenager Abigail Roberson's likeness, captioned “Flour of the Family”, without her knowledge or consent. On 27 June 1902 the Court of Appeals, in an opinion by Chief Judge Alton B. Parker, held that the “so-called ‘right of privacy’” had “not as yet found an abiding place in our jurisprudence”. Parker added that the legislature could forbid using another's picture or name for advertising without consent.",
    "significance": "The loss showed that courts would not stretch old law to new technology — and pointed privacy toward statutes built on written consent.",
    "sources": [
     {
@@ -172,26 +231,44 @@
     {
      "institution": "Historical Society of the New York Courts",
      "title": "Who Owns A Photo of Your Face? The Right to Privacy & The Courts",
-     "date": "2026",
+     "date": "2022-10-18",
      "url": "https://history.nycourts.gov/events/roberson-privacy-rights/",
      "quote": "But the Court of Appeals rejected her plea: there was no inherent right to privacy in the constitution and the court could not bestow it. That was up to the legislature.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Event page, date of access; it gives Roberson's age as 17."
+    },
+    {
+     "institution": "Historical Society of the New York Courts",
+     "title": "New York State Court of Appeals Hall",
+     "date": "2026",
+     "url": "https://history.nycourts.gov/history-new-york-courthouses/legal-history-new-york-history-new-york-courthouses-court-appeals/",
+     "quote": "The Court of Appeals originally sat in the State Capitol. It moved to its present home at 20 Eagle Street a short distance away in 1917.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The page is undated, so the date is the access date. It supports the corrected place and locationNote."
     }
    ],
-   "locationNote": "In 1902 the Court of Appeals sat in Court of Appeals Hall, Eagle Street, Albany."
+   "locationNote": "In 1902 the Court of Appeals sat in the New York State Capitol (in H. H. Richardson's courtroom, used from 1884); it moved to Court of Appeals Hall, 20 Eagle Street, only in 1917.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong place. In 1902 the Court of Appeals sat in the New York State Capitol, in H. H. Richardson's courtroom, used from 1884. It moved to Court of Appeals Hall at 20 Eagle Street only in 1917. The place, the coordinates and the locationNote ('In 1902 the Court of Appeals sat in Court of Appeals Hall') are therefore wrong.",
+     "The summary states as fact what the opinion recites as the complaint's allegations (the case was decided on demurrer). It also credits the printing to the Franklin Mills Company alone, but the complaint names 'defendants' (the flour company and the Rochester Folding Box Co., whose name was on the print).",
+     "The Historical Society source's date is the access year; the page is an event listing for October 18, 2022."
+    ]
+   }
   },
   {
    "id": "new-york-privacy-statute-1903",
    "displayDate": "1903",
    "year": 1903,
-   "title": "New York passes the first privacy statute: no use of a name or picture without written consent",
+   "title": "New York writes a “right of privacy” into statute: no use of a name or picture without written consent",
    "place": "New York State Capitol, Albany, New York",
    "lat": 42.6526,
    "lng": -73.7573,
    "summary": "In its next session after Roberson, the New York legislature passed chapter 132 of the Laws of 1903, which made it a misdemeanor to use the name, portrait or picture of any living person for advertising or trade without that person's written consent, and gave the person a civil action. The provisions became sections 50 and 51 of New York's Civil Rights Law and are still in force. The U.S. Supreme Court upheld the statute against a due-process challenge in Sperry & Hutchinson Co. v. Rhodes (1 May 1911).",
-   "significance": "The first privacy statute was a consent rule: use of a person's identity required their prior written permission — an ancestor of person-set terms.",
+   "significance": "New York's statutory right of privacy was a consent rule: using a person's identity required their prior written permission — an ancestor of person-set terms.",
    "sources": [
     {
      "institution": "Supreme Court of the United States (U.S. Reports via govinfo.gov)",
@@ -209,21 +286,38 @@
      "date": "2024-05-03",
      "url": "https://web.archive.org/web/2025/https://www.nysenate.gov/legislation/laws/CVR/50",
      "quote": "§ 50. Right of privacy. A person, firm or corporation that uses for advertising purposes, or for the purposes of trade, the name, portrait, picture, likeness, or voice of any living person without having first obtained the written consent of such person, or if a minor of such minor's parent or guardian, is guilty of a misdemeanor.",
-     "verificationStatus": "CONFIRMED",
+     "verificationStatus": "PENDING",
      "accessType": "FREE",
-     "note": "Current, amended text (the words 'likeness, or voice' were added after 1903). nysenate.gov returned HTTP 403 to scripts, so the Wayback snapshot was read."
+     "note": "Current, amended text (the words 'likeness, or voice' were added after 1903). nysenate.gov returned HTTP 403 to scripts, so the Wayback snapshot was read. Verification: Could not re-fetch. web.archive.org connections were reset (3 tries). The live nysenate.gov page, the Justia and FindLaw copies all returned HTTP 403. newyork.public.law loads, but its HTML has no statute text. The current wording ('likeness, or voice') is therefore unverified this session."
     },
     {
      "institution": "Historical Society of the New York Courts",
      "title": "Who Owns A Photo of Your Face? The Right to Privacy & The Courts",
-     "date": "2026",
+     "date": "2022-10-18",
      "url": "https://history.nycourts.gov/events/roberson-privacy-rights/",
      "quote": "In 1903, in response, the legislature passed the first state privacy law, which is still on the books.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Court of Appeals of New York (via Legal Information Institute, Cornell Law School)",
+     "title": "Messenger v. Gruner + Jahr Printing and Publishing (2000 NY Int. 1)",
+     "date": "2000-02-17",
+     "url": "https://www.law.cornell.edu/nyctap/I00_0001.htm",
+     "quote": "In response to Roberson, the Legislature enacted Civil Rights Law §§ 50 and 51, which provide a limited statutory right of privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same per curiam opinion: 'Section 50 makes it a misdemeanor to use a living person's \"name, portrait or picture\" for advertising or trade purposes \"without having first obtained the written consent of such person, or if a minor of his or her parent or guardian.\"' (FOUND). It supports the §§ 50–51 codification, the written-consent rule and the law's continued force."
     }
    ],
-   "locationNote": "Legislature's seat: New York State Capitol, Albany."
+   "locationNote": "Legislature's seat: New York State Capitol, Albany.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The title ('the first privacy statute') and significance ('The first privacy statute was a consent rule') overstate the case. Earlier statutes protected privacy interests, and this dataset records several of them: the U.S. Post Office Act of 1792 (opening letters), California's 1862 ban on tapping telegraph lines, and France's 1868 press-law offence of publishing 'a fact of private life'. What was new in 1903 was a statutory right of privacy in likeness and name.",
+     "The NY Senate source for § 50 (source 2) could not be re-fetched: the Wayback connection was reset and nysenate.gov, Justia and FindLaw all returned 403. A confirmed Court of Appeals opinion is added for §§ 50–51 and the written-consent rule."
+    ]
+   }
   },
   {
    "id": "pavesich-v-new-england-life-1905",
@@ -249,7 +343,7 @@
     {
      "institution": "Smithsonian Magazine / History News Network",
      "title": "How the Rise of the Camera Launched a Fight to Protect Gilded Age Americans' Privacy (Sohini Desai)",
-     "date": "2024",
+     "date": "2024-07-05",
      "url": "https://www.smithsonianmag.com/history/how-the-rise-of-the-camera-launched-a-fight-to-protect-gilded-age-americans-privacy-180984656/",
      "quote": "Soon after, the Supreme Court of Georgia became the first to recognize this category of privacy claim.",
      "verificationStatus": "CONFIRMED",
@@ -257,7 +351,14 @@
      "note": "Secondary source for the 'first' characterisation."
     }
    ],
-   "locationNote": "The Supreme Court of Georgia then sat in the State Capitol, Atlanta."
+   "locationNote": "The Supreme Court of Georgia then sat in the State Capitol, Atlanta.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "No factual error. On vLex: decision date 'March 3, 1905'; 'Writing for the Court COBB, J.'; syllabus 5 ('the right \"to be let alone\"'); syllabus 8 (waiver for one purpose); syllabus 10 (the Roberson majority 'criticised and disapproved'); syllabus 11 (a picture used in an advertisement without consent violates privacy); and syllabus 15 (an ad stating he held policies and was pleased with his investment). All match the summary.",
+     "The Smithsonian source date is only the year. The page metadata gives datePublished 2024-07-05."
+    ]
+   }
   },
   {
    "id": "olmstead-brandeis-dissent-1928",
@@ -281,7 +382,11 @@
      "note": "Brandeis, J., dissenting, 277 U.S. at 478. Same report: 'The progress of science in furnishing the Government with means of espionage is not likely to stop with wire-tapping.' (at 474). Syllabus: 'The tapping connections were made in the basement of a large office building and on public streets, and no trespass was committed upon any property of the defendants.' The 5-4 split is from the report's lineup of four dissents (Holmes, Brandeis, Butler, Stone)."
     }
    ],
-   "locationNote": "The Supreme Court sat in the Old Senate Chamber of the Capitol until 1935."
+   "locationNote": "The Supreme Court sat in the Old Senate Chamber of the Capitol until 1935.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "census-act-confidentiality-1929",
@@ -291,7 +396,7 @@
    "place": "United States Congress, U.S. Capitol, Washington, D.C.",
    "lat": 38.8899,
    "lng": -77.0091,
-   "summary": "Earlier census acts had required that census information “shall be used only for the statistical purposes for which it is supplied” (1909) and that only sworn census employees examine individual reports (the act for the 1920 census). The act providing for the Fifteenth Census, approved 18 June 1929, further protected the information from use “to the detriment of the person or persons to whom such information relates”. The same principle — no publication identifying any individual — was later codified in Title 13 of the U.S. Code (1954).",
+   "summary": "Earlier census acts had required that census information “shall be used only for the statistical purposes for which it is supplied” (1909) and that only sworn census employees examine individual reports (the act for the 1920 census). The act providing for the Fifteenth Census, approved 18 June 1929, was the first census law to extend the no-identification promise to individuals: “No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified.” As the Census Bureau read it, the act also protected the information from being used “to the detriment of the person or persons to whom such information relates”. Congress codified the 1929 law in 1954 as Title 13 of the U.S. Code, which carries virtually the same language.",
    "significance": "An early statutory purpose-limitation promise: data given for counting may not be turned against the giver — a promise that would be broken within 13 years.",
    "sources": [
     {
@@ -303,9 +408,37 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Peer-reviewed, open access: Popul Dev Rev 49(3):651-679, doi:10.1111/padr.12580. Reference list: 'Census Act. 1929. “The Act Providing for the Fifteenth Census and for the Apportionment of Representatives in Congress.” June 18, 1929.' The article adds: 'Virtually the same language appears in Title 13 (1954), which has governed the censuses taken since 1960.' The 1929 statute itself was not read."
+    },
+    {
+     "institution": "Population and Development Review (Steven Ruggles and Diana L. Magnuson), via PubMed Central",
+     "title": "“It's None of Their Damn Business”: Privacy and Disclosure Control in the U.S. Census, 1790–2020",
+     "date": "2023-09",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10621322/",
+     "quote": "The 1929 census law was the first to extend the promise to individuals, specifying that “No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified”",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The article cites Census Act 1929, p. 25. This is the quote that backs the corrected summary's no-identification sentence."
+    },
+    {
+     "institution": "U.S. Census Bureau (George Gatewood, Policy Office)",
+     "title": "A Monograph on Confidentiality and Privacy in the U.S. Census",
+     "date": "2001-07",
+     "url": "https://www2.census.gov/library/publications/2001/communications/monograph-on-confidentiality-and-privacy.pdf",
+     "quote": "In 1929, Congress enacted the law which formed the basis for what was codified in 1954 as Title 13, United States Code, and the Census Bureau has operated under this law ever since.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same monograph: 'In light of the 1929 Census Act imposing strict confidentiality, the Census Bureau referred the request to the U.S. Attorney General.' (FOUND). That was the 1930 Women's Bureau request for names of women in Rochester, and the Attorney General ruled they could not be released (36 Op. Att'y Gen. 362, 1930)."
     }
    ],
-   "locationNote": "Law made by Congress at the U.S. Capitol."
+   "locationNote": "Law made by Congress at the U.S. Capitol.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary's last sentence ('The same principle — no publication identifying any individual — was later codified') points back to a principle the summary never states. It also leaves out the 1929 act's main novelty, which its own source records: it was 'the first to extend the promise to individuals', i.e. 'No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified'.",
+     "The 'to the detriment of the person or persons to whom such information relates' wording is attributed by Ruggles & Magnuson to how 'the Census Bureau further clarified' the 1929 act. The 13 U.S.C. § 8 derivation notes (Cornell LII) trace the later 'detriment' proviso to the transcript section of the 1929 act (June 18, 1929, ch. 28, § 18, 46 Stat. 25), so it is narrower than a general bar. The corrected wording attributes the reading to the Bureau.",
+     "The 1954 Title 13 codification is confirmed by the Census Bureau's own 2001 monograph (added). The significance claim about wartime breach is supported by the same article (Second War Powers Act 1942; wartime disclosures documented by Seltzer and Anderson 2007)."
+    ]
+   }
   },
   {
    "id": "german-census-supplementary-cards-1939",
@@ -315,8 +448,8 @@
    "place": "Statistisches Reichsamt (Statistical Office of the Reich), Berlin",
    "lat": 52.52,
    "lng": 13.405,
-   "summary": "Germany's census of 17 May 1939 came with a supplementary card for each household asking whether any grandparent was Jewish, where the 16 June 1933 census had asked about religion. Respondents were threatened with heavy penalties for false answers but promised discretion — cards in a sealed envelope — and “a purely statistical evaluation”. Cards recording a Jewish grandparent were nonetheless passed, after statistical processing, to the Reich Office of Genealogy; the surviving cards name about 277,500 people in about 130,000 households with their addresses.",
-   "significance": "A census confidentiality promise was used to extract exactly the data that fed persecution — statistical data and identifying data were never truly separated.",
+   "summary": "Germany's census of 17 May 1939 came with a supplementary card for each household asking whether any grandparent was Jewish, where the 16 June 1933 census had asked about religion. Respondents were threatened with heavy penalties for false answers but promised discretion (cards in a sealed envelope) and “a purely statistical evaluation”. Cards recording a Jewish grandparent were nonetheless passed, after statistical processing, to the Reich Office of Genealogy. The surviving cards list about 277,500 people classed as of Jewish origin, in about 130,000 households, with names, birth dates and exact addresses. The Federal Archives says it has not been proved that the cards were used to prepare the deportations, and thinks it unlikely: they reached the registration offices only in April/May 1941 and the Genealogy Office in January 1942.",
+   "significance": "A census confidentiality promise was broken. “Racial” data collected for “a purely statistical evaluation” ended up, by name and address, in a Nazi genealogy office. Once data is collected, a promise to keep statistical and identifying data apart is only as strong as the regime holding it.",
    "sources": [
     {
      "institution": "Bundesarchiv (German Federal Archives), Nicolai M. Zimmermann",
@@ -339,7 +472,15 @@
      "note": "USHMM stresses that location and identification of victims 'did not rely on modern technology, as sometimes claimed in the popular media' — see the myth record."
     }
    ],
-   "locationNote": "Coordinates are central Berlin; the Statistisches Reichsamt's exact building is not verified."
+   "locationNote": "Coordinates are central Berlin; the Statistisches Reichsamt's exact building is not verified.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance overstates the source. It says the census 'extract[ed] exactly the data that fed persecution', which implies the cards were used to find Jews for deportation. The cited Bundesarchiv essay says the opposite. Their use for the deportations 'could not be proved so far ... and is rather unlikely', because the cards reached the registration offices only in April/May 1941 and the Reich Office of Genealogy only from January 1942. The USHMM source also stresses that census data served in aggregate and that identifying victims 'did not rely on modern technology'. The significance is rewritten so it keeps what is documented (a broken 'purely statistical' promise; identifying racial data sent to a Nazi genealogy office) without claiming the cards drove deportations.",
+     "Summary: 'the surviving cards name about 277,500 people' is imprecise. The essay counts about 277,500 people of Jewish origin under the Nazi classification, in about 130,000 households. The cards covered everyone in a household, so they also record many non-Jewish people (Table 1: 410,920 people in total on the cards passed on). Reworded.",
+     "Checked OK: census date 17 May 1939; the 16 June 1933 census asked about religion; a supplementary card for each household; 'massive penalties' threatened; sealed envelope; 'purely statistical evaluation'; cards with a Jewish grandparent passed to the Reich Office of Genealogy after statistical processing. Central-Berlin coordinates are fine (flagged in locationNote)."
+    ]
+   }
   },
   {
    "id": "netherlands-population-register-lentz-1941",
@@ -349,7 +490,7 @@
    "place": "Rijksinspectie van de Bevolkingsregisters (State Inspectorate of Population Registers), The Hague",
    "lat": 52.0705,
    "lng": 4.3007,
-   "summary": "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”), and these registers and the related identity cards played an important role in their apprehension before deportation. Dutch Jews had the highest death rate — 73 percent — of Jews in any occupied western European country; Jewish refugees who had avoided registration died at a lower rate.",
+   "summary": "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”). These registers and the related identity cards played an important role in rounding them up before deportation. Dutch Jews had the highest death rate (73 percent) of Jews in any occupied western European country. Jewish refugees living in the Netherlands died at a lower rate. Demographers William Seltzer and Margo Anderson think the best explanation is that, unlike most Dutch Jews, the refugees avoided registration.",
    "significance": "It showed that an accurate, centralised, linked register is dangerous in itself: the harm came from data built for benign administration, once control over it changed hands.",
    "sources": [
     {
@@ -361,9 +502,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "PAYWALL",
      "note": "Social Research 68(2), Summer 2001, pp. 481-513, at 487-488 (JSTOR stable URL https://www.jstor.org/stable/40971467). Read from a copy posted for a University of Washington course (CSDE 502). Same page: 'By early 1941 Methorst's successor as head of the population registration office, J. L. Lentz, had quickly adapted this general \"cradle to grave\" system to create special registration systems covering the Jewish and Gypsy populations' and 'Dutch Jews had the highest death rate (73 percent) of Jews residing in any occupied western European country'. They explain the refugees' lower death rate by the fact that they 'avoided registration'. Seltzer's fuller treatment (Population and Development Review 24(3), 1998) was not read."
+    },
+    {
+     "institution": "Wikipedia (Dutch)",
+     "title": "Jacobus Lambertus Lentz",
+     "date": "2026",
+     "url": "https://nl.wikipedia.org/wiki/Jacobus_Lambertus_Lentz",
+     "quote": "Dit besluit legde aan de gemeenten de plicht op om met ingang van 1 juli 1936 voor elke inwoner een aparte kaart met gegevens aan te leggen. Tevens werd een Rijksinspectie van de Bevolkingsregisters opgericht. Lentz werd hiervan het hoofd.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Tertiary cross-check (--check FOUND). Translation: 'This decree obliged municipalities to keep, from 1 July 1936, a separate card with details for every inhabitant. A State Inspectorate of Population Registers was also set up, with Lentz as its head.' Same page (FOUND): 'Hij speelde ook een hoofdrol in de uitvoering van de aanmeldplicht voor Joden' ('He also played a leading role in carrying out the compulsory registration of Jews'). It cites Loe de Jong and Presser. It also says Lentz set up, at Berlin's request, a shadow archive in The Hague of every identity card, which supports the Hague location."
     }
    ],
-   "locationNote": "Lentz headed the Rijksinspectie van de Bevolkingsregisters in The Hague; coordinates are central The Hague (exact building not verified)."
+   "locationNote": "Lentz headed the Rijksinspectie van de Bevolkingsregisters in The Hague; coordinates are central The Hague (exact building not verified).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary states as fact that 'Jewish refugees who had avoided registration died at a lower rate'. Seltzer and Anderson say that Jewish refugees from Germany and other countries living in the Netherlands had a lower death rate than Dutch Jews. They offer as the 'best explanation' that the refugees, 'unlike most Dutch Jews, avoided registration'. That is their interpretation, not an established fact, so the summary now attributes it.",
+     "Minor: source[0] is labelled accessType PAYWALL while the URL given is a freely readable course copy. The JSTOR original is paywalled. Left as is and flagged for the editor.",
+     "Checked OK: Methorst (director-general of the Dutch CBS, formerly head of population registration) reported in 1938 on the 'cradle to grave' system. Lentz is his successor as head of the registration office. By early 1941 there were special registers of Jews and 'Gypsies'. The identity cards played 'an important role'. The death rate was 73 percent. Page numbers 487-488 match the running heads. An independent check (nl.wikipedia, Jacobus Lambertus Lentz) confirms that Lentz headed the Rijksinspectie van de Bevolkingsregisters (The Hague), set up under the 1936 decree requiring a personal card for every inhabitant from 1 July 1936, and 'speelde ook een hoofdrol in de uitvoering van de aanmeldplicht voor Joden'."
+    ]
+   }
   },
   {
    "id": "census-japanese-american-data-disclosure-1942",
@@ -373,7 +532,7 @@
    "place": "U.S. Bureau of the Census / Department of Commerce, Washington, D.C.",
    "lat": 38.894,
    "lng": -77.0327,
-   "summary": "The Second War Powers Act (March 1942) allowed the Secretary of Commerce to supply census information for the conduct of the war, suspending the confidentiality protection. The Census Bureau provided block-level data locating Japanese Americans in California and six other states, and — as historian Margo Anderson and statistician William Seltzer showed from Commerce Department records in 2007 — complied within seven days with an 4 August 1943 request from Treasury Secretary Henry Morgenthau for the names and locations of all people of Japanese ancestry in the Washington, D.C., area. Congress restored census confidentiality in 1947.",
+   "summary": "From January 1942 the Census Bureau helped the Army on the West Coast remove Japanese Americans. It supplied tract-level tabulations and census-block maps showing how many Japanese Americans lived on each block. The Second War Powers Act (March 1942) then let the Secretary of Commerce supply census information for the conduct of the war, suspending census confidentiality. In 2007 historian Margo Anderson and statistician William Seltzer showed from Commerce Department records that the Bureau had complied, within seven days, with a 4 August 1943 request from Treasury Secretary Henry Morgenthau. He had asked for the names and locations of all people of Japanese ancestry in the Washington, D.C., area. Congress restored census confidentiality in 1947.",
    "significance": "The textbook case of data collected under a confidentiality promise being repurposed against the people who supplied it — the reason purpose limits must bind the data, not just the collector's good intentions.",
    "sources": [
     {
@@ -395,9 +554,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same passage: 'Seltzer and Anderson (2007) documented multiple examples of wartime disclosure of individual-level census responses.' Statute cited as Second War Powers Act 1942, Title XIV, §1402, 56 Stat. 186."
+    },
+    {
+     "institution": "Social Research (William Seltzer and Margo Anderson), Johns Hopkins University Press",
+     "title": "The Dark Side of Numbers: The Role of Population Data Systems in Human Rights Abuses",
+     "date": "2001",
+     "url": "https://jlgodwin.github.io/CSDE502-Sp23/Readings/Week%204/SeltzerAnderson2001.pdf",
+     "quote": "The Census Bureau also gave direct assistance to the military authorities on the West Coast by: (1) providing tract-level tabulations of Japanese Americans from the 1940 Census in January 1942",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Social Research 68(2), Summer 2001, p. 492 (JSTOR stable URL https://www.jstor.org/stable/40971467), read from a course copy. --check FOUND. The same list continues (FOUND): '(3) making available census-block maps showing the number of Japanese American enumerated as residing in each block'. Also FOUND, p. 498: 'Yet even before the Second War Powers Act was introduced in Congress early in 1942, the director of the Census Bureau indicated his willingness to ignore the law so as to provide defense authorities a way of checking confidential census information on individual Japanese Americans'."
     }
    ],
-   "locationNote": "Census Bureau headquarters in Washington (it moved to Suitland, Maryland, during the war); coordinates are the Commerce Department building, whose chief clerk authorised the releases."
+   "locationNote": "Census Bureau headquarters in Washington (it moved to Suitland, Maryland, during the war); coordinates are the Commerce Department building, whose chief clerk authorised the releases.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong states. The summary says the Census Bureau 'provided block-level data locating Japanese Americans in California and six other states'. This repeats a Scientific American sentence that lists California, Arizona, Wyoming, Colorado, Utah, Idaho and Arkansas. Those are the seven states that held the War Relocation Authority camps, and SciAm's own earlier sentence uses them for 'internment camps in California and six other states'. They are not where Japanese Americans lived before removal. Washington and Oregon, which had large pre-war communities, are missing from the list. Seltzer and Anderson's own peer-reviewed account (Social Research 2001, p. 492) says the Bureau helped 'the military authorities on the West Coast', with tract-level tabulations in January 1942 and census-block maps of Japanese Americans per block.",
+     "Misleading sequence. The summary puts the block-level help after the Second War Powers Act (March 1942), implying the Act enabled it. The tract tabulations date from January 1942, before the Act. Seltzer and Anderson also note that before the Act was even introduced, the Census director said he was willing to ignore the law to let defense authorities check individual census records.",
+     "Typo: 'an 4 August 1943' should be 'a 4 August 1943'.",
+     "Checked OK: the Morgenthau request of 4 August 1943 for names and locations of people of Japanese ancestry in the Washington, D.C. area; released seven days later; found in Commerce Department chief clerk records by Anderson and Seltzer (PAA paper, 29-31 March 2007); confidentiality restored in 1947; the Act's wording 'in connection with the conduct of the war' (Ruggles & Magnuson, PDR 49(3), 2023, pp. 651-679, confirmed via PubMed metadata)."
+    ]
+   }
   },
   {
    "id": "udhr-article-12-privacy-1948",
@@ -421,7 +599,13 @@
      "note": "Same page: 'the Declaration was proclaimed by the United Nations General Assembly in Paris on 10 December 1948 ( General Assembly resolution 217 A )'."
     }
    ],
-   "locationNote": "The third session of the General Assembly met at the Palais de Chaillot, Paris (venue from general knowledge; the UN page says only 'in Paris')."
+   "locationNote": "The third session of the General Assembly met at the Palais de Chaillot, Paris (venue from general knowledge; the UN page says only 'in Paris').",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The Article 12 text is verbatim. 10 December 1948, Paris, resolution 217 A are confirmed on the UN page (the UN 'History of the Declaration' page gives '217 A (III) of 10 December 1948, the General Assembly, meeting in Paris'). The Palais de Chaillot venue is not on the UN pages, but en.wikipedia 'Palais de Chaillot' confirms 'It is in the Chaillot Palace that the UNGA adopted the Universal Declaration of Human Rights on 10 December 1948'. Coordinates match the Palais de Chaillot."
+    ]
+   }
   },
   {
    "id": "echr-article-8-private-life-1950",
@@ -445,7 +629,13 @@
      "note": "Article 8(1). Article 8(2): 'There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety or the economic well-being of the country ...'. Place and date line in the PDF: 'Rome, 4.XI.1950'. Current consolidated text (as amended by Protocols 11, 14 and 15); Article 8 wording is unchanged in substance. Entry into force (3 September 1953) not verified here: the coe.int treaty office blocked scripted reading."
     }
    ],
-   "locationNote": "Signed at the Palazzo Barberini, Rome (venue from general knowledge; the text gives only 'Rome')."
+   "locationNote": "Signed at the Palazzo Barberini, Rome (venue from general knowledge; the text gives only 'Rome').",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. Article 8(1) is verbatim. The phrases 'in accordance with the law' and 'necessary in a democratic society' are FOUND in Article 8(2) of the same PDF. The date/place line reads 'Rome, 4.XI.1950'. The Palazzo Barberini venue could not be confirmed this session (coe.int returns 403, and the Wikipedia pages checked do not name it). It rests on general knowledge, as the locationNote already says."
+    ]
+   }
   },
   {
    "id": "gdr-ministry-for-state-security-founded-1950",
@@ -455,7 +645,7 @@
    "place": "Volkskammer (People's Chamber), East Berlin",
    "lat": 52.52,
    "lng": 13.405,
-   "summary": "On 8 February 1950 the GDR's Volkskammer passed, in a rushed procedure, a law turning the Interior Ministry's Main Administration for the Protection of the Economy into the Ministry for State Security; it took effect when President Wilhelm Pieck promulgated it on 18 February. By 31 October 1989 the ministry had 91,015 full-time employees and about 189,000 unofficial informers — one for every 89 citizens. Its surviving records run to more than 111 kilometres of files.",
+   "summary": "On 8 February 1950 the GDR's Volkskammer passed, in a rushed procedure, a law turning the Interior Ministry's Main Administration for the Protection of the Economy into the Ministry for State Security. It took effect when President Wilhelm Pieck promulgated it on 18 February. In 1989 the ministry had 91,015 full-time employees (as of 31 October) and about 189,000 unofficial informers, one for every 89 citizens. Its surviving records run to more than 111 kilometres of files.",
    "significance": "The Stasi became the reference case for total surveillance by file and informer — and, after 1990, for a person's right to see what the state had recorded about them.",
    "sources": [
     {
@@ -487,9 +677,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Translation: 'This comprises more than 111 kilometres of files and more than 1.7 million photos as well as index cards, films, audio documents and microfiches.'"
+    },
+    {
+     "institution": "Bundesarchiv – Stasi-Unterlagen-Archiv (MfS-Lexikon)",
+     "title": "Inoffizieller Mitarbeiter (IM)",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/im-archiv-recherchieren/stasi-unterlagen-einsehen/hinweise-zum-mfs/mfs-lexikon/detail/inoffizieller-mitarbeiter-im/",
+     "quote": "Auf 89 DDR -Bürger kam somit ein IM",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The preceding sentence on the same page gives the IM count for 1989: 'Die Anzahl der vom MfS geführten inoffiziellen Mitarbeiter umfasste im Jahre 1989 ungefähr 189.000 IM, darunter 173.000 IM der Abwehrdiensteinheiten, ferner 13.400 IM in der DDR und 1.550 IM in der Bundesrepublik, die von der Hauptverwaltung A (HV A) geführt wurden'. Translation of quote: 'There was thus one IM for every 89 GDR citizens.' Undated web page (date = access year)."
     }
    ],
-   "locationNote": "The Volkskammer then met in East Berlin; coordinates are central Berlin. The ministry's headquarters were later in Berlin-Lichtenberg (Normannenstraße)."
+   "locationNote": "The Volkskammer then met in East Berlin; coordinates are central Berlin. The ministry's headquarters were later in Berlin-Lichtenberg (Normannenstraße).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Dates mixed in the staffing sentence. 'By 31 October 1989 the ministry had 91,015 full-time employees and about 189,000 unofficial informers' applies the 31 October 1989 reference date to both figures. The MfS-Lexikon gives it only for the 91,015 full-time staff. The ~189,000 IM figure is for 'im Jahre 1989'. Reworded.",
+     "The IM figure and the 'one for every 89 citizens' ratio were supported only by a URL buried in source[1]'s note. That page is added as its own source (FOUND).",
+     "Checked OK: the Volkskammer law of 8 February 1950, passed 'im Schnellverfahren'; in force on promulgation by President Wilhelm Pieck on 18 February; created from the Hauptverwaltung zum Schutz der Volkswirtschaft; 'mehr als 111 Kilometer Aktenmaterial'."
+    ]
+   }
   },
   {
    "id": "prosser-privacy-four-torts-1960",
@@ -499,7 +707,7 @@
    "place": "University of California School of Law (Boalt Hall), Berkeley, California",
    "lat": 37.8697,
    "lng": -122.2533,
-   "summary": "In “Privacy”, California Law Review vol. 48 no. 3 (August 1960), p. 383, Dean William L. Prosser of the University of California School of Law surveyed the case law since Warren and Brandeis and concluded it was “not one tort, but a complex of four”: intrusion upon seclusion, public disclosure of embarrassing private facts, false-light publicity, and appropriation of name or likeness. The article substantially boosted the influence of Warren and Brandeis's essay: courts cited it far more often after 1960 than before.",
+   "summary": "In “Privacy”, California Law Review vol. 48 no. 3 (August 1960), p. 383, Dean William L. Prosser of the University of California School of Law surveyed the case law since Warren and Brandeis. He concluded it was “not one tort, but a complex of four”: intrusion upon seclusion, public disclosure of embarrassing private facts, false-light publicity, and appropriation of name or likeness. Law professor Amy Gajda credits the article with substantially boosting the influence of Warren and Brandeis's essay, which courts cited far more often after 1960 than before.",
    "significance": "Prosser's four torts are all after-the-fact remedies for harm — privacy as a lawsuit, not as terms a person sets in advance.",
    "sources": [
     {
@@ -508,9 +716,9 @@
      "date": "1960-08",
      "url": "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
      "quote": "It is not one tort, but a complex of four. The law of privacy comprises four distinct kinds of invasion of four different interests of the plaintiff",
-     "verificationStatus": "CONFIRMED",
+     "verificationStatus": "PENDING",
      "accessType": "FREE",
-     "note": "Same page lists: '1. Intrusion upon the plaintiff's seclusion or solitude, or into his private affairs. 2. Public disclosure of embarrassing private facts about the plaintiff. 3. Publicity which places the plaintiff in a false light in the public eye. 4. Appropriation, for the defendant's advantage, of the plaintiff's name or likeness.' Author footnote: 'Dean, University of California School of Law, Berkeley.' lawcat.berkeley.edu blocked scripts (HTTP 202 challenge); the PDF was read from the Wayback Machine capture of 19 Dec 2024. DOI 10.15779/Z383J3C."
+     "note": "Same page lists: '1. Intrusion upon the plaintiff's seclusion or solitude, or into his private affairs. 2. Public disclosure of embarrassing private facts about the plaintiff. 3. Publicity which places the plaintiff in a false light in the public eye. 4. Appropriation, for the defendant's advantage, of the plaintiff's name or likeness.' Author footnote: 'Dean, University of California School of Law, Berkeley.' lawcat.berkeley.edu blocked scripts (HTTP 202 challenge); the PDF was read from the Wayback Machine capture of 19 Dec 2024. DOI 10.15779/Z383J3C. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset the connection on repeated tries with fetch-text.py, with curl (including the id_ raw variant), and with WebFetch. The live lawcat.berkeley.edu PDF and DOI 10.15779/Z383J3C return an HTTP 202 bot challenge, then 403. The bibliographic details are confirmed via Crossref (10.2307/3478805: California Law Review 48(3):383, published 1960-08, author William L. Prosser), and the four torts via SEP (added). The verbatim quote is unconfirmed this session; re-check when web.archive.org is reachable."
     },
     {
      "institution": "Michigan State Law Review (Amy Gajda), via BrooklynWorks (Internet Archive snapshot)",
@@ -518,23 +726,42 @@
      "date": "2008",
      "url": "https://web.archive.org/web/2025/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
      "quote": "Prosser's influential article undoubtedly boosted the impact of Warren and Brandeis's article substantially.",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Footnote 10, which continues: about eighty cases named the 1890 article in 1890-1960, more than 400 in 1960-2007. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset every connection, the live brooklynworks.brooklaw.edu PDF returns HTTP 403 (fetch-text.py and WebFetch), and the OpenAlex/SSRN routes were rate-limited or returned 403. The footnote-10 quote and the case counts (about 80 cases in 1890-1960, over 400 in 1960-2007) are unconfirmed. The summary now attributes the claim to Gajda."
+    },
+    {
+     "institution": "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+     "title": "Privacy",
+     "date": "2023-10-19",
+     "url": "https://plato.stanford.edu/entries/privacy/",
+     "quote": "In an attempt to systematize and more clearly describe and define the new right of privacy being upheld in tort law, William Prosser wrote that what had emerged were four different interests in privacy",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Footnote 10, which continues: about eighty cases named the 1890 article in 1890-1960, more than 400 in 1960-2007."
+     "note": "--check FOUND. The list that follows is also FOUND and ends with the page cite: 'intrusion into a person's seclusion or solitude, or into his private affairs; public disclosure of embarrassing private facts about an individual; publicity placing one in a false light in the public eye; and appropriation of one's likeness for the advantage of another (1960: 389)'. Bibliography: 'Prosser, William L., 1960, \"Privacy\", California Law Review, 48(3): 383–423.' The entry was first published 14 May 2002; the date given is the substantive revision of 19 Oct 2023."
     }
    ],
-   "locationNote": "Place of publication: California Law Review at the UC Berkeley law school, where Prosser was dean."
+   "locationNote": "Place of publication: California Law Review at the UC Berkeley law school, where Prosser was dean.",
+   "_verify": {
+    "status": "DOWNGRADED",
+    "issues": [
+     "Neither cited source could be re-fetched. Both are Wayback Machine URLs, and web.archive.org reset every connection this session (fetch-text.py and curl error 104/35; the agent proxy logged ws_closed_mid_exchange for web.archive.org:443; WebFetch 'unable to fetch from web.archive.org'). The live lawcat.berkeley.edu PDF and the DOI 10.15779/Z383J3C return an HTTP 202 bot challenge, then 403 to WebFetch. The live BrooklynWorks PDF returns 403. Both sources are set to PENDING.",
+     "The claims about the article are confirmed independently. Crossref metadata for JSTOR DOI 10.2307/3478805 gives 'Privacy', William L. Prosser, California Law Review vol. 48, issue 3, p. 383, published 1960-08. The Stanford Encyclopedia of Philosophy lists the four interests and cites Prosser 1960 at p. 389 (source added). SEP's bibliography also carries Bloustein's 1964 reply 'An Answer to Dean Prosser', which is consistent with Prosser being a dean.",
+     "The claim that the article 'substantially boosted' Warren and Brandeis's influence, and that courts cited the 1890 essay far more often after 1960, rests only on Gajda's footnote 10, which could not be re-read. The summary now attributes it to Gajda instead of stating it as fact.",
+     "The exact phrase 'not one tort, but a complex of four' could not be re-read in the 1960 article this session. Court opinions quote the same phrase from Prosser's Handbook of the Law of Torts (e.g. Hamberger v. Eastman, 106 N.H. 107 (1964), quoting Prosser, Torts §112 (3d ed. 1964); O'Donnell v. United States, 891 F.2d 1079 (3d Cir. 1989), quoting the 4th ed.). That confirms the wording is Prosser's, but not its page in the 1960 article."
+    ]
+   }
   },
   {
    "id": "packard-the-naked-society-1964",
    "displayDate": "1964",
    "year": 1964,
-   "title": "Vance Packard's The Naked Society takes surveillance to the bestseller list",
+   "title": "Vance Packard's The Naked Society sounds the alarm on surveillance",
    "place": "David McKay Company, New York City",
    "lat": 40.758,
    "lng": -73.9855,
-   "summary": "Journalist Vance Packard, author of The Hidden Persuaders, published The Naked Society (New York: David McKay, 1964), a popular exposé whose first part is titled “The Mounting Surveillance”. It opens with a typical family of 1964 watched at every turn — the mother recorded by a closed-circuit camera hidden in a store dressing room. Two years later Congress chose Packard as the first witness in its hearings on a National Data Center.",
-   "significance": "It turned privacy from a lawyers' topic into a mass public concern about files and devices — the political energy behind the first data-protection laws.",
+   "summary": "Journalist Vance Packard, author of The Hidden Persuaders, published The Naked Society (New York: David McKay, 1964), a popular exposé whose first part is titled “The Mounting Surveillance”. It opens by looking in on “a reasonably successful family in a typical city of the Land of Liberty, 1964”, who are watched at every turn. The mother is recorded by a closed-circuit TV camera hidden behind a mesh screen in a store dressing room. On 26 July 1966 Packard was the first witness when a House subcommittee on invasion of privacy opened hearings on proposals for a National Data Center.",
+   "significance": "It helped carry privacy out of the law reviews to a general readership worried about files, bugs and hidden cameras. Two years later lawmakers weighing a federal data bank called its author as their first witness.",
    "sources": [
     {
      "institution": "David McKay Company (full text on Internet Archive)",
@@ -557,7 +784,17 @@
      "note": "Packard's own statement as first witness, 26 July 1966."
     }
    ],
-   "locationNote": "Publisher's city: New York (David McKay Co.); coordinates are midtown Manhattan, not the publisher's address."
+   "locationNote": "Publisher's city: New York (David McKay Co.); coordinates are midtown Manhattan, not the publisher's address.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The title claim 'takes surveillance to the bestseller list' is not supported by either source, and no source for it was found this session. The hearing record carries only a press clipping calling Packard's books in general 'best-selling', and it is OCR-garbled. The title is reworded.",
+     "The summary says 'Congress chose Packard as the first witness in its hearings on a National Data Center'. The hearings were held by the House Committee on Government Operations' Special Subcommittee on Invasion of Privacy (Chairman Cornelius E. Gallagher), not by Congress as a whole. The record confirms that the subcommittee 'today begins its investigation into proposals to establish a National Data Center or Data Bank' on 26 July 1966, and Gallagher calls Packard 'its first witness in this series of hearings'.",
+     "'Opens with a typical family of 1964' paraphrases loosely. Packard writes: 'let us look in on a reasonably successful family in a typical city of the Land of Liberty, 1964'. Tightened.",
+     "The significance ('turned privacy from a lawyers' topic into a mass public concern ... the political energy behind the first data-protection laws') is a causal claim that no source supports. Softened.",
+     "Checked OK: publisher David McKay, New York; copyright 1964; LCCN 64-16016; 'PART I: THE MOUNTING SURVEILLANCE'; chapter 1 'The Individual at Bay' opens with the dressing-room camera; Packard's testimony names 'my last book, “The Naked Society”'."
+    ]
+   }
   },
   {
    "id": "griswold-v-connecticut-zones-of-privacy-1965",
@@ -568,7 +805,7 @@
    "lat": 38.8906,
    "lng": -77.0044,
    "summary": "Planned Parenthood League of Connecticut's executive director and its medical director had been convicted for advising married couples on contraception under a state law banning contraceptive use. On 7 June 1965 the Supreme Court struck the law down. Justice Douglas, for the Court, wrote that “specific guarantees in the Bill of Rights have penumbras” and that “various guarantees create zones of privacy”, which the ban on use by married couples violated.",
-   "significance": "The US Constitution names no right of privacy; Griswold inferred one, anchoring constitutional privacy in personal autonomy rather than in property or place.",
+   "significance": "The US Constitution never mentions privacy. Griswold inferred a right of privacy from the “penumbras” of the Bill of Rights, protecting an intimate relationship, marriage, and not just property or places. Later cases built a wider right to make personal decisions on this footing.",
    "sources": [
     {
      "institution": "Supreme Court of the United States (U.S. Reports, Library of Congress)",
@@ -590,7 +827,14 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "The Supreme Court Building (occupied since 1935)."
+   "locationNote": "The Supreme Court Building (occupied since 1935).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance says Griswold anchored constitutional privacy 'in personal autonomy rather than in property or place'. Douglas's majority opinion does not support that. It rests the right on the marital relationship and on place-based guarantees: the Third Amendment's 'in any house', the Fourth Amendment's 'persons, houses, papers, and effects', and 'Would we allow the police to search the sacred precincts of marital bedrooms ...?'. The autonomy reading came in later cases. Reworded to what the opinion says.",
+     "Checked OK: decided 7 June 1965, argued 29-30 March 1965 (U.S. Reports syllabus). Griswold was Executive Director of the Planned Parenthood League of Connecticut, and Buxton 'Medical Director for the League at its Center in New Haven'. They were convicted as accessories and fined $100 each for giving married persons information and medical advice on contraception, under a statute forbidding contraceptive use. Douglas wrote for the Court. Both quotes are verbatim. Coordinates are the Supreme Court Building."
+    ]
+   }
   },
   {
    "id": "national-data-center-gallagher-hearings-1966",
@@ -600,8 +844,8 @@
    "place": "Room 2247, Rayburn House Office Building, Washington, D.C.",
    "lat": 38.8867,
    "lng": -77.0107,
-   "summary": "In April 1965 a Social Science Research Council committee chaired by Yale economist Richard Ruggles urged a federal data bank, and a Bureau of the Budget task force under Carl Kaysen was studying access to government statistics. On 26–28 July 1966 the House Special Subcommittee on Invasion of Privacy, chaired by Rep. Cornelius Gallagher, held hearings on “The Computer and Invasion of Privacy”. Gallagher said the thought of Americans' records “neatly bundled together into one compact package is appalling” and floated a new rule under which “a person may have the right to examine his own file”. The hearings set off a national press backlash against the plan.",
-   "significance": "The databank fight produced the first official call for a person's right to see and correct their own file — the seed of access rights, and of the idea that individuals, not just institutions, should hold the controls.",
+   "summary": "In April 1965 a Social Science Research Council committee chaired by Yale economist Richard Ruggles urged a federal data bank, and a Bureau of the Budget task force under Carl Kaysen was studying access to government statistics. On 26–28 July 1966 the House Special Subcommittee on Invasion of Privacy, chaired by Rep. Cornelius Gallagher, held hearings on “The Computer and Invasion of Privacy”. Gallagher said the thought of Americans' records “neatly bundled together into one compact package is appalling” and suggested that a new concept in file accessibility might be needed, under which “a person may have the right to examine his own file”. Extensive press coverage of the hearings fed a growing national backlash against the plan.",
+   "significance": "The databank fight produced an early official call for a person's right to examine their own file and challenge its accuracy. That is a seed of access rights, and of the idea that individuals, not just institutions, should hold the controls.",
    "sources": [
     {
      "institution": "U.S. House of Representatives, Committee on Government Operations, Special Subcommittee on Invasion of Privacy (Internet Archive)",
@@ -622,9 +866,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The same article describes the Data Center as intended 'to make data from different federal sources interoperable, preserve it, and make it accessible to researchers under strict disclosure guidelines' and says 'hundreds of articles appeared in newspapers and magazines across the country'. The Kaysen task-force report itself (October 1966) was not read."
+    },
+    {
+     "institution": "Journal of Privacy and Confidentiality (Rebecca S. Kraus), vol. 5 no. 1",
+     "title": "Statistical Déjà Vu: The National Data Center Proposal of 1965 and Its Descendants",
+     "date": "2013",
+     "url": "https://journalprivacyconfidentiality.org/index.php/jpc/article/download/624/607",
+     "quote": "In April 1965, the SSRC Committee on the Preservation and Use of Economic Data issued their report, known as the Ruggles Report (named after the chairman of the committee, Yale economist Richard Ruggles).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (open-access PDF). Section 3.2 of the same article is also FOUND: 'Extensive media coverage of the hearings revealed far-reaching concerns over the potential invasion of privacy.' and 'the media rallied against the national data center proposal'. It also notes testimony on the plan 'before the Senate Subcommittee on Administrative Practice and Procedure in June 1966', before the House hearings."
     }
    ],
-   "locationNote": "Hearing room given in the printed record: room 2247, Rayburn House Office Building; coordinates are the building."
+   "locationNote": "Hearing room given in the printed record: room 2247, Rayburn House Office Building; coordinates are the building.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary says Gallagher 'floated a new rule'. He did not propose a rule. The record reads: 'Perhaps a new concept in file accessibility will have to be formulated, under which a person may have the right to examine his own file, or at least have the right of appeal'. The wording is softened to match.",
+     "Summary says 'The hearings set off a national press backlash'. The backlash had already begun: Ruggles & Magnuson cite an Allen and Scott column, 'Data Center Plan Called Privacy Invasion', dated 14 June 1966, six weeks before the hearings, and Kraus (2013) notes Senate testimony on the plan in June 1966. Kraus does say 'Extensive media coverage of the hearings revealed far-reaching concerns', so the hearings amplified the backlash; they did not start it.",
+     "Significance says 'the first official call for a person's right to see and correct their own file'. No source supports 'first', so it becomes 'an early official call'. Gallagher also spoke of a right to 'examine' the file and 'appeal' to ensure accuracy, not a right to 'correct' it; 'check' is closer.",
+     "Everything else checks out: the dates 26–28 July 1966 (Tuesday to Thursday in the hearing record), room 2247 Rayburn, Ruggles of Yale's economics department chairing the SSRC committee whose report is dated April 1965, and the Kaysen task force. Kraus (2013) independently confirms the April 1965 Ruggles Report."
+    ]
+   }
   },
   {
    "id": "westin-privacy-and-freedom-1967",
@@ -658,7 +921,13 @@
      "note": "Testimony of Paul Gallati (New York State Identification and Intelligence System); 'that committee' is 'the special Committee on Science and Law of the Association of the Bar of the City of New York'. OCR line-break hyphens kept as in the scan."
     }
    ],
-   "locationNote": "Publisher's city: New York (Atheneum); coordinates are midtown Manhattan, not a verified street address."
+   "locationNote": "Publisher's city: New York (Atheneum); coordinates are midtown Manhattan, not a verified street address.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. The p. 7 definition, the 1967 date and Atheneum as publisher are confirmed. The Open Library catalog lists Privacy and Freedom by Alan F. Westin, first published 1967, publisher Atheneum. Westin's 1966 role as 'staff consultant and writer' for the Bar committee is confirmed in the hearing record. Minor: the coordinates are Times Square, and the locationNote already flags them as approximate."
+    ]
+   }
   },
   {
    "id": "katz-v-united-states-reasonable-expectation-1967",
@@ -682,7 +951,13 @@
      "note": "389 U.S. at 351 (Stewart, J., for the Court). Syllabus: 'Argued October 17, 1967.-Decided December 18, 1967.' and FBI agents 'had attached an electronic listening and recording device to the outside of the telephone booth from which the calls were made'. Harlan, J., concurring, at 361: 'there is a twofold requirement, first that a person have exhibited an actual (subjective) expectation of privacy and, second, that the expectation be one that society is prepared to recognize as \"reasonable.\"' Opinion: 'the \"trespass\" doctrine there enunciated can no longer be regarded as controlling.' Opinion: the indictment charged him 'with transmitting wagering information by telephone from Los Angeles to Miami and Boston'."
     }
    ],
-   "locationNote": "The Supreme Court Building, Washington."
+   "locationNote": "The Supreme Court Building, Washington.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. One nuance: the words 'no longer controlling' appear in the Syllabus ('is no longer controlling'). The opinion itself says 'can no longer be regarded as controlling'. Both are on the cited page, so the fragment is accurate. It concerns Olmstead and Goldman."
+    ]
+   }
   },
   {
    "id": "omnibus-crime-control-act-title-iii-wiretap-1968",
@@ -692,8 +967,8 @@
    "place": "United States Congress, U.S. Capitol, Washington, D.C.",
    "lat": 38.8899,
    "lng": -77.0091,
-   "summary": "Title III of the Omnibus Crime Control and Safe Streets Act of 1968 (Public Law 90-351, approved 19 June 1968) banned unauthorised interception of wire and oral communications and let police intercept only with a court order. Congress found that “there has been extensive wiretapping carried on without legal sanctions, and without the consent of any of the parties to the conversation”, and that uniform rules were needed “to protect effectively the privacy of wire and oral communications”.",
-   "significance": "The first comprehensive US surveillance statute made consent of a party, or a judge's order, the gate for interception — a consent-or-warrant structure later extended to electronic communications.",
+   "summary": "Title III of the Omnibus Crime Control and Safe Streets Act of 1968 (Public Law 90-351, approved 19 June 1968) made it a federal crime to intercept wire and oral communications without authorisation. Officers could intercept with a court order, or where one party to the conversation consented, with a 48-hour emergency window before an order had to be sought. The Act also said nothing in it limited the President's constitutional power to take national-security measures. Congress found that “there has been extensive wiretapping carried on without legal sanctions, and without the consent of any of the parties to the conversation”, and that uniform rules were needed “to protect effectively the privacy of wire and oral communications”.",
+   "significance": "Title III made consent of a party, or a judge's order, the normal gate for interception. This consent-or-warrant structure was later extended to electronic communications, though national-security wiretaps were left outside it.",
    "sources": [
     {
      "institution": "U.S. Government Publishing Office (Statutes at Large, vol. 82)",
@@ -704,9 +979,37 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Title III, sec. 801(a) findings. Sec. 801(b): '(b) In order to protect effectively the privacy of wire and oral communications, to protect the integrity of court and administrative proceedings, and to prevent the obstruction of interstate commerce, it is necessary for Congress to define on a uniform basis the circumstances and conditions under which the interception of wire and oral ...'. Header: 'PUBLIC LAW 90-351-JUNE 19, 1968'. Short title: 'Omnibus Crime Control and Safe Streets Act of 1968'. OCR of scanned Statutes at Large."
+    },
+    {
+     "institution": "U.S. Government Publishing Office (Statutes at Large, vol. 82)",
+     "title": "Public Law 90-351, Title III, 18 U.S.C. §2511(3) as enacted, 82 Stat. 214",
+     "date": "1968-06-19",
+     "url": "https://www.govinfo.gov/content/pkg/STATUTE-82/pdf/STATUTE-82-Pg197.pdf",
+     "quote": "shall limit the constitutional power of the President to take such measures as he deems necessary to protect the Nation against actual or potential attack or other hostile acts of a foreign power",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the national-security carve-out cited in the corrected summary. The full sentence begins 'Nothing contained in this chapter or in section 605 of the Communications Act of 1934 ...'."
+    },
+    {
+     "institution": "U.S. Department of Justice, Bureau of Justice Assistance (Justice Information Sharing)",
+     "title": "Title III of The Omnibus Crime Control and Safe Streets Act of 1968 (Wiretap Act)",
+     "date": "n.d.",
+     "url": "https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1284",
+     "quote": "Title III of the Omnibus Crime Control and Safe Streets Act of 1968 , (Pub. L. 90-351; 6/19/68), also known as the \"Wiretap Act\":",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (the space before the comma is as on the page). This independent source confirms the 19 June 1968 date. The next item, 'prohibits the unauthorized, nonconsensual interception of \"wire, oral, or electronic communications\" by government agencies as well as private parties', is also FOUND. It describes the Act as amended, including ECPA's 'electronic'."
     }
    ],
-   "locationNote": "Law made by Congress at the U.S. Capitol; approved 19 June 1968."
+   "locationNote": "Law made by Congress at the U.S. Capitol; approved 19 June 1968.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary overstates: it says Title III 'let police intercept only with a court order'. The Act as enacted also let officers intercept without an order where they were a party or 'one of the parties to the communication has given prior consent' (§2511(2)(c)). It allowed emergency interception without an order if an application was made 'within forty-eight hours' (§2518(7)). And it said nothing in it 'shall limit the constitutional power of the President' to take national-security measures (§2511(3)). All three are FOUND in the cited statute.",
+     "The significance calls it 'The first comprehensive US surveillance statute'. No source supports the superlative. The Communications Act of 1934, s. 605, already banned interception and divulgence, and Title III left national-security surveillance outside its rules. Reworded.",
+     "The date is right: 19 June 1968 (header 'PUBLIC LAW 90-351-JUNE 19, 1968'; BJA gives '6/19/68'). The findings quotes are verbatim."
+    ]
+   }
   },
   {
    "id": "bverfg-mikrozensus-decision-1969",
@@ -716,7 +1019,7 @@
    "place": "Bundesverfassungsgericht (Federal Constitutional Court), Karlsruhe",
    "lat": 49.0118,
    "lng": 8.4017,
-   "summary": "A Bavarian woman fined 100 marks for refusing to answer a microcensus questionnaire challenged the statistics law. On 16 July 1969 (1 BvL 19/63) the First Senate upheld the survey question on holiday travel, but held that it would violate human dignity for the state to claim the right “to register and catalogue a person compulsorily in their whole personality”, even anonymously in a statistical survey. Each person must retain an “inner space” where, quoting the jurist Wintrich, “one is left in peace”.",
+   "summary": "A Bavarian woman who refused to answer the microcensus's 60 questions was fined 100 Deutschmarks. When she contested the fine, the Fürstenfeldbruck local court asked the Federal Constitutional Court whether the compulsory questions on holiday travel were constitutional. On 16 July 1969 (1 BvL 19/63) the First Senate upheld those questions. But it held that it would violate human dignity for the state to claim the right “to register and catalogue a person compulsorily in their whole personality”, even anonymously in a statistical survey. Each person must retain an “inner space” where, quoting the jurist Wintrich, “one is left in peace”.",
    "significance": "A direct line from the 'right to be let alone' to European data protection: it limited what the state may compile about a person, the precursor of the 1983 census judgment and informational self-determination.",
    "sources": [
     {
@@ -730,7 +1033,14 @@
      "note": "Translation: 'It would be incompatible with human dignity if the state could claim the right to register and catalogue a person compulsorily in their entire personality, even in the anonymity of a statistical survey, and thereby treat them like a thing open to inventory in every respect.' Next paragraph: the individual must keep an 'Innenraum' ... 'in dem man in Ruhe gelassen wird und ein Recht auf Einsamkeit genießt' ('where one is left in peace and enjoys a right to solitude'), quoting Wintrich (1957). Facts: the respondent refused to answer 'alle 60 Fragen' and was fined 'eine Geldbuße von 100 DM'. Tenor: the microcensus provisions 'waren mit dem Grundgesetz vereinbar'. The court's own website does not publish pre-1998 decisions in full."
     }
    ],
-   "locationNote": "The Court moved into its building at Schlossbezirk 3, Karlsruhe, in 1969; coordinates are that building."
+   "locationNote": "The Court moved into its building at Schlossbezirk 3, Karlsruhe, in 1969; coordinates are that building.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary says the woman 'challenged the statistics law'. She did not. She refused the enumerators and 'alle 60 Fragen', was fined 100 DM, and applied for a court ruling on the fine. The Amtsgericht Fürstenfeldbruck then stayed the case and referred the question to the Federal Constitutional Court ('hat das Amtsgericht Fürstenfeldbruck die Sache ausgesetzt und dem Bundesverfassungsgericht zur Entscheidung darüber vorgelegt'). That is a judicial referral (concrete norm review, hence 'BvL'). It was the local court that argued the compulsory holiday-travel questions violated Arts. 1 and 2 of the Basic Law.",
+     "The remaining claims are confirmed: 16 July 1969, 1 BvL 19/63, First Senate, the tenor upholding the holiday-travel questions, the dignity passage and the Wintrich 'Innenraum' quotation. The locationNote holds: German Wikipedia's Baumgarten-Bau article gives the key handover as 6 May 1969, 'Seit Mai 1969 dient der Baumgarten-Bau als Amtssitz', so the court was in the new building by 16 July 1969. The coordinates are within about 110 m of the article's coordinates (49°0'46\"N 8°24'5\"E)."
+    ]
+   }
   }
  ],
  "series": [
@@ -739,7 +1049,7 @@
    "label": "Stasi full-time staff (hauptamtliche Mitarbeiter)",
    "unit": "employees",
    "geography": "German Democratic Republic",
-   "notes": "Three verified points only; intermediate years exist in Gieseke (2000) but were not read. 1956 is 'rund' (about) 16,000.",
+   "notes": "Three verified points only; intermediate years exist in Gieseke (2000) but were not read. Growth was not linear: the MfS-Lexikon says the apparatus grew fastest from 1968 to 1982, so do not interpolate. 1950 is an approximate year-end figure (the ministry was founded on 8 February 1950); 1956 is 'rund' (about) 16,000; 1989 is the exact count at 31 October 1989. 'Full-time staff' includes, in 1989, about 79% career officers and NCOs, 14% fixed-term NCOs and soldiers (chiefly the Feliks Dzierzynski guard regiment), 2.5% officers on special assignment (OibE), 2.3% full-time unofficial collaborators and 0.2% civilian employees (Bundesarchiv Themenmappe 1).",
    "sources": [
     {
      "institution": "Bundesarchiv – Stasi-Unterlagen-Archiv, Bildungsteam",
@@ -752,7 +1062,7 @@
      "note": "Educational dossier, Berlin 2022. Translation: 'While the Stasi employed 2,700 full-time staff in its founding year 1950, its strength had grown to 91,000 by October 1989.' Line-break hyphens in the PDF removed."
     },
     {
-     "institution": "Bundesarchiv – Stasi-Unterlagen-Archiv (MfS-Lexikon)",
+     "institution": "Bundesarchiv – Stasi-Unterlagen-Archiv (MfS-Lexikon, entry by Jens Gieseke)",
      "title": "Hauptamtlicher Mitarbeiter",
      "date": "2026",
      "url": "https://www.bundesarchiv.de/im-archiv-recherchieren/stasi-unterlagen-einsehen/hinweise-zum-mfs/mfs-lexikon/detail/hauptamtlicher-mitarbeiter/",
@@ -760,6 +1070,16 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same entry gives 91,015 at 31.10.1989."
+    },
+    {
+     "institution": "Wikipedia (German)",
+     "title": "Ministerium für Staatssicherheit",
+     "date": "accessed 2026-09-23",
+     "url": "https://de.wikipedia.org/wiki/Ministerium_f%C3%BCr_Staatssicherheit",
+     "quote": "Bis Ende des Jahres beschäftigte das neu gegründete Ministerium bereits rund 2700 Mitarbeiter.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. A secondary source, used only to show that the 1950 figure is an approximate year-end count. The same passage gives the founding law (Volkskammer, 8 February 1950; in force 21 February 1950) and 'zählte im Jahr 1956 bereits rund 16.000 Mitarbeiter', citing Jens Gieseke, 'Hauptamtliche Mitarbeiter', in Dümmel/Piepenschneider (eds.), Was war die Stasi? (Konrad-Adenauer-Stiftung, 5th ed. 2014), p. 68. The KAS PDF returned 403, so Gieseke's page was not read directly."
     }
    ],
    "points": [
@@ -767,7 +1087,8 @@
      "year": 1950,
      "value": 2700,
      "source": "Bundesarchiv Themenmappe 1 (2022)",
-     "estimate": false
+     "estimate": true,
+     "note": "About 2,700 by the end of the founding year 1950 (round figure)"
     },
     {
      "year": 1956,
@@ -783,48 +1104,78 @@
      "estimate": false,
      "note": "Reference date 31 October 1989"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Both quotes are verbatim (FOUND), and all three values match their sources: 2,700 in 1950 (Themenmappe 1), 'rund 16.000' in 1956 and 91,015 at 31.10.1989 (MfS-Lexikon). The Themenmappe imprint 'Berlin 2022' confirms the date. The Lexikon entry is signed by Jens Gieseke.",
+     "Precision issue on the 1950 point. It is marked estimate: false, but 2,700 is a rounded year-end figure. German Wikipedia, citing Gieseke in Dümmel/Piepenschneider (eds.), Was war die Stasi? (KAS 2014), p. 68, says: 'Bis Ende des Jahres beschäftigte das neu gegründete Ministerium bereits rund 2700 Mitarbeiter' (FOUND). The MfS was founded on 8 February 1950 (law in force 21 February), so the 1950 point is an end-of-year figure of 'about' 2,700, not a founding-day strength. The point is now marked as an estimate with a note.",
+     "Clarity for readers: 'hauptamtliche Mitarbeiter' is broader than career officers. The same Themenmappe gives the 1989 make-up as about 79% career officers and NCOs, 14% fixed-term NCOs and soldiers, 2.5% officers on special assignment (OibE), 2.3% full-time unofficial collaborators and 0.2% civilian staff (FOUND). The Lexikon says the fixed-term soldiers served mainly in the Feliks Dzierzynski guard regiment. This is added to the notes so the 91,015 is not read as 91,000 spies.",
+     "No other problems. The Lexikon's 'Am stärksten wuchs der Stasi-Apparat von 1968 bis 1982' (FOUND) confirms that the three points must not be joined by a straight line as if growth were linear; the existing notes already warn that intermediate years were not read."
+    ]
+   }
   },
   {
    "id": "hollerith-1888-trial-hours",
-   "label": "1888 Census Office trial: hours to capture 1880 St. Louis census data, by contestant",
+   "label": "1889 Census Office test: hours to transcribe 1880 St. Louis census returns onto cards or chips, by system",
    "unit": "hours",
-   "geography": "St. Louis test districts (United States)",
-   "notes": "Not a time series: the 'year' field is the trial year for all three contestants; value is data-capture time. Sorting times were 44.5, 55.5 and 5.5 hours respectively.",
+   "geography": "Four enumeration districts of St. Louis, Missouri (10,491 inhabitants; returns from the 1880 re-enumeration)",
+   "notes": "Not a time series: all three points are the same test, whose committee report is dated 30 November 1889 (Truesdell 1965, pp. 40-42). Census Bureau and IBM web pages date it 1888 and give the middle rival as 100.5 hours; Truesdell's table (110 h 56 min + 44 h 41 min = 155 h 37 min total) shows 110 h 56 min. Value is transcription time (schedules to punched cards, written cards or chips). Tabulation times were 55 h 22 min (for the 144 h 25 min system), 44 h 41 min (for the 110 h 56 min system) and 5 h 28 min (Hollerith). The rivals were William C. Hunt's slip system and Charles F. Pidgin's chip system; the OCR'd table does not show which row is which.",
    "sources": [
     {
      "institution": "U.S. Census Bureau",
      "title": "The Hollerith Machine",
-     "date": "2026",
+     "date": "2024-08-14",
      "url": "https://www.census.gov/about/history/bureau-history/census-innovations/technology/hollerith-machine.html",
      "quote": "The first two contestants captured the data in 144.5 hours and 100.5 hours. The third contestant, a former Census Bureau employee named Herman Hollerith, completed the data capture process in 72.5 hours.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Bureau of the Census (Leon E. Truesdell), via Internet Archive",
+     "title": "The Development of Punch Card Tabulation in the Bureau of the Census, 1890–1940",
+     "date": "1965",
+     "url": "https://archive.org/download/bub_gb_MGZqAAAAMAAJ/bub_gb_MGZqAAAAMAAJ_djvu.txt",
+     "quote": "The report of the committee, dated November 30, 1889, describes the test as follows: To test these various methods, four enumeration districts in the city of St. Louis, selected from the re-enumeration of 1880, were selected. These districts contained 10,491 inhabitants.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND for the full quote. OCR text of the Census Bureau's 1965 history (Washington: GPO), section 'The 1889 test', pp. 40-42. The results table is FOUND in the OCR layer as '72 27 5 28 77 55 no 56 44 41 155 37 144 25 55 22 199 47' (hours and minutes to transcribe, to tabulate and in total; 'no' is OCR for '110', which the row total proves). Also FOUND: 'the time recorded for the tabulation in the test, 5 hours and 28 minutes'; 'The two methods at first considered were the Hollerith system and the chip system, proposed by Charles F. Pidgin.'; and Hunt resigned from the committee 'in order to present, independently, a card or slip system'. Scan: https://archive.org/details/bub_gb_MGZqAAAAMAAJ."
     }
    ],
    "points": [
     {
-     "year": 1888,
-     "value": 144.5,
-     "source": "U.S. Census Bureau, The Hollerith Machine",
+     "year": 1889,
+     "value": 144.4,
+     "source": "Truesdell, Development of Punch Card Tabulation (U.S. Bureau of the Census, 1965), p. 42",
      "estimate": false,
-     "note": "Contestant 1"
+     "note": "Rival system: transcription 144 h 25 min; tabulation 55 h 22 min; total 199 h 47 min (census.gov rounds to 144.5)"
     },
     {
-     "year": 1888,
-     "value": 100.5,
-     "source": "U.S. Census Bureau, The Hollerith Machine",
+     "year": 1889,
+     "value": 110.9,
+     "source": "Truesdell, Development of Punch Card Tabulation (U.S. Bureau of the Census, 1965), p. 42",
      "estimate": false,
-     "note": "Contestant 2"
+     "note": "Rival system: transcription 110 h 56 min; tabulation 44 h 41 min; total 155 h 37 min (census.gov's 100.5 is inconsistent with this row total)"
     },
     {
-     "year": 1888,
+     "year": 1889,
      "value": 72.5,
-     "source": "U.S. Census Bureau, The Hollerith Machine",
+     "source": "Truesdell (1965), p. 42; U.S. Census Bureau, The Hollerith Machine",
      "estimate": false,
-     "note": "Herman Hollerith"
+     "note": "Herman Hollerith: transcription (punching) 72 h 27 min; tabulation 5 h 28 min; total 77 h 55 min"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong year. The trial was in 1889, not 1888. The Census Bureau's own history, Leon E. Truesdell's The Development of Punch Card Tabulation in the Bureau of the Census 1890-1940 (GPO 1965), pp. 40-42, has a section headed 'The 1889 test'. It says that 'In compliance with a suggestion made by the Secretary of the Interior in 1889, the Superintendent of the Census, Robert P. Porter, appointed a committee', and that 'The report of the committee, dated November 30, 1889, describes the test' (both FOUND). Porter was superintendent only from 1889. The '1888' on census.gov (and on IBM's heritage page, which copies census.gov) is an error; the letalone-1 verdict on hollerith-punch-cards-1890-census-1890 found the same.",
+     "Wrong value for the second contestant. census.gov gives 100.5 hours, but Truesdell's table of the test records gives 110 h 56 min. The OCR row reads '110 [OCR: no] 56 | 44 41 | 155 37', and the row total proves it: 110:56 + 44:41 = 155:37, while 100:56 + 44:41 would be 145:37. The other rows also add up: Hollerith 72:27 + 5:28 = 77:55, and 144:25 + 55:22 = 199:47. The table check is FOUND. So the values should be 144.4 (144 h 25 min), 110.9 (110 h 56 min) and 72.5 (72 h 27 min). census.gov's 144.5 and 72.5 are roundings; its 100.5 is not.",
+     "Wrong pairing in the notes. 'Sorting times were 44.5, 55.5 and 5.5 hours respectively' pairs 44.5 with the 144.5-hour contestant. Truesdell's rows pair 55 h 22 min with the 144 h 25 min system and 44 h 41 min with the 110 h 56 min system. Hollerith's tabulation time was 5 h 28 min, and Truesdell notes the test table was 'barely enough for one run of the cards'. Also, 'sorting' is not the source's term: Truesdell has 'To tabulate' and census.gov 'prepare data for tabulation'.",
+     "Missing context, now added: the rivals were William C. Hunt's card or slip system and Charles F. Pidgin's chip system (both FOUND in Truesdell). The OCR'd table has lost its row labels, so the page must not say which rival took 144 or 110 hours. The test used four enumeration districts of St. Louis, 'selected from the re-enumeration of 1880', with 10,491 inhabitants (FOUND). The geography and label are updated.",
+     "The source's date is wrong: the census.gov page footer says 'Last Revised - August 14, 2024', not 2026.",
+     "The id keeps '1888' for referential stability, but the label, notes and point years must say 1889. Cross-record flag: the event hollerith-punch-cards-1890-census-1890 (and the letalone-1 fixed summary) still says the rivals needed '144.5 and 100.5 hours'. The 100.5 should become about 111 hours (110 h 56 min) there too."
+    ]
+   }
   }
  ],
  "quant": [
@@ -834,7 +1185,7 @@
    "value": 1500000,
    "unit": "cameras",
    "year": 1898,
-   "geography": "United States (as estimated by a photography journal)",
+   "geography": "Not stated in the source (a contemporary photography journal's estimate, reported by the Metropolitan Museum)",
    "notes": "An 1898 photography-journal estimate reported by the Metropolitan Museum ('over 1.5 million'); a lower bound, not a census.",
    "sources": [
     {
@@ -843,19 +1194,28 @@
      "date": "2004-10",
      "url": "https://web.archive.org/web/2025/https://www.metmuseum.org/essays/kodak-and-the-rise-of-amateur-photography",
      "quote": "By 1898, just ten years after the first Kodak was introduced, one photography journal estimated that over 1.5 million roll-film cameras had reached the hands of amateur shutterbugs.",
-     "verificationStatus": "CONFIRMED",
-     "accessType": "FREE"
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Verification: Not re-verified. web.archive.org (every snapshot form tried: /web/2025/, /web/2025id_/, /web/2024/ of the old toah URL) was reset by the agent proxy all session. metmuseum.org returns 429 behind a Vercel bot challenge that headless Chromium could not pass. r.jina.ai returned 429 and archive.ph was reset. Re-run: python3 tools/fetch-text.py 'https://web.archive.org/web/2025/https://www.metmuseum.org/essays/kodak-and-the-rise-of-amateur-photography' --check 'By 1898, just ten years after the first Kodak was introduced, one photography journal estimated that over 1.5 million roll-film cameras had reached the hands of amateur shutterbugs.' Also confirm the byline (Mia Fineman) and the 'Originally published October 2004' line, and check whether the essay names the journal or its country."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "DOWNGRADED",
+    "issues": [
+     "The source could not be re-fetched. Every connection to web.archive.org was reset at the agent proxy for the whole session (proxy log: ws_closed_mid_exchange, repeatedly). The live metmuseum.org essay and the old /toah/hd/kodk/hd_kodk.htm URL both return HTTP 429 behind a Vercel Security Checkpoint challenge, which headless Chromium also failed. The r.jina.ai reader and archive.ph also failed. The quote, the author (Mia Fineman) and the '2004-10' date are therefore unconfirmed, and no local cache of the page exists. The web-search budget was also exhausted, so no alternative source for the 1.5 million figure could be found.",
+     "Geography is unsupported as written. The quoted sentence says only that 'one photography journal estimated' 1.5 million roll-film cameras had reached amateurs. It names no country and does not say the journal was American. 'United States' is an inference. Changed to 'not stated in the source' until the essay can be read in context.",
+     "The label's '(contemporary estimate)' and the notes' 'a lower bound, not a census' are fair framings. The phrase 'over 1.5 million' makes it a floor."
+    ]
+   }
   },
   {
    "id": "roberson-flour-ad-lithographs-1902",
-   "label": "Lithographed likenesses of Abigail Roberson circulated without consent in Franklin Mills flour advertising",
+   "label": "Lithographed likenesses of Abigail Roberson circulated without her consent in Franklin Mills flour advertising (as alleged in her complaint)",
    "value": 25000,
    "unit": "prints",
-   "year": 1902,
-   "geography": "New York State (Rochester area)",
-   "notes": "Figure from the complaint as recited in the Court of Appeals opinion ('about 25,000').",
+   "year": 1900,
+   "geography": "United States, especially around Rochester, New York (as alleged in the complaint)",
+   "notes": "Figure from the complaint ('about 25,000'), taken as true on demurrer. The complaint was decided at Monroe County Special Term in August 1900 and the figure was repeated in the Court of Appeals opinion of 27 June 1902. The prints therefore circulated by 1900.",
    "sources": [
     {
      "institution": "Court of Appeals of New York (opinion text reproduced by Hofstra University)",
@@ -865,17 +1225,36 @@
      "quote": "had obtained, made, printed, sold, and circulated about 25,000 lithographic prints, photographs, and likenesses of plaintiff",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of New York, Monroe Special Term (opinion text via Harvard Law School Caselaw Access Project)",
+     "title": "Roberson v. Rochester Folding Box Co., 32 Misc. 344 (1900)",
+     "date": "1900-08",
+     "url": "https://static.case.law/misc/32/html/0344-01.html",
+     "quote": "The complaint also alleges that the defendants have caused the said lithographs to be conspicuously posted and displayed in stores, warehouses, saloons and other public places throughout the United States and other countries, and particularly in the vicinity where the plaintiff resides.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Also FOUND on the same page: '(Supreme Court, Monroe Special Term, August, 1900.)' and 'The plaintiff alleges in her complaint that without her knowledge or consent the defendants have made, printed, sold and circulated about 25,000 lithographic likenesses of her for the purpose of profit and gain to themselves.' These establish that the 25,000 figure was already pleaded by August 1900. The Appellate Division affirmed on 64 A.D. 30 (decision date 1901-07 on static.case.law/ad/64/cases/0030-01.json)."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong year for the metric. 25,000 is the number of prints the complaint alleges had been circulated 'before the commencement of the action'. The action was already being decided on demurrer at Monroe County Special Term in August 1900 (32 Misc. 344), so the prints were in circulation by 1900. The Appellate Division ruled in July 1901 (64 A.D. 30). 1902 is only the year of the Court of Appeals opinion that repeats the figure. Year changed to 1900. The record id can stay.",
+     "Geography too narrow. The complaint alleged the lithographs were posted 'throughout the United States and other countries, and particularly in the vicinity where the plaintiff resides' (Special Term, 1900; the Appellate Division and Gray's dissent say the same). 'New York State (Rochester area)' understates the allegation.",
+     "Framing: the figure and 'without consent' are allegations in the complaint, which the Court of Appeals took as true on demurrer. They are not findings of fact. The notes say so, but the label states it as fact, so the label is now qualified.",
+     "Checked OK: the quote is verbatim on the Hofstra copy (FOUND); the opinion date of 27 June 1902, the citation 171 N.Y. 538 and 'about 25,000' match the Caselaw Access Project text of 171 N.Y. 538."
+    ]
+   }
   },
   {
    "id": "people-tabulated-by-hollerith-1890",
-   "label": "People counted with Hollerith punch-card tabulators in the 1890 US census",
+   "label": "People whose 1890 US census data were tabulated on Hollerith's electric tabulating machines",
    "value": 63000000,
    "unit": "people",
    "year": 1890,
    "geography": "United States",
-   "notes": "Census Bureau gives 'nearly 63 million'; value rounded.",
+   "notes": "Census Bureau gives 'nearly 63 million'; value rounded. The official 1890 count was 62,947,714 (rough count), later 62,979,766. The rough count was run on Hollerith tabulators fitted with keyboards, and punched cards were used for the detailed tabulations.",
    "sources": [
     {
      "institution": "U.S. Census Bureau",
@@ -886,16 +1265,23 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The label is slightly overstated. 'People counted with Hollerith punch-card tabulators' implies that the headcount itself was made from punch cards. The Census Bureau source says 'tabulated data for nearly 63 million people using Hollerith's tabulators'. Wikipedia's article on the 1890 census says the rough family count of 62,947,714 was produced in six weeks on Hollerith tabulators with the card reader replaced by a keyboard: 'punched cards were not used for this tabulation'. Punched cards were used for the detailed population tabulations. The label now follows the source wording.",
+     "Checked OK: the quote is verbatim (FOUND); the page title 'History and the Census: Herman Hollerith and Mechanical Tabulation' (by Jason G. Gauthier) and the January 2016 date match the URL. The value of 63,000,000 ('nearly 63 million') agrees with the independently reported 1890 totals of 62,947,714 (rough count) and 62,979,766 (final resident population)."
+    ]
+   }
   },
   {
    "id": "minority-census-1939-people-on-supplementary-cards",
-   "label": "People of Jewish origin recorded by name and address on surviving 1939 census supplementary cards",
+   "label": "People classed as of Jewish origin under the Nazi racial laws (including so-called 'Mischlinge'), recorded by name and address on surviving 1939 census supplementary cards",
    "value": 277500,
    "unit": "people",
    "year": 1939,
-   "geography": "German Reich",
-   "notes": "About 130,000 households; the surviving cards cover about 87.2% of people of Jewish origin counted in the official results (cards for Thuringia, the Rhine Province and some other areas are missing).",
+   "geography": "German Reich in its pre-1938 borders (the 'Altreich', without Austria and the Sudetenland)",
+   "notes": "Table 1 gives 277,531, in about 130,000 households: 203,765 classed as 'Jews' (three or more Jewish grandparents), 45,982 as first-degree and 27,784 as second-degree 'Mischlinge'. The same cards also list 126,599 non-Jewish household members. The surviving cards name about 87.2% of the 318,320 people of Jewish origin in the official census result. Cards for Thuringia, the Rhine Province, the districts of Erfurt and Minden and some Bavarian districts were never passed on.",
    "sources": [
     {
      "institution": "Bundesarchiv (German Federal Archives), Nicolai M. Zimmermann",
@@ -905,8 +1291,27 @@
      "quote": "There is evidence of approximately 130,000 households in the existing supplementary cards with at least one Jewish household member according to the Nuremberg Laws stating altogether approximately 277,500 citizens with their full name, date and place of birth, their origin as well as their precise address as per deadline 17 May 1939",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Wikipedia (German)",
+     "title": "Volkszählung 1939",
+     "date": "2026",
+     "url": "https://de.wikipedia.org/wiki/Volksz%C3%A4hlung_1939",
+     "quote": "Deutsches Reich (in den Grenzen vom 1. Januar 1938",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Tertiary cross-check for the territory (--check FOUND). This is the heading of the 'Angaben zu Juden' table column, which reads in full 'Deutsches Reich (in den Grenzen vom 1. Januar 1938, ohne Ostmark, sudetendeutsche Gebiete und Memelland)', i.e. the German Reich in its 1 January 1938 borders, without Austria, the Sudeten German areas and the Memel territory. Its rows ('Mischlinge 1. Grades' 52.005; '2. Grades' 32.669) match the official figures in Zimmermann's Table 1 exactly, so his comparison, and the 87.2%, cover the Altreich only. Austria is tabulated separately (94.530 'Volljuden')."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The population is ambiguous. 277,500 (Table 1: 277,531) is the essay's 'Total number of people of Jewish origin' under the Nazi classification. It is made up of 203,765 'Jews' (at least three Jewish grandparents), 45,982 'Jewish half-breeds of first degree' (two Jewish grandparents) and 27,784 'of second degree' (one Jewish grandparent). A reader of the label 'People of Jewish origin' could take all 277,500 as Jews. The label now names the Nazi classification, and the notes give the breakdown.",
+     "Wrong territory. 'German Reich' should be the pre-1938 Reich (the 'Altreich'). The essay's official comparison figures are the census results for the Reich in its borders of 1 January 1938, without Austria and the Sudetenland: 52,005 first-degree and 32,669 second-degree 'Mischlinge', which exactly match the Altreich column of de.wikipedia's Volkszählung 1939 table. Austria alone counted a further 94,530 'Volljuden'. So the 87.2% coverage figure refers to the Altreich only.",
+     "Missing areas incomplete. Besides Thuringia and the Rhine Province, the cards for the administrative districts of Erfurt and Minden and for some Bavarian districts were not passed on. 'some other areas' is acceptable but vague, so the notes are now more precise.",
+     "Checked OK: the quote is verbatim (FOUND); author Nicolai M. Zimmermann; title matches the PDF header; about 130,000 households; 87.2% (Table 1 gives 87.21%). Note that the cards covered every person in the household, so they also list 126,599 non-Jewish persons (Table 1 total 410,920). The 277,500 figure correctly excludes them."
+    ]
+   }
   },
   {
    "id": "dutch-jewish-death-rate-holocaust",
@@ -926,8 +1331,26 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "PAYWALL",
      "note": "Social Research 68(2):481-513, at 487; JSTOR 40971467. Read from a course-reader copy."
+    },
+    {
+     "institution": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+     "title": "The Netherlands",
+     "date": "2026",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/the-netherlands",
+     "quote": "Less than 25 percent of Dutch Jewry survived the Holocaust.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent corroboration (--check FOUND). The same article says that in January 1941 'A total of 159,806 persons registered', and that the Germans and their Dutch collaborators 'deported some 107,000 Jews, mostly to Auschwitz and Sobibor', of whom 'Only 5,200 survived'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. The quote is verbatim (FOUND) at p. 487 of the course-reader copy. The comparison figures of Belgium 40 percent and France 25 percent are in the same sentence. The link to the registration system is Seltzer and Anderson's own (the preceding sentences on the Lentz registers and identity cards).",
+     "Independent check: the USHMM Holocaust Encyclopedia ('The Netherlands') says 'Less than 25 percent of Dutch Jewry survived the Holocaust', consistent with a death rate of about 73 to 75 percent. The same article gives about 107,000 deported, of whom 5,200 survived. The 73 percent figure is Seltzer and Anderson's and is correctly attributed.",
+     "Minor, not changed: accessType is PAYWALL (the JSTOR original), but the URL given is a freely readable course copy. Year 1945 as the end point is fine."
+    ]
+   }
   },
   {
    "id": "stasi-full-time-staff-1989",
@@ -947,7 +1370,14 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. The quote is verbatim (FOUND) on the Bundesarchiv MfS-Lexikon page titled 'Hauptamtlicher Mitarbeiter'. The value 91,015 and the reference date 31.10.1989 match.",
+     "Independent check: en.wikipedia.org/wiki/Stasi says 'In 1989, the Stasi employed 91,015 people full-time'. Wikipedia's sentence goes on 'including 2,000 fully employed unofficial collaborators, 13,073 soldiers and 2,232 officers of the GDR army'. The label 'Full-time employees' is fine."
+    ]
+   }
   },
   {
    "id": "stasi-unofficial-informers-1989",
@@ -955,8 +1385,8 @@
    "value": 189000,
    "unit": "informers",
    "year": 1989,
-   "geography": "German Democratic Republic (plus about 1,550 run by the HV A in West Germany)",
-   "notes": "'Ungefähr 189,000'; one IM for every 89 GDR citizens; about 620,000 IM in total 1950-1989.",
+   "geography": "German Democratic Republic (the total includes about 1,550 IM run by the HV A in West Germany)",
+   "notes": "'Ungefähr 189.000': about 173,000 IM of the counter-intelligence units, 13,400 run by the HV A in the GDR and 1,550 in West Germany, plus others such as cell informers. That is one IM for every 89 GDR citizens, and about 620,000 IM in total between 1950 and 1989.",
    "sources": [
     {
      "institution": "Bundesarchiv – Stasi-Unterlagen-Archiv (MfS-Lexikon)",
@@ -967,7 +1397,15 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The geography double-counts. It says 'German Democratic Republic (plus about 1,550 run by the HV A in West Germany)'. The source counts those 1,550 inside the 189,000: 'ungefähr 189.000 IM, darunter 173.000 IM der Abwehrdiensteinheiten, ferner 13.400 IM in der DDR und 1.550 IM in der Bundesrepublik, die von der Hauptverwaltung A (HV A) geführt wurden, sowie diverse andere'. 'darunter' means 'among them'. So the West German IMs are part of the total, not additional to it.",
+     "Context: other published counts differ by definition. Wikipedia gives 173,081 informants inside the GDR plus 1,553 in West Germany, counting only the counter-intelligence lines. The Bundesarchiv's 189,000 is the broader total and is correctly quoted.",
+     "Checked OK: the quote is verbatim (FOUND); 'Auf 89 DDR-Bürger kam somit ein IM' (one IM per 89 citizens) and 'In der Zeit von 1950 bis 1989 gab es insgesamt ca. 620.000 IM' match the notes; the page title is 'Inoffizieller Mitarbeiter (IM)'."
+    ]
+   }
   },
   {
    "id": "stasi-records-kilometres",
@@ -986,8 +1424,26 @@
      "quote": "Dabei handelt es sich um mehr als 111 Kilometer Aktenmaterial und mehr als 1,7 Millionen Fotos sowie Karteikarten, Filme, Tondokumente und Mikrofiches.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Bundesarchiv – Stasi Records Archive",
+     "title": "Tasks and structure",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/en/stasi-records-archive/tasks-and-structure/",
+     "quote": "In addition to index cards, films, audio documents and microfiches, the archives contain more than 111 kilometres of files and more than 1.7 million photos.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Official English version of the German page already cited. The page has no date; 2026 is the access year."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. The German quote is verbatim (--check FOUND) on the Bundesarchiv page 'Aufgaben und Struktur'. The page says the Stasi Records Archive has been part of the Bundesarchiv since 17 June 2021, so 'held by the Federal Archives' is right. The value (more than 111 km), the unit (km of files, 'Aktenmaterial') and the notes (more than 1.7 million photos) all match.",
+     "Independent checks: the English version of the same page says 'more than 111 kilometres of files and more than 1.7 million photos' (FOUND, added as a source because the site is in English). The English Stasi Records Archive landing page says '111 kilometres of documents are in the Stasi Records Archives. A total of almost 50 kilometres of material is held in the Berlin archive.' (FOUND). en.wikipedia 'Stasi Records Agency' says 'The archive holds 111 kilometres (69 mi) of files in total.'",
+     "Caveat for the page text, not an error: the value is a floor ('more than 111'), so any chart label should read '111+ km' or 'more than 111 km'. The year 2026 is the access year; the Bundesarchiv page has no date."
+    ]
+   }
   },
   {
    "id": "warren-brandeis-case-citations-1890-1960",
@@ -996,18 +1452,39 @@
    "unit": "cases (approx.)",
    "year": 1960,
    "geography": "United States",
-   "notes": "LexisNexis count reported by Gajda (2008): 'only about eighty' in 1890-1960 versus 'more than 400' in 1960-2007.",
+   "notes": "Count reported by Amy Gajda (2008 Mich. St. L. Rev. 35) from a LexisNexis search: 'only about eighty' cases named Warren and Brandeis's article in 1890-1960, against 'more than 400' in 1960-2007. Not re-verified on 2026-09-23 because the source was unreachable. Cases that name the article are a narrow measure of influence: Huw Beverley-Smith (2002), citing David Leebron (1991), judged its impact 'in the courts' to have been 'immediate and significant'.",
    "sources": [
     {
      "institution": "Michigan State Law Review (Amy Gajda), via BrooklynWorks (Internet Archive snapshot)",
-     "title": "What if Samuel D. Warren Hadn't Married a Senator's Daughter?",
+     "title": "What If Samuel D. Warren Hadn't Married a Senator's Daughter?: Uncovering the Press Coverage That Led to \"The Right to Privacy\"",
      "date": "2008",
-     "url": "https://web.archive.org/web/2025/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
+     "url": "https://web.archive.org/web/20240412210044/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
      "quote": "only about eighty cases mentioned Warren and Brandeis's article by name",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Verification: Could not re-fetch on 2026-09-23. web.archive.org reset every connection (error 104 / ws_closed_mid_exchange), including this exact snapshot and its id_ variant. The live brooklynworks.brooklaw.edu PDF returns HTTP 403, SSRN 1026680 returns 403, the educationnewyork.com mirror returns 404, and digitalcommons.law.msu.edu returns reset or 503. The quote and both counts are unverified. The Wayback availability API confirms a 200 capture of this PDF dated 2024-04-12, which is the URL now given. Citation 2008 Mich. St. L. Rev. 35 confirmed via Harvard Law Review Forum vol. 129 (FOUND). Re-check the quote when web.archive.org is reachable."
+    },
+    {
+     "institution": "Harvard Law Review Forum (Charles E. Colman)",
+     "title": "About Ned",
+     "date": "2016-01",
+     "url": "https://harvardlawreview.org/forum/vol-129/about-ned/",
+     "quote": "Leebron has persuasively shown that the article's impact in academic circles, and in the courts, was immediate and significant.",
      "verificationStatus": "CONFIRMED",
-     "accessType": "FREE"
+     "accessType": "FREE",
+     "note": "--check FOUND. Context only: this source does NOT give the case count. The sentence is Colman quoting Huw Beverley-Smith, The Commercial Appropriation of Personality 150 n.29 (2002), which cites David W. Leebron, 41 Case W. Res. L. Rev. 769, 792-94 (1991). It supports the counterpoint in the notes. The same page cites Gajda's article as '2008 Mich. St. L. Rev. 35, 37' (FOUND), confirming the bibliographic details. Vol. 129, issue 3, January 2016."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "DOWNGRADED",
+    "issues": [
+     "The only source could not be re-fetched on 2026-09-23. web.archive.org reset every connection (fetch-text.py, including the exact snapshot and the id_ raw variant; the agent proxy logged ws_closed_mid_exchange), and WebFetch cannot reach web.archive.org. The live BrooklynWorks PDF returns HTTP 403 (fetch-text.py and WebFetch). SSRN abstract 1026680 returns 403, the old educationnewyork.com SSRN mirror returns 404, the Michigan State Law Review digital commons returns connection reset or 503, and OpenAlex, Semantic Scholar, scholar.archive.org and Google Scholar were rate-limited. So the verbatim quote and both counts (about 80 in 1890-1960, more than 400 in 1960-2007) are unverified. This matches the letalone-2 and letalone-3 verdicts, which set the same Gajda source to PENDING.",
+     "Bibliographic details are confirmed independently. The Harvard Law Review Forum (Colman, 'About Ned', vol. 129, January 2016) cites 'Amy Gajda, What If Samuel D. Warren Hadn't Married a Senator's Daughter?: Uncovering the Press Coverage that Led to \"The Right to Privacy,\" 2008 Mich. St. L. Rev. 35, 37' (FOUND). So the author, title, journal and 2008 date in the source object are right. The title omits the subtitle.",
+     "URL precision: the Wayback availability API gives the only relevant capture as 20240412210044 (12 April 2024). The 'web/2025/' URL is a redirect to it, so the source now uses the exact snapshot URL.",
+     "Framing caveat for the page: 'only about eighty' is Gajda's framing, and a count of cases that name the article understates its influence. Colman's footnote quotes Huw Beverley-Smith (2002), citing David Leebron (1991): 'Leebron has persuasively shown that the article's impact in academic circles, and in the courts, was immediate and significant' (FOUND). The notes now attribute the count and give this counterpoint, so readers do not take the value as a measure of neglect.",
+     "The value 80 stays in the record as a count Gajda reports, labelled approximate. Until the PDF can be re-read it should not be shown as verified."
+    ]
+   }
   }
  ],
  "myths": [
@@ -1015,7 +1492,7 @@
    "id": "myth-warren-daughters-wedding",
    "claim": "Samuel Warren wrote “The Right to Privacy” because Boston newspapers intruded on his daughter's wedding.",
    "verdict": "FALSE",
-   "correction": "The story comes from William Prosser's 1960 article, which said the matter came to a head when the papers 'had a field day on the occasion of the wedding of a daughter'. But Warren had himself married Mabel Bayard only on 25 January 1883, so in 1890 the Warrens had no daughter of marrying age. James Barron (1979) instead pointed to press coverage of a cousin's wedding in 1890; Amy Gajda (2008), after reading about sixty newspaper stories, argues the likelier trigger was years of coverage of Warren's family after he married into a prominent political family.",
+   "correction": "The story comes from William Prosser's 1960 article, which said the matter came to a head when the papers 'had a field day on the occasion of the wedding of a daughter'. But Warren had himself married Mabel Bayard only on 25 January 1883, so in 1890 the Warrens had no daughter of marrying age. James Barron (1979), as Amy Gajda reports, pointed instead to press coverage of a cousin's wedding in 1890. Gajda (2008), working from contemporary newspaper coverage, argues the likelier trigger was years of press attention to Warren's family after he married a senator's daughter.",
    "sources": [
     {
      "institution": "Michigan State Law Review (Amy Gajda), via BrooklynWorks (Internet Archive snapshot)",
@@ -1023,9 +1500,9 @@
      "date": "2008",
      "url": "https://web.archive.org/web/2025/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
      "quote": "have pointed out that coverage of a daughter's wedding could not have been a motivation for the article because the Warrens themselves had married only seven years before \"The Right to Privacy\" was published.",
-     "verificationStatus": "CONFIRMED",
+     "verificationStatus": "PENDING",
      "accessType": "FREE",
-     "note": "Mich. St. L. Rev. 2008:35, at 38-39. Same passage: 'Moreover, not only did the Warrens have no daughter of marrying age at the time'; Barron's alternative: 'publicity over the wedding of one of Warren's cousins in 1890'. The introduction dates Warren's own wedding: 'Mr. Samuel D. Warren married Miss Mabel Bayard at the Church of the Ascension in Washington, D.C., just before noon on January 25, 1883.' Barron's article (13 Suffolk U. L. Rev. 875, 1979) was not read directly. BrooklynWorks blocked scripts (403); read via the Wayback Machine."
+     "note": "Mich. St. L. Rev. 2008:35, at 38-39. Same passage: 'Moreover, not only did the Warrens have no daughter of marrying age at the time'; Barron's alternative: 'publicity over the wedding of one of Warren's cousins in 1890'. The introduction dates Warren's own wedding: 'Mr. Samuel D. Warren married Miss Mabel Bayard at the Church of the Ascension in Washington, D.C., just before noon on January 25, 1883.' Barron's article (13 Suffolk U. L. Rev. 875, 1979) was not read directly. BrooklynWorks blocked scripts (403); read via the Wayback Machine. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset the connection (ws_closed_mid_exchange) on repeated tries with fetch-text.py and curl; WebFetch cannot reach web.archive.org; the live BrooklynWorks PDF returns HTTP 403; SSRN (abstract 1026680) returns 403; and the old educationnewyork.com SSRN mirror returns 404. So the quote, the 'no daughter of marrying age' passage, Barron's cousin theory and the 25 January 1883 wedding sentence are unverified this session. The wedding date itself is confirmed elsewhere (see addSources)."
     },
     {
      "institution": "California Law Review (Berkeley Law Library, via Internet Archive)",
@@ -1033,11 +1510,39 @@
      "date": "1960-08",
      "url": "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
      "quote": "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "The source of the myth, at p. 383. Verification: Could not re-fetch: web.archive.org reset every connection, and the live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 with header x-amzn-waf-action: challenge and an empty body. The quoted sentence is confirmed verbatim on Wikipedia's 'The Right to Privacy (article)', which reproduces it with a citation to 48 Cal. L. Rev. 383 (see addSources). The original page and page number remain unverified."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "Samuel D. Warren II",
+     "date": "accessed 2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Samuel_D._Warren_II",
+     "quote": "Warren married Mabel Bayard, the eldest daughter of United States Senator from Delaware Thomas F. Bayard",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "The source of the myth, at p. 383."
+     "note": "--check FOUND. The sentence continues '...at the Church of the Ascension in Washington, D.C., on January 25, 1883.' (fragment 'on January 25, 1883. [ 12 ] [ 13 ] The couple went on to have six children.' FOUND). Wikipedia cites 'Marriage of Senator Bayard's Daughter', The New York Times, January 26, 1883, p. 1. This is a secondary source, used only for the marriage date."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "The Right to Privacy (article)",
+     "date": "accessed 2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/The_Right_to_Privacy_(article)",
+     "quote": "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Wikipedia block-quotes Prosser with a footnote to 'William L. Prosser, \"Privacy\", 48 California Law Review 383, at 384.' It gives the same wording as the record's Prosser quote, so it stands as a substitute check while the Berkeley PDF is unreachable. Note that Wikipedia gives p. 384 where the record gives p. 383. The page also says Prosser 'attributed the specific incident to an intrusion by journalists on a society wedding'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "DOWNGRADED",
+    "issues": [
+     "Neither source could be re-fetched on 2026-09-23. web.archive.org reset every connection through the proxy, with fetch-text.py and with curl, including the id_ raw variant; WebFetch reports it 'unable to fetch from web.archive.org'. The live brooklynworks.brooklaw.edu PDF returns HTTP 403, the SSRN copies return 403 or 404, and the live lawcat.berkeley.edu PDF returns an AWS WAF challenge (HTTP 202, empty body). Both sources are therefore set to PENDING.",
+     "The core refutation is independently confirmed. Wikipedia's Samuel D. Warren II article, citing The New York Times of 26 January 1883, gives the marriage to Mabel Bayard on 25 January 1883, so no Warren daughter could have married by 1890. Wikipedia's article on 'The Right to Privacy' reproduces Prosser's sentence word for word.",
+     "The correction says Gajda worked 'after reading about sixty newspaper stories'. That figure is not in either source's quote or note and could not be checked, so it is removed. Barron's 'cousin's wedding' alternative rests only on the Gajda passage recorded in the original note, which is now unverified. It is kept but attributed."
+    ]
+   }
   },
   {
    "id": "myth-brandeis-coined-right-to-be-let-alone",
@@ -1071,17 +1576,34 @@
      "date": "1960-08",
      "url": "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
      "quote": "in the phrase coined by Judge Cooley",
+     "verificationStatus": "PENDING",
+     "accessType": "FREE",
+     "note": "Whether Cooley was the very first to use the words is not established here; the claim that Brandeis coined them is contradicted by Brandeis's own article. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset every connection, and the live lawcat.berkeley.edu PDF returns an AWS WAF challenge (HTTP 202, empty body). 'in the phrase coined by Judge Cooley' is unverified this session. No other open copy of Prosser (1960) was reachable."
+    },
+    {
+     "institution": "Supreme Court of the United States (U.S. Reports, Library of Congress)",
+     "title": "Olmstead v. United States, 277 U.S. 438 (1928), Brandeis, J., dissenting",
+     "date": "1928-06-04",
+     "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep277/usrep277438/usrep277438.pdf",
+     "quote": "They conferred, as against the Government, the right to be let alone-the most comprehensive of rights and the right most valued by civilized men.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Whether Cooley was the very first to use the words is not established here; the claim that Brandeis coined them is contradicted by Brandeis's own article."
+     "note": "--check FOUND. The dash is a plain hyphen in the OCR. The passage falls inside the Brandeis dissent, at 277 U.S. 478 (running heads 'BRANDEIS, J., dissenting'). The syllabus gives 'Decided June 4, 1928.'"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "No factual error. The Warren & Brandeis attribution to Cooley, footnote 10, and Cooley's p. 29 passage on assault are all re-confirmed. The Prosser source (index 2) could not be re-fetched and is set to PENDING.",
+     "The correction says Brandeis popularised the phrase 'above all in his 1928 Olmstead dissent', but no source on the record supported that. The dissent passage is added, --check FOUND in U.S. Reports."
+    ]
+   }
   },
   {
    "id": "myth-warren-brandeis-instantly-became-law",
    "claim": "Warren and Brandeis's article was quickly adopted by American courts and created the right of privacy.",
    "verdict": "MISLEADING",
-   "correction": "The article was influential in the long run, but New York's highest court expressly refused to recognise a common-law right of privacy in Roberson (1902), and it took legislation (New York, 1903) and a minority of courts such as Georgia's (1905) to establish it. By one count only about eighty cases mentioned the article by name between 1890 and 1960, against more than 400 in 1960-2007, after Prosser's restatement.",
+   "correction": "The article was influential in the long run, but New York's highest court expressly refused to recognise a common-law right of privacy in Roberson (1902). New York's legislature answered with a narrow statute in 1903, and Georgia's Supreme Court became the first state high court to recognise the right, in Pavesich (1905). Other state courts followed only gradually. By Amy Gajda's count, only about eighty cases mentioned the article by name between 1890 and 1960, against more than 400 in 1960–2007, after Prosser's restatement.",
    "sources": [
     {
      "institution": "Michigan State Law Review (Amy Gajda), via BrooklynWorks (Internet Archive snapshot)",
@@ -1089,9 +1611,9 @@
      "date": "2008",
      "url": "https://web.archive.org/web/2025/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
      "quote": "A LexisNexis search reveals that during the seventy-year span between the publication of \"The Right to Privacy\" in 1890 and Prosser's article in 1960, only about eighty cases mentioned Warren and Brandeis's article by name. In the forty-seven years between 1960 and 2007, more than 400 cases cited \"The Right to Privacy.\"",
-     "verificationStatus": "CONFIRMED",
+     "verificationStatus": "PENDING",
      "accessType": "FREE",
-     "note": "Footnote 10."
+     "note": "Footnote 10. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset every connection (fetch-text.py, curl, and the id_ variant); WebFetch cannot reach web.archive.org; the live BrooklynWorks PDF returns HTTP 403; the SSRN abstract 1026680 returns 403. So footnote 10 and its counts (about 80 cases in 1890–1960, over 400 in 1960–2007) are unverified."
     },
     {
      "institution": "Court of Appeals of New York (opinion text reproduced by Hofstra University)",
@@ -1101,8 +1623,37 @@
      "quote": "An examination of the authorities leads us to the conclusion that the so-called 'right of privacy' has not as yet found an abiding place in our jurisprudence",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Historical Society of the New York Courts",
+     "title": "Who Owns A Photo of Your Face? The Right to Privacy & The Courts",
+     "date": "2022-07-21",
+     "url": "https://history.nycourts.gov/events/roberson-privacy-rights/",
+     "quote": "In 1903, in response, the legislature passed the first state privacy law, which is still on the books.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The first fetch returned HTTP 307 (cookie redirect); the retry succeeded. The same paragraph says 'The State Supreme Court and Appellate Division agreed. But the Court of Appeals rejected her plea'. The date is the page's datePublished metadata."
+    },
+    {
+     "institution": "Smithsonian Magazine / History News Network (Sohini Desai)",
+     "title": "How the Rise of the Camera Launched a Fight to Protect Gilded Age Americans' Privacy",
+     "date": "2024-07-05",
+     "url": "https://www.smithsonianmag.com/history/how-the-rise-of-the-camera-launched-a-fight-to-protect-gilded-age-americans-privacy-180984656/",
+     "quote": "Soon after, the Supreme Court of Georgia became the first to recognize this category of privacy claim. Eventually, just about every state court in the country followed Georgia’s lead.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The preceding sentence is also FOUND: 'In its first legislative session following the court’s decision and the ensuing outrage, the New York state legislature made history by adopting a narrow “right to privacy,” which prohibited the use of someone’s likeness in advertising or trade without their written consent.'"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "DOWNGRADED",
+    "issues": [
+     "The Gajda source (index 0) could not be re-fetched: web.archive.org reset connections, BrooklynWorks returns 403 and SSRN returns 403. The 'about eighty' versus 'more than 400' case counts are therefore unverified this session and are now attributed to Gajda in the text.",
+     "The correction says it took legislation and 'a minority of courts such as Georgia's (1905)' to establish the right. That is misleading. Georgia's Supreme Court was the first to recognise the right, and Smithsonian/HNN says 'Eventually, just about every state court in the country followed Georgia's lead.' The sentence is rewritten.",
+     "The New York 1903 statute and Pavesich (1905) had no source on this record. Sources are added: the Historical Society of the New York Courts for 1903, and Smithsonian for Georgia. The same slice also has fuller records (new-york-privacy-statute-1903, pavesich-v-new-england-life-1905).",
+     "Nuance supporting the MISLEADING verdict: the NY Courts history page notes that in Roberson 'The State Supreme Court and Appellate Division agreed' with the plaintiff before the Court of Appeals reversed. Some lower courts did adopt the article's theory quickly; the state's highest court refused."
+    ]
+   }
   },
   {
    "id": "myth-us-constitution-states-right-to-privacy",
@@ -1129,14 +1680,41 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Syllabus point 3 refuses to extend the Amendment 'beyond the possible practical meaning' of 'persons, houses, papers, and effects'."
+    },
+    {
+     "institution": "U.S. National Archives and Records Administration",
+     "title": "The Bill of Rights: A Transcription",
+     "date": "accessed 2026-09-23",
+     "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+     "quote": "The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (Amendment IV). A case-insensitive count of 'privacy' gives 0 on this page, 0 on https://www.archives.gov/founding-docs/constitution-transcript, and 0 on https://www.archives.gov/founding-docs/amendments-11-27. So the word appears nowhere in the Constitution or its 27 amendments."
+    },
+    {
+     "institution": "Supreme Court of the United States (U.S. Reports, Library of Congress)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Stewart, J., dissenting",
+     "date": "1965-06-07",
+     "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep381/usrep381479/usrep381479.pdf",
+     "quote": "I can find no such general right of privacy in the Bill of Rights, in any other part of the Constitution, or in any case ever before decided by this Court.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Justice Black's dissent on the same page is also FOUND: 'The Court talks about a constitutional \"right of pri- vacy\" as though there is some constitutional provision or provisions forbidding any law ever to be passed which might abridge the \"privacy\" of individuals. But there is not.'"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "No factual error. This is a sourcing gap: the central claim that the word 'privacy' does not appear in the US Constitution was unsourced ('general knowledge'). It is now checked directly. The National Archives transcriptions of the Constitution, the Bill of Rights and Amendments 11–27 contain zero occurrences of 'privacy' (the fetched texts are 27,998, 9,852 and 18,653 characters). The Fourth Amendment wording is quoted from the National Archives, and Justice Stewart's Griswold dissent is added.",
+     "Griswold's date (7 June 1965) and Olmstead's date (4 June 1928) are both confirmed in the U.S. Reports syllabi."
+    ]
+   }
   },
   {
    "id": "myth-census-only-aggregate-japanese-americans",
    "claim": "The US Census Bureau only released neighbourhood-level statistics on Japanese Americans in the Second World War, never names.",
    "verdict": "FALSE",
-   "correction": "For decades the Bureau acknowledged releasing block-level data but maintained it never provided individual 'microdata'. Commerce Department records found by Margo Anderson and William Seltzer (2007) show the Bureau supplied the names and locations of people of Japanese ancestry in the Washington, D.C., area to the Treasury (Secret Service) within seven days of an 4 August 1943 request. Former director Kenneth Prewitt called the evidence convincing.",
+   "correction": "For decades the Census Bureau denied giving other agencies individual “microdata”. By 2000 it had acknowledged, and director Kenneth Prewitt had apologised for, releasing neighbourhood-level (tract and block) data used in the removal of Japanese Americans. In 2007 Margo Anderson and William Seltzer found Commerce Department records showing that the Bureau gave the Treasury, for the Secret Service, the names and locations of people of Japanese ancestry in the Washington, D.C., area. It did so seven days after a 4 August 1943 request from Treasury Secretary Henry Morgenthau. The records show no such lists for other parts of the country. Prewitt, Census director from 1998 to 2000, called the new evidence convincing.",
    "sources": [
     {
      "institution": "Scientific American (JR Minkel)",
@@ -1147,14 +1725,33 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same article quotes Kenneth Prewitt, Census director 1998-2000: 'The [new] evidence is convincing'."
+    },
+    {
+     "institution": "Social Research (William Seltzer and Margo Anderson)",
+     "title": "The Dark Side of Numbers: The Role of Population Data Systems in Human Rights Abuses",
+     "date": "2001",
+     "url": "https://jlgodwin.github.io/CSDE502-Sp23/Readings/Week%204/SeltzerAnderson2001.pdf",
+     "quote": "Despite accusations that microdata were released (Toland, 1982), the bureau has denied the charge and no definitive evidence to the contrary has emerged. Nevertheless, there now seems to be general agreement that the provision of mesodata and professional expertise violated the spirit, if not the letter, of the promises embodied in the census confidentiality laws (Prewitt, 2000).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Social Research 68(2):481-513, at 492 (JSTOR 40971467); read from a free course-reader copy (--check FOUND). An independent peer-reviewed account written before the 2007 discovery. It shows that the Bureau still denied releasing microdata in 2001, and that it had given the West Coast military authorities tract-level tabulations (January 1942) and census-block maps, also FOUND: 'making available census-block maps showing the number of Japanese American enumerated as residing in each block'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong history in the correction. It says 'For decades the Bureau acknowledged releasing block-level data'. The opposite is true. The acknowledgement dates only from 2000: Anderson and Seltzer documented the tract and block data that year, and director Kenneth Prewitt apologised in 2000. SciAm opens with 'Despite decades of denials', and Seltzer and Anderson (Social Research 2001, p. 492) say the bureau 'has denied the charge' that microdata were released.",
+     "Overreach by omission. The correction does not say that the 2007 records cover only the Washington, D.C., area. SciAm: 'The records, however, do not indicate that the Bureau was asked for or divulged such information for Japanese-Americans in other parts of the country.' Added, so readers do not infer that name lists were used for the West Coast removal.",
+     "Typo: 'an 4 August 1943' should be 'a 4 August 1943'. The request came from Treasury Secretary Henry Morgenthau, which is now named.",
+     "Checked OK: the SciAm quote is verbatim (FOUND); the title, the 30 March 2007 date and the author JR Minkel match; the data were released seven days after the request; the documents were found in the records of the Commerce Department's chief clerk; Prewitt was Census director 1998-2000 and said 'The [new] evidence is convincing'. The FALSE verdict on the claim 'never names' stands."
+    ]
+   }
   },
   {
    "id": "myth-ibm-punch-cards-located-holocaust-victims",
    "claim": "IBM/Hollerith punch-card machines were how the Nazis found and identified the Jews they murdered.",
    "verdict": "MISLEADING",
-   "correction": "Hollerith (IBM subsidiary) machines did tabulate German census data, including the 1939 census's 'race' data, and were later used in the concentration-camp administration to track prisoners' labour skills. But the US Holocaust Memorial Museum stresses that locating and identifying victims 'did not rely on modern technology'; about 4.5 million of the 6 million Jews killed lived in eastern Europe where such technology was absent, and identification was done by paper records. Registers, identity cards and census returns — not the machines — were the decisive tools (see the Dutch register and the 1939 supplementary cards).",
+   "correction": "Hollerith punch-card machines, made by IBM's German subsidiary, did tabulate German census data, including the 1939 census's “race” data. From 1942 they were used at the headquarters of the concentration-camp system to track living prisoners, especially their occupational skills. But the US Holocaust Memorial Museum stresses that locating and identifying victims “did not rely on modern technology”. That was done with paper records (Jewish community lists, church, tax and police records, compulsory self-registration) and with local knowledge and denunciation. About 4.5 million of the 6 million Jews killed lived in Poland, the Baltics and the Soviet Union, where such machines would not have been found. In the occupied Netherlands, the population register and its identity cards played an important role in rounding Jews up. Edwin Black's IBM and the Holocaust (2001) argues for a larger role for the machines.",
    "sources": [
     {
      "institution": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
@@ -1166,7 +1763,15 @@
      "accessType": "FREE",
      "note": "Same article: 'Hollerith machine technology was introduced at the headquarters of the concentration camp system in 1942 and was used there not to locate and identify people to be killed (this was done by paper record) but as a way of managing and tracking data on living prisoners.' and 'About 75%, or 4.5 million of the 6 million Jews killed in the Holocaust, lived in Poland, the Baltics (Lithuania, Latvia, Estonia), and the Soviet Union'. Edwin Black's IBM and the Holocaust (2001) makes the stronger claim; it was not read for this record."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The last sentence overstates the case and conflicts with a source used elsewhere in this slice. It lists '1939 supplementary cards' and 'census returns' among 'the decisive tools'. The Bundesarchiv essay on those cards (Zimmermann) says their use for the deportations 'could not be proved so far ... and is rather unlikely', because the cards reached the registration offices only in April/May 1941 and the Reich Office of Genealogy in January 1942. USHMM, the source cited here, names 'paper records and local knowledge': Jewish community records, parish records, tax records, police records and registries, compulsory self-identification, and denunciation. It does not name census returns. Rewritten to follow USHMM. The Dutch example is kept: Seltzer and Anderson (p. 487) say the Dutch registers and identity cards 'played an important role'.",
+     "Minor precision: the machines were introduced at the concentration-camp headquarters in 1942 and tracked living prisoners, 'particularly' their occupational skills. The date is now given.",
+     "Checked OK: the USHMM quote is verbatim (FOUND) and the title 'Locating the Victims' is right; the 1939 census recorded 'race'; Hollerith was an IBM subsidiary; 'About 75%, or 4.5 million of the 6 million Jews killed ... lived in Poland, the Baltics ... and the Soviet Union'. Edwin Black's IBM and the Holocaust is from 2001. The MISLEADING verdict is appropriate."
+    ]
+   }
   }
  ]
 }

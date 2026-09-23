@@ -1,0 +1,415 @@
+{
+ "slice": "agents",
+ "chunk": 7,
+ "verdicts": [
+  {
+   "kind": "argument",
+   "id": "arg-2-click-through-does-not-survive-delegation",
+   "status": "FIXED",
+   "issues": [
+    "Re-fetched arXiv 2507.12844. --check FOUND. The abstract page's submission history shows v1 on Thu 17 Jul 2025 and v2 on 12 Nov 2025. The unversioned /pdf URL serves v2, and the same sentence is also in v1, so the 2025-07-17 date holds. Section 4.2.1 tested three models (GPT-4o, Claude 3.7 Sonnet and Gemini 2.0 Flash, 10 trials each per banner) on a clone of one news site (Tiroler Tageszeitung). 'LLM web agents' with no qualifier generalizes a single-site, three-model test, so the explanation now names the setting.",
+    "The ChatGPT agent page's context reads 'With a single click in ChatGPT's settings, you can delete all browsing data and immediately log out of all active website sessions. Otherwise, cookies persist based on each visited website's cookie policies'. 'Keeps cookies' is right, but only unless the user clears them. That qualifier is added.",
+    "Operator: the page says Operator 'asks the user to take over' as a safety design, and calls it 'one of our first agents'. 'Had to hand the keyboard back' reads as a forced limitation. It is reworded to what the page says.",
+    "'Consent ... has no defined meaning when software performs it' is overstated. The GDPR already contemplates consent through technical settings (Recital 32) and objection 'by automated means' (Art. 21(5)). What has no settled meaning is an AI agent clicking 'accept' on a person's behalf. The explanation is softened to say that.",
+    "The Wayback sources (index 1 and 2) could not be re-fetched live (see the notes). Their quotes and context were confirmed today from the cached copy of the same capture URLs."
+   ],
+   "fieldFixes": {
+    "explanation": "In a controlled test on a cloned news site, three LLM web agents (GPT-4o, Claude 3.7 Sonnet and Gemini 2.0 Flash) facing cookie banners never opened the granular settings - they accepted everything or nothing. OpenAI's ChatGPT agent keeps cookies 'based on each visited website's cookie policies' unless the user clears its browsing data, and its earlier browsing agent, Operator, asks the human to take over when login credentials or payment details are needed. Consent designed as a human ceremony has no settled meaning when an AI agent performs it on a person's behalf."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23 on the v2 PDF (the unversioned URL); the sentence is also present in v1 (arxiv.org/pdf/2507.12844v1). The abs page shows v1 submitted 17 Jul 2025 and v2 on 12 Nov 2025. Authors are Nitu and Stöckl (Digital Media Lab, University of Applied Sciences Upper Austria, Hagenberg) and Mühle (506 Data & Performance GmbH). Three models were tested on a clone of the Tiroler Tageszeitung site."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection through the agent proxy during this pass (2026-09-23, several retries, curl and fetch-text.py), so a live re-fetch failed. The quote and its surrounding paragraph were read earlier the same day from fetch-text.py's cached copy of this exact capture URL (fetched 10:2x UTC 2026-09-23); that cache was later cleared by another process. openai.com itself returns HTTP 403 to scripts and to WebFetch. The context read: 'Privacy controls: With a single click in ChatGPT's settings, you can delete all browsing data and immediately log out of all active website sessions. Otherwise, cookies persist ...'. The page date is 'July 17, 2025'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection through the agent proxy during this pass (2026-09-23, several retries, curl and fetch-text.py), so a live re-fetch failed. The quote and its surrounding paragraph were read earlier the same day from fetch-text.py's cached copy of this exact capture URL (fetched 10:2x UTC 2026-09-23); that cache was later cleared by another process. openai.com itself returns HTTP 403 to scripts and to WebFetch. The page is dated 'January 23, 2025'. It continues: 'When in takeover mode, Operator does not collect or screenshot information entered by the user.' It calls Operator 'one of our first agents'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "argument",
+   "id": "arg-3-portable-statement-of-principals-terms",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND 2026-09-23. The IEEE SA page gives 'Board Approval 2025-11-04', 'Published: 2026-01-20' and 'PAR Approval 2017-12-06', with Doc Searls as Working Group Chair. The myterms.info agreements page was modified 2026-01-22 (JSON-LD dateModified).",
+    "'IEEE 7012 is written for exactly this' overstates. The PAR dates from 2017, and in the scope sentence 'AI agents' are listed among the service providers individuals engage (second parties), not as the person's own agent. The abstract separately provides that 'Computing devices and software performing as agents for both first and second parties shall engage using any protocol', and that the first party points to terms chosen from 'a roster kept by an independent and neutral non-business entity'. The explanation is reworded to keep these roles straight.",
+    "'Without it, the only terms an agent can carry are each site's own' overstates. Agents can already carry one-bit signals such as GPC, which are legally binding in California and Colorado. It is narrowed to contractual terms."
+   ],
+   "fieldFixes": {
+    "explanation": "IEEE 7012 provides for this. It covers agreements between individuals and the service providers they engage, 'including websites, applications and AI agents'. The individual, acting as first party, points to standard-form terms chosen from a roster kept by an independent, neutral non-business entity, and software agents may act for either side. MyTerms describes SD-BASE as the default agreement for 'any individual using an agent'. Without such a standard, the only contractual terms an agent meets are each site's own."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23 on standards.ieee.org. The page shows Published 2026-01-20, Board Approval 2025-11-04 and PAR Approval 2017-12-06."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The sentence is under the 'SD-BASE' heading in 'Relationship Agreements'. Page JSON-LD has dateModified 2026-01-22."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. In this sentence 'AI agents' are among the service providers (second parties) the individual engages."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "argument",
+   "id": "arg-4-records-on-both-sides-make-delegation-auditable",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND 2026-09-23. The AP2 blog's JSON-LD has datePublished 2025-09-16, and its H1 matches the title (og:title is 'Announcing Agent Payments Protocol (AP2)'). The ICO page's DC.Date is 'Thursday, January 08, 2026'. The ICO sentence sits under 'Agentic controls' after 'Valuable areas of research would include:', so 'among the research it wants' is right.",
+    "'Commerce has already adopted the same logic' overstates. AP2 is a protocol Google announced with partners, and the page gives no adoption data. It is reworded to 'agent-payment protocols already apply'.",
+    "The record's matching-record requirement applies only 'If both parties agree'. That condition is now stated.",
+    "EchoLeak is named without a source in this record. The CVE record and the arXiv case study (both --check FOUND) are added."
+   ],
+   "fieldFixes": {
+    "explanation": "IEEE 7012 requires that, once both parties agree, each side keeps a matching record that can be 'retrieved, audited, or disputed'. Agent-payment protocols already apply the same logic: Google's AP2 uses cryptographically signed 'Mandates' to create 'a non-repudiable audit trail'. The ICO lists 'mechanisms for redress and restitution, particularly in agent ecosystems' among the valuable areas of research. Prompt-injection exfiltration such as EchoLeak (CVE-2025-32711) makes that need concrete."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23 on standards.ieee.org."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. datePublished is 2025-09-16. The page also says Mandates are 'tamper-proof, cryptographically-signed digital contracts'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The sentence follows 'Valuable areas of research would include:'. The ICO report's DC.Date is 8 January 2026."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "MITRE CVE Program (record assigned by Microsoft)",
+     "title": "CVE-2025-32711: M365 Copilot Information Disclosure Vulnerability (CVE JSON record)",
+     "date": "2025-06-11",
+     "url": "https://cveawg.mitre.org/api/cve/CVE-2025-32711",
+     "quote": "Ai command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "--check FOUND 2026-09-23 via the CVE Services API."
+    },
+    {
+     "institution": "arXiv (Cornell University)",
+     "title": "EchoLeak: The First Real-World Zero-Click Prompt Injection Exploit in a Production LLM System (Reddy & Gujral)",
+     "date": "2025-09-06",
+     "url": "https://arxiv.org/abs/2509.10540",
+     "quote": "This paper presents an in-depth case study of EchoLeak (CVE-2025-32711), a zero-click prompt injection vulnerability in Microsoft 365 Copilot that enabled remote, unauthenticated data exfiltration via a single crafted email.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The submission history shows v1 on Sat 6 Sep 2025."
+    }
+   ]
+  },
+  {
+   "kind": "argument",
+   "id": "arg-5-regulators-honour-machine-readable-signals",
+   "status": "FIXED",
+   "issues": [
+    "The CCPA regulations PDF and the EDPB-EDPS opinion both --check FOUND 2026-09-23. The quote is § 7025(b) and is scoped to 'A business that sells or shares personal information', so the explanation's 'businesses' is narrowed to match. The Joint Opinion 2/2026 is 'Adopted on 10 February 2026', and its para. 108 opens 'The EDPB and the EDPS strongly welcome proposed Article 88b GDPR', which supports 'welcomed'.",
+    "GDPR source (index 0): the Wayback capture could not be re-fetched live (web.archive.org reset connections), and EUR-Lex returns a bot challenge (NOT-FOUND). The identical Art. 21(5) text --check FOUND on legislation.gov.uk's 'Original (As adopted by EU)' version, which is added as an independent source. The quote is correct.",
+    "'Colorado has enforced a universal opt-out since July 2024' is imprecise. The Colorado AG says controllers 'will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024'. That is an obligation, and no enforcement action was verified. It is reworded.",
+    "'AB 566 obliges browsers to offer one from 2027': the statute obliges businesses that develop or maintain browsers, operative 1 January 2027 (per the CPPA announcement: 'When the law takes effect in January 2027'). It is reworded to 'browser makers'. leginfo.legislature.ca.gov timed out and reset in this pass, so the CPPA announcement (FOUND) is added.",
+    "'Dropped from the Council's June 2026 text' had no source in this record, and the Council text itself was not read. noyb (FOUND: 'In the proposal for a final vote in the Council, Article 88b was removed entirely from the Digital Omnibus') and the 10 Sep 2026 coalition letter (FOUND: it asks the Irish presidency 'to re-insert Article 88b into their next compromise text') are added. The claim is now attributed to noyb."
+   ],
+   "fieldFixes": {
+    "explanation": "The GDPR already lets people object 'by automated means using technical specifications'. California's regulations make businesses that sell or share personal information treat opt-out preference signals as valid requests. AB 566 obliges browser makers to offer such a signal from 1 January 2027, and Colorado has required businesses to accept universal opt-out signals since 1 July 2024. The EU's proposed Article 88b would require controllers to accept automated, machine-readable consent choices. The EDPB and EDPS strongly welcomed it, but according to noyb it was removed from the Council's 18 June 2026 text."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "The live re-fetch of this Wayback capture failed on 2026-09-23 (web.archive.org reset every connection through the proxy). eur-lex.europa.eu direct returns NOT-FOUND (bot challenge). The identical text --check FOUND on https://www.legislation.gov.uk/eur/2016/679/article/21/adopted (Original, as adopted by EU, Art. 21 para. 5), added as a source. The quote is correct."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The quote is § 7025(b) in the CPPA's consolidated regulations 'Effective 1/1/2026'. It applies to 'A business that sells or shares personal information'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. It is para. 108, section 10.2, of the Joint Opinion 2/2026 'Adopted on 10 February 2026', which begins 'The EDPB and the EDPS strongly welcome proposed Article 88b GDPR'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "The National Archives (UK), legislation.gov.uk - Regulation (EU) 2016/679, original version as adopted by the EU",
+     "title": "Regulation (EU) 2016/679 (GDPR), Article 21 Right to object, paragraph 5 (Original, as adopted by EU)",
+     "date": "2016-04-27",
+     "url": "https://www.legislation.gov.uk/eur/2016/679/article/21/adopted",
+     "quote": "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page labels this text 'the original version as it was originally adopted in the EU'. The date is the regulation's adoption date (the Official Journal publication was 4 May 2016)."
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "Governor Signs Groundbreaking Privacy Bill Making It Easier for Californians to Protect Their Personal Data",
+     "date": "2025-10-08",
+     "url": "https://cppa.ca.gov/announcements/2025/20251008_2.html",
+     "quote": "Today, Governor Newsom signed the California Opt Me Out Act (AB 566, Lowenthal) , making California the first state in the nation to require browsers to offer users a simple, built-in way to tell websites not to sell or share their personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same page says: 'When the law takes effect in January 2027, Californians will see new privacy options in web browsers.'"
+    },
+    {
+     "institution": "Colorado Attorney General (Colorado Department of Law)",
+     "title": "Colorado Privacy Act (CPA) - resource page",
+     "date": "2024",
+     "url": "https://coag.gov/resources/colorado-privacy-act/",
+     "quote": "Data controllers will be required to accept opt-out requests through universal opt-out mechanisms starting on July 1, 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is an undated resource page."
+    },
+    {
+     "institution": "noyb - European Center for Digital Rights",
+     "title": "EU Member States (and Google) suddenly want to keep cookie banners!",
+     "date": "2026-06-23",
+     "url": "https://noyb.eu/en/eu-member-states-and-google-suddenly-want-keep-cookie-banners",
+     "quote": "In the proposal for a final vote in the Council, Article 88b was removed entirely from the Digital Omnibus",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is an advocacy group's account. The page links the 'Council position of 18 June (published by Politico)', which was not read."
+    },
+    {
+     "institution": "Kill the Cookie Banner coalition (letter hosted by noyb)",
+     "title": "Joint call to replace cookie banners with automated signals (Article 88b proposal for a Digital Omnibus COM(2025) 837 final)",
+     "date": "2026-09-10",
+     "url": "https://noyb.eu/sites/default/files/2026-09/Joint%20letter%20Kill%20the%20Cookie%20Banner%20Campaign%2010092026.pdf",
+     "quote": "We therefore call on the Irish presidency, ambassador Aingeal O'Donoghue, to re-insert Article 88b into their next compromise text and recommence the discussion with Member States.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The date comes from the file name (10092026)."
+    }
+   ]
+  },
+  {
+   "kind": "argument",
+   "id": "arg-6-pdc-ai-opt-in-for-training",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND 2026-09-23.",
+    "'Italy's regulator found ChatGPT was trained without an adequate legal basis' overstates the cited source. Doc. web 9870832 is an urgent measure ('in via d'urgenza e nelle more del completamento della necessaria istruttoria' - pending completion of the investigation), and 'RILEVATA' records a provisional finding. The final decision (no. 755 of 2 Nov 2024, EUR 15 million fine) was overturned. The Garante's own notice (--check FOUND) says the Court of Rome's judgment no. 4153/2026, published 18 March 2026, 'upheld the appeal lodged against the Authority's decision', and the decision was removed from the site. The same slice's myth record 'myth-openai-15m-fine-stands' marks the unqualified claim MISLEADING. The explanation must carry this caveat.",
+    "The 'legitimate interests' plus right-to-object claim had no source in this record. The proposed Article 88c text in the Council register copy of COM(2025) 837 (--check FOUND) is added. The 10 Sep 2026 coalition letter still calls the Omnibus 'pending', so 'pending' is right.",
+    "Cisco's 30% is self-reported ('say they enter') among GenAI users in a 2,600-respondent, 12-country 2024 consumer survey. The wording now says so, rather than stating it as observed behaviour."
+   ],
+   "fieldFixes": {
+    "explanation": "In an urgent March 2023 order, Italy's regulator noted the absence of an adequate legal basis for training ChatGPT on personal data. The EUR 15 million fine that followed in 2024 was overturned when the Court of Rome upheld OpenAI's appeal in March 2026. The EU's pending Digital Omnibus proposal would let AI development rest on 'legitimate interests' plus an unconditional right to object. Machine-readable AI signals so far serve content owners (robots.txt, AIPREF, RSL, Cloudflare). MyTerms' PDC-AI agreement lets an individual affirmatively offer specific data 'for the purposes of Training and Operating AI technologies' on their own terms. Meanwhile 30% of GenAI users in Cisco's 2024 12-country survey say they already enter personal or confidential information into these tools."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The sentence is under the 'PDC-AI' heading in 'Data Contribution Agreements', which the page defines as 'one-off contributions of data for a particular purpose'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. This is an urgent provisional measure (art. 58(2)(f) GDPR, 'in via d'urgenza e nelle more del completamento della necessaria istruttoria'), not a final finding. See the added Garante notice on the later annulment."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The figure is self-reported by GenAI users in Cisco's 2024 consumer survey (2,600 adults, 12 countries)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Council of the European Union (register copy of the Commission proposal)",
+     "title": "Digital Omnibus, COM(2025) 837 final - proposed Article 88c GDPR (Processing in the context of the development and operation of AI)",
+     "date": "2025-11-19",
+     "url": "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
+     "quote": "such processing may be pursued for legitimate interests within the meaning of Article 6(1)(f) of Regulation (EU) 2016/679",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same article ends: 'providing data subjects with an unconditional right to object to the processing of their personal data' (also --check FOUND)."
+    },
+    {
+     "institution": "Garante per la protezione dei dati personali (Italian Data Protection Authority)",
+     "title": "ChatGPT, The Italian Data Protection Authority closes the preliminary investigation (notice added after the Court of Rome ruling, doc. web n. 10085432)",
+     "date": "2026-03-18",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432",
+     "quote": "Decision No. 755 of 2 November 2024 has been temporarily removed from the website of the Italian Data Protection Authority following judgment No. 4153/2026 of the Court of Rome. The judgment, published on 18 March 2026, upheld the appeal lodged against the Authority’s decision",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The Italian version reads 'accolta l'opposizione proposta avverso il provvedimento del Garante'. The judgment itself was not read."
+    }
+   ]
+  },
+  {
+   "kind": "argument",
+   "id": "arg-7-intention-economy-without-surveillance",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND 2026-09-23. The Visa release is dated 'SAN FRANCISCO --(BUSINESS WIRE)--Apr. 30, 2025'. The quoted sentence is spoken by Visa's Jack Forestell, not in Visa's own voice, which is acceptable. The release also says Visa Intelligent Commerce 'Allows consumers to easily set spending limits and conditions'. 'Payment networks already let consumers' generalizes from one network's April 2025 announcement, so it is narrowed to Visa's announcement.",
+    "'The Intention Economy Doc Searls described in 2012': Searls coined and described the idea in Linux Journal on 8 March 2006 ('Hence my idea: The Intention Economy'). 2012 is the year of the Harvard Business Review Press book. The attribution now gives both dates, and sources for each (--check FOUND) are added."
+   ],
+   "fieldFixes": {
+    "explanation": "Visa's Intelligent Commerce, announced in April 2025, lets consumers pre-set preferences and spending limits for agents, and AP2 records a shopper's 'Intent Mandate'. MyTerms' PDC-INTENT agreement applies the same idea to data: people 'gather, curate and share intent data under their control', rather than having intent inferred from tracking. This is the Intention Economy that Doc Searls named in 2006 and set out in his 2012 book."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The sentence is under the 'PDC-INTENT' heading. Page dateModified is 2026-01-22."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. datePublished is 2025-09-16. The sentence is under 'Delegated tasks (human not present)'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Visa Inc. (press release distributed via Business Wire)",
+     "note": "--check FOUND 2026-09-23 on usa.visa.com. The page is dated 4/30/2025 and the dateline reads 'SAN FRANCISCO --(BUSINESS WIRE)--Apr. 30, 2025'. The quoted words are Jack Forestell's."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Linux Journal",
+     "title": "The Intention Economy (Doc Searls)",
+     "date": "2006-03-08",
+     "url": "https://www.linuxjournal.com/content/intention-economy",
+     "quote": "In The Intention Economy, the buyer notifies the market of the intent to buy, and sellers compete for the buyer's purchase.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The byline is Doc Searls, 'on March 8, 2006'. The article says: 'Hence my idea: The Intention Economy.'"
+    },
+    {
+     "institution": "MyTerms (myterms.info)",
+     "title": "MyTerms FAQs - Common Questions About the Privacy Standard",
+     "date": "2026-01-26",
+     "url": "https://myterms.info/faqs/",
+     "quote": "It is described in The Intention Economy: When Customers Take Charge, by Doc Searls, which was published by Harvard Business Review Press, in 2012.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page's JSON-LD dateModified is 2026-01-26."
+    }
+   ]
+  },
+  {
+   "kind": "argument",
+   "id": "arg-8-platform-owned-personal-agents",
+   "status": "FIXED",
+   "issues": [
+    "The ICO, the coalition letter and the Stripe quotes --check FOUND 2026-09-23. The ICO phrase is in its list of 'Novel agentic AI data protection risks' (DC.Date 8 Jan 2026). The Stripe release's datePublished is 2025-09-29. The letter describes its signatories as 'leading civil society organisations ... representing the interest of consumers, academics and businesses'.",
+    "'with built-in memory of what users read' overstates the Atlas source. The same OpenAI page says 'Browser memories in Atlas are completely optional, and you're always in control' and 'If you turn on browser memories, ChatGPT will remember key details from content you browse'. The feature is opt-in, not simply built in, and the explanation is corrected. The page does say 'Your ChatGPT memory is built in', but that refers to chat memory, not to what users read.",
+    "The Atlas Wayback source (index 2) could not be re-fetched live. Its quote and the 'completely optional' context were read today from the cached copy of the same capture."
+   ],
+   "fieldFixes": {
+    "explanation": "The leading agents run inside the platforms' own browsers and chat apps: OpenAI's Atlas browser offers opt-in 'browser memories' of the sites users visit, and the new commerce protocols are billed as 'merchant-friendly'. The ICO flags the 'concentration of personal information facilitating personal assistant agents'. A coalition of civil-society groups demands that 'independent user agents' can send privacy signals without gatekeeper interference. A neutral, standard set of terms that any agent can carry is a counterweight."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The phrase is the last item in the executive summary's list of 'Novel agentic AI data protection risks'. DC.Date is 'Thursday, January 08, 2026'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The sentence is in the letter's annex. The date comes from the file name (10092026)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "web.archive.org reset every connection through the agent proxy during this pass (2026-09-23, several retries, curl and fetch-text.py), so a live re-fetch failed. The quote and its surrounding paragraph were read earlier the same day from fetch-text.py's cached copy of this exact capture URL (fetched 10:2x UTC 2026-09-23); that cache was later cleared by another process. openai.com itself returns HTTP 403 to scripts and to WebFetch. The page is dated 'October 21, 2025'. The same paragraph continues: 'Browser memories in Atlas are completely optional, and you're always in control: you can view or archive them at any time in settings'. A later section begins 'If you turn on browser memories'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The page H1 matches the title, and datePublished is 2025-09-29."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "argument",
+   "id": "arg-9-public-wants-control",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes --check FOUND 2026-09-23. On the 2026 Pew page, article:published_time is 2026-06-17 and the fieldwork line reads 'We surveyed 5,119 U.S. adults from Feb. 17 to 23, 2026'. The 2025 page gives 55% for the public and 57% for AI experts, with 2024 fieldwork. The 2023 page (published 2023-10-18) says 'This survey was conducted among 5,101 U.S. adults from May 15 to 21, 2023'. 'To use it responsibly' is a fair paraphrase of 'to make responsible decisions about how they use it in their products'. The numbers, years and populations are all right.",
+    "Minor: source 0's title is truncated. The page H1 is 'Americans and AI 2026: Chatbots, Smart Devices and Views on Impact'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "title": "Americans and AI 2026: Chatbots, Smart Devices and Views on Impact",
+     "note": "--check FOUND 2026-09-23. Fieldwork was Feb. 17-23, 2026 (5,119 U.S. adults), and the page was published 2026-06-17."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The page H1 is 'How the U.S. Public and AI Experts View Artificial Intelligence', and fieldwork was August 2024."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. Fieldwork was May 15-21, 2023 (5,101 U.S. adults), and the page was published 2023-10-18."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "counterpoint",
+   "id": "counter-adoption-incentives",
+   "status": "FIXED",
+   "issues": [
+    "Both FAQ quotes --check FOUND 2026-09-23 on myterms.info/faqs/ (JSON-LD datePublished 2025-11-11, dateModified 2026-01-26). The question headings are 'Any risks or downsides?' and 'Why do you think MyTerms will succeed in a world where the $.6 trillion adtech business, which relies on consent to surveillance, surely will not welcome it.'",
+    "The response says 'the standard' will take time to propagate, but the FAQ's subject is 'The agreements themselves' ('not all organisations will adopt them'). This is corrected.",
+    "The response offers 'the proposed EU Article 88b' as a regulatory lever without saying that, according to noyb, the Council removed it from its 18 June 2026 text. The same slice records this in 'council-drops-article-88b-coalition-letter-2026'. Article 88b also covers consent and objection signals, not full contractual terms. The caveat is added, with the noyb source.",
+    "'There is no public adoption data yet' cannot be proven as a negative. myterms.info shows only a launch (28 Jan 2026) and a feedback phase with 5 agreements. The claim is reworded as a finding bounded by date."
+   ],
+   "fieldFixes": {
+    "response": "The MyTerms project concedes that its agreements 'will take time to propagate and not all organisations will adopt them', and says its first targets are sites 'that don't participate in the surveillance economy'. Adoption therefore likely depends on regulatory pressure or on accepting sites gaining trust. The nearest EU lever, the proposed Article 88b on machine-readable privacy choices, covers consent signals rather than full terms, and according to noyb it was removed from the Council's June 2026 text. We found no public adoption data as of September 2026."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. The answer is to FAQ 12, 'Any risks or downsides?'. Page dateModified is 2026-01-26."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "--check FOUND 2026-09-23. This is point '1. We're not starting there.' under FAQ 16."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "noyb - European Center for Digital Rights",
+     "title": "EU Member States (and Google) suddenly want to keep cookie banners!",
+     "date": "2026-06-23",
+     "url": "https://noyb.eu/en/eu-member-states-and-google-suddenly-want-keep-cookie-banners",
+     "quote": "In the proposal for a final vote in the Council, Article 88b was removed entirely from the Digital Omnibus",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. This is an advocacy group's account. The Council document itself was not read."
+    }
+   ]
+  }
+ ]
+}

@@ -135,7 +135,7 @@ window.privacyData = {
         {
           institution: "Hessisches Landesarchiv / Hessisches Hauptstaatsarchiv Wiesbaden (Arcinsys)",
           title: "HHStAW Fonds 557: Der Hessische Datenschutzbeauftragte (fonds description)",
-          date: "2024",
+          date: "2025",
           url: "https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=b2988",
           quote: "Am 7. Oktober 1970 verabschiedete der Hessische Landtag das 'Datenschutzgesetz' (GVBl. I S. 625).",
           note: "Translation: 'On 7 October 1970 the Hessian Landtag passed the Data Protection Act (GVBl. I p. 625).' The same page gives entry into force as 13.10.1970, says the law covered state authorities and bodies under state supervision (§ 1), and names the introduction of automated data processing (ADV) in the state administration as the occasion. Page date is the last accession year listed (2018-2024).",
@@ -163,17 +163,18 @@ window.privacyData = {
       ]
     },
     {
-      value: "201",
+      value: "244",
       label: "hours a year to read the privacy policies",
-      sublabel: "of the sites one American visits (2008)",
+      sublabel: "of the sites one American visits (2008 estimate)",
       color: "v9",
       source: [
         {
-          institution: "Carnegie Mellon University (authors' pre-press version; published in I/S: A Journal of Law and Policy for the Information Society, 2008)",
+          institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
           title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
           date: "2008",
           url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
-          quote: "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user.",
+          quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day. … We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user. Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+          note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -277,7 +278,7 @@ window.privacyData = {
     paragraphs: [
       {
         heading: "A word that meant “deprived”",
-        text: "The English word “private” comes from the Latin privatus — set apart from what is public, belonging to oneself rather than to the state — which is itself formed from privare, to deprive or strip. The root carries both meanings at once: one’s own, and deprived of.{1} The noun “privacy” is recorded in English from the 1590s, first for a private matter or a secret; its sense of freedom from intrusion is dated only to 1814.{2} Greek thought drew the first map, dividing the household (oikos) from the political community (polis), and what is one’s own (idion) from what is common (koinon).{3,4,5} For the ancient Greeks, Hannah Arendt argued, a life lived only in private was “privative” — deprived of the public realm — while for moderns privacy’s most relevant function is to shelter the intimate.{6}",
+        text: "The English word “private” comes from the Latin privatus — set apart from what is public, belonging to oneself rather than to the state — which is itself formed from privare, to deprive or strip. The root carries both meanings at once: one’s own, and deprived of.{1} The Online Etymology Dictionary dates the noun “privacy” to the 1590s, first for a private matter or a secret, and its sense of freedom from intrusion only to 1814 — though other dictionaries find earlier uses.{2,3} Philosophical accounts of privacy usually begin with the Greeks: Aristotle divided the household (oikos) from the political community (polis), and what is one’s own (idion) from what is common (koinon).{4,5,6} For the ancient Greeks, Hannah Arendt argued, a life lived only in private was “privative” — deprived of the public realm — while for moderns privacy’s most relevant function is to shelter the intimate.{7}",
         source: [
           {
             institution: "Online Etymology Dictionary (Douglas Harper)",
@@ -296,6 +297,16 @@ window.privacyData = {
             url: "https://www.etymonline.com/word/privacy",
             quote: "1590s, \"a private or personal matter, a secret;\" c. 1600 as \"seclusion, state of being in retirement from company or the knowledge and observation of others,\" from private (adj.) + abstract noun suffix -cy. Meaning \"state of freedom from intrusion or interference\" is from 1814. Earlier was privatie (late 14c. as \"secret, mystery;\" c. 1400 as \"a secret, secret deed; solitude, privacy\"), from Old French privauté.",
             note: "Dictionaries differ on the first date: Merriam-Webster gives the 15th century for its sense 1a, reflecting the Middle English privatie/privetee forms. Treat \"late 14th-15th century (as privatie), 1590s (as privacy)\" as the safe statement.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Merriam-Webster",
+            title: "privacy (noun)",
+            date: "2026",
+            url: "https://www.merriam-webster.com/dictionary/privacy",
+            quote: "15th century, in the meaning defined at sense 1a",
+            note: "--check FOUND. This is the 'Word History / First Known Use' line. Sense 1a on the same page reads 'the quality or state of being apart from company or observation : seclusion' (seen in the raw HTML; the helper's paragraph extractor does not pick up the definition block). A search-engine snippet of the paywalled OED entry reports 'OED's earliest evidence for privacy is from 1534'. That was not verified from the OED itself.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -334,7 +345,7 @@ window.privacyData = {
             title: "Keigo Komamura, 'Privacy's Past: The Ancient Concept and Its Implications for the Current Law of Privacy'",
             date: "2019",
             url: "https://journals.library.wustl.edu/lawreview/article/6219/galley/23052/download/",
-            quote: "In ancient feeling the privative trait of privacy, indicated in the word itself, was all-important; it meant literally a state of being deprived of something, and even of the highest and most human of man's capacities. … The decisive historical fact is that modern privacy in its most relevant function, to shelter the intimate, was discovered as the opposite not of the political sphere but of the social, to which it is therefore more closely and authentically related.",
+            quote: "In ancient feeling the privative trait of privacy, indicated in the word itself, was all-important; it meant literally a state of being deprived of something, and even of the highest and most human of man's capacities. A man who lived only a private life, who like the slave was not permitted to enter the public realm, or like the barbarian had chosen not to establish such a realm, was not fully human. … The decisive historical fact is that modern privacy in its most relevant function, to shelter the intimate, was discovered as the opposite not of the political sphere but of the social, to which it is therefore more closely and authentically related.",
             note: "Komamura quotes Arendt verbatim (Hannah Arendt, The Human Condition, University of Chicago Press, 1958; p. 38 of the 2nd ed., 1998). The book itself is in copyright and was not read from a publisher copy. Komamura (pp. 1344-45) quotes Arendt, The Human Condition (1958), p. 38, verbatim. His own abstract adds: \"privacy has been a relational concept since the beginnings of western political thought.\"",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
@@ -343,15 +354,35 @@ window.privacyData = {
       },
       {
         heading: "Every culture draws the line somewhere",
-        text: "Alan Westin, drawing on studies of animal territoriality, argued that the human need for privacy is probably rooted in our animal origins.{1} The psychologist Irwin Altman concluded in 1977, from ethnographic evidence, that privacy is a universal process regulated by culturally specific means — secret forest paths among some Brazilian peoples, soft speech in Java, the Tuareg face veil — a boundary people open as well as close.{2,3} The sociologist Barrington Moore called it “a socially created need”.{4} The oldest rules are about relationships and homes: the Hippocratic Oath binds the physician to keep secret what he sees and hears in patients’ lives;{5} the Mishnah forbids opening a window onto a courtyard shared with neighbours;{6} and the Qur’an tells believers not to enter others’ houses until welcomed, and not to spy — in Arabic-Islamic usage, the idea closest to privacy is often hurma, what may not be looked at without permission.{7,8,9}",
+        text: "Alan Westin, drawing on studies of animal behaviour and territoriality, argued that the human need for privacy “may well be rooted” in our animal origins.{1,2,3} The psychologist Irwin Altman concluded in 1977, from ethnographic evidence, that privacy is a universal process regulated by culturally specific means — secret forest paths among some Brazilian peoples, soft speech in Java, the Tuareg face veil — a boundary people open as well as close.{4,5} The sociologist Barrington Moore called it “a socially created need”.{6} The oldest rules are about relationships and homes: the Hippocratic Oath binds the physician to keep secret what he sees and hears in patients’ lives;{7} the Mishnah bars opening a doorway or window opposite a neighbour’s onto a shared courtyard;{8} and the Qur’an tells believers not to enter others’ houses until welcomed, and not to spy — in Arabic-Islamic usage, the idea closest to privacy is often hurma, what may not be looked at without permission.{9,10,11}",
         source: [
           {
             institution: "Frontiers in Veterinary Science (vol. 8)",
-            title: "Clara Mancini et al., 'The Case for Animal Privacy in the Design of Technologically Supported Environments'",
+            title: "Patrizia Paci, Clara Mancini and Bashar Nuseibeh, 'The Case for Animal Privacy in the Design of Technologically Supported Environments'",
             date: "2022-01-07",
             url: "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.784794/full",
             quote: "In his seminal work on Privacy and Freedom, Westin ( 1 ) made direct reference to Ardrey ( 11 )'s writings on territoriality to argue that humans' need for privacy is likely rooted in our animal origins, and that humans and animals share a number of basic privacy-claiming mechanisms.",
-            note: "Secondary (peer-reviewed) summary of Westin 1967, ch. 1 (p. 26 cited). Westin's book was not read directly.",
+            note: "Secondary (peer-reviewed) summary of Westin 1967, ch. 1. Frontiers cites p. 26 for Westin's territoriality definitions. The animal-origins sentence itself is on p. 8 of Privacy and Freedom. Westin's book was not read directly.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+            title: "Privacy (substantive revision 19 October 2023)",
+            date: "2023-10-19",
+            url: "https://plato.stanford.edu/entries/privacy/",
+            quote: "Alan Westin (1967) surveyed several studies of animals, demonstrating that a desire for privacy is not restricted to humans.",
+            note: "From §4.8, 'The Privacy of Animals'. --check FOUND.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "University of North Bengal (PhD thesis, institutional repository)",
+            title: "Sangeeta Chatterjee, 'Right to privacy and its current trends: a comparative study under the legal systems of U.S.A, U.K. and India', ch. 2",
+            date: "2017",
+            url: "https://ir.nbu.ac.in/server/api/core/bitstreams/361ffe40-890e-4696-8de2-fcdeb1d64cb3/content",
+            quote: "studies of animal behavior and social organization suggest that man's need for Privacy may well be rooted in his animal origins, and that men and animal share several basic mechanisms for claiming privacy among",
+            note: "The thesis quotes Westin directly and cites Privacy and Freedom p. 8 (n. 8 and n. 10, 'Supra Note 8 at p.8'). The quotation runs over a page break ('...among their own followers'), so only the part on one page is quoted. 'men and animal' is the thesis's transcription. Item metadata: handle 123456789/2641, author Chatterjee, Sangeeta, advisor Rathin Bandyopadhyay, University of North Bengal, 2017. --check FOUND.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -388,7 +419,7 @@ window.privacyData = {
           {
             institution: "U.S. National Library of Medicine, History of Medicine Division",
             title: "Greek Medicine: The Oath",
-            date: "2026",
+            date: "2022-12-28 (last reviewed 2023-05-23)",
             url: "https://www.nlm.nih.gov/hmd/topics/greek-medicine/index.html",
             quote: "Whatever I see or hear in the lives of my patients, whether in connection with my professional practice or not, which ought not to be spoken of outside, I will keep secret, as considering all such things to be private. … The Hippocratic Oath (Ορκος) is perhaps the most widely known of Greek medical texts.",
             note: "The page says its display was curated by Michael North, then Head of Rare Books at NLM; the translator is not otherwise named. The Oath is conventionally dated to the late 5th or 4th century BCE; the page does not date it.",
@@ -410,9 +441,10 @@ window.privacyData = {
             title: "Norah Abokhodair and Sarah Vieweg, 'Privacy & Social Media in the Context of the Arab Gulf'",
             date: "2016",
             url: "https://arxiv.org/pdf/1604.03626",
-            quote: "Depending on the context, hurma has two meanings: 1) anything that is unlawful to obtain or look at without permission or 2) a woman, a sacred space (mosque or home) or a sacred time (holy month). … We suggest that privacy as practiced in traditional Islamic cultures, especially in the Gulf, involves three aspects; awrah, hurma, and haq al-khososyah.",
+            quote: "Depending on the context, hurma has two meanings: 1) anything that is unlawful to obtain or look at without permission or 2) a woman, a sacred space (mosque or home) or a sacred time (holy month). … We suggest that privacy as practiced in traditional Islamic cultures, especially in the Gulf, involves three aspects; awrah, hurma, and haq al-khososyah. … is an Arabic word that symbolizes the concept closest to the notion of privacy in the English vocabulary.",
             verificationStatus: "CONFIRMED",
-            accessType: "FREE"
+            accessType: "FREE",
+            note: "The sentence's subject is 'Hurma (ةمرح)'. The Arabic in parentheses breaks the PDF text layer, so the quote starts at the verb. --check FOUND. The same paper says: 'In Islam, awrah literally means the intimate parts of one's body. In the GCC, everyone is instructed to cover certain body parts' (--check FOUND)."
           },
           {
             institution: "Quran.com API (Saheeh International translation)",
@@ -438,7 +470,7 @@ window.privacyData = {
       },
       {
         heading: "Walls, rooms and seals",
-        text: "In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.{1} Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.{2} Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and sealed into their own envelopes, often with tamper-evident locks;{3} in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.{4} In 1878 the US Supreme Court carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.{5} French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.{6,7}",
+        text: "In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.{1,2,3} Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.{4} Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and secured to become their own envelopes, some with built-in tamper-evident locks;{5} in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.{6,7} In 1878 the US Supreme Court, while upholding a ban on mailing lottery circulars, carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.{8} French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.{9,10,11}",
         source: [
           {
             institution: "Online Library of Liberty (Liberty Fund), from Selected Writings of Sir Edward Coke, vol. I",
@@ -451,13 +483,33 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
+            institution: "Wikipedia",
+            title: "Semayne's case",
+            date: "2026",
+            url: "https://en.wikipedia.org/wiki/Semayne%27s_case",
+            quote: "is an English common law case reported by Sir Edward Coke",
+            note: "--check FOUND. The same sentence continues 'who was then the Attorney General for England and Wales' (--check FOUND). The infobox gives the court as King's Bench, 'Decided Michaelmas Term, 1604', with judges Popham CJ, Gawdy, Fenner, Yelverton and Williams JJ. This supports 'reported by Coke' as against OLL's framing of Coke as the judge.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+            title: "Wilson v. Arkansas, 514 U.S. 927 (1995)",
+            date: "1995-05-22",
+            url: "https://www.law.cornell.edu/supremecourt/text/514/927",
+            quote: "common-law admonition that an officer \"ought to signify the cause of his coming,\"",
+            note: "--check FOUND. This supports the knock-and-announce limit that the existing note attributes to the case. Wilson cites the case as 'Semayne's Case, 5 Co. Rep. 91a, 91b, 77 Eng.Rep. 194, 195 (K.B.1603)', a 1603 date that differs from the usual 1604.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
             institution: "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
             title: "Daniel J. Solove, 'Conceptualizing Privacy'",
             date: "2002",
             url: "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
             quote: "Until the seventeenth century, many homes merely consisted of a large, multipurpose space. … Not only would a couple sleep with their children, but even guests would share the bed. … Beginning in the seventeenth century, homes began to be partitioned into rooms, each assigned a distinct purpose and some even becoming personalized according to their occupants. … Even with rooms, solitude would often be disrupted because there were no corridors, and people would shuffle through rooms to move about the house.",
-            note: "Citing N.Y. Times/Gass (1986) and Rybczynski, Home (1986). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Citing Flaherty, Privacy in Colonial New England (1972), and Gottlieb. Citing Rybczynski, Home: A Short History of an Idea (1986), and Flaherty (1972). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/",
-            verificationStatus: "CONFIRMED",
+            note: "Citing N.Y. Times/Gass (1986) and Rybczynski, Home (1986). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Verification: Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again. Citing Flaherty, Privacy in Colonial New England (1972), and Gottlieb. Verification: Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again. Citing Rybczynski, Home: A Short History of an Idea (1986), and Flaherty (1972). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Verification: Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again.",
+            verificationStatus: "PENDING",
             accessType: "FREE"
           },
           {
@@ -476,7 +528,17 @@ window.privacyData = {
             date: "2002",
             url: "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
             quote: "This example illustrates that privacy is not just found but constructed. … In the late eighteenth and early nineteenth centuries, Congress passed several laws prohibiting the improper opening of mail. … In colonial America, mail was often insecure; it was difficult to seal letters; and the wax often used to keep letters sealed was not very effective. … Benjamin Franklin, who was in charge of the colonial mails, required his employees to swear an oath not to open mail.",
-            note: "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Citing Robert Ellis Smith and Flaherty (1972). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/",
+            note: "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Verification: Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again. Citing Robert Ellis Smith and Flaherty (1972). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Verification: Could not re-verify on 2026-09-23: every fetch of this Wayback URL (18 attempts over about 15 minutes) (fetch-text.py, curl over https and http, WebFetch) failed. The agent proxy reported 'ws_closed_mid_exchange' on web.archive.org:443, plain http returned 403, and scholar.archive.org returned 'Rate limit reached'. The live GW repository PDF and landing-page download still return 403 to scripts, even with a Referer and cookies. SSRN returns 403, JSTOR (10.2307/3481326) shows a JS challenge, and Unpaywall lists no open-access copy. The fetch cache for this URL had been cleared before the re-check, so nothing was re-read. Crossref does confirm the citation: 'Conceptualizing Privacy', 90 Cal. L. Rev. 1087 (July 2002), DOI 10.2307/3481326. Re-run --check once web.archive.org is reachable again.",
+            verificationStatus: "PENDING",
+            accessType: "FREE"
+          },
+          {
+            institution: "United States Postal Service (Publication 100)",
+            title: "The United States Postal Service: An American History, 1775-2025 (250th Anniversary Edition)",
+            date: "2025",
+            url: "https://about.usps.com/publications/pub100.pdf",
+            quote: "prohibited postal officials from opening letters",
+            note: "--check FOUND. The full sentence is 'The Act of February 20, 1792, continued the Post Office for another two years and formally admitted newspapers to the mails, established specific post roads, and prohibited postal officials from opening letters.' The same PDF has 'Benjamin Franklin and William Hunter were appointed by the Crown as deputy postmasters general for the colonies.' (--check FOUND; 1753).",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -509,12 +571,22 @@ window.privacyData = {
             note: "Littré gives the maxim without attribution. It is widely attributed to Pierre-Paul Royer-Collard (c. 1819) and sometimes to Talleyrand (Stendhal, 1823); the attribution was not verified from a primary source.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "Littré, Dictionnaire de la langue française (online edition, littre.org)",
+            title: "privé (Remarque)",
+            date: "1872-1877 (online 2026)",
+            url: "https://www.littre.org/definition/priv%C3%A9",
+            quote: "Je n'ose continuer de peur d'entreprendre sur la vie privée d'un citoyen, qui, comme l'a si bien dit M. de Talleyrand, doit être murée",
+            note: "--check FOUND. This is Stendhal's letter of 31 Oct. 1823, as quoted by Éd. Fournier (Feuilleton de la Patrie, 14 juill. 1868) in Littré's Remarque. Fournier opens: 'J'ai cru d'abord, comme bien des gens. que c'était Royer-Collard [qui avait créé cette expression]' (also FOUND). This shows the Royer-Collard attribution was already doubted in the 19th century.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       },
       {
         heading: "From the wall to the right",
-        text: "In December 1890 two Boston lawyers, Samuel Warren and Louis Brandeis, argued that “instantaneous photographs and newspaper enterprise” had invaded “the sacred precincts of private and domestic life”, and that the law should protect what Judge Thomas Cooley had called the right “to be let alone”.{1,2} In 1928, dissenting in a wiretapping case, Brandeis called that right “the most comprehensive of rights and the right most valued by civilized men”.{3} After the Second World War privacy became a human right: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence”, the Universal Declaration proclaimed in 1948,{4,5} and the European Convention of 1950 and the UN Covenant of 1966 followed.{6,7} Today 171 of 188 national constitutions in force are coded as providing a right to privacy; where the text is silent, as in the United States, India, France and Japan, courts have found it.{8,9,10,11,12,13} Words travelled with the law. Japanese adopted the loanword puraibashii, which — according to Masao Horibe, later chairman of Japan’s data-protection commission — spread after a Tokyo court first recognised a right to privacy in 1964;{14,15} the Chinese yinsi (隐私) — “hide” and “private” — long carried the sense of a shameful secret, until China’s Civil Code of 2020 defined it as the tranquillity of private life and the space, activities and information a person does not wish others to know.{16,17}",
+        text: "In December 1890 two Boston lawyers, Samuel Warren and Louis Brandeis, argued that “instantaneous photographs and newspaper enterprise” had invaded “the sacred precincts of private and domestic life”, and that the law should protect what Judge Thomas Cooley had called the right “to be let alone”.{1,2} In 1928, dissenting in a wiretapping case, Brandeis called that right “the most comprehensive of rights and the right most valued by civilized men”.{3} After the Second World War privacy became a human right: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence”, the Universal Declaration proclaimed in 1948,{4,5} and the European Convention of 1950 and the UN Covenant of 1966 followed.{6,7,8} Today 171 of the 188 national constitutions in force are coded as providing a right to privacy; where the text is silent, as in India and France, courts and statutes protect it instead.{9,10,11,12,13} The US Constitution never uses the word; its Supreme Court found “zones of privacy” in 1965.{14,15,16} Words travelled with the law. Japanese uses the loanword puraibashii, which — according to Masao Horibe, then chairman of Japan’s Personal Information Protection Commission — came into wide use owing partly to a Tokyo court’s 1964 ruling, the first to recognise privacy as a legally protected right;{17,18} the Chinese yinsi (隐私) — “hide” and “private” — was at first often confused, a 2005 study noted, with a near-homophone meaning a “shameful secret”;{19,20} China’s Civil Code of 2020 now defines it as the tranquillity of private life and the private space, activities and information a person does not wish others to know.{21}",
         source: [
           {
             institution: "University of Louisville, Louis D. Brandeis School of Law Library (Brandeis Collection)",
@@ -564,10 +636,10 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
-            institution: "UN Office of the High Commissioner for Human Rights (archived copy)",
+            institution: "University of Minnesota Human Rights Library (text of UN General Assembly resolution 2200A (XXI))",
             title: "International Covenant on Civil and Political Rights, Article 17",
             date: "1966-12-16",
-            url: "https://web.archive.org/web/2025/https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights",
+            url: "https://hrlibrary.umn.edu/instree/b3ccpr.htm",
             quote: "1. No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour and reputation.",
             note: "OHCHR returns 403 to scripts; read from the Internet Archive copy. The page header gives \"ADOPTED 16 December 1966 BY General Assembly resolution 2200A (XXI)\". The Covenant entered into force in 1976.",
             verificationStatus: "CONFIRMED",
@@ -583,6 +655,16 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
+            institution: "United Nations Treaty Collection",
+            title: "Chapter IV.4: International Covenant on Civil and Political Rights (status page)",
+            date: "1966-12-16",
+            url: "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-4&chapter=4&clang=_en",
+            quote: "International Covenant on Civil and Political Rights New York, 16 December 1966",
+            note: "--check FOUND. The same page says 'Entry into force : 23 March 1976' (--check FOUND) and 'The Covenant was opened for signature at New York on 19 December 1966.'",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
             institution: "Constitute Project (Comparative Constitutions Project, University of Texas at Austin / University of Chicago)",
             title: "Topics: Right to privacy",
             date: "2026-09-23",
@@ -591,6 +673,45 @@ window.privacyData = {
             note: "Topic definition. Counts computed on 2026-09-23 from the Constitute API: 171 in-force constitutions returned by https://www.constituteproject.org/service/constopicsearch?key=privacy&in_force=true&lang=en out of 188 in force (https://www.constituteproject.org/service/constitutions?in_force=true&lang=en). In-force constitutions not coded for privacy: Afghanistan, Antigua and Barbuda, Australia, Austria, Bahamas, Brunei, Canada, Czech Republic, France, India, Indonesia, Japan, Malaysia, Palau, Samoa, Singapore, Sri Lanka. Coding is of constitutional text only.",
             verificationStatus: "CONFIRMED",
             accessType: "API"
+          },
+          {
+            institution: "Constitute Project (Comparative Constitutions Project)",
+            title: "Japan's Constitution of 1946, Article 35",
+            date: "1946-11-03",
+            url: "https://www.constituteproject.org/constitution/Japan_1946?lang=en",
+            quote: "The right of all persons to be secure in their homes, papers and effects against entries, searches and seizures shall not be impaired except upon warrant issued for adequate cause",
+            note: "--check FOUND. The same page has Art. 21: 'No censorship shall be maintained, nor shall the secrecy of any means of communication be violated.' (--check FOUND). Japan_1946 is nevertheless absent from the privacy topic list, which shows that the 17 exceptions include coding gaps as well as constitutions that are silent on privacy. The date is promulgation (3 Nov 1946); the Constitution took effect on 3 May 1947.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Constitute Project (Comparative Constitutions Project)",
+            title: "Canada's Constitution of 1867 with Amendments through 2011 (Canadian Charter of Rights and Freedoms, s. 8)",
+            date: "1982-04-17",
+            url: "https://www.constituteproject.org/constitution/Canada_2011?lang=en",
+            quote: "Everyone has the right to be secure against unreasonable search or seizure.",
+            note: "--check FOUND. Canada_2011 is not in the privacy topic list, although this clause matches Constitute's topic definition.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Supreme Court of India, via Indian Kanoon",
+            title: "Justice K.S. Puttaswamy (Retd.) v. Union of India, Order of the Court, 24 August 2017",
+            date: "2017-08-24",
+            url: "https://indiankanoon.org/doc/91938676/",
+            quote: "(iii) The right to privacy is protected as an intrinsic part of the right to life and personal liberty under Article 21 and as a part of the freedoms guaranteed by Part III of the Constitution. … (i) The decision in M P Sharma which holds that the right to privacy is not protected by the Constitution stands over-ruled;",
+            note: "The Order of the Court is signed by all nine judges; it also overrules M P Sharma (1954) and Kharak Singh (1962) to the extent they held privacy unprotected.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Supreme Court of India, via Indian Kanoon",
+            title: "Justice K.S. Puttaswamy (Retd.) v. Union of India, judgment of 24 August 2017",
+            date: "2017-08-24",
+            url: "https://indiankanoon.org/doc/91938676/",
+            quote: "On 18 July 2017, a Constitution Bench presided over by the learned Chief Justice considered it appropriate that the issue be resolved by a Bench of nine judges",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           },
           {
             institution: "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
@@ -620,25 +741,6 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
-            institution: "Supreme Court of India, via Indian Kanoon",
-            title: "Justice K.S. Puttaswamy (Retd.) v. Union of India, Order of the Court, 24 August 2017",
-            date: "2017-08-24",
-            url: "https://indiankanoon.org/doc/91938676/",
-            quote: "(iii) The right to privacy is protected as an intrinsic part of the right to life and personal liberty under Article 21 and as a part of the freedoms guaranteed by Part III of the Constitution. … (i) The decision in M P Sharma which holds that the right to privacy is not protected by the Constitution stands over-ruled;",
-            note: "The Order of the Court is signed by all nine judges; it also overrules M P Sharma (1954) and Kharak Singh (1962) to the extent they held privacy unprotected.",
-            verificationStatus: "CONFIRMED",
-            accessType: "FREE"
-          },
-          {
-            institution: "Supreme Court of India, via Indian Kanoon",
-            title: "Justice K.S. Puttaswamy (Retd.) v. Union of India, judgment of 24 August 2017",
-            date: "2017-08-24",
-            url: "https://indiankanoon.org/doc/91938676/",
-            quote: "On 18 July 2017, a Constitution Bench presided over by the learned Chief Justice considered it appropriate that the issue be resolved by a Bench of nine judges",
-            verificationStatus: "CONFIRMED",
-            accessType: "FREE"
-          },
-          {
             institution: "Personal Information Protection Commission, Japan (speech by Chairman Masao Horibe, ICDPPC, Hong Kong)",
             title: "Privacy Culture and Data Protection Laws in Japan",
             date: "2017-09",
@@ -662,8 +764,18 @@ window.privacyData = {
             title: "Cao Jingchun, 'Protecting the Right to Privacy in China'",
             date: "2005",
             url: "https://ojs.victoria.ac.nz/vuwlr/article/download/5610/4977/7913",
-            quote: "Yin and si are two words in Chinese: yin means \"hide\" and si means \"private\". … It was initially common for Chinese to misunderstand privacy as relating to shameful secrets.",
-            note: "The PDF text has lost the Chinese characters; Cao distinguishes two near-homophones (commonly written 阴私, a shameful secret, and 隐私, privacy). Characters in the statement are supplied from the NPC source below, not from Cao.",
+            quote: "Yin and si are two words in Chinese: yin means \"hide\" and si means \"private\". … It was initially common for Chinese to misunderstand privacy as relating to shameful secrets. … It is this word which is most often used in legislation and is most familiar to Chinese lawyers. It is translated into English as \"privacy\", \"personal secret\" or \"shameful secret\". However it usually means something negative. In contrast, the related word \"Yinsi\" is closer to Western ideas of privacy.",
+            note: "The PDF text has lost the Chinese characters; Cao distinguishes two near-homophones (commonly written 阴私, a shameful secret, and 隐私, privacy). Characters in the statement are supplied from the NPC source below, not from Cao. --check FOUND. This is the passage that actually carries the three translations. Cao applies them to the legislative, negative word, which he contrasts with 'Yinsi' (隐私), the word 'closer to Western ideas of privacy'.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Wiktionary",
+            title: "隱 (Chinese)",
+            date: "2026",
+            url: "https://en.wiktionary.org/wiki/%E9%9A%B1",
+            quote: "to hide; to cover; to shield",
+            note: "--check FOUND (the spacing is as extracted). 隱 is the traditional form of 隐, the yin of 隐私. The 隱私 entry (https://en.wiktionary.org/wiki/%E9%9A%B1%E7%A7%81) gives 'private business ; secrets ; personal matters ; privacy' (FOUND). The 陰私 entry gives 'hidden secret' (FOUND). Wiktionary is a collaborative dictionary, so this is secondary support only.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -681,7 +793,7 @@ window.privacyData = {
       },
       {
         heading: "From the house to the record",
-        text: "In 1967 Alan Westin moved privacy from the house to the data: it is “the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others”.{1,2} By 1971 the threat had a name — Arthur Miller’s The Assault on Privacy: Computers, Data Banks, and Dossiers.{3} In 1983 Germany’s constitutional court gave it a right: informational self-determination, the individual’s authority, in principle, to decide on the disclosure and use of their personal data.{4,5} The UN Human Rights Committee read the Covenant the same way in 1988: data banks must be regulated by law, and every individual should be able to learn whether data about them is stored, and why.{6} Programmers answered in code. Phil Zimmermann released PGP in 1991, warning that “if privacy is outlawed, only outlaws will have privacy”;{7} Eric Hughes’s cypherpunk manifesto of 1993 separated privacy from secrecy — “the power to selectively reveal oneself to the world”.{8} Business had its own view: “You have zero privacy anyway. Get over it,” Sun Microsystems’ chief executive told reporters in 1999;{9} in 2015 Shoshana Zuboff set out a theory of “surveillance capitalism”, a logic of accumulation whose mechanisms “exile persons from their own behavior”.{10}",
+        text: "In 1967 Alan Westin moved privacy from the house to the data: it is “the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others”.{1,2} By 1971 the threat had a name — Arthur Miller’s The Assault on Privacy: Computers, Data Banks, and Dossiers.{3,4,5} In 1983 Germany’s constitutional court gave it a right: informational self-determination, the individual’s authority, in principle, to decide on the disclosure and use of their personal data.{6,7} The UN Human Rights Committee read the Covenant the same way in 1988: data banks must be regulated by law, and every individual should be able to learn whether data about them is stored, and why.{8} Programmers answered in code. Phil Zimmermann released PGP in 1991, its user’s guide warning that “if privacy is outlawed, only outlaws will have privacy”;{9,10} Eric Hughes’s cypherpunk manifesto of 1993 separated privacy from secrecy — “the power to selectively reveal oneself to the world”.{11} Business had its own view: “You have zero privacy anyway. Get over it,” Sun Microsystems’ chief executive told reporters in 1999;{12} in 2015 Shoshana Zuboff set out “surveillance capitalism” — a term she had first used the year before — as a logic of accumulation producing mechanisms of extraction and control that “effectively exile persons from their own behavior”.{13}",
         source: [
           {
             institution: "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
@@ -710,6 +822,26 @@ window.privacyData = {
             url: "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
             quote: "Arthur Miller has declared that privacy is \"difficult to define because it is exasperatingly vague and evanescent.\" … ARTHUR R. MILLER, THE ASSAULT ON PRIVACY: COMPUTERS, DATA BANKS, AND DOSSIERS 25 (1971).",
             note: "Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/ Solove footnote 2 (citation of the quoted page).",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "University of Pennsylvania Law Review (vol. 154), copy hosted by Yale University Computer Science course CS457",
+            title: "Daniel J. Solove, 'A Taxonomy of Privacy'",
+            date: "2006-01",
+            url: "https://zoo.cs.yale.edu/classes/cs457/fall13/SoloveTaxonomy.pdf",
+            quote: "ARTHUR R. MILLER, THE ASSAULT ON PRIVACY: COMPUTERS, DATA BANKS, AND DOSSIERS 25 (1971) (citation omitted).",
+            note: "Footnote 5, --check FOUND. It is attached to the body sentence 'Other commentators have lamented that privacy is \"vague and evanescent,\"' (--check FOUND). The PDF header reads 'University of Pennsylvania Law Review ... VOL. 154 JANUARY 2006 NO. 3'.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Internet Archive (catalog record)",
+            title: "Arthur R. Miller, The Assault on Privacy: Computers, Data Banks, and Dossiers (University of Michigan Press, 1971)",
+            date: "1971",
+            url: "https://archive.org/details/assaultonpriv00mill",
+            quote: "The assault on privacy: computers, data banks, and dossiers",
+            note: "--check FOUND. The page also gives 'Ann Arbor, University of Michigan Press' and '1971' (--grep). The book is lending-only, so the text itself was not read.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -752,14 +884,24 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
+            institution: "Internet Archive (copy of PGP10.ZIP/PGPGUIDE.LST from the PGP 1.0 distribution)",
+            title: "Philip Zimmermann, 'PGP User's Guide', Version 1.0 - section 'Why Do You Need PGP?'",
+            date: "1991-06-05",
+            url: "https://archive.org/download/pgpguide.-lst/PGPGUIDE.LST.txt",
+            quote: "If privacy is outlawed, only outlaws will have privacy. Intelligence agencies have access to good cryptographic technology. … Whatever it is, you don't want your private electronic mail (E-mail) or confidential documents read by anyone else.",
+            note: "--check FOUND on 2026-09-23. The file header reads 'PGPGUIDE.DOC Wednesday, June 5, 1991' and 'Version 1.0 - 5 Jun 91'. The line appears under 'Why Do You Need PGP?' (page 28-29 of the guide). The archive.org item 'pgpguide.-lst' says it is a re-upload of PGP10.ZIP/PGPGUIDE.LST from the item 'pgp_sourcecode'. --check FOUND on 2026-09-23. This is the 1991 wording of the email sentence.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
             institution: "activism.net (Cypherpunks archive)",
             title: "Eric Hughes, 'A Cypherpunk's Manifesto'",
             date: "1993-03-09",
             url: "https://www.activism.net/cypherpunk/manifesto.html",
-            quote: "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world. … We must defend our own privacy if we expect to have any. … Cypherpunks deplore regulations on cryptography, for encryption is fundamentally a private act.",
+            quote: "Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world. … We must defend our own privacy if we expect to have any. … Cypherpunks deplore regulations on cryptography, for encryption is fundamentally a private act. … We the Cypherpunks are dedicated to building anonymous systems. We are defending our privacy with cryptography, with anonymous mail forwarding systems, with digital signatures, and with electronic money. … Cypherpunks write code.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE",
-            note: "The page is signed \"Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993\"."
+            note: "The page is signed \"Eric Hughes <hughes@soda.berkeley.edu> 9 March 1993\". --check FOUND on 2026-09-23. It supports 'defend it themselves ... with cryptography'. --check FOUND on 2026-09-23. It is followed by 'We know that someone has to write software to defend privacy ... we're going to write it.' This supports 'with code'."
           },
           {
             institution: "Wired",
@@ -771,12 +913,12 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
-            institution: "Journal of Information Technology (vol. 30), Springer Nature",
+            institution: "Journal of Information Technology (vol. 30, no. 1, pp. 75-89), Palgrave Macmillan UK - SpringerLink",
             title: "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
             date: "2015-04-09",
             url: "https://link.springer.com/article/10.1057/jit.2015.5",
-            quote: "It is constituted by unexpected and often illegible mechanisms of extraction, commodification, and control that effectively exile persons from their own behavior while producing new markets of behavioral prediction and modification. … The institutionalizing practices and operational assumptions of Google Inc. are the primary lens for this analysis as they are rendered in two recent articles authored by Google Chief Economist Hal Varian.",
-            note: "Abstract, as shown on the Springer landing page (published 9 April 2015). The abstract also says Google's practices are \"the primary lens for this analysis\".",
+            quote: "It is constituted by unexpected and often illegible mechanisms of extraction, commodification, and control that effectively exile persons from their own behavior while producing new markets of behavioral prediction and modification. … The institutionalizing practices and operational assumptions of Google Inc. are the primary lens for this analysis as they are rendered in two recent articles authored by Google Chief Economist Hal Varian. … This architecture produces a distributed and largely uncontested new expression of power that I christen: ‘Big Other.’ … This article describes an emergent logic of accumulation in the networked sphere",
+            note: "Abstract, as shown on the Springer landing page (published 9 April 2015). The abstract also says Google's practices are \"the primary lens for this analysis\". --check FOUND on 2026-09-23 (abstract). This is the antecedent of 'It is constituted by ... mechanisms ... that effectively exile persons from their own behavior'. --check FOUND on 2026-09-23. On the page the sentence continues \"'surveillance capitalism,' and considers its implications for 'information civilization.'\". The helper inserts spaces inside the curly quotes because of italic markup, so only the clean prefix is quoted here.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -784,7 +926,7 @@ window.privacyData = {
       },
       {
         heading: "A concept in dispute",
-        text: "Philosophers have never agreed on a definition. Judith Jarvis Thomson thought the right to privacy a cluster of other rights;{1,2} Ruth Gavison defined privacy as limited access to a person — secrecy, anonymity and solitude;{3} Daniel Solove argued there is no single common core, only “family resemblances”;{4,5} Helen Nissenbaum proposed that privacy is violated when information flows break the norms of the context in which it was shared;{6} and Julie Cohen that privacy is the breathing room in which a self develops, shielding “dynamic, emergent subjectivity” from efforts to make people fixed, transparent and predictable.{7}",
+        text: "Philosophers have never agreed on a definition. Judith Jarvis Thomson thought the right to privacy a cluster of other rights;{1,2} Ruth Gavison defined privacy as limited access to a person — secrecy, anonymity and solitude;{3,4,5} Daniel Solove argued there is no single common core, only “family resemblances”;{6,7} Helen Nissenbaum proposed that privacy is violated when information flows break the norms of the context in which it was shared;{8} and Julie Cohen that privacy is the breathing room in which a self develops, shielding “dynamic, emergent subjectivity” from efforts to make people fixed, transparent and predictable.{9}",
         source: [
           {
             institution: "California Law Review (vol. 90), via GW Law Scholarly Commons (archived copy)",
@@ -801,8 +943,8 @@ window.privacyData = {
             title: "Privacy (substantive revision 19 October 2023)",
             date: "2023-10-19",
             url: "https://plato.stanford.edu/entries/privacy/",
-            quote: "Probably the most famous fundamental critique of a right to privacy stems from the work of Judith Jarvis Thomson (1975).",
-            note: "SEP bibliography: Thomson, \"The Right to Privacy\", Philosophy & Public Affairs 4(4): 295-314 (1975).",
+            quote: "Probably the most famous fundamental critique of a right to privacy stems from the work of Judith Jarvis Thomson (1975). … Instead, she suggests that \"the right to privacy is itself a cluster of rights\" (1975: 306), such as the right to property or the right over the person",
+            note: "SEP bibliography: Thomson, \"The Right to Privacy\", Philosophy & Public Affairs 4(4): 295-314 (1975). Supports the 'cluster of other rights - over property and over one's own person' part of the statement. --check FOUND.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -813,6 +955,26 @@ window.privacyData = {
             url: "https://web.archive.org/web/20260918051731id_/https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2086&context=faculty_publications",
             quote: "Further, Gavison explains what constitutes limited access, which consists of \"three independent and irreducible elements: secrecy, anonymity, and solitude.\"",
             note: "Quoting Gavison, 89 Yale L.J. 421, 433 (1980). The Yale repository copy could not be fetched (403). Read from the Internet Archive copy of the GW Law repository PDF (the live repository returns 403 to scripts). Canonical: https://scholarship.law.gwu.edu/faculty_publications/933/",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+            title: "Privacy (substantive revision 19 October 2023)",
+            date: "2023-10-19",
+            url: "https://plato.stanford.edu/entries/privacy/",
+            quote: "A classic formulation has been offered by Ruth Gavison: \"An individual enjoys perfect privacy when he is completely inaccessible to others\" (1980: 428).",
+            note: "Supports 'limited access to a person'. From the SEP's discussion of access-based approaches. --check FOUND.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "McGill Law Journal (vol. 61, no. 1), case comment",
+            title: "Chris Hunt and Micah Rankin, 'R. v. Spencer: Anonymity, the Rule of Law, and the Shrivelling of the Biographical Core'",
+            date: "2015-09-01",
+            url: "https://lawjournal.mcgill.ca/article/r-v-spencer-anonymity-the-rule-of-law-and-the-shrivelling-of-the-biographical-core/",
+            quote: "In her seminal work on the privacy, Ruth Gavison defined \"privacy\" by reference to three \"irreducible elements\": secrecy, seclusion, and anonymity.",
+            note: "Footnote 56 cites Gavison, 89:3 Yale LJ 421 at 433. The comment says 'seclusion' where Gavison's text (as Solove quotes it) says 'solitude'. The page is labelled 'Volume 61:1', and its schema.org datePublished is 2015-09-01. --check FOUND.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -840,40 +1002,74 @@ window.privacyData = {
             title: "Helen Nissenbaum, 'Privacy as Contextual Integrity'",
             date: "2004-02-01",
             url: "https://nissenbaum.tech.cornell.edu/papers/H.%20Nissenbaum,%20_Privacy%20as%20Contextual%20Integrity.pdf",
-            quote: "The central thesis of this Article is that the benchmark of privacy is contextual integrity; that in any given situation, a complaint that privacy has been violated is sound in the event that one or the other types of the informational norms has been transgressed. … I posit two types of informational norms: norms of appropriateness, and norms of flow or distribution.",
+            quote: "The central thesis of this Article is that the benchmark of privacy is contextual integrity; that in any given situation, a complaint that privacy has been violated is sound in the event that one or the other types of the informational norms has been transgressed. … I posit two types of informational norms: norms of appropriateness, and norms of flow or distribution. … Contextual integrity is maintained when both types of norms are upheld, and it is violated when either of the norms is violated.",
             verificationStatus: "CONFIRMED",
-            accessType: "FREE"
+            accessType: "FREE",
+            note: "--check FOUND."
           },
           {
             institution: "Harvard Law Review (vol. 126, no. 7)",
             title: "Julie E. Cohen, 'What Privacy Is For'",
             date: "2013-05",
             url: "https://harvardlawreview.org/print/vol-126/what-privacy-is-for/",
-            quote: "Privacy shelters dynamic, emergent subjectivity from the efforts of commercial and government actors to render individuals and communities fixed, transparent, and predictable.",
+            quote: "Privacy shelters dynamic, emergent subjectivity from the efforts of commercial and government actors to render individuals and communities fixed, transparent, and predictable. … Like the broader tradition of liberal political theory within which it is situated, legal scholarship has conceptualized privacy as a form of protection for the liberal self.",
             verificationStatus: "CONFIRMED",
-            accessType: "FREE"
+            accessType: "FREE",
+            note: "--check FOUND. This supports the statement's 'liberal self' framing, which is the view Cohen rejects. The next paragraph says 'the liberal self who is the subject of privacy theory and privacy policymaking does not exist'."
           }
         ]
       },
       {
         heading: "Consent, its critics — and terms the person writes",
-        text: "What the law settled on, online, was consent. Solove named the model “privacy self-management” — notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because there are too many data collectors to manage one by one.{1} Nissenbaum called its flaw the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.{2} Reading the privacy policies of the sites one American visits would take about 201 hours a year, researchers at Carnegie Mellon estimated in 2008.{3} Doc Searls argued that privacy online cannot be “a grace of privacy policies”; individuals should proffer terms “as first parties”, which sites agree to, with both keeping records.{4} That is what IEEE 7012-2025 standardises. It was approved on 4 November 2025 and published on 20 January 2026 —{5} just as software agents began to browse, fill in forms and buy for people, each errand meeting someone else’s terms.{6,7,8}",
+        text: "What the law settled on, online, was consent. Solove named the model “privacy self-management” — rights to notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because of the limits of human attention and because there are too many data collectors to manage one by one.{1} Nissenbaum called its flaw the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.{2} Reading the privacy policies of the sites one American visits would take about 244 hours a year — some 40 minutes a day — researchers at Carnegie Mellon estimated in 2008 (their abstract says 201; their own tables give 244).{3,4,5,6} Doc Searls argued that privacy online cannot be “a grace of privacy policies”; individuals should proffer terms “as first parties”, which sites agree to, with both keeping records.{7} That is what IEEE 7012-2025 standardises. It was approved on 4 November 2025 and published on 20 January 2026 —{8,9,10} just as software agents began to browse, fill in forms and buy for people, each errand meeting someone else’s terms.{11,12,13}",
         source: [
           {
             institution: "Harvard Law Review (vol. 126, no. 7)",
             title: "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
             date: "2013-05",
             url: "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
-            quote: "Policymakers have proposed and passed significant new regulation in the United States and abroad, yet the basic approach to protecting privacy has remained largely unchanged since the 1970s. … Privacy self-management does not provide people with meaningful control over their data. … Consent legitimizes nearly any form of collection, use, or disclosure of personal data. … There are too many entities collecting and using personal data to make it feasible for people to manage their privacy separately with each entity.",
+            quote: "Policymakers have proposed and passed significant new regulation in the United States and abroad, yet the basic approach to protecting privacy has remained largely unchanged since the 1970s. … Privacy self-management does not provide people with meaningful control over their data. … Consent legitimizes nearly any form of collection, use, or disclosure of personal data. … There are too many entities collecting and using personal data to make it feasible for people to manage their privacy separately with each entity. … These rights consist primarily of rights to notice, access, and consent regarding the collection, use, and disclosure of personal data. … Second, and more troubling, even well-informed and rational individuals cannot appropriately self-manage their privacy due to several structural problems.",
             verificationStatus: "CONFIRMED",
-            accessType: "FREE"
+            accessType: "FREE",
+            note: "--check FOUND on 2026-09-23. It supports 'notice, access and consent'. --check FOUND on 2026-09-23. The first reason on the page is 'First, empirical and social science research demonstrates that there are severe cognitive problems that undermine privacy self-management.' (also FOUND)."
           },
           {
             institution: "Daedalus (vol. 140, no. 4), American Academy of Arts & Sciences - copy on the author's Cornell Tech site",
             title: "Helen Nissenbaum, 'A Contextual Approach to Privacy Online'",
             date: "2011",
             url: "https://nissenbaum.tech.cornell.edu/papers/Contextual%20Approach%20to%20Privacy%20Online.pdf",
-            quote: "I view this as a futile effort because of what I call the transparency paradox. … Proposals to improve and fortify notice-and-consent, such as clearer privacy policies and fairer information practices, will not overcome a fundamental flaw in the model, namely, its assumption that individuals can understand all facts relevant to true choice at the moment of pair-wise contracting between individuals and data gatherers.",
+            quote: "I view this as a futile effort because of what I call the transparency paradox. … Proposals to improve and fortify notice-and-consent, such as clearer privacy policies and fairer information practices, will not overcome a fundamental flaw in the model, namely, its assumption that individuals can understand all facts relevant to true choice at the moment of pair-wise contracting between individuals and data gatherers. … Thus the transparency paradox: transparency of textual meaning and transparency of practice conflict in all but rare instances.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE",
+            note: "--check FOUND on 2026-09-23. The PDF hyphenates 'par-adox' across a line, and the helper's normalised text matches the unhyphenated form."
+          },
+          {
+            institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+            title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+            date: "2008",
+            url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+            quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+            note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+            title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+            date: "2008",
+            url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+            quote: "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user. Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+            note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008), pp. 543-568 (Ohio State University Moritz College of Law) — published version, Ohio State University Knowledge Bank (hdl.handle.net/1811/72839)",
+            title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+            date: "2008",
+            url: "https://kb.osu.edu/server/api/core/bitstreams/a9510be5-b51e-526d-aea3-8e9636bc00cd/content",
+            quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+            note: "Published journal version (ISJLP_V4N3_543.pdf) from the OSU Knowledge Bank item http://hdl.handle.net/1811/72839 (metadata: dc.date.issued 2008; citation 'I/S ... vol. 4, no. 3 (2008), 543-568'). The repo helper's own request got HTTP 403 from the server, so the PDF was downloaded with curl (HTTP 200, application/pdf, 1,654,540 bytes), put in the helper's cache, and checked with --check: FOUND. The text layer is OCR, so a few digits come out as letters (e.g. 'lo minutes' for '10 minutes'). Confirms that the 244-hour figure and the 40-minutes-a-day comparison are unchanged in the published version.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -903,6 +1099,26 @@ window.privacyData = {
             url: "https://standards.ieee.org/ieee/7012/7192/",
             quote: "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides. … The first party shall point to a preferred agreement, or a set of agreements, from which the second party shall accept one.",
             note: "Same page: \"PAR Approval 2017-12-06\", \"Board Approval 2025-11-04\", \"Published: 2026-01-20\"; scope names \"websites, applications and AI agents\".",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "IEEE Standards Association",
+            title: "IEEE SA Standards Board Approvals - 04 November 2025",
+            date: "2025-11-04",
+            url: "https://standards.ieee.org/about/sasb/sba/04nov2025/",
+            quote: "7012-2025 (SSIT/SC) IEEE Standard for Machine Readable Personal Privacy Terms",
+            note: "--check FOUND on 2026-09-23. The line is listed under 'New Standards' on the page headed 'IEEE SA Standards Board Approvals / 04 November 2025'.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Crossref (DOI registration metadata deposited by IEEE)",
+            title: "Crossref record for DOI 10.1109/IEEESTD.2025.11360682",
+            date: "2026-01-21",
+            url: "https://api.crossref.org/works/10.1109/IEEESTD.2025.11360682",
+            quote: "\"approved\":{\"date-parts\":[[2025,11,4]]}",
+            note: "--check FOUND on 2026-09-23. The record's title is 'IEEE Standard for Machine Readable Personal Privacy Terms', its publisher is IEEE, and it was created 2026-01-21.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -1219,9 +1435,10 @@ window.privacyData = {
             title: "Daniel J. Solove, 'Introduction: Privacy Self-Management and the Consent Dilemma'",
             date: "2013-05",
             url: "https://harvardlawreview.org/print/vol-126/introduction-privacy-self-management-and-the-consent-dilemma/",
-            quote: "Policymakers have proposed and passed significant new regulation in the United States and abroad, yet the basic approach to protecting privacy has remained largely unchanged since the 1970s. … Privacy self-management does not provide people with meaningful control over their data. … Consent legitimizes nearly any form of collection, use, or disclosure of personal data. … There are too many entities collecting and using personal data to make it feasible for people to manage their privacy separately with each entity.",
+            quote: "Policymakers have proposed and passed significant new regulation in the United States and abroad, yet the basic approach to protecting privacy has remained largely unchanged since the 1970s. … Privacy self-management does not provide people with meaningful control over their data. … Consent legitimizes nearly any form of collection, use, or disclosure of personal data. … There are too many entities collecting and using personal data to make it feasible for people to manage their privacy separately with each entity. … These rights consist primarily of rights to notice, access, and consent regarding the collection, use, and disclosure of personal data. … Second, and more troubling, even well-informed and rational individuals cannot appropriately self-manage their privacy due to several structural problems.",
             verificationStatus: "CONFIRMED",
-            accessType: "FREE"
+            accessType: "FREE",
+            note: "--check FOUND on 2026-09-23. It supports 'notice, access and consent'. --check FOUND on 2026-09-23. The first reason on the page is 'First, empirical and social science research demonstrates that there are severe cognitive problems that undermine privacy self-management.' (also FOUND)."
           },
           {
             institution: "Pew Research Center",
@@ -1229,6 +1446,16 @@ window.privacyData = {
             date: "2023-10-18",
             url: "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
             quote: "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Pew Research Center",
+            title: "2. How Americans protect their online data (chapter of 'How Americans View Data Privacy')",
+            date: "2023-10-18",
+            url: "https://www.pewresearch.org/internet/2023/10/18/how-americans-protect-their-online-data/",
+            quote: "Some 56% of Americans say they always, almost always or often click “agree” right away, without reading what privacy policies say. Another 22% say they do this sometimes. And 18% say they rarely or never agree without reading.",
+            note: "Checked with --check 2026-09-23: FOUND. Defines 'frequently' as always/almost always/often.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -1410,12 +1637,12 @@ window.privacyData = {
     },
     {
       id: "mishnah-talmud-hezek-reiyah-damage-by-sight-c-200-ce",
-      date: "c. 200 CE (Mishnah); Talmud debated to c. 500–600 CE",
+      date: "c. 200 CE (Mishnah); Babylonian Talmud c. 450–550 CE",
       year: 200,
       phase: "walls",
       title: "Rabbinic law forbids windows facing a neighbour's window and names 'damage by sight'",
       place: "Galilee, Roman Palestine (Mishnah); academies of Babylonia (Talmud)",
-      body: "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance or a window opposite another's window onto a shared courtyard, so that residents keep a measure of privacy. The Babylonian Talmud's tractate Bava Batra opens by asking whether hezek re'iyah — the harm of being exposed to a neighbour's gaze in one's own domain — counts as legal damage, and later records that everyone agrees it does.",
+      body: "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance, or a window opposite another's window, onto a courtyard shared by partners, so that residents keep a measure of privacy (Bava Batra 3:7). The Babylonian Talmud's tractate Bava Batra opens (2b) by asking whether hezek re'iyah counts as legal damage. Hezek re'iyah is the harm of being exposed to others' gaze in one's own private domain. Later (59b), in a dispute over a ledge overlooking a neighbour's courtyard, the Gemara says both disputing sages agree that damage caused by sight is damage.",
       lat: 32.753,
       lng: 35.279,
       continent: "Middle East & Africa",
@@ -1433,10 +1660,10 @@ window.privacyData = {
         {
           institution: "Sefaria (William Davidson Edition, English)",
           title: "Babylonian Talmud, Bava Batra 59b",
-          date: "c. 500–600 CE",
+          date: "c. 450–550 CE",
           url: "https://www.sefaria.org/api/v3/texts/Bava_Batra.59b?version=english",
           quote: "No, everyone agrees that damage caused by sight is considered to be damage.",
-          note: "Bava Batra 2b opens the tractate with the question; 59b gives the Gemara's statement on the Mishnah's window rule. Sefaria's catalogue dates the Bavli tractate to 450–550 CE, Babylon.",
+          note: "Bava Batra 59b: the line comes in the Gemara on the mishna about a projection (ledge) over a neighbour's courtyard, where Rav Huna and Rav Yehuda disagree. The Gemara rejects the idea that they differ on damage by sight: both hold that it is damage. Sefaria's catalogue dates the Bavli tractate to 450–550 CE, Talmudic Babylon.",
           verificationStatus: "CONFIRMED",
           accessType: "API"
         },
@@ -1447,6 +1674,26 @@ window.privacyData = {
           url: "https://www.sefaria.org/api/category/Mishnah",
           quote: "compiled by Rabbi Yehuda HaNasi around 200 CE",
           note: "Undated catalogue text; 'date' is the access date.",
+          verificationStatus: "CONFIRMED",
+          accessType: "API"
+        },
+        {
+          institution: "Sefaria (William Davidson Edition, English)",
+          title: "Babylonian Talmud, Bava Batra 2b",
+          date: "c. 450–550 CE",
+          url: "https://www.sefaria.org/api/v3/texts/Bava_Batra.2b?version=english",
+          quote: "Apparently, it may be concluded that damage caused by sight, that is, the discomfort suffered by someone because he is exposed to the gaze of others while he is in his own private domain, is not called damage.",
+          note: "Opening sugya of the tractate. The Gemara first infers that damage by sight is 'not called damage', then challenges this ('The Gemara asks: And is damage caused by sight in fact not called damage?'). --check FOUND for both sentences. The gloss on hezek re'iyah in the summary follows this passage.",
+          verificationStatus: "CONFIRMED",
+          accessType: "API"
+        },
+        {
+          institution: "Sefaria (William Davidson Edition, English)",
+          title: "Babylonian Talmud, Bava Batra 59b (context of the 'everyone agrees' line)",
+          date: "c. 450–550 CE",
+          url: "https://www.sefaria.org/api/v3/texts/Bava_Batra.59b?version=english",
+          quote: "He can also demand that the owner of the roof not use an existing projection, since it leads to damage caused by sight.",
+          note: "Shows that the 59b discussion concerns a projection overlooking a courtyard (Rav Huna's view), just before 'Shall we say that they disagree with regard to damage caused by sight?' and 'No, everyone agrees...'. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "API"
         }
@@ -1537,6 +1784,16 @@ window.privacyData = {
           note: "sunnah.com blocks scripts (HTTP 403); the Internet Archive snapshot (web.archive.org/web/20251119075741/...) was read instead. English after the Muhsin Khan translation (USC-MSA reference Vol. 8, Book 74, Hadith 258).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "hadith-api (fawazahmed0, open dataset on GitHub, served via jsDelivr) — Muhsin Khan English",
+          title: "Sahih al-Bukhari 6241, Book 79 'Asking Permission'",
+          date: "2026-09-23",
+          url: "https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/6241.json",
+          quote: "Verily! The order of taking permission to enter has been enjoined because of that sight, (that one should not look unlawfully at the state of others).",
+          note: "A mirror that corroborates the sunnah.com text, which is unreachable to scripts. The same record reads: 'A man peeped through a round hole into the dwelling place of the Prophet'. --check FOUND. Undated dataset; 'date' is the access date.",
+          verificationStatus: "CONFIRMED",
+          accessType: "API"
         }
       ]
     },
@@ -1545,9 +1802,9 @@ window.privacyData = {
       date: "30 November 1215",
       year: 1215,
       phase: "walls",
-      title: "The Fourth Lateran Council makes the seal of confession universal Church law",
+      title: "The Fourth Lateran Council binds the whole Church to yearly confession and the confessional seal",
       place: "Lateran Basilica, Rome",
-      body: "Canon 21 of the Fourth Lateran Council, whose constitutions were read and approved at its third session on 30 November 1215, required every adult Christian to confess at least yearly to their own priest. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance.",
+      body: "Canon 21 of the Fourth Lateran Council required all the faithful of either sex who had reached the age of discernment to confess their sins to their own priest at least once a year. The council's constitutions were read and approved at its third session on 30 November 1215. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance. The duty of secrecy was older: Gratian's twelfth-century Decretum already ordered the deposition of a priest who revealed a penitent's sins. Canon 21 restated it as a conciliar decree binding on the whole Latin Church and fixed its penalty.",
       lat: 41.8859,
       lng: 12.5057,
       continent: "Europe",
@@ -1567,6 +1824,26 @@ window.privacyData = {
           date: "1215",
           url: "https://www.papalencyclicals.net/councils/ecum12-2.htm",
           quote: "Finally, the third session (on 30 November) was devoted to reading and approving the constitutions, which were proposed by the pontiff himself.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Papal Encyclicals Online (text after Tanner, Decrees of the Ecumenical Councils)",
+          title: "Fourth Lateran Council: 1215 — Constitution 21 (opening sentence)",
+          date: "1215-11-30",
+          url: "https://www.papalencyclicals.net/councils/ecum12-2.htm",
+          quote: "All the faithful of either sex, after they have reached the age of discernment, should individually confess all their sins in a faithful manner to their own priest at least once a year",
+          note: "Supports who was bound: the age of discernment, not adulthood. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The Catholic Encyclopedia (Robert Appleton Company), via New Advent",
+          title: "R. Nolan, 'The Law of the Seal of Confession'",
+          date: "1912",
+          url: "https://www.newadvent.org/cathen/13649b.htm",
+          quote: "Canon 21 of the Fourth Lateran Council (1215), binding on the whole Church, lays down the obligation of secrecy in the following words",
+          note: "The same paragraph adds: 'It is to be noted that neither this canon nor the law of the \"Decretum\" purports to enact for the first time the secrecy of confession.' It cites Gratian's Decretum ('Deponatur sacerdos qui peccata poenitentis publicare praesumit'). Both sentences --check FOUND. Author and date are from the page's APA citation line.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -1610,6 +1887,16 @@ window.privacyData = {
           date: "1995-05-22",
           url: "https://www.law.cornell.edu/supremecourt/text/514/927",
           quote: "To this rule, however, common-law courts appended an important qualification: \"But before he breaks it, he ought to signify the cause of his coming, and to make request to open doors..., for the law without a default in the owner abhors the destruction or breaking of any house (which is for the habitation and safety of man) by which",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "Semayne's case",
+          date: "2026-09-23",
+          url: "https://en.wikipedia.org/wiki/Semayne%27s_case",
+          quote: "Michaelmas Term, 1604",
+          note: "An independent check of the displayDate term. The infobox gives the full case name as Peter Semayne v Richard Gresham, Court of King's Bench, 5 Co Rep 91a, 77 ER 194. --check FOUND. Tertiary source; the date is the access date.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -1719,6 +2006,16 @@ window.privacyData = {
           quote: "The trial began at nine o’clock in the morning on December 6, 1763, at the Court of Common Pleas at Westminster.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "The Founders' Constitution (University of Chicago Press), vol. 5, Amendment IV, Document 4",
+          title: "Wilkes v. Wood, 98 Eng. Rep. 489 (C.P. 1763) — length of the sitting",
+          date: "1763-12-06",
+          url: "https://press-pubs.uchicago.edu/founders/documents/amendIVs4.html",
+          quote: "The Court sat at nine o'clock in the morning, and the verdict was brought in at twenty minutes past eleven o'clock at night.",
+          note: "Supports the summary's 'from nine in the morning to after eleven at night', which the existing sources did not quote. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -1805,7 +2102,7 @@ window.privacyData = {
       phase: "castle",
       title: "Blackstone classes eavesdroppers as a common nuisance",
       place: "Clarendon Press, Oxford",
-      body: "The fourth book of William Blackstone's Commentaries on the Laws of England lists eavesdroppers — those who listen under walls, windows or eaves to pick up talk and spread slanderous tales — among common nuisances. They could be presented at the court-leet or indicted at sessions and punished by a fine and by sureties for good behaviour.",
+      body: "The fourth book of William Blackstone's Commentaries on the Laws of England (1769) lists eavesdroppers — those who listen under walls, windows or the eaves of a house to pick up talk and then frame slanderous and mischievous tales — among common nuisances. They could be presented at the court-leet or indicted at the sessions, and punished by a fine and by finding sureties for good behaviour. Blackstone was recording an old offence, not creating a new one: his footnotes cite earlier authorities, Kitchin on courts and Hawkins's Pleas of the Crown.",
       lat: 51.7543,
       lng: -1.2544,
       continent: "Europe",
@@ -1816,8 +2113,8 @@ window.privacyData = {
           date: "1769",
           url: "https://avalon.law.yale.edu/18th_century/blackstone_bk4ch13.asp",
           quote: "Eaves-droppers, or fuch as liften under walls or windows, or the eaves of a houfe, to hearken after difcourfe, and thereupon to frame flanderous and mifchievous tales, are a common nufance and prefentable at the court-leet",
-          note: "PENDING only because tools/fetch-text.py --check returns NOT-FOUND for this page. Avalon transcribes the 1769 first edition with the long s rendered as 'f' (fuch = such, liften = listen, houfe = house, nufance = nuisance). The page sets its text in <br>-separated blocks that tools/fetch-text.py does not extract, so the quote was checked against the same fetched page with the helper's own norm() applied to the full BeautifulSoup text (match: True). Avalon's Blackstone index gives the source edition as 'First Edition Oxford : Printed at the Clarendon Press, 1765-1769'.",
-          verificationStatus: "PENDING",
+          note: "Avalon transcribes the 1769 first edition with the long s rendered as 'f' (fuch = such, liften = listen, houfe = house, nufance = nuisance). tools/fetch-text.py --check returns NOT-FOUND because the page sets its text in <br>-separated blocks that the helper's paragraph extractor skips. The verifier re-fetched the page on 2026-09-23 and found the quote verbatim in the full BeautifulSoup text, followed by ': or are indictable at the feffions, and punifhable by fine and finding fureties for the good behaviour', with footnotes 's Kitch. of courts. 20' and 't Ibid. 1 Hawk. P. C. 132'. Avalon's Blackstone index gives the source edition as 'First Edition Oxford : Printed at the Clarendon Press, 1765-1769'.",
+          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
         {
@@ -1838,7 +2135,7 @@ window.privacyData = {
       phase: "castle",
       title: "France's first constitution protects 'actions of private life' from calumny",
       place: "Salle du Manège, Paris (National Constituent Assembly)",
-      body: "The Constitution of 3 September 1791 allowed public criticism of officials but provided that calumnies and insults against any person relating to the actions of their private life would be punished at that person's suit. The historian Jean-Louis Halpérin notes that twentieth-century French doctrine largely ignored this provision.",
+      body: "The Constitution of 3 September 1791 (Title III, chapter V, article 17) permitted criticism of the acts of the constituted powers and let officials prosecute deliberate calumnies against their probity. It also provided that calumnies and insults against any person relating to the actions of their private life would be punished at that person's suit. The historian Jean-Louis Halpérin notes that twentieth-century French legal doctrine ignored this provision entirely.",
       lat: 48.8651,
       lng: 2.3268,
       continent: "Europe",
@@ -1957,7 +2254,7 @@ window.privacyData = {
       phase: "castle",
       title: "U.S. Post Office Act makes it a crime for postal staff to open letters",
       place: "Congress Hall, Philadelphia",
-      body: "Section 16 of the Act to establish the Post-Office and Post Roads, approved on 20 February 1792, punished any post-office employee who unlawfully detained, delayed or opened a letter, packet, bag or mail of letters, or secreted, embezzled or destroyed one, with a fine of up to three hundred dollars, up to six months' imprisonment, or both. Undeliverable 'dead letters' were to be opened and inspected at the General Post Office so that valuables could be returned.",
+      body: "Section 16 of the Act to establish the Post-Office and Post Roads, approved on 20 February 1792, punished any post-office employee who unlawfully detained, delayed or opened a letter, packet, bag or mail of letters entrusted to him with a fine of up to three hundred dollars, up to six months' imprisonment, or both. The same penalty applied to secreting, embezzling or destroying a letter that held no money or securities. Secreting or stealing letters that contained bank notes or other money instruments was punishable by death. Under section 18, letters still unclaimed after being advertised were sent as 'dead letters' to the General Post Office, where they were opened and inspected, and any valuable papers were advertised and kept for the addressee.",
       lat: 39.9487,
       lng: -75.1508,
       continent: "North America",
@@ -1980,6 +2277,26 @@ window.privacyData = {
           quote: "every such offender, being thereof duly convicted, shall, for every such offence, be fined not exceeding three hundred dollars, or imprisoned not exceeding six months, or both, according to the circumstances and aggravations of the offence.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "New Jersey Postal History Society (transcription of 1 Stat. 232)",
+          title: "Act of Feb. 20, 1792, sec. 16 — death penalty for letters containing money",
+          date: "1792-02-20",
+          url: "https://njpostalhistory.org/media/pdf/postact1792.pdf",
+          quote: "or if any such person, employed as aforesaid, shall steal or take any of the same out of any letter, packet, bag or mail of letters, that shall come to his possession, he shall, on conviction for any such offence, suffer death.",
+          note: "'the same' refers to bank notes, bills of exchange, Treasury warrants and other money instruments listed earlier in sec. 16. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "New Jersey Postal History Society (transcription of 1 Stat. 232)",
+          title: "Act of Feb. 20, 1792, sec. 18 — dead letters",
+          date: "1792-02-20",
+          url: "https://njpostalhistory.org/media/pdf/postact1792.pdf",
+          quote: "shall send such of the said letters as then remain on hand, as dead letters, to the general post-office, where the same shall be opened and inspected",
+          note: "Sec. 18 continues: if 'any valuable papers or matter of consequence' are found, the Postmaster General is to advertise them and preserve the letter and contents for the addressee on payment of postage. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -1990,7 +2307,7 @@ window.privacyData = {
       phase: "castle",
       title: "Royer-Collard: private life is 'walled in' and 'declared invisible'",
       place: "Chamber of Deputies, Palais Bourbon, Paris",
-      body: "In the debate on the press law that became the law of 17 May 1819, Royer-Collard argued in the Chamber on 27 April 1819 that truth could be pleaded against charges of defaming officials over their public functions but not over private life. His phrase — 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — are, in the historian Jean-Louis Halpérin's words, 'famous', though the expression 'vie privée' does not appear in the 1819 law itself.",
+      body: "In the Chamber of Deputies on 27 April 1819, during the debate on the de Serre press laws of May 1819, Royer-Collard defended the bill's rule on proving defamatory facts. Truth could be proved against officials over acts of their public functions, but not against private individuals: 'it is not permitted to tell the truth about private life'. His words — 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — are 'famous' in the historian Jean-Louis Halpérin's phrase. Halpérin also notes that the expression 'vie privée' does not appear in the law of 17 May 1819 itself.",
       lat: 48.8618,
       lng: 2.3186,
       continent: "Europe",
@@ -2004,6 +2321,16 @@ window.privacyData = {
           note: "Translation: 'The expression \"private life\" does not appear in the law, but contemporaries knew it. It was at the centre of Royer-Collard's speech (27 April 1819), with his famous words: \"so there is private life walled in; and, if I may use the expression, it is declared invisible, it is shut up inside houses\".' The primary text (Gallica, 'De la liberté de la presse : discours') returned HTTP 403 and was not read.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Internet Archive (scan of the University of Toronto, Robarts Library copy)",
+          title: "Prosper de Barante, La vie politique de M. Royer-Collard, ses discours et ses écrits, vol. 1 (Paris: Didier, 1863), pp. 474–475",
+          date: "1863",
+          url: "https://archive.org/stream/laviepolitiquede01barauoft/laviepolitiquede01barauoft_djvu.txt",
+          quote: "L'article établit seulement que la preuve ne sera pas admise contre les particuliers, c'est-à-dire qu'il n'est pas permis de dire la vérité sur la vie privée.",
+          note: "Primary text of the speech (OCR). Barante introduces it with the bill's article: 'Nul ne sera admis à prouver la vérité des faits diffamatoires, si ce n'est dans le cas d'imputation contre les dépositaires ou agents de l'autorité, ou autres personnes ayant agi dans un caractère public, de faits relatifs à leurs fonctions.' The speech continues: 'Voilà donc la vie privée murée, si je puis me servir de cette expression; elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons.' That sentence is OCR-damaged in the scan, so only the clean preceding sentence is quoted. Barante gives no date; 27 April 1819 rests on Halpérin. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -2014,7 +2341,7 @@ window.privacyData = {
       phase: "castle",
       title: "Mazzini's opened letters expose Britain's secret Post Office interception",
       place: "House of Commons, Palace of Westminster, London",
-      body: "On 14 June 1844 Thomas Duncombe presented a petition from Giuseppe Mazzini, W. J. Linton and two others complaining that their letters had been detained, their seals broken and the contents read at the Post Office. Home Secretary Sir James Graham replied that since the reign of Queen Anne the Secretary of State had held power to detain and open letters, confirmed by statute in 1837; he had issued a warrant for Mazzini's letters on 1 March 1844 at the Austrian ambassador's request. Both Houses appointed secret committees in July.",
+      body: "On 14 June 1844 Thomas Duncombe presented a petition from W. J. Linton, Giuseppe Mazzini and two others. It complained that their letters had been detained, their seals broken and the contents read at the Post Office. Home Secretary Sir James Graham replied that the Secretary of State had held power to detain and open letters since the reign of Queen Anne, and that Parliament had reviewed that power in 1837 and left it with the Secretaries of State. He admitted that a warrant had been issued for one petitioner's correspondence but refused to explain further. Historians have since shown that Graham signed the warrant for Mazzini's letters on 1 March 1844 at the request of the Austrian ambassador, Baron Philipp von Neumann. Both Houses appointed secret committees in July.",
       lat: 51.4995,
       lng: -0.1248,
       continent: "Europe",
@@ -2040,10 +2367,20 @@ window.privacyData = {
         {
           institution: "BRANCH: Britain, Representation and Nineteenth-Century History",
           title: "Kate Lawson, 'Personal Privacy, Letter Mail, and the Post Office Espionage Scandal, 1844'",
-          date: "2026-09-23",
+          date: "2013-03",
           url: "https://branchcollective.org/?ps_articles=kate-lawson-personal-privacy-letter-mail-and-the-post-office-espionage-scandal-1844",
-          quote: "As a result, on 1 March 1844, Graham issued a warrant for the opening of letters sent to Mazzini.",
-          note: "Same article: 'In July, secret committees were appointed by both the House of Commons and the Lords to inquire into the issue.' Publication date of the article not captured; 'date' is the access date.",
+          quote: "As a result, on 1 March 1844, Graham issued a warrant for the opening of letters sent to Mazzini. … The Post Office espionage scandal of 1844 had its genesis in a request from the Austrian ambassador, Baron Philipp von Neumann, to the British Secretary of State for the Home Department, Sir James Graham.",
+          note: "Same article: 'In July, secret committees were appointed by both the House of Commons and the Lords to inquire into the issue.' Publication date of the article not captured; 'date' is the access date. --check FOUND. Supports the Austrian request. Lawson's note 2 adds that Neumann also dealt directly with Foreign Secretary Lord Aberdeen, and that historians disagree over how to apportion blame between Graham and Aberdeen.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "UK Parliament, Hansard (Historic Hansard)",
+          title: "Opening Letters — Post Office. HC Deb 14 June 1844 (Sir James Graham's admission)",
+          date: "1844-06-14",
+          url: "https://api.parliament.uk/historic-hansard/commons/1844/jun/14/opening-letters-post-office",
+          quote: "As to three of the petitioners, he doubted if their letters had ever been detained, and no warrant as to them had been issued; but as to one of the petitioners he had to state, that, on his responsibility, a warrant had been issued as to the correspondence of that person, which warrant was no longer in force.",
+          note: "--check FOUND. Graham did not name Mazzini or give the warrant's date or origin in the Commons.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2113,19 +2450,29 @@ window.privacyData = {
           note: "Footnote 19 of the article: 'Dalloz périodique 1858, 3, 62.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Déméter (Université de Lille)",
+          title: "Nathalie Delbard, 'Ce que l'histoire juridique de la photographie nous apprend du principe de dignité humaine' — note 7, réquisitoire du ministère public, affaire Rachel",
+          date: "2020-09-01",
+          url: "https://www.peren-revues.fr/demeter/index.php?id=122&lang=fr",
+          quote: "Quelque grande que soit une artiste, quelque historique que soit un grand homme, ils ont leur vie privée distincte de la vie publique, leur foyer domestique séparé de la scène et du forum.",
+          note: "--check FOUND. Translation: 'However great an artist, however historic a great man, they have their private life distinct from their public life, their domestic hearth separate from the stage and the forum.' Delbard gives these as the words of the magistrate of the ministère public (the prosecutor).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       id: "california-telegraph-wiretap-statute-1862",
-      date: "1862",
+      date: "18 April 1862",
       year: 1862,
       phase: "castle",
       title: "California outlaws tapping telegraph lines",
-      place: "California State Legislature, Sacramento",
-      body: "According to the historian Brian Hochman, the earliest statute prohibiting wiretapping was passed in California in 1862, soon after the transcontinental telegraph reached the West Coast. The first person convicted under it, in 1864, was a stockbroker, D. C. Williams, who listened in on corporate telegraph lines and sold what he heard to traders.",
-      lat: 38.5766,
-      lng: -121.4934,
+      place: "California State Legislature, Exchange Building, Battery Street, San Francisco (session moved from flooded Sacramento)",
+      body: "Sitting in San Francisco after floods drove it out of Sacramento, California's legislature passed 'An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages', approved on 18 April 1862. Its section 6 made it a misdemeanour, punishable by a fine of up to $1,000 or a year in prison, for anyone outside a telegraph company to read or learn a message 'by means of any machine, instrument, or contrivance' while it was being sent over the line. The historian Brian Hochman calls it the earliest statute prohibiting wiretapping, written soon after the transcontinental telegraph reached the West Coast. He says the first person convicted, in 1864, was a stockbroker, D. C. Williams, who listened in on corporate telegraph lines and sold what he heard to stock traders.",
+      lat: 37.7964,
+      lng: -122.4007,
       continent: "North America",
       source: [
         {
@@ -2134,7 +2481,47 @@ window.privacyData = {
           date: "2018-03-22",
           url: "https://www.smithsonianmag.com/history/brief-history-surveillance-america-180968399/",
           quote: "The earliest statute prohibiting wiretapping was written in California in 1862, just after the Pacific Telegraph Company reached the West Coast, and the first person convicted was a stock broker named D.C. Williams in 1864.",
-          note: "Secondary source (historian interview). The 1862 statute text in the Statutes of California was not read; the exact chapter and date of enactment are unverified.",
+          note: "Secondary source (historian interview). The statute itself is now cited from the Statutes of California 1862, ch. 262 (see the added sources). The 1864 conviction of D. C. Williams rests on Hochman alone.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "California State Assembly, Office of the Chief Clerk (Statutes of California, 1862, scanned volume)",
+          title: "Statutes of California, 13th Session (1862), ch. CCLXII — An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages, p. 288",
+          date: "1862-04-18",
+          url: "https://clerk.assembly.ca.gov/sites/clerk.assembly.ca.gov/files/archive/Statutes/1862/1862.PDF#page=335",
+          quote: "CHAP. CCLXII.—An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages. [Approved April 18, 1862.]",
+          note: "Scanned PDF with no text layer (~29 MB), so fetch-text --check cannot run. The quote was transcribed from the page image at PDF page 335 (printed p. 288). The chapter runs pp. 288–293; the volume's index lists 'Clandestinely learning contents, penalty, 290'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "California State Assembly, Office of the Chief Clerk (Statutes of California, 1862, scanned volume)",
+          title: "Statutes of California 1862, ch. 262, sec. 6 (pp. 289–290) — clandestinely learning the contents of messages",
+          date: "1862-04-18",
+          url: "https://clerk.assembly.ca.gov/sites/clerk.assembly.ca.gov/files/archive/Statutes/1862/1862.PDF#page=336",
+          quote: "If any person, not connected with any telegraph company, shall, by means of any machine, instrument, or contrivance, or in any other manner, wilfully and fraudulently read, or attempt to read, any message, or to learn the contents thereof, whilst the same is being sent over any telegraph line",
+          note: "Transcribed from the page images at PDF pages 336–337 (printed pp. 289–290; the word 'contrivance' is hyphenated across the page break). The PDF has no text layer, so --check cannot run. The section goes on to cover anyone who 'shall use, or attempt to use, or communicate to others, any information so obtained'. The penalty is a misdemeanour with a 'fine, not to exceed one thousand dollars, or imprisonment, not to exceed one year, or by both'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "California State Assembly, Office of the Chief Clerk (Statutes of California, 1862, scanned volume)",
+          title: "Statutes of California 1862, Concurrent Resolution No. XI (adopted January 22, 1862), p. 594 — adjournment to San Francisco",
+          date: "1862-01-22",
+          url: "https://clerk.assembly.ca.gov/sites/clerk.assembly.ca.gov/files/archive/Statutes/1862/1862.PDF#page=641",
+          quote: "that this Legislature, when it adjourns to-day, do adjourn until Friday, the twenty-fourth day of January instant, to meet in the City of San Francisco, there to remain during the remainder of the present session",
+          note: "Transcribed from the page image at PDF page 641 (printed p. 594); no text layer, so --check cannot run. The resolution names the meeting place as 'the hall of the building on Battery street, between Washington and Jackson streets, known as the \"Exchange Building\"'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "Great Flood of 1862",
+          date: "2026-09-23",
+          url: "https://en.wikipedia.org/wiki/Great_Flood_of_1862",
+          quote: "As a result of the flooding, from January 23, 1862, the state capital was moved temporarily from Sacramento to San Francisco.",
+          note: "--check FOUND. Tertiary corroboration of the San Francisco sitting; 'date' is the access date.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2147,7 +2534,7 @@ window.privacyData = {
       phase: "castle",
       title: "French press law makes publishing 'a fact of private life' an offence",
       place: "Corps législatif, Palais Bourbon, Paris",
-      body: "The press law of 11 May 1868, passed as the Second Empire relaxed censorship, punished as a contravention any publication in a periodical of information relating to a fact of private life. The historian Jean-Louis Halpérin calls the provision 'a very brief episode'; Warren and Brandeis cited the 1868 law in their 1890 article.",
+      body: "Article 11 of the press law of 11 May 1868, passed as the Second Empire relaxed censorship, made any publication in a periodical relating to a fact of private life a contravention punishable by a 500-franc fine. Only the person concerned could bring a prosecution. The historian Jean-Louis Halpérin calls the provision 'a very brief episode'. Warren and Brandeis quoted the article in their 1890 essay 'The Right to Privacy'.",
       lat: 48.8618,
       lng: 2.3186,
       continent: "Europe",
@@ -2158,7 +2545,7 @@ window.privacyData = {
           date: "2015",
           url: "https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/protection-de-la-vie-privee-et-privacy-deux-traditions-juridiques-differentes",
           quote: "La mention de la vie privée dans l’éphémère loi du 11 mai 1868 (correspondant à un premier recul de la censure au début de l’Empire libéral) sanctionnant, comme une simple contravention, toute révélation non autorisée d’une information « relative à un fait de la vie privée », fut un épisode très court.",
-          note: "Translation: 'The mention of private life in the short-lived law of 11 May 1868 (marking a first retreat of censorship at the start of the Liberal Empire), which punished as a mere contravention any unauthorised disclosure of information \"relating to a fact of private life\", was a very brief episode.' The statute text (Bulletin des lois, via Gallica) returned HTTP 403 and was not read; the fine of 500 francs often cited was therefore not verified.",
+          note: "Translation: 'The mention of private life in the short-lived law of 11 May 1868 (marking a first retreat of censorship at the start of the Liberal Empire), which punished as a mere contravention any unauthorised disclosure of information \"relating to a fact of private life\", was a very brief episode.' The statute text (Bulletin des lois, via Gallica) returned HTTP 403. The wording of art. 11, including the 500-franc fine, is verified from Warren and Brandeis's footnote 41 (added source).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -2168,6 +2555,16 @@ window.privacyData = {
           date: "2015",
           url: "https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/protection-de-la-vie-privee-et-privacy-deux-traditions-juridiques-differentes",
           quote: "la loi sur la presse de 1868 (que Warren et Brandeis avaient eux citées)",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Harvard Law Review (HTML copy hosted by MIT CSAIL course 6.805), footnotes page",
+          title: "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harv. L. Rev. 193 (1890), note 41 [p. 214 note 1 in original]",
+          date: "1890-12-15",
+          url: "https://groups.csail.mit.edu/mac/classes/6.805/articles/privacy/Privacy_brand_warr_fn.html",
+          quote: "Loi Relative à la Presse. 11 Mai 1868. \"11. Toute publication dans un écrit periodique relative à un fait de la vie privée constitue une contravention punie d'un amende de cinq cent francs.",
+          note: "--check FOUND (accents and spelling as on the page, e.g. 'periodique', 'cinq cent'). The footnote continues: '\"La poursuite ne pourra être exercée que sur la plainte de la partie interessée.\" Riviére, Codes Francais et Lois Usuelles. App. Code Pen., p. 20.' Translation: 'Any publication in a periodical relating to a fact of private life constitutes a contravention punished by a fine of five hundred francs. Prosecution may be brought only on the complaint of the interested party.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2209,6 +2606,16 @@ window.privacyData = {
           date: "1878-05-13",
           url: "https://archive.law.upenn.edu/live/files/2502-ex-parte-jackson",
           quote: "May 13, 1878, Decided; OCTOBER, 1877, Term",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Supreme Court of the United States (via Cornell LII)",
+          title: "Ex parte Jackson, 96 U.S. 727 (1878) — warrant requirement for sealed mail",
+          date: "1878-05-13",
+          url: "https://www.law.cornell.edu/supremecourt/text/96/727",
+          quote: "Whilst in the mail, they can only be opened and examined under like warrant, issued upon similar oath or affirmation, particularly describing the thing to be seized, as is required when papers are subjected to search in one's own household.",
+          note: "--check FOUND. Supports the summary's warrant clause.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2276,7 +2683,17 @@ window.privacyData = {
           date: "2004",
           url: "https://web.archive.org/web/2025/https://www.metmuseum.org/essays/kodak-and-the-rise-of-amateur-photography",
           quote: "By far the most significant event in the history of amateur photography was the introduction of the Kodak #1 camera in 1888.",
-          note: "The live metmuseum.org page returned HTTP 429 to scripts; read via the Wayback Machine. The same essay says Eastman 'coined the memorable slogan: “You press the button, we do the rest.”' Essay first published October 2004 (Heilbrunn Timeline).",
+          note: "The live metmuseum.org page returned HTTP 429 to scripts; read via the Wayback Machine. The same essay says Eastman 'coined the memorable slogan: “You press the button, we do the rest.”' Essay first published October 2004 (Heilbrunn Timeline). Verification: Could not re-fetch: web.archive.org connections were reset ('ws_closed_mid_exchange') on three attempts, and the live metmuseum.org essay returned HTTP 429. So the quote, the slogan attribution and the October 2004 date could not be re-checked.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Smithsonian Magazine / History News Network",
+          title: "How the Rise of the Camera Launched a Fight to Protect Gilded Age Americans' Privacy (Sohini Desai)",
+          date: "2024-07-05",
+          url: "https://www.smithsonianmag.com/history/how-the-rise-of-the-camera-launched-a-fight-to-protect-gilded-age-americans-privacy-180984656/",
+          quote: "The camera’s first great age—which began in 1888 when George Eastman debuted the Kodak—is full of stories like this one.",
+          note: "--check FOUND. Same article: 'Instead of developing their own pictures, customers could mail their devices to the Kodak factory and have their rolls of film developed, printed, and replaced.' (FOUND), followed by the ad line 'You press the button,' Kodak ads promised, 'we do the rest.' The page metadata gives datePublished 2024-07-05.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2289,7 +2706,7 @@ window.privacyData = {
       phase: "letalone",
       title: "Punch cards count the 1890 US census",
       place: "U.S. Census Office, Washington, D.C.",
-      body: "After winning an 1888 Census Office competition — his system transcribed test data from St. Louis in 72.5 hours and sorted it in 5.5 hours, against 144.5 and 100.5 hours for transcription by the two rivals — Herman Hollerith — whose tabulating machine was patented on 8 January 1889 — supplied electro-mechanical tabulators for the 1890 census. Clerks punched each person's answers into cards that the machine read electrically; census clerks tabulated data for nearly 63 million people this way. Hollerith founded the Tabulating Machine Company in 1896; after a 1911 merger it was renamed International Business Machines (IBM) in 1924.",
+      body: "In a test run for the Census Office in 1889, Herman Hollerith's punch-card system transcribed data from four St. Louis enumeration districts in 72.5 hours and tabulated it in 5.5 hours; his two rivals needed 144.5 and 100.5 hours just to transcribe. Hollerith, whose electro-mechanical tabulating machine had been patented on 8 January 1889, won the contract to supply tabulators for the 1890 census. Clerks punched each person's answers into cards that the machine read electrically, and census clerks tabulated data for nearly 63 million people this way. Hollerith founded the Tabulating Machine Company in 1896; a 1911 merger folded it into the Computing-Tabulating-Recording Company, which was renamed International Business Machines (IBM) in 1924.",
       lat: 38.8951,
       lng: -77.0364,
       continent: "North America",
@@ -2311,6 +2728,16 @@ window.privacyData = {
           url: "https://www.census.gov/about/history/bureau-history/census-innovations/technology/hollerith-machine.html",
           quote: "The first two contestants captured the data in 144.5 hours and 100.5 hours. The third contestant, a former Census Bureau employee named Herman Hollerith, completed the data capture process in 72.5 hours.",
           note: "Undated page; date is the access date. Same page: 'Hollerith astounded Census Bureau officials by completing the task in just 5.5 hours!'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "U.S. Bureau of the Census (Leon E. Truesdell), via Internet Archive",
+          title: "The Development of Punch Card Tabulation in the Bureau of the Census, 1890–1940",
+          date: "1965",
+          url: "https://archive.org/download/bub_gb_MGZqAAAAMAAJ/bub_gb_MGZqAAAAMAAJ_djvu.txt",
+          quote: "In compliance with a suggestion made by the Secretary of the Interior in 1889, the Superintendent of the Census, Robert P. Porter, appointed a committee to consider the method of tabulation to be employed in the Eleventh (1890) Census",
+          note: "--check FOUND in the OCR text of the Census Bureau's 1965 history (Washington: GPO), pp. 40–41, section 'The 1889 test'. The same passage has 'The report of the committee, dated November 30, 1889, describes the test as follows: To test these various methods, four enumeration districts in the city of St. Louis, selected from the re-enumeration of 1880, were selected.' (FOUND) and gives the Hollerith tabulation time as '5 hours and 28 minutes' (FOUND). Scan: https://archive.org/details/bub_gb_MGZqAAAAMAAJ.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2354,7 +2781,17 @@ window.privacyData = {
           date: "1960-08",
           url: "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
           quote: "her husband was a wealthy young paper manufacturer, who only the year before had given up the practice of law to devote himself to an inherited business.",
-          note: "Prosser, p. 383, on Warren; the next paragraph: 'Mr. Warren turned to his recent law partner, Louis D. Brandeis'.",
+          note: "Prosser, p. 383, on Warren; the next paragraph: 'Mr. Warren turned to his recent law partner, Louis D. Brandeis'. Verification: Could not re-fetch. web.archive.org reset every connection through the proxy (3 tries). The live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 (AWS WAF challenge) with an empty body. archive.org/wayback/available reports no snapshot. So the 'paper manufacturer ... given up the practice of law' quote is unverified this session.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Robert D. Farber University Archives & Special Collections, Brandeis University Library",
+          title: "Career (LDB-100 exhibit)",
+          date: "2026",
+          url: "https://www.brandeis.edu/library/archives/exhibits/ldb-100/career/index.shtml",
+          quote: "He also established and worked at the firm Warren & Brandeis with Samuel D. Warren, Jr. until 1889.",
+          note: "--check FOUND. The page is undated, so the date is the access date. It supports 'former law partner' and the end of the partnership in 1889, but it does not mention the paper business. The same page repeats the contested story that the article 'was inspired by increasing gossip about Warren's marriage'; that story is not used.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2366,10 +2803,10 @@ window.privacyData = {
       year: 1902,
       phase: "letalone",
       title: "New York's top court finds no right of privacy in Abigail Roberson's case",
-      place: "New York Court of Appeals, Court of Appeals Hall, Albany, New York",
-      body: "The Franklin Mills Company had printed and circulated about 25,000 lithographs of teenager Abigail Roberson's likeness, captioned “Flour of the Family”, without her knowledge or consent. On 27 June 1902 the Court of Appeals, in an opinion by Chief Judge Alton B. Parker, held that the “so-called ‘right of privacy’” had “not as yet found an abiding place in our jurisprudence”. Parker added that the legislature could forbid using another's picture or name for advertising without consent.",
-      lat: 42.6533,
-      lng: -73.7566,
+      place: "New York Court of Appeals, New York State Capitol, Albany, New York",
+      body: "According to her complaint, the Franklin Mills Company and the Rochester Folding Box Company had printed and circulated about 25,000 lithographs of teenager Abigail Roberson's likeness, captioned “Flour of the Family”, without her knowledge or consent. On 27 June 1902 the Court of Appeals, in an opinion by Chief Judge Alton B. Parker, held that the “so-called ‘right of privacy’” had “not as yet found an abiding place in our jurisprudence”. Parker added that the legislature could forbid using another's picture or name for advertising without consent.",
+      lat: 42.6526,
+      lng: -73.7573,
       continent: "North America",
       source: [
         {
@@ -2385,10 +2822,20 @@ window.privacyData = {
         {
           institution: "Historical Society of the New York Courts",
           title: "Who Owns A Photo of Your Face? The Right to Privacy & The Courts",
-          date: "2026",
+          date: "2022-10-18",
           url: "https://history.nycourts.gov/events/roberson-privacy-rights/",
           quote: "But the Court of Appeals rejected her plea: there was no inherent right to privacy in the constitution and the court could not bestow it. That was up to the legislature.",
           note: "Event page, date of access; it gives Roberson's age as 17.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Historical Society of the New York Courts",
+          title: "New York State Court of Appeals Hall",
+          date: "2026",
+          url: "https://history.nycourts.gov/history-new-york-courthouses/legal-history-new-york-history-new-york-courthouses-court-appeals/",
+          quote: "The Court of Appeals originally sat in the State Capitol. It moved to its present home at 20 Eagle Street a short distance away in 1917.",
+          note: "--check FOUND. The page is undated, so the date is the access date. It supports the corrected place and locationNote.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2399,7 +2846,7 @@ window.privacyData = {
       date: "1903",
       year: 1903,
       phase: "letalone",
-      title: "New York passes the first privacy statute: no use of a name or picture without written consent",
+      title: "New York writes a “right of privacy” into statute: no use of a name or picture without written consent",
       place: "New York State Capitol, Albany, New York",
       body: "In its next session after Roberson, the New York legislature passed chapter 132 of the Laws of 1903, which made it a misdemeanor to use the name, portrait or picture of any living person for advertising or trade without that person's written consent, and gave the person a civil action. The provisions became sections 50 and 51 of New York's Civil Rights Law and are still in force. The U.S. Supreme Court upheld the statute against a due-process challenge in Sperry & Hutchinson Co. v. Rhodes (1 May 1911).",
       lat: 42.6526,
@@ -2422,16 +2869,26 @@ window.privacyData = {
           date: "2024-05-03",
           url: "https://web.archive.org/web/2025/https://www.nysenate.gov/legislation/laws/CVR/50",
           quote: "§ 50. Right of privacy. A person, firm or corporation that uses for advertising purposes, or for the purposes of trade, the name, portrait, picture, likeness, or voice of any living person without having first obtained the written consent of such person, or if a minor of such minor's parent or guardian, is guilty of a misdemeanor.",
-          note: "Current, amended text (the words 'likeness, or voice' were added after 1903). nysenate.gov returned HTTP 403 to scripts, so the Wayback snapshot was read.",
-          verificationStatus: "CONFIRMED",
+          note: "Current, amended text (the words 'likeness, or voice' were added after 1903). nysenate.gov returned HTTP 403 to scripts, so the Wayback snapshot was read. Verification: Could not re-fetch. web.archive.org connections were reset (3 tries). The live nysenate.gov page, the Justia and FindLaw copies all returned HTTP 403. newyork.public.law loads, but its HTML has no statute text. The current wording ('likeness, or voice') is therefore unverified this session.",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
           institution: "Historical Society of the New York Courts",
           title: "Who Owns A Photo of Your Face? The Right to Privacy & The Courts",
-          date: "2026",
+          date: "2022-10-18",
           url: "https://history.nycourts.gov/events/roberson-privacy-rights/",
           quote: "In 1903, in response, the legislature passed the first state privacy law, which is still on the books.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Court of Appeals of New York (via Legal Information Institute, Cornell Law School)",
+          title: "Messenger v. Gruner + Jahr Printing and Publishing (2000 NY Int. 1)",
+          date: "2000-02-17",
+          url: "https://www.law.cornell.edu/nyctap/I00_0001.htm",
+          quote: "In response to Roberson, the Legislature enacted Civil Rights Law §§ 50 and 51, which provide a limited statutory right of privacy.",
+          note: "--check FOUND. Same per curiam opinion: 'Section 50 makes it a misdemeanor to use a living person's \"name, portrait or picture\" for advertising or trade purposes \"without having first obtained the written consent of such person, or if a minor of his or her parent or guardian.\"' (FOUND). It supports the §§ 50–51 codification, the written-consent rule and the law's continued force.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2462,7 +2919,7 @@ window.privacyData = {
         {
           institution: "Smithsonian Magazine / History News Network",
           title: "How the Rise of the Camera Launched a Fight to Protect Gilded Age Americans' Privacy (Sohini Desai)",
-          date: "2024",
+          date: "2024-07-05",
           url: "https://www.smithsonianmag.com/history/how-the-rise-of-the-camera-launched-a-fight-to-protect-gilded-age-americans-privacy-180984656/",
           quote: "Soon after, the Supreme Court of Georgia became the first to recognize this category of privacy claim.",
           note: "Secondary source for the 'first' characterisation.",
@@ -2502,7 +2959,7 @@ window.privacyData = {
       phase: "letalone",
       title: "US census law bars using returns against the people who gave them",
       place: "United States Congress, U.S. Capitol, Washington, D.C.",
-      body: "Earlier census acts had required that census information “shall be used only for the statistical purposes for which it is supplied” (1909) and that only sworn census employees examine individual reports (the act for the 1920 census). The act providing for the Fifteenth Census, approved 18 June 1929, further protected the information from use “to the detriment of the person or persons to whom such information relates”. The same principle — no publication identifying any individual — was later codified in Title 13 of the U.S. Code (1954).",
+      body: "Earlier census acts had required that census information “shall be used only for the statistical purposes for which it is supplied” (1909) and that only sworn census employees examine individual reports (the act for the 1920 census). The act providing for the Fifteenth Census, approved 18 June 1929, was the first census law to extend the no-identification promise to individuals: “No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified.” As the Census Bureau read it, the act also protected the information from being used “to the detriment of the person or persons to whom such information relates”. Congress codified the 1929 law in 1954 as Title 13 of the U.S. Code, which carries virtually the same language.",
       lat: 38.8899,
       lng: -77.0091,
       continent: "North America",
@@ -2512,8 +2969,18 @@ window.privacyData = {
           title: "“It's None of Their Damn Business”: Privacy and Disclosure Control in the U.S. Census, 1790–2020",
           date: "2023-09",
           url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10621322/",
-          quote: "A decade later, the Census Bureau further clarified that the 1929 Census Act protected the information collected from being used “to the detriment of the person or persons to whom such information relates”",
-          note: "Peer-reviewed, open access: Popul Dev Rev 49(3):651-679, doi:10.1111/padr.12580. Reference list: 'Census Act. 1929. “The Act Providing for the Fifteenth Census and for the Apportionment of Representatives in Congress.” June 18, 1929.' The article adds: 'Virtually the same language appears in Title 13 (1954), which has governed the censuses taken since 1960.' The 1929 statute itself was not read.",
+          quote: "A decade later, the Census Bureau further clarified that the 1929 Census Act protected the information collected from being used “to the detriment of the person or persons to whom such information relates” … The 1929 census law was the first to extend the promise to individuals, specifying that “No publication shall be made by the Census Office whereby the data furnished by any particular establishment or individual can be identified”",
+          note: "Peer-reviewed, open access: Popul Dev Rev 49(3):651-679, doi:10.1111/padr.12580. Reference list: 'Census Act. 1929. “The Act Providing for the Fifteenth Census and for the Apportionment of Representatives in Congress.” June 18, 1929.' The article adds: 'Virtually the same language appears in Title 13 (1954), which has governed the censuses taken since 1960.' The 1929 statute itself was not read. --check FOUND. The article cites Census Act 1929, p. 25. This is the quote that backs the corrected summary's no-identification sentence.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "U.S. Census Bureau (George Gatewood, Policy Office)",
+          title: "A Monograph on Confidentiality and Privacy in the U.S. Census",
+          date: "2001-07",
+          url: "https://www2.census.gov/library/publications/2001/communications/monograph-on-confidentiality-and-privacy.pdf",
+          quote: "In 1929, Congress enacted the law which formed the basis for what was codified in 1954 as Title 13, United States Code, and the Census Bureau has operated under this law ever since.",
+          note: "--check FOUND. Same monograph: 'In light of the 1929 Census Act imposing strict confidentiality, the Census Bureau referred the request to the U.S. Attorney General.' (FOUND). That was the 1930 Women's Bureau request for names of women in Rochester, and the Attorney General ruled they could not be released (36 Op. Att'y Gen. 362, 1930).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2526,7 +2993,7 @@ window.privacyData = {
       phase: "letalone",
       title: "Nazi census asks about Jewish grandparents — under a promise of statistical secrecy",
       place: "Statistisches Reichsamt (Statistical Office of the Reich), Berlin",
-      body: "Germany's census of 17 May 1939 came with a supplementary card for each household asking whether any grandparent was Jewish, where the 16 June 1933 census had asked about religion. Respondents were threatened with heavy penalties for false answers but promised discretion — cards in a sealed envelope — and “a purely statistical evaluation”. Cards recording a Jewish grandparent were nonetheless passed, after statistical processing, to the Reich Office of Genealogy; the surviving cards name about 277,500 people in about 130,000 households with their addresses.",
+      body: "Germany's census of 17 May 1939 came with a supplementary card for each household asking whether any grandparent was Jewish, where the 16 June 1933 census had asked about religion. Respondents were threatened with heavy penalties for false answers but promised discretion (cards in a sealed envelope) and “a purely statistical evaluation”. Cards recording a Jewish grandparent were nonetheless passed, after statistical processing, to the Reich Office of Genealogy. The surviving cards list about 277,500 people classed as of Jewish origin, in about 130,000 households, with names, birth dates and exact addresses. The Federal Archives says it has not been proved that the cards were used to prepare the deportations, and thinks it unlikely: they reached the registration offices only in April/May 1941 and the Genealogy Office in January 1942.",
       lat: 52.52,
       lng: 13.405,
       continent: "Europe",
@@ -2560,7 +3027,7 @@ window.privacyData = {
       phase: "letalone",
       title: "A model Dutch population register becomes a tool of deportation",
       place: "Rijksinspectie van de Bevolkingsregisters (State Inspectorate of Population Registers), The Hague",
-      body: "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”), and these registers and the related identity cards played an important role in their apprehension before deportation. Dutch Jews had the highest death rate — 73 percent — of Jews in any occupied western European country; Jewish refugees who had avoided registration died at a lower rate.",
+      body: "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”). These registers and the related identity cards played an important role in rounding them up before deportation. Dutch Jews had the highest death rate (73 percent) of Jews in any occupied western European country. Jewish refugees living in the Netherlands died at a lower rate. Demographers William Seltzer and Margo Anderson think the best explanation is that, unlike most Dutch Jews, the refugees avoided registration.",
       lat: 52.0705,
       lng: 4.3007,
       continent: "Europe",
@@ -2574,6 +3041,16 @@ window.privacyData = {
           note: "Social Research 68(2), Summer 2001, pp. 481-513, at 487-488 (JSTOR stable URL https://www.jstor.org/stable/40971467). Read from a copy posted for a University of Washington course (CSDE 502). Same page: 'By early 1941 Methorst's successor as head of the population registration office, J. L. Lentz, had quickly adapted this general \"cradle to grave\" system to create special registration systems covering the Jewish and Gypsy populations' and 'Dutch Jews had the highest death rate (73 percent) of Jews residing in any occupied western European country'. They explain the refugees' lower death rate by the fact that they 'avoided registration'. Seltzer's fuller treatment (Population and Development Review 24(3), 1998) was not read.",
           verificationStatus: "CONFIRMED",
           accessType: "PAYWALL"
+        },
+        {
+          institution: "Wikipedia (Dutch)",
+          title: "Jacobus Lambertus Lentz",
+          date: "2026",
+          url: "https://nl.wikipedia.org/wiki/Jacobus_Lambertus_Lentz",
+          quote: "Dit besluit legde aan de gemeenten de plicht op om met ingang van 1 juli 1936 voor elke inwoner een aparte kaart met gegevens aan te leggen. Tevens werd een Rijksinspectie van de Bevolkingsregisters opgericht. Lentz werd hiervan het hoofd.",
+          note: "Tertiary cross-check (--check FOUND). Translation: 'This decree obliged municipalities to keep, from 1 July 1936, a separate card with details for every inhabitant. A State Inspectorate of Population Registers was also set up, with Lentz as its head.' Same page (FOUND): 'Hij speelde ook een hoofdrol in de uitvoering van de aanmeldplicht voor Joden' ('He also played a leading role in carrying out the compulsory registration of Jews'). It cites Loe de Jong and Presser. It also says Lentz set up, at Berlin's request, a shadow archive in The Hague of every identity card, which supports the Hague location.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -2584,7 +3061,7 @@ window.privacyData = {
       phase: "letalone",
       title: "Wartime law lifts census confidentiality; data on Japanese Americans handed over",
       place: "U.S. Bureau of the Census / Department of Commerce, Washington, D.C.",
-      body: "The Second War Powers Act (March 1942) allowed the Secretary of Commerce to supply census information for the conduct of the war, suspending the confidentiality protection. The Census Bureau provided block-level data locating Japanese Americans in California and six other states, and — as historian Margo Anderson and statistician William Seltzer showed from Commerce Department records in 2007 — complied within seven days with an 4 August 1943 request from Treasury Secretary Henry Morgenthau for the names and locations of all people of Japanese ancestry in the Washington, D.C., area. Congress restored census confidentiality in 1947.",
+      body: "From January 1942 the Census Bureau helped the Army on the West Coast remove Japanese Americans. It supplied tract-level tabulations and census-block maps showing how many Japanese Americans lived on each block. The Second War Powers Act (March 1942) then let the Secretary of Commerce supply census information for the conduct of the war, suspending census confidentiality. In 2007 historian Margo Anderson and statistician William Seltzer showed from Commerce Department records that the Bureau had complied, within seven days, with a 4 August 1943 request from Treasury Secretary Henry Morgenthau. He had asked for the names and locations of all people of Japanese ancestry in the Washington, D.C., area. Congress restored census confidentiality in 1947.",
       lat: 38.894,
       lng: -77.0327,
       continent: "North America",
@@ -2608,6 +3085,16 @@ window.privacyData = {
           note: "Same passage: 'Seltzer and Anderson (2007) documented multiple examples of wartime disclosure of individual-level census responses.' Statute cited as Second War Powers Act 1942, Title XIV, §1402, 56 Stat. 186.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Social Research (William Seltzer and Margo Anderson), Johns Hopkins University Press",
+          title: "The Dark Side of Numbers: The Role of Population Data Systems in Human Rights Abuses",
+          date: "2001",
+          url: "https://jlgodwin.github.io/CSDE502-Sp23/Readings/Week%204/SeltzerAnderson2001.pdf",
+          quote: "The Census Bureau also gave direct assistance to the military authorities on the West Coast by: (1) providing tract-level tabulations of Japanese Americans from the 1940 Census in January 1942",
+          note: "Social Research 68(2), Summer 2001, p. 492 (JSTOR stable URL https://www.jstor.org/stable/40971467), read from a course copy. --check FOUND. The same list continues (FOUND): '(3) making available census-block maps showing the number of Japanese American enumerated as residing in each block'. Also FOUND, p. 498: 'Yet even before the Second War Powers Act was introduced in Congress early in 1942, the director of the Census Bureau indicated his willingness to ignore the law so as to provide defense authorities a way of checking confidential census information on individual Japanese Americans'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "PAYWALL"
         }
       ]
     },
@@ -2666,7 +3153,7 @@ window.privacyData = {
       phase: "rights",
       title: "East Germany creates the Ministry for State Security (Stasi)",
       place: "Volkskammer (People's Chamber), East Berlin",
-      body: "On 8 February 1950 the GDR's Volkskammer passed, in a rushed procedure, a law turning the Interior Ministry's Main Administration for the Protection of the Economy into the Ministry for State Security; it took effect when President Wilhelm Pieck promulgated it on 18 February. By 31 October 1989 the ministry had 91,015 full-time employees and about 189,000 unofficial informers — one for every 89 citizens. Its surviving records run to more than 111 kilometres of files.",
+      body: "On 8 February 1950 the GDR's Volkskammer passed, in a rushed procedure, a law turning the Interior Ministry's Main Administration for the Protection of the Economy into the Ministry for State Security. It took effect when President Wilhelm Pieck promulgated it on 18 February. In 1989 the ministry had 91,015 full-time employees (as of 31 October) and about 189,000 unofficial informers, one for every 89 citizens. Its surviving records run to more than 111 kilometres of files.",
       lat: 52.52,
       lng: 13.405,
       continent: "Europe",
@@ -2700,6 +3187,16 @@ window.privacyData = {
           note: "Translation: 'This comprises more than 111 kilometres of files and more than 1.7 million photos as well as index cards, films, audio documents and microfiches.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Bundesarchiv – Stasi-Unterlagen-Archiv (MfS-Lexikon)",
+          title: "Inoffizieller Mitarbeiter (IM)",
+          date: "2026",
+          url: "https://www.bundesarchiv.de/im-archiv-recherchieren/stasi-unterlagen-einsehen/hinweise-zum-mfs/mfs-lexikon/detail/inoffizieller-mitarbeiter-im/",
+          quote: "Auf 89 DDR -Bürger kam somit ein IM",
+          note: "--check FOUND. The preceding sentence on the same page gives the IM count for 1989: 'Die Anzahl der vom MfS geführten inoffiziellen Mitarbeiter umfasste im Jahre 1989 ungefähr 189.000 IM, darunter 173.000 IM der Abwehrdiensteinheiten, ferner 13.400 IM in der DDR und 1.550 IM in der Bundesrepublik, die von der Hauptverwaltung A (HV A) geführt wurden'. Translation of quote: 'There was thus one IM for every 89 GDR citizens.' Undated web page (date = access year).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -2710,7 +3207,7 @@ window.privacyData = {
       phase: "rights",
       title: "Prosser sorts seventy years of privacy cases into four torts",
       place: "University of California School of Law (Boalt Hall), Berkeley, California",
-      body: "In “Privacy”, California Law Review vol. 48 no. 3 (August 1960), p. 383, Dean William L. Prosser of the University of California School of Law surveyed the case law since Warren and Brandeis and concluded it was “not one tort, but a complex of four”: intrusion upon seclusion, public disclosure of embarrassing private facts, false-light publicity, and appropriation of name or likeness. The article substantially boosted the influence of Warren and Brandeis's essay: courts cited it far more often after 1960 than before.",
+      body: "In “Privacy”, California Law Review vol. 48 no. 3 (August 1960), p. 383, Dean William L. Prosser of the University of California School of Law surveyed the case law since Warren and Brandeis. He concluded it was “not one tort, but a complex of four”: intrusion upon seclusion, public disclosure of embarrassing private facts, false-light publicity, and appropriation of name or likeness. Law professor Amy Gajda credits the article with substantially boosting the influence of Warren and Brandeis's essay, which courts cited far more often after 1960 than before.",
       lat: 37.8697,
       lng: -122.2533,
       continent: "North America",
@@ -2721,8 +3218,8 @@ window.privacyData = {
           date: "1960-08",
           url: "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
           quote: "It is not one tort, but a complex of four. The law of privacy comprises four distinct kinds of invasion of four different interests of the plaintiff",
-          note: "Same page lists: '1. Intrusion upon the plaintiff's seclusion or solitude, or into his private affairs. 2. Public disclosure of embarrassing private facts about the plaintiff. 3. Publicity which places the plaintiff in a false light in the public eye. 4. Appropriation, for the defendant's advantage, of the plaintiff's name or likeness.' Author footnote: 'Dean, University of California School of Law, Berkeley.' lawcat.berkeley.edu blocked scripts (HTTP 202 challenge); the PDF was read from the Wayback Machine capture of 19 Dec 2024. DOI 10.15779/Z383J3C.",
-          verificationStatus: "CONFIRMED",
+          note: "Same page lists: '1. Intrusion upon the plaintiff's seclusion or solitude, or into his private affairs. 2. Public disclosure of embarrassing private facts about the plaintiff. 3. Publicity which places the plaintiff in a false light in the public eye. 4. Appropriation, for the defendant's advantage, of the plaintiff's name or likeness.' Author footnote: 'Dean, University of California School of Law, Berkeley.' lawcat.berkeley.edu blocked scripts (HTTP 202 challenge); the PDF was read from the Wayback Machine capture of 19 Dec 2024. DOI 10.15779/Z383J3C. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset the connection on repeated tries with fetch-text.py, with curl (including the id_ raw variant), and with WebFetch. The live lawcat.berkeley.edu PDF and DOI 10.15779/Z383J3C return an HTTP 202 bot challenge, then 403. The bibliographic details are confirmed via Crossref (10.2307/3478805: California Law Review 48(3):383, published 1960-08, author William L. Prosser), and the four torts via SEP (added). The verbatim quote is unconfirmed this session; re-check when web.archive.org is reachable.",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -2731,7 +3228,17 @@ window.privacyData = {
           date: "2008",
           url: "https://web.archive.org/web/2025/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
           quote: "Prosser's influential article undoubtedly boosted the impact of Warren and Brandeis's article substantially.",
-          note: "Footnote 10, which continues: about eighty cases named the 1890 article in 1890-1960, more than 400 in 1960-2007.",
+          note: "Footnote 10, which continues: about eighty cases named the 1890 article in 1890-1960, more than 400 in 1960-2007. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset every connection, the live brooklynworks.brooklaw.edu PDF returns HTTP 403 (fetch-text.py and WebFetch), and the OpenAlex/SSRN routes were rate-limited or returned 403. The footnote-10 quote and the case counts (about 80 cases in 1890-1960, over 400 in 1960-2007) are unconfirmed. The summary now attributes the claim to Gajda.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Stanford Encyclopedia of Philosophy (Beate Roessler and Judith DeCew)",
+          title: "Privacy",
+          date: "2023-10-19",
+          url: "https://plato.stanford.edu/entries/privacy/",
+          quote: "In an attempt to systematize and more clearly describe and define the new right of privacy being upheld in tort law, William Prosser wrote that what had emerged were four different interests in privacy",
+          note: "--check FOUND. The list that follows is also FOUND and ends with the page cite: 'intrusion into a person's seclusion or solitude, or into his private affairs; public disclosure of embarrassing private facts about an individual; publicity placing one in a false light in the public eye; and appropriation of one's likeness for the advantage of another (1960: 389)'. Bibliography: 'Prosser, William L., 1960, \"Privacy\", California Law Review, 48(3): 383–423.' The entry was first published 14 May 2002; the date given is the substantive revision of 19 Oct 2023.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2742,9 +3249,9 @@ window.privacyData = {
       date: "1964",
       year: 1964,
       phase: "rights",
-      title: "Vance Packard's The Naked Society takes surveillance to the bestseller list",
+      title: "Vance Packard's The Naked Society sounds the alarm on surveillance",
       place: "David McKay Company, New York City",
-      body: "Journalist Vance Packard, author of The Hidden Persuaders, published The Naked Society (New York: David McKay, 1964), a popular exposé whose first part is titled “The Mounting Surveillance”. It opens with a typical family of 1964 watched at every turn — the mother recorded by a closed-circuit camera hidden in a store dressing room. Two years later Congress chose Packard as the first witness in its hearings on a National Data Center.",
+      body: "Journalist Vance Packard, author of The Hidden Persuaders, published The Naked Society (New York: David McKay, 1964), a popular exposé whose first part is titled “The Mounting Surveillance”. It opens by looking in on “a reasonably successful family in a typical city of the Land of Liberty, 1964”, who are watched at every turn. The mother is recorded by a closed-circuit TV camera hidden behind a mesh screen in a store dressing room. On 26 July 1966 Packard was the first witness when a House subcommittee on invasion of privacy opened hearings on proposals for a National Data Center.",
       lat: 40.758,
       lng: -73.9855,
       continent: "North America",
@@ -2835,7 +3342,7 @@ window.privacyData = {
       phase: "rights",
       title: "Congress puts the proposed National Data Center on trial",
       place: "Room 2247, Rayburn House Office Building, Washington, D.C.",
-      body: "In April 1965 a Social Science Research Council committee chaired by Yale economist Richard Ruggles urged a federal data bank, and a Bureau of the Budget task force under Carl Kaysen was studying access to government statistics. On 26–28 July 1966 the House Special Subcommittee on Invasion of Privacy, chaired by Rep. Cornelius Gallagher, held hearings on “The Computer and Invasion of Privacy”. Gallagher said the thought of Americans' records “neatly bundled together into one compact package is appalling” and floated a new rule under which “a person may have the right to examine his own file”. The hearings set off a national press backlash against the plan.",
+      body: "In April 1965 a Social Science Research Council committee chaired by Yale economist Richard Ruggles urged a federal data bank, and a Bureau of the Budget task force under Carl Kaysen was studying access to government statistics. On 26–28 July 1966 the House Special Subcommittee on Invasion of Privacy, chaired by Rep. Cornelius Gallagher, held hearings on “The Computer and Invasion of Privacy”. Gallagher said the thought of Americans' records “neatly bundled together into one compact package is appalling” and suggested that a new concept in file accessibility might be needed, under which “a person may have the right to examine his own file”. Extensive press coverage of the hearings fed a growing national backlash against the plan.",
       lat: 38.8867,
       lng: -77.0107,
       continent: "North America",
@@ -2857,6 +3364,16 @@ window.privacyData = {
           url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10621322/",
           quote: "Congressman Cornelius Gallagher (D-NJ) led the charge, accusing the authors of the proposal of trying to create computerized dossiers on every American",
           note: "The same article describes the Data Center as intended 'to make data from different federal sources interoperable, preserve it, and make it accessible to researchers under strict disclosure guidelines' and says 'hundreds of articles appeared in newspapers and magazines across the country'. The Kaysen task-force report itself (October 1966) was not read.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Journal of Privacy and Confidentiality (Rebecca S. Kraus), vol. 5 no. 1",
+          title: "Statistical Déjà Vu: The National Data Center Proposal of 1965 and Its Descendants",
+          date: "2013",
+          url: "https://journalprivacyconfidentiality.org/index.php/jpc/article/download/624/607",
+          quote: "In April 1965, the SSRC Committee on the Preservation and Use of Economic Data issued their report, known as the Ruggles Report (named after the chairman of the committee, Yale economist Richard Ruggles).",
+          note: "--check FOUND (open-access PDF). Section 3.2 of the same article is also FOUND: 'Extensive media coverage of the hearings revealed far-reaching concerns over the potential invasion of privacy.' and 'the media rallied against the national data center proposal'. It also notes testimony on the plan 'before the Senate Subcommittee on Administrative Practice and Procedure in June 1966', before the House hearings.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -2927,7 +3444,7 @@ window.privacyData = {
       phase: "rights",
       title: "Title III sets warrant rules for wiretaps and bugs",
       place: "United States Congress, U.S. Capitol, Washington, D.C.",
-      body: "Title III of the Omnibus Crime Control and Safe Streets Act of 1968 (Public Law 90-351, approved 19 June 1968) banned unauthorised interception of wire and oral communications and let police intercept only with a court order. Congress found that “there has been extensive wiretapping carried on without legal sanctions, and without the consent of any of the parties to the conversation”, and that uniform rules were needed “to protect effectively the privacy of wire and oral communications”.",
+      body: "Title III of the Omnibus Crime Control and Safe Streets Act of 1968 (Public Law 90-351, approved 19 June 1968) made it a federal crime to intercept wire and oral communications without authorisation. Officers could intercept with a court order, or where one party to the conversation consented, with a 48-hour emergency window before an order had to be sought. The Act also said nothing in it limited the President's constitutional power to take national-security measures. Congress found that “there has been extensive wiretapping carried on without legal sanctions, and without the consent of any of the parties to the conversation”, and that uniform rules were needed “to protect effectively the privacy of wire and oral communications”.",
       lat: 38.8899,
       lng: -77.0091,
       continent: "North America",
@@ -2941,6 +3458,26 @@ window.privacyData = {
           note: "Title III, sec. 801(a) findings. Sec. 801(b): '(b) In order to protect effectively the privacy of wire and oral communications, to protect the integrity of court and administrative proceedings, and to prevent the obstruction of interstate commerce, it is necessary for Congress to define on a uniform basis the circumstances and conditions under which the interception of wire and oral ...'. Header: 'PUBLIC LAW 90-351-JUNE 19, 1968'. Short title: 'Omnibus Crime Control and Safe Streets Act of 1968'. OCR of scanned Statutes at Large.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "U.S. Government Publishing Office (Statutes at Large, vol. 82)",
+          title: "Public Law 90-351, Title III, 18 U.S.C. §2511(3) as enacted, 82 Stat. 214",
+          date: "1968-06-19",
+          url: "https://www.govinfo.gov/content/pkg/STATUTE-82/pdf/STATUTE-82-Pg197.pdf",
+          quote: "shall limit the constitutional power of the President to take such measures as he deems necessary to protect the Nation against actual or potential attack or other hostile acts of a foreign power",
+          note: "--check FOUND. This is the national-security carve-out cited in the corrected summary. The full sentence begins 'Nothing contained in this chapter or in section 605 of the Communications Act of 1934 ...'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "U.S. Department of Justice, Bureau of Justice Assistance (Justice Information Sharing)",
+          title: "Title III of The Omnibus Crime Control and Safe Streets Act of 1968 (Wiretap Act)",
+          date: "n.d.",
+          url: "https://bja.ojp.gov/program/it/privacy-civil-liberties/authorities/statutes/1284",
+          quote: "Title III of the Omnibus Crime Control and Safe Streets Act of 1968, (Pub. L. 90-351; 6/19/68), also known as the \"Wiretap Act\":",
+          note: "--check FOUND (the space before the comma is as on the page). This independent source confirms the 19 June 1968 date. The next item, 'prohibits the unauthorized, nonconsensual interception of \"wire, oral, or electronic communications\" by government agencies as well as private parties', is also FOUND. It describes the Act as amended, including ECPA's 'electronic'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -2951,7 +3488,7 @@ window.privacyData = {
       phase: "rights",
       title: "Germany's Constitutional Court: the state may not catalogue the whole person",
       place: "Bundesverfassungsgericht (Federal Constitutional Court), Karlsruhe",
-      body: "A Bavarian woman fined 100 marks for refusing to answer a microcensus questionnaire challenged the statistics law. On 16 July 1969 (1 BvL 19/63) the First Senate upheld the survey question on holiday travel, but held that it would violate human dignity for the state to claim the right “to register and catalogue a person compulsorily in their whole personality”, even anonymously in a statistical survey. Each person must retain an “inner space” where, quoting the jurist Wintrich, “one is left in peace”.",
+      body: "A Bavarian woman who refused to answer the microcensus's 60 questions was fined 100 Deutschmarks. When she contested the fine, the Fürstenfeldbruck local court asked the Federal Constitutional Court whether the compulsory questions on holiday travel were constitutional. On 16 July 1969 (1 BvL 19/63) the First Senate upheld those questions. But it held that it would violate human dignity for the state to claim the right “to register and catalogue a person compulsorily in their whole personality”, even anonymously in a statistical survey. Each person must retain an “inner space” where, quoting the jurist Wintrich, “one is left in peace”.",
       lat: 49.0118,
       lng: 8.4017,
       continent: "Europe",
@@ -2973,7 +3510,7 @@ window.privacyData = {
       date: "7 October 1970",
       year: 1970,
       phase: "dataprotection",
-      title: "Hesse passes the world's first data protection law",
+      title: "Hesse enacts the world's first data protection law",
       place: "Hessischer Landtag (Stadtschloss), Wiesbaden, Hesse, West Germany",
       body: "The Datenschutzgesetz of the West German state of Hesse, dated 7 October 1970 (GVBl. I S. 625) after readings in the Landtag on 8 July and 30 September 1970, came into force on 13 October 1970. It set rules for the processing of personal data by state authorities and bodies under state supervision, and created the office of a data protection commissioner to oversee them. The occasion was the introduction of automated data processing in the Hessian administration.",
       lat: 50.0823,
@@ -2983,7 +3520,7 @@ window.privacyData = {
         {
           institution: "Hessisches Landesarchiv / Hessisches Hauptstaatsarchiv Wiesbaden (Arcinsys)",
           title: "HHStAW Fonds 557: Der Hessische Datenschutzbeauftragte (fonds description)",
-          date: "2024",
+          date: "2025",
           url: "https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=b2988",
           quote: "Am 7. Oktober 1970 verabschiedete der Hessische Landtag das 'Datenschutzgesetz' (GVBl. I S. 625).",
           note: "Translation: 'On 7 October 1970 the Hessian Landtag passed the Data Protection Act (GVBl. I p. 625).' The same page gives entry into force as 13.10.1970, says the law covered state authorities and bodies under state supervision (§ 1), and names the introduction of automated data processing (ADV) in the state administration as the occasion. Page date is the last accession year listed (2018-2024).",
@@ -3002,11 +3539,21 @@ window.privacyData = {
         },
         {
           institution: "Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI) - lecture by CJEU judge Thomas von Danwitz",
-          title: "Datenschutz in Hessen und Europa (Festvortrag, 50 Jahre Datenschutz in Hessen, 6 October 2022)",
+          title: "Datenschutz in Hessen und Europa (Festvortrag at the ceremony '50 Jahre Datenschutz: in Hessen und Europa')",
           date: "2022-10-06",
           url: "https://datenschutz.hessen.de/sites/datenschutz.hessen.de/files/2022-11/datenschutz_in_hessen_und_europa_6_10_22_von_danwitz_kv.pdf",
           quote: "Nimmt man den Text des Datenschutzgesetzes vom 7.10.1970 sowie die über seine Genese Auskunft gebenden Berichte der Lesungen des Hessischen Landtags vom 8. Juli und vom 30. September 1970",
           note: "Translation: 'Taking the text of the Data Protection Act of 7.10.1970 and the reports of the Hessian Landtag's readings of 8 July and 30 September 1970 that document its genesis...'. The Hessian archive says the Landtag 'passed' the act on 7 October; 7 October 1970 is the date the act bears, and the BfDI dates the event to 30 September 1970, the later of the two Landtag readings cited here. Entry into force on 13 October 1970 is confirmed by the Baden-Württemberg DPA (https://www.baden-wuerttemberg.datenschutz.de/50-jahre-datenschutz-in-hessen/: 'Heute vor 50 Jahren, am 13.10.1970, trat das weltweit erste Datenschutzgesetz für die öffentliche Verwaltung in Kraft').",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+          title: "Datenschutz-Garten: Die Geschichte des Datenschutzes",
+          date: "2026",
+          url: "https://www.bfdi.bund.de/DE/BfDI/Inhalte/Datenschutzpfad/Geschichte-Datenschutz.html",
+          quote: "30. September 1970: Hessen erlässt das erste Datenschutzgesetz weltweit, das am 13.10.1970 in Kraft tritt",
+          note: "Translation: '30 September 1970: Hesse issues the world's first data protection law, which enters into force on 13.10.1970.' An independent federal authority confirming the entry-into-force date. It gives 30 September, the date of the final Landtag reading, rather than 7 October, the date the act bears. Page undated; date is the access year. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -3019,7 +3566,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "US Fair Credit Reporting Act regulates the credit bureaus",
       place: "United States Capitol, Washington, D.C.",
-      body: "The Fair Credit Reporting Act was approved on 26 October 1970 as Title VI of Public Law 91-508, a statute whose earlier titles imposed record-keeping and currency-reporting duties on banks. It found a need to ensure that consumer reporting agencies act with 'a respect for the consumer's right to privacy', required them to adopt reasonable procedures for the confidentiality, accuracy, relevancy and proper use of information, and limited disclosure of consumer reports to purposes specified in the Act. The Federal Trade Commission enforces it.",
+      body: "The Fair Credit Reporting Act was approved on 26 October 1970 as Title VI of Public Law 91-508, a statute whose Titles I and II imposed record-keeping and currency-reporting duties on banks and other financial institutions. It found a need to ensure that consumer reporting agencies act with 'a respect for the consumer's right to privacy', required them to adopt reasonable procedures for the confidentiality, accuracy, relevancy and proper use of information, and limited disclosure of consumer reports to purposes specified in the Act. On request, a bureau had to tell consumers 'the nature and substance' of the information it held on them. The Federal Trade Commission enforces it.",
       lat: 38.8899,
       lng: -77.0091,
       continent: "North America",
@@ -3041,6 +3588,26 @@ window.privacyData = {
           url: "https://www.ftc.gov/legal-library/browse/statutes/fair-credit-reporting-act",
           quote: "Information in a consumer report cannot be provided to anyone who does not have a purpose specified in the Act.",
           note: "The same page notes the Commission 'retains all its enforcement authority' after Dodd-Frank moved most rulemaking to the CFPB. Page undated; date is access year.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "U.S. Government Publishing Office (govinfo), United States Statutes at Large vol. 84",
+          title: "Public Law 91-508, October 26, 1970, 84 Stat. 1114 (Title VI - Consumer Credit Reporting, § 609 Disclosures to consumers)",
+          date: "1970-10-26",
+          url: "https://www.govinfo.gov/content/pkg/STATUTE-84/pdf/STATUTE-84-Pg1114-2.pdf",
+          quote: "The nature and substance of all information (except medical information) in its files on the consumer at the time of the request.",
+          note: "§ 609(a)(1) of the 1970 Act: what a bureau had to disclose to a consumer on request. § 610(b) required the disclosure 'in person if he appears in person' or 'by telephone' on written request. The Act gave no right to a copy of the file. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Electronic Privacy Information Center (EPIC), archived page",
+          title: "The Fair Credit Reporting Act (FCRA) and the Privacy of Your Credit Report",
+          date: "2026",
+          url: "https://archive.epic.org/privacy/fcra/",
+          quote: "The FCRA was the first federal law to regulate the use of personal information by private businesses.",
+          note: "Supports the 'first' claim in the corrected significance, limited to federal law. The same page: 'individuals had no right to see what was in their file' before the Act. Archived page, undated; date is the access year. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -3071,7 +3638,7 @@ window.privacyData = {
         {
           institution: "Hessisches Landesarchiv / Hessisches Hauptstaatsarchiv Wiesbaden (Arcinsys)",
           title: "HHStAW Fonds 557: Der Hessische Datenschutzbeauftragte (fonds description)",
-          date: "2024",
+          date: "2025",
           url: "https://arcinsys.hessen.de/arcinsys/detailAction.action?detailid=b2988",
           quote: "Bereits im Datenschutzgesetz von 1970 war das Recht aller Betroffenen auf Anrufung des Datenschutzbeauftragten enthalten (GVBl. I S. 625, § 11).",
           note: "Translation: 'The 1970 Data Protection Act already contained the right of all data subjects to appeal to the data protection commissioner (GVBl. I p. 625, § 11).'",
@@ -3238,12 +3805,12 @@ window.privacyData = {
     },
     {
       id: "church-committee-1975",
-      date: "27 January 1975 - 29 April 1976",
+      date: "27 January 1975 - April 1976",
       year: 1975,
       phase: "dataprotection",
       title: "Church Committee exposes US intelligence surveillance of citizens",
       place: "United States Senate, Capitol, Washington, D.C.",
-      body: "The Senate created the Select Committee to Study Governmental Operations with Respect to Intelligence Activities, chaired by Senator Frank Church, by a resolution passed on 27 January 1975. Its investigators uncovered the NSA's SHAMROCK and MINARET programmes, which monitored wire communications to and from the United States, and documented the FBI's COINTELPRO. The final report, issued on 29 April 1976, concluded that intelligence agencies had 'undermined the constitutional rights of citizens' and made 96 recommendations.",
+      body: "The Senate created the Select Committee to Study Governmental Operations with Respect to Intelligence Activities, chaired by Senator Frank Church, by a resolution passed on 27 January 1975. Its investigators uncovered the NSA's SHAMROCK and MINARET programmes, which monitored wire communications to and from the United States, and documented the FBI's COINTELPRO. In its final report, dated 26 April 1976, the committee stated its 'fundamental conclusion' that intelligence activities had 'undermined the constitutional rights of citizens'. The report's volume on domestic intelligence made 96 recommendations, and its volume on foreign and military intelligence 87 more.",
       lat: 38.8899,
       lng: -77.0091,
       continent: "North America",
@@ -3255,6 +3822,36 @@ window.privacyData = {
           url: "https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm",
           quote: "“Intelligence agencies have undermined the constitutional rights of citizens,” the final report concluded, “primarily because checks and balances designed by the framers of the Constitution to assure accountability have not been applied.”",
           note: "The same page gives 'Resolution passed : Jan 27, 1975', states 'the committee published its final report on April 29, 1976', names SHAMROCK and MINARET, and says 'The final report included 96 recommendations'. Page undated; date is access year.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (hosted by the Senate Select Committee on Intelligence)",
+          title: "Final Report, S. Rep. No. 94-755, Book II: Intelligence Activities and the Rights of Americans",
+          date: "1976-04-26",
+          url: "https://www.intelligence.senate.gov/sites/default/files/94755_II.pdf",
+          quote: "The Committee's fundamental conclusion is that intelligence activities have undermined the constitutional rights of citizens and that they have done so primarily because checks and balances designed by the framers of the Constitution to assure accountability have not been applied.",
+          note: "Primary source for the conclusion. The title page reads 'APRIL 26 (legislative day, APRIL 14), 1976' (--check FOUND). In the scan the sentence breaks across a line as 'activ- ities'; the tool normalises this, and --check FOUND with 'activities'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (hosted by the Senate Select Committee on Intelligence)",
+          title: "Final Report, S. Rep. No. 94-755, Book II: Intelligence Activities and the Rights of Americans (Recommendations)",
+          date: "1976-04-26",
+          url: "https://www.intelligence.senate.gov/sites/default/files/94755_II.pdf",
+          quote: "Recommendation 96.-The Committee reendorses the concept of vigorous Senate oversight to review the conduct of domestic security activities through a new permanent intelligence oversight committee.",
+          note: "The last of Book II's 96 numbered domestic-intelligence recommendations (--check FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "United States Senate, Select Committee to Study Governmental Operations with Respect to Intelligence Activities (hosted by the Senate Select Committee on Intelligence)",
+          title: "Final Report, S. Rep. No. 94-755, Book I: Foreign and Military Intelligence (Chapter XVIII, Summary: Findings and Recommendations)",
+          date: "1976-04-26",
+          url: "https://www.intelligence.senate.gov/sites/default/files/94755_I.pdf",
+          quote: "87. Federal Register for Classified Executive Orders-In the course of its investigation, the Committee often had difficulty locating",
+          note: "The last of Book I's 87 numbered recommendations on foreign and military intelligence, separate from Book II's 96. The title page also reads 'APRIL 26 (legislative day, APRIL 14), 1976'. --check FOUND (large scanned PDF, about 43 MB).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -3290,6 +3887,16 @@ window.privacyData = {
           quote: "An NSA employee even sent a letter to the publishers warning that the authors could be subject to prison time for violating U.S. laws restricting export of military weapons.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Martin E. Hellman (Stanford University Electrical Engineering)",
+          title: "Martin E. Hellman, 'Work on Cryptography'",
+          date: "undated",
+          url: "https://ee.stanford.edu/~hellman/crypto.html",
+          quote: "There was even a threat that we could be prosecuted under the International Traffic in Arms Regulations (ITAR), since technical literature on cryptography was considered an implement of war by the ITAR.",
+          note: "--check FOUND. Hellman's own account. He adds that on Stanford's counsel's advice he presented two papers himself at a 1977 symposium at Cornell rather than his student co-authors, and that 'various forces within the government, and especially the intelligence community, agitated for such papers to be \"born classified\"'. Undated page; accessed 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -3300,7 +3907,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "West Germany's Federal Data Protection Act",
       place: "Bundeshaus, Bonn, West Germany",
-      body: "The first version of the Federal Data Protection Act (BDSG), titled 'Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung', was adopted on 27 January 1977. It made processing of personal data lawful only with the data subject's consent or where the act or another legal provision permitted it, and covered companies as well as public bodies. The act established a Federal Data Protection Commissioner; the first, the legal scholar Hans Peter Bull, took office on 14 February 1978.",
+      body: "The first version of the Federal Data Protection Act (BDSG), titled 'Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung', was enacted on 27 January 1977, the date the statute bears (BGBl. I 1977 S. 201). It made processing of personal data lawful only with the data subject's consent or where the act or another legal provision permitted it, and covered companies as well as public bodies. The act established a Federal Data Protection Commissioner; the first, the legal scholar Hans Peter Bull, took office on 14 February 1978.",
       lat: 50.7176,
       lng: 7.1296,
       continent: "Europe",
@@ -3376,7 +3983,7 @@ window.privacyData = {
         {
           institution: "Commission nationale de l'informatique et des libertés (CNIL)",
           title: "La loi Informatique et Libertés",
-          date: "2026",
+          date: "2024-11-15",
           url: "https://www.cnil.fr/fr/la-loi-informatique-et-libertes",
           quote: "L'informatique doit être au service de chaque citoyen. Son développement doit s'opérer dans le cadre de la coopération internationale. Elle ne doit porter atteinte ni à l'identité humaine, ni aux droits de l'homme, ni à la vie privée, ni aux libertés individuelles ou publiques.",
           note: "Article 1 of 'Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés' as reproduced by the CNIL. Translation: 'Information technology must be at the service of every citizen. Its development must take place within the framework of international cooperation. It must not infringe human identity, human rights, private life, or individual or public liberties.' Légifrance (JORFTEXT000000886460) returned HTTP 403 to scripts.",
@@ -3386,7 +3993,7 @@ window.privacyData = {
         {
           institution: "Commission nationale de l'informatique et des libertés (CNIL)",
           title: "Informatique et Libertés : retour sur la création de la CNIL pendant le mandat du Président Valéry Giscard d'Estaing",
-          date: "2020-12",
+          date: "2020-12-03",
           url: "https://www.cnil.fr/fr/loi-informatique-et-libertes-creation-mandat-valery-giscard-destaing",
           quote: "Cette loi, qui a par la suite évolué, a posé la première pierre d’une sécurité nouvelle pour la protection de la vie privée des citoyens français et permis la création de la CNIL, première autorité administrative indépendante en France.",
           note: "The same page: 'Face au débat relatif aux enjeux émergents pour la vie privée et les libertés individuelles suite, notamment, à l’annonce du projet SAFARI, la loi Informatique et Libertés est votée en 1978.' Published after Giscard d'Estaing's death on 2 December 2020; exact day not shown.",
@@ -3426,7 +4033,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "Norway's Personal Data Registers Act and the Datatilsynet",
       place: "Stortinget, Oslo, Norway",
-      body: "The Storting adopted the Personal Data Registers Act (personregisterloven) on 9 June 1978, after two government inquiries including NOU 1975: 10 on public personal-data systems. Before it could take effect, regulations had to be drafted and a Data Inspectorate (Datatilsynet) set up; a working group did both so that the law could enter into force with its regulations on 1 January 1980. In the same year, 1978, Denmark, France and Austria also legislated.",
+      body: "Norway's Personal Data Registers Act (personregisterloven) is dated 9 June 1978; it followed two government inquiries, NOU 1974: 22 on personal data and privacy and NOU 1975: 10 on public personal-data systems. Before it could take effect, regulations had to be drafted and a Data Inspectorate (Datatilsynet) set up. A working group did both so that the law could enter into force with its regulations on 1 January 1980. Businesses then needed a licence (konsesjon) from Datatilsynet to set up new personal registers. In the same year, 1978, Denmark, France and Austria also legislated.",
       lat: 59.9131,
       lng: 10.74,
       continent: "Europe",
@@ -3570,7 +4177,27 @@ window.privacyData = {
           date: "1980-09-23",
           url: "https://web.archive.org/web/2019/http://www.oecd.org/sti/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm",
           quote: "The Recommendation was adopted and became applicable on 23 September 1980.",
-          note: "The same page: 'The Guidelines, in the form of a Recommendation by the Council of the OECD, were developed by a group of government experts under the chairmanship of The Hon. Mr. Justice M.D. Kirby, Chairman of the Australian Law Reform Commission.' Paragraph 16 asks members to ensure transborder flows 'are uninterrupted and secure'; Explanatory Memorandum para. 20: 'the OECD Guidelines are not legally binding'. The live OECD pages (oecd.org and legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188) returned HTTP 403 to scripts, so a 2019 archived copy was read.",
+          note: "The same page: 'The Guidelines, in the form of a Recommendation by the Council of the OECD, were developed by a group of government experts under the chairmanship of The Hon. Mr. Justice M.D. Kirby, Chairman of the Australian Law Reform Commission.' Paragraph 16 asks members to ensure transborder flows 'are uninterrupted and secure'; Explanatory Memorandum para. 20: 'the OECD Guidelines are not legally binding'. The live OECD pages (oecd.org and legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0188) returned HTTP 403 to scripts, so a 2019 archived copy was read. Verification: Re-fetch failed: web.archive.org returned 'Connection reset by peer' on every attempt (tools/fetch-text.py and curl, several tries; proxy status shows ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. The quote could not be re-verified here; the same facts are now covered by the two added OECD sources.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD Legal Instruments)",
+          title: "Recommendation of the Council concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data, OECD/LEGAL/0188",
+          date: "2025",
+          url: "https://legalinstruments.oecd.org/public/doc/114/114.en.pdf",
+          quote: "The Recommendation concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data was adopted by the OECD Council on 23 September 1980, and revised on 11 July 2013",
+          note: "Checked with fetch-text.py --check: FOUND. Background section of the official PDF (© OECD 2025). The same page says 'an expert group chaired by the Honoroble Michael Kirby of Australia was convened' (sic) and that Recommendations 'are not legally binding'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD)",
+          title: "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, with the 1980 Explanatory Memorandum)",
+          date: "2002",
+          url: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+          quote: "To begin with, the OECD Guidelines are not legally binding, whereas the Council of Europe has produced a convention which will be legally binding among those countries which ratify it.",
+          note: "Checked with --check: FOUND. The same PDF says 'They came into effect on 23 September 1980.' (FOUND), 'The Expert Group, under the chairmanship of the Honourable Mr. Justice Kirby, Australia' (FOUND), and in para. 16 'Member countries should take all reasonable and appropriate steps to ensure that transborder flows of personal data, including transit through a Member country, are uninterrupted and secure.' Part Two lists the eight principles: Collection Limitation, Data Quality, Purpose Specification, Use Limitation, Security Safeguards, Openness, Individual Participation and Accountability.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -3583,7 +4210,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "Convention 108, the first binding international data protection treaty",
       place: "Council of Europe, Palais de l'Europe, Strasbourg, France",
-      body: "The Council of Europe's Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data (ETS No. 108) was opened for signature in Strasbourg on 28 January 1981. Its purpose is to secure for every individual, whatever their nationality or residence, respect for their right to privacy with regard to automatic processing of personal data, which it calls 'data protection'. First signed by seven states, it entered into force in 1985; in 2006 the Committee of Ministers designated 28 January as Data Protection Day.",
+      body: "The Council of Europe's Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data (ETS No. 108) was opened for signature in Strasbourg on 28 January 1981. Its purpose is to secure for every individual, whatever their nationality or residence, respect for their rights and freedoms, in particular their right to privacy, with regard to automatic processing of personal data, which it calls 'data protection'. Seven states signed it first, and it entered into force in 1985. Since 2007 the anniversary, 28 January, has been marked each year as European Data Protection Day.",
       lat: 48.5892,
       lng: 7.7745,
       continent: "Europe",
@@ -3594,8 +4221,8 @@ window.privacyData = {
           date: "1981-01-28",
           url: "https://web.archive.org/web/2023/https://rm.coe.int/1680078b37",
           quote: "The purpose of this Convention is to secure in the territory of each Party for every individual, whatever his nationality or residence, respect for his rights and fundamental freedoms, and in particular his right to privacy, with regard to automatic processing of personal data relating to him (\"data protection\").",
-          note: "Article 1. The final clause reads 'Done at Strasbourg, the 28th day of January 1981, in English and in French'. The live rm.coe.int and coe.int treaty pages returned HTTP 403 to scripts.",
-          verificationStatus: "CONFIRMED",
+          note: "Article 1. The final clause reads 'Done at Strasbourg, the 28th day of January 1981, in English and in French'. The live rm.coe.int and coe.int treaty pages returned HTTP 403 to scripts. Verification: Re-fetch failed: web.archive.org reset every connection this session (fetch-text.py, curl and WebFetch all failed), and live rm.coe.int returns HTTP 403. Not re-verified here. The same Article 1 wording is confirmed on the Irish Statute Book copy (added source).",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -3604,17 +4231,27 @@ window.privacyData = {
           date: "2025",
           url: "https://web.archive.org/web/2025/https://www.coe.int/en/web/data-protection/data-protection-day",
           quote: "In 2006, the Committee of Ministers of the Council of Europe decided to designate 28 January as Data Protection Day.",
-          note: "Continues: 'It marks the anniversary of the opening to signature of the Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data (ETS No. 108)'.",
-          verificationStatus: "CONFIRMED",
+          note: "Continues: 'It marks the anniversary of the opening to signature of the Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data (ETS No. 108)'. Verification: Re-fetch failed: web.archive.org reset every connection, and live coe.int returns HTTP 403 (also through WebFetch). The archive.org availability API does list a 2026-01-23 snapshot of this page, but its content could not be read. The 2006 Committee of Ministers designation is therefore unverified here, and the summary now uses the 'since 2007' formulation, which confirmed sources support.",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
           institution: "Bundeszentrale für politische Bildung (bpb)",
           title: "40 Jahre Europäische Datenschutzkonvention",
-          date: "2021-01",
+          date: "2021-01-26",
           url: "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/326057/40-jahre-europaeische-datenschutzkonvention/",
-          quote: "Das Übereinkommen wurde 1981 zunächst von sieben Ländern (Österreich, Dänemark, Frankreich, Deutschland, Luxemburg, Schweden, Türkei) unterzeichnet und trat 1985 in Kraft.",
-          note: "Translation: 'The convention was first signed in 1981 by seven countries (Austria, Denmark, France, Germany, Luxembourg, Sweden, Turkey) and entered into force in 1985.' The treaty office gives entry into force as 1 October 1985 (not read directly). bpb also says the European Data Protection Day has been observed since 2007.",
+          quote: "Das Übereinkommen wurde 1981 zunächst von sieben Ländern (Österreich, Dänemark, Frankreich, Deutschland, Luxemburg, Schweden, Türkei) unterzeichnet und trat 1985 in Kraft. … Seit 2007 wird der Europäische Datenschutztag jährlich am 28. Januar begangen.",
+          note: "Translation: 'The convention was first signed in 1981 by seven countries (Austria, Denmark, France, Germany, Luxembourg, Sweden, Turkey) and entered into force in 1985.' The treaty office gives entry into force as 1 October 1985 (not read directly). bpb also says the European Data Protection Day has been observed since 2007. Checked with --check: FOUND. Translation: 'Since 2007 European Data Protection Day has been observed every year on 28 January.' Corroborated by English Wikipedia (Data Privacy Day): 'The Council of Europe first held a European Data Protection Day in 2007.' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Government of Ireland, Irish Statute Book",
+          title: "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+          date: "1988-07-13",
+          url: "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+          quote: "The purpose of this convention is to secure in the territory of each Party for every individual, whatever his nationality or residence, respect for his rights and fundamental freedoms, and in particular his right to privacy, with regard to automatic processing of personal data relating to him (“data protection”).",
+          note: "Checked with --check: FOUND. Article 1 of the Convention as scheduled to the Irish Act. The schedule heading ('... done at Strasbourg on the 28th day of January, 1981') is also FOUND. Act date is the enactment date of Data Protection Act 1988 (No. 25).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -3699,7 +4336,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "Census judgment establishes 'informational self-determination'",
       place: "Bundesverfassungsgericht, Schlossbezirk, Karlsruhe, West Germany",
-      body: "Citizens' initiatives and public figures had called for a boycott of the West German census set for 27 April 1983, with slogans such as 'Meine Daten gehören mir' ('My data belongs to me'), and the Federal Constitutional Court suspended the count by injunction. In its judgment of 15 December 1983 (1 BvR 209/83 and others) the First Senate held that, in the context of modern data processing, the general right of personality protects the individual against the unlimited collection, storage, use and sharing of personal data and gives each person the authority, in principle, to decide on the disclosure and use of their data. It voided the census act's provisions for passing data to population registers and required further procedural safeguards; the census was finally held in 1987.",
+      body: "Citizens' initiatives and public figures had called for a boycott of the West German census set for 27 April 1983, with slogans such as 'Meine Daten gehören mir' ('My data belongs to me'). The Federal Constitutional Court suspended the count by injunction. In its judgment of 15 December 1983 (1 BvR 209/83 and others), the First Senate held that in the context of modern data processing, the general right of personality protects the individual against the unlimited collection, storage, use and sharing of personal data. It gives each person the authority, in principle, to decide on the disclosure and use of their data. The court upheld the survey itself. It voided § 9(1)-(3) of the census act, which let census data be passed to other authorities, including for comparison with population registers, and it required additional procedural safeguards. The census was finally held in 1987.",
       lat: 49.0117,
       lng: 8.4011,
       continent: "Europe",
@@ -3717,7 +4354,7 @@ window.privacyData = {
         {
           institution: "Deutscher Bundestag (Textarchiv)",
           title: "Beschluss des Volkszählungsgesetzes 1983",
-          date: "2012-03",
+          date: "2012-03-02",
           url: "https://www.bundestag.de/webarchiv/textarchiv/2012/38024038_kw10_kalender_volkszaehlung-207898",
           quote: "Bürgerinitiativen und Prominente riefen zum Boykott auf. Die Kritik richtete sich vor allem gegen die Absicht, Volkszählungsdaten zum Abgleich für die Melderegister zu verwenden",
           note: "Translation: 'Citizens' initiatives and celebrities called for a boycott. Criticism was aimed above all at the intention to use census data for comparison with the population registers.' The page also says the census set 'für den 27. April 1983' could not be carried out and 'war die Volkszählung aufgrund einer einstweiligen Verfügung des Gerichts zunächst ausgesetzt'. It dates the Bundestag's passage of the Census Act to 4 March 1982.",
@@ -3829,10 +4466,20 @@ window.privacyData = {
         {
           institution: "chaum.com (David Chaum's website; Internet Archive copy)",
           title: "Security without Identification: Card Computers to make Big Brother Obsolete",
-          date: "1985-10",
+          date: "1987",
           url: "https://web.archive.org/web/2024id_/https://chaum.com/security-without-identification/",
           quote: "Under the new approach, an individual uses a different account number or “digital pseudonym” with each organization.",
           note: "Web text corresponds to Chaum's revised 1987 reprint of the 1985 article (see the Chaum person card).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Communications of the ACM (scan hosted by Radboud University Nijmegen)",
+          title: "David Chaum, 'Security without Identification: Transaction Systems to Make Big Brother Obsolete', vol. 28, no. 10, pp. 1030–1044 (figure caption)",
+          date: "1985-10",
+          url: "https://www.cs.ru.nl/~jhh/pub/secsem/chaum1985bigbrother.pdf",
+          quote: "Different numbers or digital pseudonyms are used with each organization by a personal card computer held and trusted only by the individual",
+          note: "--check FOUND in the 1985 scan's text layer. This is the caption of the 'new approach' figure. The scrambled body text also contains '...account number or “digital pseudonym” with each organization.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -3895,7 +4542,7 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
-          institution: "Harvard Law Review, vol. 131 (Developments in the Law - Privacy)",
+          institution: "Harvard Law Review, vol. 131, issue 6 (Developments in the Law - More Data, More Problems)",
           title: "Chapter Three: The Video Privacy Protection Act as a Model Intellectual Privacy Statute",
           date: "2018-04",
           url: "https://harvardlawreview.org/print/vol-131/the-video-privacy-protection-act-as-a-model-intellectual-privacy-statute/",
@@ -3913,7 +4560,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "Video Privacy Protection Act follows the Bork tapes",
       place: "United States Capitol, Washington, D.C.",
-      body: "The Video Privacy Protection Act of 1988 (Public Law 100-618), approved on 5 November 1988, amended title 18 'to preserve personal privacy with respect to the rental, purchase, or delivery of video tapes or similar audio visual materials'. A video tape service provider that knowingly discloses information identifying a customer as having requested or obtained specific video materials is liable to that customer, unless an exception applies - one being disclosure with the consumer's informed, written consent given at the time the disclosure is sought. In 2011 the first class action under the act against an online service, Hulu, was brought, and the court held that streaming services could be covered.",
+      body: "The Video Privacy Protection Act of 1988 (Public Law 100-618), approved on 5 November 1988, amended title 18 'to preserve personal privacy with respect to the rental, purchase, or delivery of video tapes or similar audio visual materials'. A video tape service provider that knowingly discloses information identifying a customer as having requested or obtained specific video materials is liable to that customer, unless an exception applies - one being disclosure with the consumer's informed, written consent given at the time the disclosure is sought. Amendments in 2012 let providers obtain continuing rather than case-by-case consent. The first class action under the act against an online service, In re Hulu Privacy Litigation, was brought in July 2011, and in August 2012 the district court held that online video streaming services were covered.",
       lat: 38.8899,
       lng: -77.0091,
       continent: "North America",
@@ -3929,7 +4576,7 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
-          institution: "Harvard Law Review, vol. 131 (Developments in the Law - Privacy)",
+          institution: "Harvard Law Review, vol. 131, issue 6 (Developments in the Law - More Data, More Problems)",
           title: "Chapter Three: The Video Privacy Protection Act as a Model Intellectual Privacy Statute",
           date: "2018-04",
           url: "https://harvardlawreview.org/print/vol-131/the-video-privacy-protection-act-as-a-model-intellectual-privacy-statute/",
@@ -4091,7 +4738,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "Phil Zimmermann releases Pretty Good Privacy (PGP) 1.0",
       place: "Boulder, Colorado",
-      body: "On 5 June 1991 Phil Zimmermann sent the first release of PGP, email encryption software for MS-DOS, to friends for uploading: Allan Hoeltje posted it to Peacenet, and Kelly Goen to a Usenet source-code newsgroup (marked 'US only') and bulletin-board systems; Zimmermann could not recall whether the Internet postings began on 5 or 6 June. Zimmermann said Senate Bill 266, a 1991 anticrime bill whose non-binding resolution would have had communications systems let the government obtain plaintext, led him to publish it free.",
+      body: "On 5 June 1991 Phil Zimmermann sent the first release of PGP, email encryption software, to friends for uploading: Allan Hoeltje posted it to Peacenet, and Kelly Goen to a Usenet source-code newsgroup (marked 'US only') and bulletin-board systems. In 2001 Zimmermann could not recall whether the Internet postings began on 5 or 6 June; in his 2021 anniversary essay he dated the upload to 6 June, the day after he sent it out. Zimmermann said Senate Bill 266, a 1991 anticrime bill whose non-binding resolution would have had communications systems let the government obtain plaintext, led him to publish it free.",
       lat: 40.015,
       lng: -105.2705,
       continent: "North America",
@@ -4112,6 +4759,16 @@ window.privacyData = {
           date: "1999",
           url: "https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html",
           quote: "It was this bill that led me to publish PGP electronically for free that year, shortly before the measure was defeated after vigorous protest by civil libertarians and industry groups.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Philip Zimmermann (philzimmermann.com)",
+          title: "PGP Marks 30th Anniversary",
+          date: "2021-06-06",
+          url: "https://www.philzimmermann.com/EN/essays/PGP_30thAnniversary.html",
+          quote: "It was on this day in 1991 that Pretty Good Privacy was uploaded to the Internet. I had sent it to a couple of my friends for distribution the day before.",
+          note: "--check FOUND. Page heading: 'PGP Marks 30th Anniversary 6 June 2021'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4146,6 +4803,16 @@ window.privacyData = {
           url: "https://www.wired.com/1993/02/crypto-rebels/",
           quote: "The first physical Cypherpunk meeting occurred early last autumn at the instigation of two software engineers who had developed an interest in crypto.",
           note: "The article names the two as Tim May and Eric Hughes. wired.com dates the web copy 1993-02-01; print issue 1.02 (May/June 1993).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Cypherpunks mailing list archive (cryptoanarchy.wiki)",
+          title: "Eric Hughes to cypherpunks@toad.com, 'the hopping remailer is done'",
+          date: "1992-09-25",
+          url: "https://mailing-list-archive.cryptoanarchy.wiki/archive/1992/09/2fe5a28bc8c23820dc93de1603b58c1ac84c93a16bc852a9b51eb3faed1aa231/",
+          quote: "The hopping remailer is finished. I wrote it this morning. The change to make a hopping remailer is very easy. Here's the new perl script:",
+          note: "--check FOUND. Raw Date 'Fri, 25 Sep 92 11:37:12 PDT' (UTC 1992-09-25 18:37:12). The message contains the perl script and a multi-hop test. An earlier post, 'New! Eric's Cheap Remailing Service. Free!', came from nobody@soda.berkeley.edu on 23 Sep 92.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4204,6 +4871,16 @@ window.privacyData = {
           url: "https://www.lawcom.govt.nz/assets/Publications/IssuesPapers/NZLC-IP17.pdf",
           quote: "the Privacy Act 1993 came into force on 1 July 1993.",
           note: "Quotes the long title: 'An Act to promote and protect individual privacy in general accordance with the Recommendation of the Council of the Organisation for Economic Co-operation and Development Concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data', including '(i) The collection, use, and disclosure, by public and private sector agencies, of information relating to individuals'. Also: 'the Privacy Act was enacted in 1993 to balance the desire of the state to make greater use of personal information held by government agencies, especially for data matching, with the need to protect the privacy of the individual in relation to that information.' The official legislation.govt.nz text is behind a script check (HTTP 202) and was not read.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Law Commission of New Zealand",
+          title: "Review of the Privacy Act 1993: Review of the Law of Privacy Stage 4 (Report 123)",
+          date: "2011-06",
+          url: "https://www.lawcom.govt.nz/assets/Publications/Reports/NZLC-R123.pdf",
+          quote: "The Privacy Act 1993 came into force on 1 July 1993.",
+          note: "--check FOUND (para 1.11). Cover: 'June 2011, Wellington, New Zealand | REPORT 123'; transmittal letter dated 30 June 2011. Same institution as IP17, but this is the final report, not the issues paper.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4339,8 +5016,8 @@ window.privacyData = {
           date: "1997-07-09",
           url: "https://web.archive.org/web/19970709162848/http://home.netscape.com/newsref/std/cookie_spec.html",
           quote: "Shopping applications can now store information about the currently selected items, for fee services can send back registration information and free the client from retyping a user-id on next connection, sites can store per-user preferences on the client, and have the client supply those preferences every time that site is connected to.",
-          note: "The specification itself is undated; the date given is that of the earliest archived copy used here, not of authorship (1994).",
-          verificationStatus: "CONFIRMED",
+          note: "The specification itself is undated; the date given is that of the earliest archived copy used here, not of authorship (1994). Verification: Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. The archive.org availability API returned no snapshot record for this URL and timestamp. The same text is confirmed on a live mirror, added as a new source.",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -4349,9 +5026,19 @@ window.privacyData = {
           date: "2001-09-04",
           url: "https://web.archive.org/web/20201206124432/https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html",
           quote: "One day in June 1994, Lou Montulli sat down at his keyboard to fix one of the biggest problems facing the fledgling World Wide Web -- and, as so often happens in the world of technology, he created another one.",
-          note: "Read via the Internet Archive; nytimes.com blocks scripted access.",
-          verificationStatus: "CONFIRMED",
+          note: "Read via the Internet Archive; nytimes.com blocks scripted access. Verification: Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. nytimes.com returns HTTP 403 to fetch-text.py, and WebFetch cannot reach it either. The archive.org availability API does list this snapshot (20201206124432, status 200), so the copy exists but could not be read. This is the only source for 'June 1994'.",
+          verificationStatus: "PENDING",
           accessType: "PAYWALL"
+        },
+        {
+          institution: "curl project (curl.se), hosting Netscape's original cookie specification",
+          title: "Persistent Client State HTTP Cookies — Preliminary Specification (Netscape Communications)",
+          date: "2026-09-23",
+          url: "https://curl.se/rfc/cookie_spec.html",
+          quote: "Shopping applications can now store information about the currently selected items, for fee services can send back registration information and free the client from retyping a user-id on next connection, sites can store per-user preferences on the client, and have the client supply those preferences every time that site is connected to.",
+          note: "fetch-text.py --check FOUND. The page's header note says: 'This is the original spec once found on netscape.com but since they decided to not keep the original URL alive and working, we host it here'. The spec itself is undated; the date is the date consulted.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -4395,10 +5082,10 @@ window.privacyData = {
       year: 1994,
       phase: "cookies",
       title: "Matt Blaze shows Clipper's key escrow can be bypassed",
-      place: "AT&T Bell Laboratories, Murray Hill, New Jersey",
-      body: "In April 1994 Matt Blaze of AT&T Bell Laboratories wrote 'Protocol Failure in the Escrowed Encryption Standard', showing that the Law Enforcement Access Field (LEAF) carrying the escrowed session key was protected by only a 16-bit checksum. A rogue device could therefore search about 2^16 possibilities for a LEAF that passed the check and talk to legitimate Clipper devices without giving the government a usable key. The New York Times reported the flaw on 2 June 1994; the paper was presented at the ACM Conference on Computer and Communications Security in Fairfax, Virginia, in November 1994.",
-      lat: 40.684,
-      lng: -74.4015,
+      place: "AT&T Bell Laboratories, Holmdel, New Jersey",
+      body: "In April 1994 Matt Blaze of AT&T Bell Laboratories wrote 'Protocol Failure in the Escrowed Encryption Standard', showing that the Law Enforcement Access Field (LEAF), which carries an encrypted copy of the session key, was protected by only a 16-bit checksum. A rogue application could therefore search about 2^16 possibilities for a LEAF that passed the check and communicate with legitimate Clipper devices without giving the government a usable key — though on the prototype card he tested the search took about 42 minutes, too slow for real-time phone calls. The New York Times reported the flaw on its front page on 2 June 1994; the paper was presented at the ACM Conference on Computer and Communications Security in Fairfax, Virginia, in November 1994.",
+      lat: 40.3651,
+      lng: -74.1675,
       continent: "North America",
       source: [
         {
@@ -4422,12 +5109,32 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
-          institution: "MIT course 6.805 (Ethics and the Law on the Electronic Frontier) reading index",
-          title: "Selected items on Clipper — 1994",
+          institution: "MIT course 6.095/STS095 reading index (hosted with the course pages later numbered 6.805)",
+          title: "6.095/STS095: Selected items on Clipper -- 1994",
           date: "1996",
           url: "https://groups.csail.mit.edu/mac/classes/6.805/articles/clipper/short-pieces/clipper-1994-index.html",
           quote: "June 2, 1994, New York Times, \"Scientist Finds Flaw In Code Technology\"",
           note: "The New York Times article itself (John Markoff) was not read: nytimes.com returned 403.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Matt Blaze (mattblaze.org), pre-publication draft for the USENIX Summer 1994 Technical Conference",
+          title: "Key Management in an Encrypting File System",
+          date: "1994-06",
+          url: "https://www.mattblaze.org/papers/cfskey.pdf",
+          quote: "The author can be reached via email at mab@research.att.com and via postal mail at AT&T Bell Laboratories, 101 Crawfords Corner Rd., Room 4G-634, Holmdel, NJ 07733.",
+          note: "--check FOUND. The same page says 'This paper will appear in Proc. Summer 1994 USENIX Technical Conference, Boston, MA, June 1994.' Blaze's November 1993 CCS paper (mattblaze.org/papers/cfs.pdf) gives the same Holmdel address. This source supports the corrected place.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "San Jose Mercury News, reprinting the New York Times (text copy in the MIT 6.095/6.805 course archive)",
+          title: "Scientist Finds Flaw in Code Technology",
+          date: "1994-06-02",
+          url: "https://groups.csail.mit.edu/mac/classes/6.805/articles/clipper/short-pieces/blaze-june2.txt",
+          quote: "A computer scientist at AT&T Bell Laboratories has discovered a basic flaw in the technology that the Clinton administration has been promoting to allow law-enforcement officials to eavesdrop on electronically scrambled telephone and computer conversations.",
+          note: "--check FOUND. Header: 'San Jose Mercury News, Front Page June 2, 1994 ... New York Times'. The copy also quotes the NSA's Michael A. Smith: such efforts 'are very unlikely to be employed'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4485,7 +5192,17 @@ window.privacyData = {
           date: "1995-10-24",
           url: "https://web.archive.org/web/20250115161310/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A31995L0046",
           quote: "Member States shall provide that personal data may be processed only if: (a) the data subject has unambiguously given his consent",
-          note: "EUR-Lex returns an empty bot-challenge page to scripts; text read from an Internet Archive copy (15 January 2025) of the official EUR-Lex HTML. The same text states 'Done at Luxembourg, 24 October 1995.' and, in Article 25(1), that transfers may take place only if 'the third country in question ensures an adequate level of protection.'",
+          note: "EUR-Lex returns an empty bot-challenge page to scripts; text read from an Internet Archive copy (15 January 2025) of the official EUR-Lex HTML. The same text states 'Done at Luxembourg, 24 October 1995.' and, in Article 25(1), that transfers may take place only if 'the third country in question ensures an adequate level of protection.' Verification: Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. The archive.org availability API returned no snapshot record for this URL and timestamp. Live EUR-Lex (the TXT/HTML, LexUriServ HTML, LexUriServ OJ PDF and ELI URLs) returns a page without the text. The same wording is confirmed on the added legislation.gov.uk facsimile.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "legislation.gov.uk (The National Archives), facsimile of the Official Journal of the European Communities L 281, 23 November 1995, pp. 31–50",
+          title: "Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 (as adopted)",
+          date: "1995-10-24",
+          url: "https://www.legislation.gov.uk/eudr/1995/46/pdfs/eudr_19950046_adopted_en.pdf",
+          quote: "Member States shall provide that personal data may be processed only if: ... the data subject has unambiguously given his consent",
+          note: "Article 7 opening and point (a); fetch-text.py --check FOUND. The OCR text sets the point letter as '( a )', which is why the two parts are joined by an ellipsis. The same PDF gives 'Done at Luxembourg, 24 October 1995' (FOUND), the running head 'No L 281 /31' with '23 . 11 . 95', and Article 32(1): 'at the latest at the end of a period of three years from the date of its adoption' (FOUND). Article 25(1)'s 'adequate level of protection' is on the page too, but the two-column OCR interleaves it, so it is not quotable as a clean string.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4574,7 +5291,7 @@ window.privacyData = {
           title: "Case Closed on Zimmermann PGP Investigation",
           date: "1996-02-14",
           url: "https://www.ieee-security.org/Cipher/Newsbriefs/1996/960214.zimmerman.html",
-          quote: "Zimmermann maintained thoughout the investigation that he did not put the software on the Internet.",
+          quote: "William P. Keane, an assistant U.S. Attorney in San Jose, announced on January 11 that, in consultation with the Justice Department and other administration officials, he had decided to drop the investigation of Philip Zimmermann.",
           note: "The brief says Keane 'announced on January 11' that he had decided to drop the investigation, citing reports in the New York Times and Wall Street Journal.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
@@ -4665,7 +5382,7 @@ window.privacyData = {
       phase: "cookies",
       title: "RFC 2109 tells browsers to refuse third-party cookies by default",
       place: "RFC Editor, USC Information Sciences Institute, Marina del Rey, California",
-      body: "In February 1997 the IETF published RFC 2109, 'HTTP State Management Mechanism', by David Kristol of Bell Laboratories and Lou Montulli of Netscape, on the standards track. It defined 'unverifiable' transactions — requests, such as for embedded images, whose address the user had no chance to review — and said a browser must enable a cookie session in them only within the domain of the page the user chose, with any override defaulting to 'off'. The two dominant browsers did not adopt that default, and advertising networks built cross-site tracking on third-party cookies. When the IETF finally replaced the cookie standard in April 2011, RFC 6265 called third-party cookies 'particularly worrisome' but left browsers 'wide latitude to experiment' with their own policies.",
+      body: "In February 1997 the IETF published RFC 2109, 'HTTP State Management Mechanism', by David Kristol of Bell Laboratories and Lou Montulli of Netscape, on the standards track. It defined 'unverifiable' transactions — requests, such as for embedded images, whose address the user had no chance to review — and said a browser must enable a cookie session in them only within the domain of the page the user chose, with any override defaulting to 'off'. The two dominant browsers did not adopt that default, and advertising networks built cross-site tracking on third-party cookies. RFC 2965, which replaced RFC 2109 in October 2000, kept the same rule; when RFC 6265 replaced it in turn in April 2011, the IETF called third-party cookies 'particularly worrisome' but left browsers 'wide latitude to experiment' with their own policies.",
       lat: 33.9802,
       lng: -118.44,
       continent: "North America",
@@ -4686,8 +5403,8 @@ window.privacyData = {
           date: "2001-09-04",
           url: "https://web.archive.org/web/20201206124432/https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html",
           quote: "The Internet Engineering Task Force was pursuing a different tack, however, recommending in 1997 that browsers be set to block any cookie that did not come directly from the site being visited.",
-          note: "The same article reports that 'neither Netscape nor Microsoft took to heart the recommendation'.",
-          verificationStatus: "CONFIRMED",
+          note: "The same article reports that 'neither Netscape nor Microsoft took to heart the recommendation'. Verification: Not re-verified. web.archive.org reset every connection on 2026-09-23 (tools/fetch-text.py and curl: 'Connection reset by peer', curl error 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), and WebFetch reports it cannot fetch from web.archive.org. nytimes.com returns HTTP 403. The archive.org availability API lists the snapshot (20201206124432), but it could not be read. The claim about browser defaults is now covered by the added Kristol (2001) source.",
+          verificationStatus: "PENDING",
           accessType: "PAYWALL"
         },
         {
@@ -4697,6 +5414,26 @@ window.privacyData = {
           url: "https://www.rfc-editor.org/rfc/rfc6265",
           quote: "Particularly worrisome are so-called \"third-party\" cookies.",
           note: "Section 7.1 continues: 'These third-party servers can use cookies to track the user even if the user never visits the server directly.' and 'This document grants user agents wide latitude to experiment with third-party cookie policies'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "RFC Editor / Internet Engineering Task Force",
+          title: "RFC 2965: HTTP State Management Mechanism (D. Kristol, L. Montulli)",
+          date: "2000-10",
+          url: "https://www.rfc-editor.org/rfc/rfc2965",
+          quote: "User agents may offer configurable options that allow the user agent, or any autonomous programs that the user agent executes, to ignore the above rule, so long as these override options default to \"off\".",
+          note: "fetch-text.py --check FOUND. The header reads 'Obsoletes: 2109' (FOUND), 'Category: Standards Track' and 'October 2000' (FOUND). This shows the default-off rule for unverifiable transactions survived into the 2000 replacement of RFC 2109.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "arXiv (David M. Kristol, Bell Labs, Lucent Technologies); journal reference: ACM Transactions on Internet Technology, Vol. 1, #2, November 2001",
+          title: "David M. Kristol, 'HTTP Cookies: Standards, Privacy, and Politics'",
+          date: "2001-05-09",
+          url: "https://arxiv.org/pdf/cs/0105018",
+          quote: "Vendors have steadfastly supported the advertising industry, leaving third-party cookies enabled by default.",
+          note: "fetch-text.py --check FOUND. This is the co-author's own account. Same paper: 'Because many of the networks had developed business models that relied on third-party cookies to do targeted advertising, they felt the RFC's mandate to disable third-party cookies by default was a threat to their business.' (FOUND). On Netscape's later controls it says 'the default remained to allow them'. The date is the arXiv submission date (9 May 2001), and the journal reference comes from the arXiv abstract page.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4741,7 +5478,7 @@ window.privacyData = {
       date: "June 1998",
       year: 1998,
       phase: "cookies",
-      title: "FTC survey: only 2% of data-collecting websites post a privacy policy",
+      title: "FTC survey: only 2% of data-collecting websites post a comprehensive privacy policy",
       place: "Federal Trade Commission, 600 Pennsylvania Avenue NW, Washington, D.C.",
       body: "In June 1998 the US Federal Trade Commission sent Congress 'Privacy Online: A Report to Congress', based on a March 1998 survey of over 1,400 websites. In its random Comprehensive Sample of 674 commercial sites, 92% collected personal information but only 14% posted any disclosure of their information practices, and only 2% of the sites that collected personal information had a comprehensive privacy policy notice. The Commission concluded that industry self-regulation had so far fallen short.",
       lat: 38.8927,
@@ -4861,9 +5598,9 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
-          institution: "InfoWorld",
-          title: "Jini, Sun's magic out of the lamp",
-          date: "1999-01-25",
+          institution: "InfoWorld (JavaWorld archive)",
+          title: "Scott Plamondon, 'Jini, Sun's magic out of the lamp'",
+          date: "1999-02-01",
           url: "https://www.infoworld.com/article/2163020/jini-sun-s-magic-out-of-the-lamp.html",
           quote: "Sun Microsystems introduced its Jini network-connection technology at its Worldwide Analysts Conference held at San Francisco’s Sheraton Palace Hotel today.",
           note: "Establishes venue and date of the Jini launch at which McNealy spoke.",
@@ -4913,7 +5650,7 @@ window.privacyData = {
       phase: "cookies",
       title: "DoubleClick backs off merging web-browsing profiles with names and addresses",
       place: "DoubleClick Inc., New York City",
-      body: "In June 1999 the ad network DoubleClick bought Abacus Direct, a direct-marketing firm holding names, addresses and purchasing histories on about 90% of American households, for more than one billion dollars, amid plans to link that offline data to its online browsing profiles. After a public outcry and an FTC investigation begun in February 2000, chief executive Kevin O'Connor said on 2 March 2000 that the plan had been a 'mistake' and that no merger of the databases would happen until government and industry agreed privacy standards. On 22 January 2001 FTC staff closed the inquiry, finding DoubleClick had not combined Abacus data with clickstream data. On 28 March 2001 a federal judge in New York dismissed a class action over DoubleClick's cookie tracking, holding that the DoubleClick-affiliated websites were parties to users' communications and had given DoubleClick sufficient consent to intercept them.",
+      body: "In June 1999 the ad network DoubleClick agreed to buy Abacus Direct, a direct-marketing firm holding names, addresses and purchasing histories on about 90% of American households, in a deal worth more than one billion dollars that closed that autumn, amid plans to link that offline data to its online browsing profiles. After a public outcry and an FTC investigation begun in February 2000, chief executive Kevin O'Connor said on 2 March 2000 that the plan had been a 'mistake' and that no merger of the databases would happen until government and industry agreed privacy standards. On 22 January 2001 FTC staff closed the inquiry, saying it appeared DoubleClick had not combined Abacus data with clickstream data. On 28 March 2001 a federal judge in New York dismissed a class action over DoubleClick's cookie tracking, holding that the DoubleClick-affiliated websites were parties to users' communications and had given DoubleClick sufficient consent to intercept them.",
       lat: 40.7527,
       lng: -73.9985,
       continent: "North America",
@@ -4933,9 +5670,10 @@ window.privacyData = {
           title: "FTC Closes DoubleClick Investigation",
           date: "2001-01-23",
           url: "https://abcnews.com/Technology/story?id=99060&page=1",
-          quote: "The FTC began its investigation in February 2000, questioning whether DoubleClick improperly amassed personal information about Internet users.",
+          quote: "The FTC began its investigation in February 2000, questioning whether DoubleClick improperly amassed personal information about Internet users. … $1.7 billion purchase last fall of direct marketing company Abacus",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "fetch-text.py --check FOUND. The full sentence begins 'The complaints against DoubleClick were sparked by the company's'. The page's markup runs 'company's' into '$1.7' and 'Abacus' into 'and', so the quote is cut to the span that matches verbatim. It supports the deal closing in autumn 1999 (the article is from January 2001), not in June."
         }
       ]
     },
@@ -4946,7 +5684,7 @@ window.privacyData = {
       phase: "cookies",
       title: "Brussels deems the US 'Safe Harbor' adequate",
       place: "European Commission, Brussels",
-      body: "On 26 July 2000 the European Commission decided, under Article 25(2) of Directive 95/46/EC, that the 'Safe Harbor Privacy Principles' and frequently asked questions issued by the US Department of Commerce on 21 July 2000 ensured an adequate level of protection for personal data sent to US organisations that signed up to them. Companies joined by self-certifying their adherence, with the Commerce Department keeping a public list.",
+      body: "On 26 July 2000 the European Commission, acting under Article 25(6) of Directive 95/46/EC, decided that the 'Safe Harbor Privacy Principles' and frequently asked questions issued by the US Department of Commerce on 21 July 2000 ensured an adequate level of protection for personal data sent to US organisations that signed up to them. Companies joined by self-certifying their adherence, with the Commerce Department keeping a public list.",
       lat: 50.8433,
       lng: 4.3826,
       continent: "Europe",
@@ -4957,7 +5695,17 @@ window.privacyData = {
           date: "2000-07-26",
           url: "https://web.archive.org/web/20240428171017/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32000D0520",
           quote: "are considered to ensure an adequate level of protection for personal data transferred from the Community to organisations established in the United States",
-          note: "Article 1(1). The decision ends 'Done at Brussels, 26 July 2000.' Recital 8 refers to 'a list of organisations self-certifying their adherence to the Principles'. EUR-Lex blocks scripts; read via the Internet Archive.",
+          note: "Article 1(1). The decision ends 'Done at Brussels, 26 July 2000.' Recital 8 refers to 'a list of organisations self-certifying their adherence to the Principles'. EUR-Lex blocks scripts; read via the Internet Archive. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. The same Official Journal text on the EU Publications Office (CELLAR) HTML checks FOUND for this exact quote, for 'Done at Brussels, 26 July 2000.' and for 'For the purposes of Article 25(2) of Directive 95/46/EC'. The list of self-certifying organisations is in Recital (7), not Recital 8. See the added source.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Publications Office of the European Union (EUR-Lex text served from CELLAR)",
+          title: "2000/520/EC: Commission Decision of 26 July 2000 pursuant to Directive 95/46/EC on the adequacy of the protection provided by the safe harbour privacy principles and related frequently asked questions issued by the US Department of Commerce (OJ L 215, 25.8.2000, p. 7)",
+          date: "2000-07-26",
+          url: "https://publications.europa.eu/resource/cellar/10e48a32-d701-4524-b7e9-8f270365c5c0.0005.01/DOC_1",
+          quote: "are considered to ensure an adequate level of protection for personal data transferred from the Community to organisations established in the United States",
+          note: "Article 1(1). Checked with fetch-text --check on 2026-09-23: FOUND. Also FOUND on the same page: 'and in particular Article 25(6) thereof' (the legal basis); 'For the purposes of Article 25(2) of Directive 95/46/EC'; 'issued by the US Department of Commerce on 21 July 2000'; Recital (7) 'To this end the US Department of Commerce or its designee should undertake to maintain and make available to the public a list of organisations self-certifying their adherence to the Principles implemented in accordance with the FAQs'; 'Done at Brussels, 26 July 2000.' The URL is what http://publications.europa.eu/resource/celex/32000D0520 resolves to when HTML is requested.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5028,6 +5776,16 @@ window.privacyData = {
           note: "Date from the archive's ms.date metadata (2010-06-05); the post was updated on 20 February 2012. It describes IE's behaviour from IE6 onward. Footnote: 'There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "P3P",
+          date: "2026-09-23",
+          url: "https://en.wikipedia.org/wiki/P3P",
+          quote: "Mozilla supported some P3P features for a few years, but all P3P related source code was removed by 2007.",
+          note: "Tertiary source, used to qualify 'only'. The same article says 'Internet Explorer and Microsoft Edge Legacy were the only major browsers to support P3P.' (FOUND). The date field is the date accessed.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -5038,7 +5796,7 @@ window.privacyData = {
       phase: "cookies",
       title: "The USA PATRIOT Act widens government access to records and internet metadata",
       place: "United States Congress, Capitol, Washington, D.C.",
-      body: "Enacted on 26 October 2001, six weeks after the September 11 attacks, the USA PATRIOT Act (Public Law 107-56) let the FBI seek court orders for 'any tangible things (including books, records, papers, documents, and other items)' in international-terrorism investigations (section 215), and extended pen-register and trap-and-trace orders to 'dialing, routing, addressing, or signaling information' of electronic communications (section 216).",
+      body: "Enacted on 26 October 2001, six weeks after the September 11 attacks, the USA PATRIOT Act (Public Law 107-56) let the FBI apply for court orders requiring the production of 'any tangible things (including books, records, papers, documents, and other items)' for an investigation to protect against international terrorism or clandestine intelligence activities (section 215). It also extended pen-register and trap-and-trace orders to the 'dialing, routing, addressing, or signaling information' of wire and electronic communications (section 216).",
       lat: 38.8899,
       lng: -77.0091,
       continent: "North America",
@@ -5050,6 +5808,16 @@ window.privacyData = {
           url: "https://www.govinfo.gov/content/pkg/PLAW-107publ56/html/PLAW-107publ56.htm",
           quote: "may make an application for an order requiring the production of any tangible things (including books, records, papers, documents, and other items) for an investigation to protect against international terrorism or clandestine intelligence activities",
           note: "Section 215. Approval date from the margin note: '<<NOTE: Oct. 26, 2001 - [H.R. 3162]>>'. Section 216 amends 18 U.S.C. 3127(3) to cover 'dialing, routing, addressing, or signaling information'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The White House (George W. Bush administration archive)",
+          title: "President Signs Anti-Terrorism Bill: Remarks by the President at Signing of the Patriot Act, Anti-Terrorism Legislation",
+          date: "2001-10-26",
+          url: "https://georgewbush-whitehouse.archives.gov/news/releases/2001/10/20011026-5.html",
+          quote: "Remarks by the President at Signing of the Patriot Act, Anti-Terrorism Legislation",
+          note: "Checked with fetch-text --check: FOUND. The page header reads 'For Immediate Release Office of the Press Secretary October 26, 2001' and gives the place as 'The East Room'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5106,7 +5874,17 @@ window.privacyData = {
           date: "2002-07-12",
           url: "https://web.archive.org/web/20201224030937/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058",
           quote: "Member States shall ensure that the use of electronic communications networks to store information or to gain access to information stored in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned is provided with clear and comprehensive information in accordance with Directive 95/46/EC, inter alia about the purposes of the processing, and is offered the right to refuse such processing by the data controller.",
-          note: "Article 5(3). The text ends 'Done at Brussels, 12 July 2002.' EUR-Lex blocks scripts; read via the Internet Archive.",
+          note: "Article 5(3). The text ends 'Done at Brussels, 12 July 2002.' EUR-Lex blocks scripts; read via the Internet Archive. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. The same quote, verbatim, and 'Done at Brussels, 12 July 2002.' check FOUND on the EU Publications Office CELLAR text of OJ L 201, 31.7.2002 (added source). Live EUR-Lex returns an HTTP 202 bot challenge.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Publications Office of the European Union (EUR-Lex text served from CELLAR)",
+          title: "Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector (Directive on privacy and electronic communications), OJ L 201, 31.7.2002, p. 37",
+          date: "2002-07-12",
+          url: "https://publications.europa.eu/resource/cellar/cb5af945-9d9f-40e6-acee-bd0c5bb4ed0a.0004.01/DOC_1",
+          quote: "Member States shall ensure that the use of electronic communications networks to store information or to gain access to information stored in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned is provided with clear and comprehensive information in accordance with Directive 95/46/EC, inter alia about the purposes of the processing, and is offered the right to refuse such processing by the data controller.",
+          note: "Article 5(3), original text as adopted, before the 2009 amendment that introduced consent. Checked with fetch-text --check on 2026-09-23: FOUND. The exemption sentence and 'Done at Brussels, 12 July 2002.' are also FOUND. The URL is what http://publications.europa.eu/resource/celex/32002L0058 resolves to when HTML is requested.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5339,9 +6117,29 @@ window.privacyData = {
           date: "2006-08-09",
           url: "https://web.archive.org/web/2021/https://www.nytimes.com/2006/08/09/technology/09aol.html",
           quote: "It did not take much investigating to follow that data trail to Thelma Arnold, a 62-year-old widow who lives in Lilburn, Ga., frequently researches her friends’ medical ailments and loves her three dogs.",
-          note: "Read via the Internet Archive (the /web/2021/ address resolves to snapshot 20220106133752). Same article: 'Buried in a list of 20 million Web search queries collected by AOL and recently released on the Internet is user No. 4417749.' and 'AOL removed the search data from its site over the weekend and apologized for its release'. It refers to 'Ms. Arnold and 657,000 other Americans'. The exact posting date of the file is not given in the article.",
-          verificationStatus: "CONFIRMED",
+          note: "Read via the Internet Archive (the /web/2021/ address resolves to snapshot 20220106133752). Same article: 'Buried in a list of 20 million Web search queries collected by AOL and recently released on the Internet is user No. 4417749.' and 'AOL removed the search data from its site over the weekend and apologized for its release'. It refers to 'Ms. Arnold and 657,000 other Americans'. The exact posting date of the file is not given in the article. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. www.nytimes.com returns HTTP 403 to scripts. The same article on the NYT's own archive host (added source) checks FOUND for this exact quote and for every other sentence the note cites.",
+          verificationStatus: "PENDING",
           accessType: "PAYWALL"
+        },
+        {
+          institution: "The New York Times (archive.nytimes.com)",
+          title: "Michael Barbaro and Tom Zeller Jr., 'A Face Is Exposed for AOL Searcher No. 4417749'",
+          date: "2006-08-09",
+          url: "https://archive.nytimes.com/www.nytimes.com/2006/08/09/technology/09aol.html",
+          quote: "AOL removed the search data from its site over the weekend and apologized for its release, saying it was an unauthorized move by a team that had hoped it would benefit academic researchers.",
+          note: "Checked with fetch-text --check on 2026-09-23: FOUND. Also FOUND on this page: 'It did not take much investigating to follow that data trail to Thelma Arnold, a 62-year-old widow who lives in Lilburn, Ga., frequently researches her friends’ medical ailments and loves her three dogs.'; 'There are queries for “landscapers in Lilburn, Ga,” several people with the last name Arnold and “homes sold in shadow lake subdivision gwinnett county georgia.”'; '“My goodness, it’s my whole personal life,” she said.'; 'Ms. Arnold and 657,000 other Americans'. Page metadata: byl 'By MICHAEL BARBARO and TOM ZELLER Jr.', dat 'August 9, 2006'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "TechCrunch (reproducing AOL's statement)",
+          title: "AOL: “This was a screw up”",
+          date: "2006-08-07",
+          url: "https://techcrunch.com/2006/08/07/aol-this-was-a-screw-up/",
+          quote: "Search data for roughly 658,000 anonymized users over a three month period from March to May.",
+          note: "Checked with fetch-text --check: FOUND. The same statement by AOL spokesman Andrew Weinstein gives 'Roughly 20 million search records over that period' (FOUND) and 'It was an innocent enough attempt to reach out to the academic community with new research tools' (FOUND). The page's datePublished is 2006-08-07.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -5373,7 +6171,17 @@ window.privacyData = {
           date: "2007-01-07",
           url: "https://web.archive.org/web/20070107050320/http://conferences.oreillynet.com/et2006/",
           quote: "The O'Reilly Emerging Technology Conference (ETech) will be held March 6-9, 2006 at the Manchester Grand Hyatt in San Diego, California",
-          note: "Establishes the venue from which Searls wrote ('this year's eTech conference, where I am sitting in an audience, writing this').",
+          note: "Establishes the venue from which Searls wrote ('this year's eTech conference, where I am sitting in an audience, writing this'). Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated tries; the agent proxy reports ws_closed_mid_exchange for web.archive.org:443), so this exact snapshot URL could not be opened here. The live conferences.oreillynet.com and oreilly.com addresses return 403. The quote is FOUND in the Wayback copy of the same page at https://web.archive.org/web/2006/http://conferences.oreillynet.com/et2006/, retrieved earlier on 2026-09-23 and held in the fetch-text cache (added source).",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "O'Reilly Media (Internet Archive, 2006 capture of conferences.oreillynet.com/et2006)",
+          title: "O'Reilly Emerging Technology Conference - March 6-9, 2006 - San Diego, CA",
+          date: "2006",
+          url: "https://web.archive.org/web/2006/http://conferences.oreillynet.com/et2006/",
+          quote: "The O'Reilly Emerging Technology Conference (ETech) will be held March 6-9, 2006 at the Manchester Grand Hyatt in San Diego, California",
+          note: "fetch-text --check: FOUND. The page was retrieved from web.archive.org earlier on 2026-09-23 and served from the tool's cache; web.archive.org later reset connections. It is the post-event version of the page ('Thanks to everyone who participated in ETech 2006'). The date field is the capture year; the /web/2006/ address redirects to the nearest 2006 capture.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5471,7 +6279,7 @@ window.privacyData = {
       phase: "cookies",
       title: "Facebook Beacon broadcasts off-site purchases — then retreats to opt-in",
       place: "Facebook Social Advertising Event, New York City",
-      body: "On 6 November 2007 Facebook announced that 44 websites, including Fandango and eBay, were using Beacon to send users' actions on their sites, such as purchases, to Facebook for display to friends. Beacon was initially opt-out: if a user forgot to decline, the action was shared. After weeks of protest Facebook switched it to opt-in, and on 5 December 2007 Mark Zuckerberg apologised — 'We simply did a bad job with this release, and I apologize for it' — and added a control to turn Beacon off completely.",
+      body: "On 6 November 2007 Facebook announced that 44 websites, including Fandango and Travelocity, were using Beacon to send users' actions on their sites, such as purchases, to Facebook for display to friends. eBay said it would add Beacon for its sellers' listings in early 2008. Beacon was initially opt-out: if a user forgot to decline, the action was shared. After weeks of protest Facebook switched it to opt-in, and on 5 December 2007 Mark Zuckerberg apologised ('We simply did a bad job with this release, and I apologize for it') and added a control to turn Beacon off completely.",
       lat: 40.758,
       lng: -73.9855,
       continent: "North America",
@@ -5489,7 +6297,7 @@ window.privacyData = {
         {
           institution: "Meta (Facebook newsroom)",
           title: "Mark Zuckerberg, 'Thoughts on Beacon' (Announcement: Facebook Users Can Now Opt-Out of Beacon Feature)",
-          date: "2007-12-05",
+          date: "2007-12-06",
           url: "https://about.fb.com/news/2007/12/announcement-facebook-users-can-now-opt-out-of-beacon-feature/",
           quote: "The problem with our initial approach of making it an opt-out system instead of opt-in was that if someone forgot to decline to share something, Beacon still went ahead and shared it with their friends.",
           note: "Newsroom URL gives the month (2007/12); the day is from TechCrunch, 5 December 2007 ('in a blog post this morning'). Same post: 'We simply did a bad job with this release, and I apologize for it.' and 'Last week we changed Beacon to be an opt-in system, and today we’re releasing a privacy control to turn off Beacon completely.'",
@@ -5504,6 +6312,16 @@ window.privacyData = {
           quote: "Finally heeding calls to apologize for the privacy disaster surrounding Facebook’s Beacon advertising program, CEO Mark Zuckerberg took responsibility for the company’s mistakes in a blog post this morning.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "Facebook Beacon",
+          date: "2026-09-23",
+          url: "https://en.wikipedia.org/wiki/Facebook_Beacon",
+          quote: "On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.",
+          note: "Independent tertiary corroboration of the 5 December date. The same article gives the launch as November 6, 2007, with 44 partner websites. Checked with fetch-text --check: FOUND. The date field is the date accessed.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -5513,10 +6331,10 @@ window.privacyData = {
       year: 2008,
       phase: "cookies",
       title: "Narayanan and Shmatikov re-identify 'anonymous' Netflix Prize raters",
-      place: "IEEE Symposium on Security and Privacy, Oakland, California",
-      body: "Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin showed that the Netflix Prize dataset of movie ratings by 500,000 subscribers, released with names removed, could be de-anonymised: with 8 ratings (two of which could be wrong) and dates within 14 days, 99% of records could be uniquely identified. Using public IMDb reviews as background knowledge they identified known users' records, revealing apparent political preferences. A preprint appeared on arXiv on 18 October 2006; the paper was presented at the IEEE Symposium on Security and Privacy in Oakland in May 2008.",
-      lat: 37.8044,
-      lng: -122.2712,
+      place: "IEEE Symposium on Security and Privacy, The Claremont Resort, Oakland, California",
+      body: "Arvind Narayanan and Vitaly Shmatikov of the University of Texas at Austin showed that the Netflix Prize dataset of movie ratings by 500,000 subscribers, released with names removed, could be de-anonymised: with 8 ratings (two of which could be wrong) and dates within 14 days, 99% of records could be uniquely identified. Using public IMDb ratings from a small sample of about 50 IMDb users as background knowledge, they identified known users' Netflix records, revealing apparent political preferences. A first version appeared on arXiv on 18 October 2006, and the IMDb identifications were reported in the revision of 22 November 2007. The paper was presented at the IEEE Symposium on Security and Privacy, held at the Claremont Resort in Oakland on 18–21 May 2008.",
+      lat: 37.8597,
+      lng: -122.2425,
       continent: "North America",
       source: [
         {
@@ -5531,9 +6349,9 @@ window.privacyData = {
         },
         {
           institution: "arXiv (Cornell University)",
-          title: "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' (arXiv:cs/0610105)",
-          date: "2006-10-18",
-          url: "https://arxiv.org/abs/cs/0610105",
+          title: "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset' (arXiv:cs/0610105v2, revised version)",
+          date: "2007-11-22",
+          url: "https://arxiv.org/abs/cs/0610105v2",
           quote: "Using the Internet Movie Database as the source of background knowledge, we successfully identified the Netflix records of known users, uncovering their apparent political preferences and other potentially sensitive information.",
           note: "Submission history: v1 Wed, 18 Oct 2006; v2 Thu, 22 Nov 2007.",
           verificationStatus: "CONFIRMED",
@@ -5546,6 +6364,26 @@ window.privacyData = {
           url: "https://collaborate.princeton.edu/en/publications/robust-de-anonymization-of-large-sparse-datasets/",
           quote: "2008 IEEE Symposium on Security and Privacy, SP - Oakland, CA, United States",
           note: "Record gives the event dates as May 18–21, 2008, pages 111-125, DOI 10.1109/SP.2008.33.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Computer Society Technical Committee on Security and Privacy",
+          title: "2008 IEEE Symposium on Security and Privacy — home page",
+          date: "2008-05",
+          url: "https://www.ieee-security.org/TC/SP2008/oakland08-home.html",
+          quote: "May 18-21, 2008 2008 IEEE Symposium on Security and Privacy The Claremont Resort Oakland, California, USA",
+          note: "fetch-text.py --check FOUND on 2026-09-23. This is the content frame of https://www.ieee-security.org/TC/SP2008/oakland08.html, a frameset page.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "arXiv (Cornell University)",
+          title: "Arvind Narayanan and Vitaly Shmatikov, 'How To Break Anonymity of the Netflix Prize Dataset', first version (arXiv:cs/0610105v1), PDF",
+          date: "2006-10-18",
+          url: "https://arxiv.org/pdf/cs/0610105v1",
+          quote: "With IMDb, there are some hurdles to overcome",
+          note: "fetch-text.py --check FOUND on 2026-09-23. The same paragraph ends: '(although we expect a strong correlation). This is future work.' (also FOUND). This shows that the October 2006 version did not yet report IMDb-based identifications.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5591,7 +6429,7 @@ window.privacyData = {
       phase: "cookies",
       title: "Soghoian and Stamm prototype a 'Do Not Track' browser header",
       place: "Indiana University, Bloomington, Indiana",
-      body: "In July 2009 privacy researcher Christopher Soghoian, with his collaborator Sid Stamm, built a prototype Firefox add-on that added two headers to every outgoing web request, 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. The idea replaced dozens of per-network opt-out cookies with one signal sent to every server, but it depended on advertisers choosing to honour it.",
+      body: "In July 2009 privacy researcher Christopher Soghoian, with his research collaborator Sid Stamm, built a prototype Firefox add-on that added two headers to outgoing web requests: 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. It was meant to replace per-company opt-out cookies with one signal sent to every server; Soghoian's own TACO add-on had grown to more than 100 of them. Dan Kaminsky and Mozilla's Mike Shaver had urged the header approach earlier that year. When Soghoian pitched it to industry in mid-July 2009, none of the advertising firms showed any interest, and he never added it to TACO.",
       lat: 39.1682,
       lng: -86.523,
       continent: "North America",
@@ -5626,7 +6464,47 @@ window.privacyData = {
           date: "2009-11-25",
           url: "https://web.archive.org/web/20260107085903/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32009L0136",
           quote: "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information, in accordance with Directive 95/46/EC, inter alia, about the purposes of the processing.",
-          note: "Article 2(5), replacing Article 5(3) of Directive 2002/58/EC. Recital 66: 'the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.' Signed 'Done at Strasbourg, 25 November 2009.' EUR-Lex blocks scripts; read via the Internet Archive.",
+          note: "Article 2(5), replacing Article 5(3) of Directive 2002/58/EC. Recital 66: 'the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.' Signed 'Done at Strasbourg, 25 November 2009.' EUR-Lex blocks scripts; read via the Internet Archive. Verification: Not re-verified on 2026-09-23. tools/fetch-text.py got 'URLError: [Errno 104] Connection reset by peer', and the agent proxy logged ws_closed_mid_exchange for web.archive.org:443. Live EUR-Lex (https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0136 and the LexUriServ OJ PDF) returns a page without the Directive text (NOT-FOUND). The same wording is FOUND on the added legislation.gov.uk copies.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "legislation.gov.uk (The National Archives), Directives originating from the EU",
+          title: "Directive 2009/136/EC of the European Parliament and of the Council of 25 November 2009 — Article 2",
+          date: "2009-11-25",
+          url: "https://www.legislation.gov.uk/eudr/2009/136/article/2",
+          quote: "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information, in accordance with Directive 95/46/EC, inter alia, about the purposes of the processing.",
+          note: "fetch-text.py --check FOUND on 2026-09-23. Preceded on the page by 'Article 5(3) shall be replaced by the following:' (FOUND). The replacement text continues: 'or as strictly necessary in order for the provider of an information society service explicitly requested by the subscriber or user to provide the service.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "legislation.gov.uk (The National Archives), Directives originating from the EU",
+          title: "Directive 2009/136/EC — Introductory Text (recitals)",
+          date: "2009-11-25",
+          url: "https://www.legislation.gov.uk/eudr/2009/136/introduction",
+          quote: "Where it is technically possible and effective, in accordance with the relevant provisions of Directive 95/46/EC, the user’s consent to processing may be expressed by using the appropriate settings of a browser or other application.",
+          note: "fetch-text.py --check FOUND on 2026-09-23. Recital (66).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "legislation.gov.uk (The National Archives), facsimile of the Official Journal of the European Union L 337",
+          title: "Directive 2009/136/EC as adopted (OJ L 337, 18.12.2009, p. 11), PDF",
+          date: "2009-11-25",
+          url: "https://www.legislation.gov.uk/eudr/2009/136/pdfs/eudr_20090136_adopted_en.pdf",
+          quote: "Done at Strasbourg, 25 November 2009.",
+          note: "fetch-text.py --check FOUND on 2026-09-23. Also FOUND in this PDF: '5) Article 5(3) shall be replaced by the following:'. The full Article 5(3) sentence does not pass --check here only because of soft hyphens in the PDF text layer ('infor­mation'); it is FOUND on the HTML Article 2 page.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "legislation.gov.uk (The National Archives), facsimile of the Official Journal of the European Union L 201",
+          title: "Directive 2002/58/EC (Directive on privacy and electronic communications) as adopted, PDF",
+          date: "2002-07-12",
+          url: "https://www.legislation.gov.uk/eudr/2002/58/pdfs/eudr_20020058_adopted_en.pdf",
+          quote: "offered the right to refuse such processing by the data controller",
+          note: "fetch-text.py --check FOUND on 2026-09-23. This is the original Article 5(3), the opt-out rule that the 2009 amendment replaced with consent. Same PDF: 'Done at Brussels, 12 July 2002.' (FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5821,8 +6699,8 @@ window.privacyData = {
           date: "2013-01-20",
           url: "https://web.archive.org/web/20130126183511/http://www.w3.org/2011/tracking-protection/charter.html",
           quote: "The Working Group will produce Recommendation-track specifications for a simple machine-readable preference expression mechanism (\"Do Not Track\") and technologies for selectively allowing or blocking tracking elements.",
-          note: "Snapshot of the charter as extended on 1 August 2012. Same page: 'The first face-to-face meeting will take place 21-22 September 2011 at MIT.' and 'The Working Group will not design mechanisms for the expression of complex or general-purpose policy statements.' Initial co-chairs: 'Aleecia M. McDonald, Mozilla Matthias Schunter, IBM'.",
-          verificationStatus: "CONFIRMED",
+          note: "Snapshot of the charter as extended on 1 August 2012. Same page: 'The first face-to-face meeting will take place 21-22 September 2011 at MIT.' and 'The Working Group will not design mechanisms for the expression of complex or general-purpose policy statements.' Initial co-chairs: 'Aleecia M. McDonald, Mozilla Matthias Schunter, IBM'. Verification: Not re-verified on 2026-09-23. tools/fetch-text.py got 'URLError: [Errno 104] Connection reset by peer', and the agent proxy logged ws_closed_mid_exchange for web.archive.org:443. The scope sentence, the exclusion sentence and the first-meeting sentence are all FOUND on the live charter (added source). The initial co-chairs are confirmed by the added W3C minutes and mailing-list messages.",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -5832,6 +6710,46 @@ window.privacyData = {
           url: "https://www.mozilla.org/en-US/firefox/4.0/releasenotes/",
           quote: "Support for the Do Not Track (\"DNT\") header that allows users to opt-out of behavioural advertising",
           note: "Same page: 'v.4.0, released March 22nd, 2011'. Whether Firefox was the first browser to ship DNT was not verified here, so no 'first browser' claim is made.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "World Wide Web Consortium",
+          title: "Tracking Protection Working Group Charter (final revision, extended to 31 December 2016)",
+          date: "2016-09",
+          url: "https://www.w3.org/2011/tracking-protection/charter.html",
+          quote: "The Working Group will produce Recommendation-track specifications for a simple machine-readable preference expression mechanism (\"Do Not Track\") and technologies for selectively allowing or blocking tracking elements.",
+          note: "fetch-text.py gets HTTP 403 with its Chrome user agent. The page was fetched with curl (UA 'curl/8') into the tool's cache, and --check returned FOUND for this sentence and for 'The Working Group will not design mechanisms for the expression of complex or general-purpose policy statements.' and 'The first face-to-face meeting will take place 21-22 September 2011 at MIT.' This is the live, last-revised charter, which lists later co-chairs; its history notes 'the change of co-chair from Aleecia M. McDonald to Peter Swire'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "World Wide Web Consortium",
+          title: "Tracking Protection WG F2F - Day 1 - 21 September 2011 (minutes)",
+          date: "2011-09-21",
+          url: "https://www.w3.org/2011/09/21-dnt-minutes.html",
+          quote: "first in person meeting 9/21-9/22 in Cambridge, MA",
+          note: "Fetched with curl (UA 'curl/8') into the fetch-text.py cache because W3C returns 403 to the tool's user agent; --check FOUND. Also FOUND: 'Chair Aleecia M. McDonald (aleecia), Matthias Schunter (schunter)'. Day 2 minutes: https://www.w3.org/2011/09/22-dnt-minutes.html.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "World Wide Web Consortium (public-tracking mailing list archive)",
+          title: "Aleecia M. McDonald, 'Welcome to Matthias, co-chair'",
+          date: "2011-09-20",
+          url: "https://lists.w3.org/Archives/Public/public-tracking/2011Sep/0021.html",
+          quote: "Please join me in welcoming Matthias Schunter as co-Chair of the Tracking Protection Working Group. Matthias is Research Staff Member at the Network Security and Cryptography Research Group at IBM Research in Zurich.",
+          note: "Fetched with curl (UA 'curl/8') into the fetch-text.py cache because lists.w3.org returns 403 to the tool's user agent; --check FOUND. The signature 'Aleecia M. McDonald // Senior Privacy Researcher @ Mozilla' is also FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "World Wide Web Consortium (public-tracking mailing list archive)",
+          title: "Aleecia M. McDonald, open call before the first face-to-face meeting",
+          date: "2011-09-12",
+          url: "https://lists.w3.org/Archives/Public/public-tracking/2011Sep/0001.html",
+          quote: "Please join us for an open conference call prior to the first face-to-face kickoff meeting for the Tracking Protection Working Group on 21/22 September at MIT.",
+          note: "Fetched with curl (UA 'curl/8') into the fetch-text.py cache because lists.w3.org returns 403 to the tool's user agent; --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5970,7 +6888,7 @@ window.privacyData = {
       source: [
         {
           institution: "Microsoft (On the Issues blog)",
-          title: "Brendon Lynch, 'Advancing Consumer Trust and Privacy: Internet Explorer in Windows 8'",
+          title: "'Advancing Consumer Trust and Privacy: Internet Explorer in Windows 8' (Microsoft On the Issues; post tagged 'Brendon Lynch', byline 'Microsoft Corporate Blogs')",
           date: "2012-05-31",
           url: "https://blogs.microsoft.com/on-the-issues/2012/05/31/advancing-consumer-trust-and-privacy-internet-explorer-in-windows-8/",
           quote: "Internet Explorer 10 on Windows 8 will be the first browser to have DNT on by default.",
@@ -5996,7 +6914,7 @@ window.privacyData = {
       phase: "cookies",
       title: "Microsoft says Google's fake P3P policy bypasses IE privacy settings; Facebook does it too",
       place: "Microsoft Corporation, Redmond, Washington",
-      body: "On 20 February 2012 Dean Hachamovitch, Microsoft's vice-president for Internet Explorer, wrote that Google was circumventing IE's default privacy protection by sending a P3P compact policy reading 'This is not a P3P policy!', which IE treated as valid and so let Google's third-party cookies through. Google replied that complying with P3P was 'impractical'. The next day researcher Nik Cubrilovic showed that Facebook sent a similar non-policy ('Facebook does not have a P3P policy'), and Lorrie Cranor, a P3P author, later noted that no regulator had acted against any deceptive P3P policy.",
+      body: "On 20 February 2012 Dean Hachamovitch, Microsoft's vice-president for Internet Explorer, wrote that Google was circumventing IE's default privacy protection by sending a P3P compact policy reading 'This is not a P3P policy!'. Because IE accepts a compact policy whose tokens it does not recognise, Google's third-party cookies got through. Google replied that it was 'impractical to comply with Microsoft's request while providing modern web functionality'. Within hours, researcher Nik Cubrilovic showed that Facebook sent a similar non-policy ('Facebook does not have a P3P policy'). In December 2012 Lorrie Cranor, who had spent seven years working on the P3P 1.0 specification, noted that no regulator had announced an investigation of any website for a deceptive P3P policy.",
       lat: 47.6396,
       lng: -122.1283,
       continent: "North America",
@@ -6117,7 +7035,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "The Guardian reveals bulk collection of Verizon call records, then PRISM",
       place: "The Guardian, Kings Place, London",
-      body: "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. A second story reported an NSA programme called PRISM, described in a 41-slide training presentation, that collected search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies; the companies denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden.",
+      body: "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. On 6 June The Guardian and The Washington Post both reported an NSA programme called PRISM. The Guardian's story drew on a 41-slide training presentation which said the programme let officials collect search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies. Every company that answered the Guardian denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden.",
       lat: 51.5352,
       lng: -0.1222,
       continent: "Europe",
@@ -6145,10 +7063,20 @@ window.privacyData = {
         {
           institution: "The Guardian",
           title: "NSA Prism program taps in to user data of Apple, Google and others",
-          date: "2013-06-07",
+          date: "2013-06-06",
           url: "https://www.theguardian.com/world/2013/jun/06/us-tech-giants-nsa-data",
           quote: "The NSA access is part of a previously undisclosed program called Prism, which allows officials to collect material including search history, the content of emails, file transfers and live chats, the document says.",
           note: "URL dated 6 June 2013; the page timestamp (7 June 2013 15.23 EDT) reflects a later update.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "PRISM",
+          date: "2026-09-23",
+          url: "https://en.wikipedia.org/wiki/PRISM",
+          quote: "The disclosures were published by The Guardian and The Washington Post on June 6, 2013.",
+          note: "Independent corroboration (tertiary) that PRISM was first reported on 6 June 2013 by both papers. It cites Gellman & Poitras, Washington Post, June 6, 2013, and Greenwald & MacAskill, The Guardian, June 6, 2013. The Washington Post URL refused scripted access. The date field is the date accessed.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -6310,7 +7238,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "EU Court of Justice: search engines must delist on request (Google Spain)",
       place: "Court of Justice of the European Union, Kirchberg, Luxembourg",
-      body: "In Case C-131/12, brought after Mario Costeja González complained in 2010 to Spain's data protection agency about search results linking to 1998 La Vanguardia pages announcing a real-estate auction, the Grand Chamber held that a search engine operator processes personal data and can be obliged to remove links to lawful third-party pages from results for a person's name. It held that the data subject's rights under Articles 7 and 8 of the Charter override, as a rule, both the operator's economic interest and the public's interest in finding the information, unless the person's role in public life justifies access.",
+      body: "In Case C-131/12, brought after Mario Costeja González complained in 2010 to Spain's data protection agency about search results linking to 1998 La Vanguardia pages announcing a real-estate auction, the Grand Chamber held that a search engine operator processes personal data and can be obliged to remove links to lawful third-party pages from results for a person's name. It held that the data subject's rights under Articles 7 and 8 of the Charter override, as a rule, both the operator's economic interest and the public's interest in finding the information, unless there are particular reasons, such as the person's role in public life, why the public's interest in access prevails.",
       lat: 49.6207,
       lng: 6.1396,
       continent: "Europe",
@@ -6419,7 +7347,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "Schrems I: the EU Court of Justice strikes down Safe Harbour",
       place: "Court of Justice of the European Union, Kirchberg, Luxembourg",
-      body: "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law did not protect data transferred there from surveillance. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
+      body: "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law and practice did not offer sufficient protection against surveillance by public authorities of data transferred there. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
       lat: 49.6207,
       lng: 6.1396,
       continent: "Europe",
@@ -6485,7 +7413,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "TextSecure and RedPhone become Signal",
       place: "Open Whisper Systems (online; Signal's organisation is registered in Mountain View, California)",
-      body: "Whisper Systems, a mobile-security company, was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 open-source licence, and from January 2013 continued development was hosted as the open project Open Whisper Systems. The project released Signal, free encrypted calling for iPhone, on 29 July 2014, and on 2 November 2015 began rolling out Signal for Android, combining its Android apps TextSecure (private messaging) and RedPhone (private calling) in one app.",
+      body: "Whisper Systems, a mobile-security company, was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 open-source licence, and the community's continued open development, already known as Open Whisper Systems, got its own home in January 2013. The project released Signal, free encrypted calling for iPhone, on 29 July 2014, and on 2 November 2015 began rolling out Signal for Android, combining its Android apps TextSecure (private messaging) and RedPhone (private calling) in one app.",
       lat: 37.3861,
       lng: -122.0839,
       continent: "North America",
@@ -6574,6 +7502,16 @@ window.privacyData = {
           url: "https://publications.europa.eu/resource/cellar/c183d956-57a6-11e6-89bd-01aa75ed71a1.0006.03/DOC_1",
           quote: "Based on the findings developed in recitals 136-140, the Commission concludes that the United States ensures an adequate level of protection for personal data transferred under the EU-U.S. Privacy Shield from the Union to self-certified organisations in the United States.",
           note: "Recital 141; signed 'Done at Brussels, 12 July 2016.' Official text via the EU Publications Office repository (CELEX 32016D1250).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Court of Justice of the European Union",
+          title: "Press Release No 91/20: Judgment in Case C-311/18 Data Protection Commissioner v Facebook Ireland and Maximillian Schrems",
+          date: "2020-07-16",
+          url: "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+          quote: "However, the Court declares Decision 2016/1250 invalid.",
+          note: "Headline: 'The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield'. Dated 'Luxembourg, 16 July 2020'. Both phrases check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -6696,9 +7634,9 @@ window.privacyData = {
       date: "12 April 2016",
       year: 2016,
       phase: "surveillance",
-      title: "Let's Encrypt leaves beta, making HTTPS certificates free and automatic",
+      title: "Let's Encrypt leaves beta with free, automated HTTPS certificates",
       place: "Internet Security Research Group (ISRG), California",
-      body: "Let's Encrypt, a free, automated certificate authority run by the nonprofit Internet Security Research Group — founded in May 2013 with Mozilla, the Electronic Frontier Foundation, the University of Michigan, Cisco and Akamai as founding sponsors and partners — was announced on 18 November 2014 and opened a beta in September 2015. On 12 April 2016 it left beta, reporting more than 1.7 million certificates issued for more than 3.8 million websites and stating its aim to 'encrypt 100% of the Web'.",
+      body: "Let's Encrypt, a free, automated certificate authority run by the nonprofit Internet Security Research Group — founded in May 2013 with Mozilla, the Electronic Frontier Foundation, the University of Michigan, Cisco and Akamai as founding sponsors and partners — was announced on 18 November 2014, started an invitation-only Limited Beta on 12 September 2015 and opened a Public Beta to anyone on 3 December 2015. On 12 April 2016 it left beta, reporting that since the beta began it had issued more than 1.7 million certificates for more than 3.8 million websites, and stating its aim to 'encrypt 100% of the Web'.",
       lat: 38.5816,
       lng: -121.4944,
       continent: "North America",
@@ -6729,6 +7667,26 @@ window.privacyData = {
           url: "https://www.abetterinternet.org/about/",
           quote: "ISRG's founding directors were Josh Aas and Eric Rescorla. The group's founding sponsors and partners were Mozilla, the Electronic Frontier Foundation, the University of Michigan, Cisco, and Akamai.",
           note: "Same page: 'ISRG was founded in May of 2013 to serve as a home for public-benefit digital infrastructure projects' (--check FOUND; the rest of that sentence contains a link). Undated page; accessed 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Let's Encrypt (Internet Security Research Group)",
+          title: "Public Beta: December 3, 2015",
+          date: "2015-11-12",
+          url: "https://letsencrypt.org/2015/11/12/public-beta-timing.html",
+          quote: "Our Limited Beta started on September 12, 2015.",
+          note: "--check FOUND; page <time datetime=\"2015-11-12\">. Same post: 'Let's Encrypt will enter Public Beta on December 3, 2015. Once we've entered Public Beta our systems will be open to anyone who would like to request a certificate. There will no longer be a requirement to sign up and wait for an invitation.' (--check FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Let's Encrypt (Internet Security Research Group)",
+          title: "Entering Public Beta",
+          date: "2015-12-03",
+          url: "https://letsencrypt.org/2015/12/03/entering-public-beta.html",
+          quote: "We're happy to announce that Let's Encrypt has entered Public Beta. Invitations are no longer needed in order to get free certificates from Let's Encrypt.",
+          note: "--check FOUND; page datetime 2015-12-03.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -6948,6 +7906,16 @@ window.privacyData = {
           note: "noyb is an advocacy organisation; cited for what it itself did. The complaints went to the French, Belgian, Hamburg and Austrian authorities.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+          title: "Regulation (EU) 2016/679, Article 99(2) — Entry into force and application",
+          date: "2016-04-27",
+          url: "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+          quote: "It shall apply from 25 May 2018.",
+          note: "Article 99(2); Article 99(1) sets entry into force on the twentieth day after publication (i.e. 2016). The quote is short but it is the operative date provision.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -6958,14 +7926,14 @@ window.privacyData = {
       phase: "surveillance",
       title: "Carpenter v. United States: a warrant for phone location history",
       place: "Supreme Court of the United States, Washington, D.C.",
-      body: "Without a warrant, prosecutors had obtained from wireless carriers 12,898 location points cataloguing Timothy Carpenter's movements over 127 days — an average of 101 a day. In a 5–4 opinion by Chief Justice Roberts, the Court held that acquiring cell-site location information (CSLI) was a Fourth Amendment search and that the government must generally obtain a warrant supported by probable cause before acquiring such records.",
+      body: "Using court orders under the Stored Communications Act — which required only 'reasonable grounds', well short of the probable cause needed for a warrant — prosecutors had obtained from wireless carriers 12,898 location points cataloguing Timothy Carpenter's movements over 127 days, an average of 101 a day. In a 5–4 opinion by Chief Justice Roberts, the Court held that the Government's acquisition of Carpenter's cell-site location information (CSLI) was a Fourth Amendment search — deciding no more than that accessing seven days of CSLI is one — and that the government must generally obtain a warrant supported by probable cause before acquiring such records.",
       lat: 38.8906,
       lng: -77.0044,
       continent: "North America",
       source: [
         {
           institution: "Supreme Court of the United States",
-          title: "Carpenter v. United States, 585 U.S. ___ (2018), No. 16–402, slip opinion",
+          title: "Carpenter v. United States, 585 U.S. ___ (2018), No. 16–402, slip opinion — Opinion of the Court, Part IV",
           date: "2018-06-22",
           url: "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
           quote: "Having found that the acquisition of Carpenter’s CSLI was a search, we also conclude that the Government must generally obtain a warrant supported by probable cause before acquiring such records.",
@@ -6980,6 +7948,36 @@ window.privacyData = {
           url: "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
           quote: "Wireless carriers produced CSLI for petitioner Timothy Carpenter’s phone, and the Government was able to obtain 12,898 location points cataloging Carpenter’s movements over 127 days—an average of 101 data points per day.",
           note: "The syllabus is not part of the opinion; the figures also appear in the opinion.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Supreme Court of the United States",
+          title: "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, Part I-B",
+          date: "2018-06-22",
+          url: "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+          quote: "Based on that information, the prosecutors applied for court orders under the Stored Communications Act to obtain cell phone records for petitioner Timothy Carpenter and several other suspects.",
+          note: "The orders were issued under 18 U.S.C. §2703(d) ('reasonable grounds'), not warrants.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Supreme Court of the United States",
+          title: "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, Part IV",
+          date: "2018-06-22",
+          url: "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+          quote: "That showing falls well short of the probable cause required for a warrant.",
+          note: "Refers to the Stored Communications Act 'reasonable grounds' showing.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Supreme Court of the United States",
+          title: "Carpenter v. United States, No. 16–402, slip opinion — Opinion of the Court, footnote 3",
+          date: "2018-06-22",
+          url: "https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf",
+          quote: "It is sufficient for our purposes today to hold that accessing seven days of CSLI constitutes a Fourth Amendment search.",
+          note: "The Court expressly declined to decide whether a shorter period of historical CSLI can be obtained without Fourth Amendment scrutiny.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7012,7 +8010,17 @@ window.privacyData = {
           date: "2018-06-28",
           url: "https://web.archive.org/web/2024/https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=201720180AB375",
           quote: "Chaptered by Secretary of State - Chapter 55, Statutes of 2018.",
-          note: "History table rows dated 06/28/18 read 'Chaptered by Secretary of State - Chapter 55, Statutes of 2018.' and 'Approved by the Governor.' The live leginfo site timed out for scripted access; the Internet Archive copy was read.",
+          note: "History table rows dated 06/28/18 read 'Chaptered by Secretary of State - Chapter 55, Statutes of 2018.' and 'Approved by the Governor.' The live leginfo site timed out for scripted access; the Internet Archive copy was read. Verification: Not re-verified 2026-09-23: web.archive.org reset the connection on every attempt (Errno 104, 6 tries), and live leginfo.legislature.ca.gov returned HTTP 502 or timed out. The Wayback availability API lists a snapshot at 20260702234430 but its text could not be read. Chapter 55 is confirmed instead by the AG ISOR (added source).",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "California Office of the Attorney General",
+          title: "Initial Statement of Reasons (ISOR): Proposed Adoption of California Consumer Privacy Act Regulations",
+          date: "2019-10-11",
+          url: "https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-isor-appendices.pdf",
+          quote: "(Stats. 2018, Ch. 55 [AB 375], as amended by Stats. 2018, Ch. 735 [SB 1121])",
+          note: "Heading of the ISOR, which was issued with the Notice of Proposed Rulemaking '(Notice to be Published on October 11, 2019)'. The same PDF's appended Standardized Regulatory Impact Assessment (Berkeley Economic Advising and Research) reads: 'On June 28, 2018, AB 375 passed unanimously and was signed into law.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7224,6 +8232,16 @@ window.privacyData = {
           note: "Read from the documentation data file behind https://developer.apple.com/documentation/safari-release-notes/safari-12_1-release-notes (script-rendered). Same file: 'Released March 25, 2019'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "World Wide Web Consortium (W3C)",
+          title: "Tracking Protection Working Group",
+          date: "2019-01-17",
+          url: "https://www.w3.org/2011/tracking-protection/",
+          quote: "It closed on 17 January 2019.",
+          note: "--check FOUND. The full line reads 'The working group is currently closed. It closed on 17 January 2019.' The page lists 'Tracking Preference Expression (DNT)' and 'Tracking Compliance and Scope (TCS)' as retired specifications.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -7232,9 +8250,9 @@ window.privacyData = {
       date: "15 January 2019",
       year: 2019,
       phase: "surveillance",
-      title: "Shoshana Zuboff names 'surveillance capitalism'",
+      title: "Shoshana Zuboff's The Age of Surveillance Capitalism",
       place: "PublicAffairs (Hachette Book Group), 1290 Avenue of the Americas, New York",
-      body: "PublicAffairs published Shoshana Zuboff's The Age of Surveillance Capitalism on 15 January 2019. Zuboff argued that surveillance capitalism 'unilaterally claims human experience as free raw material for translation into behavioural data', part of which is declared a proprietary 'behavioural surplus' and fabricated into prediction products traded in what she calls 'behavioural futures markets'.",
+      body: "PublicAffairs published Shoshana Zuboff's The Age of Surveillance Capitalism on 15 January 2019, expanding a concept she had set out in a 2015 journal article, 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization'. Zuboff argued that surveillance capitalism 'unilaterally claims human experience as free raw material for translation into behavioural data', part of which is declared a proprietary 'behavioural surplus' and fabricated into prediction products traded in what she calls 'behavioural futures markets'.",
       lat: 40.7614,
       lng: -73.9793,
       continent: "North America",
@@ -7258,6 +8276,16 @@ window.privacyData = {
           note: "The 'On Sale' date shown on the publisher's page for ISBN 9781610395694 (hardcover, PublicAffairs imprint).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "SAGE Publications (Journal of Information Technology), via Crossref metadata API",
+          title: "Big other: Surveillance Capitalism and the Prospects of an Information Civilization (Shoshana Zuboff), Journal of Information Technology 30(1): 75–89, doi:10.1057/jit.2015.5",
+          date: "2015-03",
+          url: "https://api.crossref.org/works/10.1057/jit.2015.5",
+          quote: "Surveillance capitalism challenges democratic norms and departs in key ways from the centuries-long evolution of market capitalism.",
+          note: "Last sentence of the article's abstract in the publisher-deposited Crossref record. The title string 'Big other: Surveillance Capitalism and the Prospects of an Information Civilization' is also FOUND on this page. The record gives published-print 2015-03. The SAGE landing page returns 403 to scripts.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -7278,9 +8306,10 @@ window.privacyData = {
           title: "FTC Imposes $5 Billion Penalty and Sweeping New Privacy Restrictions on Facebook",
           date: "2019-07-24",
           url: "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
-          quote: "Facebook, Inc. will pay a record-breaking $5 billion penalty, and submit to new restrictions and a modified corporate structure that will hold the company accountable for the decisions it makes about its users’ privacy, to settle Federal Trade Commission charges that the company violated a 2012 FTC order by deceiving users about their ability to control the privacy of their personal information. … The FTC alleges that Facebook violated the 2012 order by deceiving its users when the company shared the data of users’ Facebook friends with third-party app developers, even when those friends had set more restrictive privacy settings.",
+          quote: "Facebook, Inc. will pay a record-breaking $5 billion penalty, and submit to new restrictions and a modified corporate structure that will hold the company accountable for the decisions it makes about its users’ privacy, to settle Federal Trade Commission charges that the company violated a 2012 FTC order by deceiving users about their ability to control the privacy of their personal information. … The FTC alleges that Facebook violated the 2012 order by deceiving its users when the company shared the data of users’ Facebook friends with third-party app developers, even when those friends had set more restrictive privacy settings. … In a related, but separate development, the FTC also announced today separate law enforcement actions against data analytics company Cambridge Analytica, its former Chief Executive Officer Alexander Nix, and Aleksandr Kogan, an app developer who worked with the company, alleging they used false and deceptive tactics to harvest personal information from millions of Facebook users.",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "The space before the comma is a link boundary in the page text. The same page records the in-person press conference at FTC Headquarters on July 24, 2019."
         }
       ]
     },
@@ -7303,6 +8332,16 @@ window.privacyData = {
           url: "https://publications.europa.eu/resource/cellar/3d6585b3-e42f-11e9-9c4e-01aa75ed71a1.0022.05/DOC_1",
           quote: "must be interpreted as meaning that the consent referred to in those provisions is not validly constituted if, in the form of cookies, the storage of information or access to information already stored in a website user’s terminal equipment is permitted by way of a pre-checked checkbox which the user must deselect to refuse his or her consent.",
           note: "Operative part, point 1 (interpreting Article 2(f) and 5(3) of Directive 2002/58/EC and Articles 4(11) and 6(1)(a) GDPR). Official text via the EU Publications Office repository (CELEX 62017CJ0673).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Court of Justice of the European Union (Grand Chamber), via EU Publications Office (Cellar)",
+          title: "Judgment of 1 October 2019, Planet49, Case C-673/17, EU:C:2019:801 — paragraph 2",
+          date: "2019-10-01",
+          url: "https://publications.europa.eu/resource/cellar/3d6585b3-e42f-11e9-9c4e-01aa75ed71a1.0022.05/DOC_1",
+          quote: "Planet49 GmbH, an online gaming company, concerning the consent of participants in a promotional lottery organised by that company to the transfer of their personal data to the company’s sponsors and partners",
+          note: "Describes the parties. The Federation is 'Federal Union of Consumer Organisations and Associations — Federation of Consumer Organisations, Germany'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7359,7 +8398,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "Schrems II: the Court of Justice invalidates Privacy Shield",
       place: "Court of Justice of the European Union, Kirchberg, Luxembourg",
-      body: "On a reference from the Irish High Court in Case C-311/18, the Grand Chamber declared Commission Implementing Decision (EU) 2016/1250 on the EU-US Privacy Shield invalid, while holding that the Commission's standard contractual clauses (Decision 2010/87) remained valid. It was Schrems's second successful challenge to the legal basis of EU-US data transfers.",
+      body: "On a reference from the Irish High Court in Case C-311/18 — proceedings brought by the Irish Data Protection Commissioner over Max Schrems's complaint against Facebook's transfers of his data to the United States — the Grand Chamber declared Commission Implementing Decision (EU) 2016/1250 on the EU-US Privacy Shield invalid, while holding that the Commission's standard contractual clauses (Decision 2010/87) remained valid. It was the second time a Schrems complaint led the Court to strike down an EU-US transfer framework: in 2015 (Schrems I, Case C-362/14) it had invalidated the Safe Harbour decision.",
       lat: 49.6207,
       lng: 6.1396,
       continent: "Europe",
@@ -7379,9 +8418,10 @@ window.privacyData = {
           title: "Press Release No 91/20: The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield",
           date: "2020-07-16",
           url: "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
-          quote: "However, it considers that Commission Decision 2010/87 on standard contractual clauses for the transfer of personal data to processors established in third countries is valid.",
+          quote: "However, it considers that Commission Decision 2010/87 on standard contractual clauses for the transfer of personal data to processors established in third countries is valid. … In a judgment delivered on 6 October 2015, the Court of Justice, before which the High Court (Ireland) had referred questions for a preliminary ruling, declared that decision invalid (‘the Schrems I judgment’).",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "'That decision' is Decision 2000/520 (Safe Harbour), Case C-362/14. The release goes on to say that Schrems's reformulated complaint concerned transfers under the standard data protection clauses in the Annex to Decision 2010/87."
         }
       ]
     },
@@ -7423,6 +8463,16 @@ window.privacyData = {
           url: "https://cppa.ca.gov/regulations/pdf/20230329_final_regs_text.pdf",
           quote: "A business that sells or shares personal information shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing: (1) The signal shall be in a format commonly used and recognized by businesses. An example would be an HTTP header field or JavaScript object.",
           note: "§7025(b)(1).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Parliament and Council of the European Union (Official Journal L 119, 4.5.2016), via EU Publications Office (Cellar)",
+          title: "Regulation (EU) 2016/679, Article 21(5) — Right to object",
+          date: "2016-04-27",
+          url: "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+          quote: "In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.",
+          note: "An earlier EU provision recognising machine-sent objections. It is cited to qualify the 'first' claim for the California rule.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7533,9 +8583,9 @@ window.privacyData = {
           title: "Statement of Vote, November 3, 2020, General Election",
           date: "2020-12",
           url: "https://elections.cdn.sos.ca.gov/sov/2020-general/sov/complete-sov.pdf",
-          quote: "Amends Consumer Privacy Laws",
+          quote: "9,384,625 56.2% 7,305,431 43.8%",
           note: "PENDING: the statewide summary table for Proposition 24 ('Amends Consumer Privacy Laws') reads Yes 9,384,625 (56.2%), No 7,305,431 (43.8%), but the PDF's text layer interleaves table cells, so the counts cannot be verified as a continuous quotation; only the ballot label was matched.",
-          verificationStatus: "PENDING",
+          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
       ]
@@ -7690,6 +8740,16 @@ window.privacyData = {
           note: "Same page refers to 'the state’s first universal opt-out mechanism, Global Privacy Control'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Colorado Attorney General (Colorado Department of Law)",
+          title: "Universal Opt-Out and the Colorado Privacy Act",
+          date: "2026",
+          url: "https://coag.gov/uoom/",
+          quote: "The GPC was the first UOOM to be recognized to meet the standards of the CPA and CPA Rules.",
+          note: "Fresh fetch 2026-09-23: FOUND. Same page: 'Beginning July 1, 2024, businesses falling within the CPA's application thresholds must allow Consumers to opt-out ... using GPC. C.R.S. § 6-1-1306(1)(a)(IV).'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -7809,9 +8869,9 @@ window.privacyData = {
       date: "24 June 2022",
       year: 2022,
       phase: "surveillance",
-      title: "Dobbs overrules Roe — and turns health and location data into evidence",
+      title: "Dobbs overrules Roe — and health and location data become potential evidence",
       place: "Supreme Court of the United States, Washington, D.C.",
-      body: "In Dobbs v. Jackson Women's Health Organization the Supreme Court overruled Roe v. Wade and Planned Parenthood v. Casey, holding that the Constitution makes no reference to abortion and implicitly protects no such right. The majority noted that Roe had held the abortion right to be part of a right to privacy which is itself not mentioned in the Constitution.",
+      body: "In Dobbs v. Jackson Women's Health Organization the Supreme Court overruled Roe v. Wade and Planned Parenthood v. Casey, holding that the Constitution makes no reference to abortion and implicitly protects no such right. The majority noted that Roe had held the abortion right to be part of a right to privacy which is itself not mentioned in the Constitution. Two weeks later, Executive Order 14076 (8 July 2022) asked the FTC and HHS to consider action against 'the potential threat to patient privacy caused by the transfer and sale of sensitive health-related data and by digital surveillance related to reproductive healthcare services'.",
       lat: 38.8906,
       lng: -77.0044,
       continent: "North America",
@@ -7834,6 +8894,16 @@ window.privacyData = {
           quote: "The Constitution makes no reference to abortion, and no such right is implicitly protected by any constitutional provision",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Executive Office of the President, published in the Federal Register (via GovInfo)",
+          title: "Executive Order 14076 of July 8, 2022 — Protecting Access to Reproductive Healthcare Services, 87 Fed. Reg. 42053 (13 July 2022)",
+          date: "2022-07-08",
+          url: "https://www.govinfo.gov/content/pkg/FR-2022-07-13/pdf/2022-15138.pdf",
+          quote: "To address the potential threat to patient privacy caused by the transfer and sale of sensitive health-related data and by digital surveillance related to reproductive healthcare services",
+          note: "Fresh fetch 2026-09-23: FOUND (Sec. 4(b)). It continues: '(i) The Chair of the Federal Trade Commission (FTC) is encouraged to consider actions ... to protect consumers’ privacy when seeking information about and provision of reproductive healthcare services. (ii) The Secretary of Health and Human Services shall consider actions, including providing guidance under the Health Insurance Portability and Accountability Act...'. Section 1 refers to 'Eliminating the right recognized in Roe'. The federalregister.gov HTML is CAPTCHA-blocked for the helper, so the GovInfo PDF is used.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -7842,10 +8912,10 @@ window.privacyData = {
       date: "24 August 2022",
       year: 2022,
       phase: "surveillance",
-      title: "Sephora pays $1.2 million for ignoring Global Privacy Control",
+      title: "Sephora pays $1.2 million to settle claims it ignored Global Privacy Control",
       place: "California Department of Justice, Oakland",
-      body: "California Attorney General Rob Bonta announced a settlement with Sephora, alleging that it failed to disclose that it sold consumers' personal information and failed to process opt-out requests sent via user-enabled global privacy controls. Sephora agreed to pay $1.2 million in penalties and to honour the Global Privacy Control; the same day the Attorney General sent notices to other businesses that were not processing such signals. It was the first publicly disclosed CCPA settlement.",
-      lat: 38.8052,
+      body: "California Attorney General Rob Bonta announced a settlement with Sephora resolving allegations that it failed to disclose that it sold consumers' personal information, failed to process opt-out requests sent via user-enabled global privacy controls, and did not cure these violations within the 30-day period the CCPA then allowed. Sephora agreed to pay $1.2 million in penalties and to provide ways for consumers to opt out of sale, including via the Global Privacy Control; the same day the Attorney General sent notices to other businesses alleging that they were failing to process such signals. It was the Attorney General's first publicly disclosed CCPA enforcement settlement; the second, with DoorDash, came in February 2024.",
+      lat: 37.8052,
       lng: -122.2727,
       continent: "North America",
       source: [
@@ -7871,10 +8941,20 @@ window.privacyData = {
         {
           institution: "Arnold & Porter (Enforcement Edge blog)",
           title: "DoorDash Fined $375,000 by California AG in Second-Ever Publicly Disclosed CCPA Settlement",
-          date: "2024-04",
+          date: "2024-04-15",
           url: "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2024/04/doordash-ccpa-settlement",
           quote: "This is the second publicly disclosed settlement by the OAG of CCPA violation claims, following the OAG’s 2022 settlement with makeup retailer Sephora.",
           note: "Law-firm commentary, cited for the ordering (Sephora first, DoorDash second).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "California Office of the Attorney General",
+          title: "Attorney General Bonta Announces Settlement with DoorDash, Investigation Finds Company Violated Multiple Consumer Privacy Laws",
+          date: "2024-02-21",
+          url: "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-doordash-investigation-finds-company",
+          quote: "Today’s settlement with DoorDash marks Attorney General Bonta’s second CCPA enforcement settlement.",
+          note: "Primary source for the ordering. The same release says: 'In August 2022, the Attorney General announced a settlement with Sephora resolving allegations that it failed to disclose to consumers that it was selling their personal information and failed to process opt-out requests via user-enabled global privacy controls in violation of the CCPA.' Release date 'Wednesday, February 21, 2024'. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7908,6 +8988,16 @@ window.privacyData = {
           date: "2022-08-29",
           url: "https://www.ftc.gov/news-events/news/press-releases/2022/08/ftc-sues-kochava-selling-data-tracks-people-reproductive-health-clinics-places-worship-other",
           quote: "The data sample the FTC examined included precise, timestamped location data collected from more than 61 million unique mobile devices in the previous week.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "US Federal Trade Commission (Complaint, FTC v. Kochava Inc., D. Idaho, Case 2:22-cv-00377-DCN)",
+          title: "Complaint for Permanent Injunction and Other Relief, FTC v. Kochava Inc.",
+          date: "2022-08-29",
+          url: "https://www.ftc.gov/system/files/ftc_gov/pdf/1.%20Complaint.pdf",
+          quote: "Kochava typically charges a monthly subscription fee of thousands of dollars to access its location data feed but has also offered a free sample (the “Kochava Data Sample”).",
+          note: "Paragraph 12. Supports 'free data sample'. Page headers read 'Document 1 Filed 08/29/22'. Paragraph 14 gives the exact figure: '327,480,000 rows and 11 columns of data, corresponding to over 61,803,400 unique mobile devices'. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -8065,6 +9155,16 @@ window.privacyData = {
           quote: "an administrative fine in the amount of €1.2 billion",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "BBC News",
+          title: "Meta: Facebook owner fined €1.2bn for mishandling data",
+          date: "2023-05-22",
+          url: "https://www.bbc.com/news/technology-65669839",
+          quote: "Issued by Ireland's Data Protection Commission (DPC), it is the largest fine imposed under the EU's General Data Protection Regulation privacy law.",
+          note: "Independent support for 'record' and 'largest GDPR penalty' as of May 2023. Page datePublished 2023-05-22T09:44:52Z. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -8075,7 +9175,7 @@ window.privacyData = {
       phase: "agents",
       title: "Third attempt: the EU-US Data Privacy Framework",
       place: "European Commission, Berlaymont, Brussels",
-      body: "After Schrems II, the United States adopted Executive Order 14086 on 7 October 2022, limiting signals-intelligence collection and creating a Data Protection Review Court. On 10 July 2023 the Commission adopted Implementing Decision (EU) 2023/1795, finding that the United States ensures an adequate level of protection for data transferred to organisations certified under the EU-US Data Privacy Framework.",
+      body: "After Schrems II, the United States adopted Executive Order 14086 on 7 October 2022, setting new limits and safeguards on signals-intelligence activities and a new redress mechanism for Europeans, complemented by an Attorney General regulation establishing a Data Protection Review Court. On 10 July 2023 the Commission adopted Implementing Decision (EU) 2023/1795, finding that the United States ensures an adequate level of protection for personal data transferred from the Union to organisations on the Data Privacy Framework List kept by the US Department of Commerce.",
       lat: 50.8435,
       lng: 4.3826,
       continent: "Europe",
@@ -8092,10 +9192,20 @@ window.privacyData = {
         },
         {
           institution: "European Commission (Official Journal of the European Union L 231, 20.9.2023), via EU Publications Office (Cellar)",
-          title: "Commission Implementing Decision (EU) 2023/1795 of 10 July 2023 — adequacy finding",
+          title: "Commission Implementing Decision (EU) 2023/1795 of 10 July 2023, Article 1 — adequacy finding",
           date: "2023-07-10",
           url: "https://publications.europa.eu/resource/cellar/abb0ba05-5750-11ee-9220-01aa75ed71a1.0006.03/DOC_1",
-          quote: "Based on the findings set out in recitals 9-200, the Commission concludes that the United States ensures an adequate level of protection for personal data transferred under the EU-U.S. DPF from a controller or a processor in the Union",
+          quote: "For the purpose of Article 45 of Regulation (EU) 2016/679, the United States ensures an adequate level of protection for personal data transferred from the Union to organisations in the United States that are included in the ‘Data Privacy Framework List’, maintained and made publicly available by the U.S. Department of Commerce, in accordance with Section I.3 of Annex I.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Commission (Official Journal of the European Union L 231, 20.9.2023), via EU Publications Office (Cellar)",
+          title: "Commission Implementing Decision (EU) 2023/1795 — redress mechanism and Data Protection Review Court",
+          date: "2023-07-10",
+          url: "https://publications.europa.eu/resource/cellar/abb0ba05-5750-11ee-9220-01aa75ed71a1.0006.03/DOC_1",
+          quote: "First, a specific redress mechanism is established, under EO 14086, complemented by the AG Regulation establishing the Data Protection Review Court, to handle and resolve complaints from individuals concerning U.S. signals intelligence activities.",
+          note: "Supports the corrected summary: the DPRC was established by the AG Regulation (28 CFR part 201), not by EO 14086 itself. Another recital says EO 14086 sets 'limitations and safeguards for all U.S. signals intelligence activities'. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -9560,10 +10670,10 @@ window.privacyData = {
     },
     {
       eventId: "mishnah-talmud-hezek-reiyah-damage-by-sight-c-200-ce",
-      date: "c. 200 CE (Mishnah); Talmud debated to c. 500–600 CE",
+      date: "c. 200 CE (Mishnah); Babylonian Talmud c. 450–550 CE",
       phase: "walls",
       headline: "Being seen becomes an injury",
-      narrative: "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance or a window opposite another's window onto a shared courtyard, so that residents keep a measure of privacy. The Babylonian Talmud's tractate Bava Batra opens by asking whether hezek re'iyah — the harm of being exposed to a neighbour's gaze in one's own domain — counts as legal damage, and later records that everyone agrees it does.",
+      narrative: "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance, or a window opposite another's window, onto a courtyard shared by partners, so that residents keep a measure of privacy (Bava Batra 3:7). The Babylonian Talmud's tractate Bava Batra opens (2b) by asking whether hezek re'iyah counts as legal damage. Hezek re'iyah is the harm of being exposed to others' gaze in one's own private domain. Later (59b), in a dispute over a ledge overlooking a neighbour's courtyard, the Gemara says both disputing sages agree that damage caused by sight is damage.",
       why: "Treats unwanted observation itself as an injury with a remedy (a wall, a parapet, a blocked window), long before any Western privacy tort.",
       media: ["bomberg-talmud-bava-batra-venice-1522"],
       chips: [
@@ -9589,8 +10699,8 @@ window.privacyData = {
       eventId: "fourth-lateran-council-canon-21-seal-of-confession-1215",
       date: "30 November 1215",
       phase: "walls",
-      headline: "Everyone must confess — and the Church must keep the secret",
-      narrative: "Canon 21 of the Fourth Lateran Council, whose constitutions were read and approved at its third session on 30 November 1215, required every adult Christian to confess at least yearly to their own priest. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance.",
+      headline: "The faithful must confess — and the priest must keep the secret",
+      narrative: "Canon 21 of the Fourth Lateran Council required all the faithful of either sex who had reached the age of discernment to confess their sins to their own priest at least once a year. The council's constitutions were read and approved at its third session on 30 November 1215. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance. The duty of secrecy was older: Gratian's twelfth-century Decretum already ordered the deposition of a priest who revealed a penitent's sins. Canon 21 restated it as a conciliar decree binding on the whole Latin Church and fixed its penalty.",
       why: "A mass-disclosure system paired with a strict, enforced duty of secrecy — an early rule that compelled confidences must be protected by the institution that collects them.",
       media: ["dirc-van-delft-confession-to-a-bishop-c1404"],
       chips: [
@@ -9688,7 +10798,7 @@ window.privacyData = {
       date: "1936–1941",
       phase: "letalone",
       headline: "A perfect register, in the wrong hands",
-      narrative: "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”), and these registers and the related identity cards played an important role in their apprehension before deportation. Dutch Jews had the highest death rate — 73 percent — of Jews in any occupied western European country; Jewish refugees who had avoided registration died at a lower rate.",
+      narrative: "Before the German occupation the Netherlands had completed a comprehensive population registration system, praised by statistics chief H. W. Methorst in 1938 for following each person “from cradle to grave”. By early 1941 his successor as head of the registration office, J. L. Lentz, had adapted it into special registers of Jews and Roma (“Gypsies”). These registers and the related identity cards played an important role in rounding them up before deportation. Dutch Jews had the highest death rate (73 percent) of Jews in any occupied western European country. Jewish refugees living in the Netherlands died at a lower rate. Demographers William Seltzer and Margo Anderson think the best explanation is that, unlike most Dutch Jews, the refugees avoided registration.",
       why: "It showed that an accurate, centralised, linked register is dangerous in itself: the harm came from data built for benign administration, once control over it changed hands.",
       chips: [
         { label: "Terms set by", value: "The occupier" }
@@ -9728,8 +10838,8 @@ window.privacyData = {
       date: "26–28 July 1966",
       phase: "rights",
       headline: "Congress puts the data bank on trial",
-      narrative: "In April 1965 a Social Science Research Council committee chaired by Yale economist Richard Ruggles urged a federal data bank, and a Bureau of the Budget task force under Carl Kaysen was studying access to government statistics. On 26–28 July 1966 the House Special Subcommittee on Invasion of Privacy, chaired by Rep. Cornelius Gallagher, held hearings on “The Computer and Invasion of Privacy”. Gallagher said the thought of Americans' records “neatly bundled together into one compact package is appalling” and floated a new rule under which “a person may have the right to examine his own file”. The hearings set off a national press backlash against the plan.",
-      why: "The databank fight produced the first official call for a person's right to see and correct their own file — the seed of access rights, and of the idea that individuals, not just institutions, should hold the controls.",
+      narrative: "In April 1965 a Social Science Research Council committee chaired by Yale economist Richard Ruggles urged a federal data bank, and a Bureau of the Budget task force under Carl Kaysen was studying access to government statistics. On 26–28 July 1966 the House Special Subcommittee on Invasion of Privacy, chaired by Rep. Cornelius Gallagher, held hearings on “The Computer and Invasion of Privacy”. Gallagher said the thought of Americans' records “neatly bundled together into one compact package is appalling” and suggested that a new concept in file accessibility might be needed, under which “a person may have the right to examine his own file”. Extensive press coverage of the hearings fed a growing national backlash against the plan.",
+      why: "The databank fight produced an early official call for a person's right to examine their own file and challenge its accuracy. That is a seed of access rights, and of the idea that individuals, not just institutions, should hold the controls.",
       media: ["univac-i-census-bureau-dedication-1951"],
       chips: [
         { label: "Terms set by", value: "The legislature" }
@@ -9810,7 +10920,7 @@ window.privacyData = {
       date: "15 December 1983",
       phase: "dataprotection",
       headline: "\"My data belongs to me\" reaches the constitution",
-      narrative: "Citizens' initiatives and public figures had called for a boycott of the West German census set for 27 April 1983, with slogans such as 'Meine Daten gehören mir' ('My data belongs to me'), and the Federal Constitutional Court suspended the count by injunction. In its judgment of 15 December 1983 (1 BvR 209/83 and others) the First Senate held that, in the context of modern data processing, the general right of personality protects the individual against the unlimited collection, storage, use and sharing of personal data and gives each person the authority, in principle, to decide on the disclosure and use of their data. It voided the census act's provisions for passing data to population registers and required further procedural safeguards; the census was finally held in 1987.",
+      narrative: "Citizens' initiatives and public figures had called for a boycott of the West German census set for 27 April 1983, with slogans such as 'Meine Daten gehören mir' ('My data belongs to me'). The Federal Constitutional Court suspended the count by injunction. In its judgment of 15 December 1983 (1 BvR 209/83 and others), the First Senate held that in the context of modern data processing, the general right of personality protects the individual against the unlimited collection, storage, use and sharing of personal data. It gives each person the authority, in principle, to decide on the disclosure and use of their data. The court upheld the survey itself. It voided § 9(1)-(3) of the census act, which let census data be passed to other authorities, including for comparison with population registers, and it required additional procedural safeguards. The census was finally held in 1987.",
       why: "The court turned privacy from a wall around the home into a person's right to decide who knows what about them - the conceptual root of person-set data terms.",
       media: ["census-boycott-demo-freiburg-1987", "federal-constitutional-court-karlsruhe"],
       chips: [
@@ -9837,7 +10947,7 @@ window.privacyData = {
       date: "5 June 1991",
       phase: "dataprotection",
       headline: "Encryption anyone can download",
-      narrative: "On 5 June 1991 Phil Zimmermann sent the first release of PGP, email encryption software for MS-DOS, to friends for uploading: Allan Hoeltje posted it to Peacenet, and Kelly Goen to a Usenet source-code newsgroup (marked 'US only') and bulletin-board systems; Zimmermann could not recall whether the Internet postings began on 5 or 6 June. Zimmermann said Senate Bill 266, a 1991 anticrime bill whose non-binding resolution would have had communications systems let the government obtain plaintext, led him to publish it free.",
+      narrative: "On 5 June 1991 Phil Zimmermann sent the first release of PGP, email encryption software, to friends for uploading: Allan Hoeltje posted it to Peacenet, and Kelly Goen to a Usenet source-code newsgroup (marked 'US only') and bulletin-board systems. In 2001 Zimmermann could not recall whether the Internet postings began on 5 or 6 June; in his 2021 anniversary essay he dated the upload to 6 June, the day after he sent it out. Zimmermann said Senate Bill 266, a 1991 anticrime bill whose non-binding resolution would have had communications systems let the government obtain plaintext, led him to publish it free.",
       why: "Strong public-key encryption became something an individual could download and run, rather than a service granted by a government or a bank.",
       media: ["phil-zimmermann-hal-enschede-2001"],
       chips: [
@@ -9866,7 +10976,7 @@ window.privacyData = {
       phase: "cookies",
       headline: "The web gets a memory — the site's",
       narrative: "Around June or July 1994, Netscape engineer Lou Montulli, asked how a shopping server could remember a customer's cart, devised a way for a web server to hand the browser a small piece of state that the browser would send back only to that server. He later wrote that he had opposed the rival idea of a single unique identifier per browser because it could be used to track a user at every website. Netscape's preliminary 'Persistent Client State HTTP Cookies' specification described shopping carts, stored registration details and per-user preferences as the intended uses.",
-      why: "The web's first memory mechanism was designed by the site for the site: the person's browser stored whatever the server chose to set, and the person said nothing.",
+      why: "The web's first built-in memory mechanism was designed by the site for the site: the person's browser stored whatever the server chose to set, and the person said nothing.",
       media: ["netscape-navigator-1-1-install-disk"],
       chips: [
         { label: "Terms set by", value: "The site" }
@@ -9907,8 +11017,8 @@ window.privacyData = {
       date: "July 2009",
       phase: "cookies",
       headline: "The browser says \"do not track\"",
-      narrative: "In July 2009 privacy researcher Christopher Soghoian, with his collaborator Sid Stamm, built a prototype Firefox add-on that added two headers to every outgoing web request, 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. The idea replaced dozens of per-network opt-out cookies with one signal sent to every server, but it depended on advertisers choosing to honour it.",
-      why: "The first person-side machine-readable privacy signal on the web: the browser speaks for the person, but only a one-bit request with no legal force.",
+      narrative: "In July 2009 privacy researcher Christopher Soghoian, with his research collaborator Sid Stamm, built a prototype Firefox add-on that added two headers to outgoing web requests: 'X-Behavioral-Ad-Opt-Out: 1' and 'X-Do-Not-Track: 1'. It was meant to replace per-company opt-out cookies with one signal sent to every server; Soghoian's own TACO add-on had grown to more than 100 of them. Dan Kaminsky and Mozilla's Mike Shaver had urged the header approach earlier that year. When Soghoian pitched it to industry in mid-July 2009, none of the advertising firms showed any interest, and he never added it to TACO.",
+      why: "The seed of the browser's Do Not Track header: the person's browser would send one machine-readable preference to every server, instead of the person collecting an opt-out from each company. But it was only a yes/no request with no legal force, and advertisers were free to ignore it.",
       media: ["christopher-soghoian-30c3-hamburg-2013"],
       chips: [
         { label: "Terms set by", value: "The person's signal — optional to honour" }
@@ -9935,7 +11045,7 @@ window.privacyData = {
       date: "5–6 June 2013",
       phase: "surveillance",
       headline: "The walls turn out to be inside the network",
-      narrative: "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. A second story reported an NSA programme called PRISM, described in a 41-slide training presentation, that collected search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies; the companies denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden.",
+      narrative: "On 5 June 2013 The Guardian published a top-secret Foreign Intelligence Surveillance Court order, granted on 25 April, requiring Verizon to hand the NSA call records 'on an ongoing, daily basis', including domestic calls. On 6 June The Guardian and The Washington Post both reported an NSA programme called PRISM. The Guardian's story drew on a 41-slide training presentation which said the programme let officials collect search history, email content, file transfers and live chats from Google, Facebook, Apple and other US internet companies. Every company that answered the Guardian denied knowledge of it. The US Privacy and Civil Liberties Oversight Board later dated the first story to 5 June 2013 and described it as the first of a series based on documents disclosed by Edward Snowden.",
       why: "Showed that privacy's walls had moved inside the phone network and the cloud, where people could neither see nor object to collection — the grievance that later drove Schrems, the GDPR's enforcement and demands for user-side controls.",
       media: ["edward-snowden-hong-kong-2013", "nsa-utah-data-center-eff-2014"],
       chips: [
@@ -9949,8 +11059,8 @@ window.privacyData = {
       date: "6 October 2015",
       phase: "surveillance",
       headline: "One student topples a transatlantic deal",
-      narrative: "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law did not protect data transferred there from surveillance. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
-      why: "One individual's complaint dismantled the legal basis for transatlantic data flows, proving that a person could force the system to answer for where their data goes.",
+      narrative: "Maximillian Schrems, an Austrian Facebook user since 2008, complained to the Irish Data Protection Commissioner that, in light of Snowden's 2013 revelations, US law and practice did not offer sufficient protection against surveillance by public authorities of data transferred there. In Case C-362/14 the Grand Chamber declared the Commission's 2000 Safe Harbour decision (2000/520) invalid, holding that laws allowing public authorities generalised access to the content of electronic communications compromise the essence of the right to private life.",
+      why: "One individual's complaint knocked out Safe Harbour, the main framework for transatlantic data flows, proving that a person could force the system to answer for where their data goes.",
       media: ["max-schrems-big-brother-awards-2015", "cjeu-kirchberg-luxembourg-2006"],
       chips: [
         { label: "Terms set by", value: "The court, at a person's request" }
@@ -9964,7 +11074,7 @@ window.privacyData = {
       phase: "surveillance",
       headline: "A right to object \"by automated means\"",
       narrative: "Regulation (EU) 2016/679, the General Data Protection Regulation, was signed at Brussels on 27 April 2016 and published in the Official Journal on 4 May 2016, to apply from 25 May 2018. Article 21(5) lets a person exercise the right to object to processing, in the context of information society services, 'by automated means using technical specifications'. Article 25 requires data protection by design and by default, so that by default only the personal data necessary for each specific purpose are processed.",
-      why: "Article 21(5) is the first clause in a major privacy law that anticipates a person's software stating their objection for them — the legal hook on which machine-readable signals such as Global Privacy Control and person-proffered terms can hang.",
+      why: "Article 21(5) was among the first provisions in a major privacy law to give a person a right that their software can exercise for them, objecting 'by automated means using technical specifications'. It is the legal hook on which machine-readable signals such as Global Privacy Control and person-proffered terms can hang.",
       media: ["european-parliament-hemicycle-strasbourg-2014"],
       chips: [
         { label: "Terms set by", value: "The statute — with room for the person's software" }
@@ -10005,7 +11115,7 @@ window.privacyData = {
       phase: "surveillance",
       headline: "A signal the law will enforce",
       narrative: "A coalition spearheaded by Ashkan Soltani (Georgetown Law) and Sebastian Zimmeck (Wesleyan University), with The New York Times, The Washington Post, the Financial Times, DuckDuckGo, Brave, Mozilla, the EFF and others, announced Global Privacy Control, a browser signal communicating a person's 'do not sell or share' request, in answer to California's regulation requiring businesses to honour such controls. The specification later moved to the W3C, whose Privacy Working Group published it as a First Public Working Draft on 21 November 2024; it defines a 'Sec-GPC: 1' HTTP header.",
-      why: "The first widely deployed machine-readable privacy signal with legal force behind it — but it can say only one thing (don't sell or share), which is exactly the limit that fuller person-proffered terms aim to overcome.",
+      why: "One of the first widely deployed machine-readable privacy signals with legal force behind it — but it can say only one thing (don't sell or share), which is exactly the limit that fuller person-proffered terms aim to overcome.",
       media: ["ashkan-soltani-2012"],
       chips: [
         { label: "Terms set by", value: "The person's signal — with a statute behind it" }
@@ -10018,12 +11128,12 @@ window.privacyData = {
       date: "24 August 2022",
       phase: "surveillance",
       headline: "Ignoring the signal costs $1.2 million",
-      narrative: "California Attorney General Rob Bonta announced a settlement with Sephora, alleging that it failed to disclose that it sold consumers' personal information and failed to process opt-out requests sent via user-enabled global privacy controls. Sephora agreed to pay $1.2 million in penalties and to honour the Global Privacy Control; the same day the Attorney General sent notices to other businesses that were not processing such signals. It was the first publicly disclosed CCPA settlement.",
+      narrative: "California Attorney General Rob Bonta announced a settlement with Sephora resolving allegations that it failed to disclose that it sold consumers' personal information, failed to process opt-out requests sent via user-enabled global privacy controls, and did not cure these violations within the 30-day period the CCPA then allowed. Sephora agreed to pay $1.2 million in penalties and to provide ways for consumers to opt out of sale, including via the Global Privacy Control; the same day the Attorney General sent notices to other businesses alleging that they were failing to process such signals. It was the Attorney General's first publicly disclosed CCPA enforcement settlement; the second, with DoorDash, came in February 2024.",
       why: "The moment a machine-readable signal from the person's browser was enforced with a penalty — proof that a person-side signal can bind a business.",
       chips: [
         { label: "Terms set by", value: "The regulator enforces the person's signal" }
       ],
-      flyTo: [38.8052, -122.2727],
+      flyTo: [37.8052, -122.2727],
       zoom: 5
     },
     {
@@ -10166,7 +11276,7 @@ window.privacyData = {
       label: "Countries with a national data privacy law (Greenleaf count)",
       unit: "countries (cumulative)",
       geography: "World (independent countries and separate legal jurisdictions)",
-      note: "Graham Greenleaf's biennial global count, published in Privacy Laws & Business International Report since 2011. A 'data privacy law' in his definition covers most of the private sector (and usually the public sector) and meets minimum formal standards drawn from the OECD Guidelines and Council of Europe Convention 108; separate legal jurisdictions (e.g. Faroe Islands) count as 'countries'. Pre-2011 points are running sums of his 2011 decade counts; his 2025 year-by-year list (SSRN 5189972, 3 pages) could not be retrieved, so points between editions are not interpolated. Counts are as at the date of each edition, not year-end. Average growth 1973-2025: 3.3 new countries a year; since 2020: 5.4 a year.",
+      note: "Graham Greenleaf's roughly biennial global count, published mostly in Privacy Laws & Business International Report since 2011 (the 2013 edition appeared in the Journal of Law, Information & Science). A 'data privacy law' must meet minimum formal standards drawn from the OECD Guidelines and Council of Europe Convention 108. His 2011 count also required it to cover most of the private sector. From at least the 2017 edition he counts laws covering the private sector, the public sector or (in most cases) both, so the pre-2011 points (running sums of his 2011 decade counts) use a slightly narrower test than the later editions. Separate legal jurisdictions (e.g. Faroe Islands) count as 'countries'. His 2025 year-by-year list (SSRN 5189972, 3 pages) could not be retrieved, so points between editions are not interpolated. Counts are as at the date of each edition, not year-end. Average growth 1973-2025: 3.3 new countries a year; since 2020: 5.4 a year.",
       points: [
         {
           year: 1970,
@@ -10187,8 +11297,8 @@ window.privacyData = {
           value: 1,
           note: "Sweden's Data Act 1973, the first national law.",
           source: {
-            institution: "Privacy Laws & Business International Report (author preprint abstract on SSRN, read via Internet Archive snapshot)",
-            title: "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972; (2025) 194 PLBIR)",
+            institution: "SSRN (author paper, Macquarie Law School; abstract read via Internet Archive snapshot)",
+            title: "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972, dated 23 March 2025)",
             date: "2025-03-23",
             url: "https://web.archive.org/web/20251122134859/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972",
             quote: "For the past 52 years, since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 countries with such laws by March 2025. Since 2020 the average number of new countries per year has risen to 5.4.",
@@ -10260,7 +11370,7 @@ window.privacyData = {
         {
           year: 2011,
           value: 76,
-          note: "As of mid-2011. Greenleaf's own table revised this to 81 by 10 November 2011 after re-applying his criteria.",
+          note: "As of mid-2011 (Greenleaf's first global count).",
           source: {
             institution: "Privacy Laws & Business International Report no. 112, pp. 11-17 (UNSW Law Research Paper 2011-36; abstract on SSRN, read via Internet Archive)",
             title: "Graham Greenleaf, 'Global Data Privacy Laws: Forty Years of Acceleration'",
@@ -10376,8 +11486,8 @@ window.privacyData = {
           value: 172,
           note: "March 2025.",
           source: {
-            institution: "Privacy Laws & Business International Report (author preprint abstract on SSRN, read via Internet Archive snapshot)",
-            title: "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972; (2025) 194 PLBIR)",
+            institution: "SSRN (author paper, Macquarie Law School; abstract read via Internet Archive snapshot)",
+            title: "Graham Greenleaf, '172 Countries with Data Privacy Laws - Year by Year 1973-2025' (SSRN 5189972, dated 23 March 2025)",
             date: "2025-03-23",
             url: "https://web.archive.org/web/20251122134859/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5189972",
             quote: "For the past 52 years, since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 countries with such laws by March 2025. Since 2020 the average number of new countries per year has risen to 5.4.",
@@ -10482,7 +11592,7 @@ window.privacyData = {
           value: 876,
           source: {
             institution: "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
-            title: "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+            title: "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
             date: "2021-04",
             url: "https://arxiv.org/pdf/2008.09159v4",
             quote: "The median word count has increased gradually over time — doubling between 2009A (876) and 2019B (1522) — and more sharply in recent years, after the introduction of the GDPR.",
@@ -10496,7 +11606,7 @@ window.privacyData = {
           value: 1522,
           source: {
             institution: "Proceedings of the Web Conference 2021 (WWW '21), ACM — arXiv preprint (Princeton University)",
-            title: "Ryan Amos, Gunes Acar, Elena Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
+            title: "Ryan Amos, Gunes Acar, Eli Lucherini, Mihir Kshirsagar, Arvind Narayanan, Jonathan Mayer, 'Privacy Policies over Time: Curation and Analysis of a Million-Document Dataset'",
             date: "2021-04",
             url: "https://arxiv.org/pdf/2008.09159v4",
             quote: "The median word count has increased gradually over time — doubling between 2009A (876) and 2019B (1522) — and more sharply in recent years, after the introduction of the GDPR.",
@@ -10579,7 +11689,7 @@ window.privacyData = {
       label: "Very or somewhat concerned about how companies use the data they collect about them",
       unit: "% of U.S. adults",
       geography: "United States (adults 18+, Pew American Trends Panel)",
-      note: "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question wording in both waves per Pew's 2023 report, which draws the comparison itself. A 2-point change for companies; Pew's 2023 report highlights instead the rise in concern about government use, from 64% to 71%.",
+      note: "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Pew reports the two waves as a trend, but its 2023 topline notes that the 2019 wording was slightly different ('How concerned, if at all, are you about...'; 2023 dropped 'if at all'). A 2-point change for companies (79% to 81%), within what such a wording change could produce. Pew's 2023 report highlights instead the rise in concern about government use, from 64% to 71%.",
       points: [
         {
           year: 2019,
@@ -10610,10 +11720,10 @@ window.privacyData = {
       ]
     },
     "pew-understand-little-privacy-laws": {
-      label: "Say they understand very little or nothing about the laws that protect their data privacy",
+      label: "Say they understand the laws that protect their data privacy very little or not at all",
       unit: "% of U.S. adults",
       geography: "United States (adults 18+, Pew American Trends Panel)",
-      note: "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question wording in both waves per Pew's 2023 report, which draws the comparison itself. More laws, less understanding: the rise coincides with the spread of US state privacy laws (see us-state-comprehensive-privacy-laws).",
+      note: "Survey years are fieldwork years: 3-17 June 2019 (n=4,272) and 15-21 May 2023 (n=5,101). Same question in both waves ('How much do you feel you understand the laws and regulations that are currently in place to protect your data privacy?'; answers 'very little' plus 'not at all'), and Pew's 2023 report draws the 63% to 72% comparison itself. The rise came while US states were passing their first comprehensive privacy laws (see us-state-comprehensive-privacy-laws); Pew does not link the two.",
       points: [
         {
           year: 2019,
@@ -10647,7 +11757,7 @@ window.privacyData = {
       label: "Cumulative GDPR fines since 25 May 2018 (DLA Piper survey)",
       unit: "EUR billion (cumulative, as at each January survey)",
       geography: "EU-27 plus UK, Norway, Iceland and Liechtenstein (jurisdictions surveyed by DLA Piper)",
-      note: "Totals are as at each annual January survey, so '2026' means fines to 10 January 2026. 2022-2024 points are estimates derived from DLA Piper's stated annual totals (nearly EUR 1.1bn, EUR 1.64bn, EUR 1.78bn; each for the year from 28 January) and its January 2025 cumulative figure. An independent count, CMS's GDPR Enforcement Tracker (publicly known fines only), gives about EUR 6.11bn across 2,685 fines to 1 March 2026 — lower than DLA Piper's EUR 7.1bn, a reminder that the totals depend on method.",
+      note: "Totals are as at each annual January survey, so '2026' means fines to 10 January 2026. The 2022-2024 points are estimates computed by this study. They subtract DLA Piper's stated annual totals (EUR 1.64bn for the year from 28 January 2022, EUR 1.78bn from 28 January 2023, EUR 1.2bn from 28 January 2024) from its January 2025 cumulative figure (EUR 5.88bn). An independent count, CMS's GDPR Enforcement Tracker (publicly known fines only), gives about EUR 6.11bn across 2,685 fines to 1 March 2026. That is lower than DLA Piper's EUR 7.1bn, a reminder that the totals depend on method.",
       points: [
         {
           year: 2020,
@@ -10669,7 +11779,7 @@ window.privacyData = {
           note: "25 May 2018 to January 2021.",
           source: {
             institution: "DLA Piper (international law firm)",
-            title: "DLA Piper GDPR fines and data breach survey 2021",
+            title: "DLA Piper GDPR fines and data breach survey: January 2021",
             date: "2021-01-19",
             url: "https://www.dlapiper.com/en/insights/publications/2021/01/dla-piper-gdpr-fines-and-data-breach-survey-2021",
             quote: "EUR272.5 million (about USD332.4 million / GBP245.3 million) of fines have been imposed for a wide range of infringements of Europe's tough data protection laws according to international law firm DLA Piper.",
@@ -10682,7 +11792,7 @@ window.privacyData = {
           year: 2022,
           value: 1.26,
           estimate: true,
-          note: "About EUR 1.26bn to January 2022. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper did not state a cumulative figure in this edition. Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
+          note: "About EUR 1.26bn to January 2022. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper's public summary of this edition states no cumulative figure (the full report is gated). Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
           source: {
             institution: "DLA Piper (international law firm)",
             title: "DLA Piper GDPR fines and data breach survey: January 2022",
@@ -10697,7 +11807,7 @@ window.privacyData = {
           year: 2023,
           value: 2.9,
           estimate: true,
-          note: "About EUR 2.90bn to January 2023. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper did not state a cumulative figure in this edition. Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
+          note: "About EUR 2.90bn to January 2023. Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper's public summary of this edition states no cumulative figure (the full report is gated). Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
           source: {
             institution: "DLA Piper (international law firm)",
             title: "DLA Piper GDPR Fines and Data Breach Survey: January 2023",
@@ -10712,7 +11822,7 @@ window.privacyData = {
           year: 2024,
           value: 4.68,
           estimate: true,
-          note: "About EUR 4.68bn to January 2024 (includes the EUR 1.2bn fine on Meta imposed in 2023). Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper did not state a cumulative figure in this edition. Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
+          note: "About EUR 4.68bn to January 2024 (includes the EUR 1.2bn fine on Meta imposed in 2023). Estimate computed by this study by subtracting DLA Piper's annual totals from its January 2025 cumulative figure (EUR 5.88bn); DLA Piper's public summary of this edition states no cumulative figure (the full report is gated). Summing forward from the January 2021 cumulative (EUR 272.5m) instead gives about EUR 0.1bn more, a rounding/revision gap.",
           source: {
             institution: "DLA Piper (international law firm)",
             title: "DLA Piper GDPR Fines and Data Breach Survey: January 2024",
@@ -10757,7 +11867,7 @@ window.privacyData = {
       label: "GDPR fines issued per year (DLA Piper survey years)",
       unit: "EUR billion per survey year",
       geography: "EU-27 plus UK, Norway, Iceland and Liechtenstein",
-      note: "DLA Piper survey years run from 28 January to late January of the following year (2025: calendar 2025 to 10 January 2026). Year label = the calendar year in which most of the period falls. The 2023 peak includes the record EUR 1.2bn fine on Meta Platforms Ireland by the Irish Data Protection Commission.",
+      note: "DLA Piper survey years run from 28 January to late January of the following year. The January 2026 edition reports fines 'in 2025' with a cumulative cut-off of 10 January 2026. Year label = the calendar year in which most of the period falls. The 2023 peak includes the record EUR 1.2bn fine on Meta Platforms Ireland by the Irish Data Protection Commission.",
       points: [
         {
           year: 2021,
@@ -10832,10 +11942,10 @@ window.privacyData = {
       ]
     },
     "us-state-comprehensive-privacy-laws": {
-      label: "US states with a comprehensive consumer privacy law (cumulative, by year signed)",
+      label: "US states with a comprehensive consumer privacy law (cumulative, by year enacted)",
       unit: "states (cumulative)",
       geography: "United States (50 states)",
-      note: "By year the law was signed, not the year it took effect (effective dates lag by one to three years). Uses the IAPP Westin Research Center's definition of 'comprehensive': industry-specific, information-specific and narrowly scoped laws are excluded. There is still no comprehensive federal consumer privacy law. 2026 is a partial year (to 8 Sept. 2026).",
+      note: "By the year the law was enacted (the year IAPP's chart gives for each law), not the year it took effect; effective dates lag by one to three years. Uses the IAPP Westin Research Center's definition of 'comprehensive': industry-specific, information-specific and narrowly scoped laws are excluded. There is still no comprehensive federal consumer privacy law. 2026 is a partial year (to 8 Sept. 2026).",
       points: [
         {
           year: 2018,
@@ -10935,8 +12045,8 @@ window.privacyData = {
             title: "US State Privacy Legislation Tracker 2026: Comprehensive Consumer Privacy Bills (chart, last updated 8 Sept. 2026)",
             date: "2026-09-08",
             url: "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt90070182553bdfe6/State_Comp_Privacy_Law_Chart.pdf",
-            quote: "Maryland Online Data Privacy Act (2024, effective Oct. 1, 2025) Minnesota Consumer Data Privacy Act (2024; effective 31 July 2025) Montana Consumer Data Privacy Act (2023; effective 1 Oct. 2024) Nebraska Data Privacy Act (2024; effective 1 Jan. 2025)",
-            note: "Also dated 2024 in the chart: Kentucky, New Hampshire, New Jersey, Rhode Island. PDF chart linked from https://iapp.org/resources/article/us-state-privacy-legislation-tracker. In the PDF text layer the names of the New Hampshire, New Jersey and Oklahoma laws are separated from their date lines, which read '(2024; effective 1 Jan. 2025)', '(2024; effective 15 Jan. 2025)' and '(2026; effective 1 Jan. 2027)'.",
+            quote: "Maryland Online Data Privacy Act (2024, effective Oct. 1, 2025) Minnesota Consumer Data Privacy Act (2024; effective 31 July 2025)",
+            note: "Also dated 2024 in the chart: 'Kentucky Consumer Data Protection Act (2024; effective 1 Jan. 2026)', 'Nebraska Data Privacy Act (2024; effective 1 Jan. 2025)', 'Rhode Island Data Transparency and Privacy Protection Act (2024; effective 1 Jan. 2026)', New Hampshire and New Jersey. PDF chart linked from https://iapp.org/resources/article/us-state-privacy-legislation-tracker. In the PDF text layer the names of the New Hampshire, New Jersey and Oklahoma laws are separated from their date lines, which read '(2024; effective 1 Jan. 2025)', '(2024; effective 15 Jan. 2025)' and '(2026; effective 1 Jan. 2027)'.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -11071,6 +12181,16 @@ window.privacyData = {
           note: "The report lists the five principles without names; the short names here are editorial.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "U.S. Department of Health, Education & Welfare (scan of the original report hosted by the U.S. Department of Justice, Office of Privacy and Civil Liberties)",
+          title: "Records, Computers, and the Rights of Citizens: Report of the Secretary's Advisory Committee on Automated Personal Data Systems, DHEW Publication No. (OS) 73-94",
+          date: "1973-07",
+          url: "https://www.justice.gov/opcl/docs/rec-com-rights.pdf",
+          quote: "There must be a way for an individual to find out what information about him is in a record and how it is used. … There must be a way for an individual to prevent information about him that was obtained for one purpose from being used or made available for other purposes without his consent. … There must be a way for an individual to correct or amend a record of identifiable information about him. … must assure the reliability of the data for their intended use and must take precautions to prevent misuse of the data.",
+          note: "Checked with fetch-text.py --check: FOUND (PDF fetched live 2026-09-23 11:33 UTC; justice.gov intermittently answers scripted requests with HTTP 401, so a re-check may need a retry). Title page: 'Report of the Secretary's Advisory Committee on Automated Personal Data Systems ... July 1973' (FOUND). The five principles appear in the 'Summary and Recommendations' (pp. xx-xxi), right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' Checked with fetch-text.py --check: FOUND (PDF fetched live 2026-09-23 11:33 UTC; justice.gov intermittently answers scripted requests with HTTP 401, so a re-check may need a retry). Title page: 'Report of the Secretary's Advisory Committee on Automated Personal Data Systems ... July 1973' (FOUND). The five principles appear in the 'Summary and Recommendations' (pp. xx-xxi), right after 'The Code rests on five basic principles that would be given legal effect as \"safeguard requirements\" for automated personal data systems.' The full Summary sentence begins 'Any organization creating, maintaining, using, or disseminating records of identifiable personal data' (OCR 'maiIitaining', 'dis-seminating'). Chapter III, p. 41, has 'must take reasonable precautions to prevent misuse of the data.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -11105,7 +12225,7 @@ window.privacyData = {
         },
         {
           name: "Individual Participation Principle",
-          text: "An individual should have the right: a) to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to him; b) to have communicated to him, data relating to him within a reasonable time; at a charge, if any, that is not excessive; in a reasonable manner; and in a form that is readily intelligible to him; c) to be given reasons if a request made under subparagraphs(a) and (b) is denied, and to be able to challenge such denial; and d) to challenge data relating to him and, if the challenge is successful to have the data erased, rectified, completed or amended."
+          text: "An individual should have the right: a) to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to him; b) to have communicated to him, data relating to him i) within a reasonable time; ii) at a charge, if any, that is not excessive; iii) in a reasonable manner; and iv) in a form that is readily intelligible to him; c) to be given reasons if a request made under subparagraphs (a) and (b) is denied, and to be able to challenge such denial; and d) to challenge data relating to him and, if the challenge is successful to have the data erased, rectified, completed or amended."
         },
         {
           name: "Accountability Principle",
@@ -11119,7 +12239,37 @@ window.privacyData = {
           date: "1980-09-23",
           url: "https://web.archive.org/web/2019/http://www.oecd.org/sti/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm",
           quote: "7. There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject. … 8. Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be accurate, complete and kept up-to-date. … 9. The purposes for which personal data are collected should be specified not later than at the time of data collection and the subsequent use limited to the fulfilment of those purposes or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose. … 10. Personal data should not be disclosed, made available or otherwise used for purposes other than those specified in accordance with Paragraph 9 except: a) with the consent of the data subject; or b) by the authority of law. … 11. Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data. … 12. There should be a general policy of openness about developments, practices and policies with respect to personal data. Means should be readily available of establishing the existence and nature of personal data, and the main purposes of their use, as well as the identity and usual residence of the data controller. … 13. An individual should have the right: a) to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to him; b) to have communicated to him, data relating to him within a reasonable time; at a charge, if any, that is not excessive; in a reasonable manner; and in a form that is readily intelligible to him; c) to be given reasons if a request made under subparagraphs(a) and (b) is denied, and to be able to challenge such denial; and d) to challenge data relating to him and, if the challenge is successful to have the data erased, rectified, completed or amended. … 14. A data controller should be accountable for complying with measures which give effect to the principles stated above.",
-          note: "Paragraph numbers are the Guidelines' own. Principles were revised in 2013; this is the 1980 text.",
+          note: "Paragraph numbers are the Guidelines' own. Principles were revised in 2013; this is the 1980 text. Verification: Re-fetch failed 2026-09-23: web.archive.org reset every connection (fetch-text.py Errno 104, three attempts; curl exit 35; the proxy logged ws_closed_mid_exchange for web.archive.org:443), WebFetch reports it cannot fetch from web.archive.org, and the live oecd.org URL returns HTTP 403. The archive.org availability API lists a capture at 20191223162352, but its text could not be read. The same paragraph text is confirmed in the OECD's own 2002 edition PDF (added source). Correction to this note: the Guidelines were revised in 2013, but the eight Part Two principles were reaffirmed, not rewritten (OECD/LEGAL/0188: 'there was no need to fundamentally rethink the core principles of the 1980 Guidelines'; 'The validity and pertinence of these basic principles were reaffirmed through both the 2013 revision and the 2021 report'). Paras 7, 9, 10 and 11 read the same in the 2013 text; para 8 differs only in 'kept up to date' (no hyphens). Paragraph numbers are the Guidelines' own. Principles were revised in 2013; this is the 1980 text. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (tools/fetch-text.py and curl, repeated tries, including the raw id_ snapshot 20191223162352; proxy logged ws_closed_mid_exchange for web.archive.org:443). WebFetch reports it cannot fetch from web.archive.org. The live oecd.org URL returns a Cloudflare 403 challenge. The archive.org availability API does list a 2019-12-23 snapshot of this page, but its content could not be read, so the quote is not re-verified here. The same 1980 text is confirmed in the OECD's own 2002 edition PDF (added source). Paragraph numbers are the Guidelines' own. Principles were revised in 2013; this is the 1980 text. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (tools/fetch-text.py and curl, repeated tries, including the raw id_ snapshot 20191223162352; proxy logged ws_closed_mid_exchange for web.archive.org:443). WebFetch reports it cannot fetch from web.archive.org. The live oecd.org URL returns a Cloudflare 403 challenge. The archive.org availability API does list a 2019-12-23 snapshot of this page, but its content could not be read, so the quote is not re-verified here. The same 1980 text is confirmed in the OECD's own 2002 edition PDF (added source). Separately, the recorded quote has 'subparagraphs(a)' and no i)-iv) numerals, which differ from the OECD's printed text; whether the archived HTML page read that way could not be checked.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD)",
+          title: "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, reproducing the 1980 Recommendation, Guidelines and Explanatory Memorandum), Part Two: Basic Principles of National Application",
+          date: "2002",
+          url: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+          quote: "data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject. … 8. Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be accurate, complete and kept up-to-date. … 9. The purposes for which personal data are collected should be specified not later than at the time of data collection and the subsequent use limited to the fulfilment of those purposes or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose. … 10. Personal data should not be disclosed, made available or otherwise used for purposes other than those specified in accordance with Paragraph 9 except: a) with the consent of the data subject; or b) by the authority of law. … Personal data should be protected by reasonable security safeguards",
+          note: "Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). This is the second half of para. 7 under the heading 'Collection Limitation Principle'. The opening 'There should be limits to the collection of personal data and any such' is also FOUND; the PDF text layer puts '7.' between the two lines. Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). Under the heading 'Data Quality Principle' (FOUND). Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). Under the heading 'Purpose Specification Principle' (FOUND). Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). Under the heading 'Use Limitation Principle' (FOUND). Checked with fetch-text.py --check: FOUND (live PDF, HTTP 200, 2026-09-23). The Guidelines are the 'Annex to the Recommendation of the Council of 23rd September 1980' (FOUND); the foreword says 'They came into effect on 23 September 1980.' (FOUND). First line of para. 11 under the heading 'Security Safeguards Principle' (FOUND together with the heading). The rest of the sentence, 'against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.', is also FOUND; the PDF text layer puts '11.' between the two lines.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD Legal Instruments)",
+          title: "Recommendation of the Council concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data, OECD/LEGAL/0188 (as revised 2013), Part Two",
+          date: "2025",
+          url: "https://legalinstruments.oecd.org/public/doc/114/114.en.pdf",
+          quote: "7. There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.",
+          note: "Checked with fetch-text.py --check: FOUND (live PDF, 2026-09-23). This is the current (2013-revised) instrument; para. 7 is word-for-word the 1980 text. The same PDF: 'it was determined that there was no need to fundamentally rethink the core principles of the 1980 Guidelines' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD)",
+          title: "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, with the 1980 Explanatory Memorandum)",
+          date: "2002",
+          url: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+          quote: "There should be a general policy of openness about developments, practices and policies with respect to personal data. Means should be readily available of establishing the existence and nature of personal data, and the main purposes of their use, as well as the identity and usual residence of the data controller. … An individual should have the right: a) to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to him; b) to have communicated to him, data relating to him … A data controller should be accountable for complying with measures",
+          note: "Checked with fetch-text.py --check: FOUND. Annex, Part Two ('PART TWO. BASIC PRINCIPLES OF NATIONAL APPLICATION', FOUND), heading 'Openness Principle', para. 12. The paragraph number '12.' sits on its own line in the PDF text layer, so the quote starts at 'There should be'. The 2013 revision (OECD/LEGAL/0188, legalinstruments.oecd.org) keeps para. 12 word for word. Checked with fetch-text.py --check: FOUND. Para. 13 under 'Individual Participation Principle'. The PDF text layer lists the i)-iv) markers of (b) as a block ahead of their items, so the quote stops at 'relating to him'. The rest of the paragraph is FOUND too: 'c) to be given reasons if a request made under subparagraphs (a) and (b) is denied, and to be able to challenge such denial; and d) to challenge data relating to him and, if the challenge is successful to have the data erased, rectified, completed or amended.' A layout-ordered extraction (pdfminer boxes_flow=None) shows items (b) i)-iv) in this order: 'within a reasonable time; / at a charge, if any, that is not excessive; / in a reasonable manner; and / in a form that is readily intelligible to him;'. Checked with fetch-text.py --check: FOUND. Para. 14 under 'Accountability Principle'. pdfminer breaks the printed sentence in two: the second line, 'which give effect to the principles stated above.', is extracted separately and also FOUND. Together the two halves are the recorded text. It is the last paragraph of Part Two, directly before 'PART THREE. BASIC PRINCIPLES OF INTERNATIONAL APPLICATION: FREE FLOW AND LEGITIMATE RESTRICTIONS'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -11173,7 +12323,27 @@ window.privacyData = {
           date: "1981-01-28",
           url: "https://web.archive.org/web/2023/https://rm.coe.int/1680078b37",
           quote: "obtained and processed fairly and lawfully; … stored for specified and legitimate purposes and not used in a way incompatible with those purposes; … adequate, relevant and not excessive in relation to the purposes for which they are stored; … accurate and, where necessary, kept up to date; … preserved in a form which permits identification of the data subjects for no longer than is required for the purpose for which those data are stored. … Personal data revealing racial origin, political opinions or religious or other beliefs, as well as personal data concerning health or sexual life, may not be processed automatically unless domestic law provides appropriate safeguards. The same shall apply to personal data relating to criminal convictions. … Appropriate security measures shall be taken for the protection of personal data stored in automated data files against accidental or unauthorised destruction or accidental loss as well as against unauthorised access, alteration or dissemination. … to establish the existence of an automated personal data file, its main purposes, as well as the identity and habitual residence or principal place of business of the controller of the file; … to obtain at reasonable intervals and without excessive delay or expense confirmation of whether personal data relating to him are stored in the automated data file as well as communication to him of such data in an intelligible form; … to obtain, as the case may be, rectification or erasure of such data if these have been processed contrary to the provisions of domestic law giving effect to the basic principles set out in Articles 5 and 6 of this Convention; … to have a remedy if a request for confirmation or, as the case may be, communication, rectification or erasure as referred to in paragraphs b and c of this article is not complied with.",
-          note: "Article 5: 'Personal data undergoing automatic processing shall be:' Names are editorial except where they repeat the article headings ('Quality of data', 'Special categories of data', 'Data security', 'Additional safeguards for the data subject'). Article 8: 'Any person shall be enabled:' Names are editorial except where they repeat the article headings ('Quality of data', 'Special categories of data', 'Data security', 'Additional safeguards for the data subject').",
+          note: "Article 5: 'Personal data undergoing automatic processing shall be:' Names are editorial except where they repeat the article headings ('Quality of data', 'Special categories of data', 'Data security', 'Additional safeguards for the data subject'). Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (fetch-text.py and curl, repeated, including the id_ variant of the 2026-09-18 snapshot); WebFetch cannot fetch from web.archive.org; live https://rm.coe.int/1680078b37 returns a Cloudflare 403. The archive.org availability API lists a snapshot (20260918211225, status 200), but its content could not be read, so neither the quote nor the document identity could be re-checked here. The same wording is FOUND on the Irish Statute Book copy of the Convention (added source) and in a Wayback capture of the Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, archived 19 Dec 2012) held in the shared fetch cache from earlier today. Names are editorial except where they repeat the article headings ('Quality of data', 'Special categories of data', 'Data security', 'Additional safeguards for the data subject'). Verification: Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today. Article 8: 'Any person shall be enabled:' Names are editorial except where they repeat the article headings ('Quality of data', 'Special categories of data', 'Data security', 'Additional safeguards for the data subject'). Verification: Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today. Article 8: 'Any person shall be enabled:' Names are editorial except where they repeat the article headings ('Quality of data', 'Special categories of data', 'Data security', 'Additional safeguards for the data subject'). Verification: Re-fetch failed on 2026-09-23. web.archive.org reset every connection: fetch-text.py got 'Connection reset by peer' on three tries, and the proxy logged ws_closed_mid_exchange for web.archive.org:443. WebFetch reports it cannot fetch from web.archive.org. Live https://rm.coe.int/1680078b37 returns a Cloudflare 403 to fetch-text.py, curl and WebFetch. The archive.org availability API lists captures of the PDF (20240114081439 is the closest to '2023'; 20260106140233 is later), but none could be read, so neither the quote nor the identity of the document could be re-checked. The same Article text is FOUND in the UN Treaty Series text of the Convention (UNTS vol. 1496, I-25702) and on the Irish Statute Book copy (both added as sources). It is also FOUND in a Wayback capture of the CoE Treaty Office's HTML text (conventions.coe.int/Treaty/en/Treaties/Html/108.htm, 2012), which is held in the shared fetch cache from earlier today. Not checked: whether the PDF prints 'this Convention' (as the recorded quote has it) or 'this convention' (as in the UNTS, Irish and 2012 CoE HTML texts).",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Government of Ireland, Irish Statute Book",
+          title: "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+          date: "1988-07-13",
+          url: "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+          quote: "obtained and processed fairly and lawfully; … stored for specified and legitimate purposes and not used in a way incompatible with those purposes; … adequate, relevant and not excessive in relation to the purposes for which they are stored; … accurate and, where necessary, kept up to date; … preserved in a form which permits identification of the data subjects for no longer than is required for the purpose for which those data are stored. … Personal data revealing racial origin, political opinions or religious or other beliefs, as well as personal data concerning health or sexual life, may not be processed automatically unless domestic law provides appropriate safeguards. The same shall apply to personal data relating to criminal convictions. … Appropriate security measures shall be taken for the protection of personal data stored in automated data files against accidental or unauthorised destruction or accidental loss as well as against unauthorised access, alteration or dissemination. … to establish the existence of an automated personal data file, its main purposes, as well as the identity and habitual residence or principal place of business of the controller of the file; … to obtain at reasonable intervals and without excessive delay or expense confirmation of whether personal data relating to him are stored in the automated data file as well as communication to him of such data in an intelligible form; … to obtain, as the case may be, rectification or erasure of such data if these have been processed contrary to the provisions of domestic law giving effect to the basic principles set out in Articles 5 and 6 of this convention; … to have a remedy if a request for confirmation or, as the case may be, communication, rectification or erasure as referred to in paragraphs b and c of this article is not complied with.",
+          note: "Checked with fetch-text.py --check: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25). The enactment date '[13th July, 1988]' appears on the Act page. Art. 5(a) text reads identically in the CoE Treaty Office HTML capture. Checked with fetch-text.py --check: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25). The enactment date '[13th July, 1988]' appears on the Act page. Art. 5(b) text reads identically in the CoE Treaty Office HTML capture. Checked with fetch-text.py --check: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25). The enactment date '[13th July, 1988]' appears on the Act page. Art. 5(c) text reads identically in the CoE Treaty Office HTML capture. Checked with fetch-text.py --check: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25). The enactment date '[13th July, 1988]' appears on the Act page. Art. 5(d) text reads identically in the CoE Treaty Office HTML capture. Checked with fetch-text.py --check: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25). The enactment date '[13th July, 1988]' appears on the Act page. Art. 5(e) text reads identically in the CoE Treaty Office HTML capture. Checked with fetch-text.py --check: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25). The enactment date '[13th July, 1988]' appears on the Act page. Art. 6 text reads identically in the CoE Treaty Office HTML capture. Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. 'Article 7 Data security' heading FOUND. Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'a .' under 'Article 8 Additional safeguards for the data subject Any person shall be enabled:' (FOUND). Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'b .' of Article 8. Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'c .' of Article 8, with a lower-case 'convention'. The page has 0 hits for 'this Convention;'. Checked with fetch-text.py --check on a live, uncached fetch on 2026-09-23: FOUND. The Convention is set out in full as the First Schedule to Ireland's Data Protection Act 1988 (No. 25), and the Act page gives the enactment date '[13th July, 1988]'. Printed as item 'd .' of Article 8.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "United Nations, Treaty Series (UN Treaty Collection)",
+          title: "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+          date: "1988",
+          url: "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+          quote: "Appropriate security measures shall be taken for the protection of personal data stored in automated data files against accidental or unauthorised destruction or accidental loss as well as against unauthorised access, alteration or … To establish the existence of an automated personal data file, its main purposes, as well as the identity and habitual residence or principal place of business of the controller of the file; … To obtain at reasonable intervals and without excessive delay or expense confirmation of whether personal data relating to him are stored in the automated data file as well as communication to him of such data in an intelligible form; … To obtain, as the case may be, rectification or erasure of such data if these have been processed contrary to the provisions of domestic law giving effect to the basic principles set out in Articles 5 and 6 of this convention; … To have a remedy if a request for confirmation or, as the case may be, communication, rectification or erasure as referred to in paragraphs b and c of this article is not complied with.",
+          note: "Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. The quote is truncated because the PDF text layer splits the final word as 'dissem ination' with no hyphen, so the full sentence cannot be matched. Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item a. under 'Article 8. ADDITIONAL SAFEGUARDS FOR THE DATA SUBJECT' / 'Any person shall be enabled:' (both FOUND). Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item b. of Article 8. Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item c. of Article 8, printed with a lower-case 'convention'. Checked with fetch-text.py --check on a live fetch on 2026-09-23: FOUND. This is the authentic English text as registered with the UN by the CoE Secretary-General on 14 March 1988 ('Concluded at Strasbourg on 28 January 1981'; 'Came into force on 1 October 1985', both FOUND). UNTS house style capitalises the first word of each lettered item. Item d. of Article 8.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -14147,17 +15317,38 @@ window.privacyData = {
   figures: {
     consent: [
       {
-        value: "201 hours",
-        label: "a year to read the privacy policies of the sites one American visits",
-        note: "McDonald & Cranor, Carnegie Mellon, 2008 — about $781 billion a year in time, nationally.",
+        value: "244 hours",
+        label: "a year to read, word for word, the privacy policies of the sites one American visits — about 40 minutes a day",
+        note: "McDonald & Cranor, Carnegie Mellon, 2008: point estimate from their Table 7 (the abstract's \"201 hours\" does not match it); about $781 billion a year nationally.",
         color: "v9",
         source: [
           {
-            institution: "Carnegie Mellon University (authors' pre-press version; published in I/S: A Journal of Law and Policy for the Information Society, 2008)",
+            institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
             title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
             date: "2008",
             url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
-            quote: "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user.",
+            quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+            note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+            title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+            date: "2008",
+            url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+            quote: "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user. Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+            note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008), pp. 543-568 (Ohio State University Moritz College of Law) — published version, Ohio State University Knowledge Bank (hdl.handle.net/1811/72839)",
+            title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+            date: "2008",
+            url: "https://kb.osu.edu/server/api/core/bitstreams/a9510be5-b51e-526d-aea3-8e9636bc00cd/content",
+            quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+            note: "Published journal version (ISJLP_V4N3_543.pdf) from the OSU Knowledge Bank item http://hdl.handle.net/1811/72839 (metadata: dc.date.issued 2008; citation 'I/S ... vol. 4, no. 3 (2008), 543-568'). The repo helper's own request got HTTP 403 from the server, so the PDF was downloaded with curl (HTTP 200, application/pdf, 1,654,540 bytes), put in the helper's cache, and checked with --check: FOUND. The text layer is OCR, so a few digits come out as letters (e.g. 'lo minutes' for '10 minutes'). Confirms that the 244-hour figure and the 40-minutes-a-day comparison are unchanged in the published version.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -14229,6 +15420,16 @@ window.privacyData = {
             quote: "Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "Pew Research Center",
+            title: "2. How Americans protect their online data (chapter of 'How Americans View Data Privacy')",
+            date: "2023-10-18",
+            url: "https://www.pewresearch.org/internet/2023/10/18/how-americans-protect-their-online-data/",
+            quote: "Some 56% of Americans say they always, almost always or often click “agree” right away, without reading what privacy policies say. Another 22% say they do this sometimes. And 18% say they rarely or never agree without reading.",
+            note: "Checked with --check 2026-09-23: FOUND. Defines 'frequently' as always/almost always/often.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       },
@@ -14287,7 +15488,7 @@ window.privacyData = {
         source: [
           {
             institution: "Irish Council for Civil Liberties (ICCL), Dublin",
-            title: "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+            title: "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
             date: "2022-05-16",
             url: "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
             quote: "On average, a person in the U.S. has their online activity and location exposed 747 times every day by the RTB industry.",
@@ -14297,7 +15498,7 @@ window.privacyData = {
           },
           {
             institution: "Irish Council for Civil Liberties (ICCL), Dublin",
-            title: "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+            title: "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
             date: "2022-05-16",
             url: "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
             quote: "The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential.",
@@ -14323,7 +15524,7 @@ window.privacyData = {
           },
           {
             institution: "Irish Council for Civil Liberties (ICCL), Dublin",
-            title: "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+            title: "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
             date: "2022-05-16",
             url: "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
             quote: "U.S. Internet users’ online behaviour and locations1 are tracked and shared 107 trillion times a year.2 Europeans’ data is exposed 71 trillion times a year.",
@@ -14333,7 +15534,7 @@ window.privacyData = {
           },
           {
             institution: "Irish Council for Civil Liberties (ICCL), Dublin",
-            title: "The Biggest Data Breach: ICCL report on the scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
+            title: "The Biggest Data Breach: ICCL report on scale of Real-Time Bidding data broadcasts in the U.S. and Europe (Johnny Ryan)",
             date: "2022-05-16",
             url: "https://www.iccl.ie/wp-content/uploads/2022/05/Mass-data-breach-of-Europe-and-US-data-1.pdf",
             quote: "The number of RTB broadcasts over 30 days is taken from industry figures, whose source is confidential.",
@@ -14378,6 +15579,26 @@ window.privacyData = {
             note: "Extended version of the paper presented at ACM CCS 2016. Quotes contain the 'ﬁ'/'ﬀ' ligatures of the PDF text layer.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+            title: "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+            date: "2016-10",
+            url: "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+            quote: "Every third party is potentially a tracker, but for many of our results we need a more conservative deﬁnition.",
+            note: "Section 4, 'What makes a tracker?'. Shows the 81,000 count covers all third-party domains, not only trackers. Contains the PDF text layer's 'ﬁ' ligature. --check FOUND on 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "ACM Conference on Computer and Communications Security (CCS 2016), Vienna — extended version hosted by Princeton University",
+            title: "Steven Englehardt and Arvind Narayanan, 'Online Tracking: A 1-million-site Measurement and Analysis'",
+            date: "2016-10",
+            url: "https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf",
+            quote: "For eash site, the browser will visit the homepage and wait until the site has ﬁnished loading or until the 90 second timeout is reached. The browser does not interact with the site or visit any other pages within the site.",
+            note: "Section 4. Homepage-only crawl ('eash' is the paper's typo). --check FOUND on 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       },
@@ -14402,6 +15623,26 @@ window.privacyData = {
             date: "2014-05",
             url: "https://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf",
             quote: "The nine data brokers studied obtain most of their data from other data brokers rather than directly from an original source.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "U.S. Federal Trade Commission",
+            title: "Data Brokers: A Call for Transparency and Accountability",
+            date: "2014-05",
+            url: "https://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf",
+            quote: "Acxiom provides consumer data and analytics for marketing campaigns and fraud detection. Its databases contain information about 700 million consumers worldwide with over 3000 data segments for nearly every U.S. consumer.",
+            note: "Section I (Introduction), list of the nine data brokers; footnote 21 cites 'Acxiom Corp., Annual Report 8 (2013)'. --check FOUND on 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Acxiom Corporation, Form 10-K filed with the U.S. Securities and Exchange Commission (EDGAR)",
+            title: "Acxiom Corporation, Annual Report on Form 10-K for the fiscal year ended March 31, 2013",
+            date: "2013-05-29",
+            url: "https://www.sec.gov/Archives/edgar/data/733269/000073326913000012/financials.htm",
+            quote: "Over 3,000 propensities for nearly every U.S. consumer",
+            note: "Business section, 'Data and Insight' bullet (next to 'Multi-sourced insight into approximately 700 million consumers worldwide'). Found with SEC full-text search (accession 0000733269-13-000012, filed 2013-05-29). sec.gov returns 403 to fetch-text.py's browser user-agent, so the page was downloaded live with curl using a declared user-agent as SEC requires (HTTP 200, 2.26 MB), stored in the fetch-text cache, and then checked with fetch-text.py --check (FOUND) on 2026-09-23.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -14439,6 +15680,16 @@ window.privacyData = {
             quote: "As of January 1, 2026, California residents may use DROP to submit one request to all active data brokers, including those on this registry, requesting the deletion of their personal information. Data brokers are required to begin processing these requests on August 1, 2026.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "California Privacy Protection Agency (CalPrivacy)",
+            title: "California Data Broker Registry",
+            date: "2026-07-29",
+            url: "https://cppa.ca.gov/data_broker_registry/",
+            quote: "2026 California Data Broker Registry Last Updated: 7/29/2026",
+            note: "--check FOUND 2026-09-23. The same page also says: 'CalPrivacy publishes the information submitted during the registration process in the California Data Broker Registry after the registration period ends.' (--check FOUND).",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       },
@@ -14450,9 +15701,29 @@ window.privacyData = {
           {
             institution: "US Federal Trade Commission",
             title: "Equifax Data Breach Settlement",
-            date: "2026",
+            date: "2024-11-04",
             url: "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement",
             quote: "In September of 2017, Equifax announced a data breach that exposed the personal information of 147 million people.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "US Federal Trade Commission",
+            title: "Equifax to Pay $575 Million as Part of Settlement with FTC, CFPB, and States Related to 2017 Data Breach",
+            date: "2019-07-22",
+            url: "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+            quote: "a data breach in 2017 that affected approximately 147 million people",
+            note: "Source for the 'approximately 147 million' wording. The same release says 'hackers stole at least 147 million names and dates of birth, 145.5 million Social Security numbers, and 209,000 payment card numbers'. --check FOUND.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "Equifax Inc. (investor relations press release)",
+            title: "Equifax Announces Cybersecurity Incident Involving Consumer Information",
+            date: "2017-09-07",
+            url: "https://investor.equifax.com/news-events/press-releases/detail/240/equifax-announces-cybersecurity-incident-involving-consumer",
+            quote: "Equifax Inc. (NYSE: EFX) today announced a cybersecurity incident potentially impacting approximately 143 million U.S. consumers.",
+            note: "Datelined 'ATLANTA, Sept. 7, 2017'. The same release says: 'Equifax also identified unauthorized access to limited personal information for certain UK and Canadian residents.' --check FOUND.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -14469,6 +15740,16 @@ window.privacyData = {
             date: "2023-05-22",
             url: "https://www.dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
             quote: "an administrative fine in the amount of €1.2 billion",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "BBC News",
+            title: "Meta: Facebook owner fined €1.2bn for mishandling data",
+            date: "2023-05-22",
+            url: "https://www.bbc.com/news/technology-65669839",
+            quote: "Issued by Ireland's Data Protection Commission (DPC), it is the largest fine imposed under the EU's General Data Protection Regulation privacy law.",
+            note: "Independent confirmation of the fine and of its record status as of May 2023. datePublished 2023-05-22. --check FOUND.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -14542,7 +15823,7 @@ window.privacyData = {
       cite: "Shoshana Zuboff, “Big Other: surveillance capitalism and the prospects of an information civilization”, 2015",
       source: [
         {
-          institution: "Journal of Information Technology (vol. 30), Springer Nature",
+          institution: "Journal of Information Technology (vol. 30, no. 1), Palgrave Macmillan / Springer Nature",
           title: "Shoshana Zuboff, 'Big other: surveillance capitalism and the prospects of an information civilization'",
           date: "2015-04-09",
           url: "https://link.springer.com/article/10.1057/jit.2015.5",
@@ -14607,7 +15888,7 @@ window.privacyData = {
         year: 1976,
         url: "https://ee.stanford.edu/~hellman/publications/24.pdf"
       },
-      contribution: "Hellman, a Stanford professor of electrical engineering, co-authored with Whitfield Diffie the 1976 paper that proposed public-key cryptography and digital signatures. The pair also clashed with the NSA over the key length of the government's Data Encryption Standard, which they argued had been limited to 56 bits. The two shared the 2015 ACM A.M. Turing Award.",
+      contribution: "Hellman, a Stanford professor of electrical engineering, co-authored with Whitfield Diffie the 1976 paper that proposed public-key cryptography and digital signatures. The pair also clashed with the NSA over the government's Data Encryption Standard, arguing that the agency had pressured IBM to weaken it by limiting its key to 56 bits. The two shared the 2015 ACM A.M. Turing Award.",
       influence: "The 1976 paper and the DES key-length dispute opened what Stanford calls the first of the 'crypto wars'; in 2016 Hellman publicly sided with Apple in its dispute with the FBI over unlocking an iPhone.",
       quote: "In order to use cryptography to insure privacy, however, it is currently necessary for the communicating parties to share a key which is known to no one else.",
       quoteSource: {
@@ -14646,7 +15927,7 @@ window.privacyData = {
         url: "https://ee.stanford.edu/~hellman/publications/24.pdf"
       },
       contribution: "With Martin Hellman, Diffie published the 1976 paper that introduced public-key cryptography and digital signatures to the open literature. The scheme lets two people who have never met agree on a secret over an insecure channel, removing the need for a courier or other secure channel to deliver keys in advance. Diffie was a part-time researcher at Stanford at the time.",
-      influence: "Public-key cryptography moved strong encryption out of classified government research and into the open, provoking the first clash between academic cryptographers and the NSA — later called the first 'crypto war' — and became the basis of Internet security.",
+      influence: "Public-key cryptography moved strong encryption out of classified government research and into the open. The NSA's attempts to limit the spread of Diffie and Hellman's work led to clashes that became known as the first of the 'crypto wars', and public-key cryptography went on to become the backbone of Internet security.",
       thread: "In a public-key system each person generates and keeps a secret key and publishes only the matching public key, so the ability to read one's messages rests with the individual rather than with a central key authority.",
       quote: "Cryptography is the one indispensable security technique … if the government had succeeded in blocking people from having strong cryptographic systems … it would have meant you could not have had security on the Internet.",
       quoteSource: {
@@ -14697,7 +15978,7 @@ window.privacyData = {
       },
       contribution: "As a Berkeley researcher, Chaum published in February 1981 a public-key technique — the 'mix' — that hides who is writing to whom as well as what is said, without a universally trusted authority, and that supports untraceable return addresses and digital pseudonyms. His 1985 Communications of the ACM article proposed that individuals use a different, unlinkable 'digital pseudonym' with each organisation, held on a personal 'card computer'. He founded DigiCash to commercialise anonymous electronic cash; after bank pilots that never passed the pilot stage, the company filed for Chapter 11 bankruptcy in November 1998.",
       influence: "The International Association for Cryptologic Research named Chaum a 2004 Fellow for 'numerous seminal contributions to security and privacy research'; his mix networks are the ancestor of anonymous-remailer and onion-routing systems, and DigiCash showed both the promise and the commercial difficulty of anonymous payments.",
-      thread: "Chaum's 1985 design puts the pseudonyms on 'a personal card computer that the individual completely controls', so that organisations cannot link a person's records into a dossier — an early architecture of individual control over personal data.",
+      thread: "Chaum's 1985 design puts the pseudonyms on 'a personal card computer held and trusted only by the individual', so that organisations cannot link a person's records into a dossier — an early architecture of individual control over personal data. (His revised 1987 text sharpens this to a card computer 'that the individual completely controls'.)",
       quote: "Computerization is robbing individuals of the ability to monitor and control the ways information about them is used.",
       quoteSource: {
         institution: "chaum.com (David Chaum's website; Internet Archive copy)",
@@ -14738,6 +16019,16 @@ window.privacyData = {
           url: "https://www.americanbanker.com/news/electronic-commerce-bankrupt-digicash-to-seek-financing-new-allies",
           quote: "With the announcement last week that it filed for Chapter 11 bankruptcy protection, Digicash has embarked on yet another phase of a corporate saga that has won it acclaim and admiration in both the banking and Internet communities-but precious little business.",
           note: "The article also says the licensee banks 'never got beyond pilot stages' and that the headquarters had moved 'from Mr. Chaum's base in Amsterdam to Silicon Valley'. IACR fellowship: https://www.iacr.org/fellows/2004/chaum.html — 'For numerous seminal contributions to security and privacy research and for visionary leadership in the role of IACR founder.' (--check FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Communications of the ACM (scanned copy on a Radboud University Nijmegen course page, cs.ru.nl)",
+          title: "David Chaum, 'Security without Identification: Transaction Systems to Make Big Brother Obsolete', vol. 28, no. 10, pp. 1030–1044",
+          date: "1985-10",
+          url: "https://www.cs.ru.nl/~jhh/pub/secsem/chaum1985bigbrother.pdf",
+          quote: "Different numbers or digital pseudonyms are used with each organization by a personal card computer held and trusted only by the individual",
+          note: "Figure caption in the original 1985 article (scan with OCR text layer; --check FOUND). The revised 1987 text on chaum.com changes it to '... a personal card computer that the individual completely controls'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15052,7 +16343,7 @@ window.privacyData = {
         url: "http://www.hashcash.org/papers/hashcash.pdf"
       },
       contribution: "In May 1997 Back proposed Hashcash, a CPU 'cost-function' that makes a sender compute a proof-of-work token before sending, to throttle spam and abuse of anonymous remailers. His 2002 paper acknowledges that he had not known of Cynthia Dwork and Moni Naor's 1992 proposal of a similar CPU pricing function against junk mail. The Bitcoin white paper's timestamp server uses a proof-of-work system 'similar to Adam Back's Hashcash' and cites his paper.",
-      influence: "Hashcash's proof-of-work, first aimed at keeping anonymous remailers usable, became a building block of Bitcoin, which cites it directly.",
+      influence: "Hashcash's proof-of-work, first aimed at email spam and at systematic abuse of anonymous remailers, became a building block of Bitcoin, which cites it directly.",
       quote: "Hashcash was originally proposed as a counter-measure against email spam, and against systematic abuse of anonymous remailers.",
       quoteSource: {
         institution: "hashcash.org (author's paper)",
@@ -15100,8 +16391,8 @@ window.privacyData = {
         year: 2006,
         url: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf"
       },
-      contribution: "Working at Microsoft Research, Dwork showed in 2006 that the long-standing goal for statistical databases — that nothing about an individual be learnable that could not be learned without the database — cannot be achieved, and proposed instead 'differential privacy': any given disclosure should be almost equally likely whether or not a person's data are included. With colleagues she developed methods that add calibrated random noise to statistics to meet that guarantee. The technique is used by Apple on its devices and was the basis of the Disclosure Avoidance System for the 2020 US Census; she received the US National Medal of Science in January 2025.",
-      influence: "Differential privacy moved privacy protection from promises about data handling to a measurable mathematical guarantee; it was the backbone of the 2020 US Census's disclosure avoidance, although in 2026 the US Commerce Department ordered the Census Bureau to stop using 'noise infusion', including differential privacy.",
+      contribution: "Working at Microsoft Research, Dwork showed in 2006 — in an impossibility result she credits as joint work with Moni Naor — that the long-standing goal for statistical databases, that nothing about an individual be learnable that could not be learned without the database, cannot be achieved, and proposed instead 'differential privacy', a definition she credits as joint work with Frank McSherry: any given disclosure should be almost equally likely whether or not a person's data are included. With colleagues she developed methods that add calibrated random noise to statistics to meet that guarantee. The technique is used by Apple on its devices and was the basis of the Disclosure Avoidance System for the 2020 US Census; she received the US National Medal of Science in January 2025.",
+      influence: "Differential privacy moved privacy protection from promises about data handling to a measurable mathematical guarantee; it was the backbone of the 2020 US Census's disclosure avoidance, although in 2026 the US Commerce Department ordered the Census Bureau to stop using 'noise infusion', the method on which its differential-privacy protections rely.",
       thread: "The guarantee is framed around the individual's choice to take part: 'any given disclosure will be, within a small multiplicative factor, just as likely whether or not the individual participates in the database.'",
       quote: "The risk to one's privacy, or in general, any type of risk, such as the risk of being denied automobile insurance, should not substantially increase as a result of participating in a statistical database.",
       quoteSource: {
@@ -15144,6 +16435,16 @@ window.privacyData = {
           note: "Search results name the order Department Administrative Order 216-26; that number was not verified from a primary Commerce Department page.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Microsoft Research (author copy of ICALP 2006 paper, Springer LNCS)",
+          title: "Cynthia Dwork, 'Differential Privacy', Acknowledgements",
+          date: "2006-07",
+          url: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/dwork.pdf",
+          quote: "The impossibility result is joint work with Moni Naor, and diﬀerential privacy was motivated by this result. The deﬁnition, the diﬀerential privacy mechanism, and Theorems 4 and 5 are joint work with Frank McSherry.",
+          note: "--check FOUND. 'ﬀ' and 'ﬁ' are the PDF text layer's ligature glyphs. In plain text: 'differential', 'definition'. The same acknowledgement: 'Kobbi Nissim introduced me to the topic of interactive privacy mechanisms.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15160,7 +16461,7 @@ window.privacyData = {
         year: 1999,
         url: "https://law.resource.org/pub/us/case/reporter/F3/176/176.F3d.1132.97-16686.html"
       },
-      contribution: "As a doctoral candidate at UC Berkeley, Bernstein devised an encryption method he called Snuffle and asked whether he needed a licence to publish its description and source code; the State Department said it was a 'munition' under the arms-export rules. With lawyers backed by the Electronic Frontier Foundation he sued, and the district court held in December 1996 and again in August 1997 that the regulations were unconstitutional. A Ninth Circuit panel agreed on 6 May 1999 that the export rules were a prior restraint on scientific expression, but that opinion was withdrawn for rehearing en banc; the government then loosened the rules in January 2000 and the case ended in 2002 without a final appellate ruling.",
+      contribution: "As a doctoral candidate at UC Berkeley, Bernstein devised an encryption method he called Snuffle and asked whether he needed a licence to publish its description and source code; the State Department said it was a 'munition' under the arms-export rules. With lawyers backed by the Electronic Frontier Foundation he sued in February 1995, and the district court held in December 1996 and again in August 1997 that the regulations were unconstitutional. A Ninth Circuit panel agreed on 6 May 1999 that the export rules were a prior restraint on scientific expression, but that opinion was withdrawn for rehearing en banc; the government then loosened the rules in January 2000, and after it promised in October 2002 not to enforce several provisions, the district court dismissed the case in October 2003 as unripe, without a final ruling on the constitutionality of the current rules.",
       influence: "The case made the argument that publishing encryption code is protected speech a central front of the crypto wars; EFF credits it with the ruling that 'software source code was speech protected by the First Amendment', although the panel opinion was later withdrawn and the law was changed by regulation rather than by final judgment.",
       quote: "Can you imagine how painful it would be to talk to someone if every new line out of your mouth had to be cleared with the government before you said it?",
       quoteSource: {
@@ -15213,6 +16514,16 @@ window.privacyData = {
           note: "Undated case page; accessed 2026-09-23. EFF's summary does not mention that the panel opinion was withdrawn.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "D. J. Bernstein (cr.yp.to)",
+          title: "Press release, 'Crypto case on indefinite hold'",
+          date: "2003-10-15",
+          url: "https://cr.yp.to/export/2003/10.15-bernstein.txt",
+          quote: "As observers predicted after the hearing, Chief Judge Marilyn Hall Patel of the United States District Court for the Northern District of California relied on the government's promises and dismissed Bernstein's case without deciding the constitutionality of the current regulations.",
+          note: "--check FOUND. The release is datelined 'Chicago, 15 October 2003 - The longest-running court case against the government's encryption regulations has come to an end, for now.' It also says 'Bernstein filed his lawsuit in February 1995'. Linked as the final entry of https://cr.yp.to/export/docs.html ('2003.10.15: B to public').",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15229,8 +16540,8 @@ window.privacyData = {
         year: 1991,
         url: "http://www.toad.com/gnu/cfp.talk.txt"
       },
-      contribution: "Gilmore, Sun Microsystems' fifth employee, co-founded the Electronic Frontier Foundation in July 1990 with Mitch Kapor and John Perry Barlow (with help from Steve Wozniak) and later co-founded the support company Cygnus. His toad.com machine hosted the cypherpunks mailing list from 1992. He used Freedom of Information Act suits to pry loose classified cryptography texts, helped initiate Bernstein v. DOJ against encryption export controls, and led EFF's DES Cracker project; he also sued the TSA, unsuccessfully, over demands that travellers show identification.",
-      influence: "EFF credits Gilmore with helping start the Bernstein case, which produced a 1999 appeals-panel ruling (later withdrawn for rehearing) that source code is speech protected by the First Amendment, and with the DES Cracker, which publicly showed that the government-endorsed Data Encryption Standard could be broken in about a week. In October 2021 EFF's board voted to remove him from active governance after disagreements over 'how to best communicate and work together', naming him board member emeritus.",
+      contribution: "Gilmore, Sun Microsystems' fifth employee, co-founded the free-software support company Cygnus in 1989 and, in July 1990, the Electronic Frontier Foundation, with Mitch Kapor and John Perry Barlow (with help from Steve Wozniak). His toad.com machine hosted the cypherpunks mailing list from 1992. He used Freedom of Information Act suits to pry loose classified cryptography texts, helped initiate Bernstein v. DOJ against encryption export controls, and led EFF's DES Cracker project; he also sued the TSA, unsuccessfully, over demands that travellers show identification.",
+      influence: "EFF credits Gilmore with helping start the Bernstein case, which produced a 1999 appeals-panel ruling (later withdrawn for rehearing) that source code is speech protected by the First Amendment, and with the DES Cracker, which publicly showed that the government-endorsed Data Encryption Standard could be broken in about a week. In October 2021 EFF announced that its board had voted to remove him from the board, saying they had 'not seen eye-to-eye on how to best communicate and work together', and named him board member emeritus.",
       thread: "Gilmore's 1991 talk argued that rules controlling data after collection 'only works if you assume a good government', and proposed instead systems in which personal information is never collected at all.",
       quote: "I want a guarantee -- with physics and mathematics, not with laws -- that we can give ourselves things like real privacy of personal communications.",
       quoteSource: {
@@ -15270,8 +16581,18 @@ window.privacyData = {
           title: "John Gilmore, Entrepreneur and Civil Libertarian (home page)",
           date: "2026",
           url: "http://www.toad.com/gnu/",
-          quote: "I sued TSA to make them stop demanding that citizens identify themselves in order to travel.",
-          note: "The page adds: 'I lost every one of these lawsuits.' Undated page; accessed 2026-09-23. Sun 'employee number five' and FOIA suits: Steven Levy, 'Crypto Rebels', Wired, https://www.wired.com/1993/02/crypto-rebels/ ('As Sun Microsystems employee number five, Gilmore retired with a bankroll in the millions.').",
+          quote: "I sued TSA to make them stop demanding that citizens identify themselves in order to travel. … In 1989 I co-founded Cygnus Support, the first company dedicated to supporting free software.",
+          note: "The page adds: 'I lost every one of these lawsuits.' Undated page; accessed 2026-09-23. Sun 'employee number five' and FOIA suits: Steven Levy, 'Crypto Rebels', Wired, https://www.wired.com/1993/02/crypto-rebels/ ('As Sun Microsystems employee number five, Gilmore retired with a bankroll in the millions.'). Dates Cygnus to 1989, before EFF (July 1990). The same page says 'I was its fifth employee, and later a consultant.' about Sun. Undated page; accessed 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "Bernstein v. United States",
+          date: "2026",
+          url: "https://en.wikipedia.org/wiki/Bernstein_v._United_States",
+          quote: "the Ninth Circuit ordered that this case be reheard by the en banc court, and withdrew the three-judge panel opinion",
+          note: "Secondary source for the withdrawal. It cites Bernstein v. U.S. Dept. of Justice, 192 F.3d 1308 (9th Cir. 1999), which withdrew 176 F.3d 1132 (9th Cir., decided 6 May 1999). Justia and OpenJurist copies returned 403 to scripts. Accessed 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15780,6 +17101,16 @@ window.privacyData = {
           note: "Undated page; accessed 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "USENIX Association",
+          title: "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router', Proceedings of the 13th USENIX Security Symposium, San Diego, pp. 303–320",
+          date: "2004-08",
+          url: "https://www.usenix.org/legacy/event/sec04/tech/dingledine.html",
+          quote: "This second-generation Onion Routing system addresses limitations in the original design",
+          note: "Author line on the page: 'Roger Dingledine and Nick Mathewson, The Free Haven Project; Paul Syverson, Naval Research Lab' (--check FOUND). Symposium held August 9–13, 2004.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16284,7 +17615,7 @@ window.privacyData = {
       place: "Cambridge, Massachusetts",
       group: "code",
       keyWork: {
-        title: "Anonymity Loves Company: Usability and the Network Effect (with Roger Dingledine), Free Haven Project position paper",
+        title: "Anonymity Loves Company: Usability and the Network Effect (with Roger Dingledine), Fifth Workshop on the Economics of Information Security (WEIS 2006), Cambridge, UK",
         year: 2006,
         url: "https://www.freehaven.net/doc/wupss04/usability.pdf"
       },
@@ -16297,7 +17628,7 @@ window.privacyData = {
         date: "2006",
         url: "https://www.freehaven.net/doc/wupss04/usability.pdf",
         quote: "When more users join the network, existing users become more secure, even if the new users never talk to the existing ones!",
-        note: "Co-authored with Dingledine. The PDF carries no venue or date; the paper is generally cited to the Workshop on the Economics of Information Security (WEIS), June 2006 — that dating was not verified from a primary page. Its references include SOUPS 2005, so it is no earlier than July 2005.",
+        note: "Co-authored with Dingledine; the paper calls itself a 'position paper'. The PDF carries no venue or date. The Free Haven Project's anonbib BibTeX entry (https://www.freehaven.net/anonbib/bibtex.html) gives 'Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006)', Cambridge, UK, June 2006.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       },
@@ -16330,6 +17661,16 @@ window.privacyData = {
           quote: "We present Tor, a circuit-based low-latency anonymous communication service.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "The Free Haven Project, Selected Papers in Anonymity (anonbib)",
+          title: "BibTeX entry usability:weis2006, 'Anonymity Loves Company: Usability and the Network Effect'",
+          date: "2006-06",
+          url: "https://www.freehaven.net/anonbib/bibtex.html",
+          quote: "title = {Anonymity Loves Company: Usability and the Network Effect}, author = {Roger Dingledine and Nick Mathewson}, booktitle = {Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006)}, year = {2006}, month = {June}, location = {Cambridge, UK}",
+          note: "--check FOUND. The anonbib HTML list (https://www.freehaven.net/anonbib/) gives the same venue: 'In the Proceedings of the Fifth Workshop on the Economics of Information Security (WEIS 2006), Cambridge, UK, June 2006.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16346,7 +17687,7 @@ window.privacyData = {
         year: 2004,
         url: "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf"
       },
-      contribution: "A recent MIT graduate, Dingledine began working in the early 2000s on a Naval Research Laboratory onion-routing project with Paul Syverson and named it Tor to distinguish NRL's original 'onion routing' from rival systems. On 20 September 2002 he told developers that 'the onion routing network is functional and deployed', and its code was released under a free-software licence. With Nick Mathewson and Syverson he published the Tor design at USENIX Security in August 2004, describing a volunteer network of more than 30 nodes; he co-founded the Tor Project, which became a 501(c)(3) nonprofit in 2006.",
+      contribution: "A recent MIT graduate, Dingledine began working in the early 2000s on a Naval Research Laboratory onion-routing project with Paul Syverson and named it Tor to distinguish NRL's original 'onion routing' from rival systems. On 20 September 2002 he told the project's developer list that 'the onion routing network is functional and deployed' and invited them to download a pre-alpha release; the Tor Project dates the network's initial deployment, with its code released under a free and open-source licence, to October 2002. With Nick Mathewson and Syverson he published the Tor design at USENIX Security in August 2004, describing an international network of more than 30 nodes; he co-founded the Tor Project, which became a 501(c)(3) nonprofit in 2006.",
       influence: "Tor turned a navy research prototype into a free, volunteer-run public network; the Tor Project says it grew from about a dozen volunteer nodes at the end of 2003 to thousands of relays and millions of users, and was used during the Arab Spring and by Edward Snowden.",
       quote: "The onion routing network is functional and deployed. It's not terribly diverse yet, but heck, it's just for show for now.",
       quoteSource: {
@@ -16948,7 +18289,7 @@ window.privacyData = {
       place: "Unknown (pseudonymous; the white paper was announced on the Cryptography mailing list at metzdowd.com)",
       group: "code",
       keyWork: { title: "Bitcoin: A Peer-to-Peer Electronic Cash System", year: 2008, url: "https://bitcoin.org/bitcoin.pdf" },
-      contribution: "On 31 October 2008 a person or group writing as Satoshi Nakamoto announced 'a new electronic cash system that's fully peer-to-peer, with no trusted third party' on the Cryptography mailing list and published the Bitcoin white paper, which uses a proof-of-work system 'similar to Adam Back's Hashcash' and cites Wei Dai's b-money. Because every transaction is announced publicly, the paper abandoned the banking model of privacy through restricted access and proposed instead to keep public keys unlinked to identities, recommending a new key pair for each transaction while conceding that some linking was unavoidable. The author's identity has never been established; in 2024 England's High Court declared that Craig Wright, who had claimed the role, is not Satoshi Nakamoto.",
+      contribution: "On 31 October 2008 a person or group writing as Satoshi Nakamoto announced 'a new electronic cash system that's fully peer-to-peer, with no trusted third party' on the Cryptography mailing list and published the Bitcoin white paper, which uses a proof-of-work system 'similar to Adam Back's Hashcash' and cites Wei Dai's b-money. Because every transaction is announced publicly, the paper abandoned the banking model of privacy through restricted access and proposed instead to keep public keys unlinked to identities, recommending a new key pair for each transaction while conceding that some linking was unavoidable. The author's identity has never been established; in 2024 the High Court of England and Wales declared that Craig Wright, who had claimed the role, is not Satoshi Nakamoto.",
       influence: "Bitcoin turned the cypherpunk goal of cash without a trusted third party into a working system, but its public ledger made its privacy model pseudonymous rather than anonymous: a 2013 measurement study showed that 'an agency with subpoena power would be well placed to identify who is paying money to whom'.",
       thread: "The system rests on individuals holding their own private keys rather than on accounts held for them by an intermediary.",
       quote: "The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous.",
@@ -16987,8 +18328,8 @@ window.privacyData = {
           title: "Crypto Open Patent Alliance v Wright, consequentials judgment [2024] EWHC 1809 (Ch)",
           date: "2024-07-16",
           url: "https://www.judiciary.uk/wp-content/uploads/2024/07/COPA-v-Wright-Judgment.pdf",
-          quote: "First, that I have declared that Dr Wright is not the author of the Bitcoin White Paper nor the owner of copyright in it, is not Satoshi Nakamoto and is not the person who created Bitcoin and not the author of the initial versions of the Bitcoin Source Code.",
-          note: "The sentence summarises, in a submission recorded by the judge, the declarations Mellor J made at the end of the trial (March 2024); the main written judgment was handed down on 20 May 2024.",
+          quote: "At the conclusion of argument on 14 March 2024 in the Joint Trial of the Identity Issue in the COPA and BTC Core Claims, I announced the result – that Dr Craig Wright was not Satoshi Nakamoto, contrary to his claim. I handed down the reasons for that result on 20 May 2024: see [2024] EWHC 1198 (Ch) (my ‘Main COPA Judgment’).",
+          note: "Mellor J announced the result at the end of the joint trial on 14 March 2024 and handed down the main judgment, [2024] EWHC 1198 (Ch), on 20 May 2024. This later consequentials judgment records both. It also records, at para 122, counsel for Dr Wright accepting 'that I have declared that Dr Wright is not the author of the Bitcoin White Paper nor the owner of copyright in it, is not Satoshi Nakamoto and is not the person who created Bitcoin'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -17062,11 +18403,11 @@ window.privacyData = {
       place: "Mountain View, California (registered city of the Signal Technology Foundation)",
       group: "code",
       keyWork: {
-        title: "Signal and the Signal Protocol (TextSecure protocol), deployed in WhatsApp for all users on 5 April 2016",
+        title: "Signal and the Signal Protocol (TextSecure protocol), whose integration into all WhatsApp clients was completed on 5 April 2016",
         year: 2016,
         url: "https://signal.org/blog/whatsapp-complete/"
       },
-      contribution: "Marlinspike's mobile-security company Whisper Systems was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 licence, and in January 2013 he gave its continued open development a home as Open Whisper Systems. The project released Signal, encrypted calling for iPhone, in July 2014, and in November 2015 merged its Android apps TextSecure (private messaging) and RedPhone (private calls) into Signal for Android. From November 2014 it worked with WhatsApp to build the TextSecure — later Signal — Protocol into WhatsApp's clients, completing end-to-end encryption for all WhatsApp users on 5 April 2016; in 2018 WhatsApp co-founder Brian Acton funded the Signal Foundation, and Marlinspike stepped down as Signal's chief executive in January 2022.",
+      contribution: "Marlinspike's mobile-security company Whisper Systems was acquired by Twitter in late 2011; Twitter released some of its software under the GPLv3 licence, and in January 2013 he launched a new home for the community project continuing that work, which he called Open Whisper Systems. The project released Signal, encrypted calling for iPhone, in July 2014, and in November 2015 merged its Android apps TextSecure (private messaging) and RedPhone (private calls) into Signal for Android. In November 2014, after about half a year of joint work, it announced a partnership to build the TextSecure — later Signal — Protocol into WhatsApp's clients; on 5 April 2016 it reported the integration complete across every WhatsApp platform, so that users of the latest app versions got end-to-end encryption by default. In 2018 WhatsApp co-founder Brian Acton funded the Signal Foundation with an initial $50 million, and Marlinspike stepped down as Signal's chief executive in January 2022.",
       influence: "By licensing its protocol into WhatsApp, Open Whisper Systems made default end-to-end encryption a mass-market norm: on completion in April 2016 it reported that over a billion monthly active users were using the Signal Protocol.",
       thread: "In the Signal Protocol each device generates its own key pair; the public key is published through the server, 'while the private key remains private on the user's device' — confidentiality that depends on keys the user holds, not on the provider's policy.",
       quote: "Instead of teaching the rest of the world cryptography, we wanted to see if we could develop cryptography that worked for the rest of the world.",
@@ -17116,8 +18457,18 @@ window.privacyData = {
           title: "Andy Greenberg, 'Android App Aims to Allow Wiretap-Proof Cell Phone Calls'",
           date: "2010-05-25",
           url: "https://www.forbes.com/sites/firewall/2010/05/25/android-app-aims-to-allow-wiretap-proof-cell-phone-calls/",
-          note: "Contemporary report of the May 2010 public betas of RedPhone and TextSecure from Whisper Systems; forbes.com returned HTTP 403 to scripts, so no quote was captured. Not relied on for any claim in the card except the locationNote.",
+          note: "Contemporary report of the May 2010 public betas of RedPhone and TextSecure from Whisper Systems; forbes.com returned HTTP 403 to scripts, so no quote was captured. Not relied on for any claim in the card except the locationNote. Verification: Re-tried 2026-09-23. forbes.com gave HTTP 403 to fetch-text.py and to WebFetch. The Wayback availability API lists a snapshot (20260806221406), but every connection to web.archive.org was reset by the agent proxy, so no quote could be captured. The source supports only the Pittsburgh remark in locationNote.",
           verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Signal (signal.org blog)",
+          title: "Moxie Marlinspike, 'Open Whisper Systems partners with WhatsApp to provide end-to-end encryption'",
+          date: "2014-11-18",
+          url: "https://signal.org/blog/whatsapp/",
+          quote: "We’ve been working with WhatsApp for the past half year, and have learned a lot through the process of deploying the TextSecure protocol at the scale of hundreds of millions of users.",
+          note: "--check FOUND. The byline reads 'moxie0 on 18 Nov 2014'. The same post says: 'Today we’re excited to publicly announce a partnership with WhatsApp ... to incorporate the TextSecure protocol into their clients and provide end-to-end encryption for their users by default.'",
+          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
       ]
@@ -20264,7 +21615,7 @@ window.privacyData = {
     {
       claim: "The law of privacy goes back to 1361, when England's Justices of the Peace Act provided for the arrest of peeping toms and eavesdroppers.",
       verdict: "MISLEADING",
-      correction: "The 1361 statute names neither peeping toms nor eavesdroppers. It lets justices restrain offenders, rioters and barrators and take sureties of good behaviour from people 'not of good fame'. That general binding-over power was later used against eavesdroppers and voyeurs — MPs in 1960 defended it as protection against 'peeping Toms and eavesdroppers' — but the privacy reading comes from later practice, not from the text.",
+      correction: "The 1361 statute names neither peeping toms nor eavesdroppers. It lets justices restrain offenders, rioters and barrators, and take sureties of good behaviour from people 'not of good fame'. Later lawyers read those general words broadly: Blackstone's Commentaries (Book IV, 1769) says a justice may bind over 'eaves-droppers' under them. In 1960, opposing a bill to repeal the Act, the MP Peter Rawlinson called the repeal bill 'a modest charter for peeping Toms and eavesdroppers', and the Commons refused leave by 230 votes to 148. The privacy reading comes from later practice, not from the text.",
       era: "walls",
       source: [
         {
@@ -20294,13 +21645,23 @@ window.privacyData = {
           quote: "Translated into ordinary terms, the Bill which the hon. Member seeks to introduce, dressed up like a radical bird of paradise, is nothing less than a modest charter for peeping Toms and eavesdroppers.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "William Blackstone, Commentaries on the Laws of England, Book IV (16th ed., ed. J. T. Coleridge, London: A. Strahan, 1825) — Internet Archive OCR",
+          title: "Book IV, 'Of the means of preventing offences' (binding to good behaviour under 34 Edw. III c. 1)",
+          date: "1769",
+          url: "https://archive.org/download/commentaries_laws_england_book4/volume4_djvu.txt",
+          quote: "Thus also a justice may bind over all nightwalkers; eaves-droppers^ such as keep suspicious company ... bring them within the general words of the statutes as persons not of good fame",
+          note: "--check FOUND. The quote is verbatim OCR: '^' is an OCR artifact for a comma, and 'nightwalkers' is hyphenated across a line break ('night-walkers') in the scan. The passage opens 'the justices are empowered by the statute 34 Ed. III c. 1 to bind over to the good behaviour ... all them that be not of good fame'. Book IV was first published in 1769; this scan is the 16th edition (1825).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "Privacy is a modern Western invention that other cultures lack.",
       verdict: "MISLEADING",
-      correction: "Privacy norms appear in ancient and non-Western sources - the Hippocratic Oath, the Mishnah's rule on windows, the Qur'an's command to seek permission before entering a house - and anthropologists such as Irwin Altman found privacy regulation in every culture they examined, though by culturally specific means. What is modern is the legal 'right to privacy' (from 1890) and the idea of privacy as control over data.",
+      correction: "Privacy norms appear in ancient and non-Western sources - the Hippocratic Oath, the Mishnah's rule on windows, the Qur'an's command not to enter others' houses until welcomed - and the social psychologist Irwin Altman, reviewing ethnographic data from a variety of cultures, concluded in 1977 that privacy is 'a universal process that involves culturally unique regulatory mechanisms'. What is modern is privacy as a named legal right - a French press law of 1868 punished publishing 'a fact of private life', and the common-law 'right to privacy' gained currency from Warren and Brandeis's 1890 article - and the idea of privacy as control over data.",
       era: "walls",
       source: [
         {
@@ -20321,13 +21682,43 @@ window.privacyData = {
           note: "[...] marks only the translator's footnote marker in the API text.",
           verificationStatus: "CONFIRMED",
           accessType: "API"
+        },
+        {
+          institution: "Wikipedia",
+          title: "Irwin Altman",
+          date: "2026-09-23",
+          url: "https://en.wikipedia.org/wiki/Irwin_Altman",
+          quote: "is a social psychologist who earned his B.A. degree from New York University in 1951",
+          note: "--check FOUND on 2026-09-23. Secondary support for his discipline only. The infobox gives 'Occupation: Social psychologist'. The page's birth dates disagree (June 16 in the infobox, July 16 in the text), which does not matter here.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
+          title: "Jean-Louis Halpérin, 'Protection de la vie privée et privacy : deux traditions juridiques différentes ?'",
+          date: "2015",
+          url: "https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/protection-de-la-vie-privee-et-privacy-deux-traditions-juridiques-differentes",
+          quote: "La mention de la vie privée dans l’éphémère loi du 11 mai 1868 (correspondant à un premier recul de la censure au début de l’Empire libéral) sanctionnant, comme une simple contravention, toute révélation non autorisée d’une information « relative à un fait de la vie privée », fut un épisode très court.",
+          note: "--check FOUND on 2026-09-23. It shows a statute protecting private life before 1890; the early slice has the same record, french-press-law-article-11-private-life-1868. Translation: 'The mention of private life in the short-lived law of 11 May 1868 ... which punished as a mere contravention any unauthorised disclosure of information \"relating to a fact of private life\", was a very brief episode.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+          title: "Griswold v. Connecticut, 381 U.S. 479 (1965), Black J. dissenting, footnote 1",
+          date: "1965-06-07",
+          url: "https://www.law.cornell.edu/supremecourt/text/381/479",
+          quote: "The phrase 'right to privacy' appears first to have gained currency from an article written by Messrs. Warren and (later Mr. Justice) Brandeis in 1890",
+          note: "--check FOUND on 2026-09-23. In the LII HTML this is <div class=\"footnote\" id=\"fn1-1\">, and its reference fn1-1_ref sits in Black's dissent before 'I like my privacy as well as the next one'. It supports dating the named common-law right to 1890.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "William Pitt the Elder told Parliament that 'the poorest man may in his cottage bid defiance to all the forces of the Crown ... but the King of England cannot enter' (often dated 1763 or 1766).",
       verdict: "MISLEADING",
-      correction: "The contemporary Parliamentary History of the March 1763 cider-excise debate records only that Pitt said every man's house was his castle. The famous wording is 'attributed' (the U.S. Supreme Court's own word); it appears in Lord Brougham's Historical Sketches (1839), which gives no date or debate for it.",
+      correction: "Cobbett's Parliamentary History (vol. 15, published 1813), in its account of the March 1763 cider-excise debate, records only that Pitt spoke against letting excise officers into private houses: 'Every man's house was his castle, he said.' The famous wording is 'attributed' (the U.S. Supreme Court's own word). It appears in Lord Brougham's Historical Sketches of Statesmen (1839), which gives no date or debate for it.",
       era: "castle",
       source: [
         {
@@ -20348,6 +21739,16 @@ window.privacyData = {
           quote: "The poorest man may in his cottage bid defiance to all the forces of the Crown.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Cobbett's Parliamentary History of England, vol. 15 (London, 1813) — Internet Archive OCR",
+          title: "Proceedings in the Commons on the Cyder Tax (March 1763), col. 1307",
+          date: "1813",
+          url: "https://archive.org/download/10279123bsb/10279123bsb_djvu.txt",
+          quote: "Mr. Pitt spoke against this measure, particularly against the dangerous prece- dent of admitting the officers of excise into private houses. Every man’s house was his castle, he said.",
+          note: "--check FOUND. 'prece- dent' is a line-break hyphen kept as it appears in the OCR. The sentence continues: 'If this tax is endured, it will necessarily lead to introducing the laws of excise into the domestic concerns of every private family'. IA metadata: vol. 15, 1813. This is the passage the U.S. Supreme Court quotes in Miller n.7.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -20361,10 +21762,10 @@ window.privacyData = {
           institution: "Founders Online, U.S. National Archives (archived by the Internet Archive, 6 Jan 2025)",
           title: "Pennsylvania Assembly: Reply to the Governor, 11 November 1755",
           date: "1755-11-11",
-          url: "https://web.archive.org/web/2024/https://founders.archives.gov/documents/Franklin/01-06-02-0107",
+          url: "https://web.archive.org/web/20250106085121/https://founders.archives.gov/documents/Franklin/01-06-02-0107",
           quote: "Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety.",
-          note: "founders.archives.gov returns a bot challenge (HTTP 202) to scripts; the Internet Archive snapshot of 6 Jan 2025 (web.archive.org/web/20250106085121/...) was read.",
-          verificationStatus: "CONFIRMED",
+          note: "founders.archives.gov returns a bot challenge (HTTP 202) to scripts; the Internet Archive snapshot of 6 Jan 2025 (web.archive.org/web/20250106085121/...) was read. Verification: Could not be re-verified on 2026-09-23. Every attempt to reach web.archive.org (fetch-text.py, curl, WebFetch) failed with connection reset or a refused host, and founders.archives.gov returns HTTP 202 with an empty body. The URL is changed from the 'web/2024/' wildcard to the snapshot the original note says was read. The wording is independently confirmed by the Colonial Records source appended to this record and by the Lawfare article.",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -20373,6 +21774,16 @@ window.privacyData = {
           date: "2011-07-15",
           url: "https://www.lawfaremedia.org/article/what-ben-franklin-really-said",
           quote: "The letter was a salvo in a power struggle between the governor and the Assembly over funding for security on the frontier, one in which the Assembly wished to tax the lands of the Penn family, which ruled Pennsylvania from",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Colonial Records of Pennsylvania, vol. VI: Minutes of the Provincial Council (Harrisburg: Theo. Fenn & Co., 1851) — Internet Archive OCR",
+          title: "A Message to the Governor from the Assembly, 11 November 1755",
+          date: "1755-11-11",
+          url: "https://archive.org/download/colonialrecordsov6harr/colonialrecordsov6harr_djvu.txt",
+          quote: "Those who would give up essential Liberty to purchase a Little Temporary safety deserve neither Liberty nor safety.",
+          note: "--check FOUND. The message is entered in the Council minutes of 12 November 1755 and ends 'Signed by order of the House. \"ISAAC NORRIS, Speaker. \"November 11th, 1755.\"' (also --check FOUND). Governor Robert Hunter Morris presides in the surrounding minutes. The title page reads 'VOL. VI. Containing the proceedings of Council from April 2d, 1754, to January 29th, 1756 ... Harrisburg: Printed by Theo. Fenn & Co. 1851'. Punctuation and capitals differ slightly from the Votes of Assembly text used by Founders Online.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20409,7 +21820,7 @@ window.privacyData = {
     {
       claim: "Samuel Warren wrote “The Right to Privacy” because Boston newspapers intruded on his daughter's wedding.",
       verdict: "FALSE",
-      correction: "The story comes from William Prosser's 1960 article, which said the matter came to a head when the papers 'had a field day on the occasion of the wedding of a daughter'. But Warren had himself married Mabel Bayard only on 25 January 1883, so in 1890 the Warrens had no daughter of marrying age. James Barron (1979) instead pointed to press coverage of a cousin's wedding in 1890; Amy Gajda (2008), after reading about sixty newspaper stories, argues the likelier trigger was years of coverage of Warren's family after he married into a prominent political family.",
+      correction: "The story comes from William Prosser's 1960 article, which said the matter came to a head when the papers 'had a field day on the occasion of the wedding of a daughter'. But Warren had himself married Mabel Bayard only on 25 January 1883, so in 1890 the Warrens had no daughter of marrying age. James Barron (1979), as Amy Gajda reports, pointed instead to press coverage of a cousin's wedding in 1890. Gajda (2008), working from contemporary newspaper coverage, argues the likelier trigger was years of press attention to Warren's family after he married a senator's daughter.",
       era: "letalone",
       source: [
         {
@@ -20418,8 +21829,8 @@ window.privacyData = {
           date: "2008",
           url: "https://web.archive.org/web/2025/https://brooklynworks.brooklaw.edu/cgi/viewcontent.cgi?article=2491&context=faculty",
           quote: "have pointed out that coverage of a daughter's wedding could not have been a motivation for the article because the Warrens themselves had married only seven years before \"The Right to Privacy\" was published.",
-          note: "Mich. St. L. Rev. 2008:35, at 38-39. Same passage: 'Moreover, not only did the Warrens have no daughter of marrying age at the time'; Barron's alternative: 'publicity over the wedding of one of Warren's cousins in 1890'. The introduction dates Warren's own wedding: 'Mr. Samuel D. Warren married Miss Mabel Bayard at the Church of the Ascension in Washington, D.C., just before noon on January 25, 1883.' Barron's article (13 Suffolk U. L. Rev. 875, 1979) was not read directly. BrooklynWorks blocked scripts (403); read via the Wayback Machine.",
-          verificationStatus: "CONFIRMED",
+          note: "Mich. St. L. Rev. 2008:35, at 38-39. Same passage: 'Moreover, not only did the Warrens have no daughter of marrying age at the time'; Barron's alternative: 'publicity over the wedding of one of Warren's cousins in 1890'. The introduction dates Warren's own wedding: 'Mr. Samuel D. Warren married Miss Mabel Bayard at the Church of the Ascension in Washington, D.C., just before noon on January 25, 1883.' Barron's article (13 Suffolk U. L. Rev. 875, 1979) was not read directly. BrooklynWorks blocked scripts (403); read via the Wayback Machine. Verification: Could not re-fetch on 2026-09-23. web.archive.org reset the connection (ws_closed_mid_exchange) on repeated tries with fetch-text.py and curl; WebFetch cannot reach web.archive.org; the live BrooklynWorks PDF returns HTTP 403; SSRN (abstract 1026680) returns 403; and the old educationnewyork.com SSRN mirror returns 404. So the quote, the 'no daughter of marrying age' passage, Barron's cousin theory and the 25 January 1883 wedding sentence are unverified this session. The wedding date itself is confirmed elsewhere (see addSources).",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -20428,7 +21839,27 @@ window.privacyData = {
           date: "1960-08",
           url: "https://web.archive.org/web/20241219052809/https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf",
           quote: "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
-          note: "The source of the myth, at p. 383.",
+          note: "The source of the myth, at p. 383. Verification: Could not re-fetch: web.archive.org reset every connection, and the live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 with header x-amzn-waf-action: challenge and an empty body. The quoted sentence is confirmed verbatim on Wikipedia's 'The Right to Privacy (article)', which reproduces it with a citation to 48 Cal. L. Rev. 383 (see addSources). The original page and page number remain unverified.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "Samuel D. Warren II",
+          date: "accessed 2026-09-23",
+          url: "https://en.wikipedia.org/wiki/Samuel_D._Warren_II",
+          quote: "Warren married Mabel Bayard, the eldest daughter of United States Senator from Delaware Thomas F. Bayard",
+          note: "--check FOUND. The sentence continues '...at the Church of the Ascension in Washington, D.C., on January 25, 1883.' (fragment 'on January 25, 1883. [ 12 ] [ 13 ] The couple went on to have six children.' FOUND). Wikipedia cites 'Marriage of Senator Bayard's Daughter', The New York Times, January 26, 1883, p. 1. This is a secondary source, used only for the marriage date.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Wikipedia",
+          title: "The Right to Privacy (article)",
+          date: "accessed 2026-09-23",
+          url: "https://en.wikipedia.org/wiki/The_Right_to_Privacy_(article)",
+          quote: "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
+          note: "--check FOUND. Wikipedia block-quotes Prosser with a footnote to 'William L. Prosser, \"Privacy\", 48 California Law Review 383, at 384.' It gives the same wording as the record's Prosser quote, so it stands as a substitute check while the Berkeley PDF is unreachable. Note that Wikipedia gives p. 384 where the record gives p. 383. The page also says Prosser 'attributed the specific incident to an intrusion by journalists on a society wedding'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20437,7 +21868,7 @@ window.privacyData = {
     {
       claim: "IBM/Hollerith punch-card machines were how the Nazis found and identified the Jews they murdered.",
       verdict: "MISLEADING",
-      correction: "Hollerith (IBM subsidiary) machines did tabulate German census data, including the 1939 census's 'race' data, and were later used in the concentration-camp administration to track prisoners' labour skills. But the US Holocaust Memorial Museum stresses that locating and identifying victims 'did not rely on modern technology'; about 4.5 million of the 6 million Jews killed lived in eastern Europe where such technology was absent, and identification was done by paper records. Registers, identity cards and census returns — not the machines — were the decisive tools (see the Dutch register and the 1939 supplementary cards).",
+      correction: "Hollerith punch-card machines, made by IBM's German subsidiary, did tabulate German census data, including the 1939 census's “race” data. From 1942 they were used at the headquarters of the concentration-camp system to track living prisoners, especially their occupational skills. But the US Holocaust Memorial Museum stresses that locating and identifying victims “did not rely on modern technology”. That was done with paper records (Jewish community lists, church, tax and police records, compulsory self-registration) and with local knowledge and denunciation. About 4.5 million of the 6 million Jews killed lived in Poland, the Baltics and the Soviet Union, where such machines would not have been found. In the occupied Netherlands, the population register and its identity cards played an important role in rounding Jews up. Edwin Black's IBM and the Holocaust (2001) argues for a larger role for the machines.",
       era: "letalone",
       source: [
         {
@@ -20482,7 +21913,7 @@ window.privacyData = {
     {
       claim: "Sweden's 1973 Data Act was the world's first data protection law.",
       verdict: "MISLEADING",
-      correction: "Sweden's Datalag was the first national data protection law, but the West German state of Hesse passed the first data protection statute of any kind in October 1970, nearly three years earlier, and elected the first data protection commissioner in June 1971.",
+      correction: "Sweden's Datalag, issued on 11 May 1973, was the first comprehensive national data protection law. But the West German state of Hesse passed the first data protection statute of any kind in 1970, some two and a half years earlier, and elected the first data protection commissioner in June 1971.",
       era: "dataprotection",
       source: [
         {
@@ -20501,6 +21932,16 @@ window.privacyData = {
           date: "2024",
           url: "https://datenschutz.hessen.de/ueber-uns/geschichte-des-datenschutzes",
           quote: "Der weltweit erste Datenschutzbeauftragte war Willi Birkelbach, der am 8. Juni 1971 vom Hessischen Landtag auf Vorschlag der Landesregierung gewählt wurde.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Sveriges riksdag (open data, Svensk författningssamling)",
+          title: "Datalag (1973:289)",
+          date: "1973-05-11",
+          url: "https://data.riksdagen.se/dokument/sfs-1973-289.text",
+          quote: "Utfärdad: 1973-05-11",
+          note: "Checked with fetch-text.py --check: FOUND. 'Issued: 1973-05-11'. The page also records 'Upphävd: 1998-10-24'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20536,7 +21977,7 @@ window.privacyData = {
     {
       claim: "Fair information practices were always about notice and consent: the organisation writes the terms and the individual accepts them.",
       verdict: "MISLEADING",
-      correction: "The 1973 HEW report proposed legally enforceable 'safeguard requirements', with violations treated as an 'unfair information practice' carrying criminal penalties and civil remedies, and wrote that when privacy is traded for a benefit 'both parties to the exchange should participate in setting the terms'. The Justice Department's account says the authors rejected a property-style model of individual control in favour of a governance framework serving both sides. Notice-and-choice as practised online came later.",
+      correction: "The 1973 HEW report proposed legally enforceable 'safeguard requirements', with violations treated as an 'unfair information practice' carrying criminal penalties and civil remedies, and wrote that when privacy is traded for a benefit 'both parties to the exchange should participate in setting the terms'. The Justice Department's account says the authors rejected a property-based model of individual control in favour of a governance framework meant to earn the trust of everyone with a stake in the information, individuals and agencies alike. Notice-and-choice as practised online came later.",
       era: "dataprotection",
       source: [
         {
@@ -20625,8 +22066,8 @@ window.privacyData = {
     },
     {
       claim: "Cookies were invented to track people across the web.",
-      verdict: "MISLEADING",
-      correction: "Lou Montulli designed the cookie in 1994 as a per-site memory (shopping carts, logins, preferences) and says he rejected a single browser-wide identifier precisely because it would allow tracking at every website. Cross-site tracking through third-party cookies was an unintended consequence he later called 'the one gotcha' — though he also defended leaving third-party cookies enabled, on the ground that trackers would otherwise use less visible methods.",
+      verdict: "FALSE",
+      correction: "Lou Montulli designed the cookie at Netscape in 1994 as a per-site memory (a session identifier, a username, a shopping cart). He says he opposed the idea then circulating, a unique identifier for every browser, because it 'could be used to track a user at every website'. His goal was a mechanism 'that didn't allow for cross site tracking'. Cross-site tracking through third-party cookies was an unforeseen consequence: 'That's the one \"gotcha\" we had,' he told The New York Times in 2001. He also defended leaving third-party cookies enabled, on the ground that trackers would otherwise use less visible methods.",
       era: "cookies",
       source: [
         {
@@ -20644,7 +22085,7 @@ window.privacyData = {
           title: "John Schwartz, 'Giving Web a Memory Cost Its Users Privacy'",
           date: "2001-09-04",
           url: "https://web.archive.org/web/20201206124432/https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html",
-          quote: "Third-party cookies were precisely the kind of tracking mechanism Mr. Montulli had tried to prevent through his privacy measures.",
+          quote: "Third-party cookies were precisely the kind of tracking mechanism Mr. Montulli had tried to prevent through his privacy measures. He describes it today as a surprise -- and something of an embarrassment. ''That's the one 'gotcha' we had,'' he recalls with chagrin.",
           verificationStatus: "CONFIRMED",
           accessType: "PAYWALL"
         }
@@ -20653,7 +22094,7 @@ window.privacyData = {
     {
       claim: "P3P let people set their own privacy terms for the websites they visited.",
       verdict: "MISLEADING",
-      correction: "In P3P the website wrote the machine-readable policy; the person only configured preferences in their browser, which compared the site's policy with them and could warn or block cookies. The person could accept or refuse a site's stated practices but had no way to propose terms — the direction IEEE 7012 reverses.",
+      correction: "In the P3P 1.0 standard (W3C Recommendation, 2002) the website wrote the machine-readable policy. The person only configured preferences in their browser, which compared the site's policy with them and could alert the user or block cookies. The person could accept or refuse a site's stated practices but had no way to propose terms. Early drafts had gone further: a 1998 working draft let the user's agent 'Return a Proposal of its own'. As P3P co-author Lorrie Cranor later wrote, 'The negotiation protocol was not included in the final specification.' That is the direction IEEE 7012 reverses, with the person proffering the terms.",
       era: "cookies",
       source: [
         {
@@ -20673,13 +22114,33 @@ window.privacyData = {
           quote: "The idea was that websites would post their privacy policies in P3P format and web browsers would download them automatically and compare them with each user’s privacy settings.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "World Wide Web Consortium (W3C)",
+          title: "Platform for Privacy Preferences (P3P) Syntax Specification — W3C Working Draft 2 July 1998 (eds. Massimo Marchiori and Dan Jaye)",
+          date: "1998-07-02",
+          url: "https://www.w3.org/TR/1998/WD-P3P10-syntax-19980702/",
+          quote: "Return a Proposal of its own. This implies a refusal, but provides an alternate that the user considers acceptable if accepted by the service.",
+          note: "FOUND on 2026-09-23 via a curl copy (UA 'Mozilla/5.0') run through fetch-text.py's own to_text() and norm(). The tool's own fetch got W3C 403s on three tries. The same draft's section 1.1 also says P3P provides mechanisms 'For a user agent and service to automatically negotiate and to come to an agreement satisfactory to both parties', and notes 'the creation of a counter-proposal by the user agent is not required for P3P1.0 compliance.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Journal on Telecommunications and High Technology Law (University of Colorado)",
+          title: "Lorrie Faith Cranor, 'Necessary But Not Sufficient: Standardized Mechanisms for Privacy Notice and Choice', vol. 10, no. 2",
+          date: "2012",
+          url: "http://jthtl.org/content/articles/V10I2/JTHTLv10i2_Cranor.PDF",
+          quote: "The original idea for P3P involved a protocol in which web browsers would negotiate with websites over privacy on behalf of their users. The negotiation protocol was not included in the final specification, largely due to the added implementation complexity and lack of interest from industry, but also due to concerns that negotiations would not benefit consumers.",
+          note: "fetch-text.py --check FOUND on 2026-09-23 (http URL; the https host has a self-signed certificate). Cranor was an author of the P3P 1.0 specification. Her 2012 blog post (source index 1) announces this paper.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "Do Not Track was a law: once your browser sent the signal, websites had to stop tracking you.",
       verdict: "FALSE",
-      correction: "DNT was a voluntary HTTP header. The W3C never finished it as a standard — the working group closed in January 2019 for lack of deployment — and no law in the US required sites to honour it. Recipients decided what the signal meant: when Internet Explorer 10 sent it by default, Microsoft later conceded that sites could argue it did not reflect the user's preference 'and therefore, choose not to honor it'.",
+      correction: "DNT was a voluntary HTTP header, not a law. The W3C never finished it as a standard: in January 2019 the working group concluded its work for lack of deployment. No US law required sites to honour it. When drafting the CCPA regulations, California's attorney general concluded he could not require businesses to comply with DNT requests. In practice recipients decided what the signal meant. When Microsoft turned DNT on by default in Internet Explorer 10, 'others voiced concerns'. In 2015 Microsoft dropped the default, conceding that otherwise websites receiving the signal from its new browsers 'could argue that it doesn't reflect the users' preference, and therefore, choose not to honor it'. The one later legal twist came in Europe. In 2023 a Berlin regional court, in a judgment not final when announced, held that a DNT signal is a valid objection under the GDPR. That was a reading of the GDPR, not a DNT law.",
       era: "cookies",
       source: [
         {
@@ -20699,6 +22160,36 @@ window.privacyData = {
           quote: "Since its last publication as a Candidate Recommendation, there has not been sufficient deployment of these extensions (as defined) to justify further advancement, nor have there been indications of planned support among user agents, third parties, and the ecosystem at large.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Global Privacy Control (globalprivacycontrol.org)",
+          title: "GPC FAQ — Why not just use Do Not Track (DNT)?",
+          date: "2026",
+          url: "https://globalprivacycontrol.org/faq",
+          quote: "Unfortunately, in the appendices to their Final Statement of Reasons, the California Attorney General (AG) determined that the AG could not require businesses to comply with DNT requests because the requests do not clearly convey users’ intent to opt out of the sale of their data.",
+          note: "fetch-text.py --check FOUND on 2026-09-23. The GPC project's own FAQ, so an interested party, but it reports the California AG's CCPA rulemaking finding. The page is undated; the date is the access year.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Verbraucherzentrale Bundesverband (vzbv, Federation of German Consumer Organisations)",
+          title: "Court Prohibits Linkedin's Data Privacy Infringements (Landgericht Berlin, 16 O 420/19, judgment of 24 August 2023)",
+          date: "2023",
+          url: "https://www.vzbv.de/en/court-prohibits-linkedins-data-privacy-infringements",
+          quote: "The Berlin District Court upheld vzbv’s view that the company’s statement was misleading, as it suggested that use of the DNT signal was legally irrelevant and that the company was under no obligation to observe it. This is, in fact, not the case. According to the General Data Protection Regulation (GDPR), the right to object to the processing of personal data can also be expressed using an automated procedure. A DNT signal represents a valid objection.",
+          note: "fetch-text.py --check FOUND on 2026-09-23. The claimant's own report of the ruling. The page lists 'Teil- und Schlussurteil Landgericht Berlin | 16 O 420/19 | 24.08.2023'; the judgment PDF sits in the /2023-10/ upload folder. The press page is undated in its text.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Verbraucherzentrale Bundesverband (vzbv)",
+          title: "Gericht untersagt Datenschutzverstöße von LinkedIn (German version, key data of the judgment)",
+          date: "2023",
+          url: "https://www.vzbv.de/urteile/gericht-untersagt-datenschutzverstoesse-von-linkedin",
+          quote: "Datum der Urteilsverkündung: 24.08.2023 Aktenzeichen: 16 O 420/19 – nicht rechtskräftig Gericht: Landgericht Berlin",
+          note: "fetch-text.py --check FOUND on 2026-09-23. It supports the date, the case number and 'nicht rechtskräftig' (not final) as of the announcement. The page also has 'Ein DNT-Signal stelle einen wirksamen Widerspruch dar.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -20713,7 +22204,7 @@ window.privacyData = {
           title: "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
           date: "1999-01-26",
           url: "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
-          quote: "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology.",
+          quote: "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology. \"Get over it.\"",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20722,17 +22213,17 @@ window.privacyData = {
     {
       claim: "Behavioural data is anonymous once names are replaced by numbers.",
       verdict: "FALSE",
-      correction: "AOL's 2006 release replaced users with numbers, yet the New York Times identified user No. 4417749 as Thelma Arnold from her queries; Narayanan and Shmatikov showed that a few movie ratings and dates uniquely identified 99% of records in the name-stripped Netflix Prize data.",
+      correction: "AOL's 2006 release replaced users with numbers, yet the New York Times identified user No. 4417749 as Thelma Arnold from her queries. Narayanan and Shmatikov showed that eight movie ratings (two of which could be wrong), with dates up to 14 days off, were enough to single out 99% of subscriber records in the name-stripped Netflix Prize data. Two ratings with dates within three days were enough for 68%.",
       era: "cookies",
       source: [
         {
-          institution: "The New York Times (Internet Archive snapshot)",
+          institution: "The New York Times (archive.nytimes.com)",
           title: "Michael Barbaro and Tom Zeller Jr., 'A Face Is Exposed for AOL Searcher No. 4417749'",
           date: "2006-08-09",
-          url: "https://web.archive.org/web/2021/https://www.nytimes.com/2006/08/09/technology/09aol.html",
+          url: "https://archive.nytimes.com/www.nytimes.com/2006/08/09/technology/09aol.html",
           quote: "It did not take much investigating to follow that data trail to Thelma Arnold, a 62-year-old widow who lives in Lilburn, Ga., frequently researches her friends’ medical ailments and loves her three dogs.",
           verificationStatus: "CONFIRMED",
-          accessType: "PAYWALL"
+          accessType: "FREE"
         },
         {
           institution: "arXiv (Cornell University)",
@@ -20742,13 +22233,23 @@ window.privacyData = {
           quote: "We demonstrate that an adversary who knows only a little bit about an individual subscriber can easily identify this subscriber's record in the dataset.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "University of Texas at Austin (authors' copy, hosted at Cornell)",
+          title: "Arvind Narayanan and Vitaly Shmatikov, 'Robust De-anonymization of Large Sparse Datasets', 2008 IEEE Symposium on Security and Privacy",
+          date: "2008-05",
+          url: "https://www.cs.cornell.edu/~shmat/shmat_oak08netflix.pdf",
+          quote: "With 8 movie ratings (of which 2 may be completely wrong) and dates that may have a 14-day error, 99% of records can be uniquely identiﬁed in the dataset.",
+          note: "fetch-text --check FOUND on 2026-09-23. The quote must keep the 'ﬁ' ligature as the PDF text layer has it; it does not match with a plain 'fi'. The same paragraph continues: 'For 68%, two ratings and dates (with a 3-day error) are sufﬁcient'. This source is already used, CONFIRMED, by the events/quant records netflix-prize-deanonymization-2008. Metadata matches the existing records that cite this PDF; the PDF itself carries only the title and authors (The University of Texas at Austin).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "Tor was built by the NSA (or 'the US military') as a surveillance tool.",
       verdict: "MISLEADING",
-      correction: "Onion routing was invented in 1995–96 by David Goldschlag, Michael Reed and Paul Syverson at the U.S. Naval Research Laboratory — not the NSA — to 'separate identification from routing'. Tor itself was designed in the early 2000s by Roger Dingledine and Nick Mathewson of the Free Haven Project with Syverson; its code was released under a free-software licence when the network launched in 2002, the Electronic Frontier Foundation funded the work from 2004, and an independent nonprofit, the Tor Project, took it over in 2006. Navy origins are real; the NSA attribution and the 'spy tool' purpose are not supported by the record.",
+      correction: "Onion routing was invented in 1995–96 by David Goldschlag, Michael Reed and Paul Syverson at the U.S. Naval Research Laboratory (not the NSA) to 'separate identification from routing'. The military link is real. Syverson names law-enforcement and intelligence agencies that 'need to operate on the Internet without revealing their activities' among its intended users, and the 2004 Tor design paper says the work 'has been supported by ONR and DARPA'. But onion routing was built to hide its users' own traffic, not to watch anyone else's. Tor itself was designed in the early 2000s by Roger Dingledine and Nick Mathewson of the Free Haven Project, working with Syverson. Its code was released under a free-software licence when the network launched in 2002. The Electronic Frontier Foundation funded the work from 2004, and an independent nonprofit, the Tor Project, took it over in 2006. Navy origins and military funding are on the record. An NSA origin and a surveillance purpose are not.",
       era: "cookies",
       source: [
         {
@@ -20766,8 +22267,8 @@ window.privacyData = {
           title: "R. Dingledine, N. Mathewson and P. Syverson, 'Tor: The Second-Generation Onion Router'",
           date: "2004-08",
           url: "https://www.usenix.org/legacy/event/sec04/tech/full_papers/dingledine/dingledine.pdf",
-          quote: "We present Tor, a circuit-based low-latency anonymous communication service.",
-          note: "Author affiliations on the paper: Dingledine and Mathewson, 'The Free Haven Project'; Syverson, 'Naval Research Lab'.",
+          quote: "We present Tor, a circuit-based low-latency anonymous communication service. … This work has been supported by ONR and DARPA.",
+          note: "Author affiliations on the paper: Dingledine and Mathewson, 'The Free Haven Project'; Syverson, 'Naval Research Lab'. fetch-text.py --check FOUND (Acknowledgments). Military research funding (Office of Naval Research, DARPA), not the NSA.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -20776,7 +22277,46 @@ window.privacyData = {
           title: "Paul Syverson, 'A Peel of Onion'",
           date: "2011-12",
           url: "https://www.acsac.org/2011/program/keynotes/syverson.pdf",
-          quote: "Applications can (and usually should) identify themselves to each other. But, the use of a public network should not automatically reveal the identities of communicating parties. The goal here is anonymous routing, not anonymity.",
+          quote: "Applications can (and usually should) identify themselves to each other. But, the use of a public network should not automatically reveal the identities of communicating parties. The goal here is anonymous routing, not anonymity. … Law enforcement and intelligence agencies need to operate on the Internet without revealing their activities or intentions to those they are investigating or anyone else observing.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE",
+          note: "fetch-text.py --check FOUND. It supports the corrected text's concession that intelligence users were among onion routing's intended beneficiaries, as protection for their own traffic."
+        }
+      ]
+    },
+    {
+      claim: "Reading every privacy policy you meet would take 201 hours a year.",
+      verdict: "MISLEADING",
+      correction: "The figure comes from the abstract of McDonald and Cranor's 2008 study, but their own Table 7 gives a point estimate of 244 hours a year to read word for word (range 181–304; 154 to skim) — about 40 minutes a day — and the $3,534-per-person and $781-billion totals in the same sentence are computed from 244, not 201.",
+      era: "cookies",
+      source: [
+        {
+          institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+          title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+          date: "2008",
+          url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+          quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+          note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4 no. 3 (2008 Privacy Year in Review) — authors' pre-press version hosted by Lorrie Faith Cranor, Carnegie Mellon University",
+          title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+          date: "2008",
+          url: "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+          quote: "We estimate that reading privacy policies carries costs in time of approximately 201 hours a year, worth about $3,534 annually per American Internet user. Nationally, if Americans were to read online privacy policies word-for-word, we estimate the value of time lost as about $781 billion annually.",
+          note: "Author's pre-press version; the authors ask readers to cite the published I/S paper (4 I/S 543, 2008).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008), pp. 543-568 (Ohio State University Moritz College of Law) — published version, Ohio State University Knowledge Bank (hdl.handle.net/1811/72839)",
+          title: "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+          date: "2008",
+          url: "https://kb.osu.edu/server/api/core/bitstreams/a9510be5-b51e-526d-aea3-8e9636bc00cd/content",
+          quote: "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+          note: "Published journal version (ISJLP_V4N3_543.pdf) from the OSU Knowledge Bank item http://hdl.handle.net/1811/72839 (metadata: dc.date.issued 2008; citation 'I/S ... vol. 4, no. 3 (2008), 543-568'). The repo helper's own request got HTTP 403 from the server, so the PDF was downloaded with curl (HTTP 200, application/pdf, 1,654,540 bytes), put in the helper's cache, and checked with --check: FOUND. The text layer is OCR, so a few digits come out as letters (e.g. 'lo minutes' for '10 minutes'). Confirms that the 244-hour figure and the 40-minutes-a-day comparison are unchanged in the published version.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20821,7 +22361,7 @@ window.privacyData = {
     {
       claim: "Cambridge Analytica hacked Facebook.",
       verdict: "MISLEADING",
-      correction: "No Facebook system was broken into. The data came through a personality-quiz app built by Aleksandr Kogan that about 270,000 people installed and that, under Facebook's platform rules of the time, could also collect information about their friends. The US FTC charged Facebook with deceiving users by sharing friends' data with app developers even when those friends had chosen more restrictive settings, and charged Cambridge Analytica, its CEO and Kogan with using deceptive tactics to harvest the data. The Observer's first report called it a 'data breach'; the harm was a breach of trust and of stated preferences rather than a hack.",
+      correction: "No Facebook system was broken into. The data came through a personality-quiz app built by Aleksandr Kogan that about 270,000 people installed and that, under Facebook's platform rules of the time, could also collect information about their friends. The US FTC charged Facebook with deceiving users by sharing friends' data with app developers even when those friends had chosen more restrictive settings, and charged Cambridge Analytica, its former chief executive Alexander Nix and Kogan with using deceptive tactics to harvest the data. The Guardian first reported the harvesting in December 2015; the Observer's March 2018 exposé headlined it a 'major data breach'. The harm was a breach of trust and of stated preferences rather than a hack.",
       era: "surveillance",
       source: [
         {
@@ -20851,13 +22391,43 @@ window.privacyData = {
           quote: "The FTC alleges that Facebook violated the 2012 order by deceiving its users when the company shared the data of users’ Facebook friends with third-party app developers, even when those friends had set more restrictive privacy settings.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Facebook (Meta) Newsroom",
+          title: "Suspending Cambridge Analytica and SCL Group From Facebook (Paul Grewal) — how the data was obtained",
+          date: "2018-03-16",
+          url: "https://about.fb.com/news/2018/03/suspending-cambridge-analytica/",
+          quote: "Approximately 270,000 people downloaded the app. In so doing, they gave their consent for Kogan to access information such as the city they set on their profile, or content they had liked, as well as more limited information about friends who had their privacy settings set to allow it.",
+          note: "Fresh fetch 2026-09-23: FOUND in the section 'Originally published on March 16, 2018'. The app was 'thisisyourdigitallife'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The Observer / The Guardian",
+          title: "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach (Carole Cadwalladr and Emma Graham-Harrison)",
+          date: "2018-03-17",
+          url: "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+          quote: "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+          note: "Fresh fetch 2026-09-23: FOUND (headline); article:published_time 2018-03-17T22:03Z. Same article: 'On Friday, four days after the Observer sought comment for this story, but more than two years after the data breach was first reported, Facebook announced that it was suspending Cambridge Analytica'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The Guardian",
+          title: "Ted Cruz using firm that harvested data on millions of unwitting Facebook users (Harry Davies)",
+          date: "2015-12-11",
+          url: "https://www.theguardian.com/us-news/2015/dec/11/senator-ted-cruz-president-campaign-facebook-user-data",
+          quote: "Ted Cruz using firm that harvested data on millions of unwitting Facebook users",
+          note: "Fresh fetch 2026-09-23: FOUND (headline); article:published_time 2015-12-11T22:22Z. Names Dr Aleksandr Kogan and SCL, which shows the harvesting was first reported in December 2015.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "Google got rid of third-party cookies in Chrome.",
       verdict: "FALSE",
-      correction: "Google announced in January 2020 that it would phase out third-party cookies within two years, delayed the plan several times, and in July 2024 switched to offering users a choice instead. In April 2025 it dropped even the standalone choice prompt and confirmed it would not return to removing third-party cookies; the UK CMA released its commitments in October 2025.",
+      correction: "Google announced on 14 January 2020 that it planned to phase out third-party cookies in Chrome 'within two years', then delayed the plan repeatedly (in June 2021 and July 2022, among others). From January 2024 it restricted third-party cookies by default for 1% of Chrome users as a test, but in July 2024 it dropped deprecation in favour of offering users a choice. In April 2025 it dropped even the standalone choice prompt and confirmed it would not go back to removing third-party cookies; it told the UK CMA that the 1% test group's original settings would be restored, and the CMA released its commitments in October 2025. Only Chrome's Incognito mode blocks third-party cookies by default.",
       era: "surveillance",
       source: [
         {
@@ -20866,6 +22436,76 @@ window.privacyData = {
           date: "2025-10-17",
           url: "https://assets.publishing.service.gov.uk/media/68f213ce06e6515f7914c728/Decision_to_release_the_commitments_previously_accepted_by_the_CMA_in_respect_of_Google_s_Privacy_Sandbox_proposals.pdf",
           quote: "In April 2025, Google announced that it no longer planned to roll out such a prompt, and also confirmed that it is not going back to its original plans to remove TPCs.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "UK Competition and Markets Authority",
+          title: "Notice of intention to accept commitments offered by Google in relation to its Privacy Sandbox Proposals (Case 50972)",
+          date: "2021-06-11",
+          url: "https://assets.publishing.service.gov.uk/media/60c21e54d3bf7f4bcc0652cd/Notice_of_intention_to_accept_binding_commitments_offered_by_Google_publication.pdf",
+          quote: "On 14 January 2020 Google announced that “… we plan to phase out support for third-party cookies in Chrome. Our intention is to do this within two years.”",
+          note: "Fresh fetch 2026-09-23: FOUND (para. 5.86). Para. 3.22(c): '14 January 2020: Google first announced its intent to remove TPCs from Chrome.' The CMA cites Chromium Blog, 'Building a more private web: A path towards making third-party cookies obsolete' (Justin Schuh, Tuesday, January 14, 2020). That original is at https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html; the words are in its raw HTML but the checker cannot read them.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Google (The Keyword blog)",
+          title: "An updated timeline for Privacy Sandbox milestones (Vinay Goel)",
+          date: "2021-06-24",
+          url: "https://blog.google/products/chrome/updated-timeline-privacy-sandbox-milestones/",
+          quote: "While there’s considerable progress with this initiative, it's become clear that more time is needed across the ecosystem to get this right.",
+          note: "Fresh fetch 2026-09-23: FOUND; page dated Jun 24, 2021. The post moved the phase-out to 'Stage 2 (Starting mid-2023) ... finishing in late 2023'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Google (The Keyword blog)",
+          title: "Expanding testing for the Privacy Sandbox for the web",
+          date: "2022-07-27",
+          url: "https://blog.google/products/chrome/update-testing-privacy-sandbox-web/",
+          quote: "As developers adopt these APIs, we now intend to begin phasing out third-party cookies in Chrome in the second half of 2024.",
+          note: "Fresh fetch 2026-09-23: FOUND; page dated Jul 27, 2022.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Google (The Keyword blog)",
+          title: "The next step toward phasing out third-party cookies in Chrome",
+          date: "2023-12-14",
+          url: "https://blog.google/products/chrome/privacy-sandbox-tracking-protection/",
+          quote: "On January 4, we'll begin testing Tracking Protection, a new feature that limits cross-site tracking by restricting website access to third-party cookies by default. We'll roll this out to 1% of Chrome users globally",
+          note: "Fresh fetch 2026-09-23: FOUND; page dated Dec 14, 2023 (so 'January 4' = 4 January 2024).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Google (Privacy Sandbox)",
+          title: "A new path for Privacy Sandbox on the web (Anthony Chavez)",
+          date: "2024-07-22",
+          url: "https://privacysandbox.com/news/privacy-sandbox-update/",
+          quote: "Instead of deprecating third-party cookies, we would introduce a new experience in Chrome that lets people make an informed choice that applies across their web browsing, and they'd be able to adjust that choice at any time.",
+          note: "Fresh fetch 2026-09-23: FOUND; page dated Jul 22, 2024.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Google (Privacy Sandbox)",
+          title: "Next steps for Privacy Sandbox and tracking protections in Chrome (Anthony Chavez)",
+          date: "2025-04-22",
+          url: "https://privacysandbox.com/news/privacy-sandbox-next-steps/",
+          quote: "we've made the decision to maintain our current approach to offering users third-party cookie choice in Chrome, and will not be rolling out a new standalone prompt for third-party cookies.",
+          note: "Fresh fetch 2026-09-23: FOUND; page dated April 22, 2025. Same post: 'We'll continue to enhance tracking protections in Chrome's Incognito mode, which already blocks third-party cookies by default.' (also FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "UK Competition and Markets Authority",
+          title: "Decision to release the commitments previously accepted by the CMA in respect of Google's Privacy Sandbox proposals — para. 5.27 (1% test group)",
+          date: "2025-10-17",
+          url: "https://assets.publishing.service.gov.uk/media/68f213ce06e6515f7914c728/Decision_to_release_the_commitments_previously_accepted_by_the_CMA_in_respect_of_Google_s_Privacy_Sandbox_proposals.pdf",
+          quote: "Google has told the CMA that ‘the 1% of users who have TPCs restricted will be notified that their original 3PCs settings, which were changed by default, will be restored to their original state in line with Google’s decision to maintain the current approach to TPCs on Chrome.’",
+          note: "Fresh fetch 2026-09-23: FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20927,9 +22567,10 @@ window.privacyData = {
           title: "How Americans View Data Privacy",
           date: "2023-10-18",
           url: "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
-          quote: "Some 72% of Americans say there should be more regulation than there is now; just 7% say there should be less.",
+          quote: "Some 72% of Americans say there should be more regulation than there is now; just 7% say there should be less. … Our survey finds that a majority of Americans ignore privacy policies altogether: 56% frequently click “agree” without actually reading their content.",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "--check FOUND 2026-09-23. Supports the correction's point that 'agree' is often a click without reading, not a considered trade."
         }
       ]
     },
@@ -21760,7 +23401,7 @@ window.privacyData = {
       alt: "Phil Zimmermann, a bearded man with glasses in a floral shirt, seated and speaking into a hand-held microphone; his name tag reads 'Phil Zimmermann'",
       creator: "CEphoto, Uwe Aranas",
       license: "CC BY-SA 3.0",
-      creditLine: "CEphoto, Uwe Aranas, via Wikimedia Commons (CC BY-SA 3.0)",
+      creditLine: "Photo by CEphoto, Uwe Aranas, via Wikimedia Commons (CC BY-SA 3.0)",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Enschede_Netherlands_Phil-Zimmermann-at-HAL2001-hacker-event-01.jpg",
       thumbUrl: "assets/media/phil-zimmermann-hal-enschede-2001.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/1/12/Enschede_Netherlands_Phil-Zimmermann-at-HAL2001-hacker-event-01.jpg",
@@ -21809,7 +23450,7 @@ window.privacyData = {
       era: "cookies",
       year: 2012,
       title: "Paul Syverson, U.S. Naval Research Laboratory",
-      caption: "Paul Syverson, computer scientist and mathematician at the US Naval Research Laboratory and inventor of onion routing. Photograph by Jamie J. Hartman, U.S. Naval Research Laboratory (file dated 24 October 2012).",
+      caption: "Paul Syverson, computer scientist and mathematician at the US Naval Research Laboratory, who with David Goldschlag and Michael G. Reed created onion routing there in the mid-1990s. Photograph by Jamie J. Hartman, U.S. Naval Research Laboratory (camera date 24 October 2012).",
       alt: "Head-and-shoulders portrait of Paul Syverson, a smiling man with grey hair in a blue shirt, against a grey backdrop",
       creator: "Jamie J. Hartman / U.S. Naval Research Laboratory",
       license: "Public domain (work of the US federal government)",
@@ -21818,23 +23459,6 @@ window.privacyData = {
       thumbUrl: "assets/media/paul-syverson-nrl-2012.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Paul_Syverson.jpeg",
       rightsEvidence: "Commons API extmetadata: LicenseShortName \"Public domain\"; Artist \"Jamie J. Hartman/U.S. Naval Research Laboratory\"; Credit \"https://www.nrl.navy.mil/news/releases/nrls-paul-syverson-named-fellow-associati…\"; DateTimeOriginal \"2012-10-24 10:14\".",
-      archive: false,
-      verificationStatus: "CONFIRMED"
-    },
-    {
-      id: "tor-design-circuit-diagram-2004",
-      era: "cookies",
-      year: 2004,
-      title: "Tor circuit-building diagram from the 2004 design paper",
-      caption: "Diagram of how a Tor client builds a circuit through relays and sends and receives data, from Dingledine, Mathewson and Syverson, \"Tor: The Second-Generation Onion Router\" (2004). The file description notes it is probably outdated in detail.",
-      alt: "Protocol diagram showing messages passing between Alice, two onion routers (OR 1 and OR 2) and a website as a Tor circuit is built and data is sent and received",
-      creator: "Roger Dingledine, Nick Mathewson, Paul Syverson",
-      license: "CC BY 3.0",
-      creditLine: "Roger Dingledine, Nick Mathewson and Paul Syverson, via Wikimedia Commons (CC BY 3.0)",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Tor-design_Tor_Circuit_building,_data_sending,_and_data_receiving_diagram.png",
-      thumbUrl: "assets/media/tor-design-circuit-diagram-2004.jpg",
-      fullUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Tor-design_Tor_Circuit_building%2C_data_sending%2C_and_data_receiving_diagram.png",
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; LicenseUrl \"https://creativecommons.org/licenses/by/3.0\"; Artist \"Roger Dingledine, Nick Mathewson, Paul Syverson\"; Credit \"https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf\"; DateTimeOriginal \"2004-08-02\".",
       archive: false,
       verificationStatus: "CONFIRMED"
     },
@@ -21875,9 +23499,9 @@ window.privacyData = {
     {
       id: "rsa-munitions-t-shirt-1997",
       era: "cookies",
-      year: 1997,
+      year: 1995,
       title: "The \"munitions\" T-shirt: export-restricted encryption code printed as protest",
-      caption: "Export-restricted encryption code printed on a T-shirt as a protest against US encryption export restrictions (front of the shirt; 1997).",
+      caption: "A UK-printed 'munitions' T-shirt (front), carrying RSA encryption in three lines of Perl as a protest against US export rules that classed encryption software as a munition. Adam Back's site says a mock-up of the UK shirt appeared in the Japanese edition of Wired in November 1995; the photograph itself is undated.",
       alt: "A black T-shirt, being worn, printed with 'WARNING This shirt is classified as a munition and may not be exported from the United States, or shown to a foreign national', the words 'RSA encryption in perl', a few lines of code and a large barcode",
       creator: "Adam Back",
       license: "CC0 1.0",
@@ -21885,9 +23509,9 @@ window.privacyData = {
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Munitions_T-shirt_(front).jpg",
       thumbUrl: "assets/media/rsa-munitions-t-shirt-1997.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/9/96/Munitions_T-shirt_%28front%29.jpg",
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC0\"; LicenseUrl \"http://creativecommons.org/publicdomain/zero/1.0/deed.en\"; Artist \"Adam Back <adam@cypherspace.org>\"; Credit \"http://www.cypherspace.org/adam/rsa/uk-shirt.html\"; ImageDescription \"Export-restricted encryption code printed on T-shirt as a protest against US encryption export restrictions.\"; DateTimeOriginal \"1997\".",
+      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC0\"; Artist \"Adam Back <adam@cypherspace.org>\"; Credit \"http://www.cypherspace.org/adam/rsa/uk-shirt.html\". Caveat: the CC0 tag was applied by a third-party uploader (User:Thue, UploadWizard, 2014-07-01) with an empty permission field and no VRT ticket, and the cited source page carries no licence statement, so the release could not be confirmed at source. The Commons date '1997' was entered by an anonymous IP in 2023 as an inference; the upload had given '1993-03-30'.",
       archive: false,
-      verificationStatus: "CONFIRMED"
+      verificationStatus: "PENDING"
     },
     {
       id: "mitch-kapor-2006",
@@ -22211,13 +23835,13 @@ window.privacyData = {
       title: "Whitfield Diffie (Royal Society portrait, cropped)",
       caption: "Whitfield Diffie, American cryptographer and one of the pioneers of public-key cryptography. Cropped from a portrait released by the Royal Society; file metadata dates the photograph 14 July 2017.",
       alt: "Head-and-shoulders portrait of Whitfield Diffie, a smiling man with long white hair and a white beard, in a dark suit and patterned tie",
-      creator: "The Royal Society (original photograph); crop by Duncan.Hull",
-      license: "CC BY-SA 4.0 (crop); original released by the Royal Society under CC BY-SA 3.0",
-      creditLine: "The Royal Society / Duncan.Hull, via Wikimedia Commons (CC BY-SA 4.0)",
+      creator: "The Royal Society (photograph; uploaded to Wikimedia Commons by Duncan.Hull, cropped by Jochen Burghardt)",
+      license: "CC BY-SA 3.0 (released by the Royal Society, VRT ticket #2014062710019796); the Commons page also carries a CC BY-SA 4.0 tag",
+      creditLine: "The Royal Society, via Wikimedia Commons (CC BY-SA 3.0)",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Whitfield_Diffie_Royal_Society_(cropped).jpg",
       thumbUrl: "assets/media/whitfield-diffie-royal-society-2017.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Whitfield_Diffie_Royal_Society_%28cropped%29.jpg",
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Duncan.Hull\"; Credit \"Own work\"; ImageDescription includes \"This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.Attribution: The Royal Society\"; Categories include \"Images released by the Royal Society\" and \"Items with VRTS permission confirmed\".",
+      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Duncan.Hull\"; Credit \"Own work\"; DateTimeOriginal \"2017-07-14 14:38:12\"; crop uploaded by Jochen Burghardt (CropTool, 29 February 2020) from File:Whitfield_Diffie_Royal_Society.jpg (uploaded by Duncan.Hull, 21 December 2017). The file page's description carries \"Creative Commons Attribution-Share Alike 3.0 Unported license. Attribution: The Royal Society\" with VRT ticket #2014062710019796; categories include \"Images released by the Royal Society\" and \"Items with VRTS permission confirmed\".",
       archive: false,
       verificationStatus: "CONFIRMED"
     },
@@ -22262,7 +23886,7 @@ window.privacyData = {
       era: "surveillance",
       year: 2021,
       title: "Nick Mathewson (Tor Project image)",
-      caption: "Nick Mathewson of the Tor Project; image published by the Tor Project in its \"PrivChat\" series (file dated 28 September 2021).",
+      caption: "Nick Mathewson, a co-founder of the Tor Project and one of Tor's original designers. The Tor Project published this photograph on its page for PrivChat chapter 4, a May 2021 event marking 25 years of onion routing. The photograph itself is undated; 28 September 2021 is only the date on the Wikimedia Commons file.",
       alt: "Black-and-white head-and-shoulders photograph of Nick Mathewson, a bearded man with glasses, outdoors in front of foliage",
       creator: "The Tor Project",
       license: "CC BY 3.0",
@@ -22279,7 +23903,7 @@ window.privacyData = {
       era: "surveillance",
       year: 2017,
       title: "Moxie Marlinspike, 2017",
-      caption: "Moxie Marlinspike in 2017, photographed by Max Morse for TechCrunch (file dated 18 September 2017; cropped).",
+      caption: "Moxie Marlinspike at TechCrunch Disrupt SF 2017 in San Francisco, photographed by Max Morse for TechCrunch on 18 September 2017 (cropped).",
       alt: "Moxie Marlinspike, a man with dreadlocks tied back and a short beard, in a dark zip-up hoodie in front of a TechCrunch backdrop",
       creator: "Max Morse for TechCrunch",
       license: "CC BY 2.0",
@@ -22795,7 +24419,7 @@ window.privacyData = {
       era: "agents",
       year: 2025,
       title: "Eric Hughes wearing a Luther Blissett name tag",
-      caption: "Cypherpunk Eric Hughes wearing a black bandana and a name tag with the Luther Blissett pseudonym. The file metadata gives 9 November 2025, which may be the scan or upload date rather than the date the photograph was taken.",
+      caption: "A person identified by the photographer on Wikimedia Commons as cypherpunk Eric Hughes, wearing a black bandana over his face and a name tag with the Luther Blissett pseudonym. The phone's camera data dates the photograph to 9 November 2025; it was uploaded on 27 November 2025.",
       alt: "A person in a black wide-brimmed hat, glasses and a black bandana over the lower face, wearing a yellow name badge reading 'Luther Blissett'",
       creator: "Kspiers",
       license: "CC BY-SA 4.0",
@@ -22803,7 +24427,7 @@ window.privacyData = {
       sourceUrl: "https://commons.wikimedia.org/wiki/File:EricHughes.jpg",
       thumbUrl: "assets/media/eric-hughes-cypherpunk-kspiers.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/EricHughes.jpg",
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Kspiers\"; Credit \"Own work\"; DateTimeOriginal \"2025-11-09 16:14:51\".",
+      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\"; LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\"; Artist \"Kspiers\"; Credit \"Own work\"; DateTimeOriginal \"2025-11-09 16:14:51\" (EXIF, OnePlus Open camera); uploaded 2025-11-27.",
       archive: false,
       verificationStatus: "CONFIRMED"
     }

@@ -1,0 +1,251 @@
+{
+ "slice": "essay",
+ "chunk": 8,
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-us-constitution-says-privacy",
+   "status": "FIXED",
+   "issues": [
+    "Wrong verdict label. The claim says the Constitution guarantees privacy 'in so many words', and that is simply false: the word 'privacy' is not in the text. Puttaswamy says 'The US Constitution does not contain an express right to privacy', and Black and Stewart both dissented in Griswold on that ground. MISLEADING suits a claim with a true core that is presented misleadingly. This claim's only true core, that the Court reads a privacy right into the Constitution, is not what the claim asserts. The verdict should be FALSE.",
+    "Checked OK: the correction text. The Fourth Amendment wording is right. Griswold was decided on June 7, 1965 (LII header). 'Various guarantees create zones of privacy' is in Douglas's opinion for the Court. 'I like my privacy as well as the next one...' is in the opinion headed 'Mr. Justice BLACK, with whom Mr. Justice STEWART joins, dissenting', directly after footnote marker 1. Stewart's own dissent, joined by Black, says he 'can find no such general right of privacy in the Bill of Rights', so 'dissents' in the plural is right.",
+    "Checked OK: the Puttaswamy quote is in Chandrachud J.'s lead judgment, part K(ii) 'US Supreme Court decisions', on Indian Kanoon's text dated 24 August 2017."
+   ],
+   "fieldFixes": {
+    "verdict": "FALSE"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The sentence is in Black's dissent (joined by Stewart), just after footnote ref 1."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. It opens part '(ii) US Supreme Court decisions' of Chandrachud J.'s judgment (Indian Kanoon, 'Author: D Y Chandrachud', dated 24 August 2017)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND in Douglas J.'s opinion for the Court. The page header reads 'Decided June 7, 1965.'"
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. The Bill of Rights was ratified on 15 December 1791."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Stewart J. (joined by Black J.) dissenting",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "With all deference, I can find no such general right of privacy in the Bill of Rights, in any other part of the Constitution, or in any case ever before decided by this Court.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. This is the second dissent, which supports 'over dissents' in the plural."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-privacy-modern-western-invention",
+   "status": "FIXED",
+   "issues": [
+    "Irwin Altman is described as an anthropologist, which is wrong. He was a social psychologist: the essay's own fact says 'Psychologist Irwin Altman', the paper appeared in SPSSI's Journal of Social Issues, and Wikipedia calls him 'a social psychologist'. He analysed other people's ethnographic data ('Ethnographic data are examined from a variety of cultures'). He did no fieldwork, so 'found privacy regulation in every culture they examined' also overstates his role. The abstract says privacy 'occurs in all cultures' as a generic process.",
+    "'What is modern is the legal \"right to privacy\" (from 1890)' is overstated. France's press law of 11 May 1868 already punished publishing information 'relative à un fait de la vie privée', and Warren and Brandeis cited it. The 1791 French Constitution protected 'actions of private life' against calumny. What 1890 marks is the named common-law 'right to privacy'. The Griswold dissent says the phrase 'appears first to have gained currency' from the Warren and Brandeis article.",
+    "Checked OK: Altman's abstract quote comes from the Crossref deposit (J. Social Issues 33(3): 66-84, July 1977). The Qur'an 24:27 quote is Saheeh International (api.quran.com resource 20). In the API text a footnote marker '1' sits between 'greet' and 'their inhabitants', and [...] stands for it. The verdict MISLEADING is right."
+   ],
+   "fieldFixes": {
+    "correction": "Privacy norms appear in ancient and non-Western sources - the Hippocratic Oath, the Mishnah's rule on windows, the Qur'an's command not to enter others' houses until welcomed - and the social psychologist Irwin Altman, reviewing ethnographic data from a variety of cultures, concluded in 1977 that privacy is 'a universal process that involves culturally unique regulatory mechanisms'. What is modern is privacy as a named legal right - a French press law of 1868 punished publishing 'a fact of private life', and the common-law 'right to privacy' gained currency from Warren and Brandeis's 1890 article - and the idea of privacy as control over data."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Crossref API with the cache cleared on 2026-09-23: --check FOUND. Metadata: Irwin Altman, Journal of Social Issues 33(3): 66-84, published-print 1977-07. The abstract also says privacy is 'a generic process that occurs in all cultures' and 'Ethnographic data are examined from a variety of cultures'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND on the prefix. The raw text is '...ascertain welcome and greet\\n1\\ntheir inhabitants.', and meta.translation_name is 'Saheeh International'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia",
+     "title": "Irwin Altman",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Irwin_Altman",
+     "quote": "is a social psychologist who earned his B.A. degree from New York University in 1951",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. Secondary support for his discipline only. The infobox gives 'Occupation: Social psychologist'. The page's birth dates disagree (June 16 in the infobox, July 16 in the text), which does not matter here."
+    },
+    {
+     "institution": "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
+     "title": "Jean-Louis Halpérin, 'Protection de la vie privée et privacy : deux traditions juridiques différentes ?'",
+     "date": "2015",
+     "url": "https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/protection-de-la-vie-privee-et-privacy-deux-traditions-juridiques-differentes",
+     "quote": "La mention de la vie privée dans l’éphémère loi du 11 mai 1868 (correspondant à un premier recul de la censure au début de l’Empire libéral) sanctionnant, comme une simple contravention, toute révélation non autorisée d’une information « relative à un fait de la vie privée », fut un épisode très court.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. It shows a statute protecting private life before 1890; the early slice has the same record, french-press-law-article-11-private-life-1868. Translation: 'The mention of private life in the short-lived law of 11 May 1868 ... which punished as a mere contravention any unauthorised disclosure of information \"relating to a fact of private life\", was a very brief episode.'"
+    },
+    {
+     "institution": "Legal Information Institute, Cornell Law School (U.S. Supreme Court opinion)",
+     "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Black J. dissenting, footnote 1",
+     "date": "1965-06-07",
+     "url": "https://www.law.cornell.edu/supremecourt/text/381/479",
+     "quote": "The phrase 'right to privacy' appears first to have gained currency from an article written by Messrs. Warren and (later Mr. Justice) Brandeis in 1890",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. In the LII HTML this is <div class=\"footnote\" id=\"fn1-1\">, and its reference fn1-1_ref sits in Black's dissent before 'I like my privacy as well as the next one'. It supports dating the named common-law right to 1890."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-chinese-japanese-no-word-for-privacy",
+   "status": "FIXED",
+   "issues": [
+    "The correction repeats the conflation already fixed in fact chinese-yinsi-shameful-secret (verify/essay-1). It says yinsi (隐私) was 'long carrying a connotation of shameful secrets'. The only source for the shameful-secret sense is Cao Jingchun (VUWLR 2005), and he attaches that sense to a near-homophone 'most often used in legislation' ('translated into English as \"privacy\", \"personal secret\" or \"shameful secret\". However it usually means something negative'). He contrasts it with 'the related word \"Yinsi\"', which 'is closer to Western ideas of privacy'. He says the confusion between the two words led Chinese people at first to misunderstand privacy as shameful secrets.",
+    "'Japanese adopted the loanword puraibashii, which spread after a 1964 Tokyo court judgment' overstates the source. Horibe (PPC chairman, 2017) says the term became widely used 'Due to this court decision and many other backgrounds'. The loanword was in print before the ruling: the JILPT report says the concept 'was adopted after the introduction of this theory by academics in the 1960s' and cites Masami Ito, Puraibashi no Kenri (Iwanami 1963). The ruling was 28 September 1964.",
+    "Checked OK: the NPC page quotes Civil Code Art. 1032 verbatim ('民法典第1032条规定：“隐私是...”'). The Civil Code was adopted on 28 May 2020 and took effect on 1 January 2021, so '2020 Civil Code' is right. The verdict MISLEADING is defensible: both words exist today, and the kernel of truth is that one is a loanword and the other has a shifted connotation."
+   ],
+   "fieldFixes": {
+    "correction": "Chinese has yinsi (隐私), which Article 1032 of China's 2020 Civil Code defines as a person's tranquillity of private life and the private space, activities and information they do not wish others to know; its reception was clouded by a near-homophone long used in legislation to mean shameful secrets, and legal writer Cao Jingchun noted in 2005 that Chinese people initially often misunderstood privacy that way. Japanese uses the loanword puraibashii, introduced by scholars in the early 1960s and, according to data-protection chairman Masao Horibe, widely used owing to a 1964 Tokyo District Court judgment 'and many other backgrounds'. The words are newer or differently weighted than the English one - not absent."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND. The page, an article by 郑文阳 on npc.gov.cn, quotes Art. 1032 as '民法典第1032条规定：“隐私是自然人的私人生活安宁和不愿为他人知晓的私密空间、私密活动、私密信息。”'. The date 2020-12-16 matches the URL (t20201216)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23: --check FOUND. The preceding sentences name the lawsuit over Mishima's 'After the Banquet' and the 1964 Tokyo District Court ruling. The speaker introduces himself as 'Masao HORIBE, Chairman of the Personal Information Protection Commission, Japan'. Note the hedge 'and many other backgrounds', which the corrected text keeps."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Victoria University of Wellington Law Review (vol. 36, no. 3)",
+     "title": "Cao Jingchun, 'Protecting the Right to Privacy in China'",
+     "date": "2005",
+     "url": "https://ojs.victoria.ac.nz/vuwlr/article/download/5610/4977/7913",
+     "quote": "It is this word which is most often used in legislation and is most familiar to Chinese lawyers. It is translated into English as \"privacy\", \"personal secret\" or \"shameful secret\". However it usually means something negative. In contrast, the related word \"Yinsi\" is closer to Western ideas of privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The PDF text layer has lost the Chinese characters. The negative legislative word is generally written 阴私, and Cao defines the 'Yinsi' that is closer to privacy as 'a personal thing people do not wish to tell others or disclose in public' (隐私). Cao's author note says the article was submitted for the LLM programme at Victoria University of Wellington, so 'legal writer' is used rather than 'legal scholar'."
+    },
+    {
+     "institution": "Victoria University of Wellington Law Review (vol. 36, no. 3)",
+     "title": "Cao Jingchun, 'Protecting the Right to Privacy in China'",
+     "date": "2005",
+     "url": "https://ojs.victoria.ac.nz/vuwlr/article/download/5610/4977/7913",
+     "quote": "It was initially common for Chinese to misunderstand privacy as relating to shameful secrets.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. It is preceded by 'The two words are used confusingly though.'"
+    },
+    {
+     "institution": "Japan Institute for Labour Policy and Training (JILPT Report No. 14)",
+     "title": "Ryoko Sakuraba, 'Protection of Personal Information and Privacy in the Japanese Workplace'",
+     "date": "2014",
+     "url": "https://www.jil.go.jp/english/reports/documents/jilpt-reports/no.14_japan.pdf",
+     "quote": "In Japan, this concept of privacy was adopted after the introduction of this theory by academics in the 1960s.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. Footnote 3 is 'See Masami Ito, Puraibashi no Kenri (Iwanami 1963).' (--check FOUND) and footnote 4 is 'Tokyo District Court (28 September 1964), 15-9 Kaminshu 2317.' So the loanword was in print a year before the ruling."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "constitutions-with-privacy-right-2026",
+   "status": "FIXED",
+   "issues": [
+    "The count reproduces. On 2026-09-23 the Constitute API returned 171 in-force constitutions for key=privacy (all flagged in_force=true, all within the in-force list) and 188 in-force constitutions for 188 distinct countries. 171/188 = 91.0%. The 17 not coded are Afghanistan, Antigua and Barbuda, Australia, Austria, Bahamas, Brunei, Canada, Czech Republic, France, India, Indonesia, Japan, Malaysia, Palau, Samoa, Singapore and Sri Lanka.",
+    "Wrong example in the notes: 'countries whose courts, not their constitutional text, protect privacy (e.g. India, France, Japan)'. Japan's 1946 Constitution, as Constitute itself prints it, guards 'homes, papers and effects against entries, searches and seizures' (Art. 35) and says 'nor shall the secrecy of any means of communication be violated' (Art. 21). That text falls within Constitute's own topic definition, and the similar US Fourth Amendment is coded (United_States_of_America_1992 is among the 171). Canada's Charter s. 8 ('secure against unreasonable search or seizure') is the same case. For these two the omission is a coding gap, not silent text. India and France are good examples: a search of Constitute's India_2023 text finds no 'privacy'. The same fix was made to the matching fact, constitutions-with-privacy-171-of-188, in verify/essay-4."
+   ],
+   "fieldFixes": {
+    "notes": "Computed on 2026-09-23 from the Constitute Project API (topic key \"privacy\", in_force=true) against its list of 188 in-force constitutions: 171/188 = 91%. The coding is of constitutional text. Among the 17 not coded, India and France have texts that are silent on privacy, and there courts (and, in France, statute) protect it. Others, such as Japan (Art. 35 on searches of homes and papers, Art. 21 on the secrecy of communications) and Canada (Charter s. 8), have search-and-seizure or secrecy clauses that Constitute does not code under this topic, although it codes the similar US Fourth Amendment. So 171 is a conservative count, and it is our computation, not a figure the project publishes."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: topic definition --check FOUND. Both API endpoints in the note were re-queried with curl and returned 171 and 188 records. The set difference matches the 17 countries listed in the fact record."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Constitute Project (Comparative Constitutions Project)",
+     "title": "Japan's Constitution of 1946, Article 35",
+     "date": "1946-11-03",
+     "url": "https://www.constituteproject.org/constitution/Japan_1946?lang=en",
+     "quote": "The right of all persons to be secure in their homes, papers and effects against entries, searches and seizures shall not be impaired except upon warrant issued for adequate cause",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The same page has Art. 21, 'nor shall the secrecy of any means of communication be violated' (FOUND). Japan_1946 is not in the privacy topic list, so the 17 exceptions include coding gaps. The Constitution was promulgated on 3 Nov 1946 and took effect on 3 May 1947."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "hours-to-read-privacy-policies-2008",
+   "status": "FIXED",
+   "issues": [
+    "Wrong value, or at least wrongly called the 'central estimate'. The paper's central (point) estimate for reading each new site's policy word-for-word is 244 hours a year, not 201. Table 7 gives 181 / 244 / 304 hours for reading and 81 / 154 / 293 for skimming. The text says 'using the point estimate of 244 hours per year ... means an average of 40 minutes a day'. The figure 201 appears only once, in 'Discussion and Conclusions', in the same sentence as $3,534. But $3,534 is the Table 8 point cost for the 244-hour reading estimate (work $2,791 + home $743). The national totals, 53.8 billion hours and $781 billion, also follow from 244 hours × 221 million users, while 201 would give only about 44 billion hours. So 201 is an internal inconsistency in the source, not an estimate the paper derives.",
+    "The inconsistency is also in the published version. I downloaded the OSU Knowledge Bank PDF of I/S 4(3): 543-568 (HTTP 200, 1,654,540 bytes). Its 'IV. DISCUSSION AND CONCLUSIONS' has the same 201-hour sentence, and it keeps the 244-hour point estimate and Table 7.",
+    "Consistency: numbers.json already records this quantity as 244 hours, with a note on the 201 inconsistency (quant mcdonald-cranor-hours-per-year-reading-privacy-policies, verified OK in verify/numbers-3). The two slices should not disagree. The essay fact mcdonald-cranor-2008-201-hours, which is outside this chunk, repeats '201 hours' and should be aligned when the prose is written.",
+    "Checked OK: Carnegie Mellon affiliation (author note), $3,534 per user, $781 billion nationally, and the 'read the policies once a year' assumption ('These estimates presume that people visit sites, read the policies once a year, and then carry on their business as before')."
+   ],
+   "fieldFixes": {
+    "value": 244,
+    "unit": "hours per year (point estimate)",
+    "label": "Time an American internet user would need to read the privacy policy of every new site visited in a year",
+    "notes": "McDonald and Cranor's point estimate for reading each new site's policy word-for-word once a year (Table 7; range 181-304 hours; skimming 154, range 81-293); about 40 minutes a day. It is valued at about $3,534 per user and about $781 billion nationally (53.8 billion hours for about 221 million Americans online). The paper's conclusion says 'approximately 201 hours a year' in the same sentence as the $3,534 figure. That is an internal inconsistency: the dollar and national figures follow from 244 hours."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with the cache cleared on 2026-09-23: --check FOUND verbatim. The quote is genuine, but its '201 hours' conflicts with the paper's own point estimate of 244 hours (Table 7), so this source now supports the dollar figure and documents the inconsistency, not the value. The same sentence is in the published I/S version (OSU Knowledge Bank PDF, section IV)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "I/S: A Journal of Law and Policy for the Information Society, vol. 4, no. 3 (2008 Privacy Year in Review) - authors' pre-press version",
+     "title": "Aleecia M. McDonald and Lorrie Faith Cranor, 'The Cost of Reading Privacy Policies'",
+     "date": "2008",
+     "url": "https://lorrie.cranor.org/pubs/readingPolicyCost-authorDraft.pdf",
+     "quote": "To put these figures in perspective, using the point estimate of 244 hours per year to read privacy policies per person means an average of 40 minutes a day.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. The same page has Table 7: 'Lower bound 181 hours / year ... Point Estimate 244 hours / year ... Upper bound 304 hours / year' for reading. The sentence is also in the published I/S version (4 I/S 543, OSU Knowledge Bank)."
+    }
+   ]
+  },
+  {
+   "kind": "outline",
+   "id": "outline-7-paragraphs",
+   "status": "FIXED",
+   "issues": [
+    "Coverage is correct. The outline has 7 paragraphs with 45 points, 45 unique, and they match the 45 fact ids exactly: none missing, none extra, none duplicated. The headings are as listed in the task.",
+    "Heading 1, 'A word that meant \"deprived\"', overstates the etymology it introduces. Latin privatus meant 'set apart (from what is public), belonging to oneself'. Only its root verb privare meant 'to deprive' (fact latin-privatus-privare: 'the root carries both \"one's own\" and \"deprived of\"'). Arendt's 'privative' reading is an interpretation of Greek thought, not the meaning of the word. Suggested heading: '1. A word rooted in \"deprived\"'.",
+    "Paragraph 7 places mcdonald-cranor-2008-201-hours. That fact's '201 hours' contradicts the paper's own point estimate of 244 hours (see quant hours-to-read-privacy-policies-2008 in this file). The prose should say 'about 244 hours (the paper's point estimate)' or give both figures.",
+    "Editorial, not an error: chinese-yinsi-shameful-secret and japan-puraibashii-1964 are about words, and they sit in paragraph 4 ('From the wall to the right'), not paragraph 1 (words) or 2 (cultures). This is acceptable because they are paired with the 1964 ruling and Civil Code Art. 1032. Within paragraphs 3 and 5 a few points run out of date order (Borromeo 1577 after Coke 1604; Hughes 1993 before Zimmermann 1991). The prose should not imply a sequence there.",
+    "Mechanics: the outline entries have no 'id', so tools/apply-verdicts.py will report 'outline:outline-7-paragraphs' as missing. The heading change must be applied by hand to outline[0].heading in research/essay.json."
+   ],
+   "fieldFixes": {
+    "outline[0].heading": "1. A word rooted in 'deprived'"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

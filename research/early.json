@@ -42,7 +42,11 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Place of composition unknown; coordinates are Kos town, associated by the NLM exhibit with 'the Asclepiads of Kos'. The place is symbolic, not documented."
+   "locationNote": "Place of composition unknown; coordinates are Kos town, associated by the NLM exhibit with 'the Asclepiads of Kos'. The place is symbolic, not documented.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "cicero-de-domo-sua-home-as-sanctuary-57-bce",
@@ -75,17 +79,21 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Coordinates are the Regia in the Roman Forum, seat of the pontifex maximus; the exact room where the pontiffs heard the case is not given in the sources used."
+   "locationNote": "Coordinates are the Regia in the Roman Forum, seat of the pontifex maximus; the exact room where the pontiffs heard the case is not given in the sources used.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "mishnah-talmud-hezek-reiyah-damage-by-sight-c-200-ce",
-   "displayDate": "c. 200 CE (Mishnah); Talmud debated to c. 500–600 CE",
+   "displayDate": "c. 200 CE (Mishnah); Babylonian Talmud c. 450–550 CE",
    "year": 200,
    "title": "Rabbinic law forbids windows facing a neighbour's window and names 'damage by sight'",
    "place": "Galilee, Roman Palestine (Mishnah); academies of Babylonia (Talmud)",
    "lat": 32.753,
    "lng": 35.279,
-   "summary": "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance or a window opposite another's window onto a shared courtyard, so that residents keep a measure of privacy. The Babylonian Talmud's tractate Bava Batra opens by asking whether hezek re'iyah — the harm of being exposed to a neighbour's gaze in one's own domain — counts as legal damage, and later records that everyone agrees it does.",
+   "summary": "The Mishnah, compiled by Rabbi Yehuda HaNasi around 200 CE, bars a person from opening an entrance opposite another's entrance, or a window opposite another's window, onto a courtyard shared by partners, so that residents keep a measure of privacy (Bava Batra 3:7). The Babylonian Talmud's tractate Bava Batra opens (2b) by asking whether hezek re'iyah counts as legal damage. Hezek re'iyah is the harm of being exposed to others' gaze in one's own private domain. Later (59b), in a dispute over a ledge overlooking a neighbour's courtyard, the Gemara says both disputing sages agree that damage caused by sight is damage.",
    "significance": "Treats unwanted observation itself as an injury with a remedy (a wall, a parapet, a blocked window), long before any Western privacy tort.",
    "sources": [
     {
@@ -101,12 +109,12 @@
     {
      "institution": "Sefaria (William Davidson Edition, English)",
      "title": "Babylonian Talmud, Bava Batra 59b",
-     "date": "c. 500–600 CE",
+     "date": "c. 450–550 CE",
      "url": "https://www.sefaria.org/api/v3/texts/Bava_Batra.59b?version=english",
      "quote": "No, everyone agrees that damage caused by sight is considered to be damage.",
      "verificationStatus": "CONFIRMED",
      "accessType": "API",
-     "note": "Bava Batra 2b opens the tractate with the question; 59b gives the Gemara's statement on the Mishnah's window rule. Sefaria's catalogue dates the Bavli tractate to 450–550 CE, Babylon."
+     "note": "Bava Batra 59b: the line comes in the Gemara on the mishna about a projection (ledge) over a neighbour's courtyard, where Rav Huna and Rav Yehuda disagree. The Gemara rejects the idea that they differ on damage by sight: both hold that it is damage. Sefaria's catalogue dates the Bavli tractate to 450–550 CE, Talmudic Babylon."
     },
     {
      "institution": "Sefaria",
@@ -117,9 +125,39 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "API",
      "note": "Undated catalogue text; 'date' is the access date."
+    },
+    {
+     "institution": "Sefaria (William Davidson Edition, English)",
+     "title": "Babylonian Talmud, Bava Batra 2b",
+     "date": "c. 450–550 CE",
+     "url": "https://www.sefaria.org/api/v3/texts/Bava_Batra.2b?version=english",
+     "quote": "Apparently, it may be concluded that damage caused by sight, that is, the discomfort suffered by someone because he is exposed to the gaze of others while he is in his own private domain, is not called damage.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Opening sugya of the tractate. The Gemara first infers that damage by sight is 'not called damage', then challenges this ('The Gemara asks: And is damage caused by sight in fact not called damage?'). --check FOUND for both sentences. The gloss on hezek re'iyah in the summary follows this passage."
+    },
+    {
+     "institution": "Sefaria (William Davidson Edition, English)",
+     "title": "Babylonian Talmud, Bava Batra 59b (context of the 'everyone agrees' line)",
+     "date": "c. 450–550 CE",
+     "url": "https://www.sefaria.org/api/v3/texts/Bava_Batra.59b?version=english",
+     "quote": "He can also demand that the owner of the roof not use an existing projection, since it leads to damage caused by sight.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "Shows that the 59b discussion concerns a projection overlooking a courtyard (Rav Huna's view), just before 'Shall we say that they disagree with regard to damage caused by sight?' and 'No, everyone agrees...'. --check FOUND."
     }
    ],
-   "locationNote": "Sefaria gives the place of composition only as 'Talmudic Israel' for the Mishnah and 'Talmudic Babylon' for this tractate; coordinates are Sepphoris (Tzippori) in Galilee as a representative location, not a sourced one."
+   "locationNote": "Sefaria gives the place of composition only as 'Talmudic Israel' for the Mishnah and 'Talmudic Babylon' for this tractate; coordinates are Sepphoris (Tzippori) in Galilee as a representative location, not a sourced one.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The note on source[1] says Bava Batra 59b 'gives the Gemara's statement on the Mishnah's window rule'. That is wrong. On 59b the 'everyone agrees' line comes in the Gemara on the next mishna, about a projection (ledge) jutting over a neighbour's courtyard (Rav Huna v. Rav Yehuda), not the window rule of Mishnah 3:7.",
+     "The summary's 'later records that everyone agrees it does' overstates the passage. 'Everyone' there means the two amoraim in that dispute (Rav Huna and Rav Yehuda), not a general consensus. Reworded to give the context.",
+     "The summary says the tractate 'opens' with the hezek re'iyah question (2b), but no source was attached for 2b. A Sefaria 2b source is added.",
+     "Dating is inconsistent: source[1] date is 'c. 500–600 CE' while its own note cites Sefaria's catalogue as 450–550 CE (confirmed: Sefaria index compDate [450, 550], compPlace 'Talmudic Babylon'). The source date and displayDate are aligned to the cited catalogue.",
+     "Checked OK: Mishnah Bava Batra 3:7 wording (Sefaria API, versionTitle 'William Davidson Edition - English'), and Sefaria's Mishnah category text ('compiled by Rabbi Yehuda HaNasi around 200 CE'; index compDate 190–230). Tzippori coordinates are fine as a representative location."
+    ]
+   }
   },
   {
    "id": "justinian-digest-domus-tutissimum-refugium-533",
@@ -163,7 +201,11 @@
      "note": "Shows the Roman maxim carried into Coke's report of Semayne's Case. Undated page; 'date' is the access date."
     }
    ],
-   "locationNote": "Coordinates are the site of the Great Palace of Constantinople (Istanbul), seat of the imperial government that promulgated the Digest."
+   "locationNote": "Coordinates are the site of the Great Palace of Constantinople (Istanbul), seat of the imperial government that promulgated the Digest.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "quran-surah-an-nur-al-hujurat-permission-and-no-spying-c-627",
@@ -205,19 +247,35 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "sunnah.com blocks scripts (HTTP 403); the Internet Archive snapshot (web.archive.org/web/20251119075741/...) was read instead. English after the Muhsin Khan translation (USC-MSA reference Vol. 8, Book 74, Hadith 258)."
+    },
+    {
+     "institution": "hadith-api (fawazahmed0, open dataset on GitHub, served via jsDelivr) — Muhsin Khan English",
+     "title": "Sahih al-Bukhari 6241, Book 79 'Asking Permission'",
+     "date": "2026-09-23",
+     "url": "https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/6241.json",
+     "quote": "Verily! The order of taking permission to enter has been enjoined because of that sight, (that one should not look unlawfully at the state of others).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "API",
+     "note": "A mirror that corroborates the sunnah.com text, which is unreachable to scripts. The same record reads: 'A man peeped through a round hole into the dwelling place of the Prophet'. --check FOUND. Undated dataset; 'date' is the access date."
     }
    ],
-   "locationNote": "Coordinates are the Prophet's Mosque in Medina; the Qur'an does not record the exact place of each revelation."
+   "locationNote": "Coordinates are the Prophet's Mosque in Medina; the Qur'an does not record the exact place of each revelation.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Source[2] (web.archive.org snapshot of sunnah.com) could not be re-fetched from this sandbox. web.archive.org resets the connection (curl error 35) and WebFetch refuses the domain; sunnah.com itself returns 403 to scripts. The archive.org availability API confirms that snapshots of sunnah.com/bukhari:6241 exist (latest 2026-09-19). The previously fetched copy in the shared fetch cache contains the quote and the USC-MSA reference 'Vol. 8, Book 74, Hadith 258'. The same English text is FOUND verbatim in an independent mirror (fawazahmed0 hadith-api via jsDelivr), added as a corroborating source."
+    ]
+   }
   },
   {
    "id": "fourth-lateran-council-canon-21-seal-of-confession-1215",
    "displayDate": "30 November 1215",
    "year": 1215,
-   "title": "The Fourth Lateran Council makes the seal of confession universal Church law",
+   "title": "The Fourth Lateran Council binds the whole Church to yearly confession and the confessional seal",
    "place": "Lateran Basilica, Rome",
    "lat": 41.8859,
    "lng": 12.5057,
-   "summary": "Canon 21 of the Fourth Lateran Council, whose constitutions were read and approved at its third session on 30 November 1215, required every adult Christian to confess at least yearly to their own priest. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance.",
+   "summary": "Canon 21 of the Fourth Lateran Council required all the faithful of either sex who had reached the age of discernment to confess their sins to their own priest at least once a year. The council's constitutions were read and approved at its third session on 30 November 1215. The same canon ordered the priest never to betray the penitent 'by word or sign or in any other way', on pain of deposition and confinement to a strict monastery for perpetual penance. The duty of secrecy was older: Gratian's twelfth-century Decretum already ordered the deposition of a priest who revealed a penitent's sins. Canon 21 restated it as a conciliar decree binding on the whole Latin Church and fixed its penalty.",
    "significance": "A mass-disclosure system paired with a strict, enforced duty of secrecy — an early rule that compelled confidences must be protected by the institution that collects them.",
    "sources": [
     {
@@ -237,9 +295,37 @@
      "quote": "Finally, the third session (on 30 November) was devoted to reading and approving the constitutions, which were proposed by the pontiff himself.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Papal Encyclicals Online (text after Tanner, Decrees of the Ecumenical Councils)",
+     "title": "Fourth Lateran Council: 1215 — Constitution 21 (opening sentence)",
+     "date": "1215-11-30",
+     "url": "https://www.papalencyclicals.net/councils/ecum12-2.htm",
+     "quote": "All the faithful of either sex, after they have reached the age of discernment, should individually confess all their sins in a faithful manner to their own priest at least once a year",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports who was bound: the age of discernment, not adulthood. --check FOUND."
+    },
+    {
+     "institution": "The Catholic Encyclopedia (Robert Appleton Company), via New Advent",
+     "title": "R. Nolan, 'The Law of the Seal of Confession'",
+     "date": "1912",
+     "url": "https://www.newadvent.org/cathen/13649b.htm",
+     "quote": "Canon 21 of the Fourth Lateran Council (1215), binding on the whole Church, lays down the obligation of secrecy in the following words",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same paragraph adds: 'It is to be noted that neither this canon nor the law of the \"Decretum\" purports to enact for the first time the secrecy of confession.' It cites Gratian's Decretum ('Deponatur sacerdos qui peccata poenitentis publicare praesumit'). Both sentences --check FOUND. Author and date are from the page's APA citation line."
     }
    ],
-   "locationNote": "Coordinates are the Archbasilica of St John Lateran, where the council met."
+   "locationNote": "Coordinates are the Archbasilica of St John Lateran, where the council met.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary says canon 21 bound 'every adult Christian'. The canon (Tanner translation on the cited page) says 'All the faithful of either sex, after they have reached the age of discernment'. The age of discernment (anni discretionis) is not adulthood; medieval canonists put it well below majority. Corrected to the canon's own wording, with a source for that sentence.",
+     "The title 'makes the seal of confession universal Church law' can read as if Lateran IV created the seal. It did not. The Catholic Encyclopedia notes that Gratian's Decretum already ordered the deposition of a priest who revealed a penitent's sins, and that 'neither this canon nor the law of the Decretum purports to enact for the first time the secrecy of confession'. It does call canon 21 'binding on the whole Church'. Title and summary are reworded to keep the 'whole Church' point without implying a first.",
+     "Checked OK: the 30 November 1215 third session (introduction on the same page, credited to Tanner, Decrees of the Ecumenical Councils); the betrayal/deposition/monastery wording; the St John Lateran coordinates."
+    ]
+   }
   },
   {
    "id": "semaynes-case-house-as-castle-and-fortress-1604",
@@ -280,9 +366,23 @@
      "quote": "To this rule, however, common-law courts appended an important qualification: \"But before he breaks it, he ought to signify the cause of his coming, and to make request to open doors . . ., for the law without a default in the owner abhors the destruction or breaking of any house (which is for the habitation and safety of man) by which",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "Semayne's case",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Semayne%27s_case",
+     "quote": "Michaelmas Term, 1604",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "An independent check of the displayDate term. The infobox gives the full case name as Peter Semayne v Richard Gresham, Court of King's Bench, 5 Co Rep 91a, 77 ER 194. --check FOUND. Tertiary source; the date is the access date."
     }
    ],
-   "locationNote": "The King's Bench sat in Westminster Hall; coordinates are the Hall."
+   "locationNote": "The King's Bench sat in Westminster Hall; coordinates are the Hall.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "james-otis-writs-of-assistance-argument-1761",
@@ -315,7 +415,11 @@
      "note": "The same note places the hearing 'In the Council Chamber of what is now the Old State House in Boston'. Undated web edition; 'date' is the access date."
     }
    ],
-   "locationNote": "Coordinates are the Old State House, Washington and State Streets, Boston."
+   "locationNote": "Coordinates are the Old State House, Washington and State Streets, Boston.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "pitt-cider-excise-every-mans-house-his-castle-1763",
@@ -348,7 +452,11 @@
      "note": "OCR text of a Google scan; Brougham gives the words as Chatham's 'allusion to the maxim of English law, that every man's house is his castle' without a date or debate."
     }
    ],
-   "locationNote": "The Commons met in St Stephen's Chapel, Palace of Westminster, until the 1834 fire."
+   "locationNote": "The Commons met in St Stephen's Chapel, Palace of Westminster, until the 1834 fire.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "wilkes-v-wood-general-warrants-1763",
@@ -387,9 +495,23 @@
      "quote": "The trial began at nine o’clock in the morning on December 6, 1763, at the Court of Common Pleas at Westminster.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "The Founders' Constitution (University of Chicago Press), vol. 5, Amendment IV, Document 4",
+     "title": "Wilkes v. Wood, 98 Eng. Rep. 489 (C.P. 1763) — length of the sitting",
+     "date": "1763-12-06",
+     "url": "https://press-pubs.uchicago.edu/founders/documents/amendIVs4.html",
+     "quote": "The Court sat at nine o'clock in the morning, and the verdict was brought in at twenty minutes past eleven o'clock at night.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the summary's 'from nine in the morning to after eleven at night', which the existing sources did not quote. --check FOUND."
     }
    ],
-   "locationNote": "The Court of Common Pleas sat in Westminster Hall; coordinates are the Hall."
+   "locationNote": "The Court of Common Pleas sat in Westminster Hall; coordinates are the Hall.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "entick-v-carrington-papers-dearest-property-1765",
@@ -433,7 +555,11 @@
      "note": "Donohue also records (quoting Wharton's Law Lexicon) that general warrants were 'declared illegal and void for uncertainty by a vote of the House of Commons. Com. Jour. 22nd April, 1766.'"
     }
    ],
-   "locationNote": "The Court of Common Pleas sat in Westminster Hall; coordinates are the Hall."
+   "locationNote": "The Court of Common Pleas sat in Westminster Hall; coordinates are the Hall.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "sweden-freedom-of-the-press-ordinance-public-access-1766",
@@ -465,7 +591,11 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Coordinates are Stockholm Palace, where the royal Council Chamber was; the ordinance says only 'in the Council Chamber'."
+   "locationNote": "Coordinates are Stockholm Palace, where the royal Council Chamber was; the ordinance says only 'in the Council Chamber'.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "blackstone-eavesdroppers-common-nuisance-1769",
@@ -475,8 +605,8 @@
    "place": "Clarendon Press, Oxford",
    "lat": 51.7543,
    "lng": -1.2544,
-   "summary": "The fourth book of William Blackstone's Commentaries on the Laws of England lists eavesdroppers — those who listen under walls, windows or eaves to pick up talk and spread slanderous tales — among common nuisances. They could be presented at the court-leet or indicted at sessions and punished by a fine and by sureties for good behaviour.",
-   "significance": "The common law's first named privacy offence targets listening in, and the U.S. Supreme Court still cited it when it confronted electronic eavesdropping in 1967.",
+   "summary": "The fourth book of William Blackstone's Commentaries on the Laws of England (1769) lists eavesdroppers — those who listen under walls, windows or the eaves of a house to pick up talk and then frame slanderous and mischievous tales — among common nuisances. They could be presented at the court-leet or indicted at the sessions, and punished by a fine and by finding sureties for good behaviour. Blackstone was recording an old offence, not creating a new one: his footnotes cite earlier authorities, Kitchin on courts and Hawkins's Pleas of the Crown.",
+   "significance": "A common-law offence aimed at listening in, recorded long before 'privacy' was a legal term. The U.S. Supreme Court still cited Blackstone's passage when it confronted electronic eavesdropping in 1967.",
    "sources": [
     {
      "institution": "The Avalon Project, Yale Law School",
@@ -484,9 +614,9 @@
      "date": "1769",
      "url": "https://avalon.law.yale.edu/18th_century/blackstone_bk4ch13.asp",
      "quote": "Eaves-droppers, or fuch as liften under walls or windows, or the eaves of a houfe, to hearken after difcourfe, and thereupon to frame flanderous and mifchievous tales, are a common nufance and prefentable at the court-leet",
-     "verificationStatus": "PENDING",
+     "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "PENDING only because tools/fetch-text.py --check returns NOT-FOUND for this page. Avalon transcribes the 1769 first edition with the long s rendered as 'f' (fuch = such, liften = listen, houfe = house, nufance = nuisance). The page sets its text in <br>-separated blocks that tools/fetch-text.py does not extract, so the quote was checked against the same fetched page with the helper's own norm() applied to the full BeautifulSoup text (match: True). Avalon's Blackstone index gives the source edition as 'First Edition Oxford : Printed at the Clarendon Press, 1765-1769'."
+     "note": "Avalon transcribes the 1769 first edition with the long s rendered as 'f' (fuch = such, liften = listen, houfe = house, nufance = nuisance). tools/fetch-text.py --check returns NOT-FOUND because the page sets its text in <br>-separated blocks that the helper's paragraph extractor skips. The verifier re-fetched the page on 2026-09-23 and found the quote verbatim in the full BeautifulSoup text, followed by ': or are indictable at the feffions, and punifhable by fine and finding fureties for the good behaviour', with footnotes 's Kitch. of courts. 20' and 't Ibid. 1 Hawk. P. C. 132'. Avalon's Blackstone index gives the source edition as 'First Edition Oxford : Printed at the Clarendon Press, 1765-1769'."
     },
     {
      "institution": "Supreme Court of the United States (via Cornell LII)",
@@ -498,7 +628,14 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Coordinates are the Clarendon Building, Broad Street, Oxford, home of the Clarendon Press in the 1760s."
+   "locationNote": "Coordinates are the Clarendon Building, Broad Street, Oxford, home of the Clarendon Press in the 1760s.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance field claims eavesdropping was 'the common law's first named privacy offence'. No source supports that 'first'. Blackstone was recording an existing offence, not naming a new one: his own footnotes on this passage cite older authorities ('Kitch. of courts. 20' and '1 Hawk. P. C. 132'). The significance has been rewritten without the 'first' claim.",
+     "Avalon source (index 0): the quote IS verbatim on the page. tools/fetch-text.py --check reports NOT-FOUND only because its paragraph extractor skips this page's <br>-separated text. A full-text extraction of the same freshly fetched page contains it exactly, so the status is raised to CONFIRMED and the stale 'PENDING only because' note is replaced."
+    ]
+   }
   },
   {
    "id": "french-constitution-private-life-clause-1791",
@@ -508,7 +645,7 @@
    "place": "Salle du Manège, Paris (National Constituent Assembly)",
    "lat": 48.8651,
    "lng": 2.3268,
-   "summary": "The Constitution of 3 September 1791 allowed public criticism of officials but provided that calumnies and insults against any person relating to the actions of their private life would be punished at that person's suit. The historian Jean-Louis Halpérin notes that twentieth-century French doctrine largely ignored this provision.",
+   "summary": "The Constitution of 3 September 1791 (Title III, chapter V, article 17) permitted criticism of the acts of the constituted powers and let officials prosecute deliberate calumnies against their probity. It also provided that calumnies and insults against any person relating to the actions of their private life would be punished at that person's suit. The historian Jean-Louis Halpérin notes that twentieth-century French legal doctrine ignored this provision entirely.",
    "significance": "The words 'vie privée' enter a constitution: a legal line between public conduct, open to scrutiny, and private life, shielded from exposure.",
    "sources": [
     {
@@ -542,7 +679,14 @@
      "note": "Issue number and year from the Cairn listing of the same article (Nouveaux Cahiers du Conseil constitutionnel 2015/3, p. 59)."
     }
    ],
-   "locationNote": "The Constituent Assembly sat in the Salle du Manège beside the Tuileries (site of today's rue de Rivoli); coordinates approximate."
+   "locationNote": "The Constituent Assembly sat in the Salle du Manège beside the Tuileries (site of today's rue de Rivoli); coordinates approximate.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary says Halpérin notes that twentieth-century French doctrine 'largely ignored' the 1791 provision. His words, in the record's own quote, are 'ignorait totalement' (ignored it entirely). The summary understated the source and has been corrected.",
+     "The summary's 'allowed public criticism of officials' is loose. Article 17 permits 'La censure sur les actes des Pouvoirs constitués' (criticism of the acts of the constituted powers) and lets officials prosecute deliberate calumnies against their probity. The wording has been tightened, and the article reference (Title III, ch. V, art. 17), confirmed on both official pages, is added."
+    ]
+   }
   },
   {
    "id": "bentham-panopticon-inspection-house-1791",
@@ -575,7 +719,13 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Coordinates are central Dublin; the address of Thomas Byrne's shop was not checked. The letters were written at Krichev (then 'Crecheff in White Russia') in 1787."
+   "locationNote": "Coordinates are central Dublin; the address of Thomas Byrne's shop was not checked. The letters were written at Krichev (then 'Crecheff in White Russia') in 1787.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No factual error found. A fresh re-fetch of the Wayback URL failed on 2026-09-23: the proxy tunnel to web.archive.org was reset on every attempt, and the live UCL page returns HTTP 403. The Wayback capture fetched earlier the same day (shared tool cache, 10:31 UTC) is a genuine capture ('FILE ARCHIVED ON 04:21:16 Feb 01, 2026') and contains the quote verbatim, so the source stays CONFIRMED."
+    ]
+   }
   },
   {
    "id": "us-fourth-amendment-ratified-1791",
@@ -617,7 +767,11 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Coordinates are Federal Hall, Wall Street, New York, seat of the First Congress in 1789. Ratification was completed by the state legislatures, not at one place."
+   "locationNote": "Coordinates are Federal Hall, Wall Street, New York, seat of the First Congress in 1789. Ratification was completed by the state legislatures, not at one place.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "us-post-office-act-penalty-for-opening-letters-1792",
@@ -627,7 +781,7 @@
    "place": "Congress Hall, Philadelphia",
    "lat": 39.9487,
    "lng": -75.1508,
-   "summary": "Section 16 of the Act to establish the Post-Office and Post Roads, approved on 20 February 1792, punished any post-office employee who unlawfully detained, delayed or opened a letter, packet, bag or mail of letters, or secreted, embezzled or destroyed one, with a fine of up to three hundred dollars, up to six months' imprisonment, or both. Undeliverable 'dead letters' were to be opened and inspected at the General Post Office so that valuables could be returned.",
+   "summary": "Section 16 of the Act to establish the Post-Office and Post Roads, approved on 20 February 1792, punished any post-office employee who unlawfully detained, delayed or opened a letter, packet, bag or mail of letters entrusted to him with a fine of up to three hundred dollars, up to six months' imprisonment, or both. The same penalty applied to secreting, embezzling or destroying a letter that held no money or securities. Secreting or stealing letters that contained bank notes or other money instruments was punishable by death. Under section 18, letters still unclaimed after being advertised were sent as 'dead letters' to the General Post Office, where they were opened and inspected, and any valuable papers were advertised and kept for the addressee.",
    "significance": "Builds confidentiality into a national communications network by statute — the carrier is forbidden to read what it carries.",
    "sources": [
     {
@@ -648,9 +802,36 @@
      "quote": "every such offender, being thereof duly convicted, shall, for every such offence, be fined not exceeding three hundred dollars, or imprisoned not exceeding six months, or both, according to the circumstances and aggravations of the offence.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "New Jersey Postal History Society (transcription of 1 Stat. 232)",
+     "title": "Act of Feb. 20, 1792, sec. 16 — death penalty for letters containing money",
+     "date": "1792-02-20",
+     "url": "https://njpostalhistory.org/media/pdf/postact1792.pdf",
+     "quote": "or if any such person, employed as aforesaid, shall steal or take any of the same out of any letter, packet, bag or mail of letters, that shall come to his possession, he shall, on conviction for any such offence, suffer death.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "'the same' refers to bank notes, bills of exchange, Treasury warrants and other money instruments listed earlier in sec. 16. --check FOUND."
+    },
+    {
+     "institution": "New Jersey Postal History Society (transcription of 1 Stat. 232)",
+     "title": "Act of Feb. 20, 1792, sec. 18 — dead letters",
+     "date": "1792-02-20",
+     "url": "https://njpostalhistory.org/media/pdf/postact1792.pdf",
+     "quote": "shall send such of the said letters as then remain on hand, as dead letters, to the general post-office, where the same shall be opened and inspected",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Sec. 18 continues: if 'any valuable papers or matter of consequence' are found, the Postmaster General is to advertise them and preserve the letter and contents for the addressee on payment of postage. --check FOUND."
     }
    ],
-   "locationNote": "Congress sat in Congress Hall, Chestnut and Sixth Streets, Philadelphia, in 1792."
+   "locationNote": "Congress sat in Congress Hall, Chestnut and Sixth Streets, Philadelphia, in 1792.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary applied the $300 / six-months penalty to any letter an employee 'secreted, embezzled or destroyed'. Section 16 limits that penalty to letters and packets 'which shall not contain any security for, or assurance relating to money'. Secreting, embezzling, destroying or stealing letters containing bank notes, bills or other money instruments carried the death penalty under the same section.",
+     "The dead-letter provision is section 18. It applies to letters still unclaimed after being advertised for three months, not to all 'undeliverable' letters. Valuables found were advertised and kept for the addressee on payment of postage. No existing source quoted this provision, so a source is added."
+    ]
+   }
   },
   {
    "id": "royer-collard-vie-privee-muree-1819",
@@ -660,7 +841,7 @@
    "place": "Chamber of Deputies, Palais Bourbon, Paris",
    "lat": 48.8618,
    "lng": 2.3186,
-   "summary": "In the debate on the press law that became the law of 17 May 1819, Royer-Collard argued in the Chamber on 27 April 1819 that truth could be pleaded against charges of defaming officials over their public functions but not over private life. His phrase — 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — are, in the historian Jean-Louis Halpérin's words, 'famous', though the expression 'vie privée' does not appear in the 1819 law itself.",
+   "summary": "In the Chamber of Deputies on 27 April 1819, during the debate on the de Serre press laws of May 1819, Royer-Collard defended the bill's rule on proving defamatory facts. Truth could be proved against officials over acts of their public functions, but not against private individuals: 'it is not permitted to tell the truth about private life'. His words — 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — are 'famous' in the historian Jean-Louis Halpérin's phrase. Halpérin also notes that the expression 'vie privée' does not appear in the law of 17 May 1819 itself.",
    "significance": "The clearest statement of the 'walls' model: privacy as a zone that the press may not enter, whatever the truth.",
    "sources": [
     {
@@ -672,9 +853,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Translation: 'The expression \"private life\" does not appear in the law, but contemporaries knew it. It was at the centre of Royer-Collard's speech (27 April 1819), with his famous words: \"so there is private life walled in; and, if I may use the expression, it is declared invisible, it is shut up inside houses\".' The primary text (Gallica, 'De la liberté de la presse : discours') returned HTTP 403 and was not read."
+    },
+    {
+     "institution": "Internet Archive (scan of the University of Toronto, Robarts Library copy)",
+     "title": "Prosper de Barante, La vie politique de M. Royer-Collard, ses discours et ses écrits, vol. 1 (Paris: Didier, 1863), pp. 474–475",
+     "date": "1863",
+     "url": "https://archive.org/stream/laviepolitiquede01barauoft/laviepolitiquede01barauoft_djvu.txt",
+     "quote": "L'article établit seulement que la preuve ne sera pas admise contre les particuliers, c'est-à-dire qu'il n'est pas permis de dire la vérité sur la vie privée.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary text of the speech (OCR). Barante introduces it with the bill's article: 'Nul ne sera admis à prouver la vérité des faits diffamatoires, si ce n'est dans le cas d'imputation contre les dépositaires ou agents de l'autorité, ou autres personnes ayant agi dans un caractère public, de faits relatifs à leurs fonctions.' The speech continues: 'Voilà donc la vie privée murée, si je puis me servir de cette expression; elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons.' That sentence is OCR-damaged in the scan, so only the clean preceding sentence is quoted. Barante gives no date; 27 April 1819 rests on Halpérin. --check FOUND."
     }
    ],
-   "locationNote": "The Chamber of Deputies sat in the Palais Bourbon; coordinates are the building."
+   "locationNote": "The Chamber of Deputies sat in the Palais Bourbon; coordinates are the building.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary tied the speech to 'the press law that became the law of 17 May 1819'. The primary text (Barante's 1863 edition of Royer-Collard's speeches, pp. 474–475) shows he was speaking to the article 'Nul ne sera admis à prouver la vérité des faits diffamatoires, si ce n'est dans le cas d'imputation contre les dépositaires ou agents de l'autorité ... de faits relatifs à leurs fonctions'. As far as the verifier knows, this rule was enacted as art. 20 of the companion law of 26 May 1819 on prosecution and trial, not the 17 May law; the text of the 1819 laws could not be fetched to confirm the article number. Halpérin speaks loosely of the 17 May law, so the summary now says 'the de Serre press laws of May 1819' and keeps Halpérin's point about 17 May scoped to that law.",
+     "Grammar: 'His phrase ... are' is corrected to 'His words ... are'.",
+     "The only source was secondary, because the Gallica primary returned HTTP 403. A primary-text source (Barante, via Internet Archive) is added; its quote gives Royer-Collard's own gloss that truth may not be told about private life."
+    ]
+   }
   },
   {
    "id": "mazzini-post-office-letter-opening-scandal-1844",
@@ -684,8 +883,8 @@
    "place": "House of Commons, Palace of Westminster, London",
    "lat": 51.4995,
    "lng": -0.1248,
-   "summary": "On 14 June 1844 Thomas Duncombe presented a petition from Giuseppe Mazzini, W. J. Linton and two others complaining that their letters had been detained, their seals broken and the contents read at the Post Office. Home Secretary Sir James Graham replied that since the reign of Queen Anne the Secretary of State had held power to detain and open letters, confirmed by statute in 1837; he had issued a warrant for Mazzini's letters on 1 March 1844 at the Austrian ambassador's request. Both Houses appointed secret committees in July.",
-   "significance": "The first great public row over state interception of communications — lawful under a warrant, yet felt as a violation of the sealed letter.",
+   "summary": "On 14 June 1844 Thomas Duncombe presented a petition from W. J. Linton, Giuseppe Mazzini and two others. It complained that their letters had been detained, their seals broken and the contents read at the Post Office. Home Secretary Sir James Graham replied that the Secretary of State had held power to detain and open letters since the reign of Queen Anne, and that Parliament had reviewed that power in 1837 and left it with the Secretaries of State. He admitted that a warrant had been issued for one petitioner's correspondence but refused to explain further. Historians have since shown that Graham signed the warrant for Mazzini's letters on 1 March 1844 at the request of the Austrian ambassador, Baron Philipp von Neumann. Both Houses appointed secret committees in July.",
+   "significance": "A landmark public row in Britain over state interception of communications: lawful under a warrant, yet felt as a violation of the sealed letter.",
    "sources": [
     {
      "institution": "UK Parliament, Hansard (Historic Hansard)",
@@ -708,15 +907,44 @@
     {
      "institution": "BRANCH: Britain, Representation and Nineteenth-Century History",
      "title": "Kate Lawson, 'Personal Privacy, Letter Mail, and the Post Office Espionage Scandal, 1844'",
-     "date": "2026-09-23",
+     "date": "2013-03",
      "url": "https://branchcollective.org/?ps_articles=kate-lawson-personal-privacy-letter-mail-and-the-post-office-espionage-scandal-1844",
      "quote": "As a result, on 1 March 1844, Graham issued a warrant for the opening of letters sent to Mazzini.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same article: 'In July, secret committees were appointed by both the House of Commons and the Lords to inquire into the issue.' Publication date of the article not captured; 'date' is the access date."
+    },
+    {
+     "institution": "UK Parliament, Hansard (Historic Hansard)",
+     "title": "Opening Letters — Post Office. HC Deb 14 June 1844 (Sir James Graham's admission)",
+     "date": "1844-06-14",
+     "url": "https://api.parliament.uk/historic-hansard/commons/1844/jun/14/opening-letters-post-office",
+     "quote": "As to three of the petitioners, he doubted if their letters had ever been detained, and no warrant as to them had been issued; but as to one of the petitioners he had to state, that, on his responsibility, a warrant had been issued as to the correspondence of that person, which warrant was no longer in force.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Graham did not name Mazzini or give the warrant's date or origin in the Commons."
+    },
+    {
+     "institution": "BRANCH: Britain, Representation and Nineteenth-Century History",
+     "title": "Kate Lawson, 'Personal Privacy, Letter Mail, and the Post Office Espionage Scandal, 1844'",
+     "date": "2013-03",
+     "url": "https://branchcollective.org/?ps_articles=kate-lawson-personal-privacy-letter-mail-and-the-post-office-espionage-scandal-1844",
+     "quote": "The Post Office espionage scandal of 1844 had its genesis in a request from the Austrian ambassador, Baron Philipp von Neumann, to the British Secretary of State for the Home Department, Sir James Graham.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports the Austrian request. Lawson's note 2 adds that Neumann also dealt directly with Foreign Secretary Lord Aberdeen, and that historians disagree over how to apportion blame between Graham and Aberdeen."
     }
    ],
-   "locationNote": "After the 1834 fire the Commons met in a temporary chamber within the Palace of Westminster; coordinates are the Palace."
+   "locationNote": "After the 1834 fire the Commons met in a temporary chamber within the Palace of Westminster; coordinates are the Palace.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Misattribution in the summary: its semicolon clause ('he had issued a warrant for Mazzini's letters on 1 March 1844 at the Austrian ambassador's request') is written as part of Graham's reply on 14 June 1844. Graham said nothing of the kind in the Commons. Hansard shows he admitted only that 'as to one of the petitioners' a warrant had been issued, 'which warrant was no longer in force', and refused any further explanation. The 1 March date and the Austrian request come from later historians (Lawson/BRANCH, citing F. B. Smith). The summary is rewritten to keep the two apart, and sources are added for Graham's admission and for the ambassador's request.",
+     "source[2] (BRANCH, Kate Lawson) has date '2026-09-23' (an access date). The page's citation block says 'published March 2013'. Corrected to 2013-03.",
+     "The significance calls this 'The first great public row over state interception of communications'. That 'first' is unsupported: Parliament had already reviewed letter-opening powers (1837, per Graham), and none of the sources says 'first'. Softened.",
+     "Checked OK: all three quotes are verbatim (--check FOUND on fresh fetches). Petitioners: 'W. J. Linton, Joseph Mazzini, and two others'. Date 14 June 1844. Graham's Queen Anne / 1 Vict statement. BRANCH gives the warrant of 1 March 1844 and the secret committees of both Houses 'In July'. Palace of Westminster coordinates are right."
+    ]
+   }
   },
   {
    "id": "us-census-confidentiality-instructions-1850",
@@ -727,7 +955,7 @@
    "lat": 38.8951,
    "lng": -77.0364,
    "summary": "From 1790 assistant marshals had to post copies of census returns 'at two of the most public places' in their districts for inspection. In 1850, when the census began recording each individual, public posting was dropped and marshals were told not to use the facts entrusted to them to gratify curiosity or expose anyone's business. The 1870 instructions went further: 'No graver offense can be committed by Assistant Marshals than to divulge information acquired in the discharge of their duty.'",
-   "significance": "A state data collector adopts confidentiality as a condition of getting honest answers — privacy as a design rule for official data.",
+   "significance": "A state data collector promises that the personal facts it gathers will not be exposed to satisfy curiosity: privacy as a design rule for official data.",
    "sources": [
     {
      "institution": "Population and Development Review 49 (PubMed Central)",
@@ -749,7 +977,14 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Coordinates are central Washington, D.C.; the Census Office's 1850 building was not checked."
+   "locationNote": "Coordinates are central Washington, D.C.; the Census Office's 1850 building was not checked.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance says confidentiality was adopted 'as a condition of getting honest answers'. For 1850 the cited article gives a different reason: the Census Office had heard of 'unnecessary exposure' of individuals' business by assistant marshals 'merely to gratify curiosity'. The honest-answers rationale fits the 1840 economic-schedule instructions, which responded to people's 'disinclination to expose their private affairs'. The significance is reworded so it does not claim a motive the sources do not give for 1850.",
+     "Checked OK: both quotes verbatim (--check FOUND). The article is Popul Dev Rev 2023 Sep;49(3):651–679 (PMC esummary), Ruggles S and Magnuson DL. It confirms that posting at 'two of the most public places' was discontinued in 1850, with a copy deposited with the county clerk instead. It also confirms the 1850 circular ('not to be used in any way to the gratification of curiosity, the exposure of any man's business or pursuits') and that the 1850 schedule was the first to record each individual. The 1870 Census Bureau page carries the 'No graver offense' sentence verbatim."
+    ]
+   }
   },
   {
    "id": "rachel-affair-deathbed-image-tribunal-seine-1858",
@@ -781,20 +1016,36 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Footnote 19 of the article: 'Dalloz périodique 1858, 3, 62.'"
+    },
+    {
+     "institution": "Déméter (Université de Lille)",
+     "title": "Nathalie Delbard, 'Ce que l'histoire juridique de la photographie nous apprend du principe de dignité humaine' — note 7, réquisitoire du ministère public, affaire Rachel",
+     "date": "2020-09-01",
+     "url": "https://www.peren-revues.fr/demeter/index.php?id=122&lang=fr",
+     "quote": "Quelque grande que soit une artiste, quelque historique que soit un grand homme, ils ont leur vie privée distincte de la vie publique, leur foyer domestique séparé de la scène et du forum.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Translation: 'However great an artist, however historic a great man, they have their private life distinct from their public life, their domestic hearth separate from the stage and the forum.' Delbard gives these as the words of the magistrate of the ministère public (the prosecutor)."
     }
    ],
-   "locationNote": "The Tribunal civil de la Seine sat in the Palais de Justice on the Île de la Cité."
+   "locationNote": "The Tribunal civil de la Seine sat in the Palais de Justice on the Île de la Cité.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. Delbard (Déméter no. 5, 2020-09-01, Université de Lille; confirmed from the page's citation meta tags) says L'Illustration published Frédérique O'Connell's deathbed drawing. She says the drawing was made from Louis Crette's photograph, taken 'qu'à des fins privées, à la demande de la famille'. Footnote 8 gives '16 juin 1858, 1re chambre du Tribunal civil de la Seine, Dalloz 1858, 3, 62'. Footnote 7 carries the ministère public's words ('Quelque grande que soit une artiste ... ils ont leur vie privée distincte de la vie publique'), which support the prosecutor sentence; a source is added for it. Halpérin (Nouveaux Cahiers no. 48, June 2015, pp. 59–68) independently confirms the 1858 Tribunal civil de la Seine decision and cites D.P. 1858, 3, 62. Palais de Justice coordinates are right."
+    ]
+   }
   },
   {
    "id": "california-telegraph-wiretap-statute-1862",
-   "displayDate": "1862",
+   "displayDate": "18 April 1862",
    "year": 1862,
    "title": "California outlaws tapping telegraph lines",
-   "place": "California State Legislature, Sacramento",
-   "lat": 38.5766,
-   "lng": -121.4934,
-   "summary": "According to the historian Brian Hochman, the earliest statute prohibiting wiretapping was passed in California in 1862, soon after the transcontinental telegraph reached the West Coast. The first person convicted under it, in 1864, was a stockbroker, D. C. Williams, who listened in on corporate telegraph lines and sold what he heard to traders.",
-   "significance": "The first law against intercepting electronic messages — privacy of communications follows the letter onto the wire.",
+   "place": "California State Legislature, Exchange Building, Battery Street, San Francisco (session moved from flooded Sacramento)",
+   "lat": 37.7964,
+   "lng": -122.4007,
+   "summary": "Sitting in San Francisco after floods drove it out of Sacramento, California's legislature passed 'An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages', approved on 18 April 1862. Its section 6 made it a misdemeanour, punishable by a fine of up to $1,000 or a year in prison, for anyone outside a telegraph company to read or learn a message 'by means of any machine, instrument, or contrivance' while it was being sent over the line. The historian Brian Hochman calls it the earliest statute prohibiting wiretapping, written soon after the transcontinental telegraph reached the West Coast. He says the first person convicted, in 1864, was a stockbroker, D. C. Williams, who listened in on corporate telegraph lines and sold what he heard to stock traders.",
+   "significance": "What historian Brian Hochman calls the earliest wiretapping statute: privacy of communications follows the letter onto the wire.",
    "sources": [
     {
      "institution": "Smithsonian Magazine",
@@ -804,10 +1055,60 @@
      "quote": "The earliest statute prohibiting wiretapping was written in California in 1862, just after the Pacific Telegraph Company reached the West Coast, and the first person convicted was a stock broker named D.C. Williams in 1864.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Secondary source (historian interview). The 1862 statute text in the Statutes of California was not read; the exact chapter and date of enactment are unverified."
+     "note": "Secondary source (historian interview). The statute itself is now cited from the Statutes of California 1862, ch. 262 (see the added sources). The 1864 conviction of D. C. Williams rests on Hochman alone."
+    },
+    {
+     "institution": "California State Assembly, Office of the Chief Clerk (Statutes of California, 1862, scanned volume)",
+     "title": "Statutes of California, 13th Session (1862), ch. CCLXII — An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages, p. 288",
+     "date": "1862-04-18",
+     "url": "https://clerk.assembly.ca.gov/sites/clerk.assembly.ca.gov/files/archive/Statutes/1862/1862.PDF#page=335",
+     "quote": "CHAP. CCLXII.—An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages. [Approved April 18, 1862.]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scanned PDF with no text layer (~29 MB), so fetch-text --check cannot run. The quote was transcribed from the page image at PDF page 335 (printed p. 288). The chapter runs pp. 288–293; the volume's index lists 'Clandestinely learning contents, penalty, 290'."
+    },
+    {
+     "institution": "California State Assembly, Office of the Chief Clerk (Statutes of California, 1862, scanned volume)",
+     "title": "Statutes of California 1862, ch. 262, sec. 6 (pp. 289–290) — clandestinely learning the contents of messages",
+     "date": "1862-04-18",
+     "url": "https://clerk.assembly.ca.gov/sites/clerk.assembly.ca.gov/files/archive/Statutes/1862/1862.PDF#page=336",
+     "quote": "If any person, not connected with any telegraph company, shall, by means of any machine, instrument, or contrivance, or in any other manner, wilfully and fraudulently read, or attempt to read, any message, or to learn the contents thereof, whilst the same is being sent over any telegraph line",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Transcribed from the page images at PDF pages 336–337 (printed pp. 289–290; the word 'contrivance' is hyphenated across the page break). The PDF has no text layer, so --check cannot run. The section goes on to cover anyone who 'shall use, or attempt to use, or communicate to others, any information so obtained'. The penalty is a misdemeanour with a 'fine, not to exceed one thousand dollars, or imprisonment, not to exceed one year, or by both'."
+    },
+    {
+     "institution": "California State Assembly, Office of the Chief Clerk (Statutes of California, 1862, scanned volume)",
+     "title": "Statutes of California 1862, Concurrent Resolution No. XI (adopted January 22, 1862), p. 594 — adjournment to San Francisco",
+     "date": "1862-01-22",
+     "url": "https://clerk.assembly.ca.gov/sites/clerk.assembly.ca.gov/files/archive/Statutes/1862/1862.PDF#page=641",
+     "quote": "that this Legislature, when it adjourns to-day, do adjourn until Friday, the twenty-fourth day of January instant, to meet in the City of San Francisco, there to remain during the remainder of the present session",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Transcribed from the page image at PDF page 641 (printed p. 594); no text layer, so --check cannot run. The resolution names the meeting place as 'the hall of the building on Battery street, between Washington and Jackson streets, known as the \"Exchange Building\"'."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "Great Flood of 1862",
+     "date": "2026-09-23",
+     "url": "https://en.wikipedia.org/wiki/Great_Flood_of_1862",
+     "quote": "As a result of the flooding, from January 23, 1862, the state capital was moved temporarily from Sacramento to San Francisco.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Tertiary corroboration of the San Francisco sitting; 'date' is the access date."
     }
    ],
-   "locationNote": "Coordinates are the California State Capitol, Sacramento; the 1862 session's meeting place was not verified."
+   "locationNote": "Concurrent Resolution No. XI (22 January 1862) moved the Legislature from flooded Sacramento to San Francisco for the rest of the 1862 session. It met in the 'Exchange Building' on Battery Street between Washington and Jackson streets, and coordinates are that block (approximate). The act was approved on 18 April 1862, during the San Francisco sitting.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong place. The record puts the legislature in Sacramento, but the 1862 session left flooded Sacramento. Concurrent Resolution No. XI (adopted 22 January 1862; Statutes of California 1862, p. 594) moved it to San Francisco 'there to remain during the remainder of the present session', meeting in the 'Exchange Building' on Battery Street between Washington and Jackson streets. The act was approved on 18 April 1862, so it was passed in San Francisco. Place, coordinates and locationNote are corrected. Wikipedia's 'Great Flood of 1862' agrees: the capital moved to San Francisco from 23 January 1862 (--check FOUND).",
+     "The primary text was found, so the gap in the record's own note is closed. It is Statutes of California 1862, ch. CCLXII (262), 'An Act for the Regulation of the Telegraph, and to secure Secrecy and Fidelity in the Transmission of Telegraphic Messages', approved 18 April 1862, pp. 288–293. Section 6 (pp. 289–290) is the wiretap clause. It makes it a misdemeanour, with a fine of up to $1,000 and/or up to one year's imprisonment, for anyone 'not connected with any telegraph company' to read or learn a message 'by means of any machine, instrument, or contrivance' while it is being sent. displayDate is narrowed to 18 April 1862 and the summary now describes the statute.",
+     "The significance states 'The first law against intercepting electronic messages' as fact. The only source for that is historian Brian Hochman's 'earliest statute' remark in a magazine interview, so the claim is now attributed to him.",
+     "Method caveat: the Assembly Clerk's 1862 Statutes PDF is a scan with no text layer, so fetch-text.py --check cannot run on it. The two primary-source quotes added below were transcribed by reading the page images: PDF pages 335–337 (printed pp. 288–290) and PDF page 641 (printed p. 594). The index entry 'TELEGRAPHS. Act for the regulation of companies, 288–293 ... Clandestinely learning contents, penalty, 290' was read from 1862_Index.pdf. The Wikipedia source is added as a --check-able corroboration of the San Francisco sitting.",
+     "Checked OK: the Smithsonian quote is verbatim (--check FOUND). The page metadata gives author April White, datePublished 2018-03-22, title 'A Brief History of Surveillance in America'. The D. C. Williams 1864 story rests on Hochman alone and stays attributed to him."
+    ]
+   }
   },
   {
    "id": "french-press-law-article-11-private-life-1868",
@@ -817,8 +1118,8 @@
    "place": "Corps législatif, Palais Bourbon, Paris",
    "lat": 48.8618,
    "lng": 2.3186,
-   "summary": "The press law of 11 May 1868, passed as the Second Empire relaxed censorship, punished as a contravention any publication in a periodical of information relating to a fact of private life. The historian Jean-Louis Halpérin calls the provision 'a very brief episode'; Warren and Brandeis cited the 1868 law in their 1890 article.",
-   "significance": "The first statute to protect private life as such, not only honour — true information could be unlawful to publish.",
+   "summary": "Article 11 of the press law of 11 May 1868, passed as the Second Empire relaxed censorship, made any publication in a periodical relating to a fact of private life a contravention punishable by a 500-franc fine. Only the person concerned could bring a prosecution. The historian Jean-Louis Halpérin calls the provision 'a very brief episode'. Warren and Brandeis quoted the article in their 1890 essay 'The Right to Privacy'.",
+   "significance": "An early statute to protect private life as such, not only honour: even true information could be unlawful to publish.",
    "sources": [
     {
      "institution": "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
@@ -828,7 +1129,7 @@
      "quote": "La mention de la vie privée dans l’éphémère loi du 11 mai 1868 (correspondant à un premier recul de la censure au début de l’Empire libéral) sanctionnant, comme une simple contravention, toute révélation non autorisée d’une information « relative à un fait de la vie privée », fut un épisode très court.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Translation: 'The mention of private life in the short-lived law of 11 May 1868 (marking a first retreat of censorship at the start of the Liberal Empire), which punished as a mere contravention any unauthorised disclosure of information \"relating to a fact of private life\", was a very brief episode.' The statute text (Bulletin des lois, via Gallica) returned HTTP 403 and was not read; the fine of 500 francs often cited was therefore not verified."
+     "note": "Translation: 'The mention of private life in the short-lived law of 11 May 1868 (marking a first retreat of censorship at the start of the Liberal Empire), which punished as a mere contravention any unauthorised disclosure of information \"relating to a fact of private life\", was a very brief episode.' The statute text (Bulletin des lois, via Gallica) returned HTTP 403. The wording of art. 11, including the 500-franc fine, is verified from Warren and Brandeis's footnote 41 (added source)."
     },
     {
      "institution": "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
@@ -838,9 +1139,27 @@
      "quote": "la loi sur la presse de 1868 (que Warren et Brandeis avaient eux citées)",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Harvard Law Review (HTML copy hosted by MIT CSAIL course 6.805), footnotes page",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harv. L. Rev. 193 (1890), note 41 [p. 214 note 1 in original]",
+     "date": "1890-12-15",
+     "url": "https://groups.csail.mit.edu/mac/classes/6.805/articles/privacy/Privacy_brand_warr_fn.html",
+     "quote": "Loi Relative à la Presse. 11 Mai 1868. \"11. Toute publication dans un écrit periodique relative à un fait de la vie privée constitue une contravention punie d'un amende de cinq cent francs.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (accents and spelling as on the page, e.g. 'periodique', 'cinq cent'). The footnote continues: '\"La poursuite ne pourra être exercée que sur la plainte de la partie interessée.\" Riviére, Codes Francais et Lois Usuelles. App. Code Pen., p. 20.' Translation: 'Any publication in a periodical relating to a fact of private life constitutes a contravention punished by a fine of five hundred francs. Prosecution may be brought only on the complaint of the interested party.'"
     }
    ],
-   "locationNote": "The Corps législatif sat in the Palais Bourbon; coordinates are the building."
+   "locationNote": "The Corps législatif sat in the Palais Bourbon; coordinates are the building.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance says 'The first statute to protect private life as such'. That is not supported. Halpérin, the only source, does not say 'first', and he points to earlier French texts on private life (the 1791 Constitution's provision on calumnies about private life). 'First' anywhere cannot be shown from these sources. Softened to 'An early statute'.",
+     "The provision's text is now verified from a reliable reproduction of the statute. Warren and Brandeis, footnote 41 of 'The Right to Privacy' (1890), quote it: 'Loi Relative à la Presse. 11 Mai 1868. \"11. Toute publication dans un écrit periodique relative à un fait de la vie privée constitue une contravention punie d'un amende de cinq cent francs.\"', followed by 'La poursuite ne pourra être exercée que sur la plainte de la partie interessée.' This confirms Article 11 (matching the record id), the 'periodical' limit (which Halpérin's quote does not state), the 500-franc fine that the original note left unverified, and the rule that only the injured party could bring a complaint. The summary now says this, the source is added, and source[0]'s note is corrected.",
+     "Checked OK: both Halpérin quotes are verbatim (--check FOUND). The issue is no. 48, June 2015, pp. 59–68. The Palais Bourbon coordinates are right."
+    ]
+   }
   },
   {
    "id": "ex-parte-jackson-sealed-letters-fourth-amendment-1878",
@@ -851,7 +1170,7 @@
    "lat": 38.8904,
    "lng": -77.009,
    "summary": "Upholding a ban on mailing lottery circulars, the Supreme Court drew a line between open printed matter and sealed letters. Justice Field wrote for the Court that letters and sealed packages in the mail are as fully guarded from inspection as if kept at home, and can be opened only under a warrant issued on oath and particularly describing the thing to be seized.",
-   "significance": "Extends the home's protection to a message in transit through a third party's network — a principle every later fight over email and cloud data returns to.",
+   "significance": "Extends the home's protection to a sealed letter while it is in the hands of the postal system: a principle later fights over telephone, email and cloud data keep returning to.",
    "sources": [
     {
      "institution": "Supreme Court of the United States (via Cornell LII)",
@@ -879,9 +1198,27 @@
      "quote": "May 13, 1878, Decided; OCTOBER, 1877, Term",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Supreme Court of the United States (via Cornell LII)",
+     "title": "Ex parte Jackson, 96 U.S. 727 (1878) — warrant requirement for sealed mail",
+     "date": "1878-05-13",
+     "url": "https://www.law.cornell.edu/supremecourt/text/96/727",
+     "quote": "Whilst in the mail, they can only be opened and examined under like warrant, issued upon similar oath or affirmation, particularly describing the thing to be seized, as is required when papers are subjected to search in one's own household.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports the summary's warrant clause."
     }
    ],
-   "locationNote": "The Supreme Court sat in the Old Senate Chamber of the U.S. Capitol from 1860 to 1935."
+   "locationNote": "The Supreme Court sat in the Old Senate Chamber of the U.S. Capitol from 1860 to 1935.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary's warrant clause ('can be opened only under a warrant issued on oath and particularly describing the thing to be seized') is correct, but none of the record's quotes covers it. Field's sentence ('Whilst in the mail, they can only be opened and examined under like warrant...') is added as a source (--check FOUND on Cornell LII).",
+     "The significance overstates: 'a principle every later fight over email and cloud data returns to'. Also, the mail in 1878 was the government's own service, not merely 'a third party's network'. Reworded.",
+     "Checked OK: all three quotes are verbatim (--check FOUND). The decision date is 13 May 1878 (Lexis header: 'May 13, 1878, Decided; OCTOBER, 1877, Term'). Field J. delivered the opinion (LoC U.S. Reports PDF). The facts are a circular concerning a lottery mailed 23 February 1877, a conviction under Rev. Stat. § 3894 as amended in 1876, and a habeas petition denied, so the statute was upheld. The Court sat in the Old Senate Chamber, and the coordinates are right."
+    ]
+   }
   },
   {
    "id": "cooley-right-to-be-let-alone-torts-treatise-1879",
@@ -902,7 +1239,7 @@
      "quote": "The right to one's person may be said to be a right of complete immunity : to be let alone.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "The 1906 edition marks the first edition's page numbers with stars; the sentence sits at [*29]. The 1879 first edition (HathiTrust mdp.35112103469740) is behind a bot wall and was not read directly; the OCR spacing ' : ' is kept as extracted."
+     "note": "The sentence sits under the heading 'Personal Immunity' at star page [*29] of the 1906 third edition. The volume does not say which edition its star pages follow. Warren and Brandeis cite 'Cooley on Torts, 2d ed., p. 29'. Cooley's preface to the 2nd edition, reprinted here, says the first edition's text was 'preserved substantially unchanged'. The 1879 first edition (HathiTrust mdp.35112103469740) is behind a bot wall and was not read directly. The OCR spacing ' : ' is kept as extracted."
     },
     {
      "institution": "HathiTrust Digital Library (catalog API)",
@@ -922,9 +1259,37 @@
      "quote": "Recent inventions and business methods call attention to the next step which must be taken for the protection of the person, and for securing to the individual what Judge Cooley calls the right \"to be let alone\"",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Harvard Law Review (HTML copy hosted by MIT CSAIL course 6.805), footnotes page",
+     "title": "Samuel D. Warren and Louis D. Brandeis, 'The Right to Privacy', 4 Harv. L. Rev. 193 (1890), note 10 [p. 195 note 4 in original]",
+     "date": "1890-12-15",
+     "url": "https://groups.csail.mit.edu/mac/classes/6.805/articles/privacy/Privacy_brand_warr_fn.html",
+     "quote": "10 Cooley on Torts, 2d ed., p. 29.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The footnote to 'what Judge Cooley calls the right \"to be let alone\"'. Warren and Brandeis used the 1888 second edition, whose p. 29 matches the 1906 star page [*29]."
+    },
+    {
+     "institution": "Cornell University Library copy of Cooley's Treatise on the Law of Torts, 3rd ed. (1906), Internet Archive OCR text",
+     "title": "A Treatise on the Law of Torts, 3rd ed. — reprinted Preface to the Second Edition",
+     "date": "1906",
+     "url": "https://archive.org/download/cu31924019311426/cu31924019311426_djvu.txt",
+     "quote": "The text of the first edition was not found to require material modification, and it has been preserved substantially unchanged.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same volume reprints the Preface to the First Edition, signed 'University of Michigan, Ann Arbor, December, 1878.' (also FOUND). Together these tie the 1906 wording to the 1879 first edition."
     }
    ],
-   "locationNote": "Coordinates are Chicago, the city of the publisher Callaghan & Company (named on the 1906 edition; the 1879 imprint was not seen)."
+   "locationNote": "Coordinates are Chicago, home of the publisher Callaghan & Company. The 1879 imprint is 'Chicago : Callaghan and company, 1879' (HathiTrust MARC 260). Cooley signed the preface at the University of Michigan, Ann Arbor, in December 1878.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "source[0]'s note says 'The 1906 edition marks the first edition's page numbers with stars'. The 1906 volume never says which edition its star pages follow. Warren and Brandeis cite 'Cooley on Torts, 2d ed., p. 29' (their note 10), which matches [*29], so the stars may be second-edition paging. The first edition can still be linked to the sentence. Cooley's own preface to the second edition, reprinted in 1906, says 'The text of the first edition ... has been preserved substantially unchanged', and the 1906 editor says 'Judge Cooley's text has not been changed except by the insertion of new matter'. The note is corrected and the two supporting sources are added. The 1879 text itself is still unread (HathiTrust sits behind a Cloudflare challenge, HTTP 403).",
+     "locationNote says 'the 1879 imprint was not seen'. The HathiTrust full MARC record 010461084, field 260, reads 'Chicago : Callaghan and company, 1879.' and field 245 'By Thomas M. Cooley, LL. D.'. The note is updated.",
+     "Checked OK: all three quotes are verbatim (--check FOUND). The 1906 title page reads 'THIRD EDITION. By JOHN LEWIS ... CHICAGO: CALLAGHAN & COMPANY. 1906.' HathiTrust publishDates is ['1879']. The Warren and Brandeis attribution ('what Judge Cooley calls the right \"to be let alone\"') is on the page."
+    ]
+   }
   }
  ],
  "series": [
@@ -952,6 +1317,16 @@
      "quote": "The 1790 Census Act specified that upon completing their enumeration of a district, each Assistant Marshall shall “cause a correct copy” of the census returns “to be set up at two of the most public places” in his district, “there to remain for the inspection of all concerned”",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "U.S. Census Bureau",
+     "title": "Measuring America: The Decennial Censuses From 1790 to 2000 (POL/02-MA)",
+     "date": "2002-04",
+     "url": "https://www2.census.gov/library/publications/2002/dec/pol_02-ma.pdf",
+     "quote": "The six inquiries in 1790 called for the name of the head of the family",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same paragraph says the 1790 act 'governed census-taking through 1840' and required schedules to be posted in 'two of the most public places within [each jurisdiction], there to remain for the inspection of all concerned'. That text breaks across PDF hyphenation, so only the first sentence is quoted. Independent corroboration of the 1790 value."
     }
    ],
    "points": [
@@ -969,7 +1344,15 @@
      "estimate": false,
      "note": "Population returns still publicly posted; confidentiality promised only for the economic schedules."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. Both endpoint values (6 in 1790, 80 in 1840), the 1790 posting rule, the end of posting in 1850 and the 1840 confidentiality limited to the economic schedule all match Ruggles and Magnuson word for word. 80/6 = 13.3, so 'thirteen-fold' holds.",
+     "Checked the source metadata on the PMC page: Population and Development Review 49(3):651, 24 Jul 2023, doi 10.1111/padr.12580, authors Steven Ruggles and Diana L. Magnuson.",
+     "Independent check: the Census Bureau's 'Measuring America' (2002) confirms the 'six inquiries in 1790'. It also says the posting requirement ('two of the most public places ... for the inspection of all concerned') came from an act that 'governed census-taking through 1840'. Added as a corroborating source."
+    ]
+   }
   }
  ],
  "quant": [
@@ -990,28 +1373,52 @@
      "quote": "The jury, after withdrawing for near half an hour, returned, and found a general verdict upon both issues for the plaintiff, with a thousand pounds damages.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "University of Chicago Law Review, vol. 83",
+     "title": "Laura K. Donohue, 'The Original Fourth Amendment'",
+     "date": "2016",
+     "url": "https://lawreview.uchicago.edu/print-archive/original-fourth-amendment",
+     "quote": "After a mere half hour of deliberation, the jury returned a verdict for Wilkes, awarding a stunning £1,000 in damages.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same article (also FOUND): 'The trial began at nine o’clock in the morning on December 6, 1763, at the Court of Common Pleas at Westminster.' Independent confirmation of the amount and the date."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error in value, unit or year. The source quote is verbatim (--check FOUND). The Founders' Constitution page header reads 'Wilkes v. Wood 98 Eng. Rep. 489, 498--99 C.P. 1763'. That page does not give the day, so the note's '6 December 1763' is supported by an added source: Donohue, 83 U. Chi. L. Rev., says the trial began at nine in the morning on 6 December 1763 at the Court of Common Pleas at Westminster. The Founders' report says the verdict came at twenty past eleven that night, so the verdict falls on the same day. Donohue independently gives '£1,000 in damages'."
+    ]
+   }
   },
   {
    "id": "us-post-office-act-1792-max-fine-for-opening-letters",
-   "label": "Maximum fine for a U.S. postal employee who unlawfully opened, detained or destroyed a letter",
+   "label": "Maximum fine for a U.S. postal employee who unlawfully opened, detained or delayed a letter",
    "value": 300,
-   "unit": "US dollars (plus or instead up to 6 months' imprisonment)",
+   "unit": "US dollars (or up to 6 months' imprisonment, or both)",
    "year": 1792,
    "geography": "United States",
-   "notes": "Act of 20 February 1792, sec. 16; applies where the letter held no money or securities; secreting, embezzling or destroying a letter containing bank notes or other money instruments carried the death penalty under the same section.",
+   "notes": "Act of 20 February 1792, ch. 7, sec. 16 (1 Stat. 232, at 236). The same maximum ($300 fine, up to six months' imprisonment, or both) covered a postal employee who unlawfully detained, delayed or opened any letter, and one who secreted, embezzled or destroyed a letter containing no money or securities. Secreting, embezzling or destroying a letter that held bank notes or other money instruments, or stealing them from the mail, carried the death penalty under the same section. Nominal amount, not inflation-adjusted.",
    "sources": [
     {
      "institution": "New Jersey Postal History Society (transcription of 1 Stat. 232)",
      "title": "Act of Feb. 20, 1792, sec. 16 — penalty",
      "date": "1792-02-20",
      "url": "https://njpostalhistory.org/media/pdf/postact1792.pdf",
-     "quote": "every such offender, being thereof duly convicted, shall, for every such offence, be fined not exceeding three hundred dollars, or imprisoned not exceeding six months, or both, according to the circumstances and aggravations of the offence.",
+     "quote": "That if any person, employed in any of the departments of the general post-office, shall unlawfully detain, delay, or open, any letter, packet, bag or mail of letters, with which he shall be entrusted, or which shall have come to his possession, and which are intended to be conveyed by post: Or if any such person shall secrete, embezzle or destroy any letter or packet, entrusted to him, as aforesaid, and which shall not contain any security for, or assurance relating to money, as herein after described, every such offender, being thereof duly convicted, shall, for every such offence, be fined not exceeding three hundred dollars, or imprisoned not exceeding six months, or both, according to the circumstances and aggravations of the offence.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The notes misapply the statute's money qualifier. They say the $300 maximum 'applies where the letter held no money or securities'. In sec. 16 that qualifier ('which shall not contain any security for, or assurance relating to money') attaches only to the second limb, secreting, embezzling or destroying a letter. The first limb, unlawfully detaining, delaying or opening 'any letter, packet, bag or mail of letters', carries the $300 / six-month penalty whatever the letter holds. The death penalty applies to secreting, embezzling or destroying letters that contain bank notes or other money instruments, or to stealing those instruments from the mail, not to opening them. Notes and label are corrected.",
+     "The source quote starts mid-sentence at the penalty, so it does not show which acts it covers. It is replaced with the full clause (--check FOUND).",
+     "Checked OK: 'fined not exceeding three hundred dollars, or imprisoned not exceeding six months, or both' is verbatim. The Act is 2nd Congress, Sess. I, ch. 7, 20 February 1792; sec. 16 falls on 1 Stat. 236 by the transcription's page markers (the Act begins at 1 Stat. 232). The death-penalty sentence 'he shall, on conviction for any such offence, suffer death.' is FOUND."
+    ]
+   }
   }
  ],
  "myths": [
@@ -1019,7 +1426,7 @@
    "id": "myth-1361-act-outlawed-peeping-toms-and-eavesdroppers",
    "claim": "The law of privacy goes back to 1361, when England's Justices of the Peace Act provided for the arrest of peeping toms and eavesdroppers.",
    "verdict": "MISLEADING",
-   "correction": "The 1361 statute names neither peeping toms nor eavesdroppers. It lets justices restrain offenders, rioters and barrators and take sureties of good behaviour from people 'not of good fame'. That general binding-over power was later used against eavesdroppers and voyeurs — MPs in 1960 defended it as protection against 'peeping Toms and eavesdroppers' — but the privacy reading comes from later practice, not from the text.",
+   "correction": "The 1361 statute names neither peeping toms nor eavesdroppers. It lets justices restrain offenders, rioters and barrators, and take sureties of good behaviour from people 'not of good fame'. Later lawyers read those general words broadly: Blackstone's Commentaries (Book IV, 1769) says a justice may bind over 'eaves-droppers' under them. In 1960, opposing a bill to repeal the Act, the MP Peter Rawlinson called the repeal bill 'a modest charter for peeping Toms and eavesdroppers', and the Commons refused leave by 230 votes to 148. The privacy reading comes from later practice, not from the text.",
    "sources": [
     {
      "institution": "The National Archives (UK), legislation.gov.uk",
@@ -1048,8 +1455,27 @@
      "quote": "Translated into ordinary terms, the Bill which the hon. Member seeks to introduce, dressed up like a radical bird of paradise, is nothing less than a modest charter for peeping Toms and eavesdroppers.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "William Blackstone, Commentaries on the Laws of England, Book IV (16th ed., ed. J. T. Coleridge, London: A. Strahan, 1825) — Internet Archive OCR",
+     "title": "Book IV, 'Of the means of preventing offences' (binding to good behaviour under 34 Edw. III c. 1)",
+     "date": "1769",
+     "url": "https://archive.org/download/commentaries_laws_england_book4/volume4_djvu.txt",
+     "quote": "Thus also a justice may bind over all nightwalkers; eaves-droppers^ such as keep suspicious company ... bring them within the general words of the statutes as persons not of good fame",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The quote is verbatim OCR: '^' is an OCR artifact for a comma, and 'nightwalkers' is hyphenated across a line break ('night-walkers') in the scan. The passage opens 'the justices are empowered by the statute 34 Ed. III c. 1 to bind over to the good behaviour ... all them that be not of good fame'. Book IV was first published in 1769; this scan is the 16th edition (1825)."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The correction says 'MPs in 1960 defended it as protection against peeping Toms and eavesdroppers'. In fact the phrase was one MP's, Peter Rawlinson (Epsom). He used it for the repeal bill, not the Act: 'a modest charter for peeping Toms and eavesdroppers'. The House then refused leave, Ayes 148, Noes 230 (HC Deb 26 January 1960 vol 616 cc50-60). The wording is made precise below.",
+     "The correction's claim that the binding-over power 'was later used against eavesdroppers' had no source. Blackstone (Book IV, 'Of the means of preventing offences') ties the power to 34 Edw. III c. 1 and lists 'eaves-droppers' among those a justice may bind over under its 'not of good fame' words. Added.",
+     "Checked OK: the revised text on legislation.gov.uk names offenders, rioters and barrators and sureties from those [not] of good Fame, and never mentions eavesdroppers or peeping toms. Note that 'not' is bracketed as an editorial insertion (X4), and in the 1960 debate Leslie Hale said the word is missing from the Parliament roll. That does not affect the myth verdict.",
+     "The GILC page is the 1998 Privacy and Human Rights survey. Its acknowledgements say it was written by Privacy International, with primary authors David Banisar (EPIC) and Simon Davies (PI). '1998' is the most frequent year cited on the page (943 times), so the approximate date holds."
+    ]
+   }
   },
   {
    "id": "myth-coke-coined-a-mans-home-is-his-castle",
@@ -1084,8 +1510,25 @@
      "quote": "quia domus tutissimum cuique refugium atque receptaculum sit",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "William Lambard, Eirenarcha: or the office of the justices of peace (London: Ralph Newbery, 1591) — Internet Archive OCR",
+     "title": "Eirenarcha, Book 2, ch. 5 (Riots, Routs, &c.), p. 188",
+     "date": "1591",
+     "url": "https://archive.org/download/bim_early-english-books-1475-1640_eirenarcha-or-the-offic_lambard-william_1591/bim_early-english-books-1475-1640_eirenarcha-or-the-offic_lambard-william_1591_djvu.txt",
+     "quote": "his houſe, is his Hold and Caſtle",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is verbatim OCR with long s. In context, a man threatened with violence in his house may assemble company to defend it without making an unlawful assembly, 'for his house, is his Hold and Castle', citing 21 H. 7. 39. Coke's Semayne report cites the same Year Book. IA metadata dates this scan 1591. It is primary evidence that the maxim predates Coke's 1604 report."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. Semayne's Case was decided in the King's Bench in Michaelmas Term 1604 (5 Co Rep 91a). Coke was then Attorney General (1594–1606) and reported it; he was not a judge until 1606. Coke's Latin 'domus sua cuique est tutissimum refugium' is on the OLL page, and Digest 2.4.18 (Gaius, 1 ad l. xii tab.) reads 'quia domus tutissimum cuique refugium atque receptaculum sit'.",
+     "The Lambarde claim rested only on a party-aligned amicus brief. I found a primary check: the 1591 Eirenarcha (Internet Archive scan of the 1591 edition, Book 2, ch. 5 on Riots, p. 188) says a man may gather company to defend himself because 'his house, is his Hold and Castle'. That confirms Lambarde used the castle maxim before 1604. The exact sentence the brief quotes from p. 257 ('our law calleth a man's house, his castle ...') could not be found in the garbled OCR, so it stays attributed to the brief. Both Lambarde and Coke's report cite the Year Book 21 Hen. 7. 39, which shows the idea's older roots."
+    ]
+   }
   },
   {
    "id": "myth-otis-said-a-mans-house-is-his-castle-verbatim",
@@ -1121,13 +1564,20 @@
      "accessType": "FREE",
      "note": "The ellipsis marks a printed page number (107) in the web edition."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The Minutes page is dated 1761-02-24, and its text reads 'A Man, who is quiet, is as secure in his House, as a Prince in his Castle'. The Abstract page is dated 1761-04; the editors say it was 'probably made by him sometime in the spring of 1761'. It contains the polished sentence (with 'while', not 'whilst'). The editors confirm the Spy text is from 29 April 1773, p. 3. The letter to William Tudor is dated 29 March 1817.",
+     "Minor nuance, no change needed: Adams blamed the interpolations on Jonathan Williams Austin, who he says 'stole' the notes from his desk ('interpolated by himself'). The editors also say the printed text 'is not the rough notes' but Adams's own longer version of them. The correction's wording stays accurate."
+    ]
+   }
   },
   {
    "id": "myth-pitt-poorest-man-cottage-quote-recorded-1763",
    "claim": "William Pitt the Elder told Parliament that 'the poorest man may in his cottage bid defiance to all the forces of the Crown ... but the King of England cannot enter' (often dated 1763 or 1766).",
    "verdict": "MISLEADING",
-   "correction": "The contemporary Parliamentary History of the March 1763 cider-excise debate records only that Pitt said every man's house was his castle. The famous wording is 'attributed' (the U.S. Supreme Court's own word); it appears in Lord Brougham's Historical Sketches (1839), which gives no date or debate for it.",
+   "correction": "Cobbett's Parliamentary History (vol. 15, published 1813), in its account of the March 1763 cider-excise debate, records only that Pitt spoke against letting excise officers into private houses: 'Every man's house was his castle, he said.' The famous wording is 'attributed' (the U.S. Supreme Court's own word). It appears in Lord Brougham's Historical Sketches of Statesmen (1839), which gives no date or debate for it.",
    "sources": [
     {
      "institution": "Supreme Court of the United States (via Cornell LII)",
@@ -1147,8 +1597,26 @@
      "quote": "The poorest man may in his cottage bid defiance to all the forces of the Crown.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Cobbett's Parliamentary History of England, vol. 15 (London, 1813) — Internet Archive OCR",
+     "title": "Proceedings in the Commons on the Cyder Tax (March 1763), col. 1307",
+     "date": "1813",
+     "url": "https://archive.org/download/10279123bsb/10279123bsb_djvu.txt",
+     "quote": "Mr. Pitt spoke against this measure, particularly against the dangerous prece- dent of admitting the officers of excise into private houses. Every man’s house was his castle, he said.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. 'prece- dent' is a line-break hyphen kept as it appears in the OCR. The sentence continues: 'If this tax is endured, it will necessarily lead to introducing the laws of excise into the domestic concerns of every private family'. IA metadata: vol. 15, 1813. This is the passage the U.S. Supreme Court quotes in Miller n.7."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The correction calls the Parliamentary History 'contemporary'. It is not. Miller v. United States cites 'Hansard, Parliamentary History of England (1813), vol. 15, column 1307', which is Cobbett's compilation published 50 years after the 1763 debate. Reworded.",
+     "Checked OK: the 1813 volume 15 (Internet Archive scan) reads, under 'Proceedings in the Commons on the Cyder Tax' (March 1763): 'Mr. Pitt spoke against this measure, particularly against the dangerous precedent of admitting the officers of excise into private houses. Every man's house was his castle, he said.' Added as a primary source.",
+     "Checked OK: Brougham's Historical Sketches (Philadelphia: Lea & Blanchard, 1839) introduces the 'poorest man' passage only as 'his allusion to the maxim of English law, that every man's house is his castle'. It gives no date or debate. Miller (decided 23 June 1958) uses the word 'attributed'."
+    ]
+   }
   },
   {
    "id": "myth-entick-camden-dicta-certainly-spoken",
@@ -1174,7 +1642,14 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. Lincoln's Inn says Hargrave's State Trials report 'did not appear until 1781', that two manuscript reports closer to the decision (Moore's, in the Hardwicke Papers at the British Library, and Lincoln's Inn MS Misc 562) lack the dicta, and that 'It has been argued that Moore's report ... is more authoritative'. Arvind and Burset (110 Ky. L.J. 265, 2022) say 'Moore's report contains neither of those statements' and argue it 'is more reliable than previously published reports'. They quote Moore's 'dearest property' passage, noting 'Like Hargrave, Moore has Camden describing papers as a man's dearest property'.",
+     "Context, no change needed: Wilson's short printed report (1770) also exists. Arvind and Burset treat the two famous passages as features of Hargrave's version. UNVERIFIED is the right verdict."
+    ]
+   }
   },
   {
    "id": "myth-franklin-essential-liberty-quote-about-privacy",
@@ -1186,11 +1661,11 @@
      "institution": "Founders Online, U.S. National Archives (archived by the Internet Archive, 6 Jan 2025)",
      "title": "Pennsylvania Assembly: Reply to the Governor, 11 November 1755",
      "date": "1755-11-11",
-     "url": "https://web.archive.org/web/2024/https://founders.archives.gov/documents/Franklin/01-06-02-0107",
+     "url": "https://web.archive.org/web/20250106085121/https://founders.archives.gov/documents/Franklin/01-06-02-0107",
      "quote": "Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety.",
-     "verificationStatus": "CONFIRMED",
+     "verificationStatus": "PENDING",
      "accessType": "FREE",
-     "note": "founders.archives.gov returns a bot challenge (HTTP 202) to scripts; the Internet Archive snapshot of 6 Jan 2025 (web.archive.org/web/20250106085121/...) was read."
+     "note": "founders.archives.gov returns a bot challenge (HTTP 202) to scripts; the Internet Archive snapshot of 6 Jan 2025 (web.archive.org/web/20250106085121/...) was read. Verification: Could not be re-verified on 2026-09-23. Every attempt to reach web.archive.org (fetch-text.py, curl, WebFetch) failed with connection reset or a refused host, and founders.archives.gov returns HTTP 202 with an empty body. The URL is changed from the 'web/2024/' wildcard to the snapshot the original note says was read. The wording is independently confirmed by the Colonial Records source appended to this record and by the Lawfare article."
     },
     {
      "institution": "Lawfare",
@@ -1200,8 +1675,27 @@
      "quote": "The letter was a salvo in a power struggle between the governor and the Assembly over funding for security on the frontier, one in which the Assembly wished to tax the lands of the Penn family, which ruled Pennsylvania from",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Colonial Records of Pennsylvania, vol. VI: Minutes of the Provincial Council (Harrisburg: Theo. Fenn & Co., 1851) — Internet Archive OCR",
+     "title": "A Message to the Governor from the Assembly, 11 November 1755",
+     "date": "1755-11-11",
+     "url": "https://archive.org/download/colonialrecordsov6harr/colonialrecordsov6harr_djvu.txt",
+     "quote": "Those who would give up essential Liberty to purchase a Little Temporary safety deserve neither Liberty nor safety.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The message is entered in the Council minutes of 12 November 1755 and ends 'Signed by order of the House. \"ISAAC NORRIS, Speaker. \"November 11th, 1755.\"' (also --check FOUND). Governor Robert Hunter Morris presides in the surrounding minutes. The title page reads 'VOL. VI. Containing the proceedings of Council from April 2d, 1754, to January 29th, 1756 ... Harrisburg: Printed by Theo. Fenn & Co. 1851'. Punctuation and capitals differ slightly from the Votes of Assembly text used by Founders Online."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Source[0] could not be re-read. Every request to web.archive.org failed: fetch-text.py and curl got 'Connection reset by peer', the proxy logged 'ws_closed_mid_exchange', and WebFetch refuses web.archive.org. founders.archives.gov itself returns HTTP 202 with an empty body. The source is set to PENDING.",
+     "Source[0]'s URL uses the 'web/2024/' wildcard, but its note says the 20250106085121 snapshot was read. The exact snapshot URL is proposed so the two agree.",
+     "I found a readable primary copy to replace it: the Minutes of the Provincial Council of Pennsylvania (Colonial Records of Pennsylvania, vol. VI, Harrisburg: Theo. Fenn, 1851). It prints 'A Message to the Governor from the Assembly' containing 'Those who would give up essential Liberty to purchase a Little Temporary safety deserve neither Liberty nor safety.' The message is signed 'ISAAC NORRIS, Speaker. November 11th, 1755' and is addressed to Governor Robert Hunter Morris. This confirms the date, the author (the Assembly) and the addressee. Nearby text on the Proprietaries refusing to contribute and their 'Claim of Exemption' confirms the tax-and-defence context. Added.",
+     "The correction text is accurate and is unchanged."
+    ]
+   }
   },
   {
    "id": "myth-warren-brandeis-coined-right-to-be-let-alone",
@@ -1227,13 +1721,19 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The MIT copy carries 'Harvard Law Review. Vol. IV December 15, 1890 No. 5' and the sentence 'what Judge Cooley calls the right \"to be let alone\"'. In Cooley's 3rd edition (1906, Cornell copy on the Internet Archive) the sentence 'The right to one's person may be said to be a right of complete immunity: to be let alone' comes right after the star-page marker [*29], which gives the first-edition page. The first-edition preface is dated 'Ann Arbor, December, 1878', which fits the 1879 publication date. I could not re-read an 1879 copy online (HathiTrust returned 403; the Internet Archive has only the 1906–07 editions)."
+    ]
+   }
   },
   {
    "id": "myth-royer-collard-la-vie-privee-doit-etre-muree",
    "claim": "In 1819 Royer-Collard declared that 'la vie privée doit être murée' — private life must be walled in.",
    "verdict": "MISLEADING",
-   "correction": "The widely repeated maxim is a paraphrase. The words quoted by legal historians from his speech of 27 April 1819 are descriptive, not a command: 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — so there is private life walled in. And the 1819 law itself does not use the expression 'vie privée'.",
+   "correction": "The words are Royer-Collard's own, but not from 1819. In his speech of 27 April 1819 on the press laws he said, descriptively, 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons' — so there is private life walled in. The maxim 'la vie privée doit être murée' comes from his speech in the 1827 Chamber debate on a new press bill, where he said he was repeating what he had said in 1819. He then limited it at once: private life should be walled in against defamation, not against the publication of indifferent or honourable acts. The press law of 17 May 1819 itself does not use the expression 'vie privée'.",
    "sources": [
     {
      "institution": "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
@@ -1243,14 +1743,42 @@
      "quote": "Elle se trouvait au centre du discours de Royer-Collard (27 avril 1819) avec ses fameux propos : « voilà donc la vie privée murée, et si je puis me servir de cette expression, elle est déclarée invisible, elle est renfermée dans l’intérieur des maisons ».",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Prosper de Barante, La vie politique de M. Royer-Collard, ses discours et ses écrits, vol. 2 (Paris: Didier, 1863) — Internet Archive OCR",
+     "title": "Loi sur la presse (1827): Royer-Collard on article 20 (publication of acts of private life)",
+     "date": "1827",
+     "url": "https://archive.org/download/laviepolitiquede02barauoft/laviepolitiquede02barauoft_djvu.txt",
+     "quote": "Je répéterai volontiers ce que j'ai dit en 1819, et ce que la commission a bien voulu rappeler; oui, la vie privée doit être ... La vie privée doit être murée , mais contre quoi? contre ce qui lui est ennemi apparemment",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The ellipsis covers an OCR-garbled 'murée' ('nmyx'e') and the sentences between. Barante introduces the speech: 'L'article 20 du projet amendé par la commission admettait que toute publication sur les actes de la vie privée pouvait être poursuivie par le ministère public. M. Royer-Collard demanda que l'article fût rejeté.' (--check FOUND). The bill is the one a Moniteur article called 'une loi de justice et d'amour', debated from 13 February (1827). Barante's vol. 1 also says Royer-Collard's domestic life 'selon son expression, doit rester murée'."
+    },
+    {
+     "institution": "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
+     "title": "Jean-Louis Halpérin, 'Protection de la vie privée et privacy : deux traditions juridiques différentes ?'",
+     "date": "2015",
+     "url": "https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/protection-de-la-vie-privee-et-privacy-deux-traditions-juridiques-differentes",
+     "quote": "L’expression « vie privée » n’apparaît pas dans la loi, mais elle n’était pas ignorée des contemporains.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The preceding sentence identifies 'la loi ... sur la presse du 17 mai 1819 (une des trois lois « de Serre »)'. Halpérin adds that the ephemeral law of 11 May 1868 was the one that mentioned private life."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The correction is wrong to call the maxim 'a paraphrase' and the words 'descriptive, not a command'. Royer-Collard used the exact words himself in the 1827 Chamber debate on the press bill (the 'loi de justice et d'amour'). Speaking against article 20, which let prosecutors pursue any publication about private life, he said: 'Je répéterai volontiers ce que j'ai dit en 1819 ...; oui, la vie privée doit être murée ... La vie privée doit être murée, mais contre quoi? contre ce qui lui est ennemi apparemment, c'est-à-dire contre la diffamation'. Source: Barante, La vie politique de M. Royer-Collard, vol. 2. So the maxim is his own, from 1827, presented as a restatement of 1819. The myth's real error is the date and wording given to the 1819 speech. The verdict stays MISLEADING; the correction is rewritten.",
+     "The claim that the 1819 law does not use 'vie privée' had no quote attached. Halpérin says it directly: 'L'expression « vie privée » n'apparaît pas dans la loi' (the press law of 17 May 1819). Added. The correction now names that law.",
+     "Checked OK: Halpérin gives the 1819 speech's date as 27 April 1819 and the wording 'voilà donc la vie privée murée ... elle est déclarée invisible, elle est renfermée dans l'intérieur des maisons'. I could not reach an independent 1819 text (Archives parlementaires, 2e série, for 1819 is not on the Internet Archive), so the date rests on Halpérin."
+    ]
+   }
   },
   {
    "id": "myth-1792-post-office-act-required-search-warrant",
    "claim": "The Post Office Act of 1792 prohibited postmasters from opening mail without a search warrant.",
    "verdict": "MISLEADING",
-   "correction": "Section 16 of the 1792 Act punishes post-office employees who 'unlawfully' detain, delay or open letters; it contains no warrant procedure. Only in Ex parte Jackson (1878) did the Supreme Court hold that sealed mail can be opened only under a warrant issued on oath.",
+   "correction": "Section 16 of the 1792 Act punishes post-office employees who 'unlawfully' detain, delay or open letters, with a fine of up to $300, up to six months in prison, or both. It contains no warrant procedure. The warrant rule came later, from the Supreme Court: in Ex parte Jackson (1878), relying on the Fourth Amendment, the Court stated that sealed letters in the mail can be opened only under a warrant issued on oath or affirmation, as for papers kept at home.",
    "sources": [
     {
      "institution": "The First Amendment Encyclopedia (Middle Tennessee State University)",
@@ -1280,13 +1808,21 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked OK: the MTSU First Amendment Encyclopedia article by John R. Vile ('published on August 24, 2024', updated 12 Sept 2024) makes the claim verbatim. Section 16 of the Act (1 Stat. 232, Chap. VII, approved 20 Feb 1792) does punish 'any person, employed in any of the departments of the general post-office' who 'shall unlawfully detain, delay, or open' letters. The only uses of 'warrant' in the whole Act (NJPHS OCR text) are 'warrant of the treasury' and 'bond or warrant' in the list of money instruments in the same section, so 'no warrant procedure' is correct. The MISLEADING verdict fits: the ban on opening is real, the warrant condition is not in the Act. The Ex parte Jackson date of 1878-05-13 matches CourtListener (dateFiled 1878-05-13; October Term 1877).",
+     "Wording is too strong: 'did the Supreme Court hold'. Ex parte Jackson upheld a federal ban on mailing lottery circulars. Its statement that sealed letters can be opened only under a warrant was part of the Court's reasoning, not the question it decided, and it is often called dictum. 'State' is accurate either way. The Court also based the warrant rule on the Fourth Amendment, and the correction now says so.",
+     "Small addition: the 1792 Act itself did allow letters to be opened without any warrant in one case. Section 18 sends unclaimed dead letters to the General Post Office, 'where the same shall be opened and inspected'. Not required for the correction, noted for the essay writer."
+    ]
+   }
   },
   {
    "id": "myth-hippocrates-wrote-the-oath-5th-century-bce",
    "claim": "Hippocrates himself wrote the Hippocratic Oath, with its secrecy clause, in the fifth century BCE.",
    "verdict": "UNVERIFIED",
-   "correction": "Authorship and date are unknown. The Hippocratic Corpus had many authors over several centuries; the Oath was long dated to around 400 BCE, but linguistic studies point to affinities with Hellenistic writing, and some scholars now argue it is a Hellenistic text.",
+   "correction": "Authorship and date are unknown. The Hippocratic Corpus is thought to have had several authors, probably spread over several centuries. The Oath has usually been dated to the end of the fifth or the start of the fourth century BCE. Most scholars still place it in the classical period, and some think its core may go back to Hippocrates. But H. von Staden's study of its language found affinities with Hellenistic writings, and Cristian Tolsa (2019) proposes that its ethical paragraphs, including the promise of secrecy, were added later, between the second century BCE and the first century CE.",
    "sources": [
     {
      "institution": "U.S. National Library of Medicine (NIH)",
@@ -1305,8 +1841,59 @@
      "quote": "These striking characteristics of the Oath have led to the alternative hypothesis that it might be a Hellenistic text.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Fukushima Medical University, Bulletin of the Center for Integrated Science and Humanities, vol. 8",
+     "title": "Paul Martin, 'Healing Heroes: surveying the Greek text of the Hippocratic Oath (Part I)'",
+     "date": "2019",
+     "url": "https://www.fmu.ac.jp/about/centers/icsh/publications/file/kiyoo/2019-11-01.pdf",
+     "quote": "the composition date of the oath, which has until recently been thought to date to the end of the fifth or beginning of the fourth century BC.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "From the abstract. --check FOUND. Supports the traditional dating to about 400 BCE."
+    },
+    {
+     "institution": "Fukushima Medical University, Bulletin of the Center for Integrated Science and Humanities, vol. 8",
+     "title": "Paul Martin, 'Healing Heroes: surveying the Greek text of the Hippocratic Oath (Part I)'",
+     "date": "2019",
+     "url": "https://www.fmu.ac.jp/about/centers/icsh/publications/file/kiyoo/2019-11-01.pdf",
+     "quote": "Scholarly opinion still dates Oath to the classical period.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The next sentence quotes W.H.S. Jones: 'It is indeed hard to believe that the nucleus, at least, of Oath does not go back to the ‘great’ Hippocrates himself.' (also --check FOUND). Supports 'most scholars still place it in the classical period' and 'some think its core may go back to Hippocrates'."
+    },
+    {
+     "institution": "Greek, Roman, and Byzantine Studies 59 (Duke University)",
+     "title": "Cristian Tolsa, 'On the Origins of the Hippocratic Oath'",
+     "date": "2019",
+     "url": "https://grbs.library.duke.edu/index.php/grbs/article/download/16290/7250/20277",
+     "quote": "Intriguing evidence allowing this possibility comes from H. von Staden’s comparative analysis of its language and style both with other ancient oaths and with the medical terminology in the Hippocratic corpus, revealing specific textual affinities with writings from the Hellenistic age.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "p. 623. --check FOUND. It cites von Staden, '“The Oath”, the Oaths, and the Hippocratic Corpus' (2008), and notes Jouanna's counterarguments in footnote 6."
+    },
+    {
+     "institution": "Greek, Roman, and Byzantine Studies 59 (Duke University)",
+     "title": "Cristian Tolsa, 'On the Origins of the Hippocratic Oath'",
+     "date": "2019",
+     "url": "https://grbs.library.duke.edu/index.php/grbs/article/download/16290/7250/20277",
+     "quote": "I have put forward the hypothesis that the second part of the Oath was added after the first paragraph in the context of the transmission of the Hippocratic texts to Rome (Cato read them in Athens) between the second century B.C. and the first A.D.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Conclusion, p. 645. --check FOUND. The 'second part' is the section headed 'Ethical standards in medical practice (paragraphs 2–7)' (--check FOUND). Tolsa lists 'misuse of secrets (7)' among its duties (--check FOUND), so the secrecy clause falls in the part he dates later. This is Tolsa's own hypothesis."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The correction leans too far toward a late date. Paul Martin (2019) says 'Scholarly opinion still dates Oath to the classical period.' He also quotes W.H.S. Jones: 'It is indeed hard to believe that the nucleus, at least, of Oath does not go back to the ‘great’ Hippocrates himself.' The Hellenistic origin is a minority hypothesis. The UNVERIFIED verdict is right, because authorship is unknown, not disproved. But readers should not come away thinking a Hellenistic date is now the consensus.",
+     "'linguistic studies point to affinities with Hellenistic writing' overstates the evidence. Tolsa cites one study, H. von Staden's 2008 analysis of the Oath's language and style, and notes Jouanna's counterarguments.",
+     "'The Hippocratic Corpus had many authors': the NLM source says 'several authors, however, probably scattered over several centuries'. The wording is aligned with the source.",
+     "'long dated to around 400 BCE' had no source on this record. Paul Martin (FMU 2019), already used on the Oath event, is added: 'until recently been thought to date to the end of the fifth or beginning of the fourth century BC'.",
+     "Missing point on the secrecy clause the myth names: Tolsa's hypothesis is that the ethical paragraphs 2–7, which include 'misuse of secrets (7)', were added after the first paragraph, between the 2nd century BCE and the 1st century CE. So the confidentiality promise may be later than the Oath's core. Added with a hedge.",
+     "Checked OK: NLM page title and content. The page says its content is 'drawn from a display ... March 6 through June 15, 2008', so the date 2008 is fine; DC metadata gives page issue date 2022-12-28. The Tolsa running head confirms 'Greek, Roman, and Byzantine Studies 59 (2019) 621–645'."
+    ]
+   }
   }
  ]
 }

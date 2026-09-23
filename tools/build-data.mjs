@@ -160,7 +160,7 @@ const H = {
     return v;
   },
   obj: (slice, key) => (research[slice] || {})[key],
-  sources: list => mergeSources([].concat(list || []).map(x => cleanSource(x)).filter(Boolean)),
+  sources: list => mergeSources([].concat(list || []).flat(4).map(x => cleanSource(x)).filter(Boolean)),
   myth: id => need(myths, id, 'myth'),
   myths: () => [...myths.values()],
   events: () => [...events.values()],

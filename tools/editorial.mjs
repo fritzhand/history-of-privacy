@@ -107,7 +107,7 @@ export default function editorial(H) {
       media: ['bomberg-talmud-bava-batra-venice-1522'], chips: T('Religious law'), zoom: 5 },
     { eventId: 'quran-surah-an-nur-al-hujurat-permission-and-no-spying-c-627', headline: 'Ask before you enter; do not spy',
       chips: T('Religious law'), zoom: 5 },
-    { eventId: 'fourth-lateran-council-canon-21-seal-of-confession-1215', headline: 'Everyone must confess — and the Church must keep the secret',
+    { eventId: 'fourth-lateran-council-canon-21-seal-of-confession-1215', headline: 'The faithful must confess — and the priest must keep the secret',
       media: ['dirc-van-delft-confession-to-a-bishop-c1404'], chips: T('The institution that collects'), zoom: 5 },
     // Castle & Warrant
     { eventId: 'semaynes-case-house-as-castle-and-fortress-1604', headline: 'The house as castle and fortress',
@@ -206,6 +206,7 @@ export default function editorial(H) {
   const factSources = id => {
     try { return src(H.item('essay', 'facts', id).sources); } catch (e) { /* not a fact */ }
     try { return src(H.item('essay', 'quotes', id).sources); } catch (e) { /* not a quote */ }
+    try { return qs(id); } catch (e) { /* not a quantity */ }
     return ev(id);
   };
   function para(heading, parts) {
@@ -223,24 +224,24 @@ export default function editorial(H) {
     paragraphs: [
       para('A word that meant “deprived”', [
         ['The English word “private” comes from the Latin privatus — set apart from what is public, belonging to oneself rather than to the state — which is itself formed from privare, to deprive or strip. The root carries both meanings at once: one’s own, and deprived of.', 'latin-privatus-privare'],
-        ['The noun “privacy” is recorded in English from the 1590s, first for a private matter or a secret; its sense of freedom from intrusion is dated only to 1814.', 'privacy-enters-english-1590s'],
-        ['Greek thought drew the first map, dividing the household (oikos) from the political community (polis), and what is one’s own (idion) from what is common (koinon).', 'greek-oikos-polis-idion-koinon'],
+        ['The Online Etymology Dictionary dates the noun “privacy” to the 1590s, first for a private matter or a secret, and its sense of freedom from intrusion only to 1814 — though other dictionaries find earlier uses.', 'privacy-enters-english-1590s'],
+        ['Philosophical accounts of privacy usually begin with the Greeks: Aristotle divided the household (oikos) from the political community (polis), and what is one’s own (idion) from what is common (koinon).', 'greek-oikos-polis-idion-koinon'],
         ['For the ancient Greeks, Hannah Arendt argued, a life lived only in private was “privative” — deprived of the public realm — while for moderns privacy’s most relevant function is to shelter the intimate.', 'arendt-privative-to-intimate'],
       ]),
       para('Every culture draws the line somewhere', [
-        ['Alan Westin, drawing on studies of animal territoriality, argued that the human need for privacy is probably rooted in our animal origins.', 'westin-animal-origins'],
+        ['Alan Westin, drawing on studies of animal behaviour and territoriality, argued that the human need for privacy “may well be rooted” in our animal origins.', 'westin-animal-origins'],
         ['The psychologist Irwin Altman concluded in 1977, from ethnographic evidence, that privacy is a universal process regulated by culturally specific means — secret forest paths among some Brazilian peoples, soft speech in Java, the Tuareg face veil — a boundary people open as well as close.', 'altman-1977-universal-process'],
         ['The sociologist Barrington Moore called it “a socially created need”.', 'moore-1984-socially-created-need'],
         ['The oldest rules are about relationships and homes: the Hippocratic Oath binds the physician to keep secret what he sees and hears in patients’ lives;', 'hippocratic-oath-confidentiality'],
-        ['the Mishnah forbids opening a window onto a courtyard shared with neighbours;', 'mishnah-windows-courtyard'],
+        ['the Mishnah bars opening a doorway or window opposite a neighbour’s onto a shared courtyard;', 'mishnah-windows-courtyard'],
         ['and the Qur’an tells believers not to enter others’ houses until welcomed, and not to spy — in Arabic-Islamic usage, the idea closest to privacy is often hurma, what may not be looked at without permission.', 'arabic-islamic-hurma-and-quran'],
       ]),
       para('Walls, rooms and seals', [
         ['In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.', 'coke-semayne-castle-1604'],
         ['Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.', 'rooms-and-the-private-home'],
-        ['Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and sealed into their own envelopes, often with tamper-evident locks;', 'letterlocking-and-the-brienne-trunk'],
+        ['Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and secured to become their own envelopes, some with built-in tamper-evident locks;', 'letterlocking-and-the-brienne-trunk'],
         ['in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.', 'privacy-of-letters-constructed'],
-        ['In 1878 the US Supreme Court carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.', 'ex-parte-jackson-sealed-letters'],
+        ['In 1878 the US Supreme Court, while upholding a ban on mailing lottery circulars, carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.', 'ex-parte-jackson-sealed-letters'],
         ['French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.', 'french-vie-privee-walled'],
       ]),
       para('From the wall to the right', [
@@ -248,19 +249,21 @@ export default function editorial(H) {
         ['In 1928, dissenting in a wiretapping case, Brandeis called that right “the most comprehensive of rights and the right most valued by civilized men”.', 'brandeis-olmstead-1928'],
         ['After the Second World War privacy became a human right: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence”, the Universal Declaration proclaimed in 1948,', 'udhr-article-12-1948'],
         ['and the European Convention of 1950 and the UN Covenant of 1966 followed.', 'echr-1950-and-iccpr-1966'],
-        ['Today 171 of 188 national constitutions in force are coded as providing a right to privacy; where the text is silent, as in the United States, India, France and Japan, courts have found it.', ['constitutions-with-privacy-171-of-188', 'griswold-1965-penumbras', 'puttaswamy-2017-nine-judges']],
-        ['Words travelled with the law. Japanese adopted the loanword puraibashii, which — according to Masao Horibe, later chairman of Japan’s data-protection commission — spread after a Tokyo court first recognised a right to privacy in 1964;', 'japan-puraibashii-1964'],
-        ['the Chinese yinsi (隐私) — “hide” and “private” — long carried the sense of a shameful secret, until China’s Civil Code of 2020 defined it as the tranquillity of private life and the space, activities and information a person does not wish others to know.', ['chinese-yinsi-shameful-secret', 'china-civil-code-1032-defines-privacy']],
+        ['Today 171 of the 188 national constitutions in force are coded as providing a right to privacy; where the text is silent, as in India and France, courts and statutes protect it instead.', ['constitutions-with-privacy-171-of-188', 'puttaswamy-2017-nine-judges']],
+        ['The US Constitution never uses the word; its Supreme Court found “zones of privacy” in 1965.', 'griswold-1965-penumbras'],
+        ['Words travelled with the law. Japanese uses the loanword puraibashii, which — according to Masao Horibe, then chairman of Japan’s Personal Information Protection Commission — came into wide use owing partly to a Tokyo court’s 1964 ruling, the first to recognise privacy as a legally protected right;', 'japan-puraibashii-1964'],
+        ['the Chinese yinsi (隐私) — “hide” and “private” — was at first often confused, a 2005 study noted, with a near-homophone meaning a “shameful secret”;', 'chinese-yinsi-shameful-secret'],
+        ['China’s Civil Code of 2020 now defines it as the tranquillity of private life and the private space, activities and information a person does not wish others to know.', 'china-civil-code-1032-defines-privacy'],
       ]),
       para('From the house to the record', [
         ['In 1967 Alan Westin moved privacy from the house to the data: it is “the claim of individuals, groups, or institutions to determine for themselves when, how, and to what extent information about them is communicated to others”.', 'westin-1967-definition'],
         ['By 1971 the threat had a name — Arthur Miller’s The Assault on Privacy: Computers, Data Banks, and Dossiers.', 'miller-1971-assault-on-privacy'],
         ['In 1983 Germany’s constitutional court gave it a right: informational self-determination, the individual’s authority, in principle, to decide on the disclosure and use of their personal data.', 'german-privatsphaere-and-informational-self-determination'],
         ['The UN Human Rights Committee read the Covenant the same way in 1988: data banks must be regulated by law, and every individual should be able to learn whether data about them is stored, and why.', 'gc16-1988-data-banks'],
-        ['Programmers answered in code. Phil Zimmermann released PGP in 1991, warning that “if privacy is outlawed, only outlaws will have privacy”;', 'zimmermann-1991-pgp'],
+        ['Programmers answered in code. Phil Zimmermann released PGP in 1991, its user’s guide warning that “if privacy is outlawed, only outlaws will have privacy”;', 'zimmermann-1991-pgp'],
         ['Eric Hughes’s cypherpunk manifesto of 1993 separated privacy from secrecy — “the power to selectively reveal oneself to the world”.', 'hughes-1993-privacy-not-secrecy'],
         ['Business had its own view: “You have zero privacy anyway. Get over it,” Sun Microsystems’ chief executive told reporters in 1999;', 'mcnealy-1999-zero-privacy'],
-        ['in 2015 Shoshana Zuboff set out a theory of “surveillance capitalism”, a logic of accumulation whose mechanisms “exile persons from their own behavior”.', 'zuboff-2015-surveillance-capitalism'],
+        ['in 2015 Shoshana Zuboff set out “surveillance capitalism” — a term she had first used the year before — as a logic of accumulation producing mechanisms of extraction and control that “effectively exile persons from their own behavior”.', 'zuboff-2015-surveillance-capitalism'],
       ]),
       para('A concept in dispute', [
         ['Philosophers have never agreed on a definition. Judith Jarvis Thomson thought the right to privacy a cluster of other rights;', 'thomson-1975-reductionism'],
@@ -270,9 +273,9 @@ export default function editorial(H) {
         ['and Julie Cohen that privacy is the breathing room in which a self develops, shielding “dynamic, emergent subjectivity” from efforts to make people fixed, transparent and predictable.', 'cohen-2013-emergent-subjectivity'],
       ]),
       para('Consent, its critics — and terms the person writes', [
-        ['What the law settled on, online, was consent. Solove named the model “privacy self-management” — notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because there are too many data collectors to manage one by one.', 'solove-2013-privacy-self-management'],
+        ['What the law settled on, online, was consent. Solove named the model “privacy self-management” — rights to notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because of the limits of human attention and because there are too many data collectors to manage one by one.', 'solove-2013-privacy-self-management'],
         ['Nissenbaum called its flaw the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.', 'nissenbaum-2011-transparency-paradox'],
-        ['Reading the privacy policies of the sites one American visits would take about 201 hours a year, researchers at Carnegie Mellon estimated in 2008.', 'mcdonald-cranor-2008-201-hours'],
+        ['Reading the privacy policies of the sites one American visits would take about 244 hours a year — some 40 minutes a day — researchers at Carnegie Mellon estimated in 2008 (their abstract says 201; their own tables give 244).', ['mcdonald-cranor-hours-per-year-reading-privacy-policies', 'mcdonald-cranor-2008-201-hours']],
         ['Doc Searls argued that privacy online cannot be “a grace of privacy policies”; individuals should proffer terms “as first parties”, which sites agree to, with both keeping records.', 'searls-2019-proffer-as-first-parties'],
         ['That is what IEEE 7012-2025 standardises. It was approved on 4 November 2025 and published on 20 January 2026 —', 'ieee-7012-2025-published'],
         ['just as software agents began to browse, fill in forms and buy for people, each errand meeting someone else’s terms.', ['openai-operator-2025', 'agentic-commerce-protocol-instant-checkout-2025']],
@@ -372,7 +375,7 @@ export default function editorial(H) {
   const fig = (id, value, label, color, note) => ({ value, label, note, color, source: qs(id) });
   const figures = {
     consent: [
-      fig('cost-of-reading-privacy-policies-hours-per-user-2008', '201 hours', 'a year to read the privacy policies of the sites one American visits', 'v9', 'McDonald & Cranor, Carnegie Mellon, 2008 — about $781 billion a year in time, nationally.'),
+      fig('mcdonald-cranor-hours-per-year-reading-privacy-policies', '244 hours', 'a year to read, word for word, the privacy policies of the sites one American visits — about 40 minutes a day', 'v9', 'McDonald & Cranor, Carnegie Mellon, 2008: point estimate from their Table 7 (the abstract\'s "201 hours" does not match it); about $781 billion a year nationally.'),
       fig('obar-oeldorf-hirsch-skipped-privacy-policy', '74%', 'skipped the privacy policy entirely, using a "quick join" button', 'v8', 'Obar & Oeldorf-Hirsch, experiment with a fictitious social network.'),
       fig('obar-oeldorf-hirsch-mean-privacy-policy-reading-time', '73 seconds', 'spent on the privacy policy by those who opened it', 'v7'),
       fig('obar-oeldorf-hirsch-missed-gotcha-clauses', '98%', 'missed the "gotcha" clauses — including one handing over their first-born child', 'v9'),
@@ -559,6 +562,14 @@ export default function editorial(H) {
     const m = H.item(slice, 'myths', id);
     return { claim: m.claim, verdict: m.verdict, correction: m.correction, era, source: src(m.sources) };
   });
+  /* Found by this study's own verification pass, not by a research slice:
+     the famous reading-time figure disagrees with its paper's tables. */
+  myths.splice(myths.findIndex(m => m.era === 'surveillance'), 0, {
+    claim: 'Reading every privacy policy you meet would take 201 hours a year.',
+    verdict: 'MISLEADING',
+    correction: 'The figure comes from the abstract of McDonald and Cranor\'s 2008 study, but their own Table 7 gives a point estimate of 244 hours a year to read word for word (range 181–304; 154 to skim) — about 40 minutes a day — and the $3,534-per-person and $781-billion totals in the same sentence are computed from 244, not 201.',
+    era: 'cookies', source: qs('mcdonald-cranor-hours-per-year-reading-privacy-policies'),
+  });
 
   /* ── THE PEOPLE ────────────────────────────────────────────────── */
   const peopleGroups = [
@@ -605,8 +616,8 @@ export default function editorial(H) {
       source: confirmed(ev('hesse-data-protection-act-1970')).slice(0, 1) },
     { value: '172', label: 'countries with a national data-privacy law', sublabel: 'Greenleaf count, 2025', color: 'v6',
       source: confirmed(qs('countries-with-data-privacy-laws-2025')).slice(0, 1) },
-    { value: '201', label: 'hours a year to read the privacy policies', sublabel: 'of the sites one American visits (2008)', color: 'v9',
-      source: confirmed(qs('cost-of-reading-privacy-policies-hours-per-user-2008')).slice(0, 1) },
+    { value: '244', label: 'hours a year to read the privacy policies', sublabel: 'of the sites one American visits (2008 estimate)', color: 'v9',
+      source: confirmed(qs('mcdonald-cranor-hours-per-year-reading-privacy-policies')).slice(0, 1) },
     { value: '5', label: 'standard agreements a person can proffer', sublabel: 'IEEE 7012 / MyTerms, launched January 2026', color: 'agents',
       source: confirmed(qs('myterms-launch-agreements-2026')).slice(0, 1) },
   ];
@@ -623,10 +634,13 @@ export default function editorial(H) {
 
   /* ── MEDIA ─────────────────────────────────────────────────────── */
   const mediaOrder = [];
+  /* Dropped after verification: the Tor design figure's CC BY tag on
+     Commons is the uploader's assertion, unsupported by its source. */
+  const mediaDrop = ['tor-design-circuit-diagram-2004'];
 
   return {
     meta, heroStats, footerStats, essay, concepts, flip, events, scrollSteps, series, charts,
     fipps, worldLaws, frameworks, policyModels, figures, lineage, lineageNote, harms, standard,
-    argument, scenario, counterpoints, jurisdictions, myths, people, peopleGroups, pullQuotes, mediaOrder,
+    argument, scenario, counterpoints, jurisdictions, myths, people, peopleGroups, pullQuotes, mediaOrder, mediaDrop,
   };
 }

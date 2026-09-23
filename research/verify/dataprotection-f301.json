@@ -1,0 +1,27 @@
+{
+ "slice": "dataprotection",
+ "chunk": "f301",
+ "verdicts": [
+  {
+   "kind": "myths",
+   "id": "myth-data-protection-day-is-an-eu-day",
+   "status": "FIXED",
+   "issues": [
+    "Source 3 cited Wikipedia ('Council of Europe') for the '46-member' figure. Wikipedia's own reference for the count is coe.int, which returns HTTP 403 to scripts. It is replaced with the UK Government's page for its Delegation to the Council of Europe, which gives the 46 member states and says they include all 27 EU member states, so the CoE is a separate and wider body (--check FOUND)."
+   ],
+   "sourceFixes": [
+    {
+     "index": 3,
+     "institution": "UK Government (GOV.UK), UK Delegation to the Council of Europe",
+     "title": "UK Delegation to the Council of Europe",
+     "date": "2026",
+     "url": "https://www.gov.uk/world/organisations/uk-delegation-to-the-council-of-europe",
+     "quote": "The Council of Europe (CoE) is a pan-European organisation of 46 member states, including all 27 member states of the European Union.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Replaces a Wikipedia citation (Council of Europe article). --check FOUND on 2026-09-23. Supports the '46-member' figure in the correction and shows the Council of Europe is a separate organisation whose membership includes, but goes beyond, the EU's 27. Undated organisation page; 'date' is the access year. coe.int itself (portal and treaty office) returns HTTP 403 to scripts."
+    }
+   ]
+  }
+ ]
+}

@@ -59,6 +59,84 @@
    },
    "sourceFixes": [],
    "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "bruce-schneier-2013",
+   "status": "OK",
+   "issues": [
+    "No errors found. The Commons API extmetadata was re-queried on 2026-09-23. It gives LicenseShortName 'CC BY-SA 2.0 fr', LicenseUrl https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en, Artist 'Rama', Credit 'Own work', DateTimeOriginal '2013-09-30 10:11:49', and the required Attribution 'Photograph by Rama, Wikimedia Commons, Cc-by-sa-2.0-fr', which the record's creditLine reproduces. The file-page template is {{Self|CeCILL|Cc-by-sa-2.0-fr|attribution=...}}, a dual licence used here under CC BY-SA, which is acceptable. The description (with the 'CoPS213' typo) matches the rightsEvidence verbatim.",
+    "Independent check of the date and place: EPFL's Memento event page 'Congress on Privacy and Surveillance' gives Date '30.09.2013' (FOUND) and Location 'Forum Rolex' (FOUND), and lists 'Organized and chaired by Prof. Arjen K. Lenstra Speakers: Jacob Appelbaum Axel Arnbak Bill Binney Caspar Bowden Nikolaus Forgó Gordon Nardell Bruce Schneier' (FOUND). So the caption's '30 September 2013' and the EPFL venue are correct. The coordinates 46.5191, 6.5668 fall on the EPFL campus, about 100 m from the Rolex Learning Center (OSM 46.5184, 6.5676), which is acceptable.",
+    "The local file assets/media/bruce-schneier-2013.jpg exists and opens as a 960x960 RGB JPEG (the Commons original is 3238x3238). The alt text matches the image: a bearded man in a dark flat cap, floral shirt and dark jacket looks to one side against a dark, blurred audience."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "ashkan-soltani-2012",
+   "status": "FIXED",
+   "issues": [
+    "The rightsEvidence leaves out a licence change. The file page also carries {{Change-of-license}}, which says the copyright holder later made the licensing more restrictive and that Creative Commons licences are non-revocable. Flickr's oEmbed API for flickr.com/photos/ifl/7250137444 now returns license 'CC BY-SA 2.0' (queried 2026-09-23). The CC BY 2.0 licence that the record relies on was confirmed at upload by {{flickrreview|File Upload Bot (Magnus Manske)|2013-02-10}}, and a CC licence cannot be revoked, so CC BY 2.0 still covers the Commons copy and the licence stays acceptable. The rightsEvidence should record this. A conservative alternative is to comply with CC BY-SA 2.0 as well, which satisfies both licences.",
+    "The caption and location can be more precise. The source Commons description covers the whole two-day conference ('May 21-22, 2012'). Freedom to Connect's own 2012 videos page (freedom-to-connect.net/2012/videos.html) lists 'Ashkan Soltani, security and privacy researcher' (FOUND) under 'Tuesday, 5/22', on the panel 'Freedom & Connectivity from Alexandria, Egypt to Zuccotti Park', moderated by Sascha Meinrath. That matches the DateTimeOriginal of 2012-05-22. David Isenberg's blog post for the conference says 'Today and tomorrow, May 21-22, at AFI Silver Theatre in Silver Spring, Maryland.' (FOUND; internetdistinction.com/blog/2012/05/). The pin moves from the DC centroid to the OSM geocode of the AFI Silver Theatre. 'Washington, DC area' was not wrong.",
+    "Checked OK otherwise: the Commons API extmetadata was re-queried on 2026-09-23 and matches the rightsEvidence field by field: CC BY 2.0, Artist 'Peretz Partensky from San Francisco, USA', Credit 'Ashkan Soltani', DateTimeOriginal '2012-05-22 06:27', {{cc-by-2.0}}. The Flickr oEmbed title is 'Ashkan Soltani' and the author is 'peretzp'. The local file assets/media/ashkan-soltani-2012.jpg exists and opens as a 960x638 RGB JPEG. The alt text matches: a bearded man in glasses and a dark jacket, seated on a stage, speaking into a hand-held microphone."
+   ],
+   "fieldFixes": {
+    "caption": "Ashkan Soltani speaking on the panel 'Freedom & Connectivity from Alexandria, Egypt to Zuccotti Park' at the Freedom to Connect conference, AFI Silver Theatre, Silver Spring, Maryland (Washington, DC area), 22 May 2012 (Commons description; panel and day from the F2C 2012 programme).",
+    "lat": 38.9966,
+    "lng": -77.0274,
+    "locationNote": "AFI Silver Theatre, Silver Spring, Maryland (Washington, DC area), the F2C 2012 venue per organiser David Isenberg's blog; coordinates are the OSM geocode of the theatre.",
+    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\", UsageTerms \"Creative Commons Attribution 2.0\", LicenseUrl \"https://creativecommons.org/licenses/by/2.0\", Artist \"Peretz Partensky from San Francisco, USA\", Credit \"Ashkan Soltani\", DateTimeOriginal \"2012-05-22 06:27\"; file-page license template(s): {{cc-by-2.0}} with {{flickrreview|File Upload Bot (Magnus Manske)|2013-02-10}}. Description: \"Speakers from Freedom to Connect conference, run by David Isenberg in Washington, DC area May 21-22, 2012. freedom-to-connect.net/agenda-2/\". The file page also carries {{Change-of-license}}: the photographer later made the Flickr licence more restrictive (Flickr now shows CC BY-SA 2.0, checked 2026-09-23). The CC BY 2.0 grant confirmed at upload in 2013 cannot be revoked and still covers this copy."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "aaron-swartz-2011",
+   "status": "FIXED",
+   "issues": [
+    "The location is wrong. The locationNote says 'Place not stated on the Commons page; coordinates are a placeholder for New York' and the pin is 40.6782, -73.9442 (Brooklyn). But the Commons file page has {{Location|37.782463|-122.47187}}, re-queried through the API on 2026-09-23, and it carries the category 'Files with coordinates missing SDC location of creation'. The parent file 'Aaron Swartz and Jason Scott.jpg' has the same {{Location}}. Reverse-geocoding those coordinates with OSM Nominatim gives '300, Funston Avenue, Inner Richmond, Richmond District, San Francisco', the building that houses the Internet Archive. So the photo was taken in San Francisco, not New York. The pin should use the Commons coordinates.",
+    "The caption says 'photographed by Jason Scott', which the image itself contradicts. The Commons file is a crop of 'Aaron Swartz and Jason Scott.jpg', which comes from Flickr photo 6301463398. Flickr's oEmbed API gives its title as 'Aaron Swartz and Jason Scott', from the account of Jason \"Textfiles\" Scott, under CC BY 2.0. In the full photo Jason Scott stands beside Swartz with his arms crossed, so he did not operate the camera. Commons credits him as author because the photo is his upload, and the creator and credit fields can keep that attribution. But the caption should not say he took the picture.",
+    "Possible context, not added to the record: 27 October 2011 was the first day of 'Books in Browsers 2011', which the Internet Archive and O'Reilly hosted at 300 Funston Ave. Jason Scott's lanyard in the parent photo reads 'Safari', an O'Reilly brand. Nothing on the Commons or Flickr records ties the photo to that event, so the caption does not claim it.",
+    "Checked OK otherwise: the Commons API extmetadata gives LicenseShortName 'CC BY 2.0', LicenseUrl https://creativecommons.org/licenses/by/2.0, Artist 'Jason Scott', Credit https://www.flickr.com/photos/textfiles/6301463398/, DateTimeOriginal '2011-10-27 16:49:22', ImageDescription 'Aaron Swartz in 2011', and {{cc-by-2.0}}. The parent file passed FlickreviewR 2 with cc-by-2.0 on 2024-10-30, and Flickr oEmbed still returns 'CC BY 2.0'. The licence is acceptable. The local file assets/media/aaron-swartz-2011.jpg exists and opens as a 960x1451 RGB JPEG. The alt text is accurate."
+   ],
+   "fieldFixes": {
+    "caption": "Aaron Swartz in San Francisco, October 2011. The photo is cropped from 'Aaron Swartz and Jason Scott', posted to Jason Scott's Flickr account (Commons description: 'Aaron Swartz in 2011').",
+    "lat": 37.782463,
+    "lng": -122.47187,
+    "locationNote": "Coordinates are from the {{Location}} template on the Commons file page (37.782463, -122.47187). They fall on 300 Funston Avenue, San Francisco, home of the Internet Archive."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "kevin-poulsen-2014",
+   "status": "OK",
+   "issues": [
+    "No errors found in the record. The Commons API extmetadata was re-queried on 2026-09-23. It gives LicenseShortName 'CC BY-SA 3.0', LicenseUrl https://creativecommons.org/licenses/by-sa/3.0, Artist 'Klpoulsen', Credit 'Own work', DateTimeOriginal '2014-03-24 10:22:18', ImageDescription 'Photo of Kevin Poulsen taken in March 2014', {{self|cc-by-sa-3.0}}, and the category 'Kevin Lee Poulsen'. The rightsEvidence, caption, creator and creditLine all match. The licence is acceptable (CC BY-SA).",
+    "Caveat, no change needed: the DateTimeOriginal is effectively the upload time. The API gives the upload timestamp as 2014-03-24T17:23:58Z, which is 10:23 PDT, one minute after the stated 10:22:18. So the only date evidence is the uploader's own 'taken in March 2014'. The caption attributes that to the Commons description, which is right.",
+    "Rights caveat, no change needed: this is a self-upload by account Klpoulsen, apparently the subject, claiming 'own work' for a head-and-shoulders portrait against a mottled backdrop. There is no VRTS ticket. Commons has hosted it under CC BY-SA 3.0 since March 2014 without challenge, so the stated licence is taken as given. If a stronger rights chain is wanted, this is the weakest of the eight images.",
+    "The local file assets/media/kevin-poulsen-2014.jpg exists and opens as a 277x318 RGB JPEG. The Commons original is a 277x318 PNG, so the thumbPx and the use of the original as thumbUrl are correct. The alt text matches: a smiling man with short brown hair and rectangular glasses. The San Francisco placeholder is labelled as a placeholder."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "glenn-greenwald-2013",
+   "status": "OK",
+   "issues": [
+    "No errors found. The Commons API extmetadata was re-queried on 2026-09-23. It gives LicenseShortName 'CC BY 3.0 br', LicenseUrl https://creativecommons.org/licenses/by/3.0/br/deed.en, Artist 'Elza Fiúza / Agência Brasil', Credit http://agenciabrasil.ebc.com.br/galeria/2013-10-09/cpi-da-espionagem-ouve-jornalista-glenn-greenwald, DateTimeOriginal '2013-10-09', and the licence template {{Agência Brasil}}. The English description matches the rightsEvidence verbatim. The file is a crop of 'Greenwald and Miranda.jpg'. The licence is acceptable (CC BY). The original Agência Brasil gallery URL now returns only the site navigation, so the licence rests on the Commons template.",
+    "Independent check: Senado Notícias (www12.senado.leg.br, 'Começa reunião para ouvir o jornalista Glenn Greenwald', 09/10/2013, 14h55) says 'Começou há pouco a audiência pública da CPI da Espionagem destinada a ouvir o jornalista e advogado norte-americano Glenn Greenwald e seu companheiro, o estudante brasileiro David Miranda.' (FOUND). This confirms the date, 9 October 2013, and that both men were heard. It also confirms that the CPI da Espionagem was a Senate inquiry, so the title's 'Brazilian Senate espionage inquiry' is correct and the caption's 'Brazilian Parliament's' follows the Commons wording. The coordinates -15.7998, -47.8645 are at the National Congress in Brasília.",
+    "The local file assets/media/glenn-greenwald-2013.jpg exists and opens as a 960x1152 RGB JPEG. The alt text matches: a man in a dark suit, light-blue shirt and black-and-white striped tie, with a black bag strap over his shoulder."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
   }
  ]
 }

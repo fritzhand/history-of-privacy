@@ -1,0 +1,48 @@
+{
+ "slice": "personas-researchers",
+ "chunk": "f302",
+ "verdicts": [
+  {
+   "kind": "people",
+   "id": "ann-cavoukian",
+   "status": "FIXED",
+   "issues": [
+    "Cited Wikipedia (Ann Cavoukian) for her posts before 1997: first Director of Compliance, then Assistant Commissioner from 1990. The underlying source is the IPC's official biography, but ipc.on.ca and ola.org refuse scripted requests (403), and the Ryerson pages Wikipedia cites are gone or reachable only through the Wayback Machine. Replaced with the same official biography as published by the Information Technology and Innovation Foundation (ITIF), which co-published Cavoukian's 2014 de-identification report."
+   ],
+   "sourceFixes": [
+    {
+     "index": 5,
+     "institution": "Information Technology and Innovation Foundation (ITIF), author biography",
+     "title": "Ann Cavoukian, Information and Privacy Commissioner, Ontario, Canada",
+     "date": "2026-09-23",
+     "url": "https://itif.org/person/ann-cavoukian-0/",
+     "quote": "Dr. Cavoukian joined the Office of the Information and Privacy Commissioner in 1987, during its start-up phase, as its first Director of Compliance. In 1990, she was appointed Assistant Commissioner.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The date field is the date accessed, because the page is undated; its text runs to November 2011 and says her term was 'extended to 2014'. The same biography text, with the same two sentences, was published by Women of Influence in 2006 (womenofinfluence.ca/2006/09/09/…). That confirms it is the IPC's standard official bio and not ITIF's own research. It also says she was 'Initially appointed in 1997'. Consistent with the record: she was Assistant Commissioner when the IPC co-published the 1995 PET report."
+    }
+   ]
+  },
+  {
+   "kind": "events",
+   "id": "searls-projectvrm-launched-berkman-2006",
+   "status": "FIXED",
+   "issues": [
+    "Cited Wikipedia (Doc Searls) for The Intention Economy being published by Harvard Business Review Press in 2012. Replaced with the Berkman Center's June 2012 event page for Searls' book talk, which calls it 'his new book from Harvard Business Review Press'."
+   ],
+   "sourceFixes": [
+    {
+     "index": 3,
+     "institution": "Berkman Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge (event page for Doc Searls' talk, Harvard Law School, 11 June 2012)",
+     "date": "2012",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "Doc Searls' talk, \"The Intention Economy: When Customers Take Charge\" — also the title of his new book from Harvard Business Review Press.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Replaces a Wikipedia citation. Checked with fetch-text --check: FOUND. The event was held in June 2012 (the URL path is /events/2012/05/; the page says 'Monday, June 11'), and the book is called 'new', which supports the record's year of 2012. The page also says the book 'reports on progress by dozens of companies and development projects fostered by ProjectVRM, which Doc launched at the Berkman Center in 2006' (FOUND). The HBR store page returns 404."
+    }
+   ]
+  }
+ ]
+}

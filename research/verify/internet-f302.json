@@ -1,0 +1,69 @@
+{
+ "slice": "internet",
+ "chunk": "f302",
+ "verdicts": [
+  {
+   "kind": "events",
+   "id": "ie6-p3p-compact-policy-cookie-filtering-2001",
+   "status": "FIXED",
+   "issues": [
+    "Cited Wikipedia (P3P) for Mozilla's removal of P3P code by 2007. Replaced with the primary record: Mozilla's own Bugzilla bug 366611, 'Remove extensions/p3p from the tree', where the P3P module was removed on 11 June 2007."
+   ],
+   "sourceFixes": [
+    {
+     "index": 2,
+     "institution": "Mozilla (Bugzilla@Mozilla)",
+     "title": "Bug 366611 - Remove extensions/p3p from the tree (comment 16, dwitte)",
+     "date": "2007-06-11",
+     "url": "https://bugzilla.mozilla.org/show_bug.cgi?ctype=xml&id=366611",
+     "quote": "removed extensions/p3p. the only remaining references to it are the ui components in suite (bug 383993) and the p3p hooks in cookie code (bug 383994), which can be taken care of separately.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Replaces a Wikipedia citation (P3P, which cites Mozilla bug 225287). Quote checked with fetch-text --check on Bugzilla's XML export of the bug: FOUND. The URL is the XML view because the human-readable page (https://bugzilla.mozilla.org/show_bug.cgi?id=366611) puts comments in markup the checker cannot read; the comment text is the same. Comment dated 2007-06-11 06:50:42 -0700. Bugzilla's REST API shows both follow-ups RESOLVED FIXED in 2007: bug 383994 'remove p3p hooks from cookies' (2007-06-21) and bug 383993 'remove p3p ui from suite' (2007-09-03). So P3P code was gone from Mozilla by the end of 2007. The earlier bug 225287 comment 27 (2007-06-09) also says 'neither firefox nor seamonkey build p3p anymore. marking fixed.' (FOUND in that bug's XML export)."
+    }
+   ]
+  },
+  {
+   "kind": "events",
+   "id": "projectvrm-launched-berkman-center-2006",
+   "status": "FIXED",
+   "issues": [
+    "Cited Wikipedia (Vendor relationship management) as independent corroboration of the 2006 start at Berkman. Replaced with the Berkman Center's own 2012 event page, which says Searls launched ProjectVRM at the Center in 2006. Wikipedia's source for the Vizard/Gillmor Gang detail is a dead mevio.com podcast page, reachable only through the Wayback Machine, which is unreachable from here. The record's text does not rely on the Vizard detail."
+   ],
+   "sourceFixes": [
+    {
+     "index": 2,
+     "institution": "Berkman Center for Internet & Society, Harvard University",
+     "title": "The Intention Economy: When Customers Take Charge (event page for Doc Searls' talk, Harvard Law School, 11 June 2012)",
+     "date": "2012",
+     "url": "https://cyber.harvard.edu/events/2012/05/searls",
+     "quote": "The book reports on progress by dozens of companies and development projects fostered by ProjectVRM, which Doc launched at the Berkman Center in 2006.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Replaces a Wikipedia citation. Quote checked with fetch-text --check: FOUND. The same page also says 'Doc Searls served as a Berkman Fellow from 2006 to 2010, during which he launched and led ProjectVRM' (FOUND), and that VRM is 'a term coined as a counterpart to CRM'. The Berkman announcement 'Welcome Doc Searls, new Berkman Fellow' (cyber.harvard.edu/node/93388) confirms the fellowship. It shows Searls already working on the customer-side answer to CRM, but it does not name ProjectVRM."
+    }
+   ]
+  },
+  {
+   "kind": "events",
+   "id": "facebook-beacon-launch-and-retreat-2007",
+   "status": "FIXED",
+   "issues": [
+    "Cited Wikipedia (Facebook Beacon) to corroborate the 5 December 2007 apology and opt-out. Wikipedia cites Zuckerberg's 'Thoughts on Beacon' post, which the record already cites from the Meta newsroom. Replaced with contemporary independent press: Forbes, 5 December 2007."
+   ],
+   "sourceFixes": [
+    {
+     "index": 3,
+     "institution": "Forbes (Andy Greenberg)",
+     "title": "Facebook's Overblown Privacy Problems",
+     "date": "2007-12-05",
+     "url": "https://www.forbes.com/2007/12/05/facebook-beacon-opt-tech-internet-cx_ag_1205techfacebook.html",
+     "quote": "In a blog post, the 23-year-old founder of the social networking site apologized Wednesday for privacy violations by its controversial Beacon advertising program, which broadcasts users' online purchases to friends in their networks. Zuckerberg announced that Facebook will add a Beacon opt-out button to the site's privacy settings",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Replaces a Wikipedia citation. Quote checked with fetch-text --check: FOUND. Page metadata: author Andy Greenberg, datePublished 2007-12-05T22:47:17-05:00. 5 December 2007 was a Wednesday, which fixes the date of the apology and the opt-out announcement independently of TechCrunch [2]. The article also quotes 'We simply did a bad job with this release, and I apologize for it'. Fortune's 'about facebook' (fortune.com/2007/12/05/about-facebook) also reports that Zuckerberg 'broke his silence Wednesday' and 'allowed members to turn off Beacon'."
+    }
+   ]
+  }
+ ]
+}

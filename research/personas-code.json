@@ -1,8 +1,145 @@
 {
  "slice": "personas-code",
  "notes": "IN PROGRESS",
- "people": [],
- "events": [],
+ "people": [
+  {
+   "id": "whitfield-diffie",
+   "name": "Whitfield Diffie",
+   "handle": "",
+   "roles": "cryptographer · co-inventor of public-key cryptography",
+   "years": "1974–present",
+   "place": "Stanford University, Stanford, California",
+   "lat": 37.4275,
+   "lng": -122.1697,
+   "keyWork": {
+    "title": "New Directions in Cryptography (with Martin E. Hellman), IEEE Transactions on Information Theory, vol. IT-22, no. 6",
+    "year": 1976,
+    "url": "https://ee.stanford.edu/~hellman/publications/24.pdf"
+   },
+   "contribution": "With Martin Hellman, Diffie published the 1976 paper that introduced public-key cryptography and digital signatures to the open literature. The scheme lets two people who have never met agree on a secret over an insecure channel, removing the need for a courier or other secure channel to deliver keys in advance. Diffie was a part-time researcher at Stanford at the time.",
+   "quote": "Cryptography is the one indispensable security technique. There are lots of other things needed, but if the government had succeeded in blocking people from having strong cryptographic systems … it would have meant you could not have had security on the Internet.",
+   "quoteSource": {
+    "institution": "Stanford University School of Engineering",
+    "title": "Stanford cryptography pioneers win the ACM 2015 A.M. Turing Award",
+    "date": "2016-03-01",
+    "url": "https://engineering.stanford.edu/news/stanford-cryptography-pioneers-win-acm-2015-am-turing-award",
+    "quote": "\"Cryptography is the one indispensable security technique,\" said Diffie, who was a part-time researcher at Stanford at the time he and Hellman invented public-key cryptography.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "The card quote joins two consecutive sentences of Diffie's remark as printed in the article (the article interrupts it with the attribution); both parts --check FOUND. Date from the Stanford Report URL (030116) and the ACM announcement at the RSA Conference."
+   },
+   "influence": "Public-key cryptography moved strong encryption out of classified government research and into the open, provoking the first clash between academic cryptographers and the NSA — later called the first 'crypto war' — and became the basis of Internet security.",
+   "thread": "In a public-key system each person generates and keeps a secret key and publishes only the matching public key, so the ability to read one's messages rests with the individual rather than with a central key authority.",
+   "sources": [
+    {
+     "institution": "IEEE Transactions on Information Theory (author copy hosted by Stanford University)",
+     "title": "W. Diffie and M. E. Hellman, 'New Directions in Cryptography', vol. IT-22, no. 6, pp. 644–654",
+     "date": "1976-11",
+     "url": "https://ee.stanford.edu/~hellman/publications/24.pdf",
+     "quote": "Each one sends messages to the other enciphered in the receiver's public enciphering key and deciphers the messages he receives using his own secret deciphering key.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scanned PDF with OCR text layer; quote supports the 'thread' (user-held secret key)."
+    },
+    {
+     "institution": "Stanford University School of Engineering",
+     "title": "Stanford cryptography pioneers win the ACM 2015 A.M. Turing Award",
+     "date": "2016-03-01",
+     "url": "https://engineering.stanford.edu/news/stanford-cryptography-pioneers-win-acm-2015-am-turing-award",
+     "quote": "Ultimately, the NSA failed to limit the spread of their ideas, and public key cryptography became the backbone of modern Internet security.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same article states: 'These skirmishes became known as the first of the \" crypto wars .\"' and that an NSA employee warned publishers the authors 'could be subject to prison time'."
+    }
+   ],
+   "portrait": "whitfield-diffie-royal-society-2017"
+  },
+  {
+   "id": "martin-hellman",
+   "name": "Martin E. Hellman",
+   "handle": "",
+   "roles": "cryptographer · Stanford electrical-engineering professor",
+   "years": "1971–present",
+   "place": "Stanford University, Stanford, California",
+   "lat": 37.4275,
+   "lng": -122.1697,
+   "keyWork": {
+    "title": "New Directions in Cryptography (with Whitfield Diffie), IEEE Transactions on Information Theory, vol. IT-22, no. 6",
+    "year": 1976,
+    "url": "https://ee.stanford.edu/~hellman/publications/24.pdf"
+   },
+   "contribution": "Hellman, a Stanford professor of electrical engineering, co-authored with Whitfield Diffie the 1976 paper that proposed public-key cryptography and digital signatures. The pair also clashed with the NSA over the key length of the government's Data Encryption Standard, which they argued had been limited to 56 bits. The two shared the 2015 ACM A.M. Turing Award.",
+   "quote": "In order to use cryptography to insure privacy, however, it is currently necessary for the communicating parties to share a key which is known to no one else.",
+   "quoteSource": {
+    "institution": "IEEE Transactions on Information Theory (author copy hosted by Stanford University)",
+    "title": "W. Diffie and M. E. Hellman, 'New Directions in Cryptography', vol. IT-22, no. 6, pp. 644–654",
+    "date": "1976-11",
+    "url": "https://ee.stanford.edu/~hellman/publications/24.pdf",
+    "quote": "In order to use cryptography to insure privacy, however, it is currently necessary for the communicating parties to share a key which is known to no one else.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Jointly written with Diffie: the sentence frames the key-distribution problem the paper then solves. Scanned PDF with OCR text layer."
+   },
+   "influence": "The 1976 paper and the DES key-length dispute opened what Stanford calls the first of the 'crypto wars'; in 2016 Hellman publicly sided with Apple in its dispute with the FBI over unlocking an iPhone.",
+   "thread": "",
+   "sources": [
+    {
+     "institution": "Stanford University School of Engineering",
+     "title": "Stanford cryptography pioneers win the ACM 2015 A.M. Turing Award",
+     "date": "2016-03-01",
+     "url": "https://engineering.stanford.edu/news/stanford-cryptography-pioneers-win-acm-2015-am-turing-award",
+     "quote": "Diffie and Hellman clashed with the NSA over their publications, including one that claimed that the agency had pressured IBM to weaken the National Bureau of Standards' Data Encryption Standard (DES) by limiting the key size to 56 bits instead of a stronger option of 64 bits or higher.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    },
+    {
+     "institution": "Stanford University School of Engineering",
+     "title": "Stanford cryptography pioneers win the ACM 2015 A.M. Turing Award",
+     "date": "2016-03-01",
+     "url": "https://engineering.stanford.edu/news/stanford-cryptography-pioneers-win-acm-2015-am-turing-award",
+     "quote": "Diffie and Hellman both said they sided with Apple in the current legal standoff over the FBI's request that Apple provide access to an iPhone belonging to one of the San Bernardino terrorists by writing software to bypass some of its security features.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "portrait": ""
+  }
+ ],
+ "events": [
+  {
+   "id": "diffie-hellman-new-directions-in-cryptography-1976",
+   "displayDate": "November 1976",
+   "year": 1976,
+   "title": "Diffie and Hellman publish 'New Directions in Cryptography'",
+   "place": "Department of Electrical Engineering, Stanford University, Stanford, California",
+   "lat": 37.4275,
+   "lng": -122.1697,
+   "summary": "Whitfield Diffie and Martin Hellman of Stanford University published 'New Directions in Cryptography' in the November 1976 issue of IEEE Transactions on Information Theory (manuscript received 3 June 1976). It proposed public-key cryptosystems, in which each user publishes an enciphering key and keeps a separate deciphering key secret, and a method for two parties to agree a key over a public channel. The NSA later campaigned to limit the spread of the authors' research, and one NSA employee warned publishers the authors could face prison under arms-export law.",
+   "significance": "It made confidential communication possible between strangers without a trusted courier, putting the secret key in the hands of each individual user.",
+   "sources": [
+    {
+     "institution": "IEEE Transactions on Information Theory (author copy hosted by Stanford University)",
+     "title": "W. Diffie and M. E. Hellman, 'New Directions in Cryptography', vol. IT-22, no. 6, pp. 644–654",
+     "date": "1976-11",
+     "url": "https://ee.stanford.edu/~hellman/publications/24.pdf",
+     "quote": "Each user of the network can, therefore, place his enciphering key in a public directory. This enables any user of the system to send a message to any other user enciphered in such a way that only the intended receiver is able to decipher it.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "First-page footnote: 'Manuscript received June 3,1976.' Scanned PDF with OCR text layer."
+    },
+    {
+     "institution": "Stanford University School of Engineering",
+     "title": "Stanford cryptography pioneers win the ACM 2015 A.M. Turing Award",
+     "date": "2016-03-01",
+     "url": "https://engineering.stanford.edu/news/stanford-cryptography-pioneers-win-acm-2015-am-turing-award",
+     "quote": "An NSA employee even sent a letter to the publishers warning that the authors could be subject to prison time for violating U.S. laws restricting export of military weapons.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE"
+    }
+   ],
+   "locationNote": "Coordinates: Stanford University, where both authors worked. The journal was published by the IEEE (New York)."
+  }
+ ],
  "images": [],
  "myths": []
 }

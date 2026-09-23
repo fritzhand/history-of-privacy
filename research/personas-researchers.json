@@ -1,8 +1,150 @@
 {
  "slice": "personas-researchers",
  "notes": "IN PROGRESS",
- "people": [],
- "events": [],
+ "people": [
+  {
+   "id": "latanya-sweeney",
+   "name": "Latanya Sweeney",
+   "handle": "",
+   "roles": "computer scientist · re-identification researcher · FTC chief technologist (2014)",
+   "years": "1997–present",
+   "place": "Cambridge, Massachusetts (MIT, later Harvard); Pittsburgh (Carnegie Mellon)",
+   "lat": 42.3601,
+   "lng": -71.0942,
+   "keyWork": {
+    "title": "Simple Demographics Often Identify People Uniquely (Carnegie Mellon University, Data Privacy Working Paper 3)",
+    "year": 2000,
+    "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf"
+   },
+   "contribution": "As an MIT graduate student in 1997, Sweeney linked a $20 Cambridge voter list to Massachusetts state-employee health data released without names, and picked out Governor William Weld's hospital record. Her 2000 working paper estimated from 1990 Census data that 87% of the U.S. population was likely unique on five-digit ZIP code, gender and date of birth, and her 2002 k-anonymity model proposed a formal test for releases. She later founded Harvard's Data Privacy Lab and served as the Federal Trade Commission's chief technologist.",
+   "quote": "In general, few characteristics are needed to uniquely identify a person.",
+   "quoteSource": {
+    "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (hosted by the Data Privacy Lab)",
+    "title": "Simple Demographics Often Identify People Uniquely",
+    "date": "2000",
+    "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+    "quote": "In general, few characteristics are needed to uniquely identify a person.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Abstract, page 2 of the PDF."
+   },
+   "influence": "The Weld demonstration became the standard proof that removing names does not make data anonymous; an epidemiologist who later challenged its certainty still credits it with a profound impact on the de-identification rules of the 2003 HIPAA Privacy Rule.",
+   "thread": "Her evidence that data stripped of names 'should not be considered anonymous' undercut the practice of sharing person-specific records without the person's knowledge on the strength of de-identification alone.",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (hosted by the Data Privacy Lab)",
+     "title": "Simple Demographics Often Identify People Uniquely",
+     "date": "2000",
+     "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+     "quote": "Clearly, data released containing such information about these individuals should not be considered anonymous. Yet, health and other person-specific data are publicly available in this form.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract."
+    },
+    {
+     "institution": "International Journal on Uncertainty, Fuzziness and Knowledge-based Systems 10(5), 557-570 (author's copy, Data Privacy Lab)",
+     "title": "L. Sweeney, 'k-anonymity: a model for protecting privacy'",
+     "date": "2002",
+     "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf",
+     "quote": "For example, William Weld was governor of Massachusetts at that time and his medical records were in the GIC data. Governor Weld lived in Cambridge Massachusetts.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Example 1, 'Re-identification by linking', page 2."
+    },
+    {
+     "institution": "Daniel C. Barth-Jones, Columbia University Mailman School of Public Health (SSRN abstract 2076397; copy hosted by the Future of Privacy Forum)",
+     "title": "The 'Re-identification' of Governor William Weld's Medical Information: A Critical Re-examination of Health Data Identification Risks and Privacy Protections, Then and Now",
+     "date": "2012-07",
+     "url": "https://fpf.org/wp-content/uploads/The-Re-identification-of-Governor-Welds-Medical-Information-Daniel-Barth-Jones.pdf",
+     "quote": "The 1997 re-identification of Massachusetts Governor William Weld’s medical data within an insurance data set which had been stripped of direct identifiers has had a profound impact on the development of de-identification provisions within the 2003 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract. Barth-Jones argues the Weld match was less certain than usually told (see myths)."
+    },
+    {
+     "institution": "U.S. Federal Trade Commission",
+     "title": "FTC Names Latanya Sweeney as Chief Technologist; Andrea Matwyshyn as Policy Advisor",
+     "date": "2013-11-18",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2013/11/ftc-names-latanya-sweeney-chief-technologist-andrea-matwyshyn-policy-advisor",
+     "quote": "Dr. Sweeney is a professor of government and technology at Harvard University and the founder and director of Harvard’s data privacy lab.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same release: 'Dr. Sweeney will join the FTC as Chief Technologist in January' (2014); her research 'has focused on the de-identification of data, developing privacy technologies, and the protection of health information.'"
+    }
+   ],
+   "portrait": "latanya-sweeney-knight-news-challenge-2017"
+  }
+ ],
+ "events": [
+  {
+   "id": "sweeney-weld-reidentification-1997",
+   "displayDate": "1997",
+   "year": 1997,
+   "title": "A graduate student finds the governor in 'anonymous' health data",
+   "place": "Massachusetts Institute of Technology, Cambridge, Massachusetts",
+   "lat": 42.3601,
+   "lng": -71.0942,
+   "summary": "Massachusetts' Group Insurance Commission had released patient-level data on about 135,000 state employees and their families, believed to be anonymous, to researchers and sold a copy to industry. Latanya Sweeney, then an MIT graduate student, bought the Cambridge voter registration list for twenty dollars and linked it on ZIP code, birth date and gender. Governor William Weld's record stood out: six Cambridge voters shared his birth date, three were men, and only he lived in his five-digit ZIP code.",
+   "significance": "It showed that stripping names is not the same as making data anonymous, a lesson that shaped HIPAA's de-identification rules and every later argument that people need a say over data 'about' them.",
+   "sources": [
+    {
+     "institution": "International Journal on Uncertainty, Fuzziness and Knowledge-based Systems 10(5), 557-570 (author's copy, Data Privacy Lab)",
+     "title": "L. Sweeney, 'k-anonymity: a model for protecting privacy'",
+     "date": "2002",
+     "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf",
+     "quote": "For example, William Weld was governor of Massachusetts at that time and his medical records were in the GIC data. Governor Weld lived in Cambridge Massachusetts. According to the Cambridge Voter list, six people had his particular birth date; only three of them were men; and, he was the only one in his 5-digit ZIP code.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same page: GIC collected data 'for approximately 135,000 state employees and their families. Because the data were believed to be anonymous, GIC gave a copy of the data to researchers and sold a copy to industry'; 'For twenty dollars I purchased the voter registration list for Cambridge Massachusetts'. The paper's reference for the voter list is dated February 1997."
+    },
+    {
+     "institution": "Daniel C. Barth-Jones, Columbia University Mailman School of Public Health (SSRN abstract 2076397; copy hosted by the Future of Privacy Forum)",
+     "title": "The 'Re-identification' of Governor William Weld's Medical Information: A Critical Re-examination of Health Data Identification Risks and Privacy Protections, Then and Now",
+     "date": "2012-07",
+     "url": "https://fpf.org/wp-content/uploads/The-Re-identification-of-Governor-Welds-Medical-Information-Daniel-Barth-Jones.pdf",
+     "quote": "The 1997 re-identification of Massachusetts Governor William Weld’s medical data within an insurance data set which had been stripped of direct identifiers has had a profound impact on the development of de-identification provisions within the 2003 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the 1997 date and the HIPAA influence. Barth-Jones also identifies Sweeney as 'then a MIT graduate student in computer science' and argues the match was less certain than usually told because the voter roll covered only about half of Cambridge's population."
+    }
+   ],
+   "locationNote": "MIT, where Sweeney was a graduate student; the data were Massachusetts state data and the voter list came from the City of Cambridge."
+  },
+  {
+   "id": "sweeney-simple-demographics-87-percent-2000",
+   "displayDate": "2000",
+   "year": 2000,
+   "title": "ZIP code, gender and birth date: the 87% estimate",
+   "place": "Carnegie Mellon University, Pittsburgh, Pennsylvania",
+   "lat": 40.4433,
+   "lng": -79.9436,
+   "summary": "In a Carnegie Mellon working paper, Latanya Sweeney used 1990 U.S. Census summary data to estimate how many people had rare combinations of demographic values. She found that 87% of the population (216 million of 248 million) likely had a unique combination of five-digit ZIP code, gender and date of birth, and about half (53%) on place, gender and date of birth. A 2006 re-analysis of the 2000 Census by Philippe Golle put the ZIP–gender–birth-date figure at 63%.",
+   "significance": "The number turned 'anonymised' into a claim that had to be proved, and it is still the most-quoted statistic in arguments that personal data needs the person's own controls.",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (hosted by the Data Privacy Lab)",
+     "title": "L. Sweeney, Simple Demographics Often Identify People Uniquely",
+     "date": "2000",
+     "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+     "quote": "It was found that 87% (216 million of 248 million) of the population in the United States had reported characteristics that likely made them unique based only on {5-digit ZIP, gender, date of birth}.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract. Same abstract: 'About half of the U.S. population (132 million of 248 million or 53%) are likely to be uniquely identified by only {place, gender, date of birth}'."
+    },
+    {
+     "institution": "Philippe Golle, Palo Alto Research Center — Proceedings of the 5th ACM Workshop on Privacy in the Electronic Society (WPES '06), Alexandria, Virginia (author's copy, Stanford)",
+     "title": "Revisiting the Uniqueness of Simple Demographics in the US Population",
+     "date": "2006-10-30",
+     "url": "https://crypto.stanford.edu/~pgolle/papers/census.pdf",
+     "quote": "Our results generally agree with the ﬁndings of [10], although we ﬁnd that disclosing one’s gender, ZIP code and full date of birth allows for unique identiﬁcation of fewer individuals (63% of the US population) than reported in [10].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Reference [10] is Sweeney's 2000 paper. The PDF's text layer uses the 'fi' ligature, kept in the quote so it matches the fetched text."
+    }
+   ],
+   "locationNote": "Carnegie Mellon University, where the working paper was issued."
+  }
+ ],
  "images": [
   {
    "id": "latanya-sweeney-knight-news-challenge-2017",
@@ -26,5 +168,44 @@
    "thumbPx": "960x960"
   }
  ],
- "myths": []
+ "myths": [
+  {
+   "id": "myth-87-percent-identified-by-zip-birthdate-gender",
+   "claim": "87% of Americans can be identified from just their ZIP code, gender and date of birth.",
+   "verdict": "MISLEADING",
+   "correction": "Sweeney's 87% was an estimate from 1990 Census summary data of how many people 'likely' had a unique combination of five-digit ZIP, gender and birth date — not a count of people actually re-identified. Re-running the analysis on the 2000 Census, Philippe Golle found 63%. Actually naming someone also needs an outside list (such as a voter roll) that contains them; Barth-Jones argues that incomplete lists make many such matches uncertain. The core point — that a few ordinary attributes single out most people — survived the re-analysis.",
+   "sources": [
+    {
+     "institution": "Carnegie Mellon University, Data Privacy Working Paper 3 (hosted by the Data Privacy Lab)",
+     "title": "L. Sweeney, Simple Demographics Often Identify People Uniquely",
+     "date": "2000",
+     "url": "https://dataprivacylab.org/projects/identifiability/paper1.pdf",
+     "quote": "It was found that 87% (216 million of 248 million) of the population in the United States had reported characteristics that likely made them unique based only on {5-digit ZIP, gender, date of birth}.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The abstract says the experiments used '1990 U.S. Census summary data'."
+    },
+    {
+     "institution": "Philippe Golle, Palo Alto Research Center — WPES '06 (author's copy, Stanford)",
+     "title": "Revisiting the Uniqueness of Simple Demographics in the US Population",
+     "date": "2006-10-30",
+     "url": "https://crypto.stanford.edu/~pgolle/papers/census.pdf",
+     "quote": "Our results generally agree with the ﬁndings of [10], although we ﬁnd that disclosing one’s gender, ZIP code and full date of birth allows for unique identiﬁcation of fewer individuals (63% of the US population) than reported in [10].",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Text layer uses the 'fi' ligature."
+    },
+    {
+     "institution": "Daniel C. Barth-Jones, Columbia University (SSRN 2076397; FPF copy)",
+     "title": "The 'Re-identification' of Governor William Weld's Medical Information: A Critical Re-examination",
+     "date": "2012-07",
+     "url": "https://fpf.org/wp-content/uploads/The-Re-identification-of-Governor-Welds-Medical-Information-Daniel-Barth-Jones.pdf",
+     "quote": "Weld was most likely re-identifiable only because he was a public figure who experienced a highly publicized hospitalization",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Barth-Jones's critique is itself disputed by re-identification researchers (e.g. Narayanan and Felten, 2014)."
+    }
+   ]
+  }
+ ]
 }

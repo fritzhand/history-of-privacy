@@ -39,6 +39,26 @@
    },
    "sourceFixes": [],
    "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "cory-doctorow-2016",
+   "status": "FIXED",
+   "issues": [
+    "The caption can name the event. The Commons page gives only 'Cory Doctorow in 2016', but its source Flickr photo (flickr.com/photos/internetarchive/27484908292, read through Flickr's oEmbed API on 2026-09-23) is titled '2016-06-08 Decentralized Web-003'. It was posted by 'The Internet Archive' under the licence 'Public Domain Mark'. The Internet Archive's announcement (blog.archive.org, 19 May 2016) gives the Summit date as 'Wednesday, June 8, 2016 at 8:00 AM' (FOUND) and the venue as '300 Funston Avenue, San Francisco, CA 94118' (FOUND). It also says 'EFF’s Cory Doctorow, such a fine weaver of digital dystopias in his science fiction, will share what has gone awry with the current Web' (FOUND). That matches the Commons DateTimeOriginal of 2016-06-08. The pin moves from the San Francisco centroid to the OSM building geocode for 300 Funston Ave, the Internet Archive.",
+    "The caption says 'photographed by the Internet Archive'. The Internet Archive is the Flickr account holder and the credited Commons author, but no individual photographer is named. The caption now says 'from the Internet Archive's Flickr account'. The creator field stays 'Internet Archive', as Commons credits it.",
+    "Small alt-text inaccuracy: the top is a black long-sleeved shirt with the sleeves pushed up, not a T-shirt. A black sleeve is visible on the arm resting on the rail.",
+    "Checked OK otherwise: the Commons API extmetadata was re-queried on 2026-09-23. It gives LicenseShortName 'Public domain', Copyrighted False, Artist 'Internet Archive', Credit https://www.flickr.com/photos/internetarchive/27484908292/, DateTimeOriginal '2016-06-08 14:08:10', and the template {{PD-author-FlickrPDM}}. FlickreviewR 2 passed it on 2025-07-03 with reviewlicense 'Public Domain Mark'. The licence is acceptable (the author applied PDM, which Commons accepts as a public-domain release). The local file assets/media/cory-doctorow-2016.jpg exists and opens as a 960x1060 RGB JPEG."
+   ],
+   "fieldFixes": {
+    "caption": "Cory Doctorow at the first Decentralized Web Summit, held at the Internet Archive in San Francisco on 8 June 2016 (Commons description: 'Cory Doctorow in 2016'; the event is named in the title of the source Flickr photo, '2016-06-08 Decentralized Web-003', from the Internet Archive's Flickr account).",
+    "alt": "A man with short dark hair and thick black glasses, wearing a black long-sleeved top with a white star, rests a hand on his temple",
+    "lat": 37.7823,
+    "lng": -122.4716,
+    "locationNote": "Internet Archive, 300 Funston Avenue, San Francisco: the venue of the 8-9 June 2016 Decentralized Web Summit, per the Internet Archive's announcement. The source Flickr photo is titled '2016-06-08 Decentralized Web-003'. Coordinates are the OSM building geocode."
+   },
+   "sourceFixes": [],
+   "addSources": []
   }
  ]
 }

@@ -1590,6 +1590,8 @@ function buildGetSeries() {
         </div>`).join('<div class="get-pair-vs" aria-hidden="true">and</div>');
     } else pair.remove();
   }
+  const pn = document.getElementById('get-pair-note');
+  if (pn) pn.innerHTML = g.pairNote ? esc(g.pairNote) + (g.pairNoteSource ? ' ' + sourceHtml(g.pairNoteSource) : '') : '';
   const coda = document.getElementById('get-coda');
   if (coda) coda.innerHTML = g.coda ? esc(g.coda) + (g.codaSource ? ' ' + sourceHtml(g.codaSource) : '') : '';
 }

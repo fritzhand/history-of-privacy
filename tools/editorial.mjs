@@ -539,21 +539,27 @@ export default function editorial(H) {
       return q.slice(start, end < 0 ? q.length : end + 1).trim();
     };
     const s7002 = byNum('7002-2022'), s7012 = byNum('7012-2025');
+    /* The full texts: 7002 read from the author's IEEE-account copy, 7012 from its free PDF. */
+    const r7002 = [...rel.sources, ...((rel.reading7002 || {}).sources || []), ...((rel.hew1973 || {}).sources || [])];
     return {
       desc: `IEEE offers ${NUM[g.length]} standards free of charge, with an IEEE account sign-in, in its GET Program for AI Ethics and Governance Standards, launched in January 2023; eleven belong to the 7000 series that grew out of IEEE's Global Initiative on the ethics of autonomous and intelligent systems. Read by their own abstracts, scopes and purposes (this study\'s reading; several calls are close), ${word('organisation')} set processes for the organisations and teams that design, build or run systems, ${word('system')} concern how the systems themselves are designed or behave, and ${n('person') === 1 ? 'one — 7012 — is written from the person\'s side, as first party (its requirements fall on the software that acts for people and on the services that answer them)' : `${word('person')} are addressed to the person`}.`,
       descSource: [progSrc('To download any of these standards'), progSrc('PISCATAWAY, NJ, 17 January 2023'), progSrc('The creation of over twelve standards working groups'), ...src(cls.sources)],
       standards,
       pair: [
         { number: s7002.number, title: s7002.title, who: 'organisation', role: 'The organisation\'s privacy process',
-          quotes: [rawQuote(s7002.sources, 'defines requirements for a systems engineering process'), rawQuote(s7002.sources, 'The purpose of this standard is to provide an overall methodological approach')],
-          source: stdSrc(s7002).filter(x => /ieeexplore/.test(x.url)) },
+          quotes: [rawQuote(s7002.sources, 'defines requirements for a systems engineering process'), rawQuote(r7002, 'which an organization publishes to notify potential data subjects')],
+          source: [...stdSrc(s7002).filter(x => /ieeexplore\.ieee\.org\/document/.test(x.url)), withQuote(r7002, 'which an organization publishes to notify potential data subjects')] },
         { number: s7012.number, title: s7012.title, who: 'person', role: 'The person\'s own terms',
-          quotes: [rawQuote(rel.sources, 'to provide individuals with means to proffer their own terms'), rawQuote(rel.sources, 'acting as first parties, can proffer their privacy requirements')],
-          source: stdSrc(s7012).filter(x => /ieeexplore\.ieee\.org\/document/.test(x.url)) },
+          quotes: [rawQuote(rel.sources, 'to provide individuals with means to proffer their own terms'), rawQuote(r7002, 'chosen terms shall supersede any Terms of Use')],
+          source: [...stdSrc(s7012).filter(x => /ieeexplore\.ieee\.org\/document/.test(x.url)), withQuote(r7002, 'chosen terms shall supersede any Terms of Use')] },
       ],
-      coda: '7012 does not point to 7002: it cites no other standard in the series, and no public IEEE statement this study found says that one builds on or complements the other (whether 7002 mentions P7012 is not known: its full text needs an IEEE sign-in and was not read). They come from different parts of IEEE — 7002 from the Computer Society\'s Personal Data Privacy Working Group, 7012 from the Machine Readable Privacy Terms working group of the Society on Social Implications of Technology — though IEEE SA\'s 2018 statement lists both among the projects of its 7000 series, and says of P7012 that privacy policies “are one-sided and need no agreement”. When 7012 was published in January 2026 it was the newest of the twelve; IEEE 7014.1, on emulated empathy in general-purpose AI “partners”, followed in June 2026.',
-      codaSource: [withQuote(rel.sources, 'There are no normative references'), withQuote(rel.sources, 'PDP - Personal Data Privacy Working Group'), withQuote(rel.sources, 'MRPT-WG - Machine Readable Privacy Terms'),
-        withQuote(rel.sources, 'Terms require agreement; privacy policies do not'), progSrc('Date of Publication: 20 January 2026'), progSrc('Date of Publication: 12 June 2026')],
+      pairNote: 'Read in full, 7002 gives the individual no task in its process: the agreements and contracts it names are with vendors, suppliers, partners and other third parties, never with the person, and it mentions consent once — to note that some jurisdictions do not recognise employee consent as valid. It does not claim to be about who writes the terms; 7012 is.',
+      pairNoteSource: src([withQuote(r7002, 'data sharing agreements and contracts with vendors'), withQuote(r7002, 'do not recognize employee consent')]),
+      coda: 'Neither text cites the other: 7012 cites no other standard in the series, and 7002 cites none of the 7000 series — its reading runs to NIST, ISO/IEC, the regulators\' impact-assessment guides and the Fair Information Practices “first developed by the US Government in 1973”, the report this history\'s data-protection chapter begins with. No public IEEE statement this study found says that one builds on or complements the other; the link the texts do show is a person, John Wunderlich, vice chair of the 7002 working group and a member of 7012\'s. The two come from different parts of IEEE — 7002 from the Computer Society\'s Personal Data Privacy Working Group, 7012 from the Machine Readable Privacy Terms working group of the Society on Social Implications of Technology — though IEEE SA\'s 2018 statement lists both among the projects of its 7000 series, and says of P7012 that privacy policies “are one-sided and need no agreement”. When 7012 was published in January 2026 it was the newest of the twelve; IEEE 7014.1, on emulated empathy in general-purpose AI “partners”, followed in June 2026.',
+      codaSource: src([withQuote(rel.sources, 'There are no normative references in this standard'), withQuote(rel.sources, 'There are no normative references for this draft standard'),
+        withQuote(rel.hew1973.sources, 'First developed by the US Government in 1973'), withQuote(rel.sources, 'John Wunderlich, Vice Chair'), withQuote(rel.sources, 'Machine Readable Privacy Terms Working Group had the following membership'),
+        withQuote(rel.sources, 'PDP - Personal Data Privacy Working Group'), withQuote(rel.sources, 'MRPT-WG - Machine Readable Privacy Terms'),
+        withQuote(rel.sources, 'Terms require agreement; privacy policies do not'), progSrc('Date of Publication: 20 January 2026'), progSrc('Date of Publication: 12 June 2026')]),
     };
   })();
 

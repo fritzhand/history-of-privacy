@@ -1,0 +1,336 @@
+{
+ "slice": "global",
+ "chunk": "f103",
+ "verdicts": [
+  {
+   "kind": "laws",
+   "id": "cm-2024",
+   "status": "FIXED",
+   "issues": [
+    "The 'law' field leaves out the end of the official French title. The Presidency of the Republic of Cameroon publishes the law as 'Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun' (the title ends 'au Cameroun').",
+    "Everything else checks out. The DLA Piper quote is verbatim, and the number 2024/017 and the date of 23 December 2024 match the Presidency page and Village de la Justice ('la loi N°2024/017 promulguée le 23 décembre 2024'). yearEnacted 2024 is correct. The record has no regulator field, which is right: Africa Data Protection reports that no supervisory authority has been publicly identified yet ('Aucune autorité de contrôle publiquement identifiée pour le moment')."
+   ],
+   "fieldFixes": {
+    "law": "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim on the Cameroon law page. Secondary source; the official Presidency listing is now added as a primary source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Presidency of the Republic of Cameroon",
+     "title": "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
+     "date": "2024-12-23",
+     "url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+     "quote": "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The Presidency's official document page for the law (the page title and document heading); a download link for the text is on the page. Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "np-2018",
+   "status": "OK",
+   "issues": [
+    "No errors found. The DLA Piper quote 'Individual Privacy Act, 2018 (2075) (“Privacy Act”)' is verbatim. The Nepali title (वैयक्तिक गोपनीयता सम्बन्धी ऐन, २०७५) is also translated as 'The Privacy Act, 2075 (2018)' (ADB Law and Policy Reform catalogue, Nepal government translation), so the record's name is an accepted rendering. The 2075 BS / 2018 AD year is consistent.",
+    "The note says there is 'no independent data-protection authority'. DLA Piper's authority page for Nepal supports this: under 'National data protection authority in Nepal' it reads only 'Not applicable.' That source is added below."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim in the DLA Piper Nepal law section's list of laws."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Nepal (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=NP",
+     "quote": "Not applicable.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The entire text of the 'National data protection authority in Nepal' section. It supports the note's claim that Nepal has no independent data-protection authority. Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "lk-2022",
+   "status": "FIXED",
+   "issues": [
+    "The note says the Act was 'Passed by Parliament on 19 March 2022'. That is wrong. Parliament passed the bill, with amendments, on 9 March 2022 (Ada Derana, 9 March 2022: 'Personal Data Protection Bill was passed in parliament today (March 09) with amendments.'). The date 19 March 2022 is when the Speaker certified it, and the Act itself is headed '[Certified on 19th of March, 2022]'. The DLA Piper quote (and the DPA's own Background page) repeat this confusion. The DLA quote also misnames the law as 'the Personal Data Act No. 9 of 2022'.",
+    "The note calls it 'the first dedicated data-protection law in South Asia' as a plain fact. That is the Data Protection Authority's own claim. It is defensible, because Nepal's Individual Privacy Act 2018 came earlier but is a general privacy statute, and India's Act followed in 2023. Still, the claim should be attributed to the DPA.",
+    "'Amended by Act No. 22 of 2025' is correct. The Personal Data Protection (Amendment) Act, No. 22 of 2025 was certified on 30 October 2025 and gazetted on 31 October 2025.",
+    "The note leaves out that most of the Act is not yet in operation. DLA Piper (2026) says only the regulator and interpretation provisions have been brought into force, and the substantive Parts wait for a ministerial order that has not yet been made."
+   ],
+   "fieldFixes": {
+    "note": "Passed by Parliament on 9 March 2022 and certified by the Speaker on 19 March 2022. The Data Protection Authority calls it the first law of its kind in South Asia. Amended by the Personal Data Protection (Amendment) Act, No. 22 of 2025. So far only the provisions setting up the Data Protection Authority (and the definitions) are in operation; the substantive obligations await a ministerial commencement order."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim on dpa.gov.lk. It supports the Act's name and number and the DPA's 'first South Asian country' claim, which the note now attributes to the DPA. It gives no date."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Subsequently, PDPA 2022 was amended by way of Personal Data Protection (Amendment) Act No. 22 of 2025 (the “Amendment Act”) (the PDPA and the Amendment Act are collectively referred to as the “PDPA”), as published in the Government Gazette of 31 October 2025.",
+     "note": "The original quote is verbatim, but it gives 19 March 2022 as the date Parliament passed the Act (that is the certification date; Parliament passed it on 9 March) and misnames the Act 'Personal Data Act'. It is replaced with the same page's sentence on the 2025 amendment. Checked with fetch-text --check: FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Parliament of the Democratic Socialist Republic of Sri Lanka (copy hosted by the Data Protection Authority of Sri Lanka)",
+     "title": "Personal Data Protection Act, No. 9 of 2022",
+     "date": "2022-03-19",
+     "url": "https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20(2).pdf",
+     "quote": "PERSONAL DATA PROTECTION ACT, No. 9 OF 2022 [Certified on 19th of March, 2022]",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The official printed Act (published as a supplement to the Gazette of 25 March 2022). The parliament.lk copy (uploads/acts/gbills/english/6242.pdf) reset the connection. Checked with fetch-text --check: FOUND."
+    },
+    {
+     "institution": "Ada Derana",
+     "title": "Personal Data Protection Bill passed with amendments",
+     "date": "2022-03-09",
+     "url": "http://www.adaderana.lk/news/81084/personal-data-protection-bill-passed-with-amendments",
+     "quote": "Personal Data Protection Bill was passed in parliament today (March 09) with amendments.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Contemporary news report (page metadata dated 2022-03-09) giving the date Parliament passed the bill. Checked with fetch-text --check: FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Sri Lanka",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=LK",
+     "quote": "Accordingly, thus far, only the provisions pertaining to the regulator (the Data Protection Authority) and the interpretation section of PDPA 2022 have been brought into operation, which took place in 2023, by way of Orders published in the Government Gazette.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Law-firm global guide (secondary). Supports the added statement that the substantive Parts are not yet in operation; the same page says 'Thus far, no such date has been pronounced by the Minister in such regard.' Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "in-2023",
+   "status": "FIXED",
+   "issues": [
+    "The note says 'Commencement is by notification'. That is out of date as of September 2026. MeitY notified the DPDP Rules, 2025 in November 2025 (G.S.R. 846(E) is dated 13 November 2025 and was gazetted on 14 November; PIB reports 14 November). The Act commences in phases. The provisions setting up the Data Protection Board took effect on 13 November 2025, the consent-manager provisions take effect on 13 November 2026, and the other substantive obligations take effect on 13 May 2027. Until then the IT Act 2000 and the 2011 Rules continue to govern (DLA Piper).",
+    "All other claims check out. The gazette header reads 'THE DIGITAL PERSONAL DATA PROTECTION ACT, 2023 (NO. 22 OF 2023) [11th August, 2023.]', and the Act received presidential assent on 11 August 2023. The Puttaswamy judgment was in 2017. The earlier regime was the IT Act 2000 and the 2011 SPDI Rules (DLA Piper). The Data Protection Board of India is the regulator under s.18."
+   ],
+   "fieldFixes": {
+    "note": "Received presidential assent on 11 August 2023, after the Supreme Court's 2017 Puttaswamy judgment; before it, India relied on the IT Act 2000 and its 2011 rules. The Act commences in phases under the DPDP Rules, 2025, notified in November 2025. The provisions setting up the Data Protection Board of India took effect on 13 November 2025, and most substantive obligations take effect on 13 May 2027. Until then the IT Act regime continues to apply."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim in the MeitY gazette PDF. The header gives 'THE DIGITAL PERSONAL DATA PROTECTION ACT, 2023(NO. 22 OF 2023)[11th August, 2023.]', and the Legislative Department line says the Act 'received the assent of the President on the 11th August, 2023'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim. The same paragraph names the IT Act 2000 and the 2011 Privacy Rules, and the next one covers Puttaswamy (2017)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — India",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=IN",
+     "quote": "Phase I (effective immediately): Per the government’s notification, certain provisions of the DPDP Act, specifically those in relation to setting up the new data protection authority, i.e., the Data Protection Board of India, have been made effective immediately i.e. on November 13, 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Law-firm global guide (secondary). The same page gives Phase III: 'All other substantive provisions of the DPDP Act, including specific compliance obligations, are only set to be effective 18 months from the date of notification, i.e., from May 13, 2027.' Checked with fetch-text --check: FOUND."
+    },
+    {
+     "institution": "Press Information Bureau, Government of India",
+     "title": "DPDP Rules, 2025 Notified",
+     "date": "2025-11-17",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655&reg=48&lang=2",
+     "quote": "The Government of India notified the Digital Personal Data Protection (DPDP) Rules, 2025 on 14 November 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "PIB backgrounder, posted 17 November 2025. It also states 'Parliament enacted the Digital Personal Data Protection Act on 11 August 2023' and 'The Rules introduce an eighteen-month period for phased compliance.' The gazette copy of the Rules (meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf) is dated 13 November 2025 and was published in the Gazette on 14 November. Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "bd-2025",
+   "status": "FIXED",
+   "issues": [
+    "The note says the ordinance's status after the elected parliament returned 'was not verified'. It has since been settled. On Thursday 9 April 2026 Parliament passed the Personal Data Protection Bill, 2026 as one of 31 bills dealing with interim-government ordinances (UNB/Financial Express). The official Laws of Bangladesh site lists the Personal Data Protection Act, 2026 as Act No. 63 of 2026, dated 10 April 2026. Section 44(1) of that Act repeals Ordinance No. 61 of 2025 and the amending Ordinance No. 23 of 2026. Under s.1(3) the Act is deemed in force from 6 November 2025, except s.23 and ss.31–35, which start on a date the government gazettes once 18 months have passed. The Laws of Bangladesh page for the ordinance says it 'has been repealed by the Personal Data Protection Act, 2026 (Act No. 63 of 2026)'.",
+    "The record gives no ordinance number or exact date. The official listing gives Ordinance No. 61 of 2025, dated 6 November 2025. This matches the Prothom Alo report that the notifications were issued 'on Thursday' (6 November 2025).",
+    "The record also leaves out the Personal Data Protection (Amendment) Ordinance, 2026 (Ordinance No. 23 of 2026). Digital Policy Alert dates it to 5 February 2026.",
+    "The Prothom Alo source's date field reads '2025-11'. The page metadata gives datePublished 2025-11-09."
+   ],
+   "fieldFixes": {
+    "law": "Personal Data Protection Ordinance, 2025 (Ordinance No. 61 of 2025); replaced by the Personal Data Protection Act, 2026 (Act No. 63 of 2026)",
+    "note": "Promulgated by the interim government as Ordinance No. 61 of 2025, dated 6 November 2025, alongside a National Data Governance Ordinance, and amended in February 2026. After the elected parliament returned, it passed the Personal Data Protection Bill on 9 April 2026. The resulting Personal Data Protection Act, 2026 (Act No. 63 of 2026, dated 10 April 2026) repealed the ordinances and is deemed in force from 6 November 2025, except for a few sections (s.23 and ss.31–35) that take effect later by gazette notification."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2025-11-09",
+     "note": "Re-fetched 2026-09-23; quote verbatim. Page datePublished is 2025-11-09T22:11:21+06:00. The article says the law ministry issued the notifications 'on Thursday' (6 November 2025) and that the advisers' council approved both ordinances on 9 October. The official ordinance listing is now added as a primary source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Legislative and Parliamentary Affairs Division, Government of Bangladesh (Laws of Bangladesh)",
+     "title": "ব্যক্তিগত উপাত্ত সুরক্ষা অধ্যাদেশ, ২০২৫ (Personal Data Protection Ordinance, 2025)",
+     "date": "2025-11-06",
+     "url": "http://bdlaws.minlaw.gov.bd/act-print-1574.html",
+     "quote": "ব্যক্তিগত উপাত্ত সুরক্ষা অধ্যাদেশ, ২০২৫ ( ২০২৫ সনের ৬১ নং অধ্যাদেশ ) [ ০৬ নভেম্বর, ২০২৫ ] এই অধ্যাদেশ ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (২০২৬ সনের ৬৩ নং আইন) দ্বারা রহিত করা হইয়াছে।",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official print view of the ordinance. Translation: 'Personal Data Protection Ordinance, 2025 (Ordinance No. 61 of 2025) [06 November 2025]. This ordinance has been repealed by the Personal Data Protection Act, 2026 (Act No. 63 of 2026).' The act-1574.html view is served as UTF-16, which the checker cannot read, so the print view is used. Checked with fetch-text --check: FOUND."
+    },
+    {
+     "institution": "Legislative and Parliamentary Affairs Division, Government of Bangladesh (Laws of Bangladesh)",
+     "title": "ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (Personal Data Protection Act, 2026)",
+     "date": "2026-04-10",
+     "url": "http://bdlaws.minlaw.gov.bd/act-print-1692.html",
+     "quote": "(৩) ধারা ২৩ এবং ধারা ৩১ হইতে ৩৫ ব্যতীত, এই আইন ৬ নভেম্বর, ২০২৫ তারিখে কার্যকর হইয়াছে বলিয়া গণ্য হইবে, এবং আইনটি জারির পরবর্তী ১৮ (আঠারো) মাস অতিবাহিত হইবার পর, সরকার, সরকারি গেজেটে প্রজ্ঞাপন দ্বারা, যে তারিখ নির্ধারণ করিবে সেই তারিখে উক্ত ধারাসমূহ কার্যকর হইবে।",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 1(3) of Act No. 63 of 2026 (header: '( ২০২৬ সনের ৬৩ নং আইন ) [ ১০ এপ্রিল, ২০২৬ ]'). Translation: 'Except section 23 and sections 31 to 35, this Act shall be deemed to have come into effect on 6 November 2025, and those sections shall come into effect on the date the Government fixes by notification in the official Gazette after 18 (eighteen) months have passed since the law was issued.' Section 44(1) on the same page repeals Ordinance No. 61 of 2025 and Ordinance No. 23 of 2026. Checked with fetch-text --check: FOUND."
+    },
+    {
+     "institution": "The Financial Express (UNB)",
+     "title": "Parliament passes 31 bills related to IG-era ordinances",
+     "date": "2026-04-09",
+     "url": "https://thefinancialexpress.com.bd/home/parliament-passes-31-bills-related-to-ig-era-ordinances",
+     "quote": "The remaining bills passed in the House are Bangladesh Building Regulatory Authority Bill, 2026; Rajdhani Unnaya Kartripakkha (RAJUK) Bill, 2026; Personal Data Protection Bill, 2026; Bangladesh House Building Finance Corporation (Amendment) Bill, 2026 and Negotiable Instruments (Amendment) Bill, 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "UNB wire report published 9 April 2026 ('Parliament passed a total of 31 bills on Thursday ... bidding to adopt, repeal or amend ordinances promulgated during the tenure of the interim government'). Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "au-1988",
+   "status": "FIXED",
+   "issues": [
+    "The note says the Act applies to private-sector entities 'with annual turnover of at least AUD 3 million'. That wording comes from DLA Piper and is slightly wrong. Small business operators with turnover of $3 million or less are exempt, so coverage starts above $3 million. The OAIC says 'organisations with an annual turnover of more than $3 million, and some other organisations'. The note also leaves out the smaller organisations that are covered anyway, such as health service providers.",
+    "'The private sector was added by later amendment' is vague. The OAIC says the Privacy Amendment (Private Sector) Act 2000 extended coverage to some private-sector organisations from 21 December 2001. The OAIC also says the Act was passed at the end of 1988 and commenced in 1989.",
+    "The Act number (No. 119, 1988), the original coverage of Commonwealth agencies, and the OAIC as regulator all check out."
+   ],
+   "fieldFixes": {
+    "note": "Enacted as Act No. 119 of 1988 (commenced 1989) for Commonwealth agencies. The Privacy Amendment (Private Sector) Act 2000 extended it to private-sector organisations from 21 December 2001. It now covers most Australian Government agencies, organisations with annual turnover of more than AUD 3 million, and some smaller organisations."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; 'Privacy Act 1988 No. 119, 1988' is verbatim in the Federal Register of Legislation page heading."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim. Its 'at least AUD $3 million' is imprecise: the statutory small-business exemption covers turnover of $3 million or less, and the OAIC says 'more than $3 million'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Office of the Australian Information Commissioner (OAIC)",
+     "title": "The Privacy Act",
+     "date": "2026",
+     "url": "https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act",
+     "quote": "The Privacy Act 1988 was introduced to promote and protect the privacy of individuals and to regulate how Australian Government agencies and organisations with an annual turnover of more than $3 million, and some other organisations, handle personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The regulator's own statement of coverage. Checked with fetch-text --check: FOUND."
+    },
+    {
+     "institution": "Office of the Australian Information Commissioner (OAIC)",
+     "title": "History of the Privacy Act",
+     "date": "2026",
+     "url": "https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/history-of-the-privacy-act",
+     "quote": "In December 2000, the Privacy Amendment (Private Sector) Act 2000 extended coverage of the Privacy Act to some private sector organisations. The amendments commenced on 21 December 2001.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same page says: 'The Australian Parliament passed the Privacy Act 1988 at the end of 1988, and it commenced in 1989.' Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "nz-1993",
+   "status": "OK",
+   "issues": [
+    "No errors found. The Law Commission Issues Paper 17 (March 2010) contains 'the Privacy Act 1993 came into force on 1 July 1993.' verbatim. It also quotes the long title, which covers 'The collection, use, and disclosure, by public and private sector agencies, of information relating to individuals'. That supports 'applying to agencies in both the public and private sectors'.",
+    "The DLA Piper quote is verbatim but only shows that the Privacy Act 2020 is now the governing law. The Privacy Commissioner's statement that the 2020 Act replaced the 1993 Act on 1 December 2020 is added as a direct source for 'replaced by the Privacy Act 2020'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim. The PDF cover reads 'March 2010, Wellington, New Zealand | ISSUES PAPER 17 — Review of the Privacy Act 1993 — Review of the Law of Privacy Stage 4'. The long-title passage is also verbatim."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim. It supports only the fact that the 2020 Act is current, not the date it replaced the 1993 Act; see the added Privacy Commissioner source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Office of the Privacy Commissioner (New Zealand)",
+     "title": "Privacy Act 2020",
+     "date": "2026",
+     "url": "https://www.privacy.org.nz/privacy-act-2020/",
+     "quote": "The Privacy Act 2020 came into force on 1 December 2020, replacing the Privacy Act 1993.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The regulator's page. Checked with fetch-text --check: FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "hk-1995",
+   "status": "OK",
+   "issues": [
+    "No errors found. The PCPD 'Key Facts and History' page gives 'The Personal Data (Privacy) Ordinance (PDPO) was enacted on 3 August 1995' and, in its 1996 row, 'The PDPO came into force on 20 December 1996'. yearEnacted 1995, inForce 1996, the Cap. 486 title and the PCPD as regulator all match. The existing quote covers only the enactment date, so the in-force sentence from the same page is added as a second source.",
+    "'One of Asia's earliest comprehensive laws' has no source and is hedged. It is reasonable: Japan's 1988 act and Taiwan's 1995 act covered only computer-processed data or the public sector. A small caveat not worth a field change: s.33 of the PDPO, on cross-border transfers, has never been brought into force, so 'in force 20 December 1996' holds for the Ordinance generally, as the PCPD says."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote verbatim in the 1995 row of the PCPD page."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Office of the Privacy Commissioner for Personal Data (PCPD), Hong Kong",
+     "title": "Key Facts and History",
+     "date": "2026",
+     "url": "https://www.pcpd.org.hk/english/about_pcpd/our_organisation/facts/key_facts_n_history.html",
+     "quote": "The PDPO came into force on 20 December 1996",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The 1996 row of the same page, which supports the inForce year and the note's date. Checked with fetch-text --check: FOUND."
+    }
+   ]
+  }
+ ]
+}

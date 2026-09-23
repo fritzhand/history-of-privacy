@@ -12,7 +12,7 @@
         {
           "index": 0,
           "verificationStatus": "CONFIRMED",
-          "note": "Re-fetched 2026-09-23 with fetch-text.py: quote FOUND. Same paragraph FOUND: 'Wylie, a Canadian data analytics expert who worked with Cambridge Analytica and Kogan to devise and implement the scheme, showed a dossier of evidence' and 'It includes emails, invoices, contracts and bank transfers'. 'early 2014' FOUND for the harvesting. Page <title> and JSON-LD confirm headline, authors (Emma Graham-Harrison, Carole Cadwalladr) and datePublished 2018-03-17T22:03Z."
+          "note": "Re-fetched 2026-09-23 with fetch-text.py: quote FOUND. Same paragraph FOUND: 'Wylie, a Canadian data analytics expert who worked with Cambridge Analytica and Kogan to devise and implement the scheme, showed a dossier of evidence' and 'It includes emails, invoices, contracts and bank transfers'. 'early 2014' FOUND for the harvesting. Page <title> and JSON-LD confirm headline, authors (Emma Graham-Harrison, Carole Cadwalladr) and datePublished 2018-03-17T22:03Z. The quoteSource (same URL) is also FOUND verbatim: 'Christopher Wylie, who worked with a Cambridge University academic to obtain the data, told the Observer : “We exploited Facebook to harvest millions of people’s profiles...”', so the attribution to Wylie is correct."
         },
         {
           "index": 1,
@@ -186,6 +186,117 @@
           "note": "--check FOUND 2026-09-23; JSON-LD datePublished 2011-10-10. Also FOUND: 'Das bayerische Innenministerium hat bestätigt, dass der vom Chaos Computer Club (CCC) bekannt gemachte „Staats-Trojaner“ zur Online-Überwachung aus Bayern stammt.' The same article attributes the 'at least five cases' figure to Green MP Susanna Tausendfreund, not to officials. Translation: 'The State Criminal Police Office's initial assessment found that the software passed to the CCC can be assigned to a 2009 Bavarian police investigation.'"
         }
       ]
+    },
+    {
+      "kind": "event",
+      "id": "electronic-frontier-foundation-founded-1990",
+      "status": "FIXED",
+      "issues": [
+        "The summary says 'led a court to hold that e-mail deserves at least as much protection as telephone calls' as if it were the court's holding. That wording is EFF's own gloss from its history page. The actual 12 March 1993 ruling by Judge Sam Sparks (W.D. Tex.) awarded each plaintiff $1,000 under the ECPA for the seizure of their stored e-mail, but 'did not find that Secret Service agents had \"intercepted\" the electronic communications' (EFFector 5/4, 19 March 1993). The Fifth Circuit upheld that no-interception finding in October 1994, which is the opposite of telephone-call-level (Wiretap Act) protection. The sentence is reworded to state the real holding and attribute the gloss to EFF.",
+        "'EFF's first case' is EFF's own label (eff.org/issues/video-games: 'EFF's first case in 1990...'). Barlow's 8 November 1990 history, however, shows EFF's first legal action was a supporting amicus brief for Craig Neidorf, whose prosecution collapsed in late July 1990. The Steve Jackson Games suit was the lawsuit announced at launch. The wording is changed to 'the lawsuit EFF announced at its launch'.",
+        "The significance field claims EFF was 'the first advocacy organisation built to argue for privacy and speech rights inside networks'. That is overstated. Barlow's 1990 history records that one of EFF's first acts was a $275,000 grant to Computer Professionals for Social Responsibility's existing Washington office 'for a project on computing and civil liberties'. 'the first' is dropped.",
+        "The other claims check out: 1 March 1990 raid (SSIR), stored BBS e-mail 'individually accessed and deleted' (EFF history), the Kapor/Barlow/Gilmore founders, the 10 July 1990 National Press Club announcement (SSIR and Barlow 1990: 'We announced the formation of the Electronic Frontier Foundation at the National Press Club on July 10'), and the founding-paper quote. The locationNote's '155 Second St. Cambridge, MA 02141' is FOUND in Barlow's 8 November 1990 history."
+      ],
+      "fieldFixes": {
+        "summary": "After a 1 March 1990 Secret Service raid on Steve Jackson Games in Austin, Texas, in which the company's bulletin-board e-mail was accessed and deleted, Mitch Kapor, John Perry Barlow and John Gilmore formed an organisation for civil liberties raised by new technologies. Kapor and Barlow announced the Electronic Frontier Foundation in Washington on 10 July 1990, with a founding paper asking whether 'the history of one's personal business affairs' could properly belong to someone else. The lawsuit EFF announced at its launch, for Steve Jackson Games, ended in a 1993 federal ruling that the seizure of users' stored e-mail violated the Electronic Communications Privacy Act. EFF calls it the first time a court held that e-mail deserves at least as much protection as telephone calls.",
+        "significance": "Created an advocacy organisation built specifically to argue for privacy and speech rights inside networks, and framed personal data as something that might belong to the person."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: quote FOUND; dateline 'Electronic Frontier Foundation Washington, D.C. July 10, 1990' FOUND; 'We are founding the Electronic Frontier Foundation to deal with these and related challenges.' FOUND."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; the page shows 'Summer 2019'. The 1 March 1990 raid date and the 'contemporary critics' sentence are also FOUND."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: both quotes FOUND, and so are 'with assistance from Steve Wozniak' and 'had been individually accessed and deleted'. The 'at least as much protection as telephone calls' line is EFF's characterisation, not the court's wording; see issues and the added EFFector source."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Electronic Frontier Foundation (EFFector Online vol. 5 no. 4)",
+          "title": "Victory in the Steve Jackson Games Case",
+          "date": "1993-03-19",
+          "url": "https://www.eff.org/effector/5/4",
+          "quote": "In addition, the judge awarded each plaintiff $1,000 under the Electronic Communications Privacy Act for the Secret Service seizure of their stored electronic mail.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. Also FOUND: 'The judge did not find that Secret Service agents had \"intercepted\" the electronic communications'. The decision was announced 12 March 1993 by Judge Sam Sparks. This is the actual holding behind the summary's reworded sentence."
+        },
+        {
+          "institution": "Electronic Frontier Foundation",
+          "title": "John Perry Barlow, 'A Not Terribly Brief History of the Electronic Frontier Foundation'",
+          "date": "1990-11-08",
+          "url": "https://www.eff.org/pages/not-terribly-brief-history-electronic-frontier-foundation",
+          "quote": "We announced the formation of the Electronic Frontier Foundation at the National Press Club on July 10.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23; page dated 'Thursday, November 8, 1990'. Also FOUND: 'One of our first official acts had been to grant that organization $275,000 for a project on computing and civil liberties.' (the organisation is CPSR) and 'the government was forced to abandon its case against Neidorf after 4 days in Chicago's Federal Court.' The office address '155 Second St. Cambridge, MA 02141' is on the same page."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "barlow-declaration-independence-cyberspace-davos-1996",
+      "status": "FIXED",
+      "issues": [
+        "The significance field says it is 'The founding text' of the claim that people online could set their own rules. None of the sources establish that superlative, and cyberspace-autonomy arguments were already circulating, for example in EFF's own 1990 'Across the Electronic Frontier'. It is changed to 'A founding text'. Every factual claim in the summary checked out."
+      ],
+      "fieldFixes": {
+        "significance": "A founding text of the claim that people online could set their own rules, the libertarian starting point that later privacy advocates both built on and argued against."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: quote FOUND. Sign-off 'Davos, Switzerland February 8, 1996' FOUND; 'Governments of the Industrial World ... You have no sovereignty where we gather.' FOUND."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the GPO PDF: 'Approved February 8, 1996.' FOUND. 'TITLE V—OBSCENITY AND VIOLENCE' carries the short title 'Communications Decency Act of 1996' (margin note FOUND), which confirms the note."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND. Also FOUND: 'I was at a staff party for the closing of the World Economic Forum', 'I sent it out the next day to the 600 or so friends I had with e-mail addresses', 'nonetheless, I will stand by it still' and, on self-regulation, 'To some degree, they have. In most ways, they have not.' These support every summary claim. published_time is 2016-02-09T03:31Z, which is the evening of 8 Feb in US time and matches the URL date."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "def-con-1-sands-las-vegas-1993",
+      "status": "OK",
+      "issues": [
+        "No error found. The dates 9–11 July 1993 (Fri–Sun) are confirmed by the 12 June 1993 finalized announcement, and 9 July 1993 was indeed a Friday. Cringely's 19 July 1993 column, which says 'last week in Las Vegas', agrees. DEF CON's own archive page saying 'June 9-11, 1993' is the error, and the record handles it correctly by pointing to the myth record.",
+        "Small wording point, no change needed: the announcement puts the Sands 'in the middle of down town Las Vegas', but the Sands stood on the Strip. The record's coordinates (36.1212, -115.1697, the former Sands and now Venetian site) and its locationNote correctly place it on the Strip."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: quote FOUND. Also FOUND: 'Finalized Announcement: 6/12/1993', 'We are proud to announce the 1st annual Def Con.', 'DEF CON I will be over the weekend in the middle of down town Las Vegas at the Sands Hotel.', the full invitation list ('hackers/phreaks, techno-rats, programmers, writers, activists, lawyers, philosophers, politicians, security officials, cyberpunks...'), 'The convention itself will cost $30 at the door, or $15 in advance' and the Seattle mailing address (2709 East Madison Street)."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; the header reads 'InfoWorld July 19, 1993 SECTION: NOTES FROM THE FIELD; Pg. 98', byline Robert X. Cringely, headline matches. The Sun Devil prosecutor sentence is FOUND, and so is '\"I'm not here to bust you,\" she told the very interested crowd.', which supports the summary's quotation."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; datePublished 2025-08-05. Also FOUND: 'some 30,000 hackers have arrived in Las Vegas', 'He called himself “ The Dark Tangent ”' and 'where researchers expose vulnerabilities in satellites and voting machines'. The article also says the party was 'for a friend who never showed', which fits the summary's farewell-party framing."
+        }
+      ],
+      "addSources": []
     }
   ]
 }

@@ -1,0 +1,106 @@
+{
+  "slice": "personas-advocates",
+  "chunk": "f104",
+  "verdicts": [
+    {
+      "kind": "event",
+      "id": "hackers-on-planet-earth-hope-new-york-1994",
+      "status": "FIXED",
+      "issues": [
+        "Summary calls the 1994 cryptography item 'a panel on cryptography and privacy'. The 2600 store listing shows it was a session titled 'Cryptography and Privacy' introduced by Bob Stratton, with a Clipper Chip (AT&T 3600 Surety) demonstration by Bernie S. and John Turbo and also featuring Eric Hughes and Matt Blaze. 2600 titles its real panels explicitly ('The 2600 Panel', 'The Author Panel', 'The Cellular Panel'), and this one is not billed as a panel. The wording is changed to 'session'.",
+        "'Modelled on the Dutch hacker gatherings' overstates the source, which says only 'inspired by'.",
+        "'the first US hacker conference on that scale' is HOPE's own claim ('the first time that a hacker conference of this size had been attempted in the United States'). The summary now attributes it to the organisers.",
+        "Dates (13-14 August 1994), venue (Hotel Pennsylvania), attendance (well over 1,000), 2600's tenth anniversary and 'annual from 2025' are all confirmed on the cited pages. Wikipedia independently gives 'August 13-14, 1994', 'Over 1,000 people attended'."
+      ],
+      "fieldFixes": {
+        "summary": "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Inspired by the Dutch hacker gatherings of the 1980s and 1990s, it was, by its organisers' account, the first hacker conference of that size attempted in the United States, with talks 'ranging from privacy issues to technology to politics' and a 'Cryptography and Privacy' session, with Eric Hughes and Matt Blaze, that included a live demonstration of a Clipper Chip telephone encryptor. HOPE became a recurring New York conference, annual from 2025."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched i.hope.net. The quote is FOUND verbatim, and so are 'Well over 1000 people were in attendance at this gala event.' and 'Speakers from around the world made presentations ranging from privacy issues to technology to politics to methodologies.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched hope.net/about. The quote is FOUND, and so are the 'inspired by the Dutch hacker gatherings' sentence and 'In 2025, for the first time ever, HOPE became an annual event.' The page also confirms that The Circle of HOPE (2018) was the last HOPE held at the Hotel Pennsylvania, so the locationNote is correct."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "2600 Magazine (store.2600.com)",
+          "title": "Hackers On Planet Earth (1994): \"Cryptography and Privacy\" (Download)",
+          "date": "1994-08-13",
+          "url": "https://store.2600.com/collections/hackers-on-planet-earth/products/hackers-on-planet-earth-1994-cryptography-and-privacy-download",
+          "quote": "Saturday, August 13, 1994, 10:00 pm: There have been quite a few articles in the national media recently about cryptography and privacy.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The same listing is FOUND saying 'Also featuring Eric Hughes and Matt Blaze.' It also describes Bob Stratton's introduction and a demonstration of 'the AT&T 3600 Surety device, the world's first Clipper Chip telephone encryption unit'."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "securedrop-launched-freedom-of-the-press-foundation-2013",
+      "status": "FIXED",
+      "issues": [
+        "'coded by Aaron Swartz with Kevin Poulsen' suggests Poulsen co-wrote the code. The FPF release says the system was 'originally coded by the late transparency advocate Aaron Swartz' and 'created by Swartz in partnership with investigative reporter Kevin Poulsen'. SecureDrop's own FAQ says it was 'developed by Aaron Swartz' and that 'Kevin Poulsen originally managed the project'. The summary is reworded so that Swartz wrote it and Poulsen partnered on and managed it.",
+        "'kept its installation' is correct for October 2013 (FPF: 'will continue to operate its system'). However, the New Yorker article now carries 'Update: The New Yorker is no longer using Strongbox.' The summary is reworded so readers do not take this as still true.",
+        "Checked and correct: date 15 October 2013 and San Francisco dateline, rename to SecureDrop, codename mechanism, University of Washington audit (led by Alexei Czeskis), New Yorker Strongbox launch on 14 May 2013 (page datePublished 2013-05-14), and 'four months after the first Snowden stories' (June 2013)."
+      ],
+      "fieldFixes": {
+        "summary": "Four months after the first Snowden stories, the Freedom of the Press Foundation announced on 15 October 2013 that it had taken over DeadDrop, the whistleblower-submission system coded by Aaron Swartz in partnership with the journalist Kevin Poulsen, who managed the project, renamed it SecureDrop and would install it in newsrooms. Each source receives a codename so they can keep talking to a newsroom without revealing their identity or using e-mail. The code had been audited by University of Washington researchers; The New Yorker, the first user since May 2013 under the name Strongbox, was to keep running its installation."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote is FOUND verbatim, and so is the dateline 'October 15, 2013 San Francisco, CA'. The same page has the University of Washington audit sentence and 'The New Yorker, the first news organization to use the SecureDrop code, through its StrongBox project, will continue to operate its system.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote is FOUND as extracted, including the spacing artefacts. Page metadata gives datePublished 2013-05-14T09:11:38-04:00, which matches the record's date. The page now opens with 'Update: The New Yorker is no longer using Strongbox.'"
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "SecureDrop (Freedom of the Press Foundation)",
+          "title": "SecureDrop FAQ",
+          "date": "2026",
+          "url": "https://securedrop.org/faq/",
+          "quote": "Investigative journalist Kevin Poulsen originally managed the project. The New Yorker launched the first implementation and branded their version StrongBox in May 2013.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The same page is FOUND saying 'The web application, which was originally called DeadDrop, was developed by Aaron Swartz in 2012 before his tragic death.'"
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "noyb-founded-vienna-2017",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote is FOUND verbatim and supports the founding date (12.06.2017), start of operations (01.02.2018) and first cases (25.05.2018). The about-us sentence in the note is also FOUND verbatim ('donation-funded NGO based in Vienna, Austria')."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. FOUND: 'NOYB, however, will focus on commercial privacy violations.', 'To date, NOYB has raised 55,316 euros; its goal is 500,000.' and 'Article 80 of the GDPR will allow NOYB to bring “group actions” or “collective complaints” to data protection authorities or the courts.' The article also says Schrems was 'responsible for bringing down the EU-U.S. Safe Harbor agreement', which supports that clause of the summary. Its own text ('With the GDPR coming into force in May next year') places it in 2017. The page JSON-LD datePublished is 2023-11-13, a site migration, so the record's '2017' date is right. The Wayback Machine has no capture that pins the exact day."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. The quote is FOUND verbatim and supports first-day-of-GDPR 'forced consent' complaints against Google (Android), Facebook, WhatsApp and Instagram."
+        }
+      ],
+      "addSources": []
+    }
+  ]
+}

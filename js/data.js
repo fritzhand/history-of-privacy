@@ -471,7 +471,7 @@ window.privacyData = {
       },
       {
         heading: "Walls, rooms and seals",
-        text: "In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.{1,2,3} Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.{4} Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and secured to become their own envelopes, some with built-in tamper-evident locks;{5} in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.{6,7} In 1878 the US Supreme Court, while upholding a ban on mailing lottery circulars, carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.{8} French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.{9,10,11}",
+        text: "In 1604 English law declared that “the house of every one is to him as his Castle and Fortress”, for defence and “for his repose”.{1,2} Yet for most people the pre-modern home offered little seclusion: until the seventeenth century many homes were one multipurpose space, and even after houses were divided into rooms, people walked through each other’s.{3} Before mass-produced envelopes spread in the 1830s, most letters were “letterlocked” — folded and secured to become their own envelopes, some with built-in tamper-evident locks;{4} in colonial America, where seals were weak and clerks were suspected of reading the mail, Benjamin Franklin made postal employees swear not to open letters, which leads Daniel Solove to conclude that privacy is “not just found but constructed”.{5,6} In 1878 the US Supreme Court, while upholding a ban on mailing lottery circulars, carried the protection of the home to the sealed page: letters in the mail are protected “as if they were retained by the parties forwarding them in their own domiciles”.{7} French pictures private life as walled — Littré’s dictionary illustrates vie privée with the maxim “private life must be walled in”.{8,9,10}",
         source: [
           {
             institution: "Online Library of Liberty (Liberty Fund), from Selected Writings of Sir Edward Coke, vol. I",
@@ -480,16 +480,6 @@ window.privacyData = {
             url: "https://oll.libertyfund.org/quotes/sir-edward-coke-declares-that-your-house-is-your-castle-and-fortress-1604",
             quote: "That the house of every one is to him as his Castle and Fortress as well for defence against injury and violence, as for his repose;",
             note: "Semayne's Case, 5 Co. Rep. 91a (K.B. 1604); Coke was Attorney General and reported the case. The same passage limits the principle: sheriffs could still enter, after announcing themselves, to execute the King's process.",
-            verificationStatus: "CONFIRMED",
-            accessType: "FREE"
-          },
-          {
-            institution: "Wikipedia",
-            title: "Semayne's case",
-            date: "2026",
-            url: "https://en.wikipedia.org/wiki/Semayne%27s_case",
-            quote: "is an English common law case reported by Sir Edward Coke",
-            note: "--check FOUND. The same sentence continues 'who was then the Attorney General for England and Wales' (--check FOUND). The infobox gives the court as King's Bench, 'Decided Michaelmas Term, 1604', with judges Popham CJ, Gawdy, Fenner, Yelverton and Williams JJ. This supports 'reported by Coke' as against OLL's framing of Coke as the judge.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           },
@@ -1933,16 +1923,6 @@ window.privacyData = {
           quote: "To this rule, however, common-law courts appended an important qualification: \"But before he breaks it, he ought to signify the cause of his coming, and to make request to open doors..., for the law without a default in the owner abhors the destruction or breaking of any house (which is for the habitation and safety of man) by which",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Semayne's case",
-          date: "2026-09-23",
-          url: "https://en.wikipedia.org/wiki/Semayne%27s_case",
-          quote: "Michaelmas Term, 1604",
-          note: "An independent check of the displayDate term. The infobox gives the full case name as Peter Semayne v Richard Gresham, Court of King's Bench, 5 Co Rep 91a, 77 ER 194. --check FOUND. Tertiary source; the date is the access date.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -2558,16 +2538,6 @@ window.privacyData = {
           note: "Transcribed from the page image at PDF page 641 (printed p. 594); no text layer, so --check cannot run. The resolution names the meeting place as 'the hall of the building on Battery street, between Washington and Jackson streets, known as the \"Exchange Building\"'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Great Flood of 1862",
-          date: "2026-09-23",
-          url: "https://en.wikipedia.org/wiki/Great_Flood_of_1862",
-          quote: "As a result of the flooding, from January 23, 1862, the state capital was moved temporarily from Sacramento to San Francisco.",
-          note: "--check FOUND. Tertiary corroboration of the San Francisco sitting; 'date' is the access date.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -3085,16 +3055,6 @@ window.privacyData = {
           note: "Social Research 68(2), Summer 2001, pp. 481-513, at 487-488 (JSTOR stable URL https://www.jstor.org/stable/40971467). Read from a copy posted for a University of Washington course (CSDE 502). Same page: 'By early 1941 Methorst's successor as head of the population registration office, J. L. Lentz, had quickly adapted this general \"cradle to grave\" system to create special registration systems covering the Jewish and Gypsy populations' and 'Dutch Jews had the highest death rate (73 percent) of Jews residing in any occupied western European country'. They explain the refugees' lower death rate by the fact that they 'avoided registration'. Seltzer's fuller treatment (Population and Development Review 24(3), 1998) was not read.",
           verificationStatus: "CONFIRMED",
           accessType: "PAYWALL"
-        },
-        {
-          institution: "Wikipedia (Dutch)",
-          title: "Jacobus Lambertus Lentz",
-          date: "2026",
-          url: "https://nl.wikipedia.org/wiki/Jacobus_Lambertus_Lentz",
-          quote: "Dit besluit legde aan de gemeenten de plicht op om met ingang van 1 juli 1936 voor elke inwoner een aparte kaart met gegevens aan te leggen. Tevens werd een Rijksinspectie van de Bevolkingsregisters opgericht. Lentz werd hiervan het hoofd.",
-          note: "Tertiary cross-check (--check FOUND). Translation: 'This decree obliged municipalities to keep, from 1 July 1936, a separate card with details for every inhabitant. A State Inspectorate of Population Registers was also set up, with Lentz as its head.' Same page (FOUND): 'Hij speelde ook een hoofdrol in de uitvoering van de aanmeldplicht voor Joden' ('He also played a leading role in carrying out the compulsory registration of Jews'). It cites Loe de Jong and Presser. It also says Lentz set up, at Berlin's request, a shadow archive in The Hague of every identity card, which supports the Hague location.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -5932,16 +5892,6 @@ window.privacyData = {
           note: "Date from the archive's ms.date metadata (2010-06-05); the post was updated on 20 February 2012. It describes IE's behaviour from IE6 onward. Footnote: 'There's no technical means by which the browser can enforce the claims in the P3P statement, because the client has no way to know what a server does with the data it aggregates.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "P3P",
-          date: "2026-09-23",
-          url: "https://en.wikipedia.org/wiki/P3P",
-          quote: "Mozilla supported some P3P features for a few years, but all P3P related source code was removed by 2007.",
-          note: "Tertiary source, used to qualify 'only'. The same article says 'Internet Explorer and Microsoft Edge Legacy were the only major browsers to support P3P.' (FOUND). The date field is the date accessed.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -6506,16 +6456,6 @@ window.privacyData = {
           date: "2007-12-05",
           url: "https://techcrunch.com/2007/12/05/zuckerberg-saves-face-apologies-for-beacon",
           quote: "Finally heeding calls to apologize for the privacy disaster surrounding Facebook’s Beacon advertising program, CEO Mark Zuckerberg took responsibility for the company’s mistakes in a blog post this morning.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Facebook Beacon",
-          date: "2026-09-23",
-          url: "https://en.wikipedia.org/wiki/Facebook_Beacon",
-          quote: "On December 5, 2007, Facebook announced that it would allow people to opt-out of Beacon.",
-          note: "Independent tertiary corroboration of the 5 December date. The same article gives the launch as November 6, 2007, with 44 partner websites. Checked with fetch-text --check: FOUND. The date field is the date accessed.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7320,16 +7260,6 @@ window.privacyData = {
           note: "URL dated 6 June 2013; the page timestamp (7 June 2013 15.23 EDT) reflects a later update.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "PRISM",
-          date: "2026-09-23",
-          url: "https://en.wikipedia.org/wiki/PRISM",
-          quote: "The disclosures were published by The Guardian and The Washington Post on June 6, 2013.",
-          note: "Independent corroboration (tertiary) that PRISM was first reported on 6 June 2013 by both papers. It cites Gellman & Poitras, Washington Post, June 6, 2013, and Greenwald & MacAskill, The Guardian, June 6, 2013. The Washington Post URL refused scripted access. The date field is the date accessed.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -7376,16 +7306,6 @@ window.privacyData = {
           url: "https://documents.un.org/api/symbol/access?s=A/RES/68/167&l=en&t=pdf",
           quote: "Affirms that the same rights that people have offline must also be protected online, including the right to privacy … Resolution adopted by the General Assembly on 18 December 2013 … Requests the United Nations High Commissioner for Human Rights to submit a report on the protection and promotion of the right to privacy in the context of domestic and extraterritorial surveillance and/or the interception of digital communications and the collection of personal data, including on a mass scale",
           note: "Document header: 'Resolution adopted by the General Assembly on 18 December 2013'; distributed 21 January 2014. Operative paragraph 5; supports the revised significance.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "United Nations General Assembly Building",
-          date: "2026",
-          url: "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Building",
-          quote: "During the project, the General Assembly met at a temporary building on the UN headquarters' North Lawn.",
-          note: "The preceding sentence gives the closure date, 'The General Assembly Building was closed for renovations on May 31, 2013.', and a later one says 'When the building reopened in September 2014'. Both FOUND. Supports the venue correction.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -13209,16 +13129,6 @@ window.privacyData = {
           note: "§ 47 opens 'Dieses Gesetz tritt am 1. Januar 1978 in Kraft. Abweichend davon treten in Kraft:' (that sentence --check FOUND separately), followed by this item. § 17 is headed 'Bestellung eines Bundesbeauftragten für den Datenschutz' and begins 'Es ist ein Bundesbeauftragter für den Datenschutz zu bestellen.' Item 3 puts § 6 (technical and organisational measures) into force on 1 January 1979. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia (de)",
-          title: "Hessisches Datenschutzgesetz",
-          date: "2026",
-          url: "https://de.wikipedia.org/wiki/Hessisches_Datenschutzgesetz",
-          quote: "Datenschutzgesetz (GVBl. II 300-10) vom 7. Oktober 1970. In: Ursprungsfassung (Hrsg.): Gesetz- und Verordnungsblatt für das Land Hessen. 1970 Nr. 41, S. 625",
-          note: "Gives the official citation (Act of 7 October 1970, GVBl. 1970 Nr. 41 S. 625) and says 'Das Datenschutzgesetz des Landes Hessen trat am 13. Oktober 1970 in Kraft'. The linked gazette scan (starweb.hessen.de/cache/GVBL/1970/00041.pdf) downloads, but it is an image-only PDF with no text layer, so it could not be checked for the quote. Tertiary source used only for the date. --check FOUND (the spaces before punctuation come from the page's rendering).",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -13325,16 +13235,6 @@ window.privacyData = {
           url: "https://snl.no/personregisterloven",
           quote: "Trådt i kraft 01.01.1980, 01.07.1980 Lovdata-ID NLO/lov/1978-06-09-48",
           note: "Fact box: in force 1 January 1980 (some provisions 1 July 1980); Lovdata ID for the Act of 9 June 1978 No. 48. Full name 'lov om personregistre m.m.'. The page is marked 'Sist oppdatert: 26. november 2024'. --check FOUND.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia (no)",
-          title: "Datatilsynet",
-          date: "2026",
-          url: "https://no.wikipedia.org/wiki/Datatilsynet",
-          quote: "Datatilsynet er et norsk, uavhengig forvaltningsorgan administrativt underordnet Digitaliserings- og forvaltningsdepartementet, opprettet 1. januar 1980.",
-          note: "Translation: 'Datatilsynet is a Norwegian independent administrative body ... established 1 January 1980.' The page lists Helge Seip as the first director (1980–1989). Tertiary source; it agrees with Føyen. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -14778,16 +14678,6 @@ window.privacyData = {
           note: "Full text of the organic law (Art. 6 definitions). The signature line 'Tunis, le 27 juillet 2004' was also --check FOUND. This is a reproduction by DCAF, not the JORT itself. --check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data",
-          date: "2026",
-          url: "https://en.wikipedia.org/wiki/Convention_for_the_Protection_of_Individuals_with_regard_to_Automatic_Processing_of_Personal_Data",
-          quote: "Being non–Council of Europe states, Argentina, Cabo Verde, Mauritius, Mexico, Morocco, Senegal, Tunisia, and Uruguay have acceded to the treaty.",
-          note: "Tertiary source, used because coe.int returns 403 to scripts. Supports only 'Tunisia later became a party to Convention 108'. --check FOUND 2026-09-23.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -15152,16 +15042,6 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
-          institution: "Wikipedia (French)",
-          title: "Commission de l’Informatique et des Libertés",
-          date: "2026",
-          url: "https://fr.wikipedia.org/wiki/Commission_de_l%E2%80%99Informatique_et_des_Libert%C3%A9s",
-          quote: "La Commission de l’Informatique et des Libertés voit le jour par la loi n°010-2004/AN du 20 avril 2004 relative à la protection des données à caractère personnel",
-          note: "--check FOUND. The same article says 'Elle est opérationnelle depuis décembre 2007' (FOUND). Translation: 'The CIL was created by Law No. 010-2004/AN of 20 April 2004 on the protection of personal data.' Tertiary source.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
           institution: "Data Protection Africa (ALT Advisory)",
           title: "Burkina Faso — Fact Sheet",
           date: "2026",
@@ -15224,16 +15104,6 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=SN",
           quote: "Act No. 2008-12 of 25 January 2008 Concerning Personal Data Protection ('the Act')",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia (French)",
-          title: "Commission de protection des données personnelles (Sénégal)",
-          date: "2026",
-          url: "https://fr.wikipedia.org/wiki/Commission_de_protection_des_donn%C3%A9es_personnelles_(S%C3%A9n%C3%A9gal)",
-          quote: "La Commission de protection des données personnelles du Sénégal a été créée par la loi n°2008-12 du 25 janvier 2008 relative à la protection des données à caractère personnelles",
-          note: "--check FOUND. Translation: 'Senegal's Personal Data Protection Commission was created by Law No. 2008-12 of 25 January 2008 on the protection of personal data.' Tertiary source.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -18075,16 +17945,6 @@ window.privacyData = {
           note: "The page adds: 'I lost every one of these lawsuits.' Undated page; accessed 2026-09-23. Sun 'employee number five' and FOIA suits: Steven Levy, 'Crypto Rebels', Wired, https://www.wired.com/1993/02/crypto-rebels/ ('As Sun Microsystems employee number five, Gilmore retired with a bankroll in the millions.'). Dates Cygnus to 1989, before EFF (July 1990). The same page says 'I was its fifth employee, and later a consultant.' about Sun. Undated page; accessed 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Bernstein v. United States",
-          date: "2026",
-          url: "https://en.wikipedia.org/wiki/Bernstein_v._United_States",
-          quote: "the Ninth Circuit ordered that this case be reheard by the en banc court, and withdrew the three-judge panel opinion",
-          note: "Secondary source for the withdrawal. It cites Bernstein v. U.S. Dept. of Justice, 192 F.3d 1308 (9th Cir. 1999), which withdrew 176 F.3d 1132 (9th Cir., decided 6 May 1999). Justia and OpenJurist copies returned 403 to scripts. Accessed 2026-09-23.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
         }
       ]
     },
@@ -18474,16 +18334,6 @@ window.privacyData = {
           url: "https://www.cs.princeton.edu/~arvindn/publications/no-silver-bullet-de-identification.pdf",
           quote: "A new report by Ann Cavoukian and Daniel Castro is full of such inaccuracies, despite its claims of “setting the record straight.”",
           note: "Response to Cavoukian and Castro, 'Big Data and Innovation, Setting the Record Straight: De-identification Does Work' (ITIF, 2014).",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Ann Cavoukian",
-          date: "2026",
-          url: "https://en.wikipedia.org/wiki/Ann_Cavoukian",
-          quote: "Cavoukian served as its first Director of Compliance followed by her appointment as Assistant Commissioner in 1990.",
-          note: "--check FOUND. Same article: 'She was initially appointed commissioner in 1997' (FOUND). Secondary source, used only for her pre-1997 post.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -22948,7 +22798,7 @@ window.privacyData = {
       regulator: "National data protection authorities, coordinated through the European Data Protection Board",
       maxPenalty: "Up to €20 million or 4% of total worldwide annual turnover of the preceding year, whichever is higher (Art. 83(5))",
       automatedSignals: "yes",
-      signalNote: "Art. 21(5): in information-society services the data subject 'may exercise his or her right to object by automated means using technical specifications'. The Commission's Digital Omnibus proposal (COM(2025) 837, 19 Nov 2025) would add Art. 88b. It covers processing in people's terminal equipment (the cookie rules). Controllers' online interfaces would have to let people give consent, refuse it, and object to direct marketing (Art. 21(2)) 'through automated and machine-readable means', and would have to respect those choices, from 24 months after entry into force. European standards would be requested to interpret the signals. Web browsers from providers that are not SMEs would have to supply the technical means after 48 months. On 23 Sept 2026 the proposal (2025/0360(COD)) was still at committee stage in the European Parliament ('Awaiting committee decision').",
+      signalNote: "Art. 21(5): in information-society services the data subject 'may exercise his or her right to object by automated means using technical specifications'. The Commission's Digital Omnibus proposal (COM(2025) 837, 19 Nov 2025) would add Art. 88b. It covers processing in people's terminal equipment (the cookie rules). Controllers' online interfaces would have to let people give consent, refuse it, and object to direct marketing (Art. 21(2)) 'through automated and machine-readable means', and would have to respect those choices, from 24 months after entry into force. European standards would be requested to interpret the signals. Web browsers from providers that are not SMEs would have to supply the technical means after 48 months. The Council presidency's compromise text of 18 June 2026 dropped Art. 88b; a coalition of 19 organisations asked on 10 September 2026 for it to be restored. On 23 Sept 2026 the proposal (2025/0360(COD)) was still at committee stage in the European Parliament ('Awaiting committee decision').",
       aiRules: "AI Act, Regulation (EU) 2024/1689 (general application 2 Aug 2026). The 'Digital omnibus on AI' was adopted by the Council on 29 June 2026 and published as Regulation (EU) 2026/1744 (OJ L, 24 July 2026). It moved high-risk obligations to 2 Dec 2027 for stand-alone systems and 2 Aug 2028 for AI embedded in products. GDPR Art. 22 separately limits decisions based solely on automated processing.",
       source: [
         {
@@ -23043,6 +22893,26 @@ window.privacyData = {
           url: "https://data.consilium.europa.eu/doc/document/ST-15698-2025-INIT/en/pdf",
           quote: "Providers of web browsers, which are not SMEs, shall provide the technical means to allow data subjects to give their consent and to refuse a request for consent and exercise the right to object pursuant to Article 21(2) through the automated and machine-readable means referred to in paragraph 1 of this Article",
           note: "Proposal text only. Para. 7 of the proposed article: 'Paragraph 6 shall apply from [... 48 months following the date of entry into force of this Regulation]'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "noyb - European Center for Digital Rights",
+          title: "EU Member States (and Google) suddenly want to keep cookie banners!",
+          date: "2026-06-23",
+          url: "https://noyb.eu/en/eu-member-states-and-google-suddenly-want-keep-cookie-banners",
+          quote: "In the Council’s latest position paper of 18 June, the plan to abolish the cookie banner has been scrapped.",
+          note: "Advocacy organisation's account; the Council document itself (published by Politico) was not read.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "noyb - European Center for Digital Rights",
+          title: "Open Letter: Civil society coalition urges EU to kill the cookie banner!",
+          date: "2026-09-10",
+          url: "https://noyb.eu/en/open-letter-civil-society-coalition-urges-eu-kill-cookie-banner",
+          quote: "Therefore, a coalition of currently 19 civil society organisations, businesses and academics has joined forces.",
+          note: "Same page: 'In the European Parliament constructive amendments have been tabled to maintain and improve Article 88b and automated signals.' The European Parliament's Legislative Train page records a co-rapporteurs' draft report of 22 June 2026 and over 1,750 amendments tabled by 15 July 2026 (https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-digital-package).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -24254,16 +24124,6 @@ window.privacyData = {
           accessType: "API"
         },
         {
-          institution: "Wikipedia",
-          title: "Irwin Altman",
-          date: "2026-09-23",
-          url: "https://en.wikipedia.org/wiki/Irwin_Altman",
-          quote: "is a social psychologist who earned his B.A. degree from New York University in 1951",
-          note: "--check FOUND on 2026-09-23. Secondary support for his discipline only. The infobox gives 'Occupation: Social psychologist'. The page's birth dates disagree (June 16 in the infobox, July 16 in the text), which does not matter here.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
           institution: "Les Nouveaux Cahiers du Conseil constitutionnel, no. 48",
           title: "Jean-Louis Halpérin, 'Protection de la vie privée et privacy : deux traditions juridiques différentes ?'",
           date: "2015",
@@ -24411,26 +24271,6 @@ window.privacyData = {
           quote: "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
           note: "The source of the myth, at p. 383. Verification: Could not re-fetch: web.archive.org reset every connection, and the live https://lawcat.berkeley.edu/record/1109651/files/fulltext.pdf returns HTTP 202 with header x-amzn-waf-action: challenge and an empty body. The quoted sentence is confirmed verbatim on Wikipedia's 'The Right to Privacy (article)', which reproduces it with a citation to 48 Cal. L. Rev. 383 (see addSources). The original page and page number remain unverified.",
           verificationStatus: "PENDING",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "Samuel D. Warren II",
-          date: "accessed 2026-09-23",
-          url: "https://en.wikipedia.org/wiki/Samuel_D._Warren_II",
-          quote: "Warren married Mabel Bayard, the eldest daughter of United States Senator from Delaware Thomas F. Bayard",
-          note: "--check FOUND. The sentence continues '...at the Church of the Ascension in Washington, D.C., on January 25, 1883.' (fragment 'on January 25, 1883. [ 12 ] [ 13 ] The couple went on to have six children.' FOUND). Wikipedia cites 'Marriage of Senator Bayard's Daughter', The New York Times, January 26, 1883, p. 1. This is a secondary source, used only for the marriage date.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Wikipedia",
-          title: "The Right to Privacy (article)",
-          date: "accessed 2026-09-23",
-          url: "https://en.wikipedia.org/wiki/The_Right_to_Privacy_(article)",
-          quote: "The matter came to a head when the newspapers had a field day on the occasion of the wedding of a daughter, and Mr. Warren became annoyed",
-          note: "--check FOUND. Wikipedia block-quotes Prosser with a footnote to 'William L. Prosser, \"Privacy\", 48 California Law Review 383, at 384.' It gives the same wording as the record's Prosser quote, so it stands as a substitute check while the Berkeley PDF is unreachable. Note that Wikipedia gives p. 384 where the record gives p. 383. The page also says Prosser 'attributed the specific incident to an intrusion by journalists on a society wedding'.",
-          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
       ]

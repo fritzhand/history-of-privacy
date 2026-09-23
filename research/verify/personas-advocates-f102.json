@@ -125,7 +125,8 @@
     "Checked OK. quoteSource: the Guardian commentisfree piece of 15 July 2013 (datePublished 2013-07-15T10:40Z, author Glenn Greenwald, <title> 'The crux of the NSA story in one phrase: 'collect it all''). Both halves of the ellipsis --check FOUND. The note describes the omitted aside correctly.",
     "Checked OK. Verizon story: the quote --check FOUND, and so does the 'ongoing, daily basis' sentence ('requires Verizon on an \"ongoing, daily basis\" to give the NSA information on all telephone calls in its systems'). JSON-LD author: Glenn Greenwald.",
     "Checked OK. NBC: the quote --check FOUND. 'The Guardian reported Sunday' plus the Scotland Yard confirmation support the date, 18 August 2013.",
-    "Checked OK. CNN, 29 Oct 2020: the quote FOUND, and so does 'the news site he co-founded in 2013'. The Intercept's response is by-lined Betsy Reed (JSON-LD author), and CNN identifies her as 'the editor in chief'. That matches 'the site's editor called his account ...'. 'teeming with distortions and inaccuracies' FOUND on the Intercept page."
+    "Checked OK. CNN, 29 Oct 2020: the quote FOUND, and so does 'the news site he co-founded in 2013'. The Intercept's response is by-lined Betsy Reed (JSON-LD author), and CNN identifies her as 'the editor in chief'. That matches 'the site's editor called his account ...'. 'teeming with distortions and inaccuracies' FOUND on the Intercept page.",
+    "Checked OK, with an added source. The influence claim that the Guardian's NSA reporting 'shared the Pulitzer Prize with The Washington Post' was supported only by The Intercept's general sentence. The Guardian's 14 April 2014 report (--check FOUND) specifies 'the Pulitzer prize for public service', and it is added as a source."
    ],
    "fieldFixes": {
     "contribution": "Greenwald, a Guardian columnist living in Rio de Janeiro, wrote the first Snowden story, published on the evening of 5 June 2013 US time (dated 6 June by the Guardian), revealing a secret court order requiring Verizon to hand the NSA records of all calls in its systems on an 'ongoing, daily basis', and co-wrote the article that named Snowden. In August 2013 British authorities held his partner David Miranda at Heathrow for nine hours under the Terrorism Act while he travelled from Berlin to Rio. Greenwald co-founded The Intercept but resigned in October 2020, accusing its editors of censoring an article about Joe Biden; the site's editor called his account 'teeming with distortions and inaccuracies'."
@@ -147,7 +148,18 @@
      "note": "Re-fetched. Quote --check FOUND. CNN names Betsy Reed as editor in chief and quotes her 'teeming with distortions and inaccuracies' statement."
     }
    ],
-   "addSources": []
+   "addSources": [
+    {
+     "institution": "The Guardian",
+     "title": "Ed Pilkington, 'Guardian and Washington Post win Pulitzer prize for NSA revelations'",
+     "date": "2014-04-14",
+     "url": "https://www.theguardian.com/media/2014/apr/14/guardian-washington-post-pulitzer-nsa-revelations",
+     "quote": "The Guardian and the Washington Post have been awarded the highest accolade in US journalism, winning the Pulitzer prize for public service for their groundbreaking articles on the National Security Agency’s surveillance activities based on the leaks of Edward Snowden.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the prize-winning paper reporting its own award. The same page says the award 'comes 10 months after the Guardian published the first report based on the leaks from Snowden, revealing the agency’s bulk collection of US citizens’ phone records'. Byline (JSON-LD): Ed Pilkington; datePublished 2014-04-14T19:01:59Z."
+    }
+   ]
   },
   {
    "kind": "people",
@@ -184,6 +196,7 @@
    "id": "julia-angwin",
    "status": "FIXED",
    "issues": [
+    "Wrong year for the Pulitzer finalist citation. The contribution says 'the team was a 2011 Pulitzer finalist', copying Angwin's own biography, but the 'What They Know' team was a finalist for the 2012 prize. The AP list of 2012 Pulitzer winners and finalists (CBS News, 16 April 2012; --check FOUND) reads: 'Finalists: Tom Frank of USA Today ... and The Wall Street Journal staff for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans'. The WSJ's 2011 Explanatory finalist citation was for Medicare fraud reporting (Wikipedia list of Explanatory Reporting finalists). The CPPA release already cited in this file (Soltani) also says 'a finalist for a 2012 Pulitzer Prize' (--check FOUND). This settles the conflict the slice notes left 'unresolved'. The contribution is corrected to 2012. sources[1] still quotes her biography verbatim, but its year is wrong; that is noted on the source.",
     "The influence calls the Dragnet Nation quote the words of 'a reviewer'. The line 'changed the privacy debate' comes from a promotional blurb by Jeffrey Rosen, president and CEO of the National Constitution Center, on the author's own book page. It is not a review, and the record's own source note says so. Reworded to name Rosen and call it an endorsement.",
     "The influence overstates EFF. EFF did not say the series 'was already shaping efforts in Congress and at the FTC'. It wrote: 'It's already affecting the conversation in Washington DC, where important efforts by both Congress and the FTC are underway to rein in this dangerous and unregulated industry.' Reworded to match.",
     "The 'years' field starts in 2000, but that is only when she joined the Journal. She joined the San Francisco Chronicle in 1996. Talking Biz News, 26 Nov 2013 (--check FOUND): 'She joined the San Francisco Chronicle in 1996 and was awarded a Knight-Bagehot fellowship in journalism for studies at Columbia Business School in 1998.' Wikipedia also says she joined the Chronicle in 1996 as a technology reporter. Changed to 1996–present and added the source.",
@@ -192,7 +205,8 @@
    ],
    "fieldFixes": {
     "years": "1996–present",
-    "influence": "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already affecting the conversation in Washington, where Congress and the FTC were working to rein in the tracking industry; the legal scholar Jeffrey Rosen, endorsing Dragnet Nation, wrote that her tracking reporting 'changed the privacy debate'."
+    "influence": "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already affecting the conversation in Washington, where Congress and the FTC were working to rein in the tracking industry; the legal scholar Jeffrey Rosen, endorsing Dragnet Nation, wrote that her tracking reporting 'changed the privacy debate'.",
+    "contribution": "At The Wall Street Journal (2000–2013) Angwin led the 'What They Know' investigation, which from July 2010 tested the 50 most popular US websites and found they installed an average of 64 tracking tools each on visitors' computers, usually without warning; the team was a finalist for the 2012 Pulitzer Prize in Explanatory Reporting. Her 2014 book Dragnet Nation recorded her own attempts to evade surveillance. She then led an investigative team at ProPublica (2014–2018) that was a 2017 Pulitzer finalist, founded the non-profit newsroom The Markup in 2018 and Proof News in 2024."
    },
    "sourceFixes": [
     {
@@ -203,7 +217,7 @@
     {
      "index": 1,
      "verificationStatus": "CONFIRMED",
-     "note": "Re-fetched. Quote --check FOUND. The ProPublica, 2017 Pulitzer finalist, The Markup 2018 and Proof News 2024 statements are on the same page. This is the author's own biography."
+     "note": "Re-fetched. Quote --check FOUND verbatim. The page also states ProPublica 2014–2018 with a team that was a 2017 Pulitzer finalist, The Markup 2018 and Proof News 2024. This is the author's own biography. CAUTION: its '2011' Pulitzer finalist year is wrong. The Pulitzer Board's citation for the WSJ privacy series is in the 2012 finalists (AP/CBS 16 April 2012; CPPA release). Do not use this source for the finalist year."
     },
     {
      "index": 2,
@@ -221,8 +235,98 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "--check FOUND. datePublished 2013-11-26T13:40:20Z; posted by Chris Roush. An independent trade-press source for the start of her career (supports years 1996–present) and for the 2013 move to ProPublica."
+    },
+    {
+     "institution": "CBS News / Associated Press",
+     "title": "AP wins Pulitzer for stories on NYPD spying",
+     "date": "2012-04-16",
+     "url": "https://www.cbsnews.com/news/ap-wins-pulitzer-for-stories-on-nypd-spying/",
+     "quote": "Finalists: Tom Frank of USA Today for his sharply focused exploration of inflated pensions for state and local employees, enhancing stories with graphic material to show how state legislators pump up retirement benefits in creative but unconscionable ways, and The Wall Street Journal staff for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans by corporations and public officials in a largely unmonitored realm of modern life.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND under 'Explanatory reporting' in the AP list of 2012 Pulitzer winners and finalists. Page header 'April 16, 2012 / 6:28 PM EDT / AP'. It establishes the 2012 finalist year for the 'What They Know' team (pulitzer.org returns 403 to scripts)."
     }
    ]
+  },
+  {
+   "kind": "people",
+   "id": "kashmir-hill",
+   "status": "FIXED",
+   "issues": [
+    "The contribution narrows the source of the images. It says the images were 'scraped from social media'. The cited EPIC summary of Hill's article says 'scraped more than 3 billion images from websites and social media platforms such as Facebook, YouTube, Venmo, and Twitter'. Changed to 'from social media and other websites'.",
+    "The influence narrows the New Jersey order. It says New Jersey 'barred state police'. The cited ACLU release says the attorney general 'prohibited state law enforcement from using Clearview’s system', meaning the state's police forces generally, not only the State Police. Reworded.",
+    "The Australian claim ('Australia's privacy regulator sent the company inquiries three days after publication') had no source on this record. The OAIC determination [2021] AICmr 54, para 13 (--check FOUND): 'On 21 January 2020, the OAIC sent preliminary inquiries to the respondent under s 42(2) of the Privacy Act.' The Times URL is dated 2020/01/18, so three days is right. Added as a source; the same document is already cited elsewhere in this file.",
+    "Checked OK. quoteSource on kashmirhill.com/bio (fresh fetch) --check FOUND. The page says 'I got my start in journalism in 2008 ... The next year ... I created my own blog called The Not-So Private Parts', which supports 2009 and the handle, and 'I joined The Times in 2019, after having worked as an investigative reporter at Gizmodo Media Group and as a writer at Forbes Magazine'.",
+    "Checked OK. EPIC FOIA request (6 March 2020): the quote FOUND, and so does 'Within the past year, more than 600 law enforcement agencies have started using the Clearview AI app.' Both are footnoted to Hill's article, so the 600 figure is supported. ACLU release dated 'May 28, 2020' on the page; quote FOUND. Book page: the Atlantic excerpt FOUND and 'Published by Random House in the U.S.' FOUND. The page shows no year, but 2023 is the book's well-known US publication year (September 2023)."
+   ],
+   "fieldFixes": {
+    "contribution": "Hill began writing about privacy in 2009 with her blog The Not-So Private Parts and reported for Forbes and Gizmodo Media Group before joining The New York Times in 2019. In January 2020 she revealed that the little-known Clearview AI had built a face-search tool on more than three billion images scraped from social media and other websites, and that more than 600 law-enforcement agencies had started using it within a year. Her 2023 book Your Face Belongs to Us traces how the company came to be.",
+    "influence": "Her Clearview story drew immediate official responses: New Jersey's attorney general barred the state's law enforcement from using the tool, Vermont's attorney general sued, members of Congress demanded answers, and Australia's privacy regulator sent the company inquiries three days after publication."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND. The page shows 'May 28, 2020'. The ACLU is a litigant against Clearview, so it is not neutral."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF. Quote --check FOUND. The 600-agencies sentence also FOUND. Footnotes cite Hill, NYT (URL dated 2020/01/18)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. It is a review excerpt attributed to The Atlantic on the author's promotional page."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Office of the Australian Information Commissioner",
+     "title": "Commissioner initiated investigation into Clearview AI, Inc. (Privacy) [2021] AICmr 54 (14 October 2021)",
+     "date": "2021-10-14",
+     "url": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+     "quote": "On 21 January 2020, the OAIC sent preliminary inquiries to the respondent under s 42(2) of the Privacy Act.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (para 13). Supports 'Australia's privacy regulator sent the company inquiries three days after publication' (the NYT story is dated 18 January 2020)."
+    }
+   ]
+  },
+  {
+   "kind": "people",
+   "id": "carole-cadwalladr",
+   "status": "OK",
+   "issues": [
+    "Checked OK. quoteSource and sources[2]: the Wylie profile, 'I made Steve Bannon's psychological warfare tool' (fresh fetch). <title> matches, JSON-LD author is Carole Cadwalladr, datePublished 2018-03-18T09:44:46Z, and the URL is dated mar/17. Both quotes --check FOUND. The page also says 'For more than a year we’ve been investigating Cambridge Analytica', which supports 'more than a year', and 'Most damning of all, he had a letter from Facebook’s own lawyers admitting that Cambridge Analytica had acquired the data illegitimately'.",
+    "Checked OK. The contribution's 'invoices, contracts' is not in the Wylie profile's list ('receipts, invoices, emails, legal letters'). It is in the companion news story by Cadwalladr and Graham-Harrison (sources[3]): Wylie's dossier 'includes emails, invoices, contracts and bank transfers that reveal more than 50 million profiles ... were harvested'. That story's own quote --check FOUND; JSON-LD authors are Emma Graham-Harrison and Carole Cadwalladr; datePublished 2018-03-17T22:03Z, which supports going on the record on 17 March 2018 online, with the Observer print edition the next day.",
+    "Checked OK. Meta newsroom (datePublished 2018-04-04T18:30:05Z): the 87 million quote --check FOUND. Court of Appeal press summary, 'Tuesday 28 February 2023', [2023] EWCA Civ 219: the quote and 'The appeal is allowed in part' FOUND. The summary says the claim was over 'a talk (“the TED Talk”) and a tweet'. High Court summary, [2022] EWHC 1417 (QB), Steyn J: 'The claim has been dismissed.' FOUND, as is the TED talk date '15 April 2019'. The June 2022 date is from the file path /2022/06/ and the '130622' filename (13 June 2022).",
+    "Minor, not changed. 'roles' gives 'investigative journalist (The Observer)', while the 2023 Court of Appeal summary calls her 'a freelance journalist and writer'. As a description of her role during the Cambridge Analytica reporting it is accurate. The contribution also mentions only the TED talk; the libel claim covered the talk and a tweet of 24 June 2019. That omission does not make the text wrong."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND. datePublished 2018-04-04T18:30:05Z. It is a company statement about its own platform."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF. Quote --check FOUND. Header 'PRESS SUMMARY Tuesday 28 February 2023 Banks v Cadwalladr [2023] EWCA Civ 219'. The High Court summary was also re-fetched, and its dismissal and TED-talk-date sentences FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. It is the journalist's own account."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. Authors Emma Graham-Harrison and Carole Cadwalladr; datePublished 2018-03-17T22:03Z. Also FOUND: 'It includes emails, invoices, contracts and bank transfers that reveal more than 50 million profiles'."
+    }
+   ],
+   "addSources": []
   }
  ]
 }

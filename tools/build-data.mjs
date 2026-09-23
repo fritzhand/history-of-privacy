@@ -52,8 +52,16 @@ function cleanSource(s, extra = {}) {
   if (!o.verificationStatus) o.verificationStatus = 'PENDING';
   if (!o.accessType) o.accessType = 'FREE';
   if (!o.date) o.date = s.accessed || 'n.d.';
+  if (isLead(o)) {  // Wikipedia is a lead, never a source
+    o.verificationStatus = 'PENDING';
+    if (!/Wikipedia is a lead/.test(o.note || '')) o.note = `${o.note ? o.note + ' ' : ''}Wikipedia is a lead, not a source: a primary source is wanted.`;
+  }
   return o;
 }
+
+/* An encyclopedia citation is shown only when a record has nothing better. */
+const isLead = s => /(^|\.)wikipedia\.org$/.test((() => { try { return new URL(s.url).hostname; } catch { return ''; } })());
+const dropLeads = list => (list.some(s => s && !isLead(s)) ? list.filter(s => s && !isLead(s)) : list);
 
 /* One record often quotes the same document twice (two sentences from one
    paper). Merge those into one source object per document, keeping every
@@ -61,7 +69,7 @@ function cleanSource(s, extra = {}) {
    documents per record rather than sentences. */
 function mergeSources(list) {
   const out = [], byKey = new Map();
-  for (const s of list.filter(Boolean)) {
+  for (const s of dropLeads(list.filter(Boolean))) {
     const k = `${s.url}|${s.title || ''}|${s.verificationStatus}`;
     const prev = byKey.get(k);
     if (!prev) { const c = { ...s }; byKey.set(k, c); out.push(c); continue; }
@@ -143,14 +151,14 @@ const H = {
   quantSources: (id, idx) => {
     const q = need(quant, id, 'quant');
     const all = [].concat(q.sources || q.source || []).map(x => cleanSource(x));
-    return idx == null ? all : [].concat(idx).map(i => all[i]).filter(Boolean);
+    return dropLeads(idx == null ? all : [].concat(idx).map(i => all[i]).filter(Boolean));
   },
   seriesPoint: (id, year) => {
     const p = seriesPoints(id).find(p => p.year === year);
     if (!p) throw new Error(`series ${id} has no point for ${year}`);
     return p;
   },
-  seriesSources: id => (need(seriesIdx, id, 'series').sources || []).map(x => cleanSource(x)),
+  seriesSources: id => dropLeads((need(seriesIdx, id, 'series').sources || []).map(x => cleanSource(x))),
   /* A slice-specific array (concepts, jurisdictions, harms, lineage, …) and
      one record from it by id. */
   list: (slice, key) => ((research[slice] || {})[key]) || [],

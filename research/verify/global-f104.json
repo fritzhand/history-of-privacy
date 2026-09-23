@@ -1,0 +1,350 @@
+{
+ "slice": "global",
+ "chunk": "f104",
+ "verdicts": [
+  {
+   "kind": "laws",
+   "id": "tw-1995",
+   "status": "FIXED",
+   "issues": [
+    "No factual error found: MOJ legislative-history quote re-checked FOUND (promulgated 11 August 1995; renamed in the 26 May 2010 amendment, in force 1 October 2012 except Arts 6 and 54). The MOJ page and pdpc.gov.tw still list the 'Preparatory Office of the Personal Data Protection Commission', so the regulator field is current.",
+    "The note's claim that the 1995 Act covered 'eight designated private industries', and that the 2010 revision reached all sectors and non-computerised data, had no source (the source note said so). Now sourced to Winkler Partners' overview of the law (quotes FOUND)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. The same page gives the original title as 'Computer-processed data protection Act' (renamed Personal Data Protection Act by the 26 May 2010 amendment) and lists the competent authority as the Preparatory Office of the Personal Data Protection Commission. The eight-industry scope is sourced separately (Winkler Partners, added)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Winkler Partners (Taipei law firm)",
+     "title": "Taiwan Data Protection Regime: CPDA to PIPA",
+     "date": "2011",
+     "url": "http://www.winklerpartners.com/wp-content/uploads/2011/11/Overview-of-Data-Protection-Regime-in-Taiwan.pdf",
+     "quote": "Private entities in eight specified industries, including hospital, financial, telecommunication and insurance, are subject to the CDPA.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary (law-firm briefing, written before the 2010 amendments took effect in 2012). Supports the 1995 Act's scope of eight designated private industries. --check FOUND."
+    },
+    {
+     "institution": "Winkler Partners (Taipei law firm)",
+     "title": "Taiwan Data Protection Regime: CPDA to PIPA",
+     "date": "2011",
+     "url": "http://www.winklerpartners.com/wp-content/uploads/2011/11/Overview-of-Data-Protection-Regime-in-Taiwan.pdf",
+     "quote": "under the PIPA encompasses all data formats, not merely computer-processed personal data as stipulated in the CPDA.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the claim that the 2010 revision extended coverage to non-computerised data. The same document says 'The PIPA extends application of the data protection regime to any individual, organization or enterprise that collects, processes, or uses personal data' (also FOUND). --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "jp-2003",
+   "status": "FIXED",
+   "issues": [
+    "Conflation: the note equates the DLA-cited 'separate data protection law for public sector' with the 1988 act. The DLA passage refers to the public-sector law that was merged into the APPI with effect from 1 April 2022, which was the 2003 Act on the Protection of Personal Information Held by Administrative Organs (Act No. 58 of 2003) that replaced the 1988 act. The 1988 act was the first public-sector law, not the one DLA describes.",
+    "'Japan's first law covering the private sector' is overstated. Earlier sectoral provisions existed, and the PPC's chairman describes the APPI as the general law drafted for the private sector. Changed to 'first general data-protection law for the private sector'.",
+    "The 1988 act (previously 'not verified here') is now sourced to a speech by PPC Chairman Masao Horibe on the PPC website. Added inForce 2005 (APPI 'promulgated in 2003 and enforced in 2005', same speech)."
+   ],
+   "fieldFixes": {
+    "inForce": 2005,
+    "note": "Promulgated in 2003 and fully in force in 2005, the APPI was Japan's first general data-protection law for the private sector. The public sector had its own legislation, first adopted in 1988 as the Act on the Protection of Computer-processed Personal Data Held by Administrative Organs. DLA Piper notes that the separate public-sector law was folded into the APPI with effect from 1 April 2022. Now supervised by the Personal Information Protection Commission."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (cache bypassed); quote FOUND verbatim. Law-firm global guide (secondary)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND. In context, DLA's next sentence says this public-sector law 'was integrated into the APPI and became effective on April 1, 2022', so it refers to the 2003 public-sector act, not the 1988 act. See the added PPC source for 1988."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND verbatim; supports PPC as the supervisory authority."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Personal Information Protection Commission, Japan",
+     "title": "Privacy Culture and Data Protection Laws in Japan (speech by PPC Chairman Masao Horibe, ICDPPC 2017, Hong Kong)",
+     "date": "2017-09",
+     "url": "https://www.ppc.go.jp/files/pdf/290928_en_horibespeech.pdf",
+     "quote": "the legislation for personal information protection in the public sector was first adopted as the “Act on the Protection of Computer-processed Personal Data Held by Administrative Organs”, which was promulgated in 1988.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary (regulator's chairman). Supports the 1988 public-sector act. The speech goes on: 'Japan started drafting the Act on the Protection of Personal Information, which targeted the private sector' (also FOUND). --check FOUND."
+    },
+    {
+     "institution": "Personal Information Protection Commission, Japan",
+     "title": "Privacy Culture and Data Protection Laws in Japan (speech by PPC Chairman Masao Horibe, ICDPPC 2017, Hong Kong)",
+     "date": "2017-09",
+     "url": "https://www.ppc.go.jp/files/pdf/290928_en_horibespeech.pdf",
+     "quote": "the“Act on the Protection of Personal Information (APPI)” was promulgated in 2003 and enforced in 2005.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports yearEnacted 2003 and inForce 2005. The missing space after 'the' is in the PDF text. --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Japan",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=JP",
+     "quote": "However, the data protection law for public sector was integrated into the APPI and became effective on April 1, 2022 (the data protection law for local governments became effective after April 1, 2023).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Law-firm guide (secondary). Supports the 2022 merger of the public-sector law into the APPI. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "mo-2005",
+   "status": "FIXED",
+   "issues": [
+    "The regulator is out of date. Since 1 February 2024 the supervisory authority has been the Direcção dos Serviços da Protecção de Dados Pessoais (DSPDP; English: Personal Data Protection Bureau, PDPB). It replaced the Gabinete para a Protecção de Dados Pessoais (GPDP), a temporary project team. The Macao government portal lists DSPDP as the department and 'PDPB' in its service names. DLA's authority page still says 'Office for Personal Data Protection (OPDP)', which is stale.",
+    "'Modelled on Portugal's law' was unsourced. Now sourced to C&C Advogados (Macau), which says Law 8/2005 was inspired by Portugal's 1998 law transposing Directive 95/46/EC. FPF's blog gives the Portuguese law as 'Law No. 68/98'; it is actually Lei 67/98, so FPF was not used.",
+    "Law number, title and date (Lei n.º 8/2005 of 22 August 2005) confirmed via DLA. The Boletim Oficial page (bo.dsaj.gov.mo/bo/i/2005/34/lei08.asp) returned 403 to the script."
+   ],
+   "fieldFixes": {
+    "regulator": "Direcção dos Serviços da Protecção de Dados Pessoais (DSPDP, Personal Data Protection Bureau); before February 2024, the Gabinete para a Protecção de Dados Pessoais (GPDP)",
+    "note": "Law of 22 August 2005, inspired by Portugal's 1998 data-protection law, which transposed EU Directive 95/46/EC. The original supervisory project office (GPDP) became a permanent bureau (DSPDP) on 1 February 2024."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (cache bypassed); quote FOUND verbatim. DLA's authority page still names the 'Office for Personal Data Protection (OPDP)', which is out of date since 1 February 2024 (see added sources)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "C&C Advogados (Macau law firm)",
+     "title": "Macau SAR Data Protection – Expected updates following GDPR in Europe, Data Security Law and PIPL in China",
+     "date": "2021-07-05",
+     "url": "https://www.ccadvog.com/cca/macau-sar-data-protection-expected-updates-following-gdpr-in-europe-and-pipl-in-china.html",
+     "quote": "Macau’s data protection legal framework was strongly inspired by EU legislation: the Personal Data Protection Law (Law 8/2005) was inspired by the Portuguese Law passed in 1998, which transposed the EU Directive 95/46/EC.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary (local law firm; by João Gonçalves Assunção and Jessie Lin). Supports the Portuguese-model claim. --check FOUND."
+    },
+    {
+     "institution": "Macau Daily Times",
+     "title": "New heads at Personal Data Protection Bureau",
+     "date": "2024-01-25",
+     "url": "https://macaudailytimes.com.mo/new-heads-at-personal-data-protection-bureau.html",
+     "quote": "The director and vice director of the Personal Data Protection Office, scheduled to be established on Feb. 1, were announced yesterday in the Official Gazette.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "News report. Supports the 1 February 2024 creation of the new bureau; the article also says 'Yang Chongwei, incumbent director of the Personal Data Protection Office, will be appointed as director of the new bureau' (FOUND). The article uses 'Office' loosely for both bodies. --check FOUND."
+    },
+    {
+     "institution": "Macao SAR Government Portal",
+     "title": "Direcção dos Serviços da Protecção de Dados Pessoais (DSPDP) — entity page",
+     "date": "2026",
+     "url": "https://www.gov.mo/en/entity-page/entity-8705/",
+     "quote": "Submitting notification to the PDPB (No. 2038)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official portal listing DSPDP as the current department ('Departments and Agencies Direcção dos Serviços da Protecção de Dados Pessoais DSPDP' also FOUND); its public services name the regulator 'PDPB'. The dspdp.gov.mo site could not be read (TLS chain error / 503). --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "my-2010",
+   "status": "FIXED",
+   "issues": [
+    "Wrong event for the date: the note says the Act was 'passed 2 June 2010', following DLA. The Act's own header gives 2 June 2010 as the date of Royal Assent and 10 June 2010 as the date of publication in the Gazette. Parliament passed the Bill earlier (secondary reports give 5 April 2010, not verified here).",
+    "The other claims check out: Act 709; in force 15 November 2013 (DLA); amended by the Personal Data Protection (Amendment) Act 2024 (JPDP page, DLA); the regulator is the Personal Data Protection Commissioner."
+   ],
+   "fieldFixes": {
+    "note": "Described by DLA Piper as Malaysia's first comprehensive personal-data law. It received Royal Assent on 2 June 2010, was gazetted on 10 June 2010 and came into force on 15 November 2013; amended by the Personal Data Protection (Amendment) Act 2024."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (cache bypassed); quote FOUND verbatim. DLA calls 2 June 2010 the date Parliament passed the Act, but the Act's header (added source) gives it as the date of Royal Assent. The in-force date of 15 November 2013 is used from this source."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Quote FOUND; it is the page heading. The same page lists 'Personal Data Protection (Amendment) Act 2024' (FOUND) and links the bilingual Act PDF used in the added source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Personal Data Protection Department (JPDP), Malaysia",
+     "title": "Laws of Malaysia, Act 709: Personal Data Protection Act 2010 (Malay/English text)",
+     "date": "2024",
+     "url": "https://www.pdp.gov.my/ppdpv1/wp-content/uploads/2024/07/UNDANG-UNDANG-MALAYSIA_AKTA_PERLINDUNGAN_DATA_PERIBADI_2010_709_MALAY_AND-ENG_V2022.pdf",
+     "quote": "Date of Royal Assent ... ... 2 June 2010",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official text linked from pdp.gov.my. The ellipses are the PDF's dot leaders. The English header also reads 'Date of publication in the Gazette ... ... ... 10 June 2010' (FOUND); the Malay header reads 'Tarikh Persetujuan Diraja : 2 Jun 2010' (FOUND). --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Malaysia",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=MY",
+     "quote": "In 2024, amendments were introduced to the PDPA, namely the Personal Data Protection (Amendment) Act 2024 (“Amendment Act”).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'amended in 2024'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "kr-2011",
+   "status": "FIXED",
+   "issues": [
+    "The core claims are correct: promulgated 29 March 2011, effective 30 September 2011 (koreanlii translation, FOUND).",
+    "The predecessor public-agency act (1994), previously marked 'not verified here', is now verified. PIPA's Addenda Article 2 repeals the 'Act on the Protection of Personal Information Maintained by Public Agencies', and a 2024 peer-reviewed article dates that act to 1994.",
+    "'Substantially amended again in March 2026' had no source. It is correct only as the promulgation date: the National Assembly passed the amendment on 12 February 2026, it was promulgated on 10 March 2026, and most provisions take effect on 11 September 2026. Now sourced (IAPP, DLA) and made more precise."
+   ],
+   "fieldFixes": {
+    "note": "Promulgated 29 March 2011 and effective 30 September 2011, covering public and private sectors. Its addenda repealed the Act on the Protection of Personal Information Maintained by Public Agencies, Korea's 1994 public-sector law. Substantially amended again by an amendment promulgated on 10 March 2026, with most provisions in force from 11 September 2026."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Unofficial translation; quote FOUND verbatim. The same PDF's Addenda Article 2 repeals the public-agencies act (added as a separate source). The 1994 date is sourced to the added Nature HSSC article."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Korean Legal Information Institute (koreanlii.or.kr) — English translation",
+     "title": "Personal Information Protection Act (2011)",
+     "date": "2011-03-29",
+     "url": "http://koreanlii.or.kr/w/images/0/0e/KoreanDPAct2011.pdf",
+     "quote": "Article 2 (Repeal of Other Act) The Act on the Protection of Personal Information Maintained by Public Agencies shall be repealed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Addenda to PIPA 2011 (unofficial translation). Supports 'replaced an earlier act limited to public agencies'. --check FOUND."
+    },
+    {
+     "institution": "Humanities and Social Sciences Communications (Nature Portfolio)",
+     "title": "Automated decision-making in South Korea: a critical review of the revised Personal Information Protection Act",
+     "date": "2024-07-29",
+     "url": "https://www.nature.com/articles/s41599-024-03470-y",
+     "quote": "Initially, only the processing of personal information by public institutions was regulated by the Act on the Protection of Personal Information of Public Institutions, which was established in 1994.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Peer-reviewed secondary source for the 1994 date of the public-sector act (it translates the act's name differently). --check FOUND."
+    },
+    {
+     "institution": "IAPP",
+     "title": "South Korea overhauls PIPA and ties fines to CEO accountability",
+     "date": "2026-03-11",
+     "url": "https://iapp.org/news/a/south-korea-overhauls-pipa-and-ties-fines-to-ceo-accountability",
+     "quote": "On 10 March 2026, South Korea promulgated the most consequential rewrite of its Personal Information Protection Act since the law's 2023 overhaul.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "By Kyoungsic Min. Supports 'substantially amended again in March 2026'; the article adds that it is set to take effect on 11 September. Hunton reports that the National Assembly passed it on 12 February 2026. --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — South Korea",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=KR",
+     "quote": "The PIPA was amended on March 10, 2026, with most provisions set to take effect on September 11, 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Law-firm guide (secondary); second source for the March 2026 amendment. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "ph-2012",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; long-title quote FOUND verbatim, and 'Approved: AUG 15 2012' FOUND on the same page (signed by Benigno S. Aquino III). The long title supports coverage of government and the private sector and the creation of the National Privacy Commission."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "laws",
+   "id": "sg-2012",
+   "status": "FIXED",
+   "issues": [
+    "The SSO source quote ('Personal Data Protection Act 2012 Table of Contents') is a page heading and does not support any claim in the note. Replaced it with section 4(1)(c), the exclusion of public agencies, which is what makes this a 'private-sector law'.",
+    "'Extraterritorial effect' had no source. Now supported by DLA and by the Act's definition of 'organisation' (s 2), which covers bodies whether or not formed in, resident in, or with an office in Singapore.",
+    "Minor: the DLA quote says the Act was 'enacted ... on October 15, 2012'. That is the date Parliament passed it; the President assented on 20 November 2012 (SSO as-enacted text). The record's yearEnacted of 2012 is unaffected."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (cache bypassed); quote FOUND verbatim. Caveat: 15 October 2012 is the date Parliament passed the Act; assent was 20 November 2012 (see added SSO source)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Parts 3, 4, 5, 6, 6A and 6B do not impose any obligation on — ( a ) any individual acting in a personal or domestic capacity; ( b ) any employee acting in the course of his or her employment with an organisation; ( c ) any public agency;",
+     "note": "Replaced the page-heading quote with s 4(1) of the current revised Act, which supports 'private-sector law'. The same page defines 'organisation' as covering bodies 'whether or not — ( a ) formed or recognised under the law of Singapore; or ( b ) resident, or having an office or a place of business, in Singapore' (FOUND). --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Singapore",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=SG",
+     "quote": "The Act has extraterritorial effect, meaning it applies to organizations collecting, using or disclosing personal data in Singapore whether or not the organization itself has a physical presence or is registered as a company in Singapore.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports 'extraterritorial effect'. --check FOUND."
+    },
+    {
+     "institution": "Singapore Statutes Online (Attorney-General's Chambers)",
+     "title": "Personal Data Protection Act 2012 (No. 26 of 2012) — as enacted",
+     "date": "2012-11-20",
+     "url": "https://sso.agc.gov.sg/Acts-Supp/26-2012/",
+     "quote": "The following Act was passed by Parliament on 15th October 2012 and assented to by the President on 20th November 2012",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary, as-enacted text. Gives the date Parliament passed the Act and the date of assent. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "th-2019",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "The first fetch failed (proxy 502 on www.mdes.go.th); the retry succeeded and the quote was FOUND verbatim. The translation also shows the Act was 'Given on the 24th Day of May B.E. 2562'. Section 2 brought most operative chapters into force one year after publication in the Gazette (FOUND), which is consistent with the later postponement to 1 June 2022."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (cache bypassed); quote FOUND. Supports inForce 2022 (1 June 2022)."
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

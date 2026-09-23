@@ -164,6 +164,8 @@ def apply_slice(slice_):
                     print(f'  ! {rid}: sourceFix index {idx} out of range')
                     continue
                 s = srcs[idx]
+                if sf.get('url') and sf['url'] != s.get('url'):  # a replacement source: its own note, not the old one's
+                    s['note'] = sf.get('note') or ''
                 for k2 in ('institution', 'title', 'date', 'url', 'quote', 'accessType'):
                     if sf.get(k2):
                         s[k2] = sf[k2]

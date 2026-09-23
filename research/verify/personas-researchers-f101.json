@@ -1,0 +1,102 @@
+{
+ "slice": "personas-researchers",
+ "chunk": "f101",
+ "verdicts": [
+  {
+   "kind": "image",
+   "id": "lorrie-cranor-capitol-hill-briefing-2014",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Artist 'National Science Foundation'. The wikitext licence template is {{PD-USGov-NSF}}, and a LicenseReview by Leoboudv dated 2025-03-20 has passed. Categories include 'PD US NSF', 'Lorrie Cranor' and 'Hill briefing on privacy and security in a connected age (2014-10-30)'. DateTimeOriginal is '2014-10-30 15:06:58'. The rightsEvidence field is accurate.",
+    "Checked OK, caption: the Commons description has 'the National Science Foundation (NSF) and IEEE-USA joined with the Congressional Cybersecurity Caucus of the U.S. House of Representatives to present a briefing on Capitol Hill on “Privacy and Cybersecurity in a Connected Age.”', names National Cyber Security Awareness Month, and identifies 'Lorrie Faith Cranor (left)'. For independent confirmation, Cranor's own CV (lorrie.cranor.org/cranor-cv.pdf, fetched with fetch-text.py) lists 'Capitol Hill briefing on privacy and security in a connected age (hosted by NSF and IEEE-USA), Washington, DC, October 30, 2014.' The date, hosts and place all match.",
+    "Upstream link is dead: upstreamUrl https://www.flickr.com/photos/nsf_beta/15548257259/ returns HTTP 404, and so does the whole nsf_beta account page, as of 2026-09-23. The Wayback Machine has no snapshot of that exact URL. The Commons record also cites an archived NSF page (web.archive.org/web/20161217211725/https://www.flickr.com/photos/nsf_beta/page3), but web.archive.org reset the connection from this environment, so I could not re-read it. The PD claim therefore rests on the Commons LicenseReview, which is still valid, and not on a live upstream page.",
+    "Alt text is slightly inaccurate. The local file shows no table. It shows Cranor from the chest up in front of wood panelling, with a microphone in front of her and a blurred grey head in the foreground. The most distinctive visible detail is missing: the purple dress printed with a password word cloud. The Commons description says Cranor 'wore a dress she designed featuring a “word cloud” inspired by the 1,000 most common passwords'.",
+    "Local file assets/media/lorrie-cranor-capitol-hill-briefing-2014.jpg opens as a 488x657 RGB JPEG, which matches thumbPx and the Commons original size of 488x657. Coordinates 38.8899, -77.0091 are the U.S. Capitol and are acceptable for a 'Capitol Hill' briefing whose building is not named."
+   ],
+   "fieldFixes": {
+    "alt": "Lorrie Cranor, wearing glasses and a purple dress printed with a word cloud of common passwords, speaking at a microphone in a wood-panelled room, with a blurred head in the foreground",
+    "upstreamArchive": "NSF on Flickr (photo and account no longer online: HTTP 404 on 2026-09-23; Commons licence review of 2025-03-20 cites an archived NSF Flickr page)"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "christopher-soghoian-30c3-hamburg-2013",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 3.0', License 'cc-by-3.0', LicenseUrl creativecommons.org/licenses/by/3.0, Credit 'Own work', uploader 'Church of emacs'. The wikitext licence tag is {{self|GFDL|cc-by-3.0}}. DateTimeOriginal is '2013-12-29 23:28:14'. The description reads 'Christopher Soghoian at the 30th Chaos Communication Congress in Hamburg, 2013'. CC BY 3.0 is an acceptable licence.",
+    "Attribution detail missed. The Author field is filled by the template {{User:Church of emacs/Attribution|cc-by-sa}}. It renders 'Image: Wikipedia / Tobias Klenze / CC-BY-SA 4.0', and that CC-BY-SA 4.0 link conflicts with the file's actual GFDL/CC BY 3.0 tag. The licence tag governs. Under CC BY 3.0 §4(b), however, the credit should use the author's designated attribution, 'Wikipedia / Tobias Klenze'. The current creditLine, 'Tobias Klenze / Wikimedia Commons', drops 'Wikipedia /'.",
+    "Checked OK, date and event: the media.ccc.de API and the talk page (fetched with fetch-text.py) list one 30C3 talk by Christopher Soghoian, 'Backdoors, Government Hacking and The Next Crypto Wars', dated 2013-12-29 in Saal G, scheduled at 21:45 according to the recording slug. That confirms Soghoian was on stage at 30C3 on 29 December 2013, and the photo shows a speaker with a lapel microphone in front of a projection screen. 30C3 ran 27-30 December 2013 at CCH Hamburg.",
+    "Coordinates are off: 53.5552, 9.991 is about 770 m south-south-east of the Congress Center Hamburg, near Gänsemarkt. The en.wikipedia 'Congress Center Hamburg' infobox (fetched 2026-09-23) gives 53°33′41.7″N 9°59′8.46″E, i.e. 53.561583, 9.9856833.",
+    "Local file assets/media/christopher-soghoian-30c3-hamburg-2013.jpg opens as a 960x1440 RGB JPEG, which matches thumbPx. It shows a bearded man with long hair tied back, wearing glasses and a black ACLU T-shirt, gesturing, with a lapel mic and a projection screen behind. The alt text is accurate."
+   ],
+   "fieldFixes": {
+    "creditLine": "Wikipedia / Tobias Klenze, via Wikimedia Commons (CC BY 3.0)",
+    "lat": 53.5616,
+    "lng": 9.9857,
+    "locationNote": "Congress Center Hamburg (CCH), venue of 30C3 (coordinates from the en.wikipedia CCH infobox, 53.561583 N, 9.9856833 E)",
+    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Credit \"Own work\"; DateTimeOriginal \"2013-12-29 23:28:14\". File wikitext license section: \"{{self|GFDL|cc-by-3.0}}\" (dual-licensed GFDL / CC BY 3.0; CC BY 3.0 chosen). The author's attribution template asks for credit as 'Wikipedia / Tobias Klenze' (its rendered link to CC BY-SA 4.0 conflicts with the file's actual licence tag, which governs). Description: \"Christopher Soghoian at the 30th Chaos Communication Congress in Hamburg, 2013\". Talk: 'Backdoors, Government Hacking and The Next Crypto Wars', 30C3, 29 December 2013 (media.ccc.de)."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "identity-gang-reed-cameron-dyson-pc-forum-2005",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 2.0', License 'cc-by-2.0', Artist 'Doc Searls', Credit flickr.com/photos/docsearls/14745767570/. FlickreviewR 2 passed on 2026-07-16 (author dsearls, reviewlicense cc-by-2.0). The live Flickr page returns HTTP 200 with licence id 4, which is CC BY 2.0 ('https://creativecommons.org/licenses/by/2.0/'), dateTaken '2005-03-20 10:15:58', title '2005_03_20_pcforum-idgang_16', and the same description as Commons. The rightsEvidence field is accurate.",
+    "Checked OK, caption: the date, place and 'first Identity Gang gathering' are confirmed by the photographer's own later writing. Doc Searls, 'Come from Everywhere' (doc.searls.com, 19 March 2025), says: 'IIW was born exactly twenty years ago tomorrow—20 March 2005—at Esther Dyson’s PC Forum in Scottsdale, Arizona. A group of eleven that called itself the Identity Gang gathered around a table there to plot what became (IMHO) the most leveraged conference in the world.' Searls, 'Laws of Identity' (doc.searls.com, 10 May 2022), says: 'the photo above is from the first and only meeting of the Identity Gang, at Esther Dyson’s PC Forum in 2005. The next meeting of the Gang was the first Internet Identity Workshop'. Both were verified verbatim in the page HTML. fetch-text.py gets HTTP 403 from doc.searls.com, so I fetched with a browser user agent. Independent confirmation: Mike Jones, 'Stories of Kim Cameron' (self-issued.info/?p=2218), writes 'Kim asked me to go with him to the first gathering of the Identity Gang at PC Forum in Scottsdale, Arizona.' (--check FOUND). Nuance: TechCrunch (12 Dec 2021, 'Gillmor Gang: Beatlesverse') says Searls 'recalled the group grew out of a special edition of the Gillmor Gang on the last day of 2004 and a subsequent in-person gathering at Esther Dyson’s PC Forum conference' (--check FOUND). So 'first gathering' means the first in-person meeting, which is how Searls and Jones use it.",
+    "Minor date discrepancy, flagged but not changed. Searls's contemporaneous Flickr album 'Identity Gang at PC Forum 2005, #1' (flickr.com/photos/docsearls/sets/251251) says 'This was an informal meeting on March 21, of roughly the same gang as were assembled for the Gillmor Gang podcast' (--check FOUND). However, all 20 photos in that album carry camera dates of 2005-03-20, between 09:10 and 11:37, and Searls's 2025 post gives '20 March 2005'. The caption's 20 March 2005 is kept as the better-supported date. An editor may prefer 'March 2005'.",
+    "Coordinates can be more precise. The record uses Scottsdale city-centre coordinates (33.4942, -111.9261), but the photo can be placed at the resort. The paper cups on the table are printed 'Fairmont Scottsdale Princess' (visible in the local file). Doc Searls's Linux Journal piece 'PC Forum: Embedded in Scottsdale' (2003, linuxjournal.com/article/6794) calls PC Forum 'Esther Dyson's annual gathering at the Scottsdale Princess resort in Arizona' (fetch-text --check FOUND). The Fairmont Scottsdale Princess, 7575 E Princess Dr, is at 33.6454, -111.9171 (Waze place record), about 17 km north of the city-centre point. The 2003 article does not by itself prove the 2005 venue; the cups are the direct evidence.",
+    "Alt text slightly incomplete. The frame also shows a fourth person's arm at the right edge, a laptop in the foreground and a water bottle. The three named people are at the table as described.",
+    "Local file assets/media/identity-gang-reed-cameron-dyson-pc-forum-2005.jpg opens as a 960x623 RGB JPEG, which matches thumbPx."
+   ],
+   "fieldFixes": {
+    "lat": 33.6454,
+    "lng": -111.9171,
+    "locationNote": "Fairmont Scottsdale Princess resort, Scottsdale, Arizona: the paper cups in the photo are printed 'Fairmont Scottsdale Princess', and Doc Searls described PC Forum as Esther Dyson's annual gathering at the Scottsdale Princess (Linux Journal, 2003)",
+    "alt": "Drummond Reed, Kim Cameron and Esther Dyson (left to right, in the order named in the title) laughing at an outdoor café table with a laptop, a water bottle and paper cups; a fourth person's arm is at the right edge"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "doc-searls-headshot-2022",
+   "status": "OK",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 2.0', License 'cc-by-2.0', Artist 'Doc Searls', Credit flickr.com/photos/docsearls/54030165035/, description 'Doc Searls headshot', DateTimeOriginal '2022-05-30 18:11:04'. FlickreviewR 2 passed on 2026-07-16 (author dsearls, reviewlicense cc-by-2.0). The live Flickr page returns HTTP 200 with licence id 4 (CC BY 2.0), dateTaken '2022-05-30 18:11:04', title '2022_05_30_ds-headshots_71z', description 'Doc Searls headshot' and tags 'docsearls, headshot'. It was posted to Flickr in September 2024 (datePosted 1727621204). The rightsEvidence field is accurate.",
+    "Caveat, no change needed: this posed headshot was very likely taken by someone other than the subject (or on a timer), yet Commons and Flickr both name Doc Searls as author, because it is his own account. The record's creator field ('Doc Searls (uploaded from his Flickr account)') and its rightsEvidence note already disclose this, and FlickreviewR accepted the licence.",
+    "Location: the Flickr page has no geotag and the photo's location is unknown. The record says so, and it labels the Cambridge, MA coordinates (Berkman Klein Center, home of ProjectVRM) as 'for mapping only', which is honest. For context, his searls.com bio (©2024) lists him as a Visiting Scholar with the Ostrom Workshop at Indiana University and says 'He now lives nearby'. When he moved there is not established, so no change is proposed. The map pin must not be read as the place the photo was taken.",
+    "Local file assets/media/doc-searls-headshot-2022.jpg opens as a 960x1183 RGB JPEG, which matches thumbPx. It shows a smiling, white-bearded man with arms folded, in a black T-shirt, against vertical wooden boards. The alt text and the caption ('Doc Searls headshot, 30 May 2022') are accurate."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "ann-cavoukian-goopendata-toronto-2013",
+   "status": "FIXED",
+   "issues": [
+    "Wrong city. The record places the photo in Toronto (lat 43.6532, lng -79.3832; the id also contains 'toronto'), but the 2013 GO Open Data conference was held in Kitchener. Co-organiser Albert O'Connor's announcement (albertoconnor.ca/go-open-data.html, fetch-text --check FOUND) says: 'On Saturday, May 11th people from Windsor to Ottawa are going to come together at the University of Waterloo School of Pharmacy for GO Open Data, a one day conference.' The same post says 'We have amazing speakers like Ontario Information and Privacy Commissioner Dr. Ann Cavoukian' and links the schedule at 2013.go-opendata.ca. 11 May 2013 was a Saturday. The School of Pharmacy is on the university's Health Sciences Campus in downtown Kitchener: en.wikipedia 'University of Waterloo School of Pharmacy' says it 're-located to a new $34 million building on the university's Health Sciences Campus in downtown Kitchener in 2008' (--check FOUND), and its infobox gives 43.45279, -80.49896. A web-search snippet of the conference's own history page (go-opendata.ca/our-history, which returns 404 to direct fetches) also puts the first conference in the Pharmacy Building in Kitchener.",
+    "Date resolved. The one-day conference was on Saturday 11 May 2013, which matches the Commons description ('on May 11, 2013'). The camera timestamp of 2013-05-08 23:34:51 is therefore a mis-set camera clock, and the caption can state 11 May 2013.",
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 3.0', License 'cc-by-3.0', Credit 'Own work', {{self|cc-by-3.0}}. The Artist links User:Laurelrusswurm, which now redirects; the uploader's current account name is 'Laurel L. Russwurm'. The photographer's own blog (techditz.russwurm.org, 20 May 2013) reuses the photo with the credit 'Ontario Privacy Commissioner Ann Cavoukian at the 2013 #GOopendata Conference by laurelrusswurm licensed under a Creative Commons Attribution 3.0 Unported License'. The keynote title 'Access by Design - Time To Change the Paradigm' comes only from the photographer's Commons description, and the caption correctly takes it from there.",
+    "Id: 'ann-cavoukian-goopendata-toronto-2013' contains the wrong city. It is referenced in js/data.js, so renaming it is left to the editor; if the id is kept, the visible fields at least must be corrected.",
+    "Local file assets/media/ann-cavoukian-goopendata-toronto-2013.jpg opens as a 960x720 RGB JPEG, which matches thumbPx. It shows Cavoukian in a tweed jacket with a lapel mic, in front of a projected slide reading 'please visit: www.privacybydesign.ca'. The alt text is accurate."
+   ],
+   "fieldFixes": {
+    "caption": "Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \"Access by Design - Time To Change the Paradigm\" keynote at the first GO Open Data (GOopendata) conference, University of Waterloo School of Pharmacy, Kitchener, Ontario, 11 May 2013.",
+    "lat": 43.4528,
+    "lng": -80.499,
+    "locationNote": "University of Waterloo School of Pharmacy, downtown Kitchener, Ontario: venue of the one-day GO Open Data conference on Saturday 11 May 2013, per co-organiser Albert O'Connor. The Commons description gives 11 May 2013; the camera timestamp (8 May 2013) is off.",
+    "creator": "Laurel L. Russwurm (Wikimedia Commons user Laurelrusswurm)",
+    "creditLine": "Laurel L. Russwurm / Wikimedia Commons (CC BY 3.0)"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

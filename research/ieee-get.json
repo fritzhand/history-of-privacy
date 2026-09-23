@@ -1,0 +1,1647 @@
+{
+ "slice": "ieee-get",
+ "notes": "Slice 'ieee-get': IEEE's GET Program for AI Ethics and Governance Standards (https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93), to place IEEE 7012-2025 among its siblings. METHOD: IEEE Xplore bot-challenges scripts, so the series page and each standard's Xplore document page were rendered in a headless browser (requests through the agent proxy, TLS verification on) and their visible text saved into the fetch-text cache; every quote was then checked with tools/fetch-text.py --check. Xplore cuts off some abstracts and scopes ('Show More'); where a judgement needed the hidden text, a published copy of IEEE's text was read instead and cited. The full PDFs of the standards other than 7012 need an IEEE sign-in and were not read; nothing here depends on them. Each part was then checked by an independent verifier (research/verify/ieee-get-*.json).",
+ "program": {
+  "id": "ieee-get-ai-ethics-governance",
+  "name": "GET Program for AI Ethics and Governance Standards",
+  "tagline": "Supporting Global Trustworthy AI realization through human-centric Standards and AI Ethics Certification",
+  "description": "IEEE and the IEEE Standards Association launched the programme on 17 January 2023 to give free access to selected IEEE standards on AI ethics and governance; its page on IEEE Xplore now lists 12, each a PDF offered at no cost. The page says the standards are free thanks to its sponsors and names TÜV SÜD as a partner, and IEEE's launch release credits support from IEEE SA, industry sponsors and government. To download any of them, the page says, you must sign in with an IEEE account.",
+  "access": "Free PDF; IEEE account sign-in required",
+  "sponsors": [
+   "TÜV SÜD",
+   "IEEE Standards Association",
+   "EY",
+   "AppliedAI"
+  ],
+  "count": 12,
+  "asOf": "2026-09-23",
+  "origin": "Eleven of the twelve standards the programme lists are in IEEE's 7000 series, which grew out of the IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems, launched in April 2016; the Initiative's members were encouraged to recommend standards projects to IEEE. IEEE credits the Initiative's report Ethically Aligned Design (first released in December 2016, revised in 2017 and 2019) with inspiring over twelve standards working groups, and says the P7000 series addresses issues the report identified; the Initiative's 2020 FAQ singles out P7012 among 'our IEEE P7000 Standards Working Groups'. IEEE SA records the authorisation (PAR approval) of the P7000 project on 30 June 2016, six months before the report's first version, and of P7012 on 6 December 2017. The twelfth standard, IEEE 2089-2021, is not in the 7000 series.",
+  "latestNote": "No longer. When Doc Searls wrote on 29 January 2026 that MyTerms was 'the latest one', IEEE 7012-2025 (published on IEEE Xplore on 20 January 2026) was the most recently published of the standards the programme now lists. On 12 June 2026 IEEE published IEEE 7014.1-2026, Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems, which the programme page now lists. As of 23 September 2026 it is the latest in the series by publication date; 7012-2025 is second. (The '-2025' in 7012's designation is its approval year; it was published in 2026.)",
+  "sources": [
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "GET Program for AI Ethics and Governance Standards",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: name. The page heading under 'IEEE GET Program™'. The page itself is undated; the date is the day it was rendered. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "Supporting Global Trustworthy AI realization through human-centric Standards and AI Ethics Certification",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: tagline. The one-line description directly under the heading. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "In partnership with leading entities such as TÜV SÜD, who are committed to the advancement and realization of Trustworthy AI systems, the following selected IEEE standards are provided at no cost to you through the IEEE GET Program.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: description (selected standards at no cost; TÜV SÜD named as a partner) and the sponsor 'TÜV SÜD'. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "To download any of these standards, you must sign in with an IEEE Account.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: description (access condition) and access. The page goes on: 'Don't have an account? Create Account now.' It does not say whether an account costs anything, so 'free IEEE account' is not supported by this page. The site's own record (research/myterms.json, myth-standard-is-paywalled) says tools/fetch-text.py, sending no cookies or credentials, downloaded the 7012 PDF from the stampPDF link on 2026-09-23, so the stated rule may not be enforced on every route; the panel should report the rule as the page states it. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "Standards in the IEEE GET Program are provided at no cost thanks to our sponsors.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: description (sponsor-funded). Text of the page's 'Sponsored By' panel. The panel names no sponsor in text: below this sentence it has four image slots, and in the headless render all four images failed to load (broken-image icons, no alt text shown), so the sponsors cannot be read from the rendered page. See the sponsor API source. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Xplore REST API: sponsors of GET package 93 (feeds the series page's 'Sponsored By' panel)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/rest/standard/sponsors/93",
+    "quote": "{\"packageNumber\":93,\"name\":\"EY\",\"url\":\"http://www.ey.com/\",\"logo\":\"/Xplorehelp/cfg/get-program/sponsor/ey-logo.png\"}",
+    "verificationStatus": "PENDING",
+    "accessType": "FREE",
+    "note": "Supports: sponsors. The JSON the series page loads to draw its sponsor logos, captured by the headless browser on 2026-09-23 (scratchpad get/rest-2.json). It lists four sponsors for package 93, in this order: 'TÜV SÜD', 'IEEE Standards Association', 'EY', 'AppliedAI', each with a logo under /Xplorehelp/cfg/get-program/sponsor/. PENDING because --check cannot reach it: fetch-text.py gets an empty response from this endpoint, and the names appear on the page only as images. TÜV SÜD is independently CONFIRMED by the page text; IEEE SA's support by the 2023 press release ('With support from the IEEE SA, industry sponsors and government'); EY and AppliedAI rest on this API response alone. The 2023 release quotes an EY partner but does not call EY a sponsor. Verification: Re-checked 2026-09-23. fetch-text.py still gets an empty body from this endpoint (--check NOT-FOUND), and curl gets Xplore's bot challenge (HTTP 418), so the source stays PENDING. The quote matches scratchpad get/rest-2.json exactly, and the four names and their order are as stated. Supporting evidence, though not a text quote: the four logo files the response names (https://ieeexplore.ieee.org/Xplorehelp/cfg/get-program/sponsor/tuvsud-logo.png, ieee-standards-logo.png, ey-logo.png, applied-ai-logo.png) each return HTTP 200 to curl. They show the TÜV SÜD mark, 'IEEE SA Standards Association', 'EY Building a better working world' and '[ai] Initiative for Applied Artificial Intelligence' (the API links that last one to https://www.appliedai.de/). A web search found no IEEE text that names EY or AppliedAI as sponsors of this programme. 'EY' and 'AppliedAI' therefore rest on Xplore's own sponsor feed and logo files, not on any page text."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: IEEE 7012-2025 is in the programme (IEEE's own listing, not only Doc Searls's word). Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: count and latestNote. The last of the 12 standards the page lists on 2026-09-23: 2089-2021, 7000-2021, 7001-2021, 7002-2022, 7003-2024, 7005-2021, 7007-2021, 7009-2024, 7010-2020, 7012-2025, 7014-2024, 7014.1-2026 (the page text and Xplore's series API, scratchpad get/rest-4.json, agree; all 12 are 'Active', 'Approved'). Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+    "date": "2026-09-23",
+    "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+    "quote": "All standards available in the IEEE GET Program™ will remain in the program until they are replaced by a superseding document or are withdrawn.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: asOf. The list can change (standards leave when superseded or withdrawn, and new ones are added), so the count of 12 holds as of 2026-09-23. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE Introduces New Program for Free Access to AI Ethics and Governance Standards (press release)",
+    "date": "2023-01-17",
+    "url": "https://standards.ieee.org/news/get-program-ai-ethics/",
+    "quote": "PISCATAWAY, NJ, 17 January 2023 – IEEE, the world’s largest technical professional organization dedicated to advancing technology for humanity, and the IEEE Standards Association (IEEE SA) announce the availability of a program that provides free access to global sociotechnical standards in AI Ethics and Governance",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: description (launched by IEEE and IEEE SA on 17 January 2023). --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE Introduces New Program for Free Access to AI Ethics and Governance Standards (press release)",
+    "date": "2023-01-17",
+    "url": "https://standards.ieee.org/news/get-program-ai-ethics/",
+    "quote": "With support from the IEEE SA, industry sponsors and government, a number of IEEE standards are available for download at no cost through the IEEE GET Program.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: description (who supports it) and the sponsor 'IEEE Standards Association'. The release also quotes TÜV SÜD's CEO Digital Service and an Ernst and Young partner. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE GET Program™ (programme overview)",
+    "date": "2026-09-23",
+    "url": "https://standards.ieee.org/products-programs/ieee-get-program/",
+    "quote": "The website will require users accept of the Terms and Conditions of Use before access to the standard(s) PDF file is permitted.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: description ('free PDFs'). A general rule for every sponsored GET site, listed under 'How the Program Works'; the same page lists 'GET Program for AI Ethics and Governance Standards' (FOUND) among the available programmes. The AI-ethics series page on Xplore adds its own condition, a sign-in with an IEEE Account. Undated page; the date is the fetch date. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (IEEE Xplore document 11559263)",
+    "date": "2026-06-12",
+    "url": "https://ieeexplore.ieee.org/document/11559263",
+    "quote": "Date of Publication: 12 June 2026",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: latestNote (the latest in the series by publication date). The page also reads 'Available through the IEEE GET ProgramTM' (FOUND) and 'Status: Active - Approved'; DOI 10.1109/IEEESTD.2026.11559263. Xplore's embedded metadata agrees (publicationDate and insertDate both 12 June 2026). Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document 11360682)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/document/11360682",
+    "quote": "Date of Publication: 20 January 2026",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: latestNote (7012-2025 was published in 2026; '-2025' is its approval year). Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document 11360682)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/document/11360682",
+    "quote": "(Note: The PDF of this standard is available at no charge complements of the IEEE GET program https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93.)",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: 7012's place in this programme, on its own Xplore page (the note opens the Scope field). This is the quote research/myterms.json holds as PENDING on a 28 January 2026 Wayback snapshot; it is now FOUND on the live page. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "7003-2024 - IEEE Standard for Algorithmic Bias Considerations (IEEE Xplore document 10851955)",
+    "date": "2025-01-24",
+    "url": "https://ieeexplore.ieee.org/document/10851955",
+    "quote": "Date of Publication: 24 January 2025",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: latestNote (among the standards the page now lists, 7012-2025 was the most recently published until 7014.1-2026). 24 January 2025 is the latest Date of Publication among the ten listed standards other than 7012-2025 and 7014.1-2026. The page's list as it stood on 29 January 2026 was not seen (the Wayback Machine resets connections from this sandbox), so this rests on the current list. Dates of Publication on the twelve rendered Xplore pages, each --check 'Date of Publication: ...' FOUND on 2026-09-23 and each matching Xplore's embedded publicationDate (scratchpad get/doc-meta.json): 7010-2020 01 May 2020; 7000-2021 15 September 2021; 7007-2021 12 November 2021; 7005-2021 19 November 2021; 2089-2021 30 November 2021; 7001-2021 04 March 2022; 7002-2022 19 April 2022; 7014-2024 28 June 2024; 7009-2024 05 July 2024; 7003-2024 24 January 2025; 7012-2025 20 January 2026; 7014.1-2026 12 June 2026. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "Doc Searls Weblog (doc.searls.com)",
+    "title": "Now We Begin",
+    "date": "2026-01-29",
+    "url": "https://doc.searls.com/2026/01/29/now-we-begin/",
+    "quote": "The IEEE’s GET Program for AI Ethics and Governance Standards . Below is the 7000 series of standards, of which MyTerms is the latest one. All are free.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: latestNote (what Searls wrote). The stray space before the full stop is in the page text (a link ends there). fetch-text.py gets HTTP 403 from this site, so on 2026-09-23 the page was fetched with curl (HTTP 200, article:published_time 2026-01-29T22:40:00+00:00) and the quote was checked with the helper's own to_text and norm functions: FOUND. research/myterms.json already holds this quote as CONFIRMED. Searls calls the programme's list 'the 7000 series', though it also includes IEEE 2089-2021."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Background, Mission and Activities",
+    "date": "2017-12-04",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ec_about_us.pdf",
+    "quote": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems (A/IS) was launched in April of 2016",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (launch of the Global Initiative). The text carries no year; page footers read '12 December' and the PDF metadata gives creation on 4 December 2017 (the date used here). It lists IEEE P7000 to P7010 as approved projects. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Background, Mission and Activities",
+    "date": "2017-12-04",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ec_about_us.pdf",
+    "quote": "Version 1 of Ethically Aligned Design (EAD) was released in December of 2016",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (Ethically Aligned Design, version 1). --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Background, Mission and Activities",
+    "date": "2017-12-04",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ec_about_us.pdf",
+    "quote": "members of The IEEE Global Initiative are encouraged to recommend Standards Projects to IEEE based on their work.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (the Initiative's members recommended the standards projects). The next sentence introduces the list: 'Below are titles and descriptions for each of these approved IEEE Standards Projects.' --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Key Information, Milestones, and FAQs about The Initiative",
+    "date": "2020-11-22",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/faqs/gieais-faq-11.22.2020.pdf",
+    "quote": "The creation of over twelve standards working groups inspired by Ethically Aligned Design (EAD). The IEEE P7000 standards series addresses key socio-technical issues identified by EAD in pragmatic and actionable ways to put principles into practice for Artificial Intelligence Systems (AIS).",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (EAD inspired the P7000 working groups). Date from the file name (11.22.2020); the PDF metadata gives creation on 21 December 2020. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7000-2021: IEEE Standard Model Process for Addressing Ethical Concerns during System Design (standard page)",
+    "date": "2021-09-15",
+    "url": "https://standards.ieee.org/standard/7000-2021.html",
+    "quote": "PAR Approval 2016-06-30",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (the P7000 project was authorised on 30 June 2016). The page also gives 'Board Approval 2021-06-16' and 'Published: 2021-09-15', and says the PDF is available in the IEEE GET program. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7012-2025: IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+    "date": "2026-01-20",
+    "url": "https://standards.ieee.org/ieee/7012/7192/",
+    "quote": "PAR Approval 2017-12-06",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (the P7012 project was authorised on 6 December 2017) and latestNote (the page also gives 'Board Approval 2025-11-04', FOUND, which is why the designation reads '-2025' although Xplore published it on 20 January 2026). --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative 2.0 on Ethics of Autonomous and Intelligent Systems (Industry Connections activity page)",
+    "date": "2026-09-23",
+    "url": "https://standards.ieee.org/industry-connections/activities/ieee-global-initiative/",
+    "quote": "View the IEEE 7000™ Series of Standards via the IEEE GET Program™",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (IEEE SA's own link from the Global Initiative to the 7000 series in the GET Program). The page also lists an 'IEEE 7000 Series Awareness Campaign' among the Initiative's current aims. Undated page; the date is the fetch date. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Key Information, Milestones, and FAQs about The Initiative",
+    "date": "2020-11-22",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/faqs/gieais-faq-11.22.2020.pdf",
+    "quote": "The Personal Data and Agency chapter of EAD provides a blueprint for how this can work, along with a number of our IEEE P7000 Standards Working Groups, especially IEEE P7012, Standard for Machine Readable Personal Privacy Terms.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (the Initiative counts P7012 among its own P7000 working groups, so 7012's link to the Initiative does not rest on the general 'over twelve working groups' line alone). Date from the file name (11.22.2020); the PDF metadata gives creation on 21 December 2020. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Key Information, Milestones, and FAQs about The Initiative",
+    "date": "2020-11-22",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/faqs/gieais-faq-11.22.2020.pdf",
+    "quote": "The original version came out in 2016, received over 500 pages of feedback, and was released again in 2017(EAD/v2). The most recent version of EAD was released in 2019.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: origin (Ethically Aligned Design had three versions: 2016, 2017 and 2019). The FAQ's credit for inspiring 'over twelve standards working groups' goes to EAD as a whole, not to version 1, and the P7000 PAR (30 June 2016) came before version 1 (December 2016). 'EAD/v2' has no space before the parenthesis in the PDF. --check FOUND 2026-09-23."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7014.1-2026: IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (standard page)",
+    "date": "2026-06-12",
+    "url": "https://standards.ieee.org/ieee/7014.1/11609/",
+    "quote": "Board Approval 2026-02-12",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Supports: latestNote. The IEEE SA Standards Board approved 7014.1 on 12 February 2026, two weeks after Searls wrote on 29 January 2026, so it was not yet an approved standard when he called MyTerms 'the latest one'. The page also gives 'PAR Approval 2024-03-21' and 'Published: 2026-06-12' (FOUND), which matches the Xplore Date of Publication. --check FOUND 2026-09-23."
+   }
+  ],
+  "_verify": {
+   "status": "FIXED",
+   "issues": [
+    "Every quote was re-run with fetch-text.py --check on 2026-09-23. All 22 CONFIRMED quotes on reachable pages print FOUND: the series page ×7, the 2023 release ×2, the IEEE SA GET overview, Xplore 11559263, 11360682 ×2 and 10851955, the Initiative PDF ×3, the FAQ, the 7000-2021 and 7012 IEEE SA pages, and the Global Initiative 2.0 page. The Searls quote (source 16) gets HTTP 403 from the helper, whose browser User-Agent is refused. curl with its default User-Agent got HTTP 200, the helper's own to_text/norm functions found the quote, and article:published_time is 2026-01-29T22:40:00+00:00. CONFIRMED stands on that basis, as in research/myterms.json. The sponsor API (source 5) is still unreachable by the helper (it caches an empty body), so it stays PENDING.",
+    "name, tagline, count (12), asOf and access check out against the page text. The page says 'To download any of these standards, you must sign in with an IEEE Account. Don't have an account? Create Account now.' (FOUND) and says nothing about what the account costs. rest-4.json lists the same 12 standards, each Active and 'Approved'. The Date of Publication, DOI and status lines cited in source notes for 7014.1-2026, 7012-2025 and 7003-2024 all match their rendered Xplore pages and doc-meta.json. 7012's insertDate is 21 January 2026, a day after its Date of Publication.",
+    "description OK. The 17 January 2023 dateline and the headline 'IEEE Introduces New Program for Free Access to AI Ethics and Governance Standards' (FOUND) support 'launched'. The release credits 'IEEE SA, industry sponsors and government', and the page names TÜV SÜD as a partner. 'Each a PDF' rests on the IEEE SA GET overview's general rule ('standard(s) PDF file'), not on the series page, which says only 'provided at no cost'. That is acceptable. Whether an Xplore GET page existed before the 2023 release could not be checked, because the Wayback Machine resets connections from this sandbox.",
+    "origin FIXED, for two errors. (1) 'The series grew out of the IEEE Global Initiative' overreaches. One of the twelve listed standards, IEEE 2089-2021 (age-appropriate digital services, 5Rights), is not in the 7000 series, and no source ties it to the Initiative. IEEE SA's own link from the Initiative is to the 'IEEE 7000™ Series of Standards via the IEEE GET Program™'. The claim now covers the eleven 7000-series standards. (2) The parenthesis '(version 1, December 2016)' attaches the FAQ's credit to EAD version 1. The FAQ credits 'Ethically Aligned Design (EAD)' without a version and says there were versions in 2016, 2017 and 2019. The P7000 PAR (30 June 2016, FOUND) came six months before version 1 was released (December 2016, FOUND), so version 1 cannot have inspired every P7000 working group. The rewrite credits EAD generally and states that order. Also added: the FAQ's line singling out P7012 among 'our IEEE P7000 Standards Working Groups' (FOUND), which ties 7012 itself to the Initiative. The April 2016 launch, the 'encouraged to recommend Standards Projects' line and both PAR dates were re-checked: FOUND.",
+    "sponsors OK as data, but EY and AppliedAI rest only on Xplore's sponsor feed (source 5, PENDING). I fetched the four logo files the feed names myself. They show TÜV SÜD, IEEE SA, EY and '[ai] Initiative for Applied Artificial Intelligence', matching the feed. The 2023 release quotes an Ernst and Young partner but does not call EY a sponsor, and it lists 'IEEE SA' next to 'industry sponsors' rather than among them. The panel should present the four names as the page's sponsor panel, not as sponsors named in any IEEE text.",
+    "latestNote OK. Among the twelve listed standards, 7014.1-2026 (12 June 2026) is the most recently published and 7012-2025 (20 January 2026) the next, with 7003-2024 (24 January 2025) third. All twelve dates were re-checked FOUND on the rendered pages. The '-2025' approval year is confirmed by 'Board Approval 2025-11-04' (FOUND). Added a source: IEEE SA gives 7014.1's Board Approval as 2026-02-12 (FOUND), after Searls wrote on 29 January 2026, which supports the claim that 7012 was then the newest. The claim is properly limited to 'the standards the programme now lists', since the list as it stood in January 2026 was not seen.",
+    "Source notes corrected. Source 4 said the four sponsor logos were 'visible in the headless screenshot'. In series.png they are four broken-image icons: the logos did not load. Source 15 said 'the other ten standards listed before 7014.1-2026 appeared' and '7012 was the newest when Searls wrote', which assumes a past list nobody saw; reworded to the current list. The note on source 5 now records the logo corroboration. The note replacements for the CONFIRMED sources 4 and 15 are also given as fieldFixes (sources[4].note, sources[15].note), because apply-verdicts.py writes a sourceFix note only for PENDING or replaced sources.",
+    "The 7012 full text (scratchpad ieee7012.txt) was grepped for 'GET program', 'Global Initiative', 'Ethically Aligned', 'P7000', '7000', '2089', '7014' and 'sponsor'. It never mentions the GET programme, the Global Initiative, EAD or any sibling standard, and the program record claims no such cross-reference.",
+    "siteNotes (not records; reviewed but no verdict key): all 12 file:line citations and quoted texts match the repo as it stands: research/myterms.json 43, 69, 200, 209, 331, 2294, 2332, 3057, 4998 and 5014; tools/editorial.mjs 492; index.html 546. The data.js copies are at lines 10431, 11398 and 21885, and lines 2331, 5037 and 5043 match what the notes say about them. One caution on the suggested wording for myterms.json:2294: 'When Searls wrote ... it was the newest standard in that programme' should read 'the most recently published of the standards the programme now lists' (or cite 7014.1's 12 February 2026 Board Approval), because the programme's January 2026 list was not seen."
+   ]
+  }
+ },
+ "standards": [
+  {
+   "id": "ieee-2089-2021",
+   "number": "2089-2021",
+   "title": "IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children",
+   "kind": "Standard",
+   "published": "2021-11-30",
+   "doi": "10.1109/IEEESTD.2021.9627644",
+   "url": "https://ieeexplore.ieee.org/document/9627644",
+   "summary": "Establishes processes by which organisations can make their digital services age appropriate for situations where the users are children.",
+   "addressedTo": "organisation",
+   "addressedToEvidence": "A set of processes by which organizations seek to make their services age appropriate is established in this standard.",
+   "personalData": "partial",
+   "personalDataEvidence": "a digital environment that supports, by design and delivery, children safety, privacy, autonomy, agency, and health",
+   "note": "personalData is 'partial'. The purpose names privacy as one of five aims for children (safety, privacy, autonomy, agency, health). The full scope, in a reseller copy of IEEE's text (en-standard.eu), adds that 'Data privacy and security are complex and highly regulated areas of law, particularly as related to children and young people', as a caveat that users must observe the law. Neither text makes personal data the standard's subject. The scope lists 'Offers terms appropriate to children' among the framework's key areas. Its full text says the standard 'sets normative requirements for published terms, design, and delivery', so the terms in view are the service's published terms, made appropriate for children; nothing in the abstract, scope or purpose has the child proffer terms. The same scope says it explains how 'vendors, public institutions, and the educational sector' can meet the criteria. On IEEE Xplore the abstract and scope are cut off ('...'); the rest of the scope was read in the reseller copy, and the full abstract in Xplore's embedded metadata. The full PDF was not read.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 2089-2021 - IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children (IEEE Xplore document page)",
+     "date": "2021-11-30",
+     "url": "https://ieeexplore.ieee.org/document/9627644",
+     "quote": "A set of processes by which organizations seek to make their services age appropriate is established in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first sentence: the standard sets processes that organisations run. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 2089-2021 - IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children (IEEE Xplore document page)",
+     "date": "2021-11-30",
+     "url": "https://ieeexplore.ieee.org/document/9627644",
+     "quote": "establishes a set of processes for developing age appropriate digital services for situations where users are children",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope: the processes apply where the users are children. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 2089-2021 - IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children (IEEE Xplore document page)",
+     "date": "2021-11-30",
+     "url": "https://ieeexplore.ieee.org/document/9627644",
+     "quote": "c) Offers terms appropriate to children",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope: one of the framework's listed key areas. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 2089-2021 - IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children (IEEE Xplore document page)",
+     "date": "2021-11-30",
+     "url": "https://ieeexplore.ieee.org/document/9627644",
+     "quote": "This standard provides a set of processes for digital services when end users are children, and, by doing so, aids in the tailoring of the services that are provided so that they are age appropriate. This is essential to creating a digital environment that supports, by design and delivery, children safety, privacy, autonomy, agency, and health",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose: privacy is named alongside safety, autonomy, agency and health. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "European Standards (en-standard.eu), standards reseller",
+     "title": "IEEE 2089-2021 - IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children (product listing, description)",
+     "date": "2021-11-30",
+     "url": "https://www.en-standard.eu/ieee-2089-2021-ieee-standard-for-an-age-appropriate-digital-services-framework-based-on-the-5rights-principles-for-children/",
+     "quote": "This standard provides a specific impact rating system and evaluation criteria and explains how vendors, public institutions, and the educational sector can meet the criteria. This standard sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people. Data privacy and security are complex and highly regulated areas of law, particularly as related to children and young people.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The listing's description reproduces IEEE's scope, purpose and abstract. Its first paragraph begins word for word like the Xplore 'Scope:' field and continues past the point where Xplore cuts it off ('explains how vendors, public institutions, an...'). Supports: note (the terms are the service's 'published terms'; vendors, public institutions and the educational sector meet the criteria; data privacy named as a regulated area). The listing shows 'Released: 30.11.2021', which matches the Xplore Date of Publication; the page itself is undated and was read 2026-09-23. A secondary copy of IEEE's text, not an IEEE page. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 2089-2021 (standard page on standards.ieee.org)",
+     "date": "2021-11-30",
+     "url": "https://standards.ieee.org/ieee/2089/7633/",
+     "quote": "Board Approval 2021-11-09",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2021' in the designation is the approval year. The page also gives 'Published: 2021-11-30', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "All four quotes, addressedToEvidence and personalDataEvidence re-checked: FOUND on the Xplore page. Title, Date of Publication (30 November 2021 = published 2021-11-30), DOI 10.1109/IEEESTD.2021.9627644 and kind 'Standard' match the page and doc-meta.json. IEEE SA's page records Board Approval 2021-11-09 and Published 2021-11-30 (--check FOUND), consistent with the '-2021' designation. Listed on the GET series page.",
+     "The note's reading of 'c) Offers terms appropriate to children' ('read with the abstract, the terms are offered by the service to the child, though the page does not say who drafts them') was an inference. The part of the scope that Xplore cuts off settles it. A reseller copy of IEEE's scope text (en-standard.eu, --check FOUND) goes on: 'This standard sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people.' The terms in view are the service's published terms. The same passage names 'vendors, public institutions, and the educational sector' as those who meet the criteria, which supports addressedTo 'organisation'. The note is rewritten and the source added.",
+     "personalData 'partial' holds, on better evidence than the note gave. Besides privacy among the purpose's five aims, the full scope says 'Data privacy and security are complex and highly regulated areas of law, particularly as related to children and young people.' That sentence is a caveat about legal compliance, not a statement that personal data is the standard's subject, so the call stays 'partial' and does not become 'central'.",
+     "Summary OK: it matches the abstract ('organizations seek to make their services age appropriate') and the scope ('situations where users are children'). The full abstract in doc-meta.json ('help organizations ask the right relevant questions of their services') also supports 'organisation'."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7000-2021",
+   "number": "7000-2021",
+   "title": "IEEE Standard Model Process for Addressing Ethical Concerns during System Design",
+   "kind": "Standard",
+   "published": "2021-09-15",
+   "doi": "10.1109/IEEESTD.2021.9536679",
+   "url": "https://ieeexplore.ieee.org/document/9536679",
+   "summary": "Establishes processes by which organisations can consider ethical values, elicited and prioritised with stakeholders, throughout concept exploration and development, and trace them into the system design.",
+   "addressedTo": "organisation",
+   "addressedToEvidence": "A set of processes by which organizations can include consideration of ethical values throughout the stages of concept exploration and development is established by this standard.",
+   "personalData": "partial",
+   "personalDataEvidence": "individual and societal ethical values, such as transparency, sustainability, privacy, fairness, and accountability",
+   "note": "addressedTo: the abstract names organisations, the scope names 'engineers and technologists'; either way it sets a process run in design work, not properties of the system, so 'organisation'. personalData is a weak 'partial': privacy appears only as one example value in the purpose, and the scope says the standard 'does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy'. Personal data is not mentioned. The abstract is cut off on the page ('...').",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7000-2021 - IEEE Standard Model Process for Addressing Ethical Concerns during System Design (IEEE Xplore document page)",
+     "date": "2021-09-15",
+     "url": "https://ieeexplore.ieee.org/document/9536679",
+     "quote": "A set of processes by which organizations can include consideration of ethical values throughout the stages of concept exploration and development is established by this standard. Management and engineering in transparent communication with selected stakeholders for ethical values elicitation and prioritization is supported by this standard",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first two sentences: organisational processes for eliciting and prioritising ethical values with stakeholders. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7000-2021 - IEEE Standard Model Process for Addressing Ethical Concerns during System Design (IEEE Xplore document page)",
+     "date": "2021-09-15",
+     "url": "https://ieeexplore.ieee.org/document/9536679",
+     "quote": "IEEE Std 7000(TM) does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, last sentence: privacy is named only to say the standard gives no specific algorithm-level guidance on it. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7000-2021 - IEEE Standard Model Process for Addressing Ethical Concerns during System Design (IEEE Xplore document page)",
+     "date": "2021-09-15",
+     "url": "https://ieeexplore.ieee.org/document/9536679",
+     "quote": "The goal of this standard is to enable organizations to design systems with explicit consideration of individual and societal ethical values, such as transparency, sustainability, privacy, fairness, and accountability, as well as values typically considered in system engineering, such as efficiency and effectiveness.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, first sentence: privacy is one example value among several. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7000-2021 (standard page on standards.ieee.org)",
+     "date": "2021-09-15",
+     "url": "https://standards.ieee.org/ieee/7000/6781/",
+     "quote": "All sizes and types of organizations using their own life cycle models are relevant to this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: addressedTo 'organisation'. This is the last sentence of the abstract, which Xplore cuts off ('All sizes and...'); IEEE SA's page gives the abstract in full. The same page gives 'Board Approval 2021-06-16' and 'Published: 2021-09-15'. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "All three quotes and both evidence strings re-checked: FOUND. Title, Date of Publication (15 September 2021), DOI 10.1109/IEEESTD.2021.9536679 and kind match. IEEE SA records Board Approval 2021-06-16 and Published 2021-09-15 (--check FOUND). Listed on the GET series page.",
+     "Summary says more than the abstract. The abstract says organisations can 'include consideration of ethical values'. The summary has them 'build ethical values ... into system design', which is stronger than the abstract. The abstract's own link to design is traceability: 'traceability of ethical values through an operational concept, value propositions, and value dispositions in the system design'. The summary is rewritten to follow the abstract.",
+     "addressedTo 'organisation' holds. The abstract and purpose name organisations, and the full abstract ends 'All sizes and types of organizations using their own life cycle models are relevant to this standard.' (FOUND on IEEE SA's page; added). The scope names 'engineers and technologists', which the note already acknowledges.",
+     "personalData 'partial' is kept but is the weakest call in the chunk. The page never mentions personal data or data. Privacy appears only as one example value in the purpose, and the scope says the standard 'does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy'. The panel badge 'Personal data: one concern' is at the edge of what the page supports, so the panel's prose should not describe 7000 as a standard about personal data. The note already says this.",
+     "Minor: source[0]'s note calls its quote the abstract's 'first two sentences'. The quote actually stops partway through the second sentence (the sentence continues ', involving traceability of ethical values...'). This does not affect verification."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7001-2021",
+   "number": "7001-2021",
+   "title": "IEEE Standard for Transparency of Autonomous Systems",
+   "kind": "Standard",
+   "published": "2022-03-04",
+   "doi": "10.1109/IEEESTD.2022.9726144",
+   "url": "https://ieeexplore.ieee.org/document/9726144",
+   "summary": "Sets out measurable, testable levels of transparency so that autonomous systems can be objectively assessed and their level of compliance determined.",
+   "addressedTo": "system",
+   "addressedToEvidence": "Measurable, testable levels of transparency, so that autonomous systems can be objectively assessed, and levels of compliance determined, are described in this standard.",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in abstract, scope or purpose",
+   "note": "The number carries 2021, the year IEEE SA's Standards Board approved it (8 December 2021). The Xplore Date of Publication is 04 March 2022 (DOI 10.1109/IEEESTD.2022.9726144), and 'published' follows the page. On Xplore the scope is cut off after 'Harm might also be indirect, ...'. The full scope, reproduced on the OECD.AI catalogue (compiled by the AI Standards Hub), continues 'such as unauthorized persons gaining access to confidential data'. It brings the data sets used to train machine-learning systems into scope. It says the standard 'defines a set of testable levels of transparency and a standard set of requirements that shall be met' rather than advising designers how to build transparency in. Neither personal data nor privacy is named in the abstract, the full scope or the purpose, so 'none' stands; the confidential-data example of indirect harm is the nearest the text comes. The full PDF was not read.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (IEEE Xplore document page)",
+     "date": "2022-03-04",
+     "url": "https://ieeexplore.ieee.org/document/9726144",
+     "quote": "Measurable, testable levels of transparency, so that autonomous systems can be objectively assessed, and levels of compliance determined, are described in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract: the standard sets levels that autonomous systems themselves are assessed against. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (IEEE Xplore document page)",
+     "date": "2022-03-04",
+     "url": "https://ieeexplore.ieee.org/document/9726144",
+     "quote": "This standard is broadly applicable to all autonomous systems, including both physical and non-physical systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, first sentence: the subject is the autonomous system. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (IEEE Xplore document page)",
+     "date": "2022-03-04",
+     "url": "https://ieeexplore.ieee.org/document/9726144",
+     "quote": "The purpose of this standard is to set out measurable, testable levels of transparency for autonomous systems. The general principle behind this standard is that it should always be possible to understand why and how the system behaved the way it did.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, first two sentences. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "OECD.AI Catalogue of Tools & Metrics (entry compiled by the AI Standards Hub)",
+     "title": "IEEE 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (catalogue entry reproducing the standard's scope)",
+     "date": "2026-09-23",
+     "url": "https://oecd.ai/en/catalogue/tools/ieee-7001-2021-ieee-standard-for-transparency-of-autonomous-systems",
+     "quote": "Harm might also be indirect, such as unauthorized persons gaining access to confidential data or a victimless crime that affect no-one in particular yet have an impact upon society or the environment. Intelligent autonomous systems that use machine learning are also within scope. The data sets used to train such systems are also within the scope of this standard when considering the transparency of the system as a whole.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: note and personalData 'none'. This is the part of the scope that Xplore cuts off. The entry's first paragraph matches the Xplore 'Scope:' text word for word, and the entry ends '© IEEE 2022 All rights reserved. The information about this standard has been compiled by the AI Standards Hub'. The scope text names neither personal data nor privacy (the only matches for those words on the page are OECD.AI's own navigation). The entry is undated; the date is the day it was read. A secondary copy of IEEE's text. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "OECD.AI Catalogue of Tools & Metrics (entry compiled by the AI Standards Hub)",
+     "title": "IEEE 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (catalogue entry reproducing the standard's scope)",
+     "date": "2026-09-23",
+     "url": "https://oecd.ai/en/catalogue/tools/ieee-7001-2021-ieee-standard-for-transparency-of-autonomous-systems",
+     "quote": "This standard does not provide the designer with advice on how to design transparency into their system. Instead, it defines a set of testable levels of transparency and a standard set of requirements that shall be met in order to satisfy each of these levels.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: addressedTo 'system'. The standard sets requirements that the system meets, not a process for designers. This is from the part of the scope that Xplore cuts off. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7001-2021 (standard page on standards.ieee.org)",
+     "date": "2022-03-04",
+     "url": "https://standards.ieee.org/ieee/7001/6929/",
+     "quote": "Board Approval 2021-12-08",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2021' in the designation is the approval year. The page also gives 'Published: 2022-03-04', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "All three quotes and addressedToEvidence re-checked: FOUND. Title, Date of Publication (04 March 2022), DOI 10.1109/IEEESTD.2022.9726144 and kind match. The '-2021' designation is the approval year: IEEE SA records Board Approval 2021-12-08 and Published 2022-03-04 (--check FOUND). 'published' 2022-03-04 is correct. Listed on the GET series page.",
+     "The note said the scope's remainder after 'Harm might also be indirect, ...' was not checked. The full scope was found, reproduced on the OECD.AI catalogue (compiled by the AI Standards Hub, '© IEEE 2022'). Its first paragraph matches the Xplore text word for word. It continues: 'such as unauthorized persons gaining access to confidential data or a victimless crime...', and it brings 'The data sets used to train such systems' into scope. Neither 'personal data' nor 'privacy' appears in the abstract, full scope or purpose, so personalData 'none' stands. The confidential-data example is the nearest the text comes, and the note now says so.",
+     "addressedTo 'system' is strengthened by the full scope: 'This standard does not provide the designer with advice on how to design transparency into their system. Instead, it defines a set of testable levels of transparency and a standard set of requirements that shall be met in order to satisfy each of these levels.' The same scope also says the document 'does address the transparency of the engineering process', which is a secondary element.",
+     "Summary OK: it follows the abstract closely."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7002-2022",
+   "number": "7002-2022",
+   "title": "IEEE Standard for Data Privacy Process",
+   "kind": "Standard",
+   "published": "2022-04-19",
+   "doi": "10.1109/IEEESTD.2022.9760247",
+   "url": "https://ieeexplore.ieee.org/document/9760247",
+   "summary": "Defines requirements for a systems engineering process for privacy considerations in products, services and systems that use employee, customer or other external users' personal data.",
+   "addressedTo": "organisation",
+   "addressedToEvidence": "It applies to organizations and projects that are developing and deploying products, systems, processes, and applications that involve personal information.",
+   "personalData": "central",
+   "personalDataEvidence": "privacy-oriented considerations regarding products, services, and systems utilizing employee, customer, or other external user's personal data",
+   "note": "Not borderline on either field. On the Xplore page the organisation using the data runs the process, and the people whose data it is appear only as 'employee, customer, or other external user'. The full PDF was not read, so whether the standard itself gives those people any active role was not checked. The abstract, scope and purpose are shown in full on the page.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7002-2022 - IEEE Standard for Data Privacy Process (IEEE Xplore document page)",
+     "date": "2022-04-19",
+     "url": "https://ieeexplore.ieee.org/document/9760247",
+     "quote": "This standard defines requirements for a systems engineering process for privacy-oriented considerations regarding products, services, and systems utilizing employee, customer, or other external user's personal data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, first sentence: personal data is the subject. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7002-2022 - IEEE Standard for Data Privacy Process (IEEE Xplore document page)",
+     "date": "2022-04-19",
+     "url": "https://ieeexplore.ieee.org/document/9760247",
+     "quote": "It applies to organizations and projects that are developing and deploying products, systems, processes, and applications that involve personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope: the standard is addressed to organisations and projects. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7002-2022 - IEEE Standard for Data Privacy Process (IEEE Xplore document page)",
+     "date": "2022-04-19",
+     "url": "https://ieeexplore.ieee.org/document/9760247",
+     "quote": "Privacy impact assessments (PIAs) are described as a tool for both identifying where privacy controls and measures are needed and for confirming they are in place.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, last sentence before the GET Program note. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7002-2022 - IEEE Standard for Data Privacy Process (IEEE Xplore document page)",
+     "date": "2022-04-19",
+     "url": "https://ieeexplore.ieee.org/document/9760247",
+     "quote": "The purpose of this standard is to provide an overall methodological approach that specifies practices to manage privacy issues within the systems engineering life cycle processes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, in full. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "All four quotes and both evidence strings re-checked: FOUND. Title, Date of Publication (19 April 2022), DOI 10.1109/IEEESTD.2022.9760247 and kind match. IEEE SA records Board Approval 2022-02-09 and Published 2022-04-19 (--check FOUND). Listed on the GET series page. The abstract, scope and purpose are indeed shown in full, with no ellipsis.",
+     "Summary, addressedTo 'organisation' and personalData 'central' are all supported by the scope.",
+     "The note says 'the people whose data it is appear only as \"employee, customer, or other external user\"' without limiting that to the Xplore text. The full PDF was not read (scratchpad get/ieee7002.txt is empty), so the claim can only be about the page. The full 7005 purpose shows how a cut-off or unread text can give the data subject a more active role than the page suggests. The note is rewritten to limit the claim to the page."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7003-2024",
+   "number": "7003-2024",
+   "title": "IEEE Standard for Algorithmic Bias Considerations",
+   "kind": "Standard",
+   "published": "2025-01-24",
+   "doi": "10.1109/IEEESTD.2025.10851955",
+   "url": "https://ieeexplore.ieee.org/document/10851955",
+   "summary": "Describes processes and methodologies to help those creating algorithms address bias, including criteria for choosing validation data sets, communicating application boundaries and managing user expectations.",
+   "addressedTo": "organisation",
+   "addressedToEvidence": "The processes and methodologies to help users address issues of bias in the creation of algorithms are described in this standard.",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in abstract, scope or purpose",
+   "note": "addressedTo is borderline between 'organisation' and 'system'. The standard's content concerns how algorithms and AIS are built and validated, but the page describes processes and methodologies for their creators, not levels or properties the system must meet. 'Users' in the abstract means users of the standard. The purpose names 'individuals or organizations creating an AIS', so 'organisation' here also covers individual creators. personalData: the scope mentions 'vast and varied data sources from public and private spheres', which is not a mention of personal data or privacy. The number carries 2024, the year IEEE SA's Standards Board approved it (11 December 2024); the Xplore Date of Publication is 24 January 2025. On Xplore the scope is cut off ('...'). The rest of it, as reproduced by the AI Transparency Institute on 26 January 2025, names neither personal data nor privacy. The full PDF was not read.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7003-2024 - IEEE Standard for Algorithmic Bias Considerations (IEEE Xplore document page)",
+     "date": "2025-01-24",
+     "url": "https://ieeexplore.ieee.org/document/10851955",
+     "quote": "The processes and methodologies to help users address issues of bias in the creation of algorithms are described in this standard. Elements include but are not limited to: criteria for the selection of validation data sets for bias quality control, guidelines on establishing and communicating the application boundaries for which the algorithm has been designed and validated to guard against unintended consequences arising from out-of-bound application of algorithms, and suggestions for user expectation management to help mitigate bias due to incorrect interpretation of systems outputs by users (e.g., correlation vs. causation).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, both sentences before the GET Program note. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7003-2024 - IEEE Standard for Algorithmic Bias Considerations (IEEE Xplore document page)",
+     "date": "2025-01-24",
+     "url": "https://ieeexplore.ieee.org/document/10851955",
+     "quote": "This standard is designed to provide individuals or organizations creating an AIS, certification-oriented processes and methodologies to produce clearly articulated accountability and clarity around how an AIS targets, assesses and influences the stakeholders of said AIS.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, first sentence: addressed to those creating an AIS. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "AI Transparency Institute",
+     "title": "7003-2024 – IEEE Standard for Algorithmic Bias Considerations (post reproducing the Xplore abstract and scope)",
+     "date": "2025-01-26",
+     "url": "https://aitransparencyinstitute.com/7003-2024-ieee-standard-for-algorithmic-bias-considerations/",
+     "quote": "Algorithms enable the exploitation of vast and varied data sources from public and private spheres to support human decision-making and actions that serve the diverse interests of the societies and economies in which they operate. However, alongside the benefits, their use is not without maleficent risk. This standard describes processes and methodologies to help users address issues of bias in the creation of algorithms and models.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: note and personalData 'none'. The post, dated 26/01/2025, reproduces the standard's 'Scope:' text, which begins word for word like the Xplore field. The quote bridges the point where Xplore cuts the scope off ('...interests of the societie...'). The scope goes on to list the same elements as the abstract. The words 'privacy', 'personal data' and 'personal information' do not appear anywhere on the page. A secondary copy of IEEE's text. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7003-2024 (standard page on standards.ieee.org)",
+     "date": "2025-01-24",
+     "url": "https://standards.ieee.org/ieee/7003/11357/",
+     "quote": "Board Approval 2024-12-11",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2024' in the designation is the approval year. The page also gives 'Published: 2025-01-24', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Both quotes and addressedToEvidence re-checked: FOUND. Title, Date of Publication (24 January 2025), DOI 10.1109/IEEESTD.2025.10851955 and kind match. The '-2024' designation is the approval year: IEEE SA records Board Approval 2024-12-11 and Published 2025-01-24 (--check FOUND). Listed on the GET series page.",
+     "The note said the cut-off scope's remainder was not checked. The rest of the scope was found, reproduced by the AI Transparency Institute on 26 January 2025 (--check FOUND). It continues from 'public and private spheres' with 'However, alongside the benefits, their use is not without maleficent risk. This standard describes processes and methodologies to help users address issues of bias in the creation of algorithms and models' and then lists the same elements as the abstract. Neither personal data nor privacy appears anywhere on that page, so personalData 'none' stands.",
+     "addressedTo 'organisation' is kept as the note's borderline call. The purpose addresses 'individuals or organizations creating an AIS', so the badge 'An organisation's process' simplifies. The note now says 'organisation' also covers individual creators.",
+     "Summary OK: 'those creating algorithms' reads the abstract's 'users' through the purpose's 'individuals or organizations creating an AIS', and the three listed elements match the abstract."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7005-2021",
+   "number": "7005-2021",
+   "title": "IEEE Standard for Transparent Employer Data Governance",
+   "kind": "Standard",
+   "published": "2021-11-19",
+   "doi": "10.1109/IEEESTD.2021.9618905",
+   "url": "https://ieeexplore.ieee.org/document/9618905",
+   "summary": "Describes methodologies, with metrics and conformance criteria, for how employers access, collect, store, use, share and destroy employee data, in processes that can be explained to the employee as data subject; its stated purpose, inspired by the GDPR, is that workers have control and influence over their personal information.",
+   "addressedTo": "organisation",
+   "addressedToEvidence": "Specific methodologies to help employers in accessing, collecting, storing, utilizing, sharing, and destroying employee data are described in this standard.",
+   "personalData": "central",
+   "personalDataEvidence": "The data subject needs to understand the underlying issues of personal data collection, the processing of personal data, storage of personal data, and how the personal data is shared and used.",
+   "note": "The employer runs the governance: the abstract addresses employers, and the purpose addresses 'organizations'. The employee is the data subject. On Xplore the purpose is cut off ('...'). Its remainder, read in a reseller copy of IEEE's text (en-standard.eu), says each issue is addressed in terms of 'the data subject's options if the personal data is compromised'. It adds that, inspired by the GDPR, the standard 'is designed so that workers ... will have control and influence over the personal information' about them. So the worker is given options and influence within governance the employer runs. What those options are, and whether workers have any part in setting the terms, would need the full PDF, which was not read. Certification processes, success criteria and execution procedures are stated to be out of scope.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7005-2021 - IEEE Standard for Transparent Employer Data Governance (IEEE Xplore document page)",
+     "date": "2021-11-19",
+     "url": "https://ieeexplore.ieee.org/document/9618905",
+     "quote": "Specific methodologies to help employers in accessing, collecting, storing, utilizing, sharing, and destroying employee data are described in this standard. Specific metrics and conformance criteria regarding these types of uses from trusted global partners and how third parties and employers can meet them are provided in this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first two sentences: methodologies addressed to employers. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7005-2021 - IEEE Standard for Transparent Employer Data Governance (IEEE Xplore document page)",
+     "date": "2021-11-19",
+     "url": "https://ieeexplore.ieee.org/document/9618905",
+     "quote": "This standard is designed to provide organizations with a set of clear requirements and guidelines for storing, protecting, and utilizing employee data, where, once deployed, will support ethical and transparent behavior. One important objective addressed in this standard is the need for well-defined processes and documents that can be explained in non-technical terms understood by a data subject. The data subject needs to understand the underlying issues of personal data collection, the processing of personal data, storage of personal data, and how the personal data is shared and used.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, first three sentences: personal data is the subject; the data subject is to be informed. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "European Standards (en-standard.eu), standards reseller",
+     "title": "IEEE 7005-2021 - IEEE Standard for Transparent Employer Data Governance (product listing, description)",
+     "date": "2021-11-19",
+     "url": "https://www.en-standard.eu/ieee-7005-2021-ieee-standard-for-transparent-employer-data-governance/",
+     "quote": "Each issue is addressed in terms of the means used to protect the data subject's personal data and the data subject's options if the personal data is compromised. Inspired by the European Union (EU) General Data Protection Regulation (GDPR) legislation, the standard is designed so that workers facing widespread automation issues potentially displacing their jobs will have control and influence over the personal information that directly represents a core asset of their identity and lives whether derived from work-flow monitoring or personal data storage.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: summary (stated aim of worker control and influence) and note. This is the end of the standard's purpose, which Xplore cuts off ('Each issue is addressed in terms of the means used to protect the data s...'). The listing's second description paragraph begins word for word like the Xplore 'Purpose:' field. The listing shows 'Released: 19.11.2021', matching the Xplore Date of Publication; the page itself is undated and was read 2026-09-23. A secondary copy of IEEE's text, not an IEEE page. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7005-2021 (standard page on standards.ieee.org)",
+     "date": "2021-11-19",
+     "url": "https://standards.ieee.org/ieee/7005/7014/",
+     "quote": "Board Approval 2021-09-23",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2021' in the designation is the approval year. The page also gives 'Published: 2021-11-19', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Both quotes and both evidence strings re-checked: FOUND. Title, Date of Publication (19 November 2021), DOI 10.1109/IEEESTD.2021.9618905 and kind match. IEEE SA records Board Approval 2021-09-23 and Published 2021-11-19 (--check FOUND). Listed on the GET series page.",
+     "The note's claim that the employee appears 'as a \"data subject\" who needs to understand how their data is handled, not as a party who acts' is contradicted by the rest of the purpose, which Xplore cuts off ('...the means used to protect the data s...'). A reseller copy of IEEE's text (en-standard.eu, --check FOUND) continues: 'Each issue is addressed in terms of the means used to protect the data subject's personal data and the data subject's options if the personal data is compromised. Inspired by the European Union (EU) General Data Protection Regulation (GDPR) legislation, the standard is designed so that workers ... will have control and influence over the personal information that directly represents a core asset of their identity and lives'. The stated design aim gives workers options, control and influence. The note is rewritten.",
+     "The summary is one-sided and slightly misattributes. It lists only the employer's data uses ('help employers access, collect, store, use, share and destroy employee data'). It leaves out the transparency aim in the title and purpose, and the stated aim of worker control. It also runs the 'metrics and conformance criteria' into 'to help employers access...', although the abstract ties them to 'these types of uses from trusted global partners and how third parties and employers can meet them'. The summary is rewritten from the abstract and the full purpose.",
+     "addressedTo 'organisation' stands: the abstract addresses employers and the purpose 'organizations'. personalData 'central' stands, and the full purpose strengthens it."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7007-2021",
+   "number": "7007-2021",
+   "title": "IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems",
+   "kind": "Standard",
+   "published": "2021-11-12",
+   "doi": "10.1109/IEEESTD.2021.9611206",
+   "url": "https://ieeexplore.ieee.org/document/9611206",
+   "summary": "Establishes a set of ontologies (concepts, definitions, axioms and use cases) to support ethically driven methodologies for designing robots and automation systems, usable as a guideline or as a reference taxonomy shared across disciplines.",
+   "addressedTo": "system",
+   "addressedToEvidence": "ethically driven methodologies for the design of robots and automation (R&A) systems",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in the abstract (complete on the IEEE SA page), the scope, or the visible part of the purpose (cut off on the Xplore page)",
+   "note": "addressedTo is a borderline 'system': the standard is a reference vocabulary (a set of ontologies, described in the abstract as usable 'as a guideline or as a reference \"taxonomy\"'), not a process an organisation runs and not a list of design requirements; its declared object is the design of robots and automation systems, which is the closest fit. 'Ontological' in the title describes the content; the document type is a Standard (IEEE SA: 'Active Standard'). The abstract is cut off on the Xplore page ('Users of t...') but complete on the IEEE SA page, where the remainder concerns formal logic (Common Logic Interchange Format) and a link; the purpose is cut off on the Xplore page ('The use of ontologies for representing ...') and its remainder was not seen.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7007-2021 - IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (IEEE Xplore document page)",
+     "date": "2021-11-12",
+     "url": "https://ieeexplore.ieee.org/document/9611206",
+     "quote": "A set of ontologies with different abstraction levels that contain concepts, definitions, axioms, and use cases that assist in the development of ethically driven methodologies for the design of robots and automation systems is established by this standard. It focuses on the robotics and automation domain without considering any particular applications and can be used in multiple ways, for instance, during the development of robotics and automation systems as a guideline or as a reference \"taxonomy\" to enable clear and precise communication among members from different communities that include robotics and automation, ethics, and correlated areas.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first two sentences: a set of ontologies for the design of robots and automation systems, also usable as a shared reference taxonomy. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7007-2021 - IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (IEEE Xplore document page)",
+     "date": "2021-11-12",
+     "url": "https://ieeexplore.ieee.org/document/9611206",
+     "quote": "This standard establishes a set of ontologies with different abstraction levels that contain concepts, definitions, axioms, and use cases that are deemed relevant and appropriate to establish ethically driven methodologies for the design of robots and automation (R&A) systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope: the ontologies serve ethically driven methodologies for designing robots and automation systems. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7007-2021 - IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (IEEE Xplore document page)",
+     "date": "2021-11-12",
+     "url": "https://ieeexplore.ieee.org/document/9611206",
+     "quote": "The purpose of the standard is to establish a set of definitions and their relationships to enable the development of R&A in accordance with shared values and internationally accepted ethical principles that facilitate trust in the creation and use of R&A.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, first sentence: definitions and relationships to support ethically aligned development of robots and automation systems. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7007-2021 — IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (standard page)",
+     "date": "2021-11-12",
+     "url": "https://standards.ieee.org/ieee/7007/7070/",
+     "quote": "PAR Approval 2017-05-18 Board Approval 2021-09-23 History Published: 2021-11-12",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Board approval in 2021 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23 (https://standards.ieee.org/standard/7007-2021.html redirects here)."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7007-2021 — IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (standard page)",
+     "date": "2021-11-12",
+     "url": "https://standards.ieee.org/ieee/7007/7070/",
+     "quote": "Users of this standard need to have a minimal knowledge of formal logics to understand the axiomatization expressed in Common Logic Interchange Format.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The part of the abstract that is cut off on the Xplore page ('Users of t...'); the full abstract has no mention of privacy or personal data. fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked: all three quotes re-run with fetch-text.py --check, all FOUND on https://ieeexplore.ieee.org/document/9611206. Title, DOI 10.1109/IEEESTD.2021.9611206 and Date of Publication '12 November 2021' match the page and doc-meta.json. The IEEE SA standard page gives Board Approval 2021-09-23, so the 2021 in the number is the approval year, and Published 2021-11-12.",
+     "kind 'Ontological Standard' is not an IEEE document type. 'Ontological' describes the content, and IEEE SA gives its status as 'Active Standard'. The panel renderer (js/app.js buildGetSeries) shows any kind other than 'Standard' as a badge beside the number. This tile would then carry an 'Ontological Standard' badge that the other Standards do not, and it would repeat the title. Set kind to 'Standard'.",
+     "The summary shortens 'ontologies ... that assist in the development of ethically driven methodologies for the design of robots and automation systems' to 'for ethically driven design'. The ontologies support design methodologies; they do not govern design directly. A reworded summary is given below.",
+     "personalDataEvidence says there is no mention of personal data or privacy 'in abstract, scope or purpose', but the Purpose is cut off on the Xplore page ('The use of ontologies for representing ...', --check FOUND), and the rest was not seen. The abstract is complete on the IEEE SA page (and in doc-meta.json): its missing sentences are about formal logic and a link, with no mention of privacy. The evidence needs that qualification.",
+     "addressedTo 'system' is kept as a borderline call, and the note already says so. The object is the design of R&A systems, which fits the panel's 'The system's design' label better than 'An organisation's process'.",
+     "personalData 'none' is supported by what is visible."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7009-2024",
+   "number": "7009-2024",
+   "title": "IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems",
+   "kind": "Standard",
+   "published": "2024-07-05",
+   "doi": "10.1109/IEEESTD.2024.10582898",
+   "url": "https://ieeexplore.ieee.org/document/10582898",
+   "summary": "Establishes a practical technical baseline of methodologies and tools for developing, implementing and using effective fail-safe mechanisms in autonomous and semi-autonomous systems.",
+   "addressedTo": "system",
+   "addressedToEvidence": "effective fail-safe mechanisms in autonomous and semi-autonomous systems",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in the abstract or scope (the page shows no Purpose section)",
+   "note": "addressedTo: the object is a mechanism built into autonomous and semi-autonomous systems, so 'system'; the abstract also names 'developers, as well as users and regulators' as those who design the mechanisms, but it sets no organisational process. The page gives no Purpose section; the Scope repeats the abstract almost word for word.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7009-2024 - IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems (IEEE Xplore document page)",
+     "date": "2024-07-05",
+     "url": "https://ieeexplore.ieee.org/document/10582898",
+     "quote": "A practical, technical baseline of specific methodologies and tools for the development, implementation, and use of effective fail-safe mechanisms in autonomous and semi-autonomous systems is established in this standard. The standard serves as the basis for developers, as well as users and regulators, to design fail-safe mechanisms in a robust, transparent, and accountable manner.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, in full: a technical baseline for fail-safe mechanisms in autonomous and semi-autonomous systems. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7009-2024 - IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems (IEEE Xplore document page)",
+     "date": "2024-07-05",
+     "url": "https://ieeexplore.ieee.org/document/10582898",
+     "quote": "This standard establishes a practical, technical baseline of specific methodologies and tools for the development, implementation, and use of effective fail-safe mechanisms in autonomous and semi-autonomous systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, first sentence (the page gives no Purpose section). Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7009-2024 — IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems (standard page)",
+     "date": "2024-07-05",
+     "url": "https://standards.ieee.org/ieee/7009/7096/",
+     "quote": "PAR Approval 2017-06-15 Board Approval 2024-05-20 History ANSI Approved: 2025-07-02 Published: 2024-07-05",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Board approval in 2024 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked: both quotes FOUND on https://ieeexplore.ieee.org/document/10582898. Title, DOI 10.1109/IEEESTD.2024.10582898 and Date of Publication '05 July 2024' match the page and doc-meta.json. IEEE SA gives Board Approval 2024-05-20, which matches the 2024 in the number, and Published 2024-07-05.",
+     "The summary matches the abstract. addressedTo 'system' is supported: the standard sets fail-safe mechanisms in the systems, and the developers, users and regulators it names are the ones who design them. personalData 'none' is supported, because the abstract and scope are shown in full.",
+     "Minor: personalDataEvidence cites 'abstract, scope or purpose', but the page has no Purpose section ('Purpose:' --check NOT-FOUND), as the note itself says."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7010-2020",
+   "number": "7010-2020",
+   "title": "IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being",
+   "kind": "Recommended Practice",
+   "published": "2020-05-01",
+   "doi": "10.1109/IEEESTD.2020.9084219",
+   "url": "https://ieeexplore.ieee.org/document/9084219",
+   "summary": "Provides well-being metrics for a Well-Being Impact Assessment process, to help safeguard human well-being throughout the lifecycle of autonomous and intelligent systems.",
+   "addressedTo": "organisation",
+   "addressedToEvidence": "facilitate the use of a Well-Being Impact Assessment (WIA) process",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in abstract, scope or purpose",
+   "note": "addressedTo is a borderline 'organisation': the page sets an assessment process with metrics rather than properties of the systems, but it addresses 'A/IS creators (designers, developers, engineers, programmers, and others)', not organisations by name. Although a recommended practice, its abstract says the impact of A/IS on humans 'is measured by this standard'.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7010-2020 - IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being (IEEE Xplore document page)",
+     "date": "2020-05-01",
+     "url": "https://ieeexplore.ieee.org/document/9084219",
+     "quote": "The impact of artificial intelligence or autonomous and intelligent systems (A/IS) on humans is measured by this standard. The positive outcome of A/IS on human well-being is the overall intent of this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first two sentences: the subject is the impact of A/IS on human well-being. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7010-2020 - IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being (IEEE Xplore document page)",
+     "date": "2020-05-01",
+     "url": "https://ieeexplore.ieee.org/document/9084219",
+     "quote": "This recommended practice provides specific and contextual well-being metrics that facilitate the use of a Well-Being Impact Assessment (WIA) process in order to proactively increase and help safeguard human well-being throughout the lifecycle of autonomous and intelligent systems (A/IS).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, in full: metrics that support a Well-Being Impact Assessment process. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7010-2020 - IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being (IEEE Xplore document page)",
+     "date": "2020-05-01",
+     "url": "https://ieeexplore.ieee.org/document/9084219",
+     "quote": "This recommended practice provides A/IS creators (designers, developers, engineers, programmers, and others) with impact-related insights that should be taken into account throughout the lifecycle of any A/IS to increase and help safeguard human well-being at the individual, population, and societal levels.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, in full: addressed to A/IS creators. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7010-2020 — IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being (standard page)",
+     "date": "2020-05-01",
+     "url": "https://standards.ieee.org/ieee/7010/7718/",
+     "quote": "PAR Approval 2019-11-07 Board Approval 2020-03-05 History Published: 2020-05-01",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Board approval in 2020 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked: all three quotes FOUND on https://ieeexplore.ieee.org/document/9084219. Title, kind (Recommended Practice), DOI 10.1109/IEEESTD.2020.9084219 and Date of Publication '01 May 2020' match. IEEE SA gives Board Approval 2020-03-05 and Published 2020-05-01.",
+     "The summary matches the scope.",
+     "addressedTo 'organisation' is a judgement call, and the note discloses it. The page never names organisations. Its purpose addresses 'A/IS creators (designers, developers, engineers, programmers, and others)', and the scope sets metrics for 'a Well-Being Impact Assessment (WIA) process'. It is kept because what the page sets is an assessment process, not properties of the system. That matches how part-stds-a treated 7000 and 7003, which also name creators or engineers. Readers should know that the tile label 'An organisation's process' rests on that reading.",
+     "personalData 'none' is supported: the abstract, scope and purpose are shown in full and do not mention personal data or privacy."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7012-2025",
+   "number": "7012-2025",
+   "title": "IEEE Standard for Machine Readable Personal Privacy Terms",
+   "kind": "Standard",
+   "published": "2026-01-20",
+   "doi": "10.1109/IEEESTD.2025.11360682",
+   "url": "https://ieeexplore.ieee.org/document/11360682",
+   "summary": "Describes how individuals, as first parties, proffer privacy terms chosen from a public roster kept by a neutral non-business entity, which service providers' machines can read and agree to, with both sides keeping a record of the agreement.",
+   "addressedTo": "person",
+   "addressedToEvidence": "individuals, acting as first parties, can proffer their privacy requirements as contractual terms",
+   "personalData": "central",
+   "personalDataEvidence": "The standard identifies/addresses the manner in which personal privacy terms are proffered",
+   "note": "personalData: the page's subject is personal privacy ('privacy requirements', 'personal privacy terms', 'terms respecting personal privacy'), so 'central'; the abstract, scope and purpose do not use the phrase 'personal data' as such. Dates: the designation is 2025 and the DOI carries 2025, but the page gives the Date of Publication as 20 January 2026. The Scope says 'this draft standard'; the same wording stands in clause 1.1 of the published full text, although the page shows 'Status: Active - Approved'. The page marks the document 'Free' rather than 'Available through the IEEE GET Program', and its Scope notes that the PDF is 'available at no charge complements [sic] of the IEEE GET program'. The abstract and scope are cut off on the page ('Computing device...', 'with identical copies of that cont...'); the last source completes the scope from the full text.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document page)",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/document/11360682",
+     "quote": "Contractual interactions and agreements between individuals and the service providers they engage on a network, including websites, applications and AI agents, are covered in this standard. It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides. These terms shall be chosen from a collection of standard-form agreements in a roster kept by an independent and neutral non-business entity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first three sentences: individuals proffer privacy terms as first parties, chosen from a roster kept by a neutral non-business entity. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document page)",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/document/11360682",
+     "quote": "The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines. The scope of this draft standard is confined to routines in which persons acting as first parties arrive at contractual agreements with organizational entities acting as second-party service providers.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, after the GET Program note: personal privacy terms, machine-readable, proffered by persons as first parties to organisations as second parties. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document page)",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/document/11360682",
+     "quote": "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world. In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others--mostly companies--operating as second parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, in full. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF, clause 1.1 Scope)",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity, with identical copies of that contract kept by both parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Full text, clause 1.1 Scope, last sentence (cut off on the Xplore page): the contract comes from a public roster kept by a neutral noncommercial entity, and both parties keep identical copies. Full-text PDF (free); text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF, Annex A, informative)",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "SD-BASE, as the baseline term, represents the individual's preference to receive a service without any analytics, tracking, or profiling by the 2nd or 3rd parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Annex A (informative), 'Draft terms with sample code': the baseline term is about analytics, tracking and profiling of the individual. This supports personalData 'central' in substance, although the Xplore page's abstract, scope and purpose do not say 'personal data'. Full-text PDF (free); fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+     "date": "2026-01-20",
+     "url": "https://standards.ieee.org/ieee/7012/7192/",
+     "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Board approval in 2025 explains the year in the number and DOI; publication on 20 January 2026 matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked: all four quotes FOUND, three on https://ieeexplore.ieee.org/document/11360682 and the clause 1.1 sentence in the full-text PDF. Title, DOI 10.1109/IEEESTD.2025.11360682 and Date of Publication '20 January 2026' match the page and doc-meta.json.",
+     "IEEE SA gives Board Approval 2025-11-04, which explains the 2025 in the number and the DOI, and Published 2026-01-20. So 'published' is right.",
+     "The note's claims check out. 'this draft standard' stands in clause 1.1 of the full text (and clause 2 says 'There are no normative references for this draft standard'). The page shows 'Free' where the other standards show 'Available through the IEEE GET ProgramTM'. The abstract and scope are cut off where the note says.",
+     "addressedTo 'person' is strongly supported by the abstract, scope and purpose.",
+     "Summary: 'from a neutral public roster' moves 'neutral' from the keeper onto the roster. The abstract has 'a roster kept by an independent and neutral non-business entity' and the full-text scope 'a public roster by a neutral noncommercial entity'. A reworded summary is given below.",
+     "personalData 'central' rests on 'personal privacy terms'. The page's abstract, scope and purpose never say 'personal data', as the note (and the personal-data theme in part-relation) says. The panel will label the tile 'Personal data: its subject'. That label is supported in substance by the full text, which was read. In its informative Annex A the baseline term SD-BASE means receiving a service 'without any analytics, tracking, or profiling by the 2nd or 3rd parties'. This is added as a source, marked as coming from an informative annex. No sibling 7000-series standard is cited in the 7012 full text: a grep for 7000, 7002, 7005, 7007, 7009, 7010, 7014 and P70 finds only its own number and p7012 identifiers."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7014-2024",
+   "number": "7014-2024",
+   "title": "IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems",
+   "kind": "Standard",
+   "published": "2024-06-28",
+   "doi": "10.1109/IEEESTD.2024.10576666",
+   "url": "https://ieeexplore.ieee.org/document/10576666",
+   "summary": "Gives ethical guidance for developing, deploying and decommissioning autonomous and intelligent systems that attempt to emulate aspects of human empathy, including systems that identify or simulate emotions.",
+   "addressedTo": "system",
+   "addressedToEvidence": "guidance for the design and implementation of empathic systems",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in abstract, scope or purpose",
+   "note": "addressedTo is a borderline 'system': the purpose gives guidance for 'the design and implementation of empathic systems', but the abstract also covers deployment and decommission and the scope speaks of 'ethical considerations and practices', which lean towards a process an organisation runs; the page does not say which. personalData is a borderline 'none': the scope covers systems that 'identify, quantify, respond to, or simulate affective states, such as emotions and cognitive states', which concern people, but the page does not mention personal data or privacy. On the page the abstract's parenthetical GET Program note is left open and a closing ')' ends the Scope ('related fields.)'); quotes avoid that span.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014-2024 - IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems (IEEE Xplore document page)",
+     "date": "2024-06-28",
+     "url": "https://ieeexplore.ieee.org/document/10576666",
+     "quote": "Guidance and actions for the ethical development, deployment, or decommission of autonomous and intelligent systems that attempt to emulate aspects of human empathy are provided by this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first sentence: ethical guidance across the life of systems that emulate empathy. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014-2024 - IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems (IEEE Xplore document page)",
+     "date": "2024-06-28",
+     "url": "https://ieeexplore.ieee.org/document/10576666",
+     "quote": "This standard defines a model for ethical considerations and practices in the design, creation, and use of empathic technology, incorporating systems that have the capacity to identify, quantify, respond to, or simulate affective states, such as emotions and cognitive states.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, first sentence: empathic technology includes systems that identify or quantify emotions and cognitive states. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014-2024 - IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems (IEEE Xplore document page)",
+     "date": "2024-06-28",
+     "url": "https://ieeexplore.ieee.org/document/10576666",
+     "quote": "The purpose of this standard is to provide clear and practical guidance for the design and implementation of empathic systems that are prioritized to maximize human flourishing and protect users from bias, abuse, or exploitation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, in full: design guidance for empathic systems. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7014-2024 — IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems (standard page)",
+     "date": "2024-06-28",
+     "url": "https://standards.ieee.org/ieee/7014/7648/",
+     "quote": "PAR Approval 2019-06-13 Board Approval 2024-05-20 History Published: 2024-06-28",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Board approval in 2024 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked: all three quotes FOUND on https://ieeexplore.ieee.org/document/10576666. Title, DOI 10.1109/IEEESTD.2024.10576666 and Date of Publication '28 June 2024' match. IEEE SA gives Board Approval 2024-05-20, which matches the 2024 in the number, and Published 2024-06-28. The note's remark about the unclosed parenthesis is accurate.",
+     "The summary drops a hedge. The abstract covers systems 'that attempt to emulate aspects of human empathy', but the summary says systems 'that emulate human empathy'. A reworded summary is given below.",
+     "addressedTo 'system' is a borderline call and is disclosed: the purpose is design guidance for empathic systems.",
+     "personalData 'none' is a borderline call and is disclosed. The scope covers systems that 'identify, quantify, respond to, or simulate affective states, such as emotions and cognitive states', which are in substance inferences about people. But the page never says personal data or privacy, and the purpose names 'bias, abuse, or exploitation' as the harms. It is kept under the literal-mention rule used across the panel. If the panel ever switched to a substantive rule, 'partial' would be arguable. The full PDF was not read, so nothing is claimed about it."
+    ]
+   }
+  },
+  {
+   "id": "ieee-7014.1-2026",
+   "number": "7014.1-2026",
+   "title": "IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems",
+   "kind": "Recommended Practice",
+   "published": "2026-06-12",
+   "doi": "10.1109/IEEESTD.2026.11559263",
+   "url": "https://ieeexplore.ieee.org/document/11559263",
+   "summary": "Recommends ethical practices for the conception, design and lifecycle of general-purpose AI products that emulate empathy and are marketed as partners, companions or assistants; extends IEEE 7014.",
+   "addressedTo": "system",
+   "addressedToEvidence": "ethical recommendations for the conception, design and lifecycle of GPAI applications that emulate empathic abilities",
+   "personalData": "none",
+   "personalDataEvidence": "no mention of personal data or privacy in abstract, scope or purpose",
+   "note": "addressedTo is a borderline 'system': the purpose concerns the conception, design and lifecycle of GPAI applications, but the abstract speaks of 'ethical usage' and the scope of 'good practices', which could also be read as practices of the organisations offering them. personalData: 'personal AI' in the abstract and scope is a product label, not a reference to personal data; the page does not mention personal data or privacy. The abstract describes it as 'a domainspecific extension of IEEE Std 7014'. The Scope reads 'This RP (RP) defines' on the page.",
+   "sources": [
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (IEEE Xplore document page)",
+     "date": "2026-06-12",
+     "url": "https://ieeexplore.ieee.org/document/11559263",
+     "quote": "Recommended practices for ethical usage of emulated empathy in general-purpose artificial intelligence (GPAI) systems for human-artificial intelligence (AI) partnerships are provided in this standard. The use of emulated empathy in GPAI systems for human-AI partnerships refers to general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants, and related phrasing for human-AI partnering.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, first two sentences: the products in scope are general-purpose AI marketed as partners, companions, co-pilots, agents or assistants. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (IEEE Xplore document page)",
+     "date": "2026-06-12",
+     "url": "https://ieeexplore.ieee.org/document/11559263",
+     "quote": "IEEE Std 7014.1™ is a domainspecific extension of IEEE Std 7014™, IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Abstract, third sentence: the relationship to IEEE 7014-2024. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (IEEE Xplore document page)",
+     "date": "2026-06-12",
+     "url": "https://ieeexplore.ieee.org/document/11559263",
+     "quote": "This RP (RP) defines ethical considerations and good practices regarding the use of emulated empathy in general-purpose artificial intelligence (GPAI) systems for human-artificial intelligence (AI) partnerships.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Scope, first sentence. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE Std 7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (IEEE Xplore document page)",
+     "date": "2026-06-12",
+     "url": "https://ieeexplore.ieee.org/document/11559263",
+     "quote": "The purpose of this RP is to provide clear and practical ethical recommendations for the conception, design and lifecycle of GPAI applications that emulate empathic abilities to enable human-AI partnerships.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Purpose, in full. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7014.1-2026 — IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (standard page)",
+     "date": "2026-06-12",
+     "url": "https://standards.ieee.org/ieee/7014.1/11609/",
+     "quote": "PAR Approval 2024-03-21 Board Approval 2026-02-12 History Published: 2026-06-12",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Board approval in 2026 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked: all four quotes FOUND on https://ieeexplore.ieee.org/document/11559263, including 'This RP (RP) defines' as printed. Title, kind (Recommended Practice), DOI 10.1109/IEEESTD.2026.11559263 and Date of Publication '12 June 2026' match. IEEE SA gives Board Approval 2026-02-12 and Published 2026-06-12.",
+     "The relation claim 'extends IEEE 7014' is supported by the abstract's 'domainspecific extension of IEEE Std 7014'.",
+     "The summary drops 'marketed as'. The abstract refers to 'general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants', a label about how the products are sold. The summary turns it into a description of what the products are ('emulate empathy as partners, companions or assistants'). A reworded summary is given below.",
+     "addressedTo 'system' is a disclosed borderline call and is supported by the purpose ('conception, design and lifecycle of GPAI applications').",
+     "personalData 'none' is supported: 'personal AI' is a product label, and the page does not mention personal data or privacy."
+    ]
+   }
+  }
+ ],
+ "relation": {
+  "id": "ieee-7002-and-7012",
+  "summary": "IEEE 7002-2022 is addressed to organisations: its scope 'defines requirements for a systems engineering process for privacy-oriented considerations' in products, services and systems that use employee, customer or other external users' personal data, and 'extends across the life cycle from policy through development, quality assurance, and value realization'. It gives procedures, diagrams and checklists so that users can perform a conformity assessment on their own privacy practices, and it describes privacy impact assessments (PIAs) as a tool for finding where privacy controls are needed and confirming they are in place. IEEE 7012-2025 is addressed to the individual: its purpose is 'to provide individuals with means to proffer their own terms respecting personal privacy' that machines operated by others can read and agree to, so that individuals can 'operate as first parties in agreements with others', mostly companies, which act as second parties. So 7002 sets requirements for an organisation's own engineering process, while 7012 covers how a person and a service provider select and sign a contract from a public roster kept by a neutral non-commercial entity, with a record kept by both sides.",
+  "crossReferences": "No. IEEE 7012-2025 does not cite IEEE 7002 or any other 7000-series standard. Every number of the form 70xx in its full text is its own number, 7012: in the running heads, the title page and introduction, the keyword 'IEEE 7012™', 'IEEE 7012 Identifier', mentions in the body and in Annexes A and D (for example 'IEEE 7012 does not permit more than 1 round of negotiation' and the heading 'D.4 The deployment of ISO 23903 in the IEEE 7012 context'), and 'p7012' in Customer Commons URLs and Data Privacy Vocabulary identifiers. The phrases 'Ethically Aligned Design' and 'Global Initiative' do not occur. Clause 2 reads in full: 'There are no normative references for this draft standard. There are many useful informative references, however, in the Bibliography (Annex E).' Annex E (informative) has 39 entries, [B1]-[B39]. The only IEEE standard among them is [B15] 'IEEE Std 610™-1990, IEEE Standard Computer Dictionary: A Compilation of IEEE Standard Computer Glossaries'. The rest are laws (GDPR [B9], CCPA [B3], Digital Markets Act [B6]); W3C and related privacy-signal work (Do Not Track [B7], [B37]; Global Privacy Control [B11]; Data Privacy Vocabulary [B5]); ISO, EN, ISO/IEC, HL7, ICAO and OMG specifications, mostly in health informatics; the Kantara/Customer Commons 'No Stalking' term ([B27], [B36]); and books, papers and web resources such as Kessler's 1943 article on contracts of adhesion [B28]. Clause 1.3, 'Extant standards and regulations', names only internet protocols: 'Operation of this standard depends on the Internet Protocol Suite, especially TCP/IP, and HTTP.' The other direction cannot be checked: the full text of IEEE 7002-2022 was not read, so whether it mentions P7012 is unknown.",
+  "otherPublicLinks": "No public IEEE SA or working-group statement was found that relates 7012 to 7002 directly, or says that one builds on or complements the other. The P7012 PAR could not be read: the PAR PDF linked from IEEE SA's 2018 statement returns HTTP 401. What IEEE's public pages do show: (1) Different origins. IEEE SA's standard pages list 7002 under the IEEE Computer Society, 'C/S2ESC - Software & Systems Engineering Standards Committee', working group 'PDP - Personal Data Privacy Working Group', PAR approved 2016-12-07; and 7012 under the IEEE Society on Social Implications of Technology, 'SSIT/SC - Social Implications of Technology Standards Committee', working group 'MRPT-WG - Machine Readable Privacy Terms', PAR approved 2017-12-06. (2) The same series. IEEE SA's 2018 statement 'Our Role in Addressing Ethical Considerations of Autonomous and Intelligent Systems (A/IS)' says that members of the IEEE Global Initiative 'are encouraged to recommend Standards Projects to IEEE based on their work', then lists both P7002 and P7012 among the 'approved IEEE Standards Projects', and refers to 'the associated IEEE 7000™ series of standards'. It says P7002 'specifies how to manage privacy issues for systems or software that collect personal data' by 'defining requirements that cover corporate data collection policies and quality assurance'. Of P7012 it says: 'Note that the purpose of this standard is not to address privacy policies, since these are one-sided and need no agreement. (Terms require agreement; privacy policies do not.)' The same statement says of the AI agent in a third project, P7006 (Personal Data AI Agent), that it is 'Designed as a tool to allow any individual to essentially create their own personal “terms and conditions” for their data'; P7006 is not in the GET series. (3) The Ethically Aligned Design, First Edition Overview (IEEE Global Initiative, 2019) calls the P7000 series 'the first series of standards in the history of the IEEE Standards Association that explicitly focuses on societal and ethical issues associated with a certain field of technology'. It lists P7002 as 'Inspired by The Personal Data and Individual Agency Control Committee, and supported by IEEE Computer Society' (as are P7004, P7005 and P7006), and P7012 only as 'Supported by IEEE Society on Social Implications of Technology', with no EAD committee named. (4) IEEE SA's Autonomous and Intelligent Systems page (the IEEE SA link in the GET series sponsor list) lists 'IEEE P7002™ IEEE Standard for Data Privacy Process' under Related Standards but, as fetched on 2026-09-23, not 7012. (5) IEEE SA's Industry Connections page for the 'MyTerms' roadmap activity describes 7012 on its own and does not mention 7002 or the 7000 series.",
+  "sources": [
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7002-2022 - IEEE Standard for Data Privacy Process (IEEE Xplore document page)",
+    "date": "2022-04-19",
+    "url": "https://ieeexplore.ieee.org/document/9760247",
+    "quote": "This standard defines requirements for a systems engineering process for privacy-oriented considerations regarding products, services, and systems utilizing employee, customer, or other external user's personal data. It extends across the life cycle from policy through development, quality assurance, and value realization. It includes a use case and data model (including metadata). It applies to organizations and projects that are developing and deploying products, systems, processes, and applications that involve personal information. By providing specific procedures, diagrams, and checklists, this standard enables users to perform a conformity assessment on their specific privacy practices. Privacy impact assessments (PIAs) are described as a tool for identifying where privacy controls and measures are needed, and for confirming they are in place.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Scope, in full: 7002 sets requirements for an organisation's systems engineering process across the life cycle, with conformity assessment and privacy impact assessments. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7002-2022 - IEEE Standard for Data Privacy Process (IEEE Xplore document page)",
+    "date": "2022-04-19",
+    "url": "https://ieeexplore.ieee.org/document/9760247",
+    "quote": "The purpose of this standard is to provide an overall methodological approach that specifies practices to manage privacy issues within the systems engineering life cycle processes.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Purpose, in full. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document page)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/document/11360682",
+    "quote": "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world. In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others--mostly companies--operating as second parties.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Purpose, in full: 7012 is addressed to the individual as first party, with companies as second parties. Date is the Xplore date of publication; the standard is dated 2025 (approved 4 November 2025). Xplore page rendered in a headless browser; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document page)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/document/11360682",
+    "quote": "The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines. The scope of this draft standard is confined to routines in which persons acting as first parties arrive at contractual agreements with organizational entities acting as second-party service providers.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Scope, first two sentences (the page cuts the scope off after the third sentence, which continues: 'It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity'). Xplore page rendered in a headless browser; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document page)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/document/11360682",
+    "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Abstract, second sentence: agreements are recorded and kept by both sides. Xplore page rendered in a headless browser; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+    "quote": "There are no normative references for this draft standard. There are many useful informative references, however, in the Bibliography (Annex E).",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Clause 2, Normative references, in full. A search of the full text for '7002', '7000', '7005', 'P70' and 'IEEE Std 70' finds only 7012's own number (running heads, keywords, 'IEEE 7012 Identifier', and 'p7012' in Customer Commons URLs and Data Privacy Vocabulary identifiers). Full text read through the IEEE GET Program (free with an IEEE Account sign-in); quote checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+    "quote": "IEEE Std 610™-1990, IEEE Standard Computer Dictionary: A Compilation of IEEE Standard Computer Glossaries",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Annex E (informative) Bibliography, entry [B15]: the only IEEE standard among the 39 entries [B1]-[B39]; no 7000-series standard is listed. Full text read through the IEEE GET Program (free with an IEEE Account sign-in); quote checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+    "quote": "Operation of this standard depends on the Internet Protocol Suite, especially TCP/IP, and HTTP.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Clause 1.3, Extant standards and regulations: the only standards 7012 says it depends on are internet protocols. Full text read through the IEEE GET Program (free with an IEEE Account sign-in); quote checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE (IEEE Xplore)",
+    "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF)",
+    "date": "2026-01-20",
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+    "quote": "Developed by the Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Title page. Full text read through the IEEE GET Program (free with an IEEE Account sign-in); quote checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7002-2022 - IEEE Standard for Data Privacy Process (IEEE SA standard page)",
+    "date": "2022-04-19",
+    "url": "https://standards.ieee.org/ieee/7002/6898/",
+    "quote": "Society IEEE Computer Society Standard Committee C/S2ESC - Software & Systems Engineering Standards Committee Working Group PDP - Personal Data Privacy Working Group",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "'Working Group Details' block, read in page order (labels and values). The same page gives 'PAR Approval 2016-12-07', 'Board Approval 2022-02-09' and 'Published: 2022-04-19'. Page accessed 2026-09-23; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE SA standard page)",
+    "date": "2026-01-20",
+    "url": "https://standards.ieee.org/ieee/7012/7192/",
+    "quote": "Society IEEE Society on Social Implications of Technology Standard Committee SSIT/SC - Social Implications of Technology Standards Committee Working Group MRPT-WG - Machine Readable Privacy Terms",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "'Working Group Details' block, read in page order (labels and values). The same page gives 'PAR Approval 2017-12-06', 'Board Approval 2025-11-04' and 'Published: 2026-01-20'. So 7002 and 7012 came from different societies, committees and working groups. Page accessed 2026-09-23; text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE Standards Association Statement of Intention: Our Role in Addressing Ethical Considerations of Autonomous and Intelligent Systems (A/IS)",
+    "date": "2018-03-29",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ethical-considerations-ai-as-29mar2018.pdf",
+    "quote": "Along with creating and evolving Ethically Aligned Design, members of The IEEE Global Initiative are encouraged to recommend Standards Projects to IEEE based on their work.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Introduces the list of 'approved IEEE Standards Projects' that includes both P7002 and P7012; the same statement refers to 'the associated IEEE 7000™ series of standards'. Date taken from the file name (29mar2018); the document itself is undated. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE Standards Association Statement of Intention: Our Role in Addressing Ethical Considerations of Autonomous and Intelligent Systems (A/IS)",
+    "date": "2018-03-29",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ethical-considerations-ai-as-29mar2018.pdf",
+    "quote": "specifies how to manage privacy issues for systems or software that collect personal data. It will do so by defining requirements that cover corporate data collection policies and quality assurance.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "The statement's description of 'IEEE P7002™ - Data Privacy Process' (a footnote marker sits between the title and this text). Date taken from the file name; the document itself is undated. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE Standards Association Statement of Intention: Our Role in Addressing Ethical Considerations of Autonomous and Intelligent Systems (A/IS)",
+    "date": "2018-03-29",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ethical-considerations-ai-as-29mar2018.pdf",
+    "quote": "Note that the purpose of this standard is not to address privacy policies, since these are one-sided and need no agreement. (Terms require agreement; privacy policies do not.)",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "From the statement's description of 'IEEE P7012™ - Standard for Machine Readable Personal Privacy Terms', which otherwise repeats 7012's purpose. Date taken from the file name; the document itself is undated. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "IEEE Standards Association Statement of Intention: Our Role in Addressing Ethical Considerations of Autonomous and Intelligent Systems (A/IS)",
+    "date": "2018-03-29",
+    "url": "https://standards.ieee.org/wp-content/uploads/import/documents/other/ethical-considerations-ai-as-29mar2018.pdf",
+    "quote": "Designed as a tool to allow any individual to essentially create their own personal “terms and conditions” for their data",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "From the statement's description of a third project, 'IEEE P7006™ - Standard on Personal Data AI Agent Working Group'. P7006 is not in the GET series; its later status was not checked. Date taken from the file name. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "Ethically Aligned Design, First Edition Overview (The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems)",
+    "date": "2019-03-25",
+    "url": "https://sagroups.ieee.org/global-initiative/wp-content/uploads/sites/542/2023/01/ead1e-overview.pdf",
+    "quote": "This is the first series of standards in the history of the IEEE Standards Association that explicitly focuses on societal and ethical issues associated with a certain field of technology.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Said of 'The launch of the IEEE P7000™ series of approved standardization projects'. Date is the EAD1e launch date, taken from IEEE's press release as carried by Business Wire (URL dated 20190325; not fetched, HTTP 403); the overview itself is marked only ©2019 IEEE. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "Ethically Aligned Design, First Edition Overview (The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems)",
+    "date": "2019-03-25",
+    "url": "https://sagroups.ieee.org/global-initiative/wp-content/uploads/sites/542/2023/01/ead1e-overview.pdf",
+    "quote": "IEEE P7012™, IEEE Standards Project for Machine Readable Personal Privacy Terms Supported by IEEE Society on Social Implications of Technology",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "P7012's entry in the list 'IEEE P7000™ Approved Standardization Projects', whose preface says 'Committees that authored Ethically Aligned Design, as well as other committees within IEEE, that created specific working groups are listed below each project.' No EAD committee is named for P7012. P7002's entry, 'IEEE P7002™, IEEE Standards Project for Data Privacy Process', reads 'Inspired by The Personal Data and Individual Agency Control Committee, and supported by IEEE Computer Society' (the page is in two columns, so that pairing was checked from the PDF's text positions). Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "Autonomous and Intelligent Systems (AIS) (IEEE SA initiative page)",
+    "date": "2026-09-23",
+    "url": "https://standards.ieee.org/initiatives/autonomous-intelligence-systems/",
+    "quote": "IEEE P7002™ IEEE Standard for Data Privacy Process",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "Entry in the page's 'Related Standards' list. This is the IEEE SA link in the GET series page's sponsor list (rest-2.json). As fetched on 2026-09-23 the list has no entry for 7012 (nor 7010 or 7014). Page undated; date is the access date. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "IEEE Standards Association",
+    "title": "Individual Defined Privacy Terms Roadmap (IEEE SA Industry Connections activity page)",
+    "date": "2026-09-23",
+    "url": "https://standards.ieee.org/industry-connections/activities/individual-defined-privacy-terms-roadmap/",
+    "quote": "The January 2026 IEEE published 7012-2025 IEEE Standard for Machine Readable Personal Privacy Terms changes the paradigm by providing full personal agency in the form of contracts.",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "IEEE SA's page for the 'MyTerms' Industry Connections activity (Customer Commons, MyData Global and the MyTerms Alliance). It presents 7012 on its own and does not mention 7002 or the 7000 series. Page undated; date is the access date. Text checked with fetch-text.py."
+   },
+   {
+    "institution": "AlgorithmWatch",
+    "title": "IEEE launches Ethically Aligned Design, First Edition (blog post)",
+    "date": "2019-03-25",
+    "url": "https://algorithmwatch.org/en/ieee-launches-ethically-aligned-design-first-edition/",
+    "quote": "The Institute of Electrical and Electronics Engineers (IEEE) published the first edition of Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems (EAD1e).",
+    "verificationStatus": "CONFIRMED",
+    "accessType": "FREE",
+    "note": "The post is dated 'March 25, 2019' (fetch-text.py --check FOUND). It supports the 2019-03-25 date given to the Ethically Aligned Design, First Edition Overview (sources 15 and 16), which is otherwise marked only ©2019. This is a third-party report of IEEE's launch, not an IEEE page. tools/fetch-text.py --check FOUND 2026-09-23."
+   }
+  ],
+  "_verify": {
+   "status": "FIXED",
+   "issues": [
+    "All 19 source quotes re-run with tools/fetch-text.py --check: all FOUND. Titles, dates and identifiers match the pages: 7002 Xplore 'Date of Publication: 19 April 2022', DOI 10.1109/IEEESTD.2022.9760247; IEEE SA page 'PAR Approval 2016-12-07', 'Board Approval 2022-02-09', 'Published: 2022-04-19' (all --check FOUND). 7012 Xplore 'Date of Publication: 20 January 2026', DOI 10.1109/IEEESTD.2025.11360682; PDF title page 'Approved 4 November 2025' and 'Published 20 January 2026' (FOUND); IEEE SA page 'PAR Approval 2017-12-06', 'Board Approval 2025-11-04', 'Published: 2026-01-20', 'MRPT-WG - Machine Readable Privacy Terms' (FOUND). The source dates (publication dates, not approval years) are correct.",
+    "Summary OK. Each clause matches the 7002 scope and the 7012 abstract, scope and purpose. The 7002 scope says 'It applies to organizations and projects that are developing and deploying products...', which supports 'addressed to organisations'. For 7012, 'addressed to the individual' rests on the purpose ('provide individuals with means to proffer their own terms'). Readers should know that the words are used in two senses. 7002 is addressed to the organisation as the standard's user, while 7012 takes the individual's side as first party. 7012's own requirements fall on 'Implementors of this standard' (clause 4.4.1, --check FOUND on the PDF), who in practice are roster keepers and service providers. The summary is left unchanged because it quotes the purpose immediately after, which makes the sense clear.",
+    "crossReferences: the substance holds. A regex over the full 7012 text for every four-digit number beginning 7 finds only 7012 (91 times). 'Ethically Aligned Design', 'Global Initiative', '2089' and '5Rights' do not occur. Annex E has exactly [B1]-[B39]. [B15] IEEE Std 610-1990 is the only IEEE standard. The category breakdown, Kessler 1943 ([B28], Columbia Law Review, Jul. 1943), clause 1.3 and clause 2 are all correct. The parenthetical describing what the search 'finds' is imprecise, though. The search strings it names ('7002', '7000', '7005', 'P70', 'IEEE Std 70') cannot match the keyword 'IEEE 7012™' or 'IEEE 7012 Identifier', which contain none of them. It also omits the in-text mentions in the body and Annexes A and D ('IEEE 7012 does not permit more than 1 round of negotiation', 'D.4 ... in the IEEE 7012 context', both FOUND). Rewritten as a statement about every 70xx number in the text.",
+    "otherPublicLinks: every fact re-checked. The IEEE SA working-group blocks and PAR dates are FOUND. The 2018 statement lists P7002 and P7012 and uses 'associated IEEE 7000™ series'. The EAD overview's P7002 and P7012 attributions were re-read from the PDF text: P7002 and P7006 sit side by side, each 'Inspired by The Personal Data and Individual Agency Control Committee, and supported by IEEE Computer Society', and P7012 has only 'Supported by IEEE Society on Social Implications of Technology'. The AIS page's Related Standards list has 2089, 7000, 7001, 'IEEE P7002™', 7003, P7004, 7005, 7007, P7008, P7009 and P7009.1, and no 7010, 7012 or 7014. The MyTerms IC page has no '7000', '7002' or 'series'. The footnote-18 PAR link returns HTTP 401 both as printed (%3F) and with '?' (curl, 2026-09-23). Two wordings are tightened. (a) 'approved projects that came out of the IEEE Global Initiative' was the researcher's gloss. The statement says only that Global Initiative members 'are encouraged to recommend Standards Projects to IEEE based on their work' and then lists 'these approved IEEE Standards Projects' (--check FOUND). The EAD overview names no Global Initiative committee behind P7012, so 'came out of' overstates its origin. (b) In the statement, 'Designed as a tool to allow any individual...' is a participle phrase qualifying 'the AI Agent' ('...for their data, the AI Agent will provide a technological tool...', FOUND), not the P7006 project as a whole.",
+    "Negative claim ('No public IEEE SA or working-group statement was found that relates 7012 to 7002'): my own web searches ('IEEE 7012 7002 privacy terms MyTerms', IEEE SA press releases on 7012-2025) also found none. One lead for the PAR: the working-group chair, Doc Searls, posts the P7012 PAR's scope paragraph sentence by sentence in 'The MyTerms PAR' (ProjectVRM, 6 April 2025, https://projectvrm.org/2025/04/06/myterms/), and that paragraph does not mention 7002 or the 7000 series. The post is not added as a source because tools/fetch-text.py gets HTTP 403 from projectvrm.org (curl gets 200), so no quote could be --checked. It shows the PAR's scope text only, not the PAR's other fields.",
+    "EAD overview date 2019-03-25: the record's only support was a Business Wire URL that was not fetched. AlgorithmWatch's post on the launch is dated 'March 25, 2019' and is fetchable (--check FOUND), so it is added as a source and the notes on sources 15 and 16 are updated.",
+    "Source 3's note says the Xplore page 'cuts the scope off after the third sentence'. In fact the page cuts it off inside the third sentence ('...with identical copies of that cont...', FOUND), and the Scope field opens with a '(Note: The PDF of this standard is available at no charge complements of the IEEE GET program ...)' preface. The note is corrected, and the completed sentence is quoted from clause 1.1 of the PDF (FOUND).",
+    "TOOLING WARNING for whoever applies this file: the sharedThemes records have no 'id' field. In tools/apply-verdicts.py, same() does not match on 'theme', and find() falls back to doc['relation'] for any kind 'relation' verdict whose id matches nothing. The theme verdicts below would therefore be applied to the relation object: their fieldFixes 'theme', 'standards' and 'evidence' would land on it, and each stamp would overwrite its _verify. Apply the theme verdicts by hand, matching on sharedThemes[].theme, or give the themes ids first."
+   ]
+  }
+ },
+ "sharedThemes": [
+  {
+   "theme": "privacy",
+   "standards": [
+    "7002-2022",
+    "7012-2025",
+    "2089-2021",
+    "7000-2021"
+   ],
+   "evidence": "7002 scope: 'privacy-oriented considerations'; 7012 scope: 'personal privacy terms'; 2089 purpose: 'children safety, privacy, autonomy, agency, and health'; 7000 purpose lists 'transparency, sustainability, privacy, fairness, and accountability', though its scope says it 'does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy'.",
+   "id": "privacy",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "sharedThemes record (theme 'privacy'; no id field; see the tooling warning on the relation verdict). All four quotes FOUND on the Xplore pages: 7002 'privacy-oriented considerations', 7012 'personal privacy terms', 2089 'children safety, privacy, autonomy, agency, and health', 7000 'transparency, sustainability, privacy, fairness, and accountability', and the 7000 scope's caveat that it 'does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy'.",
+     "Membership complete under the literal-mention rule: 'privacy' appears in the visible abstract, scope or purpose of these four standards and no others among the twelve. That includes 7005, whose full purpose (reseller copy on en-standard.eu) speaks of 'personal data' and the GDPR but never uses 'privacy'."
+    ]
+   }
+  },
+  {
+   "theme": "personal data",
+   "standards": [
+    "7002-2022",
+    "7005-2021"
+   ],
+   "evidence": "7002 scope: systems 'utilizing employee, customer, or other external user's personal data'; 7005 purpose: the data subject needs to understand 'personal data collection, the processing of personal data, storage of personal data'. 7012's abstract, scope and purpose speak of privacy 'requirements' and 'terms', not of personal data.",
+   "id": "personal data",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "sharedThemes record (theme 'personal data'; no id field). Both quotes FOUND: 7002 scope 'utilizing employee, customer, or other external user's personal data'; 7005 purpose 'personal data collection, the processing of personal data, storage of personal data'.",
+     "The statement that 7012's abstract, scope and purpose do not speak of personal data holds. The full abstract (IEEE SA page, doc-meta.json, PDF), the full scope (PDF clause 1.1) and the purpose contain no 'data' at all. For the panel's awareness: 7012's full text does use the phrase, for example in the introduction ('sale or sharing of personal data') and in clause 4.4.1 ('personal and related data shared under the agreement contract'). The theme is right to keep to abstract, scope and purpose, because the other standards' full texts were not read. Consistent with the stds-b verdict on 7012's personalData call."
+    ]
+   }
+  },
+  {
+   "theme": "employees",
+   "standards": [
+    "7002-2022",
+    "7005-2021"
+   ],
+   "evidence": "7002 scope names 'employee, customer, or other external user's personal data'; 7005 scope helps employers in 'accessing, collecting, storing, utilizing, sharing, and destroying employee data'.",
+   "id": "employees",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "sharedThemes record (theme 'employees'; no id field). Both quotes FOUND: 7002 scope 'employee, customer, or other external user's personal data'; 7005 scope 'accessing, collecting, storing, utilizing, sharing, and destroying employee data'. No other page mentions employees or employers."
+    ]
+   }
+  },
+  {
+   "theme": "terms, offered in opposite directions",
+   "standards": [
+    "2089-2021",
+    "7012-2025"
+   ],
+   "evidence": "2089 scope lists 'c) Offers terms appropriate to children' among its framework's key areas. The rest of its scope, cut off on Xplore but reproduced in a reseller copy of IEEE's text (en-standard.eu), says the standard 'sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people': the terms are the service's own published terms, made fit for children. 7012 runs the other way. Its scope covers 'the manner in which personal privacy terms are proffered' by 'persons acting as first parties', and its purpose is for individuals to 'proffer their own terms' to others, 'mostly companies'.",
+   "id": "terms offered to people",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "sharedThemes record (theme 'terms offered to people'; no id field). Quotes FOUND: 2089 'c) Offers terms appropriate to children'; 7012 'the manner in which personal privacy terms are proffered'.",
+     "The label inverts 7012. In 7012 terms are offered by people ('persons acting as first parties'; the purpose is for individuals to 'proffer their own terms' to others, 'mostly companies', both FOUND), not offered to them. Only 2089's terms are offered to people. Relabelled so the theme states the contrast instead of implying a shared direction.",
+     "The evidence says 'The 2089 page does not say who drafts its terms'. That is true of the cut-off Xplore scope, but the rest of the scope settles it. A reseller copy of IEEE's text (https://www.en-standard.eu/ieee-2089-2021-ieee-standard-for-an-age-appropriate-digital-services-framework-based-on-the-5rights-principles-for-children/, --check FOUND 2026-09-23; already added as a source to ieee-2089-2021 by the stds-a verdict) goes on: 'This standard sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people.' The terms are the service's own published terms. Evidence rewritten. No source is added here because the theme record has no sources array, and the tooling warning applies."
+    ]
+   }
+  },
+  {
+   "theme": "life-cycle processes",
+   "standards": [
+    "7002-2022",
+    "7000-2021",
+    "2089-2021",
+    "7010-2020",
+    "7014.1-2026"
+   ],
+   "evidence": "7002 scope: 'extends across the life cycle from policy through development, quality assurance, and value realization'; 7000 scope: processes 'throughout the stages of concept exploration and development, which encompass system initiation, analysis, and design' (the early stages only), and its full abstract (IEEE SA page) says 'All sizes and types of organizations using their own life cycle models are relevant to this standard'; 2089 abstract: 'processes through the life cycle of development, delivery and distribution'; 7010 scope: 'throughout the lifecycle of autonomous and intelligent systems (A/IS)'; 7014.1 purpose: 'conception, design and lifecycle of GPAI applications'. 7012's scope is instead 'confined to routines in which persons acting as first parties arrive at contractual agreements'.",
+   "id": "life-cycle processes",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "sharedThemes record (theme 'life-cycle processes'; no id field). All five quotes FOUND on the Xplore pages.",
+     "The 7000 evidence overstates its span. The quoted fragment ('throughout the stages of concept exploration and development') continues on the page ', which encompass system initiation, analysis, and design' (--check FOUND). 7000's processes cover the early stages only, not the whole life cycle as 7002's scope ('from policy through development, quality assurance, and value realization') does. 7000 still uses the words, in its full abstract: 'All sizes and types of organizations using their own life cycle models are relevant to this standard.' This is FOUND on the IEEE SA page https://standards.ieee.org/ieee/7000/6781/ and is in doc-meta.json; the Xplore abstract is cut off at 'All sizes and...'. Membership kept, evidence made exact.",
+     "Borderline omission, noted but not changed: 7014's abstract covers 'the ethical development, deployment, or decommission' of empathic A/IS, a start-to-end span, but it does not use the words 'life cycle', so under the literal rule it stays out."
+    ]
+   }
+  },
+  {
+   "theme": "impact assessment",
+   "standards": [
+    "7002-2022",
+    "7010-2020",
+    "2089-2021"
+   ],
+   "evidence": "7002 scope: 'Privacy impact assessments (PIAs) are described as a tool for identifying where privacy controls and measures are needed'; 7010 scope: a 'Well-Being Impact Assessment (WIA) process'; 2089 scope: 'a specific impact rating system and evaluation criteria'.",
+   "id": "impact assessment",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "sharedThemes record (theme 'impact assessment'; no id field). All three quotes FOUND: 7002 'Privacy impact assessments (PIAs) are described as a tool for identifying where privacy controls and measures are needed'; 7010 'Well-Being Impact Assessment (WIA) process'; 2089 'a specific impact rating system and evaluation criteria'. 2089's wording is 'impact rating' rather than 'assessment', but the evidence quotes it exactly, so the grouping is fair. 7003's two uses of 'impact' ('direct and significant impact on human lives', 'unwanted differential impact') are not assessments and are rightly left out."
+    ]
+   }
+  },
+  {
+   "theme": "conformity and certification",
+   "standards": [
+    "7002-2022",
+    "7005-2021",
+    "7001-2021",
+    "7003-2024"
+   ],
+   "evidence": "7002 scope: users 'perform a conformity assessment on their specific privacy practices'; 7005 scope: 'specific metrics and conformance criteria', though 'Certification processes, success criteria, and execution procedures are not within the scope'; 7001 abstract: 'levels of compliance determined'; 7003 purpose: 'certification-oriented processes and methodologies'.",
+   "id": "conformity and certification",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "sharedThemes record (theme 'conformity and certification'; no id field). All quotes FOUND: 7002 'perform a conformity assessment on their specific privacy practices'; 7005 'specific metrics and conformance criteria' and 'Certification processes, success criteria, and execution procedures are not within the scope'; 7001 'levels of compliance determined'; 7003 'certification-oriented processes and methodologies'. The evidence rightly records 7005's own exclusion of certification. 7000's purpose has 'Projects conforming to IEEE Std 7000', but that is the ordinary conformance clause every standard has, so its omission is fine."
+    ]
+   }
+  },
+  {
+   "theme": "transparency",
+   "standards": [
+    "7001-2021",
+    "7005-2021",
+    "7000-2021",
+    "7009-2024"
+   ],
+   "evidence": "7001 purpose: 'measurable, testable levels of transparency for autonomous systems'; 7005 purpose: 'support ethical and transparent behavior'; 7000 purpose lists transparency among its values; 7009 scope: 'in a robust, transparent, and accountable manner'. 7012's abstract, scope and purpose do not use the word, and neither does 7002's scope. 7012's full text does: 'transparency' is one of its keywords, clause 4.3 requires that 'Agreement names shall enable transparency and be meaningful when seen from the perspective of a non-specialist', and clause 4.4.2 has agreements 'recorded and published in an open and transparent online directory'. It is left out of this theme only because the themes are drawn from the pages' abstracts, scopes and purposes; the other standards' full texts were not read.",
+   "id": "transparency",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "sharedThemes record (theme 'transparency'; no id field). The four member quotes are FOUND: 7001 'measurable, testable levels of transparency for autonomous systems'; 7005 'support ethical and transparent behavior'; 7000's purpose lists transparency; 7009 'in a robust, transparent, and accountable manner'. 7002's scope indeed lacks the word.",
+     "Error: '7012 has 'transparency' only among the keywords in its full text' is false. The full text uses the word in normative and informative text as well as the keywords, all --check FOUND on the PDF URL. Clause 4.3, Naming and labeling: 'Agreement names shall enable transparency and be meaningful when seen from the perspective of a non-specialist.' Clause 4.4.2: agreements 'recorded and published in an open and transparent online directory'. Informative use case B.2: agreements 'in which the terms around data exchange are transparent'. The part that is true is that the abstract, scope and purpose do not use it. Membership is kept, because the theme is drawn from the Xplore abstracts, scopes and purposes and the other standards' full texts were not read. The evidence now says so instead of misdescribing 7012's full text."
+    ]
+   }
+  },
+  {
+   "theme": "AI agents",
+   "standards": [
+    "7012-2025",
+    "7014.1-2026"
+   ],
+   "evidence": "7012 abstract: agreements 'between individuals and the service providers they engage on a network, including websites, applications and AI agents', with 'Computing devices and software performing as agents for both first and second parties' (the second phrase is in the full abstract on the IEEE SA page and in the PDF; the Xplore page cuts the abstract off before it). 7014.1 abstract: 'general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants'. In 7012 an AI agent can be the service a person deals with or software acting for either party to the contract; in 7014.1 the agent is the product, and the standard concerns how it emulates empathy.",
+   "id": "AI agents",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "sharedThemes record (theme 'AI agents'; no id field). Quotes FOUND: 7012 'including websites, applications and AI agents' (Xplore page); 7014.1 'general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants'. The 7012 quote 'Computing devices and software performing as agents for both first and second parties' is NOT on the Xplore page, which cuts the abstract off at 'Computing device...'. It is in the full abstract, FOUND on the IEEE SA page https://standards.ieee.org/ieee/7012/7192/ and on the PDF, and in doc-meta.json. The evidence now says where it is.",
+     "The contrast 'In 7012 agents act for the parties to a contract; in 7014.1 the agent is the product' leaves out half of 7012. Its first abstract sentence lists AI agents among 'the service providers they engage on a network, including websites, applications and AI agents'. There an AI agent is the counterparty or service a person deals with, which is close to 7014.1's sense. Rewritten. Also, 7014.1's scope drops 'agents' from the list ('empathic partners, personal AI, co-pilots, assistants'), so the evidence correctly cites the abstract."
+    ]
+   }
+  }
+ ],
+ "siteNotes": [
+  {
+   "file": "research/myterms.json:2294",
+   "text": "It is free to read; Doc Searls, who chaired the working group, wrote at launch that it is part of the IEEE GET Program for AI Ethics and Governance Standards and the latest of the IEEE 7000 series.",
+   "problem": "Out of date. The attribution is correct, but the timeline summary (event ieee-7012-published-xplore-2026) leaves 'the latest of the IEEE 7000 series' unqualified, and it is no longer true: IEEE 7014.1-2026 was published on 12 June 2026 and is in the same programme list. The GET claim also no longer rests on Searls alone: IEEE's own programme page lists 7012-2025. The generated js/data.js repeats this text at lines 10431 and 11398. Suggested wording: '... IEEE lists it in its GET Program for AI Ethics and Governance Standards. When Searls wrote on 29 January 2026 it was the newest standard in that programme; IEEE 7014.1-2026, published on 12 June 2026, has since joined it.'",
+   "evidence": "Series page (https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93), --check FOUND: '7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems' and '7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms'. https://ieeexplore.ieee.org/document/11559263, --check FOUND: 'Date of Publication: 12 June 2026'. Both pages rendered in a headless browser and checked with fetch-text.py."
+  },
+  {
+   "file": "research/myterms.json:2332",
+   "text": "The claim that it is free 'through the IEEE GET Program for AI Ethics and Governance Standards' rests only on Searls, who chaired the working group; IEEE's GET program listing could not be fetched (it is a client-side app). The IEEE Xplore search API marks document 11360682 as accessType 'promotional', 'Freely Available from IEEE', which confirms free access but not the GET label. The claim is now attributed to Searls.",
+   "problem": "Out of date. The GET listing has now been rendered in a headless browser, and it lists 7012-2025; the live Xplore page for 11360682 also carries the GET note. IEEE sources now confirm the GET label, so the claim need not rest on Searls. (Line 2331, the _verify note on the same event, correctly flags 'latest' as out of date and names 7014.1-2026; its date can now be cited from the rendered Xplore page rather than a search-API query.)",
+   "evidence": "Series page, --check FOUND: '7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms'. https://ieeexplore.ieee.org/document/11360682, --check FOUND: '(Note: The PDF of this standard is available at no charge complements of the IEEE GET program https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93.)'"
+  },
+  {
+   "file": "research/myterms.json:5014",
+   "text": "\"quote\": \"(Note: The PDF of this standard is available at no charge complements of the IEEE GET program https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93.)\",",
+   "problem": "Can be upgraded. This quote is the PENDING source in myth-standard-is-paywalled; its url is a Wayback snapshot (https://web.archive.org/web/20260128202024/https://ieeexplore.ieee.org/document/11360682) that could not be re-fetched. The same quote is now FOUND on the live Xplore page, rendered in a headless browser. It can become CONFIRMED with url https://ieeexplore.ieee.org/document/11360682 and the note 'Xplore page rendered in a headless browser; text checked with fetch-text.py'.",
+   "evidence": "python3 tools/fetch-text.py https://ieeexplore.ieee.org/document/11360682 --check \"(Note: The PDF of this standard is available at no charge complements of the IEEE GET program https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93.)\" printed FOUND on 2026-09-23."
+  },
+  {
+   "file": "research/myterms.json:4998",
+   "text": "Paid PDF and print copies are sold through IEEE's standards store (Accuris), but the PDF is also free to read and download through the IEEE GET Program for AI Ethics and Governance Standards.",
+   "problem": "Incomplete. The correction for myth-standard-is-paywalled leaves out the access condition the programme page states. Suggest adding 'with an IEEE account sign-in, which the programme page requires'.",
+   "evidence": "Series page, --check FOUND: 'To download any of these standards, you must sign in with an IEEE Account.'"
+  },
+  {
+   "file": "tools/editorial.mjs:492",
+   "text": "['Access', 'Free PDF through the IEEE GET Program'],",
+   "problem": "Incomplete. The facts row omits the stated sign-in condition. An earlier verify note (myterms.json:331) removed '(free IEEE account)' as unsupported, but the programme page does require an IEEE Account. It still does not say the account is free, so 'free IEEE account' remains unsupported. Suggested: 'Free PDF through the IEEE GET Program (IEEE account sign-in required)'. js/data.js:21885 is the built copy.",
+   "evidence": "Series page, --check FOUND: 'To download any of these standards, you must sign in with an IEEE Account.' The page follows it with 'Don't have an account? Create Account now.' and says nothing about cost."
+  },
+  {
+   "file": "research/myterms.json:331",
+   "text": "The editorial facts row 'Free PDF through the IEEE GET Program (free IEEE account)' is unsupported, and a prose fix is filed.",
+   "problem": "Partly out of date. The account requirement is now supported by the programme page; only the word 'free' before 'IEEE account' lacks a source. The no-credential download described in the same note is an observation of one route (the stampPDF link), not the stated rule.",
+   "evidence": "Series page, --check FOUND: 'To download any of these standards, you must sign in with an IEEE Account.'"
+  },
+  {
+   "file": "research/myterms.json:43",
+   "text": "The GET program page says users must accept IEEE's Terms and Conditions of Use before the PDF is released. On 2026-09-23 the repo helper, which sends no cookies or credentials, downloaded the PDF from the stampPDF link (page watermark 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.'). No IEEE sign-in was needed for that download.",
+   "problem": "Incomplete and now at odds with the programme page. getProgramNote cites the general IEEE SA GET page (terms of use), not the AI-ethics series page, which requires a sign-in with an IEEE Account. The observed download without credentials is worth keeping, but only as an observation that differs from the stated rule, not as the access condition. The note also leans on Searls ('are free') where IEEE's own series page and the 7012 Xplore page now say it directly. The same framing recurs at lines 5037 and 5043 (the watermark source note and its _verify).",
+   "evidence": "https://standards.ieee.org/products-programs/ieee-get-program/, --check FOUND: 'The website will require users accept of the Terms and Conditions of Use before access to the standard(s) PDF file is permitted.' Series page, --check FOUND: 'To download any of these standards, you must sign in with an IEEE Account.'"
+  },
+  {
+   "file": "index.html:546",
+   "text": "IEEE 7012 is one of the standards IEEE offers free of charge in its GET Program for AI Ethics and Governance. Most of the others set processes for the organisations that build and run systems, or requirements for the systems themselves; 7012 is written for the person.",
+   "problem": "Minor, not out of date. The programme's name on its page is 'GET Program for AI Ethics and Governance Standards'; the sentence capitalises a shortened form as if it were the name. Suggest the full name, and optionally 'free with an IEEE account'. (This static text is replaced at runtime by getSeries.desc when the data layer supplies one.)",
+   "evidence": "Series page, --check FOUND: 'GET Program for AI Ethics and Governance Standards'."
+  },
+  {
+   "file": "research/myterms.json:209",
+   "text": "\"quote\": \"The IEEE’s GET Program for AI Ethics and Governance Standards . Below is the 7000 series of standards, of which MyTerms is the latest one. All are free.\"",
+   "problem": "None as a quote: it is verbatim and dated 29 January 2026. The same quote appears at lines 2322 and 5005. Wherever it supports a present-tense claim that 7012 is the latest, see the note on line 2294.",
+   "evidence": "Page fetched with curl (the helper gets HTTP 403) and checked with the helper's to_text/norm functions: FOUND. article:published_time 2026-01-29T22:40:00+00:00."
+  },
+  {
+   "file": "research/myterms.json:200",
+   "text": "\"quote\": \"GET Program for AI Ethics and Governance Standards\",",
+   "problem": "None. This is the quote of the source titled 'IEEE GET Program' (https://standards.ieee.org/products-programs/ieee-get-program/, lines 196-203), and it is still on that page. The programme's own series page on Xplore is now the more direct source for 7012's membership.",
+   "evidence": "https://standards.ieee.org/products-programs/ieee-get-program/ --check 'GET Program for AI Ethics and Governance Standards': FOUND 2026-09-23."
+  },
+  {
+   "file": "research/myterms.json:69",
+   "text": "served free through the IEEE GET Program at https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=.",
+   "problem": "None. Accurate. Line 326 ('served free through the GET Program') is also fine.",
+   "evidence": "stampPDF --check 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.': FOUND 2026-09-23."
+  },
+  {
+   "file": "research/myterms.json:3057",
+   "text": "Announced 7 October 2020; W3C Working Draft (latest 17 September 2026).",
+   "problem": "Not related to the GET Program: this 'latest' refers to W3C Global Privacy Control drafts, as does line 3093. Not checked here.",
+   "evidence": "n/a"
+  }
+ ],
+ "_verdictsApplied": [
+  "ieee-get-program.json",
+  "ieee-get-relation.json",
+  "ieee-get-stds-a.json",
+  "ieee-get-stds-b.json"
+ ],
+ "classification": {
+  "id": "ieee-get-addressed-to",
+  "note": "Whom each standard addresses is this study's reading of each standard's own abstract, scope and purpose on IEEE Xplore (the addressedTo and personalData fields, with the deciding phrase quoted in addressedToEvidence and personalDataEvidence). It was checked by an independent verifier; borderline calls (7003, 7007, 7010, 7014, 7014.1) are explained in each record's note.",
+  "sources": [
+   {
+    "institution": "This study (Open Rights Archive)",
+    "title": "Whom each IEEE GET AI-ethics standard addresses, read from its own abstract and scope (research/ieee-get.json)",
+    "date": "2026-09-23",
+    "url": "https://fritzhand.github.io/history-of-privacy/research/ieee-get.json",
+    "quote": "",
+    "verificationStatus": "DERIVED",
+    "accessType": "FREE",
+    "note": "Editorial classification (DERIVED): each record quotes the phrase that decides it; verifier verdicts in research/verify/ieee-get-stds-a.json and ieee-get-stds-b.json."
+   }
+  ]
+ }
+}

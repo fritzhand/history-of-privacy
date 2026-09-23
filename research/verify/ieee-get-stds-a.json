@@ -1,0 +1,208 @@
+{
+ "slice": "ieee-get",
+ "chunk": "stds-a",
+ "verdicts": [
+  {
+   "kind": "standards",
+   "id": "ieee-2089-2021",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes, addressedToEvidence and personalDataEvidence re-checked: FOUND on the Xplore page. Title, Date of Publication (30 November 2021 = published 2021-11-30), DOI 10.1109/IEEESTD.2021.9627644 and kind 'Standard' match the page and doc-meta.json. IEEE SA's page records Board Approval 2021-11-09 and Published 2021-11-30 (--check FOUND), consistent with the '-2021' designation. Listed on the GET series page.",
+    "The note's reading of 'c) Offers terms appropriate to children' ('read with the abstract, the terms are offered by the service to the child, though the page does not say who drafts them') was an inference. The part of the scope that Xplore cuts off settles it. A reseller copy of IEEE's scope text (en-standard.eu, --check FOUND) goes on: 'This standard sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people.' The terms in view are the service's published terms. The same passage names 'vendors, public institutions, and the educational sector' as those who meet the criteria, which supports addressedTo 'organisation'. The note is rewritten and the source added.",
+    "personalData 'partial' holds, on better evidence than the note gave. Besides privacy among the purpose's five aims, the full scope says 'Data privacy and security are complex and highly regulated areas of law, particularly as related to children and young people.' That sentence is a caveat about legal compliance, not a statement that personal data is the standard's subject, so the call stays 'partial' and does not become 'central'.",
+    "Summary OK: it matches the abstract ('organizations seek to make their services age appropriate') and the scope ('situations where users are children'). The full abstract in doc-meta.json ('help organizations ask the right relevant questions of their services') also supports 'organisation'."
+   ],
+   "fieldFixes": {
+    "note": "personalData is 'partial'. The purpose names privacy as one of five aims for children (safety, privacy, autonomy, agency, health). The full scope, in a reseller copy of IEEE's text (en-standard.eu), adds that 'Data privacy and security are complex and highly regulated areas of law, particularly as related to children and young people', as a caveat that users must observe the law. Neither text makes personal data the standard's subject. The scope lists 'Offers terms appropriate to children' among the framework's key areas. Its full text says the standard 'sets normative requirements for published terms, design, and delivery', so the terms in view are the service's published terms, made appropriate for children; nothing in the abstract, scope or purpose has the child proffer terms. The same scope says it explains how 'vendors, public institutions, and the educational sector' can meet the criteria. On IEEE Xplore the abstract and scope are cut off ('...'); the rest of the scope was read in the reseller copy, and the full abstract in Xplore's embedded metadata. The full PDF was not read."
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "European Standards (en-standard.eu), standards reseller",
+     "title": "IEEE 2089-2021 - IEEE Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children (product listing, description)",
+     "date": "2021-11-30",
+     "url": "https://www.en-standard.eu/ieee-2089-2021-ieee-standard-for-an-age-appropriate-digital-services-framework-based-on-the-5rights-principles-for-children/",
+     "quote": "This standard provides a specific impact rating system and evaluation criteria and explains how vendors, public institutions, and the educational sector can meet the criteria. This standard sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people. Data privacy and security are complex and highly regulated areas of law, particularly as related to children and young people.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The listing's description reproduces IEEE's scope, purpose and abstract. Its first paragraph begins word for word like the Xplore 'Scope:' field and continues past the point where Xplore cuts it off ('explains how vendors, public institutions, an...'). Supports: note (the terms are the service's 'published terms'; vendors, public institutions and the educational sector meet the criteria; data privacy named as a regulated area). The listing shows 'Released: 30.11.2021', which matches the Xplore Date of Publication; the page itself is undated and was read 2026-09-23. A secondary copy of IEEE's text, not an IEEE page. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 2089-2021 (standard page on standards.ieee.org)",
+     "date": "2021-11-30",
+     "url": "https://standards.ieee.org/ieee/2089/7633/",
+     "quote": "Board Approval 2021-11-09",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2021' in the designation is the approval year. The page also gives 'Published: 2021-11-30', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "standards",
+   "id": "ieee-7000-2021",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes and both evidence strings re-checked: FOUND. Title, Date of Publication (15 September 2021), DOI 10.1109/IEEESTD.2021.9536679 and kind match. IEEE SA records Board Approval 2021-06-16 and Published 2021-09-15 (--check FOUND). Listed on the GET series page.",
+    "Summary says more than the abstract. The abstract says organisations can 'include consideration of ethical values'. The summary has them 'build ethical values ... into system design', which is stronger than the abstract. The abstract's own link to design is traceability: 'traceability of ethical values through an operational concept, value propositions, and value dispositions in the system design'. The summary is rewritten to follow the abstract.",
+    "addressedTo 'organisation' holds. The abstract and purpose name organisations, and the full abstract ends 'All sizes and types of organizations using their own life cycle models are relevant to this standard.' (FOUND on IEEE SA's page; added). The scope names 'engineers and technologists', which the note already acknowledges.",
+    "personalData 'partial' is kept but is the weakest call in the chunk. The page never mentions personal data or data. Privacy appears only as one example value in the purpose, and the scope says the standard 'does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy'. The panel badge 'Personal data: one concern' is at the edge of what the page supports, so the panel's prose should not describe 7000 as a standard about personal data. The note already says this.",
+    "Minor: source[0]'s note calls its quote the abstract's 'first two sentences'. The quote actually stops partway through the second sentence (the sentence continues ', involving traceability of ethical values...'). This does not affect verification."
+   ],
+   "fieldFixes": {
+    "summary": "Establishes processes by which organisations can consider ethical values, elicited and prioritised with stakeholders, throughout concept exploration and development, and trace them into the system design."
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7000-2021 (standard page on standards.ieee.org)",
+     "date": "2021-09-15",
+     "url": "https://standards.ieee.org/ieee/7000/6781/",
+     "quote": "All sizes and types of organizations using their own life cycle models are relevant to this standard.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: addressedTo 'organisation'. This is the last sentence of the abstract, which Xplore cuts off ('All sizes and...'); IEEE SA's page gives the abstract in full. The same page gives 'Board Approval 2021-06-16' and 'Published: 2021-09-15'. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "standards",
+   "id": "ieee-7001-2021",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes and addressedToEvidence re-checked: FOUND. Title, Date of Publication (04 March 2022), DOI 10.1109/IEEESTD.2022.9726144 and kind match. The '-2021' designation is the approval year: IEEE SA records Board Approval 2021-12-08 and Published 2022-03-04 (--check FOUND). 'published' 2022-03-04 is correct. Listed on the GET series page.",
+    "The note said the scope's remainder after 'Harm might also be indirect, ...' was not checked. The full scope was found, reproduced on the OECD.AI catalogue (compiled by the AI Standards Hub, '© IEEE 2022'). Its first paragraph matches the Xplore text word for word. It continues: 'such as unauthorized persons gaining access to confidential data or a victimless crime...', and it brings 'The data sets used to train such systems' into scope. Neither 'personal data' nor 'privacy' appears in the abstract, full scope or purpose, so personalData 'none' stands. The confidential-data example is the nearest the text comes, and the note now says so.",
+    "addressedTo 'system' is strengthened by the full scope: 'This standard does not provide the designer with advice on how to design transparency into their system. Instead, it defines a set of testable levels of transparency and a standard set of requirements that shall be met in order to satisfy each of these levels.' The same scope also says the document 'does address the transparency of the engineering process', which is a secondary element.",
+    "Summary OK: it follows the abstract closely."
+   ],
+   "fieldFixes": {
+    "note": "The number carries 2021, the year IEEE SA's Standards Board approved it (8 December 2021). The Xplore Date of Publication is 04 March 2022 (DOI 10.1109/IEEESTD.2022.9726144), and 'published' follows the page. On Xplore the scope is cut off after 'Harm might also be indirect, ...'. The full scope, reproduced on the OECD.AI catalogue (compiled by the AI Standards Hub), continues 'such as unauthorized persons gaining access to confidential data'. It brings the data sets used to train machine-learning systems into scope. It says the standard 'defines a set of testable levels of transparency and a standard set of requirements that shall be met' rather than advising designers how to build transparency in. Neither personal data nor privacy is named in the abstract, the full scope or the purpose, so 'none' stands; the confidential-data example of indirect harm is the nearest the text comes. The full PDF was not read."
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "OECD.AI Catalogue of Tools & Metrics (entry compiled by the AI Standards Hub)",
+     "title": "IEEE 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (catalogue entry reproducing the standard's scope)",
+     "date": "2026-09-23",
+     "url": "https://oecd.ai/en/catalogue/tools/ieee-7001-2021-ieee-standard-for-transparency-of-autonomous-systems",
+     "quote": "Harm might also be indirect, such as unauthorized persons gaining access to confidential data or a victimless crime that affect no-one in particular yet have an impact upon society or the environment. Intelligent autonomous systems that use machine learning are also within scope. The data sets used to train such systems are also within the scope of this standard when considering the transparency of the system as a whole.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: note and personalData 'none'. This is the part of the scope that Xplore cuts off. The entry's first paragraph matches the Xplore 'Scope:' text word for word, and the entry ends '© IEEE 2022 All rights reserved. The information about this standard has been compiled by the AI Standards Hub'. The scope text names neither personal data nor privacy (the only matches for those words on the page are OECD.AI's own navigation). The entry is undated; the date is the day it was read. A secondary copy of IEEE's text. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "OECD.AI Catalogue of Tools & Metrics (entry compiled by the AI Standards Hub)",
+     "title": "IEEE 7001-2021 - IEEE Standard for Transparency of Autonomous Systems (catalogue entry reproducing the standard's scope)",
+     "date": "2026-09-23",
+     "url": "https://oecd.ai/en/catalogue/tools/ieee-7001-2021-ieee-standard-for-transparency-of-autonomous-systems",
+     "quote": "This standard does not provide the designer with advice on how to design transparency into their system. Instead, it defines a set of testable levels of transparency and a standard set of requirements that shall be met in order to satisfy each of these levels.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: addressedTo 'system'. The standard sets requirements that the system meets, not a process for designers. This is from the part of the scope that Xplore cuts off. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7001-2021 (standard page on standards.ieee.org)",
+     "date": "2022-03-04",
+     "url": "https://standards.ieee.org/ieee/7001/6929/",
+     "quote": "Board Approval 2021-12-08",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2021' in the designation is the approval year. The page also gives 'Published: 2022-03-04', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "standards",
+   "id": "ieee-7002-2022",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes and both evidence strings re-checked: FOUND. Title, Date of Publication (19 April 2022), DOI 10.1109/IEEESTD.2022.9760247 and kind match. IEEE SA records Board Approval 2022-02-09 and Published 2022-04-19 (--check FOUND). Listed on the GET series page. The abstract, scope and purpose are indeed shown in full, with no ellipsis.",
+    "Summary, addressedTo 'organisation' and personalData 'central' are all supported by the scope.",
+    "The note says 'the people whose data it is appear only as \"employee, customer, or other external user\"' without limiting that to the Xplore text. The full PDF was not read (scratchpad get/ieee7002.txt is empty), so the claim can only be about the page. The full 7005 purpose shows how a cut-off or unread text can give the data subject a more active role than the page suggests. The note is rewritten to limit the claim to the page."
+   ],
+   "fieldFixes": {
+    "note": "Not borderline on either field. On the Xplore page the organisation using the data runs the process, and the people whose data it is appear only as 'employee, customer, or other external user'. The full PDF was not read, so whether the standard itself gives those people any active role was not checked. The abstract, scope and purpose are shown in full on the page."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "standards",
+   "id": "ieee-7003-2024",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes and addressedToEvidence re-checked: FOUND. Title, Date of Publication (24 January 2025), DOI 10.1109/IEEESTD.2025.10851955 and kind match. The '-2024' designation is the approval year: IEEE SA records Board Approval 2024-12-11 and Published 2025-01-24 (--check FOUND). Listed on the GET series page.",
+    "The note said the cut-off scope's remainder was not checked. The rest of the scope was found, reproduced by the AI Transparency Institute on 26 January 2025 (--check FOUND). It continues from 'public and private spheres' with 'However, alongside the benefits, their use is not without maleficent risk. This standard describes processes and methodologies to help users address issues of bias in the creation of algorithms and models' and then lists the same elements as the abstract. Neither personal data nor privacy appears anywhere on that page, so personalData 'none' stands.",
+    "addressedTo 'organisation' is kept as the note's borderline call. The purpose addresses 'individuals or organizations creating an AIS', so the badge 'An organisation's process' simplifies. The note now says 'organisation' also covers individual creators.",
+    "Summary OK: 'those creating algorithms' reads the abstract's 'users' through the purpose's 'individuals or organizations creating an AIS', and the three listed elements match the abstract."
+   ],
+   "fieldFixes": {
+    "note": "addressedTo is borderline between 'organisation' and 'system'. The standard's content concerns how algorithms and AIS are built and validated, but the page describes processes and methodologies for their creators, not levels or properties the system must meet. 'Users' in the abstract means users of the standard. The purpose names 'individuals or organizations creating an AIS', so 'organisation' here also covers individual creators. personalData: the scope mentions 'vast and varied data sources from public and private spheres', which is not a mention of personal data or privacy. The number carries 2024, the year IEEE SA's Standards Board approved it (11 December 2024); the Xplore Date of Publication is 24 January 2025. On Xplore the scope is cut off ('...'). The rest of it, as reproduced by the AI Transparency Institute on 26 January 2025, names neither personal data nor privacy. The full PDF was not read."
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "AI Transparency Institute",
+     "title": "7003-2024 – IEEE Standard for Algorithmic Bias Considerations (post reproducing the Xplore abstract and scope)",
+     "date": "2025-01-26",
+     "url": "https://aitransparencyinstitute.com/7003-2024-ieee-standard-for-algorithmic-bias-considerations/",
+     "quote": "Algorithms enable the exploitation of vast and varied data sources from public and private spheres to support human decision-making and actions that serve the diverse interests of the societies and economies in which they operate. However, alongside the benefits, their use is not without maleficent risk. This standard describes processes and methodologies to help users address issues of bias in the creation of algorithms and models.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: note and personalData 'none'. The post, dated 26/01/2025, reproduces the standard's 'Scope:' text, which begins word for word like the Xplore field. The quote bridges the point where Xplore cuts the scope off ('...interests of the societie...'). The scope goes on to list the same elements as the abstract. The words 'privacy', 'personal data' and 'personal information' do not appear anywhere on the page. A secondary copy of IEEE's text. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7003-2024 (standard page on standards.ieee.org)",
+     "date": "2025-01-24",
+     "url": "https://standards.ieee.org/ieee/7003/11357/",
+     "quote": "Board Approval 2024-12-11",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2024' in the designation is the approval year. The page also gives 'Published: 2025-01-24', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "standards",
+   "id": "ieee-7005-2021",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes and both evidence strings re-checked: FOUND. Title, Date of Publication (19 November 2021), DOI 10.1109/IEEESTD.2021.9618905 and kind match. IEEE SA records Board Approval 2021-09-23 and Published 2021-11-19 (--check FOUND). Listed on the GET series page.",
+    "The note's claim that the employee appears 'as a \"data subject\" who needs to understand how their data is handled, not as a party who acts' is contradicted by the rest of the purpose, which Xplore cuts off ('...the means used to protect the data s...'). A reseller copy of IEEE's text (en-standard.eu, --check FOUND) continues: 'Each issue is addressed in terms of the means used to protect the data subject's personal data and the data subject's options if the personal data is compromised. Inspired by the European Union (EU) General Data Protection Regulation (GDPR) legislation, the standard is designed so that workers ... will have control and influence over the personal information that directly represents a core asset of their identity and lives'. The stated design aim gives workers options, control and influence. The note is rewritten.",
+    "The summary is one-sided and slightly misattributes. It lists only the employer's data uses ('help employers access, collect, store, use, share and destroy employee data'). It leaves out the transparency aim in the title and purpose, and the stated aim of worker control. It also runs the 'metrics and conformance criteria' into 'to help employers access...', although the abstract ties them to 'these types of uses from trusted global partners and how third parties and employers can meet them'. The summary is rewritten from the abstract and the full purpose.",
+    "addressedTo 'organisation' stands: the abstract addresses employers and the purpose 'organizations'. personalData 'central' stands, and the full purpose strengthens it."
+   ],
+   "fieldFixes": {
+    "summary": "Describes methodologies, with metrics and conformance criteria, for how employers access, collect, store, use, share and destroy employee data, in processes that can be explained to the employee as data subject; its stated purpose, inspired by the GDPR, is that workers have control and influence over their personal information.",
+    "note": "The employer runs the governance: the abstract addresses employers, and the purpose addresses 'organizations'. The employee is the data subject. On Xplore the purpose is cut off ('...'). Its remainder, read in a reseller copy of IEEE's text (en-standard.eu), says each issue is addressed in terms of 'the data subject's options if the personal data is compromised'. It adds that, inspired by the GDPR, the standard 'is designed so that workers ... will have control and influence over the personal information' about them. So the worker is given options and influence within governance the employer runs. What those options are, and whether workers have any part in setting the terms, would need the full PDF, which was not read. Certification processes, success criteria and execution procedures are stated to be out of scope."
+   },
+   "sourceFixes": [],
+   "addSources": [
+    {
+     "institution": "European Standards (en-standard.eu), standards reseller",
+     "title": "IEEE 7005-2021 - IEEE Standard for Transparent Employer Data Governance (product listing, description)",
+     "date": "2021-11-19",
+     "url": "https://www.en-standard.eu/ieee-7005-2021-ieee-standard-for-transparent-employer-data-governance/",
+     "quote": "Each issue is addressed in terms of the means used to protect the data subject's personal data and the data subject's options if the personal data is compromised. Inspired by the European Union (EU) General Data Protection Regulation (GDPR) legislation, the standard is designed so that workers facing widespread automation issues potentially displacing their jobs will have control and influence over the personal information that directly represents a core asset of their identity and lives whether derived from work-flow monitoring or personal data storage.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: summary (stated aim of worker control and influence) and note. This is the end of the standard's purpose, which Xplore cuts off ('Each issue is addressed in terms of the means used to protect the data s...'). The listing's second description paragraph begins word for word like the Xplore 'Purpose:' field. The listing shows 'Released: 19.11.2021', matching the Xplore Date of Publication; the page itself is undated and was read 2026-09-23. A secondary copy of IEEE's text, not an IEEE page. tools/fetch-text.py --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE SA - IEEE 7005-2021 (standard page on standards.ieee.org)",
+     "date": "2021-11-19",
+     "url": "https://standards.ieee.org/ieee/7005/7014/",
+     "quote": "Board Approval 2021-09-23",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: the '-2021' in the designation is the approval year. The page also gives 'Published: 2021-11-19', matching the record's published date. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  }
+ ]
+}

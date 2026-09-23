@@ -1,0 +1,193 @@
+{
+  "slice": "ieee-get",
+  "chunk": "stds-b",
+  "verdicts": [
+    {
+      "kind": "standards",
+      "id": "ieee-7007-2021",
+      "status": "FIXED",
+      "issues": [
+        "Checked: all three quotes re-run with fetch-text.py --check, all FOUND on https://ieeexplore.ieee.org/document/9611206. Title, DOI 10.1109/IEEESTD.2021.9611206 and Date of Publication '12 November 2021' match the page and doc-meta.json. The IEEE SA standard page gives Board Approval 2021-09-23, so the 2021 in the number is the approval year, and Published 2021-11-12.",
+        "kind 'Ontological Standard' is not an IEEE document type. 'Ontological' describes the content, and IEEE SA gives its status as 'Active Standard'. The panel renderer (js/app.js buildGetSeries) shows any kind other than 'Standard' as a badge beside the number. This tile would then carry an 'Ontological Standard' badge that the other Standards do not, and it would repeat the title. Set kind to 'Standard'.",
+        "The summary shortens 'ontologies ... that assist in the development of ethically driven methodologies for the design of robots and automation systems' to 'for ethically driven design'. The ontologies support design methodologies; they do not govern design directly. A reworded summary is given below.",
+        "personalDataEvidence says there is no mention of personal data or privacy 'in abstract, scope or purpose', but the Purpose is cut off on the Xplore page ('The use of ontologies for representing ...', --check FOUND), and the rest was not seen. The abstract is complete on the IEEE SA page (and in doc-meta.json): its missing sentences are about formal logic and a link, with no mention of privacy. The evidence needs that qualification.",
+        "addressedTo 'system' is kept as a borderline call, and the note already says so. The object is the design of R&A systems, which fits the panel's 'The system's design' label better than 'An organisation's process'.",
+        "personalData 'none' is supported by what is visible."
+      ],
+      "fieldFixes": {
+        "kind": "Standard",
+        "summary": "Establishes a set of ontologies (concepts, definitions, axioms and use cases) to support ethically driven methodologies for designing robots and automation systems, usable as a guideline or as a reference taxonomy shared across disciplines.",
+        "personalDataEvidence": "no mention of personal data or privacy in the abstract (complete on the IEEE SA page), the scope, or the visible part of the purpose (cut off on the Xplore page)",
+        "note": "addressedTo is a borderline 'system': the standard is a reference vocabulary (a set of ontologies, described in the abstract as usable 'as a guideline or as a reference \"taxonomy\"'), not a process an organisation runs and not a list of design requirements; its declared object is the design of robots and automation systems, which is the closest fit. 'Ontological' in the title describes the content; the document type is a Standard (IEEE SA: 'Active Standard'). The abstract is cut off on the Xplore page ('Users of t...') but complete on the IEEE SA page, where the remainder concerns formal logic (Common Logic Interchange Format) and a link; the purpose is cut off on the Xplore page ('The use of ontologies for representing ...') and its remainder was not seen."
+      },
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7007-2021 — IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (standard page)",
+          "date": "2021-11-12",
+          "url": "https://standards.ieee.org/ieee/7007/7070/",
+          "quote": "PAR Approval 2017-05-18 Board Approval 2021-09-23 History Published: 2021-11-12",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Board approval in 2021 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23 (https://standards.ieee.org/standard/7007-2021.html redirects here)."
+        },
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7007-2021 — IEEE Ontological Standard for Ethically Driven Robotics and Automation Systems (standard page)",
+          "date": "2021-11-12",
+          "url": "https://standards.ieee.org/ieee/7007/7070/",
+          "quote": "Users of this standard need to have a minimal knowledge of formal logics to understand the axiomatization expressed in Common Logic Interchange Format.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "The part of the abstract that is cut off on the Xplore page ('Users of t...'); the full abstract has no mention of privacy or personal data. fetch-text.py --check FOUND 2026-09-23."
+        }
+      ]
+    },
+    {
+      "kind": "standards",
+      "id": "ieee-7009-2024",
+      "status": "FIXED",
+      "issues": [
+        "Checked: both quotes FOUND on https://ieeexplore.ieee.org/document/10582898. Title, DOI 10.1109/IEEESTD.2024.10582898 and Date of Publication '05 July 2024' match the page and doc-meta.json. IEEE SA gives Board Approval 2024-05-20, which matches the 2024 in the number, and Published 2024-07-05.",
+        "The summary matches the abstract. addressedTo 'system' is supported: the standard sets fail-safe mechanisms in the systems, and the developers, users and regulators it names are the ones who design them. personalData 'none' is supported, because the abstract and scope are shown in full.",
+        "Minor: personalDataEvidence cites 'abstract, scope or purpose', but the page has no Purpose section ('Purpose:' --check NOT-FOUND), as the note itself says."
+      ],
+      "fieldFixes": {
+        "personalDataEvidence": "no mention of personal data or privacy in the abstract or scope (the page shows no Purpose section)"
+      },
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7009-2024 — IEEE Standard for Fail-Safe Design of Autonomous and Semi-Autonomous Systems (standard page)",
+          "date": "2024-07-05",
+          "url": "https://standards.ieee.org/ieee/7009/7096/",
+          "quote": "PAR Approval 2017-06-15 Board Approval 2024-05-20 History ANSI Approved: 2025-07-02 Published: 2024-07-05",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Board approval in 2024 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+        }
+      ]
+    },
+    {
+      "kind": "standards",
+      "id": "ieee-7010-2020",
+      "status": "OK",
+      "issues": [
+        "Checked: all three quotes FOUND on https://ieeexplore.ieee.org/document/9084219. Title, kind (Recommended Practice), DOI 10.1109/IEEESTD.2020.9084219 and Date of Publication '01 May 2020' match. IEEE SA gives Board Approval 2020-03-05 and Published 2020-05-01.",
+        "The summary matches the scope.",
+        "addressedTo 'organisation' is a judgement call, and the note discloses it. The page never names organisations. Its purpose addresses 'A/IS creators (designers, developers, engineers, programmers, and others)', and the scope sets metrics for 'a Well-Being Impact Assessment (WIA) process'. It is kept because what the page sets is an assessment process, not properties of the system. That matches how part-stds-a treated 7000 and 7003, which also name creators or engineers. Readers should know that the tile label 'An organisation's process' rests on that reading.",
+        "personalData 'none' is supported: the abstract, scope and purpose are shown in full and do not mention personal data or privacy."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7010-2020 — IEEE Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being (standard page)",
+          "date": "2020-05-01",
+          "url": "https://standards.ieee.org/ieee/7010/7718/",
+          "quote": "PAR Approval 2019-11-07 Board Approval 2020-03-05 History Published: 2020-05-01",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Board approval in 2020 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+        }
+      ]
+    },
+    {
+      "kind": "standards",
+      "id": "ieee-7012-2025",
+      "status": "FIXED",
+      "issues": [
+        "Checked: all four quotes FOUND, three on https://ieeexplore.ieee.org/document/11360682 and the clause 1.1 sentence in the full-text PDF. Title, DOI 10.1109/IEEESTD.2025.11360682 and Date of Publication '20 January 2026' match the page and doc-meta.json.",
+        "IEEE SA gives Board Approval 2025-11-04, which explains the 2025 in the number and the DOI, and Published 2026-01-20. So 'published' is right.",
+        "The note's claims check out. 'this draft standard' stands in clause 1.1 of the full text (and clause 2 says 'There are no normative references for this draft standard'). The page shows 'Free' where the other standards show 'Available through the IEEE GET ProgramTM'. The abstract and scope are cut off where the note says.",
+        "addressedTo 'person' is strongly supported by the abstract, scope and purpose.",
+        "Summary: 'from a neutral public roster' moves 'neutral' from the keeper onto the roster. The abstract has 'a roster kept by an independent and neutral non-business entity' and the full-text scope 'a public roster by a neutral noncommercial entity'. A reworded summary is given below.",
+        "personalData 'central' rests on 'personal privacy terms'. The page's abstract, scope and purpose never say 'personal data', as the note (and the personal-data theme in part-relation) says. The panel will label the tile 'Personal data: its subject'. That label is supported in substance by the full text, which was read. In its informative Annex A the baseline term SD-BASE means receiving a service 'without any analytics, tracking, or profiling by the 2nd or 3rd parties'. This is added as a source, marked as coming from an informative annex. No sibling 7000-series standard is cited in the 7012 full text: a grep for 7000, 7002, 7005, 7007, 7009, 7010, 7014 and P70 finds only its own number and p7012 identifiers."
+      ],
+      "fieldFixes": {
+        "summary": "Describes how individuals, as first parties, proffer privacy terms chosen from a public roster kept by a neutral non-business entity, which service providers' machines can read and agree to, with both sides keeping a record of the agreement."
+      },
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "IEEE (IEEE Xplore)",
+          "title": "IEEE Std 7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (full text PDF, Annex A, informative)",
+          "date": "2026-01-20",
+          "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          "quote": "SD-BASE, as the baseline term, represents the individual's preference to receive a service without any analytics, tracking, or profiling by the 2nd or 3rd parties.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Annex A (informative), 'Draft terms with sample code': the baseline term is about analytics, tracking and profiling of the individual. This supports personalData 'central' in substance, although the Xplore page's abstract, scope and purpose do not say 'personal data'. Full-text PDF (free); fetch-text.py --check FOUND 2026-09-23."
+        },
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
+          "date": "2026-01-20",
+          "url": "https://standards.ieee.org/ieee/7012/7192/",
+          "quote": "PAR Approval 2017-12-06 Board Approval 2025-11-04 History Published: 2026-01-20",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Board approval in 2025 explains the year in the number and DOI; publication on 20 January 2026 matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+        }
+      ]
+    },
+    {
+      "kind": "standards",
+      "id": "ieee-7014-2024",
+      "status": "FIXED",
+      "issues": [
+        "Checked: all three quotes FOUND on https://ieeexplore.ieee.org/document/10576666. Title, DOI 10.1109/IEEESTD.2024.10576666 and Date of Publication '28 June 2024' match. IEEE SA gives Board Approval 2024-05-20, which matches the 2024 in the number, and Published 2024-06-28. The note's remark about the unclosed parenthesis is accurate.",
+        "The summary drops a hedge. The abstract covers systems 'that attempt to emulate aspects of human empathy', but the summary says systems 'that emulate human empathy'. A reworded summary is given below.",
+        "addressedTo 'system' is a borderline call and is disclosed: the purpose is design guidance for empathic systems.",
+        "personalData 'none' is a borderline call and is disclosed. The scope covers systems that 'identify, quantify, respond to, or simulate affective states, such as emotions and cognitive states', which are in substance inferences about people. But the page never says personal data or privacy, and the purpose names 'bias, abuse, or exploitation' as the harms. It is kept under the literal-mention rule used across the panel. If the panel ever switched to a substantive rule, 'partial' would be arguable. The full PDF was not read, so nothing is claimed about it."
+      ],
+      "fieldFixes": {
+        "summary": "Gives ethical guidance for developing, deploying and decommissioning autonomous and intelligent systems that attempt to emulate aspects of human empathy, including systems that identify or simulate emotions."
+      },
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7014-2024 — IEEE Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems (standard page)",
+          "date": "2024-06-28",
+          "url": "https://standards.ieee.org/ieee/7014/7648/",
+          "quote": "PAR Approval 2019-06-13 Board Approval 2024-05-20 History Published: 2024-06-28",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Board approval in 2024 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+        }
+      ]
+    },
+    {
+      "kind": "standards",
+      "id": "ieee-7014.1-2026",
+      "status": "FIXED",
+      "issues": [
+        "Checked: all four quotes FOUND on https://ieeexplore.ieee.org/document/11559263, including 'This RP (RP) defines' as printed. Title, kind (Recommended Practice), DOI 10.1109/IEEESTD.2026.11559263 and Date of Publication '12 June 2026' match. IEEE SA gives Board Approval 2026-02-12 and Published 2026-06-12.",
+        "The relation claim 'extends IEEE 7014' is supported by the abstract's 'domainspecific extension of IEEE Std 7014'.",
+        "The summary drops 'marketed as'. The abstract refers to 'general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants', a label about how the products are sold. The summary turns it into a description of what the products are ('emulate empathy as partners, companions or assistants'). A reworded summary is given below.",
+        "addressedTo 'system' is a disclosed borderline call and is supported by the purpose ('conception, design and lifecycle of GPAI applications').",
+        "personalData 'none' is supported: 'personal AI' is a product label, and the page does not mention personal data or privacy."
+      ],
+      "fieldFixes": {
+        "summary": "Recommends ethical practices for the conception, design and lifecycle of general-purpose AI products that emulate empathy and are marketed as partners, companions or assistants; extends IEEE 7014."
+      },
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "IEEE Standards Association",
+          "title": "IEEE 7014.1-2026 — IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (standard page)",
+          "date": "2026-06-12",
+          "url": "https://standards.ieee.org/ieee/7014.1/11609/",
+          "quote": "PAR Approval 2024-03-21 Board Approval 2026-02-12 History Published: 2026-06-12",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Board approval in 2026 matches the year in the number; publication date matches the Xplore page. fetch-text.py --check FOUND 2026-09-23."
+        }
+      ]
+    }
+  ]
+}

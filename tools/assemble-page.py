@@ -6,7 +6,8 @@
 The Open Graph / Twitter descriptions and the JSON-LD citation line quote
 the number of cited data points and institutions. Those numbers live in
 js/data.js, so this script recounts them the same way the Source Audit
-does (every object reachable under a `source` key) and rewrites the three
+does (every object reachable under a `source` key or a side-source key
+such as `codaSource`) and rewrites the three
 places they appear. Run it after tools/build-data.mjs.
 """
 import json, re, subprocess, pathlib
@@ -18,8 +19,10 @@ let n = 0; const inst = new Set();
 const add = s => { if (!s) return; if (Array.isArray(s)) return s.forEach(add);
   if (typeof s === 'object' && (s.institution || s.url)) { n++; inst.add(s.institution || 'Unknown'); } };
 const walk = (o, d) => { if (!o || d > 6) return; if (Array.isArray(o)) return o.forEach(x => walk(x, d + 1));
-  if (typeof o !== 'object') return; if ('source' in o && typeof o.source === 'object') add(o.source);
-  for (const [k, v] of Object.entries(o)) if (k !== 'source' && v && typeof v === 'object') walk(v, d + 1); };
+  if (typeof o !== 'object') return;
+  for (const [k, v] of Object.entries(o)) {
+    if (/^source$|Source$/.test(k)) { if (v && typeof v === 'object') add(v); }
+    else if (v && typeof v === 'object') walk(v, d + 1); } };
 walk(w.privacyData, 0);
 console.log(JSON.stringify({ n, inst: inst.size }));
 """

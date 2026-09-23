@@ -489,7 +489,7 @@ export default function editorial(H) {
       ['Approved', '4 November 2025, IEEE SA Standards Board — hence “-2025”'],
       ['Published', '20 January 2026 · IEEE Xplore 11360682'],
       ['DOI', '10.1109/IEEESTD.2025.11360682'],
-      ['Access', 'Free PDF through the IEEE GET Program'],
+      ['Access', 'Free PDF through the IEEE GET Program, with an IEEE account sign-in'],
       ['Roster', 'Standard agreements kept by a neutral nonprofit (no normative clause names one); for MyTerms, Customer Commons'],
       ['Launched', '28 January 2026 (Data Privacy Day), London and online'],
     ],
@@ -502,6 +502,60 @@ export default function editorial(H) {
     codaSource: src([...mech('launch-mode').sources, ...mech('records-both-sides').sources, ...mech('any-protocol').sources]),
     source: stSources,
   };
+
+  /* ── WHERE 7012 SITS: IEEE's GET AI-ethics series ─────────────────
+     Twelve standards IEEE offers free in its GET Program for AI Ethics and
+     Governance, read by their own scope statements. The counts in the lede
+     are computed from the records, so the sentence stays true if a record's
+     classification changes. */
+  const getSeries = (() => {
+    const g = H.list('ieee-get', 'standards');
+    if (!g.length) return undefined;
+    const prog = H.obj('ieee-get', 'program');
+    const rel = H.obj('ieee-get', 'relation');
+    const cls = H.obj('ieee-get', 'classification');
+    const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const longDate = d => { const [y, m, day] = String(d).split('-').map(Number); return `${day} ${MONTHS[m - 1]} ${y}`; };
+    const NUM = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+    const n = k => g.filter(x => x.addressedTo === k).length;
+    const word = k => NUM[n(k)] || String(n(k));
+    const stdSrc = x => src(x.sources).filter(s => s.verificationStatus === 'CONFIRMED');
+    const byNum = num => g.find(x => x.number === num);
+    const standards = g.slice().sort((a, b) => String(a.published).localeCompare(String(b.published))).map(x => ({
+      number: x.number, title: x.title, kind: x.kind, published: x.published,
+      publishedLabel: `Published ${longDate(x.published)}`,
+      who: x.addressedTo, personalData: x.personalData, summary: x.summary, url: x.url,
+      destination: x.number.startsWith('7012'), focus: x.number.startsWith('7002'),
+      source: stdSrc(x),
+    }));
+    const progSrc = words => withQuote(prog.sources, words);
+    /* One sentence exactly as its source gives it (the merged source joins
+       every quote from the same page). */
+    const rawQuote = (list, words) => {
+      const q = [].concat(list || []).map(x => String(x.quote || '')).find(t => t.includes(words));
+      if (!q) throw new Error(`ieee-get: no quote with "${words}"`);
+      const i = q.indexOf(words), start = Math.max(0, q.lastIndexOf('. ', i) + (q.lastIndexOf('. ', i) >= 0 ? 2 : 0));
+      const end = q.indexOf('. ', i);
+      return q.slice(start, end < 0 ? q.length : end + 1).trim();
+    };
+    const s7002 = byNum('7002-2022'), s7012 = byNum('7012-2025');
+    return {
+      desc: `IEEE offers ${NUM[g.length]} standards free of charge, with an IEEE account sign-in, in its GET Program for AI Ethics and Governance Standards, launched in January 2023; eleven belong to the 7000 series that grew out of IEEE's Global Initiative on the ethics of autonomous and intelligent systems. Read by their own scope statements, ${word('organisation')} set processes for the organisations and teams that design, build or run systems, ${word('system')} concern how the systems themselves are designed or behave, and ${n('person') === 1 ? 'one — 7012 — is addressed to the person' : `${word('person')} are addressed to the person`}.`,
+      descSource: [progSrc('To download any of these standards'), progSrc('PISCATAWAY, NJ, 17 January 2023'), progSrc('The creation of over twelve standards working groups'), ...src(cls.sources)],
+      standards,
+      pair: [
+        { number: s7002.number, title: s7002.title, who: 'organisation', role: 'The organisation\'s privacy process',
+          quotes: [rawQuote(s7002.sources, 'defines requirements for a systems engineering process'), rawQuote(s7002.sources, 'The purpose of this standard is to provide an overall methodological approach')],
+          source: stdSrc(s7002).filter(x => /ieeexplore/.test(x.url)) },
+        { number: s7012.number, title: s7012.title, who: 'person', role: 'The person\'s own terms',
+          quotes: [rawQuote(rel.sources, 'to provide individuals with means to proffer their own terms'), rawQuote(rel.sources, 'acting as first parties, can proffer their privacy requirements')],
+          source: stdSrc(s7012).filter(x => /ieeexplore\.ieee\.org\/document/.test(x.url)) },
+      ],
+      coda: 'Neither text points to the other: 7012 cites no other standard in the series, and no public IEEE statement relates the two. They come from different parts of IEEE — 7002 from the Computer Society\'s Personal Data Privacy Working Group, 7012 from the Machine Readable Privacy Terms working group of the Society on Social Implications of Technology — though IEEE\'s 2018 statement lists both among the projects of its 7000 series, and says of P7012 that privacy policies “are one-sided and need no agreement”. When 7012 was published in January 2026 it was the newest of the twelve; IEEE 7014.1, on emulated empathy in general-purpose AI “partners”, followed in June 2026.',
+      codaSource: [withQuote(rel.sources, 'There are no normative references'), withQuote(rel.sources, 'PDP - Personal Data Privacy Working Group'), withQuote(rel.sources, 'MRPT-WG - Machine Readable Privacy Terms'),
+        withQuote(rel.sources, 'Terms require agreement; privacy policies do not'), progSrc('Date of Publication: 20 January 2026'), progSrc('Date of Publication: 12 June 2026')],
+    };
+  })();
 
   /* ── THE AGE OF AGENTS ─────────────────────────────────────────── */
   const argument = H.list('agents', 'argument').map(a => ({ claim: a.claim, explanation: a.explanation, source: src(a.evidence) }));
@@ -638,7 +692,7 @@ export default function editorial(H) {
 
   return {
     meta, heroStats, footerStats, essay, concepts, flip, events, scrollSteps, series, charts,
-    fipps, worldLaws, frameworks, policyModels, figures, lineage, lineageNote, harms, standard,
+    fipps, worldLaws, frameworks, policyModels, figures, lineage, lineageNote, harms, standard, getSeries,
     argument, scenario, counterpoints, jurisdictions, myths, people, peopleGroups, pullQuotes, mediaOrder, mediaDrop,
   };
 }

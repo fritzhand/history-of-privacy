@@ -40,7 +40,7 @@
   "pages": "Xplore lists pages 1-50 and the PDF has 50 pages (printed page numbers run to 48); the Accuris store lists 43 pages (count conventions differ)",
   "status": "Active Standard",
   "getProgram": true,
-  "getProgramNote": "Free PDF through the IEEE GET Program for AI Ethics and Governance Standards (Doc Searls: the 7000-series GET standards 'are free'; the Xplore page metadata flags the document as GET/free). The GET program page says users must accept IEEE's Terms and Conditions of Use before the PDF is released. On 2026-09-23 the repo helper, which sends no cookies or credentials, downloaded the PDF from the stampPDF link (page watermark 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.'). No IEEE sign-in was needed for that download. Later requests from the same sandbox met Xplore's bot challenge (HTTP 418).",
+  "getProgramNote": "Free PDF through the IEEE GET Program for AI Ethics and Governance Standards, which lists 7012-2025 among its twelve standards (series page, rendered 2026-09-23). The programme page says: 'To download any of these standards, you must sign in with an IEEE Account.' On 2026-09-23 the repo helper, which sends no cookies or credentials, nonetheless downloaded the 7012 PDF from its stampPDF link (watermark 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.'), while the same request for IEEE 7002-2022 redirected to the IEEE sign-in page. The site states the programme's own rule.",
   "purpose": "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world. In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others--mostly companies--operating as second parties.",
   "purposeNote2017": "Note that the purpose of this standard is not to address privacy policies, since these are one-sided and need no agreement. (Terms require agreement; privacy policies do not.)",
   "scope": "The standard identifies/addresses the manner in which personal privacy terms are proffered and how they can be read and agreed to by machines. The scope of this draft standard is confined to routines in which persons acting as first parties arrive at contractual agreements with organizational entities acting as second-party service providers. It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity, with identical copies of that contract kept by both parties.",
@@ -2291,7 +2291,7 @@
    "place": "IEEE (publisher), Piscataway, New Jersey",
    "lat": 40.5563,
    "lng": -74.464,
-   "summary": "IEEE published 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, on 20 January 2026 as IEEE Xplore document 11360682 (DOI 10.1109/IEEESTD.2025.11360682). It is free to read; Doc Searls, who chaired the working group, wrote at launch that it is part of the IEEE GET Program for AI Ethics and Governance Standards and the latest of the IEEE 7000 series. Its abstract names 'websites, applications and AI agents' among the service providers covered.",
+   "summary": "IEEE published 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, on 20 January 2026 as IEEE Xplore document 11360682 (DOI 10.1109/IEEESTD.2025.11360682). It is free to read; Doc Searls, who chaired the working group, wrote at launch that it is part of the IEEE GET Program for AI Ethics and Governance Standards and, at the time, the latest of the IEEE 7000 series; IEEE 7014.1-2026 has followed it (June 2026). Its abstract names 'websites, applications and AI agents' among the service providers covered.",
    "significance": "The destination of this study: a published standard in which the person proffers the terms and machines — including AI agents — read, sign and record them.",
    "sources": [
     {
@@ -2322,6 +2322,16 @@
      "quote": "The IEEE’s GET Program for AI Ethics and Governance Standards . Below is the 7000 series of standards, of which MyTerms is the latest one. All are free.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "7014.1-2026 - IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (IEEE Xplore document 11559263)",
+     "date": "2026-06-12",
+     "url": "https://ieeexplore.ieee.org/document/11559263",
+     "quote": "Date of Publication: 12 June 2026",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: latestNote (the latest in the series by publication date). The page also reads 'Available through the IEEE GET ProgramTM' (FOUND) and 'Status: Active - Approved'; DOI 10.1109/IEEESTD.2026.11559263. Xplore's embedded metadata agrees (publicationDate and insertDate both 12 June 2026). Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
     }
    ],
    "locationNote": "Mapped to the publisher location in the DOI metadata ('Piscataway, NJ, USA'); coordinates approximate (IEEE Operations Center). Xplore number, DOI, 21 Jan insertion date and free GET access are also in the Xplore page metadata (see standard.sources, PENDING).",
@@ -4995,7 +5005,7 @@
    "id": "myth-standard-is-paywalled",
    "claim": "Like most IEEE standards, 7012 must be bought.",
    "verdict": "FALSE",
-   "correction": "Paid PDF and print copies are sold through IEEE's standards store (Accuris), but the PDF is also free to read and download through the IEEE GET Program for AI Ethics and Governance Standards.",
+   "correction": "Paid PDF and print copies are sold through IEEE's standards store (Accuris), but the PDF is also free through the IEEE GET Program for AI Ethics and Governance Standards; the programme's page asks readers to sign in with an IEEE account to download.",
    "sources": [
     {
      "institution": "Doc Searls Weblog (doc.searls.com)",
@@ -5010,11 +5020,11 @@
      "institution": "IEEE Xplore (archived by the Internet Archive, snapshot 28 January 2026)",
      "title": "7012-2025 - IEEE Standard for Machine Readable Personal Privacy Terms (IEEE Xplore document 11360682)",
      "date": "2026-01-20",
-     "url": "https://web.archive.org/web/20260128202024/https://ieeexplore.ieee.org/document/11360682",
+     "url": "https://ieeexplore.ieee.org/document/11360682",
      "quote": "(Note: The PDF of this standard is available at no charge complements of the IEEE GET program https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93.)",
-     "verificationStatus": "PENDING",
+     "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Read in the raw HTML of the snapshot (page metadata object xplGlobal.document.metadata): publicationDate \"20 January 2026\", dateOfInsertion \"21 January 2026\", ISBN 979-8-8557-2944-3 (electronic), doi 10.1109/IEEESTD.2025.11360682, pages 1-50, getProgramFlag \"true\", isFreeDocument true. PENDING only because the repo helper strips <script> content, so --check cannot see the metadata; live ieeexplore.ieee.org returns a bot challenge (HTTP 202). Verification: web.archive.org resets connections from this sandbox and live Xplore returns a bot challenge (HTTP 202), so the snapshot could not be re-fetched. The raw HTML cached earlier on 2026-09-23 (57,387 bytes) was re-read. The quoted note ends the abstract in <meta name=\"description\"> and in the xplGlobal.document.metadata JSON. The same JSON has getProgramFlag \"true\", isFreeDocument true, isPromo true, publicationDate \"20 January 2026\" and dateOfInsertion \"21 January 2026\". The Accuris store listing carries the same note. PENDING only because the helper drops <meta> and <script> content (--check NOT-FOUND)."
+     "note": "Live IEEE Xplore page, rendered in a headless browser on 2026-09-23 (Xplore bot-challenges scripts); the text was checked with fetch-text.py --check (FOUND). Replaces an Internet Archive snapshot that could not be re-fetched."
     },
     {
      "institution": "Doc Searls Weblog (doc.searls.com)",
@@ -5035,6 +5045,16 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Every page of the PDF carries this watermark. The PDF was fetched from the GET Program stampPDF link by tools/fetch-text.py, which sends no cookies or credentials, so this download needed neither payment nor an IEEE sign-in. A later curl from the same sandbox met Xplore's bot challenge (HTTP 418). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE (IEEE Xplore)",
+     "title": "IEEE GET Program™: GET Program for AI Ethics and Governance Standards (series page)",
+     "date": "2026-09-23",
+     "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=93",
+     "quote": "To download any of these standards, you must sign in with an IEEE Account.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: description (access condition) and access. The page goes on: 'Don't have an account? Create Account now.' It does not say whether an account costs anything, so 'free IEEE account' is not supported by this page. The site's own record (research/myterms.json, myth-standard-is-paywalled) says tools/fetch-text.py, sending no cookies or credentials, downloaded the 7012 PDF from the stampPDF link on 2026-09-23, so the stated rule may not be enforced on every route; the panel should report the rule as the page states it. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
     }
    ],
    "_verify": {

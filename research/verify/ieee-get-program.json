@@ -1,0 +1,76 @@
+{
+ "slice": "ieee-get",
+ "chunk": "program",
+ "verdicts": [
+  {
+   "kind": "program",
+   "id": "ieee-get-ai-ethics-governance",
+   "status": "FIXED",
+   "issues": [
+    "Every quote was re-run with fetch-text.py --check on 2026-09-23. All 22 CONFIRMED quotes on reachable pages print FOUND: the series page ×7, the 2023 release ×2, the IEEE SA GET overview, Xplore 11559263, 11360682 ×2 and 10851955, the Initiative PDF ×3, the FAQ, the 7000-2021 and 7012 IEEE SA pages, and the Global Initiative 2.0 page. The Searls quote (source 16) gets HTTP 403 from the helper, whose browser User-Agent is refused. curl with its default User-Agent got HTTP 200, the helper's own to_text/norm functions found the quote, and article:published_time is 2026-01-29T22:40:00+00:00. CONFIRMED stands on that basis, as in research/myterms.json. The sponsor API (source 5) is still unreachable by the helper (it caches an empty body), so it stays PENDING.",
+    "name, tagline, count (12), asOf and access check out against the page text. The page says 'To download any of these standards, you must sign in with an IEEE Account. Don't have an account? Create Account now.' (FOUND) and says nothing about what the account costs. rest-4.json lists the same 12 standards, each Active and 'Approved'. The Date of Publication, DOI and status lines cited in source notes for 7014.1-2026, 7012-2025 and 7003-2024 all match their rendered Xplore pages and doc-meta.json. 7012's insertDate is 21 January 2026, a day after its Date of Publication.",
+    "description OK. The 17 January 2023 dateline and the headline 'IEEE Introduces New Program for Free Access to AI Ethics and Governance Standards' (FOUND) support 'launched'. The release credits 'IEEE SA, industry sponsors and government', and the page names TÜV SÜD as a partner. 'Each a PDF' rests on the IEEE SA GET overview's general rule ('standard(s) PDF file'), not on the series page, which says only 'provided at no cost'. That is acceptable. Whether an Xplore GET page existed before the 2023 release could not be checked, because the Wayback Machine resets connections from this sandbox.",
+    "origin FIXED, for two errors. (1) 'The series grew out of the IEEE Global Initiative' overreaches. One of the twelve listed standards, IEEE 2089-2021 (age-appropriate digital services, 5Rights), is not in the 7000 series, and no source ties it to the Initiative. IEEE SA's own link from the Initiative is to the 'IEEE 7000™ Series of Standards via the IEEE GET Program™'. The claim now covers the eleven 7000-series standards. (2) The parenthesis '(version 1, December 2016)' attaches the FAQ's credit to EAD version 1. The FAQ credits 'Ethically Aligned Design (EAD)' without a version and says there were versions in 2016, 2017 and 2019. The P7000 PAR (30 June 2016, FOUND) came six months before version 1 was released (December 2016, FOUND), so version 1 cannot have inspired every P7000 working group. The rewrite credits EAD generally and states that order. Also added: the FAQ's line singling out P7012 among 'our IEEE P7000 Standards Working Groups' (FOUND), which ties 7012 itself to the Initiative. The April 2016 launch, the 'encouraged to recommend Standards Projects' line and both PAR dates were re-checked: FOUND.",
+    "sponsors OK as data, but EY and AppliedAI rest only on Xplore's sponsor feed (source 5, PENDING). I fetched the four logo files the feed names myself. They show TÜV SÜD, IEEE SA, EY and '[ai] Initiative for Applied Artificial Intelligence', matching the feed. The 2023 release quotes an Ernst and Young partner but does not call EY a sponsor, and it lists 'IEEE SA' next to 'industry sponsors' rather than among them. The panel should present the four names as the page's sponsor panel, not as sponsors named in any IEEE text.",
+    "latestNote OK. Among the twelve listed standards, 7014.1-2026 (12 June 2026) is the most recently published and 7012-2025 (20 January 2026) the next, with 7003-2024 (24 January 2025) third. All twelve dates were re-checked FOUND on the rendered pages. The '-2025' approval year is confirmed by 'Board Approval 2025-11-04' (FOUND). Added a source: IEEE SA gives 7014.1's Board Approval as 2026-02-12 (FOUND), after Searls wrote on 29 January 2026, which supports the claim that 7012 was then the newest. The claim is properly limited to 'the standards the programme now lists', since the list as it stood in January 2026 was not seen.",
+    "Source notes corrected. Source 4 said the four sponsor logos were 'visible in the headless screenshot'. In series.png they are four broken-image icons: the logos did not load. Source 15 said 'the other ten standards listed before 7014.1-2026 appeared' and '7012 was the newest when Searls wrote', which assumes a past list nobody saw; reworded to the current list. The note on source 5 now records the logo corroboration. The note replacements for the CONFIRMED sources 4 and 15 are also given as fieldFixes (sources[4].note, sources[15].note), because apply-verdicts.py writes a sourceFix note only for PENDING or replaced sources.",
+    "The 7012 full text (scratchpad ieee7012.txt) was grepped for 'GET program', 'Global Initiative', 'Ethically Aligned', 'P7000', '7000', '2089', '7014' and 'sponsor'. It never mentions the GET programme, the Global Initiative, EAD or any sibling standard, and the program record claims no such cross-reference.",
+    "siteNotes (not records; reviewed but no verdict key): all 12 file:line citations and quoted texts match the repo as it stands: research/myterms.json 43, 69, 200, 209, 331, 2294, 2332, 3057, 4998 and 5014; tools/editorial.mjs 492; index.html 546. The data.js copies are at lines 10431, 11398 and 21885, and lines 2331, 5037 and 5043 match what the notes say about them. One caution on the suggested wording for myterms.json:2294: 'When Searls wrote ... it was the newest standard in that programme' should read 'the most recently published of the standards the programme now lists' (or cite 7014.1's 12 February 2026 Board Approval), because the programme's January 2026 list was not seen."
+   ],
+   "fieldFixes": {
+    "origin": "Eleven of the twelve standards the programme lists are in IEEE's 7000 series, which grew out of the IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems, launched in April 2016; the Initiative's members were encouraged to recommend standards projects to IEEE. IEEE credits the Initiative's report Ethically Aligned Design (first released in December 2016, revised in 2017 and 2019) with inspiring over twelve standards working groups, and says the P7000 series addresses issues the report identified; the Initiative's 2020 FAQ singles out P7012 among 'our IEEE P7000 Standards Working Groups'. IEEE SA records the authorisation (PAR approval) of the P7000 project on 30 June 2016, six months before the report's first version, and of P7012 on 6 December 2017. The twelfth standard, IEEE 2089-2021, is not in the 7000 series.",
+    "sources[4].note": "Supports: description (sponsor-funded). Text of the page's 'Sponsored By' panel. The panel names no sponsor in text: below this sentence it has four image slots, and in the headless render all four images failed to load (broken-image icons, no alt text shown), so the sponsors cannot be read from the rendered page. See the sponsor API source. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23.",
+    "sources[15].note": "Supports: latestNote (among the standards the page now lists, 7012-2025 was the most recently published until 7014.1-2026). 24 January 2025 is the latest Date of Publication among the ten listed standards other than 7012-2025 and 7014.1-2026. The page's list as it stood on 29 January 2026 was not seen (the Wayback Machine resets connections from this sandbox), so this rests on the current list. Dates of Publication on the twelve rendered Xplore pages, each --check 'Date of Publication: ...' FOUND on 2026-09-23 and each matching Xplore's embedded publicationDate (scratchpad get/doc-meta.json): 7010-2020 01 May 2020; 7000-2021 15 September 2021; 7007-2021 12 November 2021; 7005-2021 19 November 2021; 2089-2021 30 November 2021; 7001-2021 04 March 2022; 7002-2022 19 April 2022; 7014-2024 28 June 2024; 7009-2024 05 July 2024; 7003-2024 24 January 2025; 7012-2025 20 January 2026; 7014.1-2026 12 June 2026. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+   },
+   "sourceFixes": [
+    {
+     "index": 4,
+     "verificationStatus": "CONFIRMED",
+     "note": "Supports: description (sponsor-funded). Text of the page's 'Sponsored By' panel. The panel names no sponsor in text: below this sentence it has four image slots, and in the headless render all four images failed to load (broken-image icons, no alt text shown), so the sponsors cannot be read from the rendered page. See the sponsor API source. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+    },
+    {
+     "index": 5,
+     "verificationStatus": "PENDING",
+     "note": "Re-checked 2026-09-23. fetch-text.py still gets an empty body from this endpoint (--check NOT-FOUND), and curl gets Xplore's bot challenge (HTTP 418), so the source stays PENDING. The quote matches scratchpad get/rest-2.json exactly, and the four names and their order are as stated. Supporting evidence, though not a text quote: the four logo files the response names (https://ieeexplore.ieee.org/Xplorehelp/cfg/get-program/sponsor/tuvsud-logo.png, ieee-standards-logo.png, ey-logo.png, applied-ai-logo.png) each return HTTP 200 to curl. They show the TÜV SÜD mark, 'IEEE SA Standards Association', 'EY Building a better working world' and '[ai] Initiative for Applied Artificial Intelligence' (the API links that last one to https://www.appliedai.de/). A web search found no IEEE text that names EY or AppliedAI as sponsors of this programme. 'EY' and 'AppliedAI' therefore rest on Xplore's own sponsor feed and logo files, not on any page text."
+    },
+    {
+     "index": 15,
+     "verificationStatus": "CONFIRMED",
+     "note": "Supports: latestNote (among the standards the page now lists, 7012-2025 was the most recently published until 7014.1-2026). 24 January 2025 is the latest Date of Publication among the ten listed standards other than 7012-2025 and 7014.1-2026. The page's list as it stood on 29 January 2026 was not seen (the Wayback Machine resets connections from this sandbox), so this rests on the current list. Dates of Publication on the twelve rendered Xplore pages, each --check 'Date of Publication: ...' FOUND on 2026-09-23 and each matching Xplore's embedded publicationDate (scratchpad get/doc-meta.json): 7010-2020 01 May 2020; 7000-2021 15 September 2021; 7007-2021 12 November 2021; 7005-2021 19 November 2021; 2089-2021 30 November 2021; 7001-2021 04 March 2022; 7002-2022 19 April 2022; 7014-2024 28 June 2024; 7009-2024 05 July 2024; 7003-2024 24 January 2025; 7012-2025 20 January 2026; 7014.1-2026 12 June 2026. Xplore page rendered in a headless browser; text checked with fetch-text.py. --check FOUND 2026-09-23."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association",
+     "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Key Information, Milestones, and FAQs about The Initiative",
+     "date": "2020-11-22",
+     "url": "https://standards.ieee.org/wp-content/uploads/import/documents/faqs/gieais-faq-11.22.2020.pdf",
+     "quote": "The Personal Data and Agency chapter of EAD provides a blueprint for how this can work, along with a number of our IEEE P7000 Standards Working Groups, especially IEEE P7012, Standard for Machine Readable Personal Privacy Terms.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: origin (the Initiative counts P7012 among its own P7000 working groups, so 7012's link to the Initiative does not rest on the general 'over twelve working groups' line alone). Date from the file name (11.22.2020); the PDF metadata gives creation on 21 December 2020. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems: Key Information, Milestones, and FAQs about The Initiative",
+     "date": "2020-11-22",
+     "url": "https://standards.ieee.org/wp-content/uploads/import/documents/faqs/gieais-faq-11.22.2020.pdf",
+     "quote": "The original version came out in 2016, received over 500 pages of feedback, and was released again in 2017(EAD/v2). The most recent version of EAD was released in 2019.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: origin (Ethically Aligned Design had three versions: 2016, 2017 and 2019). The FAQ's credit for inspiring 'over twelve standards working groups' goes to EAD as a whole, not to version 1, and the P7000 PAR (30 June 2016) came before version 1 (December 2016). 'EAD/v2' has no space before the parenthesis in the PDF. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association",
+     "title": "IEEE 7014.1-2026: IEEE Recommended Practice for Ethical Considerations of Emulated Empathy in Partner-Based General-Purpose Artificial Intelligence Systems (standard page)",
+     "date": "2026-06-12",
+     "url": "https://standards.ieee.org/ieee/7014.1/11609/",
+     "quote": "Board Approval 2026-02-12",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports: latestNote. The IEEE SA Standards Board approved 7014.1 on 12 February 2026, two weeks after Searls wrote on 29 January 2026, so it was not yet an approved standard when he called MyTerms 'the latest one'. The page also gives 'PAR Approval 2024-03-21' and 'Published: 2026-06-12' (FOUND), which matches the Xplore Date of Publication. --check FOUND 2026-09-23."
+    }
+   ]
+  }
+ ]
+}

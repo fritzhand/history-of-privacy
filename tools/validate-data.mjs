@@ -57,8 +57,11 @@ function checkSource(s, where) {
 function walk(o, where, depth) {
   if (!o || typeof o !== 'object' || depth > 7) return;
   if (Array.isArray(o)) { o.forEach((x, i) => walk(x, `${where}[${i}]`, depth + 1)); return; }
-  if ('source' in o && (typeof o.source === 'object' || typeof o.source === 'string')) checkSource(o.source, where);
-  for (const [k, v] of Object.entries(o)) if (k !== 'source' && v && typeof v === 'object') walk(v, `${where}.${k}`, depth + 1);
+  /* "source", and the side sources a section carries ("codaSource", "quoteSource", …) */
+  for (const [k, v] of Object.entries(o)) {
+    if (/^source$|Source$/.test(k)) { if (v && (typeof v === 'object' || typeof v === 'string')) checkSource(v, `${where}.${k}`); }
+    else if (v && typeof v === 'object') walk(v, `${where}.${k}`, depth + 1);
+  }
 }
 walk(d, 'data', 0);
 

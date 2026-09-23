@@ -1585,7 +1585,8 @@ function buildGetSeries() {
           <div class="get-side-role">${esc(p.role)}</div>
           <div class="get-side-num">IEEE ${esc(p.number)}</div>
           <div class="get-side-title">${esc(p.title)}</div>
-          <p class="get-side-text">${quoteLine(p.source)}</p>
+          ${(p.quotes || []).map(q => `<p class="get-side-text"><q>${esc(q)}</q></p>`).join('')}
+          <p class="get-side-src">${sourceHtml(p.source)}</p>
         </div>`).join('<div class="get-pair-vs" aria-hidden="true">and</div>');
     } else pair.remove();
   }
@@ -2000,8 +2001,12 @@ function buildSourceRoll() {
     if (!o || depth > 6) return;
     if (Array.isArray(o)) { o.forEach(x => walk(x, depth + 1)); return; }
     if (typeof o !== 'object') return;
-    if ('source' in o && typeof o.source === 'object') add(o.source);
-    for (const [k, v] of Object.entries(o)) if (k !== 'source' && v && typeof v === 'object') walk(v, depth + 1);
+    /* "source", and the side sources a section carries ("codaSource",
+       "quoteSource", …) */
+    for (const [k, v] of Object.entries(o)) {
+      if (/^source$|Source$/.test(k)) { if (v && typeof v === 'object') add(v); }
+      else if (v && typeof v === 'object') walk(v, depth + 1);
+    }
   };
   walk(D(), 0);
 

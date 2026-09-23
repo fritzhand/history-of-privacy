@@ -1,0 +1,180 @@
+{
+ "slice": "ieee-get",
+ "chunk": "relation",
+ "verdicts": [
+  {
+   "kind": "relation",
+   "id": "ieee-7002-and-7012",
+   "status": "FIXED",
+   "issues": [
+    "All 19 source quotes re-run with tools/fetch-text.py --check: all FOUND. Titles, dates and identifiers match the pages: 7002 Xplore 'Date of Publication: 19 April 2022', DOI 10.1109/IEEESTD.2022.9760247; IEEE SA page 'PAR Approval 2016-12-07', 'Board Approval 2022-02-09', 'Published: 2022-04-19' (all --check FOUND). 7012 Xplore 'Date of Publication: 20 January 2026', DOI 10.1109/IEEESTD.2025.11360682; PDF title page 'Approved 4 November 2025' and 'Published 20 January 2026' (FOUND); IEEE SA page 'PAR Approval 2017-12-06', 'Board Approval 2025-11-04', 'Published: 2026-01-20', 'MRPT-WG - Machine Readable Privacy Terms' (FOUND). The source dates (publication dates, not approval years) are correct.",
+    "Summary OK. Each clause matches the 7002 scope and the 7012 abstract, scope and purpose. The 7002 scope says 'It applies to organizations and projects that are developing and deploying products...', which supports 'addressed to organisations'. For 7012, 'addressed to the individual' rests on the purpose ('provide individuals with means to proffer their own terms'). Readers should know that the words are used in two senses. 7002 is addressed to the organisation as the standard's user, while 7012 takes the individual's side as first party. 7012's own requirements fall on 'Implementors of this standard' (clause 4.4.1, --check FOUND on the PDF), who in practice are roster keepers and service providers. The summary is left unchanged because it quotes the purpose immediately after, which makes the sense clear.",
+    "crossReferences: the substance holds. A regex over the full 7012 text for every four-digit number beginning 7 finds only 7012 (91 times). 'Ethically Aligned Design', 'Global Initiative', '2089' and '5Rights' do not occur. Annex E has exactly [B1]-[B39]. [B15] IEEE Std 610-1990 is the only IEEE standard. The category breakdown, Kessler 1943 ([B28], Columbia Law Review, Jul. 1943), clause 1.3 and clause 2 are all correct. The parenthetical describing what the search 'finds' is imprecise, though. The search strings it names ('7002', '7000', '7005', 'P70', 'IEEE Std 70') cannot match the keyword 'IEEE 7012™' or 'IEEE 7012 Identifier', which contain none of them. It also omits the in-text mentions in the body and Annexes A and D ('IEEE 7012 does not permit more than 1 round of negotiation', 'D.4 ... in the IEEE 7012 context', both FOUND). Rewritten as a statement about every 70xx number in the text.",
+    "otherPublicLinks: every fact re-checked. The IEEE SA working-group blocks and PAR dates are FOUND. The 2018 statement lists P7002 and P7012 and uses 'associated IEEE 7000™ series'. The EAD overview's P7002 and P7012 attributions were re-read from the PDF text: P7002 and P7006 sit side by side, each 'Inspired by The Personal Data and Individual Agency Control Committee, and supported by IEEE Computer Society', and P7012 has only 'Supported by IEEE Society on Social Implications of Technology'. The AIS page's Related Standards list has 2089, 7000, 7001, 'IEEE P7002™', 7003, P7004, 7005, 7007, P7008, P7009 and P7009.1, and no 7010, 7012 or 7014. The MyTerms IC page has no '7000', '7002' or 'series'. The footnote-18 PAR link returns HTTP 401 both as printed (%3F) and with '?' (curl, 2026-09-23). Two wordings are tightened. (a) 'approved projects that came out of the IEEE Global Initiative' was the researcher's gloss. The statement says only that Global Initiative members 'are encouraged to recommend Standards Projects to IEEE based on their work' and then lists 'these approved IEEE Standards Projects' (--check FOUND). The EAD overview names no Global Initiative committee behind P7012, so 'came out of' overstates its origin. (b) In the statement, 'Designed as a tool to allow any individual...' is a participle phrase qualifying 'the AI Agent' ('...for their data, the AI Agent will provide a technological tool...', FOUND), not the P7006 project as a whole.",
+    "Negative claim ('No public IEEE SA or working-group statement was found that relates 7012 to 7002'): my own web searches ('IEEE 7012 7002 privacy terms MyTerms', IEEE SA press releases on 7012-2025) also found none. One lead for the PAR: the working-group chair, Doc Searls, posts the P7012 PAR's scope paragraph sentence by sentence in 'The MyTerms PAR' (ProjectVRM, 6 April 2025, https://projectvrm.org/2025/04/06/myterms/), and that paragraph does not mention 7002 or the 7000 series. The post is not added as a source because tools/fetch-text.py gets HTTP 403 from projectvrm.org (curl gets 200), so no quote could be --checked. It shows the PAR's scope text only, not the PAR's other fields.",
+    "EAD overview date 2019-03-25: the record's only support was a Business Wire URL that was not fetched. AlgorithmWatch's post on the launch is dated 'March 25, 2019' and is fetchable (--check FOUND), so it is added as a source and the notes on sources 15 and 16 are updated.",
+    "Source 3's note says the Xplore page 'cuts the scope off after the third sentence'. In fact the page cuts it off inside the third sentence ('...with identical copies of that cont...', FOUND), and the Scope field opens with a '(Note: The PDF of this standard is available at no charge complements of the IEEE GET program ...)' preface. The note is corrected, and the completed sentence is quoted from clause 1.1 of the PDF (FOUND).",
+    "TOOLING WARNING for whoever applies this file: the sharedThemes records have no 'id' field. In tools/apply-verdicts.py, same() does not match on 'theme', and find() falls back to doc['relation'] for any kind 'relation' verdict whose id matches nothing. The theme verdicts below would therefore be applied to the relation object: their fieldFixes 'theme', 'standards' and 'evidence' would land on it, and each stamp would overwrite its _verify. Apply the theme verdicts by hand, matching on sharedThemes[].theme, or give the themes ids first."
+   ],
+   "fieldFixes": {
+    "crossReferences": "No. IEEE 7012-2025 does not cite IEEE 7002 or any other 7000-series standard. Every number of the form 70xx in its full text is its own number, 7012: in the running heads, the title page and introduction, the keyword 'IEEE 7012™', 'IEEE 7012 Identifier', mentions in the body and in Annexes A and D (for example 'IEEE 7012 does not permit more than 1 round of negotiation' and the heading 'D.4 The deployment of ISO 23903 in the IEEE 7012 context'), and 'p7012' in Customer Commons URLs and Data Privacy Vocabulary identifiers. The phrases 'Ethically Aligned Design' and 'Global Initiative' do not occur. Clause 2 reads in full: 'There are no normative references for this draft standard. There are many useful informative references, however, in the Bibliography (Annex E).' Annex E (informative) has 39 entries, [B1]-[B39]. The only IEEE standard among them is [B15] 'IEEE Std 610™-1990, IEEE Standard Computer Dictionary: A Compilation of IEEE Standard Computer Glossaries'. The rest are laws (GDPR [B9], CCPA [B3], Digital Markets Act [B6]); W3C and related privacy-signal work (Do Not Track [B7], [B37]; Global Privacy Control [B11]; Data Privacy Vocabulary [B5]); ISO, EN, ISO/IEC, HL7, ICAO and OMG specifications, mostly in health informatics; the Kantara/Customer Commons 'No Stalking' term ([B27], [B36]); and books, papers and web resources such as Kessler's 1943 article on contracts of adhesion [B28]. Clause 1.3, 'Extant standards and regulations', names only internet protocols: 'Operation of this standard depends on the Internet Protocol Suite, especially TCP/IP, and HTTP.' The other direction cannot be checked: the full text of IEEE 7002-2022 was not read, so whether it mentions P7012 is unknown.",
+    "otherPublicLinks": "No public IEEE SA or working-group statement was found that relates 7012 to 7002 directly, or says that one builds on or complements the other. The P7012 PAR could not be read: the PAR PDF linked from IEEE SA's 2018 statement returns HTTP 401. What IEEE's public pages do show: (1) Different origins. IEEE SA's standard pages list 7002 under the IEEE Computer Society, 'C/S2ESC - Software & Systems Engineering Standards Committee', working group 'PDP - Personal Data Privacy Working Group', PAR approved 2016-12-07; and 7012 under the IEEE Society on Social Implications of Technology, 'SSIT/SC - Social Implications of Technology Standards Committee', working group 'MRPT-WG - Machine Readable Privacy Terms', PAR approved 2017-12-06. (2) The same series. IEEE SA's 2018 statement 'Our Role in Addressing Ethical Considerations of Autonomous and Intelligent Systems (A/IS)' says that members of the IEEE Global Initiative 'are encouraged to recommend Standards Projects to IEEE based on their work', then lists both P7002 and P7012 among the 'approved IEEE Standards Projects', and refers to 'the associated IEEE 7000™ series of standards'. It says P7002 'specifies how to manage privacy issues for systems or software that collect personal data' by 'defining requirements that cover corporate data collection policies and quality assurance'. Of P7012 it says: 'Note that the purpose of this standard is not to address privacy policies, since these are one-sided and need no agreement. (Terms require agreement; privacy policies do not.)' The same statement says of the AI agent in a third project, P7006 (Personal Data AI Agent), that it is 'Designed as a tool to allow any individual to essentially create their own personal “terms and conditions” for their data'; P7006 is not in the GET series. (3) The Ethically Aligned Design, First Edition Overview (IEEE Global Initiative, 2019) calls the P7000 series 'the first series of standards in the history of the IEEE Standards Association that explicitly focuses on societal and ethical issues associated with a certain field of technology'. It lists P7002 as 'Inspired by The Personal Data and Individual Agency Control Committee, and supported by IEEE Computer Society' (as are P7004, P7005 and P7006), and P7012 only as 'Supported by IEEE Society on Social Implications of Technology', with no EAD committee named. (4) IEEE SA's Autonomous and Intelligent Systems page (the IEEE SA link in the GET series sponsor list) lists 'IEEE P7002™ IEEE Standard for Data Privacy Process' under Related Standards but, as fetched on 2026-09-23, not 7012. (5) IEEE SA's Industry Connections page for the 'MyTerms' roadmap activity describes 7012 on its own and does not mention 7002 or the 7000 series."
+   },
+   "sourceFixes": [
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Scope, first two sentences after the Scope field's '(Note: The PDF of this standard is available at no charge complements of the IEEE GET program ...)' preface. The Xplore page cuts the scope off inside the third sentence ('...with identical copies of that cont...'). Clause 1.1 of the full text completes it: 'It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity, with identical copies of that contract kept by both parties.' Xplore page rendered in a headless browser; text checked with fetch-text.py (both passages FOUND 2026-09-23)."
+    },
+    {
+     "index": 5,
+     "verificationStatus": "CONFIRMED",
+     "note": "Clause 2, Normative references, in full. Every four-digit number beginning 7 in the full text is 7012 (running heads, title page, introduction, keywords, 'IEEE 7012 Identifier', mentions in the body and Annexes A and D, and 'p7012' in Customer Commons URLs and Data Privacy Vocabulary identifiers). No other 7000-series number, 'Ethically Aligned Design' or 'Global Initiative' occurs. Full text read through the IEEE GET Program (free with an IEEE Account sign-in); quote checked with fetch-text.py."
+    },
+    {
+     "index": 14,
+     "verificationStatus": "CONFIRMED",
+     "note": "From the statement's description of a third project, 'IEEE P7006™ - Standard on Personal Data AI Agent Working Group'. Grammatically the phrase qualifies the AI agent the project concerns: the sentence continues '...for their data, the AI Agent will provide a technological tool for individuals to manage and control their identity in the digital and virtual world'. P7006 is not in the GET series; its later status was not checked. Date taken from the file name. Text checked with fetch-text.py."
+    },
+    {
+     "index": 15,
+     "verificationStatus": "CONFIRMED",
+     "note": "Said of 'The launch of the IEEE P7000™ series of approved standardization projects', in the overview's list of works the Global Initiative 'has directly inspired'. This is IEEE's own claim of a 'first'. Date is the EAD1e launch date. It is confirmed by AlgorithmWatch's post on the launch, dated 'March 25, 2019' (fetch-text.py --check FOUND; added as a source), and matches IEEE's press release on Business Wire (URL dated 20190325; not fetched, HTTP 403). The overview itself is marked only ©2019 IEEE. Text checked with fetch-text.py."
+    },
+    {
+     "index": 16,
+     "verificationStatus": "CONFIRMED",
+     "note": "P7012's entry in the list 'IEEE P7000™ Approved Standardization Projects', whose preface says 'Committees that authored Ethically Aligned Design, as well as other committees within IEEE, that created specific working groups are listed below each project.' No EAD committee is named for P7012. P7002's entry, 'IEEE P7002™, IEEE Standards Project for Data Privacy Process', reads 'Inspired by The Personal Data and Individual Agency Control Committee, and supported by IEEE Computer Society'. The page is in two columns, with P7002 beside P7006 and both carrying that same line, so the pairing was checked from the PDF's text positions. Date: the EAD1e launch, 2019-03-25 (see the AlgorithmWatch source). Text checked with fetch-text.py."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "AlgorithmWatch",
+     "title": "IEEE launches Ethically Aligned Design, First Edition (blog post)",
+     "date": "2019-03-25",
+     "url": "https://algorithmwatch.org/en/ieee-launches-ethically-aligned-design-first-edition/",
+     "quote": "The Institute of Electrical and Electronics Engineers (IEEE) published the first edition of Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems (EAD1e).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The post is dated 'March 25, 2019' (fetch-text.py --check FOUND). It supports the 2019-03-25 date given to the Ethically Aligned Design, First Edition Overview (sources 15 and 16), which is otherwise marked only ©2019. This is a third-party report of IEEE's launch, not an IEEE page. tools/fetch-text.py --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "relation",
+   "id": "privacy",
+   "status": "OK",
+   "issues": [
+    "sharedThemes record (theme 'privacy'; no id field; see the tooling warning on the relation verdict). All four quotes FOUND on the Xplore pages: 7002 'privacy-oriented considerations', 7012 'personal privacy terms', 2089 'children safety, privacy, autonomy, agency, and health', 7000 'transparency, sustainability, privacy, fairness, and accountability', and the 7000 scope's caveat that it 'does not give specific guidance on the design of algorithms to apply ethical values such as fairness and privacy'.",
+    "Membership complete under the literal-mention rule: 'privacy' appears in the visible abstract, scope or purpose of these four standards and no others among the twelve. That includes 7005, whose full purpose (reseller copy on en-standard.eu) speaks of 'personal data' and the GDPR but never uses 'privacy'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "personal data",
+   "status": "OK",
+   "issues": [
+    "sharedThemes record (theme 'personal data'; no id field). Both quotes FOUND: 7002 scope 'utilizing employee, customer, or other external user's personal data'; 7005 purpose 'personal data collection, the processing of personal data, storage of personal data'.",
+    "The statement that 7012's abstract, scope and purpose do not speak of personal data holds. The full abstract (IEEE SA page, doc-meta.json, PDF), the full scope (PDF clause 1.1) and the purpose contain no 'data' at all. For the panel's awareness: 7012's full text does use the phrase, for example in the introduction ('sale or sharing of personal data') and in clause 4.4.1 ('personal and related data shared under the agreement contract'). The theme is right to keep to abstract, scope and purpose, because the other standards' full texts were not read. Consistent with the stds-b verdict on 7012's personalData call."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "employees",
+   "status": "OK",
+   "issues": [
+    "sharedThemes record (theme 'employees'; no id field). Both quotes FOUND: 7002 scope 'employee, customer, or other external user's personal data'; 7005 scope 'accessing, collecting, storing, utilizing, sharing, and destroying employee data'. No other page mentions employees or employers."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "terms offered to people",
+   "status": "FIXED",
+   "issues": [
+    "sharedThemes record (theme 'terms offered to people'; no id field). Quotes FOUND: 2089 'c) Offers terms appropriate to children'; 7012 'the manner in which personal privacy terms are proffered'.",
+    "The label inverts 7012. In 7012 terms are offered by people ('persons acting as first parties'; the purpose is for individuals to 'proffer their own terms' to others, 'mostly companies', both FOUND), not offered to them. Only 2089's terms are offered to people. Relabelled so the theme states the contrast instead of implying a shared direction.",
+    "The evidence says 'The 2089 page does not say who drafts its terms'. That is true of the cut-off Xplore scope, but the rest of the scope settles it. A reseller copy of IEEE's text (https://www.en-standard.eu/ieee-2089-2021-ieee-standard-for-an-age-appropriate-digital-services-framework-based-on-the-5rights-principles-for-children/, --check FOUND 2026-09-23; already added as a source to ieee-2089-2021 by the stds-a verdict) goes on: 'This standard sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people.' The terms are the service's own published terms. Evidence rewritten. No source is added here because the theme record has no sources array, and the tooling warning applies."
+   ],
+   "fieldFixes": {
+    "theme": "terms, offered in opposite directions",
+    "evidence": "2089 scope lists 'c) Offers terms appropriate to children' among its framework's key areas. The rest of its scope, cut off on Xplore but reproduced in a reseller copy of IEEE's text (en-standard.eu), says the standard 'sets normative requirements for published terms, design, and delivery that can recognize and respond to the needs of children and young people': the terms are the service's own published terms, made fit for children. 7012 runs the other way. Its scope covers 'the manner in which personal privacy terms are proffered' by 'persons acting as first parties', and its purpose is for individuals to 'proffer their own terms' to others, 'mostly companies'."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "life-cycle processes",
+   "status": "FIXED",
+   "issues": [
+    "sharedThemes record (theme 'life-cycle processes'; no id field). All five quotes FOUND on the Xplore pages.",
+    "The 7000 evidence overstates its span. The quoted fragment ('throughout the stages of concept exploration and development') continues on the page ', which encompass system initiation, analysis, and design' (--check FOUND). 7000's processes cover the early stages only, not the whole life cycle as 7002's scope ('from policy through development, quality assurance, and value realization') does. 7000 still uses the words, in its full abstract: 'All sizes and types of organizations using their own life cycle models are relevant to this standard.' This is FOUND on the IEEE SA page https://standards.ieee.org/ieee/7000/6781/ and is in doc-meta.json; the Xplore abstract is cut off at 'All sizes and...'. Membership kept, evidence made exact.",
+    "Borderline omission, noted but not changed: 7014's abstract covers 'the ethical development, deployment, or decommission' of empathic A/IS, a start-to-end span, but it does not use the words 'life cycle', so under the literal rule it stays out."
+   ],
+   "fieldFixes": {
+    "evidence": "7002 scope: 'extends across the life cycle from policy through development, quality assurance, and value realization'; 7000 scope: processes 'throughout the stages of concept exploration and development, which encompass system initiation, analysis, and design' (the early stages only), and its full abstract (IEEE SA page) says 'All sizes and types of organizations using their own life cycle models are relevant to this standard'; 2089 abstract: 'processes through the life cycle of development, delivery and distribution'; 7010 scope: 'throughout the lifecycle of autonomous and intelligent systems (A/IS)'; 7014.1 purpose: 'conception, design and lifecycle of GPAI applications'. 7012's scope is instead 'confined to routines in which persons acting as first parties arrive at contractual agreements'."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "impact assessment",
+   "status": "OK",
+   "issues": [
+    "sharedThemes record (theme 'impact assessment'; no id field). All three quotes FOUND: 7002 'Privacy impact assessments (PIAs) are described as a tool for identifying where privacy controls and measures are needed'; 7010 'Well-Being Impact Assessment (WIA) process'; 2089 'a specific impact rating system and evaluation criteria'. 2089's wording is 'impact rating' rather than 'assessment', but the evidence quotes it exactly, so the grouping is fair. 7003's two uses of 'impact' ('direct and significant impact on human lives', 'unwanted differential impact') are not assessments and are rightly left out."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "conformity and certification",
+   "status": "OK",
+   "issues": [
+    "sharedThemes record (theme 'conformity and certification'; no id field). All quotes FOUND: 7002 'perform a conformity assessment on their specific privacy practices'; 7005 'specific metrics and conformance criteria' and 'Certification processes, success criteria, and execution procedures are not within the scope'; 7001 'levels of compliance determined'; 7003 'certification-oriented processes and methodologies'. The evidence rightly records 7005's own exclusion of certification. 7000's purpose has 'Projects conforming to IEEE Std 7000', but that is the ordinary conformance clause every standard has, so its omission is fine."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "transparency",
+   "status": "FIXED",
+   "issues": [
+    "sharedThemes record (theme 'transparency'; no id field). The four member quotes are FOUND: 7001 'measurable, testable levels of transparency for autonomous systems'; 7005 'support ethical and transparent behavior'; 7000's purpose lists transparency; 7009 'in a robust, transparent, and accountable manner'. 7002's scope indeed lacks the word.",
+    "Error: '7012 has 'transparency' only among the keywords in its full text' is false. The full text uses the word in normative and informative text as well as the keywords, all --check FOUND on the PDF URL. Clause 4.3, Naming and labeling: 'Agreement names shall enable transparency and be meaningful when seen from the perspective of a non-specialist.' Clause 4.4.2: agreements 'recorded and published in an open and transparent online directory'. Informative use case B.2: agreements 'in which the terms around data exchange are transparent'. The part that is true is that the abstract, scope and purpose do not use it. Membership is kept, because the theme is drawn from the Xplore abstracts, scopes and purposes and the other standards' full texts were not read. The evidence now says so instead of misdescribing 7012's full text."
+   ],
+   "fieldFixes": {
+    "evidence": "7001 purpose: 'measurable, testable levels of transparency for autonomous systems'; 7005 purpose: 'support ethical and transparent behavior'; 7000 purpose lists transparency among its values; 7009 scope: 'in a robust, transparent, and accountable manner'. 7012's abstract, scope and purpose do not use the word, and neither does 7002's scope. 7012's full text does: 'transparency' is one of its keywords, clause 4.3 requires that 'Agreement names shall enable transparency and be meaningful when seen from the perspective of a non-specialist', and clause 4.4.2 has agreements 'recorded and published in an open and transparent online directory'. It is left out of this theme only because the themes are drawn from the pages' abstracts, scopes and purposes; the other standards' full texts were not read."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "relation",
+   "id": "AI agents",
+   "status": "FIXED",
+   "issues": [
+    "sharedThemes record (theme 'AI agents'; no id field). Quotes FOUND: 7012 'including websites, applications and AI agents' (Xplore page); 7014.1 'general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants'. The 7012 quote 'Computing devices and software performing as agents for both first and second parties' is NOT on the Xplore page, which cuts the abstract off at 'Computing device...'. It is in the full abstract, FOUND on the IEEE SA page https://standards.ieee.org/ieee/7012/7192/ and on the PDF, and in doc-meta.json. The evidence now says where it is.",
+    "The contrast 'In 7012 agents act for the parties to a contract; in 7014.1 the agent is the product' leaves out half of 7012. Its first abstract sentence lists AI agents among 'the service providers they engage on a network, including websites, applications and AI agents'. There an AI agent is the counterparty or service a person deals with, which is close to 7014.1's sense. Rewritten. Also, 7014.1's scope drops 'agents' from the list ('empathic partners, personal AI, co-pilots, assistants'), so the evidence correctly cites the abstract."
+   ],
+   "fieldFixes": {
+    "evidence": "7012 abstract: agreements 'between individuals and the service providers they engage on a network, including websites, applications and AI agents', with 'Computing devices and software performing as agents for both first and second parties' (the second phrase is in the full abstract on the IEEE SA page and in the PDF; the Xplore page cuts the abstract off before it). 7014.1 abstract: 'general-purpose AI products marketed as empathic partners, personal AI, companions, co-pilots, agents, assistants'. In 7012 an AI agent can be the service a person deals with or software acting for either party to the contract; in 7014.1 the agent is the product, and the standard concerns how it emulates empathy."
+   },
+   "sourceFixes": [],
+   "addSources": []
+  }
+ ]
+}

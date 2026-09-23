@@ -37,7 +37,7 @@ The site will then be at <https://fritzhand.github.io/history-of-privacy/>.
 | People | **done** | 48 people in three groups (cryptographers & code, hackers & advocates, researchers & identity), each quoting their own words |
 | Machine-readable privacy | **done** | 14 mechanisms from the HEW code to IEEE 7012: who proffers, legal force, who keeps the record, fate |
 | IEEE 7012 / agents | **done** | The standard, its principles, the five launch agreements, the case in the age of agents, an illustrative errand, counterpoints, 18 jurisdictions |
-| Where 7012 sits | **done** | The twelve standards of IEEE's GET Program for AI Ethics and Governance (series page rendered headless; every quote checked), read by their own scopes: six address organisations' processes, five the systems themselves, one (7012) the person. `research/ieee-get.json`, verified in `research/verify/ieee-get-*.json` |
+| Where 7012 sits | **done** | The twelve standards of IEEE's GET Program for AI Ethics and Governance (series page rendered headless; every quote checked), read by their own abstracts and scopes (this study's reading, marked DERIVED): six set organisations' processes, five concern the systems themselves, one (7012) is written from the person's side. `research/ieee-get.json`, verified in `research/verify/ieee-get-*.json` |
 | Myths | **done** | 32 popular claims that did not survive checking |
 | Picture archive | **done** | 85 images (40 CC BY, 24 CC BY-SA, 16 public domain, 5 CC0); every licence read on its record page and quoted in `rightsEvidence` |
 | Share card & metadata | **done** | `tools/og-card.html` → `assets/og-image.png`; `tools/check-meta.mjs` passes |
@@ -98,9 +98,10 @@ Xplore bot-challenges scripts. What it changed:
 - **"The latest of the 7000 series."** True when Doc Searls wrote it in
   January 2026; IEEE 7014.1-2026 (emulated empathy in general-purpose AI
   "partners") followed on 12 June 2026. The timeline entry is now dated.
-- **No cross-reference.** IEEE 7012's text cites no other standard in the
-  series, and no public IEEE statement relates it to IEEE 7002 (Data Privacy
-  Process); IEEE's 2018 statement lists both among its 7000-series projects.
+- **No cross-reference found.** IEEE 7012's text cites no other standard in
+  the series, and no public IEEE statement found relates it to IEEE 7002 (Data
+  Privacy Process); IEEE SA's 2018 statement lists both among its 7000-series
+  projects. Whether 7002 mentions P7012 is unknown (its text needs a sign-in).
 - **Source audit.** Side sources (a section's closing note, a person's quote)
   were not counted or validated before; they are now.
 

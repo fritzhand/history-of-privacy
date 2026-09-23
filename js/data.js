@@ -22330,7 +22330,7 @@ window.privacyData = {
   },
 
   getSeries: {
-    desc: "IEEE offers twelve standards free of charge, with an IEEE account sign-in, in its GET Program for AI Ethics and Governance Standards, launched in January 2023; eleven belong to the 7000 series that grew out of IEEE's Global Initiative on the ethics of autonomous and intelligent systems. Read by their own scope statements, six set processes for the organisations and teams that design, build or run systems, five concern how the systems themselves are designed or behave, and one — 7012 — is addressed to the person.",
+    desc: "IEEE offers twelve standards free of charge, with an IEEE account sign-in, in its GET Program for AI Ethics and Governance Standards, launched in January 2023; eleven belong to the 7000 series that grew out of IEEE's Global Initiative on the ethics of autonomous and intelligent systems. Read by their own abstracts, scopes and purposes (this study's reading; several calls are close), six set processes for the organisations and teams that design, build or run systems, five concern how the systems themselves are designed or behave, and one — 7012 — is written from the person's side, as first party (its requirements fall on the software that acts for people and on the services that answer them).",
     descSource: [
       {
         institution: "IEEE (IEEE Xplore)",
@@ -22486,7 +22486,7 @@ window.privacyData = {
         publishedLabel: "Published 19 November 2021",
         who: "organisation",
         personalData: "central",
-        summary: "Describes methodologies, with metrics and conformance criteria, for how employers access, collect, store, use, share and destroy employee data, in processes that can be explained to the employee as data subject; its stated purpose, inspired by the GDPR, is that workers have control and influence over their personal information.",
+        summary: "Describes methodologies, with metrics and conformance criteria, for how employers access, collect, store, use, share and destroy employee data, in processes that can be explained to the employee as data subject; its purpose adds that, inspired by the GDPR, it is designed so that workers will have control and influence over their personal information.",
         url: "https://ieeexplore.ieee.org/document/9618905",
         destination: false,
         focus: false,
@@ -22531,7 +22531,7 @@ window.privacyData = {
         publishedLabel: "Published 30 November 2021",
         who: "organisation",
         personalData: "partial",
-        summary: "Establishes processes by which organisations can make their digital services age appropriate for situations where the users are children.",
+        summary: "Establishes processes by which organisations seek to make their digital services age appropriate for situations where the users are children.",
         url: "https://ieeexplore.ieee.org/document/9627644",
         destination: false,
         focus: false,
@@ -22716,7 +22716,7 @@ window.privacyData = {
         publishedLabel: "Published 24 January 2025",
         who: "organisation",
         personalData: "none",
-        summary: "Describes processes and methodologies to help those creating algorithms address bias, including criteria for choosing validation data sets, communicating application boundaries and managing user expectations.",
+        summary: "Describes processes and methodologies to help those creating algorithms address bias, including criteria for choosing validation data sets, guidelines on communicating application boundaries and suggestions for managing user expectations.",
         url: "https://ieeexplore.ieee.org/document/10851955",
         destination: false,
         focus: false,
@@ -22874,7 +22874,7 @@ window.privacyData = {
         ]
       }
     ],
-    coda: "Neither text points to the other: 7012 cites no other standard in the series, and no public IEEE statement relates the two. They come from different parts of IEEE — 7002 from the Computer Society's Personal Data Privacy Working Group, 7012 from the Machine Readable Privacy Terms working group of the Society on Social Implications of Technology — though IEEE's 2018 statement lists both among the projects of its 7000 series, and says of P7012 that privacy policies “are one-sided and need no agreement”. When 7012 was published in January 2026 it was the newest of the twelve; IEEE 7014.1, on emulated empathy in general-purpose AI “partners”, followed in June 2026.",
+    coda: "7012 does not point to 7002: it cites no other standard in the series, and no public IEEE statement this study found says that one builds on or complements the other (whether 7002 mentions P7012 is not known: its full text needs an IEEE sign-in and was not read). They come from different parts of IEEE — 7002 from the Computer Society's Personal Data Privacy Working Group, 7012 from the Machine Readable Privacy Terms working group of the Society on Social Implications of Technology — though IEEE SA's 2018 statement lists both among the projects of its 7000 series, and says of P7012 that privacy policies “are one-sided and need no agreement”. When 7012 was published in January 2026 it was the newest of the twelve; IEEE 7014.1, on emulated empathy in general-purpose AI “partners”, followed in June 2026.",
     codaSource: [
       {
         institution: "IEEE (IEEE Xplore)",

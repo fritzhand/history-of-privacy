@@ -1,0 +1,467 @@
+{
+ "slice": "concepts",
+ "chunk": 4,
+ "verdicts": [
+  {
+   "kind": "harm",
+   "id": "dutch-jewish-registration-1941",
+   "status": "FIXED",
+   "issues": [
+    "'what' says 'from the summer of 1942 the registered population was deported'. That overstates the source. USHMM gives 159,806 registered (19,561 of them born of mixed marriages) and 'some 107,000' deported. It also says 25,000-30,000 Jews went into hiding and two-thirds of them survived. Not everyone registered was deported, so the sentence should give the number of deportees rather than imply all were deported."
+   ],
+   "fieldFixes": {
+    "what": "In January 1941 the German occupation authorities required every Jew in the Netherlands to register as a Jew; from the summer of 1942 the Germans and their Dutch collaborators deported some 107,000 Jews, mostly to Auschwitz and Sobibor."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim in the USHMM Holocaust Encyclopedia article 'The Netherlands'. The same paragraph adds that the total 'included some 25,000 Jewish refugees from the German Reich'. Independent check: Wikipedia's 'The Holocaust in the Netherlands' dates Seyss-Inquart's registration order to 10 January 1941 and says 'about 160,000 registered, receiving a black \"J\" stamp in their identity cards'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The preceding sentences on the page are 'Deportations of Jews from the Netherlands began in the summer of 1942. The last train left Westerbork for Auschwitz on September 3, 1944.' They support the displayDate end of September 1944 and the 'summer of 1942' start."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim on the same page. It supports the consequence field."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "harm",
+   "id": "us-census-japanese-americans-1942",
+   "status": "FIXED",
+   "issues": [
+    "year is 1943, but the id says 1942 and the displayDate starts in 1942. Most of the harm also falls in 1942: the Second War Powers Act of 27 March 1942, the release of block-level data, and the removal of about 112,000 people to assembly centers between March and August 1942. Only the Washington, D.C., microdata handover is 1943. Most records in this slice take the start year (dutch 1941, cointelpro 1956, cambridge-analytica 2014, grindr 2020), so year should be 1942.",
+    "'what' opens with 'With confidentiality suspended by the Second War Powers Act of 1942, the Census Bureau released block-by-block data...'. That makes the Act the cause of the block-level release. Scientific American reports the two separately: the block-by-block release is dated only to 'during WW II'. The block-level data were neighbourhood aggregates, which the Bureau had long acknowledged. The individual-level (microdata) disclosure is the part the article links to the suspension of confidentiality 'between March 1942 ... and the August 1943 request'. The fix below keeps the Act tied to the microdata disclosure.",
+    "The consequence says 'none charged with disloyalty'. That is supported by the NARA page, but by the sentence after the quoted text. The quote on source[2] is extended to cover it.",
+    "The consequence says the release of individual data 'was denied for decades until records surfaced in 2007'. None of the quoted text supported this. A Scientific American source ('Despite decades of denials...') is added for it."
+   ],
+   "fieldFixes": {
+    "year": 1942,
+    "what": "The Census Bureau released block-by-block data that showed officials the neighbourhoods where Japanese Americans lived; after the Second War Powers Act of March 1942 suspended census confidentiality, it also, in August 1943, gave the Secret Service the names and addresses of people of Japanese ancestry in the Washington, D.C., area."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim. The article is by JR Minkel, dated March 30, 2007, and reports the study by Margo Anderson and William Seltzer. Independent check: Wikipedia's 'Second War Powers Act' dates the Act to March 27, 1942 and cites the same repeal of census confidentiality."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The article adds 'The records, however, do not indicate that the Bureau was asked for or divulged such information for Japanese-Americans in other parts of the country.' So the individual-level disclosure is documented only for the D.C. area, which is how the record words it."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "quote": "From the end of March to August, approximately 112,000 persons were sent to \"assembly centers\" – often racetracks or fairgrounds – where they waited and were tagged to indicate the location of a long-term \"relocation center\" that would be their home for the rest of the war. Nearly 70,000 of the evacuees were American citizens. There were no charges of disloyalty against any of these citizens, nor was there any vehicle by which they could appeal their loss of property and personal liberty.",
+     "note": "Re-fetched: the original quote was FOUND. The quote is extended by one sentence from the same paragraph (--check FOUND) so that it supports 'none charged with disloyalty'. The page is NARA Educator Resources, 'Japanese-American Incarceration During World War II', and is undated."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Scientific American",
+     "title": "Confirmed: The U.S. Census Bureau Gave Up Names of Japanese-Americans in WW II",
+     "date": "2007-03-30",
+     "url": "https://www.scientificamerican.com/article/confirmed-the-us-census-b/",
+     "quote": "Despite decades of denials, government records confirm that the U.S. Census Bureau provided the U.S. Secret Service with names and addresses of Japanese-Americans during World War II.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Standfirst paragraph (--check FOUND). It supports 'denied for decades until records surfaced in 2007'."
+    },
+    {
+     "institution": "Scientific American",
+     "title": "Confirmed: The U.S. Census Bureau Gave Up Names of Japanese-Americans in WW II",
+     "date": "2007-03-30",
+     "url": "https://www.scientificamerican.com/article/confirmed-the-us-census-b/",
+     "quote": "Anderson and Seltzer discovered in 2000 that the Census Bureau released block-by-block data during WW II that alerted officials to neighborhoods in California, Arizona, Wyoming, Colorado, Utah, Idaho and Arkansas where Japanese-Americans were living.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the block-by-block data claim. The article does not date the block-level release to after the Second War Powers Act."
+    }
+   ]
+  },
+  {
+   "kind": "harm",
+   "id": "stasi-files-1950-1989",
+   "status": "FIXED",
+   "issues": [
+    "displayDate '1950 – 1989' ends a year early. The Bundesarchiv's own English page describes 'all records of the Ministry of State Security (1950 - 1990)'. The MfS (renamed AfNS in November 1989) was dissolved in 1990, and its Berlin headquarters was occupied only on 15 January 1990. Keeping year 1989 is fine because the 189,000 informer figure is 'by 1989'. The displayDate should follow the archive."
+   ],
+   "fieldFixes": {
+    "displayDate": "1950 – 1990"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim on the Bundesarchiv page 'The Unofficial Collaborators of the MfS'. Its figures (189,000; 1 per ~90 citizens) match the scale field."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim on the Bundesarchiv English landing page 'Stasi Records Archive', which continues 'A total of almost 50 kilometres of material is held in the Berlin archive.' The German statistics page agrees ('über 111 Kilometer Schriftgut'). Its 'Archivbestände' section gives 'ca. 112,5 Kilometer Stasi-Akten' across 13 sites, so the existing note on source[2] is accurate."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim on 'Das Stasi-Unterlagen-Archiv in Zahlen'. Both figures (7,561,665 total; 3,499,663 from citizens; as of 31 Dec 2025) match the consequence field. The translation in the note is faithful."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Bundesarchiv — Stasi Records Archive",
+     "title": "Stasi Records Archive",
+     "date": "2026",
+     "url": "https://www.bundesarchiv.de/en/stasi-records-archive/",
+     "quote": "The Stasi Records Archive in the Berlin central office and twelve regional offices are responsible for the safekeeping, utilization and accessibility of all records of the Ministry of State Security (1950 - 1990).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the corrected displayDate of 1950 – 1990."
+    }
+   ]
+  },
+  {
+   "kind": "harm",
+   "id": "cointelpro-1956-1971",
+   "status": "OK",
+   "issues": [],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Church Committee Book III PDF with a cleared cache: quote FOUND verbatim. The cover reads 'REPORT No. 94-755 ... BOOK III ... APRIL 23 (under authority of the order of APRIL 14), 1976', which matches the title and date fields. A footnote gives '3,247 actions were proposed'. The record correctly uses the approved figure."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The same passage continues 'In the intervening 15 years', which supports 'over 15 years'. Independent check: Wikipedia's 'COINTELPRO' gives 'between 1956 and 1971'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The same sentence lists the 'snitch jacket', 'contacting an employer to get a target fired' and 'using the IRS to audit a professor'. All three techniques named in 'what' are therefore in the report, and a fuller quote is added below."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim, OCR errors included ('ageiicy', 'Pennslyrania'). The report has no cleaner OCR of the date, and a grep found the Media break-in date only in this passage. If the quote is displayed, render it with [sic] or show only the date. The same footnote states the programs were terminated 'on April 27, 1971', and a separate source for that is added below."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III: Supplementary Detailed Staff Reports on Intelligence Activities and the Rights of Americans (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "to the \"snitch jacket\" (falsely labeling a group member as an informant) ... to contacting an employer to get a target fired ... to using the IRS to audit a professor, not just to collect any taxes owing, but to distract him from his political activities.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The ellipses mark inline footnote numbers and intervening clauses. It supports the 'snitch jackets', employer and IRS examples in 'what'."
+    },
+    {
+     "institution": "U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities (Church Committee)",
+     "title": "Final Report, Book III: Supplementary Detailed Staff Reports on Intelligence Activities and the Rights of Americans (S. Rep. No. 94-755)",
+     "date": "1976-04-23",
+     "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-94755-iii.pdf",
+     "quote": "The Bureau decided because of \"security reasons\" to terminate them on April 27, 1971.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (footnote 1 of the COINTELPRO report). It supports the termination date of 27 April 1971."
+    }
+   ]
+  },
+  {
+   "kind": "harm",
+   "id": "bork-video-rental-list-1987",
+   "status": "FIXED",
+   "issues": [
+    "The consequence says 'liquidated damages of $2,500 per violation'. The statute (18 U.S.C. 2710(c)(2)(A)) says 'actual damages but not less than liquidated damages in an amount of $2,500'. It does not say 'per violation', and $2,500 is a floor, not a fixed sum. Whether it applies per violation or per plaintiff is a question of judicial interpretation that the sources do not settle.",
+    "The consequence also calls the Act 'still one of the few U.S. laws protecting a specific kind of consumer record'. No source supports this, and it is contestable: the U.S. has many sectoral record-privacy statutes, including FCRA 1970, FERPA 1974, RFPA 1978, the Cable Act 1984, DPPA 1994, HIPAA 1996, COPPA 1998 and GLBA 1999. The clause should go.",
+    "Minor: the '146 films' sentence in the Third Circuit opinion is quoted from Mollett v. Netflix, Inc., 795 F.3d 1062, 1065 (9th Cir. 2015) (the opinion's footnote 97). It is not the Third Circuit's own finding."
+   ],
+   "fieldFixes": {
+    "consequence": "Congress passed the Video Privacy Protection Act (Pub. L. 100-618, 5 Nov 1988), which lets consumers whose video rental records are wrongfully disclosed sue for actual damages but not less than $2,500 in liquidated damages."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim. The opinion header reads 'No. 15-1441 ... (Opinion Filed: June 27, 2016)', which matches the date field. Footnote 96 cites S. Rep. No. 100-599 (1988). Independent check: Wikipedia's 'Video Privacy Protection Act' confirms Pub. L. 100-618 and the Bork origin ('Bork bill')."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. It sits inside quotation marks in the opinion and is attributed in footnote 97 to Mollett v. Netflix, Inc., 795 F.3d 1062, 1065 (9th Cir. 2015). The full sentence begins 'The paper had obtained (without Judge Bork's knowledge or consent)...'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim at 18 U.S.C. 2710(c)(2)(A). The source credit reads 'Added Pub. L. 100–618, §2(a)(2), Nov. 5, 1988, 102 Stat. 3195', which confirms the enactment date in the record. The provision sets a $2,500 floor and does not say 'per violation'."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "harm",
+   "id": "aol-search-data-release-2006",
+   "status": "FIXED",
+   "issues": [
+    "source[4] (NYT, 'A Face Is Exposed for AOL Searcher No. 4417749') still cannot be verified. A direct fetch returns HTTP 403, and the Wayback Machine copy fails with a connection reset through the proxy. The claim 'identified at least one searcher from her queries' therefore had no confirmed quote. A freely available peer-reviewed source (Narayanan & Shmatikov, CACM 2010) is added for the re-identification. Independent check: Wikipedia's 'AOL search log release' says the NYT exposed user #4417749 as Thelma Arnold of Lilburn, Georgia, and dates the release to 4 August 2006, with deletion by 7 August.",
+    "All other claims check out: 658,000 users and 20 million records (AOL statement), March–May, AOL removing the data and saying 'This was a screw up', and August 2006."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim in AOL spokesman Andrew Weinstein's statement as republished by TechCrunch. The same statement contains 'This was a screw up' and 'Roughly 20 million search records over that period'. Page title 'AOL: \"This was a screw up\"'; article:published_time 2006-08-07; author Michael Arrington."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The post continues 'In addition to removing the data, AOL spokesperson Weinstein has left comments...', which supports 'AOL withdrew the data'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. Page title 'AOL Proudly Releases Massive Amounts of Private Data'. article:published_time is 2006-08-07T01:17:59Z, which is the evening of 6 August in U.S. time, matching the URL date."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The cited reference [16] is S. Hansell, 'AOL removes search data on vast group of web users', New York Times, Aug 8 2006."
+    },
+    {
+     "index": 4,
+     "verificationStatus": "PENDING",
+     "note": "Re-tried 2026-09-23. A direct fetch of nytimes.com returned HTTP 403. The web.archive.org copy failed with connection reset / tunnel closed (proxy relay failure). No quote could be taken. The identification is confirmed independently by the added CACM source and by Wikipedia's 'AOL search log release'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Communications of the ACM (Narayanan & Shmatikov, author copy at Cornell)",
+     "title": "Myths and Fallacies of \"Personally Identifiable Information\"",
+     "date": "2010-06",
+     "url": "https://www.cs.cornell.edu/~shmat/shmat_cacm10.pdf",
+     "quote": "Examples include the AOL fiasco, in which the content of search queries was used to re-identify a user",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Communications of the ACM vol. 53 no. 6 (June 2010), pp. 24-26, DOI 10.1145/1743546.1743558. It supports the claim that a searcher was re-identified from the content of her queries."
+    }
+   ]
+  },
+  {
+   "kind": "harm",
+   "id": "equifax-breach-2017",
+   "status": "FIXED",
+   "issues": [
+    "'what' ends with '— a company holding files on people who had not chosen to be its customers'. No source is cited for this, and the cited FTC press release partly contradicts it for this breach: 'The hackers targeted Social Security numbers, dates of birth, and other sensitive information, mostly from consumers who had purchased products from Equifax such as credit scores, credit monitoring, or identity theft prevention services.' The framing may hold for credit bureaus in general, but it should not be stated as a fact about this breach without a source. The fix drops the clause and adds the FTC's description of how the attackers got in.",
+    "The claim that 'attackers exploited' the vulnerability was not in any quoted text, since the existing quote only says Equifax failed to patch. An FTC quote on exploitation is added."
+   ],
+   "fieldFixes": {
+    "what": "Attackers exploited a known but unpatched vulnerability in the credit bureau's ACIS database, which handled consumers' inquiries about their credit data, then used administrative credentials stored in plain text to reach personal data on about 147 million people."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim on the FTC 'Equifax Data Breach Settlement' refunds page. The page is live and has no single date."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The release gives the press conference as July 22, 2019, which matches the date field. The same release says 'hackers stole at least 147 million names and dates of birth, 145.5 million Social Security numbers, and 209,000 payment card numbers'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Equifax to Pay $575 Million as Part of Settlement with FTC, CFPB, and States Related to 2017 Data Breach",
+     "date": "2019-07-22",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+     "quote": "A company investigation revealed that multiple hackers were able to exploit the ACIS vulnerability to gain entry to Equifax’s network, where they accessed an unsecured file that included administrative credentials stored in plain text.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports 'attackers exploited' and the plain-text credentials in the corrected 'what'."
+    }
+   ]
+  },
+  {
+   "kind": "harm",
+   "id": "cambridge-analytica-facebook-2014",
+   "status": "FIXED",
+   "issues": [
+    "displayDate says '(made public March 2018...)'. That is wrong as a first-disclosure date. The Guardian (Harry Davies) reported on 11 December 2015 that Ted Cruz's campaign was using a firm that 'harvested data on millions of unwitting Facebook users'. March 2018 (Observer/Guardian, 17 March 2018, with the whistleblower Christopher Wylie) is when the 50-million figure and the scandal broke. Both dates are now sourced below.",
+    "scale says '250,000–270,000 app users'. The FTC figure is specifically '250,000 to 270,000 users of the GSRApp located in the United States', so the scale should say U.S. app users.",
+    "consequence says the FTC 'imposed a record $5 billion penalty on Facebook for violating its 2012 privacy order'. That states as a finding what was a settlement: per the FTC, Facebook agreed to pay the penalty 'to settle Federal Trade Commission charges that the company violated a 2012 FTC order'. The $5 billion order also covered more than the Cambridge Analytica data. The FTC calls the two actions 'related, but separate'.",
+    "year 2014 was not directly supported by any quoted text. An FTC quote ('During the summer of 2014...') is added."
+   ],
+   "fieldFixes": {
+    "displayDate": "2014 (first reported December 2015; whistleblower revelations March 2018; FTC action July 2019)",
+    "scale": "250,000–270,000 U.S. app users plus 50–65 million of their Facebook friends (at least 30 million identifiable U.S. consumers)",
+    "consequence": "On 24 July 2019 the FTC sued Cambridge Analytica and, in a related but separate action, Facebook agreed to pay a record $5 billion penalty to settle FTC charges that it had violated a 2012 privacy order, including by sharing friends' data with third-party app developers.",
+    "locationNote": "City-level coordinates for Cambridge Analytica's London base. The December 2015 first report and the March 2018 revelations are sourced to The Guardian/Observer."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim. The figure refers to U.S.-located app users, and the scale field is corrected to say so."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim (lead paragraph). The FTC 'filed an administrative complaint against' Cambridge Analytica, and the release adds that the company 'has filed for bankruptcy and has not settled'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: quote FOUND verbatim. The opening paragraph of the same release frames the penalty as a settlement of charges, and that sentence is added as a separate source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Sues Cambridge Analytica, Settles with Former CEO and App Developer",
+     "date": "2019-07-24",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-sues-cambridge-analytica-settles-former-ceo-app-developer",
+     "quote": "The GSRApp asked its users to answer personality and other questions, and collected information such as the “likes” of public Facebook pages by the app’s users and by the “friends” in their social network. During the summer of 2014, the FTC alleges, Kogan, together with Cambridge Analytica and Nix, developed, used, and analyzed data obtained from the GSRApp.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports year 2014 and 'personality-quiz app'."
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "FTC Imposes $5 Billion Penalty and Sweeping New Privacy Restrictions on Facebook",
+     "date": "2019-07-24",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+     "quote": "Facebook, Inc. will pay a record-breaking $5 billion penalty, and submit to new restrictions and a modified corporate structure that will hold the company accountable for the decisions it makes about its users’ privacy, to settle Federal Trade Commission charges that the company violated a 2012 FTC order by deceiving users about their ability to control the privacy of their personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the settlement wording in the corrected consequence. The same release says Facebook violated the order 'when the company shared the data of users’ Facebook friends with third-party app developers'."
+    },
+    {
+     "institution": "The Guardian (Harry Davies)",
+     "title": "Ted Cruz using firm that harvested data on millions of unwitting Facebook users",
+     "date": "2015-12-11",
+     "url": "https://www.theguardian.com/us-news/2015/dec/11/senator-ted-cruz-president-campaign-facebook-user-data",
+     "quote": "Ted Cruz’s presidential campaign is using psychological data based on research spanning tens of millions of Facebook users, harvested largely without their permission",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. datePublished 2015-12-11T22:22:32Z; author Harry Davies. This is the first press report of the harvesting."
+    },
+    {
+     "institution": "The Guardian / The Observer (Carole Cadwalladr and Emma Graham-Harrison)",
+     "title": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+     "date": "2018-03-17",
+     "url": "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+     "quote": "The data analytics firm that worked with Donald Trump’s election team and the winning Brexit campaign harvested millions of Facebook profiles of US voters, in one of the tech giant’s biggest ever data breaches",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. article:published_time 2018-03-17T22:03Z. It supports 'whistleblower revelations March 2018'."
+    }
+   ]
+  },
+  {
+   "kind": "harm",
+   "id": "grindr-adtech-sharing-2020",
+   "status": "FIXED",
+   "issues": [
+    "The displayDate and consequence skip a stage of the appeals. The cited 2025 Datatilsynet page says 'in 2024, the Oslo District Court upheld the fine' before the Borgarting Court of Appeal did. The regulator itself says its assessments 'have been upheld through three rounds of appeals'.",
+    "The record does not say the case is now closed. Datatilsynet's Norwegian page, updated 26.11.2025, states: 'Dommen fra Borgarting lagmannsrett ble ikke anket og er nå rettskraftig. Saken er dermed endelig avgjort.' In English: the Court of Appeal judgment was not appealed, is now legally binding, and the case is finally decided.",
+    "scale says '(number of users affected not stated)'. That is wrong. The cited 2023 page states 'Thousands of users in Norway had their personal data unlawfully disclosed', and the cited 2021 page gives 'Grindr has 13.7 million active users, of which thousands reside in Norway.'",
+    "The source date fields are imprecise. The pages show 'Published' dates of 9/29/2023, 1/26/2021 and 10/21/2025.",
+    "Source[1] is the January 2021 advance notice. It gives the regulator's preliminary view, and its title refers to the proposed NOK 100 million (about €10 million) fine, later cut to NOK 65 million. The special-category finding was confirmed in the final decision and on appeal. A quote from the 2023 page is added for it."
+   ],
+   "fieldFixes": {
+    "displayDate": "Complaint 2020; fine December 2021; upheld September 2023, 2024 and 21 October 2025 (final)",
+    "scale": "NOK 65 million fine; 'thousands of users in Norway' affected (Grindr had 13.7 million active users worldwide in 2021)",
+    "consequence": "Norway's regulator treated app use itself as revealing sexual orientation (special-category data); the fine was upheld by the Privacy Appeals Board (September 2023), Oslo District Court (2024) and, on 21 October 2025, the Borgarting Court of Appeal, whose judgment was not appealed and is final."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2023-09-29",
+     "note": "Re-fetched with a cleared cache: quote FOUND verbatim. Page 'Published: 9/29/2023'. The page also says the complaint was lodged by the Norwegian Consumer Council 'In 2020' and the fine was imposed 'in December 2021'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2021-01-26",
+     "note": "Re-fetched: quote FOUND verbatim. Page 'Published: 1/26/2021'. This is the advance notice (draft decision) of a proposed NOK 100,000,000 fine, so the quote is a preliminary view. The final position is supported by the added 2023 quote."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "date": "2025-10-21",
+     "note": "Re-fetched: quote FOUND verbatim. Page 'Published: 10/21/2025'. 21 October 2025 was a Tuesday, which matches the page. The same page records the 2024 Oslo District Court ruling."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "The Court of Appeal upholds the fine against Grindr",
+     "date": "2025-10-21",
+     "url": "https://www.datatilsynet.no/en/news/news-2025/the-court-of-appeal-upholds-the-fine-against-grindr/",
+     "quote": "Grindr then took the Privacy Appeals Board’s decision to the courts, and in 2024, the Oslo District Court upheld the fine.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the 2024 District Court stage."
+    },
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "Gebyret mot Grindr blir stående",
+     "date": "2025-11-26",
+     "url": "https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2025/lagmannsretten-opprettholder-boten-mot-grindr/",
+     "quote": "Dommen fra Borgarting lagmannsrett ble ikke anket og er nå rettskraftig. Saken er dermed endelig avgjort.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the 'Oppdatering 26.11.2025' on the Norwegian version of the 21.10.2025 news item. Translation: 'The judgment of Borgarting Court of Appeal was not appealed and is now legally binding. The case is thus finally decided.'"
+    },
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "Record fine in the Grindr case confirmed",
+     "date": "2023-09-29",
+     "url": "https://www.datatilsynet.no/en/news/news-2023/record-fine-grindr-confirmed/",
+     "quote": "Thousands of users in Norway had their personal data unlawfully disclosed to an unknown number of companies in order to serve Grindr’s commercial interests, including location data and the fact that they are Grindr users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the corrected scale."
+    },
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "Record fine in the Grindr case confirmed",
+     "date": "2023-09-29",
+     "url": "https://www.datatilsynet.no/en/news/news-2023/record-fine-grindr-confirmed/",
+     "quote": "The Data Protection Authority considered that information revealing that someone is a Grindr user, constitutes such a special category of personal data, because it strongly indicates that they belong to one of the sexual minorities the Grindr app targets.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It states the final (not preliminary) special-category finding, which the Privacy Appeals Board upheld."
+    },
+    {
+     "institution": "Datatilsynet (Norwegian Data Protection Authority)",
+     "title": "Intention to issue € 10 million fine to Grindr LLC",
+     "date": "2021-01-26",
+     "url": "https://www.datatilsynet.no/en/news/2021/intention-to-issue--10-million-fine-to-grindr-llc2/",
+     "quote": "Grindr has 13.7 million active users, of which thousands reside in Norway.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the 13.7 million worldwide user figure in the corrected scale."
+    }
+   ]
+  }
+ ]
+}

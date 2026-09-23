@@ -1,0 +1,303 @@
+{
+ "slice": "global",
+ "chunk": 8,
+ "verdicts": [
+  {
+   "kind": "law",
+   "id": "bb-2019",
+   "status": "FIXED",
+   "issues": [
+    "The note says 'Passed 12 August 2019', which conflicts with Parliament's own record. The Barbados Parliament bills archive (Data Protection Bill, 2019 (as amended), bill 417) shows the Senate passed the bill on 24/07/2019 and the House of Assembly on 06/08/2019, with Current Stage 'Passed'. Parliamentary passage was therefore complete on 6 August 2019. The 12 August 2019 date comes only from DLA Piper, which calls it the date the Act 'was passed'. It may be the assent date, but no primary text of Act 2019-29 could be read to confirm this: the Commissioner's site does not resolve, GIS Barbados is behind Cloudflare and the parliament's gazette archive for 2019 is incomplete. The note has been reworded so it no longer calls 12 August the passage date.",
+    "'In force March 2021' is supported only by DLA Piper, which also says 'Some provisions of the Act are yet to be proclaimed'. The note should keep that caveat. The exact commencement date (commonly given as 25 March 2021) was not verified at a primary source.",
+    "yearEnacted 2019 and inForce 2021 are correct. Coordinates (13.0975, -59.6165) are central Bridgetown, near Parliament Buildings. OK."
+   ],
+   "fieldFixes": {
+    "note": "Parliament passed the Act as the Data Protection Bill, 2019: the Senate on 24 July 2019 and the House of Assembly on 6 August 2019. DLA Piper dates the Act 12 August 2019. It came into force in March 2021, and some provisions are still to be proclaimed."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "The Data Protection Act (the \" Act\" ) was passed on August 12, 2019, and came into force in March 2021. Some provisions of the Act are yet to be proclaimed.",
+     "note": "Re-fetched 2026-09-23 with the cache cleared. The extended quote gives --check FOUND. It supports the 2019 and March 2021 dates and the partial-proclamation caveat. The 'passed on August 12' wording conflicts with the Parliament bill history (final passage 6 August 2019), so it is cited in the note only as 'DLA Piper dates the Act 12 August 2019'. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Parliament of Barbados (Bills Archive)",
+     "title": "Data Protection Bill, 2019 (as amended): History of this Bill",
+     "date": "2019-08-06",
+     "url": "https://www.barbadosparliament.com/bills/details/417",
+     "quote": "Consideration of amendments: 06/08/2019 Passed Date: 06/08/2019",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official parliamentary record. The page gives 'Current Stage Passed'. The Senate section reads 'Passed Date: 24/07/2019 House of Assembly Notice Date: 24/07/2019', and the House of Assembly section has first and second reading on 30/07/2019 and committee, report and passage on 06/08/2019. Both of those strings were also --check FOUND. The quoted line is the House of Assembly passage. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ec-2021",
+   "status": "FIXED",
+   "issues": [
+    "The source institution is wrong. finanzaspopulares.gob.ec belongs to the Corporación Nacional de Finanzas Populares y Solidarias (CONAFIPS), as the site's own <title> shows, not the Superintendencia de Economía Popular y Solidaria (seps.gob.ec). The PDF itself is a Lexis-format copy of the Registro Oficial text.",
+    "The quote (header 'Registro Oficial Suplemento 459 de 26-may.-2021') is verbatim and supports the note. The same PDF also shows that President Lenín Moreno sanctioned and promulgated the law on 21 May 2021 ('SANCIÓNASE Y PROMÚLGASE'). The Disposición Final puts it in force on publication. Transitional provision PRIMERA delayed the corrective-measures and sanctions regime by two years (to May 2023). inForce 2021 has been added and the note enriched.",
+    "The regulator name is right: Arts. 76-77 create the Autoridad de Protección de Datos Personales headed by the Superintendente de Protección de Datos. LOPDP is Ecuador's first general data-protection statute (earlier protection was the constitutional habeas data right). Coordinates (-0.1807, -78.4678) are Quito, the capital. OK."
+   ],
+   "fieldFixes": {
+    "inForce": 2021,
+    "note": "President Lenín Moreno sanctioned the law on 21 May 2021. It was published in the Registro Oficial (Supplement 459) on 26 May 2021 and came into force on publication. The corrective-measures and sanctions regime took effect two years later, in May 2023."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Corporación Nacional de Finanzas Populares y Solidarias (CONAFIPS), Ecuador — copy of the Registro Oficial text",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, quote --check FOUND. The institution was corrected: the domain belongs to CONAFIPS, not SEPS. Also --check FOUND in the same PDF: 'La presente \"Ley entrará en vigencia una vez publicada en el Registro Oficial.'; 'PRIMERA.-Las disposiciones relacionadas con las medidas correctivas y el régimen sancionatorio entrarán en vigencia en dos años contados a partir de la publicación de esta ley en el Registro Oficial'; 'PALACIO NACIONAL, DISTRITO METROPOLITANO DE QUITO, A VEINTIUNO DE MAYO DE DOS MIL VEINTIUNO. SANCIÓNASE Y PROMÚLGASE'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Corporación Nacional de Finanzas Populares y Solidarias (CONAFIPS), Ecuador — copy of the Registro Oficial text",
+     "title": "Ley Orgánica de Protección de Datos Personales — Disposición Transitoria Primera and Disposición Final",
+     "date": "2021-05-26",
+     "url": "https://www.finanzaspopulares.gob.ec/wp-content/uploads/2021/07/ley_organica_de_proteccion_de_datos_personales.pdf",
+     "quote": "PRIMERA.-Las disposiciones relacionadas con las medidas correctivas y el régimen sancionatorio entrarán en vigencia en dos años contados a partir de la publicación de esta ley en el Registro Oficial",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the two-year delay for sanctions. The Disposición Final reads 'La presente \"Ley entrará en vigencia una vez publicada en el Registro Oficial.' (--check FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "py-2025",
+   "status": "FIXED",
+   "issues": [
+    "The note wrongly says Law 7593/2025 replaces the credit-data regime (Law 6534/2020). The official text on the Congress library (BACN) shows only a partial repeal. Art. 59 repeals 'los incisos a) y b) del artículo 3º, el artículo 4º, el inciso b) del artículo 20, el inciso x) del artículo 21 de la Ley Nº 6534/2020'. Art. 58 transfers 6534's references to the consumer-protection secretariat to the new Agencia Nacional de Protección de Datos Personales. Law 6534/2020 therefore stays in force as the sectoral credit-data law alongside the new general law.",
+    "The note is vague about dates and says the 24-month vacatio legis is 'not verified'. BACN gives 'Fecha de Promulgación: 27-11-2025' and 'Fecha de Publicación: 27-11-2025'. Art. 57 reads 'La presente ley entrará en vigor luego de transcurridos veinticuatro meses de su publicación oficial', so the law takes effect around 27 November 2027. Congress sanctioned it with the Deputies on 14 October 2025 and the Senate on 5 November 2025.",
+    "The DLA Piper quote only named Law 6534/2020. The same page now also says 'In November of 2025, Congress approved the new Law No. 7593/25 ... It is set to take effect 24 months after its approval, i.e., in November of 2027', so the quote has been extended.",
+    "Context: the earlier Law 1682/2001 ('que reglamenta la información de carácter privado', promulgated 16 January 2001), later replaced by 6534/2020, was in practice a credit/information-bureau regime. Treating 7593/2025 as Paraguay's first comprehensive law is consistent with the slice definition. Coordinates (-25.2637, -57.5759) are Asunción, the capital. OK."
+   ],
+   "fieldFixes": {
+    "note": "Congress sanctioned the law in 2025 (Chamber of Deputies 14 October, Senate 5 November). It was promulgated and published on 27 November 2025 and enters into force 24 months after publication (Art. 57), in November 2027. It creates the Agencia Nacional de Protección de Datos Personales within MITIC. The credit-data law it complements (Law 6534/2020) remains in force, with a few provisions repealed (Art. 59)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, quote --check FOUND. Press report supporting promulgation. The article (URL dated 28 November 2025) also describes the new Agencia Nacional de Protección de Datos Personales inside MITIC. The 24-month vacatio legis is now verified at the BACN official text (added source)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "In November of 2025, Congress approved the new Law No. 7593/25 on Personal Data Protection, establishing a stricter regulatory framework. It is set to take effect 24 months after its approval, i.e., in November of 2027.",
+     "note": "Re-fetched 2026-09-23. The original quote (Law 6534/2020) is still FOUND but only described the prior credit regime. It is replaced by this sentence from the same page, which gives --check FOUND. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Biblioteca y Archivo Central del Congreso Nacional (BACN), Paraguay",
+     "title": "Ley Nº 7593/2025 De Protección de Datos Personales en la República del Paraguay",
+     "date": "2025-11-27",
+     "url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-7593-2025-de-protecci-n-de-datos-personales-en-la-rep-blica-del-paraguay",
+     "quote": "La presente ley entrará en vigor luego de transcurridos veinticuatro meses de su publicación oficial.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official text on the Congress library portal, Art. 57. Also --check FOUND on the same page: 'Fecha de Promulgación: 27-11-2025'; 'Fecha de Publicación: 27-11-2025'; Art. 59 'Quedan derogados los incisos a) y b) del artículo 3º, el artículo 4º, el inciso b) del artículo 20, el inciso x) del artículo 21 de la Ley Nº 6534/2020 “DE PROTECCIÓN DE DATOS PERSONALES CREDITICIOS”.'; and the sanction clause 'Aprobado el Proyecto de Ley por la Honorable Cámara de Diputados, a los catorce días del mes de octubre del año dos mil veinticinco, y por la Honorable Cámara de Senadores, a los cinco días del mes de noviembre del año dos mil veinticinco'. PDF: https://www.bacn.gov.py/descarga/12924/2025_7593.pdf. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "il-1981",
+   "status": "OK",
+   "issues": [
+    "Both DLA Piper quotes were re-fetched with the cache cleared and are verbatim (--check FOUND). They support the law name, Amendment 13's approval on 5 August 2024 and its entry into force on 14 August 2025. DLA's text gives Amendment 13 as '5774-2024'; the Hebrew year should be 5784. The record does not repeat that error.",
+    "'The earliest data-protection statute in the Middle East' is not in any source. It holds against this dataset and general knowledge: every other MENA law in the slice dates from 2004 or later (Tunisia 2004, Morocco 2009, Qatar and Turkey 2016, Bahrain and Algeria 2018, and so on), and Cyprus, if counted, is 2001. It is acceptable, though the editorial layer may prefer to hedge it as 'among the laws recorded here', as the Tunisia record does.",
+    "'Privacy Protection Authority' is the regulator's official English name; DLA calls it the 'Israel Privacy Authority'. Coordinates (31.7767, 35.2054) are the Knesset, Jerusalem. OK.",
+    "No primary source could be read: gov.il returns 403 and the Knesset site returned nothing to the script. The record rests on the secondary DLA guide."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, --check FOUND. Law-firm global guide (secondary)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, --check FOUND. Note that DLA writes '5774-2024' for Amendment 13; the correct Hebrew year is 5784. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "law",
+   "id": "tn-2004",
+   "status": "OK",
+   "issues": [
+    "The DLA quote is verbatim (--check FOUND) and supports Law 2004-63 of 27 July 2004. The primary text was also read on DCAF's Tunisian legislation database. It is signed 'Tunis, le 27 juillet 2004', and Art. 6 defines 'L’Instance : l’Instance Nationale de Protection des Données à Caractère Personnel', which confirms the regulator name. Added as a source.",
+    "'Tunisia later became a party to Convention 108' had no source. Wikipedia's Convention 108 article lists Tunisia among the non-Council of Europe states that have acceded; this was added as a tertiary source. The Council of Europe treaty office (coe.int) returns 403, so the accession date (2017) was not verified at the primary.",
+    "'First in the Arab world by date among the laws checked here' is suitably hedged and consistent with the dataset. DLA calls Tunisia 'a regional pioneer'. Coordinates (36.8065, 10.1815) are central Tunis, the capital. OK."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, --check FOUND. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DCAF – Geneva Centre for Security Sector Governance (Tunisian legislation database, legislation-securite.tn)",
+     "title": "Loi organique n° 2004-63 du 27 juillet 2004, portant sur la protection des données à caractère personnel",
+     "date": "2004-07-27",
+     "url": "https://legislation-securite.tn/latest-laws/loi-organique-n-2004-63-du-27-juillet-2004-portant-sur-la-protection-des-donnees-a-caractere-personnel/",
+     "quote": "L’Instance : l’Instance Nationale de Protection des Données à Caractère Personnel.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Full text of the organic law (Art. 6 definitions). The signature line 'Tunis, le 27 juillet 2004' was also --check FOUND. This is a reproduction by DCAF, not the JORT itself. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "Wikipedia",
+     "title": "Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+     "date": "2026",
+     "url": "https://en.wikipedia.org/wiki/Convention_for_the_Protection_of_Individuals_with_regard_to_Automatic_Processing_of_Personal_Data",
+     "quote": "Being non–Council of Europe states, Argentina , Cabo Verde , Mauritius , Mexico , Morocco , Senegal , Tunisia , and Uruguay have acceded to the treaty.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Tertiary source, used because coe.int returns 403 to scripts. Supports only 'Tunisia later became a party to Convention 108'. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ma-2009",
+   "status": "OK",
+   "issues": [
+    "The DLA quote is verbatim (--check FOUND). The primary text was also read in the CNDP's own copy of the Bulletin officiel (BO n° 5714, 5 March 2009). It shows 'Dahir n° 1-09-15 du 22 safar 1430 (18 février 2009) portant promulgation de la loi n° 09-08'. Art. 27 institutes the Commission nationale de contrôle de la protection des données à caractère personnel, which confirms 'created the CNDP'. Added as a primary source.",
+    "Law name and regulator name match the official text. Coordinates (34.0209, -6.8416) are Rabat, the capital. OK."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, --check FOUND. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP), Morocco — copy of Bulletin officiel n° 5714",
+     "title": "Loi n° 09-08 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel",
+     "date": "2009-02-18",
+     "url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+     "quote": "Dahir n° 1-09-15 du 22 safar 1430 (18 février 2009) portant promulgation de la loi n° 09-08 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official BO text hosted by the regulator. Also --check FOUND: 'BULLETIN OFFICIEL N° 5714 - 7 rabii I 1430 (5-3-2009)' and Art. 27: 'Il est institué auprès du Premier ministre une Commission nationale de contrôle de la protection des données à caractère personnel, chargée de mettre en œuvre et de veiller au respect des dispositions de la présente loi et des textes pris pour son application.' --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "qa-2016",
+   "status": "FIXED",
+   "issues": [
+    "The DLA quote is verbatim (--check FOUND) and supports the 'first GCC generally applicable law' claim, with the law named as 'Law No. (13) of 2016 Concerning Personal Data Protection' (an unofficial translation; Al Meezan renders it 'on Protecting Personal Data Privacy').",
+    "The note calls the Qatar Financial Centre a 'free zone'. DLA describes the QFC as 'a business center located on-shore in Qatar with its own regulations separate from those of the State of Qatar, including separate data protection regulations', so it is a separate onshore legal jurisdiction rather than a free zone. Dubai's DIFC is a financial free zone. The wording has been corrected, and a DLA quote has been added for the QFC regime.",
+    "The official Al Meezan portal (almeezan.qa) could not be read because its TLS chain is incomplete and fails verification, so the promulgation date (3 November 2016) and entry into force were not checked at a primary source. yearEnacted 2016 stands. Coordinates (25.2854, 51.531) are Doha, the capital. OK."
+   ],
+   "fieldFixes": {
+    "note": "The first generally applicable data-protection law in a Gulf Cooperation Council state. The Qatar Financial Centre (an onshore business centre with its own legal regime) and Dubai's DIFC financial free zone had their own earlier data-protection rules."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, --check FOUND. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Qatar",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=QA",
+     "quote": "Note: Please also see Qatar Financial Center (a business center located on-shore in Qatar with its own regulations separate from those of the State of Qatar, including separate data protection regulations).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the QFC parenthetical in the note. The DIFC part is not sourced here. Law-firm global guide (secondary). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "dz-2018",
+   "status": "OK",
+   "issues": [
+    "The JORADP 2018 n° 34 PDF was re-fetched with the cache cleared. Its masthead reads 'N° 34 … Dimanche 25 Ramadhan 1439 Correspondant au 10 juin 2018', and the quote is verbatim (--check FOUND). Title, date and institution are correct.",
+    "The note's amendment claim, previously unsourced, is now verified at the primary. JORADP 2025 n° 48 (24 July 2025) lists 'Loi n° 25-11 du 28 Moharram 1447 correspondant au 24 juillet 2025 modifiant et complétant la loi n° 18-07 …'. Added as a source.",
+    "The regulator name 'Autorité nationale de protection des données à caractère personnel' appears verbatim in JORADP 2025 n° 50. Coordinates (36.7538, 3.0588) are Algiers, the capital. OK."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Official gazette. Re-fetched 2026-09-23 with the cache cleared, --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Journal Officiel de la République Algérienne (JORADP)",
+     "title": "Journal officiel n° 48 du 24 juillet 2025",
+     "date": "2025-07-24",
+     "url": "https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025048.pdf",
+     "quote": "Loi n° 25-11 du 28 Moharram 1447 correspondant au 24 juillet 2025 modifiant et complétant la loi n° 18-07 du 25 Ramadhan 1439 correspondant au 10 juin 2018 relative à la protection des personnes physiques dans le traitement des données à caractère personnel",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Official gazette. The masthead reads 'N° 48 … Jeudi 28 Moharram 1447 Correspondant au 24 juillet 2025'. Supports the note's amendment claim. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "bh-2018",
+   "status": "OK",
+   "issues": [
+    "Both quotes were re-fetched with the cache cleared and are verbatim (--check FOUND). The pdp.gov.bh page is the Authority's English text of 'Law No. (30) of 2018 with Respect to Personal Data Protection Law', signed 'Promulgated in Riffa Palace 28 /10/1439 A.H. 12/07/2018 A.D.'.",
+    "In force 1 August 2019 is confirmed at the primary as well as by DLA. The law's final article says it 'shall come into effect after one year commencing on the first day of the month immediately following the date of its publication in the Official Gazette'. It was published in July 2018, so the count starts on 1 August 2018 and ends on 1 August 2019. Added as a source.",
+    "Regulator 'Personal Data Protection Authority' is created by the law and named in the text. Coordinates (26.2285, 50.586) are Manama, the capital. OK."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Official English text on the regulator's site. Re-fetched 2026-09-23 with the cache cleared, --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with the cache cleared, --check FOUND. The same page also says 'Bahrain enacted Law No. 30 of 2018 … on July 12, 2018'. Law-firm global guide (secondary)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Personal Data Protection Authority, Kingdom of Bahrain",
+     "title": "Law No. (30) of 2018 with Respect to Personal Data Protection — final article (entry into force)",
+     "date": "2018-07-12",
+     "url": "https://www.pdp.gov.bh/en/regulations.html",
+     "quote": "The Prime Minister and the Ministers, each in his respective capacity, shall implement the provisions of this Law, which shall come into effect after one year commencing on the first day of the month immediately following the date of its publication in the Official Gazette.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary support for the 1 August 2019 entry into force: published in the Official Gazette in July 2018, so one year from 1 August 2018. --check FOUND 2026-09-23."
+    }
+   ]
+  }
+ ]
+}

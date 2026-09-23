@@ -2425,3 +2425,4 @@ tr.is-destination td:first-child { box-shadow: inset 3px 0 0 var(--who-person); 
 .person-more[open] summary::before { content: '\2212  '; }
 .person-more summary:hover { color: var(--text-primary); }
 .person-more > *:not(summary) { margin-top: 6px; }
+@media (max-width: 700px) { .who-badge { white-space: normal; line-height: 1.35; } }

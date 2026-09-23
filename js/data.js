@@ -16818,7 +16818,7 @@ window.privacyData = {
       body: "OECD",
       year: 1980,
       force: "Guidelines",
-      reach: "Adopted by the OECD Council as a Recommendation to member countries (count not verified here); revised 2013. The first international statement of fair-information principles: collection limitation, data quality, purpose specification, use limitation, security, openness, individual participation and accountability.",
+      reach: "Adopted by the OECD Council on 23 September 1980 as a Recommendation to member countries (not legally binding), which also invites non-members to adhere; revised on 11 July 2013. The number of adherents was not verified here. The OECD calls them 'the first internationally agreed-upon set of privacy principles', although the Council of Europe had adopted resolutions on data-bank privacy principles in 1973 and 1974.",
       source: [
         {
           institution: "Organisation for Economic Co-operation and Development (archived page, Wayback Machine)",
@@ -16826,7 +16826,47 @@ window.privacyData = {
           date: "1980-09-23",
           url: "https://web.archive.org/web/2019/http://www.oecd.org/sti/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm",
           quote: "The Recommendation was adopted and became applicable on 23 September 1980.",
-          note: "Source record reused verbatim from research/dataprotection.json, where it was fetched and checked; a re-check from this slice on 2026-09-23 failed only because web.archive.org was unreachable.",
+          note: "Source record reused verbatim from research/dataprotection.json, where it was fetched and checked; a re-check from this slice on 2026-09-23 failed only because web.archive.org was unreachable. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (tools/fetch-text.py 'Connection reset by peer'; curl exit 35 on three further tries; the agent proxy logged ws_closed_mid_exchange for web.archive.org:443). Live https://www.oecd.org/sti/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm returns a 403 challenge. The quote could not be re-verified. The same date is confirmed in OECD/LEGAL/0188 ('adopted by the OECD Council on 23 September 1980') and in the OECD 2002 edition ('They came into effect on 23 September 1980.'), both FOUND and both added.",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD), Compendium of OECD Legal Instruments",
+          title: "Recommendation of the Council concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data (OECD/LEGAL/0188)",
+          date: "2025",
+          url: "https://legalinstruments.oecd.org/public/doc/114/114.en.pdf",
+          quote: "The Recommendation concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data was adopted by the OECD Council on 23 September 1980, and revised on 11 July 2013 … The OECD Privacy Guidelines represent the first internationally agreed-upon set of privacy principles",
+          note: "Official OECD Legal Instruments PDF (the API print of instrument 114; © OECD 2025). --check FOUND on 2026-09-23. The same PDF has 'INVITES non-Members to adhere to this Recommendation' and 'Recommendations are adopted by Council and are not legally binding.' (both FOUND), and the eight principle headings. --check FOUND. This is the OECD's own 'first' claim, now attributed to it in the note. The same background section says: 'Since their adoption, they have influenced legislation and policy in OECD countries and beyond.' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Organisation for Economic Co-operation and Development (OECD)",
+          title: "OECD Guidelines on the Protection of Privacy and Transborder Flows of Personal Data (2002 edition, with the 1980 Explanatory Memorandum)",
+          date: "2002",
+          url: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2002/02/oecd-guidelines-on-the-protection-of-privacy-and-transborder-flows-of-personal-data_g1gh255f/9789264196391-en.pdf",
+          quote: "Both resolutions recommend that the governments of the Member states of the Council of Europe take steps to give effect to a number of basic principles of protection relating to the obtaining of data, the quality of data, and the rights of individuals to be informed about data and data processing activities.",
+          note: "Explanatory Memorandum para. 13. The preceding sentence reads 'In 1973 and 1974 the Committee of Ministers of the Council of Europe adopted two resolutions concerning the protection of the privacy of individuals vis-à-vis electronic data banks in the private and public sectors respectively.' The PDF text layer puts the paragraph number '13.' in the middle of that sentence, so only its second half ('Europe adopted two resolutions ... respectively.') is FOUND verbatim. The quoted sentence and 'They came into effect on 23 September 1980.' are both FOUND in full.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Asia-Pacific Economic Cooperation (APEC) Secretariat",
+          title: "APEC Privacy Framework (2015)",
+          date: "2017-08",
+          url: "https://www.apec.org/docs/default-source/Publications/2017/8/APEC-Privacy-Framework-(2015)/217_ECSG_2015-APEC-Privacy-Framework.pdf",
+          quote: "The previous version of the Framework (2005) was modelled upon the OECD Guidelines (1980) which at that time represented the international consensus on what constitutes fair and trustworthy treatment of personal information.",
+          note: "Para. 5 of the updated Framework. --check FOUND. Supports 'template for APEC's framework'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Office of the Privacy Commissioner for Personal Data (PCPD), Hong Kong",
+          title: "The Personal Data (Privacy) Ordinance",
+          date: "2026",
+          url: "https://www.pcpd.org.hk/english/data_privacy_law/ordinance_at_a_Glance/ordinance.html",
+          quote: "which recommended that Hong Kong introduce a new privacy law based on the OECD Privacy Guidelines 1980",
+          note: "--check FOUND. The full sentence says the PDPO 'was passed in 1995' and 'has its origins in the August 1994 Law Reform Commission Report entitled \"Reform of the Law Relating to the Protection of Personal Data\"'. A footnote marker sits between the report title and this clause, so the quote starts at 'which'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16837,7 +16877,7 @@ window.privacyData = {
       body: "Council of Europe",
       year: 1981,
       force: "Binding treaty",
-      reach: "Opened for signature 28 January 1981. Open to non-member states: around 2019, eight non-European states were parties (Uruguay, Mauritius, Senegal, Tunisia, Cabo Verde, Mexico, Argentina, Morocco), with Burkina Faso invited. The current total number of parties was not verified. Still the only binding international data-protection treaty open to any country;",
+      reach: "Opened for signature at Strasbourg on 28 January 1981; in force 1 October 1985. States outside the Council of Europe may accede when invited by its Committee of Ministers. In November 2020 the Council of Europe counted 55 countries bound: all 47 of its member states plus eight non-European states (Argentina, Cabo Verde, Mauritius, Mexico, Morocco, Senegal, Tunisia, Uruguay), with Burkina Faso's accession pending. The current total was not verified. Still the only binding international data-protection treaty open to any country (in a 2020 Council of Europe presentation's words, 'no other binding instrument in the field open to any country').",
       source: [
         {
           institution: "Council of Europe Treaty Office (archived PDF, Wayback Machine)",
@@ -16845,8 +16885,8 @@ window.privacyData = {
           date: "1981-01-28",
           url: "https://web.archive.org/web/2023/https://rm.coe.int/1680078b37",
           quote: "The purpose of this Convention is to secure in the territory of each Party for every individual, whatever his nationality or residence, respect for his rights and fundamental freedoms, and in particular his right to privacy, with regard to automatic processing of personal data relating to him (\"data protection\").",
-          note: "Source record reused verbatim from research/dataprotection.json, where it was fetched and checked; a re-check from this slice on 2026-09-23 failed only because web.archive.org was unreachable.",
-          verificationStatus: "CONFIRMED",
+          note: "Source record reused verbatim from research/dataprotection.json, where it was fetched and checked; a re-check from this slice on 2026-09-23 failed only because web.archive.org was unreachable. Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (tools/fetch-text.py 'Connection reset by peer'; curl exit 35 on three further tries; the agent proxy logged ws_closed_mid_exchange for web.archive.org:443). Live https://rm.coe.int/1680078b37 returns a Cloudflare 403. Neither the quote nor the identity of the archived PDF could be re-checked. The same Article 1 text is FOUND on the Irish Statute Book copy of the Convention (added).",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -16856,6 +16896,46 @@ window.privacyData = {
           url: "https://home.inai.org.mx/wp-content/documentos/Micrositios/convenio108.pdf",
           quote: "Fuera de la región europea, han suscrito el Convenio 108 y su Protocolo adicional Uruguay, Mauricio, Senegal, Túnez, Cabo Verde, México, Argentina y Marruecos.",
           note: "Translation: 'Outside the European region, Uruguay, Mauritius, Senegal, Tunisia, Cabo Verde, Mexico, Argentina and Morocco have subscribed to Convention 108 and its Additional Protocol.' The same text says Burkina Faso had received a formal invitation to accede. Undated PDF from Mexico's former data-protection authority (INAI was dissolved in 2025); the list reflects the position around 2019. The Council of Europe treaty office pages block scripts, so no primary party count was read.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Government of Ireland, Irish Statute Book",
+          title: "Data Protection Act 1988, First Schedule: Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data done at Strasbourg on the 28th day of January, 1981",
+          date: "1988-07-13",
+          url: "https://www.irishstatutebook.ie/eli/1988/act/25/schedule/1/enacted/en/html",
+          quote: "The purpose of this convention is to secure in the territory of each Party for every individual, whatever his nationality or residence, respect for his rights and fundamental freedoms, and in particular his right to privacy, with regard to automatic processing of personal data relating to him (\"data protection\").",
+          note: "--check FOUND on 2026-09-23 (the page prints curly quotes around 'data protection'; the tool normalises them). Full text of the Convention scheduled to the Irish Act. Article 23 on the same page: 'the Committee of Ministers of the Council of Europe may invite any State not a member of the Council of Europe to accede to this convention' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "United Nations, Treaty Series (UN Treaty Collection)",
+          title: "Convention for the protection of individuals with regard to automatic processing of personal data. Concluded at Strasbourg on 28 January 1981 (UNTS vol. 1496, No. I-25702)",
+          date: "1988",
+          url: "https://treaties.un.org/doc/Publication/UNTS/Volume%201496/volume-1496-I-25702-English.pdf",
+          quote: "Came into force on 1 October 1985",
+          note: "--check FOUND. The footnote continues: 'i.e., the first day of the month following the expiration of a period of three months after the date on which five Member States of the Council of Europe had deposited an instrument of ratification'. 'Concluded at Strasbourg on 28 January 1981' is also FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Council of Europe Data Protection Unit (Sophie Kwasny), presentation hosted by the World Trade Organization",
+          title: "Facilitating transborder data flows: Convention 108 and Convention 108+",
+          date: "2020-11-10",
+          url: "https://www.wto.org/english/res_e/reser_e/2_ssophie_trade_dialogues_wto.pdf",
+          quote: "55 countries bound by the Convention = Argentina, Cabo Verde, Mauritius, Mexico, Morroco, Senegal, Tunisia, Uruguay + 47 CoE pending: Burkina-Faso … UNIQUE (no other binding instrument in the field open to any country)",
+          note: "Slide text as extracted, including the slide's spelling 'Morroco'. --check FOUND. The deck is dated 'Sophie Kwasny, 10 November 2020' (FOUND). The speaker's CoE role is not stated in the deck. --check FOUND. On the slide headed 'Convention 108 (28 January 1981)'. Supports the note's 'only binding ... open to any country' as of 2020.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Privacy Laws & Business",
+          title: "Uruguay's accession to CoE DP Convention paves way for it to become a wider international treaty",
+          date: "2013-04",
+          url: "https://www.privacylaws.com/news/uruguays-accession-to-coe-dp-convention-paves-way-for-it-to-become-a-wider-international-treaty/",
+          quote: "On 12 April 2013 the Council of Europe announced that Uruguay's accession to Convention 108 (and to its Additional Protocol) was complete. It will enter into force regarding Uruguay on 1 August 2013, making it the 45th state to become a party, and the first non-European party, to the Convention.",
+          note: "--check FOUND on 2026-09-23. Independent report of the Council of Europe announcement. The same source is used on the event record uruguay-first-non-european-party-convention-108-2013.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16877,6 +16957,16 @@ window.privacyData = {
           note: "The UN's own PDF of A/RES/45/95 is an image scan with no text layer; EPIC's summary was used.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "United Nations General Assembly (Official Document System)",
+          title: "A/79/173 — Right to privacy: Report of the Special Rapporteur on the right to privacy, Ana Brian Nougrères — Proposal for the updating of General Assembly resolution 45/95 of 14 December 1990, entitled \"Guidelines for the regulation of computerized personal data files\"",
+          date: "2024-07-17",
+          url: "https://documents.un.org/api/symbol/access?s=A/79/173&l=en&t=pdf",
+          quote: "In the present report, the Special Rapporteur on the right to privacy sets out a proposal for the updating of General Assembly resolution 45/95 of 14 December 1990, entitled \"Guidelines for the regulation of computerized personal data files\"",
+          note: "--check FOUND on 2026-09-23 (the PDF uses curly quotes; the tool normalises them). Distributed 17 July 2024 for the 79th session and submitted under HRC resolution 28/16. Supports the 2024 update claim and gives a UN primary for the 14 December 1990 date.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16893,8 +16983,8 @@ window.privacyData = {
           date: "1995-10-24",
           url: "https://web.archive.org/web/20250115161310/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A31995L0046",
           quote: "Member States shall provide that personal data may be processed only if: (a) the data subject has unambiguously given his consent",
-          note: "EUR-Lex returns an empty bot-challenge page to scripts; text read from an Internet Archive copy (15 January 2025) of the official EUR-Lex HTML. The same text states 'Done at Luxembourg, 24 October 1995.' and, in Article 25(1), that transfers may take place only if 'the third country in question ensures an adequate level of protection.'",
-          verificationStatus: "CONFIRMED",
+          note: "EUR-Lex returns an empty bot-challenge page to scripts; text read from an Internet Archive copy (15 January 2025) of the official EUR-Lex HTML. The same text states 'Done at Luxembourg, 24 October 1995.' and, in Article 25(1), that transfers may take place only if 'the third country in question ensures an adequate level of protection.' Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (tools/fetch-text.py 'Connection reset by peer'; curl exit 35 on three further tries; the agent proxy logged ws_closed_mid_exchange for web.archive.org:443). Live EUR-Lex returns an empty bot-challenge page (HTTP 202). The quote could not be re-checked on this URL. It is FOUND on the legislation.gov.uk copy of the consolidated text (added).",
+          verificationStatus: "PENDING",
           accessType: "FREE"
         },
         {
@@ -16903,6 +16993,77 @@ window.privacyData = {
           date: "2003-06-30",
           url: "https://web.archive.org/web/2024/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32003D0490",
           quote: "For the purposes of Article 25(2) of Directive 95/46/EC, Argentina is regarded as providing an adequate level of protection for personal data transferred from the Community.",
+          note: "Verification: Re-fetch failed on 2026-09-23: web.archive.org reset every connection (tools/fetch-text.py 'Connection reset by peer'; curl exit 35 on three further tries; the agent proxy logged ws_closed_mid_exchange for web.archive.org:443). The quote could not be re-checked on this URL. It is FOUND verbatim in the legislation.gov.uk copy of the Official Journal text of Decision 2003/490/EC (added).",
+          verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "The National Archives (legislation.gov.uk), reproducing the EUR-Lex consolidated text",
+          title: "Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 (consolidated version 1995L0046, 20.11.2003)",
+          date: "2003-11-20",
+          url: "https://www.legislation.gov.uk/eudr/1995/46/pdfs/eudr_19950046_2003-11-20_en.pdf",
+          quote: "Member States shall provide that personal data may be processed only if: (a) the data subject has unambiguously given his consent",
+          note: "Article 7(a). --check FOUND on 2026-09-23. The same PDF has 'of 24 October 1995' and 'DIRECTIVE 95/46/EC OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL' (both FOUND). The copy of the original Official Journal scan (eudr_19950046_adopted_en.pdf) has a spaced OCR layer ('( a )'), so the consolidated text is used.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The National Archives (legislation.gov.uk), reproducing the EUR-Lex consolidated text",
+          title: "Directive 95/46/EC, Article 25(1) (consolidated version 1995L0046, 20.11.2003)",
+          date: "2003-11-20",
+          url: "https://www.legislation.gov.uk/eudr/1995/46/pdfs/eudr_19950046_2003-11-20_en.pdf",
+          quote: "may take place only if, without prejudice to compliance with the national provisions adopted pursuant to the other provisions of this Directive, the third country in question ensures an adequate level of protection.",
+          note: "Article 25(1). --check FOUND. Article 26(1) begins 'By way of derogation from Article 25' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Commission, Official Journal L 168 (copy at legislation.gov.uk)",
+          title: "Commission Decision 2003/490/EC of 30 June 2003 on the adequate protection of personal data in Argentina",
+          date: "2003-06-30",
+          url: "https://www.legislation.gov.uk/eudn/2003/490/pdfs/eudn_20030490_adopted_en.pdf",
+          quote: "For the purposes of Article 25(2) of Directive 95/46/EC, Argentina is regarded as providing an adequate level of protection for personal data transferred from the Community.",
+          note: "Article 1. --check FOUND on 2026-09-23. This is the same quote as source 1, from a readable copy.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Commission, Official Journal L 27 (copy at legislation.gov.uk)",
+          title: "Commission Decision 2011/61/EU of 31 January 2011 on the adequate protection of personal data by the State of Israel",
+          date: "2011-01-31",
+          url: "https://www.legislation.gov.uk/eudn/2011/61/pdfs/eudn_20110061_adopted_en.pdf",
+          quote: "For the purposes of Article 25(2) of Directive 95/46/EC, the State of Israel is considered as providing an adequate level of protection for personal data transferred from the European Union",
+          note: "Article 1(1). --check FOUND. A recital says Israel's standards 'are largely based on the standards set out in Directive 95/46/EC and are laid down in the Privacy Protection Act 5741-1981, lastly amended in 2007'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Commission, Official Journal L 227 (copy at legislation.gov.uk)",
+          title: "Commission Implementing Decision 2012/484/EU of 21 August 2012 on the adequate protection of personal data by the Eastern Republic of Uruguay",
+          date: "2012-08-21",
+          url: "https://www.legislation.gov.uk/eudn/2012/484/pdfs/eudn_20120484_adopted_en.pdf",
+          quote: "The legal data protection standards applicable in the Eastern Republic of Uruguay cover all the basic principles necessary for an adequate level of protection for natural persons",
+          note: "Recital. --check FOUND. The decision date is in the header ('of 21 August 2012').",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Commission, Official Journal L 28 (copy at legislation.gov.uk)",
+          title: "Commission Implementing Decision 2013/65/EU of 19 December 2012 on the adequate protection of personal data by New Zealand",
+          date: "2012-12-19",
+          url: "https://www.legislation.gov.uk/eudn/2013/65/pdfs/eudn_20130065_adopted_en.pdf",
+          quote: "It predates Directive 95/46/EC",
+          note: "Recital, on New Zealand's Privacy Act 'as amended by the Privacy (Cross-border Information) Amendment Act of 7 September 2010'. --check FOUND. The same decision says 'The legal data protection standards applicable in New Zealand cover all the basic principles necessary for an adequate level of protection for natural persons' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Union, Official Journal L 119 (copy at legislation.gov.uk)",
+          title: "Regulation (EU) 2016/679 (General Data Protection Regulation), Article 94",
+          date: "2016-04-27",
+          url: "https://www.legislation.gov.uk/eur/2016/679/pdfs/eur_20160679_adopted_en.pdf",
+          quote: "Directive 95/46/EC is repealed with effect from 25 May 2018.",
+          note: "Article 94(1). --check FOUND. Supports the 'repealed ... from 25 May 2018' claim in the parties field.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16920,7 +17081,28 @@ window.privacyData = {
           title: "APEC Privacy Framework",
           date: "2005",
           url: "https://www.apec.org/docs/default-source/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
-          quote: "The APEC Privacy Framework promotes a flexible approach to information privacy protection across APEC member economies, while avoiding the creation of unnecessary barriers to information flows.",
+          quote: "The APEC Privacy Framework promotes a flexible approach to information privacy protection across APEC member economies, while avoiding the creation of unnecessary barriers to information flows. … In practice, the Framework is meant to be implemented in a flexible manner that can accommodate various methods of implementation, including through central authorities, multi-agency enforcement bodies, a network of designated industry bodies, or a combination of the above, as Member Economies deem appropriate.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE",
+          note: "Part IV, para. 31. --check FOUND. The paragraph opens: 'There are several options for giving effect to the Framework and securing privacy protections for individuals including legislative, administrative, industry' (FOUND; the next word, 'self-regulatory', is split across a line in the PDF). Supports 'creates no obligation to legislate'."
+        },
+        {
+          institution: "Office of the Privacy Commissioner for Personal Data, Hong Kong (Tony Lam, Acting Privacy Commissioner)",
+          title: "An Overview of the Principles Established by the APEC Privacy Framework (APEC Technical Assistance Seminar, 1–2 June 2005)",
+          date: "2005-06",
+          url: "https://www.pcpd.org.hk/english/news_events/speech/files/1tonylam1.pdf",
+          quote: "APEC Leaders endorsed the Ministerial Joint Statement in full at the 12th APEC Economic Leaders' meeting held in November 2004 at Santiago, Chile.",
+          note: "--check FOUND on 2026-09-23. The preceding sentence reads: 'The 2004 APEC Ministerial Joint Statement endorsed the APEC Privacy Framework and the Future Work Agenda on Implementation of the APEC Privacy Framework.' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Asia-Pacific Economic Cooperation (APEC) Secretariat",
+          title: "APEC Privacy Framework (2015)",
+          date: "2017-08",
+          url: "https://www.apec.org/docs/default-source/Publications/2017/8/APEC-Privacy-Framework-(2015)/217_ECSG_2015-APEC-Privacy-Framework.pdf",
+          quote: "The previous version of the Framework (2005) was modelled upon the OECD Guidelines (1980) which at that time represented the international consensus on what constitutes fair and trustworthy treatment of personal information. The updated Framework (2015) draws upon concepts introduced into the OECD Guidelines (2013)",
+          note: "Para. 5. --check FOUND. Supports both 'derived from the OECD Guidelines' and 'updated 2015'. The PDF is © 2017 APEC Secretariat and was published in August 2017.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16938,9 +17120,10 @@ window.privacyData = {
           title: "The Madrid Resolution",
           date: "2009-11-05",
           url: "https://globalprivacyassembly.com/wp-content/uploads/2015/02/The-Madrid-Resolution.pdf",
-          quote: "The joint efforts of the privacy guarantors from fifty countries, coordinated by the Spanish Data Protection Agency, has resulted in a text that seeks to reflect the many approaches that the protection of this right allows for, by integrating legislations on five continents.",
+          quote: "The joint efforts of the privacy guarantors from fifty countries, coordinated by the Spanish Data Protection Agency, has resulted in a text that seeks to reflect the many approaches that the protection of this right allows for, by integrating legislations on five continents. … which was welcomed by the International Conference of Data Protection and Privacy Commissioners, held in Madrid on 5 November 2009. … The Joint Proposal demonstrates the feasibility of such standards, as a new step towards the development of a binding international instrument in due course.",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "Presentation page. --check FOUND on 2026-09-23. Supports the parties field's date and 'welcomed'. Operative paragraph of the resolution. --check FOUND. Supports the note's 'draft for a future binding global instrument'."
         }
       ]
     },
@@ -16949,7 +17132,7 @@ window.privacyData = {
       body: "Economic Community of West African States (ECOWAS)",
       year: 2010,
       force: "Binding treaty",
-      reach: "Signed by the Heads of State and Government at Abuja on 16 February 2010; binds ECOWAS member states (15 at the time). Requires each member state to adopt a data-protection law and set up an independent data-protection authority.",
+      reach: "Adopted at the 37th session of the ECOWAS Authority of Heads of State and Government and signed at Abuja on 16 February 2010. The signature page carries 13 signatures, several by ministers on behalf of their presidents; Guinea and Niger are not among them. Annexed to the ECOWAS Treaty as an integral part of it, the Act binds all member states (15 in 2010). Article 2 requires each member state to establish 'a legal framework of protection for privacy of data'.",
       source: [
         {
           institution: "ECOWAS (copy hosted by Statewatch)",
@@ -16958,6 +17141,26 @@ window.privacyData = {
           url: "https://www.statewatch.org/media/documents/news/2013/mar/ecowas-dp-act.pdf",
           quote: "HAVE SIGNED THIS SUPPLEMENTARY ACT DONE AT ABUJA ON 16TH DAYOF FEBRUARY 2010 IN A SINGLE ORIGINAL IN ENGLISH, FRENCH AND PORTUGUESE",
           note: "Scanned copy with OCR errors ('DAYOF', 'A1SA.1f01f10' for A/SA.1/01/10); quote reproduces the OCR text layer.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "ECOWAS (copy hosted by Statewatch)",
+          title: "Supplementary Act A/SA.1/01/10 on Personal Data Protection within ECOWAS — Article 14",
+          date: "2010-02-16",
+          url: "https://www.statewatch.org/media/documents/news/2013/mar/ecowas-dp-act.pdf",
+          quote: "Within the ECOWAS space, each Member State shall establish Its own data protection Authority.",
+          note: "Article 14(1), OCR text layer ('Its' as OCR'd). --check FOUND. Article 1's definition reads 'The data protection authority Shall be an independent administrative authority' (FOUND). Article 2: 'Each Member State shall establish a legal framework of protection for' (FOUND; the OCR renders the next word as 'prrvacy').",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "ECOWAS (copy hosted by Statewatch)",
+          title: "Supplementary Act A/SA.1/01/10 on Personal Data Protection within ECOWAS — testimonium",
+          date: "2010-02-16",
+          url: "https://www.statewatch.org/media/documents/news/2013/mar/ecowas-dp-act.pdf",
+          quote: "IN WITNESS WHEREOF WE, THE HEADS OF STATE AND GOVERNMENT OF THE ECONOMIC COMMUNITY OF WEST AFRICAN STATES HAVE SIGNED THIS SUPPLEMENTARY ACT",
+          note: "--check FOUND. The signature block that follows is OCR'd with errors. It shows 13 signatories: Benin, Burkina Faso, Cabo Verde, Côte d'Ivoire, the Gambia, Ghana, Guinea-Bissau, Mali, Liberia, Nigeria, Senegal, Sierra Leone and Togo. Article 48: 'This Supplementary Act shall be annexed to the ECOWAS Treaty of which it shall be an integral part' (OCR 'lI1e' for 'the', so it is not checked verbatim).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16975,7 +17178,7 @@ window.privacyData = {
           title: "About CBPRs",
           date: "2026",
           url: "https://cbprs.org/about-cbprs/",
-          quote: "The APEC Cross-Border Privacy Rules (CBPR) System, endorsed by APEC Leaders in 2011, is a voluntary, accountability-based system that facilitates privacy-respecting data flows among APEC economies. … There are currently nine participating APEC CBPR system economies:",
+          quote: "The APEC Cross-Border Privacy Rules (CBPR) System, endorsed by APEC Leaders in 2011, is a voluntary, accountability-based system that facilitates privacy-respecting data flows among APEC economies. … There are currently nine participating APEC CBPR system economies: USA, Mexico, Japan, Canada, Singapore, the Republic of Korea, Australia, Chinese Taipei, and the Philippines",
           verificationStatus: "CONFIRMED",
           accessType: "FREE",
           note: "The page's list of the nine economies continues after the colon; not all names were checked verbatim."
@@ -18397,7 +18600,7 @@ window.privacyData = {
         date: "2024-11-18",
         url: "https://www.heise.de/en/news/40-years-ago-the-Btx-hack-celebrates-a-happy-birthday-10040281.html",
         quote: "Our common interest is not the protection of data, but the protection of people from data misuse.",
-        note: "Holland's words to data-protection officials at the DAFTA conference, early November 1984, as quoted (in heise's English translation of Detlef Borchers's German article) from the CCC's own 1984 Btx dossier, a scanned PDF hosted by the Wau Holland Stiftung: https://www.wauland.de/media/btx-hack/1984-10-xx_CCC-Btx.pdf (no text layer; German original not checked).",
+        note: "Holland's words to data-protection officials at the 8th DAFTA (Datenschutzfachtagung) in Cologne on 15 November 1984, the day before the Btx hack night (heise says only 'early November 1984'; the date is from the CCC's Chaosradio archive of the ZDF heute journal report, sendung 15.11.1984). heise quotes it, in an English translation of Detlef Borchers's German article, from the CCC's own 1984 Btx dossier, a scanned PDF hosted by the Wau Holland Stiftung: https://www.wauland.de/media/btx-hack/1984-10-xx_CCC-Btx.pdf (no text layer). A German version spoken on camera is on https://chaosradio.ccc.de/doc001.html: 'Unser gemeinsames Interesse ist es Menschen zu schützen und zwar vor dem Mißbrauch von Daten'.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       },
@@ -18432,6 +18635,16 @@ window.privacyData = {
           note: "The foundation's German 'about' page (https://www.wauland.de/de/about/) gives his death date: 'bis zu seinem Tod am 29. Juli 2001'. The German 'about' page also states (FOUND): 'Der Mensch im Spannungsfeld zwischen neuer Medien-Technik und Überwachung, zwischen den Chancen und Risiken moderner Datenverarbeitung: das stand für Wau Holland ganz oben auf der langen Liste seiner Vorträge.' (People caught between new media technology and surveillance, between the opportunities and risks of modern data processing, were at the top of the long list of Wau Holland's lectures.)",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Chaos Computer Club (Chaosradio Podcast Network, Dossier Chaotique)",
+          title: "DOC001: 1984-11-15 Wau Holland auf der DAFTA (ZDF heute journal report on the 8th Datenschutzfachtagung)",
+          date: "1984-11-15",
+          url: "https://chaosradio.ccc.de/doc001.html",
+          quote: "Unser gemeinsames Interesse ist es Menschen zu schützen und zwar vor dem Mißbrauch von Daten",
+          note: "German original of the record's quote as spoken to camera ('Our common interest is to protect people, namely from the misuse of data'). Page gives 'Sendungsdatum: 15.11.1984' for the broadcast and was published online 01.02.2006; --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -18444,7 +18657,7 @@ window.privacyData = {
       place: "MIT Artificial Intelligence Lab, Cambridge, Massachusetts",
       group: "advocates",
       keyWork: { title: "The GNU Project announcement ('Free Unix!') and the Free Software Definition", year: 1983, url: "https://www.gnu.org/gnu/initial-announcement.html" },
-      contribution: "On 27 September 1983 Stallman, then at MIT's Artificial Intelligence Lab, announced GNU, a Unix-compatible system he would give away free, and went on to found the Free Software Foundation. His free-software definition makes user control of software a moral question: users should be free to run, copy, distribute, study, change and improve programs. After the Snowden disclosures he argued in Wired (October 2013) that general surveillance had reached a level incompatible with human rights. He resigned as FSF president on 16 September 2019 amid controversy and returned to its board in 2021, a decision the board acknowledged some found troubling.",
+      contribution: "On 27 September 1983 Stallman, then at MIT's Artificial Intelligence Lab, announced GNU, a Unix-compatible system he would give away free, and went on to found the Free Software Foundation. His free-software definition makes user control of software a moral question: users should be free to run, copy, distribute, study, change and improve programs. After the Snowden disclosures he argued in Wired (October 2013) that general surveillance had reached a level incompatible with human rights. On 16 September 2019 he resigned as FSF president and from its board amid controversy. He was voted back onto the board in 2021; the board's statement conceded that 'his personal style remains troubling for some'.",
       influence: "Stallman's framing — either users control the program or the program controls the users — became a standard argument in debates over software that watches its users, and he tied it directly to mass surveillance after 2013.",
       thread: "The free-software principle that 'the users (both individually and collectively) control the program and what it does for them' is a precursor of the demand that people, not vendors, set the terms on which their tools handle their data.",
       quote: "When users don't control the program, we call it a “nonfree” or “proprietary” program. The nonfree program controls the users, and the developer controls the program",
@@ -18471,12 +18684,12 @@ window.privacyData = {
           accessType: "FREE"
         },
         {
-          institution: "GNU Project / Free Software Foundation",
-          title: "Richard Stallman, 'How Much Surveillance Can Democracy Withstand?'",
-          date: "2013-10",
-          url: "https://www.gnu.org/philosophy/surveillance-vs-democracy.html",
+          institution: "Wired",
+          title: "Richard Stallman, 'Stallman: How Much Surveillance Can Democracy Withstand?'",
+          date: "2013-10-14",
+          url: "https://www.wired.com/2013/10/a-necessary-evil-what-it-takes-for-democracy-to-survive-surveillance/",
           quote: "Thanks to Edward Snowden's disclosures, we know that the current level of general surveillance in society is incompatible with human rights.",
-          note: "Page states: 'A version of this article was first published in Wired in October 2013.' Revised since (copyright 2013–2026).",
+          note: "Repointed from gnu.org/philosophy/surveillance-vs-democracy.html, which was unreachable at check time (connection reset; HTTP 503). This is the October 2013 Wired original named in the record (datePublished 2013-10-14T09:30:24-04:00). Quote FOUND verbatim. The revised essay is still on gnu.org at the old URL.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -18892,7 +19105,6 @@ window.privacyData = {
     {
       id: "john-perry-barlow",
       name: "John Perry Barlow",
-      handle: "JPB (the WELL)",
       roles: "essayist · Grateful Dead lyricist · EFF co-founder",
       years: "1990–2018",
       place: "San Francisco, California (EFF headquarters)",
@@ -19022,10 +19234,10 @@ window.privacyData = {
       quoteSource: {
         institution: "Wired",
         title: "Mitchell Kapor, 'Where Is the Digital Highway Really Heading? The Case for a Jeffersonian Information Policy'",
-        date: "1993-03-01",
+        date: "1993-07",
         url: "https://www.wired.com/1993/03/kapor-on-nii/",
         quote: "Protect free speech and privacy. Constitutional protections of personal privacy and freedom of expression should be extended to the emerging networks.",
-        note: "Date from wired.com page metadata (datePublished 1993-03-01); the print issue date was not checked.",
+        note: "Published in Wired issue 1.03 (July/August 1993), whose cover line 'Beyond 500 Channels' flagged Kapor's essay. wired.com's datePublished of 1993-03-01 and its /1993/03/ URL come from the issue number (the page's keywords metadata reads 'magazine-1.03'), not from a March cover date.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       },
@@ -19703,6 +19915,16 @@ window.privacyData = {
           note: "Same page: 'I've been writing about security issues on my blog since 2004, and in my monthly newsletter since 1998.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "CNN",
+          title: "Bruce Schneier, ''Stalker economy' here to stay'",
+          date: "2013-11-20",
+          url: "https://www.cnn.com/2013/11/20/opinion/schneier-stalker-economy/index.html",
+          quote: "As long as we users remain the product, there is minimal incentive for these companies to provide any real privacy.",
+          note: "Original publication of the essay reposted on schneier.com on 25 November 2013 as 'Surveillance as a Business Model'. The blog post links to the edition.cnn.com URL. Date taken from the URL path. 'Surveillance is the business model of the Internet' is also FOUND on this page.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -19810,7 +20032,7 @@ window.privacyData = {
         year: 2013,
         url: "https://www.newyorker.com/news/news-desk/strongbox-and-aaron-swartz"
       },
-      contribution: "Swartz, one of the three coders who sold Reddit to Condé Nast in 2006 and an activist for open information, built tools for anonymous publishing: in October 2008 he released a tor2web proxy so that ordinary browsers could reach sites hidden on Tor. From 2011 he coded, with Wired editor Kevin Poulsen, an open-source 'anonymous in-box' for journalists' sources, which they called DeadDrop; the code was stable by December 2012. Swartz, then under federal indictment for bulk-downloading about four million JSTOR articles at MIT, took his own life on 11 January 2013; the system launched at The New Yorker as Strongbox on 14 May 2013.",
+      contribution: "Swartz, one of the three young owners who sold Reddit to Condé Nast in 2006 and an activist for open information, built tools for anonymous publishing: in October 2008 he released a tor2web proxy so that ordinary browsers could reach sites hidden on Tor. From 2011, at the request of Wired editor Kevin Poulsen, he coded an open-source 'anonymous in-box' for journalists' sources, which they called DeadDrop; his code was stable by December 2012. Swartz, then under federal indictment for bulk-downloading about four million JSTOR articles at MIT, took his own life on 11 January 2013; the system launched at The New Yorker as Strongbox on 14 May 2013.",
       influence: "The submission system he wrote became SecureDrop, which the Freedom of the Press Foundation took over in October 2013 to install in newsrooms, making source anonymity a piece of standard newsroom infrastructure.",
       thread: "DeadDrop was designed so that even the receiving newsroom could not identify the source — privacy guaranteed by the system's architecture rather than by the recipient's promise.",
       quote: "Anonymous speech is a First Amendment right.",

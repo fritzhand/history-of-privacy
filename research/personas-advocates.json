@@ -26,7 +26,7 @@
     "quote": "Our common interest is not the protection of data, but the protection of people from data misuse.",
     "verificationStatus": "CONFIRMED",
     "accessType": "FREE",
-    "note": "Holland's words to data-protection officials at the DAFTA conference, early November 1984, as quoted (in heise's English translation of Detlef Borchers's German article) from the CCC's own 1984 Btx dossier, a scanned PDF hosted by the Wau Holland Stiftung: https://www.wauland.de/media/btx-hack/1984-10-xx_CCC-Btx.pdf (no text layer; German original not checked)."
+    "note": "Holland's words to data-protection officials at the 8th DAFTA (Datenschutzfachtagung) in Cologne on 15 November 1984, the day before the Btx hack night (heise says only 'early November 1984'; the date is from the CCC's Chaosradio archive of the ZDF heute journal report, sendung 15.11.1984). heise quotes it, in an English translation of Detlef Borchers's German article, from the CCC's own 1984 Btx dossier, a scanned PDF hosted by the Wau Holland Stiftung: https://www.wauland.de/media/btx-hack/1984-10-xx_CCC-Btx.pdf (no text layer). A German version spoken on camera is on https://chaosradio.ccc.de/doc001.html: 'Unser gemeinsames Interesse ist es Menschen zu schützen und zwar vor dem Mißbrauch von Daten'."
    },
    "influence": "Friends and journalists credit Holland with fixing the pattern of CCC actions: expose a flaw, then go to the press to warn about weak security and insufficient data protection, which cast hackers in German public life as defenders of informational self-determination rather than computer criminals.",
    "thread": "The 1981 taz notice that called the first meeting already listed 'Datenrecht (Wem gehören meine Daten?)' — data law: who owns my data? — among the topics to discuss.",
@@ -60,14 +60,31 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The foundation's German 'about' page (https://www.wauland.de/de/about/) gives his death date: 'bis zu seinem Tod am 29. Juli 2001'. The German 'about' page also states (FOUND): 'Der Mensch im Spannungsfeld zwischen neuer Medien-Technik und Überwachung, zwischen den Chancen und Risiken moderner Datenverarbeitung: das stand für Wau Holland ganz oben auf der langen Liste seiner Vorträge.' (People caught between new media technology and surveillance, between the opportunities and risks of modern data processing, were at the top of the long list of Wau Holland's lectures.)"
+    },
+    {
+     "institution": "Chaos Computer Club (Chaosradio Podcast Network, Dossier Chaotique)",
+     "title": "DOC001: 1984-11-15 Wau Holland auf der DAFTA (ZDF heute journal report on the 8th Datenschutzfachtagung)",
+     "date": "1984-11-15",
+     "url": "https://chaosradio.ccc.de/doc001.html",
+     "quote": "Unser gemeinsames Interesse ist es Menschen zu schützen und zwar vor dem Mißbrauch von Daten",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "German original of the record's quote as spoken to camera ('Our common interest is to protect people, namely from the misuse of data'). Page gives 'Sendungsdatum: 15.11.1984' for the broadcast and was published online 01.02.2006; --check FOUND."
     }
    ],
-   "portrait": "wau-holland-hamburg-1984"
+   "portrait": "wau-holland-hamburg-1984",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "quoteSource.note dates Holland's DAFTA talk to 'early November 1984' (following heise's loose wording). The 8th DAFTA (Datenschutzfachtagung) talk, and the ZDF heute journal report on it, was on 15 November 1984, the day before the Btx hack night of 16-17 November (CCC Chaosradio DOC001; Röhr thesis fn. 438 gives the DAFTA as 15-16 November 1984 and says the hack ran on the weekend after the DAFTA talk).",
+     "All four source quotes re-fetched and FOUND verbatim; contribution claims (five Hamburg inviters, taz notice 1 Sept 1981, meeting 12 Sept 1981 as informal founding, Haspa login, DM 134,634.88, Wernéry as partner, death 29 July 2001, lecture topics) all supported."
+    ]
+   }
   },
   {
    "id": "john-perry-barlow",
    "name": "John Perry Barlow",
-   "handle": "JPB (the WELL)",
+   "handle": "",
    "roles": "essayist · Grateful Dead lyricist · EFF co-founder",
    "years": "1990–2018",
    "place": "San Francisco, California (EFF headquarters)",
@@ -123,7 +140,14 @@
      "note": "Page names Barlow as 'Wyoming cattle rancher and lyricist for the Grateful Dead' and the WELL as where the founders met."
     }
    ],
-   "portrait": "john-perry-barlow-2016"
+   "portrait": "john-perry-barlow-2016",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "handle 'JPB (the WELL)' presents 'JPB' as his login on the WELL; no source on the record (or found independently) shows that. 'JPB' was an informal nickname, and his WELL presence was under his surname. The field is unsupported, so it should be blanked (as for Kapor) rather than asserted.",
+     "All other claims checked and supported: EFF founded July 1990 by Kapor, Barlow and Gilmore, who met on the WELL, in response to the Steve Jackson Games raid (EFF history page); the declaration was signed 'Davos, Switzerland February 8, 1996' and written the night Clinton signed the Communications Decency Act (Barlow's 2016 Boing Boing retrospective); 'at least 10,000 Internet sites' within a month and 'To some degree, they have. In most ways, they have not.' (on self-regulation) both FOUND; EFF obituary published 2018-02-07 says he 'passed away quietly in his sleep this morning'; 'We are forming our own Social Contract' FOUND on the declaration page."
+    ]
+   }
   },
   {
    "id": "john-gilmore",
@@ -175,7 +199,14 @@
      "note": "The opinion dates the flight attempt to 4 July 2002 (Oakland to Baltimore-Washington) and holds: 'We hold that neither the identification policy nor its application to Gilmore violated Gilmore’s constitutional rights, and therefore we deny the petition.' The court reviewed the sensitive security information 'ex parte and in camera'."
     }
    ],
-   "portrait": "john-gilmore-2018"
+   "portrait": "john-gilmore-2018",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. quoteSource re-fetched over http: header 'Given at the First Conference on Computers, Freedom, and Privacy / March 28, 1991 / Public domain -- not copyrighted'; quote FOUND verbatim and followed by 'Encryption strong enough that even the NSA can't break it', which supports the 'encryption rather than law' summary.",
+     "Minor nuance, no change required: on 4 July 2002 Gilmore was refused at Southwest (Oakland) and, the same day, at United (SFO); the record mentions only Southwest, which is accurate as far as it goes. The Cypherpunks (1992) postdate the 1991 talk, so 'set out the cypherpunk programme' is an interpretive, anticipatory claim."
+    ]
+   }
   },
   {
    "id": "mitch-kapor",
@@ -196,12 +227,12 @@
    "quoteSource": {
     "institution": "Wired",
     "title": "Mitchell Kapor, 'Where Is the Digital Highway Really Heading? The Case for a Jeffersonian Information Policy'",
-    "date": "1993-03-01",
+    "date": "1993-07",
     "url": "https://www.wired.com/1993/03/kapor-on-nii/",
     "quote": "Protect free speech and privacy. Constitutional protections of personal privacy and freedom of expression should be extended to the emerging networks.",
     "verificationStatus": "CONFIRMED",
     "accessType": "FREE",
-    "note": "Date from wired.com page metadata (datePublished 1993-03-01); the print issue date was not checked."
+    "note": "Published in Wired issue 1.03 (July/August 1993), whose cover line 'Beyond 500 Channels' flagged Kapor's essay. wired.com's datePublished of 1993-03-01 and its /1993/03/ URL come from the issue number (the page's keywords metadata reads 'magazine-1.03'), not from a March cover date."
    },
    "influence": "Lawrence Lessig credited Kapor with giving cyberspace the meme 'Architecture is Politics' and applied it to open-access broadband policy; the idea that design choices settle rights underlies later arguments for privacy by design.",
    "thread": "In the same essay Kapor asked that networks let users 'determine the content of the system' and choose their roles 'as consumers, providers, or both' — the person as a party to the network, not only its audience.",
@@ -237,7 +268,14 @@
      "note": "EFF's founding paper, co-signed by Kapor. EFF's history page (https://www.eff.org/about/history) describes him as 'former president of Lotus Development Corporation'."
     }
    ],
-   "portrait": "mitch-kapor-2006"
+   "portrait": "mitch-kapor-2006",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "quoteSource.date is 1993-03-01, taken from wired.com's datePublished. That value is an artefact of the issue number: the page's own metadata carries keywords 'magazine-1.03' (Wired volume 1, issue 3), and the old archive URL was wired.com/wired/archive/1.03/kapor.on.nii_pr.html. Wired 1.03 is the July/August 1993 issue, whose cover story ('Beyond 500 Channels') was Kapor's essay. So the print date is July/August 1993, not March 1993. The year (1993) in keyWork and the summary is still right.",
+     "All other claims supported: quote and thread quotes ('Users should be able to determine the content of the system'; 'whether as consumers, providers, or both'; 'well-defined published interfaces') FOUND verbatim; Lessig and Reagle quotes FOUND; 'Across the Electronic Frontier' is signed 'Mitchell Kapor and John Perry Barlow ... Washington, D.C. July 10, 1990'."
+    ]
+   }
   },
   {
    "id": "richard-stallman",
@@ -253,7 +291,7 @@
     "year": 1983,
     "url": "https://www.gnu.org/gnu/initial-announcement.html"
    },
-   "contribution": "On 27 September 1983 Stallman, then at MIT's Artificial Intelligence Lab, announced GNU, a Unix-compatible system he would give away free, and went on to found the Free Software Foundation. His free-software definition makes user control of software a moral question: users should be free to run, copy, distribute, study, change and improve programs. After the Snowden disclosures he argued in Wired (October 2013) that general surveillance had reached a level incompatible with human rights. He resigned as FSF president on 16 September 2019 amid controversy and returned to its board in 2021, a decision the board acknowledged some found troubling.",
+   "contribution": "On 27 September 1983 Stallman, then at MIT's Artificial Intelligence Lab, announced GNU, a Unix-compatible system he would give away free, and went on to found the Free Software Foundation. His free-software definition makes user control of software a moral question: users should be free to run, copy, distribute, study, change and improve programs. After the Snowden disclosures he argued in Wired (October 2013) that general surveillance had reached a level incompatible with human rights. On 16 September 2019 he resigned as FSF president and from its board amid controversy. He was voted back onto the board in 2021; the board's statement conceded that 'his personal style remains troubling for some'.",
    "quote": "When users don't control the program, we call it a “nonfree” or “proprietary” program. The nonfree program controls the users, and the developer controls the program",
    "quoteSource": {
     "institution": "GNU Project / Free Software Foundation",
@@ -279,14 +317,14 @@
      "note": "Also FOUND: 'I consider that the golden rule requires that if I like a program I must share it with other people who like it.'"
     },
     {
-     "institution": "GNU Project / Free Software Foundation",
-     "title": "Richard Stallman, 'How Much Surveillance Can Democracy Withstand?'",
-     "date": "2013-10",
-     "url": "https://www.gnu.org/philosophy/surveillance-vs-democracy.html",
+     "institution": "Wired",
+     "title": "Richard Stallman, 'Stallman: How Much Surveillance Can Democracy Withstand?'",
+     "date": "2013-10-14",
+     "url": "https://www.wired.com/2013/10/a-necessary-evil-what-it-takes-for-democracy-to-survive-surveillance/",
      "quote": "Thanks to Edward Snowden's disclosures, we know that the current level of general surveillance in society is incompatible with human rights.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
-     "note": "Page states: 'A version of this article was first published in Wired in October 2013.' Revised since (copyright 2013–2026)."
+     "note": "Repointed from gnu.org/philosophy/surveillance-vs-democracy.html, which was unreachable at check time (connection reset; HTTP 503). This is the October 2013 Wired original named in the record (datePublished 2013-10-14T09:30:24-04:00). Quote FOUND verbatim. The revised essay is still on gnu.org at the old URL."
     },
     {
      "institution": "Free Software Foundation",
@@ -299,7 +337,16 @@
      "note": "The 2019 notice (https://www.fsf.org/news/richard-m-stallman-resigns) reads: 'On September 16, 2019, Richard M. Stallman, founder and president of the Free Software Foundation, resigned as president and from its board of directors.' — verified against that page's full text, since the repo helper's paragraph extractor skips its content div. Neither FSF page states the reason; press at the time linked it to his comments on an MIT e-mail list about Marvin Minsky and Jeffrey Epstein (not verified here)."
     }
    ],
-   "portrait": "richard-stallman-libreplanet-2019"
+   "portrait": "richard-stallman-libreplanet-2019",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The contribution's last clause misreads the FSF board's 12 April 2021 statement. The board did not say the decision to re-elect him was troubling to some. It said 'his personal style remains troubling for some, a majority of the board feel his behavior has moderated', and separately took 'full responsibility for how badly we handled the news of his election'. The clause is reworded to match.",
+     "Also, on 16 September 2019 he resigned as president and from the board of directors, not only as president (FSF notice). The rewording adds this.",
+     "Source 1 (gnu.org 'How Much Surveillance Can Democracy Withstand?') could not be re-fetched today: gnu.org reset the connection several times and WebFetch got HTTP 503. The same sentence is FOUND verbatim in the Wired original (published 2013-10-14), which is the better source for the record's claim 'he argued in Wired (October 2013)'. The source is repointed there.",
+     "Other claims supported: the announcement is dated 'Tue, 27-Sep-83', sent from the 'MIT AI Lab, Cambridge, MA', and begins 'Free Unix!'; the free-sw.html quote, its continuation and the 'run, copy, distribute, study, change and improve' wording were all FOUND."
+    ]
+   }
   },
   {
    "id": "cory-doctorow",
@@ -360,7 +407,13 @@
      "note": "Same biography lists LITTLE BROTHER and HOW TO DESTROY SURVEILLANCE CAPITALISM and says he was born in Toronto. His own bio (https://craphound.com/bio/) says he 'now lives in Los Angeles and London'."
     }
    ],
-   "portrait": "cory-doctorow-2016"
+   "portrait": "cory-doctorow-2016",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. White paper re-fetched: authors field 'bennett cory', page date February 12, 2021, 'Update, June 11, 2021' adds the GDPR appendix. The three mandates (data portability, back-end interoperability, delegability) are FOUND. Both quotes are FOUND verbatim in the delegability section. The EFF staff page gives 'EFF Special Advisor', former European director, Open Rights Group co-founder, Toronto birth, LITTLE BROTHER and HOW TO DESTROY SURVEILLANCE CAPITALISM. craphound.com/bio says 'he now lives in Los Angeles and London'."
+    ]
+   }
   },
   {
    "id": "bruce-schneier",
@@ -420,9 +473,26 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same page: 'I've been writing about security issues on my blog since 2004, and in my monthly newsletter since 1998.'"
+    },
+    {
+     "institution": "CNN",
+     "title": "Bruce Schneier, ''Stalker economy' here to stay'",
+     "date": "2013-11-20",
+     "url": "https://www.cnn.com/2013/11/20/opinion/schneier-stalker-economy/index.html",
+     "quote": "As long as we users remain the product, there is minimal incentive for these companies to provide any real privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Original publication of the essay reposted on schneier.com on 25 November 2013 as 'Surveillance as a Business Model'. The blog post links to the edition.cnn.com URL. Date taken from the URL path. 'Surveillance is the business model of the Internet' is also FOUND on this page."
     }
    ],
-   "portrait": "bruce-schneier-2013"
+   "portrait": "bruce-schneier-2013",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No errors found. The quoteSource joins two sentences with an ellipsis. Both are FOUND verbatim in the same paragraph ('Surveillance is the business model of the Internet—Al Gore recently called it a \"stalker economy.\" ... As long as we users remain the product, there is minimal incentive for these companies to provide any real privacy.'), and the note says what was omitted. The blog post is dated 'Posted on November 25, 2013' and says 'This essay previously appeared on CNN.com'. The CNN original ('Stalker economy' here to stay, URL-dated 2013-11-20) is added as a source.",
+     "Other claims supported: the thread's Do Not Track phrases ('was supposed to give users the right to demand that Internet companies not track them'; 'track me in secret') and 'The public/private surveillance partnership' are FOUND in the same essay. Schneier calls it a 'track me in secret' law and the thread says 'rule'; that paraphrase sits outside the quote marks and is acceptable."
+    ]
+   }
   },
   {
    "id": "aaron-swartz",
@@ -438,7 +508,7 @@
     "year": 2013,
     "url": "https://www.newyorker.com/news/news-desk/strongbox-and-aaron-swartz"
    },
-   "contribution": "Swartz, one of the three coders who sold Reddit to Condé Nast in 2006 and an activist for open information, built tools for anonymous publishing: in October 2008 he released a tor2web proxy so that ordinary browsers could reach sites hidden on Tor. From 2011 he coded, with Wired editor Kevin Poulsen, an open-source 'anonymous in-box' for journalists' sources, which they called DeadDrop; the code was stable by December 2012. Swartz, then under federal indictment for bulk-downloading about four million JSTOR articles at MIT, took his own life on 11 January 2013; the system launched at The New Yorker as Strongbox on 14 May 2013.",
+   "contribution": "Swartz, one of the three young owners who sold Reddit to Condé Nast in 2006 and an activist for open information, built tools for anonymous publishing: in October 2008 he released a tor2web proxy so that ordinary browsers could reach sites hidden on Tor. From 2011, at the request of Wired editor Kevin Poulsen, he coded an open-source 'anonymous in-box' for journalists' sources, which they called DeadDrop; his code was stable by December 2012. Swartz, then under federal indictment for bulk-downloading about four million JSTOR articles at MIT, took his own life on 11 January 2013; the system launched at The New Yorker as Strongbox on 14 May 2013.",
    "quote": "Anonymous speech is a First Amendment right.",
    "quoteSource": {
     "institution": "Aaron Swartz, Raw Thought (aaronsw.com)",
@@ -473,7 +543,15 @@
      "accessType": "FREE"
     }
    ],
-   "portrait": "aaron-swartz-2011"
+   "portrait": "aaron-swartz-2011",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "'one of the three coders who sold Reddit to Condé Nast in 2006' repeats Kevin Poulsen's loose phrasing ('he and two other coders sold the social-news site Reddit'). Of the three, Alexis Ohanian was the business and design partner, not a programmer, so the text should call them owners or founders rather than coders.",
+     "'he coded, with Wired editor Kevin Poulsen' suggests Poulsen co-wrote the code. Poulsen's own account says he asked Swartz to build it, that Swartz 'started coding immediately' while Poulsen arranged servers at Condé Nast, and that the code was Aaron's ('By December, 2012, Aaron's code was stable'). Reworded.",
+     "Other claims supported: 'In Defense of Anonymity' dated October 24, 2008 announces a tor2web proxy; the New Yorker piece is datePublished 2013-05-14 and says Strongbox 'went online this morning', that he was 'indicted for bulk downloading four million articles from JSTOR ... from M.I.T.'s public network', that he died on January 11th in a Brooklyn apartment, and that the system was called DeadDrop; FPF (October 15, 2013) took charge of DeadDrop and renamed it SecureDrop."
+    ]
+   }
   },
   {
    "id": "kevin-poulsen",
@@ -2487,6 +2565,7 @@
   "personas-advocates-f103.json",
   "personas-advocates-f104.json",
   "personas-advocates-f106.json",
-  "personas-advocates-f107.json"
+  "personas-advocates-f107.json",
+  "personas-advocates-f101.json"
  ]
 }

@@ -189,6 +189,71 @@
     }
    ],
    "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "bruce-schneier",
+   "status": "OK",
+   "issues": [
+    "No errors found. The quoteSource joins two sentences with an ellipsis. Both are FOUND verbatim in the same paragraph ('Surveillance is the business model of the Internet—Al Gore recently called it a \"stalker economy.\" ... As long as we users remain the product, there is minimal incentive for these companies to provide any real privacy.'), and the note says what was omitted. The blog post is dated 'Posted on November 25, 2013' and says 'This essay previously appeared on CNN.com'. The CNN original ('Stalker economy' here to stay, URL-dated 2013-11-20) is added as a source.",
+    "Other claims supported: the thread's Do Not Track phrases ('was supposed to give users the right to demand that Internet companies not track them'; 'track me in secret') and 'The public/private surveillance partnership' are FOUND in the same essay. Schneier calls it a 'track me in secret' law and the thread says 'rule'; that paraphrase sits outside the quote marks and is acceptable."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; Gladwell blurb FOUND verbatim. Same page: 'March 2015 W. W. Norton & Company 320 Pages', 'A New York Times Best Seller', and blurbs from Richard A. Clarke and Seymour M. Hersh."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim; 'Posted on February 21, 2020'. 'Your data lives in a pod that is controlled by you.' also FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim, along with 'I've been writing about security issues on my blog since 2004, and in my monthly newsletter since 1998.'"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "CNN",
+     "title": "Bruce Schneier, ''Stalker economy' here to stay'",
+     "date": "2013-11-20",
+     "url": "https://www.cnn.com/2013/11/20/opinion/schneier-stalker-economy/index.html",
+     "quote": "As long as we users remain the product, there is minimal incentive for these companies to provide any real privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Original publication of the essay reposted on schneier.com on 25 November 2013 as 'Surveillance as a Business Model'. The blog post links to the edition.cnn.com URL. Date taken from the URL path. 'Surveillance is the business model of the Internet' is also FOUND on this page."
+    }
+   ]
+  },
+  {
+   "kind": "people",
+   "id": "aaron-swartz",
+   "status": "FIXED",
+   "issues": [
+    "'one of the three coders who sold Reddit to Condé Nast in 2006' repeats Kevin Poulsen's loose phrasing ('he and two other coders sold the social-news site Reddit'). Of the three, Alexis Ohanian was the business and design partner, not a programmer, so the text should call them owners or founders rather than coders.",
+    "'he coded, with Wired editor Kevin Poulsen' suggests Poulsen co-wrote the code. Poulsen's own account says he asked Swartz to build it, that Swartz 'started coding immediately' while Poulsen arranged servers at Condé Nast, and that the code was Aaron's ('By December, 2012, Aaron's code was stable'). Reworded.",
+    "Other claims supported: 'In Defense of Anonymity' dated October 24, 2008 announces a tor2web proxy; the New Yorker piece is datePublished 2013-05-14 and says Strongbox 'went online this morning', that he was 'indicted for bulk downloading four million articles from JSTOR ... from M.I.T.'s public network', that he died on January 11th in a Brooklyn apartment, and that the system was called DeadDrop; FPF (October 15, 2013) took charge of DeadDrop and renamed it SecureDrop."
+   ],
+   "fieldFixes": {
+    "contribution": "Swartz, one of the three young owners who sold Reddit to Condé Nast in 2006 and an activist for open information, built tools for anonymous publishing: in October 2008 he released a tor2web proxy so that ordinary browsers could reach sites hidden on Tor. From 2011, at the request of Wired editor Kevin Poulsen, he coded an open-source 'anonymous in-box' for journalists' sources, which they called DeadDrop; his code was stable by December 2012. Swartz, then under federal indictment for bulk-downloading about four million JSTOR articles at MIT, took his own life on 11 January 2013; the system launched at The New Yorker as Strongbox on 14 May 2013."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; opening sentence and the December 2012 / January 11th sentences FOUND verbatim; datePublished 2013-05-14T09:11:38-04:00; 'The New Yorker's version is called Strongbox; it went online this morning.' Also names James Dolan's security review, and says the design aimed that 'even the media outlets receiving the materials wouldn't be able to tell the government where they came from' (supports the thread)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim; page dated 'October 15, 2013 San Francisco, CA' and says the system 'has been renamed \"SecureDrop.\"'"
+    }
+   ],
+   "addSources": []
   }
  ]
 }

@@ -12977,7 +12977,7 @@ window.privacyData = {
     },
     {
       canvas: "chart-laws",
-      desc: "Graham Greenleaf's global count of countries with a national data-privacy law — one covering most of the private sector and meeting minimum international standards — from Sweden's first national law in 1973 to 172 in 2025. New laws have averaged 5.4 a year since 2020.",
+      desc: "Graham Greenleaf's global count of countries with a national data-privacy law — one covering the private sector, the public sector or both and meeting minimum international standards — from Sweden's first national law in 1973 to 172 in 2025. New laws have averaged 5.4 a year since 2020. The bars are Greenleaf's 2020 decade counts, which revise upward the 2011 counts behind the line before 2011.",
       datasets: [
         { series: "countries-with-data-privacy-laws", label: "Countries with a law (cumulative)", color: "dataprotection", type: "line" },
         { series: "greenleaf-new-countries-per-decade", label: "New countries in the decade to this year", color: "rights", type: "bar" }
@@ -12996,7 +12996,7 @@ window.privacyData = {
     {
       canvas: "chart-consent-b",
       title: "What Americans Say, 2019 and 2023",
-      desc: "The same questions, asked by Pew Research Center four years apart. Confusion rose: more Americans now say they understand little or nothing about what companies do with their data, and about the laws meant to protect it.",
+      desc: "The same questions (one slightly reworded), asked by Pew Research Center four years apart. Confusion rose: more Americans now say they understand little or nothing about what companies do with their data, and about the laws meant to protect it.",
       datasets: [
         { series: "pew-little-or-no-control-over-company-data", label: "Little or no control over company data", color: "v9", type: "bar" },
         { series: "pew-understand-little-or-nothing-company-data-use", label: "Understand little or nothing of company data use", color: "v7", type: "bar" },
@@ -13025,7 +13025,7 @@ window.privacyData = {
     },
     {
       canvas: "chart-states",
-      desc: "Cumulative number of US states with a comprehensive consumer privacy law, by the year it was signed (IAPP definition). California was alone until 2021; by September 2026 there were 23. There is still no comprehensive federal consumer privacy law.",
+      desc: "Cumulative number of US states with a comprehensive consumer privacy law, by the year it was enacted (IAPP definition). California was alone until 2021; by September 2026 there were 23. There is still no comprehensive federal consumer privacy law.",
       datasets: [
         { series: "us-state-comprehensive-privacy-laws", label: "States (cumulative)", color: "surveillance", type: "bar" }
       ],
@@ -17953,7 +17953,7 @@ window.privacyData = {
       {
         value: "244 hours",
         label: "a year to read, word for word, the privacy policies of the sites one American visits — about 40 minutes a day",
-        note: "McDonald & Cranor, Carnegie Mellon, 2008: point estimate from their Table 7 (the abstract's \"201 hours\" does not match it); about $781 billion a year nationally.",
+        note: "McDonald & Cranor, Carnegie Mellon, 2008: point estimate from their Table 7 (the conclusion's \"201 hours\" does not match it); about $781 billion a year nationally.",
         color: "v9",
         source: [
           {
@@ -18008,7 +18008,7 @@ window.privacyData = {
       },
       {
         value: "73 seconds",
-        label: "spent on the privacy policy by those who opened it",
+        label: "spent on average on the privacy policy by those who opened it",
         color: "v7",
         source: [
           {
@@ -18070,7 +18070,7 @@ window.privacyData = {
       {
         value: "11.8%",
         label: "of consent pop-ups met minimal requirements of European law",
-        note: "Nouwens et al., top 10,000 UK sites, 2019.",
+        note: "Nouwens et al., 680 of the top 10,000 UK sites (those using the five most popular consent platforms), 2019.",
         color: "v8",
         source: [
           {
@@ -18117,7 +18117,7 @@ window.privacyData = {
       {
         value: "747",
         label: "real-time-bidding broadcasts about the average American's online activity and location, every day",
-        note: "Europe: 376 a day (Irish Council for Civil Liberties, 2022).",
+        note: "Europe: 376 a day, calculated a different way (Irish Council for Civil Liberties, 2022).",
         color: "v9",
         source: [
           {
@@ -18237,8 +18237,8 @@ window.privacyData = {
         ]
       },
       {
-        value: "3,000",
-        label: "data segments one data broker held on nearly every US consumer",
+        value: "3,000+",
+        label: "data segments one data broker, Acxiom, said it held on nearly every US consumer",
         note: "FTC, Data Brokers, 2014.",
         color: "v8",
         source: [
@@ -18409,7 +18409,7 @@ window.privacyData = {
     },
     world: {
       text: "Privacy is the constitutional core of human dignity.",
-      cite: "Supreme Court of India, Justice K.S. Puttaswamy v. Union of India, 2017",
+      cite: "Justice D.Y. Chandrachud for four of nine judges, Justice K.S. Puttaswamy v. Union of India, Supreme Court of India, 2017",
       source: [
         {
           institution: "Supreme Court of India, via Indian Kanoon",
@@ -22834,7 +22834,7 @@ window.privacyData = {
       ["Published", "20 January 2026 · IEEE Xplore 11360682"],
       ["DOI", "10.1109/IEEESTD.2025.11360682"],
       ["Access", "Free PDF through the IEEE GET Program"],
-      ["Roster", "Standard agreements kept by a neutral nonprofit (the standard names none); for MyTerms, Customer Commons"],
+      ["Roster", "Standard agreements kept by a neutral nonprofit (no normative clause names one); for MyTerms, Customer Commons"],
       ["Launched", "28 January 2026 (Data Privacy Day), London and online"]
     ],
     quote: {
@@ -22884,7 +22884,7 @@ window.privacyData = {
         code: "SD-BASE",
         name: "Service Delivery — base relationship agreement",
         type: "Relationship agreement",
-        body: "The default, \"Service Delivery only\": the site or service provides only what the visitor came for and does not share their personal data with third parties. It is the agreement a person's agent proposes first.",
+        body: "The default, \"Service Delivery only\": the site or service provides only what the visitor came for and does not share their personal data with third parties. It is the base, default agreement for anyone whose agent proposes MyTerms.",
         source: [
           {
             institution: "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
@@ -23063,7 +23063,7 @@ window.privacyData = {
       }
     ],
     agreementsDesc: "Two relationship agreements for an ongoing service, three for one-off contributions of data. MyTerms says each comes in plain language, in machine-readable form and as a legal text (the three readings the standard requires) and links its key terms to the W3C Data Privacy Vocabulary.",
-    coda: "MyTerms launched with these five in a market-feedback phase of up to six months, with more in the pipeline. The standard fixes what each side's record must hold — the terms, date, time stamp, identifiers and a unique contract ID, in identical copies — but not its format, where it is stored or the wire protocol; interoperability, it says, “is not a requirement of this standard”, so implementations, not the text, will decide it. The launch agreements' full legal and machine-readable texts were not yet published on the pages this study could read.",
+    coda: "MyTerms said it would launch with these five and run them in a market-feedback phase of up to six months, with more in the pipeline. The standard fixes what each side's record must hold — the terms, date, time stamp, identifiers and a unique contract ID, in identical copies — but not its format, where it is stored or the wire protocol; interoperability, it says, “is not a requirement of this standard”, so implementations, not the text, will decide it. The launch agreements' full legal and machine-readable texts were not yet published on the pages this study could read.",
     codaSource: [
       {
         institution: "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",

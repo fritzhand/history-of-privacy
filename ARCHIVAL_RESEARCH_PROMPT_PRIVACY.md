@@ -73,8 +73,9 @@ the exact quote, then rebuild (`node tools/build-data.mjs`).
   repository 403) and Gajda (2008; BrooklynWorks 403) have no other copy.
 - **Below the Standard.** Marked CONFIRMED though `--check` fails: Blackstone
   on Avalon, the Soghoian and Montulli posts, the myterms.info banner, Obar and
-  Oeldorf-Hirsch, Proposition 24's vote counts. Wikipedia is cited 20 times;
-  replace it first in the Warren-wedding myth, the laws table and Lentz (1936).
+  Oeldorf-Hirsch, Proposition 24's vote counts. (All 24 Wikipedia citations
+  have been replaced with primary sources; the build now hides any new one
+  when a record has a better source and marks it PENDING otherwise.)
 - **GDPR Art. 88b.** The site says, citing noyb and PPC Land, that the Council
   presidency's 18 June 2026 Digital Omnibus text dropped it; the Council text
   itself was not read. Read it, and follow the Parliament's amendments.

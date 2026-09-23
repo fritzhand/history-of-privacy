@@ -28226,8 +28226,6 @@ window.privacyData = {
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Privacy_and_security_in_a_connected_age_(cropped).jpg",
       thumbUrl: "assets/media/lorrie-cranor-capitol-hill-briefing-2014.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Privacy_and_security_in_a_connected_age_%28cropped%29.jpg",
-      upstreamArchive: "NSF on Flickr (photo and account no longer online: HTTP 404 on 2026-09-23; Commons licence review of 2025-03-20 cites an archived NSF Flickr page)",
-      upstreamUrl: "https://www.flickr.com/photos/nsf_beta/15548257259/",
       lat: 38.8899,
       lng: -77.0091,
       rightsEvidence: "Commons API extmetadata: LicenseShortName \"Public domain\"; License \"pd\"; Artist \"National Science Foundation\"; Copyrighted \"False\"; categories include 'PD US NSF' and 'Lorrie Cranor'; DateTimeOriginal \"2014-10-30 15:06:58\". Description: \"the National Science Foundation (NSF) and IEEE-USA joined with the Congressional Cybersecurity Caucus of the U.S. House of Representatives to present a briefing on Capitol Hill on “Privacy and Cybersecurity in a Connected Age.”\"",

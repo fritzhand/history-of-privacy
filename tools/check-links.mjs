@@ -49,10 +49,16 @@ const MAX_HOSTS_IN_FLIGHT = 6;  // distinct hosts probed at once
    reported as "blocked", not "dead" — verify in a browser before removing. */
 const CHALLENGE_HOSTS = new Set(['www.loc.gov', 'tile.loc.gov', 'www.jstor.org', 'www.science.org', 'www.sciencedirect.com',
   'onlinelibrary.wiley.com', 'www.tandfonline.com', 'www.cambridge.org', 'www.britannica.com', 'www.britishmuseum.org',
-  'www.levistrauss.com', 'stg.levistrauss.levis.com', 'www.mdpi.com', 'www.academia.edu', 'www.collections.yorkarchaeologicaltrust.co.uk']);
+  'www.levistrauss.com', 'stg.levistrauss.levis.com', 'www.mdpi.com', 'www.academia.edu', 'www.collections.yorkarchaeologicaltrust.co.uk',
+  /* This study's script-blocking hosts, found by the research pass. */
+  'eur-lex.europa.eu', 'curia.europa.eu', 'www.coe.int', 'rm.coe.int', 'legalinstruments.oecd.org', 'www.oecd.org',
+  'www.legifrance.gouv.fr', 'gallica.bnf.fr', 'sunnah.com', 'ieeexplore.ieee.org', 'www.nytimes.com', 'www.forbes.com',
+  'founders.archives.gov', 'www.bailii.org', 'papers.ssrn.com', 'www.ssrn.com', 'www.w3.org', 'openai.com',
+  'leg.colorado.gov', 'doc.searls.com', 'www.justice.gov', 'www.oxfordreference.com', 'www.smithsonianmag.com',
+  'postalmuseum.si.edu', 'www.bentham-project.org', 'www.ucl.ac.uk', 'journals.sagepub.com', 'link.springer.com']);
 
 /* Hosts where a 429 means "you are auditing too fast", not "this link is dead". */
-const THROTTLE_HOSTS = new Set(['upload.wikimedia.org', 'commons.wikimedia.org', 'www.metmuseum.org']);
+const THROTTLE_HOSTS = new Set(['upload.wikimedia.org', 'commons.wikimedia.org', 'www.metmuseum.org', 'web.archive.org']);
 
 /* ── URL extraction with balanced parens ───────────────────────────── */
 function extractUrls(text) {

@@ -1,0 +1,377 @@
+{
+ "slice": "global",
+ "chunk": 9,
+ "verdicts": [
+  {
+   "kind": "law",
+   "id": "lb-2018",
+   "status": "OK",
+   "issues": [
+    "No error found. I cleared the cache and re-fetched the quote; --check FOUND. The law's name (Law No. 81/2018 on Electronic Transactions and Personal Data) and 2018 as its year match the DLA Piper page. Beirut coordinates are fine.",
+    "Caveat: the DLA Piper Lebanon page says 'This content was last reviewed in 2022'. Its authority tab says 'There is no National Data Protection Authority in Lebanon' and names the Ministry of Economy and Trade as the ministry that issues processing permits. That matches the record having no regulator field."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. The page is marked 'last reviewed in 2022'. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "law",
+   "id": "eg-2020",
+   "status": "FIXED",
+   "issues": [
+    "The regulator is misattributed. The record puts the Personal Data Protection Center 'under ITIDA'. DLA Piper's authority tab, citing Article 19 of the Law, says the Centre is a public economic authority with legal personality 'under the authority of the Minister of Communications and Information Technology'. None of the sources I fetched places it under ITIDA (the Information Technology Industry Development Agency). The regulator field is corrected.",
+    "The law's name and year are confirmed: the quote was re-fetched and --check FOUND. Data Protection Africa adds that the law was passed in July 2020 and came into force on 16 October 2020. Those quotes are added, along with an inForce year. That page calls the instrument 'Resolution No. 151 of 2020', which is loose wording for Law No. 151, so that phrase is not quoted.",
+    "The Cairo coordinates are fine."
+   ],
+   "fieldFixes": {
+    "regulator": "Personal Data Protection Centre (under the authority of the Minister of Communications and Information Technology)",
+    "inForce": 2020,
+    "note": "Egypt's first general data-protection law, passed in July 2020 and in force from 16 October 2020. It creates a Personal Data Protection Centre under the Minister of Communications and Information Technology."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Egypt (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=EG",
+     "quote": "Pursuant to Article (19) of the Law, the Personal Data Protection Centre (the \"Centre\") is a public economic authority that has a legal personality and is under the authority of the Minister of Communications and Information Technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. It supports the corrected regulator field. No DLA Piper tab mentions ITIDA."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Egypt — Fact Sheet",
+     "date": "2026",
+     "url": "https://dataprotection.africa/egypt/",
+     "quote": "it came into force on 16 October 2020",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same paragraph reads 'Egypt passed the Data Protection Law on 13 July 2020' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "ae-2021",
+   "status": "FIXED",
+   "issues": [
+    "The note misreads its source. It says the law came into force 'as the first federal law'. The u.ae page actually says 'The Personal Data Protection Law is the first federal law to be drafted in partnership with major technology companies in the private sector' (--check FOUND). The 'first' there is about how the law was drafted, so the note has been reworded.",
+    "The note's issue date is 26 September 2021, taken from DLA Piper ('which was issued on 26 September 2021'; --check FOUND). Several practitioner summaries give the decree's date as 20 September 2021 (13 Safar 1443 H) and the Official Gazette publication as 26 September 2021. I could not confirm this by script: uaelegislation.gov.ae returns a Cloudflare 403, and web.archive.org was unreachable. The note therefore gives the month and attributes the 26 September date to DLA Piper, rather than stating it as the signing date.",
+    "Confirmed: the in-force date of 2 January 2022 (u.ae), and the UAE Data Office as the designated federal regulator (u.ae; created by Federal Decree-Law No. 44 of 2021). DLA Piper and CMS both say the Data Office was not yet operational when they wrote, so the note says 'designated'. The Abu Dhabi coordinates are fine.",
+    "The u.ae page footer shows it was updated on 04 Dec 2025; the date field has been adjusted to match."
+   ],
+   "fieldFixes": {
+    "note": "Issued in September 2021 (26 September 2021 according to DLA Piper) and in force from 2 January 2022, it is the UAE's first general federal data-protection law. The designated regulator is the UAE Data Office, created by Federal Decree-Law No. 44 of 2021. Financial free zones such as the DIFC and ADGM keep their own data-protection regimes."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2025-12-04",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. The page footer shows '04 Dec 2025'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2025-12-04",
+     "note": "Re-fetched fresh; --check FOUND. The full sentence before it reads 'The Personal Data Protection Law is the first federal law to be drafted in partnership with major technology companies in the private sector.' It does not say the law is simply 'the first federal law'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. 26 September 2021 is DLA Piper's date. The decree is widely reported as dated 20 September 2021, with Gazette publication on 26 September, but no primary text could be read by script to settle this. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "UAE Government portal (u.ae)",
+     "title": "Data protection laws",
+     "date": "2025-12-04",
+     "url": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+     "quote": "The UAE Data Office will act as the federal data regulator in the UAE.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page links 'UAE Federal Decree Law No. 44 of 2021 on the establishment of the UAE Data Office.' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "sa-2021",
+   "status": "OK",
+   "issues": [
+    "No error found. Both quotes were re-fetched fresh; --check FOUND. Royal Decree M/19 of 9/2/1443 H corresponds to 16 September 2021, and the law came into effect on 14 September 2023. Riyadh coordinates are fine.",
+    "Three statements in the note had no quote behind them: the March 2023 amendment, the one-year grace period and supervision by SDAIA. All three are on DLA Piper's pages, and verbatim quotes have been added: the amendment by Royal Decree M/148 of 27 March 2023, the extra year to comply, and SDAIA as the current regulator."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. Secondary source: a law-firm guide."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Saudi Arabia",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=SA",
+     "quote": "as amended by Royal Decree No. M/148 dated 5/9/1444H (corresponding to 27 March 2023)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports 'amended March 2023'. The same paragraph says 'but data controllers had a further year in which to comply' (FOUND), which supports the one-year grace period."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Saudi Arabia (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=SA",
+     "quote": "The Saudi Authority for Data and Artificial Intelligence (\" SDAIA \") is currently the personal data protection regulator.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the regulator field."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "jo-2023",
+   "status": "FIXED",
+   "issues": [
+    "The quote was a fragment, '(24) of 2023.', which does not name the law by itself. The full sentence on the same page, 'Personal Data Protection Law No. (24) of 2023.', passes --check (FOUND), so the quote has been replaced.",
+    "The law's name and year are right. Amman coordinates are fine. The record has no regulator field; DLA Piper's authority tab names the Ministry of Digital Economy and Entrepreneurship and the organisational unit for personal-data protection defined in the Law, should one be wanted."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Personal Data Protection Law No. (24) of 2023.",
+     "note": "Re-fetched fresh 2026-09-23; the full sentence passes --check (FOUND), so the fragment has been replaced. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "law",
+   "id": "cv-2001",
+   "status": "FIXED",
+   "issues": [
+    "The regulator's name is incomplete. The authority is the 'Comissão Nacional de Proteção de Dados Pessoais' according to both DLA Piper's authority tab and Data Protection Africa (both --check FOUND). The record drops 'Pessoais'.",
+    "The regulator is anachronistic next to the 2001 law. The CNPD's responsibilities were set by a separate 2013 law (Law No. 42 of 2013, per Data Protection Africa). The original 2001 law left oversight to the National Assembly (see the global-1 verdict on the Cabo Verde event). The note now says this.",
+    "Several claims in the note had no quote behind them: the European model, the constitutional habeas data remedy and Convention 108. All are confirmed by Data Protection Africa and by INAI's Convention 108 note, and quotes have been added. The primary law text (AFAPDP copy) confirms 'Lei nº 133/V/2001, de 22 de Janeiro' and its approval by the Assembly on 20 December 2000.",
+    "DLA Piper attaches 'of 22 January 2001' to Law 132/V/2001, but Law 133/V/2001 carries the same date, as the law text shows.",
+    "The coordinates (14.933, -23.5133) are central Praia, which is acceptable under the capital-city rule. For consistency, the matching event record was moved in global-1 to the National Assembly building (14.9061, -23.5154)."
+   ],
+   "fieldFixes": {
+    "regulator": "Comissão Nacional de Proteção de Dados Pessoais (CNPD)",
+    "note": "Africa's first comprehensive data-protection statute: Law No. 133/V/2001 of 22 January 2001, approved by the National Assembly on 20 December 2000 and closely modelled on European (Portuguese) law. The Constitution also provides a habeas data remedy. The law was amended in 2013 and 2021, and a 2013 law set out the responsibilities of the national commission (CNPD). Cabo Verde later acceded to Council of Europe Convention 108."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. It supports the 2013 (Law 41/VIII/2013) and 2021 (Law 121/IX/2021) amendments. DLA Piper's wording attaches the 22 January 2001 date to Law 132/V/2001, but Law 133/V/2001 has the same date. Secondary source: a law-firm guide."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; --check FOUND. It supports 'Africa's first'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Boletim Oficial da República de Cabo Verde, text hosted by AFAPDP (Association francophone des autorités de protection des données personnelles)",
+     "title": "Lei nº 133/V/2001, de 22 de Janeiro — Regime jurídico geral de protecção de dados pessoais a pessoas singulares",
+     "date": "2001-01-22",
+     "url": "https://www.afapdp.org/wp-content/uploads/2018/05/Cap-vert-Lei-n%C2%B0133-V-2001-do-22-janeiro-2001.pdf",
+     "quote": "Aprovada em 20 de Dezembro de 2000.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The text also has 'Promulgada em 10 de Janeiro de 2001.' (FOUND) and the heading 'Lei nº 133/V/2001, de 22 de Janeiro'. Translation: 'Approved on 20 December 2000.'"
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Cabo Verde — Fact Sheet",
+     "date": "2026",
+     "url": "https://dataprotection.africa/cabo-verde/",
+     "quote": "It closely mirrored European data protection laws at the time, as Cabo Verde’s legal system largely draws from that of Portugal.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports 'closely modelled on European law'. The same page says 'The constitutional right of habeas data grants the right to a citizen request, update or even to destruct any personal data' (FOUND)."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Cabo Verde — Fact Sheet",
+     "date": "2026",
+     "url": "https://dataprotection.africa/cabo-verde/",
+     "quote": "Law No. 42 was subsequently passed in 2013 to detail the responsibilities of the Cabo Verdean data protection authority, known as the Comissão Nacional de Proteção de Dados Pessoais (CNPD).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the corrected regulator name and the 2013 date."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Cabo Verde — Fact Sheet",
+     "date": "2026",
+     "url": "https://dataprotection.africa/cabo-verde/",
+     "quote": "Council of Europe Convention 108: Acceded",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports 'later acceded to Convention 108'. INAI's Convention 108 note also lists Cabo Verde among the non-European states that have signed up to the Convention and its Additional Protocol."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "bf-2004",
+   "status": "FIXED",
+   "issues": [
+    "'Replaced by Law 001-2021' could not be confirmed. DLA Piper lists both Law 001-2021 of 30 March 2021 and Law 010-2004/AN as governing the regime, without saying the older law was repealed. Data Protection Africa says the 2021 law 'was passed to update and augment the legal framework'. I could not read the 2021 text, or any abrogation clause, by script. The note now says 'updated by' rather than 'replaced by'. If the 2021 text is obtained and shows the 2004 law repealed, 'replaced' can be restored.",
+    "The note leaves out the law's exact date, 20 April 2004, and the fact that it created the CIL. Both are confirmed by the CIL's own website and by French Wikipedia (--check FOUND). The CIL has operated since December 2007; Data Protection Africa calls it the first operative data-protection authority in French-speaking sub-Saharan Africa.",
+    "The law's name, the 2004 year, the regulator and the Ouagadougou coordinates are confirmed."
+   ],
+   "fieldFixes": {
+    "note": "Law of 20 April 2004. It created the Commission de l'Informatique et des Libertés (CIL), which has operated since December 2007 as the first working data-protection authority in French-speaking sub-Saharan Africa. The framework was updated by Law No. 001-2021 of 30 March 2021 on the protection of persons with regard to the processing of personal data."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. The same list names 'Law No. 001-2021 of March 30, 2021 on the protection of persons with regard to the processing of personal data.' but does not say it repealed the 2004 law. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Commission de l'Informatique et des Libertés (CIL), Burkina Faso",
+     "title": "Présentation",
+     "date": "2026",
+     "url": "https://cil.bf/?page_id=783",
+     "quote": "contrôler la conformité des traitements aux dispositions de la loi N° 010-2004/AN du 20 avril 2004 portant protection des données à caractère personnel",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the regulator's own site, and it gives the law's date as 20 April 2004. Translation: 'to check that processing complies with the provisions of Law No. 010-2004/AN of 20 April 2004 on the protection of personal data'."
+    },
+    {
+     "institution": "Wikipedia (French)",
+     "title": "Commission de l’Informatique et des Libertés",
+     "date": "2026",
+     "url": "https://fr.wikipedia.org/wiki/Commission_de_l%E2%80%99Informatique_et_des_Libert%C3%A9s",
+     "quote": "La Commission de l’Informatique et des Libertés voit le jour par la loi n°010-2004/AN du 20 avril 2004 relative à la protection des données à caractère personnel",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same article says 'Elle est opérationnelle depuis décembre 2007' (FOUND). Translation: 'The CIL was created by Law No. 010-2004/AN of 20 April 2004 on the protection of personal data.' Tertiary source."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Burkina Faso — Fact Sheet",
+     "date": "2026",
+     "url": "https://dataprotection.africa/burkina-faso/",
+     "quote": "As a result, Law No. 001-2021 of March 30, 2021 on the protection of persons with regard to the processing of personal data was passed to update and augment the legal framework on data protection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page says 'in 2007, Burkina Faso became the first French speaking country in sub-Saharan Africa with an operative data protection authority, the Commission de l’Informatique et des Libertés (CIL)' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "mu-2004",
+   "status": "OK",
+   "issues": [
+    "No error found. The quote was re-fetched fresh; --check FOUND. The Data Protection Act 2004 and its replacement by the GDPR-aligned DPA 2017 are confirmed. Port Louis coordinates are fine.",
+    "Two claims in the note had no quote behind them: the in-force date of 15 January 2018 and Convention 108. Both are confirmed and quotes have been added: the date from DLA Piper's first sentence, and Mauritius's Convention 108 status from INAI's list. For context, the Data Protection Office's communiqué says Mauritius ratified the Protocol amending Convention 108 (Convention 108+) on 4 September 2020, the first African country to do so."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Mauritius",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=MU",
+     "quote": "Mauritius regulates data protection under the Data Protection Act 2017 (DPA 2017 or Act), proclaimed through Proclamation No. 3 of 2018 and effective on January 15, 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports 'in force 15 January 2018'."
+    },
+    {
+     "institution": "Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI), Mexico",
+     "title": "El Convenio 108 y el Comité Consultivo",
+     "date": "c. 2019",
+     "url": "https://home.inai.org.mx/wp-content/documentos/Micrositios/convenio108.pdf",
+     "quote": "Fuera de la región europea, han suscrito el Convenio 108 y su Protocolo adicional Uruguay, Mauricio, Senegal, Túnez, Cabo Verde, México, Argentina y Marruecos.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND on 2026-09-23. Translation: 'Outside the European region, Uruguay, Mauritius, Senegal, Tunisia, Cabo Verde, Mexico, Argentina and Morocco have subscribed to Convention 108 and its Additional Protocol.' It supports 'later became a party to Convention 108'. The same source record is used in frameworks[1]."
+    }
+   ]
+  },
+  {
+   "kind": "law",
+   "id": "sn-2008",
+   "status": "OK",
+   "issues": [
+    "No error found. The quote was re-fetched fresh; --check FOUND. Act No. 2008-12 of 25 January 2008 is confirmed. Dakar coordinates are fine.",
+    "The note's claim that the law 'created the CDP' had no quote behind it. It is confirmed by French Wikipedia ('créée par la loi n°2008-12 du 25 janvier 2008') and consistent with DLA Piper's authority tab, which describes the CDP as the independent authority 'in accordance with the provisions of this law'. Quotes have been added. Wikipedia and the CDP's current branding use 'Commission de Protection des Données Personnelles'; the statutory name in the record, 'Commission des Données Personnelles', is kept.",
+    "Context, not an error: Data Protection Africa says a 2019 replacement bill 'does not appear to have progressed', so the 2008 law remains in force."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh 2026-09-23; --check FOUND. Secondary source: a law-firm guide."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wikipedia (French)",
+     "title": "Commission de protection des données personnelles (Sénégal)",
+     "date": "2026",
+     "url": "https://fr.wikipedia.org/wiki/Commission_de_protection_des_donn%C3%A9es_personnelles_(S%C3%A9n%C3%A9gal)",
+     "quote": "La Commission de protection des données personnelles du Sénégal a été créée par la loi n°2008-12 du 25 janvier 2008 relative à la protection des données à caractère personnelles",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Translation: 'Senegal's Personal Data Protection Commission was created by Law No. 2008-12 of 25 January 2008 on the protection of personal data.' Tertiary source."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Senegal (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=SN",
+     "quote": "The National Data Protection Authority is the 'Commission de Données Personnelles' (CDP).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. It supports the regulator field."
+    }
+   ]
+  }
+ ]
+}

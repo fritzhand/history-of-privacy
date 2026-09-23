@@ -24,7 +24,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 4.0 International license.\" (license template short name: CC BY 4.0). Description: \"Fragment of Hippocratic oath: (verso). Oxyrhynchus papyrus no. 2547\"; \"Library reference: WMS 5754 Photo number: L0029601\". Wellcome Collection catalogue API (works/q2zmup8z): \"Fragment of a document from Oxyrhynchus, Egypt, including a text of the Hippocratic Oath ... Verso: The Hippocratic Oath. Right hand section of a column of sixteen lines, written in an uncial hand.\"; production \"3rd century AD\"; identifiers MS.5754; \"Purchased in 1968.\"",
    "localFile": "assets/media/hippocratic-oath-papyrus-oxyrhynchus-2547.jpg",
    "thumbPx": "607x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons file page re-fetched 2026-09-23. Machine-readable licence is CC BY 4.0 (licensetpl_short 'CC BY 4.0', link creativecommons.org/licenses/by/4.0), and the sentence 'This file is licensed under the Creative Commons Attribution 4.0 International license.' is verbatim in the page HTML. fetch-text.py --check reports NOT-FOUND only because its block extractor skips the licence-template table cell; the full page text contains it. Description quotes 'Fragment of Hippocratic oath: (verso). Oxyrhynchus papyrus no. 2547' and 'Library reference: WMS 5754 Photo number: L0029601' FOUND.",
+     "Checked OK: the Wellcome catalogue API (works/q2zmup8z) returns title 'Oxyrhynchus Papyrus 2547', production '3rd century AD', MS.5754, 'Purchased in 1968.', recto 'A business or official document in a fluent cursive hand, almost entirely illegible', and verso 'The Hippocratic Oath. Right hand section of a column of sixteen lines, written in an uncial hand.' Every clause of the caption matches. Independent: Wikipedia's Hippocratic Oath article also captions it 'the 3rd-century Papyrus Oxyrhynchus 2547'.",
+     "Checked OK: local file opens (607x1200 RGB JPEG) and shows a tall, torn papyrus strip with Greek writing, as the alt text says. Oxyrhynchus coordinates (28.53 N, 30.67 E) are right. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "hippocratic-oath-byzantine-cross-manuscript",
@@ -47,7 +55,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is in the public domain because it is a mere mechanical scan or photocopy of a public domain original ... This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931.\" Also tagged Public Domain Mark 1.0. Description: \"Twelfth-century Byzantine manuscript the oath was written out in the form of a cross, relating it visually to Christian ideas\".",
    "localFile": "assets/media/hippocratic-oath-byzantine-cross-manuscript.jpg",
    "thumbPx": "850x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons page re-fetched. Licence template 'Public domain' (PD-scan over a PD original, plus the PD-US-expired tag and Public Domain Mark 1.0). All three quoted sentences are verbatim in the page text. The description 'Twelfth-century Byzantine manuscript the oath was written out in the form of a cross, relating it visually to Christian ideas' and the source 'page 27 of Surgery: An Illustrated History by Ira M. Rutkow, M.D. published in 1993' ('Foto de la Biblioteca Vaticana') support the caption word for word.",
+     "Independent: Wikipedia's Hippocratic Oath article captions the same image 'A 12th-century Greek manuscript of the oath in the shape of a cross' and cites DigiVatLib Urb.gr.64, folio 116. The Vatican Library record for Urb.gr.64 (digi.vatlib.it/mss/detail/Urb.gr.64) lists M. Ceresa, 'Il giuramento di Ippocrate nell'Urbinate greco 64' (Studi e testi 477, 2013), which confirms the shelfmark and the Vatican location. That record gives no date, and its bibliography (Canart on Calabrian scriptoria and the 'style de Reggio'; Irigoin on southern Italy) points to a Greek manuscript made in southern Italy, so 'Byzantine' should be read in the broad sense. The twelfth-century date could not be checked against the Vatican catalogue. It rests on Commons/Rutkow, and Wikipedia agrees with it. No change is needed.",
+     "Checked OK: the local file opens (850x1200) and shows the text block laid out as a cross, as the alt text says. The Vatican coordinates are right. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "dirc-van-delft-confession-to-a-bishop-c1404",
@@ -70,14 +86,22 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file was provided to Wikimedia Commons by the Walters Art Museum as part of a cooperation project. All artworks in the photographs are in public domain due to age. The photographs of two-dimensional objects are also in the public domain.\" License template: Public domain. Accession number W.171.114V; \"Place of creation Utrecht, Netherlands\"; \"Date between 1400 and 1404\".",
    "localFile": "assets/media/dirc-van-delft-confession-to-a-bishop-c1404.jpg",
    "thumbPx": "881x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons page re-fetched. Licence template 'Public domain'. The Walters cooperation sentence is verbatim, and so is the text 'This folio from Walters manuscript W.171 depicts a confession to a bishop.' The page gives: Date between 1400 and 1404; ink and pigments on parchment; Accession number W.171.114V; Place of creation Utrecht, Netherlands; object history 'Albert, Duke of Bavaria and Count of Holland (1389-1404), Utrecht, ca. 1404-1405, by commission'.",
+     "Independent: The Digital Walters description of W.171 (thedigitalwalters.org/Data/WaltersManuscripts/html/W171/description.html) gives the title 'Duke Albrecht's Table of Christian faith (winter part)' and dates it '1400-1404 CE', Utrecht. It calls the book 'the actual copy prepared for the dedicatee of the text, Albrecht of Bavaria, Count of Holland ... dated to 1404 at the latest, when Albrecht died' and lists 'fol. 114v: Title: Episcopal confession before a bishop / Form: Historiated initial \"D,\" 14 lines / Text: Chapter 29'. Every caption claim holds. The rubric legible in the image reads 'Vanden zonden daer alleen die bisscop of aflooest ende absolueert of sijn ghewaerde penitencier', which fits the subject: sins reserved to the bishop.",
+     "Checked OK: the local file opens (881x1200). The alt text is accurate: a gilded initial D with a mitred bishop and a veiled penitent, two men kneeling at right, and a trefoil bar border. Utrecht coordinates are right. thumbUrl returns HTTP 200. Minor point: the Walters says two illuminators worked on the book and this folio falls in 'artist B' (fols. 112v-156r). 'Unknown illuminator' is still accurate."
+    ]
+   }
   },
   {
    "id": "bomberg-talmud-bava-batra-venice-1522",
    "era": "walls",
    "year": "1522",
    "title": "Tractate Bava Batra, Bomberg Talmud (Venice, 1522)",
-   "caption": "An opening of Tractate Bava Batra of the Babylonian Talmud, printed in Venice by Daniel Bomberg in 1522. By number of printed pages Bava Batra is the longest tractate in the Bomberg Talmud, because Rashi's concise commentary stops at folio 29a and the less succinct commentary of his grandson Rashbam takes over.",
+   "caption": "An opening of Tractate Bava Batra of the Babylonian Talmud, printed in Venice by Daniel Bomberg in 1522. By number of printed pages Bava Batra is the longest tractate in the Bomberg Talmud. The Sotheby's description reproduced on Wikimedia Commons attributes this to its commentary: Rashi's concise commentary is printed only through folio 29a, after which the less succinct commentary of his grandson Rashbam takes over.",
    "alt": "Open printed Hebrew volume showing two pages, each with a block of Talmud text surrounded by columns of commentary",
    "creator": "Daniel Bomberg (printer), Venice",
    "license": "Public domain",
@@ -93,7 +117,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This is a faithful photographic reproduction of a two-dimensional, public domain work of art. ... This work is in the public domain in the United States because it was published (or registered with the U.S. Copyright Office) before January 1, 1931.\" Description: \"Babylonian Talmud, Tractate Bava Batra, Venice: Daniel Bomberg, 1522.\"",
    "localFile": "assets/media/bomberg-talmud-bava-batra-venice-1522.jpg",
    "thumbPx": "960x704",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The caption gives a single auction-catalogue interpretation as plain fact ('because Rashi's concise commentary stops at folio 29a ...'). The only source is the Sotheby's text reproduced in the Commons description ('Bava Batra's length is attributable to the fact that ...'). The tractate's Gemara is long in itself, and no independent source was found that makes Rashbam's commentary the cause of the page count. The explanation is now attributed to that description instead of stated flatly.",
+     "Checked OK: Commons page re-fetched. Licence template 'Public domain' (PD-Art, PD-US-expired, PDM 1.0). The quotes 'This is a faithful photographic reproduction of a two-dimensional, public domain work of art.' and 'Babylonian Talmud, Tractate Bava Batra, Venice: Daniel Bomberg, 1522.' are FOUND. The 'longest by printed pages' statement is FOUND. It is independently consistent with Wikipedia (Bava Batra: '176 folios ... making it the longest tractate of the Talmud'; 'The commentary of Rashi ... ends at the beginning of chapter 3; its place is taken by that of his grandson, Rashbam'). The date 1522 falls within Bomberg's first Talmud edition (Wikipedia, Daniel Bomberg: 'Publication of the Babylonian Talmud (1519–23)').",
+     "Checked OK: the local file opens (960x704). The image shows an open Hebrew folio. The legible running head reads 'בבא בתרא' with folio 'צב' (92) and 'המוכר פירות פרק ששי', and the right-hand page ends 'הדרן עלך המוכר את הספינה', so it is Bava Batra. Venice coordinates are right. thumbUrl returned 429 once (rate limit) and then HTTP 200 on retry."
+    ]
+   }
   },
   {
    "id": "edward-coke-engraving-van-de-passe",
@@ -117,7 +149,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication.\" Rijksmuseum description on the page: \"Copyright: Publiek domein\"; \"prentmaker: Simon van de Passe ... uitgever: Compton Holland ... Plaats vervaardiging: Londen Datering: 1605 - 1647\".",
    "localFile": "assets/media/edward-coke-engraving-van-de-passe.jpg",
    "thumbPx": "828x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons page re-fetched. Licence template CC0 (link creativecommons.org/publicdomain/zero/1.0), and the CC0 sentence is verbatim in the page text. The Rijksmuseum fields quoted in rightsEvidence are FOUND: 'Copyright: Publiek domein', 'prentmaker: Simon van de Passe', 'uitgever: Compton Holland', 'Plaats vervaardiging: Londen', 'Datering: 1605 - 1647'. So is the description 'In het randschrift van de omlijsting de naam en functie van de geportretteerde in het Latijn. In de hoeken het wapenschild van de geportretteerde en diverse boeken. In de marge een zesregelig lofdicht in het Latijn.', which supports the caption clause by clause.",
+     "Checked OK: the upstream handle hdl.handle.net/10934/RM0001.COLLECT.160894 resolves to Rijksmuseum linked data (id.rijksmuseum.nl/200240437). It gives the timespan '1605 - 1647', printmaker Simon van de Passe (London), publisher Compton Holland, and a rights statement of creativecommons.org/publicdomain/zero/1.0/.",
+     "Note, no change: the caption rightly attributes the broad 1605-1647 range to the Rijksmuseum. The lettering on the plate, legible in the image ('ILLUSTRISS: Dns EDOVARDUS COKUS EQV: AUR: SUMMs TOTs ANGL: IUDEX ET IUST:'; 'Si: Passæus sculp: Lon:'; 'Compto Holland excudit'; 'A.H.'), styles Coke chief justice of England. He held that office 1613-1616, and van de Passe worked in London only from about 1616, so the print is probably c. 1616. This is an inference and has not been sourced, so the field is left as it is. The local file opens (828x1200) and the alt text is accurate. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "hogarth-john-wilkes-1763",
@@ -141,7 +181,15 @@
    "rightsEvidence": "Met Collection API /public/collection/v1/objects/392613 returns \"isPublicDomain\": true (Met Open Access, CC0); \"objectDate\": \"May 16, 1763\"; \"medium\": \"Etching and engraving; first state of two\"; accession 91.1.8. The Commons copy (File:John Wilkes, Esq. MET DP825173.jpg) states: \"This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication.\"",
    "localFile": "assets/media/hogarth-john-wilkes-1763.jpg",
    "thumbPx": "766x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: the Met Collection API (objects/392613) re-fetched. It returns isPublicDomain true, title 'John Wilkes, Esq.', objectDate 'May 16, 1763', medium 'Etching and engraving; first state of two', creditLine 'Gift of Sarah Lazarus, 1891', accession 91.1.8 and artist William Hogarth. The Commons copy (File:John_Wilkes,_Esq._MET_DP825173.jpg) carries the CC0 template and the verbatim CC0 sentence. The metmuseum.org object page (sourceUrl) answers HTTP 429 to scripts. The API gives it as objectURL, so it exists.",
+     "Checked OK: the lettering quoted in the caption is legible in the image: 'Drawn from the Life and Etch'd in Aquafortis by Willm Hogarth' and 'Publish'd according to Act of Parliament May ye 16 1763'. The papers 'NORTH BRITON NUMBER 45' and 'NORTH BRITON NUMBER 17' are on the table, and the pole carries a LIBERTY cap. Independent: Wikipedia's John Wilkes article describes the same print with 'two editions of his The North Briton: Numbers 17 ... and the famous 45'.",
+     "Checked OK: the local file opens (766x1200) and the alt text is accurate. images.metmuseum.org web-large returns HTTP 200. London coordinates are right."
+    ]
+   }
   },
   {
    "id": "lord-camden-bartolozzi-drawing",
@@ -165,14 +213,22 @@
    "rightsEvidence": "Met Collection API /public/collection/v1/objects/338158 returns \"isPublicDomain\": true (Met Open Access, CC0); \"objectDate\": \"1764–1802\"; \"medium\": \"Black and red chalk, varnished\"; constituents include \"Formerly attributed to John Singleton Copley\". Commons copy states: \"This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication.\"",
    "localFile": "assets/media/lord-camden-bartolozzi-drawing.jpg",
    "thumbPx": "960x1151",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: the Met Collection API (objects/338158) re-fetched. It returns isPublicDomain true, title 'Charles Pratt, Baron Camden (later 1st Earl Camden)', objectDate '1764–1802', medium 'Black and red chalk, varnished', creditLine 'Morris K. Jesup Fund, 1955', accession 55.106.7, artist Francesco Bartolozzi, and a constituent 'Formerly attributed to John Singleton Copley' (role 'Former Attribution'). The Commons copy carries the CC0 template and the verbatim CC0 sentence. The metmuseum.org object page (sourceUrl) answers HTTP 429 to scripts. The API gives it as objectURL.",
+     "Checked OK: locationNote. Pratt was Chief Justice of the Common Pleas and tried Entick v Carrington in Westminster Hall in 1765 (Wikipedia: 'The trial took place in Westminster Hall presided over by Lord Camden, the Chief Justice of the Common Pleas'; decided 2 November 1765). Wikipedia's infobox says 'King's Bench', but that is a known error; the locationNote's 'Common Pleas' is correct. Note, no change: Pratt was created Baron Camden only on 17 July 1765 (Wikipedia), so the Met's 1764 lower bound comes before the title in the drawing's name. The caption rightly attributes the date range to the Met.",
+     "Checked OK: the local file opens (960x1151). It shows an oval sheet with a chalk head in a curled wig turned to the right, as the caption and alt text say. images.metmuseum.org web-large returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "us-bill-of-rights-1789-nara",
    "era": "castle",
    "year": "1789",
    "title": "The Bill of Rights, as proposed by Congress in 1789",
-   "caption": "The Bill of Rights dated 25 September 1789: twelve articles of amendment to the United States Constitution proposed by the Congress 'begun and held at the City of New-York', of which articles three to twelve became part of the Constitution. On this document the First Amendment is 'Article the third', so today's Fourth Amendment appears as 'Article the sixth'.",
+   "caption": "The Bill of Rights dated 25 September 1789: the enrolled original of the joint resolution in which the Congress 'begun and held at the City of New-York' proposed twelve articles of amendment to the United States Constitution. Articles three to twelve, ratified in 1791, became the first ten amendments; article two became the Twenty-seventh Amendment in 1992, and article one was never ratified. On this document the First Amendment is 'Article the third', so today's Fourth Amendment appears as 'Article the sixth'.",
    "alt": "Faded handwritten parchment headed 'Congress of the United States', with a preamble and a column of numbered articles below",
    "creator": "First Federal Congress of the United States",
    "license": "Public domain",
@@ -186,10 +242,18 @@
    "lng": -74.0104,
    "locationNote": "Federal Hall, New York City, where the First Congress sat in 1789; the document is now in the National Archives, Washington, D.C.",
    "verified": true,
-   "rightsEvidence": "Commons file page Permission/Licensing: \"This work is in the public domain in the United States because it is a work prepared by an officer or employee of the United States Federal Government as part of that person's official duties under the terms of Title 17, Chapter 1, Section 105 of the US Code.\" Source: \"This media is available in the holdings of the National Archives and Records Administration, cataloged under the National Archives Identifier (NAID) 1408042.\" Note: the Commons description says the ten articles became part of the Constitution \"in 1794\"; ratification was completed in 1791, so the caption avoids that date.",
+   "rightsEvidence": "Commons file page Permission/Licensing: \"This work is in the public domain in the United States because it is a work prepared by an officer or employee of the United States Federal Government as part of that person's official duties under the terms of Title 17, Chapter 1, Section 105 of the US Code.\" Source: \"This media is available in the holdings of the National Archives and Records Administration, cataloged under the National Archives Identifier (NAID) 1408042.\" NARA catalog record NAID 1408042 (catalog.archives.gov, JSON via /proxy/records/search?naId=1408042): coverage date 1789-09-25; scope note \"This item is the enrolled original joint resolution of Congress, engrossed on parchment, proposing 12 amendments to the United States Constitution.\"; general note \"Articles 3 to 12, ratified December 15, 1791, by three-fourths of the State Legislatures, constitute the first ten amendments of the United States Constitution. Article 2 was finally ratified on May 7, 1992, as the twenty-seventh Amendment to the Constitution. Article 1 was never ratified.\" The Commons description says the ten articles became part of the Constitution \"in 1794\"; NARA gives 15 December 1791, which the caption follows.",
    "localFile": "assets/media/us-bill-of-rights-1789-nara.jpg",
    "thumbPx": "960x1021",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The caption says the twelve articles were proposed 'of which articles three to twelve became part of the Constitution'. That leaves out that Article the second (congressional pay) was ratified on 7 May 1992 as the Twenty-seventh Amendment, so a reader would think only ten of the twelve are in the Constitution. The Commons description the record cites says so itself ('\"Article the second\" is now the 27th Amendment.' FOUND), and so does the NARA catalogue record (general note: 'Article 2 was finally ratified on May 7, 1992, as the twenty-seventh Amendment to the Constitution. Article 1 was never ratified.').",
+     "Checked OK: Commons page re-fetched. Licence template 'Public domain' (PD-USGov) plus PDM 1.0. The PD-USGov sentence is verbatim in the page text (curly apostrophe in 'person’s'), and 'cataloged under the National Archives Identifier (NAID) 1408042' is FOUND. NARA catalogue JSON for NAID 1408042: title 'Bill of Rights', coverage date 1789-09-25, 'the enrolled original joint resolution of Congress, engrossed on parchment, proposing 12 amendments', and 'Articles 3 to 12, ratified December 15, 1791'. That confirms the 1791 correction already noted in rightsEvidence.",
+     "Checked OK: the local file opens (960x1021). The heading 'Congress of the United States begun and held at the City of New-York, on Wednesday the fourth of March, one thousand seven hundred and eighty nine' is legible, and 'Article the sixth' begins 'The right of the people to be secure in their persons, houses, papers and effects', so the Fourth Amendment mapping is right. Federal Hall coordinates (40.7074, -74.0104) are right. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "bentham-panopticon-plan-1791",
@@ -212,7 +276,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.\" Also tagged Public Domain Mark 1.0. Description: \"Plan of the Panopticon\"; \"Date 1843 (originally 1791)\"; \"Source The works of Jeremy Bentham vol. IV, 172-3\"; Author Jeremy Bentham (1748-1832).",
    "localFile": "assets/media/bentham-panopticon-plan-1791.jpg",
    "thumbPx": "960x1058",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API extmetadata (re-fetched 2026-09-23) gives LicenseShortName 'Public domain', License 'pd', Copyrighted False, DateTimeOriginal 1843, Credit 'The works of Jeremy Bentham vol. IV, 172-3', Artist Jeremy Bentham, ImageDescription 'Plan of the Panopticon'. On the file page, 'Date 1843 (originally 1791)', 'Public Domain Mark 1.0' and the licensing sentence \"This work is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 100 years or fewer.\" are all present. fetch-text --check says NOT-FOUND only because its extractor puts a space before the final full stop; a full-page text check finds the sentence.",
+     "Independent check: archive.org item worksofjeremyben0004unse is vol. 4 of The Works of Jeremy Bentham, dated 1843, which matches 'printed 1843'. The 'drawn by Willey Reveley' credit in the creator field is not on the Commons page. English Wikipedia supports it: the Panopticon article says 'This plan of Jeremy Bentham's panopticon prison was drawn by Willey Reveley in 1791.' and the Willey Reveley article says 'About 1791 he received his first professional fee as an architect, £10, for assisting philosopher Jeremy Bentham in preparing architectural drawings for Bentham's scheme for a Panopticon prison.' (UCL Bentham Project returned 403.)",
+     "Checked OK: the local file opens (960x1058 RGB JPEG). It shows an elevation at upper left, a section at upper right and a semicircular half-plan below, with cells lettered A around the outer wall and a central core. Caption and alt text match the image. thumbUrl returns HTTP 200. London coordinates at city level are reasonable."
+    ]
+   }
   },
   {
    "id": "kodak-advert-you-press-the-button-1891",
@@ -236,15 +308,23 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" ... \"This image was originally posted to Flickr by Tekniska museet at https://flickr.com/photos/59292810@N07/37249349200. It was reviewed on 21 July 2023 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.\" Description: \"DIG128045 Annons för Kodak från 1891.\"",
    "localFile": "assets/media/kodak-advert-you-press-the-button-1891.jpg",
    "thumbPx": "960x546",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API extmetadata gives LicenseShortName 'CC BY 2.0', LicenseUrl creativecommons.org/licenses/by/2.0, Artist Tekniska museet, ImageDescription 'DIG128045 Annons för Kodak från 1891.', DateTimeOriginal 1891. The file page contains both the licence sentence and the FlickreviewR sentence ('reviewed on 21 July 2023 by FlickreviewR 2 ... cc-by-2.0') (full-page check FOUND; fetch-text NOT-FOUND only because of spacing before punctuation). The Flickr page (flickr.com/photos/tekniskamuseet/37249349200) still shows licence id 4, a link to creativecommons.org/licenses/by/2.0 and 'Some rights reserved', with the description 'DIG128045 Annons för Kodak från 1891.'",
+     "Checked OK: the local file opens (960x546). The ad reads 'THE KODAK CAMERA.', '\"You press the button, we do the rest.\"', '(OR YOU CAN DO IT YOURSELF.)', 'Eight Styles and Sizes', 'ALL LOADED WITH Transparent Films.' and 'THE EASTMAN COMPANY, Rochester, N.Y.', so the caption's quotes and advertiser are right.",
+     "Independent date check: Wikipedia's Kodak article says the firm was 'renamed the Eastman Company' in November 1889 and 'renamed Eastman Kodak' on 23 May 1892. The 'Eastman Company' imprint therefore fits the museum's 1891 date. Nothing on DigitaltMuseum could be found (Cloudflare challenge; the DiMu API returned no hit for DIG128045), so 'dated 1891 by Tekniska museet' rests on the museum's own Flickr description, which the caption attributes correctly. Rochester coordinates are right."
+    ]
+   }
   },
   {
    "id": "hollerith-census-machines-scientific-american-1890",
    "era": "letalone",
    "year": "1890",
    "title": "Hollerith's electrical counting machines at the 1890 US census",
-   "caption": "Scientific American illustrated the Hollerith electric tabulating machine in use for the 1890 United States census in its issue of 30 August 1890. A clerk reads a schedule at the machine while stacks of punched cards pile up beside her and more operators work behind.",
-   "alt": "Engraving of a woman seated at a desk-like tabulating machine with a panel of dials, a sheet in her hand and stacks of cards beside her, other clerks working in the background",
+   "caption": "Scientific American illustrated Hollerith's electrical counting machine at work on the 1890 United States census in its issue of 30 August 1890. This keyboard machine made the first, gross count of the population and of family sizes: a clerk reads an enumerator's schedule and presses the key for the number of people in each family, while tied bundles of schedules are stacked beside her and more operators work behind.",
+   "alt": "Engraving of a woman seated at a desk-like counting machine with a panel of dials, a ruled schedule in her left hand and her right hand on a small keyboard, tall tied bundles of papers stacked beside her and other clerks working in the background",
    "creator": "Artist not credited; Scientific American",
    "license": "Public domain",
    "creditLine": "Scientific American, 30 August 1890 / Wikimedia Commons (public domain)",
@@ -256,10 +336,29 @@
    "lng": -77.0365,
    "locationNote": "Washington, D.C., where the Census Office tabulated the 1890 count (city-level coordinates); the magazine was published in New York",
    "verified": true,
-   "rightsEvidence": "Commons file page Permission section: \"This media file is in the public domain in the United States. This applies to U.S. works where the copyright has expired, often because its first publication occurred prior to January 1, 1931\". Description: \"The Hollerith electric tabulating machine being used for the 1890 U.S. A. Census.\" Source: \"Illustration in 'Scientific American' magazine, Aug. 30, 1890.\"",
+   "rightsEvidence": "Commons file page Permission section: \"This media file is in the public domain in the United States. This applies to U.S. works where the copyright has expired, often because its first publication occurred prior to January 1, 1931\". Description: \"The Hollerith electric tabulating machine being used for the 1890 U.S. A. Census.\" Source: \"Illustration in 'Scientific American' magazine, Aug. 30, 1890.\" Caption facts checked against the article the engraving illustrates, 'The Census of the United States', Scientific American vol. 63 no. 9 (30 August 1890), OCR text at archive.org: \"The first operation was the enumeration in gross of the population of the United States, and by the same operation the enumeration of families and of their size. We illustrate the machine on which this work was done.\" \"It comprises a key board with a number of keys, numbered from 1 to 20, and upon the face of the machine in front of the operator, 21 dials.\" \"Having a schedule at hand, the operator we may assume sees in it a family of six members\". The Commons file's own source (officemuseum.com/data_processing_machines.htm) describes this image as: \"In this illustration, a clerk working on the 1890 Census is manually entering the number of people in each household.\"",
    "localFile": "assets/media/hollerith-census-machines-scientific-american-1890.jpg",
    "thumbPx": "500x386",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "sources": [
+    {
+     "institution": "Scientific American (via Internet Archive)",
+     "title": "The Census of the United States, Scientific American vol. 63 no. 9",
+     "date": "1890-08-30",
+     "url": "https://archive.org/download/scientific-american-1890-08-30/scientific-american-v63-n09-1890-08-30_djvu.txt",
+     "quote": "The first operation was the enumeration in gross of the population of the United States, and by the same operation the enumeration of families and of their size. We illustrate the machine on which this work was done.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "OCR text of the issue. fetch-text --check FOUND for this quote and for 'It comprises a key board with a number of keys, numbered from 1 to 20, and upon the face of the machine in front of the operator, 21 dials.' and 'Having a schedule at hand, the operator we may assume sees in it a family of six members'."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong caption detail: the stacks beside the clerk are not punched cards, and the machine is not the card tabulator. The engraving is labelled 'Electrical Counting Machines' and shows the keyboard counting machine used for the 1890 census's first count. The article it illustrates, 'The Census of the United States' in Scientific American vol. 63 no. 9 (30 Aug 1890; OCR at archive.org), says: 'The first operation was the enumeration in gross of the population of the United States, and by the same operation the enumeration of families and of their size. We illustrate the machine on which this work was done. It comprises a key board with a number of keys, numbered from 1 to 20, and upon the face of the machine in front of the operator, 21 dials.' It adds: 'Having a schedule at hand, the operator we may assume sees in it a family of six members; he strikes upon the key number 6.' The same article describes the enumerators' schedules arriving in piles, one pile per enumerator, and says 'The bundle was then corded together'. Punched cards belonged to the later, separate tabulating stage. The Commons file's own cited source, officemuseum.com, captions this exact file (1890_Census_Hollerith_Electrical_Counting_Machines_Sci_Amer.jpg): 'The Hollerith electric tabulating machine could be used with a keyboard rather than a card reader. In this illustration, a clerk working on the 1890 Census is manually entering the number of people in each household.' A close look at the image agrees: her right hand is on a small keyboard, and the stacks are cross-tied bundles of folded papers, not cards.",
+     "Checked OK otherwise: Commons API extmetadata gives Public domain (pd), Copyrighted False, Artist 'Artist not credited.', DateTimeOriginal 1890-08. The quoted PD-US sentence, the description 'The Hollerith electric tabulating machine being used for the 1890 U.S. A. Census.' and the source 'Illustration in \"Scientific American\" magazine, Aug. 30, 1890.' are all verbatim on the file page. The issue date is confirmed by archive.org item scientific-american-1890-08-30 ('Scientific American Volume 63 Number 09'). The local file opens (500x386). thumbUrl returns HTTP 200. Washington coordinates at city level are fine. The article credits the apparatus to 'Mr. Herman Hollerith, of Washington, D. C.'"
+    ]
+   }
   },
   {
    "id": "right-to-privacy-harvard-law-review-1890",
@@ -282,7 +381,14 @@
    "rightsEvidence": "Commons file page Licensing section: \"This media file is in the public domain in the United States. This applies to U.S. works where the copyright has expired, often because its first publication occurred prior to January 1, 1931\". Description: \"The Right to Privacy, Date 15 December 1890 Source Harvard Law Review, Vol. 4, No. 5 (Dec. 15, 1890), pp. 193-220 Author Samuel D. Warren, Louis D. Brandeis\". Quoted phrase read from the page image itself.",
    "localFile": "assets/media/right-to-privacy-harvard-law-review-1890.jpg",
    "thumbPx": "757x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API extmetadata gives Public domain (pd), Copyrighted False, DateTimeOriginal 1890-12-15, Credit 'Harvard Law Review, Vol. 4, No. 5 (Dec. 15, 1890), pp. 193-220', Artist 'Samuel D. Warren, Louis D. Brandeis'. The quoted PD-US sentence is verbatim on the file page. The DjVu has 28 pages, which matches pp. 193-220.",
+     "Checked OK against the image itself (local file 757x1200 opens): the masthead reads 'HARVARD LAW REVIEW. VOL. IV. DECEMBER 15, 1890. NO. 5.' and the title 'THE RIGHT TO PRIVACY.' The text contains 'now the right to life has come to mean the right to enjoy life,—the right to be let alone'. This is a real first page, not a JSTOR cover sheet. Independent transcription: the University of Louisville Brandeis School of Law page has the same passage and 'Originally published in 4 Harvard Law Review 193 (1890)'. thumbUrl returns HTTP 200. The Cambridge coordinates are fine for where the Review was published."
+    ]
+   }
   },
   {
    "id": "house-office-building-telephone-exchange-1912",
@@ -306,14 +412,21 @@
    "rightsEvidence": "Library of Congress record (https://www.loc.gov/item/2016864178/?fo=json): rights_advisory \"No known restrictions on publication. For more information, see Harris & Ewing Photographs - Rights and Restrictions Information\"; created_published \"1912.\" Commons file page Licensing: \"This work is from the Harris & Ewing collection at the Library of Congress. According to the library, there are no known copyright restrictions on the use of this work.\"",
    "localFile": "assets/media/house-office-building-telephone-exchange-1912.jpg",
    "thumbPx": "960x710",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: the LoC JSON for item 2016864178 gives title 'HOUSE OFFICE BUILDING. TELEPHONE EXCHANGE', created_published '1912.', contributor 'Harris & Ewing, photographer', medium '1 negative : glass ; 5 x 7 in. or smaller', reproduction number LC-DIG-hec-01830 and rights_advisory 'No known restrictions on publication. For more information, see Harris & Ewing Photographs - Rights and Restrictions Information'. The Commons page shows Public domain and has the Harris & Ewing sentence verbatim. The LoC reference image hec/01800/01830r.jpg is the same photograph as the local file (960x710, opens).",
+     "Caveat, no change needed: LoC notes 'Title from unverified caption data received with the Harris & Ewing Collection.' So the House Office Building location and the 1912 date rest on the studio's own caption, not on a check by LoC staff. The building (opened 1908, now Cannon) is the only House office building that existed in 1912. The record's coordinates (38.8872, -77.0079) are about 80 m from Wikipedia's point for the Cannon building (38.88694, -77.00694), which is within building level. The alt text matches the image: a man in a suit at a cord switchboard with a mouthpiece on a curved arm."
+    ]
+   }
   },
   {
    "id": "louis-brandeis-harris-ewing-c1916",
    "era": "letalone",
    "year": "c. 1916",
    "title": "Louis D. Brandeis, photographed by Harris & Ewing",
-   "caption": "Louis Brandeis, co-author with Samuel D. Warren of 'The Right to Privacy' (1890), in a head-and-shoulders studio portrait by Harris & Ewing, dated [1916?] by the Library of Congress. The Library holds the print as reproduction number LC-DIG-ppmsca-06024 and advises 'No known restrictions on publication'.",
+   "caption": "Louis Brandeis, co-author with Samuel D. Warren of 'The Right to Privacy' (1890), in a head-and-shoulders studio portrait by Harris & Ewing, dated [1916?] by the Library of Congress. The Library holds the original print (digital file LC-DIG-ppmsca-06024) and advises 'No known restrictions on publication'; the copy shown was cleaned of dust, scratches and stains by a Wikimedia Commons contributor.",
    "alt": "Sepia studio portrait of a man with wavy grey hair in a dark robe and patterned tie, looking at the camera",
    "creator": "Harris & Ewing",
    "license": "Public domain",
@@ -330,7 +443,14 @@
    "rightsEvidence": "Library of Congress record (https://www.loc.gov/item/2004673443/?fo=json): rights_advisory \"No known restrictions on publication.\"; notes \"Photograph by Harris and Ewing.\"; created_published \"[1916?]\"; reproduction_number \"LC-DIG-ppmsca-06024\". Commons file page Licensing section: \"This work is from the Harris & Ewing collection at the Library of Congress. According to the library, there are no known copyright restrictions on the use of this work.\"",
    "localFile": "assets/media/louis-brandeis-harris-ewing-c1916.jpg",
    "thumbPx": "839x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Imprecise wording: LC-DIG-ppmsca-06024 is not the print's number. The LoC record gives 'LC-DIG-ppmsca-06024 (digital file from original photo)' and 'LC-USZ62-31230 (b&w film copy neg.)' as reproduction numbers, and the print itself is filed under call number 'BIOG FILE - Brandeis, Louis Dembitz, 1856-1941 [item] [P&P]'. Also, the Commons file shown is a restored copy. The Commons page says: 'Restored version of Image:Brandeisa.jpg with dust, scratches, stains, and chemical damage corrected. Levels adjusted.' Its Source field is LC-USZ62-31230 and its Credit gives digital ID ppmsca.06024. The caption should say it is a cleaned copy of the LoC image.",
+     "Checked OK otherwise: the LoC JSON for item 2004673443 gives title '[Louis Brandeis, head-and-shoulders studio portrait, facing front]', created_published '[1916?]', notes 'Photograph by Harris and Ewing.', medium '1 photographic print.' and rights_advisory 'No known restrictions on publication.' Commons extmetadata gives Public domain (pd), Artist Harris & Ewing, date circa 1916, and the Harris & Ewing sentence is verbatim on the file page. The LoC reference image ppmsca/06000/06024r.jpg is the same portrait as the local file (839x1200, opens), which shows judicial robes, consistent with Brandeis joining the Court in 1916. The Washington coordinates are fine."
+    ]
+   }
   },
   {
    "id": "council-of-europe-first-session-plaque-1949",
@@ -353,7 +473,14 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following licenses: ... GNU Free Documentation License ... This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license.\" Author: Ji-Elle; Date 26 August 2010. Description: \"Plaque apposée dans l'entrée du Palais Universitaire de Strasbourg, commémorant la première session de l'Assemblée du Conseil de l'Europe le 10 août 1949\". Inauguration date read from the plaque in the image.",
    "localFile": "assets/media/council-of-europe-first-session-plaque-1949.jpg",
    "thumbPx": "500x622",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API extmetadata gives LicenseShortName 'CC BY-SA 3.0', Artist Ji-Elle, Credit 'Own work', DateTimeOriginal 2010-08-26, and a French description matching the rightsEvidence. The file page has, verbatim, 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license.', 'GNU Free Documentation License' and '26 August 2010'. The file is multi-licensed, so choosing CC BY-SA 3.0 is valid.",
+     "Checked OK against the image itself (local file 500x622 opens): the plaque reads 'The Council of Europe Assembly held its first session on 10 August 1949 in the Grand Hall of the Palais universitaire in Strasbourg. Inaugurated on 5 May 1989', with the French text above and a ring of twelve gold stars. Independent: French Wikipedia (Palais universitaire de Strasbourg) says 'Du 10 août 1949, au 8 septembre 1949, dans l'aula du palais, se tient la première session du Conseil de l'Europe' and gives coordinates 48.5848, 7.76242. The record's 48.5845, 7.7623 matches. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "eleanor-roosevelt-udhr-poster-1949",
@@ -362,7 +489,7 @@
    "title": "Eleanor Roosevelt holds the Universal Declaration of Human Rights",
    "caption": "Eleanor Roosevelt holds an English-language poster of the Universal Declaration of Human Rights at Lake Success, New York, in November 1949. The photograph comes from the FDR Presidential Library & Museum, which published it on Flickr under CC BY 2.0.",
    "alt": "Black-and-white photo of an older woman in a dark dress and pearls holding up a large poster headed 'The Universal Declaration of Human Rights'",
-   "creator": "FDR Presidential Library & Museum",
+   "creator": "Photographer not credited; FDR Presidential Library & Museum (collection, photo 64-165)",
    "license": "CC BY 2.0",
    "creditLine": "FDR Presidential Library & Museum / Flickr / Wikimedia Commons (CC BY 2.0)",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eleanor_Roosevelt_UDHR.jpg",
@@ -377,14 +504,21 @@
    "rightsEvidence": "Commons file page Licensing section: \"This image, originally posted to Flickr, was reviewed on 9 October 2019 by the administrator or reviewer Leoboudv, who confirmed that it was available on Flickr under the stated license on that date. This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" Description: \"Eleanor Roosevelt holding poster of the Universal Declaration of Human Rights (in English), Lake Success, New York. November 1949.\" Author: FDR Presidential Library & Museum.",
    "localFile": "assets/media/eleanor-roosevelt-udhr-poster-1949.jpg",
    "thumbPx": "960x753",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The creator field overstates authorship. The FDR Presidential Library & Museum is the holding institution and the Flickr uploader (the Flickr title is its photo number '64-165'), not the photographer. Commons lists the library in its Author field only as the source of the upload. No photographer is credited on Commons or on Flickr.",
+     "Checked OK otherwise: Commons API extmetadata gives LicenseShortName 'CC BY 2.0' (cc-by-2.0), Artist FDR Presidential Library & Museum, and the description 'Eleanor Roosevelt holding poster of the Universal Declaration of Human Rights (in English), Lake Success, New York. November 1949.' Both the Leoboudv review sentence (9 October 2019) and the licence sentence are verbatim on the file page. The Flickr page flickr.com/photos/fdrlibrary/27758131387 still has licence id 4, a link to creativecommons.org/licenses/by/2.0, 'Some rights reserved' and the same description. Independent: Wikipedia's UDHR article captions the image 'Eleanor Roosevelt holding the English-language version of the Universal Declaration of Human Rights in November 1949'. Its UN Headquarters article says the UN used the Sperry plant at Lake Success 'for most of its operations ... between 1946 and 1952', which supports 'interim headquarters'. Lake Success coordinates (Wikipedia 40.77028, -73.71333) match the record at village level. The local file opens (960x753) and matches the alt text. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "keypunch-operator-1950-census",
    "era": "rights",
    "year": "1950s",
    "title": "Punching the 1950 census onto cards",
-   "caption": "A Census Bureau clerk creates punch cards containing data from the 1950 Census on an IBM Type 016 keypunch. The Bureau first tabulated the 1950 count with punch cards and electronic tabulators, then after installing UNIVAC I in 1951 translated the cards to magnetic tape for faster processing.",
+   "caption": "A Census Bureau clerk creates punch cards containing data from the 1950 Census on an IBM Type 016 keypunch. The Bureau first tabulated the 1950 count with punch cards and electronic tabulators; after installing its first computer, UNIVAC I, in 1951, it transferred card data to magnetic tape so that part of the count could be processed faster.",
    "alt": "Black-and-white photo of a woman at a keypunch machine, a census schedule clipped on a stand in front of her",
    "creator": "U.S. Census Bureau",
    "license": "Public domain",
@@ -394,21 +528,30 @@
    "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Keypunch_operator_1950_census_IBM_016.jpg",
    "upstreamArchive": "U.S. Census Bureau History",
    "upstreamUrl": "https://www.census.gov/history/",
-   "lat": 38.8977,
-   "lng": -77.0365,
-   "locationNote": "U.S. Census Bureau, Washington, D.C. area; the record does not name the building (city-level coordinates)",
+   "lat": 38.8485,
+   "lng": -76.9313,
+   "locationNote": "U.S. Census Bureau headquarters, Suitland, Maryland, the Bureau's home since 1942. The record does not name where the photograph was taken, so the point is approximate.",
    "verified": true,
    "rightsEvidence": "Commons file page Licensing section: \"This image or file is a work of a United States Census Bureau employee, taken or made as part of that person's official duties. As a work of the U.S. federal government, the image is in the public domain.\" Description: \"A clerk employee creates punch cards containing data from the 1950 Census ... Keypunch machine is an IBM Type 016.\"",
    "localFile": "assets/media/keypunch-operator-1950-census.jpg",
    "thumbPx": "960x790",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: I re-read the Commons API extmetadata (2026-09-23): LicenseShortName 'Public domain', Copyrighted False, Artist 'U.S. Census Bureau employees', DateTimeOriginal '1950s' (decade precision). The Licensing sentence 'This image or file is a work of a United States Census Bureau employee, taken or made as part of that person's official duties. As a work of the U.S. federal government, the image is in the public domain.' is verbatim in the page HTML. fetch-text.py --check reports NOT-FOUND only because its block extractor skips the licence-template table. The description quote ('A clerk employee creates punch cards ... Keypunch machine is an IBM Type 016.') is FOUND.",
+     "Local file assets/media/keypunch-operator-1950-census.jpg opens (960x790 RGB JPEG). It shows a woman at a keypunch with a 1950 Census of Population and Housing schedule on the copy holder, which matches the alt text. The thumbUrl returns HTTP 200.",
+     "The caption overstates the record. Saying the Bureau 'translated the cards to magnetic tape' after installing UNIVAC reads as if the whole 1950 count moved to the computer. census.gov (census-innovations/technology/univac-i.html) says 'UNIVAC I was soon used to tabulate part of the 1950 population census and the entire 1954 economic census.' (--check FOUND). The caption has been reworded to say 'part'.",
+     "The coordinates are wrong for the stated purpose. 38.8977, -77.0365 is exactly the White House (1600 Pennsylvania Ave), which puts a map pin on the wrong landmark. The Census Bureau's headquarters has been in Suitland, Maryland, since 1942 (Wikipedia, United States Census Bureau: 'The Census Bureau headquarters has been in Suitland, Maryland, since 1942.'). The OSM geocode for the Census Bureau at 4600 Silver Hill Road is 38.8485, -76.9313. The record does not name where the photo was taken, so the pin stays approximate and locationNote now says so."
+    ]
+   }
   },
   {
    "id": "univac-i-census-bureau-dedication-1951",
    "era": "rights",
    "year": "1951",
    "title": "UNIVAC I, the Census Bureau's first computer",
-   "caption": "An operator sits at the UNIVAC console beside a bank of tape drives in this Census Bureau photograph. The Bureau records that on 14 June 1951 it dedicated UNIVAC I, 'the nation's first commercial computer built for a civilian government agency', at the Eckert-Mauchly Laboratory in Philadelphia.",
+   "caption": "An operator sits at the UNIVAC console beside a bank of tape drives in this Census Bureau photograph. The Bureau's history pages record that its officials attended the dedication of UNIVAC I at the Eckert-Mauchly Laboratory in Philadelphia on 14 June 1951, and call it 'the first modern computer installed by a civilian government agency'.",
    "alt": "Black-and-white photo of a room-sized computer lettered UNIVAC, with a man at a control console and a row of tape drive cabinets",
    "creator": "U.S. Census Bureau",
    "license": "Public domain",
@@ -422,19 +565,28 @@
    "lng": -75.1652,
    "locationNote": "Eckert-Mauchly Laboratory, Philadelphia, named in the record as the dedication site (city-level coordinates); the photograph itself may show a later installation",
    "verified": true,
-   "rightsEvidence": "Commons file page Licensing section: \"This image or file is a work of a United States Census Bureau employee, taken or made as part of that person's official duties. As a work of the U.S. federal government, the image is in the public domain.\" Description: \"On June 14, 1951, we dedicated UNIVAC I, the nation's first commercial computer built for a civilian government agency at the Eckert-Mauchly Laboratory in Philadelphia, PA.\"",
+   "rightsEvidence": "Commons file page Licensing section: \"This image or file is a work of a United States Census Bureau employee, taken or made as part of that person's official duties. As a work of the U.S. federal government, the image is in the public domain.\" Description: \"On June 14, 1951, we dedicated UNIVAC I, the nation's first commercial computer built for a civilian government agency at the Eckert-Mauchly Laboratory in Philadelphia, PA.\" (credited to census.gov/history; this exact wording was not found on current census.gov pages). census.gov, census-innovations/technology/univac-i.html: \"Census Bureau officials attended the dedication of UNIVAC I at the Eckert-Mauchly Laboratory in Philadelphia, PA, on June 14, 1951.\" census.gov, census-innovations/technology.html: \"UNIVAC I, the first modern computer installed by a civilian government agency\". File history: the current 3,748 x 2,728 version (24 September 2025) was re-uploaded from a third-party website (laradiomak.com.ar) over the 680 x 526 census.gov-sourced upload of 18 July 2017; it is the same Census Bureau photograph.",
    "localFile": "assets/media/univac-i-census-bureau-dedication-1951.jpg",
    "thumbPx": "960x699",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: Commons API extmetadata gives LicenseShortName 'Public domain', Copyrighted False, Artist 'U.S. Census Bureau employees' and DateTimeOriginal 1951-06-14. The PD-USGov-Census licensing sentence is verbatim in the page HTML. The description quote 'On June 14, 1951, we dedicated UNIVAC I, the nation's first commercial computer built for a civilian government agency at the Eckert-Mauchly Laboratory in Philadelphia, PA.' is FOUND on the Commons page.",
+     "Attribution problem in the caption. It presents 'the nation's first commercial computer built for a civilian government agency' as something 'the Bureau records'. That wording exists only in the Commons description, which cites census.gov/history as a whole, and I could not find it on current census.gov pages. census.gov does verifiably say 'Census Bureau officials attended the dedication of UNIVAC I at the Eckert-Mauchly Laboratory in Philadelphia, PA, on June 14, 1951.' (census-innovations/technology/univac-i.html, --check FOUND) and calls UNIVAC I 'the first modern computer installed by a civilian government agency' (census-innovations/technology.html, --check FOUND). The caption now uses the census.gov wording. Independent check: Wikipedia's UNIVAC I article says 'The first UNIVAC was accepted by the United States Census Bureau on March 31, 1951, and was dedicated on June 14 that year.'",
+     "Provenance note: the Commons file history shows the current version (24 September 2025, 3,748 x 2,728) was uploaded by JayCubby from a third-party website (laradiomak.com.ar). It replaced the 680 x 526 census.gov-sourced upload of 18 July 2017 (touched up 15 February 2023). It is the same Census Bureau photograph and its public-domain status is unaffected, but the high-resolution copy does not come from the Bureau directly. This is now recorded in rightsEvidence.",
+     "The image (960x699, opens) shows a man at the UNIVAC supervisory console, a second man at the mainframe and a row of UNISERVO tape drives, which matches the caption and alt. The 'laptop-like' object on the console is the console keyboard, visible in long-circulating copies of this photo, and needs no change. The locationNote already warns that the picture may not show the dedication itself. City-level Philadelphia coordinates are labelled as such. For reference, the Eckert-Mauchly works were at 3747 Ridge Avenue (Wikipedia EMCC), about 40.0022, -75.1869, if a finer pin is wanted."
+    ]
+   }
   },
   {
    "id": "palais-de-chaillot-un-general-assembly-1951",
    "era": "rights",
    "year": "1951",
    "title": "The Palais de Chaillot during a UN General Assembly session",
-   "caption": "A US government photograph titled 'Palais de Chaillot where the UN General Assembly is Being Held', looking from the palace towards the Eiffel Tower. The National Archives record dates it, by proximity to other photos of the sixth session, to November 1951.",
+   "caption": "A US government photograph titled 'Palais de Chaillot where the UN General Assembly is Being Held', looking from the palace roof towards the Eiffel Tower, with the UN flag in the foreground. The National Archives record gives no date, but the picture is numbered in the same run of Marshall Plan photographs as the Assembly's inaugural session, Dean Acheson greeting Anthony Eden at the Assembly and a Thanksgiving celebration in Paris, which places it in November 1951, during the sixth session.",
    "alt": "View from the roof terrace of the Palais de Chaillot towards the Eiffel Tower, with a flag flying from a pole in the foreground",
-   "creator": "U.S. Department of State (Agency for International Development records)",
+   "creator": "Unknown photographer, U.S. Marshall Plan photographic service (NARA Record Group 286, 'Photographs of Marshall Plan Programs, Exhibits, and Personnel')",
    "license": "Public domain",
    "creditLine": "U.S. National Archives (NAID 19999523) / Wikimedia Commons (public domain)",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palais_de_Chaillot_where_the_UN_General_Assembly_is_Being_Held_-_DPLA_-_38cdd2964f7bb99e95f51a6936bb3acd.jpg",
@@ -446,10 +598,19 @@
    "lng": 2.2878,
    "locationNote": "Palais de Chaillot, Paris, where the General Assembly met in 1948 (when it adopted the UDHR) and again in 1951-52",
    "verified": true,
-   "rightsEvidence": "Commons file page Permission section: \"This media file is in the public domain in the United States.\" ... \"Standardized rights statement: No Copyright - United States\". Record: \"Creator: Department of State. Agency for International Development\"; \"By proximity to other DPLA photos of the sixth session of the UN General Assembly, this is from November 1951\"; \"National Archives Identifier: 19999523\".",
+   "rightsEvidence": "Commons file page Permission section: \"This media file is in the public domain in the United States.\" Standardized rights statement: \"No Copyright - United States\". NARA catalogue record 19999523 (local identifier 286-MP-par-03250): title \"[Palais de Chaillot where the UN General Assembly is Being Held]\", series \"Photographs of Marshall Plan Programs, Exhibits, and Personnel\" in \"Records of the Agency for International Development\" (RG 286), use restriction \"Unrestricted\"; the NARA record gives no date. The November 1951 date is a Commons description note (\"By proximity to other DPLA photos of the sixth session of the UN General Assembly, this is from November 1951\"), consistent with neighbouring NARA items PAR-3238 \"[Acheson Greets Eden at UN Assembly]\" and PAR-3240-3248 \"[American Youth Celebrate Thanksgiving Day in Paris]\".",
    "localFile": "assets/media/palais-de-chaillot-un-general-assembly-1951.jpg",
    "thumbPx": "960x1164",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: the Commons Permission section says 'This media file is in the public domain in the United States.' (FOUND), with 'Standardized rights statement No Copyright - United States'. The NARA catalogue record (catalog.archives.gov/proxy/records/search?naId=19999523) has useRestriction 'Unrestricted'. Note that the Commons tag is the generic PD-US one, not PD-USGov, and it warns that the image might not be in the public domain outside the United States. The record's 'Public domain' licence field is acceptable on the NARA/DPLA 'No Copyright - United States' basis.",
+     "Misattributed dating. The caption says 'The National Archives record dates it, by proximity to other photos of the sixth session, to November 1951.' The NARA record 19999523 has no date and no such sentence. 'By proximity to other DPLA photos ...' is a note written into the Wikimedia Commons description. I tested the dating independently against NARA's neighbouring items in the same file run (286-MP-PAR): PAR-3234 to 3236 '[UNO Assembly (Inaugural Session with Vincent Auriol)]', PAR-3238 '[Acheson Greets Eden at UN Assembly]', PAR-3240 to 3248 '[American Youth Celebrate Thanksgiving Day in Paris]', PAR-3249 to 3252 this Chaillot set, and PAR-3254 '[Dean Acheson with A. Eden]' (titles --check FOUND on the NARA proxy JSON). Eden became Foreign Secretary on 28 October 1951 (Wikipedia), and the sixth session opened at the Palais de Chaillot on 6 November 1951 (Wikipedia). That rules out the 1948 Paris session and supports November 1951. The date is right; the caption now attributes it correctly.",
+     "The creator field is misleading. 'Department of State. Agency for International Development' is NARA's most recent records-creator for the series (AID was established in 1961, ten years after the photo). The item sits in RG 286, series 'Photographs of Marshall Plan Programs, Exhibits, and Personnel' (--check FOUND), whose 1951 predecessor creator is the Economic Cooperation Administration. No photographer is named.",
+     "The image (960x1164, opens) shows the view from the Palais de Chaillot roof across the Seine to the Eiffel Tower, with the dome of Les Invalides in the distance. The flag in the foreground plainly carries the UN emblem (legible in the image), so the caption can name it. The coordinates are about 100 m from the OSM point for the Palais, which is fine. The locationNote facts (third session 1948, UDHR, sixth session 1951-52) are correct."
+    ]
+   }
   },
   {
    "id": "hessian-landtag-stadtschloss-wiesbaden",
@@ -465,14 +626,22 @@
    "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Wiesbaden_Landtag_Hessen_im_Stadtschlo%C3%9F_Wiesbaden_am_Schlo%C3%9Fplatz_-_Foto_Wolfgang_Pehlemann_Wiesbaden_DSCN1417.jpg/960px-Wiesbaden_Landtag_Hessen_im_Stadtschlo%C3%9F_Wiesbaden_am_Schlo%C3%9Fplatz_-_Foto_Wolfgang_Pehlemann_Wiesbaden_DSCN1417.jpg",
    "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Wiesbaden_Landtag_Hessen_im_Stadtschlo%C3%9F_Wiesbaden_am_Schlo%C3%9Fplatz_-_Foto_Wolfgang_Pehlemann_Wiesbaden_DSCN1417.jpg",
    "upstreamArchive": "Wikimedia Commons",
-   "lat": 50.0823,
-   "lng": 8.2436,
+   "lat": 50.0824,
+   "lng": 8.2416,
    "locationNote": "Stadtschloss, Schlossplatz, Wiesbaden: seat of the Hessian Landtag, which passed the 1970 Data Protection Act (building-level coordinates)",
    "verified": true,
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.\" Permission note: \"You must attribute the work in the manner specified by the author: add authors name (Author Wolfgang Pehlemann) under the photo.\" Description: \"Gebaeude Hessischer Landtag Hessen im Stadtschloß Wiesbaden am Schloßplatz 2007\".",
    "localFile": "assets/media/hessian-landtag-stadtschloss-wiesbaden.jpg",
    "thumbPx": "960x648",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: the Commons page says 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.' (own work, Wolfgang Pehlemann; the attribution requirement is quoted correctly). All three rightsEvidence quotes are FOUND. The description date is 2007, which matches year '2007 (photo)'.",
+     "The image (960x648, opens) shows the Stadtschloss corner entrance with 'HESSISCHER LANDTAG' lettering over it, a flower-box balcony and a lamp post, which matches the caption and alt. Independent: de.wikipedia Stadtschloss Wiesbaden confirms it has been the seat of the Hessian Landtag since December 1946 and that the balcony carries the inscription 'Hessischer Landtag'. de.wikipedia Hessisches Datenschutzgesetz confirms the act of 7 October 1970. So the locationNote is right that the Landtag sitting here passed the 1970 Act.",
+     "The coordinates are labelled 'building-level' but sit about 145 m east of the building, on the Schlossplatz towards the Marktkirche: record 50.0823, 8.2436 against OSM 'Stadtschloss Wiesbaden, 1, Schlossplatz' at 50.08245, 8.24160 (en.wikipedia 50.0822, 8.2414). Corrected."
+    ]
+   }
   },
   {
    "id": "oecd-chateau-de-la-muette-paris",
@@ -491,17 +660,25 @@
    "upstreamUrl": "https://flickr.com/photos/131702661@N08/33637874098",
    "lat": 48.8614,
    "lng": 2.2694,
-   "locationNote": "Camera location from the file page (48.861389, 2.269444), Château de la Muette, 2 rue André Pascal, Paris 16e; OECD headquarters, where the 1980 Privacy Guidelines were adopted",
+   "locationNote": "Object location from the file page (48.861389, 2.269444), Château de la Muette, 2 rue André Pascal, Paris 16e; OECD headquarters, where the 1980 Privacy Guidelines were adopted",
    "verified": true,
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" ... \"This image was originally posted to Flickr by mySociety at https://flickr.com/photos/131702661@N08/33637874098. It was reviewed on 29 April 2020 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.\" Description: \"Château de la Muette, Paris, France - The courtyard at 2 André Pascal street.\" Source: \"TICTeC 2019: OECD in Paris\".",
    "localFile": "assets/media/oecd-chateau-de-la-muette-paris.jpg",
    "thumbPx": "960x640",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: the Commons page says 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' FlickreviewR 2 confirmed cc-by-2.0 on 29 April 2020. The Flickr page itself (flickr.com/photos/131702661@N08/33637874098) carries license id 4 (creativecommons.org/licenses/by/2.0), dateTaken '2019-03-20 13:42:23' and the album text 'TICTeC 2019: OECD in Paris ... Our stunning venue was thanks to TICTeC's hosts, the OECD.' All rightsEvidence quotes are FOUND. The Commons version is the uploader's perspective-corrected copy of the Flickr original.",
+     "The image (960x640, opens) shows the courtyard facade behind clipped box hedges, with cars parked at the entrance, which matches the alt. Independent: Wikipedia confirms the Château de la Muette became OEEC headquarters in 1949 and is the OECD's headquarters.",
+     "Small wording error in locationNote. The file page gives 48.861389, 2.269444 as the 'Object location', not the camera location. The record's 48.8614, 2.2694 is 17 m from the OSM point for the château, so the coordinates are fine."
+    ]
+   }
   },
   {
    "id": "council-of-europe-palais-de-l-europe-strasbourg",
    "era": "dataprotection",
-   "year": "before 2008 (photo)",
+   "year": "1999-2008 (photo)",
    "title": "The Palais de l'Europe, Council of Europe, Strasbourg",
    "caption": "Aerial view of the Council of Europe's Palais de l'Europe in Strasbourg, designed by the architect Henry Bernard. The photograph was supplied by the Council of Europe itself under a free licence.",
    "alt": "Aerial photo of a large square modernist building with a dark central dome, set among trees beside a river, with a lawn and flagpoles in front",
@@ -512,22 +689,31 @@
    "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Council_of_Europe_Palais_de_l%27Europe_aerial_view.JPG/960px-Council_of_Europe_Palais_de_l%27Europe_aerial_view.JPG",
    "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Council_of_Europe_Palais_de_l%27Europe_aerial_view.JPG",
    "upstreamArchive": "Council of Europe",
-   "lat": 48.5888,
-   "lng": 7.774,
+   "lat": 48.5952,
+   "lng": 7.7719,
    "locationNote": "Palais de l'Europe, Avenue de l'Europe, Strasbourg, where Convention 108 was opened for signature in 1981 (building-level coordinates)",
    "verified": true,
    "rightsEvidence": "Commons file page Permission/Licensing: \"This work is free and may be used by anyone for any purpose. ... The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page\" (VRT ticket #2008031710012506); \"I, the copyright holder of this work, hereby publish it under the following licenses:\" GNU Free Documentation License and Creative Commons Attribution 3.0 (license template short name CC BY 3.0). Source and author: Council of Europe.",
    "localFile": "assets/media/council-of-europe-palais-de-l-europe-strasbourg.jpg",
    "thumbPx": "960x640",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: the Commons API gives LicenseShortName 'CC BY 3.0', Credit 'Council of Europe' and Artist 'Architect: Henry Bernard Photo: Council of Europe'. The page shows VRT ticket #2008031710012506 and a dual GFDL / CC BY 3.0 licence. The first upload, on 17 March 2008, came from the account CoEComm, which supports 'supplied by the Council of Europe itself'. Both rightsEvidence quotes are FOUND.",
+     "The coordinates are wrong. 48.5888, 7.774 is about 700 m south of the Palais de l'Europe, in the Parc de l'Orangerie area, although it is labelled 'building-level'. OSM geocodes 'Palais de l'Europe, Avenue de l'Europe' at 48.59516, 7.77189, and en.wikipedia gives 48.595, 7.7719. Corrected.",
+     "The photo date can be narrowed. The aerial view shows the European Parliament's Louise Weiss building (the curved glass block across the river, top left) and the round towers of the Human Rights Building (top right). The Parliament used the Palais de l'Europe until 1999 (en.wikipedia Palace of Europe: 'Between 1977 and 1999 it was also the Strasbourg seat of the European Parliament'). So the photo dates from between 1999 and the March 2008 upload. 'before 2008 (photo)' is not wrong but can be tightened.",
+     "The image (960x640, opens) matches the alt: a square modernist block with a dark central dome, lawn and flagpoles, beside the river. Caption facts (architect Henry Bernard, CoE-supplied free licence) are supported. The Palais has been the Council's seat since 1977, and Convention 108 was 'Done at Strasbourg' on 28 January 1981, so the locationNote is sound."
+    ]
+   }
   },
   {
    "id": "federal-constitutional-court-karlsruhe",
    "era": "dataprotection",
    "year": "2006 (photo)",
    "title": "The Federal Constitutional Court, Karlsruhe",
-   "caption": "The building of the Bundesverfassungsgericht, Germany's Federal Constitutional Court, in Karlsruhe, photographed on 9 October 2006. The glass-and-concrete pavilions sit among trees.",
-   "alt": "Low modernist building of stacked horizontal concrete bands and large glass windows, partly screened by trees",
+   "caption": "The building of the Bundesverfassungsgericht, Germany's Federal Constitutional Court, in Karlsruhe, photographed on 9 October 2006. Paul Baumgarten's steel-framed pavilions, completed in 1969, with wood-framed glass fronts and grey cast-aluminium cladding, sit among trees.",
+   "alt": "Low modernist building of stacked horizontal bands of grey metal cladding and large wood-framed glass windows, partly screened by trees",
    "creator": "Guido Radig",
    "license": "CC BY-SA 3.0",
    "creditLine": "Guido Radig / Wikimedia Commons (CC BY-SA 3.0)",
@@ -535,14 +721,22 @@
    "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Bundesverfassungsgericht_-_Karlsruhe.JPG/960px-Bundesverfassungsgericht_-_Karlsruhe.JPG",
    "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bundesverfassungsgericht_-_Karlsruhe.JPG",
    "upstreamArchive": "Wikimedia Commons",
-   "lat": 49.0119,
-   "lng": 8.4022,
+   "lat": 49.0125,
+   "lng": 8.4016,
    "locationNote": "Bundesverfassungsgericht, Schlossbezirk 3, Karlsruhe, where the 1983 census judgment was handed down (building-level coordinates)",
    "verified": true,
    "rightsEvidence": "Commons file page Licensing section: \"Guido Radig at German Wikipedia, the copyright holder of this work, hereby publishes it under the following licenses: ... GNU Free Documentation License ... This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. Attribution: Guido Radig at German Wikipedia\". Date 9 October 2006.",
    "localFile": "assets/media/federal-constitutional-court-karlsruhe.jpg",
    "thumbPx": "960x638",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence confirmed: the Commons API gives LicenseShortName 'CC BY-SA 3.0', Attribution 'Guido Radig at German Wikipedia' and DateTimeOriginal 2006-10-09. The page offers GFDL, CC BY-SA 3.0 Unported and CC BY-SA 3.0 DE, at the user's choice. The rightsEvidence quote is FOUND.",
+     "Factual error in the caption and alt. They describe 'glass-and-concrete pavilions' and 'stacked horizontal concrete bands'. The closed facade bands are grey cast-aluminium panels, not concrete. de.wikipedia Bundesverfassungsgericht says: 'Die Stahlskelettbauten verfügen über großzügige, in Oregon -Holzelementen eingefasste Glasfronten, die geschlossenen Flächen sind mit grauen Aluminium-Gussplatten verkleidet.' (--check FOUND), and 'Nach Baumgartens Plänen entstand von 1965 bis 1969 ein Komplex aus fünf pavillonartigen, in der Höhe gestaffelten Baukörpern' (--check FOUND). The photo (960x638, opens) shows exactly these mottled grey metal panels and wood-framed glazing. Caption and alt corrected.",
+     "The coordinates are about 110 m south-east of the OSM point for the court (49.01270, 8.40133; en.wikipedia 49.01242, 8.40161) although they are labelled 'building-level'. Tightened to 49.0125, 8.4016. The locationNote is correct: the court has sat in the Schlossbezirk building since 1969, so the 1983 census judgment was handed down there."
+    ]
+   }
   },
   {
    "id": "census-boycott-demo-freiburg-1987",
@@ -565,7 +759,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"Works in the Baden-Württemberg State Archives digital finding aid are released under the Creative Commons Attribution 4.0 licence, see Terms of use. This file is licensed under the Creative Commons Attribution 4.0 International license. Attribution: Landesarchiv Baden-Württemberg, Staatsarchiv Freiburg W 140 Nr. 08765 / Fotograf: Marlis Decker\". Record: \"Freiburg im Breisgau: Demo gegen die Volkszählung\"; Date 25 May 1987. Note: this is the 1987 census that went ahead after the 1983 Constitutional Court ruling; no openly licensed 1983 boycott image was found.",
    "localFile": "assets/media/census-boycott-demo-freiburg-1987.jpg",
    "thumbPx": "500x326",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: the Commons page carries the LABW notice 'Works in the Baden-Württemberg State Archives digital finding aid are released under the Creative Commons Attribution 4.0 licence' and 'This file is licensed under the Creative Commons Attribution 4.0 International license.' (FOUND). The Landesarchiv's own viewer for the item (permalink landesarchiv-bw.de/plink/?f=5-795053-1) says 'Es steht unter der Creative Commons Lizenz CC BY 4.0.'",
+     "Checked OK: the LABW structure view (www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=23088&sprungId=3074571) lists 'W 140 Nr. 08765 Archivalieneinheit Freiburg im Breisgau: Demo gegen die Volkszählung Autor/Fotograf/Künstler: Marlis Decker Informationsträger (Material): Negativ 4 Negative 25. Mai 1987'. Signature, photographer and date in the caption and creditLine all match. 25 May 1987 was the reference day of the 1987 census.",
+     "Checked OK: the local file (500x326, opens; the original on Commons is only 941x613) shows a street march seen from above behind a banner that legibly reads 'Volkszählung Nein!', with tram tracks in the foreground, which matches the caption and alt. The thumbUrl returns HTTP 200. Freiburg city-centre coordinates are labelled city-level. The rightsEvidence note that this is the 1987 census held after the 1983 ruling is correct."
+    ]
+   }
   },
   {
    "id": "stasi-archive-erfurt-secured-1989",
@@ -588,7 +790,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Germany license. Attribution: Bundesarchiv, Bild 183-1989-1204-023 / Heinz Hirndorf / CC-BY-SA 3.0\". Original caption: \"ADN-ZB/Hirndorf/4.12.89/Erfurt: Beweismaterial sichergestellt./ In den Räumen der Bezirksbehörde des ehemaligen Ministeriums für Staatssicherheit wurden umfangreiche Bestände des Archives beschlagnahmt und durch den Militärstaatsanwalt sichergestellt.\" (translation: evidence secured; in the rooms of the district authority of the former Ministry for State Security, extensive archive holdings were seized and secured by the military prosecutor).",
    "localFile": "assets/media/stasi-archive-erfurt-secured-1989.jpg",
    "thumbPx": "500x320",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API (extmetadata + wikitext) re-read on 2026-09-23. LicenseShortName 'CC BY-SA 3.0 de' (cc-by-sa-3.0-de, creativecommons.org/licenses/by-sa/3.0/de), Attribution 'Bundesarchiv, Bild 183-1989-1204-023 / Heinz Hirndorf / CC-BY-SA 3.0'. The creditLine matches it word for word. The BArch-image template gives photographer 'Hirndorf, Heinz', date 1989-12-04, depicted place Erfurt, ID Bild 183-1989-1204-023. The original caption 'ADN-ZB/Hirndorf/4.12.89/Erfurt: Beweismaterial sichergestellt./ In den Räumen der Bezirksbehörde des ehemaligen Ministeriums für Staatssicherheit wurden umfangreiche Bestände des Archives beschlagnahmt und durch den Militärstaatsanwalt sichergestellt.' is verbatim, so the caption's date, photographer, agency (ADN-Zentralbild) and military-prosecutor clause are all supported.",
+     "Independent check: English Wikipedia (Stasi Records Agency) and German Wikipedia (Gedenk- und Bildungsstätte Andreasstraße) both date the citizens' occupation of the Erfurt Stasi district headquarters to 4 December 1989, the first occupation of an MfS district office. That matches the photo date. Erfurt city coordinates (50.9787, 11.0328) are right. The Andreasstraße building lies about 0.6 km west, which is fine at city level.",
+     "Checked OK: the local file opens (500x320 RGB) and shows metal shelving with numbered archive boxes and stacked cartons, as the alt text says. The original is 798x510, so a 500 px thumbnail is correct. thumbUrl returns HTTP 200 image/jpeg."
+    ]
+   }
   },
   {
    "id": "stasi-informer-files-central-archive-2016",
@@ -612,7 +822,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.\" Author's condition on the page: \"If you want to use this foto you have to name the author Dr. Hubertus Knabe and to set a link to the site where it was originally published: https://hubertus-knabe.de/rettet-die-gauck-behoerde/\". Description: \"Bookshelves in the central Stasi archive with files of Stasi informers, in the back the federal officer for the Stasi files Roland Jahn (2016)\".",
    "localFile": "assets/media/stasi-informer-files-central-archive-2016.jpg",
    "thumbPx": "675x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons file page HTML re-fetched. The licence sentence 'This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.' is verbatim, under 'I, the copyright holder of this work, hereby publish it under the following license:'. The page gives Author 'Dr. Hubertus Knabe', Date '29 April 2016, 17:52:04' and Source 'Own work'. The author's attribution-and-link condition is quoted correctly in rightsEvidence. The English description ('Bookshelves in the central Stasi archive with files of Stasi informers, in the back the federal officer for the Stasi files Roland Jahn (2016)') and the German one ('Zentralarchiv der Stasi-Unterlagen-Behörde') support the caption.",
+     "Upstream checked: hubertus-knabe.de/rettet-die-gauck-behoerde/ exists and carries the photo with the caption 'Stasi-Unterlagen-Beauftragter Roland Jahn mit IM-Akten des DDR-Staatssicherheitsdienstes'. The article first ran in Welt on 23.09.2019, and the photo itself dates from 2016. The same article says Jahn's second term ends in January 2021, so 'then Federal Commissioner' is right for April 2016.",
+     "The coordinates (52.5147, 13.487) fall on the former Stasi headquarters site in Berlin-Lichtenberg, where the central archive is. The page gives no address, and the locationNote says so honestly. The local file opens (675x1200) and shows a narrow aisle of shelves full of brown files, with a white-haired man at the far end, as the alt text says. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "netscape-navigator-1-1-install-disk",
@@ -635,7 +853,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.\" Author Kevin van Haaren; Date 1 September 2023. Description: \"When Netscape Navigator was released strong encryption algorithms were considered munitions and could not be exported, special export restricted installers were produced for the US and Canada.\" The record does not give the release date of version 1.1.",
    "localFile": "assets/media/netscape-navigator-1-1-install-disk.jpg",
    "thumbPx": "960x987",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API re-read. LicenseShortName 'CC BY-SA 4.0' ({{self|cc-by-sa-4.0}}), Artist Kevin van Haaren (User:Nmtgxnku), date 2023-09-01, source own work. The description 'When Netscape Navigator was released strong encryption algorithms were considered munitions and could not be exported, special export restricted installers were produced for the US and Canada.' is verbatim, and the caption paraphrases it faithfully.",
+     "Independent: English Wikipedia's 'Export of cryptography from the United States' says cryptography was on the US Munitions List from 1954 and that Canada was exempt from export licences. It also says Netscape shipped a 'U.S. edition' with full-length keys and an 'International Edition' cut to 40-bit, and it uses this same disk as an illustration. The caption's 'could not be exported' simplifies things, since 40-bit versions could be exported, but it is accurate for strong encryption. Wikipedia's Netscape Navigator article dates the 1.1 beta to 6 March 1995, so '1990s disk' is safe. '1995' would be more precise but is not needed.",
+     "Checked OK: the local file opens (960x987). The label reads 'NETSCAPE NAVIGATOR / Version 1.1 / for Macintosh / US and Canada Only - Not For Export / Run \"Installer\" To Setup' with the N logo, which matches the caption and alt text. Mountain View was Netscape's headquarters city, and the note flags this as a proxy location. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "phorm-tracking-cookie-diagram-2008",
@@ -658,14 +884,22 @@
    "rightsEvidence": "Commons file page Licensing section: \"Lostforwords, the copyright holder of this work, hereby publishes it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. Attribution: Lostforwords\". Description: \"A diagram showing how Phorm's system creates copies of its tracking cookie in each domain the browser fetches, based on the analysis published by Richard Clayton.\" Date 28 April 2008. SVG rendered by Wikimedia to PNG and flattened onto white for the local JPEG.",
    "localFile": "assets/media/phorm-tracking-cookie-diagram-2008.jpg",
    "thumbPx": "960x797",
-   "thumbCheck": "HTTP 200 image/png (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/png (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons API re-read. LicenseShortName 'CC BY-SA 3.0' ({{self|cc-by-sa-3.0}}), Artist/Attribution Lostforwords, date 2008-04-28. The description 'A diagram showing how Phorm's system creates copies of its tracking cookie in each domain the browser fetches, based on the analysis published by Richard Clayton.' is verbatim, and the source is {{Based|Phorm_cookie_diagram.png}}. The file was moved from en.wikipedia with FileImporter.",
+     "Checked against the image: the local file (960x797, flattened SVG) shows 'Phorm System Situated within ISP's network', 'Masquerade as: Bebo.com', 'Act as: Webwise.net', 'Act as Proxy +Mirror / Remove Webwise cookie', 'webwise 2173' cookies and a 'Profiler' box. Every clause of the caption is visible in the diagram.",
+     "Independent: Clayton's PDF at cl.cam.ac.uk/~rnc1/080518-phorm.pdf opens with 'The Phorm \"Webwise\" System / Richard Clayton, 4th April 2008, Revised: 23rd April 18th May 2008'. The date in the locationNote is correct; there was an intermediate 23 April revision that the note leaves out, which is harmless. Paragraphs 14-22 describe the same flow: a machine in the ISP network 'will pretend to be www.cnn.com', redirects to webwise.net, and sets 'a special \"webwise\" labelled cookie within the www.cnn.com domain'. lat/lng null is deliberate and appropriate. thumbUrl returned 429 once, then HTTP 200 image/png on retry."
+    ]
+   }
   },
   {
    "id": "google-street-view-car-london-2008",
    "era": "cookies",
    "year": "2008",
    "title": "A Google Street View camera car in London, 2008",
-   "caption": "A Google Street View car with its roof-mounted camera mast drives through London on 22 September 2008. The photographer posted it to Flickr as 'Google Street View!!!! (in London)'.",
+   "caption": "A Google Street View car with its roof-mounted camera mast drives through London on 22 September 2008. The photographer posted it to Flickr with the description 'Google Street View!!!! (in London)'.",
    "alt": "Black hatchback with a tall camera mast on its roof driving along a London street past traffic lights and a red bus",
    "creator": "Master Man (Flickr: masterman)",
    "license": "CC BY 2.0",
@@ -682,14 +916,22 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" ... \"This image was originally posted to Flickr by MasterMan at https://flickr.com/photos/90614808@N00/2947211893. It was reviewed on 27 October 2023 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.\" Description: \"Google Street View!!!! (in London)\"; Date 22 September 2008.",
    "localFile": "assets/media/google-street-view-car-london-2008.jpg",
    "thumbPx": "960x720",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked OK: Commons API re-read. LicenseShortName 'CC BY 2.0' (cc-by-2.0), Artist 'Master Man', DateTimeOriginal 2008-09-22 19:47:53, FlickreviewR passed on 2023-10-27 with author MasterMan and sourceurl flickr.com/photos/90614808@N00/2947211893. The upstream Flickr page (flickr.com/photos/masterman/2947211893/) still resolves, 'Taken on September 22, 2008', and still carries licence id 4 ('https://creativecommons.org/licenses/by/2.0/'), so the licence has not changed.",
+     "Minor wording error: the caption says the photographer 'posted it to Flickr as \"Google Street View!!!! (in London)\"'. On Flickr the photo's title is 'CIMG1076' (og:title) and 'Google Street View!!!! (in London)' is its description (og:description; Commons also uses it as the description). The caption is reworded to match.",
+     "Checked OK: the local file opens (960x720) and shows a black Opel Astra hatchback (Commons category 'Opel Astra H Google Street View camera cars') with a camera mast and a Google sticker. A red bus, traffic lights and a 'Dual carriageway' sign are also in frame, which matches the alt text. London city coordinates are fine. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "berkman-center-23-everett-street-2011",
    "era": "cookies",
    "year": "2011 (photo)",
    "title": "The Berkman Center for Internet & Society, Cambridge, Massachusetts",
-   "caption": "The Berkman Center for Internet & Society at 23 Everett Street, Cambridge, Massachusetts, photographed on 16 July 2011. The picture shows the centre's home, a pale yellow clapboard house with a white front porch.",
+   "caption": "The Berkman Center for Internet & Society at 23 Everett Street, Cambridge, Massachusetts, photographed on 16 July 2011, when the house was the centre's home. It is a pale yellow clapboard house with a white front porch. The centre, renamed the Berkman Klein Center in 2016, now lists its address as 1557 Massachusetts Avenue.",
    "alt": "Pale yellow two-storey clapboard house with dormer windows, a white front porch and steps, on a tree-lined street",
    "creator": "Fletcher6",
    "license": "CC BY-SA 3.0",
@@ -705,14 +947,22 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.\" Description: \"Berkman Center for Internet & Society at 23 Everett Street, Cambridge MA\"; Date 16 July 2011; Author Fletcher6. The later name 'Berkman Klein Center' appears in the title of the Commons file 'Berkman-Klein Center for Internet and Society.jpg', taken at the same camera location.",
    "localFile": "assets/media/berkman-center-23-everett-street-2011.jpg",
    "thumbPx": "960x634",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked OK: Commons file page HTML re-fetched. The sentence 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.' is verbatim under 'I, the copyright holder of this work, hereby publish it under the following license:'. The page gives Description 'Berkman Center for Internet & Society at 23 Everett Street, Cambridge MA', Date 16 July 2011, Author Fletcher6, Own work, camera location 42.379889; -71.117972. The coordinates in the record match.",
+     "Caption is dated: it says 'The picture shows the centre's home', which reads as a present-day statement. The Berkman Klein Center's own site footer (cyber.harvard.edu, raw HTML, fetched 2026-09-23) now gives its address as '1557 Massachusetts Avenue, 5th Floor, Cambridge, MA 02138'. The centre is therefore no longer based at 23 Everett Street. The caption should anchor 23 Everett Street to 2011. Independent: English Wikipedia's Berkman Klein Center article says 'On July 5, 2016, the center added \"Klein\" to its name', and it captions the same house 'The location at 23 Everett Street', which supports the 2011 description.",
+     "Checked OK: the local file opens (960x634) and shows a pale yellow clapboard house with dormers, black shutters and a white front porch and steps, as the alt text says. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "edward-snowden-hong-kong-2013",
    "era": "surveillance",
    "year": "2013",
    "title": "Edward Snowden in Hong Kong, June 2013",
-   "caption": "Edward Snowden speaks about the NSA leaks in an interview with reporter Glenn Greenwald at The Mira hotel in Hong Kong on 6 June 2013, first published in The Guardian. The frame is a retouched still from the film Prism by Laura Poitras / Praxis Films.",
+   "caption": "Edward Snowden speaks about the NSA leaks in an interview with reporter Glenn Greenwald at The Mira hotel in Hong Kong, recorded on 6 June 2013 and first published in The Guardian on 9 June. The frame is a retouched still from Laura Poitras's footage of the interview (Praxis Films).",
    "alt": "Close-up of a young man with glasses and light stubble, looking to the side",
    "creator": "Laura Poitras / Praxis Films",
    "license": "CC BY 3.0",
@@ -728,7 +978,16 @@
    "rightsEvidence": "Commons file page Permission: \"Screenshot of a film by Praxis Films. The following permission and license are based on an email from Laura Poitras at Praxis Films, who is the filmmaker.\" ... \"The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page\" (VRT ticket #2013070610007169). License template: CC BY 3.0, attribution \"Laura Poitras / Praxis Films\". Retouched version of File:Edward Snowden.jpg (\"reflections and background elements removed, sharpened, colour\").",
    "localFile": "assets/media/edward-snowden-hong-kong-2013.jpg",
    "thumbPx": "500x602",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked OK: Commons API re-read. LicenseShortName 'CC BY 3.0', Attribution 'Laura Poitras / Praxis Films', VRT ticket 2013070610007169 ('The following permission and license are based on an email from Laura Poitras at Praxis Films, who is the filmmaker.'). The page has a RetouchedPicture template ('reflections and background elements removed, sharpened, colour'), date 2013-06-06, and location 22.300324, 114.172480. The licence is acceptable.",
+     "6 June 2013 confirmed independently: the Guardian's page for part two of the same interview (theguardian.com/world/video/2013/jul/08/edward-snowden-video-interview) says 'This interview was recorded in Hong Kong on 6 June 2013' (fetch-text --check FOUND). The first video was published on 9 June 2013 (datePublished 2013-06-09T17:26Z) with Glenn Greenwald and Laura Poitras as authors. That supports 'first published in The Guardian'. The Mira hotel is confirmed by English Wikipedia (Snowden 'remained in his room at the Mira Hotel'; The Mira Hong Kong article: 118 Nathan Road, Tsim Sha Tsui). The camera coordinates are about 200 m from the hotel, which is fine.",
+     "Unsupported label: the caption calls the frame a still 'from the film Prism'. That phrase comes only from the Commons uploader's source field ('Screenshot of the film Prism by Praxis Films'). The original File:Edward_Snowden.jpg has the same field and a 2 July 2013 date. The Guardian published the footage as an untitled interview video credited to Greenwald and Poitras, and 'Prism' there is only a topic tag. No Poitras film titled 'Prism' could be confirmed; her Snowden feature is Citizenfour (2014). The caption is reworded so it does not assert a film title.",
+     "Checked OK: the local file opens (500x602; the original is 576x694, so the 500 px thumbnail is correct) and shows a close-up of a young man with rimless glasses and stubble, as the alt text says. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "nsa-utah-data-center-eff-2014",
@@ -752,7 +1011,16 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication.\" Description: \"Photograph of the NSA's Utah Data Center, taken by an employee of the Electronic Frontier Foundation during an airship flight.\" Taken 27 June 2014. Author: User:ParkerHiggins (Electronic Frontier Foundation).",
    "localFile": "assets/media/nsa-utah-data-center-eff-2014.jpg",
    "thumbPx": "960x640",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: Commons file page HTML re-fetched. The sentence 'This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication.' is verbatim. The page gives Description 'Photograph of the NSA's Utah Data Center, taken by an employee of the Electronic Frontier Foundation during an airship flight.', 'Taken on 27 June 2014, 06:40:50', Author 'User:ParkerHiggins (Electronic Frontier Foundation)', and camera location 40.431530; -111.933092, which the record matches.",
+     "Upstream checked: the EFF Deeplinks post 'Releasing a Public Domain Image of the NSA's Utah Data Center' (meta author Parker Higgins, dated July 9, 2014) says 'we're releasing a photograph of the Utah Data Center into the public domain' and 'this image is released into the public domain under the terms of the CC0 waiver from Creative Commons'. This supports the caption's last sentence. The waiver is in EFF's name ('Electronic Frontier Foundation has waived all copyright'). Crediting Parker Higgins as photographer rests on the Commons Author/Own-work fields, which is acceptable.",
+     "Independent date check: EFF's press release 'Diverse Groups Fly Airship Over NSA's Utah Data Center to Protest Illegal Spying' is dated June 27, 2014 and says Greenpeace flew the airship over the Bluffdale data center 'early Friday morning'. 27 June 2014 was a Friday, which is consistent with the 06:40 EXIF time.",
+     "Checked OK: the local file opens (960x640) and shows low white buildings in a brown valley below mountains, as the alt text says. thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "congestion-charge-cameras-gower-street-2014",
@@ -775,7 +1043,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.\" Description: \"Cameras recording passing vehicles to enforce London's congestion charge\"; Date 8 January 2014; Author Guppiefish.",
    "localFile": "assets/media/congestion-charge-cameras-gower-street-2014.jpg",
    "thumbPx": "928x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: I re-fetched the Commons file page on 2026-09-23. The licence sentence 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.' is verbatim in the page HTML, after the self-publication line 'I, the copyright holder of this work, hereby publish it under the following license:', and the licence link is creativecommons.org/licenses/by-sa/3.0. The structured data also says 'Creative Commons Attribution-ShareAlike 3.0 Unported'. fetch-text --check FOUND for the description 'Cameras recording passing vehicles to enforce London's congestion charge'. The Date is 8 January 2014, 07:08:37 (EXIF agrees) and the Author is Guppiefish, own work.",
+     "Checked OK: the local file opens (928x1200 RGB JPEG). It shows a dark pole with five cameras on two brackets and a sixth camera on top, beside a classical stone facade, with the top of a red double-decker showing route number '10' below it. That matches the caption's 'red London bus passes beneath' and the Commons category 'Number 10 on buses'. The thumbUrl returns HTTP 200 image/jpeg.",
+     "Checked OK: the file page gives no camera location. Lat/lng 51.5218, -0.1326 falls on Gower Street between Bedford Square and Euston Road, which is inside the central congestion-charge zone (its northern boundary is the Euston Road). The locationNote rightly flags these as street-level coordinates, not the camera position."
+    ]
+   }
   },
   {
    "id": "cjeu-kirchberg-luxembourg-2006",
@@ -799,7 +1075,16 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" Author: Cédric Puisney from Brussels, Belgium. Description: \"Buildings of the Court of Justice of the European Union in Kirchberg, Luxembourg City, Luxembourg, in November 2006 with flags of the then 25 member states in the foreground.\" Date 18 November 2006.",
    "localFile": "assets/media/cjeu-kirchberg-luxembourg-2006.jpg",
    "thumbPx": "960x720",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: I re-fetched the Commons page. 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' is verbatim in the page, and FlickreviewR confirmed cc-by-2.0 on 25 August 2014. The upstream Flickr page (flickr.com/photos/puisney/1674479483) still loads today: ownerNsid 14254333@N08, pathAlias 'puisney', the same account the Commons page cites, and its licence is still creativecommons.org/licenses/by/2.0.",
+     "Checked OK: fetch-text --check FOUND for 'Buildings of the Court of Justice of the European Union in Kirchberg, Luxembourg City, Luxembourg, in November 2006 with flags of the then 25 member states in the foreground' and for 'To the right is Anneau building, which encircles the Ancien Palais building. In the centre background is the Thomas More building.' The Date is 18 November 2006 and the Author is 'Cédric Puisney from Brussels, Belgium'. The camera location is 49.620874, 6.140767, which matches lat/lng. There really were 25 member states in November 2006, since Bulgaria and Romania joined on 1 January 2007.",
+     "Checked OK: the locationNote's case list is right: Digital Rights Ireland was decided on 8 April 2014, Schrems I on 6 October 2015 and Schrems II on 16 July 2020, all by the Court of Justice in Luxembourg. The local file opens (960x720) and shows a row of EU flags on a lawn in front of the dark Palais and low brown buildings, as the alt text says. The thumbUrl returns HTTP 200.",
+     "Note, no change required: in November 2006 the court was formally the Court of Justice of the European Communities. The name 'Court of Justice of the European Union' dates from the Lisbon Treaty (1 December 2009). The caption follows Commons in using today's name for the buildings, which is acceptable. An editor who wants strict period accuracy could write 'buildings of what is now the Court of Justice of the European Union'."
+    ]
+   }
   },
   {
    "id": "max-schrems-big-brother-awards-2015",
@@ -823,7 +1108,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.\" ... \"This image was originally posted to Flickr by Eleleleven at https://flickr.com/photos/52245360@N07/17227117226. It was reviewed on 7 October 2015 by FlickreviewR and was confirmed to be licensed under the terms of the cc-by-sa-2.0.\" Description: \"Bei den Big Brother Awards 2015 von Digitalcourage e.V. in Bielefeld.\" Date 17 April 2015.",
    "localFile": "assets/media/max-schrems-big-brother-awards-2015.jpg",
    "thumbPx": "928x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: I re-fetched the Commons page. 'This file is licensed under the Creative Commons Attribution-Share Alike 2.0 Generic license.' is verbatim, and FlickreviewR confirmed cc-by-sa-2.0 on 7 October 2015 for flickr.com/photos/52245360@N07/17227117226. The file is a CropTool crop of '2015 Max Schrems (17227117226).jpg'. fetch-text --check FOUND for 'Bei den Big Brother Awards 2015 von Digitalcourage e.V. in Bielefeld.' The Date is 17 April 2015, 19:11 and the Author is 'Eleleleven from Bielefeld, Deutschland'.",
+     "Independent: bigbrotherawards.de/2015 has the meta description 'Die 15. BigBrotherAwards wurden am 17. April 2015 in Bielefeld verliehen.' That page also lists 'BigBrotherAward in der Kategorie Politik für Bundesinnenminister Thomas de Maizière und Ex-Bundesinnenminister Hans-Peter Friedrich, Laudator: Max Schrems' and calls him 'Gastlaudator Max Schrems'. So the date, the city and his role at the lectern (guest laudator) are confirmed. The page links the venue as the Hechelei, Bielefeld. The record's city-level coordinates (52.0302, 8.5325) are declared as such in the locationNote, so they are acceptable.",
+     "Checked OK: the local file opens (928x1200) and shows a young man in a dark shirt at a lectern with microphones and a lectern lamp, against a dark background with a purple-red cast. The alt text is accurate. The thumbUrl returns HTTP 200. An optional enrichment for the caption: '...where he gave the laudation for the Politics award to interior ministers Thomas de Maizière and Hans-Peter Friedrich for blocking European data protection' (sourced above)."
+    ]
+   }
   },
   {
    "id": "vrm-day-crowd-2015",
@@ -847,7 +1140,15 @@
    "rightsEvidence": "Commons file page Licensing section: \"This image was originally posted to Flickr. Its license was verified as 'cc-by-2.0' by the UploadWizard Extension at the time it was transferred to Commons.\" ... \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" Description: \"A pano of the crowd at VRM Day\"; Date 6 April 2015; Author dsearls; Source https://www.flickr.com/photos/52614599@N00/21752050104/.",
    "localFile": "assets/media/vrm-day-crowd-2015.jpg",
    "thumbPx": "960x256",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: I re-fetched the Commons page. 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' is verbatim, and UploadWizard verified 'cc-by-2.0' at transfer. fetch-text --check FOUND for 'A pano of the crowd at VRM Day'. The Date is 6 April 2015, 15:45:23 and the camera location is 37.414478, -122.077553 (EXIF GPS; iPhone 5s). The upstream Flickr page (flickr.com/photos/52614599@N00/21752050104) loads: realname 'Doc Searls', username 'dsearls', pathAlias 'docsearls', dateTaken '2015-04-06 15:45:23', licence creativecommons.org/licenses/by/2.0. So the creator and licence are confirmed at the source.",
+     "Independent: the ProjectVRM blog's March 2015 archive (projectvrm.org/2015/03/, a post by Doc Searls, fetched with a browser User-Agent because fetch-text gets 403) contains verbatim 'VRM Day (6 April) and IIW (7-9 April) in the Computer History Museum in downtown Silicon Valley (101 & Shoreline, Mountain View)'. That confirms the date and the venue. The camera GPS points to the Computer History Museum at 1401 N Shoreline Blvd, which is where lat/lng 37.4145, -122.0776 lies.",
+     "Checked OK: the local file opens (960x256 panorama). It shows about 35-40 people with laptops in a wide ring of chairs around a small round table with a laptop and projector, as the caption and alt text say. The thumbUrl returns HTTP 200. An optional enrichment for the caption: 'at the Computer History Museum in Mountain View, the day before the 20th Internet Identity Workshop (IIW XX)'."
+    ]
+   }
   },
   {
    "id": "european-parliament-hemicycle-strasbourg-2014",
@@ -870,14 +1171,22 @@
    "rightsEvidence": "Commons file page: licensed under the Creative Commons Attribution-Share Alike 3.0 license and the GNU Free Documentation License (license template short names CC BY-SA 3.0, GFDL). Author's permission note: \"Attribution of this image to the author (DAVID ILIFF) is also required ... Suggested attribution: 'Photo by DAVID ILIFF. License: https://creativecommons.org/licenses/by-sa/3.0/'\". Description: \"The Hemicycle of the European Parliament in Strasbourg during a plenary session in 2014.\" Date 5 February 2014.",
    "localFile": "assets/media/european-parliament-hemicycle-strasbourg-2014.jpg",
    "thumbPx": "960x542",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK: I re-fetched the Commons page. The file is dual-licensed: 'This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.' (verbatim) and the 'GNU Free Documentation License, Version 1.2'. Choosing CC BY-SA 3.0 is valid. The permission text is verbatim in the page and contains the suggested attribution 'Photo by DAVID ILIFF. License: https://creativecommons.org/licenses/by-sa/3.0/'; the creditLine follows it. fetch-text --check FOUND for 'The Hemicycle of the European Parliament in Strasbourg during a plenary session in 2014.' The Date is 5 February 2014, the Author is Diliff, and the camera location 48.597447, 7.769683 matches lat/lng.",
+     "Independent: the European Parliament's briefing 'Newsletter - 3-6 February 2014 - Strasbourg plenary session' (europarl.europa.eu/news/en/agenda/briefing/2014-02-03) confirms that 5 February 2014 fell in a Strasbourg plenary week. On the locationNote's GDPR claim: the EP briefing 'Newsletter - 11-14 April 2016 - Strasbourg plenary session' says 'Data protection package up for final vote MEPs will vote on Thursday', and the EP press release 20160407IPR21776 (datetime 2016-04-14) reports the final approval by MEPs 'on Thursday'. So the GDPR was indeed adopted in the Strasbourg plenary on 14 April 2016.",
+     "Checked OK: the local file opens (960x542) and shows the full hemicycle, with blue tiers of occupied desks facing the raised podium, the EU flag and two screens. The caption and alt text are accurate. The thumbUrl returns HTTP 200."
+    ]
+   }
   },
   {
    "id": "shoshana-zuboff-berlin-2019",
    "era": "surveillance",
    "year": "2019",
    "title": "Shoshana Zuboff on surveillance capitalism, Berlin 2019",
-   "caption": "Shoshana Zuboff, author of The Age of Surveillance Capitalism, speaking at the Alexander von Humboldt Institute for Internet and Society's lecture series 'Making Sense of the Digital Society' in Berlin in November 2019. The still is taken from the institute's CC-licensed video of her talk 'Surveillance capitalism and democracy'.",
+   "caption": "Shoshana Zuboff, author of The Age of Surveillance Capitalism, at her event 'Surveillance capitalism and democracy' at the Urania in Berlin on 6 November 2019, part of the lecture series 'Making Sense of the Digital Society' run by the Alexander von Humboldt Institute for Internet and Society (HIIG) and the Federal Agency for Civic Education (bpb), and of Berlin Science Week 2019. The still is taken from HIIG's CC-licensed video of the event.",
    "alt": "Woman with curly dark hair and glasses seated in a red chair, speaking into a handheld microphone",
    "creator": "Alexander von Humboldt Institute for Internet and Society (HIIG)",
    "license": "CC BY 3.0",
@@ -887,25 +1196,34 @@
    "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Shoshana_Zuboff_at_Alexander_von_Humboldt_Institut.jpg",
    "upstreamArchive": "HIIG (YouTube)",
    "upstreamUrl": "https://www.youtube.com/watch?v=fJ0josfRzp4",
-   "lat": 52.52,
-   "lng": 13.405,
-   "locationNote": "Berlin (city-level coordinates); the record places the 6 November 2019 event in Berlin Science Week without naming the venue",
+   "lat": 52.5014,
+   "lng": 13.3481,
+   "locationNote": "Urania Berlin, An der Urania 17, 10787 Berlin (Schöneberg), the venue named on HIIG's event page for 6 November 2019; building-level coordinates from de.wikipedia 'Urania (Berlin)'",
    "verified": true,
    "rightsEvidence": "Commons file page Licensing section: \"This video, screenshot or audio excerpt was released under the Creative Commons license option on YouTube before August 2025. (YouTube changed the license version from CC BY 3.0 to 4.0 on August 1; this was not retroactive.)\" License template: CC BY 3.0. Source: \"Shoshana Zuboff: Surveillance capitalism and democracy at 1:28:39, cropped, brightened\"; Author: Alexander von Humboldt Institut for internet and society. Description: \"The event with Shoshana Zuboff on 6 November is part of the Berlin Science Week 2019\"; \"Her latest book, The Age of Surveillance Capitalism\".",
    "localFile": "assets/media/shoshana-zuboff-berlin-2019.jpg",
    "thumbPx": "960x976",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence OK: I re-fetched the Commons page. 'This file is licensed under the Creative Commons Attribution 3.0 Unported license.' is verbatim, as is 'This video, screenshot or audio excerpt was released under the Creative Commons license option on YouTube before August 2025 . (YouTube changed the license version from CC BY 3.0 to 4.0 on August 1; this was not retroactive.)' Reviewer Leoboudv confirmed the licence on 17 September 2020. The YouTube watch page for fJ0josfRzp4 still shows 'License: Creative Commons Attribution license (reuse allowed)'. Its oEmbed gives the channel as 'Alexander von Humboldt Institut für Internet und Gesellschaft' (@HIIGBerlin) and the title as 'Shoshana Zuboff: Surveillance capitalism and democracy'. The video 'Premiered Nov 11, 2019', which explains the Commons Date of 11 November 2019; the event itself was on 6 November.",
+     "Wrong: the location is off. The HIIG event page (hiig.de/en/events/shoshana-zuboff-surveillance-capitalism-and-democracy/) names the venue verbatim: '06 November 2019 | 7 pm | doors open 6.30 pm Urania Berlin | An der Urania 17 | 10787 Berlin' (fetch-text --check FOUND). The record uses generic Berlin-centre coordinates (52.52, 13.405, near Alexanderplatz) and says the venue is not named. The Urania in Schöneberg is about 4.5 km away, at 52.5014, 13.3481 per de.wikipedia 'Urania (Berlin)' wgCoordinates.",
+     "Imprecise: the caption calls 'Making Sense of the Digital Society' 'the Alexander von Humboldt Institute for Internet and Society's lecture series'. The HIIG page and the Commons description both say that 'The Alexander von Humboldt Institute for Internet and Society (HIIG) and the Federal Agency for Civic Education (bpb) are therefore continuing the Lecture Series Making Sense of the Digital Society', so it is a joint series. The caption also gives only 'November 2019', although the exact date (6 November 2019) is sourced.",
+     "Checked OK: the local file opens (960x976). It shows a woman with curly dark hair and glasses seated in a red chair holding a handheld microphone, so the alt text is accurate. The thumbUrl returns HTTP 200. Note: the HIIG event page carries 'Photos: © Falling Walls Foundation', but that credit covers the event photographs on HIIG's page. This image is a frame from HIIG's own CC BY YouTube video (source at 1:28:39), so the licence claim stands."
+    ]
+   }
   },
   {
    "id": "eko-ai-act-open-letter-strasbourg-2023",
    "era": "agents",
    "year": "2023",
    "title": "Campaigners hand AI Act rapporteurs an open letter, Strasbourg",
-   "caption": "At the European Parliament in Strasbourg on 10 May 2023, the campaign group Ekō delivers to the two co-rapporteurs in charge of the AI Act file a booklet containing its open letter and members' messages. The letter concerned the inclusion of generative AI systems in the upcoming AI Act.",
-   "alt": "Three people standing at a table in a busy parliament lounge, a woman handing blue booklets to two men in suits",
-   "creator": "Ekō (formerly SumOfUs)",
+   "caption": "At the European Parliament in Strasbourg on 10 May 2023, the campaign group Ekō delivers a booklet containing its open letter and members' messages to the two co-rapporteurs in charge of the AI Act file (Brando Benifei and Dragoș Tudorache, per the Parliament). The letter concerned the inclusion of generative AI systems in the upcoming AI Act; the next day the Parliament's internal-market and civil-liberties committees adopted their AI Act negotiating mandate.",
+   "alt": "Three people seated around a low glass table in a busy parliament lounge, a woman handing blue Ekō booklets to two men in suits",
+   "creator": "Thomas Cytrynowicz (Jugaad Prod) for Ekō (formerly SumOfUs)",
    "license": "CC BY 2.0",
-   "creditLine": "Ekō / Flickr / Wikimedia Commons (CC BY 2.0)",
+   "creditLine": "Thomas Cytrynowicz / Ekō / Flickr / Wikimedia Commons (CC BY 2.0)",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EKO_-_AI_ACT_-_Strasbourg_Parliament_-_52886976440.jpg",
    "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/EKO_-_AI_ACT_-_Strasbourg_Parliament_-_52886976440.jpg/960px-EKO_-_AI_ACT_-_Strasbourg_Parliament_-_52886976440.jpg",
    "fullUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/EKO_-_AI_ACT_-_Strasbourg_Parliament_-_52886976440.jpg",
@@ -918,14 +1236,24 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" ... \"This image was originally posted to Flickr by Ekō (formerly SumOfUs) at https://flickr.com/photos/72132190@N08/52886976440. It was reviewed on 11 May 2023 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.\" Description: \"Ekō delivered a booklet to the 2 co-rapporteurs in charge of the file containing our open letter and Ekō members' messages regarding the inclusion of generative AI systems in the functional section of the upcoming AI Act.\" Date 10 May 2023.",
    "localFile": "assets/media/eko-ai-act-open-letter-strasbourg-2023.jpg",
    "thumbPx": "960x640",
-   "thumbCheck": "HTTP 429 (Wikimedia rate limit) at the final check on 2026-09-23; the same URL served the local mirror earlier that day"
+   "thumbCheck": "HTTP 200 image/jpeg (re-checked 2026-09-23 by verifier)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence OK: I re-fetched the Commons page. 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' is verbatim, and FlickreviewR 2 confirmed cc-by-2.0 on 11 May 2023. The upstream Flickr page (flickr.com/photos/72132190@N08/52886976440) loads with the title 'EKO - AI ACT - Strasbourg Parliament', username 'Ekō', pathAlias 'eko_movement', dateTaken '2023-05-10 14:15:21' and licence creativecommons.org/licenses/by/2.0. fetch-text --check FOUND for the full Commons description 'Ekō delivered a booklet to the 2 co-rapporteurs in charge of the file containing our open letter and Ekō members' messages regarding the inclusion of generative AI systems in the functional section of the upcoming AI Act.'",
+     "Attribution incomplete: the file's EXIF on the Commons page names the photographer as 'Author Thomas Cytrynowicz' and the 'Copyright holder' as 'Jugaad Prod - Thomas Cytrynowicz' (fetch-text --check FOUND for 'Jugaad Prod - Thomas Cytrynowicz'). Ekō is the Flickr account and licensor, not the photographer. The creator and creditLine should name the photographer. The CC BY licence granted by Ekō's account stands, as Commons accepted it.",
+     "Alt text wrong: it says the three people are 'standing at a table'. The image shows them seated around a low glass coffee table in lounge chairs. The woman sits in a grey chair, and the man in the centre is seated. The booklets carry the 'EKO' logo.",
+     "Independent: the EP briefing 'Newsletter - 8-11 May 2023 - Strasbourg plenary session' confirms that 10 May 2023 fell in a Strasbourg plenary week. The EP press release 20230505IPR84904 (datetime 2023-05-11) says 'On Thursday, the Internal Market Committee and the Civil Liberties Committee adopted a draft negotiating mandate' on the AI Act. It names the two co-rapporteurs verbatim, 'co-rapporteur Brando Benifei (S&D, Italy)' and 'Co-rapporteur Dragos Tudorache (Renew, Romania)', so the handover came the day before the committee vote. The caption's facts are right. The fix below adds the sourced names and the timing, and does not rely on identifying faces.",
+     "thumbCheck is out of date: it records HTTP 429. I re-checked the thumbUrl today and it returns HTTP 200 image/jpeg. The local file opens (960x640)."
+    ]
+   }
   },
   {
    "id": "generative-ai-agent-architecture-diagram",
    "era": "agents",
    "year": "2024",
    "title": "Anatomy of a generative AI agent",
-   "caption": "A diagram of a generative AI agent, dated 25 March 2024: a prompt passes through preprocessing, a large language model (LLM) and postprocessing. Optional modules for data, tools and other models connect to each stage.",
+   "caption": "A diagram of a generative AI agent, first uploaded to Wikimedia Commons on 25 March 2024 (the version shown was revised on 24 June 2024): a prompt passes through preprocessing, a large language model (LLM) and postprocessing. Dashed links connect optional modules for data, tools and other models to the preprocessing and postprocessing stages, not to the LLM itself, and a dashed loop runs from postprocessing back to preprocessing.",
    "alt": "Block diagram titled 'GenAI Agent': Prompt enters Preprocessing, then LLM, then Postprocessing, with dashed links to boxes labelled Data, Tools and Other models",
    "creator": "Marxav",
    "license": "CC BY-SA 4.0",
@@ -941,14 +1269,23 @@
    "rightsEvidence": "Commons file page Licensing section: \"I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.\" Description: \"Architecture of a generative AI agent that uses a Large Language Model (LLM) and additional optional modules (data, tools, other models).\" Date 25 March 2024; Author Marxav.",
    "localFile": "assets/media/generative-ai-agent-architecture-diagram.jpg",
    "thumbPx": "500x323",
-   "thumbCheck": "HTTP 429 (Wikimedia rate limit) at the final check on 2026-09-23; the same URL served the local mirror earlier that day"
+   "thumbCheck": "HTTP 200 image/png (re-checked 2026-09-23 by verifier)",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Licence OK: I re-fetched the Commons page. The self-publication line 'I, the copyright holder of this work, hereby publish it under the following license:' and 'This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.' are verbatim. fetch-text --check FOUND for 'Architecture of a generative AI agent that uses a Large Language Model (LLM) and additional optional modules (data, tools, other models).' The Date is 25 March 2024 and the Author is Marxav, own work.",
+     "Caption wrong: it says the optional modules 'connect to each stage'. In the diagram, which I viewed and upscaled from the local file, the dashed lines join Data, Tools and Other models only to the Preprocessing and Postprocessing boxes. The LLM box has no link to them. There is also a dashed loop from Postprocessing back to Preprocessing, which the caption leaves out.",
+     "Date nuance: the file history shows that the version served now, and mirrored locally (744x480 original, 500x323 local), is Marxav's revision of 24 June 2024, 'deleted the direction of 2 arrows and moved 3 blue boxes in agent' (fetch-text --check FOUND). The 25 March 2024 date is the first upload. 'dated 25 March 2024' is therefore not exactly the picture shown.",
+     "thumbCheck is out of date: it records HTTP 429. I re-checked the thumbUrl today and it returns HTTP 200 image/png. The local file opens (500x323)."
+    ]
+   }
   },
   {
    "id": "ai-index-2024-nervousness-about-ai-by-country",
    "era": "agents",
    "year": "2023-2024",
    "title": "Where people say AI makes them nervous (AI Index 2024)",
-   "caption": "A chart from Stanford University's 2024 AI Index showing the share of people in each country who say AI makes them nervous, from Ipsos data gathered in 2023: 69% in Australia, 65% in Great Britain and 63% in Canada and the United States. Stanford HAI licensed the chart for Wikimedia Commons by email permission.",
+   "caption": "A chart from Stanford University's 2024 AI Index covering ten of the 31 countries Ipsos surveyed online in May and June 2023. It shows the share of adults who agreed that 'products and services using artificial intelligence make me nervous': 69% in Australia, 65% in Great Britain and 63% in Canada and the United States (New Zealand, also at 63%, is not shown). Stanford HAI gave emailed permission for the chart to be published on Wikimedia Commons under CC BY-SA 4.0.",
    "alt": "Bar chart titled 'Global opinions: Where people say AI makes them nervous, 2023', with purple bars for Australia 69%, Great Britain 65%, Canada 63%, United States 63%, India 58%, France 52%, Spain 51%, Belgium 50%, Germany 46% and South Korea 44%",
    "creator": "Stanford Institute for Human-Centered Artificial Intelligence (AI Index); data Ipsos",
    "license": "CC BY-SA 4.0",
@@ -965,7 +1302,51 @@
    "rightsEvidence": "Commons file page Permission: \"The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page\" (VRT ticket #2024060510011799); license template CC BY-SA 4.0. Author: \"Stanford Institute for Human-Centered Artificial Intelligence (permission obtained by email from the AI index research manager)\". Description: \"Chart representing the percentage of people reporting nervousness about AI, by country. The data was gathered by Ipsos in 2023, and the chart comes from Stanford University's 2024 AI index.\" Percentages read from the chart image.",
    "localFile": "assets/media/ai-index-2024-nervousness-about-ai-by-country.jpg",
    "thumbPx": "960x640",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "sources": [
+    {
+     "institution": "Ipsos",
+     "title": "Global Views on A.I. 2023 (Ipsos AI Monitor), July 2023",
+     "date": "2023-07",
+     "url": "https://www.ipsos.com/sites/default/files/ct/news/documents/2023-07/Ipsos%20Global%20AI%202023%20Report-WEB_0.pdf",
+     "quote": "Base: 22,816 adults under the age of 75 across 31 countries, interviewed May 26 – June 9, 2023 -- online only in all countries except India.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. On the same page (p.10), under 'Products and services using artificial intelligence make me nervous' (FOUND), the country values are Australia 69%, Great Britain 65%, Canada 63%, New Zealand 63%, United States 63%, Ireland 62%, India 58% ... Japan 23%, with a global country average of 52%. The report also says 'Nervousness is highest in all predominantly Anglophone countries and lowest in Japan, Korea and Eastern Europe.' (FOUND)."
+    },
+    {
+     "institution": "Stanford Institute for Human-Centered Artificial Intelligence (AI Index)",
+     "title": "Artificial Intelligence Index Report 2024, Chapter 9: Public Opinion",
+     "date": "2024-04-15",
+     "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter9.pdf",
+     "quote": "Opinions about AI by country (% agreeing with statement), 2023",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND, as is 'Source: Ipsos, 2023 | Chart: 2024 AI Index report' and 'level of nervousness about AI (23%)' (Japan). The heat-map row 'Products and services using artificial intelligence make me nervous' gives the same ten values as the Commons chart. The aiindex.stanford.edu copy of this PDF returns 403 to scripts, so the HAI S3 copy was used."
+    },
+    {
+     "institution": "Stanford Institute for Human-Centered Artificial Intelligence",
+     "title": "AI Index: State of AI in 13 Charts (Shana Lynch)",
+     "date": "2024-04-15",
+     "url": "https://hai.stanford.edu/news/ai-index-state-ai-13-charts",
+     "quote": "When asked in a survey about whether AI products and services make you nervous, 69% of Aussies and 65% of Brits said yes.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the upstream page named as the Commons file's Source, and it embeds the same chart image."
+    }
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Checked OK, licence: Commons API extmetadata (re-queried 2026-09-23) returns LicenseShortName 'CC BY-SA 4.0' and LicenseUrl creativecommons.org/licenses/by-sa/4.0, AttributionRequired true, Artist 'Stanford Institute for Human-Centered Artificial Intelligence (permission obtained by email from the AI index research manager)', DateTimeOriginal 2024-04-15. The page HTML contains 'This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.' The rightsEvidence quotes (VRT permission sentence, ticket #2024060510011799, Author line, Description) all return FOUND with fetch-text.py --check. The licence is free (CC BY-SA 4.0), so the image can be used.",
+     "Checked OK, local file: assets/media/ai-index-2024-nervousness-about-ai-by-country.jpg opens as a 960x640 JPEG. The title, source line and all ten bars match the alt text exactly (AU 69, GB 65, CA 63, US 63, IN 58, FR 52, ES 51, BE 50, DE 46, KR 44). thumbUrl returns HTTP 200 image/jpeg.",
+     "Checked OK, upstream: hai.stanford.edu/news/ai-index-state-ai-13-charts exists ('AI Index: State of AI in 13 Charts', Shana Lynch, April 15, 2024) and embeds the same chart (AIIndex_2024_StateofAI_BLOG_13.jpg). 'When asked in a survey about whether AI products and services make you nervous, 69% of Aussies and 65% of Brits said yes.' returns FOUND. Stanford campus coordinates (37.4275, -122.1697) are right.",
+     "Independent check of the numbers: AI Index 2024 Chapter 9 (Figure 'Opinions about AI by country (% agreeing with statement), 2023', Source: Ipsos, 2023) and Ipsos 'Global Views on A.I. 2023' (July 2023), p.10, both give Australia 69%, Great Britain 65%, Canada 63%, United States 63%, India 58%, France 52%, Spain 51%, Belgium 50%, Germany 46%, South Korea 44%. Every figure in the caption and alt text is correct.",
+     "Precision problem 1, population and wording: the survey statement was 'Products and services using artificial intelligence make me nervous' (% agree very or somewhat). Ipsos asked 22,816 adults under 75 in 31 countries between May 26 and June 9, 2023. The survey was online-only except in India, and the India sample is 'more urban, more educated, and/or more affluent than the general population'. The caption says 'people ... who say AI makes them nervous', which repeats the chart's shorthand title rather than the question actually asked.",
+     "Precision problem 2, selection: the chart shows 10 of the 31 countries surveyed. It leaves out New Zealand (63%, tied with Canada and the US) and Ireland (62%), both of which rank above India. The caption's 'in each country' could be read as covering every country, and HAI's own alt text ('Australia ..., Great Britain ..., and Canada at 63% top the list') can make the chart look like a complete ranking. The corrected caption states that the chart is a selection, so the page does not present it as 'the most nervous countries'. Japan was lowest at 23% and is not shown.",
+     "Minor: 'Stanford HAI licensed the chart ... by email permission' is basically right. More exactly, the uploader got permission by email from the AI Index research manager, and Wikimedia's Volunteer Response Team archived it under ticket #2024060510011799, approving publication under CC BY-SA 4.0. The corrected caption uses that wording."
+    ]
+   }
   },
   {
    "id": "doc-searls-2020",
@@ -989,7 +1370,18 @@
    "rightsEvidence": "Commons file page Licensing section: \"This file is licensed under the Creative Commons Attribution 2.0 Generic license.\" ... \"This image was originally posted to Flickr by dsearls at https://flickr.com/photos/52614599@N00/49794830927. It was reviewed on 14 October 2022 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.\" Description: \"A headshot of Doc Searls\"; Date 9 March 2020.",
    "localFile": "assets/media/doc-searls-2020.jpg",
    "thumbPx": "900x1200",
-   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)"
+   "thumbCheck": "HTTP 200 image/jpeg (checked 2026-09-23)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK, licence: Commons API extmetadata (re-queried 2026-09-23) returns LicenseShortName 'CC BY 2.0' and LicenseUrl creativecommons.org/licenses/by/2.0, Artist 'Doc Searls' (linked to flickr.com/people/52614599@N00), ImageDescription 'A headshot of Doc Searls', DateTimeOriginal '2020-03-09 11:36', GPS 40.855677 / -73.934967. The page HTML contains 'This file is licensed under the Creative Commons Attribution 2.0 Generic license.' The FlickreviewR sentence ('... reviewed on 14 October 2022 by FlickreviewR 2 and was confirmed to be licensed under the terms of the cc-by-2.0.') and 'A headshot of Doc Searls' return FOUND with fetch-text.py --check.",
+     "Checked OK, upstream: the Flickr photo page (flickr.com/photos/52614599@N00/49794830927, which redirects to /photos/docsearls/) is live. Its embedded data shows ownerNsid 52614599@N00, realname 'Doc Searls', username 'dsearls', license id 4 (links to creativecommons.org/licenses/by/2.0/), title '2020_03_09_headshots_cr_03', description 'A headshot of Doc Searls' (--check FOUND) and 'Taken on March 9, 2020'. The date and CC BY 2.0 appear in the raw HTML, but fetch-text's block extractor misses them because the page is rendered by script. So the claim that 'Searls posted it to his own Flickr account under a CC BY 2.0 licence' holds.",
+     "Checked OK, creator: the EXIF data on the Commons page gives an Apple iPhone 11 with a 2.71 mm lens, which is the phone's front (selfie) camera. That supports crediting Searls himself as the photographer, not just the uploader.",
+     "Checked OK, place: reverse-geocoding the file's GPS (OpenStreetMap Nominatim) gives Overlook Terrace, Hudson Heights, Manhattan, New York, NY 10033. 'New York City' is correct, and lat/lng 40.8557, -73.935 match. The 'from Santa Barbara, USA' in the Commons Author line is the location on Searls's Flickr profile, not where the photo was taken, so it does not conflict. The caption rightly attributes the location to the camera GPS.",
+     "Checked OK, local file: assets/media/doc-searls-2020.jpg opens as a 900x1200 JPEG (from a 2316x3088 original) showing Searls in a hat and denim shirt/jacket in front of a white door. thumbUrl returns HTTP 200 image/jpeg.",
+     "Nit, optional: the hat's crown samples as dark navy (mean RGB about 31,40,66) and the brim is near black. 'black wide-brimmed hat' in the alt text is acceptable, but 'dark navy wide-brimmed hat' would be more exact. The record makes no claim about Searls's role in IEEE 7012 or MyTerms, so there was nothing further to verify on that."
+    ]
+   }
   }
  ]
 }

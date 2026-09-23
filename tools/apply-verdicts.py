@@ -50,18 +50,36 @@ def arrays(doc):
                     yield f'{k}.{k2}', v2
 
 
+def same(r, rid):
+    """Records without an id are named by the verifiers from another field:
+    a scenario 'step-3', a milestone by its date, an agreement type by its
+    name."""
+    rid = str(rid)
+    if r.get('id') == rid or r.get('code') == rid:
+        return True
+    if 'id' not in r:
+        if r.get('step') is not None and rid in (f"step-{r['step']}", str(r['step'])):
+            return True
+        if r.get('date') and rid.startswith(str(r['date'])):
+            return True
+        for f in ('type', 'name'):
+            if r.get(f) and rid == r[f]:
+                return True
+    return False
+
+
 def find(doc, kind, rid):
     key = KIND_KEYS.get(kind, kind)
     cands = []
     for k, arr in arrays(doc):
         if k == key or k.endswith('.' + key) or key not in KIND_KEYS.values():
             for i, r in enumerate(arr):
-                if r.get('id') == rid or r.get('code') == rid:
+                if same(r, rid):
                     cands.append((k, arr, i))
     if not cands:  # kind label did not match an array name: search everything
         for k, arr in arrays(doc):
             for i, r in enumerate(arr):
-                if r.get('id') == rid or r.get('code') == rid:
+                if same(r, rid):
                     cands.append((k, arr, i))
     if not cands and isinstance(doc.get(kind), dict):  # a single object, e.g. "standard"
         return (kind, None, doc[kind])
@@ -89,6 +107,8 @@ def set_path(obj, path, value):
 def source_list(rec):
     if isinstance(rec.get('sources'), list):
         return rec['sources']
+    if isinstance(rec.get('evidence'), list):  # the argument records
+        return rec['evidence']
     if isinstance(rec.get('source'), list):
         return rec['source']
     if isinstance(rec.get('source'), dict):

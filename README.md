@@ -95,6 +95,9 @@ source: {
 - Prefer primary texts: statutes on official sites, judgments on court sites, treaties and guidelines from the UN, Council of Europe and OECD, specifications from W3C, IETF and IEEE, regulator decisions and reports, then peer-reviewed scholarship.
 - A quote is CONFIRMED only when `tools/fetch-text.py --check` finds it on the cited page and it supports the claim.
 - Hero and footer numbers must be `CONFIRMED`.
+- Wikipedia is a lead, never a source: the build hides a Wikipedia citation when the record has a better one and marks it `PENDING` otherwise.
+- An image is published only when its licence was confirmed on its record page; a Commons tag alone is not enough.
+- The IEEE 7012 section is checked against the standard's own text (free through the IEEE GET Program), clause by clause; what comes only from MyTerms or Customer Commons is attributed to them.
 - Popular claims that did not survive checking are shown as such in the Myths section.
 
 ## Planning documents

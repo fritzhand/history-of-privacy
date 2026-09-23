@@ -24,6 +24,7 @@ Every asset path is relative, so the site works unchanged under the `/history-of
 | The surveillance economy | Fines, breaches, state laws, real-time bidding |
 | Human cost | "When Records Were Turned on People", each row cited |
 | IEEE 7012 / MyTerms | The standard, its principles and its launch agreements |
+| Where 7012 sits | The twelve standards of IEEE's GET Program for AI Ethics and Governance, each read by its own scope; IEEE 7002 (the organisation's privacy process) beside IEEE 7012 (the person's terms) |
 | The age of agents | The case for person-proffered terms, claim by claim with evidence; an illustrative agent errand; the counterpoints |
 | Jurisdiction matrix | Which privacy laws oblige a business to honour an automated or machine-readable choice |
 | Myths | Popular claims that did not survive checking |

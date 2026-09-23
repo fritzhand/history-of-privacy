@@ -65,6 +65,12 @@ the exact quote, then rebuild (`node tools/build-data.mjs`).
    2000, KAS 403); "over 1.5 million" roll-film cameras by 1898 (Met essay, 429;
    name its journal); about 80 cases citing Warren and Brandeis by 1960 (Gajda).
 
+10. **IEEE 7002-2022 and the P7012 PAR.** The full text of IEEE 7002 (Data
+   Privacy Process) needs an IEEE sign-in and was not read; does it mention
+   consent, machine-readable terms or P7012? The P7012 PAR PDF linked from
+   IEEE SA's 2018 statement returns HTTP 401. Both would test the panel's
+   "neither text points to the other".
+
 ## Tier 2 — claims to verify or retire
 
 - **Wayback snapshots.** Most PENDING snapshots now sit beside a CONFIRMED copy

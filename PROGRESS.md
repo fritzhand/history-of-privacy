@@ -98,10 +98,20 @@ Xplore bot-challenges scripts. What it changed:
 - **"The latest of the 7000 series."** True when Doc Searls wrote it in
   January 2026; IEEE 7014.1-2026 (emulated empathy in general-purpose AI
   "partners") followed on 12 June 2026. The timeline entry is now dated.
-- **No cross-reference found.** IEEE 7012's text cites no other standard in
-  the series, and no public IEEE statement found relates it to IEEE 7002 (Data
-  Privacy Process); IEEE SA's 2018 statement lists both among its 7000-series
-  projects. Whether 7002 mentions P7012 is unknown (its text needs a sign-in).
+- **No cross-reference, either way.** IEEE 7012 cites no other standard in the
+  series; IEEE 7002 (Data Privacy Process), read in full from a copy the
+  author downloaded with an IEEE account, cites none of the 7000 series
+  either. No public IEEE statement found relates the two; IEEE SA's 2018
+  statement lists both among its 7000-series projects. The one person on both
+  working groups is John Wunderlich (7002's vice chair).
+- **7002 beside 7012.** 7002 describes the public privacy policy as something
+  "an organization publishes to notify potential data subjects"; the only
+  agreements it names are with third parties or inside the organisation, and
+  it mentions consent once. 7012's agent "shall specify that the individual's
+  chosen terms shall supersede any Terms of Use (TOU) or Privacy Policy".
+  7002 traces its principles to the US government's 1973 Fair Information
+  Practices, linking the HEW report this site quotes. The PDF itself is IEEE's
+  licensed copy and is not in the repository; the site quotes short passages.
 - **Source audit.** Side sources (a section's closing note, a person's quote)
   were not counted or validated before; they are now.
 

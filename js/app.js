@@ -18,6 +18,7 @@
  *   9. Tables — lineage, harms, jurisdictions
  *  10. Concepts, Who-Writes-the-Terms, Principles, Figure Cards
  *  11. IEEE 7012, the Argument, the Scenario, Counterpoints, Myths
+ *  11b. The Essay, the World Map, the People
  *  12. Photo Archive, Stat Blocks, Source Audit
  *  13. Theme, Resize, Main Init
  */
@@ -1600,6 +1601,242 @@ function buildMyths() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   11b. THE ESSAY, THE WORLD, THE PEOPLE
+═══════════════════════════════════════════════════════════════ */
+/* The opening essay. A paragraph's text may carry {n} markers, which point
+   at its own nth source; each becomes a superscript note number linked to
+   the numbered notes beside the essay. Notes are numbered across the whole
+   essay, and a document cited twice keeps its first number. */
+function buildEssay() {
+  const body = document.getElementById('essay-body');
+  const list = document.getElementById('essay-notes');
+  const es = D().essay;
+  if (!body || !list) return;
+  if (!es || !(es.paragraphs || []).length) { const s = document.getElementById('essay'); if (s) s.hidden = true; return; }
+  const t = document.getElementById('essay-title'); if (t && es.title) t.textContent = es.title;
+  const dk = document.getElementById('essay-dek'); if (dk && es.dek) dk.textContent = es.dek;
+  const notes = [], noteIdx = new Map();
+  const noteNo = s => {
+    const k = (s.url || '') + '|' + (s.quote || s.title || '');
+    if (!noteIdx.has(k)) { notes.push(s); noteIdx.set(k, notes.length); }
+    return noteIdx.get(k);
+  };
+  const cite = nums => `<sup class="essay-cite">${nums.map(n => `<a href="#essay-note-${n}" aria-label="Note ${n}">${n}</a>`).join(',')}</sup>`;
+  body.innerHTML = es.paragraphs.map(p => {
+    const srcs = [].concat(p.source || []);
+    let html = esc(p.text);
+    let used = false;
+    html = html.replace(/\{(\d+(?:,\d+)*)\}/g, (_, g) => {
+      used = true;
+      const nums = g.split(',').map(i => srcs[+i - 1]).filter(Boolean).map(noteNo);
+      return nums.length ? cite(nums) : '';
+    });
+    if (!used && srcs.length) html += cite(srcs.map(noteNo));
+    return (p.heading ? `<h3 class="essay-h">${esc(p.heading)}</h3>` : '') + `<p class="essay-p">${html}</p>`;
+  }).join('');
+  list.innerHTML = notes.map((s, i) => `<li id="essay-note-${i + 1}">${s.quote ? `<q>${esc(s.quote.length > 220 ? s.quote.slice(0, 217).replace(/\s+\S*$/, '') + '…' : s.quote)}</q> — ` : ''}${sourceHtml(s)}</li>`).join('');
+}
+
+/* Around the world: one dot per country's first comprehensive law. */
+let worldMap = null;
+const worldMkrs = [];
+function decadeOf(y) { return Math.floor(y / 10) * 10; }
+function decadeColor(y) {
+  const d = Math.min(Math.max(decadeOf(y), 1970), 2020);
+  return cssVar('--dec-' + d, '#6CB2BA');
+}
+
+function worldPopup(l) {
+  return `<div class="map-popup-date" style="color:${decadeColor(l.year)}">${esc(l.year)}${l.inForce && l.inForce !== l.year ? ` · in force ${esc(l.inForce)}` : ''}</div>` +
+    `<div class="map-popup-title">${esc(l.country)}</div>` +
+    `<div class="map-popup-body">${esc(l.law)}${l.regulator ? ` · ${esc(l.regulator)}` : ''}</div>` +
+    (l.note ? `<div class="map-popup-body" style="margin-top:4px">${esc(l.note)}</div>` : '') +
+    `<div class="map-popup-source">${sourceHtml(l.source)}</div>`;
+}
+
+function initWorldMap() {
+  const el = document.getElementById('world-map-container');
+  const laws = D().worldLaws || [];
+  if (!el || typeof L === 'undefined') return;
+  if (!laws.length) { const s = document.getElementById('world'); if (s) s.hidden = true; return; }
+  worldMap = L.map('world-map-container', { center: [20, 10], zoom: 1, minZoom: 1, zoomControl: true, scrollWheelZoom: false, worldCopyJump: true });
+  addBasemap(worldMap);
+  [...laws].sort((a, b) => a.year - b.year).forEach(l => {
+    const m = L.circleMarker([l.lat, l.lng], { radius: 6, fillColor: decadeColor(l.year), color: T.markerStroke, weight: 1, fillOpacity: 0.9, opacity: 1 })
+      .bindPopup(worldPopup(l), { maxWidth: 280 }).addTo(worldMap);
+    worldMkrs.push({ m, l, shown: true });
+  });
+  const leg = document.getElementById('decade-legend');
+  if (leg) leg.innerHTML = [1970, 1980, 1990, 2000, 2010, 2020].map(d =>
+    `<span><i style="background:${decadeColor(d)}"></i>${d}s · ${laws.filter(l => decadeOf(l.year) === d || (d === 1970 && l.year < 1970)).length}</span>`).join('');
+  const tbody = document.getElementById('world-list-body');
+  if (tbody) tbody.innerHTML = [...laws].sort((a, b) => a.year - b.year || a.country.localeCompare(b.country)).map(l => `
+    <tr data-year="${esc(l.year)}"><td class="y">${esc(l.year)}</td>
+      <td><span class="c">${esc(l.country)}</span><br>${esc(l.law)}</td>
+      <td>${sourceHtml([].concat(l.source || [])[0], { badge: true })}</td></tr>`).join('');
+  const slider = document.getElementById('world-slider');
+  if (slider) {
+    const min = Math.min(...laws.map(l => l.year));
+    slider.min = Math.min(1970, min);
+    slider.max = (D().meta && D().meta.asOfYear) || 2026;
+    slider.value = slider.max;
+    slider.addEventListener('input', () => updateWorld(+slider.value), { passive: true });
+    updateWorld(+slider.value);
+  }
+}
+
+function updateWorld(year) {
+  const laws = D().worldLaws || [];
+  let n = 0;
+  worldMkrs.forEach(o => {
+    const on = o.l.year <= year;
+    if (on) n++;
+    if (on !== o.shown) {
+      o.m.setStyle({ fillOpacity: on ? 0.9 : 0, opacity: on ? 1 : 0 });
+      if (o.m._path) o.m._path.style.pointerEvents = on ? '' : 'none';
+      o.shown = on;
+    }
+  });
+  const y = document.getElementById('world-year'); if (y) y.textContent = String(year);
+  const c = document.getElementById('world-count');
+  if (c) c.innerHTML = `<strong>${n}</strong> of the ${laws.length} countries in this list had a first law by ${year}`;
+  document.querySelectorAll('#world-list-body tr').forEach(tr => tr.classList.toggle('is-future', +tr.dataset.year > year));
+}
+
+function restyleWorld() {
+  worldMkrs.forEach(({ m, l }) => m.setStyle({ fillColor: decadeColor(l.year), color: T.markerStroke }));
+  const leg = document.getElementById('decade-legend');
+  if (leg) leg.querySelectorAll('i').forEach((i, k) => { i.style.background = decadeColor(1970 + 10 * k); });
+}
+
+/* First laws by decade, stacked by region: counted from this site's own
+   list, and labelled as such. */
+function initWorldRegionsChart() {
+  const ctx = document.getElementById('chart-world-regions');
+  const laws = D().worldLaws || [];
+  if (!ctx || !laws.length) return;
+  const decades = [1970, 1980, 1990, 2000, 2010, 2020];
+  const regions = (D().meta && D().meta.lawRegions) || [...new Set(laws.map(l => l.region))];
+  const cols = [V.v5, V.v6, PC.rights, PC.dataprotection, PC.castle, PC.cookies, PC.surveillance, V.v3];
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: decades.map(d => d + 's'),
+      datasets: regions.map((r, i) => ({
+        label: r, stack: 's',
+        data: decades.map(d => laws.filter(l => l.region === r && Math.min(Math.max(decadeOf(l.year), 1970), 2020) === d).length),
+        backgroundColor: hexA(cols[i % cols.length], 0.82), borderColor: cols[i % cols.length], borderWidth: 1, borderRadius: 2
+      }))
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: T.textDim, boxWidth: 10, font: { size: 10 } } },
+        tooltip: { ...TIP, callbacks: {
+          label: c => ` ${c.dataset.label}: ${c.raw}`,
+          footer: items => {
+            const d = decades[items[0].dataIndex], r = items[0].dataset.label;
+            return wrap(laws.filter(l => l.region === r && Math.min(Math.max(decadeOf(l.year), 1970), 2020) === d).map(l => l.country).join(', '), 60);
+          }
+        } }
+      },
+      scales: {
+        x: mkScale({ stacked: true, grid: { display: false } }),
+        y: mkScale({ stacked: true, min: 0, title: axisTitle('Countries (first comprehensive law)'), ticks: { color: T.text, precision: 0 } })
+      }
+    }
+  });
+  const src = document.getElementById('chart-world-regions-source');
+  if (src) src.textContent = `DERIVED: counted from the ${laws.length} cited country records in the list above; each record carries its own source.`;
+}
+
+function buildFrameworks() {
+  const tbody = document.getElementById('frameworks-table-body');
+  const rows = D().frameworks || [];
+  if (!tbody) return;
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td class="country-cell wrap" style="min-width:180px">${esc(r.name)}</td>
+      <td class="wrap" style="min-width:120px;font-size:12px;color:var(--text-secondary)">${esc(r.body)}</td>
+      <td style="font-variant-numeric:tabular-nums">${esc(r.year)}</td>
+      <td class="wrap" style="min-width:110px"><span class="role-badge">${esc(r.force)}</span></td>
+      <td class="wrap" style="min-width:200px;max-width:340px;font-size:12px;color:var(--text-secondary);line-height:1.5">${esc(r.reach || '')}
+        <div class="table-source">${sourceHtml(r.source)}</div></td>
+    </tr>`).join('');
+}
+
+function buildPolicyModels() {
+  const box = document.getElementById('model-grid');
+  if (!box) return;
+  box.innerHTML = (D().policyModels || []).map(m => `
+    <div class="model-card" style="--model-accent:${esc(paint(m.color, 'var(--era-dataprotection)'))}">
+      <div class="model-name">${esc(m.name)}</div>
+      <div class="model-ex">${esc(m.exemplars || '')}</div>
+      <div class="model-desc">${esc(m.description)}</div>
+      <div class="model-src">${sourceHtml(m.source)}</div>
+    </div>`).join('');
+}
+
+/* The people: one card each, filterable by the group the editorial layer
+   assigns (code, clubs and advocates, researchers, disclosure, identity). */
+function initials(name) {
+  return String(name || '').split(/\s+/).filter(Boolean).map(w => w[0]).slice(0, 2).join('').toUpperCase();
+}
+
+function buildPeople() {
+  const grid = document.getElementById('people-grid');
+  const people = D().people || [];
+  if (!grid) return;
+  if (!people.length) { const s = document.getElementById('people'); if (s) s.hidden = true; return; }
+  const groups = D().peopleGroups || [];
+  const gcol = Object.fromEntries(groups.map(g => [g.key, paint(g.color, V.v5)]));
+  const render = key => {
+    grid.innerHTML = people.filter(p => !key || p.group === key).map(p => {
+      const a = p.portrait ? mediaById(p.portrait) : null;
+      const q = p.quote ? `<blockquote class="person-quote">&ldquo;${esc(p.quote)}&rdquo;${p.quoteSource ? `<cite>${sourceHtml(p.quoteSource)}</cite>` : ''}</blockquote>` : '';
+      const kw = p.keyWork && p.keyWork.title
+        ? `<p class="person-work">Key work: ${p.keyWork.url ? `<a href="${esc(p.keyWork.url)}" target="_blank" rel="noopener">${esc(p.keyWork.title)}</a>` : esc(p.keyWork.title)}${p.keyWork.year ? ` (${esc(p.keyWork.year)})` : ''}</p>` : '';
+      return `
+        <article class="person-card" style="--person-accent:${gcol[p.group] || V.v5}">
+          <div class="person-head">
+            <div class="person-portrait">${a
+              ? `<img src="${esc(a.thumbUrl)}" alt="${esc(a.alt || p.name)}" loading="lazy" referrerpolicy="no-referrer" title="${esc(a.creditLine || '')}" onerror="this.parentElement.innerHTML='<span class=&quot;person-initials&quot;>${esc(initials(p.name))}</span>'" />`
+              : `<span class="person-initials">${esc(initials(p.name))}</span>`}</div>
+            <div>
+              <div class="person-roles">${esc(p.roles || '')}</div>
+              <h3 class="person-name">${esc(p.name)}</h3>
+              ${p.handle ? `<div class="person-handle">${esc(p.handle)}</div>` : ''}
+              <div class="person-years">${esc([p.years, p.place].filter(Boolean).join(' · '))}</div>
+            </div>
+          </div>
+          <div class="person-body">
+            ${q}
+            <p class="person-text">${esc(p.contribution || '')}</p>
+            ${p.influence ? `<p class="person-text">${esc(p.influence)}</p>` : ''}
+            ${kw}
+            ${p.thread ? `<p class="person-thread">${esc(p.thread)}</p>` : ''}
+            ${a ? `<p class="person-src">Portrait: ${esc(a.creditLine || '')}</p>` : ''}
+            <p class="person-src">${sourceHtml(p.source)}</p>
+          </div>
+        </article>`;
+    }).join('');
+  };
+  const filter = document.getElementById('people-filter');
+  if (filter && groups.length) {
+    const present = groups.filter(g => people.some(p => p.group === g.key));
+    filter.innerHTML = `<button type="button" class="archive-chip is-on" data-g="">All ${people.length}</button>` +
+      present.map(g => `<button type="button" class="archive-chip" data-g="${esc(g.key)}" style="--chip:${gcol[g.key]}">${esc(g.label)} · ${people.filter(p => p.group === g.key).length}</button>`).join('');
+    filter.onclick = ev => {
+      const b = ev.target.closest('.archive-chip');
+      if (!b) return;
+      filter.querySelectorAll('.archive-chip').forEach(x => x.classList.toggle('is-on', x === b));
+      render(b.dataset.g);
+    };
+  }
+  render('');
+}
+
+/* ═══════════════════════════════════════════════════════════════
    12. PHOTO ARCHIVE, STAT BLOCKS, SOURCE AUDIT
 ═══════════════════════════════════════════════════════════════ */
 function buildMediaGrid() {
@@ -1742,6 +1979,7 @@ function buildCharts() {
   initEraChart();
   initEvidenceChart();
   initSandboxCentresChart();
+  initWorldRegionsChart();
   /* A canvas the data layer declares no chart for is hidden with its card,
      rather than shown as an empty frame. */
   document.querySelectorAll('.chart-card canvas').forEach(c => { if (!Chart.getChart(c)) hideCard(c); });
@@ -1772,7 +2010,9 @@ function applyTheme(theme) {
   refreshTheme();
   if (scrollMap)  addBasemap(scrollMap);
   if (sandboxMap) addBasemap(sandboxMap);
+  if (worldMap)   addBasemap(worldMap);
   restyleMarkers();
+  restyleWorld();
   buildPhaseLegend();
   paintSliderTrack();
   const cur = document.querySelector('.scroll-step.is-active');
@@ -1796,6 +2036,7 @@ window.addEventListener('resize', () => {
   _rsTimer = setTimeout(() => {
     if (scrollMap)  scrollMap.invalidateSize();
     if (sandboxMap) sandboxMap.invalidateSize();
+    if (worldMap)   worldMap.invalidateSize();
   }, 220);
 }, { passive:true });
 
@@ -1814,6 +2055,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initScrollMap();
   initSandboxMap();
+  initWorldMap();
 
   buildScrollSteps();
   requestAnimationFrame(() => requestAnimationFrame(initScrollytelling));
@@ -1821,10 +2063,14 @@ document.addEventListener('DOMContentLoaded', () => {
   buildCharts();
   initSlider();
 
+  buildEssay();
   buildConceptCards();
   buildFlipSteps();
   buildFipps();
   buildFigureCards();
+  buildFrameworks();
+  buildPolicyModels();
+  buildPeople();
   buildLineageTable();
   buildHarmsTable();
   buildStandard();

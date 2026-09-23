@@ -1,0 +1,275 @@
+{
+ "slice": "internet",
+ "notes": "",
+ "events": [
+  {
+   "id": "montulli-invents-the-http-cookie-1994",
+   "displayDate": "Summer 1994",
+   "year": 1994,
+   "title": "Lou Montulli invents the web cookie at Netscape",
+   "place": "Mosaic Communications Corporation (renamed Netscape Communications), Mountain View, California",
+   "lat": 37.3886,
+   "lng": -122.0822,
+   "summary": "Around June or July 1994, Netscape engineer Lou Montulli, asked how a shopping server could remember a customer's cart, devised a way for a web server to hand the browser a small piece of state that the browser would send back only to that server. He later wrote that he had opposed the rival idea of a single unique identifier per browser because it could be used to track a user at every website. Netscape's preliminary 'Persistent Client State HTTP Cookies' specification described shopping carts, stored registration details and per-user preferences as the intended uses.",
+   "significance": "The web's first memory mechanism was designed by the site for the site: the person's browser stored whatever the server chose to set, and the person said nothing.",
+   "sources": [
+    {
+     "institution": "Lou Montulli (personal blog, 'The irregular musings of Lou Montulli')",
+     "title": "The reasoning behind Web Cookies",
+     "date": "2013-05-14",
+     "url": "https://montulli.blogspot.com/2013/05/the-reasoning-behind-web-cookies.html",
+     "quote": "The goal was to create a session identifier and general \"memory\" mechanism for websites that didn't allow for cross site tracking.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Inventor's own retrospective account. The blog's post body sits in div elements that tools/fetch-text.py does not extract; the quote was verified against the full page text. Montulli also writes: 'I was very much against this concept because the unique identifier could be used to track a user at every website.' He dates the originating meeting to 'Sometime around July of 1994'; the New York Times (2001) says June 1994."
+    },
+    {
+     "institution": "Netscape Communications Corporation (Internet Archive snapshot of home.netscape.com, 9 July 1997)",
+     "title": "Persistent Client State HTTP Cookies — Preliminary Specification",
+     "date": "1997-07-09",
+     "url": "https://web.archive.org/web/19970709162848/http://home.netscape.com/newsref/std/cookie_spec.html",
+     "quote": "Shopping applications can now store information about the currently selected items, for fee services can send back registration information and free the client from retyping a user-id on next connection, sites can store per-user preferences on the client, and have the client supply those preferences every time that site is connected to.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The specification itself is undated; the date given is that of the earliest archived copy used here, not of authorship (1994)."
+    },
+    {
+     "institution": "The New York Times (Internet Archive snapshot)",
+     "title": "John Schwartz, 'Giving Web a Memory Cost Its Users Privacy'",
+     "date": "2001-09-04",
+     "url": "https://web.archive.org/web/20201206124432/https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html",
+     "quote": "One day in June 1994, Lou Montulli sat down at his keyboard to fix one of the biggest problems facing the fledgling World Wide Web -- and, as so often happens in the world of technology, he created another one.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "Read via the Internet Archive; nytimes.com blocks scripted access."
+    }
+   ],
+   "locationNote": "Netscape (then Mosaic Communications) occupied offices on Castro Street, Mountain View, in 1994; coordinates are for downtown Mountain View's Castro Street, approximate."
+  },
+  {
+   "id": "eu-data-protection-directive-95-46-1995",
+   "displayDate": "24 October 1995",
+   "year": 1995,
+   "title": "The EU adopts the Data Protection Directive 95/46/EC",
+   "place": "European Parliament and Council of the European Union, Luxembourg",
+   "lat": 49.6206,
+   "lng": 6.1447,
+   "summary": "Directive 95/46/EC 'on the protection of individuals with regard to the processing of personal data and on the free movement of such data' was signed at Luxembourg on 24 October 1995 and published in the Official Journal L 281 on 23 November 1995. Its Article 7 allowed processing only on listed grounds, the first being that the data subject 'has unambiguously given his consent', and Article 25 allowed transfers to third countries only where they ensured 'an adequate level of protection'. Member States had three years from adoption to transpose it.",
+   "significance": "Made the individual's consent a legal ground for processing across Europe — the legal hook that later cookie banners, and eventually person-proffered terms, would hang on.",
+   "sources": [
+    {
+     "institution": "EUR-Lex, Publications Office of the European Union (Internet Archive snapshot)",
+     "title": "Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995",
+     "date": "1995-10-24",
+     "url": "https://web.archive.org/web/20250115161310/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A31995L0046",
+     "quote": "Member States shall provide that personal data may be processed only if: (a) the data subject has unambiguously given his consent",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "EUR-Lex returns an empty bot-challenge page to scripts; text read from an Internet Archive copy (15 January 2025) of the official EUR-Lex HTML. The same text states 'Done at Luxembourg, 24 October 1995.' and, in Article 25(1), that transfers may take place only if 'the third country in question ensures an adequate level of protection.'"
+    }
+   ],
+   "locationNote": "Signed at Luxembourg ('Done at Luxembourg'); coordinates are the Kirchberg European Convention Center, where the Council meets in April, June and October."
+  },
+  {
+   "id": "financial-times-exposes-cookies-1996",
+   "displayDate": "12 February 1996",
+   "year": 1996,
+   "title": "The Financial Times tells readers their browser is tracking them",
+   "place": "Financial Times, Number One Southwark Bridge, London",
+   "lat": 51.508,
+   "lng": -0.0943,
+   "summary": "On 12 February 1996 the Financial Times published Tim Jackson's column 'This bug in your PC is a smart cookie', explaining that the leading web browser let companies track which pages an individual looked at, when, for how long and in what order. Jackson criticised Netscape for failing to tell users and noted that the only way to disable the feature was to edit or delete the cookie file by hand. Excerpts were reposted within days to the Cyber-Rights mailing list.",
+   "significance": "The first mass-media warning that the web's memory had become an unseen surveillance channel, with no user-facing control.",
+   "sources": [
+    {
+     "institution": "Cyber-Rights mailing list archive (repost by John Whiting, 16 February 1996, of the Financial Times article)",
+     "title": "cr> 18Feb96 Tidbits — 'The way the cookie crumbles'",
+     "date": "1996-02-18",
+     "url": "https://www.cyberrights.cyberjournal.org/cr-18feb96-tidbits/",
+     "quote": "It allows companies to track which Web pages an individual looks at, when, for how long, and in what order.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Contemporaneous excerpted repost headed 'Financial Times [London} February 12 1996 Tim Jackson: THIS BUG IN YOUR PC IS A SMART COOKIE'. The FT original (print, 12 February 1996) is not openly online and was not read; this repost is the earliest accessible text."
+    }
+   ],
+   "locationNote": "The FT's London headquarters at the time (Number One Southwark Bridge)."
+  },
+  {
+   "id": "hipaa-enacted-health-privacy-mandate-1996",
+   "displayDate": "21 August 1996",
+   "year": 1996,
+   "title": "HIPAA orders a plan for health-data privacy",
+   "place": "United States Congress, Capitol, Washington, D.C.",
+   "lat": 38.8899,
+   "lng": -77.0091,
+   "summary": "The Health Insurance Portability and Accountability Act (Public Law 104-191, H.R. 3103) became law on 21 August 1996. Section 264 required the Secretary of Health and Human Services to send Congress, within 12 months, detailed recommendations on standards for the privacy of individually identifiable health information, and to issue regulations herself if Congress had not legislated within 36 months.",
+   "significance": "An early sectoral answer: privacy rules written by and for the data holder (the health system), not terms set by the patient.",
+   "sources": [
+    {
+     "institution": "U.S. Government Publishing Office (GovInfo)",
+     "title": "Public Law 104-191 — Health Insurance Portability and Accountability Act of 1996",
+     "date": "1996-08-21",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/html/PLAW-104publ191.htm",
+     "quote": "the Secretary of Health and Human Services shall submit to the Committee on Labor and Human Resources and the Committee on Finance of the Senate and the Committee on Commerce and the Committee on Ways and Means of the House of Representatives detailed recommendations on standards with respect to the privacy of individually identifiable health information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Approval date from the margin note on the same page: '<<NOTE: Aug. 21, 1996 - [H.R. 3103]>>'."
+    }
+   ],
+   "locationNote": "Legislature's seat; the bill was signed by President Clinton."
+  },
+  {
+   "id": "rfc-2109-unverifiable-third-party-cookies-1997",
+   "displayDate": "February 1997",
+   "year": 1997,
+   "title": "RFC 2109 tells browsers to refuse third-party cookies by default",
+   "place": "RFC Editor, USC Information Sciences Institute, Marina del Rey, California",
+   "lat": 33.9802,
+   "lng": -118.44,
+   "summary": "In February 1997 the IETF published RFC 2109, 'HTTP State Management Mechanism', by David Kristol of Bell Laboratories and Lou Montulli of Netscape, as a proposed standard. It defined 'unverifiable' transactions — requests, such as for embedded images, whose address the user had no chance to review — and said a browser should enable a cookie session in them only within the domain of the page the user chose, with any override defaulting to 'off'. The two dominant browsers did not adopt that default, and advertising networks built cross-site tracking on third-party cookies.",
+   "significance": "The first standards-body attempt to encode a privacy expectation into the protocol — and an early lesson that a privacy default nobody ships has no force.",
+   "sources": [
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force",
+     "title": "RFC 2109: HTTP State Management Mechanism (D. Kristol, L. Montulli)",
+     "date": "1997-02",
+     "url": "https://www.rfc-editor.org/rfc/rfc2109",
+     "quote": "A transaction is unverifiable if the user does not have that option.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same section (4.3.5): 'User agents may offer configurable options that allow the user agent, or any autonomous programs that the user agent executes, to ignore the above rule, so long as these override options default to \"off\".'"
+    },
+    {
+     "institution": "The New York Times (Internet Archive snapshot)",
+     "title": "John Schwartz, 'Giving Web a Memory Cost Its Users Privacy'",
+     "date": "2001-09-04",
+     "url": "https://web.archive.org/web/20201206124432/https://www.nytimes.com/2001/09/04/business/giving-web-a-memory-cost-its-users-privacy.html",
+     "quote": "The Internet Engineering Task Force was pursuing a different tack, however, recommending in 1997 that browsers be set to block any cookie that did not come directly from the site being visited.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "The same article reports that 'neither Netscape nor Microsoft took to heart the recommendation'."
+    }
+   ],
+   "locationNote": "Publisher's location (the RFC Editor was hosted at USC/ISI in 1997); lead author Kristol worked at Bell Laboratories, Murray Hill, New Jersey."
+  },
+  {
+   "id": "coppa-enacted-parental-consent-1998",
+   "displayDate": "21 October 1998",
+   "year": 1998,
+   "title": "COPPA makes verifiable parental consent the rule for children under 13",
+   "place": "United States Congress, Capitol, Washington, D.C.",
+   "lat": 38.8899,
+   "lng": -77.0091,
+   "summary": "The Children's Online Privacy Protection Act was enacted on 21 October 1998. It required the FTC to write rules obliging operators of commercial websites directed to children under 13, or knowingly collecting their data, to notify parents and obtain verifiable parental consent before collecting, using or disclosing a child's personal information. The FTC's final rule was published on 3 November 1999 and took effect on 21 April 2000.",
+   "significance": "America's first online privacy statute put consent at the centre — but as a gate the site must pass, not terms the family sets.",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission (Federal Register, 3 November 1999)",
+     "title": "Children's Online Privacy Protection Rule; Final Rule, 16 CFR Part 312",
+     "date": "1999-11-03",
+     "url": "https://www.ftc.gov/sites/default/files/documents/federal_register_notices/childrens-online-privacy-protection-rule-16-cfr-part-312/991103childrensonlineprivacy.pdf",
+     "quote": "Section 6502 of the Act requires the Commission to enact rules governing the online collection of personal information from children under 13 within one year of the date of the enactment of the COPPA, October 21, 1998.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Same notice: 'The rule will become effective on April 21, 2000.'"
+    },
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Children's Online Privacy Protection Act (statute summary)",
+     "date": "2026",
+     "url": "https://www.ftc.gov/legal-library/browse/statutes/childrens-online-privacy-protection-act",
+     "quote": "(b) obtain verifiable parental consent for the collection, use, or disclosure of children’s personal information",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Undated agency summary page; date is date consulted."
+    }
+   ],
+   "locationNote": "Legislature's seat. COPPA was enacted as part of the omnibus appropriations law of October 1998."
+  },
+  {
+   "id": "ftc-privacy-online-report-1998",
+   "displayDate": "June 1998",
+   "year": 1998,
+   "title": "FTC survey: only 2% of data-collecting websites post a privacy policy",
+   "place": "Federal Trade Commission, 600 Pennsylvania Avenue NW, Washington, D.C.",
+   "lat": 38.8927,
+   "lng": -77.0197,
+   "summary": "In June 1998 the US Federal Trade Commission sent Congress 'Privacy Online: A Report to Congress', based on a March 1998 survey of over 1,400 websites. In its random Comprehensive Sample of 674 commercial sites, 92% collected personal information but only 14% posted any disclosure of their information practices, and only 2% of the sites that collected personal information had a comprehensive privacy policy notice. The Commission concluded that industry self-regulation had so far fallen short.",
+   "significance": "The founding document of US 'notice and choice': the answer to surveillance became a policy the site writes and the person is expected to read.",
+   "sources": [
+    {
+     "institution": "Federal Trade Commission",
+     "title": "Privacy Online: A Report to Congress",
+     "date": "1998-06",
+     "url": "https://www.ftc.gov/sites/default/files/documents/reports/privacy-online-report-congress/priv-23a.pdf",
+     "quote": "Only 2% of the sites that collect personal information in each of these samples have a Privacy Policy Notice.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "p. 27. Same report, p. 27: 'Only 14% of all sites in the Comprehensive Sample, 14% of all sites in the Health Sample, 13% of all sites in the Retail Sample, and 16% of all sites in the Financial Sample post any disclosure.' Figure 1 gives 92% collecting (base 674 sites, March 1998)."
+    }
+   ]
+  },
+  {
+   "id": "mcnealy-zero-privacy-get-over-it-1999",
+   "displayDate": "25 January 1999",
+   "year": 1999,
+   "title": "Sun's Scott McNealy: 'You have zero privacy anyway. Get over it.'",
+   "place": "Sheraton Palace Hotel, San Francisco",
+   "lat": 37.788,
+   "lng": -122.402,
+   "summary": "At Sun Microsystems' launch of its Jini networking technology on Monday 25 January 1999, chief executive Scott McNealy told reporters and analysts that consumer privacy issues were a 'red herring': 'You have zero privacy anyway. Get over it.' Wired News reported the remark the next day, with criticism from the FTC's consumer-protection director Jodie Bernstein and privacy advocates; the same day Intel had backed down over identification features in its Pentium III chip.",
+   "significance": "The industry's fatalist position in one line — privacy as something already lost rather than something a person could assert.",
+   "sources": [
+    {
+     "institution": "Wired",
+     "title": "Polly Sprenger, 'Sun on Privacy: \"Get Over It\"'",
+     "date": "1999-01-26",
+     "url": "https://www.wired.com/1999/01/sun-on-privacy-get-over-it/",
+     "quote": "\"You have zero privacy anyway,\" Scott McNealy told a group of reporters and analysts Monday night at an event to launch his company's new Jini technology.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The next paragraph of the article is the quote \"Get over it.\""
+    },
+    {
+     "institution": "InfoWorld",
+     "title": "Jini, Sun's magic out of the lamp",
+     "date": "1999-01-25",
+     "url": "https://www.infoworld.com/article/2163020/jini-sun-s-magic-out-of-the-lamp.html",
+     "quote": "Sun Microsystems introduced its Jini network-connection technology at its Worldwide Analysts Conference held at San Francisco’s Sheraton Palace Hotel today.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Establishes venue and date of the Jini launch at which McNealy spoke."
+    }
+   ],
+   "locationNote": "The Jini launch venue (Sheraton Palace Hotel, New Montgomery Street)."
+  },
+  {
+   "id": "rfc-6265-cookie-standard-codifies-practice-2011",
+   "displayDate": "April 2011",
+   "year": 2011,
+   "title": "RFC 6265 standardises cookies as they actually work — third-party tracking included",
+   "place": "University of California, Berkeley (author's affiliation), Berkeley, California",
+   "lat": 37.8719,
+   "lng": -122.2585,
+   "summary": "In April 2011 the IETF published RFC 6265, by Adam Barth of UC Berkeley, which obsoleted RFC 2965 and described the Cookie and Set-Cookie headers as browsers actually implemented them. Its privacy section called third-party cookies 'particularly worrisome' because third-party servers such as advertising networks could track users across sites they never visited, but it left policy to browser makers, granting them 'wide latitude to experiment'.",
+   "significance": "Fourteen years after RFC 2109, the standard conceded the site-side tracking regime and left the person's protection to whatever each browser chose to do.",
+   "sources": [
+    {
+     "institution": "RFC Editor / Internet Engineering Task Force",
+     "title": "RFC 6265: HTTP State Management Mechanism (A. Barth)",
+     "date": "2011-04",
+     "url": "https://www.rfc-editor.org/rfc/rfc6265",
+     "quote": "Particularly worrisome are so-called \"third-party\" cookies.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Section 7.1 continues: 'These third-party servers can use cookies to track the user even if the user never visits the server directly.' and 'This document grants user agents wide latitude to experiment with third-party cookie policies'."
+    }
+   ],
+   "locationNote": "Online standards-body publication; mapped to the author's affiliation as given in the RFC header (U.C. Berkeley)."
+  }
+ ],
+ "series": [],
+ "quant": [],
+ "myths": [],
+ "signals": []
+}

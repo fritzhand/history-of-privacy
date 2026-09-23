@@ -93,6 +93,10 @@ const REQUIRED = {
   scenario:    ['actor', 'text', 'basis'],
   counterpoints: ['point', 'source'],
   myths:       ['claim', 'verdict', 'correction', 'source'],
+  worldLaws:   ['country', 'law', 'year', 'region', 'lat', 'lng', 'source'],
+  frameworks:  ['name', 'body', 'year', 'force', 'source'],
+  policyModels:['name', 'description', 'source'],
+  people:      ['name', 'roles', 'contribution', 'group', 'source'],
 };
 for (const [key, fields] of Object.entries(REQUIRED)) {
   (d[key] || []).forEach((row, i) => {
@@ -139,6 +143,23 @@ if (d.standard) {
   for (const f of ['designation', 'title', 'agreements', 'source']) if (!d.standard[f]) errors.push(`standard.${f} missing`);
   (d.standard.agreements || []).forEach((a, i) => { for (const f of ['code', 'name', 'body', 'source']) if (!a[f]) errors.push(`standard.agreements[${i}]: missing ${f}`); });
 }
+(d.essay && d.essay.paragraphs || []).forEach((p, i) => {
+  if (!p.text) errors.push(`essay.paragraphs[${i}]: no text`);
+  const srcs = [].concat(p.source || []);
+  if (!srcs.length) errors.push(`essay.paragraphs[${i}]: every paragraph needs sources`);
+  for (const m of String(p.text || '').matchAll(/\{(\d+(?:,\d+)*)\}/g)) m[1].split(',').forEach(n => { if (!srcs[+n - 1]) errors.push(`essay.paragraphs[${i}]: marker {${n}} has no source`); });
+});
+const LAWIDS = new Set();
+(d.worldLaws || []).forEach((l, i) => {
+  if (LAWIDS.has(l.country)) errors.push(`worldLaws[${i}]: ${l.country} listed twice`); LAWIDS.add(l.country);
+  if (typeof l.year !== 'number') errors.push(`worldLaws[${i}] (${l.country}): numeric year required`);
+});
+const GROUPS = new Set((d.peopleGroups || []).map(g => g.key));
+(d.people || []).forEach((p, i) => {
+  if (GROUPS.size && !GROUPS.has(p.group)) errors.push(`people[${i}] (${p.name}): group "${p.group}" not in peopleGroups`);
+  if (p.portrait && !mediaIds.has(p.portrait)) errors.push(`people[${i}] (${p.name}): portrait "${p.portrait}" matches no mediaAsset`);
+  if (p.quote && !p.quoteSource) errors.push(`people[${i}] (${p.name}): a quote needs its quoteSource`);
+});
 if (d.flip) (d.flip.steps || []).forEach((s, i) => { if (!['policy', 'signal', 'framework', 'agreement'].includes(s.icon)) errors.push(`flip.steps[${i}]: icon "${s.icon}" has no drawing`); });
 
 /* Series and the charts that draw them. */

@@ -33,7 +33,8 @@ import editorial from './editorial.mjs';
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const SLICES = ['early', 'letalone', 'dataprotection', 'internet', 'surveillance',
-  'numbers', 'myterms', 'agents', 'concepts', 'media'];
+  'numbers', 'myterms', 'agents', 'concepts', 'global',
+  'personas-code', 'personas-advocates', 'personas-researchers', 'essay', 'media'];
 const research = Object.fromEntries(SLICES
   .filter(k => fs.existsSync(path.join(root, 'research', k + '.json')))
   .map(k => [k, JSON.parse(fs.readFileSync(path.join(root, 'research', k + '.json'), 'utf8'))]));
@@ -117,6 +118,17 @@ function seriesPoints(id, pick = {}) {
   });
 }
 
+/* Pictures come from the media slice and from the portraits the three
+   personas slices found; one list, first id wins. */
+function allImages() {
+  const seen = new Set(), out = [];
+  for (const k of ['media', 'personas-code', 'personas-advocates', 'personas-researchers']) for (const a of ((research[k] || {}).images || [])) {
+    if (!a || !a.id || seen.has(a.id)) continue;
+    seen.add(a.id); out.push(a);
+  }
+  return out;
+}
+
 /* ── helpers handed to the editorial layer ───────────────── */
 const H = {
   event: id => need(events, id, 'event'),
@@ -149,8 +161,8 @@ const H = {
   myth: id => need(myths, id, 'myth'),
   myths: () => [...myths.values()],
   events: () => [...events.values()],
-  media: id => ((research.media || {}).images || []).find(a => a.id === id),
-  hasMedia: id => !!((research.media || {}).images || []).find(a => a.id === id),
+  media: id => allImages().find(a => a.id === id),
+  hasMedia: id => !!allImages().find(a => a.id === id),
   cleanSource,
 };
 
@@ -223,7 +235,7 @@ for (const [id, def] of Object.entries(E.series)) {
 }
 
 /* ── media ───────────────────────────────────────────────── */
-const images = ((research.media || {}).images || []).filter(a => !(E.mediaDrop || []).includes(a.id));
+const images = allImages().filter(a => !(E.mediaDrop || []).includes(a.id));
 const mediaAssets = images.map(a => {
   const o = (E.mediaOverrides || {})[a.id] || {};
   /* Images are placed by the era they depict (the picture researcher's
@@ -278,6 +290,7 @@ const data = {
   meta: E.meta,
   heroStats: E.heroStats,
   footerStats: E.footerStats,
+  essay: E.essay,
   concepts,
   flip: E.flip,
   mapEvents,
@@ -286,7 +299,12 @@ const data = {
   charts: E.charts,
   barCharts: E.barCharts || [],
   fipps: E.fipps,
+  worldLaws: E.worldLaws,
+  frameworks: E.frameworks,
+  policyModels: E.policyModels,
   figures: E.figures,
+  people: (E.people || []).map(p => (p.portrait && !mediaIds.has(p.portrait) ? { ...p, portrait: undefined } : p)),
+  peopleGroups: E.peopleGroups,
   lineage: E.lineage,
   lineageNote: E.lineageNote,
   harms: E.harms,

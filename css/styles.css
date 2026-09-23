@@ -2306,3 +2306,103 @@ tr.is-destination td:first-child { box-shadow: inset 3px 0 0 var(--who-person); 
 .section-coda strong { color: var(--text-primary); }
 .h3-sub { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); margin: 36px 0 6px; line-height: 1.2; }
 .h3-sub + .chart-desc { margin-bottom: 16px; }
+
+/* ─── THE ESSAY: what privacy is ─── */
+#essay { background: var(--bg-base); }
+.essay-wrap { max-width: 1200px; }
+.essay-grid { display: grid; grid-template-columns: minmax(0, 720px) minmax(0, 1fr); gap: 48px; align-items: start; }
+.essay { font-family: var(--font-display); font-size: 19px; line-height: 1.62; color: var(--text-primary); }
+.essay-h { font-family: var(--font-sans); font-size: 10.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--v5); margin: 30px 0 8px; }
+.essay-h:first-child { margin-top: 0; }
+.essay-p { margin: 0 0 14px; }
+.essay > .essay-p:first-of-type::first-letter {
+  float: left; font-size: 3.4em; line-height: .86; font-weight: 600; padding: 6px 8px 0 0; color: var(--v5);
+}
+.essay-cite { font-family: var(--font-sans); font-size: 10px; font-weight: 600; vertical-align: super; line-height: 0; margin-left: 1px; }
+.essay-cite a { color: var(--v5); text-decoration: none; padding: 0 1px; }
+.essay-cite a:hover { text-decoration: underline; }
+.essay-aside { position: sticky; top: calc(var(--nav-h, 56px) + 24px); display: grid; gap: 18px; }
+.essay-notes-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 14px 16px; max-height: 70vh; overflow: auto; }
+.essay-notes-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+.essay-notes { list-style: none; counter-reset: en; display: grid; gap: 8px; }
+.essay-notes li { counter-increment: en; position: relative; padding-left: 22px; font-size: 10.5px; line-height: 1.5; color: var(--text-secondary); scroll-margin-top: calc(var(--nav-h, 56px) + 16px); }
+.essay-notes li::before { content: counter(en); position: absolute; left: 0; top: 0; font-weight: 700; color: var(--v5); font-variant-numeric: tabular-nums; }
+.essay-notes li:target { background: color-mix(in srgb, var(--v5) 12%, transparent); border-radius: 2px; }
+.essay-notes q { font-style: italic; color: var(--text-dim); }
+.essay-notes a { color: var(--v4); text-decoration: underline; }
+@media (max-width: 960px) {
+  .essay-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .essay-aside { position: static; }
+  .essay-notes-card { max-height: none; }
+  .essay { font-size: 17.5px; }
+}
+
+/* ─── AROUND THE WORLD ─── */
+.world-split { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+#world-map-container { height: 440px; border: 1px solid var(--border); border-radius: var(--card-radius); background: var(--ink); }
+.world-controls { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 12px 0 4px; }
+.world-year { font-family: var(--font-display); font-size: 30px; font-weight: 600; color: var(--text-primary); min-width: 84px; font-variant-numeric: tabular-nums; }
+.world-count { font-size: 12px; color: var(--text-secondary); }
+.world-count strong { color: var(--era-dataprotection); font-size: 15px; }
+#world-slider { flex: 1 1 260px; accent-color: var(--era-dataprotection); }
+.decade-legend { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 8px; font-size: 10px; color: var(--text-secondary); }
+.decade-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.decade-legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; border: 1px solid var(--border); }
+.world-list { max-height: 440px; overflow: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.world-list table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.world-list th { position: sticky; top: 0; background: var(--bg-elevated); text-align: left; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); padding: 7px 10px; font-weight: 700; }
+.world-list td { padding: 6px 10px; border-top: 1px solid var(--border-light); color: var(--text-secondary); vertical-align: top; }
+.world-list td.y { color: var(--text-primary); font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.world-list td .c { color: var(--text-primary); font-weight: 600; }
+.world-list tr.is-future td { opacity: .35; }
+.world-list a { color: var(--v4); text-decoration: underline; }
+@media (max-width: 900px) {
+  .world-split { grid-template-columns: minmax(0, 1fr); }
+  #world-map-container { height: 340px; }
+  .world-list { max-height: 360px; }
+}
+.model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 14px; }
+.model-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--model-accent, var(--era-dataprotection)); border-radius: var(--card-radius); padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; }
+.model-name { font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--text-primary); line-height: 1.2; }
+.model-ex { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); margin: 4px 0 8px; }
+.model-desc { font-size: 12.5px; line-height: 1.6; color: var(--text-secondary); }
+.model-src { font-size: 9.5px; color: var(--text-muted); margin-top: auto; padding-top: 10px; line-height: 1.5; }
+.model-src a { color: var(--v4); text-decoration: underline; }
+
+/* ─── THE PEOPLE ─── */
+.people-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.person-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--card-radius);
+  overflow: hidden; display: flex; flex-direction: column; min-width: 0;
+  border-top: 3px solid var(--person-accent, var(--v5));
+}
+.person-head { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 14px 16px 0; align-items: center; }
+.person-portrait { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--thumb-bg); display: grid; place-items: center; border: 1px solid var(--border); }
+.person-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(.15); }
+.person-initials { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-muted); }
+.person-roles { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--person-accent, var(--v5)); }
+.person-name { font-family: var(--font-display); font-size: 20px; font-weight: 600; line-height: 1.15; color: var(--text-primary); margin: 2px 0 1px; }
+.person-handle { font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 11px; color: var(--text-secondary); }
+.person-years { font-size: 10.5px; color: var(--text-muted); margin-top: 2px; }
+.person-body { padding: 10px 16px 14px; display: flex; flex-direction: column; flex: 1; }
+.person-quote { font-family: var(--font-display); font-style: italic; font-size: 15.5px; line-height: 1.45; color: var(--text-primary); border-left: 2px solid var(--person-accent, var(--v5)); padding-left: 10px; margin: 2px 0 10px; }
+.person-quote cite { display: block; font-family: var(--font-sans); font-style: normal; font-size: 9.5px; color: var(--text-muted); margin-top: 4px; }
+.person-quote cite a { color: var(--v4); text-decoration: underline; }
+.person-text { font-size: 12.5px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 6px; }
+.person-work { font-size: 11px; color: var(--text-secondary); margin-bottom: 6px; }
+.person-work a { color: var(--v5); text-decoration: underline; }
+.person-thread { font-size: 11px; line-height: 1.5; color: var(--who-person); margin-bottom: 6px; }
+.person-src { font-size: 9.5px; color: var(--text-muted); margin-top: auto; padding-top: 8px; line-height: 1.5; }
+.person-src a { color: var(--v4); text-decoration: underline; }
+.people-grid > *, .model-grid > * { min-width: 0; }
+
+/* Decades of first data-protection laws on the world map. */
+:root {
+  --dec-1970: #A58BD6; --dec-1980: #6FA8DC; --dec-1990: #6CB2BA;
+  --dec-2000: #7CC49A; --dec-2010: #D8B45C; --dec-2020: #DC8A55;
+}
+[data-theme="light"] {
+  --dec-1970: #6A4A9E; --dec-1980: #2A64A0; --dec-1990: #2C7680;
+  --dec-2000: #2F7A4E; --dec-2010: #8A6412; --dec-2020: #A4501E;
+}

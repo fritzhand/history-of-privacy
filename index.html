@@ -162,10 +162,28 @@
     <div class="hero-era-bar"></div>
   </section>
 
+  <!-- WHAT PRIVACY IS: the opening essay -->
+  <section id="essay">
+    <div class="section-wrapper essay-wrap">
+      <p class="section-eyebrow">Before the Story &nbsp;·&nbsp; What Privacy Is</p>
+      <h2 class="section-title" id="essay-title">A Short History of an Idea</h2>
+      <p class="section-subtitle" id="essay-dek">Privacy is older than the word for it, and the word has meant different things in different places. The small numbers in the text are sources: every sentence is backed by the note beside it.</p>
+      <div class="essay-grid">
+        <div class="essay" id="essay-body"></div>
+        <aside class="essay-aside">
+          <div class="essay-notes-card">
+            <p class="essay-notes-kicker">Notes</p>
+            <ol class="essay-notes" id="essay-notes"></ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
   <!-- WHAT PRIVACY MEANS -->
   <section id="concepts">
     <div class="section-wrapper">
-      <p class="section-eyebrow">Before the Story &nbsp;·&nbsp; What Privacy Means</p>
+      <p class="section-eyebrow">The Ideas &nbsp;·&nbsp; In Their Authors' Words</p>
       <h2 class="section-title">One Word, Many Claims</h2>
       <p class="section-subtitle">Privacy has meant a closed door, a kept confidence, the right to be left alone, control over what is known about you, and the expectation that information flows only in ways that fit its context. Each idea below was put into words by someone at a particular moment, and each is quoted from the source.</p>
       <div class="concepts-grid" id="concepts-grid"></div>
@@ -325,8 +343,61 @@
     </div>
   </section>
 
+  <!-- AROUND THE WORLD -->
+  <section id="world">
+    <div class="section-wrapper">
+      <p class="section-eyebrow">Around the World &nbsp;·&nbsp; 1970 – 2026</p>
+      <h2 class="section-title">How Privacy Law Spread</h2>
+      <p class="section-subtitle" id="world-lede">Data-protection law began in Europe, but it did not stay there. Drag the year: each dot is a country's first comprehensive data-privacy law, coloured by the decade it was passed. The list beside the map names each law and its source.</p>
+
+      <div class="world-controls">
+        <span class="world-year" id="world-year">—</span>
+        <input type="range" id="world-slider" min="1970" max="2026" value="2026" step="1" aria-label="Show laws passed by this year" />
+        <span class="world-count" id="world-count"></span>
+      </div>
+      <div class="world-split">
+        <div>
+          <div id="world-map-container"></div>
+          <div class="decade-legend" id="decade-legend"></div>
+        </div>
+        <div class="world-list">
+          <table>
+            <thead><tr><th>Year</th><th>Country &amp; law</th><th>Source</th></tr></thead>
+            <tbody id="world-list-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="chart-source" id="world-note">One row per country: the first general data-protection law, not sectoral rules or constitutional clauses. This site's list is a cited sample, not a census; the count of all countries with such laws is the series above.</p>
+
+      <div class="chart-card reveal-on-scroll" style="margin-top:28px">
+        <div class="chart-card-title" id="chart-world-regions-title">
+          <span class="icon" style="background:var(--era-dataprotection)"></span>
+          First Laws by Decade and Region
+        </div>
+        <p class="chart-desc" id="chart-world-regions-desc">Counted from the list above (DERIVED).</p>
+        <div class="canvas-wrap" style="height:280px"><canvas id="chart-world-regions"></canvas></div>
+        <p class="chart-source" id="chart-world-regions-source"></p>
+      </div>
+
+      <h3 class="h3-sub">The International Instruments</h3>
+      <p class="chart-desc">Treaties, regulations and frameworks that carried privacy across borders, in order of adoption.</p>
+      <div class="chart-card reveal-on-scroll" style="padding:0;overflow:hidden">
+        <div style="overflow-x:auto">
+          <table class="geo-table">
+            <thead><tr><th>Instrument</th><th>Body</th><th>Year</th><th>Force</th><th>Reach</th></tr></thead>
+            <tbody id="frameworks-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <h3 class="h3-sub">Different Ways to Govern the Same Data</h3>
+      <p class="chart-desc">The main models countries have followed. None of them, until IEEE 7012, starts from terms the person writes.</p>
+      <div class="model-grid" id="model-grid"></div>
+    </div>
+  </section>
+
   <!-- CONSENT -->
-  <section id="consent">
+  <section id="consent" class="chart-section-bg">
     <div class="section-wrapper">
       <p class="section-eyebrow">Cookies &amp; Consent &nbsp;·&nbsp; 1994 – 2012</p>
       <h2 class="section-title">The Consent Machine</h2>
@@ -346,6 +417,17 @@
           <p class="chart-source" id="chart-consent-b-source"></p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- THE PEOPLE -->
+  <section id="people">
+    <div class="section-wrapper">
+      <p class="section-eyebrow">Hackers, Cypherpunks &amp; Advocates</p>
+      <h2 class="section-title">The People Who Argued It Out Online</h2>
+      <p class="section-subtitle" id="people-lede">Much of the modern argument about privacy was made first on mailing lists, at hacker congresses, in code and in leaked documents — by cryptographers, hacker clubs, activists, researchers, whistleblowers and journalists, several of them known best by a handle. Each card quotes the person's own words.</p>
+      <div class="people-filter archive-filter" id="people-filter" role="toolbar" aria-label="Filter the people by role"></div>
+      <div class="people-grid" id="people-grid"></div>
     </div>
   </section>
 

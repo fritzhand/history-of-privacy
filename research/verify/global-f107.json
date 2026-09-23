@@ -1,0 +1,356 @@
+{
+ "slice": "global",
+ "chunk": "f107",
+ "verdicts": [
+  {
+   "kind": "frameworks",
+   "id": "sadc-model-law-data-protection-2012",
+   "status": "FIXED",
+   "issues": [
+    "Source quote re-checked FOUND verbatim in the ITU/HIPSSA final text (Geneva, 2013). The year, the Gaborone validation (27 February to 3 March 2012) and the Mauritius ministerial adoption (November 2012) are all correct.",
+    "The note's claim that the text is 'often dated 2010, when drafting began' is unsupported. The ITU final text never mentions 2010. ITU's own draft is dated March 2011, and secondary literature (e.g. Media Defence) usually cites the model law as 2013, the year ITU published it. Note rewritten to say only what the sources support."
+   ],
+   "fieldFixes": {
+    "note": "A model text for national legislators, not a treaty. Usually cited as 2013, the year the ITU published the final text; an ITU draft is dated March 2011. The text itself records validation at a workshop in Gaborone (27 February–3 March 2012) and adoption by SADC ICT ministers in Mauritius in November 2012."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the ITU PDF; quote FOUND verbatim with --check. The same paragraph also says the draft was 'validated by broad consensus by participants of the workshop ... held in Gaborone, Botswana from 27 February to 3 March 2012' (FOUND). The cover reads 'Geneva, 2013', so date 2013 is right."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "International Telecommunication Union (ITU) — HIPSSA project",
+     "title": "DRAFT Southern African Development Community (SADC) Model Law on Data Protection (March 2011)",
+     "date": "2011-03",
+     "url": "https://www.itu.int/ITU-D/projects/ITU_EC_ACP/hipssa/docs/SA4docs/data%20protection.pdf",
+     "quote": "DRAFT Southern African Development Community (SADC) MODEL LAW ON DATA PROTECTION March 2011",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The draft's cover page, which shows a March 2011 draft before the 2012 validation and adoption. --check FOUND."
+    },
+    {
+     "institution": "Media Defence",
+     "title": "Introductory Modules on Digital Rights and Freedom of Expression Online — Module 4: Data Protection",
+     "date": "2024",
+     "url": "https://www.mediadefence.org/ereader/publications/introductory-modules-on-digital-rights-and-freedom-of-expression-online/module-4-data-privacy-and-data-protection/data-protection/",
+     "quote": "HIPSSA, ‘Data Protection: SADC Model Law’ (2013)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Secondary source. Shows the usual citation year (2013), not 2010. The page also heads the entry 'SADC Data Protection Model Law 2013'. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "frameworks",
+   "id": "au-malabo-convention-2014",
+   "status": "FIXED",
+   "issues": [
+    "Wrong party list: the 'parties' field names Benin as one of the 15 ratifying states, copying an error in the CIPIT blog. The AU's own status list (08/07/2024) shows Benin only as a signatory (signed 28/01/2015, no ratification), and shows Angola ratified (21/02/2020, deposited 11/05/2020). The 15 parties at entry into force were Angola, Cape Verde, Côte d'Ivoire, Congo, Ghana, Guinea, Mauritania, Mauritius, Mozambique, Namibia, Niger, Rwanda, Senegal, Togo and Zambia. Two sources agree: ALT Advisory's Data Protection Africa, which uses the AU status list of 12 May 2023, and my own coordinate-based reconstruction of the AU PDF table.",
+    "The AU status list of 8 July 2024 gives 'of ratification : 16': São Tomé and Príncipe ratified 25/09/2023 and deposited 15/02/2024. The earlier note said this count 'could not be read'. It can be read from the PDF text.",
+    "Overstated 'only': the note calls Malabo 'the only binding regional data-protection treaty outside Europe'. The ECOWAS Supplementary Act A/SA.1/01/10 on Personal Data Protection (2010) is a binding regional instrument on West African states. Media Defence: 'Importantly, it is also legally binding on ECOWAS States.' Note reworded.",
+    "The adoption date of 27 June 2014 is confirmed by the note on the AU status list and by the AU treaty page ('Date of Adoption Fri, 27 Jun 2014'). The entry into force on 8 June 2023 is confirmed: Mauritania deposited the 15th instrument on 9 May 2023."
+   ],
+   "fieldFixes": {
+    "parties": "Adopted 27 June 2014 by the 23rd AU Assembly in Malabo; in force 8 June 2023, after Mauritania deposited the 15th ratification on 9 May 2023. The 15 parties at entry into force were Angola, Cape Verde, Côte d'Ivoire, Congo, Ghana, Guinea, Mauritania, Mauritius, Mozambique, Namibia, Niger, Rwanda, Senegal, Togo and Zambia; São Tomé and Príncipe made 16 in February 2024. Benin has signed but not ratified.",
+    "note": "Combines personal-data protection with e-commerce and cyber-security/cyber-crime rules. It is Africa's continent-wide data-protection treaty, but not the region's first binding instrument: the ECOWAS Supplementary Act on Personal Data Protection (2010) already bound West African states."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "quote": "The Malabo Convention entered into force on 8 June 2023 after receiving the required minimum of 15 ratifications from AU Member States",
+     "note": "The original quote (the list of ratifying states) is verbatim on the page but factually wrong: it includes Benin, which only signed, and omits Angola, which ratified in 2020 per the AU status list. Replaced it with the page's accurate entry-into-force sentence (--check FOUND). Use this blog only for the date, not for the list of parties."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "Adopted by the Twentythird Ordinary Session of the Assembly, held in Malabo, Equatorial Guinea, 27th June 2014.",
+     "note": "The original title-line quote was FOUND but supported nothing. Replaced it with the PDF's adoption note (--check FOUND). I rebuilt the table from pdfminer text coordinates: Angola 21/02/2020 ratified, 11/05/2020 deposited; Benin signed 28/01/2015 with no ratification; Mauritania 19/04/2023 ratified, 09/05/2023 deposited; Sao Tome & Principe 25/09/2023 ratified, 15/02/2024 deposited. Totals line 'of ratification : 16' is FOUND verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Africa: AU’s Malabo Convention set to enter force after nine years",
+     "date": "2023-05-19",
+     "url": "https://dataprotection.africa/malabo-convention-set-to-enter-force/",
+     "quote": "The AU’s latest status list on the Malabo Convention, dated 12 May 2023, lists the following 15 states as having submitted ratification: Angola (11 May 2020), Cape Verde (5 February 2022), Côte d’Ivoire (3 April 2023), Congo (23 October 2020), Ghana (3 June 2019), Guinea (16 October 2018), Mozambique (21 January 2020), Mauritania (9 May 2023), Mauritius (14 March 2018), Namibia (1 February 2019), Niger (16 March 2022), Rwanda (21 November 2019), Senegal (16 August 2016), Togo (19 October 2021), and Zambia (24 March 2021).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page lists Benin among states that 'signed the Malabo Convention without yet ratifying it' (FOUND), and says the Convention covers 'electronic commerce, data protection, and cybercrime and cybersecurity' (FOUND)."
+    },
+    {
+     "institution": "Media Defence",
+     "title": "Introductory Modules on Digital Rights and Freedom of Expression Online — Module 4: Data Protection",
+     "date": "2024",
+     "url": "https://www.mediadefence.org/ereader/publications/introductory-modules-on-digital-rights-and-freedom-of-expression-online/module-4-data-privacy-and-data-protection/data-protection/",
+     "quote": "This instrument is designed to be directly transposed into a domestic context among West African states and provides in detail the conditions for the lawful processing of personal information and the rights of data subjects. Importantly, it is also legally binding on ECOWAS States.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "About the ECOWAS Supplementary Act on Personal Data Protection (2010). Refutes the claim that Malabo is the only binding regional data-protection instrument outside Europe. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "frameworks",
+   "id": "eu-general-data-protection-regulation-2016",
+   "status": "FIXED",
+   "issues": [
+    "Source quote re-checked FOUND on the DLA Piper Sweden page. Year 2016 and application from 25 May 2018 are correct (GDPR Art. 99).",
+    "'(and in the EEA)' implies the GDPR applied in the EEA from 25 May 2018. It did not. It was incorporated into the EEA Agreement by the EEA Joint Committee on 6 July 2018 and entered into force in Iceland, Liechtenstein and Norway in mid-July 2018 (20 July per EFTA; efta.int returns 403 to scripts, so the secondary 'mid-July' wording is used).",
+    "The note's unsourced list of countries for which the GDPR was 'the reference model' includes India. India's Digital Personal Data Protection Act 2023 departs substantially from the GDPR (e.g. consent plus 'legitimate uses' instead of six lawful bases, and no special-category regime), so presenting the GDPR as India's model overstates the case. India removed; 'the' softened to 'a'."
+   ],
+   "fieldFixes": {
+    "parties": "Adopted in 2016; directly applicable in all EU member states from 25 May 2018, and extended to the EEA EFTA states (Iceland, Liechtenstein and Norway) in July 2018.",
+    "note": "Replaced the 1995 Directive; its extraterritorial reach and fines made it a reference model for Brazil, Kenya, Nigeria, Thailand and others. Covered in other slices."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim with --check (page heading 'Data Protection in Sweden'). Secondary law-firm guide; the date of application now also rests on the Art. 99 text (added)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "gdpr-info.eu (Intersoft Consulting; reproduces the official text of Regulation (EU) 2016/679)",
+     "title": "Art. 99 GDPR — Entry into force and application",
+     "date": "2016-04-27",
+     "url": "https://gdpr-info.eu/art-99-gdpr/",
+     "quote": "It shall apply from 25 May 2018.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "EUR-Lex serves a JavaScript challenge (HTTP 202) to scripts, so the widely used gdpr-info.eu reproduction was checked instead. --check FOUND."
+    },
+    {
+     "institution": "Squire Patton Boggs — Privacy World blog",
+     "title": "GDPR is Now EEA Wide!",
+     "date": "2018-09-17",
+     "url": "https://www.privacyworld.blog/2018/09/gdpr-is-now-eea-wide/",
+     "quote": "The General Data Protection Regulation (GDPR) was incorporated into the EEA Agreement by the EEA Joint Committee in Brussels and entered into force in mid-July. The European Economic Area (EEA) currently includes all EU Member States, including, for the time being, the UK, as well as the three out of four EFTA States meaning Iceland, Liechtenstein and Norway",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the EEA extension in July 2018, not 25 May 2018. EFTA's own news item (entry into force in the EEA EFTA states on 20 July 2018) returned HTTP 403. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "frameworks",
+   "id": "asean-framework-personal-data-protection-2016",
+   "status": "FIXED",
+   "issues": [
+    "No factual error found. Both quotes FOUND verbatim in the ASEAN PDF. The preamble names the Telecommunications and IT Ministers of all ten ASEAN member states, and the adoption line gives Bandar Seri Begawan, 25 November 2016.",
+    "The second quote is a fragment that stops at 'intentions and', before the operative non-binding language. It has been replaced with the clause that directly supports 'creates no obligations under domestic or international law'. The full sentence cannot be checked as one string because the PDF interleaves the paragraph number '2.'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "does not constitute or create, and is not intended to constitute or create, obligations under domestic or international law",
+     "note": "Continues the sentence 'This Framework serves only as a record of the Participants’ intentions and' (also FOUND). --check FOUND."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "frameworks",
+   "id": "ibero-american-data-protection-standards-2017",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes re-checked FOUND. The 2017 approval (XV Encuentro, Santiago de Chile, 20–22 June 2017, unanimous) and the unanimous approval of the new version (RIPD press release dated 15/06/2026) are correct.",
+    "'Written to be compatible with the GDPR' was unsupported. The Standards' preamble calls the EU's new framework 'un referente obligado y determinante' for Ibero-American national laws and lists the EU Regulation among its reference instruments. Reworded to 'drafted with the GDPR as an explicit reference point' and sourced.",
+    "'The 2026 update is to go to the Ibero-American Summit' is slightly loose. The press release says the Standards will be sent to SEGIB for possible adoption at the next Ibero-American Summit of Heads of State and Government (Madrid, 4–5 November), and that they were approved at the RIPD meeting in Cartagena de Indias. Made precise."
+   ],
+   "fieldFixes": {
+    "note": "A model for Latin American and Iberian legislators, drafted with the EU's GDPR as an explicit reference point. The 2026 update, approved at the RIPD meeting in Cartagena de Indias (Colombia), is to be sent to SEGIB for possible adoption at the Ibero-American Summit of Heads of State and Government in Madrid (4–5 November 2026)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the RIPD PDF; --check FOUND. The full passage continues: 'en la sesión cerrada del Encuentro la versión que resultó de los trabajos realizados durante el taller de Cartagena de Indias, siendo proclamados formalmente en la Sesión Abierta.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND. Page dated 'Lun, 15/06/2026'. It also says 'Tras esta aprobación, los nuevos Estándares serán remitidos a la SEGIB para su posible adopción en el marco de la próxima Cumbre Iberoamericana de Jefes de Estado y de Gobierno, prevista para los días 4 y 5 de noviembre en Madrid.' (FOUND) and 'Los nuevos Estándares, aprobados durante el Encuentro de la RIPD celebrado en Cartagena de Indias (Colombia)' (FOUND)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Red Iberoamericana de Protección de Datos (RIPD)",
+     "title": "Estándares de Protección de Datos Personales para los Estados Iberoamericanos (preamble)",
+     "date": "2017-06-20",
+     "url": "https://www.redipd.org/sites/default/files/inline-files/Estandares_Esp_Con_logo_RIPD.pdf",
+     "quote": "marco normativo que se posiciona como un referente obligado y determinante para la elaboración de las legislaciones nacionales de protección de datos en Iberoamérica",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Translation: 'a regulatory framework that stands as an obligatory and decisive reference for drafting national data-protection laws in Ibero-America'. It refers to the EU's new framework, the GDPR. The document also lists 'el Reglamento del Parlamento Europeo y del Consejo, relativo a la protección de las personas físicas...' among its reference instruments. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "frameworks",
+   "id": "coe-convention-108-plus-protocol-2018",
+   "status": "FIXED",
+   "issues": [
+    "False 'first': the note says 'Uruguay was the first non-European state to approve it (2021)'. Mauritius signed and deposited its instrument of ratification of CETS 223 on 4 September 2020, as the sixth state overall and the first in Africa, per the Mauritius Data Protection Office communiqué. Uruguay's parliament approved the Protocol only in April 2021. The Ferrere law-firm claim that the record relied on is wrong.",
+    "The 25th-ratification (Slovakia, deposited 15 June 2023) and October 2018 signature facts re-checked FOUND.",
+    "The 38-Party entry-into-force threshold (previously 'unverified') is now confirmed by the European DPAs' 2022 resolution (Article 37 of the Protocol). Moldova's deposit on 15 May 2026 is confirmed by Moldova's data-protection authority (NCPDP). The '34th' count still rests only on the Council of Europe headline: coe.int returns 403 to scripts and WebFetch, and web search gives the same headline."
+   ],
+   "fieldFixes": {
+    "parties": "Opened for signature in Strasbourg in October 2018; 25 ratifications by 15 June 2023 (Slovakia the 25th). Moldova deposited its ratification on 15 May 2026, which the Council of Europe reported as the 34th; the Protocol needs 38 Parties to enter into force.",
+    "note": "Modernises Convention 108 for the GDPR era. Mauritius was the first non-European state to ratify it (4 September 2020, the sixth ratification overall and the first in Africa); Uruguay's parliament approved it in 2021. Not in force as a whole as of the latest verified data."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND. The page also says the instrument was deposited 'On June 15, 2023'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "El Parlamento acaba de aprobar el “Protocolo de enmienda del Convenio para la Protección de las Personas con respecto al Tratamiento de Datos Personales” suscrito en Estrasburgo en octubre de 2018, conocido como Convenio 108+",
+     "note": "The original quote is verbatim on the page but false: Uruguay was not 'the first non-European country' to approve Convention 108+, because Mauritius ratified on 4 September 2020. Replaced it with the sentence reporting Uruguay's parliamentary approval and the October 2018 Strasbourg signature (--check FOUND). Translation: 'Parliament has just approved the Protocol amending the Convention..., signed in Strasbourg in October 2018, known as Convention 108+.'"
+    },
+    {
+     "index": 2,
+     "verificationStatus": "PENDING",
+     "note": "Still unverifiable: coe.int returns HTTP 403 to both fetch-text.py and WebFetch, and the Wayback Machine resets the connection. The Moldova deposit date (15 May 2026) is independently confirmed by Moldova's NCPDP (added), and the 38 threshold by the 2022 European DPAs resolution (added). Only the ordinal '34th' depends on this page and on search-result snippets."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Data Protection Office, Republic of Mauritius",
+     "title": "Communiqué: Ratification of the Protocol amending Convention for the Protection of individuals with regard to automatic processing of personal data (CETS 223) by Mauritius",
+     "date": "2020-09",
+     "url": "https://dataprotection.govmu.org/Communique/Communique%20on%20Ratification%20of%20Mauritius%20on%20the%20Protocol%20amending%20Convention%20108%20%20(CETS%20223).pdf",
+     "quote": "Mauritius has thus become the 6th State after Bulgaria, Croatia, Lithuania, Poland and Serbia as well as the first country in Africa to ratify the modernised Convention 108 (Convention 108 +).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The same communiqué says 'Mauritius has signed and deposited, on 4 September 2020, its instrument of ratification' (FOUND). Refutes Uruguay-first. --check FOUND."
+    },
+    {
+     "institution": "National Center for Personal Data Protection of the Republic of Moldova (NCPDP)",
+     "title": "The Republic of Moldova has signed the instrument of ratification for the Protocol amending Convention No. 108",
+     "date": "2026-05-15",
+     "url": "https://datepersonale.md/en/the-republic-of-moldova-has-signed-the-instrument-of-ratification-for-the-protocol-amending-convention-no-108/",
+     "quote": "Today, May 15, 2026, in Chișinău, Deputy Prime Minister and Minister of Foreign Affairs of the Republic of Moldova, Mihai Popșoi, presented to the Secretary General of the Council of Europe the instrument of ratification of the Protocol amending the Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Confirms the date of Moldova's deposit; does not give the ordinal (34th). --check FOUND."
+    },
+    {
+     "institution": "European Data Protection Authorities, Spring Conference 2022 (document hosted by the EDPS)",
+     "title": "Resolution of the European Data Protection Authorities on the need for a prompt ratification of “Convention 108+” (Cavtat, 19–20 May 2022)",
+     "date": "2022-05-20",
+     "url": "https://www.edps.europa.eu/system/files/2022-10/22-05-20_resoolution-convention108_en.pdf",
+     "quote": "According to Article 37, the Amending Protocol No 223 shall enter into force in respect of those States which have expressed their consent to be bound by it, provided that the Protocol has been ratified by at least thirty-eight Parties by 10 October 2023",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Confirms the 38-Party threshold in Art. 37. The PDF is headed 'Draft Resolution'. Its wording 'by 10 October 2023' compresses Art. 37(2): after five years the Protocol enters into force once it has 38 Parties. The Protocol text on rm.coe.int returns 403. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "frameworks",
+   "id": "global-cbpr-forum-2022",
+   "status": "FIXED",
+   "issues": [
+    "Both quotes re-checked FOUND. The Declaration is dated April 21, 2022 and signed by exactly the seven economies listed. The launch page (published 2025-05-28) gives 2 June 2025 and about 100 certified companies.",
+    "The note says associates are 'reported to include the UK, Bermuda, the Dubai International Financial Centre, Mauritius and Nigeria (not verified here)'. These can now be verified on the Forum's own site: the UK (2023) and Bermuda, DIFC and Mauritius (2024) are on the launch page; Nigeria was welcomed as an Associate in September 2025. The launch page itself only lists Nigeria (with Thailand) as having 'declared their intent to join'.",
+    "Missing context: Australia and Mexico, the other APEC CBPR participants, also joined in 2022. The Forum's About page now says it 'was established in 2022, by' all nine jurisdictions, so 'founded by seven' is true only of the April 2022 Declaration. Note updated; the parties field, which correctly describes the Declaration, is unchanged."
+   ],
+   "fieldFixes": {
+    "note": "Takes APEC's company-certification model beyond the Asia-Pacific. Australia and Mexico, the other APEC CBPR participants, also joined in 2022, and the Forum now lists all nine as founding members. Associates: the UK (2023); Bermuda, the Dubai International Financial Centre and Mauritius (2024); Nigeria (2025)."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Declaration PDF; --check FOUND. The header reads 'April 21, 2022' and names 'Canada, Japan, the Republic of Korea, the Philippines, Singapore, Chinese Taipei, and the United States of America'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "date": "2025-05-28",
+     "note": "Re-fetched; --check FOUND. The page's datePublished metadata is 2025-05-28. The same page says: 'Members of the Global CBPR Forum are Australia; Canada; Japan; Republic of Korea; Mexico; Philippines; Singapore; Chinese Taipei; United States. The Forum welcomed the UK as its first Associate in 2023, and 2024, Bermuda, Dubai International Financial Center, and Mauritius. Thailand and Nigeria have also declared their intent to join the Forum this year.' (FOUND)"
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Global CBPR Forum",
+     "title": "Global CBPR Forum Expands Reach with New Members and Accountability Agent",
+     "date": "2025-09-19",
+     "url": "https://www.globalcbpr.org/global-cbpr-forum-expands-reach-with-new-members-and-accountability-agent/",
+     "quote": "We are pleased to welcome Nigeria as an Associate in the Forum.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Date from the Forum homepage news listing (September 19, 2025). --check FOUND."
+    },
+    {
+     "institution": "Global CBPR Forum",
+     "title": "About the Global CBPR Forum",
+     "date": "2026",
+     "url": "https://www.globalcbpr.org/about/",
+     "quote": "The Global CBPR Forum was established in 2022, by Australia, Canada, Japan, the Republic of Korea, Mexico, the Philippines, Singapore, Chinese Taipei, and the United States of America, as jurisdictions participating in the APEC CBPR System at the time",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Shows that Australia and Mexico joined in 2022, although they did not sign the 21 April 2022 Declaration. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "policyModels",
+   "id": "eu-omnibus-rights-based",
+   "status": "FIXED",
+   "issues": [
+    "Source 0 (FRA Charter page) could not be re-verified. fra.europa.eu now serves a 'Verification Required' bot-challenge page, so --check returns NOT-FOUND. The identical Article 8 text is FOUND verbatim in the Charter as published in the Official Journal (C 364, 18.12.2000) on europarl.europa.eu, so the source has been moved there. Article 8 wording is unchanged in the 2012 consolidated Charter.",
+    "Oversimplification: 'transfers abroad are restricted unless the destination is adequate' omits the GDPR's other transfer routes. Art. 46 allows transfers without adequacy where appropriate safeguards (SCCs, BCRs, etc.) are in place. Description amended and sourced.",
+    "The Bradford book-page quote re-checked FOUND. The page confirms Oxford University Press, publication date 9-2023.",
+    "Minor, not changed: Hesse's 1970 act covered only the Land's public administration, so it is an ancestor of the omnibus model rather than an example of one. 'It began with' is acceptable as lineage."
+   ],
+   "fieldFixes": {
+    "description": "One general law covers public and private sectors alike; data protection is treated as a fundamental right; processing needs a legal basis; an independent authority supervises; and transfers abroad are restricted unless the destination is 'adequate' or other safeguards (such as standard contractual clauses) are in place. It began with Hesse (1970), Sweden (1973) and Convention 108 (1981), was harmonised by the 1995 Directive and the GDPR (2016), and was exported through adequacy decisions and treaty accession. Consent here is one lawful basis among several, not the whole system."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "institution": "European Parliament (text as published in the Official Journal of the European Communities, C 364/1)",
+     "title": "Charter of Fundamental Rights of the European Union (2000/C 364/01) — Article 8: Protection of personal data",
+     "date": "2000-12-18",
+     "url": "https://www.europarl.europa.eu/charter/pdf/text_en.pdf",
+     "note": "The FRA URL (https://fra.europa.eu/en/eu-charter/article/8-protection-personal-data) now returns a bot-verification page, so it cannot be checked by script. The same quote is --check FOUND verbatim in this OJ text of the Charter. Article 8 is unchanged in the 2012 consolidated version."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; --check FOUND. The page lists Publisher 'Oxford University Press' and Publication Date '9-2023'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "gdpr-info.eu (Intersoft Consulting; reproduces the official text of Regulation (EU) 2016/679)",
+     "title": "Art. 46 GDPR — Transfers subject to appropriate safeguards",
+     "date": "2016-04-27",
+     "url": "https://gdpr-info.eu/art-46-gdpr/",
+     "quote": "In the absence of a decision pursuant to Article 45 (3), a controller or processor may transfer personal data to a third country or an international organisation only if the controller or processor has provided appropriate safeguards",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Shows that adequacy is not the only transfer route (SCCs, BCRs, codes, certification). EUR-Lex serves a JS challenge to scripts. --check FOUND."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "slice": "global",
+ "chunk": "f101",
+ "verdicts": [
+  {
+   "kind": "laws",
+   "id": "bj-2009",
+   "status": "FIXED",
+   "issues": [
+    "The law title is wrong. The official title, per the Benin Government Secretariat (sgg.gouv.bj) and the promulgated text in the National Assembly archive, is 'Loi n° 2009-09 du 22 mai 2009 portant protection des données à caractère personnel en République du Bénin'. It does not say 'portant organisation de la protection'. Both sources were checked and the wording is FOUND.",
+    "The regulator is misnamed and anachronistic for a 2009 record. The 2009 law created the Commission Nationale de l'Informatique et des Libertés (CNIL). The Digital Code (Law 2017-20 of 20 April 2018) turned the CNIL into the APDP: Art. 645 refers to 'l'APDP (ex CNIL)'. The APDP's official name is 'Autorité de Protection des Données à caractère Personnel', not 'Autorité de Protection des Données Personnelles'.",
+    "The note 'Later absorbed into Benin's Digital Code' is loosely right but imprecise. Art. 647 of Law 2017-20 repeals 'toutes dispositions antérieures contraires', including those of Law 2009-09. The Code itself misdates that law as '24 mai 2009'. DLA Piper still lists both laws as governing the regime. The note should say the 2009 law was superseded in part, not absorbed.",
+    "Source[0] (DLA Piper): the quote is FOUND verbatim and supports the law number, the date (22 May 2009) and the 2017-20 Digital Code. DLA's English gloss of the title ('Dealing with the Protection of Personally Identifiable Information') is a translation, not the official French title."
+   ],
+   "fieldFixes": {
+    "law": "Loi n° 2009-09 du 22 mai 2009 portant protection des données à caractère personnel en République du Bénin",
+    "regulator": "Commission Nationale de l'Informatique et des Libertés (CNIL); since the 2018 Digital Code, the Autorité de Protection des Données à caractère Personnel (APDP)",
+    "note": "Adopted by the National Assembly on 27 April 2009. Largely superseded by Book V of Benin's Digital Code (Law 2017-20 of 20 April 2018), which repeals the 2009 law's contrary provisions (Art. 647) and turned the 2009 law's CNIL into the APDP."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). It supports the law number, the 22 May 2009 date and the 2017-20 Digital Code as amended by Law 2020-35. The 'Dealing with the Protection of Personally Identifiable Information' wording is DLA's English gloss, not the official French title. The authority tab (t=authority&c=BJ) names the APDP as the current regulator."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Secrétariat général du Gouvernement du Bénin",
+     "title": "Loi N° 2009-09 du 22 mai 2009",
+     "date": "2009-05-22",
+     "url": "https://sgg.gouv.bj/doc/loi-2009-09/",
+     "quote": "Loi portant protection des données à caractère personnel en République du Bénin",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the official government record of the law's number, date and title."
+    },
+    {
+     "institution": "Présidence de la République du Bénin (text via Assemblée nationale du Bénin documentation archive)",
+     "title": "Loi n° 2009-09 du 22 mai 2009 portant protection des données à caractère personnel en République du Bénin",
+     "date": "2009-05-22",
+     "url": "https://www.documentation-anbenin.org/files/original/1651/L._2009-09.pdf",
+     "quote": "L'Assemblée Nationale a délibéré et adopté en sa séance du 27 avril 2009.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same PDF has 'LOI N° 2009-09 DU 22 MAI 2009' (FOUND) and 'Commission Nationale de l'Informatique et des Libertés (CNIL)' (FOUND). The CNIL is the regulator this law created, under Art. 19."
+    },
+    {
+     "institution": "Autorité de Protection des Données à caractère Personnel (Benin), via dataprotection.africa",
+     "title": "Loi n° 2017-20 du 20 avril 2018 portant code du numérique en République du Bénin (Livre 5ème)",
+     "date": "2018-04-20",
+     "url": "https://dataprotection.africa/wp-content/uploads/2022/09/Benin_DPA.pdf",
+     "quote": "Les mandats des organismes de l'ARCEP-Bénin, de l'ABSU-SEP et de l'APDP (ex CNIL) actuellement en cours, vont jusqu'à leur terme nonobstant l'entrée en vigueur de la présente loi.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (Art. 645). Art. 647, 'Dispositions abrogatoires', repeals prior contrary provisions, including 'de la loi n° 2009-09 du 24 mai 2009 portant protection des données à caractère personnel en République du Bénin.' (FOUND). The Code misdates that law as 24 May; the official date is 22 May. The PDF's cover gives the APDP's official name as 'Autorité de Protection des Données à caractère Personnel' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "ao-2011",
+   "status": "FIXED",
+   "issues": [
+    "The law number and date are correct. Lei n.º 22/11 de 17 de Junho was published in Diário da República I Série n.º 114 on 17 June 2011 (lex.ao, FOUND). The law's own heading is 'LEI DA PROTECÇÃO DE DADOS PESSOAIS'.",
+    "The regulator is spelled 'Agência de Proteção de Dados' (Brazilian/post-reform orthography, copied from DLA Piper). The law and the agency itself (apd.ao) both use 'Agência de Protecção de Dados', which also matches the record's own law title ('Protecção'). This is a minor fix for consistency and accuracy.",
+    "The source date is misleading. The DLA Piper Angola page says 'This content was last reviewed in 2021 and may not reflect recent legislative updates', so its date should be 2021, not 2026. The content is still accurate: apd.ao continues to cite Lei n.º 22/11 in 2026, and a revision of the law was only at public consultation."
+   ],
+   "fieldFixes": {
+    "regulator": "Agência de Protecção de Dados (APD)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2021",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). The page carries the banner 'This content was last reviewed in 2021 and may not reflect recent legislative updates', so the date is changed to 2021. The authority tab says APD's organic statute came from Presidential Decree 214/2016 of 10 October."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "LEX.AO (Angolan legislation database), reproducing Diário da República",
+     "title": "Lei n.º 22/11 de 17 de junho — Lei da Protecção de Dados Pessoais",
+     "date": "2011-06-17",
+     "url": "https://lex.ao/docs/assembleia-nacional/2011/lei-n-o-22-11-de-17-de-junho/",
+     "quote": "Publicação: Diário da República Iª Série n.º 114 de 17 de Junho de 2011",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page has 'A organização e funcionamento da Agência de Protecção de Dados são estabelecidos por diploma do Titular do Poder Executivo.' (FOUND, Art. 45), which confirms the regulator's spelling in the law."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "ga-2011",
+   "status": "OK",
+   "issues": [
+    "No error found. Source[0]'s quote is FOUND verbatim. The 25 September 2011 date of Law 001/2011 and its amendment by Law 025/2023 are confirmed by the Journal Officiel text of the 2023 law (appended).",
+    "The 2023 amending law's date differs between sources. The Journal Officiel header gives 'du 09/07/2023', matching DLA Piper, but the text is signed 'Fait à Libreville, le 12 juillet 2023', and AFAPDP and the press cite 12 July 2023. The record only says 'Act 025/2023', so nothing in it is wrong.",
+    "Optional: the record has no regulator field. The 2011 law created the CNPDCP (Commission Nationale pour la Protection des Données à Caractère Personnel). Under the 2023 law, DLA Piper names the authority the APDPVP (Autorité de Protection des Données Personnelles et de la Vie Privée)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). It supports Law 001/2011 of 25 September 2011 and its amendment by Act 025/2023."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Journal Officiel de la République Gabonaise (via WHO Cancer Policy & Control Database)",
+     "title": "Loi n° 025/2023 portant modification de la loi n°001/2011 du 25 septembre 2011 relative à la protection des données à caractère personnel (JO n°218 bis, 15 juillet 2023)",
+     "date": "2023-07-12",
+     "url": "https://extranet.who.int/cpcd/sites/default/files/public_file_repository/GAB_Gabon_Loi-No-025-2023-portant-modification-de-la-loi-no-001-2011-du-25-septembre-2011-relative-a-la-protection-des-donnees-a-caractere-personnel_2023.pdf",
+     "quote": "Loi N° 025/2023 du 09/07/2023 portant modification de la loi n°001/2011 du 25 septembre 2011 relative à la protection des données",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same PDF has 'Fait à Libreville, le 12 juillet 2023' (FOUND) and 'JOURNAL OFFICIEL N°218 BIS DU 15 JUILLET 2023' (FOUND). This is primary confirmation of the 2011 law's date and of the 2023 amendment."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "gh-2012",
+   "status": "OK",
+   "issues": [
+    "No error found. Source[0]'s quote is FOUND verbatim. Act 843 received Presidential assent on 10 May 2012 and came into force on 16 October 2012 (Wikipedia, citing the Gazette), so a 2012 enactment year is right.",
+    "Two claims in the note had no source quote on the record: that Act 843 created the Data Protection Commission, and that Art. 18(2) of the 1992 Constitution protects privacy. Both were checked independently and supporting sources are appended: Ghana's Ministry of Communication (DPC page) and the Constitute Project text of Art. 18."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). The same page has 'Article 18(2) provides citizens with a fundamental right to privacy.' (FOUND). The authority tab names the 'Data Protection Commission'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Ministry of Communication, Digital Technology and Innovations (Ghana)",
+     "title": "DPC — Brief History",
+     "date": "n.d. (accessed 2026-09-23)",
+     "url": "https://moc.gov.gh/dpc/",
+     "quote": "The Data Protection Commission (DPC) is an independent statutory body established under the Data Protection Act, 2012 (Act 843) to protect the privacy of the individual and personal data by regulating the processing of personal information.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The page adds that the Act came into force in October 2012 and that the Commission's governing body was inaugurated in November 2012."
+    },
+    {
+     "institution": "Constitute Project",
+     "title": "Ghana 1992 (rev. 1996) — Article 18, Protection of privacy of home and other property",
+     "date": "1992",
+     "url": "https://www.constituteproject.org/constitution/Ghana_1996",
+     "quote": "No person shall be subjected to interference with the privacy of his home, property, correspondence or communication except in accordance with law",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the text of Art. 18(2), under the heading '18. PROTECTION OF PRIVACY OF HOME AND OTHER PROPERTY'."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "za-2013",
+   "status": "OK",
+   "issues": [
+    "No error found. Source[0]'s quote is FOUND verbatim on the gov.za page for Act 4 of 2013, and supports 'public and private bodies'.",
+    "The note's claim 'supervised by the Information Regulator' is supported on the same page ('to provide for the establishment of an Information Regulator...', FOUND), so that quote is appended. Context not needed for the record: gov.za lists staggered commencement. Sections 1 and 39–54 (the Regulator) took effect on 11 April 2014, and most substantive provisions on 1 July 2020, with a one-year grace period to 30 June 2021."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: quote FOUND verbatim on gov.za. The page title is 'Protection of Personal Information Act 4 of 2013', matching the title field."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "South African Government (gov.za)",
+     "title": "Protection of Personal Information Act 4 of 2013",
+     "date": "2013",
+     "url": "https://www.gov.za/documents/protection-personal-information-act",
+     "quote": "to provide for the establishment of an Information Regulator to exercise certain powers and to perform certain duties and functions in terms of this Act and the Promotion of Access to Information Act, 2000;",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This supports the regulator field. The same page gives commencement for most sections as '1 July 2020, Sections 2 to 38, Sections 55 to 109, Section 111, Section 114(1), (2) and (3)' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "ci-2013",
+   "status": "OK",
+   "issues": [
+    "No error found. Source[0]'s quote is FOUND verbatim. DLA Piper's authority tab says ARTCI was created by Ordinance 2012-293 and acts as the data-protection authority under Law 2013-450 (Art. 47).",
+    "The coordinates note was checked. The National Assembly meets at Le Plateau, Abidjan (Wikipedia infobox, EN and FR), and Yamoussoukro is the official capital. It is correct.",
+    "A primary statement from ARTCI is appended."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). The authority tab (t=authority&c=CI) confirms that ARTCI 'performs the duties of a personal data protection authority in accordance with Law no. 2013-450 of 19 June 2013'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ARTCI — Autorité de Protection des Données Personnelles (Côte d'Ivoire)",
+     "title": "Savez-vous que vous avez des droits sur vos données personnelles ?",
+     "date": "2026-01-27",
+     "url": "https://www.autoritedeprotection.ci/savez-vous-que-vous-avez-des-droits-sur-vos-donnees-personnelles/",
+     "quote": "L'ARTCI, Autorité de Protection des Données Personnelles, reste à votre écoute et vous accompagne pour garantir le respect et la protection de vos droits.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page cites 'la loi n°2013-450 du 19 juin 2013 relative à la protection des données à caractère personnel'. The date comes from the page's article:published_time metadata."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "mg-2014",
+   "status": "OK",
+   "issues": [
+    "No error found. Source[0]'s quote is FOUND verbatim. The note's dates were confirmed against the promulgated text on the Presidency's Unité de Gouvernance Digitale site: adopted by the National Assembly on 16 December 2014 and promulgated in Antananarivo on 9 January 2015 (both FOUND). A web-search summary giving '14 December' is wrong.",
+    "yearEnacted 2014 is defensible, since the law is numbered 2014 and was adopted in 2014. Its formal title carries the promulgation date: 'Loi n° 2014-038 du 9 janvier 2015' (NATLEX). DLA Piper adds that it was published in the Journal Officiel on 9 June 2015 and is not yet effectively applied, because no implementing decree has been issued and the CMIL was only set up by Decree 2023-1541."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). The next sentence gives promulgation on 9 January 2015 and publication in the Official Gazette on 09 June 2015."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Unité de Gouvernance Digitale, Présidence de la République de Madagascar",
+     "title": "LOI N° 2014-038 – Sur la protection des données à caractère personnel",
+     "date": "2015-01-09",
+     "url": "https://digital.gov.mg/en/2022/07/05/loi-n-2014-038-sur-la-protection-des-donnees-a-caractere-personnel/",
+     "quote": "L'Assemblée nationale a adopté en sa séance du 16 décembre 2014,",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page has 'Antananarivo, le 09 janvier 2015 RAJAONARIMAMPIANINA Hery Martial' (FOUND), the promulgation, and 'Vu la décision n° 02-HCC/D3 du 07 janvier 2015 de la Haute Cour Constitutionnelle' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "ke-2019",
+   "status": "OK",
+   "issues": [
+    "No error found. Source[0]'s quote is FOUND verbatim. The Kenya Gazette Supplement No. 181 (Acts No. 24) confirms Date of Assent 8 November 2019 and Date of Commencement 25 November 2019. Its long title gives effect to Article 31(c) and (d) of the Constitution and establishes the Office of the Data Protection Commissioner (s.5(1)). Every claim in the note matches.",
+    "Precision nit only: the Act gives effect to Article 31(c) and (d), not to all of Article 31. 'Gives effect to Article 31' is acceptable shorthand."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched on 2026-09-23 with fetch-text.py: quote FOUND verbatim on the DLA Piper 'Data Protection Laws of the World' page (law tab). The same page has 'It gives effect to Article 31 c) and d) of the Constitution of Kenya, 2010 (right to privacy).' (FOUND). The authority tab has 'The Act established the ODPC...' (FOUND)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Republic of Kenya — Kenya Gazette Supplement No. 181 (Acts No. 24), via WHO Cancer Policy & Control Database",
+     "title": "The Data Protection Act, 2019 (No. 24 of 2019)",
+     "date": "2019-11-11",
+     "url": "https://extranet.who.int/cpcd/sites/default/files/public_file_repository/KEN_Kenya_The-Data-Protection-Act_2019.pdf",
+     "quote": "Date of Commencement: 25th November, 2019",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same PDF has 'Date of Assent: 8th November, 2019' (FOUND) and the long title 'AN ACT of Parliament to give effect to Article 31(c) and (d) of the Constitution; to establish the Office of the Data Protection Commissioner;' (FOUND). The Gazette supplement is dated Nairobi, 11 November 2019."
+    }
+   ]
+  }
+ ]
+}

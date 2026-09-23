@@ -11,7 +11,8 @@
     "Checked OK, caption: the Commons description has 'the National Science Foundation (NSF) and IEEE-USA joined with the Congressional Cybersecurity Caucus of the U.S. House of Representatives to present a briefing on Capitol Hill on “Privacy and Cybersecurity in a Connected Age.”', names National Cyber Security Awareness Month, and identifies 'Lorrie Faith Cranor (left)'. For independent confirmation, Cranor's own CV (lorrie.cranor.org/cranor-cv.pdf, fetched with fetch-text.py) lists 'Capitol Hill briefing on privacy and security in a connected age (hosted by NSF and IEEE-USA), Washington, DC, October 30, 2014.' The date, hosts and place all match.",
     "Upstream link is dead: upstreamUrl https://www.flickr.com/photos/nsf_beta/15548257259/ returns HTTP 404, and so does the whole nsf_beta account page, as of 2026-09-23. The Wayback Machine has no snapshot of that exact URL. The Commons record also cites an archived NSF page (web.archive.org/web/20161217211725/https://www.flickr.com/photos/nsf_beta/page3), but web.archive.org reset the connection from this environment, so I could not re-read it. The PD claim therefore rests on the Commons LicenseReview, which is still valid, and not on a live upstream page.",
     "Alt text is slightly inaccurate. The local file shows no table. It shows Cranor from the chest up in front of wood panelling, with a microphone in front of her and a blurred grey head in the foreground. The most distinctive visible detail is missing: the purple dress printed with a password word cloud. The Commons description says Cranor 'wore a dress she designed featuring a “word cloud” inspired by the 1,000 most common passwords'.",
-    "Local file assets/media/lorrie-cranor-capitol-hill-briefing-2014.jpg opens as a 488x657 RGB JPEG, which matches thumbPx and the Commons original size of 488x657. Coordinates 38.8899, -77.0091 are the U.S. Capitol and are acceptable for a 'Capitol Hill' briefing whose building is not named."
+    "Local file assets/media/lorrie-cranor-capitol-hill-briefing-2014.jpg opens as a 488x657 RGB JPEG, which matches thumbPx and the Commons original size of 488x657. Coordinates 38.8899, -77.0091 are the U.S. Capitol and are acceptable for a 'Capitol Hill' briefing whose building is not named.",
+    "thumbUrl returned HTTP 429 (Wikimedia rate limit) on repeated tries on 2026-09-23. This is not a 404: the path matches the file URL the Commons API returns, and the local copy is present."
    ],
    "fieldFixes": {
     "alt": "Lorrie Cranor, wearing glasses and a purple dress printed with a word cloud of common passwords, speaking at a microphone in a wood-panelled room, with a blurred head in the foreground",
@@ -29,7 +30,8 @@
     "Attribution detail missed. The Author field is filled by the template {{User:Church of emacs/Attribution|cc-by-sa}}. It renders 'Image: Wikipedia / Tobias Klenze / CC-BY-SA 4.0', and that CC-BY-SA 4.0 link conflicts with the file's actual GFDL/CC BY 3.0 tag. The licence tag governs. Under CC BY 3.0 §4(b), however, the credit should use the author's designated attribution, 'Wikipedia / Tobias Klenze'. The current creditLine, 'Tobias Klenze / Wikimedia Commons', drops 'Wikipedia /'.",
     "Checked OK, date and event: the media.ccc.de API and the talk page (fetched with fetch-text.py) list one 30C3 talk by Christopher Soghoian, 'Backdoors, Government Hacking and The Next Crypto Wars', dated 2013-12-29 in Saal G, scheduled at 21:45 according to the recording slug. That confirms Soghoian was on stage at 30C3 on 29 December 2013, and the photo shows a speaker with a lapel microphone in front of a projection screen. 30C3 ran 27-30 December 2013 at CCH Hamburg.",
     "Coordinates are off: 53.5552, 9.991 is about 770 m south-south-east of the Congress Center Hamburg, near Gänsemarkt. The en.wikipedia 'Congress Center Hamburg' infobox (fetched 2026-09-23) gives 53°33′41.7″N 9°59′8.46″E, i.e. 53.561583, 9.9856833.",
-    "Local file assets/media/christopher-soghoian-30c3-hamburg-2013.jpg opens as a 960x1440 RGB JPEG, which matches thumbPx. It shows a bearded man with long hair tied back, wearing glasses and a black ACLU T-shirt, gesturing, with a lapel mic and a projection screen behind. The alt text is accurate."
+    "Local file assets/media/christopher-soghoian-30c3-hamburg-2013.jpg opens as a 960x1440 RGB JPEG, which matches thumbPx. It shows a bearded man with long hair tied back, wearing glasses and a black ACLU T-shirt, gesturing, with a lapel mic and a projection screen behind. The alt text is accurate.",
+    "thumbUrl returns HTTP 200 image/jpeg (checked 2026-09-23)."
    ],
    "fieldFixes": {
     "creditLine": "Wikipedia / Tobias Klenze, via Wikimedia Commons (CC BY 3.0)",
@@ -51,7 +53,8 @@
     "Minor date discrepancy, flagged but not changed. Searls's contemporaneous Flickr album 'Identity Gang at PC Forum 2005, #1' (flickr.com/photos/docsearls/sets/251251) says 'This was an informal meeting on March 21, of roughly the same gang as were assembled for the Gillmor Gang podcast' (--check FOUND). However, all 20 photos in that album carry camera dates of 2005-03-20, between 09:10 and 11:37, and Searls's 2025 post gives '20 March 2005'. The caption's 20 March 2005 is kept as the better-supported date. An editor may prefer 'March 2005'.",
     "Coordinates can be more precise. The record uses Scottsdale city-centre coordinates (33.4942, -111.9261), but the photo can be placed at the resort. The paper cups on the table are printed 'Fairmont Scottsdale Princess' (visible in the local file). Doc Searls's Linux Journal piece 'PC Forum: Embedded in Scottsdale' (2003, linuxjournal.com/article/6794) calls PC Forum 'Esther Dyson's annual gathering at the Scottsdale Princess resort in Arizona' (fetch-text --check FOUND). The Fairmont Scottsdale Princess, 7575 E Princess Dr, is at 33.6454, -111.9171 (Waze place record), about 17 km north of the city-centre point. The 2003 article does not by itself prove the 2005 venue; the cups are the direct evidence.",
     "Alt text slightly incomplete. The frame also shows a fourth person's arm at the right edge, a laptop in the foreground and a water bottle. The three named people are at the table as described.",
-    "Local file assets/media/identity-gang-reed-cameron-dyson-pc-forum-2005.jpg opens as a 960x623 RGB JPEG, which matches thumbPx."
+    "Local file assets/media/identity-gang-reed-cameron-dyson-pc-forum-2005.jpg opens as a 960x623 RGB JPEG, which matches thumbPx.",
+    "thumbUrl returned HTTP 429 (Wikimedia rate limit) on repeated tries on 2026-09-23. This is not a 404: the path matches the file URL the Commons API returns, and the local copy is present."
    ],
    "fieldFixes": {
     "lat": 33.6454,
@@ -70,7 +73,8 @@
     "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 2.0', License 'cc-by-2.0', Artist 'Doc Searls', Credit flickr.com/photos/docsearls/54030165035/, description 'Doc Searls headshot', DateTimeOriginal '2022-05-30 18:11:04'. FlickreviewR 2 passed on 2026-07-16 (author dsearls, reviewlicense cc-by-2.0). The live Flickr page returns HTTP 200 with licence id 4 (CC BY 2.0), dateTaken '2022-05-30 18:11:04', title '2022_05_30_ds-headshots_71z', description 'Doc Searls headshot' and tags 'docsearls, headshot'. It was posted to Flickr in September 2024 (datePosted 1727621204). The rightsEvidence field is accurate.",
     "Caveat, no change needed: this posed headshot was very likely taken by someone other than the subject (or on a timer), yet Commons and Flickr both name Doc Searls as author, because it is his own account. The record's creator field ('Doc Searls (uploaded from his Flickr account)') and its rightsEvidence note already disclose this, and FlickreviewR accepted the licence.",
     "Location: the Flickr page has no geotag and the photo's location is unknown. The record says so, and it labels the Cambridge, MA coordinates (Berkman Klein Center, home of ProjectVRM) as 'for mapping only', which is honest. For context, his searls.com bio (©2024) lists him as a Visiting Scholar with the Ostrom Workshop at Indiana University and says 'He now lives nearby'. When he moved there is not established, so no change is proposed. The map pin must not be read as the place the photo was taken.",
-    "Local file assets/media/doc-searls-headshot-2022.jpg opens as a 960x1183 RGB JPEG, which matches thumbPx. It shows a smiling, white-bearded man with arms folded, in a black T-shirt, against vertical wooden boards. The alt text and the caption ('Doc Searls headshot, 30 May 2022') are accurate."
+    "Local file assets/media/doc-searls-headshot-2022.jpg opens as a 960x1183 RGB JPEG, which matches thumbPx. It shows a smiling, white-bearded man with arms folded, in a black T-shirt, against vertical wooden boards. The alt text and the caption ('Doc Searls headshot, 30 May 2022') are accurate.",
+    "thumbUrl returns HTTP 200 image/jpeg (checked 2026-09-23)."
    ],
    "fieldFixes": {},
    "sourceFixes": [],
@@ -85,7 +89,8 @@
     "Date resolved. The one-day conference was on Saturday 11 May 2013, which matches the Commons description ('on May 11, 2013'). The camera timestamp of 2013-05-08 23:34:51 is therefore a mis-set camera clock, and the caption can state 11 May 2013.",
     "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 3.0', License 'cc-by-3.0', Credit 'Own work', {{self|cc-by-3.0}}. The Artist links User:Laurelrusswurm, which now redirects; the uploader's current account name is 'Laurel L. Russwurm'. The photographer's own blog (techditz.russwurm.org, 20 May 2013) reuses the photo with the credit 'Ontario Privacy Commissioner Ann Cavoukian at the 2013 #GOopendata Conference by laurelrusswurm licensed under a Creative Commons Attribution 3.0 Unported License'. The keynote title 'Access by Design - Time To Change the Paradigm' comes only from the photographer's Commons description, and the caption correctly takes it from there.",
     "Id: 'ann-cavoukian-goopendata-toronto-2013' contains the wrong city. It is referenced in js/data.js, so renaming it is left to the editor; if the id is kept, the visible fields at least must be corrected.",
-    "Local file assets/media/ann-cavoukian-goopendata-toronto-2013.jpg opens as a 960x720 RGB JPEG, which matches thumbPx. It shows Cavoukian in a tweed jacket with a lapel mic, in front of a projected slide reading 'please visit: www.privacybydesign.ca'. The alt text is accurate."
+    "Local file assets/media/ann-cavoukian-goopendata-toronto-2013.jpg opens as a 960x720 RGB JPEG, which matches thumbPx. It shows Cavoukian in a tweed jacket with a lapel mic, in front of a projected slide reading 'please visit: www.privacybydesign.ca'. The alt text is accurate.",
+    "thumbUrl returns HTTP 200 image/jpeg (checked 2026-09-23)."
    ],
    "fieldFixes": {
     "caption": "Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \"Access by Design - Time To Change the Paradigm\" keynote at the first GO Open Data (GOopendata) conference, University of Waterloo School of Pharmacy, Kitchener, Ontario, 11 May 2013.",
@@ -94,6 +99,58 @@
     "locationNote": "University of Waterloo School of Pharmacy, downtown Kitchener, Ontario: venue of the one-day GO Open Data conference on Saturday 11 May 2013, per co-organiser Albert O'Connor. The Commons description gives 11 May 2013; the camera timestamp (8 May 2013) is off.",
     "creator": "Laurel L. Russwurm (Wikimedia Commons user Laurelrusswurm)",
     "creditLine": "Laurel L. Russwurm / Wikimedia Commons (CC BY 3.0)"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "danah-boyd-yale-roundtable-2009",
+   "status": "OK",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata for File:Danah_boyd_crop.jpg re-read 2026-09-23. LicenseShortName 'CC BY-SA 3.0', License 'cc-by-sa-3.0', Artist 'Sage Ross' (User:Ragesoss), Credit is the uncropped original, and the wikitext is {{self2|GFDL|cc-by-sa-3.0,2.5,2.0,1.0|author=Sage Ross}}. The uncropped original (File:Danah boyd, Writers on Writing about Technology roundtable, 2009-09-30.jpg) is {{self|GFDL|cc-by-sa-3.0,2.5,2.0,1.0}}, 'Own work', taken with a Canon EOS 400D. CC BY-SA 3.0 is an acceptable licence, and the rightsEvidence field is accurate.",
+    "Checked OK, caption: both Commons files describe 'danah boyd at the Writers on Writing about Technology roundtable at Yale University marking the publication of The Best Technology Writing 2009 (Yale University Press), to which boyd contributed.' The date 30 September 2009 (a Wednesday) is firm: the original file's date is 2009-09-30, the crop's EXIF is 2009-09-30 20:19:34, and Sage Ross uploaded the original at 2009-10-01 01:07 UTC, which is the same evening in New Haven. For independent confirmation, the Yale University Press page for The Best Technology Writing 2009 (ed. Steven Johnson) lists 'danah boyd' among the contributors (fetch-text, FOUND). It gives UK publication as 6 October 2009, so 'marking the publication' is the photographer's framing. No independent event listing for the roundtable was found, but a same-night upload by a Yale-based photographer makes the event claim credible.",
+    "Local file assets/media/danah-boyd-yale-roundtable-2009.jpg opens as a 960x980 RGB JPEG, which matches thumbPx. It shows boyd speaking at a microphone and gesturing at a wooden table, in front of a chalk blackboard, with a plastic cup in the foreground. The alt text is accurate. Coordinates 41.3111, -72.9267 are the central Yale campus, which is acceptable because the room is not named.",
+    "thumbUrl returns HTTP 200 image/jpeg (checked 2026-09-23)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "helen-nissenbaum-berkeley-lecture-2008",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 2.0', License 'cc-by-2.0', Artist 'Joe Hall', Credit flickr.com/photos/joebeone/2385347407/, categories 'Helen Nissenbaum' and 'Extracted images', DateTimeOriginal '2008-04-02 16:32:55'. The live Flickr page returns HTTP 200 with licence id 4 (CC BY 2.0), realname 'Joe Hall' and dateTaken '2008-04-02 16:32:55'.",
+    "The caption's identification is weaker than the evidence allows, and the lecture is under-described. The upstream Flickr photo is titled 'Helen answering a question' and tagged 'ucberkeley, schoolofinformation, distinguishedlecture, helennissenbaum'. So the photographer names her directly; the identification does not rest only on a Commons category. The UC Berkeley School of Information event page (ischool.berkeley.edu/events/2008/privacy-context) lists a 'Distinguished Lecture', 'Privacy in Context', 'Wednesday, April 2, 2008', '4:00 pm - 5:30 pm', 'South Hall', by Helen Nissenbaum. fetch-text --check FOUND 'Contemporary practices of gathering, analyzing, and disseminating personal information have placed impossible demands on the concept of privacy.' and 'Helen Nissenbaum is Professor of Media, Culture and Communication at New York University'. The date, time and room appear in the page's event header, which the tool's block extractor skips, but they are in the raw HTML. The photo's timestamp of 16:32 on 2 April 2008 falls inside the 4:00-5:30 pm slot. So this was the I School's Distinguished Lecture 'Privacy in Context', not an informal 'guest lecture', and the building is South Hall.",
+    "Alt text error. The background is a white projection screen above wood panelling, with desks in the foreground; it is not a 'classroom blackboard'. The local file shows this clearly.",
+    "Local file assets/media/helen-nissenbaum-berkeley-lecture-2008.jpg opens as a 960x1629 RGB JPEG, which matches thumbPx. Coordinates 37.8719, -122.2585 are central UC Berkeley, within about 100 m of South Hall, which is acceptable.",
+    "thumbUrl returns HTTP 200 image/jpeg (checked 2026-09-23)."
+   ],
+   "fieldFixes": {
+    "title": "Helen Nissenbaum lecturing on 'Privacy in Context' at Berkeley, 2008",
+    "caption": "Helen Nissenbaum answering a question during her UC Berkeley School of Information Distinguished Lecture, 'Privacy in Context', in South Hall, 2 April 2008 (cropped). The photographer, Joe Hall, tagged the photo 'helennissenbaum' and 'distinguishedlecture'.",
+    "alt": "Helen Nissenbaum in a white shirt and grey trousers, standing and gesturing in front of a projection screen and wood-panelled wall, with desks in the foreground",
+    "locationNote": "South Hall, University of California, Berkeley (venue named on the School of Information event page); coordinates are central-campus, within about 100 m"
+   },
+   "sourceFixes": [],
+   "addSources": []
+  },
+  {
+   "kind": "image",
+   "id": "kaliya-hamlin-vrm-day-2015",
+   "status": "FIXED",
+   "issues": [
+    "Checked OK, licence: Commons API extmetadata re-read 2026-09-23. LicenseShortName 'CC BY 2.0', License 'cc-by-2.0', Artist 'dsearls', Credit flickr.com/photos/52614599@N00/22348758586/, {{FlickrVerifiedByUploadWizard|cc-by-2.0}}, category 'VRM Day 2015', DateTimeOriginal '2015-04-06 16:34:14', description 'Kaliya Hamlin and Lionel Wolberger at VRM Day'. The live Flickr page returns HTTP 200 with licence id 4 (CC BY 2.0), realname 'Doc Searls' (username dsearls, NSID 52614599@N00), title '2015_04_06_vrmday_038z', the same description and dateTaken '2015-04-06 16:34:14'.",
+    "The locationNote is wrong where it says 'The file does not record the venue'. The upstream Flickr photo is tagged 'computerhistorymuseum, vrm, vendorrelationshipmanagement, vrmday, 20150406, booleroom, vrmday2015a, vrmday2015b', so the photographer recorded the Boole Room at the Computer History Museum. The coordinates the record already uses (CHM, 37.4143, -122.0775) are therefore the actual venue, not just a stand-in for mapping.",
+    "Checked OK, date: ProjectVRM's 'VRM Day and IIW XX' (projectvrm.org, 11 March 2015, Doc Searls) says IIW is hosted 'at the Computer History Museum in Silicon Valley. The next is April 7-9. Leading into it is VRM Day, which is on April 6.' 6 April 2015 was a Monday. The caption's date is correct.",
+    "Local file assets/media/kaliya-hamlin-vrm-day-2015.jpg opens as a 960x405 RGB JPEG, which matches thumbPx (Commons original 4352x1836). It shows a woman in a blue scarf walking in front of seated participants with laptops, and a man in a suit at a whiteboard full of notes. The alt text is essentially accurate. The title's '(Young)' reflects Kaliya's later surname and is harmless.",
+    "thumbUrl returns HTTP 200 image/jpeg (checked 2026-09-23).",
+    "Coordinates 37.4143, -122.0775 are within about 60 m of the Computer History Museum's en.wikipedia coordinates (37.414371, -122.076817), so no change is needed."
+   ],
+   "fieldFixes": {
+    "locationNote": "Boole Room, Computer History Museum, Mountain View, California: the photographer's Flickr tags include 'computerhistorymuseum' and 'booleroom'; VRM Day preceded IIW XX (7-9 April 2015) there"
    },
    "sourceFixes": [],
    "addSources": []

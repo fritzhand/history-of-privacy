@@ -155,8 +155,8 @@ window.privacyData = {
           title: "172 Countries with Data Privacy Laws – Year by Year 1973-2025",
           date: "2025-06",
           url: "https://www.privacylaws.com/reports-gateway/articles/int195/int195dplaws/",
-          quote: "For the past 52 years since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 laws by March 2025.",
-          note: "Abstract page is free; full article subscriber-only.",
+          quote: "For the past 52 years since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 laws by March 2025. … The table lists national laws known as at 15 March 2025.",
+          note: "Abstract page is free; full article subscriber-only. --check FOUND on the free abstract page. Supports the '15 March 2025' cut-off in the notes.",
           verificationStatus: "CONFIRMED",
           accessType: "PAYWALL"
         }
@@ -182,8 +182,8 @@ window.privacyData = {
     },
     {
       value: "5",
-      label: "standard agreements a person can proffer",
-      sublabel: "IEEE 7012 / MyTerms, launched January 2026",
+      label: "standard agreements in the MyTerms launch roster",
+      sublabel: "January 2026 · IEEE 7012 itself sets no number",
       color: "agents",
       source: [
         {
@@ -1011,7 +1011,7 @@ window.privacyData = {
         ]
       },
       {
-        heading: "Consent, its critics — and terms the person writes",
+        heading: "Consent, its critics — and terms the person proffers",
         text: "What the law settled on, online, was consent. Solove named the model “privacy self-management” — rights to notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because of the limits of human attention and because there are too many data collectors to manage one by one.{1} Nissenbaum called its flaw the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.{2} Reading the privacy policies of the sites one American visits would take about 244 hours a year — some 40 minutes a day — researchers at Carnegie Mellon estimated in 2008 (their abstract says 201; their own tables give 244).{3,4,5,6} Doc Searls argued that privacy online cannot be “a grace of privacy policies”; individuals should proffer terms “as first parties”, which sites agree to, with both keeping records.{7} That is what IEEE 7012-2025 standardises. It was approved on 4 November 2025 and published on 20 January 2026 —{8,9,10} just as software agents began to browse, fill in forms and buy for people, each errand meeting someone else’s terms.{11,12,13,14}",
         source: [
           {
@@ -1553,7 +1553,7 @@ window.privacyData = {
         icon: "agreement",
         kicker: "Voice 4 · The person proffers",
         title: "Your terms; both keep the record",
-        body: "Under IEEE 7012 the person — or their agent — points to one of a small roster of standard agreements; the organisation accepts one, both sign, and each keeps a matching record.",
+        body: "Under IEEE 7012 the person — or their agent — points to one of a small roster of standard agreements; if the organisation accepts it, both sign and each keeps an identical record. A refusal is recorded too.",
         examples: "IEEE 7012-2025 · MyTerms (2026–)",
         source: [
           {
@@ -1587,6 +1587,16 @@ window.privacyData = {
         date: "2026-01-26",
         url: "https://myterms.info/faqs/",
         quote: "In all those cases, the person responds to choices provided by corporate systems. In legal language, persons are second parties, not first parties.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Introduction (informative)",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "These requests are not agreements and can leave the person (a mere “user”) in a nearly powerless position.",
+        note: "Informative ('This introduction is not part of IEEE Std 7012-2025', FOUND). Said of Global Privacy Control; the standard's own framing matches the FAQ's second-party point. --check FOUND 2026-09-23.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       }
@@ -4355,9 +4365,9 @@ window.privacyData = {
       date: "12 September 1981",
       year: 1981,
       phase: "dataprotection",
-      title: "'Komputerfrieks' meet at the taz and the Chaos Computer Club is born",
+      title: "'Komputerfrieks' meet at the taz: the Chaos Computer Club's informal founding",
       place: "Editorial offices of die tageszeitung (taz), Wattstraße, Berlin-Wedding, West Berlin",
-      body: "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. About 20 people came, meeting around a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding; its topic list included data law under the question 'who owns my data?'.",
+      body: "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. Some 20 people are said to have come, meeting at a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding, though the name itself seems to have come into use only around the end of 1982. The notice's topic list included data law under the question 'who owns my data?'.",
       lat: 52.5414,
       lng: 13.3897,
       continent: "Europe",
@@ -4369,6 +4379,16 @@ window.privacyData = {
           url: "https://stummkonzert.de/wp-content/uploads/2013/09/Matthias-R%C3%B6hr-Urspr%C3%BCnge-und-Entwicklung-des-Chaos-Computer-Clubs-in-den-Achtziger-Jahren.pdf",
           quote: "tun wir wat und treffen uns am 12.9.81 in Berlin, Wattstr. (TAZ-Hauptgebäude) ab 11.00 Uhr. … Außerdem gab es dort passende Räumlichkeiten sowie einen großen Tisch, der schon in der Kommune 1 gestanden hatte.",
           note: "Quoting the taz notice 'TUWAT,TXT Version' (taz, 1 September 1981, p. 2). Translation: 'we'll do something and meet on 12.9.81 in Berlin, Wattstr. (taz main building) from 11 a.m.' The same notice lists 'Kommunikationsrecht – Datenrecht (Wem gehören meine Daten?)' among its topics (also FOUND on the page). p. 60. Translation: 'There were also suitable rooms there, and a large table that had once stood in the Kommune 1.' The same page: 'Zu dem Treffen sollen etwa 20 Personen gekommen sein' (about 20 people are said to have attended), and p. 57 notes the club itself calls the meeting its informal founding. The formal association (e.V.) came later.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Chaos Computer Club",
+          title: "Club (Selbstdarstellung)",
+          date: "2026",
+          url: "https://www.ccc.de/de/club",
+          quote: "Das Treffen führte zunächst zu einer informellen Gründung des Chaos Computer Clubs und wurde als regelmäßiger Treff in Hamburg weitergeführt.",
+          note: "--check FOUND 2026-09-23. The same page, also FOUND: 'Am Tisch der Kommune 1 der Zeitung taz in Berlin trafen sich damals Hacker, selbstbezeichnete „Komputerfrieks“ im Rahmen des „tu-wat“-Kongresses.' This is the club's own primary statement that the meeting was its informal founding. It is an undated organisational page, so the date is the access year.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4481,6 +4501,16 @@ window.privacyData = {
           url: "https://www.wauland.de/en/btx-hack-30-jahrestag/",
           quote: "In the night from 16 to 17 November 1984 the hacker world changed forever in Germany.",
           note: "The foundation rounds the sum to 'DM 135.000'; heise gives the exact DM 134,634.88.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Heinz Nixdorf MuseumsForum (HNF Blog)",
+          title: "Kennwort Bankraub – 40 Jahre BTX-Hack",
+          date: "2024-11-15",
+          url: "https://blog.hnf.de/kennwort-bankraub-40-jahre-btx-hack/",
+          quote: "In der Nacht vom 16. zum 17. November 1984 überwies die Hamburger Sparkasse auf das Konto des Chaos Computer Clubs 134.634,88 DM.",
+          note: "--check FOUND 2026-09-23; 'Geschrieben am 15.11.2024'. This is an independent museum source for the date and the sum. Also FOUND: 'Die 134.634,88 DM hat der Club natürlich nicht behalten, sondern der Sparkasse zurückerstattet.', which supports 'give the money back' in the significance field. It also says the press release 'Kennwort: Bankraub' appeared on Monday 19 November 1984.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -4705,7 +4735,7 @@ window.privacyData = {
       phase: "dataprotection",
       title: "Kapor and Barlow announce the Electronic Frontier Foundation",
       place: "National Press Club, Washington, D.C.",
-      body: "After a 1 March 1990 Secret Service raid on Steve Jackson Games in Austin, Texas, in which the company's bulletin-board e-mail was accessed and deleted, Mitch Kapor, John Perry Barlow and John Gilmore formed an organisation for civil liberties raised by new technologies. Kapor and Barlow announced the Electronic Frontier Foundation in Washington on 10 July 1990, with a founding paper asking whether 'the history of one's personal business affairs' could properly belong to someone else. EFF's first case, for Steve Jackson Games, led a court to hold that e-mail deserves at least as much protection as telephone calls.",
+      body: "After a 1 March 1990 Secret Service raid on Steve Jackson Games in Austin, Texas, in which the company's bulletin-board e-mail was accessed and deleted, Mitch Kapor, John Perry Barlow and John Gilmore formed an organisation for civil liberties raised by new technologies. Kapor and Barlow announced the Electronic Frontier Foundation in Washington on 10 July 1990, with a founding paper asking whether 'the history of one's personal business affairs' could properly belong to someone else. The lawsuit EFF announced at its launch, for Steve Jackson Games, ended in a 1993 federal ruling that the seizure of users' stored e-mail violated the Electronic Communications Privacy Act. EFF calls it the first time a court held that e-mail deserves at least as much protection as telephone calls.",
       lat: 38.8971,
       lng: -77.0317,
       continent: "North America",
@@ -4737,6 +4767,26 @@ window.privacyData = {
           url: "https://www.eff.org/about/history",
           quote: "The Electronic Frontier Foundation was founded in July of 1990 in response to a basic threat to speech and privacy.",
           note: "Also FOUND: 'For the first time, a court held that electronic mail deserves at least as much protection as telephone calls.' The page names Kapor, Barlow and Gilmore as founders, 'with assistance from Steve Wozniak'. Undated organisational page; date is the access year. Also on this page: stored e-mail on the Steve Jackson Games bulletin board 'had been individually accessed and deleted'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Electronic Frontier Foundation (EFFector Online vol. 5 no. 4)",
+          title: "Victory in the Steve Jackson Games Case",
+          date: "1993-03-19",
+          url: "https://www.eff.org/effector/5/4",
+          quote: "In addition, the judge awarded each plaintiff $1,000 under the Electronic Communications Privacy Act for the Secret Service seizure of their stored electronic mail.",
+          note: "--check FOUND 2026-09-23. Also FOUND: 'The judge did not find that Secret Service agents had \"intercepted\" the electronic communications'. The decision was announced 12 March 1993 by Judge Sam Sparks. This is the actual holding behind the summary's reworded sentence.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Electronic Frontier Foundation",
+          title: "John Perry Barlow, 'A Not Terribly Brief History of the Electronic Frontier Foundation'",
+          date: "1990-11-08",
+          url: "https://www.eff.org/pages/not-terribly-brief-history-electronic-frontier-foundation",
+          quote: "We announced the formation of the Electronic Frontier Foundation at the National Press Club on July 10.",
+          note: "--check FOUND 2026-09-23; page dated 'Thursday, November 8, 1990'. Also FOUND: 'One of our first official acts had been to grant that organization $275,000 for a project on computing and civil liberties.' (the organisation is CPSR) and 'the government was forced to abandon its case against Neidorf after 4 days in Chicago's Federal Court.' The office address '155 Second St. Cambridge, MA 02141' is on the same page.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -5222,7 +5272,7 @@ window.privacyData = {
       phase: "cookies",
       title: "Hackers On Planet Earth: 2600's first HOPE conference",
       place: "Hotel Pennsylvania, Manhattan, New York City",
-      body: "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Modelled on the Dutch hacker gatherings of the 1980s and 1990s, it was the first US hacker conference on that scale, with talks 'ranging from privacy issues to technology to politics' and a panel on cryptography and privacy. HOPE became a recurring New York conference, annual from 2025.",
+      body: "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Inspired by the Dutch hacker gatherings of the 1980s and 1990s, it was, by its organisers' account, the first hacker conference of that size attempted in the United States, with talks 'ranging from privacy issues to technology to politics' and a 'Cryptography and Privacy' session featuring Eric Hughes and Matt Blaze. HOPE became a recurring New York conference, annual from 2025.",
       lat: 40.7497,
       lng: -73.9912,
       continent: "North America",
@@ -5244,6 +5294,16 @@ window.privacyData = {
           url: "https://www.hope.net/about/",
           quote: "The first Hackers On Planet Earth (HOPE) conference took place at the Hotel Pennsylvania in Manhattan, New York City over two days.",
           note: "Same page: 'It was the first time that a hacker conference of this size had been attempted in the United States and it was inspired by the Dutch hacker gatherings of the 80s and 90s.' and 'In 2025, for the first time ever, HOPE became an annual event.' The 2600 store lists a 1994 recording titled 'Cryptography and Privacy' (https://store.2600.com/collections/hackers-on-planet-earth).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "2600 Magazine (store.2600.com)",
+          title: "Hackers On Planet Earth (1994): \"Cryptography and Privacy\" (Download)",
+          date: "1994-08-13",
+          url: "https://store.2600.com/collections/hackers-on-planet-earth/products/hackers-on-planet-earth-1994-cryptography-and-privacy-download",
+          quote: "Saturday, August 13, 1994, 10:00 pm: There have been quite a few articles in the national media recently about cryptography and privacy.",
+          note: "--check FOUND. The same listing is FOUND saying 'Also featuring Eric Hughes and Matt Blaze.' It also describes Bob Stratton's introduction and a demonstration of 'the AT&T 3600 Surety device, the world's first Clipper Chip telephone encryption unit'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -6932,7 +6992,7 @@ window.privacyData = {
       phase: "cookies",
       title: "The Chaos Computer Club takes apart the German police 'state trojan'",
       place: "Chaos Computer Club, Hamburg (registered seat)",
-      body: "On 8 October 2011 the CCC published binaries and an analysis of 'lawful interception' malware used by German police, sent to it anonymously. It reported that software meant only to tap internet telephony could also take screenshots, load and run further programs and be taken over by third parties, because its commands were unencrypted and unauthenticated. The club argued this breached limits set by the Federal Constitutional Court in its 27 February 2008 ruling; Bavarian officials later confirmed using the software in five cases.",
+      body: "On 8 October 2011 the CCC published binaries and an analysis of 'lawful interception' malware used by German police, sent to it anonymously. It reported that software meant only to tap internet telephony could also take screenshots, load and run further programs and be taken over by third parties, because its commands were unencrypted and unauthenticated. The club argued this breached limits set by the Federal Constitutional Court in its 27 February 2008 ruling. Two days later Bavaria's interior ministry confirmed that the sample came from a 2009 Bavarian police investigation, and the Süddeutsche Zeitung reported that Bavarian police had used the trojan in five cases.",
       lat: 53.5511,
       lng: 9.9937,
       continent: "Europe",
@@ -6964,6 +7024,16 @@ window.privacyData = {
           url: "https://www.helpnetsecurity.com/2011/10/14/how-the-german-federal-trojan-was-actually-used/",
           quote: "According to Bavarian newspaper Süddeutsche Zeitung (via Google Translate), Bavarian law enforcement agents used it in five different cases, none of which falls under the above mentioned category.",
           note: "Secondary report relaying the Süddeutsche Zeitung.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Der Tagesspiegel",
+          title: "Internet-Überwachung: Trojaner kam aus Bayern",
+          date: "2011-10-10",
+          url: "https://www.tagesspiegel.de/politik/trojaner-kam-aus-bayern-8096494.html",
+          quote: "Die Erstbewertung des Landeskriminalamts habe ergeben, dass die dem CCC zugespielte Software einem Ermittlungsverfahren der bayerischen Polizei aus dem Jahr 2009 zugeordnet werden kann.",
+          note: "--check FOUND 2026-09-23; JSON-LD datePublished 2011-10-10. Also FOUND: 'Das bayerische Innenministerium hat bestätigt, dass der vom Chaos Computer Club (CCC) bekannt gemachte „Staats-Trojaner“ zur Online-Überwachung aus Bayern stammt.' The same article attributes the 'at least five cases' figure to Green MP Susanna Tausendfreund, not to officials. Translation: 'The State Criminal Police Office's initial assessment found that the software passed to the CCC can be assigned to a 2009 Bavarian police investigation.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -7382,7 +7452,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "Aaron Swartz's DeadDrop becomes SecureDrop",
       place: "Freedom of the Press Foundation, San Francisco, California",
-      body: "Four months after the first Snowden stories, the Freedom of the Press Foundation announced on 15 October 2013 that it had taken over DeadDrop, the whistleblower-submission system coded by Aaron Swartz with Kevin Poulsen, renamed it SecureDrop and would install it in newsrooms. Each source receives a codename so they can keep talking to a newsroom without revealing their identity or using e-mail. The code had been audited by University of Washington researchers; The New Yorker, the first user since May 2013 under the name Strongbox, kept its installation.",
+      body: "Four months after the first Snowden stories, the Freedom of the Press Foundation announced on 15 October 2013 that it had taken over DeadDrop, the whistleblower-submission system coded by Aaron Swartz in partnership with the journalist Kevin Poulsen, who managed the project, renamed it SecureDrop and would install it in newsrooms. Each source receives a codename so they can keep talking to a newsroom without revealing their identity or using e-mail. The code had been audited by University of Washington researchers; The New Yorker, the first user since May 2013 under the name Strongbox, was to keep running its installation.",
       lat: 37.7749,
       lng: -122.4194,
       continent: "North America",
@@ -7404,6 +7474,16 @@ window.privacyData = {
           url: "https://www.newyorker.com/news/news-desk/strongbox-and-aaron-swartz",
           quote: "The New Yorker ’ s version is called Strongbox; it went online this morning.",
           note: "The spacing reproduces the page text as extracted.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "SecureDrop (Freedom of the Press Foundation)",
+          title: "SecureDrop FAQ",
+          date: "2026",
+          url: "https://securedrop.org/faq/",
+          quote: "Investigative journalist Kevin Poulsen originally managed the project. The New Yorker launched the first implementation and branded their version StrongBox in May 2013.",
+          note: "--check FOUND. The same page is FOUND saying 'The web application, which was originally called DeadDrop, was developed by Aaron Swartz in 2012 before his tragic death.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -8910,7 +8990,7 @@ window.privacyData = {
       phase: "surveillance",
       title: "Kashmir Hill exposes Clearview AI's scraped face database",
       place: "The New York Times newsroom, Manhattan, New York City",
-      body: "The New York Times article 'The Secretive Company That Might End Privacy as We Know It' by Kashmir Hill, dated 18 January 2020 in its web address, revealed that the start-up Clearview AI had scraped more than three billion images from Facebook, YouTube, Venmo, Twitter and other sites and that more than 600 law-enforcement agencies had begun using its face-search app within a year. After the story, New Jersey's attorney general barred state police from using it, Vermont's attorney general sued and members of Congress demanded answers; Australia's privacy regulator opened inquiries on 21 January 2020 and in October 2021 ordered the company to stop collecting and to destroy Australians' images.",
+      body: "The New York Times article 'The Secretive Company That Might End Privacy as We Know It' by Kashmir Hill, dated 18 January 2020 in its web address, revealed that the start-up Clearview AI had built a face-search app on a database of more than three billion images it claimed to have scraped from Facebook, YouTube, Venmo and millions of other websites, and that — according to the company — more than 600 law-enforcement agencies had started using it in the past year. After the story, New Jersey's attorney general barred the state's police from using it, Vermont's attorney general sued and members of Congress demanded answers; Australia's privacy regulator opened inquiries on 21 January 2020 and in October 2021 ordered the company to stop collecting and to destroy Australians' images.",
       lat: 40.7561,
       lng: -73.9903,
       continent: "North America",
@@ -8942,6 +9022,16 @@ window.privacyData = {
           url: "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
           quote: "On 21 January 2020, the OAIC sent preliminary inquiries to the respondent",
           note: "The determination orders that Clearview 'must cease to collect Scraped Images, Probe Images, Scraped Image Vectors, Probe Image Vectors and Opt-out Vectors' from individuals in Australia and destroy those held; it records that 'From 29 January 2020, it began to offer Australian residents an online form to ‘opt-out’' which later 'became no longer accessible'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Gulf News (syndicated The New York Times article)",
+          title: "The secretive company that might end privacy as we know it",
+          date: "2020-01-19",
+          url: "https://gulfnews.com/world/americas/the-secretive-company-that-might-end-privacy-as-we-know-it-1.1579454027198",
+          quote: "The system - whose backbone is a database of more than 3 billion images that Clearview claims to have scraped from Facebook, YouTube, Venmo and millions of other websites - goes far beyond anything ever constructed by the US government or Silicon Valley giants.",
+          note: "--check FOUND. Page JSON-LD: author 'NYT', datePublished 2020-01-19T21:12:08+04:00. This is the Times text syndicated, since the original nytimes.com page blocks scripted access. Also FOUND: 'But without public scrutiny, more than 600 law enforcement agencies have started using Clearview in the past year, according to the company, which declined to provide a list.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -11598,7 +11688,7 @@ window.privacyData = {
       date: "12 September 1981",
       phase: "dataprotection",
       headline: "Hackers ask: who owns my data?",
-      narrative: "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. About 20 people came, meeting around a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding; its topic list included data law under the question 'who owns my data?'.",
+      narrative: "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. Some 20 people are said to have come, meeting at a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding, though the name itself seems to have come into use only around the end of 1982. The notice's topic list included data law under the question 'who owns my data?'.",
       why: "Europe's most influential hacker club began by asking, before most people owned a computer, who owns personal data.",
       media: ["wau-holland-hamburg-1984"],
       chips: [
@@ -12194,15 +12284,15 @@ window.privacyData = {
       label: "Countries enacting their first data-privacy law, by decade",
       unit: "countries per decade",
       geography: "World",
-      note: "Greenleaf and Cottier's decade counts (February 2020). Plotted at the decade's final year; cumulative total 142 by end-2019.",
+      note: "Greenleaf and Cottier's decade counts, from PL&B International Report 163 (February 2020). Points are plotted at each decade's final year. The cumulative total is 142 by end-2019. 'Countries' is Greenleaf's usage and includes self-governing territories. The counts are a snapshot that his later tables revise as laws are enacted or located; his June 2025 update reports 172 laws by March 2025.",
       points: [
         {
           year: 1979,
           value: 10,
           note: "1970s",
           source: {
-            institution: "Privacy Laws & Business International Report (Graham Greenleaf)",
-            title: "2020 ends a decade of 62 new data privacy laws (with Bertil Cottier)",
+            institution: "Privacy Laws & Business International Report, issue 163 (Graham Greenleaf and Bertil Cottier)",
+            title: "2020 ends a decade of 62 new data privacy laws",
             date: "2020-02",
             url: "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
             quote: "The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.",
@@ -12216,8 +12306,8 @@ window.privacyData = {
           value: 10,
           note: "1980s",
           source: {
-            institution: "Privacy Laws & Business International Report (Graham Greenleaf)",
-            title: "2020 ends a decade of 62 new data privacy laws (with Bertil Cottier)",
+            institution: "Privacy Laws & Business International Report, issue 163 (Graham Greenleaf and Bertil Cottier)",
+            title: "2020 ends a decade of 62 new data privacy laws",
             date: "2020-02",
             url: "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
             quote: "The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.",
@@ -12231,8 +12321,8 @@ window.privacyData = {
           value: 20,
           note: "1990s",
           source: {
-            institution: "Privacy Laws & Business International Report (Graham Greenleaf)",
-            title: "2020 ends a decade of 62 new data privacy laws (with Bertil Cottier)",
+            institution: "Privacy Laws & Business International Report, issue 163 (Graham Greenleaf and Bertil Cottier)",
+            title: "2020 ends a decade of 62 new data privacy laws",
             date: "2020-02",
             url: "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
             quote: "The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.",
@@ -12246,8 +12336,8 @@ window.privacyData = {
           value: 40,
           note: "2000s",
           source: {
-            institution: "Privacy Laws & Business International Report (Graham Greenleaf)",
-            title: "2020 ends a decade of 62 new data privacy laws (with Bertil Cottier)",
+            institution: "Privacy Laws & Business International Report, issue 163 (Graham Greenleaf and Bertil Cottier)",
+            title: "2020 ends a decade of 62 new data privacy laws",
             date: "2020-02",
             url: "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
             quote: "The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.",
@@ -12261,8 +12351,8 @@ window.privacyData = {
           value: 62,
           note: "2010s",
           source: {
-            institution: "Privacy Laws & Business International Report (Graham Greenleaf)",
-            title: "2020 ends a decade of 62 new data privacy laws (with Bertil Cottier)",
+            institution: "Privacy Laws & Business International Report, issue 163 (Graham Greenleaf and Bertil Cottier)",
+            title: "2020 ends a decade of 62 new data privacy laws",
             date: "2020-02",
             url: "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
             quote: "The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.",
@@ -15122,13 +15212,13 @@ window.privacyData = {
     {
       id: "bj-2009",
       country: "Benin",
-      law: "Loi n° 2009-09 du 22 mai 2009 portant organisation de la protection des données à caractère personnel",
+      law: "Loi n° 2009-09 du 22 mai 2009 portant protection des données à caractère personnel en République du Bénin",
       year: 2009,
-      regulator: "Autorité de Protection des Données Personnelles (APDP)",
+      regulator: "Commission Nationale de l'Informatique et des Libertés (CNIL); since the 2018 Digital Code, the Autorité de Protection des Données à caractère Personnel (APDP)",
       region: "Sub-Saharan Africa",
       lat: 6.4969,
       lng: 2.6289,
-      note: "Later absorbed into Benin's Digital Code (Law 2017-20).",
+      note: "Adopted by the National Assembly on 27 April 2009. Largely superseded by Book V of Benin's Digital Code (Law 2017-20 of 20 April 2018), which repeals the 2009 law's contrary provisions (Art. 647) and turned the 2009 law's CNIL into the APDP.",
       source: [
         {
           institution: "DLA Piper",
@@ -15139,6 +15229,36 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Secrétariat général du Gouvernement du Bénin",
+          title: "Loi N° 2009-09 du 22 mai 2009",
+          date: "2009-05-22",
+          url: "https://sgg.gouv.bj/doc/loi-2009-09/",
+          quote: "Loi portant protection des données à caractère personnel en République du Bénin",
+          note: "--check FOUND. This is the official government record of the law's number, date and title.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Présidence de la République du Bénin (text via Assemblée nationale du Bénin documentation archive)",
+          title: "Loi n° 2009-09 du 22 mai 2009 portant protection des données à caractère personnel en République du Bénin",
+          date: "2009-05-22",
+          url: "https://www.documentation-anbenin.org/files/original/1651/L._2009-09.pdf",
+          quote: "L'Assemblée Nationale a délibéré et adopté en sa séance du 27 avril 2009.",
+          note: "--check FOUND. The same PDF has 'LOI N° 2009-09 DU 22 MAI 2009' (FOUND) and 'Commission Nationale de l'Informatique et des Libertés (CNIL)' (FOUND). The CNIL is the regulator this law created, under Art. 19.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Autorité de Protection des Données à caractère Personnel (Benin), via dataprotection.africa",
+          title: "Loi n° 2017-20 du 20 avril 2018 portant code du numérique en République du Bénin (Livre 5ème)",
+          date: "2018-04-20",
+          url: "https://dataprotection.africa/wp-content/uploads/2022/09/Benin_DPA.pdf",
+          quote: "Les mandats des organismes de l'ARCEP-Bénin, de l'ABSU-SEP et de l'APDP (ex CNIL) actuellement en cours, vont jusqu'à leur terme nonobstant l'entrée en vigueur de la présente loi.",
+          note: "--check FOUND (Art. 645). Art. 647, 'Dispositions abrogatoires', repeals prior contrary provisions, including 'de la loi n° 2009-09 du 24 mai 2009 portant protection des données à caractère personnel en République du Bénin.' (FOUND). The Code misdates that law as 24 May; the official date is 22 May. The PDF's cover gives the APDP's official name as 'Autorité de Protection des Données à caractère Personnel' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15147,7 +15267,7 @@ window.privacyData = {
       country: "Angola",
       law: "Lei n.º 22/11 da Protecção de Dados Pessoais",
       year: 2011,
-      regulator: "Agência de Proteção de Dados (APD)",
+      regulator: "Agência de Protecção de Dados (APD)",
       region: "Sub-Saharan Africa",
       lat: -8.839,
       lng: 13.2894,
@@ -15156,10 +15276,20 @@ window.privacyData = {
         {
           institution: "DLA Piper",
           title: "Data Protection Laws of the World — Angola",
-          date: "2026",
+          date: "2021",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=AO",
           quote: "Angola regulates data privacy and protection issues under the Data Protection Law (Law no. 22/11, 17 June 2011), the Electronic Communications and Information Society Services Law (Law no. 23/11, 20 June 2011) and the Protection of Information Systems and Networks Law (Law no. 7/17, 16 February 2017).",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "LEX.AO (Angolan legislation database), reproducing Diário da República",
+          title: "Lei n.º 22/11 de 17 de junho — Lei da Protecção de Dados Pessoais",
+          date: "2011-06-17",
+          url: "https://lex.ao/docs/assembleia-nacional/2011/lei-n-o-22-11-de-17-de-junho/",
+          quote: "Publicação: Diário da República Iª Série n.º 114 de 17 de Junho de 2011",
+          note: "--check FOUND. The same page has 'A organização e funcionamento da Agência de Protecção de Dados são estabelecidos por diploma do Titular do Poder Executivo.' (FOUND, Art. 45), which confirms the regulator's spelling in the law.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15182,6 +15312,16 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=GA",
           quote: "Act no. 025/2023 of 09/07/2023 amending Act no. 001/2011 of 25 September 2011 on the protection of personal data;",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Journal Officiel de la République Gabonaise (via WHO Cancer Policy & Control Database)",
+          title: "Loi n° 025/2023 portant modification de la loi n°001/2011 du 25 septembre 2011 relative à la protection des données à caractère personnel (JO n°218 bis, 15 juillet 2023)",
+          date: "2023-07-12",
+          url: "https://extranet.who.int/cpcd/sites/default/files/public_file_repository/GAB_Gabon_Loi-No-025-2023-portant-modification-de-la-loi-no-001-2011-du-25-septembre-2011-relative-a-la-protection-des-donnees-a-caractere-personnel_2023.pdf",
+          quote: "Loi N° 025/2023 du 09/07/2023 portant modification de la loi n°001/2011 du 25 septembre 2011 relative à la protection des données",
+          note: "--check FOUND. The same PDF has 'Fait à Libreville, le 12 juillet 2023' (FOUND) and 'JOURNAL OFFICIEL N°218 BIS DU 15 JUILLET 2023' (FOUND). This is primary confirmation of the 2011 law's date and of the 2023 amendment.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15207,6 +15347,26 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Ministry of Communication, Digital Technology and Innovations (Ghana)",
+          title: "DPC — Brief History",
+          date: "n.d. (accessed 2026-09-23)",
+          url: "https://moc.gov.gh/dpc/",
+          quote: "The Data Protection Commission (DPC) is an independent statutory body established under the Data Protection Act, 2012 (Act 843) to protect the privacy of the individual and personal data by regulating the processing of personal information.",
+          note: "--check FOUND. The page adds that the Act came into force in October 2012 and that the Commission's governing body was inaugurated in November 2012.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Constitute Project",
+          title: "Ghana 1992 (rev. 1996) — Article 18, Protection of privacy of home and other property",
+          date: "1992",
+          url: "https://www.constituteproject.org/constitution/Ghana_1996",
+          quote: "No person shall be subjected to interference with the privacy of his home, property, correspondence or communication except in accordance with law",
+          note: "--check FOUND. This is the text of Art. 18(2), under the heading '18. PROTECTION OF PRIVACY OF HOME AND OTHER PROPERTY'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15226,9 +15386,10 @@ window.privacyData = {
           title: "Protection of Personal Information Act 4 of 2013",
           date: "2013",
           url: "https://www.gov.za/documents/protection-personal-information-act",
-          quote: "The Protection of Personal Information Act 4 of 2013 aims: to promote the protection of personal information processed by public and private bodies;",
+          quote: "The Protection of Personal Information Act 4 of 2013 aims: to promote the protection of personal information processed by public and private bodies; … to provide for the establishment of an Information Regulator to exercise certain powers and to perform certain duties and functions in terms of this Act and the Promotion of Access to Information Act, 2000;",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "--check FOUND. This supports the regulator field. The same page gives commencement for most sections as '1 July 2020, Sections 2 to 38, Sections 55 to 109, Section 111, Section 114(1), (2) and (3)' (FOUND)."
         }
       ]
     },
@@ -15252,6 +15413,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "ARTCI — Autorité de Protection des Données Personnelles (Côte d'Ivoire)",
+          title: "Savez-vous que vous avez des droits sur vos données personnelles ?",
+          date: "2026-01-27",
+          url: "https://www.autoritedeprotection.ci/savez-vous-que-vous-avez-des-droits-sur-vos-donnees-personnelles/",
+          quote: "L'ARTCI, Autorité de Protection des Données Personnelles, reste à votre écoute et vous accompagne pour garantir le respect et la protection de vos droits.",
+          note: "--check FOUND. The same page cites 'la loi n°2013-450 du 19 juin 2013 relative à la protection des données à caractère personnel'. The date comes from the page's article:published_time metadata.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15272,6 +15443,16 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=MG",
           quote: "After discussion at the National Assembly of Madagascar, the Data Protection Law was adopted on 16 December 2014.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Unité de Gouvernance Digitale, Présidence de la République de Madagascar",
+          title: "LOI N° 2014-038 – Sur la protection des données à caractère personnel",
+          date: "2015-01-09",
+          url: "https://digital.gov.mg/en/2022/07/05/loi-n-2014-038-sur-la-protection-des-donnees-a-caractere-personnel/",
+          quote: "L'Assemblée nationale a adopté en sa séance du 16 décembre 2014,",
+          note: "--check FOUND. The same page has 'Antananarivo, le 09 janvier 2015 RAJAONARIMAMPIANINA Hery Martial' (FOUND), the promulgation, and 'Vu la décision n° 02-HCC/D3 du 07 janvier 2015 de la Haute Cour Constitutionnelle' (FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15297,6 +15478,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Republic of Kenya — Kenya Gazette Supplement No. 181 (Acts No. 24), via WHO Cancer Policy & Control Database",
+          title: "The Data Protection Act, 2019 (No. 24 of 2019)",
+          date: "2019-11-11",
+          url: "https://extranet.who.int/cpcd/sites/default/files/public_file_repository/KEN_Kenya_The-Data-Protection-Act_2019.pdf",
+          quote: "Date of Commencement: 25th November, 2019",
+          note: "--check FOUND. The same PDF has 'Date of Assent: 8th November, 2019' (FOUND) and the long title 'AN ACT of Parliament to give effect to Article 31(c) and (d) of the Constitution; to establish the Office of the Data Protection Commissioner;' (FOUND). The Gazette supplement is dated Nairobi, 11 November 2019.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15318,6 +15509,26 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=UG",
           quote: "The Data Protection and Privacy Act commenced on 3 May 2019 while the Regulations took effect on 12 March 2021.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Uganda (Authority)",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=authority&c=UG",
+          quote: "The Personal Data Protection Office established by Section 4 of the Data Protection and Privacy Act and Regulation 3 of the Data Protection and Privacy Regulations is responsible for personal data protection.",
+          note: "--check FOUND 2026-09-23. The page goes on: 'The Office operates under the National Information Technology Authority-Uganda (NITA-U) and was operationalized in August 2021.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "RSM Uganda",
+          title: "The Data Protection and Privacy Act, 2019",
+          date: "2022-01-27",
+          url: "https://www.rsm.global/uganda/insights/assurance-updates/data-protection-and-privacy-act-2019",
+          quote: "the Data Protection and Privacy Regulations (DPP Regulations) under it were gazetted in March 2021. Following the passing of the DPP Regulations, the Personal Data Protection Office (PDPO), an independent office under National Information Technology Authority (NITA), was operationalized in August 2021",
+          note: "Independent secondary source (accounting firm). --check FOUND 2026-09-23. The publish date comes from the page's article:published_time.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15342,6 +15553,26 @@ window.privacyData = {
           quote: "On October 15 th 2021, Law No 058/2021 of 13 /10/2021 relating to the protection of personal data and privacy was officially gazetted.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Rwanda",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=RW",
+          quote: "Data Protection Law came into effect 15th October 2021. Data controllers and processors who are already in operation have a period of two (2) years from the Data Protection Law commencement date to conform to its provisions.",
+          note: "--check FOUND 2026-09-23. Supports the two-year transition.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Rwanda (Authority)",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=authority&c=RW",
+          quote: "The supervisory authority regarding Data protection is the National Cyber Security Authority (“ NCSA ”) (article 3, 23°).",
+          note: "--check FOUND 2026-09-23. Supports the regulator field.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15354,7 +15585,7 @@ window.privacyData = {
       region: "Sub-Saharan Africa",
       lat: -15.3875,
       lng: 28.3228,
-      note: "Zambia's first general data-protection statute, with registration and licensing regulations the same year.",
+      note: "Assented to 23 March 2021 and in force 1 April 2021. Zambia's first dedicated data-protection statute; personal-data rules had previously sat in the Electronic Communications and Transactions Act, 2009. It created the Office of the Data Protection Commissioner, and registration and licensing regulations followed the same year.",
       source: [
         {
           institution: "DLA Piper",
@@ -15363,6 +15594,26 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=ZM",
           quote: "Data Protection Act No. 3 of 2021 (the “ DPA \") and the Data Protection (Registration and Licensing) Regulations, 2021.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "ZambiaLII (Laws.Africa)",
+          title: "Data Protection Act, 2021 (Act 3 of 2021), legislation as at 24 March 2021",
+          date: "2021-03-24",
+          url: "https://media.zambialii.org/media/legislation/20776/source_file/39bf6107e2fb14d7/2021-3.pdf",
+          quote: "Commenced on 1 April 2021 by Data Protection Act (Commencement) Order, 2021",
+          note: "Consolidated primary text (CC BY 4.0). --check FOUND 2026-09-23. Also FOUND: 'Assented to on 23 March 2021' and 'Published in Government Gazette on 24 March 2021'. The long title includes 'establish the Office of the Data Protection Commissioner'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Data Protection Africa (ALT Advisory)",
+          title: "Factsheet: Zambia (last updated 30 September 2019)",
+          date: "2019-09-30",
+          url: "https://dataprotection.africa/wp-content/uploads/2019/10/Zambia-Factsheet.pdf",
+          quote: "Data protection and privacy matters in Zambia currently fall under the scope of the Electronic Communications and Transactions Act, No. 21 of 2009 (ECTA).",
+          note: "--check FOUND 2026-09-23. Shows that a data-protection regime (ECTA 2009, enforced by ZICTA) came before the 2021 Act, which is why the note says 'first dedicated' rather than 'first general'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15377,7 +15628,7 @@ window.privacyData = {
       region: "Sub-Saharan Africa",
       lat: -17.8252,
       lng: 31.0335,
-      note: "Enacted in 2021 (year from the Act's standard citation; the DLA page names the Act without its year); the telecoms regulator POTRAZ acts as data protection authority.",
+      note: "Act No. 5 of 2021: passed by both Houses on 26 August 2021 and gazetted on 3 December 2021 (under a wrong title; republished with the correct title and chapter number on 11 March 2022). The telecoms regulator POTRAZ is the designated data protection authority.",
       source: [
         {
           institution: "DLA Piper",
@@ -15386,7 +15637,27 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=ZW",
           quote: "Cyber and Data Protection Act [Chapter 12:07]",
           note: "The page names the Act but its year (2021) is not stated in the extracted text; year not verified at a primary source.",
-          verificationStatus: "PENDING",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Veritas Zimbabwe",
+          title: "Cyber and Data Protection Act [Chapter 12:07] (No. 5 of 2021)",
+          date: "2022-03-11",
+          url: "https://www.veritaszim.net/node/5522",
+          quote: "Cyber and Data Protection Act [Chapter 12:07] (No. 5 of 2021)",
+          note: "--check FOUND 2026-09-23. Timeline rows, each FOUND: '26/08/21 : Bill passed by both Houses as amended', '03/12/21 : Bill gazetted Act with wrong tittle' [sic], '11/03/22 : Bill Gazetted as Act'. The page header (in the HTML, but dropped by the text extractor) reads: 'Act as gazetted with correct title and Chapter number on 11th March 2022 by GN 492/2022. [Republication of Act gazetted on 3rd December 2021, as explained in GN 491/2022.]'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Zimbabwe (Authority)",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=authority&c=ZW",
+          quote: "It was established by the Postal and Telecommunications Act [Chapter 12:05] and designated as the Data Protection Authority by the Act.",
+          note: "--check FOUND 2026-09-23. The preceding sentence (FOUND) names the Authority as 'the Postal and Telecommunications Regulatory Authority of Zimbabwe'.",
+          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
       ]
@@ -15412,6 +15683,26 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Afriwise",
+          title: "The Personal Data Protection Act No. 11 of 2022 is now operational",
+          date: "2023",
+          url: "https://www.afriwise.com/blog/the-personal-data-protection-act-no-11-of-2022-is-now-operational",
+          quote: "Vide Government Notice no 326 of the 28th of April, 2023 the Minister for Information, Communication and Information Technology Mr.Nape Nnauye has pronounced the 1st of May 2023 as the operational date for the most awaited Act on personal data Protection.",
+          note: "--check FOUND 2026-09-23. Independent of DLA Piper; it names the commencement notice.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Tanzania (Authority)",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=authority&c=TZ",
+          quote: "It was established on 1 May 2023 and became fully operational from 3 April 2024.",
+          note: "--check FOUND 2026-09-23 (the subject is the Personal Data Protection Commission, named in the preceding sentence).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15424,7 +15715,7 @@ window.privacyData = {
       region: "Sub-Saharan Africa",
       lat: 9.0765,
       lng: 7.3986,
-      note: "Nigeria's first statute; it was preceded by the Nigeria Data Protection Regulation of 2019, a regulation issued by the IT agency NITDA. The Act created the Nigeria Data Protection Commission.",
+      note: "Nigeria's first comprehensive data-protection statute, signed into law on 12 June 2023. It was preceded by the Nigeria Data Protection Regulation 2019, a regulation issued by the IT agency NITDA. The Act created the Nigeria Data Protection Commission, successor to the Nigeria Data Protection Bureau.",
       source: [
         {
           institution: "DLA Piper",
@@ -15439,9 +15730,29 @@ window.privacyData = {
         {
           institution: "Centre for Intellectual Property and Information Technology Law (CIPIT), Strathmore University",
           title: "The African Union Convention on Cyber Security and Personal Data Protection: Key Insights",
-          date: "2023",
+          date: "2023-07-24",
           url: "https://cipit.strathmore.edu/the-african-union-convention-on-cyber-security-and-personal-data-protection-key-insights/",
-          quote: "Clear data protection guidelines have also increased the number of data controllers and processors in Nigeria, which recorded a 600% growth in numbers in 2021 afterthe enactment of the Nigeria Data Protection Regulation (NDPR) in 2019, which spurred digital business growth.",
+          quote: "Other than the Nigeria Data Protection Regulation (NDPR) in 2019, the Malabo Convention has also spurred the recent enactment of the Nigerian Data Protection Act, 2023 which continues this data protection mission by creating the Nigeria Data Protection Commission as the significant enforcer of the Act.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Nigeria Data Protection Commission (NDPC)",
+          title: "About Us",
+          date: "2026",
+          url: "https://ndpc.gov.ng/about-us/",
+          quote: "the Federal Government of Nigeria signed into law the Nigeria Data Protection Act 2023 (NDP Act) on June 12,2023. The Act established the Nigeria Data Protection Commission whose mandate, inter alia, is to oversee the implementation of the Nigeria Data Protection Act (NDP Act).",
+          note: "Regulator's own page. --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "National Information Technology Development Agency (NITDA)",
+          title: "Nigeria Data Protection Regulation 2019",
+          date: "2019-01-25",
+          url: "https://nitda.gov.ng/wp-content/uploads/2020/11/NigeriaDataProtectionRegulation11.pdf",
+          quote: "THE AGENCY hereby issues the Nigeria Data Protection Regulation and shall come into effect on the date issued by NITDA.",
+          note: "Primary text. --check FOUND 2026-09-23. Also FOUND: 'THIS INSTRUMENT WAS SIGNED THIS 25TH DAY OF JANUARY, 2019'. The preamble states that NITDA acts under the NITDA Act of 2007.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15452,10 +15763,11 @@ window.privacyData = {
       country: "Seychelles",
       law: "Data Protection Act, 2023 (Act 24 of 2023)",
       year: 2023,
+      regulator: "Information Commission",
       region: "Sub-Saharan Africa",
       lat: -4.6191,
       lng: 55.4513,
-      note: "In force 22 December 2023.",
+      note: "In force 22 December 2023, after the National Assembly passed it on 5 December 2023. It repealed the Data Protection Act 2003 (Cap 57), which was enacted but never implemented. It gave existing processors an 18-month transition and made the Information Commission, set up under the Access to Information Act, the regulator.",
       source: [
         {
           institution: "DLA Piper",
@@ -15464,6 +15776,36 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=SC",
           quote: "The Data Protection Act, 2023 (Act 24 of 2023) came into force on 22 December 2023.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Republic of Seychelles, Supplement to Official Gazette (copy hosted by the Information Commission)",
+          title: "Data Protection Act, 2023 (Act 24 of 2023)",
+          date: "2023-12-22",
+          url: "https://www.infocom.sc/wp-content/uploads/2024/01/Act-24-2023-Data-Protection-Act-2023.pdf",
+          quote: "The Data Protection Act (Cap 57) is repealed.",
+          note: "Primary text. --check FOUND 2026-09-23 (s. 55). Also FOUND: '“Commission” means the Information Commission established under section 36 of the Access to Information Act;' (s. 2) and 'I certify that this is a correct copy of the Bill which was passed by the National Assembly on 5 December, 2023.' Section 56 sets an 18-month transition.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Appleby (via Mondaq)",
+          title: "Data Protection Law Now In Force In Seychelles",
+          date: "2024-04-01",
+          url: "https://www.mondaq.com/privacy-protection/1444998/data-protection-law-now-in-force-in-seychelles",
+          quote: "The DPA repeals the Data Protection Act 2003 which was enacted but never implemented in practice.",
+          note: "--check FOUND 2026-09-23. The page also says the 18-month transitional period runs 'from 22 December 2023'. Appleby's own site returns 403 to scripts.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Information Commission (Seychelles)",
+          title: "Data Protection",
+          date: "2026",
+          url: "https://www.infocom.sc/data-protection/",
+          quote: "The Information Commission is the statutory body responsible for implementing, monitoring, and enforcing the provisions of the Data Protection Act, 2023.",
+          note: "Regulator's own page. --check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15478,7 +15820,7 @@ window.privacyData = {
       region: "Sub-Saharan Africa",
       lat: 9.03,
       lng: 38.74,
-      note: "Ethiopia's first comprehensive law.",
+      note: "Ethiopia's first comprehensive personal-data-protection law, published in the Federal Negarit Gazette and in force on 24 July 2024. Before it, data protection was spread across the Civil Code, the Computer Crimes Proclamation and sector directives. It names the Ethiopian Communications Authority as regulator.",
       source: [
         {
           institution: "DLA Piper",
@@ -15489,13 +15831,33 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Federal Negarit Gazette of the Federal Democratic Republic of Ethiopia (copy hosted by DataGuidance)",
+          title: "Personal Data Protection Proclamation No. 1321/2024",
+          date: "2024-07-24",
+          url: "https://www.dataguidance.com/sites/default/files/personal_data_protection_proclamation_1321-2024.pdf",
+          quote: "This proclamation shall enter into force on the date of publication in the Negarit Gazeta.",
+          note: "Primary text (bilingual Amharic/English). --check FOUND 2026-09-23 (Art. 70). Also FOUND: 'Federal Negarit Gazette No. 35, 24th July, 2024' (page header), '“Authority” means the Ethiopian Communications' (Art. 2(36)) and 'Done at Addis Abeba , this 24th day of' (signature block: July 2024, President Sahle-Work Zewde).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Techhive Advisory",
+          title: "Review of Ethiopia's Data Protection Act",
+          date: "2024",
+          url: "https://www.techhiveadvisory.africa/insights/review-of-ethiopias-data-protection-act",
+          quote: "Before enacting the Law, data protection was regulated by various legislation, including the Civil Code, the Computer Crimes Proclamation, the Financial Consumers Protection Directive, and the Telecommunications Consumer Rights Directive. The Law designates the Ethiopian Communications Authority as the regulatory authority",
+          note: "--check FOUND 2026-09-23. Also FOUND: 'On July 24, 2024, Ethiopia finally published its Personal Data Protection Proclamation (“the Law”) in the Federal Negarit Gazette, officially bringing it into effect.' Supports 'first comprehensive'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       id: "cm-2024",
       country: "Cameroon",
-      law: "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel",
+      law: "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
       year: 2024,
       region: "Sub-Saharan Africa",
       lat: 3.848,
@@ -15509,6 +15871,16 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=CM",
           quote: "Law No. 2024/017 of 23 December 2024 on the protection of personal data",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Presidency of the Republic of Cameroon",
+          title: "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
+          date: "2024-12-23",
+          url: "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+          quote: "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
+          note: "The Presidency's official document page for the law (the page title and document heading); a download link for the text is on the page. Checked with fetch-text --check: FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15533,6 +15905,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Nepal (Authority)",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=authority&c=NP",
+          quote: "Not applicable.",
+          note: "The entire text of the 'National data protection authority in Nepal' section. It supports the note's claim that Nepal has no independent data-protection authority. Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15545,7 +15927,7 @@ window.privacyData = {
       region: "South Asia",
       lat: 6.8868,
       lng: 79.9187,
-      note: "Passed by Parliament on 19 March 2022 — the first dedicated data-protection law in South Asia; amended by Act No. 22 of 2025.",
+      note: "Passed by Parliament on 9 March 2022 and certified by the Speaker on 19 March 2022. The Data Protection Authority calls it the first law of its kind in South Asia. Amended by the Personal Data Protection (Amendment) Act, No. 22 of 2025. So far only the provisions setting up the Data Protection Authority (and the definitions) are in operation; the substantive obligations await a ministerial commencement order.",
       source: [
         {
           institution: "Data Protection Authority of Sri Lanka",
@@ -15561,8 +15943,28 @@ window.privacyData = {
           title: "Data Protection Laws of the World — Sri Lanka",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=LK",
-          quote: "It was subject to several rounds of revisions, and subsequently was passed by the Parliament of Sri Lanka on 19 March, 2022 as the Personal Data Act No. 9 of 2022 (“PDPA 2022”).",
-          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          quote: "Subsequently, PDPA 2022 was amended by way of Personal Data Protection (Amendment) Act No. 22 of 2025 (the “Amendment Act”) (the PDPA and the Amendment Act are collectively referred to as the “PDPA”), as published in the Government Gazette of 31 October 2025. … Accordingly, thus far, only the provisions pertaining to the regulator (the Data Protection Authority) and the interpretation section of PDPA 2022 have been brought into operation, which took place in 2023, by way of Orders published in the Government Gazette.",
+          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script. Law-firm global guide (secondary). Supports the added statement that the substantive Parts are not yet in operation; the same page says 'Thus far, no such date has been pronounced by the Minister in such regard.' Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Parliament of the Democratic Socialist Republic of Sri Lanka (copy hosted by the Data Protection Authority of Sri Lanka)",
+          title: "Personal Data Protection Act, No. 9 of 2022",
+          date: "2022-03-19",
+          url: "https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20(2).pdf",
+          quote: "PERSONAL DATA PROTECTION ACT, No. 9 OF 2022 [Certified on 19th of March, 2022]",
+          note: "The official printed Act (published as a supplement to the Gazette of 25 March 2022). The parliament.lk copy (uploads/acts/gbills/english/6242.pdf) reset the connection. Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Ada Derana",
+          title: "Personal Data Protection Bill passed with amendments",
+          date: "2022-03-09",
+          url: "http://www.adaderana.lk/news/81084/personal-data-protection-bill-passed-with-amendments",
+          quote: "Personal Data Protection Bill was passed in parliament today (March 09) with amendments.",
+          note: "Contemporary news report (page metadata dated 2022-03-09) giving the date Parliament passed the bill. Checked with fetch-text --check: FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15577,7 +15979,7 @@ window.privacyData = {
       region: "South Asia",
       lat: 28.6172,
       lng: 77.2082,
-      note: "Enacted 11 August 2023 after the Supreme Court's 2017 Puttaswamy judgment; before it, India relied on the IT Act 2000 and 2011 rules. Commencement is by notification; the Data Protection Board is its regulator.",
+      note: "Received presidential assent on 11 August 2023, after the Supreme Court's 2017 Puttaswamy judgment; before it, India relied on the IT Act 2000 and its 2011 rules. The Act commences in phases under the DPDP Rules, 2025, notified in November 2025. The provisions setting up the Data Protection Board of India took effect on 13 November 2025, and most substantive obligations take effect on 13 May 2027. Until then the IT Act regime continues to apply.",
       source: [
         {
           institution: "Ministry of Electronics and Information Technology (Gazette of India copy)",
@@ -15594,8 +15996,18 @@ window.privacyData = {
           title: "Data Protection Laws of the World — India",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=IN",
-          quote: "Until 2023, India did not have a standalone law or framework to govern data protection.",
-          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          quote: "Until 2023, India did not have a standalone law or framework to govern data protection. … Phase I (effective immediately): Per the government’s notification, certain provisions of the DPDP Act, specifically those in relation to setting up the new data protection authority, i.e., the Data Protection Board of India, have been made effective immediately i.e. on November 13, 2025.",
+          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script. Law-firm global guide (secondary). The same page gives Phase III: 'All other substantive provisions of the DPDP Act, including specific compliance obligations, are only set to be effective 18 months from the date of notification, i.e., from May 13, 2027.' Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Press Information Bureau, Government of India",
+          title: "DPDP Rules, 2025 Notified",
+          date: "2025-11-17",
+          url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190655&reg=48&lang=2",
+          quote: "The Government of India notified the Digital Personal Data Protection (DPDP) Rules, 2025 on 14 November 2025.",
+          note: "PIB backgrounder, posted 17 November 2025. It also states 'Parliament enacted the Digital Personal Data Protection Act on 11 August 2023' and 'The Rules introduce an eighteen-month period for phased compliance.' The gazette copy of the Rules (meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf) is dated 13 November 2025 and was published in the Gazette on 14 November. Checked with fetch-text --check: FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15604,20 +16016,50 @@ window.privacyData = {
     {
       id: "bd-2025",
       country: "Bangladesh",
-      law: "Personal Data Protection Ordinance, 2025",
+      law: "Personal Data Protection Ordinance, 2025 (Ordinance No. 61 of 2025); replaced by the Personal Data Protection Act, 2026 (Act No. 63 of 2026)",
       year: 2025,
       region: "South Asia",
       lat: 23.8103,
       lng: 90.4125,
-      note: "Issued by the interim government as an ordinance in November 2025 alongside a National Data Governance Ordinance; some sections take effect later. Its status after the return of an elected parliament was not verified.",
+      note: "Promulgated by the interim government as Ordinance No. 61 of 2025, dated 6 November 2025, alongside a National Data Governance Ordinance, and amended in February 2026. After the elected parliament returned, it passed the Personal Data Protection Bill on 9 April 2026. The resulting Personal Data Protection Act, 2026 (Act No. 63 of 2026, dated 10 April 2026) repealed the ordinances and is deemed in force from 6 November 2025, except for a few sections (s.23 and ss.31–35) that take effect later by gazette notification.",
       source: [
         {
           institution: "Prothom Alo (English)",
           title: "Govt issues gazettes of 2 landmark ordinances on data protection, governance",
-          date: "2025-11",
+          date: "2025-11-09",
           url: "https://en.prothomalo.com/bangladesh/government/teeopu4dfv",
           quote: "The government has issued gazette notifications on two groundbreaking laws - the Personal Data Protection Ordinance, 2025 and the National Data Governance Ordinance, 2025, marking a historic step toward ensuring the privacy, security, and ownership of citizens’ personal data in Bangladesh.",
           note: "Press report; the official gazette was not read. Exact gazette date not confirmed (reported as 6 November 2025).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Legislative and Parliamentary Affairs Division, Government of Bangladesh (Laws of Bangladesh)",
+          title: "ব্যক্তিগত উপাত্ত সুরক্ষা অধ্যাদেশ, ২০২৫ (Personal Data Protection Ordinance, 2025)",
+          date: "2025-11-06",
+          url: "http://bdlaws.minlaw.gov.bd/act-print-1574.html",
+          quote: "ব্যক্তিগত উপাত্ত সুরক্ষা অধ্যাদেশ, ২০২৫ ( ২০২৫ সনের ৬১ নং অধ্যাদেশ ) [ ০৬ নভেম্বর, ২০২৫ ] এই অধ্যাদেশ ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (২০২৬ সনের ৬৩ নং আইন) দ্বারা রহিত করা হইয়াছে।",
+          note: "Official print view of the ordinance. Translation: 'Personal Data Protection Ordinance, 2025 (Ordinance No. 61 of 2025) [06 November 2025]. This ordinance has been repealed by the Personal Data Protection Act, 2026 (Act No. 63 of 2026).' The act-1574.html view is served as UTF-16, which the checker cannot read, so the print view is used. Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Legislative and Parliamentary Affairs Division, Government of Bangladesh (Laws of Bangladesh)",
+          title: "ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (Personal Data Protection Act, 2026)",
+          date: "2026-04-10",
+          url: "http://bdlaws.minlaw.gov.bd/act-print-1692.html",
+          quote: "(৩) ধারা ২৩ এবং ধারা ৩১ হইতে ৩৫ ব্যতীত, এই আইন ৬ নভেম্বর, ২০২৫ তারিখে কার্যকর হইয়াছে বলিয়া গণ্য হইবে, এবং আইনটি জারির পরবর্তী ১৮ (আঠারো) মাস অতিবাহিত হইবার পর, সরকার, সরকারি গেজেটে প্রজ্ঞাপন দ্বারা, যে তারিখ নির্ধারণ করিবে সেই তারিখে উক্ত ধারাসমূহ কার্যকর হইবে।",
+          note: "Section 1(3) of Act No. 63 of 2026 (header: '( ২০২৬ সনের ৬৩ নং আইন ) [ ১০ এপ্রিল, ২০২৬ ]'). Translation: 'Except section 23 and sections 31 to 35, this Act shall be deemed to have come into effect on 6 November 2025, and those sections shall come into effect on the date the Government fixes by notification in the official Gazette after 18 (eighteen) months have passed since the law was issued.' Section 44(1) on the same page repeals Ordinance No. 61 of 2025 and Ordinance No. 23 of 2026. Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The Financial Express (UNB)",
+          title: "Parliament passes 31 bills related to IG-era ordinances",
+          date: "2026-04-09",
+          url: "https://thefinancialexpress.com.bd/home/parliament-passes-31-bills-related-to-ig-era-ordinances",
+          quote: "The remaining bills passed in the House are Bangladesh Building Regulatory Authority Bill, 2026; Rajdhani Unnaya Kartripakkha (RAJUK) Bill, 2026; Personal Data Protection Bill, 2026; Bangladesh House Building Finance Corporation (Amendment) Bill, 2026 and Negotiable Instruments (Amendment) Bill, 2026.",
+          note: "UNB wire report published 9 April 2026 ('Parliament passed a total of 31 bills on Thursday ... bidding to adopt, repeal or amend ordinances promulgated during the tenure of the interim government'). Checked with fetch-text --check: FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15632,7 +16074,7 @@ window.privacyData = {
       region: "East Asia & Pacific",
       lat: -35.3082,
       lng: 149.1244,
-      note: "Enacted as Act No. 119 of 1988 for Commonwealth agencies; it now also applies to private-sector entities with annual turnover of at least AUD 3 million (the private sector was added by later amendment).",
+      note: "Enacted as Act No. 119 of 1988 (commenced 1989) for Commonwealth agencies. The Privacy Amendment (Private Sector) Act 2000 extended it to private-sector organisations from 21 December 2001. It now covers most Australian Government agencies, organisations with annual turnover of more than AUD 3 million, and some smaller organisations.",
       source: [
         {
           institution: "Federal Register of Legislation, Australian Government",
@@ -15650,6 +16092,26 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=AU",
           quote: "The federal Privacy Act 1988 (Cth) (\"Privacy Act\") and the Australian Privacy Principles (\"APPs\") contained in the Privacy Act apply to private sector entities (including body corporates, partnerships, trusts and unincorporated associations) with an annual turnover of at least AUD $3 million, and all Commonwealth Government and Australian Capital Territory Government agencies.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Office of the Australian Information Commissioner (OAIC)",
+          title: "The Privacy Act",
+          date: "2026",
+          url: "https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act",
+          quote: "The Privacy Act 1988 was introduced to promote and protect the privacy of individuals and to regulate how Australian Government agencies and organisations with an annual turnover of more than $3 million, and some other organisations, handle personal information.",
+          note: "The regulator's own statement of coverage. Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Office of the Australian Information Commissioner (OAIC)",
+          title: "History of the Privacy Act",
+          date: "2026",
+          url: "https://www.oaic.gov.au/privacy/privacy-legislation/the-privacy-act/history-of-the-privacy-act",
+          quote: "In December 2000, the Privacy Amendment (Private Sector) Act 2000 extended coverage of the Privacy Act to some private sector organisations. The amendments commenced on 21 December 2001.",
+          note: "The same page says: 'The Australian Parliament passed the Privacy Act 1988 at the end of 1988, and it commenced in 1989.' Checked with fetch-text --check: FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15685,6 +16147,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Office of the Privacy Commissioner (New Zealand)",
+          title: "Privacy Act 2020",
+          date: "2026",
+          url: "https://www.privacy.org.nz/privacy-act-2020/",
+          quote: "The Privacy Act 2020 came into force on 1 December 2020, replacing the Privacy Act 1993.",
+          note: "The regulator's page. Checked with fetch-text --check: FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15705,9 +16177,10 @@ window.privacyData = {
           title: "Key Facts and History",
           date: "2026",
           url: "https://www.pcpd.org.hk/english/about_pcpd/our_organisation/facts/key_facts_n_history.html",
-          quote: "The Personal Data (Privacy) Ordinance (PDPO) was enacted on 3 August 1995",
+          quote: "The Personal Data (Privacy) Ordinance (PDPO) was enacted on 3 August 1995 … The PDPO came into force on 20 December 1996",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "The 1996 row of the same page, which supports the inForce year and the note's date. Checked with fetch-text --check: FOUND."
         }
       ]
     },
@@ -15731,6 +16204,16 @@ window.privacyData = {
           note: "The eight-industry scope of the 1995 Act is from secondary literature, not verified on this page.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Winkler Partners (Taipei law firm)",
+          title: "Taiwan Data Protection Regime: CPDA to PIPA",
+          date: "2011",
+          url: "http://www.winklerpartners.com/wp-content/uploads/2011/11/Overview-of-Data-Protection-Regime-in-Taiwan.pdf",
+          quote: "Private entities in eight specified industries, including hospital, financial, telecommunication and insurance, are subject to the CDPA. … under the PIPA encompasses all data formats, not merely computer-processed personal data as stipulated in the CPDA.",
+          note: "Secondary (law-firm briefing, written before the 2010 amendments took effect in 2012). Supports the 1995 Act's scope of eight designated private industries. --check FOUND. Supports the claim that the 2010 revision extended coverage to non-computerised data. The same document says 'The PIPA extends application of the data protection regime to any individual, organization or enterprise that collects, processes, or uses personal data' (also FOUND). --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15739,19 +16222,30 @@ window.privacyData = {
       country: "Japan",
       law: "Act on the Protection of Personal Information (APPI, Act No. 57 of 2003)",
       year: 2003,
+      inForce: 2005,
       regulator: "Personal Information Protection Commission (PPC)",
       region: "East Asia & Pacific",
       lat: 35.6759,
       lng: 139.745,
-      note: "Japan's first law covering the private sector; DLA notes a separate law for the public sector (a 1988 act on computer-processed data held by administrative organs, not verified here). Now supervised by the Personal Information Protection Commission.",
+      note: "Promulgated in 2003 and fully in force in 2005, the APPI was Japan's first general data-protection law for the private sector. The public sector had its own legislation, first adopted in 1988 as the Act on the Protection of Computer-processed Personal Data Held by Administrative Organs. DLA Piper notes that the separate public-sector law was folded into the APPI with effect from 1 April 2022. Now supervised by the Personal Information Protection Commission.",
       source: [
         {
           institution: "DLA Piper",
           title: "Data Protection Laws of the World — Japan",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=JP",
-          quote: "The APPI was originally enacted in 2003 but was amended and the amendments came into force on 30 May 2017. … Also, there was a separate data protection law for public sector. … The Act on the Protection of Personal Information (\" APPI \") regulates privacy protection issues in Japan and the Personal Information Protection Commission (\" PPC \"), a central agency acts as a supervisory governmental organization on issues of privacy protection.",
-          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          quote: "The APPI was originally enacted in 2003 but was amended and the amendments came into force on 30 May 2017. … Also, there was a separate data protection law for public sector. … The Act on the Protection of Personal Information (\" APPI \") regulates privacy protection issues in Japan and the Personal Information Protection Commission (\" PPC \"), a central agency acts as a supervisory governmental organization on issues of privacy protection. … However, the data protection law for public sector was integrated into the APPI and became effective on April 1, 2022 (the data protection law for local governments became effective after April 1, 2023).",
+          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script. Law-firm guide (secondary). Supports the 2022 merger of the public-sector law into the APPI. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Personal Information Protection Commission, Japan",
+          title: "Privacy Culture and Data Protection Laws in Japan (speech by PPC Chairman Masao Horibe, ICDPPC 2017, Hong Kong)",
+          date: "2017-09",
+          url: "https://www.ppc.go.jp/files/pdf/290928_en_horibespeech.pdf",
+          quote: "the legislation for personal information protection in the public sector was first adopted as the “Act on the Protection of Computer-processed Personal Data Held by Administrative Organs”, which was promulgated in 1988. … the“Act on the Protection of Personal Information (APPI)” was promulgated in 2003 and enforced in 2005.",
+          note: "Primary (regulator's chairman). Supports the 1988 public-sector act. The speech goes on: 'Japan started drafting the Act on the Protection of Personal Information, which targeted the private sector' (also FOUND). --check FOUND. Supports yearEnacted 2003 and inForce 2005. The missing space after 'the' is in the PDF text. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15762,11 +16256,11 @@ window.privacyData = {
       country: "Macau (China)",
       law: "Lei n.º 8/2005 — Lei da Protecção de Dados Pessoais",
       year: 2005,
-      regulator: "Gabinete para a Protecção de Dados Pessoais (GPDP)",
+      regulator: "Direcção dos Serviços da Protecção de Dados Pessoais (DSPDP, Personal Data Protection Bureau); before February 2024, the Gabinete para a Protecção de Dados Pessoais (GPDP)",
       region: "East Asia & Pacific",
       lat: 22.1987,
       lng: 113.5439,
-      note: "Law of 22 August 2005, modelled on Portugal's law.",
+      note: "Law of 22 August 2005, inspired by Portugal's 1998 data-protection law, which transposed EU Directive 95/46/EC. The original supervisory project office (GPDP) became a permanent bureau (DSPDP) on 1 February 2024.",
       source: [
         {
           institution: "DLA Piper",
@@ -15775,6 +16269,36 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=MO",
           quote: "Macau Personal Data Protection Law no. 8/2005 of August 22nd (Law).",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "C&C Advogados (Macau law firm)",
+          title: "Macau SAR Data Protection – Expected updates following GDPR in Europe, Data Security Law and PIPL in China",
+          date: "2021-07-05",
+          url: "https://www.ccadvog.com/cca/macau-sar-data-protection-expected-updates-following-gdpr-in-europe-and-pipl-in-china.html",
+          quote: "Macau’s data protection legal framework was strongly inspired by EU legislation: the Personal Data Protection Law (Law 8/2005) was inspired by the Portuguese Law passed in 1998, which transposed the EU Directive 95/46/EC.",
+          note: "Secondary (local law firm; by João Gonçalves Assunção and Jessie Lin). Supports the Portuguese-model claim. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Macau Daily Times",
+          title: "New heads at Personal Data Protection Bureau",
+          date: "2024-01-25",
+          url: "https://macaudailytimes.com.mo/new-heads-at-personal-data-protection-bureau.html",
+          quote: "The director and vice director of the Personal Data Protection Office, scheduled to be established on Feb. 1, were announced yesterday in the Official Gazette.",
+          note: "News report. Supports the 1 February 2024 creation of the new bureau; the article also says 'Yang Chongwei, incumbent director of the Personal Data Protection Office, will be appointed as director of the new bureau' (FOUND). The article uses 'Office' loosely for both bodies. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Macao SAR Government Portal",
+          title: "Direcção dos Serviços da Protecção de Dados Pessoais (DSPDP) — entity page",
+          date: "2026",
+          url: "https://www.gov.mo/en/entity-page/entity-8705/",
+          quote: "Submitting notification to the PDPB (No. 2038)",
+          note: "Official portal listing DSPDP as the current department ('Departments and Agencies Direcção dos Serviços da Protecção de Dados Pessoais DSPDP' also FOUND); its public services name the regulator 'PDPB'. The dspdp.gov.mo site could not be read (TLS chain error / 503). --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15790,15 +16314,15 @@ window.privacyData = {
       region: "East Asia & Pacific",
       lat: 3.151,
       lng: 101.684,
-      note: "Described by DLA Piper as Malaysia's first comprehensive personal-data law: passed 2 June 2010, in force 15 November 2013; amended in 2024.",
+      note: "Described by DLA Piper as Malaysia's first comprehensive personal-data law. It received Royal Assent on 2 June 2010, was gazetted on 10 June 2010 and came into force on 15 November 2013; amended by the Personal Data Protection (Amendment) Act 2024.",
       source: [
         {
           institution: "DLA Piper",
           title: "Data Protection Laws of the World — Malaysia",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=MY",
-          quote: "Malaysia's first comprehensive personal data protection legislation, the Personal Data Protection Act 2010 (PDPA), was passed by the Malaysian Parliament on June 02, 2010 and came into force on November 15, 2013.",
-          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          quote: "Malaysia's first comprehensive personal data protection legislation, the Personal Data Protection Act 2010 (PDPA), was passed by the Malaysian Parliament on June 02, 2010 and came into force on November 15, 2013. … In 2024, amendments were introduced to the PDPA, namely the Personal Data Protection (Amendment) Act 2024 (“Amendment Act”).",
+          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script. Supports 'amended in 2024'. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -15808,6 +16332,16 @@ window.privacyData = {
           date: "2026",
           url: "https://www.pdp.gov.my/ppdpv1/en/akta/pdp-act-2010-en/",
           quote: "Personal Data Protection Act 2010 [Act 709]",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Personal Data Protection Department (JPDP), Malaysia",
+          title: "Laws of Malaysia, Act 709: Personal Data Protection Act 2010 (Malay/English text)",
+          date: "2024",
+          url: "https://www.pdp.gov.my/ppdpv1/wp-content/uploads/2024/07/UNDANG-UNDANG-MALAYSIA_AKTA_PERLINDUNGAN_DATA_PERIBADI_2010_709_MALAY_AND-ENG_V2022.pdf",
+          quote: "Date of Royal Assent ... ... 2 June 2010",
+          note: "Official text linked from pdp.gov.my. The ellipses are the PDF's dot leaders. The English header also reads 'Date of publication in the Gazette ... ... ... 10 June 2010' (FOUND); the Malay header reads 'Tarikh Persetujuan Diraja : 2 Jun 2010' (FOUND). --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15823,15 +16357,45 @@ window.privacyData = {
       region: "East Asia & Pacific",
       lat: 37.5319,
       lng: 126.914,
-      note: "Promulgated 29 March 2011 and effective 30 September 2011, covering public and private sectors; it replaced an earlier act limited to public agencies (1994, not verified here). Substantially amended again in March 2026.",
+      note: "Promulgated 29 March 2011 and effective 30 September 2011, covering public and private sectors. Its addenda repealed the Act on the Protection of Personal Information Maintained by Public Agencies, Korea's 1994 public-sector law. Substantially amended again by an amendment promulgated on 10 March 2026, with most provisions in force from 11 September 2026.",
       source: [
         {
           institution: "Korean Legal Information Institute (koreanlii.or.kr) — English translation",
           title: "Personal Information Protection Act (2011)",
           date: "2011-03-29",
           url: "http://koreanlii.or.kr/w/images/0/0e/KoreanDPAct2011.pdf",
-          quote: "PERSONAL INFORMATION PROTECTION ACT Promulgated on March 29, 2011 Effective on September 30, 2011",
-          note: "Unofficial translation. The 1994 public-sector act is from secondary literature and not verified here.",
+          quote: "PERSONAL INFORMATION PROTECTION ACT Promulgated on March 29, 2011 Effective on September 30, 2011 … Article 2 (Repeal of Other Act) The Act on the Protection of Personal Information Maintained by Public Agencies shall be repealed.",
+          note: "Unofficial translation. The 1994 public-sector act is from secondary literature and not verified here. Addenda to PIPA 2011 (unofficial translation). Supports 'replaced an earlier act limited to public agencies'. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Humanities and Social Sciences Communications (Nature Portfolio)",
+          title: "Automated decision-making in South Korea: a critical review of the revised Personal Information Protection Act",
+          date: "2024-07-29",
+          url: "https://www.nature.com/articles/s41599-024-03470-y",
+          quote: "Initially, only the processing of personal information by public institutions was regulated by the Act on the Protection of Personal Information of Public Institutions, which was established in 1994.",
+          note: "Peer-reviewed secondary source for the 1994 date of the public-sector act (it translates the act's name differently). --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IAPP",
+          title: "South Korea overhauls PIPA and ties fines to CEO accountability",
+          date: "2026-03-11",
+          url: "https://iapp.org/news/a/south-korea-overhauls-pipa-and-ties-fines-to-ceo-accountability",
+          quote: "On 10 March 2026, South Korea promulgated the most consequential rewrite of its Personal Information Protection Act since the law's 2023 overhaul.",
+          note: "By Kyoungsic Min. Supports 'substantially amended again in March 2026'; the article adds that it is set to take effect on 11 September. Hunton reports that the National Assembly passed it on 12 February 2026. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — South Korea",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=KR",
+          quote: "The PIPA was amended on March 10, 2026, with most provisions set to take effect on September 11, 2026.",
+          note: "Law-firm guide (secondary); second source for the March 2026 amendment. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15876,8 +16440,8 @@ window.privacyData = {
           title: "Data Protection Laws of the World — Singapore",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=SG",
-          quote: "Singapore enacted the Personal Data Protection Act of 2012 (No. 26 of 2012) on October 15, 2012, and it was subsequently amended / enhanced via the Personal Data Protection (Amendment) Act 2020 (together, the “ Act ”).",
-          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          quote: "Singapore enacted the Personal Data Protection Act of 2012 (No. 26 of 2012) on October 15, 2012, and it was subsequently amended / enhanced via the Personal Data Protection (Amendment) Act 2020 (together, the “ Act ”). … The Act has extraterritorial effect, meaning it applies to organizations collecting, using or disclosing personal data in Singapore whether or not the organization itself has a physical presence or is registered as a company in Singapore.",
+          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script. Supports 'extraterritorial effect'. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -15886,7 +16450,17 @@ window.privacyData = {
           title: "Personal Data Protection Act 2012",
           date: "2026",
           url: "https://sso.agc.gov.sg/Act/PDPA2012",
-          quote: "Personal Data Protection Act 2012 Table of Contents",
+          quote: "Parts 3, 4, 5, 6, 6A and 6B do not impose any obligation on — ( a ) any individual acting in a personal or domestic capacity; ( b ) any employee acting in the course of his or her employment with an organisation; ( c ) any public agency;",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Singapore Statutes Online (Attorney-General's Chambers)",
+          title: "Personal Data Protection Act 2012 (No. 26 of 2012) — as enacted",
+          date: "2012-11-20",
+          url: "https://sso.agc.gov.sg/Acts-Supp/26-2012/",
+          quote: "The following Act was passed by Parliament on 15th October 2012 and assented to by the President on 20th November 2012",
+          note: "Primary, as-enacted text. Gives the date Parliament passed the Act and the date of assent. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -15945,6 +16519,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "LehmanLaw Mongolia (Mongolian Law Blog)",
+          title: "Personal Data Protection in Mongolia",
+          date: "n.d.",
+          url: "https://lehmanlaw.mn/blog/personal-data-protection-in-mongolia/",
+          quote: "on December 17, 2021, the Parliament adopted a new Law on the Personal data protection (PDPL), which began to be implemented on May 1, 2022.",
+          note: "Independent secondary source (a Mongolian law firm) confirming both dates. The same passage names the 1995 Personal Secrets Law as the predecessor. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15977,6 +16561,26 @@ window.privacyData = {
           quote: "The Personal Information Protection Law (PIPL), the first piece of legislation in the Mainland dedicated to the protection of personal information, was passed by the Standing Committee of the National People’s Congress on 20 August 2021 and was effective since 1 November 2021.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "National People's Congress of the PRC (translation for reference only)",
+          title: "Personal Information Protection Law of the People's Republic of China (page 3)",
+          date: "2021-12-29",
+          url: "http://en.npc.gov.cn.cdurl.cn/2021-12/29/c_694559_3.htm",
+          quote: "Article 74 This Law shall come into force as of November 1st, 2021. … Article 60 The national cyberspace department shall be responsible for the overall planning and coordination of personal information protection and related supervision and administration.",
+          note: "Primary text (official English translation) for the in-force date. --check FOUND. Supports naming the Cyberspace Administration of China as lead (coordinating) regulator. Under the same article, State Council departments also supervise within their own remits. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — China",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=CN",
+          quote: "the three main pillars of the personal information protection framework in the PRC are the Personal Information Protection Law (PIPL), the Cybersecurity Law (CSL), and the Data Security Law (DSL).",
+          note: "Supports the note's statement that the PIPL sits alongside the CSL and DSL. The same page gives the CSL effective date as 1 June 2017 and the DSL's as 1 September 2021. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -15997,6 +16601,16 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=ID",
           quote: "Indonesia has adopted an overarching framework for personal data protection through the enactment of Law No. 27 of 2022 concerning Personal Data Protection (\"PDP Law\") since 17 October 2022.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "JDIH Kemenko Bidang Infrastruktur (Indonesian Coordinating Ministry legal documentation network)",
+          title: "UU No. 27/2022: Pelindungan Data Pribadi",
+          date: "n.d.",
+          url: "https://jdih.kemenkoinfra.go.id/uu-no-272022-pelindungan-data-pribadi",
+          quote: "Presiden Jokowi telah mengesahkan Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi pada tanggal 17 Oktober 2022.",
+          note: "Government legal-documentation portal. Translation: 'President Jokowi signed Law No. 27 of 2022 on Personal Data Protection into law on 17 October 2022.' --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16029,8 +16643,18 @@ window.privacyData = {
           title: "Data Protection Laws of the World — Vietnam",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=VN",
-          quote: "On 26 June 2025, Law No. 91/2025/QH15 on Personal Data Protection (“PDPL”) was officially enacted by the National Assembly and took effect on 1 January 2026.",
-          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          quote: "On 26 June 2025, Law No. 91/2025/QH15 on Personal Data Protection (“PDPL”) was officially enacted by the National Assembly and took effect on 1 January 2026. … Decree 356 formally announced the replacement of the Decree No. 13/2023/ND-CP of the Government dated 17 April 2023 on Personal Data Protection (“PDPD”).",
+          note: "Law-firm global guide (secondary); used where the official gazette could not be read by script. Supports the note's 'from a government decree (2023) to statute'. The preceding sentence on the page reads 'This elevated the regulatory framework from decree-level provisions to statutory law.' (also FOUND). --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Vietnam (Authority)",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=authority&c=VN",
+          quote: "the Ministry of Public Security (“MPS”), particularly the Department for Cybersecurity and High-tech Crime Prevention and Fighting (\"A05\"), has been designated as the primary authority responsible for regulating and enforcing Vietnam’s data‑related laws and regulations, notably including personal data protection",
+          note: "Supports regulator = Ministry of Public Security. The quote contains a non-breaking hyphen (U+2011) in 'data‑related', as on the page. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16039,12 +16663,13 @@ window.privacyData = {
     {
       id: "kg-2008",
       country: "Kyrgyzstan",
-      law: "Law on Personal Data No. 58",
+      law: "Law No. 58 'On Personal Information' (Ob informatsii personalnogo kharaktera; often translated 'On Personal Data')",
       year: 2008,
+      inForce: 2008,
       region: "Central Asia",
       lat: 42.8746,
       lng: 74.5698,
-      note: "Dated 14 April 2008, in force 18 April 2008; the earliest Central Asian law among those checked here.",
+      note: "Adopted by the Jogorku Kenesh on 21 February 2008, dated 14 April 2008 and in force 18 April 2008; the earliest Central Asian law among those checked here. It lost force in February 2026, when the Digital Code of the Kyrgyz Republic (31 July 2025) took effect and absorbed the personal-data rules.",
       source: [
         {
           institution: "DLA Piper",
@@ -16053,6 +16678,26 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=KG",
           quote: "More detailed regulation of personal data may be found in the Law of the Kyrgyz Republic on Personal Data No.58 dated 14 April 2008 ('The Law on Personal Data'), which entered into force on 18 April 2008.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Continent (online legal database, Kazakhstan)",
+          title: "Закон Кыргызской Республики от 14 апреля 2008 года № 58 «Об информации персонального характера» (утратил силу)",
+          date: "2026",
+          url: "https://continent-online.com/Document/?doc_id=30343113",
+          quote: "Утратил силу в соответствии с Законом КР от 31 июля 2025 года № 179",
+          note: "Commercial legal database; the demo page shows the heading and first articles. Translation: 'Lost force in accordance with Law of the Kyrgyz Republic of 31 July 2025 No. 179' (the law bringing the Digital Code into force). The same page reads 'Принят Жогорку Кенешем Кыргызской Республики 21 февраля 2008 года' (adopted by the Jogorku Kenesh on 21 February 2008), also FOUND. The official database cbd.minjust.gov.kg returned 403. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "International Center for Not-for-Profit Law (ICNL)",
+          title: "Kyrgyzstan's Digital Code: Understanding and Complying with Personal Data Provisions",
+          date: "2026-02-10",
+          url: "https://www.icnl.org/wp-content/uploads/KG-Personal-Data-Guidance-Note_Digital-Code_February-10-2026.pdf",
+          quote: "Meanwhile, on February 5, 2026, the 2008 Law on Personal Information will be entirely replaced by the Digital Code",
+          note: "NGO legal guidance note. Its legislation list reads 'Digital Code of the Kyrgyz Republic adopted on July 31, 2025, entering into force on February 5, 2026'. The Russian version (…_RU.pdf) states the replacement in the past tense: '5 февраля 2026 года Закон 2008 года «Об информации персонального характера» утратил силу и заменен соответствующими положениями Цифрового кодекса' (--check FOUND). Some secondary sources give 6 or 8 February, hence 'February 2026' in the note. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16077,6 +16722,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Soyuzpravoinform (base.spinform.ru, CIS legislation database)",
+          title: "Закон Республики Казахстан от 21 мая 2013 года №94-V ЗРК \"О персональных данных и их защите\"",
+          date: "2026",
+          url: "https://base.spinform.ru/show_doc.fwx?rgn=59981",
+          quote: "В соответствии с пунктом 1 статьи 31 настоящий Закон вводится в действие по истечении шести месяцев после его первого официального опубликования - с 26 ноября 2013 года.",
+          note: "Independent confirmation of the number and date; the page title 'Закон Республики Казахстан от 21 мая 2013 года №94-V ЗРК \"О персональных данных и их защите\"' is also FOUND. Translation of the quote: 'Under Art. 31(1) this Law enters into force six months after its first official publication, from 26 November 2013.' --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16099,6 +16754,16 @@ window.privacyData = {
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Soyuzpravoinform (base.spinform.ru, CIS legislation database)",
+          title: "Закон Республики Таджикистан \"О защите персональных данных\"",
+          date: "2026",
+          url: "https://base.spinform.ru/show_doc.fwx?rgn=108952",
+          quote: "Закон Республики Таджикистан от 3 августа 2018 года №1537 \"О защите персональных данных\"",
+          note: "Independent confirmation of the number, date and title ('Law of the Republic of Tajikistan of 3 August 2018 No. 1537 On Protection of Personal Data'). The header also gives adoption by the Majlisi Namoyandagon on 8 June 2018 (Resolution No. 1115) and approval by the Majlisi Milli on 2 August 2018 (No. 561). --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16111,7 +16776,7 @@ window.privacyData = {
       region: "Central Asia",
       lat: 41.2995,
       lng: 69.2401,
-      note: "Adopted 2 July 2019, effective 1 October 2019.",
+      note: "Signed into law on 2 July 2019 (adopted by the Legislative Chamber on 16 April and approved by the Senate on 21 June 2019); effective 1 October 2019.",
       source: [
         {
           institution: "DLA Piper",
@@ -16120,6 +16785,26 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=UZ",
           quote: "ZRU-547 \"On Personal Data\" ( \"Law on Personal Data\" ), adopted on 2 July 2019 and effective from 1 October 2019.",
           note: "Law-firm global guide (secondary); used where the official gazette could not be read by script.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "CIS Legislation (Soyuzpravoinform)",
+          title: "Law of the Republic of Uzbekistan \"About personal data\" of July 2, 2019 No. ZRU-547",
+          date: "2026",
+          url: "https://cis-legislation.com/document.fwx?rgn=116961",
+          quote: "Accepted by Legislative house on April 16, 2019 Approved by the Senate on June 21, 2019",
+          note: "Machine-translated header of the law ('of July 2, 2019 No. ZRU-547' is also on the page). Supports the legislative adoption dates versus the 2 July 2019 signing date. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Black Swan Consulting (Tashkent law firm)",
+          title: "About personal data in Uzbekistan",
+          date: "n.d.",
+          url: "https://blackswan.law/about-personal-data-in-uzbekistan/",
+          quote: "The Law of the Republic of Uzbekistan “On Personal Data” of July 2, 2019 No. ZRU-547 (entered into force on October 1, 2019)",
+          note: "Independent secondary confirmation of the 1 October 2019 effective date. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16312,6 +16997,26 @@ window.privacyData = {
           quote: "It was further adopted by the SADC Ministers responsible for Telecommunications, Postal and ICT at their meeting in Mauritius in November 2012.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "International Telecommunication Union (ITU) — HIPSSA project",
+          title: "DRAFT Southern African Development Community (SADC) Model Law on Data Protection (March 2011)",
+          date: "2011-03",
+          url: "https://www.itu.int/ITU-D/projects/ITU_EC_ACP/hipssa/docs/SA4docs/data%20protection.pdf",
+          quote: "DRAFT Southern African Development Community (SADC) MODEL LAW ON DATA PROTECTION March 2011",
+          note: "The draft's cover page, which shows a March 2011 draft before the 2012 validation and adoption. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Media Defence",
+          title: "Introductory Modules on Digital Rights and Freedom of Expression Online — Module 4: Data Protection",
+          date: "2024",
+          url: "https://www.mediadefence.org/ereader/publications/introductory-modules-on-digital-rights-and-freedom-of-expression-online/module-4-data-privacy-and-data-protection/data-protection/",
+          quote: "HIPSSA, ‘Data Protection: SADC Model Law’ (2013)",
+          note: "Secondary source. Shows the usual citation year (2013), not 2010. The page also heads the entry 'SADC Data Protection Model Law 2013'. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16320,14 +17025,14 @@ window.privacyData = {
       body: "African Union",
       year: 2014,
       force: "Binding treaty",
-      reach: "Adopted 27 June 2014; in force 8 June 2023 after 15 ratifications (Benin, Cape Verde, Côte d'Ivoire, Congo, Ghana, Guinea, Mozambique, Mauritius, Namibia, Niger, Rwanda, Senegal, Togo, Zambia, Mauritania). Combines personal-data protection with e-commerce and cyber-crime rules;",
+      reach: "Adopted 27 June 2014 by the 23rd AU Assembly in Malabo; in force 8 June 2023, after Mauritania deposited the 15th ratification on 9 May 2023. The 15 parties at entry into force were Angola, Cape Verde, Côte d'Ivoire, Congo, Ghana, Guinea, Mauritania, Mauritius, Mozambique, Namibia, Niger, Rwanda, Senegal, Togo and Zambia; São Tomé and Príncipe made 16 in February 2024. Benin has signed but not ratified. Combines personal-data protection with e-commerce and cyber-security/cyber-crime rules.",
       source: [
         {
           institution: "Centre for Intellectual Property and Information Technology Law (CIPIT), Strathmore University",
           title: "The African Union Convention on Cyber Security and Personal Data Protection: Key Insights",
           date: "2023",
           url: "https://cipit.strathmore.edu/the-african-union-convention-on-cyber-security-and-personal-data-protection-key-insights/",
-          quote: "So far, countries that have ratified the Convention, hence whom it binds are; Benin, Cape Verde, Côte d’Ivoire, Congo, Ghana, Guinea, Mozambique, Mauritius, Namibia, Niger, Rwanda, Senegal, Togo, Zambia, and Mauritania.",
+          quote: "The Malabo Convention entered into force on 8 June 2023 after receiving the required minimum of 15 ratifications from AU Member States",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -16336,8 +17041,28 @@ window.privacyData = {
           title: "List of countries which have signed, ratified/acceded to the AU Convention on Cyber Security and Personal Data Protection (status list dated 08/07/2024)",
           date: "2024-07-08",
           url: "https://au.int/sites/default/files/treaties/29560-sl-AFRICAN_UNION_CONVENTION_ON_CYBER_SECURITY_AND_PERSONAL_DATA_PROTECTION.pdf",
-          quote: "LIST OF COUNTRIES WHICH HAVE SIGNED, RATIFIED/ACCEDED TO THE AFRICAN UNION CONVENTION ON CYBER SECURITY AND PERSONAL DATA PROTECTION",
+          quote: "Adopted by the Twentythird Ordinary Session of the Assembly, held in Malabo, Equatorial Guinea, 27th June 2014.",
           note: "The PDF's table columns are scrambled in the extracted text, so the post-2023 ratification count could not be read reliably.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Data Protection Africa (ALT Advisory)",
+          title: "Africa: AU’s Malabo Convention set to enter force after nine years",
+          date: "2023-05-19",
+          url: "https://dataprotection.africa/malabo-convention-set-to-enter-force/",
+          quote: "The AU’s latest status list on the Malabo Convention, dated 12 May 2023, lists the following 15 states as having submitted ratification: Angola (11 May 2020), Cape Verde (5 February 2022), Côte d’Ivoire (3 April 2023), Congo (23 October 2020), Ghana (3 June 2019), Guinea (16 October 2018), Mozambique (21 January 2020), Mauritania (9 May 2023), Mauritius (14 March 2018), Namibia (1 February 2019), Niger (16 March 2022), Rwanda (21 November 2019), Senegal (16 August 2016), Togo (19 October 2021), and Zambia (24 March 2021).",
+          note: "--check FOUND. The same page lists Benin among states that 'signed the Malabo Convention without yet ratifying it' (FOUND), and says the Convention covers 'electronic commerce, data protection, and cybercrime and cybersecurity' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Media Defence",
+          title: "Introductory Modules on Digital Rights and Freedom of Expression Online — Module 4: Data Protection",
+          date: "2024",
+          url: "https://www.mediadefence.org/ereader/publications/introductory-modules-on-digital-rights-and-freedom-of-expression-online/module-4-data-privacy-and-data-protection/data-protection/",
+          quote: "This instrument is designed to be directly transposed into a domestic context among West African states and provides in detail the conditions for the lawful processing of personal information and the rights of data subjects. Importantly, it is also legally binding on ECOWAS States.",
+          note: "About the ECOWAS Supplementary Act on Personal Data Protection (2010). Refutes the claim that Malabo is the only binding regional data-protection instrument outside Europe. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16348,7 +17073,7 @@ window.privacyData = {
       body: "European Union",
       year: 2016,
       force: "EU law",
-      reach: "Directly applicable in all EU member states from 25 May 2018 (and in the EEA). Replaced the 1995 Directive;",
+      reach: "Adopted in 2016; directly applicable in all EU member states from 25 May 2018, and extended to the EEA EFTA states (Iceland, Liechtenstein and Norway) in July 2018. Replaced the 1995 Directive;",
       source: [
         {
           institution: "DLA Piper",
@@ -16357,6 +17082,26 @@ window.privacyData = {
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=SE",
           quote: "The General Data Protection Regulation (Regulation (EU) 2016/679) ( GDPR ) is a European Union law which entered into force in 2016 and, following a two year transition period, became directly applicable law in all Member States of the European Union on 25 May 2018, without requiring implementation by the EU Member States through national law.",
           note: "Law-firm global guide (secondary).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "gdpr-info.eu (Intersoft Consulting; reproduces the official text of Regulation (EU) 2016/679)",
+          title: "Art. 99 GDPR — Entry into force and application",
+          date: "2016-04-27",
+          url: "https://gdpr-info.eu/art-99-gdpr/",
+          quote: "It shall apply from 25 May 2018.",
+          note: "EUR-Lex serves a JavaScript challenge (HTTP 202) to scripts, so the widely used gdpr-info.eu reproduction was checked instead. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Squire Patton Boggs — Privacy World blog",
+          title: "GDPR is Now EEA Wide!",
+          date: "2018-09-17",
+          url: "https://www.privacyworld.blog/2018/09/gdpr-is-now-eea-wide/",
+          quote: "The General Data Protection Regulation (GDPR) was incorporated into the EEA Agreement by the EEA Joint Committee in Brussels and entered into force in mid-July. The European Economic Area (EEA) currently includes all EU Member States, including, for the time being, the UK, as well as the three out of four EFTA States meaning Iceland, Liechtenstein and Norway",
+          note: "Supports the EEA extension in July 2018, not 25 May 2018. EFTA's own news item (entry into force in the EEA EFTA states on 20 July 2018) returned HTTP 403. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16374,7 +17119,7 @@ window.privacyData = {
           title: "Framework on Personal Data Protection (TELMIN)",
           date: "2016-11-25",
           url: "https://asean.org/wp-content/uploads/2012/05/10-ASEAN-Framework-on-PDP.pdf",
-          quote: "ADOPTED AT Bandar Seri Begawan, Brunei Darussalam, this twenty fifth day of November in the year two thousand and sixteen … This Framework serves only as a record of the Participants’ intentions and",
+          quote: "ADOPTED AT Bandar Seri Begawan, Brunei Darussalam, this twenty fifth day of November in the year two thousand and sixteen … does not constitute or create, and is not intended to constitute or create, obligations under domestic or international law",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16385,7 +17130,7 @@ window.privacyData = {
       body: "Red Iberoamericana de Protección de Datos (RIPD)",
       year: 2017,
       force: "Guidelines",
-      reach: "Approved unanimously at the 15th Ibero-American Data Protection Meeting, Santiago de Chile, 20–22 June 2017; a new version addressing AI, automated decisions and neurodata was approved unanimously in 2026. A model for Latin American and Iberian legislators, written to be compatible with the GDPR.",
+      reach: "Approved unanimously at the 15th Ibero-American Data Protection Meeting, Santiago de Chile, 20–22 June 2017; a new version addressing AI, automated decisions and neurodata was approved unanimously in 2026. A model for Latin American and Iberian legislators, drafted with the EU's GDPR as an explicit reference point.",
       source: [
         {
           institution: "Red Iberoamericana de Protección de Datos (RIPD)",
@@ -16405,6 +17150,16 @@ window.privacyData = {
           quote: "La Red Iberoamericana de Protección de Datos (RIPD) ha aprobado por unanimidad una nueva versión de los Estándares Iberoamericanos, que refuerzan las garantías frente a los riesgos de las tecnologías emergentes",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Red Iberoamericana de Protección de Datos (RIPD)",
+          title: "Estándares de Protección de Datos Personales para los Estados Iberoamericanos (preamble)",
+          date: "2017-06-20",
+          url: "https://www.redipd.org/sites/default/files/inline-files/Estandares_Esp_Con_logo_RIPD.pdf",
+          quote: "marco normativo que se posiciona como un referente obligado y determinante para la elaboración de las legislaciones nacionales de protección de datos en Iberoamérica",
+          note: "Translation: 'a regulatory framework that stands as an obligatory and decisive reference for drafting national data-protection laws in Ibero-America'. It refers to the EU's new framework, the GDPR. The document also lists 'el Reglamento del Parlamento Europeo y del Consejo, relativo a la protección de las personas físicas...' among its reference instruments. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -16413,7 +17168,7 @@ window.privacyData = {
       body: "Council of Europe",
       year: 2018,
       force: "Binding treaty",
-      reach: "Opened for signature in Strasbourg in October 2018; 25 ratifications by 15 June 2023 (Slovakia the 25th). Later counts (reported 34 by May 2026, with 38 needed for entry into force) could not be read at the primary. Modernises Convention 108 for the GDPR era.",
+      reach: "Opened for signature in Strasbourg in October 2018; 25 ratifications by 15 June 2023 (Slovakia the 25th). Moldova deposited its ratification on 15 May 2026, which the Council of Europe reported as the 34th; the Protocol needs 38 Parties to enter into force. Modernises Convention 108 for the GDPR era.",
       source: [
         {
           institution: "Úrad na ochranu osobných údajov (Office for Personal Data Protection of the Slovak Republic)",
@@ -16429,7 +17184,7 @@ window.privacyData = {
           title: "Uruguay es el primer país no europeo en adherir al Convenio 108+ sobre protección de datos personales",
           date: "2021-04-08",
           url: "https://www.ferrere.com/es/novedades/uruguay-es-el-primer-pais-no-europeo-en-adherir-al-convenio-108-sobre-proteccion-de-datos-personales/",
-          quote: "Tal como sucedió en 2013 con la aprobación del Convenio del Consejo de Europa para la protección de las personas con respecto al tratamiento automatizado de datos, Uruguay acaba de aprobar la modernización de Convenio transformándose nuevamente en el primero país no europeo en hacerlo.",
+          quote: "El Parlamento acaba de aprobar el “Protocolo de enmienda del Convenio para la Protección de las Personas con respecto al Tratamiento de Datos Personales” suscrito en Estrasburgo en octubre de 2018, conocido como Convenio 108+",
           note: "Translation: 'As happened in 2013 with the approval of the Council of Europe Convention..., Uruguay has just approved the modernisation of the Convention, again becoming the first non-European country to do so.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
@@ -16440,8 +17195,38 @@ window.privacyData = {
           date: "2026-05",
           url: "https://www.coe.int/en/web/data-protection/-/republic-of-moldova-becomes-the-34th-state-to-ratify-the-convention-108-",
           quote: "Republic of Moldova Becomes the 34th State to Ratify the Convention 108+",
-          note: "coe.int returns HTTP 403 (Cloudflare) to scripts and the Internet Archive was unreachable; the headline is from search results only. The 38-ratification threshold is also unverified.",
+          note: "coe.int returns HTTP 403 (Cloudflare) to scripts and the Internet Archive was unreachable; the headline is from search results only. The 38-ratification threshold is also unverified. Verification: Still unverifiable: coe.int returns HTTP 403 to both fetch-text.py and WebFetch, and the Wayback Machine resets the connection. The Moldova deposit date (15 May 2026) is independently confirmed by Moldova's NCPDP (added), and the 38 threshold by the 2022 European DPAs resolution (added). Only the ordinal '34th' depends on this page and on search-result snippets.",
           verificationStatus: "PENDING",
+          accessType: "FREE"
+        },
+        {
+          institution: "Data Protection Office, Republic of Mauritius",
+          title: "Communiqué: Ratification of the Protocol amending Convention for the Protection of individuals with regard to automatic processing of personal data (CETS 223) by Mauritius",
+          date: "2020-09",
+          url: "https://dataprotection.govmu.org/Communique/Communique%20on%20Ratification%20of%20Mauritius%20on%20the%20Protocol%20amending%20Convention%20108%20%20(CETS%20223).pdf",
+          quote: "Mauritius has thus become the 6th State after Bulgaria, Croatia, Lithuania, Poland and Serbia as well as the first country in Africa to ratify the modernised Convention 108 (Convention 108 +).",
+          note: "The same communiqué says 'Mauritius has signed and deposited, on 4 September 2020, its instrument of ratification' (FOUND). Refutes Uruguay-first. --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "National Center for Personal Data Protection of the Republic of Moldova (NCPDP)",
+          title: "The Republic of Moldova has signed the instrument of ratification for the Protocol amending Convention No. 108",
+          date: "2026-05-15",
+          url: "https://datepersonale.md/en/the-republic-of-moldova-has-signed-the-instrument-of-ratification-for-the-protocol-amending-convention-no-108/",
+          quote: "Today, May 15, 2026, in Chișinău, Deputy Prime Minister and Minister of Foreign Affairs of the Republic of Moldova, Mihai Popșoi, presented to the Secretary General of the Council of Europe the instrument of ratification of the Protocol amending the Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+          note: "Confirms the date of Moldova's deposit; does not give the ordinal (34th). --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "European Data Protection Authorities, Spring Conference 2022 (document hosted by the EDPS)",
+          title: "Resolution of the European Data Protection Authorities on the need for a prompt ratification of “Convention 108+” (Cavtat, 19–20 May 2022)",
+          date: "2022-05-20",
+          url: "https://www.edps.europa.eu/system/files/2022-10/22-05-20_resoolution-convention108_en.pdf",
+          quote: "According to Article 37, the Amending Protocol No 223 shall enter into force in respect of those States which have expressed their consent to be bound by it, provided that the Protocol has been ratified by at least thirty-eight Parties by 10 October 2023",
+          note: "Confirms the 38-Party threshold in Art. 37. The PDF is headed 'Draft Resolution'. Its wording 'by 10 October 2023' compresses Art. 37(2): after five years the Protocol enters into force once it has 38 Parties. The Protocol text on rm.coe.int returns 403. --check FOUND.",
+          verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
       ]
@@ -16451,7 +17236,7 @@ window.privacyData = {
       body: "Global CBPR Forum (founded by seven APEC CBPR economies)",
       year: 2022,
       force: "Voluntary framework",
-      reach: "Declared 21 April 2022 by Canada, Japan, Korea, the Philippines, Singapore, Chinese Taipei and the United States; Global CBPR and PRP certifications launched 2 June 2025 with about 100 certified companies. Takes APEC's company-certification model beyond the Asia-Pacific;",
+      reach: "Declared 21 April 2022 by Canada, Japan, Korea, the Philippines, Singapore, Chinese Taipei and the United States; Global CBPR and PRP certifications launched 2 June 2025 with about 100 certified companies. Takes APEC's company-certification model beyond the Asia-Pacific.",
       source: [
         {
           institution: "Global CBPR Forum",
@@ -16465,9 +17250,29 @@ window.privacyData = {
         {
           institution: "Global CBPR Forum",
           title: "Global CBPR Forum Launches International Data Protection and Privacy Certifications and Opens Participation to New Members",
-          date: "2025",
+          date: "2025-05-28",
           url: "https://www.globalcbpr.org/global-cbpr-forum-launches-international-data-protection-and-privacy-certifications-and-opens-participation-to-new-members/",
           quote: "The Global CBPR and PRP Systems will launch on June 2, 2025, with about 100 certified companies covering over 2000 entities on board and certified.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Global CBPR Forum",
+          title: "Global CBPR Forum Expands Reach with New Members and Accountability Agent",
+          date: "2025-09-19",
+          url: "https://www.globalcbpr.org/global-cbpr-forum-expands-reach-with-new-members-and-accountability-agent/",
+          quote: "We are pleased to welcome Nigeria as an Associate in the Forum.",
+          note: "Date from the Forum homepage news listing (September 19, 2025). --check FOUND.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Global CBPR Forum",
+          title: "About the Global CBPR Forum",
+          date: "2026",
+          url: "https://www.globalcbpr.org/about/",
+          quote: "The Global CBPR Forum was established in 2022, by Australia, Canada, Japan, the Republic of Korea, Mexico, the Philippines, Singapore, Chinese Taipei, and the United States of America, as jurisdictions participating in the APEC CBPR System at the time",
+          note: "Shows that Australia and Mexico joined in 2022, although they did not sign the 21 April 2022 Declaration. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16478,16 +17283,17 @@ window.privacyData = {
   policyModels: [
     {
       name: "Omnibus, rights-based data protection (the European model)",
-      description: "One general law covers public and private sectors alike; data protection is treated as a fundamental right; processing needs a legal basis; an independent authority supervises; and transfers abroad are restricted unless the destination is 'adequate'. It began with Hesse (1970), Sweden (1973) and Convention 108 (1981), was harmonised by the 1995 Directive and the GDPR (2016), and was exported through adequacy decisions and treaty accession. Consent here is one lawful basis among several, not the whole system.",
+      description: "One general law covers public and private sectors alike; data protection is treated as a fundamental right; processing needs a legal basis; an independent authority supervises; and transfers abroad are restricted unless the destination is 'adequate' or other safeguards (such as standard contractual clauses) are in place. It began with Hesse (1970), Sweden (1973) and Convention 108 (1981), was harmonised by the 1995 Directive and the GDPR (2016), and was exported through adequacy decisions and treaty accession. Consent here is one lawful basis among several, not the whole system.",
       color: "rights",
       exemplars: "EU/EEA member states, United Kingdom, Switzerland, Argentina, Uruguay, Brazil (LGPD), South Africa, Kenya, South Korea, Turkey",
       source: [
         {
-          institution: "European Union Agency for Fundamental Rights (FRA)",
-          title: "EU Charter of Fundamental Rights — Article 8: Protection of personal data",
-          date: "2026",
-          url: "https://fra.europa.eu/en/eu-charter/article/8-protection-personal-data",
+          institution: "European Parliament (text as published in the Official Journal of the European Communities, C 364/1)",
+          title: "Charter of Fundamental Rights of the European Union (2000/C 364/01) — Article 8: Protection of personal data",
+          date: "2000-12-18",
+          url: "https://www.europarl.europa.eu/charter/pdf/text_en.pdf",
           quote: "1. Everyone has the right to the protection of personal data concerning him or her. 2. Such data must be processed fairly for specified purposes and on the basis of the consent of the person concerned or some other legitimate basis laid down by law.",
+          note: "The FRA URL (https://fra.europa.eu/en/eu-charter/article/8-protection-personal-data) now returns a bot-verification page, so it cannot be checked by script. The same quote is --check FOUND verbatim in this OJ text of the Charter. Article 8 is unchanged in the 2012 consolidated version.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -16497,6 +17303,16 @@ window.privacyData = {
           date: "2023",
           url: "https://scholarship.law.columbia.edu/books/367",
           quote: "Bradford examines three competing regulatory approaches — the American market-driven model, the Chinese state-driven model, and the European rights-driven regulatory model — and discusses how governments and tech companies navigate the inevitable conflicts that arise when these regulatory approaches collide in the international domain.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "gdpr-info.eu (Intersoft Consulting; reproduces the official text of Regulation (EU) 2016/679)",
+          title: "Art. 46 GDPR — Transfers subject to appropriate safeguards",
+          date: "2016-04-27",
+          url: "https://gdpr-info.eu/art-46-gdpr/",
+          quote: "In the absence of a decision pursuant to Article 45 (3), a controller or processor may transfer personal data to a third country or an international organisation only if the controller or processor has provided appropriate safeguards",
+          note: "Shows that adequacy is not the only transfer route (SCCs, BCRs, codes, certification). EUR-Lex serves a JS challenge to scripts. --check FOUND.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16513,9 +17329,10 @@ window.privacyData = {
           title: "Data Protection Laws of the World — United States",
           date: "2026",
           url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=US",
-          quote: "There is no comprehensive national privacy law in the United States. However, the US does have a number of largely sector-specific privacy and data security laws at the federal level, as well as many more at the state (and local) level.",
+          quote: "There is no comprehensive national privacy law in the United States. However, the US does have a number of largely sector-specific privacy and data security laws at the federal level, as well as many more at the state (and local) level. … In recent years, beginning with California in 2018, states have begun to introduce and enact their own comprehensive privacy laws. … Making materially inaccurate or misleading privacy and security statements, including in privacy policies",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "--check FOUND. Supports 'Since California's 2018 CCPA, states have added comprehensive consumer laws'. --check FOUND. A bullet in the list of FTC unfair/deceptive-practice enforcement grounds. Supports 'a company's own privacy notice becomes the enforceable promise'."
         },
         {
           institution: "Harvard Law Review (Daniel J. Solove)",
@@ -16529,7 +17346,7 @@ window.privacyData = {
         {
           institution: "Columbia Law School Scholarship Archive",
           title: "Anu Bradford, Digital Empires: The Global Battle to Regulate Technology (Oxford University Press, 2023) — book page",
-          date: "2023",
+          date: "2023-09",
           url: "https://scholarship.law.columbia.edu/books/367",
           quote: "Bradford examines three competing regulatory approaches — the American market-driven model, the Chinese state-driven model, and the European rights-driven regulatory model — and discusses how governments and tech companies navigate the inevitable conflicts that arise when these regulatory approaches collide in the international domain.",
           verificationStatus: "CONFIRMED",
@@ -16539,7 +17356,7 @@ window.privacyData = {
     },
     {
       name: "Accountability and certification (the APEC model)",
-      description: "Principles-based and voluntary between states: the APEC Privacy Framework (2004) asks each economy to implement nine principles as it sees fit, with a strong emphasis on not obstructing information flows. The organisation is held 'accountable' for its own practices, including after transfer, and can be certified by a private Accountability Agent under the Cross-Border Privacy Rules (2011); the Global CBPR Forum (2022) aims to take this beyond APEC. It trades uniform individual rights for interoperability between very different national laws.",
+      description: "Principles-based and voluntary between states: the APEC Privacy Framework (2004) asks each economy to implement nine principles as it sees fit, with a strong emphasis on not obstructing information flows. The organisation is held 'accountable' for its own practices, including after transfer, and can be certified by an Accountability Agent (a public or private body recognised by the participating economies) under the Cross-Border Privacy Rules (2011); the Global CBPR Forum (2022) aims to take this beyond APEC. It trades uniform individual rights for interoperability between very different national laws.",
       color: "dataprotection",
       exemplars: "APEC CBPR economies: United States, Japan, Singapore, Korea, Canada, Mexico, Australia, Chinese Taipei, Philippines, Global CBPR Forum members and associates",
       source: [
@@ -16560,12 +17377,62 @@ window.privacyData = {
           quote: "The APEC Cross-Border Privacy Rules (CBPR) System, endorsed by APEC Leaders in 2011, is a voluntary, accountability-based system that facilitates privacy-respecting data flows among APEC economies.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "APEC CBPR System (cbprs.org)",
+          title: "Government",
+          date: "2026",
+          url: "https://cbprs.org/government/",
+          quote: "Accountability Agents (public or private) are also responsible for ensuring any non-compliance is remedied in a timely fashion and, in appropriate cases, reported to the relevant enforcement authorities.",
+          note: "--check FOUND. Refutes 'private Accountability Agent'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "APEC (16th APEC Ministerial Meeting, Santiago, Chile, 17-18 November 2004)",
+          title: "2004/AMM/014rev1 — APEC Privacy Framework (29 October 2004)",
+          date: "2004-11",
+          url: "https://www.apec.org/docs/default-source/press/newsrelease/2004/04_amm_014rev1.pdf",
+          quote: "APEC economies endorse the principles-based APEC Privacy Framework as an important tool in encouraging the development of appropriate information privacy protections and ensuring the free flow of information in the Asia Pacific region.",
+          note: "--check FOUND. The header reads '16th APEC Ministerial Meeting Santiago, Chile 17-18 November 2004' (also FOUND). APEC's press release 'APEC Ministers Endorse the APEC Privacy Framework' (apec.org/Press/News-Releases/2004/1120_apecminsendorseprivacyfrmwk) is datelined 20 November 2004 in its raw HTML. Supports the 2004 date.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "APEC Secretariat",
+          title: "APEC Privacy Framework — Part IV, Implementation, para 31",
+          date: "2005",
+          url: "https://www.apec.org/docs/default-source/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
+          quote: "In practice, the Framework is meant to be implemented in a flexible manner that can accommodate various methods of implementation, including through central authorities, multi-agency enforcement bodies, a network of designated industry bodies, or a combination of the above, as Member Economies deem appropriate.",
+          note: "--check FOUND. Supports 'implement nine principles as it sees fit'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "APEC Secretariat",
+          title: "APEC Privacy Framework — Principle IX commentary",
+          date: "2005",
+          url: "https://www.apec.org/docs/default-source/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
+          quote: "When transferring information, personal information controllers should be accountable for ensuring that the recipient will protect the information consistently with these Principles when not obtaining consent.",
+          note: "--check FOUND. Supports 'accountable ... including after transfer'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Global CBPR Forum",
+          title: "About the Global CBPR Forum",
+          date: "2026",
+          url: "https://www.globalcbpr.org/about/",
+          quote: "The Global CBPR Forum was established in 2022, by Australia, Canada, Japan, the Republic of Korea, Mexico, the Philippines, Singapore, Chinese Taipei, and the United States of America, as jurisdictions participating in the APEC CBPR System at the time, to support the free flow of data and effective data protection and privacy globally.",
+          note: "--check FOUND. Supports 'Global CBPR Forum (2022)'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       name: "State-security and data-sovereignty model",
-      description: "Strong rules bind companies, often with GDPR-like individual rights, but the state keeps broad access for security purposes, and personal data is treated as a national resource that must be stored at home or exported only after state security review. Russia's 2014 localisation law and China's Cybersecurity Law (2016) and PIPL (2021) are the defining cases; Bradford calls China's version 'state-driven'. Several other countries have since copied localisation or security-assessment rules.",
+      description: "Strong rules bind companies, often with GDPR-like individual rights, but the state keeps broad access for security purposes, and personal data is treated as a national resource: Russia requires its citizens' data to be recorded and stored in databases inside the country, and China requires critical operators and large-volume processors to store data at home and pass a state security assessment before exporting it. Russia's 2014 localisation law and China's Cybersecurity Law (2016) and PIPL (2021) are the defining cases; Bradford calls China's version 'state-driven'. Several other countries have since copied localisation or security-assessment rules.",
       color: "surveillance",
       exemplars: "China (CSL 2016, PIPL 2021), Russia (152-FZ 2006; localisation law 242-FZ 2014), Vietnam, Other states with localisation mandates",
       source: [
@@ -16574,16 +17441,17 @@ window.privacyData = {
           title: "Digital Empires (book excerpt)",
           date: "2024-04-11",
           url: "https://www.promarket.org/2024/04/11/digital-empires/",
-          quote: "In contrast to the American market-driven regulatory model, the Chinese regulatory model rests on a state-driven vision for the digital economy.",
+          quote: "In contrast to the American market-driven regulatory model, the Chinese regulatory model rests on a state-driven vision for the digital economy. … Chinese tech companies have acted as the CCP’s surrogates, performing the surveillance and control functions of the state over their users.",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "--check FOUND. Supports 'the state keeps broad access for security purposes' for the Chinese case."
         },
         {
           institution: "National People's Congress of the PRC",
           title: "中华人民共和国个人信息保护法 — Article 40",
           date: "2021-08-20",
           url: "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
-          quote: "第四十条 关键信息基础设施运营者和处理个人信息达到国家网信部门规定数量的个人信息处理者，应当将在中华人民共和国境内收集和产生的个人信息存储在境内。",
+          quote: "第四十条 关键信息基础设施运营者和处理个人信息达到国家网信部门规定数量的个人信息处理者，应当将在中华人民共和国境内收集和产生的个人信息存储在境内。确需向境外提供的，应当通过国家网信部门组织的安全评估",
           note: "Translation: 'Article 40: Critical information infrastructure operators and personal information processors that process personal information in quantities reaching thresholds set by the national cyberspace department shall store domestically personal information collected and produced within the PRC.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
@@ -16593,7 +17461,7 @@ window.privacyData = {
           title: "Федеральный закон от 21.07.2014 г. № 242-ФЗ",
           date: "2014-07-21",
           url: "http://www.kremlin.ru/acts/bank/38728",
-          quote: "извлечение персональных данных граждан Российской Федерации с использованием баз данных, находящихся на территории Российской Федерации",
+          quote: "При сборе персональных данных, в том числе посредством информационно-телекоммуникационной сети \"Интернет\", оператор обязан обеспечить запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение персональных данных граждан Российской Федерации с использованием баз данных, находящихся на территории Российской Федерации",
           note: "Translation: '...retrieval of personal data of citizens of the Russian Federation using databases located in the territory of the Russian Federation'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
@@ -16602,7 +17470,7 @@ window.privacyData = {
     },
     {
       name: "Constitutional habeas data (the Latin American route)",
-      description: "The individual gets a constitutional writ, modelled on habeas corpus, to go to court, see what a databank holds about them, and demand correction or deletion. It is a remedy the person sets in motion rather than a regulator's licensing system. Brazil created it in 1988, Argentina in 1994, and Paraguay, Peru and others followed; statutes and regulators came later (Argentina 2000, Brazil 2018).",
+      description: "The individual gets a constitutional writ, modelled on habeas corpus, to go to court, see what a databank holds about them, and demand correction or deletion. It is a remedy the person sets in motion rather than a regulator's licensing system. Brazil created it in 1988; Paraguay (1992), Peru (1993) and Argentina (1994) followed, then Ecuador and Colombia. General data-protection statutes and regulators came later: Argentina's law in 2000 (its regulator set up under a 2001 decree) and Brazil's LGPD in 2018.",
       color: "castle",
       exemplars: "Brazil (1988 Constitution, Art. 5 LXXII), Argentina (1994 Constitution, Art. 43), Paraguay, Peru, Colombia, Cabo Verde",
       source: [
@@ -16611,16 +17479,38 @@ window.privacyData = {
           title: "Habeas Data: The Latin-American Response to Data Protection (JILT 2000(2))",
           date: "2000",
           url: "https://warwick.ac.uk/fac/soc/law/elj/jilt/2000_2/guadamuz/",
-          quote: "Some Latin-American countries have enacted a new type of constitutional protection of personal data in order to insure individual privacy from the abuse of data registers. … Habeas Data is a constitutional right granted in several countries in Latin-America.",
+          quote: "Some Latin-American countries have enacted a new type of constitutional protection of personal data in order to insure individual privacy from the abuse of data registers. … Habeas Data is a constitutional right granted in several countries in Latin-America. … Following the Brazilian example, Paraguay incorporated the Habeas Data right to its new Constitution in 1992. After that, many countries followed suit and adopted the new legal tool in their respective constitutions: Peru in 1993, Argentina in 1994, Ecuador in 1996, and Colombia in 1997.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE",
+          note: "--check FOUND. Establishes the correct order of adoption. The same page has 'In 1988, the Brazilian legislature voted a new Constitution, which included a novel right never seen before: the Habeas Data individual complaint.' (also FOUND)."
+        },
+        {
+          institution: "European Commission (Official Journal L 168, 5 July 2003), OJ PDF hosted by legislation.gov.uk",
+          title: "Commission Decision 2003/490/EC (Argentina adequacy), recital 7",
+          date: "2003-06-30",
+          url: "https://www.legislation.gov.uk/eudn/2003/490/pdfs/eudn_20030490_adopted_en.pdf",
+          quote: "This is a subcategory of the procedure enshrined in the Constitution for the protection of constitutional rights and therefore makes the protection of personal data a fundamental right.",
+          note: "The web.archive.org URL failed repeatedly (connection reset) and EUR-Lex returns a bot challenge (HTTP 202). The quote is FOUND verbatim in the Official Journal PDF (OJ L 168/19-20, 5.7.2003) on legislation.gov.uk. It is the third of recitals (5)-(9) on p. L 168/20, i.e. recital (7), so the title's 'recital 7' is correct. Date 30 June 2003 confirmed.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
         {
-          institution: "European Commission (Official Journal L 168, 5 July 2003), read via Internet Archive copy of EUR-Lex",
-          title: "Commission Decision 2003/490/EC (Argentina adequacy), recital 7",
+          institution: "European Commission (Official Journal L 168, 5 July 2003), OJ PDF hosted by legislation.gov.uk",
+          title: "Commission Decision 2003/490/EC (Argentina adequacy), recitals 7-9",
           date: "2003-06-30",
-          url: "https://web.archive.org/web/2024/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32003D0490",
-          quote: "This is a subcategory of the procedure enshrined in the Constitution for the protection of constitutional rights and therefore makes the protection of personal data a fundamental right.",
+          url: "https://www.legislation.gov.uk/eudn/2003/490/pdfs/eudn_20030490_adopted_en.pdf",
+          quote: "According to that Article in case of falsehood of information or its use for discriminatory purposes, a person will be able to demand the deletion, correction, confidentiality or update of the data contained in the above records.",
+          note: "--check FOUND. Supports 'demand correction or deletion'. Recitals 8-9 on the same page give 'The Personal Data Protection Act No 25.326 of 4 October 2000' and 'The Regulation, approved by Decree No 1558/2001 of 3 December 2001' (both FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "FAOLEX (FAO) — English text of the Constitution of the Republic of Cabo Verde, 2nd Ordinary Revision 2010",
+          title: "Constitution of the Republic of Cabo Verde — Article 46 (Habeas data)",
+          date: "2010",
+          url: "https://faolex.fao.org/docs/pdf/cvi117271E.pdf",
+          quote: "2. The law shall regulate the procedure of habeas data.",
+          note: "--check FOUND. Article 46 is headed '(Habeas data)'. Para 1 grants habeas data 'to every citizen' to know information held about them and to demand correction or updating (the translation's text layer is garbled, so para 2 is quoted). Supports the Cabo Verde exemplar.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -16628,9 +17518,9 @@ window.privacyData = {
     },
     {
       name: "Regional harmonisation (the African route)",
-      description: "Regional communities write model or binding texts first, and member states then adopt national laws and authorities to match: ECOWAS's binding Supplementary Act (2010), the SADC Model Law (2012), and the continental Malabo Convention (2014, in force 2023). The texts borrow heavily from the European model, adapted to regional institutions. Cabo Verde (2001) came first.",
+      description: "Regional communities write model or binding texts, and member states adopt or update national laws and authorities to match: ECOWAS's binding Supplementary Act (2010), the SADC Model Law (2012), and the continental Malabo Convention (2014, in force 2023). The texts borrow heavily from the European model, adapted to regional institutions. Some states legislated before the regional texts: Cabo Verde (2001) came first, followed by Burkina Faso and Mauritius (2004), Senegal (2008) and Benin (2009).",
       color: "walls",
-      exemplars: "ECOWAS states (e.g. Senegal, Ghana, Benin, Côte d'Ivoire, Burkina Faso), SADC states (e.g. South Africa, Zambia, Zimbabwe, Botswana), Malabo Convention parties (e.g. Rwanda, Mauritius, Senegal, Ghana)",
+      exemplars: "ECOWAS states (e.g. Senegal, Ghana, Benin, Côte d'Ivoire, Nigeria), SADC states (e.g. South Africa, Zambia, Zimbabwe, Botswana), Malabo Convention parties (e.g. Rwanda, Mauritius, Senegal, Ghana)",
       source: [
         {
           institution: "ECOWAS (copy hosted by Statewatch)",
@@ -16647,9 +17537,10 @@ window.privacyData = {
           title: "The African Union Convention on Cyber Security and Personal Data Protection: Key Insights",
           date: "2023",
           url: "https://cipit.strathmore.edu/the-african-union-convention-on-cyber-security-and-personal-data-protection-key-insights/",
-          quote: "It also aimed to provide a framework for compatible legislation by member states.",
+          quote: "It also aimed to provide a framework for compatible legislation by member states. … The Malabo Convention entered into force on 8 June 2023 after receiving the required minimum of 15 ratifications from AU Member States, as per its provisions.",
           verificationStatus: "CONFIRMED",
-          accessType: "FREE"
+          accessType: "FREE",
+          note: "--check FOUND. Supports 'in force 2023'. The same page lists the ratifying states, including Ghana, Mauritius, Rwanda and Senegal (FOUND), and gives 'Benin’s data protection law No. 2009-09' (FOUND)."
         },
         {
           institution: "International Telecommunication Union (ITU) — HIPSSA project",
@@ -16657,6 +17548,46 @@ window.privacyData = {
           date: "2013",
           url: "https://www.itu.int/en/ITU-D/Projects/ITU-EC-ACP/HIPSSA/Documents/FINAL%20DOCUMENTS/FINAL%20DOCS%20ENGLISH/sadc_model_law_data_protection.pdf",
           quote: "It was further adopted by the SADC Ministers responsible for Telecommunications, Postal and ICT at their meeting in Mauritius in November 2012.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "ECOWAS Commission",
+          title: "Burkina Faso, Mali And Niger’s Withdrawal from ECOWAS is now a reality",
+          date: "2025-01-29",
+          url: "https://www.ecowas.int/burkina-faso-mali-and-nigers-withdrawal-from-ecowas-is-now-a-reality/",
+          quote: "Burkina Faso, Mali and Niger will no longer be members of the Economic Community of West African States (ECOWAS) as of Wednesday January 29, 2025.",
+          note: "--check FOUND. Why Burkina Faso is removed from the ECOWAS exemplars.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Senegal",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=SN",
+          quote: "Act No. 2008-12 of 25 January 2008 Concerning Personal Data Protection ('the Act')",
+          note: "--check FOUND. Senegal's law predates the 2010 ECOWAS Act.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Burkina Faso",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=BF",
+          quote: "Law 010-2004/AN on the protection of personal data.",
+          note: "--check FOUND. Burkina Faso's 2004 law predates all the regional texts.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Mauritius",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=MU",
+          quote: "The Act repeals and replaces the Data Protection Act 2004, so as to align with the European Union General Data Protection Regulation 2016/679 (GDPR).",
+          note: "--check FOUND. Mauritius had a 2004 law before the SADC Model Law and Malabo.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -17396,9 +18327,9 @@ window.privacyData = {
         year: 2013,
         url: "https://www.newyorker.com/news/news-desk/strongbox-and-aaron-swartz"
       },
-      contribution: "In the late 1980s and early 1990s Poulsen was a notorious hacker: federal prosecutors charged him in 1993 with seizing Pacific Bell phone lines to win Los Angeles radio contests and with setting up his own wiretaps, and he pleaded guilty, including to breaking into a computer for the names of FBI undercover businesses. He became a journalist and Wired's investigations editor, and in 2011 asked Aaron Swartz to build an open-source anonymous in-box for sources. After Swartz's death he launched it as Strongbox at The New Yorker in May 2013 and handed it to the Freedom of the Press Foundation, which renamed it SecureDrop, in October 2013.",
+      contribution: "In the late 1980s and early 1990s Poulsen was a notorious hacker: a 1993 federal indictment accused him of seizing control of the incoming phone lines of Los Angeles radio stations, by hacking Pacific Bell's computers, to win their contests, and of setting up his own wiretaps. He pleaded guilty, including to breaking into a computer for the names of FBI undercover businesses. He became a journalist and Wired's investigations editor, and in 2011 asked Aaron Swartz to build an open-source anonymous in-box for sources. After Swartz's death he launched it as Strongbox at The New Yorker in May 2013 and handed it to the Freedom of the Press Foundation, which renamed it SecureDrop, in October 2013.",
       influence: "By giving DeadDrop to the Freedom of the Press Foundation rather than keeping it in-house, Poulsen turned one magazine's drop box into shared infrastructure; he said the goal 'was to see it implemented in newsrooms far and wide'.",
-      thread: "A former intruder once charged with setting up his own wiretaps, Poulsen designed a system in which the recipient cannot learn who the sender is — protection that does not depend on the organisation's goodwill.",
+      thread: "A former intruder once charged with setting up his own wiretaps, Poulsen co-developed a system in which the recipient cannot learn who the sender is — protection that does not depend on the organisation's goodwill.",
       quote: "There’s a growing technology gap: phone records, e-mail, computer forensics, and outright hacking are valuable weapons for anyone looking to identify a journalist’s source.",
       quoteSource: {
         institution: "The New Yorker",
@@ -17428,6 +18359,16 @@ window.privacyData = {
           url: "https://freedom.press/blog/2013/10/freedom-press-foundation-launches-securedrop",
           quote: "\"The goal in creating this system was to see it implemented in newsrooms far and wide,\" Poulsen said.",
           note: "Same release: Poulsen 'developed the original project with Swartz, managed it for the first six months since it went public, and is handing over the reins', and 'serves as Wired’s investigations editor'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "San Francisco Chronicle (reprinted in RISKS Digest 14.55)",
+          title: "Don Clark, 'Hacker Accused of Rigging Radio Contests'",
+          date: "1993-04-22",
+          url: "https://catless.ncl.ac.uk/Risks/14/55",
+          quote: "A new 19-count federal indictment filed in Los Angeles charges that Poulsen also set up his own wire taps and hacked into computers owned by California Department of Motor Vehicles and Pacific Bell.",
+          note: "--check FOUND. Also FOUND: 'Kevin Lee Poulsen, now awaiting trial on earlier federal charges, is accused of conspiring with two other hackers to seize control of incoming phone lines at the radio stations.' Reprinted in RISKS 'with permission of the author'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -18485,6 +19426,86 @@ window.privacyData = {
       ]
     },
     {
+      id: "julia-angwin",
+      name: "Julia Angwin",
+      roles: "investigative journalist · founder of The Markup and Proof News",
+      years: "1996–present",
+      place: "New York City",
+      group: "advocates",
+      keyWork: {
+        title: "'What They Know' (The Wall Street Journal series) and Dragnet Nation (2014)",
+        year: 2010,
+        url: "https://www.cs.cornell.edu/~shmat/courses/cs5436/whattheyknow.pdf"
+      },
+      contribution: "At The Wall Street Journal (2000–2013) Angwin led the 'What They Know' investigation, which from July 2010 tested the 50 most popular US websites and found they installed an average of 64 tracking tools each on visitors' computers, usually without warning; the team was a finalist for the 2012 Pulitzer Prize in Explanatory Reporting. Her 2014 book Dragnet Nation recorded her own attempts to evade surveillance. She then led an investigative team at ProPublica (2014–2018) that was a 2017 Pulitzer finalist, founded the non-profit newsroom The Markup in 2018 and Proof News in 2024.",
+      influence: "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already affecting the conversation in Washington, where Congress and the FTC were working to rein in the tracking industry; the legal scholar Jeffrey Rosen, endorsing Dragnet Nation, wrote that her tracking reporting 'changed the privacy debate'.",
+      thread: "The series showed that the tools meant to put users in control had been bargained away: EFF highlighted its account of how Microsoft's advertising side blocked stronger privacy safeguards planned for Internet Explorer 8.",
+      quote: "One of the fastest-growing businesses on the Internet, a Wall Street Journal investigation has found, is the business of spying on Internet users.",
+      quoteSource: {
+        institution: "The Wall Street Journal (compilation hosted by Cornell University, CS 5436 course page)",
+        title: "Julia Angwin, 'The Web's New Gold Mine: Your Secrets', in What They Know: The Business of Tracking You on the Internet",
+        date: "2010-07-30",
+        url: "https://www.cs.cornell.edu/~shmat/courses/cs5436/whattheyknow.pdf",
+        quote: "One of the fastest-growing businesses on the Internet, a Wall Street Journal investigation has found, is the business of spying on Internet users.",
+        note: "The original on wsj.com is paywalled (401 to scripts); this PDF compilation of the series carries the Journal's copyright line and 'Published July 30, 2010.' Byline in the PDF: 'BY JULIA ANGWIN'.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      portrait: "julia-angwin-2018",
+      source: [
+        {
+          institution: "Electronic Frontier Foundation",
+          title: "The Wall Street Journal Asks: What Do Online Advertisers Know About You?",
+          date: "2010-08-04",
+          url: "https://www.eff.org/deeplinks/2010/08/what-they-know",
+          quote: "The \"What They Know\" project is already the largest and highest-profile investigation by the mainstream media into consumer Web privacy to date.",
+          note: "Also FOUND: the Internet Explorer 8.0 sentence and 'It's already affecting the conversation in Washington DC, where important efforts by both Congress and the FTC are underway to rein in this dangerous and unregulated industry.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Julia Angwin (juliaangwin.com)",
+          title: "About Julia Angwin",
+          date: "2026",
+          url: "https://juliaangwin.com/about/",
+          quote: "From 2000 to 2013, she was a reporter at The Wall Street Journal, where she led a privacy investigative team that was a Finalist for a Pulitzer Prize in Explanatory Reporting in 2011 and won a Gerald Loeb Award in 2010.",
+          note: "Same page: 'In 2018, she founded The Markup' and 'She is the founder of Proof News , a nonprofit journalism studio that launched in 2024.' Author's own biography.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Julia Angwin (juliaangwin.com)",
+          title: "Dragnet Nation: Available Now",
+          date: "2014",
+          url: "https://juliaangwin.com/dragnet-nation/",
+          quote: "“Julia Angwin’s pathbreaking reporting for the Wall Street Journal about online tracking changed the privacy debate.",
+          note: "Blurb by Jeffrey Rosen, president and CEO of the National Constitution Center (promotional).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Talking Biz News",
+          title: "Angwin leaving WSJ for ProPublica",
+          date: "2013-11-26",
+          url: "https://talkingbiznews.com/they-talk-biz-news/angwin-leaving-wsj-for-propublica/",
+          quote: "She joined the San Francisco Chronicle in 1996 and was awarded a Knight-Bagehot fellowship in journalism for studies at Columbia Business School in 1998.",
+          note: "--check FOUND. datePublished 2013-11-26T13:40:20Z; posted by Chris Roush. An independent trade-press source for the start of her career (supports years 1996–present) and for the 2013 move to ProPublica.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "CBS News / Associated Press",
+          title: "AP wins Pulitzer for stories on NYPD spying",
+          date: "2012-04-16",
+          url: "https://www.cbsnews.com/news/ap-wins-pulitzer-for-stories-on-nypd-spying/",
+          quote: "Finalists: Tom Frank of USA Today for his sharply focused exploration of inflated pensions for state and local employees, enhancing stories with graphic material to show how state legislators pump up retirement benefits in creative but unconscionable ways, and The Wall Street Journal staff for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans by corporations and public officials in a largely unmonitored realm of modern life.",
+          note: "--check FOUND under 'Explanatory reporting' in the AP list of 2012 Pulitzer winners and finalists. Page header 'April 16, 2012 / 6:28 PM EDT / AP'. It establishes the 2012 finalist year for the 'What They Know' team (pulitzer.org returns 403 to scripts).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        }
+      ]
+    },
+    {
       id: "latanya-sweeney",
       name: "Latanya Sweeney",
       roles: "computer scientist · re-identification researcher · FTC chief technologist (2014)",
@@ -18957,66 +19978,6 @@ window.privacyData = {
       ]
     },
     {
-      id: "julia-angwin",
-      name: "Julia Angwin",
-      roles: "investigative journalist · founder of The Markup and Proof News",
-      years: "2000–present",
-      place: "New York City",
-      group: "advocates",
-      keyWork: {
-        title: "'What They Know' (The Wall Street Journal series) and Dragnet Nation (2014)",
-        year: 2010,
-        url: "https://www.cs.cornell.edu/~shmat/courses/cs5436/whattheyknow.pdf"
-      },
-      contribution: "At The Wall Street Journal (2000–2013) Angwin led the 'What They Know' investigation, which from July 2010 tested the 50 most popular US websites and found they installed an average of 64 tracking tools each on visitors' computers, usually without warning; the team was a 2011 Pulitzer finalist. Her 2014 book Dragnet Nation recorded her own attempts to evade surveillance. She then led an investigative team at ProPublica (2014–2018) that was a 2017 Pulitzer finalist, founded the non-profit newsroom The Markup in 2018 and Proof News in 2024.",
-      influence: "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already shaping efforts in Congress and at the FTC; a reviewer of Dragnet Nation wrote that her tracking reporting 'changed the privacy debate'.",
-      thread: "The series showed that the tools meant to put users in control had been bargained away: EFF highlighted its account of how Microsoft's advertising side blocked stronger privacy safeguards planned for Internet Explorer 8.",
-      quote: "One of the fastest-growing businesses on the Internet, a Wall Street Journal investigation has found, is the business of spying on Internet users.",
-      quoteSource: {
-        institution: "The Wall Street Journal (compilation hosted by Cornell University, CS 5436 course page)",
-        title: "Julia Angwin, 'The Web's New Gold Mine: Your Secrets', in What They Know: The Business of Tracking You on the Internet",
-        date: "2010-07-30",
-        url: "https://www.cs.cornell.edu/~shmat/courses/cs5436/whattheyknow.pdf",
-        quote: "One of the fastest-growing businesses on the Internet, a Wall Street Journal investigation has found, is the business of spying on Internet users.",
-        note: "The original on wsj.com is paywalled (401 to scripts); this PDF compilation of the series carries the Journal's copyright line and 'Published July 30, 2010.' Byline in the PDF: 'BY JULIA ANGWIN'.",
-        verificationStatus: "CONFIRMED",
-        accessType: "FREE"
-      },
-      portrait: "julia-angwin-2018",
-      source: [
-        {
-          institution: "Electronic Frontier Foundation",
-          title: "The Wall Street Journal Asks: What Do Online Advertisers Know About You?",
-          date: "2010-08-04",
-          url: "https://www.eff.org/deeplinks/2010/08/what-they-know",
-          quote: "The \"What They Know\" project is already the largest and highest-profile investigation by the mainstream media into consumer Web privacy to date.",
-          note: "Also FOUND: the Internet Explorer 8.0 sentence and 'It's already affecting the conversation in Washington DC, where important efforts by both Congress and the FTC are underway to rein in this dangerous and unregulated industry.'",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Julia Angwin (juliaangwin.com)",
-          title: "About Julia Angwin",
-          date: "2026",
-          url: "https://juliaangwin.com/about/",
-          quote: "From 2000 to 2013, she was a reporter at The Wall Street Journal, where she led a privacy investigative team that was a Finalist for a Pulitzer Prize in Explanatory Reporting in 2011 and won a Gerald Loeb Award in 2010.",
-          note: "Same page: 'In 2018, she founded The Markup' and 'She is the founder of Proof News , a nonprofit journalism studio that launched in 2024.' Author's own biography.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "Julia Angwin (juliaangwin.com)",
-          title: "Dragnet Nation: Available Now",
-          date: "2014",
-          url: "https://juliaangwin.com/dragnet-nation/",
-          quote: "“Julia Angwin’s pathbreaking reporting for the Wall Street Journal about online tracking changed the privacy debate.",
-          note: "Blurb by Jeffrey Rosen, president and CEO of the National Constitution Center (promotional).",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        }
-      ]
-    },
-    {
       id: "nick-mathewson",
       name: "Nick Mathewson",
       handle: "nickm",
@@ -19144,6 +20105,66 @@ window.privacyData = {
       ]
     },
     {
+      id: "laura-poitras",
+      name: "Laura Poitras",
+      roles: "documentary filmmaker · journalist",
+      years: "2003–present",
+      place: "Hong Kong (where she filmed Snowden, June 2013)",
+      group: "advocates",
+      keyWork: {
+        title: "Citizenfour (documentary, Academy Award for Best Documentary Feature)",
+        year: 2014,
+        url: "https://theintercept.com/2015/02/22/poitras-wins-oscar-for-citizenfour/"
+      },
+      contribution: "Poitras, whose post-9/11 trilogy began with the Iraq film My Country, My Country (2006), was stopped dozens of times at airports after its release and apparently placed on a US terrorism watch list. Her 2012 New York Times short on NSA whistleblower William Binney led Snowden to contact her under the name 'Citizenfour' in encrypted e-mails; she filmed him in Hong Kong in June 2013 and co-wrote the Guardian story that named him. Her film Citizenfour won the Academy Award for best documentary feature in February 2015.",
+      influence: "Poitras's camera made the moment of disclosure itself part of the public record, and the reporting built on the Snowden documents earned Pulitzer Prizes for The Guardian and The Washington Post.",
+      thread: "Surveilled while making a film about surveillance, she was chosen by Snowden because she 'probably had enough knowledge of encryption practices to communicate with him securely' — privacy as a precondition of reporting.",
+      quote: "The disclosures that Edward Snowden reveals don't only expose a threat to our privacy but to our democracy itself.",
+      quoteSource: {
+        institution: "Electronic Frontier Foundation (transcript)",
+        title: "Laura Poitras' Acceptance Speech For CITIZENFOUR's Academy Award",
+        date: "2015-02-23",
+        url: "https://www.eff.org/deeplinks/2015/02/laura-poitras-acceptance-speech-when-citizenfour-won-academy-award",
+        quote: "The disclosures that Edward Snowden reveals don't only expose a threat to our privacy but to our democracy itself.",
+        note: "Transcripts differ by one word: EFF has 'reveals', The Intercept (https://theintercept.com/2015/02/22/poitras-wins-oscar-for-citizenfour/) has 'revealed'. EFF's next sentence (FOUND): 'When the most important decisions being made affecting all of us are made in secret, we lose our ability to check the powers that control.' The EFF post was published around the 22 February 2015 ceremony; exact post date not checked.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      portrait: "laura-poitras-poptech-2010",
+      source: [
+        {
+          institution: "The Intercept",
+          title: "The Intercept’s Laura Poitras Wins Academy Award for ‘Citizenfour’",
+          date: "2015-02-22",
+          url: "https://theintercept.com/2015/02/22/poitras-wins-oscar-for-citizenfour/",
+          quote: "After her Iraq film was released, she was stopped dozens of times at U.S. and foreign airports and questioned by border agents; her name had apparently been placed on one of the U.S. government’s terrorism watchlists.",
+          note: "Also FOUND: the Oscar sentence; the 'Citizenfour' pseudonym sentence; that Snowden saw her 2012 Times op-doc 'The Program' and judged she could communicate securely; and 'The stories written about the documents have earned Pulitzer Prizes for The Guardian and The Washington Post (which also received documents from Snowden).' The Intercept, which Poitras co-founded, is not independent of her.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The Guardian",
+          title: "Glenn Greenwald, Ewen MacAskill and Laura Poitras, 'Edward Snowden: the whistleblower behind the NSA surveillance revelations'",
+          date: "2013-06-09",
+          url: "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+          quote: "The Guardian, after several days of interviews, is revealing his identity at his request.",
+          note: "Byline (page metadata): Glenn Greenwald, Ewen MacAskill, Laura Poitras.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "PBS P.O.V. (American Documentary)",
+          title: "Flag Wars",
+          date: "2003-06-17",
+          url: "https://archive.pov.org/flagwars/",
+          quote: "Premiere Date: June 17, 2003",
+          note: "--check FOUND. Same page: 'Filmmaker(s): Linda Goode Bryant, Laura Poitras'. The Peabody Awards profile (https://peabodyawards.com/award-profile/p-o-v-flag-wars/) names 'Flag Wars producers/directors Linda Goode Bryant and Laura Poitras'. Supports the 2003 start of 'years'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        }
+      ]
+    },
+    {
       id: "kim-cameron",
       name: "Kim Cameron",
       handle: "Identityblog (identityblog.com)",
@@ -19212,7 +20233,7 @@ window.privacyData = {
         year: 2013,
         url: "https://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order"
       },
-      contribution: "Greenwald, a Guardian columnist living in Rio de Janeiro, wrote the first Snowden story on 6 June 2013, revealing a secret court order requiring Verizon to hand the NSA records of all calls in its systems on an 'ongoing, daily basis', and co-wrote the article that named Snowden. In August 2013 British authorities held his partner David Miranda at Heathrow for nine hours under the Terrorism Act while he travelled from Berlin to Rio. Greenwald co-founded The Intercept but resigned in October 2020, accusing its editors of censoring an article about Joe Biden; the site's editor called his account 'teeming with distortions and inaccuracies'.",
+      contribution: "Greenwald, a Guardian columnist living in Rio de Janeiro, wrote the first Snowden story, published on the evening of 5 June 2013 US time (dated 6 June by the Guardian), revealing a secret court order requiring Verizon to hand the NSA records of all calls in its systems on an 'ongoing, daily basis', and co-wrote the article that named Snowden. In August 2013 British authorities held his partner David Miranda at Heathrow for nine hours under the Terrorism Act while he travelled from Berlin to Rio. Greenwald co-founded The Intercept but resigned in October 2020, accusing its editors of censoring an article about Joe Biden; the site's editor called his account 'teeming with distortions and inaccuracies'.",
       influence: "The Verizon order story was the first of the Snowden disclosures and put bulk collection of ordinary people's records at the centre of the privacy debate; the Guardian's NSA reporting shared the Pulitzer Prize with The Washington Post.",
       thread: "The Verizon order showed that a company's routine records about its customers were being handed over wholesale — the customer had no say in terms set between the carrier and the state.",
       quote: "Aside from how obviously menacing and even creepy it is to have a state collect all forms of human communication ... there's no legal authority for the NSA to do this",
@@ -19255,6 +20276,16 @@ window.privacyData = {
           url: "https://www.cnn.com/2020/10/29/media/glenn-greenwald-quits-the-intercept/index.html",
           quote: "“The precipitating (but by no means only) cause is that The Intercept is attempting to censor my articles in violation of both my contract and fundamental principles of editorial freedom,” Greenwald’s email says.",
           note: "The Intercept's response (https://theintercept.com/2020/10/29/glenn-greenwald-resigns-the-intercept/) says his narrative 'is teeming with distortions and inaccuracies'. CNN describes The Intercept as 'the news site he co-founded in 2013'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "The Guardian",
+          title: "Ed Pilkington, 'Guardian and Washington Post win Pulitzer prize for NSA revelations'",
+          date: "2014-04-14",
+          url: "https://www.theguardian.com/media/2014/apr/14/guardian-washington-post-pulitzer-nsa-revelations",
+          quote: "The Guardian and the Washington Post have been awarded the highest accolade in US journalism, winning the Pulitzer prize for public service for their groundbreaking articles on the National Security Agency’s surveillance activities based on the leaks of Edward Snowden.",
+          note: "--check FOUND. This is the prize-winning paper reporting its own award. The same page says the award 'comes 10 months after the Guardian published the first report based on the leaks from Snowden, revealing the agency’s bulk collection of US citizens’ phone records'. Byline (JSON-LD): Ed Pilkington; datePublished 2014-04-14T19:01:59Z.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -19553,56 +20584,6 @@ window.privacyData = {
       ]
     },
     {
-      id: "laura-poitras",
-      name: "Laura Poitras",
-      roles: "documentary filmmaker · journalist",
-      years: "2006–present",
-      place: "Hong Kong (where she filmed Snowden, June 2013)",
-      group: "advocates",
-      keyWork: {
-        title: "Citizenfour (documentary, Academy Award for Best Documentary Feature)",
-        year: 2014,
-        url: "https://theintercept.com/2015/02/22/poitras-wins-oscar-for-citizenfour/"
-      },
-      contribution: "Poitras, whose post-9/11 trilogy began with the Iraq film My Country, My Country (2006), was stopped dozens of times at airports after its release and apparently placed on a US terrorism watch list. Her 2012 New York Times short on NSA whistleblower William Binney led Snowden to contact her under the name 'Citizenfour' in encrypted e-mails; she filmed him in Hong Kong in June 2013 and co-wrote the Guardian story that named him. Her film Citizenfour won the Academy Award for best documentary feature in February 2015.",
-      influence: "Poitras's camera made the moment of disclosure itself part of the public record, and the reporting built on the Snowden documents earned Pulitzer Prizes for The Guardian and The Washington Post.",
-      thread: "Surveilled while making a film about surveillance, she was chosen by Snowden because she 'probably had enough knowledge of encryption practices to communicate with him securely' — privacy as a precondition of reporting.",
-      quote: "The disclosures that Edward Snowden reveals don't only expose a threat to our privacy but to our democracy itself.",
-      quoteSource: {
-        institution: "Electronic Frontier Foundation (transcript)",
-        title: "Laura Poitras' Acceptance Speech For CITIZENFOUR's Academy Award",
-        date: "2015-02-22",
-        url: "https://www.eff.org/deeplinks/2015/02/laura-poitras-acceptance-speech-when-citizenfour-won-academy-award",
-        quote: "The disclosures that Edward Snowden reveals don't only expose a threat to our privacy but to our democracy itself.",
-        note: "Transcripts differ by one word: EFF has 'reveals', The Intercept (https://theintercept.com/2015/02/22/poitras-wins-oscar-for-citizenfour/) has 'revealed'. EFF's next sentence (FOUND): 'When the most important decisions being made affecting all of us are made in secret, we lose our ability to check the powers that control.' The EFF post was published around the 22 February 2015 ceremony; exact post date not checked.",
-        verificationStatus: "CONFIRMED",
-        accessType: "FREE"
-      },
-      portrait: "laura-poitras-poptech-2010",
-      source: [
-        {
-          institution: "The Intercept",
-          title: "The Intercept’s Laura Poitras Wins Academy Award for ‘Citizenfour’",
-          date: "2015-02-22",
-          url: "https://theintercept.com/2015/02/22/poitras-wins-oscar-for-citizenfour/",
-          quote: "After her Iraq film was released, she was stopped dozens of times at U.S. and foreign airports and questioned by border agents; her name had apparently been placed on one of the U.S. government’s terrorism watchlists.",
-          note: "Also FOUND: the Oscar sentence; the 'Citizenfour' pseudonym sentence; that Snowden saw her 2012 Times op-doc 'The Program' and judged she could communicate securely; and 'The stories written about the documents have earned Pulitzer Prizes for The Guardian and The Washington Post (which also received documents from Snowden).' The Intercept, which Poitras co-founded, is not independent of her.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        },
-        {
-          institution: "The Guardian",
-          title: "Glenn Greenwald, Ewen MacAskill and Laura Poitras, 'Edward Snowden: the whistleblower behind the NSA surveillance revelations'",
-          date: "2013-06-09",
-          url: "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
-          quote: "The Guardian, after several days of interviews, is revealing his identity at his request.",
-          note: "Byline (page metadata): Glenn Greenwald, Ewen MacAskill, Laura Poitras.",
-          verificationStatus: "CONFIRMED",
-          accessType: "FREE"
-        }
-      ]
-    },
-    {
       id: "vitaly-shmatikov",
       name: "Vitaly Shmatikov",
       roles: "computer scientist · security and privacy researcher",
@@ -19673,8 +20654,8 @@ window.privacyData = {
         year: 2023,
         url: "https://www.kashmirhill.com/book"
       },
-      contribution: "Hill began writing about privacy in 2009 with her blog The Not-So Private Parts and reported for Forbes and Gizmodo Media Group before joining The New York Times in 2019. In January 2020 she revealed that the little-known Clearview AI had built a face-search tool on more than three billion images scraped from social media, and that more than 600 law-enforcement agencies had started using it within a year. Her 2023 book Your Face Belongs to Us traces how the company came to be.",
-      influence: "Her Clearview story drew immediate official responses: New Jersey barred state police from the tool, Vermont's attorney general sued, members of Congress demanded answers, and Australia's privacy regulator sent the company inquiries three days after publication.",
+      contribution: "Hill began writing about privacy in 2009 with her blog The Not-So Private Parts and reported for Forbes and Gizmodo Media Group before joining The New York Times in 2019. In January 2020 she revealed that the little-known Clearview AI had built a face-search tool on more than three billion images scraped from social media and other websites, and that more than 600 law-enforcement agencies had started using it within a year. Her 2023 book Your Face Belongs to Us traces how the company came to be.",
+      influence: "Her Clearview story drew immediate official responses: New Jersey's attorney general barred the state's law enforcement from using the tool, Vermont's attorney general sued, members of Congress demanded answers, and Australia's privacy regulator sent the company inquiries three days after publication.",
       thread: "Clearview's collection rested on photos people had posted on their own terms for friends and family; the case showed that without enforceable, person-set limits, 'public' data can be repurposed for identification by anyone.",
       quote: "It was supposed be a yearlong project, but I’m still chronicling the fate of privacy in the modern age more than a decade later.",
       quoteSource: {
@@ -19715,6 +20696,16 @@ window.privacyData = {
           url: "https://www.kashmirhill.com/book",
           quote: "But the book’s most incisive contribution may be the ethical question it raises, which will be at the crux of the privacy debate about facial-recognition technology for many years to come.",
           note: "Review excerpt attributed to The Atlantic (promotional page). The bio page (https://www.kashmirhill.com/bio) says: 'I joined The Times in 2019 , after having worked as an investigative reporter at Gizmodo Media Group and as a writer at Forbes Magazine .'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Office of the Australian Information Commissioner",
+          title: "Commissioner initiated investigation into Clearview AI, Inc. (Privacy) [2021] AICmr 54 (14 October 2021)",
+          date: "2021-10-14",
+          url: "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+          quote: "On 21 January 2020, the OAIC sent preliminary inquiries to the respondent under s 42(2) of the Privacy Act.",
+          note: "--check FOUND (para 13). Supports 'Australia's privacy regulator sent the company inquiries three days after publication' (the NYT story is dated 18 January 2020).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -19787,7 +20778,7 @@ window.privacyData = {
         year: 2020,
         url: "https://globalprivacycontrol.org/press-release/20201007.html"
       },
-      contribution: "Soltani was the primary technical consultant on The Wall Street Journal's 'What They Know' tracking investigation, a co-creator of Do Not Track, Chief Technologist of the US Federal Trade Commission and an architect of California's CCPA and CPRA privacy laws. In October 2020 he and Sebastian Zimmeck launched Global Privacy Control with publishers, browsers and EFF, a browser setting that tells each site the user opts out of sale or sharing of their data, which California regulations require businesses to honour. On 4 October 2021 he became the first executive director of the California Privacy Protection Agency.",
+      contribution: "Soltani was the primary technical consultant on The Wall Street Journal's 'What They Know' tracking investigation, Chief Technologist of the US Federal Trade Commission and an architect of California's CCPA and CPRA privacy laws, and his biographies credit him as a co-creator of Do Not Track. In October 2020 he and Sebastian Zimmeck launched Global Privacy Control with publishers, browsers and EFF, a browser setting that tells each site the user opts out of sale or sharing of their data, which California regulations require businesses to honour. On 4 October 2021 he became the first executive director of the California Privacy Protection Agency, serving until January 2025.",
       influence: "Soltani carried the lesson of Do Not Track — a signal that sites could ignore — into law: GPC was built so that, unlike DNT, it 'has a legal basis for recognition, at least in the United States', and he then led the agency charged with enforcing it.",
       thread: "GPC is the closest widely deployed ancestor of person-held terms: a machine-readable preference sent by the person's own software with every visit — though, unlike IEEE 7012, it signals a refusal rather than proffering an agreement both sides record.",
       quote: "The centralized location of the GPC puts the user back in the driver’s seat, gives users control of their preferences, and gives them the flexibility they need to browse the Internet confident of their privacy and the security of their data.",
@@ -19829,6 +20820,16 @@ window.privacyData = {
           url: "https://linc.cnil.fr/en/ashkan-soltani-enable-users-control-their-privacy-simply-and-effectively-browser",
           quote: "Unlike DNT, GPC has a legal basis for recognition, at least in the United States.",
           note: "Author note on the page: 'Ashkan was a co-creator of ' Do Not Track ' and was one of the architects of the California Consumer Privacy Act and subsequent California Privacy Rights Act .'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "California Privacy Protection Agency",
+          title: "CPPA Executive Director To Depart in Early 2025",
+          date: "2024-11-08",
+          url: "https://cppa.ca.gov/announcements/2024/20241108.html",
+          quote: "It’s been an honor and privilege to serve as the founding Executive Director of the CPPA.",
+          note: "--check FOUND 2026-09-23. Same release, FOUND: 'The California Privacy Protection Agency’s (CPPA) Executive Director, Ashkan Soltani, announced today that he will depart the Agency in January 2025.' It also says 'He was the Agency’s first employee'. Supports 'first executive director' and 'serving until January 2025'.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -20114,8 +21115,8 @@ window.privacyData = {
         year: 2013,
         url: "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance"
       },
-      contribution: "Snowden, a 29-year-old Booz Allen Hamilton employee working at the NSA and a former CIA technical assistant, gave journalists top-secret documents on US and allied mass surveillance, then flew to Hong Kong on 20 May 2013 and identified himself in the Guardian on 9 June 2013. The disclosures began with the bulk collection of Americans' phone records. A criminal complaint dated 14 June 2013 charged him with theft of government property and two Espionage Act offences; he has lived in Russia since 2013 and was granted Russian citizenship by decree in September 2022.",
-      influence: "In the Ninth Circuit's words, his disclosure of the phone-records program 'prompted significant public debate' that ended with the USA FREEDOM Act of June 2015, which stopped bulk collection; in 2020 the same court held the program had exceeded the authority Congress gave.",
+      contribution: "Snowden, a 29-year-old Booz Allen Hamilton employee working at the NSA and a former CIA technical assistant, copied top-secret documents on US and allied mass surveillance at the NSA office in Hawaii, flew to Hong Kong on 20 May 2013, gave them to journalists he trusted and identified himself in the Guardian on 9 June 2013. The disclosures began with the bulk collection of Americans' phone records. A criminal complaint dated 14 June 2013 charged him with theft of government property and two Espionage Act offences; he has lived in Russia since 2013 and was granted Russian citizenship by decree in September 2022.",
+      influence: "In the Ninth Circuit's words, his disclosure of the phone-records program 'prompted significant public debate'; in June 2015 Congress passed the USA FREEDOM Act, which the court said 'effectively ended' the NSA's bulk collection of phone records, and in 2020 the same court held the program had exceeded the authority Congress gave.",
       thread: "By showing how much of state surveillance rested on data held by companies, the disclosures turned the question from 'what may the government collect?' to 'who holds my data, on whose terms?'.",
       quote: "I can’t in good conscience allow the US government to destroy privacy, internet freedom and basic liberties for people around the world with this massive surveillance machine they’re secretly building.",
       quoteSource: {
@@ -20828,7 +21829,7 @@ window.privacyData = {
     {
       name: "IEEE 7012-2025 Machine Readable Personal Privacy Terms (MyTerms)",
       years: "2025",
-      body: "IEEE SA (SSIT Standards Committee); roster kept by Customer Commons",
+      body: "IEEE SA (SSIT Standards Committee); roster kept by a neutral nonprofit, as cl. 4.2 requires (in practice Customer Commons)",
       whoProffers: "person",
       whoLabel: "The person",
       machineReadable: true,
@@ -20875,12 +21876,42 @@ window.privacyData = {
           note: "Supports 'five agreements in a market-feedback phase'. WP API: page modified 2026-02-14. --check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.2 Location and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Terms and contracts shall be kept and displayed in discrete and separate forms on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use.",
+          note: "Normative ('shall'). The roster requirement; the clause names no keeper. Customer Commons appears only in informative notes (Introduction fn. 8; Annex A fn. 19; Annexes B.2 and C). --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.3 Legal readability",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Agreements shall be written as formal contracts, specifying exactly what requirements, promises, and other obligations shall be obeyed by both parties",
+          note: "Normative ('shall'). Agreements under the standard are designed as contracts; cl. 3.1 defines a contract as 'a mutual agreement between parties that creates mutual obligations and is enforceable by law' (FOUND). --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+          note: "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     }
   ],
 
-  lineageNote: "Rows are ordered by year. \"Who proffers the terms\" asks whose text the agreement or signal is: the organisation's policy, the person's browser signal, an industry framework, or the person's own terms. Each row cites its specification or the body that published it.",
+  lineageNote: "Rows are ordered by year. \"Who proffers the terms\" asks whose terms the agreement or signal carries: the organisation's policy, the person's browser signal, an industry framework, or the person's own terms. Each row cites its specification or the body that published it.",
 
   harms: [
     {
@@ -21226,7 +22257,7 @@ window.privacyData = {
           title: "ACLU v. Clearview AI (case page)",
           date: "2022",
           url: "https://www.aclu.org/cases/aclu-v-clearview-ai",
-          quote: "Face recognition technology has helped Clearview capture more than three billion faceprints, and counting, from images available online. … After the parties reached a settlement agreement, on May 11, 2022, the court signed a consent order ending this case. The central provision of the settlement restricts Clearview’s practices not just in Illinois, but across the United States, by permanently banning Clearview from making its faceprint database available to most businesses and other private entities nationwide.",
+          quote: "The lawsuit was filed in Illinois state court in Chicago, after the New York Times revealed in January 2020 that Clearview was building a secretive tracking and surveillance tool using biometric identifiers. Face recognition technology has helped Clearview capture more than three billion faceprints, and counting, from images available online. … After the parties reached a settlement agreement, on May 11, 2022, the court signed a consent order ending this case. The central provision of the settlement restricts Clearview’s practices not just in Illinois, but across the United States, by permanently banning Clearview from making its faceprint database available to most businesses and other private entities nationwide.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
@@ -21239,16 +22270,36 @@ window.privacyData = {
           note: "Company's own claim about its database size.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Circuit Court of Cook County, Illinois (complaint as file-stamped, hosted by the ACLU)",
+          title: "ACLU et al. v. Clearview AI, Inc., Complaint, Case No. 2020CH04353",
+          date: "2020-05-28",
+          url: "https://assets.aclu.org/live/uploads/legal-documents/2020.05.28_ACLU-Clearview_Complaint_File_stamped.pdf",
+          quote: "IN THE CIRCUIT COURT OF COOK COUNTY, ILLINOIS",
+          note: "--check FOUND. The file stamp reads 'FILED 5/28/2020 9:00 AM ... CIRCUIT CLERK COOK COUNTY, IL 2020CH04353' and the caption is 'COUNTY DEPARTMENT, CHANCERY DIVISION'. This supports the record's place field.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Information Commissioner's Office (UK)",
+          title: "UK Upper Tribunal hands down judgment on Clearview AI Inc",
+          date: "2025-10-08",
+          url: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/10/uk-upper-tribunal-hands-down-judgment-on-clearview-ai-inc/",
+          quote: "In May 2022, the Commissioner fined US-based company Clearview £7.5m and issued an enforcement notice for scraping images of UK residents from the web and social media",
+          note: "--check FOUND. The same page says: 'The UT directed that this case should be sent back to the FTT to determine the substantive appeal on the basis that the Commissioner had jurisdiction to issue the monetary penalty notice and enforcement notice.' (FOUND). It also has 'Update 19 December 2025 : The Upper Tribunal has granted Clearview permission to appeal its decision to the Court of Appeal.' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       place: "Binnenhof",
-      years: "c. 2013–2019 (profiling); January 2021 (government resigns); October 2021 (Amnesty report)",
+      years: "2013 onward (risk-classification model; nationality used as a risk factor at least March 2016–October 2018); January 2021 (government resigns); October 2021 (Amnesty report); December 2021 (Dutch DPA fine)",
       what: "The Dutch tax authorities used an algorithmic risk-scoring system, with nationality as one of the risk factors, to flag childcare-benefit claims as potentially fraudulent.",
       figure: "Tens of thousands",
       figureLabel: "Tens of thousands of parents and caregivers falsely accused of fraud",
-      consequence: "The scandal brought down the Dutch government in January 2021; families from ethnic minorities were disproportionately hit.",
+      consequence: "The scandal brought down the Dutch government in January 2021; families from ethnic minorities were disproportionately hit. In December 2021 the Dutch Data Protection Authority fined the Tax Administration €2.75 million for processing applicants' nationality unlawfully and in a discriminatory way.",
       source: [
         {
           institution: "Amnesty International",
@@ -21267,6 +22318,26 @@ window.privacyData = {
           quote: "Tens of thousands of parents and caregivers from mostly low-income families were falsely accused of fraud by the Dutch tax authorities as a result, with people from ethnic minorities disproportionately impacted. While the scandal brought down the Dutch government in January",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
+          title: "Belastingdienst/Toeslagen: De verwerking van de nationaliteit van aanvragers van kinderopvangtoeslag (investigation report)",
+          date: "2020-07",
+          url: "https://autoriteitpersoonsgegevens.nl/sites/default/files/atoms/files/onderzoek_belastingdienst_kinderopvangtoeslag.pdf",
+          quote: "De AP stelt voorts vast dat Toeslagen tot oktober 2018 gebruik heeft gemaakt van de nationaliteit van aanvragers voor de indicator Nederlanderschap/niet-Nederlanderschap in het risico-classificatiemodel.",
+          note: "--check FOUND. Translation: 'The AP further finds that Toeslagen [the benefits office] used applicants' nationality for the Dutch/non-Dutch indicator in the risk-classification model until October 2018.' The report also finds that applications were tested against this indicator 'in ieder geval vanaf maart 2016 tot oktober 2018' (at least from March 2016 to October 2018) (FOUND). Amnesty cites this report as dated 16 July 2020.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
+          title: "Boete Belastingdienst voor discriminerende en onrechtmatige werkwijze",
+          date: "2021-12-07",
+          url: "https://autoriteitpersoonsgegevens.nl/actueel/boete-belastingdienst-voor-discriminerende-en-onrechtmatige-werkwijze",
+          quote: "De Autoriteit Persoonsgegevens (AP) legt de Belastingdienst een boete op van 2,75 miljoen euro.",
+          note: "--check FOUND. Translation: 'The Dutch Data Protection Authority imposes a fine of 2.75 million euros on the Tax Administration.' The page metadata date is 2021-12-07. The page also says the Tax Administration used nationality 'als een indicator (wel/niet Nederlander) in een systeem dat automatisch bepaalde aanvragen als risicovol aanwees' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -21276,7 +22347,7 @@ window.privacyData = {
       what: "A data broker sold precise, timestamped location feeds tied to mobile device identifiers, which could trace people to reproductive-health clinics, places of worship, shelters and addiction-recovery centres; the FTC filed suit two months after the Supreme Court's Dobbs decision ended the federal constitutional right to abortion.",
       figure: "61 million+",
       figureLabel: "Location data from more than 61 million unique devices in a single week's free sample; hundreds of millions of devices overall",
-      consequence: "The FTC sued to halt Kochava's sale of sensitive geolocation data, warning of stigma, stalking, discrimination, job loss and physical violence.",
+      consequence: "The FTC sued to halt Kochava's sale of sensitive geolocation data, warning of stigma, stalking, discrimination, job loss and physical violence. In May 2026 it filed a proposed settlement that would ban Kochava and its subsidiary from selling or sharing sensitive location data without consumers' affirmative express consent.",
       source: [
         {
           institution: "Federal Trade Commission",
@@ -21296,6 +22367,26 @@ window.privacyData = {
           note: "The syllabus states the holding: 'The Constitution does not confer a right to abortion; Roe and Casey are overruled; and the authority to regulate abortion is returned to the people and their elected representatives.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Federal Trade Commission (complaint, U.S. District Court for the District of Idaho, Case No. 2:22-cv-377)",
+          title: "FTC v. Kochava Inc., Complaint for Permanent Injunction and Other Relief",
+          date: "2022-08-29",
+          url: "https://www.ftc.gov/system/files/ftc_gov/pdf/1.%20Complaint.pdf",
+          quote: "has also offered a free sample",
+          note: "--check FOUND. Full sentence (para. 12): 'Kochava typically charges a monthly subscription fee of thousands of dollars to access its location data feed but has also offered a free sample (the “Kochava Data Sample”).' The complaint also has 'place of business at 201 Church Street, Sandpoint, Idaho 83864' (FOUND). The header reads 'Filed 08/29/22'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Federal Trade Commission",
+          title: "FTC to Ban Kochava and Subsidiary from Selling Sensitive Location Data to Settle Charges They Sold Location Data Linked to Millions of Mobile Devices",
+          date: "2026-05-04",
+          url: "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-ban-kochava-subsidiary-selling-sensitive-location-data-settle-charges-they-sold-location-data",
+          quote: "Under the proposed order resolving the FTC’s litigation, Kochava and its subsidiary, Collective Data Solutions (CDS), which has taken over Kochava’s data broker business, will be prohibited from selling, licensing, transferring, sharing or disclosing sensitive location data in any products or services unless they obtain a consumer’s affirmative express consent and the data is used to provide a service directly requested by the consumer.",
+          note: "--check FOUND. The page is dated May 4, 2026 and says 'The FTC filed the proposed order in the U.S. District Court for the District of Idaho.' (FOUND). No court entry of the order was found as of 2026-09-23, so the record should keep calling it 'proposed'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -21305,21 +22396,21 @@ window.privacyData = {
       what: "Using passwords leaked in other breaches, an attacker logged into about 14,000 genetic-testing accounts and, through the 'DNA Relatives' feature, reached millions of relatives who had shared data with them.",
       figure: "5.5 million",
       figureLabel: "About 5.5 million DNA Relatives profiles and 1.4 million Family Tree profiles; 155,592 UK residents",
-      consequence: "The UK ICO fined 23andMe £2.31 million in June 2025; as the company reported financial distress in March 2025, California's Attorney General urged customers to delete their genetic data and destroy their samples.",
+      consequence: "The UK ICO fined 23andMe £2.31 million in June 2025; in March 2025, after the company publicly reported financial distress, California's Attorney General urged Californians to consider having 23andMe delete their genetic data and destroy their samples.",
       source: [
         {
           institution: "23andMe (company blog)",
           title: "Addressing Data Security Concerns",
-          date: "2023-12",
+          date: "2023-12-05",
           url: "https://blog.23andme.com/articles/addressing-data-security-concerns",
-          quote: "The threat actor used the compromised credential stuffed accounts to access the information included in a significant number of DNA Relatives profiles (approximately 5.5 million) and Family Tree feature profiles (approximately 1.4 million), each of which were connected to the compromised accounts.",
+          quote: "The threat actor was able to access less than 0.1%, or roughly 14,000 user accounts, of the existing 14 million 23andMe customers through credential stuffing. The threat actor used the compromised credential stuffed accounts to access the information included in a significant number of DNA Relatives profiles (approximately 5.5 million) and Family Tree feature profiles (approximately 1.4 million), each of which were connected to the compromised accounts.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         },
         {
           institution: "Information Commissioner's Office (UK)",
           title: "23andMe fined £2.31 million for failing to protect UK users’ genetic data",
-          date: "2025-06",
+          date: "2025-06-17",
           url: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/23andme-fined-for-failing-to-protect-uk-users-genetic-data/",
           quote: "This resulted in the unauthorised access to personal information belonging to 155,592 UK residents, potentially revealing names, birth years, self-reported city or postcode-level location, profile images, race, ethnicity, family trees and health reports.",
           verificationStatus: "CONFIRMED",
@@ -21328,7 +22419,7 @@ window.privacyData = {
         {
           institution: "California Department of Justice, Office of the Attorney General",
           title: "Attorney General Bonta Urgently Issues Consumer Alert for 23andMe Customers",
-          date: "2025-03",
+          date: "2025-03-21",
           url: "https://oag.ca.gov/news/press-releases/attorney-general-bonta-urgently-issues-consumer-alert-23andme-customers",
           quote: "Given 23andMe’s reported financial distress, I remind Californians to consider invoking their rights and directing 23andMe to delete their data and destroy any samples of genetic material held by the company.",
           verificationStatus: "CONFIRMED",
@@ -21350,8 +22441,8 @@ window.privacyData = {
       ["Approved", "4 November 2025, IEEE SA Standards Board — hence “-2025”"],
       ["Published", "20 January 2026 · IEEE Xplore 11360682"],
       ["DOI", "10.1109/IEEESTD.2025.11360682"],
-      ["Access", "Free PDF through the IEEE GET Program (free IEEE account)"],
-      ["Roster", "Standard agreements kept by a neutral nonprofit, Customer Commons"],
+      ["Access", "Free PDF through the IEEE GET Program"],
+      ["Roster", "Standard agreements kept by a neutral nonprofit (the standard names none); for MyTerms, Customer Commons"],
       ["Launched", "28 January 2026 (Data Privacy Day), London and online"]
     ],
     quote: {
@@ -21382,6 +22473,16 @@ window.privacyData = {
         date: "2026",
         url: "https://myterms.info/agreements/",
         quote: "Be transparent about what you are asking for and plan to do with my data (The Principle of Transparency)",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.3 Naming and labeling",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Agreement names shall enable transparency and be meaningful when seen from the perspective of a non-specialist.",
+        note: "Normative ('shall'). The standard's nearest text to a transparency principle; cl. 5.3.2 adds 'Entities shall display publicly all terms they would accept from an individual who proposes terms and agreements.' (FOUND). --check FOUND 2026-09-23.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       }
@@ -21429,6 +22530,16 @@ window.privacyData = {
             note: "--check FOUND. The FAQ also glosses the name: 'That one says \"Service Delivery\" and \"Basic.\"'",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "SD-BASE, as the baseline term, represents the individual’s preference to receive a service without any analytics, tracking, or profiling by the 2nd or 3rd parties.",
+            note: "Informative (Annex A). The standard's sample SD-BASE bars analytics, tracking and profiling by the site itself as well as by third parties; Table A.1 marks Analytics 2P, Tracking 2P, Profiling 2P and Share Anonymised Data 3P all 'X', with Data Portability optional under the table's legend. --check FOUND 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       },
@@ -21446,6 +22557,16 @@ window.privacyData = {
             quote: "A variant of the SD BASE agreement with the added requirement that the individual wishes to include a data portability request in their terms. They wish to have their own instance of the data generated within the relationship.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), Table A.1 Sample machine-readable privacy terms",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "✓ Required X Not allowed ○ Optional",
+            note: "Informative (Annex A). Table A.1 lists SD-BASE-DP as a sample agreement; under this legend its Data Portability cell is '✓' (required) where SD-BASE's is '○' (optional). The sentence before the table reads the symbols the other way round ('✓ represents the stated activity is permitted, i.e., it MAY be done', FOUND); the legend is the reading under which the table is coherent (Service Delivery is 'always required'). --check FOUND 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       },
@@ -21460,10 +22581,9 @@ window.privacyData = {
             title: "IEEE 7012 — The Standard",
             date: "2026",
             url: "https://myterms.info/ieee7012-standards/",
-            quote: "An agreement that indicates you are willing to provide access to specific data under your control for the purposes of Training and Operating AI technologies. … MyTerms agreements are of two types: Personal Data Contribution and Relationship",
+            quote: "An agreement that indicates you are willing to provide access to specific data under your control for the purposes of Training and Operating AI technologies.",
             verificationStatus: "CONFIRMED",
-            accessType: "FREE",
-            note: "fetch-text.py --check FOUND. This sentence names the type verbatim. On the page it is followed by ' .' (link markup), so the quote stops before the period."
+            accessType: "FREE"
           },
           {
             institution: "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
@@ -21475,12 +22595,12 @@ window.privacyData = {
             accessType: "FREE"
           },
           {
-            institution: "InfoQ",
-            title: "MyTerms: a New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies",
-            date: "2026-02-02",
-            url: "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/",
-            quote: "For example, terms can cover ongoing relationships, such as \"service delivery only\" or \"service delivery only with data portability\", as well as one-time data contributions, such as \"AI training and operations\", \"sharing intent data\", and more.",
-            note: "Independent trade-press report by Sergio De Simone, dated Feb 02, 2026. fetch-text.py --check FOUND. It independently confirms the one-off contribution category (AI training and operations, intent data) against the ongoing relationship category.",
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "AI Training and Operation",
+            note: "Informative (Annex A). One of the ten sample term codes (AI); Table A.1 lists PDC-AI with scope 'Training AI' among agreements for data 'providing' or 'donating' on a one-off basis, with second-party analytics, tracking and profiling and third-party sharing all marked not allowed. --check FOUND 2026-09-23.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -21498,6 +22618,16 @@ window.privacyData = {
             date: "2026",
             url: "https://myterms.info/ieee7012-standards/",
             quote: "An agreement that indicates you are willing to provide access to specific data under your control to enable a Data for Good project.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
+          },
+          {
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "The last three terms, PDC-INTENT, PDC-AI and PDC-GOOD should have unique contract wrappers for their utilization such as for time limited use.",
+            note: "Informative (Annex A). Names the three contribution agreements; Table A.1 gives PDC-GOOD the scope 'Public Good' (MyTerms calls it 'Data for Good'). --check FOUND 2026-09-23.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
           }
@@ -21526,12 +22656,22 @@ window.privacyData = {
             quote: "Other agreements cover data portability, data use for AI training, data for good, and data for intentcasting.",
             verificationStatus: "CONFIRMED",
             accessType: "FREE"
+          },
+          {
+            institution: "IEEE Standards Association (IEEE Xplore)",
+            title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex B (informative) Use cases, B.2",
+            date: "2026-01-20",
+            url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+            quote: "Sharing personal buying interest data (aka intentcasting or broadcast shopping)",
+            note: "Informative (Annex B). Title of the intentcasting use case; Table A.1 in Annex A gives PDC-INTENT the scope 'Intent Casting'. --check FOUND 2026-09-23.",
+            verificationStatus: "CONFIRMED",
+            accessType: "FREE"
           }
         ]
       }
     ],
-    agreementsDesc: "Two relationship agreements for an ongoing service, three for one-off contributions of data. Each is published in plain language, in machine-readable form and as a legal text, and links its key terms to the W3C Data Privacy Vocabulary.",
-    coda: "MyTerms launched with these five in a market-feedback phase of up to six months, with more in the pipeline. The standard leaves the record format, its storage and the wire protocol open — so interoperability will be decided by implementations, not the text. The launch agreements' full legal and machine-readable texts were not yet published on the pages this study could read.",
+    agreementsDesc: "Two relationship agreements for an ongoing service, three for one-off contributions of data. MyTerms says each comes in plain language, in machine-readable form and as a legal text (the three readings the standard requires) and links its key terms to the W3C Data Privacy Vocabulary.",
+    coda: "MyTerms launched with these five in a market-feedback phase of up to six months, with more in the pipeline. The standard fixes what each side's record must hold — the terms, date, time stamp, identifiers and a unique contract ID, in identical copies — but not its format, where it is stored or the wire protocol; interoperability, it says, “is not a requirement of this standard”, so implementations, not the text, will decide it. The launch agreements' full legal and machine-readable texts were not yet published on the pages this study could read.",
     codaSource: [
       {
         institution: "MyTerms (myterms.info; site of Customer Commons and the MyTerms Alliance)",
@@ -21547,9 +22687,10 @@ window.privacyData = {
         title: "MyTerms FAQs – Common Questions About the Privacy Standard",
         date: "2026",
         url: "https://myterms.info/faqs/",
-        quote: "There will be 5 agreements when we launch MyTerms, and 8 more in the pipeline. … This is an option left open by the MyTerms standard, to maximize development choices.",
+        quote: "There will be 5 agreements when we launch MyTerms, and 8 more in the pipeline. … This is an option left open by the MyTerms standard, to maximize development choices. … On the Web, browsers or their plug-ins will signal MyTerms options to sites several possible means, including browser headers (on the model of Do Not Track and Global Privacy Conrol). … Those can be as simple as browser plugins (and Web server plugins on the other side) … No. But AI will likely be more involved as development of MyTerms products and services proceed and evolve.",
         verificationStatus: "CONFIRMED",
-        accessType: "FREE"
+        accessType: "FREE",
+        note: "fetch-text.py --check FOUND 2026-09-23 (FAQ 'For Individuals' Q1). fetch-text.py --check FOUND 2026-09-23. This is the answer to 'Do I need an AI to use MyTerms?'"
       },
       {
         institution: "Customer Commons (archived by the Internet Archive, 6 October 2025)",
@@ -21581,11 +22722,21 @@ window.privacyData = {
         accessType: "FREE"
       },
       {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), Table A.1 Sample machine-readable privacy terms",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Table A.1 outlines the various combinations of these terms and their effects.",
+        note: "Informative (Annex A). Table A.1 lists 13 sample agreements: SD-BASE, SD-BASE-DP, SD-BASE-A, SD-BASE-A-DP, SD-BASE-AT, SD-BASE-AT-DP, SD-BASE-ATP, SD-BASE-ATP-DP, SD-BASE-ATP-S3P, SD-BASE-ATP-S3P-DP, PDC-INTENT, PDC-AI and PDC-GOOD. The MyTerms launch five are a subset; 5 at launch plus the FAQ's '8 more in the pipeline' also makes 13. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
         institution: "IEEE Standards Association",
         title: "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms (standard page)",
         date: "2026-01-20",
         url: "https://standards.ieee.org/ieee/7012/7192/",
-        quote: "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+        quote: "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily. … Computing devices and software performing as agents for both first and second parties shall engage using any protocol that serves the purpose.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       },
@@ -21595,6 +22746,85 @@ window.privacyData = {
         date: "2026-01-07",
         url: "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
         quote: "For that combination, we might define a canonical MyTerms Agreement Record, or MAR. Note that this is something I just made up.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.4 The recorder",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "The contract recorder shall record the agreement and handshake terms, date, time stamp, and pseudonymous or explicit identifiers, containing a unique contract ID",
+        note: "Normative. Sets the minimum content of the record. The clause continues: 'The recorder shall record rejected agreements including date, time, and entity refusing the offer.' (FOUND), and requires a function for submitting a disputed agreement to auditors. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+        note: "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.2 How contracts are signed",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Contractual agreements shall be signed electronically by both party’s agents using any standard method agreed upon for that purpose.",
+        note: "Normative. Signing by both agents is required; the method is left to the parties. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "ProjectVRM blog (projectvrm.org)",
+        title: "The MyTerms PAR",
+        date: "2025-04-06",
+        url: "https://projectvrm.org/2025/04/06/myterms/",
+        quote: "It also does not specify what tech or protocol to use. This is to leave development as open as possible.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "MyData Global",
+        title: "MyData and MyTerms Hub Position Paper on ‘Privacy Signals’ and EU Omnibus Article 88b",
+        date: "2026-08-13",
+        url: "https://mydata.org/2026/08/13/mydata-and-myterms-hub-position-paper-on-privacy-signals-and-eu-omnibus-article-88b/",
+        quote: "It does not mandate the form that the personal agent or entity agent must take. But it is reasonable to assume that individuals may use personal data services, fiduciary data intermediaries, apps, browser plug-ins, digital wallets or agentic AI. … Personal Agents that enact standardised, machine-readable privacy signals, as envisaged in EU Digital Omnibus Article 88b have now been built and will be brought to market via MyData Global and others in Q4 2026.",
+        note: "fetch-text.py --check FOUND 2026-09-23. MyData Global's August 2026 position paper, written with the MyTerms Hub.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.3 Extant standards and regulations",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Operation of this standard depends on the Internet Protocol Suite, especially TCP/IP, and HTTP.",
+        note: "Normative. The only technology the numbered clauses name. No numbered clause repeats the abstract's 'any protocol that serves the purpose'. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), A.2 HTTP request example",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "One approach to this is to structure the request in an HTTP header which can simplify process and compliance.",
+        note: "Informative (Annex A.2). The header encoding (MRPAZ-/MTPAZ- fields) is an example, not a requirement. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.5 Interoperability for ecosystems (NOTE)",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Interoperability between systems is not a requirement of this standard",
+        note: "Normative clause 5.5, in a NOTE; fetch-text.py --check FOUND on 2026-09-23. The annex on ecosystem interoperability is offered 'as an optional aide'.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       }
@@ -21692,6 +22922,56 @@ window.privacyData = {
         url: "https://standards.ieee.org/about/sasb/sba/dec2017/",
         quote: "P7012 (SSIT/SC) Standard for Machine Readable Personal Privacy Terms",
         note: "Listed under the heading \"New PARs\" on the page dated \"6 December 2017\" (next to P7011, the news-trustworthiness PAR). Independent IEEE primary confirmation of the PAR approval date, beyond the HL7-hosted copy of the PAR form.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: title and copyright pages",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "All rights reserved. Published 20 January 2026.",
+        note: "Front matter, not a clause. The copyright page gives the publication date; the title page reads 'Approved 4 November 2025 IEEE SA Standards Board' and 'Developed by the Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology', and the copyright page prints 'ISBN 979-8-8557-2944-3 ISBN 979-8-8557-2945-0' (all FOUND). --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.1 Scope",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity, with identical copies of that contract kept by both parties.",
+        note: "Normative. The third scope sentence; the first two ('The standard identifies/addresses ...' and 'The scope of this draft standard is confined to routines ...') are also in cl. 1.1 (FOUND), so all three scope sentences are confirmed from the standard itself. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.2 Purpose",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world.",
+        note: "Normative. The purpose text is verbatim in cl. 1.2 (the PDF uses em dashes around 'mostly companies'). --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: Participants",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "Doc Searls, Chair Justin Byrd, Vice Chair Mary Hodder, Editor Scott Mace, Secretary",
+        note: "Front matter. The same page says 'the Machine Readable Privacy Terms Working Group had the following membership' and lists David P. Reed and 'Lisa LeVasseur' (both FOUND) as members; it does not record earlier chairs. --check FOUND 2026-09-23.",
+        verificationStatus: "CONFIRMED",
+        accessType: "FREE"
+      },
+      {
+        institution: "IEEE Standards Association (IEEE Xplore)",
+        title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 6 Annexes to IEEE Std 7012-2025",
+        date: "2026-01-20",
+        url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+        quote: "All annex contents are to be considered informative.",
+        note: "Normative statement of status. The clause adds 'However, none of these examples shall be considered normative.' (FOUND). Note that cl. 6 swaps Annexes C and D in its own description ('ecosystem translation and interoperability information in Annex C', FOUND), whereas the annexes themselves put the abbreviated designations in C and interoperability in D. --check FOUND 2026-09-23.",
         verificationStatus: "CONFIRMED",
         accessType: "FREE"
       }
@@ -21804,7 +23084,7 @@ window.privacyData = {
     },
     {
       claim: "An agent needs a portable, machine-readable statement of its principal's terms that it can present anywhere.",
-      explanation: "IEEE 7012 provides for this. It covers agreements between individuals and the service providers they engage, 'including websites, applications and AI agents'. The individual, acting as first party, points to standard-form terms chosen from a roster kept by an independent, neutral non-business entity, and software agents may act for either side. MyTerms describes SD-BASE as the default agreement for 'any individual using an agent'. Without such a standard, the only contractual terms an agent meets are each site's own.",
+      explanation: "IEEE 7012 provides for this. It covers agreements between individuals and the service providers they engage, 'including websites, applications and AI agents', although the other party to each contract must be an organisation. The individual, acting as first party, points to standard-form terms chosen from a roster kept by an independent, neutral non-business entity, and software agents may act for either side. MyTerms describes SD-BASE as the default agreement for 'any individual using an agent'. Without such a standard, the only contractual terms an agent meets are each site's own.",
       source: [
         {
           institution: "IEEE Standards Association",
@@ -21821,6 +23101,36 @@ window.privacyData = {
           date: "2026",
           url: "https://myterms.info/agreements/",
           quote: "It is the base/ default relationship agreement that should be in place for any individual using an agent to propose a MyTerms agreement to an organisation.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 3.1 Definitions (entity)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "An entity can only be an organization.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 13). The second party is always an organisation; with cl. 5.4.3 (FOUND: 'The individual shall always be the first party, and the entity shall always be the second party.'), an AI agent enters only as software acting for a party.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2 Agents",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Agents for persons shall be any software and/or services, or a combination of software and hardware, responsible exclusively to that person.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 16). Supports 'software agents may act for either side'; the next sentence gives entities agents 'responsible exclusively to that entity'. Nothing limits the person's agent to a browser, so an AI agent qualifies if it answers only to the person.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.2 Machine-readability",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "This component shall be constructed with mechanisms enabling agreements themselves, and the individual terms within them, to be discoverable and readable by computers in a structured format.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 15). Supports the claim that 7012 gives an agent a machine-readable statement of its principal's terms. The same clause places the agreements in 'an open and transparent online directory' with terms linked to canonical explanations and IRIs.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -21876,12 +23186,22 @@ window.privacyData = {
           note: "--check FOUND 2026-09-23. The submission history shows v1 on Sat 6 Sep 2025.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 19). The normative basis for 'IEEE 7012 requires ... each side keeps a matching record'; the abstract sentence already on the record is a summary of it.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "Law is moving to make organisations honour a person's machine-readable signal, which gives person-proffered terms a legal foothold.",
-      explanation: "The GDPR already lets people object 'by automated means using technical specifications'. California's regulations make businesses that sell or share personal information treat opt-out preference signals as valid requests. AB 566 obliges browser makers to offer such a signal from 1 January 2027, and Colorado has required businesses to accept universal opt-out signals since 1 July 2024. The EU's proposed Article 88b would require controllers to accept automated, machine-readable consent choices. The EDPB and EDPS strongly welcomed it, but according to noyb it was removed from the Council's 18 June 2026 text.",
+      explanation: "The GDPR already lets people object 'by automated means using technical specifications'. California's regulations make businesses that sell or share personal information treat opt-out preference signals as valid requests. AB 566 obliges browser makers to offer such a signal from 1 January 2027, and Colorado has required businesses to accept universal opt-out signals since 1 July 2024. The EU's proposed Article 88b would require controllers to accept automated, machine-readable consent choices. The EDPB and EDPS strongly welcomed it, but according to noyb it was removed from the Council's 18 June 2026 text. IEEE 7012 itself rests on none of these laws: it says it 'does not depend on extant regulations' but may help them 'by bringing contracts into the suite of available ways to provide personal privacy on networks'.",
       source: [
         {
           institution: "Official Journal of the European Union (via EUR-Lex)",
@@ -21960,6 +23280,16 @@ window.privacyData = {
           note: "--check FOUND 2026-09-23. The date comes from the file name (10092026).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.3 Extant standards and regulations",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "while this standard does not depend on extant regulations, it may prove to help those regulations by bringing contracts into the suite of available ways to provide personal privacy on networks.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative clause (p. 11), descriptive wording. A 7012 agreement binds through contract, not through the signal laws cited in this record.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -22012,6 +23342,16 @@ window.privacyData = {
           url: "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432",
           quote: "Decision No. 755 of 2 November 2024 has been temporarily removed from the website of the Italian Data Protection Authority following judgment No. 4153/2026 of the Court of Rome. The judgment, published on 18 March 2026, upheld the appeal lodged against the Authority’s decision",
           note: "--check FOUND 2026-09-23. The Italian version reads 'accolta l'opposizione proposta avverso il provvedimento del Garante'. The judgment itself was not read.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A.1 Terms in draft (informative)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "all terms that are not included in the agreement are expressly prohibited.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Informative (Annex A, p. 22). Shows why PDC-AI is an opt-in: AI training is barred unless an agreement includes it. Table A.1 lists PDC-AI with PDC-INTENT and PDC-GOOD as agreements for when the individual is 'providing' or 'donating' data, 'on a one-off basis' (FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -22067,6 +23407,16 @@ window.privacyData = {
           note: "--check FOUND 2026-09-23. The page's JSON-LD dateModified is 2026-01-26.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex B.2 Use Case 2: Sharing personal buying interest data (aka intentcasting or broadcast shopping) (informative)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "At present the terms under which buying interest-related data are shared are defined by the seller/ provider of products or services",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Informative (Annex B, p. 34). The standard's own intentcasting use case supports the explanation's 'rather than having intent inferred from tracking'. Same annex (FOUND): 'This standard allows the building and use of agreements that offer an alternate mode.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -22110,6 +23460,16 @@ window.privacyData = {
           quote: "This milestone in the evolution of AI-enabled commerce is powered by the Agentic Commerce Protocol (ACP), a new, merchant-friendly open standard codeveloped by Stripe and OpenAI, informed by Stripe’s 15 years of experience building commerce infrastructure for the world's fastest-growing businesses.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2 Agents",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Agents may be provided by services external to either party but shall be controlled by, and responsible to, the represented party only.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 16). A platform may supply a person's agent, but a conforming agent answers only to the person. This is the standard's own safeguard against the capture the claim describes.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -22151,8 +23511,8 @@ window.privacyData = {
   scenario: [
     {
       actor: "The person chooses default terms once",
-      text: "Maya sets her shopping agent's default to SD-BASE (service delivery only, no sharing with third parties) and lists PDC-AI as a term she will NOT offer to this merchant.",
-      basis: "IEEE 7012 cl. 5.2.1.2: the person's 'chooser' selects a default agreement that is presented to every entity the agent meets for the first time, and terms default to a locked-down state. The MyTerms FAQ says people choose from a small roster at a neutral nonprofit site. SD-BASE is the base/default agreement for anyone using an agent, and its FAQ description says the site provides its services and does not share information about the person with other parties. The standard does not say how the agent stores the default. The MyTerms team's individual Internet-Draft (draft-curtis-myterms-01, no IETF standing) proposes a preferences API for it.",
+      text: "Maya sets her shopping agent's default to SD-BASE (service delivery only, no sharing with third parties). She leaves PDC-AI, the separate agreement for contributing data to AI training, unchosen, so her agent never offers it.",
+      basis: "IEEE 7012 cl. 5.2.1.2: the person's 'chooser' selects a default agreement that is presented to every entity the agent meets for the first time, and terms default to a locked-down state (off) until the person changes them. Cl. 4.2 requires the agreements to be kept on a public website by a neutral nonprofit or other neutral party, and the roster should be kept small (cl. 4.1, 5.2.1.2); the MyTerms FAQ names CustomerCommons.org and MyTerms.info. The normative text names no agreements. SD-BASE appears in the standard only as the 'baseline' sample in informative Annex A, meaning service 'without any analytics, tracking, or profiling by the 2nd or 3rd parties'. On the MyTerms roster it is the base/default agreement for anyone using an agent, and the FAQ's gloss is looser: the site 'may observe you while you are there' but does not share information about you with other parties. In Annex A, PDC-AI is a separate agreement and any term not included in an agreement is prohibited, so an SD-BASE default already rules out AI training. The standard does not say how the agent stores the default. The MyTerms team's individual Internet-Draft (draft-curtis-myterms-01, no IETF standing) proposes a preferences API for it.",
       unspecified: false,
       source: [
         {
@@ -22192,13 +23552,33 @@ window.privacyData = {
           note: "--check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.2 Location and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Terms and contracts shall be kept and displayed in discrete and separate forms on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 14). It shows that the neutral public roster is a requirement of the standard and not only a MyTerms FAQ description. The clause names no keeper: Customer Commons appears only in the Introduction (not part of the standard) and informative Annexes A-C. Cl. 4.1 (FOUND): 'There should also be as few agreements as possible'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A.1 Terms in draft (informative)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "SD-BASE, as the baseline term, represents the individual’s preference to receive a service without any analytics, tracking, or profiling by the 2nd or 3rd parties.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Informative (Annex A, p. 22). SD-BASE is a sample term; the normative clauses name no agreements. It is stricter than the MyTerms FAQ gloss ('may observe you while you are there'). Same page (FOUND): 'all terms that are not included in the agreement are expressly prohibited.' Also (FOUND, p. 23): 'The last three terms, PDC-INTENT, PDC-AI and PDC-GOOD should have unique contract wrappers for their utilization such as for time limited use.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       actor: "Her agent contacts the merchant's agent",
       text: "Maya's agent opens a session with an online shop's agent to buy running shoes, over whatever channel the two support (an HTTP header, an agent-to-agent message).",
-      basis: "IEEE 7012 abstract: agents for both parties engage using any protocol that serves the purpose (cl. 1.3: operation depends on TCP/IP and HTTP). The standard's informative Annex A.2 sketches an example HTTP-header scheme, and the MyTerms FAQ mentions browser headers on the model of DNT and GPC. An individual Internet-Draft from the MyTerms team (draft-curtis-myterms-01, May 2026, no IETF standing) proposes a concrete wire format: an X-MyTerms-Agreements HTTP response header, a /.well-known/myterms-configuration discovery file and JSON endpoints. No binding to agent-to-agent protocols such as A2A has been specified.",
+      basis: "IEEE 7012 abstract: agents for both parties engage using any protocol that serves the purpose (cl. 1.3: operation depends on TCP/IP and HTTP). The normative text does require the shop to 'display publicly all terms they would accept' (cl. 5.3.2), but not how its agent advertises them. The standard's informative Annex A.2 sketches an example HTTP-header scheme, and the MyTerms FAQ mentions browser headers on the model of DNT and GPC. An individual Internet-Draft from the MyTerms team (draft-curtis-myterms-01, May 2026, no IETF standing) proposes a concrete wire format: an X-MyTerms-Agreements HTTP response header, a /.well-known/myterms-configuration discovery file and JSON endpoints. No binding to agent-to-agent protocols such as A2A has been specified.",
       unspecified: false,
       source: [
         {
@@ -22239,13 +23619,23 @@ window.privacyData = {
           note: "--check FOUND 2026-09-23. Individual draft, Intended status: Informational; the datatracker says 'This I-D is not endorsed by the IETF and has no formal standing in the IETF standards process'. The header is given as 'X-MyTerms-Agreements: <entity agreement endpoint url>' (FOUND), and discovery via '/.well-known/myterms-configuration' (sec. 5.1). In this draft the site's (entity) agent advertises its agreements and the person's agent does the matching.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.3.2 Entity Agreement System",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Entities shall display publicly all terms they would accept from an individual who proposes terms and agreements.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 18). The shop must publish which roster agreements it accepts; the standard does not specify the channel (header, discovery file or agent message).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       actor: "The agent proffers SD-BASE as first party",
       text: "Before any personal data is exchanged, Maya's agent points to SD-BASE (or a short list: SD-BASE, SD-BASE-DP) as the terms on which she will deal.",
-      basis: "IEEE 7012 abstract: the first party points to a preferred agreement or set of agreements, from which the second party accepts one.",
+      basis: "IEEE 7012 abstract: the first party points to a preferred agreement or set of agreements, from which the second party accepts one. The normative clauses speak of a single choice: individual agents 'shall propose the individual's preferred agreement to entities' (cl. 5.4), the chooser's default is presented to each entity the agent 'encounters the first time' (cl. 5.2.1.2), and there is no negotiation 'beyond the single choice by either party' (cl. 5.2.2). A short list of acceptable agreements and the principle that agreements are signed 'before any data exchange takes place' come from the worked example and principles in informative Annex A.1 (first choice SD-BASE, second choice SD BASE-AT), not from a normative requirement.",
       unspecified: false,
       source: [
         {
@@ -22264,6 +23654,16 @@ window.privacyData = {
           url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
           quote: "In the figure, the person chooses SD-BASE as its first choice and SD BASE-AT as its second choice for the two agreements they would be okay with.",
           note: "Full text of the standard, free via the IEEE GET Program (PDF downloaded without login on 2026-09-23; document page https://ieeexplore.ieee.org/document/11360682, DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Same passage (FOUND): 'Then before any data or service is provided or received' the Person_Agent first asks the Entity_Agent whether it supports SD-BASE.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4 Interaction between agents",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Individual agents shall propose the individual’s preferred agreement to entities.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 18). The normative text speaks of one preferred agreement. The short list comes from the abstract and the informative Annex A.1 example, and the 'before any data exchange' rule from Annex A.1 principle (g) (FOUND: 'Contractual Agreements are signed and in place before any data exchange takes place.').",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -22560,6 +23960,16 @@ window.privacyData = {
           note: "--check FOUND 2026-09-23. Same article, also FOUND: 'Il merito delle violazioni del GDPR resta non esaminato'. ANSA (20 Mar 2026) also reports the annulment: 'Il Tribunale di Roma ha annullato una multa di 15 milioni di euro' (--check FOUND).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.1 Form and content",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Terms for personal privacy requirements shall take the form of contractual agreements in which the person is the first party and the entity is the second party.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 14). The 'contract' half of the response. Cl. 4.4.3 (FOUND): 'Agreements shall be written as formal contracts, specifying exactly what requirements, promises, and other obligations shall be obeyed by both parties'.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -22612,6 +24022,16 @@ window.privacyData = {
           url: "https://globalprivacycontrol.org/faq",
           quote: "As of Jaunary 15, 2025, four states — California, Colorado, Connecticut, and New Jersey — have explicitly issued guidance stating that GPC must be interpreted as a legally binding opt-out request under their privacy laws.",
           note: "--check FOUND 2026-09-23. 'Jaunary' is a typo on the page, reproduced verbatim. The same page says: 'However, GPC on its own does not create any legally binding obligations.' (FOUND)",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 19). The standard, not only the MyTerms FAQ, requires the two-sided record that separates 7012 from DNT and GPC.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -22749,6 +24169,36 @@ window.privacyData = {
           url: "https://myterms.info/faqs/",
           quote: "That body will also contribute to the naming and shaping of MyTerms agreements, which will differ in various countries and jurisdictions, in respect to differing contract laws.",
           note: "--check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.4 The recorder",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "The contract recorder shall record the agreement and handshake terms, date, time stamp, and pseudonymous or explicit identifiers, containing a unique contract ID",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Normative (p. 17). What a record must contain; cl. 5.4.4 (FOUND): 'The exact time, date, and location shall be recorded in the contract and agreements.' The format and storage medium are not fixed ('Storage shall be substitutable').",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A.1 Terms in draft (informative)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Similarly, the recording of contracts following the agreement between the two agents is also not in scope as existing efforts such as the Data Privacy Vocabulary (DPV) to express information, and Open Digital Rights Model (ODRL) to represent ‘machine-readable agreements’ should be used for consistency, interoperability, and establishment of common standards.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Informative (Annex A, p. 26). The record format is only sketched: the annex defers it to DPV and ODRL. It is a suggestion, not a requirement.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex B.1 Use Case 1: No stalking, alternative path (f) (informative)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Apps or Sites whose acceptance of terms at one point in time would likely need to update these contracts over time, for new data shared over time, if the contract no longer applies.",
+          note: "Full text free via the IEEE GET Program (PDF fetched without login, HTTP 200, on 2026-09-23; DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Informative (Annex B, p. 33). The standard acknowledges that agreements will need to change but specifies no mechanism, which supports the point that this is left to implementers.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -24244,6 +25694,26 @@ window.privacyData = {
           note: "Warren and Brandeis attribute the phrase to Thomas M. Cooley's Treatise on the Law of Torts (1st ed. Chicago: Callaghan, 1879; 2nd ed. 1888).",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "Callaghan & Company, Chicago (digitised by the North Dakota Constitution project, ndconst.org)",
+          title: "Thomas M. Cooley, A Treatise on the Law of Torts, or the Wrongs Which Arise Independent of Contract, 2nd edition",
+          date: "1888",
+          url: "https://www.ndconst.org/_media/laws/1888_cooley_torts_2d.pdf",
+          quote: "The right to one's person may be said to be a right of complete immunity: to be let alone.",
+          note: "--check FOUND. This is the edition Warren and Brandeis cite. The reprinted 'PREFACE TO THE FIRST EDITION' is signed 'UNIVERSITY OF MICHIGAN, ANN ARBOR, December, 1878. THOMAS M. COOLEY.' The second-edition preface says 'The text of the first edition was not found to require material modification, and it has been preserved substantially unchanged.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "HathiTrust Digital Library (catalogue API; record for the University of Michigan copy)",
+          title: "A treatise on the law of torts, or the wrongs which arise independent of contract (Cooley, 1st edition), Record 010461084",
+          date: "1879",
+          url: "https://catalog.hathitrust.org/api/volumes/brief/recordnumber/010461084.json",
+          quote: "\"publishDates\":[\"1879\"]",
+          note: "--check FOUND, and the title string 'A treatise on the law of torts, or the wrongs which arise independent of contract' is also FOUND. The full-record API (/api/volumes/full/...) gives the imprint as 'Chicago : Callaghan and company, 1879.' The HTML catalogue page returns HTTP 403 to scripted access, so the JSON API is cited instead.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -24315,6 +25785,26 @@ window.privacyData = {
           url: "https://tile.loc.gov/storage-services/service/ll/usrep/usrep381/usrep381479/usrep381479.pdf",
           quote: "I like my privacy ... as well as the next one, but I am nevertheless compelled to admit that government has a right to invade it unless prohibited by some specific constitutional provision.",
           note: "The OCR text layer displaces a line; the ellipsis marks where it breaks the sentence.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Supreme Court of the United States — United States Reports vol. 410 (Library of Congress)",
+          title: "Roe v. Wade, 410 U.S. 113 (1973), opinion of the Court",
+          date: "1973-01-22",
+          url: "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          quote: "The Constitution does not explicitly mention any right of privacy.",
+          note: "--check FOUND (410 U.S. at 152). The next sentence says a right of privacy has been recognised 'in the penumbras of the Bill of Rights, Griswold v. Connecticut'. Roe was overruled by Dobbs v. Jackson Women's Health Organization (2022) on abortion, but this statement about the constitutional text is unaffected.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Legal Information Institute, Cornell Law School",
+          title: "Griswold v. Connecticut, 381 U.S. 479 (1965), Black, J., dissenting",
+          date: "1965-06-07",
+          url: "https://www.law.cornell.edu/supremecourt/text/381/479",
+          quote: "I like my privacy as well as the next one, but I am nevertheless compelled to admit that government has a right to invade it unless prohibited by some specific constitutional provision.",
+          note: "--check FOUND. This is the clean text of the sentence that the LOC OCR (source[1]) breaks. Use it for display so no false ellipsis appears.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -24924,7 +26414,7 @@ window.privacyData = {
     {
       claim: "Most countries have no privacy or data-protection law.",
       verdict: "FALSE",
-      correction: "Greenleaf's census counted 172 countries with national data-privacy laws by March 2025, against 193 UN member states, and new laws have been added at 5.4 a year since 2020. Coverage and enforcement vary widely, and some large states (for example Pakistan) still had only bills, but having no law at all is now the exception.",
+      correction: "Greenleaf's census counted 172 countries with national data-privacy laws by March 2025, and new laws have been added at 5.4 a year since 2020. His count includes some jurisdictions that are not UN members (in 2018, 112 of his 124 were UN member states), so it is not a straight comparison with the 193 UN member states, but a majority of UN members already had such laws by 2018 (112 of 193) and the share has grown since. Coverage and enforcement vary widely, and some large states (for example Pakistan) still have only a bill, but having no law at all is now the exception.",
       era: "surveillance",
       source: [
         {
@@ -24943,6 +26433,26 @@ window.privacyData = {
           date: "2026",
           url: "https://www.un.org/en/about-us",
           quote: "Currently made up of 193 Member States, the UN and its work are guided by the purposes and principles contained in its founding Charter.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Graham Greenleaf, submission to the UN High Commissioner for Human Rights (hosted by OHCHR)",
+          title: "The UN should adopt Data Protection Convention 108 as a global treaty: Submission on ‘the right to privacy in the digital age’",
+          date: "2018-04-08",
+          url: "https://www.ohchr.org/sites/default/files/Documents/Issues/DigitalAge/ReportPrivacyinDigitalAge/GrahamGreenleafAMProfessorLawUNSWAustralia.pdf",
+          quote: "Of the 124 countries with data privacy laws, 112 are UN member states",
+          note: "--check FOUND. Shows Greenleaf's 'countries' include non-UN jurisdictions. The same document says 'so that the majority of UN member states have now enacted such laws and they are rapidly becoming ubiquitous.' (FOUND).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "DLA Piper",
+          title: "Data Protection Laws of the World — Pakistan",
+          date: "2026",
+          url: "https://www.dlapiperdataprotection.com/index.html?t=law&c=PK",
+          quote: "Pakistan currently has not enacted a specific data protection legislation, similar to data protection legislation enacted in other countries of the world.",
+          note: "--check FOUND. The same page says 'a draft of the Personal Data Protection Bill 2023 (“PDPB”) has been introduced by the Ministry of Information Technology and Telecommunications' (FOUND). Supports the Pakistan example.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -25097,6 +26607,16 @@ window.privacyData = {
           verificationStatus: "CONFIRMED",
           accessType: "FREE",
           note: "Status section of the Note. curl fetch plus --check: FOUND on 2026-09-23."
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+          note: "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
@@ -25144,13 +26664,33 @@ window.privacyData = {
           note: "IEEE SA 'Document Notices & Disclaimers' page (dateModified 2026-07-07). It says these notices appear in all IEEE standards. curl fetch plus --check: FOUND on 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.3 Extant standards and regulations",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "while this standard does not depend on extant regulations, it may prove to help those regulations by bringing contracts into the suite of available ways to provide personal privacy on networks.",
+          note: "Normative clause, descriptive sentence: the standard presents itself as a contract mechanism alongside regulation, not as regulation. --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: Important Notices and Disclaimers",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Use of an IEEE standard is wholly voluntary.",
+          note: "Front matter of the published PDF itself (the same notice the IEEE SA disclaimers page carries). Shows the standard binds no one by itself. --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       claim: "With MyTerms each person writes and negotiates custom privacy terms with every site.",
       verdict: "FALSE",
-      correction: "People choose from a short roster of standard-form agreements kept by a neutral nonprofit (on the Creative Commons model); the organisation accepts one of those the person points to, and negotiation is outside the standard's scope.",
+      correction: "People choose from a short roster of standard-form agreements, kept on a public website by a neutral nonprofit on the Creative Commons model (cl. 4.2). The organisation may accept the one the person points to, reject it, or answer with a single alternative from the same list (cl. 5.3.1), and 'There shall be no negotiation beyond the single choice by either party' (cl. 5.2.2). Bargaining over the wording of terms is outside the standard.",
       era: "agents",
       source: [
         {
@@ -25179,6 +26719,36 @@ window.privacyData = {
           url: "https://doc.searls.com/2026/01/07/toward-a-proof-of-concept-for-myterms/",
           quote: "Note that the MyTerms standard is not about negotiation. It’s about choice, and that one is provided by the individual as the first party.",
           note: "Working-group chair's gloss. curl fetch plus --check: FOUND on 2026-09-23. It continues: 'they can provide the second party—a site or service—with a first and second choice of agreement, but no more than that.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.2 Location and storage",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Terms and contracts shall be kept and displayed in discrete and separate forms on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use.",
+          note: "Normative ('shall'). The roster requirement; the clause names no keeper. Customer Commons appears only in informative notes (Introduction fn. 8; Annex A fn. 19; Annexes B.2 and C). --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.3.1 The entity's framework for agreement-agent interaction",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Respond to the individual with a single alternative set of terms from the structured and bounded list c) Reject the proffered terms, wherein an entity cannot bar an individual from utilizing free or public information or services",
+          note: "Normative. Items b) and c) of the entity's three permitted responses (a) is 'Accept the terms an individual presents from the structured and bounded list'). One alternative from the same list is allowed; a rejecting entity cannot bar the person from free or public information or services. --check FOUND 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.2 The interaction",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Signed agreements shall be identical in both databases. There shall be no negotiation beyond the single choice by either party.",
+          note: "Normative. The same clause says 'Digital copies of the signed agreements shall be delivered to both parties or their agents immediately upon agreement signing.' (FOUND). --check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -25236,6 +26806,16 @@ window.privacyData = {
           url: "https://development.standards.ieee.org/myproject/Public/mytools/draft/styleman.pdf",
           quote: "Search for standard number and year of approval to access the web page of the published standard.",
           note: "Indirect support for 'the year in the designation is the approval year'. The style manual refers to published standards by number and year of approval; I found no explicit rule sentence. curl fetch of the PDF plus --check: FOUND on 2026-09-23.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: title and copyright pages",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "All rights reserved. Published 20 January 2026.",
+          note: "Front matter, not a clause. The copyright page gives the publication date; the title page reads 'Approved 4 November 2025 IEEE SA Standards Board' and 'Developed by the Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology', and the copyright page prints 'ISBN 979-8-8557-2944-3 ISBN 979-8-8557-2945-0' (all FOUND). --check FOUND 2026-09-23.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -26053,7 +27633,7 @@ window.privacyData = {
       year: 2005,
       title: "Drummond Reed, Kim Cameron and Esther Dyson at the first 'Identity Gang' gathering, 2005",
       caption: "Drummond Reed, Kim Cameron and Esther Dyson at the first \"Identity Gang\" gathering, held at Esther Dyson's PC Forum in Scottsdale, Arizona, on 20 March 2005. The photographer, Doc Searls, describes the gathering as the forerunner of the Internet Identity Workshop.",
-      alt: "Three people laughing at an outdoor café table with laptops and paper cups: Drummond Reed, Kim Cameron and Esther Dyson, named in that order in the title",
+      alt: "Drummond Reed, Kim Cameron and Esther Dyson (left to right, in the order named in the title) laughing at an outdoor café table with a laptop, a water bottle and paper cups; a fourth person's arm is at the right edge",
       creator: "Doc Searls",
       license: "CC BY 2.0",
       creditLine: "Doc Searls / Wikimedia Commons (CC BY 2.0)",
@@ -26062,8 +27642,8 @@ window.privacyData = {
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/0/01/Drummond_Reed%2C_Kim_Cameron_and_Esther_Dyson.jpg",
       upstreamArchive: "Flickr (docsearls)",
       upstreamUrl: "https://www.flickr.com/photos/docsearls/14745767570/",
-      lat: 33.4942,
-      lng: -111.9261,
+      lat: 33.6454,
+      lng: -111.9171,
       rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 2.0\"; License \"cc-by-2.0\"; UsageTerms \"Creative Commons Attribution 2.0\"; Artist \"Doc Searls\"; Credit \"https://www.flickr.com/photos/docsearls/14745767570/\"; category 'Flickr images reviewed by FlickreviewR 2'; DateTimeOriginal \"2005-03-20 10:15:58\". Description: \"Drummond Reed, Kim Cameron and Esther Dyson at the first \\\"Identity Gang\\\" gathering, which became henceforth the Internet Identity Workshop ... The gathering was at Esther Dyson's PC Forum in Scottsdale, Arizona.\"",
       archive: false,
       verificationStatus: "CONFIRMED"
@@ -26091,9 +27671,9 @@ window.privacyData = {
       id: "helen-nissenbaum-berkeley-lecture-2008",
       era: "cookies",
       year: 2008,
-      title: "Helen Nissenbaum lecturing at Berkeley, 2008",
-      caption: "Helen Nissenbaum giving a guest lecture at the University of California, Berkeley, 2 April 2008 (cropped). The file title reads \"Helen's guest lecture at University of Berkley\"; the identification comes from its Commons category 'Helen Nissenbaum'.",
-      alt: "Helen Nissenbaum in a white shirt standing and gesturing in front of a classroom blackboard",
+      title: "Helen Nissenbaum lecturing on 'Privacy in Context' at Berkeley, 2008",
+      caption: "Helen Nissenbaum answering a question during her UC Berkeley School of Information Distinguished Lecture, 'Privacy in Context', in South Hall, 2 April 2008 (cropped). The photographer, Joe Hall, tagged the photo 'helennissenbaum' and 'distinguishedlecture'.",
+      alt: "Helen Nissenbaum in a white shirt and grey trousers, standing and gesturing in front of a projection screen and wood-panelled wall, with desks in the foreground",
       creator: "Joe Hall",
       license: "CC BY 2.0",
       creditLine: "Joe Hall / Wikimedia Commons (CC BY 2.0)",
@@ -26580,8 +28160,8 @@ window.privacyData = {
       id: "julia-angwin-2018",
       era: "surveillance",
       year: 2018,
-      title: "Julia Angwin at an MIT Media Lab talk, March 2018",
-      caption: "ProPublica senior reporter Julia Angwin at the MIT Media Lab talk 'Quantifying Forgiveness' with Joi Ito, 6 March 2018, discussing her algorithmic-accountability reporting (still from a CC BY YouTube video; Commons description).",
+      title: "Julia Angwin at an MIT Media Lab talk, February 2018",
+      caption: "ProPublica senior reporter Julia Angwin at the MIT Media Lab talk 'Quantifying Forgiveness' with Joi Ito, 16 February 2018, discussing her algorithmic-accountability reporting (still from the CC BY video, posted to YouTube on 6 March 2018; Commons description).",
       alt: "A smiling woman with short brown hair, dark-rimmed glasses and a headset microphone",
       creator: "MIT Media Lab (YouTube)",
       license: "CC BY 3.0",
@@ -26639,14 +28219,14 @@ window.privacyData = {
       year: 2014,
       title: "Lorrie Cranor at a Capitol Hill privacy briefing, 2014",
       caption: "Lorrie Faith Cranor speaking at 'Privacy and Cybersecurity in a Connected Age', a briefing on Capitol Hill presented by the National Science Foundation and IEEE-USA with the Congressional Cybersecurity Caucus during National Cyber Security Awareness Month, 30 October 2014 (cropped).",
-      alt: "Lorrie Cranor, wearing glasses, speaking into a microphone at a hearing-room table",
+      alt: "Lorrie Cranor, wearing glasses and a purple dress printed with a word cloud of common passwords, speaking at a microphone in a wood-panelled room, with a blurred head in the foreground",
       creator: "National Science Foundation",
       license: "Public domain",
       creditLine: "National Science Foundation / Wikimedia Commons (public domain)",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Privacy_and_security_in_a_connected_age_(cropped).jpg",
       thumbUrl: "assets/media/lorrie-cranor-capitol-hill-briefing-2014.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Privacy_and_security_in_a_connected_age_%28cropped%29.jpg",
-      upstreamArchive: "NSF on Flickr",
+      upstreamArchive: "NSF on Flickr (photo and account no longer online: HTTP 404 on 2026-09-23; Commons licence review of 2025-03-20 cites an archived NSF Flickr page)",
       upstreamUrl: "https://www.flickr.com/photos/nsf_beta/15548257259/",
       lat: 38.8899,
       lng: -77.0091,
@@ -26663,13 +28243,13 @@ window.privacyData = {
       alt: "Christopher Soghoian, bearded and wearing glasses and an ACLU T-shirt, gesturing while speaking on stage",
       creator: "Tobias Klenze (Wikimedia user Church of emacs)",
       license: "CC BY 3.0",
-      creditLine: "Tobias Klenze / Wikimedia Commons (CC BY 3.0)",
+      creditLine: "Wikipedia / Tobias Klenze, via Wikimedia Commons (CC BY 3.0)",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:2013-12-29_30C3_-_Christopher_Soghoian_3145.JPG",
       thumbUrl: "assets/media/christopher-soghoian-30c3-hamburg-2013.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/a/ad/2013-12-29_30C3_-_Christopher_Soghoian_3145.JPG",
-      lat: 53.5552,
-      lng: 9.991,
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Credit \"Own work\"; DateTimeOriginal \"2013-12-29 23:28:14\". File wikitext license section: \"{{self|GFDL|cc-by-3.0}}\" (dual-licensed GFDL / CC BY 3.0; CC BY 3.0 chosen). The author's attribution template asks for credit as 'Wikipedia / Tobias Klenze'. Description: \"Christopher Soghoian at the 30th Chaos Communication Congress in Hamburg, 2013\".",
+      lat: 53.5616,
+      lng: 9.9857,
+      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Credit \"Own work\"; DateTimeOriginal \"2013-12-29 23:28:14\". File wikitext license section: \"{{self|GFDL|cc-by-3.0}}\" (dual-licensed GFDL / CC BY 3.0; CC BY 3.0 chosen). The author's attribution template asks for credit as 'Wikipedia / Tobias Klenze' (its rendered link to CC BY-SA 4.0 conflicts with the file's actual licence tag, which governs). Description: \"Christopher Soghoian at the 30th Chaos Communication Congress in Hamburg, 2013\". Talk: 'Backdoors, Government Hacking and The Next Crypto Wars', 30C3, 29 December 2013 (media.ccc.de).",
       archive: false,
       verificationStatus: "CONFIRMED"
     },
@@ -26699,16 +28279,16 @@ window.privacyData = {
       era: "surveillance",
       year: 2013,
       title: "Ann Cavoukian at the GOopendata conference, 2013",
-      caption: "Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \"Access by Design - Time To Change the Paradigm\" keynote at the GOopendata conference, May 2013.",
+      caption: "Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \"Access by Design - Time To Change the Paradigm\" keynote at the first GO Open Data (GOopendata) conference, University of Waterloo School of Pharmacy, Kitchener, Ontario, 11 May 2013.",
       alt: "Ann Cavoukian in a tweed jacket in front of a projected slide reading www.privacybydesign.ca",
-      creator: "Laurelrusswurm (Wikimedia Commons user)",
+      creator: "Laurel L. Russwurm (Wikimedia Commons user Laurelrusswurm)",
       license: "CC BY 3.0",
-      creditLine: "Laurelrusswurm / Wikimedia Commons (CC BY 3.0)",
+      creditLine: "Laurel L. Russwurm / Wikimedia Commons (CC BY 3.0)",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ann_Cavoukian,_Information_and_Privacy_Commissioner_of_Ontario.jpeg",
       thumbUrl: "assets/media/ann-cavoukian-goopendata-toronto-2013.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Ann_Cavoukian%2C_Information_and_Privacy_Commissioner_of_Ontario.jpeg",
-      lat: 43.6532,
-      lng: -79.3832,
+      lat: 43.4528,
+      lng: -80.499,
       rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Artist \"Laurelrusswurm\"; Credit \"Own work\"; category 'Self-published work'; DateTimeOriginal \"2013-05-08 23:34:51\". Description: \"Ann Cavoukian, Information and Privacy Commissioner of Ontario, after giving the \\\"Access by Design - Time To Change the Paradigm\\\" Keynote speech at the GOopendata Conference, on May 11, 2013\".",
       archive: false,
       verificationStatus: "CONFIRMED"
@@ -26738,8 +28318,8 @@ window.privacyData = {
       id: "shoshana-zuboff-hiig-berlin-2019",
       era: "surveillance",
       year: 2019,
-      title: "Shoshana Zuboff at the Humboldt Institute for Internet and Society, 2019",
-      caption: "Shoshana Zuboff speaking on 'Surveillance capitalism and democracy' at an event of the Alexander von Humboldt Institute for Internet and Society, 11 November 2019 (video still, cropped and brightened).",
+      title: "Shoshana Zuboff at Urania Berlin, 2019",
+      caption: "Shoshana Zuboff speaking on 'Surveillance capitalism and democracy' at Urania Berlin on 6 November 2019. The talk was part of the lecture series 'Making Sense of the Digital Society', run by the Alexander von Humboldt Institute for Internet and Society (HIIG) and the Federal Agency for Civic Education (bpb). Video still, cropped and brightened.",
       alt: "Shoshana Zuboff, with curly hair and glasses, seated in a red chair speaking into a handheld microphone",
       creator: "Alexander von Humboldt Institute for Internet and Society (HIIG)",
       license: "CC BY 3.0",
@@ -26748,9 +28328,9 @@ window.privacyData = {
       thumbUrl: "assets/media/shoshana-zuboff-hiig-berlin-2019.jpg",
       fullUrl: "https://upload.wikimedia.org/wikipedia/commons/8/88/Shoshana_Zuboff_at_Alexander_von_Humboldt_Institut.jpg",
       upstreamArchive: "YouTube (HIIG), video 'Shoshana Zuboff: Surveillance capitalism and democracy', frame at 1:28:39",
-      lat: 52.52,
-      lng: 13.405,
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Artist \"Alexander von Humboldt Institut for internet and society\"; Credit \"Shoshana Zuboff: Surveillance capitalism and democracy at 1:28:39, cropped, brightened\"; categories 'Media from YouTube', 'Files from external sources with reviewed licenses'; DateTimeOriginal \"2019-11-11\".",
+      lat: 52.5014,
+      lng: 13.3481,
+      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Artist \"Alexander von Humboldt Institut for internet and society\"; Credit \"Shoshana Zuboff: Surveillance capitalism and democracy at 1:28:39, cropped, brightened\"; categories 'Media from YouTube', 'Files from external sources with reviewed licenses'. Wikitext: {{YouTube}} + {{LicenseReview}} by Leoboudv, 2020-09-17. The YouTube page shows 'Creative Commons Attribution license (reuse allowed)'. DateTimeOriginal \"2019-11-11\" is the video's YouTube premiere date. The event itself was on 6 November 2019 (Commons description; HIIG event page).",
       archive: false,
       verificationStatus: "CONFIRMED"
     },

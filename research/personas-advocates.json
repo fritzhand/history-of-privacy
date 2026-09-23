@@ -489,7 +489,7 @@
     "year": 2013,
     "url": "https://www.newyorker.com/news/news-desk/strongbox-and-aaron-swartz"
    },
-   "contribution": "In the late 1980s and early 1990s Poulsen was a notorious hacker: federal prosecutors charged him in 1993 with seizing Pacific Bell phone lines to win Los Angeles radio contests and with setting up his own wiretaps, and he pleaded guilty, including to breaking into a computer for the names of FBI undercover businesses. He became a journalist and Wired's investigations editor, and in 2011 asked Aaron Swartz to build an open-source anonymous in-box for sources. After Swartz's death he launched it as Strongbox at The New Yorker in May 2013 and handed it to the Freedom of the Press Foundation, which renamed it SecureDrop, in October 2013.",
+   "contribution": "In the late 1980s and early 1990s Poulsen was a notorious hacker: a 1993 federal indictment accused him of seizing control of the incoming phone lines of Los Angeles radio stations, by hacking Pacific Bell's computers, to win their contests, and of setting up his own wiretaps. He pleaded guilty, including to breaking into a computer for the names of FBI undercover businesses. He became a journalist and Wired's investigations editor, and in 2011 asked Aaron Swartz to build an open-source anonymous in-box for sources. After Swartz's death he launched it as Strongbox at The New Yorker in May 2013 and handed it to the Freedom of the Press Foundation, which renamed it SecureDrop, in October 2013.",
    "quote": "There’s a growing technology gap: phone records, e-mail, computer forensics, and outright hacking are valuable weapons for anyone looking to identify a journalist’s source.",
    "quoteSource": {
     "institution": "The New Yorker",
@@ -501,7 +501,7 @@
     "accessType": "FREE"
    },
    "influence": "By giving DeadDrop to the Freedom of the Press Foundation rather than keeping it in-house, Poulsen turned one magazine's drop box into shared infrastructure; he said the goal 'was to see it implemented in newsrooms far and wide'.",
-   "thread": "A former intruder once charged with setting up his own wiretaps, Poulsen designed a system in which the recipient cannot learn who the sender is — protection that does not depend on the organisation's goodwill.",
+   "thread": "A former intruder once charged with setting up his own wiretaps, Poulsen co-developed a system in which the recipient cannot learn who the sender is — protection that does not depend on the organisation's goodwill.",
    "sources": [
     {
      "institution": "San Francisco Chronicle (SFGate)",
@@ -522,9 +522,30 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same release: Poulsen 'developed the original project with Swartz, managed it for the first six months since it went public, and is handing over the reins', and 'serves as Wired’s investigations editor'."
+    },
+    {
+     "institution": "San Francisco Chronicle (reprinted in RISKS Digest 14.55)",
+     "title": "Don Clark, 'Hacker Accused of Rigging Radio Contests'",
+     "date": "1993-04-22",
+     "url": "https://catless.ncl.ac.uk/Risks/14/55",
+     "quote": "A new 19-count federal indictment filed in Los Angeles charges that Poulsen also set up his own wire taps and hacked into computers owned by California Department of Motor Vehicles and Pacific Bell.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Also FOUND: 'Kevin Lee Poulsen, now awaiting trial on earlier federal charges, is accused of conspiring with two other hackers to seize control of incoming phone lines at the radio stations.' Reprinted in RISKS 'with permission of the author'."
     }
    ],
-   "portrait": "kevin-poulsen-2014"
+   "portrait": "kevin-poulsen-2014",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The contribution conflates what the 1993 indictment said. It says he was charged 'with seizing Pacific Bell phone lines to win Los Angeles radio contests'. The San Francisco Chronicle report of 22 April 1993 (RISKS 14.55) says he was accused of 'conspiring with two other hackers to seize control of incoming phone lines at the radio stations', and that he did it by 'hacking into Pacific Bell computers to block out other callers'. The lines belonged to the radio stations and the computers belonged to Pacific Bell. Reworded.",
+     "The 1993 indictment claim ('set up his own wire taps') appeared only in a source note. The RISKS 14.55 reprint of the Chronicle article is added as a full source, and both of its sentences --check FOUND.",
+     "The thread says 'Poulsen designed a system'. Swartz wrote the code and designed its architecture. The New Yorker piece says Poulsen asked Swartz to build it and they 'whiteboarded some of the details'; the FPF release says Poulsen 'developed the original project with Swartz'. Changed to 'co-developed'.",
+     "Checked OK. quoteSource: New Yorker, 'Strongbox and Aaron Swartz', byline Kevin Poulsen, datePublished 2013-05-14 in page metadata. The quote --check FOUND on a fresh fetch. The page also says 'almost two years ago, I asked him to build an open-source, anonymous in-box' and 'In October, 2011, Aaron came to the Wired office', which supports 2011, and 'it went online this morning', which supports May 2013.",
+     "Checked OK. sources[0]: SFGate, datePublished 1995-04-02. Both the quote and the FBI undercover-businesses sentence --check FOUND. sources[1]: FPF release dated 'October 15, 2013 San Francisco, CA'. The quote FOUND, and so are 'which has been renamed “SecureDrop.”' and 'Poulsen, who serves as Wired’s investigations editor'.",
+     "Minor, not changed: 'roles' gives 'Wired investigations editor' and 'years' runs to 'present', but Poulsen later left Wired for The Daily Beast and then The Wall Street Journal (web search: Wikipedia; Talking Biz News 'Poulsen joins WSJ's investigations team'). Read as his role at the time of Strongbox, the field is accurate."
+    ]
+   }
   },
   {
    "id": "edward-snowden",
@@ -540,7 +561,7 @@
     "year": 2013,
     "url": "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance"
    },
-   "contribution": "Snowden, a 29-year-old Booz Allen Hamilton employee working at the NSA and a former CIA technical assistant, gave journalists top-secret documents on US and allied mass surveillance, then flew to Hong Kong on 20 May 2013 and identified himself in the Guardian on 9 June 2013. The disclosures began with the bulk collection of Americans' phone records. A criminal complaint dated 14 June 2013 charged him with theft of government property and two Espionage Act offences; he has lived in Russia since 2013 and was granted Russian citizenship by decree in September 2022.",
+   "contribution": "Snowden, a 29-year-old Booz Allen Hamilton employee working at the NSA and a former CIA technical assistant, copied top-secret documents on US and allied mass surveillance at the NSA office in Hawaii, flew to Hong Kong on 20 May 2013, gave them to journalists he trusted and identified himself in the Guardian on 9 June 2013. The disclosures began with the bulk collection of Americans' phone records. A criminal complaint dated 14 June 2013 charged him with theft of government property and two Espionage Act offences; he has lived in Russia since 2013 and was granted Russian citizenship by decree in September 2022.",
    "quote": "I can’t in good conscience allow the US government to destroy privacy, internet freedom and basic liberties for people around the world with this massive surveillance machine they’re secretly building.",
    "quoteSource": {
     "institution": "The Guardian",
@@ -552,7 +573,7 @@
     "accessType": "FREE",
     "note": "Part of a longer sentence beginning 'I’m willing to sacrifice all of that because...'. URL date 9 June 2013; page metadata shows datePublished 2013-06-11 (later update). Current headline on the page: 'NSA whistleblower Edward Snowden: I don't want to live in a society that does these sort of things'."
    },
-   "influence": "In the Ninth Circuit's words, his disclosure of the phone-records program 'prompted significant public debate' that ended with the USA FREEDOM Act of June 2015, which stopped bulk collection; in 2020 the same court held the program had exceeded the authority Congress gave.",
+   "influence": "In the Ninth Circuit's words, his disclosure of the phone-records program 'prompted significant public debate'; in June 2015 Congress passed the USA FREEDOM Act, which the court said 'effectively ended' the NSA's bulk collection of phone records, and in 2020 the same court held the program had exceeded the authority Congress gave.",
    "thread": "By showing how much of state surveillance rested on data held by companies, the disclosures turned the question from 'what may the government collect?' to 'who holds my data, on whose terms?'.",
    "sources": [
     {
@@ -586,14 +607,23 @@
      "note": "Same article: 'Snowden first arrived in Russia in 2013 ... The Kremlin subsequently granted him asylum, even as the U.S. pursued espionage charges.'"
     }
    ],
-   "portrait": "edward-snowden-hong-kong-2013"
+   "portrait": "edward-snowden-hong-kong-2013",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The contribution gets the order wrong. It says Snowden 'gave journalists top-secret documents ... then flew to Hong Kong on 20 May 2013'. The cited Guardian article says that 'At the NSA office in Hawaii where he was working, he copied the last set of documents he intended to disclose', then 'On May 20, he boarded a flight to Hong Kong'. It also says the journalists identified him 'after several days of interviews' there. The main handover to Greenwald and Poitras happened in Hong Kong in June, not before the flight. Reworded so the text no longer puts the handover before the flight.",
+     "The influence overstates the USA FREEDOM Act. The record says the Act 'stopped bulk collection'. The Ninth Circuit says it 'effectively ended the NSA’s bulk telephony metadata collection program', and the Act's Sec. 103 is a 'Prohibition on bulk collection of tangible things'. Other bulk programs, such as those under EO 12333, were not ended. Narrowed to the bulk collection of phone records. The phrase 'debate that ended with the USA FREEDOM Act' was also recast so it no longer puts a causal sequence in the court's mouth.",
+     "Checked OK. quoteSource and the age, employer and CIA claims: the Guardian page (fresh fetch) FOUND 'a 29-year-old former technical assistant for the CIA and current employee of the defence contractor Booz Allen Hamilton' and 'On May 20, he boarded a flight to Hong Kong'. The quote --check FOUND. datePublished in metadata is 2013-06-11, and the URL date and publication date are 9 June 2013.",
+     "Checked OK. CBS/AP is dated 'June 22, 2013 / 12:07 AM EDT / CBS/AP'. The quote FOUND, and so does 'Both are charges under the Espionage Act. Snowden also is charged with theft of government property.' Ninth Circuit Moalin (No. 13-50572, 2 Sept 2020): the quote and the syllabus sentence 'exceeded the scope of Congress’s authorization in 50 U.S.C. § 1861' FOUND. PL 114-23: 'Sec. 103. Prohibition on bulk collection of tangible things.' FOUND. NPR, 26 Sept 2022: the quote FOUND, and so does 'The news was confirmed in a decree by Russian President Vladimir Putin', which supports 'by decree'."
+    ]
+   }
   },
   {
    "id": "laura-poitras",
    "name": "Laura Poitras",
    "handle": "",
    "roles": "documentary filmmaker · journalist",
-   "years": "2006–present",
+   "years": "2003–present",
    "place": "Hong Kong (where she filmed Snowden, June 2013)",
    "lat": 22.3193,
    "lng": 114.1694,
@@ -607,7 +637,7 @@
    "quoteSource": {
     "institution": "Electronic Frontier Foundation (transcript)",
     "title": "Laura Poitras' Acceptance Speech For CITIZENFOUR's Academy Award",
-    "date": "2015-02-22",
+    "date": "2015-02-23",
     "url": "https://www.eff.org/deeplinks/2015/02/laura-poitras-acceptance-speech-when-citizenfour-won-academy-award",
     "quote": "The disclosures that Edward Snowden reveals don't only expose a threat to our privacy but to our democracy itself.",
     "verificationStatus": "CONFIRMED",
@@ -636,9 +666,29 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Byline (page metadata): Glenn Greenwald, Ewen MacAskill, Laura Poitras."
+    },
+    {
+     "institution": "PBS P.O.V. (American Documentary)",
+     "title": "Flag Wars",
+     "date": "2003-06-17",
+     "url": "https://archive.pov.org/flagwars/",
+     "quote": "Premiere Date: June 17, 2003",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same page: 'Filmmaker(s): Linda Goode Bryant, Laura Poitras'. The Peabody Awards profile (https://peabodyawards.com/award-profile/p-o-v-flag-wars/) names 'Flag Wars producers/directors Linda Goode Bryant and Laura Poitras'. Supports the 2003 start of 'years'."
     }
    ],
-   "portrait": "laura-poitras-poptech-2010"
+   "portrait": "laura-poitras-poptech-2010",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The 'years' field starts too late. It gives '2006–present', but her career predates My Country, My Country. She co-directed Flag Wars with Linda Goode Bryant. It premiered on PBS P.O.V. on 17 June 2003 (archive.pov.org: 'Premiere Date: June 17, 2003', 'Filmmaker(s): Linda Goode Bryant, Laura Poitras') and won a Peabody Award (peabodyawards.com names 'Flag Wars producers/directors Linda Goode Bryant and Laura Poitras'). Changed to 2003–present, and the POV page is added as a source.",
+     "The quoteSource date is off by one day. It says 2015-02-22, which is the ceremony night, but the EFF post's article:published_time is 2015-02-23T12:12:46-08:00. Corrected. The existing note says the post date was 'not checked'; it has now been checked.",
+     "Checked OK. The acceptance-speech quote --check FOUND on EFF (fresh fetch). The Intercept version reads 'revealed' rather than 'reveals', which the record's note already flags. The next EFF sentence also FOUND.",
+     "Checked OK. The Intercept (22 Feb 2015) --check FOUND for the watch-list quote. Also FOUND on the page: My Country, My Country 'Released in 2006, it was the first in a trilogy'; 'The Program' published as an NYT op-doc in 2012 and focused on William Binney; the 'Citizenfour' pseudonym used 'in encrypted emails'; 'probably had enough knowledge of encryption practices to communicate with him securely'; the Pulitzer sentence; and 'a documentarian who was under surveillance while working on a documentary about surveillance'.",
+     "Checked OK. Guardian 9 June 2013 page metadata lists the authors as Glenn Greenwald, Ewen MacAskill and Laura Poitras, which supports 'co-wrote the Guardian story that named him'. The quote --check FOUND."
+    ]
+   }
   },
   {
    "id": "glenn-greenwald",
@@ -654,7 +704,7 @@
     "year": 2013,
     "url": "https://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order"
    },
-   "contribution": "Greenwald, a Guardian columnist living in Rio de Janeiro, wrote the first Snowden story on 6 June 2013, revealing a secret court order requiring Verizon to hand the NSA records of all calls in its systems on an 'ongoing, daily basis', and co-wrote the article that named Snowden. In August 2013 British authorities held his partner David Miranda at Heathrow for nine hours under the Terrorism Act while he travelled from Berlin to Rio. Greenwald co-founded The Intercept but resigned in October 2020, accusing its editors of censoring an article about Joe Biden; the site's editor called his account 'teeming with distortions and inaccuracies'.",
+   "contribution": "Greenwald, a Guardian columnist living in Rio de Janeiro, wrote the first Snowden story, published on the evening of 5 June 2013 US time (dated 6 June by the Guardian), revealing a secret court order requiring Verizon to hand the NSA records of all calls in its systems on an 'ongoing, daily basis', and co-wrote the article that named Snowden. In August 2013 British authorities held his partner David Miranda at Heathrow for nine hours under the Terrorism Act while he travelled from Berlin to Rio. Greenwald co-founded The Intercept but resigned in October 2020, accusing its editors of censoring an article about Joe Biden; the site's editor called his account 'teeming with distortions and inaccuracies'.",
    "quote": "Aside from how obviously menacing and even creepy it is to have a state collect all forms of human communication ... there's no legal authority for the NSA to do this",
    "quoteSource": {
     "institution": "The Guardian",
@@ -698,9 +748,30 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The Intercept's response (https://theintercept.com/2020/10/29/glenn-greenwald-resigns-the-intercept/) says his narrative 'is teeming with distortions and inaccuracies'. CNN describes The Intercept as 'the news site he co-founded in 2013'."
+    },
+    {
+     "institution": "The Guardian",
+     "title": "Ed Pilkington, 'Guardian and Washington Post win Pulitzer prize for NSA revelations'",
+     "date": "2014-04-14",
+     "url": "https://www.theguardian.com/media/2014/apr/14/guardian-washington-post-pulitzer-nsa-revelations",
+     "quote": "The Guardian and the Washington Post have been awarded the highest accolade in US journalism, winning the Pulitzer prize for public service for their groundbreaking articles on the National Security Agency’s surveillance activities based on the leaks of Edward Snowden.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. This is the prize-winning paper reporting its own award. The same page says the award 'comes 10 months after the Guardian published the first report based on the leaks from Snowden, revealing the agency’s bulk collection of US citizens’ phone records'. Byline (JSON-LD): Ed Pilkington; datePublished 2014-04-14T19:01:59Z."
     }
    ],
-   "portrait": "glenn-greenwald-2013"
+   "portrait": "glenn-greenwald-2013",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Date precision on the Verizon story. The contribution says it was written 'on 6 June 2013'. The Guardian's URL is dated jun/06, but the story went online on the evening of Wednesday 5 June 2013, US time. Common Dreams republished it with datePublished 2013-06-05T23:53:39Z and Raw Story reported it at 2013-06-06T01:17Z (9:17 pm EDT on 5 June). Kashmir Hill's Forbes post on it carries a 2013/06/05 URL. US sources and most timelines give 5 June. The Guardian's current webPublicationDate (2013-06-06T10:05Z, shown as 'Thu 6 Jun 2013 06.05 EDT') is later than those reposts, so it must be a re-timestamp, not the first publication. Reworded to give both dates; the source's date field (2013-06-06, the Guardian's own dating) can stay.",
+     "Checked OK. quoteSource: the Guardian commentisfree piece of 15 July 2013 (datePublished 2013-07-15T10:40Z, author Glenn Greenwald, <title> 'The crux of the NSA story in one phrase: 'collect it all''). Both halves of the ellipsis --check FOUND. The note describes the omitted aside correctly.",
+     "Checked OK. Verizon story: the quote --check FOUND, and so does the 'ongoing, daily basis' sentence ('requires Verizon on an \"ongoing, daily basis\" to give the NSA information on all telephone calls in its systems'). JSON-LD author: Glenn Greenwald.",
+     "Checked OK. NBC: the quote --check FOUND. 'The Guardian reported Sunday' plus the Scotland Yard confirmation support the date, 18 August 2013.",
+     "Checked OK. CNN, 29 Oct 2020: the quote FOUND, and so does 'the news site he co-founded in 2013'. The Intercept's response is by-lined Betsy Reed (JSON-LD author), and CNN identifies her as 'the editor in chief'. That matches 'the site's editor called his account ...'. 'teeming with distortions and inaccuracies' FOUND on the Intercept page.",
+     "Checked OK, with an added source. The influence claim that the Guardian's NSA reporting 'shared the Pulitzer Prize with The Washington Post' was supported only by The Intercept's general sentence. The Guardian's 14 April 2014 report (--check FOUND) specifies 'the Pulitzer prize for public service', and it is added as a source."
+    ]
+   }
   },
   {
    "id": "max-schrems",
@@ -761,14 +832,23 @@
      "note": "Attributed quotes on the page are introduced 'Schrems:'."
     }
    ],
-   "portrait": "max-schrems-big-brother-awards-2015"
+   "portrait": "max-schrems-big-brother-awards-2015",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. CJEU Press Release No 117/15 ('Luxembourg, 6 October 2015', Case C-362/14), re-fetched with a fresh cache. Quote --check FOUND, as are the invalidity heading and the Snowden reasoning ('in the light of the revelations made in 2013 by Edward Snowden ... the law and practice of the United States do not offer sufficient protection'). Schrems II Press Release No 91/20 ('Luxembourg, 16 July 2020', Case C-311/18) FOUND: 'The Court of Justice invalidates Decision 2016/1250 ... EU-US Data Protection Shield'.",
+     "Wording nuance, not changed. 'The Court of Justice of the EU agreed twice' is fair as a summary, but Schrems II came from his reformulated complaint about Facebook's standard-contractual-clause transfers (Data Protection Commissioner v Facebook Ireland and Maximillian Schrems). The Court upheld the SCC decision and struck down Privacy Shield on the same US-surveillance grounds. Neither date is wrong.",
+     "Checked OK. noyb collective-redress page: 'noyb was founded on 12.06.2017 and became operational on 01.02.2018. We filed our first cases on 25.05.2018' --check FOUND. Independent: IAPP ('Schrems moves from dismantling to assembling with new NGO') says Schrems 'is launching his own non-governmental organization called NOYB', which supports 'he founded noyb'. Wikipedia says 'co-founded'; noyb lists him as 'Honorary Chairman'.",
+     "Checked OK. ADPC page (datePublished 2021-06-14T07:00:00+0200). The quoteSource quote and sources[2] quote both --check FOUND, and the quoteSource is introduced 'Schrems:'. The page says 'ADPC is a cooperation between noyb and the Sustainable Computing Lab at the Vienna University of Economics and Business', which supports the thread and 'co-proposed ... in June 2021'."
+    ]
+   }
   },
   {
    "id": "julia-angwin",
    "name": "Julia Angwin",
    "handle": "",
    "roles": "investigative journalist · founder of The Markup and Proof News",
-   "years": "2000–present",
+   "years": "1996–present",
    "place": "New York City",
    "lat": 40.759,
    "lng": -73.9818,
@@ -777,7 +857,7 @@
     "year": 2010,
     "url": "https://www.cs.cornell.edu/~shmat/courses/cs5436/whattheyknow.pdf"
    },
-   "contribution": "At The Wall Street Journal (2000–2013) Angwin led the 'What They Know' investigation, which from July 2010 tested the 50 most popular US websites and found they installed an average of 64 tracking tools each on visitors' computers, usually without warning; the team was a 2011 Pulitzer finalist. Her 2014 book Dragnet Nation recorded her own attempts to evade surveillance. She then led an investigative team at ProPublica (2014–2018) that was a 2017 Pulitzer finalist, founded the non-profit newsroom The Markup in 2018 and Proof News in 2024.",
+   "contribution": "At The Wall Street Journal (2000–2013) Angwin led the 'What They Know' investigation, which from July 2010 tested the 50 most popular US websites and found they installed an average of 64 tracking tools each on visitors' computers, usually without warning; the team was a finalist for the 2012 Pulitzer Prize in Explanatory Reporting. Her 2014 book Dragnet Nation recorded her own attempts to evade surveillance. She then led an investigative team at ProPublica (2014–2018) that was a 2017 Pulitzer finalist, founded the non-profit newsroom The Markup in 2018 and Proof News in 2024.",
    "quote": "One of the fastest-growing businesses on the Internet, a Wall Street Journal investigation has found, is the business of spying on Internet users.",
    "quoteSource": {
     "institution": "The Wall Street Journal (compilation hosted by Cornell University, CS 5436 course page)",
@@ -789,7 +869,7 @@
     "accessType": "FREE",
     "note": "The original on wsj.com is paywalled (401 to scripts); this PDF compilation of the series carries the Journal's copyright line and 'Published July 30, 2010.' Byline in the PDF: 'BY JULIA ANGWIN'."
    },
-   "influence": "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already shaping efforts in Congress and at the FTC; a reviewer of Dragnet Nation wrote that her tracking reporting 'changed the privacy debate'.",
+   "influence": "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already affecting the conversation in Washington, where Congress and the FTC were working to rein in the tracking industry; the legal scholar Jeffrey Rosen, endorsing Dragnet Nation, wrote that her tracking reporting 'changed the privacy debate'.",
    "thread": "The series showed that the tools meant to put users in control had been bargained away: EFF highlighted its account of how Microsoft's advertising side blocked stronger privacy safeguards planned for Internet Explorer 8.",
    "sources": [
     {
@@ -821,9 +901,40 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Blurb by Jeffrey Rosen, president and CEO of the National Constitution Center (promotional)."
+    },
+    {
+     "institution": "Talking Biz News",
+     "title": "Angwin leaving WSJ for ProPublica",
+     "date": "2013-11-26",
+     "url": "https://talkingbiznews.com/they-talk-biz-news/angwin-leaving-wsj-for-propublica/",
+     "quote": "She joined the San Francisco Chronicle in 1996 and was awarded a Knight-Bagehot fellowship in journalism for studies at Columbia Business School in 1998.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. datePublished 2013-11-26T13:40:20Z; posted by Chris Roush. An independent trade-press source for the start of her career (supports years 1996–present) and for the 2013 move to ProPublica."
+    },
+    {
+     "institution": "CBS News / Associated Press",
+     "title": "AP wins Pulitzer for stories on NYPD spying",
+     "date": "2012-04-16",
+     "url": "https://www.cbsnews.com/news/ap-wins-pulitzer-for-stories-on-nypd-spying/",
+     "quote": "Finalists: Tom Frank of USA Today for his sharply focused exploration of inflated pensions for state and local employees, enhancing stories with graphic material to show how state legislators pump up retirement benefits in creative but unconscionable ways, and The Wall Street Journal staff for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans by corporations and public officials in a largely unmonitored realm of modern life.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND under 'Explanatory reporting' in the AP list of 2012 Pulitzer winners and finalists. Page header 'April 16, 2012 / 6:28 PM EDT / AP'. It establishes the 2012 finalist year for the 'What They Know' team (pulitzer.org returns 403 to scripts)."
     }
    ],
-   "portrait": "julia-angwin-2018"
+   "portrait": "julia-angwin-2018",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong year for the Pulitzer finalist citation. The contribution says 'the team was a 2011 Pulitzer finalist', copying Angwin's own biography, but the 'What They Know' team was a finalist for the 2012 prize. The AP list of 2012 Pulitzer winners and finalists (CBS News, 16 April 2012; --check FOUND) reads: 'Finalists: Tom Frank of USA Today ... and The Wall Street Journal staff for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans'. The WSJ's 2011 Explanatory finalist citation was for Medicare fraud reporting (Wikipedia list of Explanatory Reporting finalists). The CPPA release already cited in this file (Soltani) also says 'a finalist for a 2012 Pulitzer Prize' (--check FOUND). This settles the conflict the slice notes left 'unresolved'. The contribution is corrected to 2012. sources[1] still quotes her biography verbatim, but its year is wrong; that is noted on the source.",
+     "The influence calls the Dragnet Nation quote the words of 'a reviewer'. The line 'changed the privacy debate' comes from a promotional blurb by Jeffrey Rosen, president and CEO of the National Constitution Center, on the author's own book page. It is not a review, and the record's own source note says so. Reworded to name Rosen and call it an endorsement.",
+     "The influence overstates EFF. EFF did not say the series 'was already shaping efforts in Congress and at the FTC'. It wrote: 'It's already affecting the conversation in Washington DC, where important efforts by both Congress and the FTC are underway to rein in this dangerous and unregulated industry.' Reworded to match.",
+     "The 'years' field starts in 2000, but that is only when she joined the Journal. She joined the San Francisco Chronicle in 1996. Talking Biz News, 26 Nov 2013 (--check FOUND): 'She joined the San Francisco Chronicle in 1996 and was awarded a Knight-Bagehot fellowship in journalism for studies at Columbia Business School in 1998.' Wikipedia also says she joined the Chronicle in 1996 as a technology reporter. Changed to 1996–present and added the source.",
+     "Checked OK. quoteSource: the Cornell-hosted PDF of the WSJ 'What They Know' compilation (re-fetched with a fresh cache). The quote FOUND in 'The Web's New Gold Mine: Your Secrets', 'BY JULIA ANGWIN', which closes 'Published July 30, 2010.' The contribution's figure matches the PDF: 'the nation's 50 top websites on average installed 64 pieces of tracking technology onto the computers of visitors, usually with no warning.'",
+     "Checked OK. juliaangwin.com/about: the WSJ 2000–2013 sentence FOUND. The page also says ProPublica 2014–2018 with a team that was 'a Finalist for a Pulitzer Prize in Explanatory Reporting in 2017', 'In 2018, she founded The Markup', and Proof News 'launched in 2024'. EFF, 4 Aug 2010 (article:published_time 2010-08-04): the quote and the IE 8.0 passage FOUND, which supports the thread."
+    ]
+   }
   },
   {
    "id": "kashmir-hill",
@@ -839,7 +950,7 @@
     "year": 2023,
     "url": "https://www.kashmirhill.com/book"
    },
-   "contribution": "Hill began writing about privacy in 2009 with her blog The Not-So Private Parts and reported for Forbes and Gizmodo Media Group before joining The New York Times in 2019. In January 2020 she revealed that the little-known Clearview AI had built a face-search tool on more than three billion images scraped from social media, and that more than 600 law-enforcement agencies had started using it within a year. Her 2023 book Your Face Belongs to Us traces how the company came to be.",
+   "contribution": "Hill began writing about privacy in 2009 with her blog The Not-So Private Parts and reported for Forbes and Gizmodo Media Group before joining The New York Times in 2019. In January 2020 she revealed that the little-known Clearview AI had built a face-search tool on more than three billion images scraped from social media and other websites, and that more than 600 law-enforcement agencies had started using it within a year. Her 2023 book Your Face Belongs to Us traces how the company came to be.",
    "quote": "It was supposed be a yearlong project, but I’m still chronicling the fate of privacy in the modern age more than a decade later.",
    "quoteSource": {
     "institution": "Kashmir Hill (kashmirhill.com)",
@@ -851,7 +962,7 @@
     "accessType": "FREE",
     "note": "Refers to her blog The Not-So Private Parts, which she says she created 'the next year' after starting in journalism in 2008. 'supposed be' is as written on the page."
    },
-   "influence": "Her Clearview story drew immediate official responses: New Jersey barred state police from the tool, Vermont's attorney general sued, members of Congress demanded answers, and Australia's privacy regulator sent the company inquiries three days after publication.",
+   "influence": "Her Clearview story drew immediate official responses: New Jersey's attorney general barred the state's law enforcement from using the tool, Vermont's attorney general sued, members of Congress demanded answers, and Australia's privacy regulator sent the company inquiries three days after publication.",
    "thread": "Clearview's collection rested on photos people had posted on their own terms for friends and family; the case showed that without enforceable, person-set limits, 'public' data can be repurposed for identification by anyone.",
    "sources": [
     {
@@ -882,9 +993,29 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Review excerpt attributed to The Atlantic (promotional page). The bio page (https://www.kashmirhill.com/bio) says: 'I joined The Times in 2019 , after having worked as an investigative reporter at Gizmodo Media Group and as a writer at Forbes Magazine .'"
+    },
+    {
+     "institution": "Office of the Australian Information Commissioner",
+     "title": "Commissioner initiated investigation into Clearview AI, Inc. (Privacy) [2021] AICmr 54 (14 October 2021)",
+     "date": "2021-10-14",
+     "url": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+     "quote": "On 21 January 2020, the OAIC sent preliminary inquiries to the respondent under s 42(2) of the Privacy Act.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (para 13). Supports 'Australia's privacy regulator sent the company inquiries three days after publication' (the NYT story is dated 18 January 2020)."
     }
    ],
-   "portrait": "kashmir-hill-new-america-2014"
+   "portrait": "kashmir-hill-new-america-2014",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The contribution narrows the source of the images. It says the images were 'scraped from social media'. The cited EPIC summary of Hill's article says 'scraped more than 3 billion images from websites and social media platforms such as Facebook, YouTube, Venmo, and Twitter'. Changed to 'from social media and other websites'.",
+     "The influence narrows the New Jersey order. It says New Jersey 'barred state police'. The cited ACLU release says the attorney general 'prohibited state law enforcement from using Clearview’s system', meaning the state's police forces generally, not only the State Police. Reworded.",
+     "The Australian claim ('Australia's privacy regulator sent the company inquiries three days after publication') had no source on this record. The OAIC determination [2021] AICmr 54, para 13 (--check FOUND): 'On 21 January 2020, the OAIC sent preliminary inquiries to the respondent under s 42(2) of the Privacy Act.' The Times URL is dated 2020/01/18, so three days is right. Added as a source; the same document is already cited elsewhere in this file.",
+     "Checked OK. quoteSource on kashmirhill.com/bio (fresh fetch) --check FOUND. The page says 'I got my start in journalism in 2008 ... The next year ... I created my own blog called The Not-So Private Parts', which supports 2009 and the handle, and 'I joined The Times in 2019, after having worked as an investigative reporter at Gizmodo Media Group and as a writer at Forbes Magazine'.",
+     "Checked OK. EPIC FOIA request (6 March 2020): the quote FOUND, and so does 'Within the past year, more than 600 law enforcement agencies have started using the Clearview AI app.' Both are footnoted to Hill's article, so the 600 figure is supported. ACLU release dated 'May 28, 2020' on the page; quote FOUND. Book page: the Atlantic excerpt FOUND and 'Published by Random House in the U.S.' FOUND. The page shows no year, but 2023 is the book's well-known US publication year (September 2023)."
+    ]
+   }
   },
   {
    "id": "carole-cadwalladr",
@@ -956,7 +1087,16 @@
      "note": "Byline and datePublished (2018-03-17T22:03Z) from page metadata."
     }
    ],
-   "portrait": "carole-cadwalladr-2019"
+   "portrait": "carole-cadwalladr-2019",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. quoteSource and sources[2]: the Wylie profile, 'I made Steve Bannon's psychological warfare tool' (fresh fetch). <title> matches, JSON-LD author is Carole Cadwalladr, datePublished 2018-03-18T09:44:46Z, and the URL is dated mar/17. Both quotes --check FOUND. The page also says 'For more than a year we’ve been investigating Cambridge Analytica', which supports 'more than a year', and 'Most damning of all, he had a letter from Facebook’s own lawyers admitting that Cambridge Analytica had acquired the data illegitimately'.",
+     "Checked OK. The contribution's 'invoices, contracts' is not in the Wylie profile's list ('receipts, invoices, emails, legal letters'). It is in the companion news story by Cadwalladr and Graham-Harrison (sources[3]): Wylie's dossier 'includes emails, invoices, contracts and bank transfers that reveal more than 50 million profiles ... were harvested'. That story's own quote --check FOUND; JSON-LD authors are Emma Graham-Harrison and Carole Cadwalladr; datePublished 2018-03-17T22:03Z, which supports going on the record on 17 March 2018 online, with the Observer print edition the next day.",
+     "Checked OK. Meta newsroom (datePublished 2018-04-04T18:30:05Z): the 87 million quote --check FOUND. Court of Appeal press summary, 'Tuesday 28 February 2023', [2023] EWCA Civ 219: the quote and 'The appeal is allowed in part' FOUND. The summary says the claim was over 'a talk (“the TED Talk”) and a tweet'. High Court summary, [2022] EWHC 1417 (QB), Steyn J: 'The claim has been dismissed.' FOUND, as is the TED talk date '15 April 2019'. The June 2022 date is from the file path /2022/06/ and the '130622' filename (13 June 2022).",
+     "Minor, not changed. 'roles' gives 'investigative journalist (The Observer)', while the 2023 Court of Appeal summary calls her 'a freelance journalist and writer'. As a description of her role during the Cambridge Analytica reporting it is accurate. The contribution also mentions only the TED talk; the libel claim covered the talk and a tweet of 24 June 2019. That omission does not make the text wrong."
+    ]
+   }
   },
   {
    "id": "christopher-wylie",
@@ -1018,7 +1158,11 @@
      "note": "Quoting the ICO letter on CA's marketing claim of '5,000+ data points per individual on 230 million adult Americans'. The ICO letter itself (committees.parliament.uk) was behind a bot challenge and was not read directly."
     }
    ],
-   "portrait": "christopher-wylie-parliament-square-2018"
+   "portrait": "christopher-wylie-parliament-square-2018",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "ashkan-soltani",
@@ -1034,7 +1178,7 @@
     "year": 2020,
     "url": "https://globalprivacycontrol.org/press-release/20201007.html"
    },
-   "contribution": "Soltani was the primary technical consultant on The Wall Street Journal's 'What They Know' tracking investigation, a co-creator of Do Not Track, Chief Technologist of the US Federal Trade Commission and an architect of California's CCPA and CPRA privacy laws. In October 2020 he and Sebastian Zimmeck launched Global Privacy Control with publishers, browsers and EFF, a browser setting that tells each site the user opts out of sale or sharing of their data, which California regulations require businesses to honour. On 4 October 2021 he became the first executive director of the California Privacy Protection Agency.",
+   "contribution": "Soltani was the primary technical consultant on The Wall Street Journal's 'What They Know' tracking investigation, Chief Technologist of the US Federal Trade Commission and an architect of California's CCPA and CPRA privacy laws, and his biographies credit him as a co-creator of Do Not Track. In October 2020 he and Sebastian Zimmeck launched Global Privacy Control with publishers, browsers and EFF, a browser setting that tells each site the user opts out of sale or sharing of their data, which California regulations require businesses to honour. On 4 October 2021 he became the first executive director of the California Privacy Protection Agency, serving until January 2025.",
    "quote": "The centralized location of the GPC puts the user back in the driver’s seat, gives users control of their preferences, and gives them the flexibility they need to browse the Internet confident of their privacy and the security of their data.",
    "quoteSource": {
     "institution": "CNIL — LINC (Laboratoire d'innovation numérique)",
@@ -1077,9 +1221,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Author note on the page: 'Ashkan was a co-creator of ' Do Not Track ' and was one of the architects of the California Consumer Privacy Act and subsequent California Privacy Rights Act .'"
+    },
+    {
+     "institution": "California Privacy Protection Agency",
+     "title": "CPPA Executive Director To Depart in Early 2025",
+     "date": "2024-11-08",
+     "url": "https://cppa.ca.gov/announcements/2024/20241108.html",
+     "quote": "It’s been an honor and privilege to serve as the founding Executive Director of the CPPA.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Same release, FOUND: 'The California Privacy Protection Agency’s (CPPA) Executive Director, Ashkan Soltani, announced today that he will depart the Agency in January 2025.' It also says 'He was the Agency’s first employee'. Supports 'first executive director' and 'serving until January 2025'."
     }
    ],
-   "portrait": "ashkan-soltani-2012"
+   "portrait": "ashkan-soltani-2012",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "'a co-creator of Do Not Track' is stated as flat fact, but the only support is Soltani's own author bio on the CNIL LINC page. Christopher Soghoian's 'The History of the Do Not Track Header' (21 Jan 2011, paranoia.dubfire.net) and Wikipedia's Do Not Track article credit the July 2009 prototype to Soghoian and Sid Stamm and never mention Soltani. The claim needs to be attributed (\"credited in his biographies as\"), not asserted.",
+     "'first executive director' was supported only by the 2021 release, which says 'new Executive Director', not 'first'. The CPPA's 8 Nov 2024 release supports it (Soltani: 'founding Executive Director'; 'He was the Agency's first employee'), so it is added below.",
+     "The contribution does not say he left the CPPA. The same 8 Nov 2024 release says he would depart in January 2025, so 'serving until January 2025' is added so the profile is not stale on 2026-09-23.",
+     "Source[1] note's unresolved Pulitzer-year conflict: the 2012 Pulitzer Explanatory Reporting finalists include 'The Wall Street Journal staff \"for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans...\"' (Wikipedia, 2012 Pulitzer Prize), so the CPPA's '2012' is right. pulitzer.org returned 403. This does not affect any record field."
+    ]
+   }
   }
  ],
  "events": [
@@ -1087,11 +1250,11 @@
    "id": "chaos-computer-club-first-meeting-taz-berlin-1981",
    "displayDate": "12 September 1981",
    "year": 1981,
-   "title": "'Komputerfrieks' meet at the taz and the Chaos Computer Club is born",
+   "title": "'Komputerfrieks' meet at the taz: the Chaos Computer Club's informal founding",
    "place": "Editorial offices of die tageszeitung (taz), Wattstraße, Berlin-Wedding, West Berlin",
    "lat": 52.5414,
    "lng": 13.3897,
-   "summary": "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. About 20 people came, meeting around a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding; its topic list included data law under the question 'who owns my data?'.",
+   "summary": "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. Some 20 people are said to have come, meeting at a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding, though the name itself seems to have come into use only around the end of 1982. The notice's topic list included data law under the question 'who owns my data?'.",
    "significance": "Europe's most influential hacker club began by asking, before most people owned a computer, who owns personal data.",
    "sources": [
     {
@@ -1113,9 +1276,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "p. 60. Translation: 'There were also suitable rooms there, and a large table that had once stood in the Kommune 1.' The same page: 'Zu dem Treffen sollen etwa 20 Personen gekommen sein' (about 20 people are said to have attended), and p. 57 notes the club itself calls the meeting its informal founding. The formal association (e.V.) came later."
+    },
+    {
+     "institution": "Chaos Computer Club",
+     "title": "Club (Selbstdarstellung)",
+     "date": "2026",
+     "url": "https://www.ccc.de/de/club",
+     "quote": "Das Treffen führte zunächst zu einer informellen Gründung des Chaos Computer Clubs und wurde als regelmäßiger Treff in Hamburg weitergeführt.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The same page, also FOUND: 'Am Tisch der Kommune 1 der Zeitung taz in Berlin trafen sich damals Hacker, selbstbezeichnete „Komputerfrieks“ im Rahmen des „tu-wat“-Kongresses.' This is the club's own primary statement that the meeting was its informal founding. It is an undated organisational page, so the date is the access year."
     }
    ],
-   "locationNote": "Coordinates of Wattstraße in Berlin-Wedding, where the taz had its main building in 1981 (street centroid, not the exact house)."
+   "locationNote": "Coordinates of Wattstraße in Berlin-Wedding, where the taz had its main building in 1981 (street centroid, not the exact house).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The page numbers in the source notes are off by one. In the PDF (printed page numbers checked page by page with pdfminer), the 'informelle Gründung' sentence, the start of the TUWAT notice and '12.9.81' are on p. 58, not p. 57. The Kommune 1 table sentence and 'Zu dem Treffen sollen etwa 20 Personen gekommen sein' are on p. 61, not p. 60. The 'Wem gehören meine Daten?' topic line is on p. 59.",
+     "The title says the Chaos Computer Club 'is born' at this meeting, but the name did not exist yet. Röhr (printed p. 69, --check FOUND): 'Etwa gegen Ende des Jahres 1982 soll auch der Name „Chaos Computer Club“ für diesen Stammtisch in Verwendung gewesen sein.' The CCC itself calls the meeting its informal founding (ccc.de/de/club), so the title is reworded to say that and not imply the name existed in 1981.",
+     "'About 20 people came' is hedged in the source ('sollen ... gekommen sein', i.e. 'are said to have come'); the summary now says 'Some 20 people are said to have come'.",
+     "The other claims hold. The taz of 1 Sept 1981, p. 2 notice is headed 'TUWAT,TXT Version'. It is signed 'Tom Twiddlebit, Wau Wolf Ungenannt(»2)': Schleisiek, Holland, Gevert and two unnamed, i.e. Wulf Müller and Jochen Büttner, five Hamburg men linked through the Medienladen. The meeting was on 12.9.81 from 11.00 at 'Wattstr. (TAZ-Hauptgebäude)', and the topic list includes 'Datenrecht (Wem gehören meine Daten?)'. Coordinates 52.5414, 13.3897 match Wattstraße, 13355 Berlin (Gesundbrunnen, formerly Bezirk Wedding) per the Photon/OSM geocoder."
+    ]
+   }
   },
   {
    "id": "ccc-btx-hack-hamburger-sparkasse-1984",
@@ -1147,9 +1329,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The foundation rounds the sum to 'DM 135.000'; heise gives the exact DM 134,634.88."
+    },
+    {
+     "institution": "Heinz Nixdorf MuseumsForum (HNF Blog)",
+     "title": "Kennwort Bankraub – 40 Jahre BTX-Hack",
+     "date": "2024-11-15",
+     "url": "https://blog.hnf.de/kennwort-bankraub-40-jahre-btx-hack/",
+     "quote": "In der Nacht vom 16. zum 17. November 1984 überwies die Hamburger Sparkasse auf das Konto des Chaos Computer Clubs 134.634,88 DM.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23; 'Geschrieben am 15.11.2024'. This is an independent museum source for the date and the sum. Also FOUND: 'Die 134.634,88 DM hat der Club natürlich nicht behalten, sondern der Sparkasse zurückerstattet.', which supports 'give the money back' in the significance field. It also says the press release 'Kennwort: Bankraub' appeared on Monday 19 November 1984."
     }
    ],
-   "locationNote": "Hamburg, where Holland and Wernéry ran the hack and the club was based; exact building not established."
+   "locationNote": "Hamburg, where Holland and Wernéry ran the hack and the club was based; exact building not established.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found; one discrepancy between sources is noted. German Wikipedia (BTX-Hack) gives DM 134,694.70 over 13 hours. heise (English 2024 and German 'Zahlen, bitte!' 2017) and the Heinz Nixdorf MuseumsForum blog (2024) all give 13,504 × DM 9.97 = DM 134,634.88. heise says this figure appears on screen in the 1984 heute-journal report, so the record's figure is the better-attested one. Arithmetic checked: 13,504 × 9.97 = 134,634.88.",
+     "Date checked: some accounts give the night of 17–18 November. The HNF blog explains that Der Spiegel 'verschob die CCC-Aktion um einen Tag' (shifted the action by a day). heise, the Wau Holland Stiftung, HNF and German Wikipedia all give 16–17 November 1984. The CCC press release and demonstration were on Monday 19 November 1984.",
+     "Optional: the location note says the exact building is not established. German Wikipedia says the hack was run from Wernéry's flat in Hamburg-Eppendorf, citing heise, and the 19 November demonstration was held at the Hamburg Data Protection Commissioner's office (HNF). The Hamburg city-centroid coordinates are acceptable as they are."
+    ]
+   }
   },
   {
    "id": "ccc-analyses-german-state-trojan-2011",
@@ -1159,8 +1359,8 @@
    "place": "Chaos Computer Club, Hamburg (registered seat)",
    "lat": 53.5511,
    "lng": 9.9937,
-   "summary": "On 8 October 2011 the CCC published binaries and an analysis of 'lawful interception' malware used by German police, sent to it anonymously. It reported that software meant only to tap internet telephony could also take screenshots, load and run further programs and be taken over by third parties, because its commands were unencrypted and unauthenticated. The club argued this breached limits set by the Federal Constitutional Court in its 27 February 2008 ruling; Bavarian officials later confirmed using the software in five cases.",
-   "significance": "Hackers, not a regulator, audited the state's own surveillance code and showed that a person's computer had become part of the 'core area of private life'.",
+   "summary": "On 8 October 2011 the CCC published binaries and an analysis of 'lawful interception' malware used by German police, sent to it anonymously. It reported that software meant only to tap internet telephony could also take screenshots, load and run further programs and be taken over by third parties, because its commands were unencrypted and unauthenticated. The club argued this breached limits set by the Federal Constitutional Court in its 27 February 2008 ruling. Two days later Bavaria's interior ministry confirmed that the sample came from a 2009 Bavarian police investigation, and the Süddeutsche Zeitung reported that Bavarian police had used the trojan in five cases.",
+   "significance": "Hackers, not a regulator, audited the state's own surveillance code, and argued that a person's computer had become part of the 'core area of private life'.",
    "sources": [
     {
      "institution": "Chaos Computer Club",
@@ -1191,9 +1391,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Secondary report relaying the Süddeutsche Zeitung."
+    },
+    {
+     "institution": "Der Tagesspiegel",
+     "title": "Internet-Überwachung: Trojaner kam aus Bayern",
+     "date": "2011-10-10",
+     "url": "https://www.tagesspiegel.de/politik/trojaner-kam-aus-bayern-8096494.html",
+     "quote": "Die Erstbewertung des Landeskriminalamts habe ergeben, dass die dem CCC zugespielte Software einem Ermittlungsverfahren der bayerischen Polizei aus dem Jahr 2009 zugeordnet werden kann.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23; JSON-LD datePublished 2011-10-10. Also FOUND: 'Das bayerische Innenministerium hat bestätigt, dass der vom Chaos Computer Club (CCC) bekannt gemachte „Staats-Trojaner“ zur Online-Überwachung aus Bayern stammt.' The same article attributes the 'at least five cases' figure to Green MP Susanna Tausendfreund, not to officials. Translation: 'The State Criminal Police Office's initial assessment found that the software passed to the CCC can be assigned to a 2009 Bavarian police investigation.'"
     }
    ],
-   "locationNote": "The CCC is a registered association seated in Hamburg; the analysis was published on ccc.de."
+   "locationNote": "The CCC is a registered association seated in Hamburg; the analysis was published on ccc.de.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "'Bavarian officials later confirmed using the software in five cases' misstates the source. Help Net Security only relays a Süddeutsche Zeitung report that Bavarian agents used it in five cases. What officials confirmed (Interior Minister Joachim Herrmann, Monday 10 October 2011) was that the CCC's sample could be traced to a 2009 Bavarian police investigation (Tagesspiegel, Abendzeitung). The 'at least five cases' figure in the German press came from the Green MP Susanna Tausendfreund and the SZ. The summary is rewritten to separate the official confirmation from the reported count.",
+     "The significance field says the CCC 'showed that a person's computer had become part of the \"core area of private life\"'. That was the CCC's argument, not something it demonstrated; the release's own bracketed note says 'The CCC is basically arguing that nowadays a person's laptop is intrinsically part of this core area'. 'showed' is changed to 'argued'.",
+     "Source[0] note: the case number '1 BvR 370/07' is not on the CCC page. The release says only 'the German constitutional court (\"Bundesverfassungsgericht\") on February 27 2008'. The case number itself is correct, but it is not quoted from this source."
+    ]
+   }
   },
   {
    "id": "electronic-frontier-foundation-founded-1990",
@@ -1203,8 +1421,8 @@
    "place": "National Press Club, Washington, D.C.",
    "lat": 38.8971,
    "lng": -77.0317,
-   "summary": "After a 1 March 1990 Secret Service raid on Steve Jackson Games in Austin, Texas, in which the company's bulletin-board e-mail was accessed and deleted, Mitch Kapor, John Perry Barlow and John Gilmore formed an organisation for civil liberties raised by new technologies. Kapor and Barlow announced the Electronic Frontier Foundation in Washington on 10 July 1990, with a founding paper asking whether 'the history of one's personal business affairs' could properly belong to someone else. EFF's first case, for Steve Jackson Games, led a court to hold that e-mail deserves at least as much protection as telephone calls.",
-   "significance": "Created the first advocacy organisation built to argue for privacy and speech rights inside networks, and framed personal data as something that might belong to the person.",
+   "summary": "After a 1 March 1990 Secret Service raid on Steve Jackson Games in Austin, Texas, in which the company's bulletin-board e-mail was accessed and deleted, Mitch Kapor, John Perry Barlow and John Gilmore formed an organisation for civil liberties raised by new technologies. Kapor and Barlow announced the Electronic Frontier Foundation in Washington on 10 July 1990, with a founding paper asking whether 'the history of one's personal business affairs' could properly belong to someone else. The lawsuit EFF announced at its launch, for Steve Jackson Games, ended in a 1993 federal ruling that the seizure of users' stored e-mail violated the Electronic Communications Privacy Act. EFF calls it the first time a court held that e-mail deserves at least as much protection as telephone calls.",
+   "significance": "Created an advocacy organisation built specifically to argue for privacy and speech rights inside networks, and framed personal data as something that might belong to the person.",
    "sources": [
     {
      "institution": "Electronic Frontier Foundation",
@@ -1235,9 +1453,38 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Also FOUND: 'For the first time, a court held that electronic mail deserves at least as much protection as telephone calls.' The page names Kapor, Barlow and Gilmore as founders, 'with assistance from Steve Wozniak'. Undated organisational page; date is the access year. Also on this page: stored e-mail on the Steve Jackson Games bulletin board 'had been individually accessed and deleted'."
+    },
+    {
+     "institution": "Electronic Frontier Foundation (EFFector Online vol. 5 no. 4)",
+     "title": "Victory in the Steve Jackson Games Case",
+     "date": "1993-03-19",
+     "url": "https://www.eff.org/effector/5/4",
+     "quote": "In addition, the judge awarded each plaintiff $1,000 under the Electronic Communications Privacy Act for the Secret Service seizure of their stored electronic mail.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Also FOUND: 'The judge did not find that Secret Service agents had \"intercepted\" the electronic communications'. The decision was announced 12 March 1993 by Judge Sam Sparks. This is the actual holding behind the summary's reworded sentence."
+    },
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "John Perry Barlow, 'A Not Terribly Brief History of the Electronic Frontier Foundation'",
+     "date": "1990-11-08",
+     "url": "https://www.eff.org/pages/not-terribly-brief-history-electronic-frontier-foundation",
+     "quote": "We announced the formation of the Electronic Frontier Foundation at the National Press Club on July 10.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23; page dated 'Thursday, November 8, 1990'. Also FOUND: 'One of our first official acts had been to grant that organization $275,000 for a project on computing and civil liberties.' (the organisation is CPSR) and 'the government was forced to abandon its case against Neidorf after 4 days in Chicago's Federal Court.' The office address '155 Second St. Cambridge, MA 02141' is on the same page."
     }
    ],
-   "locationNote": "Announcement site (National Press Club, 529 14th St NW). EFF's first office was at 155 Second Street, Cambridge, Massachusetts, per Barlow's November 1990 'A Not Terribly Brief History of the Electronic Frontier Foundation' (eff.org)."
+   "locationNote": "Announcement site (National Press Club, 529 14th St NW). EFF's first office was at 155 Second Street, Cambridge, Massachusetts, per Barlow's November 1990 'A Not Terribly Brief History of the Electronic Frontier Foundation' (eff.org).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary says 'led a court to hold that e-mail deserves at least as much protection as telephone calls' as if it were the court's holding. That wording is EFF's own gloss from its history page. The actual 12 March 1993 ruling by Judge Sam Sparks (W.D. Tex.) awarded each plaintiff $1,000 under the ECPA for the seizure of their stored e-mail, but 'did not find that Secret Service agents had \"intercepted\" the electronic communications' (EFFector 5/4, 19 March 1993). The Fifth Circuit upheld that no-interception finding in October 1994, which is the opposite of telephone-call-level (Wiretap Act) protection. The sentence is reworded to state the real holding and attribute the gloss to EFF.",
+     "'EFF's first case' is EFF's own label (eff.org/issues/video-games: 'EFF's first case in 1990...'). Barlow's 8 November 1990 history, however, shows EFF's first legal action was a supporting amicus brief for Craig Neidorf, whose prosecution collapsed in late July 1990. The Steve Jackson Games suit was the lawsuit announced at launch. The wording is changed to 'the lawsuit EFF announced at its launch'.",
+     "The significance field claims EFF was 'the first advocacy organisation built to argue for privacy and speech rights inside networks'. That is overstated. Barlow's 1990 history records that one of EFF's first acts was a $275,000 grant to Computer Professionals for Social Responsibility's existing Washington office 'for a project on computing and civil liberties'. 'the first' is dropped.",
+     "The other claims check out: 1 March 1990 raid (SSIR), stored BBS e-mail 'individually accessed and deleted' (EFF history), the Kapor/Barlow/Gilmore founders, the 10 July 1990 National Press Club announcement (SSIR and Barlow 1990: 'We announced the formation of the Electronic Frontier Foundation at the National Press Club on July 10'), and the founding-paper quote. The locationNote's '155 Second St. Cambridge, MA 02141' is FOUND in Barlow's 8 November 1990 history."
+    ]
+   }
   },
   {
    "id": "barlow-declaration-independence-cyberspace-davos-1996",
@@ -1248,7 +1495,7 @@
    "lat": 46.8011,
    "lng": 9.8308,
    "summary": "On 8 February 1996, the day President Clinton signed the Telecommunications Act of 1996 with its Communications Decency Act, John Perry Barlow wrote a manifesto at the close of the World Economic Forum in Davos telling 'Governments of the Industrial World' they had no sovereignty online. He e-mailed it to about 600 friends the next day; by his count it was on at least 10,000 websites within a month. Twenty years later Barlow stood by it while conceding that online self-regulation had in most ways not developed.",
-   "significance": "The founding text of the claim that people online could set their own rules, the libertarian starting point that later privacy advocates both built on and argued against.",
+   "significance": "A founding text of the claim that people online could set their own rules, the libertarian starting point that later privacy advocates both built on and argued against.",
    "sources": [
     {
      "institution": "Electronic Frontier Foundation",
@@ -1281,7 +1528,13 @@
      "note": "The same text says he wrote it at 'a staff party for the closing of the World Economic Forum' and sent it 'the next day to the 600 or so friends I had with e-mail addresses'."
     }
    ],
-   "locationNote": "Davos Congress Centre area; Barlow wrote the text at a WEF closing party whose exact venue is not recorded."
+   "locationNote": "Davos Congress Centre area; Barlow wrote the text at a WEF closing party whose exact venue is not recorded.",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The significance field says it is 'The founding text' of the claim that people online could set their own rules. None of the sources establish that superlative, and cyberspace-autonomy arguments were already circulating, for example in EFF's own 1990 'Across the Electronic Frontier'. It is changed to 'A founding text'. Every factual claim in the summary checked out."
+    ]
+   }
   },
   {
    "id": "def-con-1-sands-las-vegas-1993",
@@ -1325,7 +1578,14 @@
      "note": "Same article: Moss 'called himself “The Dark Tangent”', and DEF CON is now 'where researchers expose vulnerabilities in satellites and voting machines'."
     }
    ],
-   "locationNote": "The Sands Hotel & Casino, since demolished; coordinates of its former site on the Las Vegas Strip."
+   "locationNote": "The Sands Hotel & Casino, since demolished; coordinates of its former site on the Las Vegas Strip.",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No error found. The dates 9–11 July 1993 (Fri–Sun) are confirmed by the 12 June 1993 finalized announcement, and 9 July 1993 was indeed a Friday. Cringely's 19 July 1993 column, which says 'last week in Las Vegas', agrees. DEF CON's own archive page saying 'June 9-11, 1993' is the error, and the record handles it correctly by pointing to the myth record.",
+     "Small wording point, no change needed: the announcement puts the Sands 'in the middle of down town Las Vegas', but the Sands stood on the Strip. The record's coordinates (36.1212, -115.1697, the former Sands and now Venetian site) and its locationNote correctly place it on the Strip."
+    ]
+   }
   },
   {
    "id": "hackers-on-planet-earth-hope-new-york-1994",
@@ -1335,7 +1595,7 @@
    "place": "Hotel Pennsylvania, Manhattan, New York City",
    "lat": 40.7497,
    "lng": -73.9912,
-   "summary": "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Modelled on the Dutch hacker gatherings of the 1980s and 1990s, it was the first US hacker conference on that scale, with talks 'ranging from privacy issues to technology to politics' and a panel on cryptography and privacy. HOPE became a recurring New York conference, annual from 2025.",
+   "summary": "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Inspired by the Dutch hacker gatherings of the 1980s and 1990s, it was, by its organisers' account, the first hacker conference of that size attempted in the United States, with talks 'ranging from privacy issues to technology to politics' and a 'Cryptography and Privacy' session featuring Eric Hughes and Matt Blaze. HOPE became a recurring New York conference, annual from 2025.",
    "significance": "Gave the hacker scene around 2600 a large public forum in New York where surveillance, cryptography and privacy were argued before a mass audience.",
    "sources": [
     {
@@ -1357,9 +1617,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Same page: 'It was the first time that a hacker conference of this size had been attempted in the United States and it was inspired by the Dutch hacker gatherings of the 80s and 90s.' and 'In 2025, for the first time ever, HOPE became an annual event.' The 2600 store lists a 1994 recording titled 'Cryptography and Privacy' (https://store.2600.com/collections/hackers-on-planet-earth)."
+    },
+    {
+     "institution": "2600 Magazine (store.2600.com)",
+     "title": "Hackers On Planet Earth (1994): \"Cryptography and Privacy\" (Download)",
+     "date": "1994-08-13",
+     "url": "https://store.2600.com/collections/hackers-on-planet-earth/products/hackers-on-planet-earth-1994-cryptography-and-privacy-download",
+     "quote": "Saturday, August 13, 1994, 10:00 pm: There have been quite a few articles in the national media recently about cryptography and privacy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same listing is FOUND saying 'Also featuring Eric Hughes and Matt Blaze.' It also describes Bob Stratton's introduction and a demonstration of 'the AT&T 3600 Surety device, the world's first Clipper Chip telephone encryption unit'."
     }
    ],
-   "locationNote": "Hotel Pennsylvania, Seventh Avenue, Manhattan — HOPE's usual venue until The Circle of HOPE, the last HOPE held there (per hope.net/about)."
+   "locationNote": "Hotel Pennsylvania, Seventh Avenue, Manhattan — HOPE's usual venue until The Circle of HOPE, the last HOPE held there (per hope.net/about).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Summary calls the 1994 cryptography item 'a panel on cryptography and privacy'. The 2600 store listing shows it was a session titled 'Cryptography and Privacy' introduced by Bob Stratton, with a Clipper Chip (AT&T 3600 Surety) demonstration by Bernie S. and John Turbo and also featuring Eric Hughes and Matt Blaze. 2600 titles its real panels explicitly ('The 2600 Panel', 'The Author Panel', 'The Cellular Panel'), and this one is not billed as a panel. The wording is changed to 'session'. The Clipper demonstration is left out of the summary because the listing is a programme description written in the future tense ('will attempt').",
+     "'Modelled on the Dutch hacker gatherings' overstates the source, which says only 'inspired by'.",
+     "'the first US hacker conference on that scale' is HOPE's own claim ('the first time that a hacker conference of this size had been attempted in the United States'). The summary now attributes it to the organisers.",
+     "Dates (13-14 August 1994), venue (Hotel Pennsylvania), attendance (well over 1,000), 2600's tenth anniversary and 'annual from 2025' are all confirmed on the cited pages. Wikipedia independently gives 'August 13-14, 1994', 'Over 1,000 people attended'."
+    ]
+   }
   },
   {
    "id": "securedrop-launched-freedom-of-the-press-foundation-2013",
@@ -1369,7 +1648,7 @@
    "place": "Freedom of the Press Foundation, San Francisco, California",
    "lat": 37.7749,
    "lng": -122.4194,
-   "summary": "Four months after the first Snowden stories, the Freedom of the Press Foundation announced on 15 October 2013 that it had taken over DeadDrop, the whistleblower-submission system coded by Aaron Swartz with Kevin Poulsen, renamed it SecureDrop and would install it in newsrooms. Each source receives a codename so they can keep talking to a newsroom without revealing their identity or using e-mail. The code had been audited by University of Washington researchers; The New Yorker, the first user since May 2013 under the name Strongbox, kept its installation.",
+   "summary": "Four months after the first Snowden stories, the Freedom of the Press Foundation announced on 15 October 2013 that it had taken over DeadDrop, the whistleblower-submission system coded by Aaron Swartz in partnership with the journalist Kevin Poulsen, who managed the project, renamed it SecureDrop and would install it in newsrooms. Each source receives a codename so they can keep talking to a newsroom without revealing their identity or using e-mail. The code had been audited by University of Washington researchers; The New Yorker, the first user since May 2013 under the name Strongbox, was to keep running its installation.",
    "significance": "Made source anonymity a standard, shareable piece of newsroom infrastructure — privacy enforced by system design rather than by a publisher's promise.",
    "sources": [
     {
@@ -1391,9 +1670,27 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The spacing reproduces the page text as extracted."
+    },
+    {
+     "institution": "SecureDrop (Freedom of the Press Foundation)",
+     "title": "SecureDrop FAQ",
+     "date": "2026",
+     "url": "https://securedrop.org/faq/",
+     "quote": "Investigative journalist Kevin Poulsen originally managed the project. The New Yorker launched the first implementation and branded their version StrongBox in May 2013.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page is FOUND saying 'The web application, which was originally called DeadDrop, was developed by Aaron Swartz in 2012 before his tragic death.'"
     }
    ],
-   "locationNote": "Dateline of the announcement: San Francisco, California (city centroid)."
+   "locationNote": "Dateline of the announcement: San Francisco, California (city centroid).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "'coded by Aaron Swartz with Kevin Poulsen' suggests Poulsen co-wrote the code. The FPF release says the system was 'originally coded by the late transparency advocate Aaron Swartz' and 'created by Swartz in partnership with investigative reporter Kevin Poulsen'. SecureDrop's own FAQ says it was 'developed by Aaron Swartz' and that 'Kevin Poulsen originally managed the project'. The summary is reworded so that Swartz wrote it and Poulsen partnered on and managed it.",
+     "'kept its installation' is correct for October 2013 (FPF: 'will continue to operate its system'). However, the New Yorker article now carries 'Update: The New Yorker is no longer using Strongbox.' The summary is reworded so readers do not take this as still true.",
+     "Checked and correct: date 15 October 2013 and San Francisco dateline, rename to SecureDrop, codename mechanism, University of Washington audit (led by Alexei Czeskis), New Yorker Strongbox launch on 14 May 2013 (page datePublished 2013-05-14), and 'four months after the first Snowden stories' (June 2013)."
+    ]
+   }
   },
   {
    "id": "noyb-founded-vienna-2017",
@@ -1436,7 +1733,11 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "noyb's seat, Vienna (city centroid)."
+   "locationNote": "noyb's seat, Vienna (city centroid).",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "wsj-what-they-know-tracking-series-2010",
@@ -1469,7 +1770,11 @@
      "accessType": "FREE"
     }
    ],
-   "locationNote": "Approximate coordinates of the Journal's Midtown Manhattan headquarters; the series was also a web project with interactive data."
+   "locationNote": "Approximate coordinates of the Journal's Midtown Manhattan headquarters; the series was also a web project with interactive data.",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "nyt-clearview-ai-face-recognition-revealed-2020",
@@ -1479,7 +1784,7 @@
    "place": "The New York Times newsroom, Manhattan, New York City",
    "lat": 40.7561,
    "lng": -73.9903,
-   "summary": "The New York Times article 'The Secretive Company That Might End Privacy as We Know It' by Kashmir Hill, dated 18 January 2020 in its web address, revealed that the start-up Clearview AI had scraped more than three billion images from Facebook, YouTube, Venmo, Twitter and other sites and that more than 600 law-enforcement agencies had begun using its face-search app within a year. After the story, New Jersey's attorney general barred state police from using it, Vermont's attorney general sued and members of Congress demanded answers; Australia's privacy regulator opened inquiries on 21 January 2020 and in October 2021 ordered the company to stop collecting and to destroy Australians' images.",
+   "summary": "The New York Times article 'The Secretive Company That Might End Privacy as We Know It' by Kashmir Hill, dated 18 January 2020 in its web address, revealed that the start-up Clearview AI had built a face-search app on a database of more than three billion images it claimed to have scraped from Facebook, YouTube, Venmo and millions of other websites, and that — according to the company — more than 600 law-enforcement agencies had started using it in the past year. After the story, New Jersey's attorney general barred the state's police from using it, Vermont's attorney general sued and members of Congress demanded answers; Australia's privacy regulator opened inquiries on 21 January 2020 and in October 2021 ordered the company to stop collecting and to destroy Australians' images.",
    "significance": "Showed that anything a person posts can be harvested into a biometric identification system without consent — and that after-the-fact 'opt-out' forms are no substitute for terms set before collection.",
    "sources": [
     {
@@ -1511,9 +1816,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The determination orders that Clearview 'must cease to collect Scraped Images, Probe Images, Scraped Image Vectors, Probe Image Vectors and Opt-out Vectors' from individuals in Australia and destroy those held; it records that 'From 29 January 2020, it began to offer Australian residents an online form to ‘opt-out’' which later 'became no longer accessible'."
+    },
+    {
+     "institution": "Gulf News (syndicated The New York Times article)",
+     "title": "The secretive company that might end privacy as we know it",
+     "date": "2020-01-19",
+     "url": "https://gulfnews.com/world/americas/the-secretive-company-that-might-end-privacy-as-we-know-it-1.1579454027198",
+     "quote": "The system - whose backbone is a database of more than 3 billion images that Clearview claims to have scraped from Facebook, YouTube, Venmo and millions of other websites - goes far beyond anything ever constructed by the US government or Silicon Valley giants.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Page JSON-LD: author 'NYT', datePublished 2020-01-19T21:12:08+04:00. This is the Times text syndicated, since the original nytimes.com page blocks scripted access. Also FOUND: 'But without public scrutiny, more than 600 law enforcement agencies have started using Clearview in the past year, according to the company, which declined to provide a list.'"
     }
    ],
-   "locationNote": "Approximate coordinates of the Times building in Midtown Manhattan. The ACLU describes Clearview as 'a little-known start-up based in New York' (https://www.aclu.org/news/privacy-technology/were-taking-clearview-ai-to-court-to-end-its-privacy-destroying-face-surveillance-activities)."
+   "locationNote": "Approximate coordinates of the Times building in Midtown Manhattan. The ACLU describes Clearview as 'a little-known start-up based in New York' (https://www.aclu.org/news/privacy-technology/were-taking-clearview-ai-to-court-to-end-its-privacy-destroying-face-surveillance-activities).",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The summary says the Times 'revealed that the start-up Clearview AI had scraped more than three billion images from Facebook, YouTube, Venmo, Twitter and other sites'. The original article, read via Gulf News's syndicated copy of the NYT text dated 19 January 2020, hedges this: 'a database of more than 3 billion images that Clearview claims to have scraped from Facebook, YouTube, Venmo and millions of other websites'. Twitter does not appear anywhere in that text. It comes from EPIC's paraphrase, which cites the Times article's 10 February 2020 update.",
+     "The '600 agencies' figure was the company's own claim and was not independently verified: 'more than 600 law enforcement agencies have started using Clearview in the past year, according to the company, which declined to provide a list.'",
+     "'New Jersey's attorney general barred state police from using it' is too narrow and ambiguous, since it can be read as the New Jersey State Police only. The ACLU says the AG 'prohibited state law enforcement from using Clearview’s system'. EPIC says New Jersey 'banned statewide law enforcement agencies', and the NYT follow-up is headlined 'New Jersey Bars Police From Using Clearview Facial Recognition App'.",
+     "Checked and correct: Vermont AG lawsuit and congressional demands (ACLU), OAIC preliminary inquiries on 21 January 2020, and the October 2021 cease-collection and destroy orders. The OAIC determination is cited as [2021] AICmr 54 (14 October 2021), but the PDF's signature block reads '22 October 2021'. Either way 'October 2021' holds."
+    ]
+   }
   }
  ],
  "images": [
@@ -1536,7 +1860,11 @@
    "verified": true,
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"Public domain\", License \"pd\", Copyrighted \"False\", Artist \"Shoshone\", Credit \"Self-photographed\"; file-page license template {{PD-user-de|Shoshone}}. Description: \"Wau Holland, Dez. 1984 in Hamburg\".",
    "localFile": "assets/media/wau-holland-hamburg-1984.jpg",
-   "thumbPx": "252x318"
+   "thumbPx": "252x318",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "john-perry-barlow-2016",
@@ -1557,7 +1885,11 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\", UsageTerms \"Creative Commons Attribution-Share Alike 4.0\", LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\", Artist \"Parker Higgins\", Credit \"Own work\", DateTimeOriginal \"2016-02-08 23:59:36\"; file-page license template(s): {{self|cc-by-sa-4.0}}. Description: \"John Perry Barlow sits in front of his computer at Toad Hall, the San Francisco home of John Gilmore, on the 20th anniversary of Barlow's A Declaration of the Independence of Cyberspace.\".",
    "localFile": "assets/media/john-perry-barlow-2016.jpg",
    "thumbPx": "960x540",
-   "locationNote": "Toad Hall, San Francisco (city centroid)"
+   "locationNote": "Toad Hall, San Francisco (city centroid)",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "mitch-kapor-2006",
@@ -1578,7 +1910,11 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\", UsageTerms \"Creative Commons Attribution 2.0\", LicenseUrl \"https://creativecommons.org/licenses/by/2.0\", Artist \"Joi\", Credit \"https://www.flickr.com/photos/joi/309009879/sizes/o/in/photostream/\", DateTimeOriginal \"2006-11-28 18:28:01\"; file-page license template(s): {{cc-by-2.0}}. Description: \"Mitch Kapor\".",
    "localFile": "assets/media/mitch-kapor-2006.jpg",
    "thumbPx": "960x720",
-   "locationNote": "The Commons page does not state where the photo was taken; coordinates are a placeholder for the San Francisco Bay Area"
+   "locationNote": "The Commons page does not state where the photo was taken; coordinates are a placeholder for the San Francisco Bay Area",
+   "_verify": {
+    "status": "OK",
+    "issues": []
+   }
   },
   {
    "id": "john-gilmore-2018",
@@ -1767,7 +2103,15 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\", UsageTerms \"Creative Commons Attribution 3.0\", LicenseUrl \"https://creativecommons.org/licenses/by/3.0\", Artist \"Molly MEP\", Credit \"YouTube: Facedown Facebook: Carole Cadwalladr at report launch - Molly Scott Cato MEP – View/save archived versions on archive.org\", DateTimeOriginal \"2019-03-10\"; file-page license template(s): {{YouTube CC-BY|Molly MEP}}. Description: \"Award-winning investigative journalist, Carole Cadwalladr speaks at the Westminster launch of Molly's report on how Facebook has undermined democracy and what we can do to challnge this. Find out more about Molly's report: http://mollymep.org.uk/2019/02/21/facebook-report/\".",
    "localFile": "assets/media/carole-cadwalladr-2019.jpg",
    "thumbPx": "953x918",
-   "locationNote": "Westminster, London (approximate)"
+   "locationNote": "Westminster, London (approximate)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. Licence: I re-read the Commons API extmetadata on 2026-09-23. It gives LicenseShortName 'CC BY 3.0', LicenseUrl creativecommons.org/licenses/by/3.0, Artist 'Molly MEP', DateTimeOriginal 2019-03-10. The file page has {{YouTube CC-BY|Molly MEP}} and a {{LicenseReview}} passed 2019-03-23. The source YouTube video AsZ3j1fFtw4 is still live and marked 'Creative Commons Attribution license (reuse allowed)'. The licence is permitted.",
+     "Checked OK. Local file assets/media/carole-cadwalladr-2019.jpg exists, opens as a 953x918 JPEG and matches thumbPx. Viewed: a woman with shoulder-length blonde hair in a black leather jacket at a table with a glass of water and an open notebook. The alt text is accurate.",
+     "Caption checked. The Commons/YouTube description reads 'speaks at the Westminster launch of Molly's report on how Facebook has undermined democracy', which the caption follows. 10 March 2019 is the YouTube publish date (the watch page's publishDate is 'Mar 10, 2019'), not necessarily the event date. A web search summary puts the London launch of the report 'Facing Down Facebook' on 4 March 2019, but I could not read that page verbatim (player.fm returns 403). The caption hedges correctly with 'dated 10 March 2019 on Commons', so no change is needed. An optional wording would be 'posted to YouTube on 10 March 2019'."
+    ]
+   }
   },
   {
    "id": "christopher-wylie-parliament-square-2018",
@@ -1788,7 +2132,15 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 4.0\", UsageTerms \"Creative Commons Attribution-Share Alike 4.0\", LicenseUrl \"https://creativecommons.org/licenses/by-sa/4.0\", Artist \"Jwslubbock\", Credit \"Own work\", DateTimeOriginal \"2018-03-29 20:28:18\"; file-page license template(s): {{self|cc-by-sa-4.0}}. Description: \"A protest following the Cambridge Analytics and Facebook data scandal with Christopher Wylie and Shahmir Sanni.\".",
    "localFile": "assets/media/christopher-wylie-parliament-square-2018.jpg",
    "thumbPx": "960x934",
-   "locationNote": "Parliament Square, London"
+   "locationNote": "Parliament Square, London",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY-SA 4.0' with LicenseUrl creativecommons.org/licenses/by-sa/4.0, Artist Jwslubbock, Credit 'Own work' and file-page template {{self|cc-by-sa-4.0}}. The licence is permitted.",
+     "Checked OK. Local file assets/media/christopher-wylie-parliament-square-2018.jpg exists, opens as a 960x934 JPEG and matches thumbPx. Viewed: a man with pink hair and glasses speaks into a handheld megaphone microphone with a coiled cord, in front of a slate-roofed Westminster building. The alt text is accurate.",
+     "Location and date checked. The file page has {{Location|51.500651|-0.126196}} (Parliament Square), and the file is 'Extracted from' 'Cambridge Analytica protest Parliament Square6.jpg'. Its category is 'London Protest following Cambridge Analytica Leaks'. The record's lat/lng (51.5005, -0.1262) matches. The date is independently confirmed by an Alamy agency caption: 'Rally for a Fair Vote in Parliament Square, London. Christopher Wylie & Shahmir Sanni. 29th March 2018' (fetched). The caption's 'Cambridge Analytics' is a verbatim quote of the Commons description, typo included, and is marked as a quote. Optional: the event could be named as the 'Rally for a Fair Vote'."
+    ]
+   }
   },
   {
    "id": "laura-poitras-poptech-2010",
@@ -1809,14 +2161,22 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY-SA 2.0\", UsageTerms \"Creative Commons Attribution-Share Alike 2.0\", LicenseUrl \"https://creativecommons.org/licenses/by-sa/2.0\", Artist \"PopTech\", Credit \"Flickr: Laura Poitras - PopTech 2010 - Camden, Maine\", DateTimeOriginal \"2010-10-22 12:35:59\"; file-page license template(s): {{cc-by-sa-2.0}}. Description: \"Photo: Kris Krüg\".",
    "localFile": "assets/media/laura-poitras-poptech-2010.jpg",
    "thumbPx": "960x979",
-   "locationNote": "Camden, Maine"
+   "locationNote": "Camden, Maine",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY-SA 2.0', LicenseUrl creativecommons.org/licenses/by-sa/2.0, Artist 'PopTech', Credit 'Flickr: Laura Poitras - PopTech 2010 - Camden, Maine' and DateTimeOriginal 2010-10-22 12:35:59. The Flickr upload bot review is dated 15 April 2014. The Flickr source page (flickr.com/photos/poptech/5107953439) still carries license https://creativecommons.org/licenses/by-sa/2.0/. The licence is permitted.",
+     "Checked OK. Local file assets/media/laura-poitras-poptech-2010.jpg exists, opens as a 960x979 JPEG and matches thumbPx. Viewed: a woman with long dark curly hair holds a remote and gestures on a dark stage. The alt text is accurate.",
+     "Caption checked. The Flickr page gives 'Taken on October 22, 2010' and 'Uploaded on October 23, 2010' on PopTech's own account, and its title is 'Laura Poitras - PopTech 2010 - Camden, Maine | Photo: Kris K[rüg]'. The Commons description is 'Photo: Kris Krüg'. The date, place and photographer credit are supported. The era 'cookies' (start 1994) and year 2010 agree with tools/editorial.mjs."
+    ]
+   }
   },
   {
    "id": "julia-angwin-2018",
    "era": "surveillance",
    "year": 2018,
-   "title": "Julia Angwin at an MIT Media Lab talk, March 2018",
-   "caption": "ProPublica senior reporter Julia Angwin at the MIT Media Lab talk 'Quantifying Forgiveness' with Joi Ito, 6 March 2018, discussing her algorithmic-accountability reporting (still from a CC BY YouTube video; Commons description).",
+   "title": "Julia Angwin at an MIT Media Lab talk, February 2018",
+   "caption": "ProPublica senior reporter Julia Angwin at the MIT Media Lab talk 'Quantifying Forgiveness' with Joi Ito, 16 February 2018, discussing her algorithmic-accountability reporting (still from the CC BY video, posted to YouTube on 6 March 2018; Commons description).",
    "alt": "A smiling woman with short brown hair, dark-rimmed glasses and a headset microphone",
    "creator": "MIT Media Lab (YouTube)",
    "license": "CC BY 3.0",
@@ -1830,7 +2190,15 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\", UsageTerms \"Creative Commons Attribution 3.0\", LicenseUrl \"https://creativecommons.org/licenses/by/3.0\", Artist \"MIT Media Lab\", Credit \"YouTube: Quantifying Forgiveness: MLTalks with Julia Angwin and Joi Ito\", DateTimeOriginal \"2018-03-06\"; file-page license template(s): {{YouTube CC-BY|MIT Media Lab}}. Description: \"Algorithms are increasingly arbiters of forgiveness. They are used to decide who will get let out of jail, the amount that people pay in auto insurance premiums, and which neighborhoods will be overrun with cars sent there by a mapping algorithm. ProPublica Senior Reporter Julia Angwin discusses what she has learned about forgiveness in her series of articles on algorithmic accountability and the lessons we all need to learn for the coming AI future. License: CC-BY-4.0\". (The video description quoted on Commons says 'License: CC-BY-4.0'; the Commons licence template is {{YouTube CC-BY}}, i.e. CC BY 3.0 — both are permitted.)",
    "localFile": "assets/media/julia-angwin-2018.jpg",
    "thumbPx": "517x776",
-   "locationNote": "MIT Media Lab, Cambridge, Massachusetts"
+   "locationNote": "MIT Media Lab, Cambridge, Massachusetts",
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong date. The title ('March 2018') and caption ('6 March 2018') give the date the video was posted, not the date of the talk. The MIT Media Lab video page for 'Quantifying Forgiveness: MLTalks with Julia Angwin and Joi Ito' is media.mit.edu/videos/ml-tallks-2018-02-16/. It is dated 'Feb. 16, 2018' (--check FOUND). The event page media.mit.edu/events/mltalks-julia-angwin/ also shows 'February 16, 2018'. The YouTube watch page qjmkTGfu9Lk gives publishDate 'Mar 6, 2018', which is where the Commons date 2018-03-06 comes from. Title and caption are corrected; year 2018 is unchanged.",
+     "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY 3.0' ({{YouTube CC-BY|MIT Media Lab}}, reviewed 2021-02-02), Artist MIT Media Lab. The MIT Media Lab video page itself says 'Creative Commons Attribution 4.0 International'. Both are permitted, and rightsEvidence already notes the 3.0/4.0 difference.",
+     "Checked OK. Local file assets/media/julia-angwin-2018.jpg exists and opens as a 517x776 JPEG, converted from the Commons PNG at the same pixel size, matching thumbPx. Viewed: a smiling woman with short brown hair, dark-rimmed glasses and a headset microphone. The alt text is accurate. 'ProPublica senior reporter' matches the event page ('Julia Angwin is a senior reporter at ProPublica')."
+    ]
+   }
   },
   {
    "id": "kashmir-hill-new-america-2014",
@@ -1851,7 +2219,15 @@
    "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 2.0\", UsageTerms \"Creative Commons Attribution 2.0\", LicenseUrl \"https://creativecommons.org/licenses/by/2.0\", Artist \"New America\", Credit \"https://www.flickr.com/photos/newamerica/12487663334/\", DateTimeOriginal \"2013-02-11 01:51:23\"; file-page license template(s): {{cc-by-2.0}}, {{Flickrreview|Junior Jumper|2024-12-21}}. Description: \"American technology journalist Kashmir Hill at New America Foundation 2014-02-11 Event: Cryptocurrencies: The New Coin of the Realm?\".",
    "localFile": "assets/media/kashmir-hill-new-america-2014.jpg",
    "thumbPx": "737x759",
-   "locationNote": "New America Foundation, Washington, DC (city centroid)"
+   "locationNote": "New America Foundation, Washington, DC (city centroid)",
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY 2.0', LicenseUrl creativecommons.org/licenses/by/2.0, Artist 'New America', {{Flickrreview|Junior Jumper|2024-12-21}}. The Flickr source page (newamerica/12487663334) still carries license https://creativecommons.org/licenses/by/2.0/. The licence is permitted.",
+     "Checked OK. Local file assets/media/kashmir-hill-new-america-2014.jpg exists, opens as a 737x759 JPEG and matches thumbPx. Viewed: a smiling woman with shoulder-length brown hair and a white top at a podium in front of a New America Foundation backdrop. The alt text is accurate.",
+     "Caption date confirmed independently. Flickr shows 'Taken on February 11, 2013' (camera clock) but 'Uploaded on February 12, 2014'. The New America event page for 'Cryptocurrencies: The New Coin of the Realm?' reads 'February 11, 2014'. Slate's Future Tense announcement says 'On Tuesday, Feb. 11, Future Tense—a partnership of Slate, the New America Foundation, and Arizona State University—will host an event in Washington, D.C.' and lists 'Moderator: Kashmir Hill Senior online editor, Forbes'. The caption's 2014-02-11 event date and its note about the 2013 camera date are both correct. Optional: the event was a Future Tense (Slate/New America/ASU) event, where Hill moderated a panel."
+    ]
+   }
   }
  ],
  "myths": [
@@ -1888,8 +2264,28 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "The source of the popular June date; cited to document the error, not as support for it."
+    },
+    {
+     "institution": "InfoWorld (IDG), reprinted on defcon.org",
+     "title": "Robert X. Cringely, 'Notes from the Field' (column written before the event), InfoWorld, July 1993",
+     "date": "1993-07",
+     "url": "https://defcon.org/html/TEXT/1/cringe-1.html",
+     "quote": "I write this column on Thursday, so there is no way of knowing for sure whether Pammy and I actually survived DEF CON I, the hackers convention held July 9-11 at the Sands Hotel in Las Vegas.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The reprint carries no issue date; the column was written before the event and refers to it by its July dates. The exact issue date is not given on the page."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. sources[0]: media.defcon.org announce.txt re-fetched; header reads 'Finalized Announcement: 6/12/1993' (US format, 12 June 1993) and the WHEN line --check FOUND. The same text is also at defcon.org/html/TEXT/1/defcon1-announce.txt (--check FOUND).",
+     "Checked OK. sources[1]: the media.defcon.org text carries 'InfoWorld / July 19, 1993 / SECTION: NOTES FROM THE FIELD; Pg. 98 / HEADLINE: DoubleSpace may not scan your hardware, but DEF CON denizens do / BYLINE: Robert X. Cringely'; title, date and page are correct and the quote --check FOUND. 19 July 1993 was a Monday (InfoWorld's cover-date day), so 'last week' fits a 9-11 July event.",
+     "Checked OK. sources[2]: defcon.org DC-1 archive page still reads 'Was June 9-11, 1993 at the Sands Hotel & Casino (Since Blown-up)' (--check FOUND); it is correctly labelled as the origin of the error. Wikipedia's DEF CON infobox (June 9, 1993) and infocondb.org ('June 9, 1993 through June 11, 1993') repeat it, which supports 'widely repeated'.",
+     "Weekday check (Python datetime): 9 July 1993 = Friday, 9 June 1993 = Wednesday, so only the July dates match the announcement's '(Fri, Sat, Sun)'. The announcement is dated 12 June, after the supposed June dates, and still announces a future event.",
+     "Independent corroboration added: an earlier Cringely 'Notes from the Field' column reprinted on defcon.org names the dates outright: 'DEF CON I, the hackers convention held July 9-11 at the Sands Hotel in Las Vegas' (--check FOUND). The verdict FALSE stands."
+    ]
+   }
   },
   {
    "id": "myth-cambridge-analytica-facebook-data-won-brexit",
@@ -1915,14 +2311,33 @@
      "quote": "However, the app also collected the information of the test-takers’ Facebook friends, leading to the accumulation of a data pool tens of millions-strong.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Research Live (Market Research Society)",
+     "title": "Cambridge Analytica 'not involved' in EU referendum, finds ICO",
+     "date": "2020-10-08",
+     "url": "https://www.research-live.com/article/news/cambridge-analytica-not-involved-in-eu-referendum-finds-ico/id/5075052",
+     "quote": "“From my review of the materials recovered by the investigation I have found no further evidence to change my earlier view that SCL/CA were not involved in the EU referendum campaign in the UK – beyond some initial enquiries made by SCL/CA in relation to UKIP data in the early stages of the referendum process,” Denham wrote in the letter.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Page date '8 October 2020'. It quotes Elizabeth Denham's letter to Julian Knight MP, chair of the DCMS Committee."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "Checked OK. sources[0]: TechCrunch (Natasha Lomas), URL dated 2020/10/06. The main quote and both quotes in the note ('may have been an exaggeration'; the AIQ sentence) --check FOUND on a fresh fetch. Context: the 'exaggeration' line refers to CA/SCL's marketing claim of '5,000+ data points per individual on 230 million adult Americans', so 'claims about the depth of its profiling' is a fair gloss.",
+     "Checked OK. The letter date in the institution field (2 October 2020) is confirmed by Byline Times, 9 October 2020 ('What was published on 2 October was a long, but limited in scope, letter from the Information Commissioner, Elizabeth Denham'). 'Closing its investigation' is supported by IT Pro ('has ended its investigation into the infamous Cambridge Analytica scandal'). The Parliament copy of the letter still returns HTTP 403 to the fetcher, so the letter itself was not read.",
+     "Checked OK. sources[1]: Guardian/Observer 17 March 2018, Cadwalladr and Graham-Harrison; the quote --check FOUND. It supports 'tens of millions of profiles, including friends'.",
+     "Nuance, no change needed: the same ICO letter says it found no evidence that AIQ used the SCL/CA datasets to target UK Leave voters. The correction claims only that AIQ targeted ads for Leave campaigns, which TechCrunch supports. The verdict MISLEADING (not FALSE) is defensible because Cambridge Analytica's parent was linked to AIQ. Added Research Live's report of Denham's own words that SCL/CA 'were not involved in the EU referendum campaign in the UK' beyond initial UKIP enquiries (--check FOUND)."
+    ]
+   }
   },
   {
    "id": "myth-btx-hack-hackers-robbed-a-bank",
    "claim": "In 1984 Chaos Computer Club hackers robbed a Hamburg savings bank of about DM 135,000.",
    "verdict": "MISLEADING",
-   "correction": "The 'bank robbery' was a demonstration. Using the Hamburger Sparkasse's Btx login, a program called a CCC page priced at DM 9.97 13,504 times overnight, running up a virtual DM 134,634.88 that 'theoretically went to the CCC'. The club had warned the Bundespost and data-protection officials in October 1984 and went public at once, calling for a ban on financial transactions on Btx.",
+   "correction": "The 'bank robbery' was a demonstration. On the night of 16–17 November 1984, using the Hamburger Sparkasse's Btx login, a small program called up a CCC page priced at DM 9.97 about 13,500 times. That ran up a virtual DM 134,694.70 (the figure on the Bundespost's own 1985 statement; heise gives DM 134,634.88) that 'theoretically went to the CCC'. The club had warned the Bundespost and data-protection officials in October 1984. On Monday 19 November it demonstrated the hack at the Hamburg data-protection commissioner's office, told the press, made no claim to the money and called for a ban on financial transactions on Btx.",
    "sources": [
     {
      "institution": "heise online",
@@ -1942,8 +2357,27 @@
      "quote": "Steffen Wernéry and Wau Holland showed how unsecure the BTX system from the Deutsche Bundespost was for its users with their so-called \"bank theft\" of 135.000 DM; this unconventional demonstration made history.",
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE"
+    },
+    {
+     "institution": "Wau Holland Stiftung",
+     "title": "BTX Hack 30th Year Anniversary (entry '13510 page views and the BTX hack is perfect')",
+     "date": "2014-11",
+     "url": "https://www.wauland.de/en/btx-hack-30-jahrestag/",
+     "quote": "Every time the page was loaded their account was credited with 9.97 DM - overnight they obtained 134.694,70 DM, which represents 13510 page views",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Matches the Deutsche Bundespost (Fernmeldeamt 2 Düsseldorf) statement of 1 April 1985 linked from the same page (1985-04-01_Btx-Abrechnung.pdf, a scan), which lists 'Hamburger Sparkasse ... 134.694,70'. The same page also says: 'On Monday, November 19th, 1984, the BTX hack was made public as Wau and Steffen informed the state privacy officer in Hamburg and the press.' (--check FOUND)."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "Wrong figure. The correction states that the program called the page '13,504 times' for 'a virtual DM 134,634.88'. Only heise gives that figure. The Bundespost's own final statement to Steffen Wernéry, dated 1 April 1985 (scan at wauland.de/media/btx-hack/1985-04-01_Btx-Abrechnung.pdf, read visually), lists 'Hamburger Sparkasse ... 13.11.-16.12.84 ... 134.694,70' among unpaid provider fees. That is 13,510 × DM 9.97. The Wau Holland Stiftung page gives the same numbers ('overnight they obtained 134.694,70 DM, which represents 13510 page views', --check FOUND), and so does German Wikipedia (Btx-Hack). The correction now uses the Bundespost figure and mentions heise's figure as an alternative.",
+     "Verified. The CCC press release 'Kennwort: Bankraub' of 19 November 1984 (scan at wauland.de/media/btx-hack/1984-11-19_PM-CCC.pdf, read visually; it has no text layer, so --check cannot run) says the demonstration took place on 19.11.1984 on the premises of the Hamburg data protection commissioner. It also says the CCC 'erhebt jedoch keinen Anspruch auf das Geld' and ends with 'ganz abschalten oder Verbot aller Finanztransaktionen'. This supports 'went public at once' and the call for a ban. The Wauland page also says 'On Monday, November 19th, 1984, the BTX hack was made public' (--check FOUND). Both points are now stated explicitly.",
+     "Checked OK. sources[0]: heise online (Detlef Borchers), 2024-11-18. Both the quote and the note's '9.97 marks, which theoretically went to the CCC' --check FOUND. heise also supports the October 1984 warning ('had already written to German data protection authorities and the German Federal Post Office in October 1984') and the 'ban on financial transactions'. Its DM 134,634.88 / 13,504 total conflicts with the Bundespost statement; this is flagged in the source note.",
+     "Checked OK. sources[1]: Wau Holland Stiftung '30th anniversary' page; the quote ('\"bank theft\" of 135.000 DM') --check FOUND. The page's dated entries run to November 2014, so the date 2014-11 is fine."
+    ]
+   }
   },
   {
    "id": "myth-wau-holland-sole-founder-of-ccc",
@@ -1960,8 +2394,36 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Translation: 'Behind the pseudonym Tom Twiddlebit was Klaus Schleisiek; Wau stood for Herwart Holland-Moritz, known as Wau Holland; Wolf meant Wolf Gevert.' The thesis continues: 'Die zwei Ungenannten waren Wulf Müller und Jochen Büttner' and 'Zu dem Treffen sollen etwa 20 Personen gekommen sein' (both FOUND)."
+    },
+    {
+     "institution": "Chaos Computer Club",
+     "title": "Chaos Computer Club – Club (Selbstdarstellung)",
+     "date": "",
+     "url": "https://www.ccc.de/de/club",
+     "quote": "Das Treffen führte zunächst zu einer informellen Gründung des Chaos Computer Clubs und wurde als regelmäßiger Treff in Hamburg weitergeführt.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent check from the club's own self-description (undated web page). Translation: 'The meeting first led to an informal founding of the Chaos Computer Club and was continued as a regular meet-up in Hamburg.' The previous sentence is also FOUND: 'Am Tisch der Kommune 1 der Zeitung taz in Berlin trafen sich damals Hacker, selbstbezeichnete „Komputerfrieks“ im Rahmen des „tu-wat“-Kongresses.' It shows a group meeting, not one founder."
+    },
+    {
+     "institution": "Wau Holland Stiftung (Wau Holland Foundation)",
+     "title": "About – A foundation in memory of Herwart \"Wau\" Holland-Moritz",
+     "date": "",
+     "url": "https://www.wauland.de/en/about/",
+     "quote": "the doyen and co-founder of the Chaos Computer Club throughout several decades until his untimely death on July 29, 2001",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Even the foundation set up in his memory calls him 'co-founder'. The same page also says 'Through founding the Chaos Computer Club in 1981, Wau Holland paved the way...', which shows how the shorthand in this myth arises."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "OK",
+    "issues": [
+     "No factual error found. Every element of the correction matches Röhr's thesis (pp. 58-60): the taz 'TUWAT,TXT' notice of 1 September 1981 (footnote 319: taz, 01. September 1981, S. 2), the meeting called for 12.9.81 at the taz building in Berlin (Wattstr.), the signature 'Tom Twiddlebit, Wau Wolf Ungenannt(»2)', the names Schleisiek, Holland-Moritz, Gevert, Müller and Büttner, and 'die fünf einladenden Hamburger'.",
+     "Minor hedge: the thesis reports the attendance as hearsay ('sollen etwa 20 Personen gekommen sein' = 'about 20 people are said to have come'). The correction's 'about 20 people attended' is acceptable and needs no change.",
+     "Verdict MISLEADING (rather than FALSE) is right. The CCC itself calls the 1981 meeting only an 'informelle Gründung'. The Wau Holland Foundation calls him 'doyen and co-founder', though the same page also says 'Through founding the Chaos Computer Club in 1981, Wau Holland...', which is the sole-founder shorthand this myth corrects. Röhr also records that the club set up its registered association (e.V.) only in spring 1986 ('gründete der Club im Frühjahr 1986 einen eingetragenen Verein')."
+    ]
+   }
   },
   {
    "id": "myth-barlow-declaration-speech-to-davos-leaders",
@@ -1988,8 +2450,43 @@
      "verificationStatus": "CONFIRMED",
      "accessType": "FREE",
      "note": "Shows the accurate framing — he wrote it after taking part in the forum — from which the 'speech to world leaders' version drifts. Byline from the page's author meta tag (Cory Doctorow)."
+    },
+    {
+     "institution": "Wired",
+     "title": "Andy Greenberg, 'It's Been 20 Years Since This Man Declared Cyberspace Independence'",
+     "date": "2016-02-08",
+     "url": "https://www.wired.com/2016/02/its-been-20-years-since-this-man-declared-cyberspace-independence/",
+     "quote": "In the middle of a party on the last night he realized had an impending deadline for a contribution to a compendium called \"24 Hours In Cyberspace.\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent journalist's account based on an interview with Barlow; the quote is FOUND. Also FOUND: 'Barlow had spent the previous four days in Davos listening, as he describes it, to world leaders pretend to understand an Internet they had hardly used themselves.' The page also says he 'banged out the statement on his laptop in one of the hotel's side rooms'. Author meta: Andy Greenberg; datePublished 2016-02-08."
+    },
+    {
+     "institution": "Electronic Frontier Foundation",
+     "title": "John Perry Barlow, 'A Declaration of the Independence of Cyberspace'",
+     "date": "1996-02-08",
+     "url": "https://www.eff.org/cyberspace-independence",
+     "quote": "Davos, Switzerland February 8, 1996",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "The dateline of the canonical text (FOUND) places the writing at Davos on 8 February 1996. That backs the correction's 'wrote the text at Davos'; Barlow's own reflection says only 'the closing of the World Economic Forum'."
     }
-   ]
+   ],
+   "_verify": {
+    "status": "FIXED",
+    "issues": [
+     "The claim, verdict (MISLEADING) and correction all hold. Barlow's own 2016 account says he wrote the piece at 'a staff party for the closing of the World Economic Forum', for the book 24 Hours in Cyberspace, whose editors 'found it too controversial to include'. It also says he 'sent it out the next day to the 600 or so friends I had with e-mail addresses'. Wired (Andy Greenberg, 2016-02-08) confirms the story independently: it was written at a party on the last night of the 1996 WEF in Davos, 'in one of the hotel's side rooms', as a contribution to '24 Hours In Cyberspace'. EFF's canonical text carries the dateline 'Davos, Switzerland February 8, 1996'. Nothing shows it was ever delivered as a speech.",
+     "Minor, in source 1 only: the note on the Doctorow source calls it 'the accurate framing'. But Doctorow's phrase 'where he'd been addressing world leaders' is not supported by Barlow's own account (he says WEF brought in wired types 'mostly as curiosities') or by Wired (he 'spent the previous four days in Davos listening ... to world leaders'). The Doctorow line is better presented as a secondary account that already leans toward the 'speaking to world leaders' framing, while still describing a written document. The note is corrected below; the record's fields need no change.",
+     "Checked the date: Barlow's Boing Boing post has datePublished 2016-02-09T03:31Z, which is the evening of 8 Feb in US time; the URL slug is /2016/02/08/ and the text says 'Twenty years ago tonight'. The record date of 2016-02-08 is fine."
+    ]
+   }
   }
+ ],
+ "_verdictsApplied": [
+  "personas-advocates-f102.json",
+  "personas-advocates-f103.json",
+  "personas-advocates-f104.json",
+  "personas-advocates-f106.json",
+  "personas-advocates-f107.json"
  ]
 }

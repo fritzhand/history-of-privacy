@@ -1,0 +1,498 @@
+{
+ "slice": "global",
+ "chunk": "f108",
+ "verdicts": [
+  {
+   "kind": "policyModels",
+   "id": "us-sectoral-notice-and-choice",
+   "status": "OK",
+   "issues": [
+    "No factual error found. Checked each claim. There is no comprehensive federal law. The sectoral statutes (credit reporting, healthcare, children's online privacy, VPPA video rentals) are named on the DLA Piper page. The FTC's unfair-or-deceptive authority reaches 'misleading privacy and security statements, including in privacy policies'. The state wave began 'with California in 2018' (DLA Piper). 'Privacy self-management' is Solove's term (126 Harv. L. Rev. 1880, May 2013). The Privacy Act 1974 covering federal agencies is standard and uncontested.",
+    "The description's CCPA/2018 and FTC-privacy-notice claims were not directly carried by any quoted source; supporting quotes from the same DLA Piper page are added below.",
+    "Minor: the Bradford book page gives Publication Date 9-2023; date refined."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh (no cache). Quote verbatim (--check FOUND). Page also says federal laws cover 'credit reporting agencies and healthcare providers ... children's online privacy' and names the VPPA."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Page header confirms author Daniel J. Solove, Volume 126, Issue 7, May 2013."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "date": "2023-09",
+     "note": "Re-fetched; quote FOUND. Page shows 'Publication Date 9-2023', Oxford University Press, ISBN 9780197649268."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — United States",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=US",
+     "quote": "In recent years, beginning with California in 2018, states have begun to introduce and enact their own comprehensive privacy laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'Since California's 2018 CCPA, states have added comprehensive consumer laws'."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — United States",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=US",
+     "quote": "Making materially inaccurate or misleading privacy and security statements, including in privacy policies",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. A bullet in the list of FTC unfair/deceptive-practice enforcement grounds. Supports 'a company's own privacy notice becomes the enforceable promise'."
+    }
+   ]
+  },
+  {
+   "kind": "policyModels",
+   "id": "apec-accountability-certification",
+   "status": "FIXED",
+   "issues": [
+    "'certified by a private Accountability Agent' is wrong. The official CBPR site says Accountability Agents may be 'public or private', and several are public bodies (Korea's is the Korea Internet & Security Agency, a government agency, listed on cbprs.org/business).",
+    "The 2004 date, the Global CBPR Forum (2022), the 'as it sees fit' flexibility and the after-transfer accountability were not carried by any quoted source. Sources are added: APEC's 2004 Ministerial document (Santiago, 17-18 Nov 2004), the Global CBPR Forum 'About' page, and APEC Framework paras 31 and 26 (commentary).",
+    "Otherwise verified: nine principles (Preventing Harm to Accountability, I-IX, in the PDF), CBPR endorsed by APEC Leaders in 2011, and the nine CBPR economies exactly as listed (cbprs.org)."
+   ],
+   "fieldFixes": {
+    "description": "Principles-based and voluntary between states: the APEC Privacy Framework (2004) asks each economy to implement nine principles as it sees fit, with a strong emphasis on not obstructing information flows. The organisation is held 'accountable' for its own practices, including after transfer, and can be certified by an Accountability Agent (a public or private body recognised by the participating economies) under the Cross-Border Privacy Rules (2011); the Global CBPR Forum (2022) aims to take this beyond APEC. It trades uniform individual rights for interoperability between very different national laws."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF; quote FOUND (Principle IX, para 26). Publication is '© 2005 APEC Secretariat'. The Framework was endorsed in November 2004 (see added source), so a 2005 source date alongside the description's 2004 is consistent."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Same page lists the nine participating economies: USA, Mexico, Japan, Canada, Singapore, Korea, Australia, Chinese Taipei, the Philippines. It also calls the certifier a 'third-party' Accountability Agent, not a 'private' one."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "APEC CBPR System (cbprs.org)",
+     "title": "Government",
+     "date": "2026",
+     "url": "https://cbprs.org/government/",
+     "quote": "Accountability Agents (public or private) are also responsible for ensuring any non-compliance is remedied in a timely fashion and, in appropriate cases, reported to the relevant enforcement authorities.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Refutes 'private Accountability Agent'."
+    },
+    {
+     "institution": "APEC (16th APEC Ministerial Meeting, Santiago, Chile, 17-18 November 2004)",
+     "title": "2004/AMM/014rev1 — APEC Privacy Framework (29 October 2004)",
+     "date": "2004-11",
+     "url": "https://www.apec.org/docs/default-source/press/newsrelease/2004/04_amm_014rev1.pdf",
+     "quote": "APEC economies endorse the principles-based APEC Privacy Framework as an important tool in encouraging the development of appropriate information privacy protections and ensuring the free flow of information in the Asia Pacific region.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The header reads '16th APEC Ministerial Meeting Santiago, Chile 17-18 November 2004' (also FOUND). APEC's press release 'APEC Ministers Endorse the APEC Privacy Framework' (apec.org/Press/News-Releases/2004/1120_apecminsendorseprivacyfrmwk) is datelined 20 November 2004 in its raw HTML. Supports the 2004 date."
+    },
+    {
+     "institution": "APEC Secretariat",
+     "title": "APEC Privacy Framework — Part IV, Implementation, para 31",
+     "date": "2005",
+     "url": "https://www.apec.org/docs/default-source/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
+     "quote": "In practice, the Framework is meant to be implemented in a flexible manner that can accommodate various methods of implementation, including through central authorities, multi-agency enforcement bodies, a network of designated industry bodies, or a combination of the above, as Member Economies deem appropriate.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'implement nine principles as it sees fit'."
+    },
+    {
+     "institution": "APEC Secretariat",
+     "title": "APEC Privacy Framework — Principle IX commentary",
+     "date": "2005",
+     "url": "https://www.apec.org/docs/default-source/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
+     "quote": "When transferring information, personal information controllers should be accountable for ensuring that the recipient will protect the information consistently with these Principles when not obtaining consent.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'accountable ... including after transfer'."
+    },
+    {
+     "institution": "Global CBPR Forum",
+     "title": "About the Global CBPR Forum",
+     "date": "2026",
+     "url": "https://www.globalcbpr.org/about/",
+     "quote": "The Global CBPR Forum was established in 2022, by Australia, Canada, Japan, the Republic of Korea, Mexico, the Philippines, Singapore, Chinese Taipei, and the United States of America, as jurisdictions participating in the APEC CBPR System at the time, to support the free flow of data and effective data protection and privacy globally.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'Global CBPR Forum (2022)'."
+    }
+   ]
+  },
+  {
+   "kind": "policyModels",
+   "id": "state-security-data-sovereignty",
+   "status": "FIXED",
+   "issues": [
+    "Overgeneralised: 'personal data is treated as a national resource that must be stored at home or exported only after state security review'. PIPL Art. 40 applies the store-at-home and security-assessment rule only to critical information infrastructure operators and processors above CAC volume thresholds. Other processors may export under Art. 38 by standard contract or certification. Russia's 242-FZ requires citizens' data to be recorded and stored in databases in Russia, but it does not impose a state security review on export.",
+    "The PIPL quote was cut off before the sentence that actually carries the 'security review' claim. It is extended with '确需向境外提供的，应当通过国家网信部门组织的安全评估' (--check FOUND).",
+    "'The state keeps broad access for security purposes' had no support. A Bradford excerpt quote from the same ProMarket page is added.",
+    "Verified: 242-FZ is dated 21.07.2014 and came into force 1 September 2015 (kremlin.ru). It amends 152-FZ of 27 July 2006, which confirms the '152-FZ 2006' exemplar. PIPL was adopted 20 Aug 2021 and in force 1 Nov 2021 (Art. 74). ProMarket excerpt date 2024-04-11 (article:published_time)."
+   ],
+   "fieldFixes": {
+    "description": "Strong rules bind companies, often with GDPR-like individual rights, but the state keeps broad access for security purposes, and personal data is treated as a national resource: Russia requires its citizens' data to be recorded and stored in databases inside the country, and China requires critical operators and large-volume processors to store data at home and pass a state security assessment before exporting it. Russia's 2014 localisation law and China's Cybersecurity Law (2016) and PIPL (2021) are the defining cases; Bradford calls China's version 'state-driven'. Several other countries have since copied localisation or security-assessment rules."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Page <title> is 'Digital Empires - ProMarket', published 2024-04-11, and the page says it is an excerpt from Bradford's book reprinted by permission of OUP."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "quote": "第四十条 关键信息基础设施运营者和处理个人信息达到国家网信部门规定数量的个人信息处理者，应当将在中华人民共和国境内收集和产生的个人信息存储在境内。确需向境外提供的，应当通过国家网信部门组织的安全评估",
+     "note": "Quote extended (--check FOUND) so it carries the security-assessment clause. Translation of the added sentence: 'Where it is truly necessary to provide it abroad, it shall pass a security assessment organised by the national cyberspace department.' The page header confirms adoption on 20 August 2021 (13th NPC Standing Committee, 30th session), and Art. 74 gives entry into force as 1 November 2021."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "quote": "При сборе персональных данных, в том числе посредством информационно-телекоммуникационной сети \"Интернет\", оператор обязан обеспечить запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение персональных данных граждан Российской Федерации с использованием баз данных, находящихся на территории Российской Федерации",
+     "note": "The original fragment is FOUND. It is replaced with the full sentence of new Art. 18(5) of 152-FZ (--check FOUND) so the obligation is visible. Translation: 'When collecting personal data, including via the Internet, the operator must ensure the recording, systematisation, accumulation, storage, clarification and retrieval of personal data of citizens of the Russian Federation using databases located in the territory of the Russian Federation.' The page also states the law enters into force 1 September 2015."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ProMarket (Stigler Center, University of Chicago) — excerpt from Anu Bradford, Digital Empires",
+     "title": "Digital Empires (book excerpt)",
+     "date": "2024-04-11",
+     "url": "https://www.promarket.org/2024/04/11/digital-empires/",
+     "quote": "Chinese tech companies have acted as the CCP’s surrogates, performing the surveillance and control functions of the state over their users.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'the state keeps broad access for security purposes' for the Chinese case."
+    }
+   ]
+  },
+  {
+   "kind": "policyModels",
+   "id": "constitutional-habeas-data",
+   "status": "FIXED",
+   "issues": [
+    "Chronology wrong: 'Brazil created it in 1988, Argentina in 1994, and Paraguay, Peru and others followed' puts Paraguay and Peru after Argentina. The record's own source (Guadamuz) says Paraguay adopted habeas data in its 1992 Constitution and Peru in 1993, both before Argentina's 1994 reform. Ecuador followed in 1996 and Colombia in 1997, per Guadamuz.",
+    "'statutes and regulators came later (Argentina 2000...)': Argentina's Act 25.326 is of 4 October 2000, but its regulator was set up under the implementing Regulation, Decree 1558/2001 of 3 December 2001 (Commission Decision 2003/490/EC, recitals 8-9). Reworded.",
+    "Source 2 URL (web.archive.org) could not be fetched: connection reset, repeated. EUR-Lex itself returns a 202 bot-challenge page. The same OJ text was found and verified in the Official Journal PDF hosted by legislation.gov.uk. It is recital (7), confirmed from the recital numbering (5)-(9) on OJ p. L 168/20.",
+    "Verified: Brazil Art. 5 LXXII is habeas data (planalto.gov.br; Guadamuz wrongly says LXXI). Argentina Art. 43 allows demanding 'deletion, correction, confidentiality or update' (recital 7). Cabo Verde's Constitution (2010 revision) Art. 46 is headed '(Habeas data)' (FAOLEX English text)."
+   ],
+   "fieldFixes": {
+    "description": "The individual gets a constitutional writ, modelled on habeas corpus, to go to court, see what a databank holds about them, and demand correction or deletion. It is a remedy the person sets in motion rather than a regulator's licensing system. Brazil created it in 1988; Paraguay (1992), Peru (1993) and Argentina (1994) followed, then Ecuador and Colombia. General data-protection statutes and regulators came later: Argentina's law in 2000 (its regulator set up under a 2001 decree) and Brazil's LGPD in 2018."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched fresh; quote FOUND (abstract). The page gives the citation 'Guadamuz A, ... 2000 (2) The Journal of Information, Law and Technology (JILT)', published 30 June 2000. The page banner reads 'JILT 2000 (1)', a site template slip; the citation line and URL both say 2000(2). The author's affiliation on the page is Queens University of Belfast, and JILT was hosted by Warwick."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "url": "https://www.legislation.gov.uk/eudn/2003/490/pdfs/eudn_20030490_adopted_en.pdf",
+     "institution": "European Commission (Official Journal L 168, 5 July 2003), OJ PDF hosted by legislation.gov.uk",
+     "note": "The web.archive.org URL failed repeatedly (connection reset) and EUR-Lex returns a bot challenge (HTTP 202). The quote is FOUND verbatim in the Official Journal PDF (OJ L 168/19-20, 5.7.2003) on legislation.gov.uk. It is the third of recitals (5)-(9) on p. L 168/20, i.e. recital (7), so the title's 'recital 7' is correct. Date 30 June 2003 confirmed."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Journal of Information, Law & Technology (JILT), University of Warwick — Andrés Guadamuz",
+     "title": "Habeas Data: The Latin-American Response to Data Protection (JILT 2000(2))",
+     "date": "2000-06-30",
+     "url": "https://warwick.ac.uk/fac/soc/law/elj/jilt/2000_2/guadamuz/",
+     "quote": "Following the Brazilian example, Paraguay incorporated the Habeas Data right to its new Constitution in 1992. After that, many countries followed suit and adopted the new legal tool in their respective constitutions: Peru in 1993, Argentina in 1994, Ecuador in 1996, and Colombia in 1997.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Establishes the correct order of adoption. The same page has 'In 1988, the Brazilian legislature voted a new Constitution, which included a novel right never seen before: the Habeas Data individual complaint.' (also FOUND)."
+    },
+    {
+     "institution": "European Commission (Official Journal L 168, 5 July 2003), OJ PDF hosted by legislation.gov.uk",
+     "title": "Commission Decision 2003/490/EC (Argentina adequacy), recitals 7-9",
+     "date": "2003-06-30",
+     "url": "https://www.legislation.gov.uk/eudn/2003/490/pdfs/eudn_20030490_adopted_en.pdf",
+     "quote": "According to that Article in case of falsehood of information or its use for discriminatory purposes, a person will be able to demand the deletion, correction, confidentiality or update of the data contained in the above records.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'demand correction or deletion'. Recitals 8-9 on the same page give 'The Personal Data Protection Act No 25.326 of 4 October 2000' and 'The Regulation, approved by Decree No 1558/2001 of 3 December 2001' (both FOUND)."
+    },
+    {
+     "institution": "FAOLEX (FAO) — English text of the Constitution of the Republic of Cabo Verde, 2nd Ordinary Revision 2010",
+     "title": "Constitution of the Republic of Cabo Verde — Article 46 (Habeas data)",
+     "date": "2010",
+     "url": "https://faolex.fao.org/docs/pdf/cvi117271E.pdf",
+     "quote": "2. The law shall regulate the procedure of habeas data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Article 46 is headed '(Habeas data)'. Para 1 grants habeas data 'to every citizen' to know information held about them and to demand correction or updating (the translation's text layer is garbled, so para 2 is quoted). Supports the Cabo Verde exemplar."
+    }
+   ]
+  },
+  {
+   "kind": "policyModels",
+   "id": "african-regional-harmonisation",
+   "status": "FIXED",
+   "issues": [
+    "Overstated sequence: 'Regional communities write model or binding texts first, and member states then adopt national laws'. Several of the record's own exemplars legislated before the regional texts: Burkina Faso (Law 010-2004/AN), Mauritius (Data Protection Act 2004), Senegal (Act 2008-12 of 25 January 2008) and Benin (Law 2009-09). All of these predate the ECOWAS Supplementary Act (16 Feb 2010), the SADC Model Law (Nov 2012) and the Malabo Convention (2014). 'Cabo Verde (2001) came first' is correct (Law 133/V/2001), but it was not the only exception.",
+    "Exemplar out of date: Burkina Faso is listed as an ECOWAS state, but Burkina Faso, Mali and Niger ceased to be ECOWAS members on 29 January 2025 (ECOWAS Commission). Replaced with Nigeria, which is an ECOWAS member with a Data Protection Act of 2023 (CIPIT).",
+    "Verified: the ECOWAS Supplementary Act A/SA.1/01/10 was done at Abuja on 16 February 2010, and its Art. 2 matches the quote. The SADC Model Law was adopted by SADC ministers in Mauritius in November 2012 (ITU/HIPSSA, Geneva 2013). The Malabo Convention was adopted in 2014 and came into force 8 June 2023. Rwanda, Mauritius, Senegal and Ghana are all on CIPIT's ratification list."
+   ],
+   "fieldFixes": {
+    "description": "Regional communities write model or binding texts, and member states adopt or update national laws and authorities to match: ECOWAS's binding Supplementary Act (2010), the SADC Model Law (2012), and the continental Malabo Convention (2014, in force 2023). The texts borrow heavily from the European model, adapted to regional institutions. Some states legislated before the regional texts: Cabo Verde (2001) came first, followed by Burkina Faso and Mauritius (2004), Senegal (2008) and Benin (2009).",
+    "exemplars[0]": "ECOWAS states (e.g. Senegal, Ghana, Benin, Côte d'Ivoire, Nigeria)"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the Statewatch PDF; quote FOUND under 'Article 2: Aims' (OCR 'prrvacy' as noted). The header reads 'THIRTY-SEVENTH SESSION OF THE AUTHORITY OF HEADS OF STATE AND GOVERNMENT, Abuja, 16th February 2010', with the signature line 'DONE AT ABUJA ON 16TH DAY OF FEBRUARY 2010'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Page has no visible date. It mentions the Nigeria Data Protection Act 2023 and entry into force on 8 June 2023, so '2023' is a reasonable earliest date."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the ITU PDF; quote FOUND. Cover reads 'Geneva, 2013', and the text says the draft was validated at Gaborone, 27 Feb-3 Mar 2012."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "ECOWAS Commission",
+     "title": "Burkina Faso, Mali And Niger’s Withdrawal from ECOWAS is now a reality",
+     "date": "2025-01-29",
+     "url": "https://www.ecowas.int/burkina-faso-mali-and-nigers-withdrawal-from-ecowas-is-now-a-reality/",
+     "quote": "Burkina Faso, Mali and Niger will no longer be members of the Economic Community of West African States (ECOWAS) as of Wednesday January 29, 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Why Burkina Faso is removed from the ECOWAS exemplars."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Senegal",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=SN",
+     "quote": "Act No. 2008-12 of 25 January 2008 Concerning Personal Data Protection ('the Act')",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Senegal's law predates the 2010 ECOWAS Act."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Burkina Faso",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=BF",
+     "quote": "Law 010-2004/AN on the protection of personal data.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Burkina Faso's 2004 law predates all the regional texts."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Mauritius",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=MU",
+     "quote": "The Act repeals and replaces the Data Protection Act 2004, so as to align with the European Union General Data Protection Regulation 2016/679 (GDPR).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Mauritius had a 2004 law before the SADC Model Law and Malabo."
+    },
+    {
+     "institution": "Centre for Intellectual Property and Information Technology Law (CIPIT), Strathmore University",
+     "title": "The African Union Convention on Cyber Security and Personal Data Protection: Key Insights",
+     "date": "2023",
+     "url": "https://cipit.strathmore.edu/the-african-union-convention-on-cyber-security-and-personal-data-protection-key-insights/",
+     "quote": "The Malabo Convention entered into force on 8 June 2023 after receiving the required minimum of 15 ratifications from AU Member States, as per its provisions .",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'in force 2023'. The same page lists the ratifying states, including Ghana, Mauritius, Rwanda and Senegal (FOUND), and gives 'Benin’s data protection law No. 2009-09' (FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "privacy-is-a-western-idea",
+   "status": "FIXED",
+   "issues": [
+    "Misattribution. The correction says 'India's Supreme Court, rejecting the argument that privacy is an elitist construct, traced a well-developed sense of privacy in ancient Indian and Islamic sources'. The 'elitist construct' rejection is in Chandrachud J's plurality (Part O, 'Not an elitist construct'). The ancient-texts and Islam passages (para 23) are in S.A. Bobde J's separate concurring judgment, not the Court's opinion.",
+    "The Tokyo 1964 example cuts against the correction as written. The record's own JILPT source says Japan adopted the American 'right to be let alone' concept 'after the introduction of this theory by academics in the 1960s'. So the ruling shows an imported (American) idea, not an indigenous one. It still rebuts 'exported with European law', so it is kept and reworded to say so.",
+    "'172 countries ... most of them outside Europe' and 'habeas data from 1988' had no source on this record. Sources are added: Greenleaf/PL&B 2025 (172 by March 2025), Greenleaf/PL&B 2017 ('European laws (54/120) are a decreasing minority') and Guadamuz (Brazil 1988).",
+    "Verdict MISLEADING stands."
+   ],
+   "fieldFixes": {
+    "correction": "The first data-protection statutes were European, but concern for privacy is much older and wider. In the 2017 Puttaswamy judgment, India's Supreme Court rejected the argument that privacy is an 'elitist construct', and Justice Bobde's concurring opinion traced a well-developed sense of privacy in ancient Indian texts and in Islam. A Tokyo court recognised a right to privacy in 1964, drawing on American theory rather than European law, and Latin America built its own constitutional remedy, habeas data, from 1988. European laws were already a minority of the world's data-privacy laws by 2017, and by March 2025 Greenleaf counted 172 countries with such laws."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched Indian Kanoon; quote FOUND in para 23 of S.A. Bobde J.'s separate judgment (the section headed 'JUDGMENT S. A. BOBDE, J.'), not the plurality. The plurality's Part O ('Not an elitist construct', Chandrachud J.) holds 'the submission that the right to privacy is an elitist construct ... is unsustainable'. Judgment date 24 August 2017 confirmed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND (same para 23 of Bobde J.; footnote 28 cites Maududi, Human Rights in Islam)."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF; footnote quote FOUND. It supports the 28 September 1964 date but not the framing. The body text two lines above says the concept 'was adopted after the introduction of this theory by academics in the 1960s' (see added source)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Japan Institute for Labour Policy and Training (JILPT) — Ryoko Sakuraba, Kobe University",
+     "title": "Protection of Personal Information and Privacy in the Japanese Workplace",
+     "date": "2014",
+     "url": "https://www.jil.go.jp/english/reports/documents/jilpt-reports/no.14_japan.pdf",
+     "quote": "In Japan, this concept of privacy was adopted after the introduction of this theory by academics in the 1960s.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. 'This concept' refers to the preceding sentence on the US 'rights to be let alone' of the late 19th century. The next sentence says 'the Tokyo District Court defined privacy as' (FOUND)."
+    },
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf)",
+     "title": "172 Countries with Data Privacy Laws – Year by Year 1973-2025",
+     "date": "2025-06",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int195/int195dplaws/",
+     "quote": "For the past 52 years since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 laws by March 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "--check FOUND on the free abstract page (International Report June 2025). Full article subscriber-only."
+    },
+    {
+     "institution": "Privacy Laws & Business (Graham Greenleaf)",
+     "title": "2017 Survey of Privacy Laws Worldwide: 120 national data privacy laws and 31 bills (Special Report)",
+     "date": "2017-05",
+     "url": "https://www.privacylaws.com/media/1932/data_privacy_laws_special_edition_may2017.pdf",
+     "quote": "European laws (54/120) are a decreasing minority of global laws (44%), compared with non-European laws (66/120).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'most of them outside Europe'. By 2017, 66 of 120 laws were non-European, and the 2025 growth to 172 came mostly outside Europe. Note that 54/120 is 45%, not the 44% printed."
+    },
+    {
+     "institution": "Journal of Information, Law & Technology (JILT), University of Warwick — Andrés Guadamuz",
+     "title": "Habeas Data: The Latin-American Response to Data Protection (JILT 2000(2))",
+     "date": "2000-06-30",
+     "url": "https://warwick.ac.uk/fac/soc/law/elj/jilt/2000_2/guadamuz/",
+     "quote": "In 1988, the Brazilian legislature voted a new Constitution, which included a novel right never seen before: the Habeas Data individual complaint.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports 'habeas data, from 1988'."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "gdpr-was-the-first-data-protection-law",
+   "status": "FIXED",
+   "issues": [
+    "Claims all hold. Hesse 1970 (HBDI) and Sweden's Datalag, issued 1973-05-11 (Riksdagen), are confirmed. The 5th edition of Greenleaf's tables (January 2017) found 120 countries. The GDPR (adopted 2016) replaced Directive 95/46/EC. 1970 to 2016 is 46 years, which fits 'nearly half a century'.",
+    "Source metadata error: the HBDI page is dated. Its JSON-LD gives datePublished 2022-10-31 and dateModified 2022-11-28, so the date '2024' and the note 'Page undated; year approximate' are wrong.",
+    "An independent source for Hesse as the world's first law is added (Greenleaf, PL&B 2021 abstract)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "date": "2022-11-28",
+     "note": "Re-fetched; quote FOUND. The page's JSON-LD has datePublished 2022-10-31T09:51 and dateModified 2022-11-28, so it is not undated. The page also says the first data-protection commissioner, Willi Birkelbach, was elected on 8 June 1971."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; 'Utfärdad: 1973-05-11', 'Upphävd: 1998-10-24' and 'Omtryck: SFS 1992:446' all present. The text cites 'Lag (1982:446)' as the existing note says."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND on the free abstract page, labelled 'International Report June 2025'."
+    },
+    {
+     "index": 3,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND. Page labelled 'International Report February 2021'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf)",
+     "title": "Global data privacy laws 2021: Despite Covid delays, 145 laws show GDPR dominance",
+     "date": "2021-02",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int169/s_int169dplaws2021/",
+     "quote": "The 50th anniversary in 2020 of the world’ s first data privacy law,( 1 ) the Datenschutzgesetz 1970 of the state of Hesse in Germany, marked the start of the second half-century of global enactment of data privacy laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "--check FOUND on the free abstract page. An independent scholarly source for Hesse 1970 as the world's first law. The odd spacing 'world’ s' and '( 1 )' is as rendered on the page."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "most-of-the-world-has-no-privacy-law",
+   "status": "FIXED",
+   "issues": [
+    "Apples-to-oranges comparison: '172 countries ... against 193 UN member states' implies only about 21 UN states lack a law. Greenleaf's count includes non-UN jurisdictions. In his 2018 UN submission, 'Of the 124 countries with data privacy laws, 112 are UN member states', and his AustLII table adds Greenland. So the 172 cannot be set directly against 193. The verdict FALSE still holds: Greenleaf himself wrote in 2018 that 'the majority of UN member states have now enacted such laws'.",
+    "'Some large states (for example Pakistan) still had only bills' had no source. It is confirmed by DLA Piper (2026): Pakistan 'has not enacted a specific data protection legislation', and a Personal Data Protection Bill 2023 is pending. Source added.",
+    "Verified: 172 by March 2025 and 5.4 new laws a year since 2020 (PL&B abstract, June 2025), and 193 UN member states (un.org)."
+   ],
+   "fieldFixes": {
+    "correction": "Greenleaf's census counted 172 countries with national data-privacy laws by March 2025, and new laws have been added at 5.4 a year since 2020. His count includes some jurisdictions that are not UN members (in 2018, 112 of his 124 were UN member states), so it is not a straight comparison with the 193 UN member states, but a majority of UN members already had such laws by 2018 (112 of 193) and the share has grown since. Coverage and enforcement vary widely, and some large states (for example Pakistan) still have only a bill, but having no law at all is now the exception."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND on the free abstract page (International Report June 2025). The abstract adds 'The table lists national laws known as at 15 March 2025.'"
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND ('193 Member States')."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Graham Greenleaf, submission to the UN High Commissioner for Human Rights (hosted by OHCHR)",
+     "title": "The UN should adopt Data Protection Convention 108 as a global treaty: Submission on ‘the right to privacy in the digital age’",
+     "date": "2018-04-08",
+     "url": "https://www.ohchr.org/sites/default/files/Documents/Issues/DigitalAge/ReportPrivacyinDigitalAge/GrahamGreenleafAMProfessorLawUNSWAustralia.pdf",
+     "quote": "Of the 124 countries with data privacy laws, 112 are UN member states",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Shows Greenleaf's 'countries' include non-UN jurisdictions. The same document says 'so that the majority of UN member states have now enacted such laws and they are rapidly becoming ubiquitous.' (FOUND)."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Pakistan",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=PK",
+     "quote": "Pakistan currently has not enacted a specific data protection legislation, similar to data protection legislation enacted in other countries of the world.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page says 'a draft of the Personal Data Protection Bill 2023 (“PDPB”) has been introduced by the Ministry of Information Technology and Telecommunications' (FOUND). Supports the Pakistan example."
+    }
+   ]
+  }
+ ]
+}

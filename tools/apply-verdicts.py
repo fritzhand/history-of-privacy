@@ -74,9 +74,12 @@ def same(r, rid):
 
 def find(doc, kind, rid):
     key = KIND_KEYS.get(kind, kind)
+    names = {k for k, _ in arrays(doc)}
+    if key not in names and key + 's' in names:  # "agreementType" -> "agreementTypes"
+        key += 's'
     cands = []
-    for k, arr in arrays(doc):
-        if k == key or k.endswith('.' + key) or key not in KIND_KEYS.values():
+    for k, arr in arrays(doc):  # the array the verdict names, first
+        if k == key or k.endswith('.' + key):
             for i, r in enumerate(arr):
                 if same(r, rid):
                     cands.append((k, arr, i))

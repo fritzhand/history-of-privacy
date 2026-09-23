@@ -1,0 +1,180 @@
+{
+ "slice": "personas-advocates",
+ "chunk": "f106",
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-first-def-con-june-1993",
+   "status": "OK",
+   "issues": [
+    "Checked OK. sources[0]: media.defcon.org announce.txt re-fetched; header reads 'Finalized Announcement: 6/12/1993' (US format, 12 June 1993) and the WHEN line --check FOUND. The same text is also at defcon.org/html/TEXT/1/defcon1-announce.txt (--check FOUND).",
+    "Checked OK. sources[1]: the media.defcon.org text carries 'InfoWorld / July 19, 1993 / SECTION: NOTES FROM THE FIELD; Pg. 98 / HEADLINE: DoubleSpace may not scan your hardware, but DEF CON denizens do / BYLINE: Robert X. Cringely'; title, date and page are correct and the quote --check FOUND. 19 July 1993 was a Monday (InfoWorld's cover-date day), so 'last week' fits a 9-11 July event.",
+    "Checked OK. sources[2]: defcon.org DC-1 archive page still reads 'Was June 9-11, 1993 at the Sands Hotel & Casino (Since Blown-up)' (--check FOUND); it is correctly labelled as the origin of the error. Wikipedia's DEF CON infobox (June 9, 1993) and infocondb.org ('June 9, 1993 through June 11, 1993') repeat it, which supports 'widely repeated'.",
+    "Weekday check (Python datetime): 9 July 1993 = Friday, 9 June 1993 = Wednesday, so only the July dates match the announcement's '(Fri, Sat, Sun)'. The announcement is dated 12 June, after the supposed June dates, and still announces a future event.",
+    "Independent corroboration added: an earlier Cringely 'Notes from the Field' column reprinted on defcon.org names the dates outright: 'DEF CON I, the hackers convention held July 9-11 at the Sands Hotel in Las Vegas' (--check FOUND). The verdict FALSE stands."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; header 'Finalized Announcement: 6/12/1993'; quote --check FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; header gives InfoWorld, July 19, 1993, Notes from the Field, Pg. 98; quote --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "The source of the popular June date; cited to document the error, not as support for it. Re-fetched 2026-09-23; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "InfoWorld (IDG), reprinted on defcon.org",
+     "title": "Robert X. Cringely, 'Notes from the Field' (column written before the event), InfoWorld, July 1993",
+     "date": "1993-07",
+     "url": "https://defcon.org/html/TEXT/1/cringe-1.html",
+     "quote": "I write this column on Thursday, so there is no way of knowing for sure whether Pammy and I actually survived DEF CON I, the hackers convention held July 9-11 at the Sands Hotel in Las Vegas.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The reprint carries no issue date; the column was written before the event and refers to it by its July dates. The exact issue date is not given on the page."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-cambridge-analytica-facebook-data-won-brexit",
+   "status": "OK",
+   "issues": [
+    "Checked OK. sources[0]: TechCrunch (Natasha Lomas), URL dated 2020/10/06. The main quote and both quotes in the note ('may have been an exaggeration'; the AIQ sentence) --check FOUND on a fresh fetch. Context: the 'exaggeration' line refers to CA/SCL's marketing claim of '5,000+ data points per individual on 230 million adult Americans', so 'claims about the depth of its profiling' is a fair gloss.",
+    "Checked OK. The letter date in the institution field (2 October 2020) is confirmed by Byline Times, 9 October 2020 ('What was published on 2 October was a long, but limited in scope, letter from the Information Commissioner, Elizabeth Denham'). 'Closing its investigation' is supported by IT Pro ('has ended its investigation into the infamous Cambridge Analytica scandal'). The Parliament copy of the letter still returns HTTP 403 to the fetcher, so the letter itself was not read.",
+    "Checked OK. sources[1]: Guardian/Observer 17 March 2018, Cadwalladr and Graham-Harrison; the quote --check FOUND. It supports 'tens of millions of profiles, including friends'.",
+    "Nuance, no change needed: the same ICO letter says it found no evidence that AIQ used the SCL/CA datasets to target UK Leave voters. The correction claims only that AIQ targeted ads for Leave campaigns, which TechCrunch supports. The verdict MISLEADING (not FALSE) is defensible because Cambridge Analytica's parent was linked to AIQ. Added Research Live's report of Denham's own words that SCL/CA 'were not involved in the EU referendum campaign in the UK' beyond initial UKIP enquiries (--check FOUND)."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; all three quoted sentences --check FOUND. Letter date 2 October 2020 corroborated by Byline Times (2020-10-09)."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Research Live (Market Research Society)",
+     "title": "Cambridge Analytica 'not involved' in EU referendum, finds ICO",
+     "date": "2020-10-08",
+     "url": "https://www.research-live.com/article/news/cambridge-analytica-not-involved-in-eu-referendum-finds-ico/id/5075052",
+     "quote": "“From my review of the materials recovered by the investigation I have found no further evidence to change my earlier view that SCL/CA were not involved in the EU referendum campaign in the UK – beyond some initial enquiries made by SCL/CA in relation to UKIP data in the early stages of the referendum process,” Denham wrote in the letter.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Page date '8 October 2020'. It quotes Elizabeth Denham's letter to Julian Knight MP, chair of the DCMS Committee."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-btx-hack-hackers-robbed-a-bank",
+   "status": "FIXED",
+   "issues": [
+    "Wrong figure. The correction states that the program called the page '13,504 times' for 'a virtual DM 134,634.88'. Only heise gives that figure. The Bundespost's own final statement to Steffen Wernéry, dated 1 April 1985 (scan at wauland.de/media/btx-hack/1985-04-01_Btx-Abrechnung.pdf, read visually), lists 'Hamburger Sparkasse ... 13.11.-16.12.84 ... 134.694,70' among unpaid provider fees. That is 13,510 × DM 9.97. The Wau Holland Stiftung page gives the same numbers ('overnight they obtained 134.694,70 DM, which represents 13510 page views', --check FOUND), and so does German Wikipedia (Btx-Hack). The correction now uses the Bundespost figure and mentions heise's figure as an alternative.",
+    "Verified. The CCC press release 'Kennwort: Bankraub' of 19 November 1984 (scan at wauland.de/media/btx-hack/1984-11-19_PM-CCC.pdf, read visually; it has no text layer, so --check cannot run) says the demonstration took place on 19.11.1984 on the premises of the Hamburg data protection commissioner. It also says the CCC 'erhebt jedoch keinen Anspruch auf das Geld' and ends with 'ganz abschalten oder Verbot aller Finanztransaktionen'. This supports 'went public at once' and the call for a ban. The Wauland page also says 'On Monday, November 19th, 1984, the BTX hack was made public' (--check FOUND). Both points are now stated explicitly.",
+    "Checked OK. sources[0]: heise online (Detlef Borchers), 2024-11-18. Both the quote and the note's '9.97 marks, which theoretically went to the CCC' --check FOUND. heise also supports the October 1984 warning ('had already written to German data protection authorities and the German Federal Post Office in October 1984') and the 'ban on financial transactions'. Its DM 134,634.88 / 13,504 total conflicts with the Bundespost statement; this is flagged in the source note.",
+    "Checked OK. sources[1]: Wau Holland Stiftung '30th anniversary' page; the quote ('\"bank theft\" of 135.000 DM') --check FOUND. The page's dated entries run to November 2014, so the date 2014-11 is fine."
+   ],
+   "fieldFixes": {
+    "correction": "The 'bank robbery' was a demonstration. On the night of 16–17 November 1984, using the Hamburger Sparkasse's Btx login, a small program called up a CCC page priced at DM 9.97 about 13,500 times. That ran up a virtual DM 134,694.70 (the figure on the Bundespost's own 1985 statement; heise gives DM 134,634.88) that 'theoretically went to the CCC'. The club had warned the Bundespost and data-protection officials in October 1984. On Monday 19 November it demonstrated the hack at the Hamburg data-protection commissioner's office, told the press, made no claim to the money and called for a ban on financial transactions on Btx."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; quote --check FOUND. heise's 13,504 × DM 9.97 = DM 134,634.88 differs from the Bundespost's 1985 statement (DM 134,694.70 = 13,510 × 9.97), which the Wau Holland Stiftung and German Wikipedia follow."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23; --check FOUND."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Wau Holland Stiftung",
+     "title": "BTX Hack 30th Year Anniversary (entry '13510 page views and the BTX hack is perfect')",
+     "date": "2014-11",
+     "url": "https://www.wauland.de/en/btx-hack-30-jahrestag/",
+     "quote": "Every time the page was loaded their account was credited with 9.97 DM - overnight they obtained 134.694,70 DM, which represents 13510 page views",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Matches the Deutsche Bundespost (Fernmeldeamt 2 Düsseldorf) statement of 1 April 1985 linked from the same page (1985-04-01_Btx-Abrechnung.pdf, a scan), which lists 'Hamburger Sparkasse ... 134.694,70'. The same page also says: 'On Monday, November 19th, 1984, the BTX hack was made public as Wau and Steffen informed the state privacy officer in Hamburg and the press.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "image",
+   "id": "carole-cadwalladr-2019",
+   "status": "OK",
+   "issues": [
+    "Checked OK. Licence: I re-read the Commons API extmetadata on 2026-09-23. It gives LicenseShortName 'CC BY 3.0', LicenseUrl creativecommons.org/licenses/by/3.0, Artist 'Molly MEP', DateTimeOriginal 2019-03-10. The file page has {{YouTube CC-BY|Molly MEP}} and a {{LicenseReview}} passed 2019-03-23. The source YouTube video AsZ3j1fFtw4 is still live and marked 'Creative Commons Attribution license (reuse allowed)'. The licence is permitted.",
+    "Checked OK. Local file assets/media/carole-cadwalladr-2019.jpg exists, opens as a 953x918 JPEG and matches thumbPx. Viewed: a woman with shoulder-length blonde hair in a black leather jacket at a table with a glass of water and an open notebook. The alt text is accurate.",
+    "Caption checked. The Commons/YouTube description reads 'speaks at the Westminster launch of Molly's report on how Facebook has undermined democracy', which the caption follows. 10 March 2019 is the YouTube publish date (the watch page's publishDate is 'Mar 10, 2019'), not necessarily the event date. A web search summary puts the London launch of the report 'Facing Down Facebook' on 4 March 2019, but I could not read that page verbatim (player.fm returns 403). The caption hedges correctly with 'dated 10 March 2019 on Commons', so no change is needed. An optional wording would be 'posted to YouTube on 10 March 2019'."
+   ],
+   "fieldFixes": {}
+  },
+  {
+   "kind": "image",
+   "id": "christopher-wylie-parliament-square-2018",
+   "status": "OK",
+   "issues": [
+    "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY-SA 4.0' with LicenseUrl creativecommons.org/licenses/by-sa/4.0, Artist Jwslubbock, Credit 'Own work' and file-page template {{self|cc-by-sa-4.0}}. The licence is permitted.",
+    "Checked OK. Local file assets/media/christopher-wylie-parliament-square-2018.jpg exists, opens as a 960x934 JPEG and matches thumbPx. Viewed: a man with pink hair and glasses speaks into a handheld megaphone microphone with a coiled cord, in front of a slate-roofed Westminster building. The alt text is accurate.",
+    "Location and date checked. The file page has {{Location|51.500651|-0.126196}} (Parliament Square), and the file is 'Extracted from' 'Cambridge Analytica protest Parliament Square6.jpg'. Its category is 'London Protest following Cambridge Analytica Leaks'. The record's lat/lng (51.5005, -0.1262) matches. The date is independently confirmed by an Alamy agency caption: 'Rally for a Fair Vote in Parliament Square, London. Christopher Wylie & Shahmir Sanni. 29th March 2018' (fetched). The caption's 'Cambridge Analytics' is a verbatim quote of the Commons description, typo included, and is marked as a quote. Optional: the event could be named as the 'Rally for a Fair Vote'."
+   ],
+   "fieldFixes": {}
+  },
+  {
+   "kind": "image",
+   "id": "laura-poitras-poptech-2010",
+   "status": "OK",
+   "issues": [
+    "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY-SA 2.0', LicenseUrl creativecommons.org/licenses/by-sa/2.0, Artist 'PopTech', Credit 'Flickr: Laura Poitras - PopTech 2010 - Camden, Maine' and DateTimeOriginal 2010-10-22 12:35:59. The Flickr upload bot review is dated 15 April 2014. The Flickr source page (flickr.com/photos/poptech/5107953439) still carries license https://creativecommons.org/licenses/by-sa/2.0/. The licence is permitted.",
+    "Checked OK. Local file assets/media/laura-poitras-poptech-2010.jpg exists, opens as a 960x979 JPEG and matches thumbPx. Viewed: a woman with long dark curly hair holds a remote and gestures on a dark stage. The alt text is accurate.",
+    "Caption checked. The Flickr page gives 'Taken on October 22, 2010' and 'Uploaded on October 23, 2010' on PopTech's own account, and its title is 'Laura Poitras - PopTech 2010 - Camden, Maine | Photo: Kris K[rüg]'. The Commons description is 'Photo: Kris Krüg'. The date, place and photographer credit are supported. The era 'cookies' (start 1994) and year 2010 agree with tools/editorial.mjs."
+   ],
+   "fieldFixes": {}
+  },
+  {
+   "kind": "image",
+   "id": "julia-angwin-2018",
+   "status": "FIXED",
+   "issues": [
+    "Wrong date. The title ('March 2018') and caption ('6 March 2018') give the date the video was posted, not the date of the talk. The MIT Media Lab video page for 'Quantifying Forgiveness: MLTalks with Julia Angwin and Joi Ito' is media.mit.edu/videos/ml-tallks-2018-02-16/. It is dated 'Feb. 16, 2018' (--check FOUND). The event page media.mit.edu/events/mltalks-julia-angwin/ also shows 'February 16, 2018'. The YouTube watch page qjmkTGfu9Lk gives publishDate 'Mar 6, 2018', which is where the Commons date 2018-03-06 comes from. Title and caption are corrected; year 2018 is unchanged.",
+    "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY 3.0' ({{YouTube CC-BY|MIT Media Lab}}, reviewed 2021-02-02), Artist MIT Media Lab. The MIT Media Lab video page itself says 'Creative Commons Attribution 4.0 International'. Both are permitted, and rightsEvidence already notes the 3.0/4.0 difference.",
+    "Checked OK. Local file assets/media/julia-angwin-2018.jpg exists and opens as a 517x776 JPEG, converted from the Commons PNG at the same pixel size, matching thumbPx. Viewed: a smiling woman with short brown hair, dark-rimmed glasses and a headset microphone. The alt text is accurate. 'ProPublica senior reporter' matches the event page ('Julia Angwin is a senior reporter at ProPublica')."
+   ],
+   "fieldFixes": {
+    "title": "Julia Angwin at an MIT Media Lab talk, February 2018",
+    "caption": "ProPublica senior reporter Julia Angwin at the MIT Media Lab talk 'Quantifying Forgiveness' with Joi Ito, 16 February 2018, discussing her algorithmic-accountability reporting (still from the CC BY video, posted to YouTube on 6 March 2018; Commons description)."
+   }
+  },
+  {
+   "kind": "image",
+   "id": "kashmir-hill-new-america-2014",
+   "status": "OK",
+   "issues": [
+    "Checked OK. Licence: the Commons API extmetadata re-read on 2026-09-23 gives 'CC BY 2.0', LicenseUrl creativecommons.org/licenses/by/2.0, Artist 'New America', {{Flickrreview|Junior Jumper|2024-12-21}}. The Flickr source page (newamerica/12487663334) still carries license https://creativecommons.org/licenses/by/2.0/. The licence is permitted.",
+    "Checked OK. Local file assets/media/kashmir-hill-new-america-2014.jpg exists, opens as a 737x759 JPEG and matches thumbPx. Viewed: a smiling woman with shoulder-length brown hair and a white top at a podium in front of a New America Foundation backdrop. The alt text is accurate.",
+    "Caption date confirmed independently. Flickr shows 'Taken on February 11, 2013' (camera clock) but 'Uploaded on February 12, 2014'. The New America event page for 'Cryptocurrencies: The New Coin of the Realm?' reads 'February 11, 2014'. Slate's Future Tense announcement says 'On Tuesday, Feb. 11, Future Tense—a partnership of Slate, the New America Foundation, and Arizona State University—will host an event in Washington, D.C.' and lists 'Moderator: Kashmir Hill Senior online editor, Forbes'. The caption's 2014-02-11 event date and its note about the 2013 camera date are both correct. Optional: the event was a Future Tense (Slate/New America/ASU) event, where Hill moderated a panel."
+   ],
+   "fieldFixes": {}
+  }
+ ]
+}

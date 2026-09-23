@@ -2,7 +2,7 @@
 
 An open-data, scrollytelling data-journalism site on **the history of privacy** — from a physician's oath and a law of windows, through the castle, the sealed letter, the camera, the census, the data bank, the cookie and the consent banner, to **IEEE 7012-2025**, the standard for machine-readable personal privacy terms known as **[MyTerms](https://myterms.info/)**, and why it matters now that AI agents act for people.
 
-The thesis is in the title. For most of history the terms of privacy were set by a wall, a seal, a court or a statute. Online they were set by the organisation — a policy the person was deemed to accept. Signals such as Do Not Track and Global Privacy Control let a person's browser say no, but did not make an agreement. IEEE 7012 turns the relationship around: the person (or an agent working for them) proffers standard terms, the organisation agrees, and both keep the record.
+The thesis is in the title. For most of history the terms of privacy were set by a wall, a seal, a court or a statute. Online they were set by the organisation — a policy the person was deemed to accept. Signals such as Do Not Track and Global Privacy Control let a person's browser say no, but did not make an agreement. IEEE 7012 turns the relationship around: the person (or an agent working for them) proffers standard terms; if the organisation agrees, both keep the record (a refusal is recorded too).
 
 It is a domain fork of [`fritzhand/history-of-indigo`](https://github.com/fritzhand/history-of-indigo) (*Indigo: The Blue That Dyed the World*), itself a fork of [`fritzhand/history-of-tampa`](https://github.com/fritzhand/history-of-tampa): same architecture, same citation standard, a different subject.
 

@@ -1,0 +1,307 @@
+{
+ "slice": "global",
+ "chunk": "f105",
+ "verdicts": [
+  {
+   "kind": "laws",
+   "id": "mn-2021",
+   "status": "OK",
+   "issues": [
+    "No error found. I re-fetched the DLA Piper quote and found it word for word. It supports both dates: adopted 17 December 2021, in full force 1 May 2022.",
+    "Cross-checked against Lehman Law, a Mongolian law firm (same dates, added as a source), and the Gratanet legal alert ('passed a new Law on Protection of Personal Data on December 17, 2021. The law will become effective from May 1, 2022'). The coordinates match central Ulaanbaatar. The official gazette (legalinfo.mn) reset the connection, so it could not be read by script."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23 with fetch-text.py --check: FOUND verbatim. The page opens the Mongolia 'Law' tab with this sentence."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "LehmanLaw Mongolia (Mongolian Law Blog)",
+     "title": "Personal Data Protection in Mongolia",
+     "date": "n.d.",
+     "url": "https://lehmanlaw.mn/blog/personal-data-protection-in-mongolia/",
+     "quote": "on December 17, 2021, the Parliament adopted a new Law on the Personal data protection (PDPL), which began to be implemented on May 1, 2022.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent secondary source (a Mongolian law firm) confirming both dates. The same passage names the 1995 Personal Secrets Law as the predecessor. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "cn-2021",
+   "status": "OK",
+   "issues": [
+    "No error found. Both quotes were re-fetched and found word for word: the NPC translation gives adoption on 20 August 2021, and the PCPD gives 'first piece of legislation in the Mainland dedicated to the protection of personal information' and in force 1 November 2021.",
+    "Only the PCPD source supported the in-force date and the CAC's role, and nothing supported the note's reference to the Cybersecurity Law and the Data Security Law. The NPC translation continues on page 3 (c_694559_3.htm). Its Art. 74 (in force 1 November 2021) and Art. 60 ('national cyberspace department ... overall planning and coordination') are added as sources, plus DLA Piper's 'three main pillars' sentence (PIPL, CSL, DSL). The CSL was adopted in 2016 (in effect 1 June 2017) and the DSL in 2021 (in force 1 September 2021), so the note's years hold.",
+    "The NPC source date 2021-12-29 matches the page's 'Updated: 2021-12-29' stamp. The coordinates are the Great Hall of the People."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim on page 1 of the NPC English translation. The page header reads 'Updated: 2021-12-29', which matches the date field. This quote supports only the adoption date. Art. 74 (in force) and Art. 60 (cyberspace department) are on page 3 and are added as sources."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim. The same PCPD page also says 'The national cyberspace authorities shall be responsible for the overall coordination of personal information protection'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "National People's Congress of the PRC (translation for reference only)",
+     "title": "Personal Information Protection Law of the People's Republic of China (page 3)",
+     "date": "2021-12-29",
+     "url": "http://en.npc.gov.cn.cdurl.cn/2021-12/29/c_694559_3.htm",
+     "quote": "Article 74 This Law shall come into force as of November 1st , 2021.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary text (official English translation) for the in-force date. --check FOUND."
+    },
+    {
+     "institution": "National People's Congress of the PRC (translation for reference only)",
+     "title": "Personal Information Protection Law of the People's Republic of China (page 3)",
+     "date": "2021-12-29",
+     "url": "http://en.npc.gov.cn.cdurl.cn/2021-12/29/c_694559_3.htm",
+     "quote": "Article 60 The national cyberspace department shall be responsible for the overall planning and coordination of personal information protection and related supervision and administration.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports naming the Cyberspace Administration of China as lead (coordinating) regulator. Under the same article, State Council departments also supervise within their own remits. --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — China",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=CN",
+     "quote": "the three main pillars of the personal information protection framework in the PRC are the Personal Information Protection Law (PIPL), the Cybersecurity Law (CSL), and the Data Security Law (DSL).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the note's statement that the PIPL sits alongside the CSL and DSL. The same page gives the CSL effective date as 1 June 2017 and the DSL's as 1 September 2021. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "id-2022",
+   "status": "OK",
+   "issues": [
+    "No error found. I re-fetched the DLA Piper quote and found it word for word. The same paragraph gives the two-year transition to 17 October 2024.",
+    "Precision point, not changed: 17 October 2022 is the date President Jokowi signed and promulgated the law. The DPR (House of Representatives) had passed the bill on 20 September 2022. 'Enacted' fits the signing date. An Indonesian government legal-information portal (JDIH) is added as an independent source for the 17 October 2022 date. The official BPK and Komdigi JDIH databases returned 403 errors to the script. The coordinates are the DPR complex in Senayan, Jakarta."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim. The next sentence supports the transition date: 'thus up to 17 October 2024 to conform with the PDP Law'."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "JDIH Kemenko Bidang Infrastruktur (Indonesian Coordinating Ministry legal documentation network)",
+     "title": "UU No. 27/2022: Pelindungan Data Pribadi",
+     "date": "n.d.",
+     "url": "https://jdih.kemenkoinfra.go.id/uu-no-272022-pelindungan-data-pribadi",
+     "quote": "Presiden Jokowi telah mengesahkan Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi pada tanggal 17 Oktober 2022.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Government legal-documentation portal. Translation: 'President Jokowi signed Law No. 27 of 2022 on Personal Data Protection into law on 17 October 2022.' --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "vn-2025",
+   "status": "OK",
+   "issues": [
+    "No error found. Both quotes were re-fetched and found word for word. The government newspaper (baochinhphu.vn, 31 December 2025) gives passage on 26/6/2025 and effect from 1/1/2026. DLA Piper gives Law No. 91/2025/QH15, enacted 26 June 2025 and in effect 1 January 2026.",
+    "Nothing on the record supported two of the note's claims: the 'decree (2023) to statute' step and the Ministry of Public Security as regulator. DLA Piper supports both, and those quotes are added: 'This elevated the regulatory framework from decree-level provisions to statutory law'; Decree 13/2023/ND-CP dated 17 April 2023 was replaced; the MPS and its A05 department are 'the primary authority'. The coordinates are next to the National Assembly building in Hanoi."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim. The headline and lead confirm effect from 1/1/2026. The article quotes Colonel Nguyen Hong Quan of the Ministry of Public Security's A05 department. Date 2025-12-31 is correct (the headline says the law takes effect 'tomorrow, 1/1/2026')."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Vietnam",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=VN",
+     "quote": "Decree 356 formally announced the replacement of the Decree No. 13/2023/ND-CP of the Government dated 17 April 2023 on Personal Data Protection (“PDPD”).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports the note's 'from a government decree (2023) to statute'. The preceding sentence on the page reads 'This elevated the regulatory framework from decree-level provisions to statutory law.' (also FOUND). --check FOUND."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Vietnam (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=VN",
+     "quote": "the Ministry of Public Security (“MPS”) , particularly the Department for Cybersecurity and High-tech Crime Prevention and Fighting (\"A05\"), has been designated as the primary authority responsible for regulating and enforcing Vietnam’s data‑related laws and regulations, notably including personal data protection",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Supports regulator = Ministry of Public Security. The quote contains a non-breaking hyphen (U+2011) in 'data‑related', as on the page. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "kg-2008",
+   "status": "FIXED",
+   "issues": [
+    "Out of date: Law No. 58 is no longer in force. Law No. 179 of 31 July 2025 enacted the Digital Code of the Kyrgyz Republic (Code No. 178 of 31 July 2025) and repealed the 2008 law. The Code took effect six months after publication, in February 2026 (ICNL gives 5 February 2026). Personal-data rules now sit in the Digital Code. The note presented the 2008 law as the current regime. Kyrgyz legal databases mark it 'утратил силу' (lost force), and ICNL's February 2026 guidance note confirms the replacement. The dataset's convention is to record replacement in the note (compare ge-2011, ch-1992), so the note is updated.",
+    "The DLA Piper page (the only source) is stale on this point. It still says the most recent amendments were made on 29 November 2021 and 12 July 2022, and it does not mention the Digital Code. Its quote remains accurate for the 2008 enactment and in-force dates.",
+    "Law title: the official Russian title is 'Об информации персонального характера' ('On Personal Information' / information of a personal nature). The Kyrgyz data-protection agency's English site renders it 'On Personal Information'. 'Law on Personal Data' is DLA Piper's rendering, also used by the unofficial translation on ecoi.net. The law field is adjusted to give the official title with the common rendering in brackets.",
+    "Added inForce 2008 (in force 18 April 2008 per DLA; the Jogorku Kenesh adopted it 21 February 2008 and it is dated 14 April 2008). 'Earliest Central Asian law among those checked here' holds within the dataset: the other Central Asian laws are KZ 2013, TJ 2018 and UZ 2019, and there is no Turkmenistan record."
+   ],
+   "fieldFixes": {
+    "law": "Law No. 58 'On Personal Information' (Ob informatsii personalnogo kharaktera; often translated 'On Personal Data')",
+    "inForce": 2008,
+    "note": "Adopted by the Jogorku Kenesh on 21 February 2008, dated 14 April 2008 and in force 18 April 2008; the earliest Central Asian law among those checked here. It lost force in February 2026, when the Digital Code of the Kyrgyz Republic (31 July 2025) took effect and absorbed the personal-data rules."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched 2026-09-23: FOUND verbatim, and it supports the 14 April 2008 date and 18 April 2008 entry into force. The page is out of date: it still describes Law No. 58 as current (latest amendments 29 Nov 2021 and 12 Jul 2022) and does not mention its repeal by the Digital Code in February 2026. The repeal is sourced separately (added)."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Continent (online legal database, Kazakhstan)",
+     "title": "Закон Кыргызской Республики от 14 апреля 2008 года № 58 «Об информации персонального характера» (утратил силу)",
+     "date": "2026",
+     "url": "https://continent-online.com/Document/?doc_id=30343113",
+     "quote": "Утратил силу в соответствии с Законом КР от 31 июля 2025 года № 179",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Commercial legal database; the demo page shows the heading and first articles. Translation: 'Lost force in accordance with Law of the Kyrgyz Republic of 31 July 2025 No. 179' (the law bringing the Digital Code into force). The same page reads 'Принят Жогорку Кенешем Кыргызской Республики 21 февраля 2008 года' (adopted by the Jogorku Kenesh on 21 February 2008), also FOUND. The official database cbd.minjust.gov.kg returned 403. --check FOUND."
+    },
+    {
+     "institution": "International Center for Not-for-Profit Law (ICNL)",
+     "title": "Kyrgyzstan's Digital Code: Understanding and Complying with Personal Data Provisions",
+     "date": "2026-02-10",
+     "url": "https://www.icnl.org/wp-content/uploads/KG-Personal-Data-Guidance-Note_Digital-Code_February-10-2026.pdf",
+     "quote": "Meanwhile, on February 5, 2026, the 2008 Law on Personal Information will be entirely replaced by the Digital Code",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "NGO legal guidance note. Its legislation list reads 'Digital Code of the Kyrgyz Republic adopted on July 31, 2025, entering into force on February 5, 2026'. The Russian version (…_RU.pdf) states the replacement in the past tense: '5 февраля 2026 года Закон 2008 года «Об информации персонального характера» утратил силу и заменен соответствующими положениями Цифрового кодекса' (--check FOUND). Some secondary sources give 6 or 8 February, hence 'February 2026' in the note. --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "kz-2013",
+   "status": "OK",
+   "issues": [
+    "No error found. I re-fetched the DLA Piper quote and found it word for word. It supports the law number (94-V), title and date (21 May 2013).",
+    "Cross-checked against the Russian text header on spinform (CIS legislation database), which gives the same number and date and puts entry into force at 26 November 2013 (Art. 31(1), six months after first official publication). Added as a source. An inForce value of 2013 could be added, but it is not needed. Adilet (the official portal) renders only through JavaScript and could not be read by script. The coordinates are in Astana."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Soyuzpravoinform (base.spinform.ru, CIS legislation database)",
+     "title": "Закон Республики Казахстан от 21 мая 2013 года №94-V ЗРК \"О персональных данных и их защите\"",
+     "date": "2026",
+     "url": "https://base.spinform.ru/show_doc.fwx?rgn=59981",
+     "quote": "В соответствии с пунктом 1 статьи 31 настоящий Закон вводится в действие по истечении шести месяцев после его первого официального опубликования - с 26 ноября 2013 года.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent confirmation of the number and date; the page title 'Закон Республики Казахстан от 21 мая 2013 года №94-V ЗРК \"О персональных данных и их защите\"' is also FOUND. Translation of the quote: 'Under Art. 31(1) this Law enters into force six months after its first official publication, from 26 November 2013.' --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "tj-2018",
+   "status": "OK",
+   "issues": [
+    "No error found. I re-fetched the DLA Piper quote and found it word for word. It supports No. 1537 of 3 August 2018.",
+    "Cross-checked against the Russian text header on spinform. The law is 'О защите персональных данных' (On Protection of Personal Data), No. 1537 of 3 August 2018. The lower house (Majlisi Namoyandagon) adopted it on 8 June 2018 and the upper house (Majlisi Milli) approved it on 2 August 2018. Per Art. 27 it takes effect on official publication. Added as a source. The ncz.tj official site returned 503. The coordinates are in Dushanbe."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim. The quote is the first item in DLA Piper's list of Tajik laws."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Soyuzpravoinform (base.spinform.ru, CIS legislation database)",
+     "title": "Закон Республики Таджикистан \"О защите персональных данных\"",
+     "date": "2026",
+     "url": "https://base.spinform.ru/show_doc.fwx?rgn=108952",
+     "quote": "Закон Республики Таджикистан от 3 августа 2018 года №1537 \"О защите персональных данных\"",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent confirmation of the number, date and title ('Law of the Republic of Tajikistan of 3 August 2018 No. 1537 On Protection of Personal Data'). The header also gives adoption by the Majlisi Namoyandagon on 8 June 2018 (Resolution No. 1115) and approval by the Majlisi Milli on 2 August 2018 (No. 561). --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "uz-2019",
+   "status": "FIXED",
+   "issues": [
+    "Imprecise date label: 2 July 2019 is the date the President signed the law, not the date it was adopted. The Legislative Chamber adopted ZRU-547 on 16 April 2019 and the Senate approved it on 21 June 2019. The note (following DLA Piper's wording) said 'Adopted 2 July 2019'. It now says 'signed into law', with the legislative dates, sourced to the CIS-legislation header.",
+    "The effective date of 1 October 2019 is confirmed by DLA Piper and, independently, by Black Swan (a Tashkent law firm), added as a source. lex.uz loads the article text through JavaScript, so Art. 36 could not be read by script. The law number and title are correct. The coordinates are in Tashkent."
+   ],
+   "fieldFixes": {
+    "note": "Signed into law on 2 July 2019 (adopted by the Legislative Chamber on 16 April and approved by the Senate on 21 June 2019); effective 1 October 2019."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched: FOUND verbatim. It supports the 2 July 2019 date of the law and effect from 1 October 2019. DLA's word 'adopted' refers to the signing date; the legislative adoption dates come from the added CIS-legislation source."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "CIS Legislation (Soyuzpravoinform)",
+     "title": "Law of the Republic of Uzbekistan \"About personal data\" of July 2, 2019 No. ZRU-547",
+     "date": "2026",
+     "url": "https://cis-legislation.com/document.fwx?rgn=116961",
+     "quote": "Accepted by Legislative house on April 16, 2019 Approved by the Senate on June 21, 2019",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Machine-translated header of the law ('of July 2, 2019 No. ZRU-547' is also on the page). Supports the legislative adoption dates versus the 2 July 2019 signing date. --check FOUND."
+    },
+    {
+     "institution": "Black Swan Consulting (Tashkent law firm)",
+     "title": "About personal data in Uzbekistan",
+     "date": "n.d.",
+     "url": "https://blackswan.law/about-personal-data-in-uzbekistan/",
+     "quote": "The Law of the Republic of Uzbekistan “On Personal Data” of July 2, 2019 No. ZRU-547 (entered into force on October 1, 2019)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent secondary confirmation of the 1 October 2019 effective date. --check FOUND."
+    }
+   ]
+  }
+ ]
+}

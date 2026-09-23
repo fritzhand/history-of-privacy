@@ -272,7 +272,7 @@ export default function editorial(H) {
         ['Helen Nissenbaum proposed that privacy is violated when information flows break the norms of the context in which it was shared;', 'nissenbaum-2004-contextual-integrity'],
         ['and Julie Cohen that privacy is the breathing room in which a self develops, shielding “dynamic, emergent subjectivity” from efforts to make people fixed, transparent and predictable.', 'cohen-2013-emergent-subjectivity'],
       ]),
-      para('Consent, its critics — and terms the person writes', [
+      para('Consent, its critics — and terms the person proffers', [
         ['What the law settled on, online, was consent. Solove named the model “privacy self-management” — rights to notice, access and consent, little changed since the 1970s — and argued that it does not give people meaningful control, because of the limits of human attention and because there are too many data collectors to manage one by one.', 'solove-2013-privacy-self-management'],
         ['Nissenbaum called its flaw the “transparency paradox”: detailed notices go unread, simple ones leave out what matters.', 'nissenbaum-2011-transparency-paradox'],
         ['Reading the privacy policies of the sites one American visits would take about 244 hours a year — some 40 minutes a day — researchers at Carnegie Mellon estimated in 2008 (their abstract says 201; their own tables give 244).', ['mcdonald-cranor-hours-per-year-reading-privacy-policies', 'mcdonald-cranor-2008-201-hours']],
@@ -322,7 +322,7 @@ export default function editorial(H) {
         examples: 'IAB Europe TCF (2018–)',
         source: src(lineageRec('iab-europe-tcf-2018').sources).slice(0, 2) },
       { icon: 'agreement', kicker: 'Voice 4 · The person proffers', title: 'Your terms; both keep the record',
-        body: 'Under IEEE 7012 the person — or their agent — points to one of a small roster of standard agreements; the organisation accepts one, both sign, and each keeps a matching record.',
+        body: 'Under IEEE 7012 the person — or their agent — points to one of a small roster of standard agreements; if the organisation accepts it, both sign and each keeps an identical record. A refusal is recorded too.',
         examples: 'IEEE 7012-2025 · MyTerms (2026–)',
         source: src(H.obj('myterms', 'standard').sources).filter(s => s.verificationStatus === 'CONFIRMED').slice(0, 2) },
     ],
@@ -450,7 +450,7 @@ export default function editorial(H) {
       fate: l.fate, destination: l.id === 'ieee-7012-2025', source: src(l.sources),
     };
   });
-  const lineageNote = 'Rows are ordered by year. "Who proffers the terms" asks whose text the agreement or signal is: the organisation\'s policy, the person\'s browser signal, an industry framework, or the person\'s own terms. Each row cites its specification or the body that published it.';
+  const lineageNote = 'Rows are ordered by year. "Who proffers the terms" asks whose terms the agreement or signal carries: the organisation\'s policy, the person\'s browser signal, an industry framework, or the person\'s own terms. Each row cites its specification or the body that published it.';
 
   /* ── HARMS ─────────────────────────────────────────────────────── */
   const HARM_FIGURE = {
@@ -491,17 +491,17 @@ export default function editorial(H) {
       ['Approved', '4 November 2025, IEEE SA Standards Board — hence “-2025”'],
       ['Published', '20 January 2026 · IEEE Xplore 11360682'],
       ['DOI', '10.1109/IEEESTD.2025.11360682'],
-      ['Access', 'Free PDF through the IEEE GET Program (free IEEE account)'],
-      ['Roster', 'Standard agreements kept by a neutral nonprofit, Customer Commons'],
+      ['Access', 'Free PDF through the IEEE GET Program'],
+      ['Roster', 'Standard agreements kept by a neutral nonprofit (the standard names none); for MyTerms, Customer Commons'],
       ['Launched', '28 January 2026 (Data Privacy Day), London and online'],
     ],
     quote: { text: H.tidy(firstParty('faq-full-agency').quote), cite: 'MyTerms FAQ, “Why must I be the first party?”', source: src(firstParty('faq-full-agency').sources) },
     principles: H.list('myterms', 'principles').map(p => ({ name: p.name, text: p.quote.replace(/\s*\(The Principle of [^)]*\)\s*$/i, '') })),
     principlesSource: src(H.list('myterms', 'principles')[0].sources),
     agreements,
-    agreementsDesc: 'Two relationship agreements for an ongoing service, three for one-off contributions of data. Each is published in plain language, in machine-readable form and as a legal text, and links its key terms to the W3C Data Privacy Vocabulary.',
-    coda: 'MyTerms launched with these five in a market-feedback phase of up to six months, with more in the pipeline. The standard leaves the record format, its storage and the wire protocol open — so interoperability will be decided by implementations, not the text. The launch agreements\' full legal and machine-readable texts were not yet published on the pages this study could read.',
-    codaSource: src([...mech('launch-mode').sources, ...mech('records-both-sides').sources]),
+    agreementsDesc: 'Two relationship agreements for an ongoing service, three for one-off contributions of data. MyTerms says each comes in plain language, in machine-readable form and as a legal text (the three readings the standard requires) and links its key terms to the W3C Data Privacy Vocabulary.',
+    coda: 'MyTerms launched with these five in a market-feedback phase of up to six months, with more in the pipeline. The standard fixes what each side\'s record must hold — the terms, date, time stamp, identifiers and a unique contract ID, in identical copies — but not its format, where it is stored or the wire protocol; interoperability, it says, “is not a requirement of this standard”, so implementations, not the text, will decide it. The launch agreements\' full legal and machine-readable texts were not yet published on the pages this study could read.',
+    codaSource: src([...mech('launch-mode').sources, ...mech('records-both-sides').sources, ...mech('any-protocol').sources]),
     source: stSources,
   };
 
@@ -618,7 +618,7 @@ export default function editorial(H) {
       source: confirmed(qs('countries-with-data-privacy-laws-2025')).slice(0, 1) },
     { value: '244', label: 'hours a year to read the privacy policies', sublabel: 'of the sites one American visits (2008 estimate)', color: 'v9',
       source: confirmed(qs('mcdonald-cranor-hours-per-year-reading-privacy-policies')).slice(0, 1) },
-    { value: '5', label: 'standard agreements a person can proffer', sublabel: 'IEEE 7012 / MyTerms, launched January 2026', color: 'agents',
+    { value: '5', label: 'standard agreements in the MyTerms launch roster', sublabel: 'January 2026 · IEEE 7012 itself sets no number', color: 'agents',
       source: confirmed(qs('myterms-launch-agreements-2026')).slice(0, 1) },
   ];
   const footerStats = [

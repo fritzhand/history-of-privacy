@@ -4,44 +4,6 @@
   "verdicts": [
     {
       "kind": "event",
-      "id": "hackers-on-planet-earth-hope-new-york-1994",
-      "status": "FIXED",
-      "issues": [
-        "Summary calls the 1994 cryptography item 'a panel on cryptography and privacy'. The 2600 store listing shows it was a session titled 'Cryptography and Privacy' introduced by Bob Stratton, with a Clipper Chip (AT&T 3600 Surety) demonstration by Bernie S. and John Turbo and also featuring Eric Hughes and Matt Blaze. 2600 titles its real panels explicitly ('The 2600 Panel', 'The Author Panel', 'The Cellular Panel'), and this one is not billed as a panel. The wording is changed to 'session'.",
-        "'Modelled on the Dutch hacker gatherings' overstates the source, which says only 'inspired by'.",
-        "'the first US hacker conference on that scale' is HOPE's own claim ('the first time that a hacker conference of this size had been attempted in the United States'). The summary now attributes it to the organisers.",
-        "Dates (13-14 August 1994), venue (Hotel Pennsylvania), attendance (well over 1,000), 2600's tenth anniversary and 'annual from 2025' are all confirmed on the cited pages. Wikipedia independently gives 'August 13-14, 1994', 'Over 1,000 people attended'."
-      ],
-      "fieldFixes": {
-        "summary": "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Inspired by the Dutch hacker gatherings of the 1980s and 1990s, it was, by its organisers' account, the first hacker conference of that size attempted in the United States, with talks 'ranging from privacy issues to technology to politics' and a 'Cryptography and Privacy' session, with Eric Hughes and Matt Blaze, that included a live demonstration of a Clipper Chip telephone encryptor. HOPE became a recurring New York conference, annual from 2025."
-      },
-      "sourceFixes": [
-        {
-          "index": 0,
-          "verificationStatus": "CONFIRMED",
-          "note": "Re-fetched i.hope.net. The quote is FOUND verbatim, and so are 'Well over 1000 people were in attendance at this gala event.' and 'Speakers from around the world made presentations ranging from privacy issues to technology to politics to methodologies.'"
-        },
-        {
-          "index": 1,
-          "verificationStatus": "CONFIRMED",
-          "note": "Re-fetched hope.net/about. The quote is FOUND, and so are the 'inspired by the Dutch hacker gatherings' sentence and 'In 2025, for the first time ever, HOPE became an annual event.' The page also confirms that The Circle of HOPE (2018) was the last HOPE held at the Hotel Pennsylvania, so the locationNote is correct."
-        }
-      ],
-      "addSources": [
-        {
-          "institution": "2600 Magazine (store.2600.com)",
-          "title": "Hackers On Planet Earth (1994): \"Cryptography and Privacy\" (Download)",
-          "date": "1994-08-13",
-          "url": "https://store.2600.com/collections/hackers-on-planet-earth/products/hackers-on-planet-earth-1994-cryptography-and-privacy-download",
-          "quote": "Saturday, August 13, 1994, 10:00 pm: There have been quite a few articles in the national media recently about cryptography and privacy.",
-          "verificationStatus": "CONFIRMED",
-          "accessType": "FREE",
-          "note": "--check FOUND. The same listing is FOUND saying 'Also featuring Eric Hughes and Matt Blaze.' It also describes Bob Stratton's introduction and a demonstration of 'the AT&T 3600 Surety device, the world's first Clipper Chip telephone encryption unit'."
-        }
-      ]
-    },
-    {
-      "kind": "event",
       "id": "securedrop-launched-freedom-of-the-press-foundation-2013",
       "status": "FIXED",
       "issues": [
@@ -121,6 +83,117 @@
         }
       ],
       "addSources": []
+    },
+    {
+      "kind": "event",
+      "id": "nyt-clearview-ai-face-recognition-revealed-2020",
+      "status": "FIXED",
+      "issues": [
+        "The summary says the Times 'revealed that the start-up Clearview AI had scraped more than three billion images from Facebook, YouTube, Venmo, Twitter and other sites'. The original article, read via Gulf News's syndicated copy of the NYT text dated 19 January 2020, hedges this: 'a database of more than 3 billion images that Clearview claims to have scraped from Facebook, YouTube, Venmo and millions of other websites'. Twitter does not appear anywhere in that text. It comes from EPIC's paraphrase, which cites the Times article's 10 February 2020 update.",
+        "The '600 agencies' figure was the company's own claim and was not independently verified: 'more than 600 law enforcement agencies have started using Clearview in the past year, according to the company, which declined to provide a list.'",
+        "'New Jersey's attorney general barred state police from using it' is too narrow and ambiguous, since it can be read as the New Jersey State Police only. The ACLU says the AG 'prohibited state law enforcement from using Clearview’s system'. EPIC says New Jersey 'banned statewide law enforcement agencies', and the NYT follow-up is headlined 'New Jersey Bars Police From Using Clearview Facial Recognition App'.",
+        "Checked and correct: Vermont AG lawsuit and congressional demands (ACLU), OAIC preliminary inquiries on 21 January 2020, and the October 2021 cease-collection and destroy orders. The OAIC determination is cited as [2021] AICmr 54 (14 October 2021), but the PDF's signature block reads '22 October 2021'. Either way 'October 2021' holds."
+      ],
+      "fieldFixes": {
+        "summary": "The New York Times article 'The Secretive Company That Might End Privacy as We Know It' by Kashmir Hill, dated 18 January 2020 in its web address, revealed that the start-up Clearview AI had built a face-search app on a database of more than three billion images it claimed to have scraped from Facebook, YouTube, Venmo and millions of other websites, and that — according to the company — more than 600 law-enforcement agencies had started using it in the past year. After the story, New Jersey's attorney general barred the state's police from using it, Vermont's attorney general sued and members of Congress demanded answers; Australia's privacy regulator opened inquiries on 21 January 2020 and in October 2021 ordered the company to stop collecting and to destroy Australians' images."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the EPIC PDF (dated March 6, 2020). Both sentences are FOUND verbatim and footnoted to the Times article, cited as 'N.Y. Times (Feb. 10, 2020)' at the 2020/01/18 URL. This is EPIC's paraphrase, however. The original Times text (see the added Gulf News source) says Clearview 'claims to have scraped' the images, lists 'Facebook, YouTube, Venmo and millions of other websites' without naming Twitter, and gives the 600-agency figure 'according to the company'. nytimes.com and its Wayback captures return a captcha or 403."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched. Both quotes are FOUND verbatim, and the page is dated May 28, 2020. The ACLU is a party to litigation against Clearview."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the OAIC PDF. FOUND: 'On 21 January 2020, the OAIC sent preliminary inquiries to the respondent', the declaration that the respondent 'must cease to collect Scraped Images, Probe Images, Scraped Image Vectors, Probe Image Vectors and Opt-out Vectors ... from individuals in Australia', the order that it 'must destroy' them within 90 days, and the 29 January 2020 opt-out form sentence. The signature block of this PDF reads 'Angelene Falk ... 22 October 2021', while the official citation and filename say 14 October 2021. The record's 2021-10-14 follows the citation."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Gulf News (syndicated The New York Times article)",
+          "title": "The secretive company that might end privacy as we know it",
+          "date": "2020-01-19",
+          "url": "https://gulfnews.com/world/americas/the-secretive-company-that-might-end-privacy-as-we-know-it-1.1579454027198",
+          "quote": "The system - whose backbone is a database of more than 3 billion images that Clearview claims to have scraped from Facebook, YouTube, Venmo and millions of other websites - goes far beyond anything ever constructed by the US government or Silicon Valley giants.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. Page JSON-LD: author 'NYT', datePublished 2020-01-19T21:12:08+04:00. This is the Times text syndicated, since the original nytimes.com page blocks scripted access. Also FOUND: 'But without public scrutiny, more than 600 law enforcement agencies have started using Clearview in the past year, according to the company, which declined to provide a list.'"
+        }
+      ]
+    },
+    {
+      "kind": "image",
+      "id": "wau-holland-hamburg-1984",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": [],
+      "checkNote": "Checked 2026-09-23 against the Commons API extmetadata: LicenseShortName 'Public domain', License 'pd', Copyrighted 'False', Artist 'Shoshone', Credit 'Self-photographed', DateTimeOriginal 'Taken in December 1984', ImageDescription 'Wau Holland, Dez. 1984 in Hamburg'. The raw wikitext has {{PD-user-de|Shoshone}} and {{taken in|1984-12|location=Hamburg}}. The licence is public domain and acceptable. The local file assets/media/wau-holland-hamburg-1984.jpg exists and opens as a 252x318 RGB JPEG, the same size as the Commons original. Viewing it confirms the alt text: a bearded man in a red sweater typing on a portable computer on his lap, with ring binders behind him. The caption's 'weeks after the Btx hack' is correct: the Wau Holland Foundation (wauland.de) dates the hack to 'the night from 16 to 17 November 1984', with the CCC press release on 19 November 1984. Era 'dataprotection' (the 1970–1993 slice) fits 1984."
+    },
+    {
+      "kind": "image",
+      "id": "john-perry-barlow-2016",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": [],
+      "checkNote": "Checked 2026-09-23 against the Commons API extmetadata: LicenseShortName 'CC BY-SA 4.0', LicenseUrl https://creativecommons.org/licenses/by-sa/4.0, Artist 'Parker Higgins', Credit 'Own work', DateTimeOriginal '2016-02-08 23:59:36', AttributionRequired true. The raw wikitext has {{self|cc-by-sa-4.0}}. The description matches the caption word for word ('at Toad Hall, the San Francisco home of John Gilmore, on the 20th anniversary of Barlow's A Declaration of the Independence of Cyberspace'). The Declaration is dated 8 February 1996, so 8 February 2016 is the 20th anniversary. The local file exists and opens as a 960x540 RGB JPEG, a downscale of the 4608x2592 original with the same aspect ratio. The image matches the alt text. The credit line names the author and licence as CC BY-SA requires."
+    },
+    {
+      "kind": "image",
+      "id": "mitch-kapor-2006",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [],
+      "addSources": [],
+      "checkNote": "Checked 2026-09-23 against the Commons API extmetadata: LicenseShortName 'CC BY 2.0', LicenseUrl https://creativecommons.org/licenses/by/2.0, Artist 'Joi', Credit is the Flickr URL https://www.flickr.com/photos/joi/309009879/..., DateTimeOriginal '2006-11-28 18:28:01', ImageDescription 'Mitch Kapor'. The raw wikitext has {{cc-by-2.0}} and a FlickreviewR 'reviewed-pass' dated 2013-01-27 confirming cc-by-2.0 on Flickr. The file sits in Category 'Photographs by Jōichi Itō', which supports 'Joi Ito'. The live Flickr page could not be parsed for its licence (oEmbed returned no photo data), but the licence was verified at upload and CC licences are irrevocable. The local file exists and opens as a 960x720 RGB JPEG, a downscale of the 1600x1200 original. The image matches the alt text. The locationNote honestly says the coordinates are a placeholder."
+    },
+    {
+      "kind": "event",
+      "id": "hackers-on-planet-earth-hope-new-york-1994",
+      "status": "FIXED",
+      "issues": [
+        "Summary calls the 1994 cryptography item 'a panel on cryptography and privacy'. The 2600 store listing shows it was a session titled 'Cryptography and Privacy' introduced by Bob Stratton, with a Clipper Chip (AT&T 3600 Surety) demonstration by Bernie S. and John Turbo and also featuring Eric Hughes and Matt Blaze. 2600 titles its real panels explicitly ('The 2600 Panel', 'The Author Panel', 'The Cellular Panel'), and this one is not billed as a panel. The wording is changed to 'session'. The Clipper demonstration is left out of the summary because the listing is a programme description written in the future tense ('will attempt').",
+        "'Modelled on the Dutch hacker gatherings' overstates the source, which says only 'inspired by'.",
+        "'the first US hacker conference on that scale' is HOPE's own claim ('the first time that a hacker conference of this size had been attempted in the United States'). The summary now attributes it to the organisers.",
+        "Dates (13-14 August 1994), venue (Hotel Pennsylvania), attendance (well over 1,000), 2600's tenth anniversary and 'annual from 2025' are all confirmed on the cited pages. Wikipedia independently gives 'August 13-14, 1994', 'Over 1,000 people attended'."
+      ],
+      "fieldFixes": {
+        "summary": "2600: The Hacker Quarterly marked its tenth anniversary with Hackers On Planet Earth, held at the Hotel Pennsylvania in Manhattan on 13–14 August 1994 and attended by well over 1,000 people. Inspired by the Dutch hacker gatherings of the 1980s and 1990s, it was, by its organisers' account, the first hacker conference of that size attempted in the United States, with talks 'ranging from privacy issues to technology to politics' and a 'Cryptography and Privacy' session featuring Eric Hughes and Matt Blaze. HOPE became a recurring New York conference, annual from 2025."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched i.hope.net. The quote is FOUND verbatim, and so are 'Well over 1000 people were in attendance at this gala event.' and 'Speakers from around the world made presentations ranging from privacy issues to technology to politics to methodologies.'"
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched hope.net/about. The quote is FOUND, and so are the 'inspired by the Dutch hacker gatherings' sentence and 'In 2025, for the first time ever, HOPE became an annual event.' The page also confirms that The Circle of HOPE (2018) was the last HOPE held at the Hotel Pennsylvania, so the locationNote is correct."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "2600 Magazine (store.2600.com)",
+          "title": "Hackers On Planet Earth (1994): \"Cryptography and Privacy\" (Download)",
+          "date": "1994-08-13",
+          "url": "https://store.2600.com/collections/hackers-on-planet-earth/products/hackers-on-planet-earth-1994-cryptography-and-privacy-download",
+          "quote": "Saturday, August 13, 1994, 10:00 pm: There have been quite a few articles in the national media recently about cryptography and privacy.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND. The same listing is FOUND saying 'Also featuring Eric Hughes and Matt Blaze.' It also describes Bob Stratton's introduction and a demonstration of 'the AT&T 3600 Surety device, the world's first Clipper Chip telephone encryption unit'."
+        }
+      ]
     }
   ]
 }

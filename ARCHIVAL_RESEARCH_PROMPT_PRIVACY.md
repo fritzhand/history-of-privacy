@@ -20,7 +20,8 @@ the exact quote, then rebuild (`node tools/build-data.mjs`).
 ## Access notes
 
 - EUR-Lex, coe.int, oecd.org, Légifrance, Gallica, OHCHR, SSRN, HathiTrust and
-  IEEE Xplore block scripts. What worked: the EU Publications Office's Cellar
+  IEEE Xplore's pages block scripts. What worked: IEEE's `stampPDF` link for a
+  GET Program standard (it serves the full PDF); the EU Publications Office's Cellar
   repository (the same Official Journal text) and legislation.gov.uk's copies
   of EU directives; the CNIL's copy of Loi 78-17; the OECD's PDF editions; the
   Irish Statute Book's Convention 108; `documents.un.org`; `static.case.law`.
@@ -30,15 +31,16 @@ the exact quote, then rebuild (`node tools/build-data.mjs`).
 
 ## Tier 1 — quantitative gaps
 
-1. **IEEE 7012-2025, the normative text (priority).** IEEE Xplore document
-   11360682 is free under the GET Program but needs an IEEE sign-in, and Xplore
-   bot-challenges scripts: only the abstract, scope and purpose were read. Check
-   the five launch agreements (SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD,
-   PDC-INTENT) and whether Annex A lists 13; the four principles (transparency,
-   data minimisation, purpose limitation, reciprocity), sourced to myterms.info
-   alone; the record-keeping clause ("a matching record shall be kept by both
-   sides") and any record format, signature, protocol or dispute forum, which
-   the agent walk-through calls "not specified"; scope sentences 2–3 (PENDING).
+1. **IEEE 7012-2025 in use (priority).** The normative text has now been read
+   (the GET Program PDF) and every claim about it on the site checked clause by
+   clause: no agreement codes appear in clauses 1–5; informative Annex A lists
+   13 sample agreements; records, refusals and signatures are normative
+   (cl. 5.2.4, 5.4.2, 5.4.4). Still open: the full legal and machine-readable
+   texts of the five MyTerms launch agreements at Customer Commons, and the
+   eight "in the pipeline"; the four principles (transparency, data
+   minimisation, purpose limitation, reciprocity), still sourced to
+   myterms.info alone; and any deployed agent or site that keeps records as
+   cl. 5.2.4 and 5.4.4 require.
 2. **US data breaches by year.** The Identity Theft Resource Center's annual
    reports (idtheftcenter.org 403). The series `us-data-compromises` waits.
 3. **Greenleaf's count, year by year.** His 2025 list (SSRN 5189972; 403).
@@ -73,9 +75,9 @@ the exact quote, then rebuild (`node tools/build-data.mjs`).
   on Avalon, the Soghoian and Montulli posts, the myterms.info banner, Obar and
   Oeldorf-Hirsch, Proposition 24's vote counts. Wikipedia is cited 20 times;
   replace it first in the Warren-wedding myth, the laws table and Lentz (1936).
-- **GDPR Art. 88b.** The site says the Council's 18 June 2026 Digital Omnibus
-  text dropped it, citing noyb (the Council text was not read); `concepts.json`
-  calls it a live proposal. Read the Council text and state its status.
+- **GDPR Art. 88b.** The site says, citing noyb and PPC Land, that the Council
+  presidency's 18 June 2026 Digital Omnibus text dropped it; the Council text
+  itself was not read. Read it, and follow the Parliament's amendments.
 - **IEEE 7012 dates and people.** "-2025" as the approval year (inferred; find
   the IEEE SA rule); Customer Commons' founding (2013, yet online in 2011; find
   the incorporation record); JLINC as MyTerms' protocol (evidence, or retire).
@@ -98,7 +100,8 @@ Public domain, CC0, CC BY or CC BY-SA only; quote the rights statement in
 `rightsEvidence`. Wanted: Lou Montulli; the MyTerms launch (London, 28 January
 2026); a 1983 census-boycott poster; the 1950 ECHR signing; Samuel D. Warren
 (Commons shows his father); Tim May, Vitaly Shmatikov, Aleecia McDonald,
-Christopher Allen. Licences unproven: the Tor diagram, Adam Back's T-shirt.
+Christopher Allen. Licences unproven, so left off the page: the Tor diagram, Adam Back's
+T-shirt; a release from the rights holders would restore them.
 
 ## Tier 4 — coverage
 

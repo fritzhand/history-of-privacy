@@ -1,0 +1,167 @@
+{
+ "slice": "personas-advocates",
+ "chunk": "f101",
+ "verdicts": [
+  {
+   "kind": "people",
+   "id": "wau-holland",
+   "status": "FIXED",
+   "issues": [
+    "quoteSource.note dates Holland's DAFTA talk to 'early November 1984' (following heise's loose wording). The 8th DAFTA (Datenschutzfachtagung) talk, and the ZDF heute journal report on it, was on 15 November 1984, the day before the Btx hack night of 16-17 November (CCC Chaosradio DOC001; Röhr thesis fn. 438 gives the DAFTA as 15-16 November 1984 and says the hack ran on the weekend after the DAFTA talk).",
+    "All four source quotes re-fetched and FOUND verbatim; contribution claims (five Hamburg inviters, taz notice 1 Sept 1981, meeting 12 Sept 1981 as informal founding, Haspa login, DM 134,634.88, Wernéry as partner, death 29 July 2001, lecture topics) all supported."
+   ],
+   "fieldFixes": {
+    "quoteSource.note": "Holland's words to data-protection officials at the 8th DAFTA (Datenschutzfachtagung) in Cologne on 15 November 1984, the day before the Btx hack night (heise says only 'early November 1984'; the date is from the CCC's Chaosradio archive of the ZDF heute journal report, sendung 15.11.1984). heise quotes it, in an English translation of Detlef Borchers's German article, from the CCC's own 1984 Btx dossier, a scanned PDF hosted by the Wau Holland Stiftung: https://www.wauland.de/media/btx-hack/1984-10-xx_CCC-Btx.pdf (no text layer). A German version spoken on camera is on https://chaosradio.ccc.de/doc001.html: 'Unser gemeinsames Interesse ist es Menschen zu schützen und zwar vor dem Mißbrauch von Daten'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched PDF; quote FOUND verbatim (p. 58-59). Same page reprints the taz notice 'TUWAT,TXT Version' (fn. 319: taz, 01. September 1981, S. 2) including 'Datenrecht (Wem gehören meine Daten?)', names the five Hamburg inviters (Schleisiek, Holland, Gevert, Wulf Müller, Jochen Büttner), and says the CCC itself calls the 12 September 1981 meeting its informal founding. Pp. 82-83 confirm Holland and Wernéry used the Haspa Btx login and raised more than 134,000 marks overnight on the weekend after the DAFTA talk."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. Dateline 2001-08-13; the words are Boris Groendahl's ('Groendahl recalled'), from his Industry Standard obituary. Article also says Holland 'died July 29 of complications from a stroke'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. Page says 'Steffen Wernéry and Wau Holland' ran the hack in the night of 16 to 17 November 1984. German about page re-fetched: death date sentence and the lecture-topics sentence both FOUND verbatim."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Chaos Computer Club (Chaosradio Podcast Network, Dossier Chaotique)",
+     "title": "DOC001: 1984-11-15 Wau Holland auf der DAFTA (ZDF heute journal report on the 8th Datenschutzfachtagung)",
+     "date": "1984-11-15",
+     "url": "https://chaosradio.ccc.de/doc001.html",
+     "quote": "Unser gemeinsames Interesse ist es Menschen zu schützen und zwar vor dem Mißbrauch von Daten",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "German original of the record's quote as spoken to camera ('Our common interest is to protect people, namely from the misuse of data'). Page gives 'Sendungsdatum: 15.11.1984' for the broadcast and was published online 01.02.2006; --check FOUND."
+    }
+   ]
+  },
+  {
+   "kind": "people",
+   "id": "john-perry-barlow",
+   "status": "FIXED",
+   "issues": [
+    "handle 'JPB (the WELL)' presents 'JPB' as his login on the WELL; no source on the record (or found independently) shows that. 'JPB' was an informal nickname, and his WELL presence was under his surname. The field is unsupported, so it should be blanked (as for Kapor) rather than asserted.",
+    "All other claims checked and supported: EFF founded July 1990 by Kapor, Barlow and Gilmore, who met on the WELL, in response to the Steve Jackson Games raid (EFF history page); the declaration was signed 'Davos, Switzerland February 8, 1996' and written the night Clinton signed the Communications Decency Act (Barlow's 2016 Boing Boing retrospective); 'at least 10,000 Internet sites' within a month and 'To some degree, they have. In most ways, they have not.' (on self-regulation) both FOUND; EFF obituary published 2018-02-07 says he 'passed away quietly in his sleep this morning'; 'We are forming our own Social Contract' FOUND on the declaration page."
+   ],
+   "fieldFixes": {
+    "handle": ""
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; both quotes FOUND verbatim. Context confirms the self-regulation sentence refers to 'organic' self-regulation online, and that he wrote the declaration at the WEF closing party the night the Communications Decency Act was signed."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. article:published_time 2018-02-07; text says he 'passed away quietly in his sleep this morning', supporting the 7 February 2018 death date."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. Same page: 'John Perry Barlow, Wyoming cattle rancher and lyricist for the Grateful Dead' and the WELL as the community where the founders met; also names Kapor ('former president of Lotus Development Corporation') and Gilmore ('an early employee of Sun Microsystems')."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "john-gilmore",
+   "status": "OK",
+   "issues": [
+    "No errors found. quoteSource re-fetched over http: header 'Given at the First Conference on Computers, Freedom, and Privacy / March 28, 1991 / Public domain -- not copyrighted'; quote FOUND verbatim and followed by 'Encryption strong enough that even the NSA can't break it', which supports the 'encryption rather than law' summary.",
+    "Minor nuance, no change required: on 4 July 2002 Gilmore was refused at Southwest (Oakland) and, the same day, at United (SFO); the record mentions only Southwest, which is accurate as far as it goes. The Cypherpunks (1992) postdate the 1991 talk, so 'set out the cypherpunk programme' is an interpretive, anticipatory claim."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. Same biography: 'He was an early employee of Sun Microsystems, early open source author, and co-created Cygnus Solutions, the Electronic Frontier Foundation, the Cypherpunks, the DES Cracker, and the Internet's \"alt\" newsgroups.' toad.com homepage lists gnu@toad.com, supporting the handle."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched PDF; quote FOUND verbatim. 'Filed January 26, 2006'; 'On July 4, 2002 ... attempted to fly from Oakland International Airport to Baltimore-Washington International Airport on a Southwest Airlines flight'; SSI materials reviewed 'ex parte and in camera'; holding sentence FOUND verbatim."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "mitch-kapor",
+   "status": "FIXED",
+   "issues": [
+    "quoteSource.date is 1993-03-01, taken from wired.com's datePublished. That value is an artefact of the issue number: the page's own metadata carries keywords 'magazine-1.03' (Wired volume 1, issue 3), and the old archive URL was wired.com/wired/archive/1.03/kapor.on.nii_pr.html. Wired 1.03 is the July/August 1993 issue, whose cover story ('Beyond 500 Channels') was Kapor's essay. So the print date is July/August 1993, not March 1993. The year (1993) in keyWork and the summary is still right.",
+    "All other claims supported: quote and thread quotes ('Users should be able to determine the content of the system'; 'whether as consumers, providers, or both'; 'well-defined published interfaces') FOUND verbatim; Lessig and Reagle quotes FOUND; 'Across the Electronic Frontier' is signed 'Mitchell Kapor and John Perry Barlow ... Washington, D.C. July 10, 1990'."
+   ],
+   "fieldFixes": {
+    "quoteSource.date": "1993-07",
+    "quoteSource.note": "Published in Wired issue 1.03 (July/August 1993), whose cover line 'Beyond 500 Channels' flagged Kapor's essay. wired.com's datePublished of 1993-03-01 and its /1993/03/ URL come from the issue number (the page's keywords metadata reads 'magazine-1.03'), not from a March cover date."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. The page is Lessig's note on the Lemley–Lessig filing in the AT&T/MediaOne merger proceeding (1999), so the 1999 date is reasonable; it also says EFF later updated the slogan to 'Architecture is Policy'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; FOUND verbatim in the entry '\"Architecture is politics.\" Kapor, Mitchell . (EFF) [source: confirmed by Kapor, estimates it was first said in 1991.]'."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim. Byline 'by: Mitchell Kapor and John Perry Barlow Electronic Frontier Foundation Washington, D.C. July 10, 1990' matches the date field."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "richard-stallman",
+   "status": "FIXED",
+   "issues": [
+    "The contribution's last clause misreads the FSF board's 12 April 2021 statement. The board did not say the decision to re-elect him was troubling to some. It said 'his personal style remains troubling for some, a majority of the board feel his behavior has moderated', and separately took 'full responsibility for how badly we handled the news of his election'. The clause is reworded to match.",
+    "Also, on 16 September 2019 he resigned as president and from the board of directors, not only as president (FSF notice). The rewording adds this.",
+    "Source 1 (gnu.org 'How Much Surveillance Can Democracy Withstand?') could not be re-fetched today: gnu.org reset the connection several times and WebFetch got HTTP 503. The same sentence is FOUND verbatim in the Wired original (published 2013-10-14), which is the better source for the record's claim 'he argued in Wired (October 2013)'. The source is repointed there.",
+    "Other claims supported: the announcement is dated 'Tue, 27-Sep-83', sent from the 'MIT AI Lab, Cambridge, MA', and begins 'Free Unix!'; the free-sw.html quote, its continuation and the 'run, copy, distribute, study, change and improve' wording were all FOUND."
+   ],
+   "fieldFixes": {
+    "contribution": "On 27 September 1983 Stallman, then at MIT's Artificial Intelligence Lab, announced GNU, a Unix-compatible system he would give away free, and went on to found the Free Software Foundation. His free-software definition makes user control of software a moral question: users should be free to run, copy, distribute, study, change and improve programs. After the Snowden disclosures he argued in Wired (October 2013) that general surveillance had reached a level incompatible with human rights. On 16 September 2019 he resigned as FSF president and from its board amid controversy. He was voted back onto the board in 2021; the board's statement conceded that 'his personal style remains troubling for some'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; both quotes FOUND verbatim. Header: 'Newsgroups: net.unix-wizards,net.usoft Subject: new Unix implementation Date: Tue, 27-Sep-83 12:35:59 EST Organization: MIT AI Lab, Cambridge, MA', body opens 'Free Unix!'."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "institution": "Wired",
+     "title": "Richard Stallman, 'Stallman: How Much Surveillance Can Democracy Withstand?'",
+     "date": "2013-10-14",
+     "url": "https://www.wired.com/2013/10/a-necessary-evil-what-it-takes-for-democracy-to-survive-surveillance/",
+     "note": "Repointed from gnu.org/philosophy/surveillance-vs-democracy.html, which was unreachable at check time (connection reset; HTTP 503). This is the October 2013 Wired original named in the record (datePublished 2013-10-14T09:30:24-04:00). Quote FOUND verbatim. The revised essay is still on gnu.org at the old URL."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched; quote FOUND verbatim; page 'Published on Apr 12, 2021'. 2019 notice re-fetched: 'Published on Sep 16, 2019 ... On September 16, 2019, Richard M. Stallman, founder and president of the Free Software Foundation, resigned as president and from its board of directors.'"
+    }
+   ],
+   "addSources": []
+  }
+ ]
+}

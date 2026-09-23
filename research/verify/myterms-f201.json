@@ -1,0 +1,1081 @@
+{
+ "slice": "myterms",
+ "chunk": "f201",
+ "verdicts": [
+  {
+   "kind": "standard",
+   "id": "standard",
+   "status": "FIXED",
+   "issues": [
+    "The full text has now been read: the IEEE Xplore PDF, served free through the GET Program (50 pages, printed pp. 1-48), fetched 2026-09-23. normativeTextRead=false and normativeTextNote are out of date. Clauses 1-5 are normative ('shall' = 'mandatory requirements', cl. 1.4). The Introduction says it 'is not part of' the standard, and cl. 6 says 'All annex contents are to be considered informative.' (both --check FOUND).",
+    "Front-matter facts all match the PDF (--check FOUND): title, designation, 'Developed by the Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology', 'Approved 4 November 2025 IEEE SA Standards Board', 'Published 20 January 2026', keywords, the WG name ('the Machine Readable Privacy Terms Working Group') and officers ('Doc Searls, Chair Justin Byrd, Vice Chair Mary Hodder, Editor Scott Mace, Secretary'). The PDF spells 'Lisa LeVasseur', which confirms the record against the FAQ's 'LaVasseur'. It lists Reed and LeVasseur only as members, so the order of chairs still rests on the FAQ.",
+    "scope: all three sentences are verbatim in cl. 1.1 (FOUND). scopeNote's PENDING caveat on sentences 2-3 is resolved. purpose: verbatim in cl. 1.2 (the PDF has em dashes where the record has '--').",
+    "isbn: the copyright page prints both ISBNs ('ISBN 979-8-8557-2944-3 ISBN 979-8-8557-2945-0', FOUND), with product codes STD28515 and STDPD28515 under 'PDF:' and 'Print:' labels. The print ISBN is no longer an inference.",
+    "abstract: verbatim on the PDF's abstract page. It is front matter, not a numbered clause: its 'shall' sentences summarise cl. 4-5, with two differences. (1) 'any protocol that serves the purpose' is repeated in no numbered clause. Cl. 1.3 says operation 'depends on the Internet Protocol Suite, especially TCP/IP, and HTTP', and cl. 5.4.2 lets agents sign 'using any standard method agreed upon for that purpose'. (2) The abstract puts party-to-party negotiation out of scope, yet cl. 5.3.1(b) lets the entity 'Respond to the individual with a single alternative set of terms from the structured and bounded list', and cl. 5.2.2 caps it: 'There shall be no negotiation beyond the single choice by either party.' Clauses 1-5 never use the word 'AI'. Apart from IEEE's boilerplate notice on AI use of its documents, the abstract's 'AI agents' is the only such mention outside the informative annexes' AI-training term.",
+    "getProgramNote: tools/fetch-text.py, which sends no cookies or credentials, downloaded the PDF from the stampPDF link at 12:23 UTC on 2026-09-23 (watermark 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.', FOUND). That download therefore needed neither payment nor an IEEE sign-in. A later curl from the same sandbox met Xplore's bot challenge (HTTP 418). The editorial facts row 'Free PDF through the IEEE GET Program (free IEEE account)' is unsupported, and a prose fix is filed.",
+    "Internal inconsistencies in the published text that users should know before quoting it: cl. 6 swaps Annexes C and D ('ecosystem translation and interoperability information in Annex C', FOUND, while the annexes themselves put interoperability in D). Cl. 5.5 refers readers to 'the information in Annex E' for interoperability, but Annex E is the bibliography. Table A.1's legend ('✓ Required X Not allowed ○ Optional', FOUND) contradicts the sentence before it ('✓ represents the stated activity is permitted, i.e., it MAY be done', FOUND). Cl. 4.4.2 says agreements are machine readable by agents 'when they are in, at minimum RDF or XML formats', yet adds that the Annex A examples 'use JSON formats'."
+   ],
+   "fieldFixes": {
+    "normativeTextRead": true,
+    "normativeTextNote": "Read in full on 2026-09-23: the IEEE Xplore PDF (50 pages; printed page numbers run to 48), served free through the IEEE GET Program at https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=. Clauses 1-5 are normative; cl. 1.4 defines 'shall' as mandatory, 'should' as recommended and 'may' as permitted. The Introduction states that it 'is not part of' the standard, and cl. 6 says 'All annex contents are to be considered informative': Annex A (draft terms with sample code — the SD-BASE and PDC agreement codes, a bitwise 'CONTRACT ZONE' encoding, an HTTP-header example, RDF/Turtle, JSON, JSON-LD, RSS and Pickle samples), Annex B (two use cases), Annex C (abbreviated designations, pointing to Customer Commons), Annex D (ISO 23903 interoperability) and Annex E (bibliography). No agreement is named in clauses 1-5: the agreement codes, the counter-offer walk-through and the DPV/ODRL recommendation are all in informative Annex A. The text's own cross-references are imperfect: cl. 6 swaps Annexes C and D, cl. 5.5 points to Annex E for interoperability, and Table A.1's legend contradicts the sentence before it about what its symbols mean.",
+    "scopeNote": "All three sentences are verbatim in cl. 1.1 (Scope) of the published standard (CONFIRMED against the IEEE Xplore PDF, 2026-09-23). The first sentence is also the 2017 PAR scope.",
+    "abstractNote": "Verbatim from the IEEE SA standard page and from the abstract page of the published PDF. The PAR text Doc Searls published on 6 April 2025 reads 'including websites' where the published abstract reads 'including websites, applications and AI agents'. The explicit AI-agent language appears in the final text, but only here: clauses 1-5 never use the word 'AI'. The abstract is front matter, and its 'shall' sentences summarise cl. 4-5, with two differences. 'Any protocol that serves the purpose' appears in no numbered clause (cl. 1.3 says operation 'depends on the Internet Protocol Suite, especially TCP/IP, and HTTP'). And although the abstract puts negotiation out of scope, cl. 5.3.1(b) lets the entity answer with 'a single alternative set of terms from the structured and bounded list', while cl. 5.2.2 allows 'no negotiation beyond the single choice by either party'.",
+    "isbn": "979-8-8557-2944-3 (PDF; product code STD28515) and 979-8-8557-2945-0 (print; STDPD28515), both printed on the standard's copyright page. IEEE Xplore and Crossref give 979-8-8557-2944-3 as the electronic ISBN; the Accuris store lists both.",
+    "pages": "Xplore lists pages 1-50 and the PDF has 50 pages (printed page numbers run to 48); the Accuris store lists 43 pages (count conventions differ)",
+    "otherOfficers": "Vice Chair Justin Byrd; Editor Mary Hodder; Secretary Scott Mace (Participants page of the standard; also the MyTerms FAQ); IEEE Program Manager Malia Zaman (IEEE SA page)",
+    "getProgramNote": "Free PDF through the IEEE GET Program for AI Ethics and Governance Standards (Doc Searls: the 7000-series GET standards 'are free'; the Xplore page metadata flags the document as GET/free). The GET program page says users must accept IEEE's Terms and Conditions of Use before the PDF is released. On 2026-09-23 the repo helper, which sends no cookies or credentials, downloaded the PDF from the stampPDF link (page watermark 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.'). No IEEE sign-in was needed for that download. Later requests from the same sandbox met Xplore's bot challenge (HTTP 418)."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: title and copyright pages",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "All rights reserved. Published 20 January 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Front matter, not a clause. The copyright page gives the publication date; the title page reads 'Approved 4 November 2025 IEEE SA Standards Board' and 'Developed by the Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology', and the copyright page prints 'ISBN 979-8-8557-2944-3 ISBN 979-8-8557-2945-0' (all FOUND). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.1 Scope",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "It is limited to the selection and signing of a contract kept in a public roster by a neutral noncommercial entity, with identical copies of that contract kept by both parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The third scope sentence; the first two ('The standard identifies/addresses ...' and 'The scope of this draft standard is confined to routines ...') are also in cl. 1.1 (FOUND), so all three scope sentences are confirmed from the standard itself. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.2 Purpose",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The purpose of the standard is to provide individuals with means to proffer their own terms respecting personal privacy, in ways that can be read, acknowledged and agreed to by machines operated by others in the networked world.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The purpose text is verbatim in cl. 1.2 (the PDF uses em dashes around 'mostly companies'). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: Participants",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Doc Searls, Chair Justin Byrd, Vice Chair Mary Hodder, Editor Scott Mace, Secretary",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Front matter. The same page says 'the Machine Readable Privacy Terms Working Group had the following membership' and lists David P. Reed and 'Lisa LeVasseur' (both FOUND) as members; it does not record earlier chairs. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 6 Annexes to IEEE Std 7012-2025",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "All annex contents are to be considered informative.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative statement of status. The clause adds 'However, none of these examples shall be considered normative.' (FOUND). Note that cl. 6 swaps Annexes C and D in its own description ('ecosystem translation and interoperability information in Annex C', FOUND), whereas the annexes themselves put the abbreviated designations in C and interoperability in D. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "agreements",
+   "id": "SD-BASE",
+   "status": "FIXED",
+   "issues": [
+    "No agreement code appears in the standard's normative clauses 1-5. SD-BASE is defined only in informative Annex A (A.1, Table A.1), as 'the baseline term'.",
+    "plainSummary follows the MyTerms FAQ, under which the site 'may observe you while you are there'. The standard's own sample is stricter: 'SD-BASE, as the baseline term, represents the individual’s preference to receive a service without any analytics, tracking, or profiling by the 2nd or 3rd parties' (Annex A, --check FOUND). Table A.1 marks Analytics 2P, Tracking 2P, Profiling 2P and Share Anonymised Data 3P all 'X' (not allowed), with Data Portability optional under the table's legend. 'May observe the person while they are there' should not be read as permitting on-site analytics or tracking. The summary is rewritten to give both accounts and attribute each.",
+    "The note ('full legal text and machine-readable encodings were not published') still holds for MyTerms' own texts. The standard's Table A.2 gives only a skeleton row for SD-BASE with placeholder URLs ('https://.../agreement/sd-by/0.1/'), and its full RDF and JSON-LD samples encode SD-BASE-AT, not SD-BASE."
+   ],
+   "fieldFixes": {
+    "plainSummary": "The default: the site or service provides what the person came for and does not share information about them with other parties. MyTerms likens it to the tacit deal in a shop, which may observe you while you are there. The standard's own sample of SD-BASE (informative Annex A) is stricter: it rules out analytics, tracking and profiling by the site itself as well as by third parties. It is the base/default agreement for anyone whose agent proposes MyTerms to an organisation."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "SD-BASE, as the baseline term, represents the individual’s preference to receive a service without any analytics, tracking, or profiling by the 2nd or 3rd parties.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). The standard's sample SD-BASE bars analytics, tracking and profiling by the site itself as well as by third parties; Table A.1 marks Analytics 2P, Tracking 2P, Profiling 2P and Share Anonymised Data 3P all 'X', with Data Portability optional under the table's legend. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "agreements",
+   "id": "SD-BASE-DP",
+   "status": "OK",
+   "issues": [
+    "Confirmed as a sample agreement in informative Annex A (Table A.1). Under the table's legend, its Data Portability cell is required where SD-BASE's is optional, which matches MyTerms' 'added requirement' for a data-portability request. The sentence before the table reads the symbols the other way round; the legend is the reading under which the table is coherent. Annex A groups the ten SD-BASE variants as relationship agreements: 'These (SD) agreements are relevant when the individual is receiving a service, or product that has a digital component, and thus there is an ongoing digital relationship' (FOUND). The code appears in no normative clause."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), Table A.1 Sample machine-readable privacy terms",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "✓ Required X Not allowed ○ Optional",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Table A.1 lists SD-BASE-DP as a sample agreement; under this legend its Data Portability cell is '✓' (required) where SD-BASE's is '○' (optional). The sentence before the table reads the symbols the other way round ('✓ represents the stated activity is permitted, i.e., it MAY be done', FOUND); the legend is the reading under which the table is coherent (Service Delivery is 'always required'). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "agreements",
+   "id": "PDC-AI",
+   "status": "OK",
+   "issues": [
+    "Confirmed as a sample agreement in informative Annex A only. The annex's term list includes 'AI Training and Operation', and Table A.1 gives PDC-AI the scope 'Training AI' among the one-off contribution agreements. Annex A adds that the three PDC agreements 'should have unique contract wrappers ... such as for time limited use'. The MyTerms FAQ's gloss 'anonymously training AI' is not in the standard, which does not say the data are anonymised."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "AI Training and Operation",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). One of the ten sample term codes (AI); Table A.1 lists PDC-AI with scope 'Training AI' among agreements for data 'providing' or 'donating' on a one-off basis, with second-party analytics, tracking and profiling and third-party sharing all marked not allowed. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "agreements",
+   "id": "PDC-GOOD",
+   "status": "OK",
+   "issues": [
+    "Confirmed as a sample agreement in informative Annex A only. Table A.1 gives it the scope 'Public Good', and the annex's term code is GOOD ('Public Good'). MyTerms' name 'Data for Good' is its own label. Annex A groups the three PDC agreements as one-off contributions: 'the assumption is that these data contributions are on a one-off basis' (FOUND). No normative clause defines agreement types. (Verdicts on the agreementTypes records are not filed here: tools/apply-verdicts.py matches id-less records by 'type', so an agreementTypes verdict would land on the first agreement of that type.)"
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The last three terms, PDC-INTENT, PDC-AI and PDC-GOOD should have unique contract wrappers for their utilization such as for time limited use.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Names the three contribution agreements; Table A.1 gives PDC-GOOD the scope 'Public Good' (MyTerms calls it 'Data for Good'). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "agreements",
+   "id": "PDC-INTENT",
+   "status": "OK",
+   "issues": [
+    "Confirmed as a sample agreement in informative Annex A only (Table A.1 scope 'Intent Casting'; term code INTENT). Informative Annex B.2 illustrates the idea as a use case. 'The Intention Economy' framing is MyTerms' own; the standard does not use it."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex B (informative) Use cases, B.2",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Sharing personal buying interest data (aka intentcasting or broadcast shopping)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex B). Title of the intentcasting use case; Table A.1 in Annex A gives PDC-INTENT the scope 'Intent Casting'. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "principles",
+   "id": "Transparency",
+   "status": "OK",
+   "issues": [
+    "This is MyTerms' principle, not a clause of the standard. The standard's informative Annex A has its own ten 'Overarching Principles for the sample terms', (a)-(j), none named 'transparency'. The nearest normative text is cl. 4.3, 'Agreement names shall enable transparency', and cl. 5.3.2, 'Entities shall display publicly all terms they would accept' (both FOUND). The page correctly heads these four 'The Principles Built into the Agreements'."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.3 Naming and labeling",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Agreement names shall enable transparency and be meaningful when seen from the perspective of a non-specialist.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The standard's nearest text to a transparency principle; cl. 5.3.2 adds 'Entities shall display publicly all terms they would accept from an individual who proposes terms and agreements.' (FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "principles",
+   "id": "Data minimisation",
+   "status": "OK",
+   "issues": [
+    "MyTerms' wording. The standard's informative Annex A has the same idea as principle (c), 'The person provides data required for service and no more.'"
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The person provides data required for service and no more.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Principle (c) of the annex's ten 'Overarching Principles for the sample terms'; the standard's own counterpart to MyTerms' data-minimisation principle. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "principles",
+   "id": "Purpose limitation",
+   "status": "OK",
+   "issues": [
+    "MyTerms' wording. The standard's informative Annex A has the same idea as principle (e), 'Any purposes and terms not overtly mentioned as allowed are not allowed.' It adds principle (d): all personal data is deleted when an agreement ends unless national regulations override."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Any purposes and terms not overtly mentioned as allowed are not allowed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Principle (e) of the annex's ten 'Overarching Principles for the sample terms'; the standard's own counterpart to MyTerms' purpose-limitation principle. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "principles",
+   "id": "Reciprocity",
+   "status": "OK",
+   "issues": [
+    "No clause of the standard, normative or informative, states a reciprocity principle. The nearest texts are the optional Data Portability term (DP) in Annex A and Annex A principle (d), 'All personal data is deleted at the termination of an agreement unless expressly overridden by national regulations.' (FOUND). The principle is MyTerms' own, and the page attributes it to the MyTerms agreements, not to IEEE 7012. No source added."
+   ]
+  },
+  {
+   "kind": "formats",
+   "id": "Plain language",
+   "status": "OK",
+   "issues": [
+    "The standard requires a plain-language form: cl. 4.2 says agreements 'shall be expressed in textual forms that can easily be understood by ordinary persons', and cl. 4.4.1 sets the plain-language requirement. 'Maximum one page' is MyTerms' own rule, not the standard's. The note's 'published in English (UK)' is MyTerms practice. Cl. 4.4.1 requires implementors to 'present contract language in the native tongue of their market of origin', and in other languages their markets require."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.1 Human-readability",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The human-readable component shall be a simple, easy-to-understand, and text-based explanation in plain language.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). No page limit is set. The same clause requires implementors to 'present contract language in the native tongue of their market of origin' and in other languages their markets require (FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "formats",
+   "id": "Machine readable",
+   "status": "OK",
+   "issues": [
+    "Required by the standard. Cl. 4.4.2 requires agreements and their terms to be 'discoverable and readable by computers in a structured format', and says they are machine readable by agents 'when they are in, at minimum RDF or XML formats'. The informative Annex A gives samples in RDF/Turtle, JSON, JSON-LD, RSS and Pickle-generated formats, consistent with MyTerms' 'range of formats'."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.2 Machine-readability",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "when they are in, at minimum RDF or XML formats",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause. The clause opens 'This component shall be constructed with mechanisms enabling agreements themselves, and the individual terms within them, to be discoverable and readable by computers in a structured format.' (FOUND). It then says 'Example formats are located in Annex A and use JSON formats.' (FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "formats",
+   "id": "Legal agreement",
+   "status": "OK",
+   "issues": [
+    "Required by the standard. Cl. 4.4.3 says the legal text 'forms the canonical agreement itself', which matches MyTerms' 'canonical interpretation'."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.3 Legal readability",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Agreements shall be written as formal contracts, specifying exactly what requirements, promises, and other obligations shall be obeyed by both parties",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). Agreements under the standard are designed as contracts; cl. 3.1 defines a contract as 'a mutual agreement between parties that creates mutual obligations and is enforceable by law' (FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "dpv-links",
+   "status": "FIXED",
+   "issues": [
+    "'The draft standard's appendix cites DPV' is out of date and imprecise. In the published standard, normative cl. 4.4.2 asks only that terms 'link directly to canonical explanations and IRIs'. DPV is named in cl. 3.1 (definitions) and, as a vocabulary to use with ODRL, in informative Annex A principle (j), whose 'shall' carries no conformance weight because the annex is informative (cl. 6). Annex A's sample code uses the DPVCG extension's namespace (https://w3id.org/dpv/standards/p7012#)."
+   ],
+   "fieldFixes": {
+    "summary": "Where useful, MyTerms agreements link key words to DPV perma-link definitions. The published standard requires machine-readable terms to 'link directly to canonical explanations and IRIs' (cl. 4.4.2). It names DPV, together with ODRL for permissions, prohibitions and obligations, only in its informative Annex A, whose sample code uses the P7012 extension drafted by the W3C DPV Community Group."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.2 Machine-readability",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "having the terms within them link directly to canonical explanations and IRIs (Internationalized Resource Identifiers).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause. Linking terms to canonical definitions is how the standard says machine-readability is met 'to at least a base level'; it does not name DPV here. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "such as the Data Privacy Vocabulary (DPV) to express purposes, data categories, and other pertinent information in an interoperable and machine-readable format",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A), principle (j): the agreements 'shall utilize relevant standards and best practices' such as DPV, with 'Open Digital Rights Language (ODRL) or equivalent' for permissions, prohibitions and obligations (FOUND). The 'shall' sits in an informative annex, so it is not a conformance requirement; the sample code uses the namespace https://w3id.org/dpv/standards/p7012#. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "roster-neutral-nonprofit",
+   "status": "FIXED",
+   "issues": [
+    "The normative rule is cl. 4.2: terms and contracts 'shall be kept and displayed ... on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use'. That is slightly wider than 'non-business entity' (the abstract) or 'neutral noncommercial entity' (cl. 1.1). No normative clause names Customer Commons. The standard names it only in informative places: Introduction fn. 8, Annex A fn. 19 ('The most up to date version of these terms is located at Customer Commons'), Annex B.2 ('the Customer Commons List') and Annex C. The summary's 'The standard requires ...' is right for the neutral keeper, but Customer Commons' role is practice, not requirement.",
+    "The standard's Introduction fn. 8 says Customer Commons 'was formed in 2013', the same date as the MyTerms FAQ. The site's notes flag that customercommons.org existed by November 2011; the standard does not resolve this, as it comes from the same circle of authors."
+   ],
+   "fieldFixes": {
+    "summary": "The standard requires terms and contracts to be kept and displayed on a public website by 'a neutral nonprofit entity or neutral party that is not economically dependent on terms use' (cl. 4.2; the abstract says 'an independent and neutral non-business entity'). It names no keeper in its normative clauses. Customer Commons, a US 501(c)(3) spun out of ProjectVRM, appears only in informative notes and annexes, as the home of the current sample terms. In practice Customer Commons names and hosts the MyTerms agreements on the Creative Commons model, and a European MyTerms Alliance is to contribute regional variants."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.2 Location and storage",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Terms and contracts shall be kept and displayed in discrete and separate forms on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The roster requirement; the clause names no keeper. Customer Commons appears only in informative notes (Introduction fn. 8; Annex A fn. 19; Annexes B.2 and C). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), footnote 19",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The most up to date version of these terms is located at Customer Commons through their Developer Community",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Points readers to Customer Commons for the current sample terms; no normative clause names Customer Commons. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Introduction (informative), footnote 8",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The #NoStalking agreement is available at Customer Commons, which was formed in 2013 to host a collection of personal privacy agreements",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative. The only place outside the annexes where the standard names Customer Commons; it gives the same 2013 founding date as the MyTerms FAQ. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "records-both-sides",
+   "status": "FIXED",
+   "issues": [
+    "Contradicted in part. 'The standard deliberately leaves the record format, storage and protocol open' repeats the MyTerms FAQ ('an option left open by the MyTerms standard'), but the normative text fixes the record's content and properties. Cl. 5.2.4: the recorder 'shall record the agreement and handshake terms, date, time stamp, and pseudonymous or explicit identifiers, containing a unique contract ID', and 'shall record rejected agreements'. Cl. 5.4.4: 'The exact time, date, and location shall be recorded' and 'Identical, immutable copies ... shall be recorded in each party’s data store'. Cl. 5.2.2: copies are delivered to both parties 'immediately upon agreement signing'. Cl. 5.2.3: the handshake carries a unique contract identifier. What is left open is the medium ('Storage shall be substitutable', with data portability) and the concrete serialisation. Signing is required, but its method is 'any standard method agreed upon' (cl. 5.4.2). The protocol point comes from the abstract only (see any-protocol).",
+    "Informative Annex A says 'the recording of contracts following the agreement between the two agents is also not in scope' (FOUND) and points to DPV and ODRL. That sits oddly with normative cl. 5.2.4 and 5.4.4, which do set recording requirements, and as annex text it cannot override them."
+   ],
+   "fieldFixes": {
+    "summary": "If both parties agree, both agents sign electronically, 'using any standard method agreed upon for that purpose' (cl. 5.4.2). Digital copies go to both parties immediately (cl. 5.2.2), and each keeps an identical, immutable copy in its own data store for later access, audit or dispute (cl. 5.4.4). The standard sets the record's minimum content: the agreement and handshake terms, date, time stamp, pseudonymous or explicit identifiers and a unique contract ID (cl. 5.2.4), plus the exact time, date and location (cl. 5.4.4). A refusal must be recorded too. What it leaves open is the file format and the storage medium ('Storage shall be substitutable', with data portability). The MyTerms FAQ's 'option left open' is therefore true of format and storage, not of content. Doc Searls's January 2026 'MyTerms Agreement Record' (MAR) sketch is his own proposal, not part of the standard."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.4 The recorder",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The contract recorder shall record the agreement and handshake terms, date, time stamp, and pseudonymous or explicit identifiers, containing a unique contract ID",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. Sets the minimum content of the record. The clause continues: 'The recorder shall record rejected agreements including date, time, and entity refusing the offer.' (FOUND), and requires a function for submitting a disputed agreement to auditors. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.2 How contracts are signed",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Contractual agreements shall be signed electronically by both party’s agents using any standard method agreed upon for that purpose.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. Signing by both agents is required; the method is left to the parties. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "any-protocol",
+   "status": "FIXED",
+   "issues": [
+    "'Any protocol that serves the purpose' is abstract wording (front matter). No numbered clause repeats it. The normative text says operation 'depends on the Internet Protocol Suite, especially TCP/IP, and HTTP' (cl. 1.3) and leaves the signing method to the parties (cl. 5.4.2). 'The standard does not specify the technology' remains broadly right, but it should rest on the abstract plus cl. 1.3, not on the abstract alone.",
+    "The FAQ's browser-header idea has a counterpart in the standard only as an informative example: Annex A.2 shows an HTTP request carrying 'MRPAZ-' and 'MTPAZ-' header fields. It is not a requirement."
+   ],
+   "fieldFixes": {
+    "summary": "The abstract says agents for both parties 'shall engage using any protocol that serves the purpose'. The numbered clauses name no signalling protocol: they say only that operation 'depends on the Internet Protocol Suite, especially TCP/IP, and HTTP' (cl. 1.3), and let the agents sign 'using any standard method agreed upon' (cl. 5.4.2). An HTTP-header encoding appears only as an informative example (Annex A.2). The proponents' early sketches centre on browser and web-server plug-ins (the FAQ suggests signalling through browser headers on the model of Do Not Track and Global Privacy Control), and they expect AI to play a larger part as products develop. MyData Global (August 2026) lists apps, digital wallets and agentic AI among possible agents and says personal agents have been built for release in Q4 2026."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.3 Extant standards and regulations",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Operation of this standard depends on the Internet Protocol Suite, especially TCP/IP, and HTTP.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The only technology the numbered clauses name. No numbered clause repeats the abstract's 'any protocol that serves the purpose'. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), A.2 HTTP request example",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "One approach to this is to structure the request in an HTTP header which can simplify process and compliance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A.2). The header encoding (MRPAZ-/MTPAZ- fields) is an example, not a requirement. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "choice-not-negotiation",
+   "status": "FIXED",
+   "issues": [
+    "'The published abstract itself does not mention counter-offers' is true of the abstract but the normative text settles the point. Cl. 5.3.1 gives the entity three responses: accept, 'Respond to the individual with a single alternative set of terms from the structured and bounded list', or reject. Cl. 5.2.2 caps it: 'There shall be no negotiation beyond the single choice by either party.' The DPV community group's 'single counter-offer' is therefore the standard's own rule, not only a reading of a draft. Informative Annex A walks through one counter-offer and says IEEE 7012 'does not permit more than 1 round of negotiation'.",
+    "'The person's agent can record the refusal' understates the rule. Recording is mandatory: 'The recorder shall record rejected agreements including date, time, and entity refusing the offer' (cl. 5.2.4), and 'If an agreement is not reached, a record shall be generated to document rejection' (cl. 5.3.1).",
+    "Cl. 5.3.1(c) adds a rule this record did not carry: a rejecting entity 'cannot bar an individual from utilizing free or public information or services'."
+   ],
+   "fieldFixes": {
+    "summary": "The person's agent proposes the person's preferred agreement (cl. 5.4). The organisation's agent may accept it, reject it, or 'Respond to the individual with a single alternative set of terms from the structured and bounded list' (cl. 5.3.1), and 'There shall be no negotiation beyond the single choice by either party' (cl. 5.2.2). The abstract puts party-to-party negotiation over the terms of any agreement out of scope. So the permitted moves are a choice among roster agreements, not bargaining over their terms. A refusal must be recorded, with date, time and the refusing entity (cl. 5.2.4). A rejecting entity 'cannot bar an individual from utilizing free or public information or services' (cl. 5.3.1). The informative Annex A walks through one counter-offer and says the standard 'does not permit more than 1 round of negotiation'. The W3C DPV community group's P7012 extension (v2.1, March 2025, repeated in v2.2, August 2025) says the same. Doc Searls (January 2026) says a person may offer 'a first and second choice of agreement, but no more than that', and MyData Global says organisations may accept or propose an alternative from the same list."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.3.1 The entity's framework for agreement-agent interaction",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Respond to the individual with a single alternative set of terms from the structured and bounded list c) Reject the proffered terms, wherein an entity cannot bar an individual from utilizing free or public information or services",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. Items b) and c) of the entity's three permitted responses (a) is 'Accept the terms an individual presents from the structured and bounded list'). One alternative from the same list is allowed; a rejecting entity cannot bar the person from free or public information or services. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.2 The interaction",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Signed agreements shall be identical in both databases. There shall be no negotiation beyond the single choice by either party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The same clause says 'Digital copies of the signed agreements shall be delivered to both parties or their agents immediately upon agreement signing.' (FOUND). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.4 The recorder",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The recorder shall record rejected agreements including date, time, and entity refusing the offer.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). Recording a refusal is required, not optional; cl. 5.3.1 adds 'If an agreement is not reached, a record shall be generated to document rejection.' (FOUND). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "then it communicates this and terminates the process as IEEE 7012 does not permit more than 1 round of negotiation.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A) walk-through of one counter-offer; consistent with normative cl. 5.2.2 and 5.3.1(b). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "mechanics",
+   "id": "launch-mode",
+   "status": "OK",
+   "issues": [
+    "The summary is about MyTerms and stays accurate. Context from the standard: it fixes no number of agreements ('There should also be as few agreements as possible', cl. 4.1). Its informative Annex A (Table A.1) lists 13 sample agreements, of which the launch five are a subset. Five at launch plus the FAQ's '8 more in the pipeline' also makes 13. That the eight are the other eight Table A.1 codes is plausible but not stated by any source read. The older Customer Commons '11 more' does not match."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), Table A.1 Sample machine-readable privacy terms",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Table A.1 outlines the various combinations of these terms and their effects.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Table A.1 lists 13 sample agreements: SD-BASE, SD-BASE-DP, SD-BASE-A, SD-BASE-A-DP, SD-BASE-AT, SD-BASE-AT-DP, SD-BASE-ATP, SD-BASE-ATP-DP, SD-BASE-ATP-S3P, SD-BASE-ATP-S3P-DP, PDC-INTENT, PDC-AI and PDC-GOOD. The MyTerms launch five are a subset; 5 at launch plus the FAQ's '8 more in the pipeline' also makes 13. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "lineage",
+   "id": "ieee-7012-2025",
+   "status": "FIXED",
+   "issues": [
+    "body 'roster kept by Customer Commons' attributes to the standard a keeper it does not name. Cl. 4.2 requires a neutral nonprofit or a neutral party 'not economically dependent on terms use'. Customer Commons appears only in informative notes. Reworded.",
+    "legalForce holds and can now cite the text. Cl. 4.4.3 requires agreements to be 'written as formal contracts', and cl. 3.1 defines a contract as 'enforceable by law'. The standard itself is voluntary (front matter: 'Use of an IEEE standard is wholly voluntary.'). No court test was found. recordKeptBy 'both parties' is confirmed by cl. 5.4.4."
+   ],
+   "fieldFixes": {
+    "body": "IEEE SA (SSIT Standards Committee); roster kept by a neutral nonprofit, as cl. 4.2 requires (in practice Customer Commons)"
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.2 Location and storage",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Terms and contracts shall be kept and displayed in discrete and separate forms on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The roster requirement; the clause names no keeper. Customer Commons appears only in informative notes (Introduction fn. 8; Annex A fn. 19; Annexes B.2 and C). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.3 Legal readability",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Agreements shall be written as formal contracts, specifying exactly what requirements, promises, and other obligations shall be obeyed by both parties",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). Agreements under the standard are designed as contracts; cl. 3.1 defines a contract as 'a mutual agreement between parties that creates mutual obligations and is enforceable by law' (FOUND). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "firstParty",
+   "id": "par-2017-first-parties",
+   "status": "OK",
+   "issues": [
+    "The 2017 PAR sentence survives verbatim in cl. 1.2 (Purpose) of the published standard (the PDF uses em dashes). The published clause is added as a source."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.2 Purpose",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "In a more formal sense, the purpose of the standard is to enable individuals to operate as first parties in agreements with others",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The 2017 PAR sentence survives verbatim in the published cl. 1.2; the PDF continues with em dashes, 'others—mostly companies—operating as second parties'. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "firstParty",
+   "id": "faq-first-parties",
+   "status": "OK",
+   "issues": [
+    "Confirmed by normative text: cl. 5.4.3 requires that 'The individual shall always be the first party, and the entity shall always be the second party'. Cl. 3.1 adds that an entity 'can only be an organization'."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.3 Parties to contracts",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "There shall be only two parties to each contract. The individual shall always be the first party, and the entity shall always be the second party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "firstParty",
+   "id": "searls-par-post-first-party",
+   "status": "OK",
+   "issues": [
+    "Confirmed by normative cl. 4.1: terms 'shall take the form of contractual agreements in which the person is the first party and the entity is the second party'. The agents are defined in cl. 5.2."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.1 Form and content",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Terms for personal privacy requirements shall take the form of contractual agreements in which the person is the first party and the entity is the second party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The first-party/second-party structure is a requirement of the standard. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "firstParty",
+   "id": "faq-second-parties",
+   "status": "OK",
+   "issues": [
+    "The standard's informative Introduction makes the same point about Global Privacy Control: 'These requests are not agreements and can leave the person (a mere “user”) in a nearly powerless position.'"
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Introduction (informative)",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "These requests are not agreements and can leave the person (a mere “user”) in a nearly powerless position.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative ('This introduction is not part of IEEE Std 7012-2025', FOUND). Said of Global Privacy Control; the standard's own framing matches the FAQ's second-party point. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "firstParty",
+   "id": "mydata-signal",
+   "status": "OK",
+   "issues": [
+    "'A small number of standardised ... agreements' matches the standard, which recommends 'as few agreements as possible' (cl. 4.1). Cl. 5.2.1.2 also says the roster 'should also be minimized' (FOUND)."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.1 Form and content",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "There should also be as few agreements as possible, to make choosing one as easy as possible for persons and their agents as first parties",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause, recommendation ('should'). The standard sets no number of agreements; it asks for as few as possible. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "abstract-names-ai-agents",
+   "status": "FIXED",
+   "issues": [
+    "Accurate about the abstract, which is verbatim on the PDF's abstract page too. But the normative clauses never use the word 'AI'. The second party 'can only be an organization' (cl. 3.1), and cl. 5.4.3 allows 'only two parties to each contract'. An AI agent is therefore covered as software acting for a party (cl. 5.2), not as a party. The claim is extended so it cannot be read as making AI agents contracting parties."
+   ],
+   "fieldFixes": {
+    "claim": "The standard's official abstract (IEEE SA standard page and the abstract page of the published PDF) lists AI agents, alongside websites and applications, among the service providers individuals engage on a network whose agreements with those individuals the standard covers. The PAR text Doc Searls posted in April 2025 said only 'including websites'. The normative clauses never use the word 'AI'. The second party 'can only be an organization' (cl. 3.1), so an AI agent enters as software acting for a party (cl. 5.2), not as a party to the contract."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 3.1 Definitions",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "entity: Any organization with which a person makes a contractual agreement. An entity can only be an organization.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative definition. The second party is always an organisation; software (AI or not) acts only as an agent (cl. 5.2). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "agents-both-sides",
+   "status": "OK",
+   "issues": [
+    "Confirmed by normative cl. 5.2, which is technology-neutral: agents are 'any software and/or services, or a combination of software and hardware', each 'responsible exclusively' to its party. The choice of technology is open, but the functions are not. Cl. 5.2.1.1 says the individual's agent 'shall be constructed by including the components' set out after it (the chooser and proposer, cl. 5.2.1.2-5.2.1.3), and cl. 5.2.4-5.2.5 add recorder and auditor functions."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2 Agents",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Agents for persons shall be any software and/or services, or a combination of software and hardware, responsible exclusively to that person. Agents for entities shall be software and/or services responsible exclusively to that entity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. Technology-neutral: no AI is required or named. The functions are prescribed, though: cl. 5.2.1.1 says the individual's agent 'shall be constructed by including the components' set out after it (the chooser and proposer, cl. 5.2.1.2-5.2.1.3), and cl. 5.2.4-5.2.5 add recorder and auditor functions. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "machine-readable-for-agents",
+   "status": "FIXED",
+   "issues": [
+    "The claim presents 'three related formats' as MyTerms practice, and source 1's note says the three-format detail comes from the roster site, not the standard. The standard itself requires all three. Cl. 4.3: 'These features shall make the contracts readable by humans, lawyers, and machines.' Cl. 4.4.1-4.4.3 set the plain-language, machine-readable and legal forms, and cl. 4.4.2 says agreements are machine readable 'when they are in, at minimum RDF or XML formats'. 'Each MyTerms agreement is published in' also sits uneasily with the site's own finding that the launch agreements' full legal and machine-readable texts were not found. Reworded as a requirement plus MyTerms' description."
+   ],
+   "fieldFixes": {
+    "claim": "IEEE 7012 requires every agreement to be readable by humans, by lawyers and by machines (cl. 4.3-4.4), and says agreements become machine readable for agents 'when they are in, at minimum RDF or XML formats' (cl. 4.4.2). MyTerms describes three related formats for each agreement (plain language, legal and machine-readable), the last being 'a range of formats' designed to let computers and agents access and interact with the agreements."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.3 Naming and labeling",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "These features shall make the contracts readable by humans, lawyers, and machines.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The three readable forms are a requirement of the standard; cl. 4.4.1-4.4.3 set out each. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.4.2 Machine-readability",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "when they are in, at minimum RDF or XML formats",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause. The clause opens 'This component shall be constructed with mechanisms enabling agreements themselves, and the individual terms within them, to be discoverable and readable by computers in a structured format.' (FOUND). It then says 'Example formats are located in Annex A and use JSON formats.' (FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "agents-private-instruments",
+   "status": "FIXED",
+   "issues": [
+    "Presented as the proponents' condition, but the published standard makes it a requirement for every agent, AI or not. Cl. 5.2 says agents 'shall be controlled by, and responsible to, the represented party only' and must be 'responsible exclusively' to the person or entity. The DPVCG source's note ('not IEEE text') is superseded, because the IEEE text now says the same. 'Not instruments of surveillance' remains Searls's wording; the standard does not use it."
+   ],
+   "fieldFixes": {
+    "claim": "The standard requires every agent, AI or not, to answer only to the party it represents: agents may be provided by outside services but 'shall be controlled by, and responsible to, the represented party only' (cl. 5.2). Proponents add that AI agents must work privately and exclusively for their own party, not as instruments of outside surveillance."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2 Agents",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Agents may be provided by services external to either party but shall be controlled by, and responsible to, the represented party only.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). Applies to every agent, AI or not; the preceding sentences require agents to be 'responsible exclusively' to the person or entity they represent. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "pdc-ai-training",
+   "status": "OK",
+   "issues": [
+    "PDC-AI and its AI-training scope appear in the standard only in informative Annex A ('AI Training and Operation'; Table A.1 scope 'Training AI'). It is a MyTerms launch agreement modelled on the annex, not an agreement the standard itself defines."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "AI Training and Operation",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). One of the ten sample term codes (AI); Table A.1 lists PDC-AI with scope 'Training AI' among agreements for data 'providing' or 'donating' on a one-off basis, with second-party analytics, tracking and profiling and third-party sharing all marked not allowed. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "aiAgents",
+   "id": "dpv-person-agent",
+   "status": "OK",
+   "issues": [
+    "The same model now appears in the standard's informative Annex A. Figure A.1 and its text use Person_Agent, Entity_Agent and an Agreement_Registry 'which allows different entities to refer to an agreement using unique identifiers'. The annex's code uses the DPVCG extension's namespace."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative) Draft terms with sample code, A.1 Terms in draft",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "In the figure, the Agreement_Registry is a common, open, interoperable registry which allows different entities to refer to an agreement using unique identifiers",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A, Figure A.1). The annex's worked example uses Person_Agent, Entity_Agent and Agreement_Registry, the same model as the DPVCG extension, and says the entity makes at most one counter-offer. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-myterms-is-browser-setting",
+   "status": "OK",
+   "issues": [
+    "The correction's contract elements are normative requirements. Both agents sign electronically (cl. 5.4.2). 'Identical, immutable copies' are kept in each party's data store (cl. 5.4.4), and signed agreements 'shall be identical in both databases' (cl. 5.2.2). The FAQ's 'MyTerms requires that both sides keep identical records' is therefore the standard's own rule. The browser-header route appears only as an informative example (Annex A.2)."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.4 Recording of agreements and storage",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The clause also requires 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Storage shall be substitutable. Devices and/or services keeping databases shall be substitutable, with data portability.' (both FOUND): content and immutability are fixed, the storage medium is not. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-7012-is-a-law",
+   "status": "OK",
+   "issues": [
+    "Confirmed from the PDF itself. Its front matter says 'Use of an IEEE standard is wholly voluntary.' Cl. 1.3 says the standard 'does not depend on extant regulations' and 'may prove to help those regulations by bringing contracts' into use. Agreements are to be 'written as formal contracts' (cl. 4.4.3)."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.3 Extant standards and regulations",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "while this standard does not depend on extant regulations, it may prove to help those regulations by bringing contracts into the suite of available ways to provide personal privacy on networks.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause, descriptive sentence: the standard presents itself as a contract mechanism alongside regulation, not as regulation. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: Important Notices and Disclaimers",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Use of an IEEE standard is wholly voluntary.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Front matter of the published PDF itself (the same notice the IEEE SA disclaimers page carries). Shows the standard binds no one by itself. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-myterms-is-cookie-consent",
+   "status": "FIXED",
+   "issues": [
+    "The correction's last sentence cites the 2017 PAR ('does not address privacy policies'). That is accurate as attribution, but the published standard goes further. Cl. 5.2.1.3 says 'The individual’s agent shall specify that the individual’s chosen terms shall supersede any Terms of Use (TOU) or Privacy Policy.' Without that, a reader could take the PAR line as the standard's final position. A sentence is added."
+   ],
+   "fieldFixes": {
+    "correction": "Cookie banners and consent-management platforms present the organisation's choices to the person. Under MyTerms the person presents terms and the organisation agrees. MyData calls the default 'Service Delivery Only' agreement (SD-BASE) the direct equivalent of 'Strictly Necessary Only', but expressed by the person before any banner can be shown. The MyTerms FAQ allows that tech from consent tools might prove useful in building MyTerms ceremonies and compliance audits. The 2017 PAR says the standard does not address privacy policies, because they are one-sided and need no agreement. The published standard goes further: the person's agent must specify that the person's chosen terms supersede any terms of use or privacy policy (cl. 5.2.1.3)."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.1.3 The proposer",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "The individual’s agent shall specify that the individual’s chosen terms shall supersede any Terms of Use (TOU) or Privacy Policy.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The published standard does address the organisation's own terms of use and privacy policy: the person's chosen terms are to supersede them. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-published-january-2025",
+   "status": "OK",
+   "issues": [
+    "Confirmed by the standard's own front matter: the title page reads 'Approved 4 November 2025 IEEE SA Standards Board' and the copyright page 'Published 20 January 2026' (both FOUND)."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: title and copyright pages",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "All rights reserved. Published 20 January 2026.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Front matter, not a clause. The copyright page gives the publication date; the title page reads 'Approved 4 November 2025 IEEE SA Standards Board' and 'Developed by the Social Implications of Technology Standards Committee of the IEEE Society on Social Implications of Technology', and the copyright page prints 'ISBN 979-8-8557-2944-3 ISBN 979-8-8557-2945-0' (all FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-standard-mandates-a-protocol",
+   "status": "FIXED",
+   "issues": [
+    "The verdict (FALSE) stands, but two supporting statements need correcting against the normative text. (1) 'The form of the shared record is left open' is only half right. Cl. 5.2.4 and 5.4.4 fix the record's minimum content (terms, date, time stamp, identifiers, unique contract ID; exact time, date and location) and require identical, immutable copies. Only the format and the storage medium are open. (2) 'Agents may use any protocol that serves the purpose' is abstract wording. The numbered clauses say operation 'depends on the Internet Protocol Suite, especially TCP/IP, and HTTP' (cl. 1.3) and leave the signing method to the parties (cl. 5.4.2).",
+    "On identity: the standard requires no identity system but does set a floor. Named parties may use public keys, an email address or a pseudonymous identifier 'so long as an IP address is present' (cl. 5.4.5). The header route in the myth exists only as an informative example (Annex A.2)."
+   ],
+   "fieldFixes": {
+    "correction": "The standard names no header, blockchain or identity system. Its clauses say only that its operation 'depends on the Internet Protocol Suite, especially TCP/IP, and HTTP' (cl. 1.3), and that both agents sign 'using any standard method agreed upon for that purpose' (cl. 5.4.2). A party may be identified by public keys, an email address or a pseudonym, 'so long as an IP address is present' (cl. 5.4.5). The abstract adds that agents may use 'any protocol that serves the purpose'. What the standard does require is an agreement signed electronically by both sides, identical and immutable copies kept by each, and a record with set minimum contents (terms, date, time stamp, identifiers and a unique contract ID). The record's format and storage are left open. The HTTP-header encoding in Annex A.2 is an informative example. Plug-ins, a transparency log and Doc Searls's 'MyTerms Agreement Record' are implementation ideas, not requirements. Searls, the working-group chair, says MyTerms should not depend on a universal identity system."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 1.3 Extant standards and regulations",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Operation of this standard depends on the Internet Protocol Suite, especially TCP/IP, and HTTP.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The only technology the numbered clauses name. No numbered clause repeats the abstract's 'any protocol that serves the purpose'. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.4.5 Identities and identifiers",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "or some other pseudonymous identifier, or a combination of these elements, so long as an IP address is present.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause. Named parties 'may include public keys, an IP address + date + epoch time, an email address, or some other pseudonymous identifier'; no identity system is required, but an IP address must be among the identifiers. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), A.2 HTTP request example",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "One approach to this is to structure the request in an HTTP header which can simplify process and compliance.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A.2). The header encoding (MRPAZ-/MTPAZ- fields) is an example, not a requirement. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-individuals-write-custom-terms",
+   "status": "FIXED",
+   "issues": [
+    "The verdict (FALSE) stands, and the roster point is now normative: 'Terms and contracts shall be kept and displayed ... on a public website by a neutral nonprofit entity or neutral party' (cl. 4.2). Individuals' agents 'choose a single option from the roster' (cl. 5.2.2). But 'the organisation accepts one of those the person points to, and negotiation is outside the standard's scope' is incomplete. The organisation may also reject, or answer with 'a single alternative set of terms from the structured and bounded list' (cl. 5.3.1), and 'There shall be no negotiation beyond the single choice by either party' (cl. 5.2.2). Reworded."
+   ],
+   "fieldFixes": {
+    "correction": "People choose from a short roster of standard-form agreements, kept on a public website by a neutral nonprofit on the Creative Commons model (cl. 4.2). The organisation may accept the one the person points to, reject it, or answer with a single alternative from the same list (cl. 5.3.1), and 'There shall be no negotiation beyond the single choice by either party' (cl. 5.2.2). Bargaining over the wording of terms is outside the standard."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.2 Location and storage",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Terms and contracts shall be kept and displayed in discrete and separate forms on a public website by a neutral nonprofit entity or neutral party that is not economically dependent on terms use.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative ('shall'). The roster requirement; the clause names no keeper. Customer Commons appears only in informative notes (Introduction fn. 8; Annex A fn. 19; Annexes B.2 and C). --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.3.1 The entity's framework for agreement-agent interaction",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Respond to the individual with a single alternative set of terms from the structured and bounded list c) Reject the proffered terms, wherein an entity cannot bar an individual from utilizing free or public information or services",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. Items b) and c) of the entity's three permitted responses (a) is 'Accept the terms an individual presents from the structured and bounded list'). One alternative from the same list is allowed; a rejecting entity cannot bar the person from free or public information or services. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2.2 The interaction",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Signed agreements shall be identical in both databases. There shall be no negotiation beyond the single choice by either party.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. The same clause says 'Digital copies of the signed agreements shall be delivered to both parties or their agents immediately upon agreement signing.' (FOUND). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-myterms-requires-ai",
+   "status": "OK",
+   "issues": [
+    "Confirmed by normative cl. 5.2. Agents are 'any software and/or services, or a combination of software and hardware', each responsible exclusively to its party. No clause of 1-5 mentions AI."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 5.2 Agents",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Agents for persons shall be any software and/or services, or a combination of software and hardware, responsible exclusively to that person. Agents for entities shall be software and/or services responsible exclusively to that entity.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative. Technology-neutral: no AI is required or named. The functions are prescribed, though: cl. 5.2.1.1 says the individual's agent 'shall be constructed by including the components' set out after it (the chooser and proposer, cl. 5.2.1.2-5.2.1.3), and cl. 5.2.4-5.2.5 add recorder and auditor functions. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "myths",
+   "id": "myth-standard-is-paywalled",
+   "status": "OK",
+   "issues": [
+    "Direct evidence added. On 2026-09-23 tools/fetch-text.py, which sends no cookies or credentials, downloaded the full PDF from the GET Program stampPDF link; each page carries the watermark 'Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.' No payment or sign-in was involved. The PENDING Xplore snapshot (source 1) is no longer the only IEEE-side evidence."
+   ],
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, front matter: IEEE Xplore download watermark",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Downloaded on September 23,2026 at 12:23:22 UTC from IEEE Xplore.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Every page of the PDF carries this watermark. The PDF was fetched from the GET Program stampPDF link by tools/fetch-text.py, which sends no cookies or credentials, so this download needed neither payment nor an IEEE sign-in. A later curl from the same sandbox met Xplore's bot challenge (HTTP 418). --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "myterms-launch-agreements-2026",
+   "status": "FIXED",
+   "issues": [
+    "The value (5) is right for MyTerms' launch roster, but it is not a figure in the standard, and the site's hero stat attributes it to 'IEEE 7012 / MyTerms'. IEEE 7012 sets no number. Cl. 4.1 says only 'There should also be as few agreements as possible'. Its informative Annex A (Table A.1) lists 13 sample agreements (ten SD-BASE variants plus PDC-INTENT, PDC-AI and PDC-GOOD), of which the five are a subset. Five at launch plus the FAQ's '8 more in the pipeline' also makes 13. The informative use case in Annex B.2 imagines 'a range of 10 standard agreements' (FOUND). The notes are extended, and a prose fix to the hero stat is filed."
+   ],
+   "fieldFixes": {
+    "notes": "Announced roster: SD-BASE, SD-BASE-DP, PDC-AI, PDC-GOOD, PDC-INTENT, with '8 more in the pipeline'. MyTerms says it will run these for up to six months for market feedback, then update them before a 'full market launch'. The launch event was held 28 January 2026 in London. As of their last 2026 updates, the myterms.info pages still describe the five in the future tense, and none of them links to published agreement texts. The number is MyTerms', not the standard's. IEEE 7012 sets no number of agreements; cl. 4.1 says only that there 'should' be 'as few agreements as possible'. Its informative Annex A (Table A.1) lists 13 sample agreements: SD-BASE, SD-BASE-DP, SD-BASE-A, SD-BASE-A-DP, SD-BASE-AT, SD-BASE-AT-DP, SD-BASE-ATP, SD-BASE-ATP-DP, SD-BASE-ATP-S3P, SD-BASE-ATP-S3P-DP, PDC-INTENT, PDC-AI and PDC-GOOD. The launch five are a subset, and five plus the eight in the pipeline also makes 13."
+   },
+   "addSources": [
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, cl. 4.1 Form and content",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "There should also be as few agreements as possible, to make choosing one as easy as possible for persons and their agents as first parties",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Normative clause, recommendation ('should'). The standard sets no number of agreements; it asks for as few as possible. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "IEEE Standards Association (IEEE Xplore)",
+     "title": "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms, Annex A (informative), Table A.1 Sample machine-readable privacy terms",
+     "date": "2026-01-20",
+     "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+     "quote": "Table A.1 outlines the various combinations of these terms and their effects.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Informative (Annex A). Table A.1 lists 13 sample agreements: SD-BASE, SD-BASE-DP, SD-BASE-A, SD-BASE-A-DP, SD-BASE-AT, SD-BASE-AT-DP, SD-BASE-ATP, SD-BASE-ATP-DP, SD-BASE-ATP-S3P, SD-BASE-ATP-S3P-DP, PDC-INTENT, PDC-AI and PDC-GOOD. The MyTerms launch five are a subset; 5 at launch plus the FAQ's '8 more in the pipeline' also makes 13. --check FOUND 2026-09-23."
+    }
+   ]
+  }
+ ]
+}

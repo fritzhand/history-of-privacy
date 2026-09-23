@@ -75,6 +75,154 @@
     }
    ],
    "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "laura-poitras",
+   "status": "FIXED",
+   "issues": [
+    "The 'years' field starts too late. It gives '2006–present', but her career predates My Country, My Country. She co-directed Flag Wars with Linda Goode Bryant. It premiered on PBS P.O.V. on 17 June 2003 (archive.pov.org: 'Premiere Date: June 17, 2003', 'Filmmaker(s): Linda Goode Bryant, Laura Poitras') and won a Peabody Award (peabodyawards.com names 'Flag Wars producers/directors Linda Goode Bryant and Laura Poitras'). Changed to 2003–present, and the POV page is added as a source.",
+    "The quoteSource date is off by one day. It says 2015-02-22, which is the ceremony night, but the EFF post's article:published_time is 2015-02-23T12:12:46-08:00. Corrected. The existing note says the post date was 'not checked'; it has now been checked.",
+    "Checked OK. The acceptance-speech quote --check FOUND on EFF (fresh fetch). The Intercept version reads 'revealed' rather than 'reveals', which the record's note already flags. The next EFF sentence also FOUND.",
+    "Checked OK. The Intercept (22 Feb 2015) --check FOUND for the watch-list quote. Also FOUND on the page: My Country, My Country 'Released in 2006, it was the first in a trilogy'; 'The Program' published as an NYT op-doc in 2012 and focused on William Binney; the 'Citizenfour' pseudonym used 'in encrypted emails'; 'probably had enough knowledge of encryption practices to communicate with him securely'; the Pulitzer sentence; and 'a documentarian who was under surveillance while working on a documentary about surveillance'.",
+    "Checked OK. Guardian 9 June 2013 page metadata lists the authors as Glenn Greenwald, Ewen MacAskill and Laura Poitras, which supports 'co-wrote the Guardian story that named him'. The quote --check FOUND."
+   ],
+   "fieldFixes": {
+    "years": "2003–present",
+    "quoteSource.date": "2015-02-23"
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND. It is The Intercept's own account of its founding editor, so it is not independent; the Pulitzer and Oscar facts are widely reported."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. JSON-LD author list: Glenn Greenwald, Ewen MacAskill, Laura Poitras."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "PBS P.O.V. (American Documentary)",
+     "title": "Flag Wars",
+     "date": "2003-06-17",
+     "url": "https://archive.pov.org/flagwars/",
+     "quote": "Premiere Date: June 17, 2003",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Same page: 'Filmmaker(s): Linda Goode Bryant, Laura Poitras'. The Peabody Awards profile (https://peabodyawards.com/award-profile/p-o-v-flag-wars/) names 'Flag Wars producers/directors Linda Goode Bryant and Laura Poitras'. Supports the 2003 start of 'years'."
+    }
+   ]
+  },
+  {
+   "kind": "people",
+   "id": "glenn-greenwald",
+   "status": "FIXED",
+   "issues": [
+    "Date precision on the Verizon story. The contribution says it was written 'on 6 June 2013'. The Guardian's URL is dated jun/06, but the story went online on the evening of Wednesday 5 June 2013, US time. Common Dreams republished it with datePublished 2013-06-05T23:53:39Z and Raw Story reported it at 2013-06-06T01:17Z (9:17 pm EDT on 5 June). Kashmir Hill's Forbes post on it carries a 2013/06/05 URL. US sources and most timelines give 5 June. The Guardian's current webPublicationDate (2013-06-06T10:05Z, shown as 'Thu 6 Jun 2013 06.05 EDT') is later than those reposts, so it must be a re-timestamp, not the first publication. Reworded to give both dates; the source's date field (2013-06-06, the Guardian's own dating) can stay.",
+    "Checked OK. quoteSource: the Guardian commentisfree piece of 15 July 2013 (datePublished 2013-07-15T10:40Z, author Glenn Greenwald, <title> 'The crux of the NSA story in one phrase: 'collect it all''). Both halves of the ellipsis --check FOUND. The note describes the omitted aside correctly.",
+    "Checked OK. Verizon story: the quote --check FOUND, and so does the 'ongoing, daily basis' sentence ('requires Verizon on an \"ongoing, daily basis\" to give the NSA information on all telephone calls in its systems'). JSON-LD author: Glenn Greenwald.",
+    "Checked OK. NBC: the quote --check FOUND. 'The Guardian reported Sunday' plus the Scotland Yard confirmation support the date, 18 August 2013.",
+    "Checked OK. CNN, 29 Oct 2020: the quote FOUND, and so does 'the news site he co-founded in 2013'. The Intercept's response is by-lined Betsy Reed (JSON-LD author), and CNN identifies her as 'the editor in chief'. That matches 'the site's editor called his account ...'. 'teeming with distortions and inaccuracies' FOUND on the Intercept page."
+   ],
+   "fieldFixes": {
+    "contribution": "Greenwald, a Guardian columnist living in Rio de Janeiro, wrote the first Snowden story, published on the evening of 5 June 2013 US time (dated 6 June by the Guardian), revealing a secret court order requiring Verizon to hand the NSA records of all calls in its systems on an 'ongoing, daily basis', and co-wrote the article that named Snowden. In August 2013 British authorities held his partner David Miranda at Heathrow for nine hours under the Terrorism Act while he travelled from Berlin to Rio. Greenwald co-founded The Intercept but resigned in October 2020, accusing its editors of censoring an article about Joe Biden; the site's editor called his account 'teeming with distortions and inaccuracies'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND. The 'ongoing, daily basis' sentence FOUND. The Guardian dates it 6 June 2013; the independent reposts cited in the issues put first publication on the evening of 5 June, US time."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. 'The Guardian reported Sunday' supports 18 August 2013."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. CNN names Betsy Reed as editor in chief and quotes her 'teeming with distortions and inaccuracies' statement."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "max-schrems",
+   "status": "OK",
+   "issues": [
+    "Checked OK. CJEU Press Release No 117/15 ('Luxembourg, 6 October 2015', Case C-362/14), re-fetched with a fresh cache. Quote --check FOUND, as are the invalidity heading and the Snowden reasoning ('in the light of the revelations made in 2013 by Edward Snowden ... the law and practice of the United States do not offer sufficient protection'). Schrems II Press Release No 91/20 ('Luxembourg, 16 July 2020', Case C-311/18) FOUND: 'The Court of Justice invalidates Decision 2016/1250 ... EU-US Data Protection Shield'.",
+    "Wording nuance, not changed. 'The Court of Justice of the EU agreed twice' is fair as a summary, but Schrems II came from his reformulated complaint about Facebook's standard-contractual-clause transfers (Data Protection Commissioner v Facebook Ireland and Maximillian Schrems). The Court upheld the SCC decision and struck down Privacy Shield on the same US-surveillance grounds. Neither date is wrong.",
+    "Checked OK. noyb collective-redress page: 'noyb was founded on 12.06.2017 and became operational on 01.02.2018. We filed our first cases on 25.05.2018' --check FOUND. Independent: IAPP ('Schrems moves from dismantling to assembling with new NGO') says Schrems 'is launching his own non-governmental organization called NOYB', which supports 'he founded noyb'. Wikipedia says 'co-founded'; noyb lists him as 'Honorary Chairman'.",
+    "Checked OK. ADPC page (datePublished 2021-06-14T07:00:00+0200). The quoteSource quote and sources[2] quote both --check FOUND, and the quoteSource is introduced 'Schrems:'. The page says 'ADPC is a cooperation between noyb and the Sustainable Computing Lab at the Vienna University of Economics and Business', which supports the thread and 'co-proposed ... in June 2021'."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched the PDF with a fresh cache. Quote --check FOUND. Header 'PRESS RELEASE No 117/15 Luxembourg, 6 October 2015'. The Schrems II release cp200091en.pdf was also re-fetched and its heading FOUND."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched (after one transient proxy 502). Quote --check FOUND."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. datePublished 2021-06-14."
+    }
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "people",
+   "id": "julia-angwin",
+   "status": "FIXED",
+   "issues": [
+    "The influence calls the Dragnet Nation quote the words of 'a reviewer'. The line 'changed the privacy debate' comes from a promotional blurb by Jeffrey Rosen, president and CEO of the National Constitution Center, on the author's own book page. It is not a review, and the record's own source note says so. Reworded to name Rosen and call it an endorsement.",
+    "The influence overstates EFF. EFF did not say the series 'was already shaping efforts in Congress and at the FTC'. It wrote: 'It's already affecting the conversation in Washington DC, where important efforts by both Congress and the FTC are underway to rein in this dangerous and unregulated industry.' Reworded to match.",
+    "The 'years' field starts in 2000, but that is only when she joined the Journal. She joined the San Francisco Chronicle in 1996. Talking Biz News, 26 Nov 2013 (--check FOUND): 'She joined the San Francisco Chronicle in 1996 and was awarded a Knight-Bagehot fellowship in journalism for studies at Columbia Business School in 1998.' Wikipedia also says she joined the Chronicle in 1996 as a technology reporter. Changed to 1996–present and added the source.",
+    "Checked OK. quoteSource: the Cornell-hosted PDF of the WSJ 'What They Know' compilation (re-fetched with a fresh cache). The quote FOUND in 'The Web's New Gold Mine: Your Secrets', 'BY JULIA ANGWIN', which closes 'Published July 30, 2010.' The contribution's figure matches the PDF: 'the nation's 50 top websites on average installed 64 pieces of tracking technology onto the computers of visitors, usually with no warning.'",
+    "Checked OK. juliaangwin.com/about: the WSJ 2000–2013 sentence FOUND. The page also says ProPublica 2014–2018 with a team that was 'a Finalist for a Pulitzer Prize in Explanatory Reporting in 2017', 'In 2018, she founded The Markup', and Proof News 'launched in 2024'. EFF, 4 Aug 2010 (article:published_time 2010-08-04): the quote and the IE 8.0 passage FOUND, which supports the thread."
+   ],
+   "fieldFixes": {
+    "years": "1996–present",
+    "influence": "EFF called 'What They Know' the largest and highest-profile mainstream investigation of consumer web privacy to that date and said it was already affecting the conversation in Washington, where Congress and the FTC were working to rein in the tracking industry; the legal scholar Jeffrey Rosen, endorsing Dragnet Nation, wrote that her tracking reporting 'changed the privacy debate'."
+   },
+   "sourceFixes": [
+    {
+     "index": 0,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched with a fresh cache. Quote --check FOUND. The Congress/FTC sentence and IE 8.0 passage FOUND. article:published_time 2010-08-04T14:39:21-07:00."
+    },
+    {
+     "index": 1,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. The ProPublica, 2017 Pulitzer finalist, The Markup 2018 and Proof News 2024 statements are on the same page. This is the author's own biography."
+    },
+    {
+     "index": 2,
+     "verificationStatus": "CONFIRMED",
+     "note": "Re-fetched. Quote --check FOUND. It is a promotional blurb by Jeffrey Rosen ('president and CEO, National Constitution Center'), not a review."
+    }
+   ],
+   "addSources": [
+    {
+     "institution": "Talking Biz News",
+     "title": "Angwin leaving WSJ for ProPublica",
+     "date": "2013-11-26",
+     "url": "https://talkingbiznews.com/they-talk-biz-news/angwin-leaving-wsj-for-propublica/",
+     "quote": "She joined the San Francisco Chronicle in 1996 and was awarded a Knight-Bagehot fellowship in journalism for studies at Columbia Business School in 1998.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. datePublished 2013-11-26T13:40:20Z; posted by Chris Roush. An independent trade-press source for the start of her career (supports years 1996–present) and for the 2013 move to ProPublica."
+    }
+   ]
   }
  ]
 }

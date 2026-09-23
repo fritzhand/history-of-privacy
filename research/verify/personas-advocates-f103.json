@@ -1,14 +1,191 @@
-{ "slice": "personas-advocates", "chunk": "f103", "verdicts": [
-  {
-    "kind": "people", "id": "christopher-wylie",
-    "status": "OK",
-    "issues": [],
-    "fieldFixes": {},
-    "sourceFixes": [
-      { "index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23 with fetch-text.py: quote FOUND. Same paragraph FOUND: 'Wylie, a Canadian data analytics expert who worked with Cambridge Analytica and Kogan to devise and implement the scheme, showed a dossier of evidence' and 'It includes emails, invoices, contracts and bank transfers'. 'early 2014' FOUND for the harvesting. Page <title> and JSON-LD confirm headline, authors (Emma Graham-Harrison, Carole Cadwalladr) and datePublished 2018-03-17T22:03Z." },
-      { "index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim; it answers the question 'Is it fair to say you ‘hacked’ Facebook?', so the record's use is in context. 'At 24, he came up with an idea that led to the foundation of a company called Cambridge Analytica' FOUND. JSON-LD datePublished 2018-03-18T09:44Z matches the date field; headline matches." },
-      { "index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND; same article FOUND: the regulator 'did not find evidence to back up claims in its marketing material that it had “5,000+ data points per individual on 230 million adult Americans”'. published_time 2020-10-06. The 2 October 2020 date of the ICO letter is not stated in the TechCrunch text (it comes from the ICO file name); the ICO PDF URL tried (ico.org.uk/media/action-weve-taken/2618383/...) now returns 404, so the letter itself was not read." }
-    ],
-    "addSources": []
-  }
-] }
+{
+  "slice": "personas-advocates",
+  "chunk": "f103",
+  "verdicts": [
+    {
+      "kind": "people",
+      "id": "christopher-wylie",
+      "status": "OK",
+      "issues": [],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23 with fetch-text.py: quote FOUND. Same paragraph FOUND: 'Wylie, a Canadian data analytics expert who worked with Cambridge Analytica and Kogan to devise and implement the scheme, showed a dossier of evidence' and 'It includes emails, invoices, contracts and bank transfers'. 'early 2014' FOUND for the harvesting. Page <title> and JSON-LD confirm headline, authors (Emma Graham-Harrison, Carole Cadwalladr) and datePublished 2018-03-17T22:03Z."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND verbatim; it answers the question 'Is it fair to say you ‘hacked’ Facebook?', so the record's use is in context. 'At 24, he came up with an idea that led to the foundation of a company called Cambridge Analytica' FOUND. JSON-LD datePublished 2018-03-18T09:44Z matches the date field; headline matches."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; same article FOUND: the regulator 'did not find evidence to back up claims in its marketing material that it had “5,000+ data points per individual on 230 million adult Americans”'. published_time 2020-10-06. The 2 October 2020 date of the ICO letter is not stated in the TechCrunch text (it comes from the ICO file name); the ICO PDF URL tried (ico.org.uk/media/action-weve-taken/2618383/...) now returns 404, so the letter itself was not read."
+        }
+      ],
+      "addSources": []
+    },
+    {
+      "kind": "people",
+      "id": "ashkan-soltani",
+      "status": "FIXED",
+      "issues": [
+        "'a co-creator of Do Not Track' is stated as flat fact, but the only support is Soltani's own author bio on the CNIL LINC page. Christopher Soghoian's 'The History of the Do Not Track Header' (21 Jan 2011, paranoia.dubfire.net) and Wikipedia's Do Not Track article credit the July 2009 prototype to Soghoian and Sid Stamm and never mention Soltani. The claim needs to be attributed (\"credited in his biographies as\"), not asserted.",
+        "'first executive director' was supported only by the 2021 release, which says 'new Executive Director', not 'first'. The CPPA's 8 Nov 2024 release supports it (Soltani: 'founding Executive Director'; 'He was the Agency's first employee'), so it is added below.",
+        "The contribution does not say he left the CPPA. The same 8 Nov 2024 release says he would depart in January 2025, so 'serving until January 2025' is added so the profile is not stale on 2026-09-23.",
+        "Source[1] note's unresolved Pulitzer-year conflict: the 2012 Pulitzer Explanatory Reporting finalists include 'The Wall Street Journal staff \"for its tenacious exploration of how personal information is harvested from the cellphones and computers of unsuspecting Americans...\"' (Wikipedia, 2012 Pulitzer Prize), so the CPPA's '2012' is right. pulitzer.org returned 403. This does not affect any record field."
+      ],
+      "fieldFixes": {
+        "contribution": "Soltani was the primary technical consultant on The Wall Street Journal's 'What They Know' tracking investigation, Chief Technologist of the US Federal Trade Commission and an architect of California's CCPA and CPRA privacy laws, and his biographies credit him as a co-creator of Do Not Track. In October 2020 he and Sebastian Zimmeck launched Global Privacy Control with publishers, browsers and EFF, a browser setting that tells each site the user opts out of sale or sharing of their data, which California regulations require businesses to honour. On 4 October 2021 he became the first executive director of the California Privacy Protection Agency, serving until January 2025."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: quote FOUND; page dated 'Oct. 7, 2020'; title matches the page's first heading. The same page lists NYT, Washington Post, FT, Automattic, Glitch, DuckDuckGo, Brave, Mozilla, Disconnect, Abine, DCN, Consumer Reports and EFF, which supports 'publishers, browsers and EFF'."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; page carries 'October 4, 2021'. Also FOUND: 'Soltani was an architect of both measures', 'Chief Technologist for the Federal Trade Commission' and the 'What They Know' consultant line. The 2012 Pulitzer finalist year is correct: WSJ staff were a 2012 Explanatory Reporting finalist per Wikipedia's 2012 Pulitzer Prize page; pulitzer.org returned 403."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; page shows 'Published on 12 March 2021'. The quoteSource quote ('The centralized location of the GPC puts the user back in the driver's seat...') is also FOUND verbatim, as part of Soltani's answer to 'Why should such a signal be handled at the browser level and not on a per-site basis?'. The page's intro calls him 'one of the original architects of \"Do Not Track\"'. That is a self-description, so the record now attributes it."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "California Privacy Protection Agency",
+          "title": "CPPA Executive Director To Depart in Early 2025",
+          "date": "2024-11-08",
+          "url": "https://cppa.ca.gov/announcements/2024/20241108.html",
+          "quote": "It’s been an honor and privilege to serve as the founding Executive Director of the CPPA.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. Same release, FOUND: 'The California Privacy Protection Agency’s (CPPA) Executive Director, Ashkan Soltani, announced today that he will depart the Agency in January 2025.' It also says 'He was the Agency’s first employee'. Supports 'first executive director' and 'serving until January 2025'."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "chaos-computer-club-first-meeting-taz-berlin-1981",
+      "status": "FIXED",
+      "issues": [
+        "The page numbers in the source notes are off by one. In the PDF (printed page numbers checked page by page with pdfminer), the 'informelle Gründung' sentence, the start of the TUWAT notice and '12.9.81' are on p. 58, not p. 57. The Kommune 1 table sentence and 'Zu dem Treffen sollen etwa 20 Personen gekommen sein' are on p. 61, not p. 60. The 'Wem gehören meine Daten?' topic line is on p. 59.",
+        "The title says the Chaos Computer Club 'is born' at this meeting, but the name did not exist yet. Röhr (printed p. 69, --check FOUND): 'Etwa gegen Ende des Jahres 1982 soll auch der Name „Chaos Computer Club“ für diesen Stammtisch in Verwendung gewesen sein.' The CCC itself calls the meeting its informal founding (ccc.de/de/club), so the title is reworded to say that and not imply the name existed in 1981.",
+        "'About 20 people came' is hedged in the source ('sollen ... gekommen sein', i.e. 'are said to have come'); the summary now says 'Some 20 people are said to have come'.",
+        "The other claims hold. The taz of 1 Sept 1981, p. 2 notice is headed 'TUWAT,TXT Version'. It is signed 'Tom Twiddlebit, Wau Wolf Ungenannt(»2)': Schleisiek, Holland, Gevert and two unnamed, i.e. Wulf Müller and Jochen Büttner, five Hamburg men linked through the Medienladen. The meeting was on 12.9.81 from 11.00 at 'Wattstr. (TAZ-Hauptgebäude)', and the topic list includes 'Datenrecht (Wem gehören meine Daten?)'. Coordinates 52.5414, 13.3897 match Wattstraße, 13355 Berlin (Gesundbrunnen, formerly Bezirk Wedding) per the Photon/OSM geocoder."
+      ],
+      "fieldFixes": {
+        "title": "'Komputerfrieks' meet at the taz: the Chaos Computer Club's informal founding",
+        "summary": "A notice headed 'TUWAT,TXT Version' in the taz of 1 September 1981, signed by five Hamburg media activists including Wau Holland and Klaus Schleisiek, invited computer enthusiasts to meet at the paper's Wattstraße building on 12 September 1981. Some 20 people are said to have come, meeting at a large table that had once stood in the Kommune 1. The Chaos Computer Club counts this meeting as its informal founding, though the name itself seems to have come into use only around the end of 1982. The notice's topic list included data law under the question 'who owns my data?'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the PDF 2026-09-23: quote FOUND. 'Kommunikationsrecht – Datenrecht (Wem gehören meine Daten?)' also FOUND. The notice starts on printed p. 58 and the topic list continues on p. 59; the footnote cites 'TUWAT,TXT Version. In: taz, 01. September 1981, S. 2.' The cover confirms 'Version: 1.11 vom 15.05.2014' and M.A., Universität Hamburg (submitted 2012)."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Quote FOUND. Page correction: it is on printed p. 61, not p. 60. 'Zu dem Treffen sollen etwa 20 Personen gekommen sein' is also on p. 61. The 'informelle Gründung' sentence is on p. 58, not p. 57."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Chaos Computer Club",
+          "title": "Club (Selbstdarstellung)",
+          "date": "2026",
+          "url": "https://www.ccc.de/de/club",
+          "quote": "Das Treffen führte zunächst zu einer informellen Gründung des Chaos Computer Clubs und wurde als regelmäßiger Treff in Hamburg weitergeführt.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23. The same page, also FOUND: 'Am Tisch der Kommune 1 der Zeitung taz in Berlin trafen sich damals Hacker, selbstbezeichnete „Komputerfrieks“ im Rahmen des „tu-wat“-Kongresses.' This is the club's own primary statement that the meeting was its informal founding. It is an undated organisational page, so the date is the access year."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "ccc-btx-hack-hamburger-sparkasse-1984",
+      "status": "OK",
+      "issues": [
+        "No error found; one discrepancy between sources is noted. German Wikipedia (BTX-Hack) gives DM 134,694.70 over 13 hours. heise (English 2024 and German 'Zahlen, bitte!' 2017) and the Heinz Nixdorf MuseumsForum blog (2024) all give 13,504 × DM 9.97 = DM 134,634.88. heise says this figure appears on screen in the 1984 heute-journal report, so the record's figure is the better-attested one. Arithmetic checked: 13,504 × 9.97 = 134,634.88.",
+        "Date checked: some accounts give the night of 17–18 November. The HNF blog explains that Der Spiegel 'verschob die CCC-Aktion um einen Tag' (shifted the action by a day). heise, the Wau Holland Stiftung, HNF and German Wikipedia all give 16–17 November 1984. The CCC press release and demonstration were on Monday 19 November 1984.",
+        "Optional: the location note says the exact building is not established. German Wikipedia says the hack was run from Wernéry's flat in Hamburg-Eppendorf, citing heise, and the 19 November demonstration was held at the Hamburg Data Protection Commissioner's office (HNF). The Hamburg city-centroid coordinates are acceptable as they are."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: quote FOUND. The 'At night from November 16 to 17, 1984 ... ID and password of the Hamburger Sparkasse' sentence is also FOUND, as are the October 1984 letters to data-protection authorities and the Bundespost, the call for a 'ban on financial transactions' and 'the CCC suddenly became famous'. JSON-LD datePublished 2024-11-18; author Detlef Borchers."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND. The next sentence names 'Steffen Wernéry and Wau Holland' and the '\"bank theft\" of 135.000 DM', which supports the summary's naming of the two hackers; the heise English article only says 'two members'. The page is a November 2014 countdown post, so the date '2014-11' is right."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Heinz Nixdorf MuseumsForum (HNF Blog)",
+          "title": "Kennwort Bankraub – 40 Jahre BTX-Hack",
+          "date": "2024-11-15",
+          "url": "https://blog.hnf.de/kennwort-bankraub-40-jahre-btx-hack/",
+          "quote": "In der Nacht vom 16. zum 17. November 1984 überwies die Hamburger Sparkasse auf das Konto des Chaos Computer Clubs 134.634,88 DM.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23; 'Geschrieben am 15.11.2024'. This is an independent museum source for the date and the sum. Also FOUND: 'Die 134.634,88 DM hat der Club natürlich nicht behalten, sondern der Sparkasse zurückerstattet.', which supports 'give the money back' in the significance field. It also says the press release 'Kennwort: Bankraub' appeared on Monday 19 November 1984."
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "id": "ccc-analyses-german-state-trojan-2011",
+      "status": "FIXED",
+      "issues": [
+        "'Bavarian officials later confirmed using the software in five cases' misstates the source. Help Net Security only relays a Süddeutsche Zeitung report that Bavarian agents used it in five cases. What officials confirmed (Interior Minister Joachim Herrmann, Monday 10 October 2011) was that the CCC's sample could be traced to a 2009 Bavarian police investigation (Tagesspiegel, Abendzeitung). The 'at least five cases' figure in the German press came from the Green MP Susanna Tausendfreund and the SZ. The summary is rewritten to separate the official confirmation from the reported count.",
+        "The significance field says the CCC 'showed that a person's computer had become part of the \"core area of private life\"'. That was the CCC's argument, not something it demonstrated; the release's own bracketed note says 'The CCC is basically arguing that nowadays a person's laptop is intrinsically part of this core area'. 'showed' is changed to 'argued'.",
+        "Source[0] note: the case number '1 BvR 370/07' is not on the CCC page. The release says only 'the German constitutional court (\"Bundesverfassungsgericht\") on February 27 2008'. The case number itself is correct, but it is not quoted from this source."
+      ],
+      "fieldFixes": {
+        "summary": "On 8 October 2011 the CCC published binaries and an analysis of 'lawful interception' malware used by German police, sent to it anonymously. It reported that software meant only to tap internet telephony could also take screenshots, load and run further programs and be taken over by third parties, because its commands were unencrypted and unauthenticated. The club argued this breached limits set by the Federal Constitutional Court in its 27 February 2008 ruling. Two days later Bavaria's interior ministry confirmed that the sample came from a 2009 Bavarian police investigation, and the Süddeutsche Zeitung reported that Bavarian police had used the trojan in five cases.",
+        "significance": "Hackers, not a regulator, audited the state's own surveillance code, and argued that a person's computer had become part of the 'core area of private life'."
+      },
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched 2026-09-23: quote FOUND; 'The CCC demands: The clandestine infiltration of IT systems by government agencies must stop.' also FOUND. The page timestamp is 2011-10-08T21:00. Also FOUND: 'submitted to the CCC anonymously', 'the commands from the control software to the trojan are even completely unencrypted. Neither the commands to the trojan nor its replies are authenticated', the screenshots function and the reference to the constitutional court decision of 'February 27 2008'. The docket number 1 BvR 370/07 is not on the page."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND; JSON-LD datePublished 2011-10-08T22:43Z; headline matches."
+        },
+        {
+          "index": 2,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched: quote FOUND. The quote supports only that the SZ reported five Bavarian cases, not that officials confirmed them. The summary has been reworded to match."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Der Tagesspiegel",
+          "title": "Internet-Überwachung: Trojaner kam aus Bayern",
+          "date": "2011-10-10",
+          "url": "https://www.tagesspiegel.de/politik/trojaner-kam-aus-bayern-8096494.html",
+          "quote": "Die Erstbewertung des Landeskriminalamts habe ergeben, dass die dem CCC zugespielte Software einem Ermittlungsverfahren der bayerischen Polizei aus dem Jahr 2009 zugeordnet werden kann.",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "--check FOUND 2026-09-23; JSON-LD datePublished 2011-10-10. Also FOUND: 'Das bayerische Innenministerium hat bestätigt, dass der vom Chaos Computer Club (CCC) bekannt gemachte „Staats-Trojaner“ zur Online-Überwachung aus Bayern stammt.' The same article attributes the 'at least five cases' figure to Green MP Susanna Tausendfreund, not to officials. Translation: 'The State Criminal Police Office's initial assessment found that the software passed to the CCC can be assigned to a 2009 Bavarian police investigation.'"
+        }
+      ]
+    }
+  ]
+}

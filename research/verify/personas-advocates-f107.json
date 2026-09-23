@@ -41,6 +41,51 @@
           "note": "Even the foundation set up in his memory calls him 'co-founder'. The same page also says 'Through founding the Chaos Computer Club in 1981, Wau Holland paved the way...', which shows how the shorthand in this myth arises."
         }
       ]
+    },
+    {
+      "kind": "myth",
+      "id": "myth-barlow-declaration-speech-to-davos-leaders",
+      "status": "FIXED",
+      "issues": [
+        "The claim, verdict (MISLEADING) and correction all hold. Barlow's own 2016 account says he wrote the piece at 'a staff party for the closing of the World Economic Forum', for the book 24 Hours in Cyberspace, whose editors 'found it too controversial to include'. It also says he 'sent it out the next day to the 600 or so friends I had with e-mail addresses'. Wired (Andy Greenberg, 2016-02-08) confirms the story independently: it was written at a party on the last night of the 1996 WEF in Davos, 'in one of the hotel's side rooms', as a contribution to '24 Hours In Cyberspace'. EFF's canonical text carries the dateline 'Davos, Switzerland February 8, 1996'. Nothing shows it was ever delivered as a speech.",
+        "Minor, in source 1 only: the note on the Doctorow source calls it 'the accurate framing'. But Doctorow's phrase 'where he'd been addressing world leaders' is not supported by Barlow's own account (he says WEF brought in wired types 'mostly as curiosities') or by Wired (he 'spent the previous four days in Davos listening ... to world leaders'). The Doctorow line is better presented as a secondary account that already leans toward the 'speaking to world leaders' framing, while still describing a written document. The note is corrected below; the record's fields need no change.",
+        "Checked the date: Barlow's Boing Boing post has datePublished 2016-02-09T03:31Z, which is the evening of 8 Feb in US time; the URL slug is /2016/02/08/ and the text says 'Twenty years ago tonight'. The record date of 2016-02-08 is fine."
+      ],
+      "fieldFixes": {},
+      "sourceFixes": [
+        {
+          "index": 0,
+          "verificationStatus": "CONFIRMED",
+          "note": "Re-fetched the page. The quote is FOUND verbatim, and so are both phrases in the existing note ('Twenty years ago tonight, I was at a staff party for the closing of the World Economic Forum' and 'I sent it out the next day to the 600 or so friends I had with e-mail addresses'). Also FOUND: 'But I had also agreed to write something about that moment for a book called 24 Hours in Cyberspace.' The author meta tag reads 'John Perry Barlow'. datePublished is 2016-02-09T03:31Z (US evening of 8 Feb), and the URL date is 2016-02-08."
+        },
+        {
+          "index": 1,
+          "verificationStatus": "CONFIRMED",
+          "note": "Quote FOUND verbatim. Byline (author meta) is Cory Doctorow, and datePublished is 2016-02-08T16:06Z. Caution: this is a secondary account. Its 'where he'd been addressing world leaders' is not corroborated by Barlow's own reflection, where WEF brought in 'a few wired types like myself, mostly as curiosities', or by Wired 2016, where he 'spent the previous four days in Davos listening ... to world leaders'. It correctly says he 'sat down ... and wrote' a document, not that he gave a speech. It shows how the story drifts toward 'addressing world leaders'; it is not a fully accurate framing."
+        }
+      ],
+      "addSources": [
+        {
+          "institution": "Wired",
+          "title": "Andy Greenberg, 'It's Been 20 Years Since This Man Declared Cyberspace Independence'",
+          "date": "2016-02-08",
+          "url": "https://www.wired.com/2016/02/its-been-20-years-since-this-man-declared-cyberspace-independence/",
+          "quote": "In the middle of a party on the last night he realized had an impending deadline for a contribution to a compendium called \"24 Hours In Cyberspace.\"",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "Independent journalist's account based on an interview with Barlow; the quote is FOUND. Also FOUND: 'Barlow had spent the previous four days in Davos listening, as he describes it, to world leaders pretend to understand an Internet they had hardly used themselves.' The page also says he 'banged out the statement on his laptop in one of the hotel's side rooms'. Author meta: Andy Greenberg; datePublished 2016-02-08."
+        },
+        {
+          "institution": "Electronic Frontier Foundation",
+          "title": "John Perry Barlow, 'A Declaration of the Independence of Cyberspace'",
+          "date": "1996-02-08",
+          "url": "https://www.eff.org/cyberspace-independence",
+          "quote": "Davos, Switzerland February 8, 1996",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "The dateline of the canonical text (FOUND) places the writing at Davos on 8 February 1996. That backs the correction's 'wrote the text at Davos'; Barlow's own reflection says only 'the closing of the World Economic Forum'."
+        }
+      ]
     }
   ]
 }

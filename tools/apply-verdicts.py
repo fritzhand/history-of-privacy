@@ -6,6 +6,7 @@ research files.
     python3 tools/apply-verdicts.py            # all slices
     python3 tools/apply-verdicts.py agents     # one slice
     python3 tools/apply-verdicts.py --dry-run
+    python3 tools/apply-verdicts.py --match=-f1 agents   # only verdict files whose name contains "-f1"
 
 Each research slice (research/<slice>.json) was checked by independent
 verifiers that re-fetched every source and tried to refute every record.
@@ -26,12 +27,15 @@ This script applies them:
     so nothing disappears without a trace;
   - every touched record gets a "_verify" stamp { status, issues } for the
     audit trail (the build ignores it).
-The verdict files are kept as the record of the check.
+The verdict files are kept as the record of the check. Each research file
+lists the verdict files already folded into it ("_verdictsApplied"), so a
+re-run never applies the same fixes or added sources twice.
 """
 import glob, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DRY = '--dry-run' in sys.argv
+MATCH = next((a.split('=', 1)[1] for a in sys.argv[1:] if a.startswith('--match=')), None)
 only = [a for a in sys.argv[1:] if not a.startswith('--')]
 
 KIND_KEYS = {
@@ -124,6 +128,10 @@ def apply_slice(slice_):
         return None
     doc = json.load(open(path))
     files = sorted(glob.glob(os.path.join(ROOT, 'research', 'verify', slice_ + '-*.json')))
+    if MATCH:  # a later pass: apply only its own files, so earlier ones are not applied twice
+        files = [f for f in files if MATCH in os.path.basename(f)]
+    done = doc.setdefault('_verdictsApplied', [])  # files already folded in are never applied again
+    files = [f for f in files if os.path.basename(f) not in done]
     stats = {'files': len(files), 'OK': 0, 'FIXED': 0, 'DOWNGRADED': 0, 'DROP': 0, 'missing': []}
     drops = []
     for f in files:
@@ -167,6 +175,7 @@ def apply_slice(slice_):
                 if isinstance(add, dict) and add.get('url'):
                     srcs.append(add)
             rec['_verify'] = {'status': st, 'issues': vd.get('issues') or []}
+        done.append(os.path.basename(f))
     for arr, rec, key, vd in drops:
         if rec in arr:
             arr.remove(rec)

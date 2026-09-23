@@ -1,0 +1,253 @@
+{
+ "slice": "global",
+ "chunk": "f109",
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "the-us-has-no-privacy-law",
+   "status": "OK",
+   "issues": [
+    "No errors found. All three quotes were re-fetched and are verbatim (--check FOUND). The DLA Piper page is the United States page: its heading reads 'Data Protection in the United States', and both quotes appear in its opening paragraph. The DOJ OPCL introduction contains the Pub. L. 93-579 / 88 Stat 1896 / 31 Dec 1974 / in force 27 September 1975 quote. The two extra sentences in the note ('Enacted in the wake of the Watergate and ... COINTELPRO scandals' and 'passed in great haste during the final week of the Ninety-Third United States Congress') are also verbatim.",
+    "The correction is accurate: there is no comprehensive federal law; the Privacy Act of 1974 governs federal agency records (the DOJ page describes rights against 'an agency'); there are sector-specific federal statutes; and comprehensive state laws began with California in 2018 (CCPA). The MISLEADING verdict fits."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched https://www.dlapiperdataprotection.com/index.html?t=law&c=US. The page heading is 'Data Protection in the United States' and the quote is verbatim (--check FOUND)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Same DLA Piper US page; the quote is verbatim (--check FOUND). The next sentence says a comprehensive federal law 'is not expected to pass any time soon'. Law-firm global guide (secondary)."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched the DOJ OPCL page. The quote and both sentences in the note are verbatim (--check FOUND)."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "myth",
+   "id": "africa-has-few-privacy-laws",
+   "status": "FIXED",
+   "issues": [
+    "'In 2019–20 alone, six of ten newly identified national laws were African' misstates the period and what was counted. Greenleaf and Cottier's February 2020 abstract counts the laws 'enacted or located' since the Global Tables of January 2019. That window runs from January 2019 to February 2020, not 2019–20 as a whole, and some of the laws were only newly located, not newly enacted. The wording is corrected.",
+    "Several claims in the correction had no source. The 2000s laws, ECOWAS 2010 and the enforcement-gap sentence are now sourced. The 2000s laws check out on Data Protection Africa's fact sheets: Tunisia Organic Act 2004-63, Burkina Faso Law 010-2004/AN, Mauritius Data Protection Act 2004, Senegal Law 2008-12 and Benin Law 2009-09. The ECOWAS Supplementary Act A/SA.1/01/10 was signed at Abuja on 16 February 2010, and its Article 2 obliges each Member State to set up a legal framework. For the enforcement gap, Data Protection Africa (updated February 2024) says many countries with laws face 'resource and capacity constraints to enforce violations'. The same page gives a scale figure that answers the myth directly: 36 of 55 African countries had a law as of January 2024.",
+    "Everything else checks out. Cabo Verde's Law 133/V/2001 (2001) was Africa's first comprehensive law, and the Malabo Convention entered into force on 8 June 2023. All three existing quotes are verbatim."
+   ],
+   "fieldFixes": {
+    "correction": "Cabo Verde legislated in 2001, and Tunisia, Burkina Faso, Mauritius, Senegal and Benin followed in the 2000s. West Africa's ECOWAS bound its members to harmonised laws in 2010, and the AU's Malabo Convention entered into force in 2023. Of the ten national laws that Greenleaf and Cottier newly counted between January 2019 and February 2020, six were African. By January 2024, 36 of Africa's 55 countries had a data-protection law. In most countries the gap is now enforcement: many regulators lack independence and the resources to act on violations."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched https://dataprotection.africa/cabo-verde/ (dateModified 2025-03-26). The quote is verbatim (--check FOUND), including the stray space before the comma."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched the free PL&B abstract (International Report, February 2020, by Graham Greenleaf and Bertil Cottier). The quote is verbatim (--check FOUND). The count window is set by the preceding sentence: since the January 2019 Global Tables (132 countries), 'a further ten laws have been enacted or located'. So the six African laws fall within January 2019 to February 2020, and some were located rather than enacted in that window."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "date": "2023-07-24", "note": "Re-fetched the CIPIT blog post by Josephine Kaaniru, published 2023-07-24 per article:published_time. The quote is verbatim (--check FOUND)."}
+   ],
+   "addSources": [
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Mapping the progress (and delays) for data protection in Africa",
+     "date": "2024-02-06",
+     "url": "https://dataprotection.africa/data-protection-in-africa-progress/",
+     "quote": "As of January 2024, 36 out of 55 African countries (65%) now have a data protection law.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Published 2023-11-14 and modified 2024-02-06 (page metadata). The same page says 'many of the countries who have enacted such a law are facing major challenges in implementing these laws, including through a lack of independence for the regulatory authorities and a resource and capacity constraints to enforce violations.' (--check FOUND), which supports the enforcement-gap sentence."
+    },
+    {
+     "institution": "ECOWAS (copy hosted by Statewatch)",
+     "title": "Supplementary Act A/SA.1/01/10 on Personal Data Protection within ECOWAS — Article 2",
+     "date": "2010-02-16",
+     "url": "https://www.statewatch.org/media/documents/news/2013/mar/ecowas-dp-act.pdf",
+     "quote": "Each Member State shall establish a legal framework of protection for prrvacy of data relating to the collection, processing, transmission, storage, and use of personal data without prejudice to the general interest of the State.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. OCR text layer of a scan: 'prrvacy' is the OCR's rendering of 'privacy'. The signature block reads 'DONE AT ABUJA ON 16TH DAYOF FEBRUARY 2010' (--check FOUND). Supports 'West Africa bound itself to harmonised laws in 2010'."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Tunisia — Fact Sheet",
+     "date": "2025-03-26",
+     "url": "https://dataprotection.africa/tunisia/",
+     "quote": "Organic Act No. 2004-63 , was passed in 2004 and established the Tunisian data protection authority, the Instance nationale de protection des données à caractère personnel (INPDP).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same page illustrates the enforcement gap: 'it wasn’t until 2015 that data processors began to regularly declare their personal data processing to the INPDP, which, up until that time, had neither been functioning as an independent body, nor was it sanctioning violators of the Organic Act.' (--check FOUND). The site's other fact sheets confirm the rest of the 2000s list: Burkina Faso Law N°010-2004/AN, Mauritius Data Protection Act 2004, Senegal Law No. 2008-12 and Benin Law No. 2009-09."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "china-and-russia-have-no-data-protection-law",
+   "status": "FIXED",
+   "issues": [
+    "The last sentence overstates the scholarship. It says scholars treat 'them' (China's and Russia's laws) as 'a distinct state-driven model'. The only source is Anu Bradford's Digital Empires excerpt, which describes China's regulation of the digital economy as a whole as 'state-driven'. Russia is not mentioned anywhere in the excerpt (grep 'Russia' finds nothing), and Bradford's model covers digital regulation broadly, not data-protection law in particular. Reworded to attribute the model to Bradford, for China.",
+    "The data-localisation claim had no source on this record. It is correct for both countries. Russia: Federal Law 242-FZ of 21 July 2014, in force 1 September 2015 (kremlin.ru text, --check FOUND). China: PIPL Article 40 and Cybersecurity Law Article 37. The Russian source is added. 'Broad state access' is left as the author's general characterisation and is still unsourced.",
+    "The rest checks out. Federal Law No. 152-FZ 'О персональных данных' is dated 27.07.2006, and the kremlin.ru page also shows 'Принят Государственной Думой 8 июля 2006 года'. The PIPL was passed on 20 August 2021 and took effect on 1 November 2021 (PCPD). The access/copy/correct/erasure quote is verbatim. The PCPD quote does not state the 2021 date, so a date quote from the same page is added. The FALSE verdict fits."
+   ],
+   "fieldFixes": {
+    "correction": "Russia adopted its Federal Law 'On Personal Data' (No. 152-FZ) on 27 July 2006. China's Personal Information Protection Law was passed on 20 August 2021 and gives individuals the right to access, copy, correct and request erasure of their personal information. These laws bind companies strictly but sit alongside broad state access and data-localisation rules: Russia has required citizens' data to be stored on Russian databases since 2015, and China requires critical-infrastructure operators and large processors to store data domestically. Anu Bradford calls China's approach to digital regulation a distinct 'state-driven' model. It is a different kind of regulation, not an absence of law."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched http://www.kremlin.ru/acts/bank/24154. The quote is verbatim (--check FOUND). The page continues 'РОССИЙСКАЯ ФЕДЕРАЦИЯ ФЕДЕРАЛЬНЫЙ ЗАКОН О персональных данных' and 'Принят Государственной Думой 8 июля 2006 года' (--check FOUND). Translation: 'Federal Law of 27.07.2006 No. 152-FZ' (On Personal Data)."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched the PCPD page. The quote is verbatim (--check FOUND). The page also says the PIPL applies to 'processing activities carried out by state organs'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "title": "Digital Empires", "note": "Re-fetched. The quote is verbatim (--check FOUND). The page title and headline are 'Digital Empires', author Anu Bradford, published 2024-04-11. The excerpt characterises China's regulation of the digital economy generally and does not mention Russia, so it supports only a China-specific 'state-driven model' claim."}
+   ],
+   "addSources": [
+    {
+     "institution": "Office of the Privacy Commissioner for Personal Data (PCPD), Hong Kong",
+     "title": "Mainland's Personal Information Protection Law",
+     "date": "2026",
+     "url": "https://www.pcpd.org.hk/english/data_privacy_law/mainland_law/mainland_law.html",
+     "quote": "The Personal Information Protection Law (PIPL), the first piece of legislation in the Mainland dedicated to the protection of personal information, was passed by the Standing Committee of the National People’s Congress on 20 August 2021 and was effective since 1 November 2021.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Supports the 2021 date."
+    },
+    {
+     "institution": "President of Russia (kremlin.ru)",
+     "title": "Федеральный закон от 21.07.2014 г. № 242-ФЗ",
+     "date": "2014-07-21",
+     "url": "http://www.kremlin.ru/acts/bank/38728",
+     "quote": "оператор обязан обеспечить запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение персональных данных граждан Российской Федерации с использованием баз данных, находящихся на территории Российской Федерации",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Translation: 'the operator is obliged to ensure the recording, systematisation, accumulation, storage, clarification (updating, changing) and retrieval of personal data of citizens of the Russian Federation using databases located in the territory of the Russian Federation'. In force 1 September 2015 (Art. 4 as amended by 526-FZ). This source already appears on event russia-personal-data-localisation-law-2014."
+    }
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "sadc-model-law-2010",
+   "status": "FIXED",
+   "issues": [
+    "The correction's opening clause is wrong. 'Work under the ITU–EU HIPSSA project began around 2010' is contradicted by the record's own ITU document: its foreword says HIPSSA ran 'from the very beginning of the project in December 2008'. The earliest SADC data-protection text found is the ITU 'DRAFT ... SADC MODEL LAW ON DATA PROTECTION', dated March 2011. No source shows any 2010 text or 2010 start of drafting.",
+    "The existing quote covers only the Mauritius adoption. The Gaborone validation (27 February to 3 March 2012) is in the sentence just before it, so the quote is widened to cover both.",
+    "The verdict should be FALSE, not MISLEADING. No part of 'dates from 2010' is supported: drafting is first attested in March 2011, validation was in March 2012, ministerial adoption in November 2012 and ITU publication in 2013. A 2010 date may come from confusion with the ECOWAS Supplementary Act of February 2010.",
+    "Independent check: the Future of Privacy Forum's 2024 report on African RECs cites 'The SADC Model Law (2012)'. The SADC model laws on e-transactions and cybercrime carry the same Gaborone 2012 validation and Mauritius November 2012 adoption text. The Windhoek 2011 validation found in search results belongs to a different SADC text (a universal-service toolkit), not the data-protection model law."
+   ],
+   "fieldFixes": {
+    "verdict": "FALSE",
+    "correction": "No 2010 text exists. The ITU–EU HIPSSA project that produced the SADC Model Law on Data Protection began in December 2008, and the first draft of the model law is dated March 2011. The final text was validated at a workshop in Gaborone, Botswana (27 February–3 March 2012), adopted by SADC ministers in Mauritius in November 2012, and published by the ITU in 2013."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "quote": "This draft document has been reviewed, discussed and validated by broad consensus by participants of the workshop organised in collaboration with CRASA and SADC Secretariats held in Gaborone, Botswana from 27 February to 3 March 2012. It was further adopted by the SADC Ministers responsible for Telecommunications, Postal and ICT at their meeting in Mauritius in November 2012.", "note": "Re-fetched the ITU PDF (cover: 'Geneva, 2013', '© ITU 2013'). The widened quote is verbatim (--check FOUND) and covers both the Gaborone validation and the Mauritius adoption."}
+   ],
+   "addSources": [
+    {
+     "institution": "International Telecommunication Union (ITU) — HIPSSA project",
+     "title": "Data Protection: SADC Model Law — Foreword (Brahima Sanou, BDT Director)",
+     "date": "2013",
+     "url": "https://www.itu.int/en/ITU-D/Projects/ITU-EC-ACP/HIPSSA/Documents/FINAL%20DOCUMENTS/FINAL%20DOCS%20ENGLISH/sadc_model_law_data_protection.pdf",
+     "quote": "HIPSSA has given special consideration to this issue from the very beginning of the project in December 2008.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Dates the start of the HIPSSA project to December 2008, not 'around 2010'."
+    },
+    {
+     "institution": "International Telecommunication Union (ITU) — HIPSSA project",
+     "title": "DRAFT Southern African Development Community (SADC) Model Law on Data Protection",
+     "date": "2011-03",
+     "url": "https://www.itu.int/ITU-D/projects/ITU_EC_ACP/hipssa/docs/SA4docs/data%20protection.pdf",
+     "quote": "DRAFT Southern African Development Community (SADC) MODEL LAW ON DATA PROTECTION March 2011",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (cover text of the draft; the disclaimer page reads '© ITU 2012'). This is the earliest dated SADC data-protection model-law text found."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "countries-with-data-privacy-laws-2025",
+   "status": "FIXED",
+   "issues": [
+    "The value (172), the year (2025) and the source are correct. The quote is verbatim on the free PL&B abstract (International Report, June 2025). The Macquarie University research portal independently gives the same figures from the paper's own abstract.",
+    "Two details in the notes are not in the quoted sentence. The date 'as at 15 March 2025' is on the same page ('The table lists national laws known as at 15 March 2025.'). That self-governing territories are counted is not on the 2025 page at all. It is Greenleaf's stated convention in the 2020 PL&B abstract ('over 200 countries (including self-governing territories)'). Both supporting quotes are added. No field changes are needed."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the free PL&B abstract: 'International Report June 2025', 'Review by Graham Greenleaf, Honorary Professor, Macquarie Law School'. The quote is verbatim (--check FOUND)."}
+   ],
+   "addSources": [
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf)",
+     "title": "172 Countries with Data Privacy Laws – Year by Year 1973-2025",
+     "date": "2025-06",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int195/int195dplaws/",
+     "quote": "The table lists national laws known as at 15 March 2025.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "--check FOUND on the free abstract page. Supports the '15 March 2025' cut-off in the notes."
+    },
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf and Bertil Cottier)",
+     "title": "2020 ends a decade of 62 new data privacy laws",
+     "date": "2020-02",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
+     "quote": "By the end of the 2020s, if the current trajectory of enactment of new data privacy laws continues, there will be over 200 countries (including self-governing territories) with data privacy laws.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "--check FOUND on the free abstract page. Shows that Greenleaf's country counts include self-governing territories, as the notes say."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "average-new-data-privacy-laws-per-year-1973-2025",
+   "status": "OK",
+   "issues": [
+    "No errors found. The quote is verbatim on the free PL&B abstract, and the arithmetic holds (172 / 52 = 3.31). The Macquarie University research portal carries the paper's abstract with the same 3.3 figure (it says 'new countries per year'), so a free second copy is added."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the free PL&B abstract (June 2025). The quote is verbatim (--check FOUND)."}
+   ],
+   "addSources": [
+    {
+     "institution": "Macquarie University (research portal record of Greenleaf's article)",
+     "title": "172 countries with data privacy laws – year by year 1973-2025",
+     "date": "2025-06",
+     "url": "https://researchers.mq.edu.au/en/publications/172-countries-with-data-privacy-laws-year-by-year-1973-2025/",
+     "quote": "For the past 52 years, since 1973 when Sweden enacted the first national data privacy law, countries around the world have enacted new data privacy laws at an average rate of 3.3 new countries per year, giving a total of 172 countries with such laws by March 2025. Since 2020 the average number of new countries per year has risen to 5.4.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The portal record gives the journal as Privacy Laws & Business: International Report, published June 2025. It is a free copy of the article's abstract."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "average-new-data-privacy-laws-per-year-since-2020",
+   "status": "OK",
+   "issues": [
+    "No errors found. The quote is verbatim on the free PL&B abstract (June 2025), and the Macquarie research portal carries the same 5.4 figure.",
+    "Caveat for the editorial layer: 5.4 cannot be rebuilt by subtracting the 2020 abstract's 142 (end of 2019) from 172 (March 2025), which gives about 5.8 a year. Greenleaf revises earlier years as more laws are located, so the two editions are not directly comparable. Use his stated average."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the free PL&B abstract. The quote is verbatim (--check FOUND)."}
+   ],
+   "addSources": [
+    {
+     "institution": "Macquarie University (research portal record of Greenleaf's article)",
+     "title": "172 countries with data privacy laws – year by year 1973-2025",
+     "date": "2025-06",
+     "url": "https://researchers.mq.edu.au/en/publications/172-countries-with-data-privacy-laws-year-by-year-1973-2025/",
+     "quote": "Since 2020 the average number of new countries per year has risen to 5.4.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND (a substring of the checked abstract). A free copy of the article's abstract."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "new-data-privacy-laws-2010s",
+   "status": "FIXED",
+   "issues": [
+    "The value (62) and the year are correct, and the quote is verbatim. However, the notes' 'More than in any previous decade' comes from the page's first sentence, which the quote omitted. The quote is widened to include it.",
+    "The source's title field includes '(with Bertil Cottier)', which is not part of the article title; Cottier is a co-author. The title and institution fields are corrected.",
+    "The count dates from February 2020. Greenleaf's June 2025 paper recalculates new countries per decade, but its body is paywalled, so any revision to 62 could not be checked. The notes now say that the count is as of February 2020."
+   ],
+   "fieldFixes": {
+    "notes": "Greenleaf and Cottier's count as of February 2020, which brought the total to 142 countries. More than in any previous decade (1970s 10, 1980s 10, 1990s 20, 2000s 40)."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "institution": "Privacy Laws & Business International Report (Graham Greenleaf and Bertil Cottier)", "title": "2020 ends a decade of 62 new data privacy laws", "quote": "The decade 2010-2019 has seen 62 new countries enacting data privacy laws, more than in any previous decade. The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.", "note": "Re-fetched the free PL&B abstract ('International Report February 2020'; byline 'Graham Greenleaf, PL&B Asia Pacific Editor and Bertil Cottier, Professor of Law, University of Lugano, Switzerland'). The widened quote is verbatim (--check FOUND)."}
+   ],
+   "addSources": []
+  }
+ ]
+}

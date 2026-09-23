@@ -1,0 +1,87 @@
+{
+ "slice": "concepts",
+ "chunk": "f102",
+ "verdicts": [
+  {
+   "kind": "myth",
+   "id": "myth-gdpr-first-data-protection-law",
+   "status": "OK",
+   "issues": [
+    "No error found. Both quotes are verbatim (--check FOUND) and support the claims. The Hessian commissioner's page says the 1970 Hessian act was the first data-protection law in Germany and worldwide, and that the act created the office of the Hessian Data Protection Commissioner. It also names the first commissioner: Willi Birkelbach, elected 8 June 1971.",
+    "Two parts of the correction had no source on the record: 'national laws' (Sweden's 1973 Data Act, the first national law) and 'the EU's 1995 Directive'. Sources for both are appended below. Minor wording point: Directive 95/46/EC was formally a European Community instrument, but calling it the 'EU's 1995 Directive' is standard usage, so the text is left as is."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim. The page heading is 'Geschichte des Datenschutzes' on datenschutz.hessen.de, which matches the institution and title fields. The same paragraph says the act 'die Institution des Hessischen Datenschutzbeauftragten geschaffen' and that 'Der weltweit erste Datenschutzbeauftragte war Willi Birkelbach, der am 8. Juni 1971 vom Hessischen Landtag ... gewählt wurde', which supports 'created the first data-protection commissioner'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: quote FOUND verbatim in the official English translation of the 15 December 1983 Census Act judgment. The page names the right as 'informational self-determination' throughout, which matches the correction's wording."}
+   ],
+   "addSources": [
+    {"institution": "Internetmuseum (Internetstiftelsen, Sweden)", "title": "Sverige blir först i världen med att införa en nationell datalag", "date": "2019-12-04", "url": "https://internetmuseum.se/tidslinjen/datalagen/", "quote": "Debatt och diskussion leder fram till att Sverige 1973 inför världens första nationella datalag.", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "--check FOUND. Translation: 'Debate and discussion led Sweden in 1973 to introduce the world's first national data law.' The page also says the Riksdag adopted the Datalagen in 1973 and set up the Datainspektionen at the same time. This supports 'national laws ... came decades before the GDPR'. The date is the one already used for this URL elsewhere in the research files."},
+    {"institution": "European Parliament and Council (Official Journal L 281, via legislation.gov.uk)", "title": "Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 (as adopted)", "date": "1995-10-24", "url": "https://www.legislation.gov.uk/eudr/1995/46/pdfs/eudr_19950046_adopted_en.pdf", "quote": "natural persons, and in particular their right to privacy with respect to the processing of personal data", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "Article 1(1); --check FOUND. The OCR splits the opening words ('Member States shall protect the fundamental rights and freedoms of'), so only this contiguous fragment can be checked. 'Done at Luxembourg, 24 October 1995' is also FOUND on the same PDF."}
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-people-dont-care-about-privacy",
+   "status": "FIXED",
+   "issues": [
+    "All three quotes are verbatim on the Pew page (--check FOUND). The title details are correct: 5,101 U.S. adults, 15–21 May 2023, published 18 October 2023.",
+    "'Surveys show concern rising' overstates Pew's finding. Pew's chapter 1 says 'Similar sentiments were expressed in 2019, when we last asked about this.' The clear rise is in concern about government use: 64% to 71%, driven by Republicans (63% to 77%). Concern about company use moved only from 79% (2019) to 81% (2023), and Pew does not call that a change. The correction should say concern is holding steady or rising, and should give the 81% company figure so readers are not left thinking only government concern was measured."
+   ],
+   "fieldFixes": {
+    "correction": "Surveys show concern holding steady or rising, not falling: Pew found in 2023 that 81% of Americans are concerned about how companies use their data and 71% about government use (up from 64% in 2019), and that 67% say they understand little or nothing about what companies do with their data, up from 59% in 2019."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim. The page says the survey was 'conducted among 5,101 U.S. adults from May 15 to 21, 2023', which matches the title field."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim. The surrounding text attributes the rise to Republicans (63% to 77%) and says Democrats' concern 'has held steady'."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim. Pew's chapter 1 gives the baseline year: 'has risen from 59% in 2019 to 67% in 2023'."}
+   ],
+   "addSources": [
+    {"institution": "Pew Research Center", "title": "How Americans View Data Privacy — 1. Views of data privacy risks, personal data and digital privacy laws", "date": "2023-10-18", "url": "https://www.pewresearch.org/internet/2023/10/18/views-of-data-privacy-risks-personal-data-and-digital-privacy-laws/", "quote": "Concern is high: 81% say they feel very or somewhat concerned with how companies use the data they collect about them.", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "--check FOUND. The same chapter says 'Similar sentiments were expressed in 2019, when we last asked about this' (FOUND). Pew's 2019 report 'Americans and Privacy' (15 Nov 2019) gives the 2019 baselines as companies (79%) and government (64%), so company concern moved only slightly."}
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-us-constitution-explicit-privacy-right",
+   "status": "OK",
+   "issues": [
+    "No factual error. Both Griswold quotes are FOUND in the LOC U.S. Reports PDF, and the PDF gives 'Decided June 7, 1965'. Page 484 also has 'Various guarantees create zones of privacy', which supports the correction's wording.",
+    "The claim that 'privacy' does not appear in the Constitution was checked independently. National Archives transcripts of the Constitution, the Bill of Rights and Amendments XI–XXVII return no match for 'privacy', and the pages were confirmed to have loaded. A primary statement of the point from the Court itself (Roe v. Wade) is appended below.",
+    "Presentation caveat on source[1]: the ellipsis in the Black quote does not mark a cut. It covers an OCR line displacement, and the original sentence is continuous. A reader will read '...' as an omission. The clean, continuous sentence is FOUND on Cornell LII, appended below so the display can use it."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim. It is followed on the same page by 'Various guarantees create zones of privacy', which the OCR splits across a line."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND with the ellipsis. The ellipsis stands in for an OCR-displaced line, not an omission; the real sentence runs 'I like my privacy as well as the next one, but ...'. For display, prefer the appended Cornell LII source, whose clean continuous sentence is FOUND."}
+   ],
+   "addSources": [
+    {"institution": "Supreme Court of the United States — United States Reports vol. 410 (Library of Congress)", "title": "Roe v. Wade, 410 U.S. 113 (1973), opinion of the Court", "date": "1973-01-22", "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf", "quote": "The Constitution does not explicitly mention any right of privacy.", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "--check FOUND (410 U.S. at 152). The next sentence says a right of privacy has been recognised 'in the penumbras of the Bill of Rights, Griswold v. Connecticut'. Roe was overruled by Dobbs v. Jackson Women's Health Organization (2022) on abortion, but this statement about the constitutional text is unaffected."},
+    {"institution": "Legal Information Institute, Cornell Law School", "title": "Griswold v. Connecticut, 381 U.S. 479 (1965), Black, J., dissenting", "date": "1965-06-07", "url": "https://www.law.cornell.edu/supremecourt/text/381/479", "quote": "I like my privacy as well as the next one, but I am nevertheless compelled to admit that government has a right to invade it unless prohibited by some specific constitutional provision.", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "--check FOUND. This is the clean text of the sentence that the LOC OCR (source[1]) breaks. Use it for display so no false ellipsis appears."}
+   ]
+  },
+  {
+   "kind": "myth",
+   "id": "myth-privacy-signals-are-just-requests",
+   "status": "FIXED",
+   "issues": [
+    "All four quotes are verbatim (--check FOUND). The CCPA quote is §7025(b) of the regulations 'Effective 1/1/2026', page 44. The Texas quote is Bus. & Com. Code §541.055(e) as enrolled in HB 4. The GDPR quote is Art. 21(5), which the fetch shows opening 'In the context of the use of information society services, and notwithstanding Directive 2002/58/EC, the data subject may exercise his or her right to object by automated means using technical specifications.'",
+    "Texas wording is imprecise and undated. The statute does not 'treat a browser setting as the consumer's authorised agent'. It says a consumer 'may designate an authorized agent using a technology, including ... an Internet browser setting or extension'. HB 4 §7(b) also states that §541.055(e) 'takes effect January 1, 2025', later than the rest of the Act (July 1, 2024). The statute further lets a controller decline a request it cannot verify.",
+    "The claim names Do Not Track, but the correction's US examples bind only qualifying opt-out signals such as Global Privacy Control. California §7025(b)(2) requires the signal to make clear it opts the consumer out of sale/sharing. The page cited for Colorado names Global Privacy Control as 'the state's first universal opt-out mechanism'. Do Not Track's legal force comes mainly through GDPR Art. 21(5): in 2023 the Berlin Regional Court (Landgericht Berlin, 16 O 420/19, not yet final when the ruling was reported) barred LinkedIn from telling users it ignores DNT signals. A vzbv source for this is appended, and the correction is reworded to match.",
+    "The final sentence about IEEE 7012 had no source on the record. The IEEE SA standard page is appended."
+   ],
+   "fieldFixes": {
+    "correction": "Not any more, in a growing number of places. California's regulations require businesses that sell or share personal information to process qualifying opt-out preference signals, such as Global Privacy Control, as valid opt-out requests. Colorado has required controllers to accept universal opt-out mechanisms since 1 July 2024. Since 1 January 2025, Texas has let consumers use a browser setting or extension to designate an authorised agent that opts them out. The GDPR has let people object 'by automated means' since 2018, and in 2023 a Berlin court barred LinkedIn from telling users it ignores Do Not Track signals. What these signals still cannot do is state positive terms, the gap IEEE 7012 (MyTerms) addresses."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim as §7025(b), on page 44 of the PDF headed 'CALIFORNIA CONSUMER PRIVACY ACT REGULATIONS Effective 1/1/2026'. §7025(b)(1)–(2) sets the conditions: a commonly used format such as an HTTP header, and a clear disclosure that the signal opts the consumer out of sale/sharing."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim on the Colorado AG page titled 'Colorado Privacy Act (CPA)'. The same page calls Global Privacy Control 'the state's first universal opt-out mechanism' and points to the AG's Universal Opt-Out Mechanism list (Rule 5.07)."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim in §541.055(e) of enrolled HB 4 (88R). SECTION 7(b) of the same bill reads: 'Section 541.055(e), Business & Commerce Code, as added by this Act, takes effect January 1, 2025.' The rest of the Act took effect July 1, 2024. The subsection lets a controller decline if it cannot verify the request with commercially reasonable effort, among other exceptions."},
+    {"index": 3, "verificationStatus": "CONFIRMED", "note": "Re-fetched: FOUND verbatim as Art. 21(5) in the Publications Office text. The GDPR applied from 25 May 2018, which supports 'since 2018'."}
+   ],
+   "addSources": [
+    {"institution": "Verbraucherzentrale Bundesverband (vzbv)", "title": "Court Prohibits Linkedin's Data Privacy Infringements (Landgericht Berlin, 16 O 420/19, judgment of 24 Aug 2023)", "date": "2023-10-30", "url": "https://www.vzbv.de/en/court-prohibits-linkedins-data-privacy-infringements", "quote": "According to the General Data Protection Regulation (GDPR), the right to object to the processing of personal data can also be expressed using an automated procedure. A DNT signal represents a valid objection.", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "--check FOUND. This is vzbv's account; the court upheld vzbv's view that LinkedIn's statement that it ignores DNT was misleading. The page date is 30.10.2023, and the judgment of 24.08.2023 is listed as 16 O 420/19. The German version of the page marks the judgment 'nicht rechtskräftig' (not final). Later appeal history was not checked."},
+    {"institution": "IEEE Standards Association", "title": "IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms", "date": "2026-01-20", "url": "https://standards.ieee.org/ieee/7012/7192/", "quote": "It describes how individuals, acting as first parties, can proffer their privacy requirements as contractual terms and arrive at agreements recorded and kept by both sides.", "verificationStatus": "CONFIRMED", "accessType": "FREE", "note": "--check FOUND. The page shows 'Published: 2026-01-20'. This supports the correction's point that MyTerms lets individuals state positive terms, as opposed to opt-out signals."}
+   ]
+  }
+ ]
+}

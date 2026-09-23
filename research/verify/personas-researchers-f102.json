@@ -1,0 +1,40 @@
+{
+  "slice": "personas-researchers",
+  "chunk": "f102",
+  "verdicts": [
+    {
+      "kind": "image",
+      "id": "shoshana-zuboff-hiig-berlin-2019",
+      "status": "FIXED",
+      "issues": [
+        "Licence confirmed. I re-read the Commons API extmetadata on 2026-09-23: LicenseShortName 'CC BY 3.0', License 'cc-by-3.0', UsageTerms 'Creative Commons Attribution 3.0', LicenseUrl https://creativecommons.org/licenses/by/3.0, AttributionRequired true. Artist and Credit match the record's rightsEvidence word for word. The wikitext uses {{YouTube}} and {{LicenseReview|...|user=Leoboudv|date=2020-09-17}}, so a Commons reviewer confirmed the licence. The source YouTube page (watch?v=fJ0josfRzp4, HIIG channel) still shows 'Creative Commons Attribution license (reuse allowed)'. CC BY 3.0 is an acceptable licence. The creditLine and creator fields are correct.",
+        "Wrong date in the caption. The caption says the event was on '11 November 2019', but 11 November 2019 is when the YouTube video premiered ('Premiered Nov 11, 2019' on the YouTube page). The Commons date=/DateTimeOriginal value copies that upload date. The Commons description itself says 'The event with Shoshana Zuboff on 6 November is part of the Berlin Science Week 2019 and the keynote of the DigiKomm conference 2019.' The HIIG event page gives '06 November 2019 | 7 pm ... Urania Berlin | An der Urania 17 | 10787 Berlin' (fetch-text --check FOUND). That page embeds the same video (youtu.be/fJ0josfRzp4), so the still comes from the 6 November event.",
+        "Venue and coordinates are wrong or too vague. The locationNote says 'the file does not name the venue' and uses generic Berlin city-centre coordinates (52.52, 13.405). The HIIG event page linked from the file description names the venue: Urania Berlin, An der Urania 17, 10787 Berlin. The YouTube page also tags the location as 'Urania Berlin e.V.'. de.wikipedia 'Urania (Berlin)' gives 52.50138889, 13.34805556.",
+        "The title is misleading. 'at the Humboldt Institute for Internet and Society' suggests she was at the institute's premises. The talk was held at Urania Berlin, as part of the lecture series 'Making Sense of the Digital Society', run jointly by HIIG and the Federal Agency for Civic Education (bpb) (from the Commons/YouTube description). The caption's 'an event of the Alexander von Humboldt Institute' leaves out bpb, which co-ran the series.",
+        "Checked and correct: the local file assets/media/shoshana-zuboff-hiig-berlin-2019.jpg opens (960x976 RGB JPEG). It is the same image as the Commons 960px thumbnail, re-encoded, with a mean pixel difference of 0.69. The thumbUrl returns 200 image/jpeg. The original on Commons is 1177x1197, which matches the aspect ratio. The alt text matches the image: curly hair, glasses, red chair, handheld microphone. The Commons Credit confirms the frame time 1:28:39 and the words 'cropped, brightened'. Year 2019 is correct.",
+        "Minor note on rights: the YouTube and Commons description ends 'Photo credit: Falling Walls Foundation', and the HIIG page says 'Photos: © Falling Walls Foundation'. This credit covers the event photographs on the HIIG page, not the video. The Commons file is a frame from HIIG's video, which HIIG released under CC BY, so the licence still holds. rightsEvidence should say that DateTimeOriginal is the upload date."
+      ],
+      "fieldFixes": {
+        "title": "Shoshana Zuboff at Urania Berlin, 2019",
+        "caption": "Shoshana Zuboff speaking on 'Surveillance capitalism and democracy' at Urania Berlin on 6 November 2019. The talk was part of the lecture series 'Making Sense of the Digital Society', run by the Alexander von Humboldt Institute for Internet and Society (HIIG) and the Federal Agency for Civic Education (bpb). Video still, cropped and brightened.",
+        "lat": 52.5014,
+        "lng": 13.3481,
+        "locationNote": "Urania Berlin, An der Urania 17, 10787 Berlin, the venue named on the HIIG event page for this lecture. The page embeds the same video. Coordinates are from de.wikipedia 'Urania (Berlin)'.",
+        "rightsEvidence": "Commons API extmetadata: LicenseShortName \"CC BY 3.0\"; License \"cc-by-3.0\"; UsageTerms \"Creative Commons Attribution 3.0\"; Artist \"Alexander von Humboldt Institut for internet and society\"; Credit \"Shoshana Zuboff: Surveillance capitalism and democracy at 1:28:39, cropped, brightened\"; categories 'Media from YouTube', 'Files from external sources with reviewed licenses'. Wikitext: {{YouTube}} + {{LicenseReview}} by Leoboudv, 2020-09-17. The YouTube page shows 'Creative Commons Attribution license (reuse allowed)'. DateTimeOriginal \"2019-11-11\" is the video's YouTube premiere date. The event itself was on 6 November 2019 (Commons description; HIIG event page)."
+      },
+      "sourceFixes": [],
+      "addSources": [
+        {
+          "institution": "Alexander von Humboldt Institute for Internet and Society (HIIG)",
+          "title": "Shoshana Zuboff: Surveillance Capitalism and Democracy (event page)",
+          "date": "2019",
+          "url": "https://www.hiig.de/en/events/shoshana-zuboff-surveillance-capitalism-and-democracy/",
+          "quote": "Shoshana Zuboff: Surveillance Capitalism and Democracy 06 November 2019 | 7 pm | doors open 6.30 pm Urania Berlin | An der Urania 17 | 10787 Berlin",
+          "verificationStatus": "CONFIRMED",
+          "accessType": "FREE",
+          "note": "fetch-text --check FOUND on 2026-09-23. The page embeds the same YouTube recording (youtu.be/fJ0josfRzp4) that the Commons still was taken from, which confirms the event date (6 Nov 2019, not the 11 Nov upload date) and the venue (Urania Berlin)."
+        }
+      ]
+    }
+  ]
+}

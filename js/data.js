@@ -22459,7 +22459,7 @@ window.privacyData = {
     {
       actor: "Both agents sign",
       text: "Each agent signs the agreement electronically on behalf of its principal.",
-      basis: "IEEE 7012 abstract: if both agree, the agreement is signed electronically by both parties or their agents. The signature scheme (e.g. keys, verifiable credentials) is not specified in public materials.",
+      basis: "IEEE 7012 abstract: if both agree, the agreement is signed electronically by both parties or their agents. Cl. 5.4 has both agents sign and record the agreement 'on behalf of each party'. Cl. 5.4.2 leaves the method open ('any standard method agreed upon for that purpose'), and cl. 5.2.2 requires digital copies to be delivered to both parties immediately on signing. The MyTerms team's individual Internet-Draft (draft-curtis-myterms-01, no IETF standing) proposes a concrete scheme with three levels of attestation: a server-trusted checkbox, an EdDSA-signed JWS over canonicalised JSON using a key from the signer's decentralised identifier (DID), and the same plus a zero-knowledge audit record. In that draft the site's agent must sign only if its DID is listed in the agreement.",
       unspecified: false,
       source: [
         {
@@ -22470,18 +22470,38 @@ window.privacyData = {
           quote: "If both parties agree, the chosen contract or agreement shall be signed electronically by both parties or their agents, and a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms (full text), cl. 5.4.2 How contracts are signed (p. 18)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Contractual agreements shall be signed electronically by both party’s agents using any standard method agreed upon for that purpose.",
+          note: "Full text of the standard, free via the IEEE GET Program (PDF downloaded without login on 2026-09-23; document page https://ieeexplore.ieee.org/document/11360682, DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Cl. 5.4 (FOUND, p. 18): 'When an entity’s agent chooses to join in that agreement, both agents shall sign and record the agreement on behalf of each party.' Cl. 5.2.2 (FOUND, p. 17): 'Digital copies of the signed agreements shall be delivered to both parties or their agents immediately upon agreement signing.' Cl. 5.4.5 (FOUND, p. 19): 'Named parties may include public keys, an IP address + date + epoch time, an email address, or some other pseudonymous identifier, or a combination of these elements, so long as an IP address is present.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IETF Datatracker (individual Internet-Draft by B. Curtis, MyTerms)",
+          title: "MyTerms Contract Negotiation Protocol (MCNP): Human and machine-readable agreements, draft-curtis-myterms-01, sec. 4.1.2 Cryptographic attestation",
+          date: "2026-05-20",
+          url: "https://datatracker.ietf.org/doc/html/draft-curtis-myterms-01",
+          quote: "Signing an agreement MUST occur using an EdDSA JWT and a private key associated with any public key in the verification method of the signing DID.",
+          note: "--check FOUND 2026-09-23. Individual draft, Intended status: Informational, published 20 May 2026, expires 21 November 2026; the datatracker says 'This I-D is not endorsed by the IETF and has no formal standing in the IETF standards process'. Sec. 4.1 (FOUND): 'When PERSON AGENTs sign agreements, there are 3 levels of attestation, one of which MUST be attested to for the agreement to be valid.' Level 1 (FOUND): 'ENTITY AGENTs MUST give PERSON AGENTs a checkbox that when checked, represents the signing of an agreement.' Sec. 4.1.2 goes on to require JWS (RFC 7515) after JCS canonicalisation (RFC 8785). Level 3 (FOUND) adds a zero-knowledge audit record that 'allows a third-party to validate that the agreement was appropriately signed without having any knowledge of what the agreement contains.' Sec. 2.4 (FOUND): 'DID ids within the ids array of the agreement MAY include the ENTITY AGENT's DID id, and if it is included they MUST sign the agreement before it is considered valid.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       actor: "Both sides record the same agreement",
-      text: "Maya's agent stores its copy in her personal records; the shop stores an identical copy. The purchase itself proceeds under a separate payment mandate (for example AP2's cart mandate), which records the price and items but not privacy terms.",
-      basis: "IEEE 7012 and MyTerms FAQ: both sides keep identical records; the form and storage location are left open by the standard. Linking a 7012 record to a payment mandate is not specified in public materials.",
+      text: "Maya's agent stores its copy in her personal records; the shop stores an identical copy. The purchase itself runs under a separate payment protocol, for example AP2's checkout mandate (called the Cart Mandate when AP2 launched in September 2025). That mandate binds the items and price, and a checkout built on the Universal Commerce Protocol can also link to the shop's own privacy policy, but it carries no IEEE 7012 agreement.",
+      basis: "IEEE 7012 cl. 5.2.2 and 5.4.4: signed agreements shall be identical in both parties' data stores, as 'identical, immutable copies' kept for 'possible later access, auditing, or dispute resolution'. The standard fixes the record's minimum content (terms, date, time stamp, identifiers and a unique contract ID in cl. 5.2.4; time, date and location in cl. 5.4.4) but leaves the storage medium open ('Storage shall be substitutable'). The MyTerms FAQ likewise says the record's form and storage are 'left open'. The MyTerms team's individual Internet-Draft (draft-curtis-myterms-01, no IETF standing) proposes an API for retrieving signed agreements. Neither IEEE 7012, that draft nor the AP2 specification says how to link a 7012 record to a payment mandate.",
       unspecified: false,
       source: [
         {
           institution: "MyTerms (myterms.info)",
-          title: "MyTerms FAQs",
+          title: "MyTerms FAQs - How is MyTerms different from “Do Not Track,” “Global Privacy Control,” cookie banners, and preference centers?",
           date: "2026",
           url: "https://myterms.info/faqs/",
           quote: "In addition, MyTerms requires that both sides keep identical records of their agreement, so compliance can be audited, and disputes adjudicated, should the need arise.",
@@ -22502,8 +22522,38 @@ window.privacyData = {
           title: "Powering AI commerce with the new Agent Payments Protocol (AP2)",
           date: "2025-09-16",
           url: "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
-          quote: "After the agent presents a cart with the shoes you want, your approval signs a Cart Mandate.",
+          quote: "This is a critical step that creates a secure, unchangeable record of the exact items and price, ensuring what you see is what you pay for.",
           note: "Illustrates a payment record running alongside, not part of, the 7012 agreement.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms (full text), cl. 5.4.4 Recording of agreements and storage (p. 19)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.",
+          note: "Full text of the standard, free via the IEEE GET Program (PDF downloaded without login on 2026-09-23; document page https://ieeexplore.ieee.org/document/11360682, DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Same clause (FOUND): 'The exact time, date, and location shall be recorded in the contract and agreements.' and 'Database storage shall include both static and dynamic pods, agents storing agreements, libraries, remote or cloud storage, local file folders on owned devices, and so forth. Storage shall be substitutable.' Cl. 5.2.4 (FOUND, p. 17): 'The contract recorder shall record the agreement and handshake terms, date, time stamp, and pseudonymous or explicit identifiers, containing a unique contract ID'. Cl. 5.2.2 (FOUND): 'Signed agreements shall be identical in both databases.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Agent Payments Protocol (AP2) project, ap2-protocol.org (Google; donated to the FIDO Alliance)",
+          title: "Agentic Payment Protocol (v0.2) specification - Mandates",
+          date: "2026-04-28",
+          url: "https://ap2-protocol.org/ap2/specification/",
+          quote: "AP2 defines two Mandate types: Checkout Mandate and Payment Mandate.",
+          note: "--check FOUND 2026-09-23. The spec's scope list (FOUND): 'A Checkout Mandate and Receipt for securing what is being purchased.' Checkout Mandate page https://ap2-protocol.org/ap2/checkout_mandate/ (FOUND): 'checkout_jwt is the merchant-signed JWT containing the details of the checkout.' and 'The details of the payload are outside the scope of this specification, when used with the Universal Commerce Protocol this MUST be the Checkout object.' Its example checkout payload has line_items with price, total_price, shipping_policy and return_policy, and no privacy terms. The date is the v0.2 release: Google's blog of 28 April 2026 says 'we’re also releasing AP2 v.0.2' and 'we’re donating the Agent Payments Protocol (AP2) to the FIDO Alliance' (both FOUND, https://blog.google/products-and-platforms/platforms/google-pay/agent-payments-protocol-fido-alliance/). The spec page's HTTP Last-Modified is 28 Apr 2026.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "Universal Commerce Protocol (ucp.dev)",
+          title: "UCP specification, version 2026-08-25 - Checkout Capability (Checkout object: links)",
+          date: "2026-08-25",
+          url: "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+          quote: "Links to be displayed by the platform (Privacy Policy, TOS). Mandatory for legal compliance.",
+          note: "--check FOUND 2026-09-23. This is the description of the Checkout object's links field, which is marked Required. The well-known link types include privacy_policy, 'Link to the business's privacy policy' (FOUND). Version 2026-08-25 is the one aliased 'latest' in ucp.dev/versions.json. The checkout page says checkout 'has to be finalized manually by the user through a trusted UI unless the AP2 Mandates extension is supported' (FOUND). So an AP2-signed UCP checkout can point to the merchant's own privacy policy, but not to the person's proffered terms.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }
@@ -22512,7 +22562,7 @@ window.privacyData = {
     {
       actor: "If a merchant refuses, the refusal is recorded too",
       text: "At a second shop that declines SD-BASE, Maya's agent records the refusal and, following her settings, shops elsewhere.",
-      basis: "MyTerms FAQ: the person's agent can record a refusal and keep track of it. What the agent then does is a product decision, not specified in public materials.",
+      basis: "IEEE 7012 makes recording a refusal mandatory: 'The recorder shall record rejected agreements including date, time, and entity refusing the offer' (cl. 5.2.4; also cl. 5.1 and 5.3.1). The MyTerms FAQ adds that the agent 'can record that outcome' and keep track of it. What happens next is left mostly to the product, but the standard anticipates this step. The agent 'may notify the person of refusals and ask for guidance', and settings 'should be set globally' so the person can 'simply not interact with anyone who refuses' (cl. 5.2.1.3). Informative Annex B.1 describes setting the agent to reject sites that do not accept terms and go to ones that will.",
       unspecified: false,
       source: [
         {
@@ -22523,13 +22573,33 @@ window.privacyData = {
           quote: "Your agent can record that outcome, and it or other programs can keep track of it.",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms (full text), cl. 5.2.4 The recorder (p. 17)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "The recorder shall record rejected agreements including date, time, and entity refusing the offer.",
+          note: "Full text of the standard, free via the IEEE GET Program (PDF downloaded without login on 2026-09-23; document page https://ieeexplore.ieee.org/document/11360682, DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Cl. 5.3.1 (FOUND, p. 18): 'If an agreement is not reached, a record shall be generated to document rejection.' Cl. 5.1 (FOUND, p. 15): 'If the entity’s agent declines to agree, the person's agent records that action in its own private data store.'",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms (full text), cl. 5.2.1.3 The proposer (p. 17)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "Negotiator notifications and requests should be set globally so the person can track refusals to their terms or simply not interact with anyone who refuses without notification.",
+          note: "Full text of the standard, free via the IEEE GET Program (PDF downloaded without login on 2026-09-23; document page https://ieeexplore.ieee.org/document/11360682, DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. Same clause (FOUND): 'It may notify the person of refusals and ask for guidance.' Informative Annex B.1, Use Case 1 'No stalking', alternative paths (p. 33; FOUND): 'The individual is presented with a signal from their agent alerting them to the rejection.' 'Individuals may decide to navigate to a different app or site that may understand and accept the terms.' 'Individuals may decide to set the agent to reject any app or site that does not accept terms and navigate to sites that would accept terms as substitutions.' Annex contents are informative (clause 6).",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
         }
       ]
     },
     {
       actor: "Later: audit or dispute",
       text: "Months later Maya receives marketing from a third party that appears to have her shoe purchase. Her agent retrieves the signed SD-BASE record to support a complaint to the shop or a regulator.",
-      basis: "IEEE 7012 abstract: records must be retrievable, auditable or disputable. How a breach is detected, and which forum hears the dispute, is not specified in public materials.",
+      basis: "IEEE 7012 abstract: records must be kept in a form that can be retrieved, audited or disputed. Cl. 5.4.4 requires identical, immutable copies in each party's data store 'for possible later access, auditing, or dispute resolution'. Cl. 5.2.4 requires the person's agent to have 'a function for submitting to anyone including auditors an agreement in dispute' and to let the person share documentation with regulators and legal representatives. The standard does not say how a breach is detected or which court, regulator or other body decides the dispute. The record binds only the shop, because cl. 5.4.3 allows only two parties to each contract, so it does not cover payment providers or other intermediaries.",
       unspecified: false,
       source: [
         {
@@ -22538,6 +22608,16 @@ window.privacyData = {
           date: "2026-01-20",
           url: "https://standards.ieee.org/ieee/7012/7192/",
           quote: "a matching record shall be kept by both sides in a form that can be retrieved, audited, or disputed, if necessary, at some later time--and which is available to do so easily.",
+          verificationStatus: "CONFIRMED",
+          accessType: "FREE"
+        },
+        {
+          institution: "IEEE Standards Association (IEEE Xplore)",
+          title: "IEEE Std 7012-2025, IEEE Standard for Machine Readable Personal Privacy Terms (full text), cl. 5.2.4 The recorder (p. 17)",
+          date: "2026-01-20",
+          url: "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11360682&ref=",
+          quote: "The individual’s agent shall have a function for submitting to anyone including auditors an agreement in dispute",
+          note: "Full text of the standard, free via the IEEE GET Program (PDF downloaded without login on 2026-09-23; document page https://ieeexplore.ieee.org/document/11360682, DOI 10.1109/IEEESTD.2025.11360682). --check FOUND. The sentence continues across the page break (p. 18, FOUND): '... and shall allow the individual to explicitly share documentation with regulators and legal representatives to review existing contracts on behalf of the individual.' Cl. 5.2.5 (FOUND, p. 18): 'The auditor functions of the agreement-agent shall track sharing agreements with auditors and regulators, including the terms under which the agreement or contract is shared.' Cl. 5.4.4 (FOUND, p. 19): 'Identical, immutable copies of contracts and agreements shall be recorded in each party’s data store, for possible later access, auditing, or dispute resolution.' Cl. 5.4.3 (FOUND, p. 19): 'There shall be only two parties to each contract.'",
           verificationStatus: "CONFIRMED",
           accessType: "FREE"
         }

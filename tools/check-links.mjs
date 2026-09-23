@@ -55,7 +55,9 @@ const CHALLENGE_HOSTS = new Set(['www.loc.gov', 'tile.loc.gov', 'www.jstor.org',
   'www.legifrance.gouv.fr', 'gallica.bnf.fr', 'sunnah.com', 'ieeexplore.ieee.org', 'www.nytimes.com', 'www.forbes.com',
   'founders.archives.gov', 'www.bailii.org', 'papers.ssrn.com', 'www.ssrn.com', 'www.w3.org', 'openai.com',
   'leg.colorado.gov', 'doc.searls.com', 'www.justice.gov', 'www.oxfordreference.com', 'www.smithsonianmag.com',
-  'postalmuseum.si.edu', 'www.bentham-project.org', 'www.ucl.ac.uk', 'journals.sagepub.com', 'link.springer.com']);
+  'postalmuseum.si.edu', 'www.bentham-project.org', 'www.ucl.ac.uk', 'journals.sagepub.com', 'link.springer.com',
+  'doi.org', 'flickr.com', 'www.flickr.com', 'github.com', 'www.sec.gov', 'www.nrl.navy.mil', 'www.lemonde.fr',
+  'www.linkedin.com']);
 
 /* Hosts where a 429 means "you are auditing too fast", not "this link is dead". */
 const THROTTLE_HOSTS = new Set(['upload.wikimedia.org', 'commons.wikimedia.org', 'www.metmuseum.org', 'web.archive.org']);
@@ -172,7 +174,7 @@ const ok = [], blocked = [], dead = [];
 for (const [u, r] of results) {
   const host = (() => { try { return new URL(u).host; } catch { return ''; } })();
   if (r.status >= 200 && r.status < 400) ok.push([u, r]);
-  else if (CHALLENGE_HOSTS.has(host) && (r.status === 403 || r.status === 429)) blocked.push([u, r]);
+  else if (CHALLENGE_HOSTS.has(host) && [401, 402, 403, 429, 999].includes(r.status)) blocked.push([u, r]);
   else if (THROTTLE_HOSTS.has(host) && r.status === 429) blocked.push([u, r]);
   else dead.push([u, r]);
 }

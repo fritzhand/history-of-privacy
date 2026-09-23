@@ -64,15 +64,24 @@ const isLead = s => /(^|\.)wikipedia\.org$/.test((() => { try { return new URL(s
 const dropLeads = list => (list.some(s => s && !isLead(s)) ? list.filter(s => s && !isLead(s)) : list);
 
 /* One record often quotes the same document twice (two sentences from one
-   paper). Merge those into one source object per document, keeping every
-   quote, so the page links each document once and the audit counts
-   documents per record rather than sentences. */
+   paper, or two clauses of one standard). Merge those into one source object
+   per document, keeping every quote and naming each part cited, so the page
+   links each document once and the audit counts documents per record rather
+   than sentences. */
+function joinTitles(a, b) {
+  if (!b || a === b || a.includes(b)) return a;
+  let n = 0;  // keep the shared stem once: "Std 7012, cl. 5.2.4 …; cl. 5.4.4 …"
+  while (n < a.length && n < b.length && a[n] === b[n]) n++;
+  const cut = Math.max(b.lastIndexOf(', ', n) + 2, b.lastIndexOf(' — ', n) + 3);
+  return cut > 10 ? `${a}; ${b.slice(cut)}` : `${a}; ${b}`;
+}
 function mergeSources(list) {
   const out = [], byKey = new Map();
   for (const s of dropLeads(list.filter(Boolean))) {
-    const k = `${s.url}|${s.title || ''}|${s.verificationStatus}`;
+    const k = `${s.url}|${s.verificationStatus}`;
     const prev = byKey.get(k);
     if (!prev) { const c = { ...s }; byKey.set(k, c); out.push(c); continue; }
+    prev.title = joinTitles(prev.title || '', s.title || '');
     if (s.quote && prev.quote !== s.quote && !String(prev.quote || '').includes(s.quote)) {
       prev.quote = prev.quote ? `${prev.quote} … ${s.quote}` : s.quote;
     }

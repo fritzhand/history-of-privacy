@@ -470,15 +470,11 @@ export default function editorial(H) {
   /* ── IEEE 7012 ─────────────────────────────────────────────────── */
   const st = H.obj('myterms', 'standard');
   const stSources = src(st.sources).filter(s => s.verificationStatus === 'CONFIRMED');
-  /* SD-BASE's description is held to what its sources say (ProjectVRM:
-     'only what the visitor came for, and not to share personal data with
-     third parties'); the others use the research summary. */
-  const AGREEMENT_BODY = {
-    'SD-BASE': 'The default, "Service Delivery only": the site or service provides only what the visitor came for and does not share their personal data with third parties. It is the base, default agreement for anyone whose agent proposes MyTerms.',
-  };
+  /* Each agreement's summary is the research record's, which gives the
+     MyTerms account and, where it differs, the standard's own sample. */
   const agreements = H.list('myterms', 'agreements').map(a => ({
     code: a.code, name: a.name, type: a.type === 'Relationship' ? 'Relationship agreement' : 'Personal data contribution',
-    body: AGREEMENT_BODY[a.code] || a.plainSummary, source: src(a.sources),
+    body: a.plainSummary, source: src(a.sources),
   }));
   const mech = id => H.item('myterms', 'mechanics', id);
   const standard = {

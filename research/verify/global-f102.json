@@ -1,0 +1,312 @@
+{
+ "slice": "global",
+ "chunk": "f102",
+ "verdicts": [
+  {
+   "kind": "laws",
+   "id": "ug-2019",
+   "status": "OK",
+   "issues": [
+    "Source 0: the DLA Piper quote is verbatim (--check FOUND, 2026-09-23). The same passage names the Act 'Data Protection and Privacy Act, Cap. 97', which supports '(now Cap. 97)'. The commencement (3 May 2019) and regulations (12 March 2021) dates match the note.",
+    "The regulator (Personal Data Protection Office) is supported by DLA Piper's Uganda authority page. RSM Uganda independently confirms that the regulations were gazetted in March 2021 and that the PDPO operates under NITA-U. Both are added as sources.",
+    "The primary texts could not be read by script: ULII returns 403, and the Parliament PDF is a poor OCR scan whose assent date is illegible. The record still rests on secondary sources, and both agree with it."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND. The page also reads 'Data Protection and Privacy Act, Cap. 97 and the Data Protection and Privacy Regulations, 2021'."}
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Uganda (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=UG",
+     "quote": "The Personal Data Protection Office established by Section 4 of the Data Protection and Privacy Act and Regulation 3 of the Data Protection and Privacy Regulations is responsible for personal data protection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page goes on: 'The Office operates under the National Information Technology Authority-Uganda (NITA-U) and was operationalized in August 2021.'"
+    },
+    {
+     "institution": "RSM Uganda",
+     "title": "The Data Protection and Privacy Act, 2019",
+     "date": "2022-01-27",
+     "url": "https://www.rsm.global/uganda/insights/assurance-updates/data-protection-and-privacy-act-2019",
+     "quote": "the Data Protection and Privacy Regulations (DPP Regulations) under it were gazetted in March 2021. Following the passing of the DPP Regulations, the Personal Data Protection Office (PDPO), an independent office under National Information Technology Authority (NITA), was operationalized in August 2021",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Independent secondary source (accounting firm). --check FOUND 2026-09-23. The publish date comes from the page's article:published_time."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "rw-2021",
+   "status": "OK",
+   "issues": [
+    "Source 0: the RISA quote is verbatim (--check FOUND, 2026-09-23), and the page title 'Data Protection and Privacy Law' matches. It supports the law's number and title and the gazetting date of 15 October 2021.",
+    "The RISA page does not mention the two-year transition or the NCSA. Both claims are correct: DLA Piper's Rwanda law and authority pages give the two-year conformity period and name the NCSA as supervisory authority (Art. 3, 23°). Both pages are added as sources."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Rwanda",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=RW",
+     "quote": "Data Protection Law came into effect 15th October 2021. Data controllers and processors who are already in operation have a period of two (2) years from the Data Protection Law commencement date to conform to its provisions.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Supports the two-year transition."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Rwanda (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=RW",
+     "quote": "The supervisory authority regarding Data protection is the National Cyber Security Authority (“ NCSA ”) (article 3, 23°).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Supports the regulator field."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "zm-2021",
+   "status": "FIXED",
+   "issues": [
+    "Source 0: the DLA Piper quote is verbatim (--check FOUND, 2026-09-23). It supports the Act's name and the 2021 registration and licensing regulations. DLA's authority page names the Office of the Data Protection Commissioner.",
+    "'Zambia's first general data-protection statute' overstates the case. Before 2021, data protection in Zambia was governed by the data-protection provisions of the Electronic Communications and Transactions Act, No. 21 of 2009, enforced by ZICTA (Data Protection Africa factsheet, 2019). The 2021 Act is the first dedicated data-protection statute. The note is reworded.",
+    "The note gave no dates. The ZambiaLII consolidated text (CC BY) gives: assented to 23 March 2021, published in the Gazette 24 March 2021, commenced 1 April 2021 by the Commencement Order. These dates are added, with the ZambiaLII PDF as a primary source. The Parliament PDF could not be fetched by script (certificate error)."
+   ],
+   "fieldFixes": {
+    "note": "Assented to 23 March 2021 and in force 1 April 2021. Zambia's first dedicated data-protection statute; personal-data rules had previously sat in the Electronic Communications and Transactions Act, 2009. It created the Office of the Data Protection Commissioner, and registration and licensing regulations followed the same year."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "ZambiaLII (Laws.Africa)",
+     "title": "Data Protection Act, 2021 (Act 3 of 2021), legislation as at 24 March 2021",
+     "date": "2021-03-24",
+     "url": "https://media.zambialii.org/media/legislation/20776/source_file/39bf6107e2fb14d7/2021-3.pdf",
+     "quote": "Commenced on 1 April 2021 by Data Protection Act (Commencement) Order, 2021",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Consolidated primary text (CC BY 4.0). --check FOUND 2026-09-23. Also FOUND: 'Assented to on 23 March 2021' and 'Published in Government Gazette on 24 March 2021'. The long title includes 'establish the Office of the Data Protection Commissioner'."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Factsheet: Zambia (last updated 30 September 2019)",
+     "date": "2019-09-30",
+     "url": "https://dataprotection.africa/wp-content/uploads/2019/10/Zambia-Factsheet.pdf",
+     "quote": "Data protection and privacy matters in Zambia currently fall under the scope of the Electronic Communications and Transactions Act, No. 21 of 2009 (ECTA).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Shows that a data-protection regime (ECTA 2009, enforced by ZICTA) came before the 2021 Act, which is why the note says 'first dedicated' rather than 'first general'."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "zw-2021",
+   "status": "FIXED",
+   "issues": [
+    "Source 0 was left PENDING only because the DLA page does not state the year. The quote is verbatim (--check FOUND, 2026-09-23) and supports the Act's title and chapter, so it is upgraded to CONFIRMED. DLA's authority page confirms that POTRAZ is the designated Data Protection Authority.",
+    "The year is now confirmed at a primary-document tracker. Veritas Zimbabwe titles the Act 'Cyber and Data Protection Act [Chapter 12:07] (No. 5 of 2021)'. Its legislative timeline shows the Bill passed by both Houses on 26 August 2021 and gazetted on 3 December 2021 under a wrong title. It was republished with the correct title and chapter number on 11 March 2022 (GN 492/2022, explained in GN 491/2022). yearEnacted 2021 is correct.",
+    "The note's meta-comment about the DLA page is replaced with these facts."
+   ],
+   "fieldFixes": {
+    "note": "Act No. 5 of 2021: passed by both Houses on 26 August 2021 and gazetted on 3 December 2021 (under a wrong title; republished with the correct title and chapter number on 11 March 2022). The telecoms regulator POTRAZ is the designated data protection authority."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND. The quote supports the Act's title. The year (2021) is supported by the added Veritas source, not by this page."}
+   ],
+   "addSources": [
+    {
+     "institution": "Veritas Zimbabwe",
+     "title": "Cyber and Data Protection Act [Chapter 12:07] (No. 5 of 2021)",
+     "date": "2022-03-11",
+     "url": "https://www.veritaszim.net/node/5522",
+     "quote": "Cyber and Data Protection Act [Chapter 12:07] (No. 5 of 2021)",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Timeline rows, each FOUND: '26/08/21 : Bill passed by both Houses as amended', '03/12/21 : Bill gazetted Act with wrong tittle' [sic], '11/03/22 : Bill Gazetted as Act'. The page header (in the HTML, but dropped by the text extractor) reads: 'Act as gazetted with correct title and Chapter number on 11th March 2022 by GN 492/2022. [Republication of Act gazetted on 3rd December 2021, as explained in GN 491/2022.]'"
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Zimbabwe (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=ZW",
+     "quote": "It was established by the Postal and Telecommunications Act [Chapter 12:05] and designated as the Data Protection Authority by the Act.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The preceding sentence (FOUND) names the Authority as 'the Postal and Telecommunications Regulatory Authority of Zimbabwe'."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "tz-2022",
+   "status": "OK",
+   "issues": [
+    "Source 0: the DLA Piper quote is verbatim (--check FOUND, 2026-09-23) and supports 'in force 1 May 2023'. The same page lists 'Part II : establishes the Personal Data Protection Commission'.",
+    "Independent check: Afriwise reports that Government Notice No. 326 of 28 April 2023 set 1 May 2023 as the operative date. DLA's authority page says the PDPC 'was established on 1 May 2023' and became fully operational on 3 April 2024. Clyde & Co says the Act was passed on 1 November 2022, so yearEnacted 2022 and inForce 2023 are both right. TanzLII (403) and pdpc.go.tz (certificate mismatch) could not be read by script."
+   ],
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Afriwise",
+     "title": "The Personal Data Protection Act No. 11 of 2022 is now operational",
+     "date": "2023",
+     "url": "https://www.afriwise.com/blog/the-personal-data-protection-act-no-11-of-2022-is-now-operational",
+     "quote": "Vide Government Notice no 326 of the 28th of April, 2023 the Minister for Information, Communication and Information Technology Mr.Nape Nnauye has pronounced the 1st of May 2023 as the operational date for the most awaited Act on personal data Protection.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Independent of DLA Piper; it names the commencement notice."
+    },
+    {
+     "institution": "DLA Piper",
+     "title": "Data Protection Laws of the World — Tanzania (Authority)",
+     "date": "2026",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=authority&c=TZ",
+     "quote": "It was established on 1 May 2023 and became fully operational from 3 April 2024.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23 (the subject is the Personal Data Protection Commission, named in the preceding sentence)."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "ng-2023",
+   "status": "FIXED",
+   "issues": [
+    "Note: 'Nigeria's first statute' is wrong as written, because it reads as Nigeria's first statute of any kind. It should say first comprehensive data-protection statute. Corrected.",
+    "The note gave no enactment date. The NDPC's own About page says the Act was 'signed into law ... on June 12,2023' and that it 'established the Nigeria Data Protection Commission'. DLA Piper gives 13 June 2023 for presidential assent; the regulator's date is used. The note does not mention that the NDPC succeeded the Nigeria Data Protection Bureau (DLA authority page); this is added.",
+    "The claim that NITDA issued the NDPR in 2019 is confirmed at the primary text: 'THE AGENCY hereby issues the Nigeria Data Protection Regulation', and the instrument was signed 25 January 2019. Added as a source.",
+    "Source 1 (CIPIT): the quote is verbatim (FOUND), but it supports only 'NDPR in 2019'. Its '600% growth' figure is unsourced in the blog and is not used by the record. It is replaced with a sentence from the same page (FOUND) that directly supports NDPR 2019 → NDPA 2023 → NDPC. The date is corrected from '2023' to '2023-07-24' (datePublished in the page metadata)."
+   ],
+   "fieldFixes": {
+    "note": "Nigeria's first comprehensive data-protection statute, signed into law on 12 June 2023. It was preceded by the Nigeria Data Protection Regulation 2019, a regulation issued by the IT agency NITDA. The Act created the Nigeria Data Protection Commission, successor to the Nigeria Data Protection Bureau."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND (a section heading on the page). The page also says 'The NDPA received Presidential assent on 13 June 2023'; the NDPC says 12 June."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "date": "2023-07-24", "quote": "Other than the Nigeria Data Protection Regulation (NDPR) in 2019, the Malabo Convention has also spurred the recent enactment of the Nigerian Data Protection Act, 2023 which continues this data protection mission by creating the Nigeria Data Protection Commission as the significant enforcer of the Act.", "note": "Re-fetched 2026-09-23. The new quote is --check FOUND; the old quote was also FOUND but was tangential. The date comes from datePublished 2023-07-24T09:08:22Z. Author: Josephine Kaaniru."}
+   ],
+   "addSources": [
+    {
+     "institution": "Nigeria Data Protection Commission (NDPC)",
+     "title": "About Us",
+     "date": "2026",
+     "url": "https://ndpc.gov.ng/about-us/",
+     "quote": "the Federal Government of Nigeria signed into law the Nigeria Data Protection Act 2023 (NDP Act) on June 12,2023. The Act established the Nigeria Data Protection Commission whose mandate, inter alia, is to oversee the implementation of the Nigeria Data Protection Act (NDP Act).",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Regulator's own page. --check FOUND 2026-09-23."
+    },
+    {
+     "institution": "National Information Technology Development Agency (NITDA)",
+     "title": "Nigeria Data Protection Regulation 2019",
+     "date": "2019-01-25",
+     "url": "https://nitda.gov.ng/wp-content/uploads/2020/11/NigeriaDataProtectionRegulation11.pdf",
+     "quote": "THE AGENCY hereby issues the Nigeria Data Protection Regulation and shall come into effect on the date issued by NITDA.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary text. --check FOUND 2026-09-23. Also FOUND: 'THIS INSTRUMENT WAS SIGNED THIS 25TH DAY OF JANUARY, 2019'. The preamble states that NITDA acts under the NITDA Act of 2007."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "sc-2023",
+   "status": "FIXED",
+   "issues": [
+    "Source 0: the DLA Piper quote is verbatim (--check FOUND, 2026-09-23). The gazetted Act (Supplement to Official Gazette, dated [22nd December 2023]) confirms 'Data Protection Act, 2023 (Act 24 of 2023)' and was passed by the National Assembly on 5 December 2023.",
+    "The record had no regulator, although one exists. The Act makes the Information Commission (established under the Access to Information Act) the enforcing body, as confirmed by s. 2 of the Act and the Commission's own data-protection page. Added.",
+    "The note leaves out a relevant fact for a history dataset. Seychelles already had a Data Protection Act 2003 (Cap 57), which was enacted but never implemented. The 2023 Act, s. 55, repeals it ('The Data Protection Act (Cap 57) is repealed'). yearEnacted 2023 stays correct as the first operative law, but the note now says so, so a reader does not take 2023 as the first law on the books. The Act also sets an 18-month transition (s. 56)."
+   ],
+   "fieldFixes": {
+    "regulator": "Information Commission",
+    "note": "In force 22 December 2023, after the National Assembly passed it on 5 December 2023. It repealed the Data Protection Act 2003 (Cap 57), which was enacted but never implemented. It gave existing processors an 18-month transition and made the Information Commission, set up under the Access to Information Act, the regulator."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND."}
+   ],
+   "addSources": [
+    {
+     "institution": "Republic of Seychelles, Supplement to Official Gazette (copy hosted by the Information Commission)",
+     "title": "Data Protection Act, 2023 (Act 24 of 2023)",
+     "date": "2023-12-22",
+     "url": "https://www.infocom.sc/wp-content/uploads/2024/01/Act-24-2023-Data-Protection-Act-2023.pdf",
+     "quote": "The Data Protection Act (Cap 57) is repealed.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary text. --check FOUND 2026-09-23 (s. 55). Also FOUND: '“Commission” means the Information Commission established under section 36 of the Access to Information Act;' (s. 2) and 'I certify that this is a correct copy of the Bill which was passed by the National Assembly on 5 December, 2023.' Section 56 sets an 18-month transition."
+    },
+    {
+     "institution": "Appleby (via Mondaq)",
+     "title": "Data Protection Law Now In Force In Seychelles",
+     "date": "2024-04-01",
+     "url": "https://www.mondaq.com/privacy-protection/1444998/data-protection-law-now-in-force-in-seychelles",
+     "quote": "The DPA repeals the Data Protection Act 2003 which was enacted but never implemented in practice.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. The page also says the 18-month transitional period runs 'from 22 December 2023'. Appleby's own site returns 403 to scripts."
+    },
+    {
+     "institution": "Information Commission (Seychelles)",
+     "title": "Data Protection",
+     "date": "2026",
+     "url": "https://www.infocom.sc/data-protection/",
+     "quote": "The Information Commission is the statutory body responsible for implementing, monitoring, and enforcing the provisions of the Data Protection Act, 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Regulator's own page. --check FOUND 2026-09-23."
+    }
+   ]
+  },
+  {
+   "kind": "laws",
+   "id": "et-2024",
+   "status": "FIXED",
+   "issues": [
+    "Source 0: the DLA Piper quote is verbatim (--check FOUND, 2026-09-23) and supports the law's title. DLA's authority page names the Ethiopian Communications Authority (ECA).",
+    "The note's 'Ethiopia's first comprehensive law' is wrong as written, because it reads as Ethiopia's first comprehensive law of any kind. It should say first comprehensive personal-data-protection law. Techhive Advisory confirms that before this law, data protection was spread across the Civil Code, the Computer Crimes Proclamation and sector directives.",
+    "The note gave no dates. The Proclamation (Federal Negarit Gazette, 30th Year No. 35) is dated 'ADDIS ABABA …July 24th, 2024'. Art. 70 says it 'shall enter into force on the date of publication in the Negarit Gazeta', and Art. 2(36) defines 'Authority' as the Ethiopian Communications Authority. Added as the primary source."
+   ],
+   "fieldFixes": {
+    "note": "Ethiopia's first comprehensive personal-data-protection law, published in the Federal Negarit Gazette and in force on 24 July 2024. Before it, data protection was spread across the Civil Code, the Computer Crimes Proclamation and sector directives. It names the Ethiopian Communications Authority as regulator."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched 2026-09-23, --check FOUND (list item on the DLA law page)."}
+   ],
+   "addSources": [
+    {
+     "institution": "Federal Negarit Gazette of the Federal Democratic Republic of Ethiopia (copy hosted by DataGuidance)",
+     "title": "Personal Data Protection Proclamation No. 1321/2024",
+     "date": "2024-07-24",
+     "url": "https://www.dataguidance.com/sites/default/files/personal_data_protection_proclamation_1321-2024.pdf",
+     "quote": "This proclamation shall enter into force on the date of publication in the Negarit Gazeta.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "Primary text (bilingual Amharic/English). --check FOUND 2026-09-23 (Art. 70). Also FOUND: 'Federal Negarit Gazette No. 35, 24th July, 2024' (page header), '“Authority” means the Ethiopian Communications' (Art. 2(36)) and 'Done at Addis Abeba , this 24th day of' (signature block: July 2024, President Sahle-Work Zewde)."
+    },
+    {
+     "institution": "Techhive Advisory",
+     "title": "Review of Ethiopia's Data Protection Act",
+     "date": "2024",
+     "url": "https://www.techhiveadvisory.africa/insights/review-of-ethiopias-data-protection-act",
+     "quote": "Before enacting the Law, data protection was regulated by various legislation, including the Civil Code, the Computer Crimes Proclamation, the Financial Consumers Protection Directive, and the Telecommunications Consumer Rights Directive. The Law designates the Ethiopian Communications Authority as the regulatory authority",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND 2026-09-23. Also FOUND: 'On July 24, 2024, Ethiopia finally published its Personal Data Protection Proclamation (“the Law”) in the Federal Negarit Gazette, officially bringing it into effect.' Supports 'first comprehensive'."
+    }
+   ]
+  }
+ ]
+}

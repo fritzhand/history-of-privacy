@@ -110,7 +110,7 @@ function matchLevelSource(text, level) {
 
 function seriesPoints(id, pick = {}) {
   const s = need(seriesIdx, id, 'series');
-  const level = (s.sources || []).map(x => cleanSource(x)).filter(Boolean);
+  const level = dropLeads((s.sources || []).map(x => cleanSource(x)).filter(Boolean));
   return s.points.map(p => {
     let src;
     if (p.source && typeof p.source === 'object') src = cleanSource(p.source);
@@ -135,7 +135,11 @@ function allImages() {
   const seen = new Set(), out = [];
   for (const k of ['media', 'personas-code', 'personas-advocates', 'personas-researchers']) for (const a of ((research[k] || {}).images || [])) {
     if (!a || !a.id || seen.has(a.id)) continue;
-    seen.add(a.id); out.push(k === 'media' ? a : { ...a, _portrait: true });
+    seen.add(a.id);
+    /* An image whose licence the verification pass could not confirm at
+       source is not published, whatever tag it carries on Commons. */
+    if (a.verified === false) { console.error(`  image ${a.id} left out: licence not confirmed`); continue; }
+    out.push(k === 'media' ? a : { ...a, _portrait: true });
   }
   return out;
 }

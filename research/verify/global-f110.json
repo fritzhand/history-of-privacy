@@ -1,0 +1,212 @@
+{
+ "slice": "global",
+ "chunk": "f110",
+ "verdicts": [
+  {
+   "kind": "quant",
+   "id": "un-member-states-2026",
+   "status": "FIXED",
+   "issues": [
+    "Value 193 is correct and the quote is verbatim on un.org/en/about-us (--check FOUND).",
+    "The note compares 193 with Greenleaf's 172-country count, but the two numbers count different things. Greenleaf counts some self-governing territories as 'countries': PL&B, February 2020, projects 'over 200 countries (including self-governing territories)'. So 172/193 is not a strict share of UN member states, and the note should say so."
+   ],
+   "fieldFixes": {
+    "notes": "For context against Greenleaf's 172-country count. The two are not strictly comparable: Greenleaf's census includes some self-governing territories as 'countries', so 172/193 is not a precise share of UN member states."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched https://www.un.org/en/about-us. The quote is verbatim (--check FOUND). 193 has been the membership since South Sudan joined in 2011."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "malabo-convention-ratifications-at-entry-into-force-2023",
+   "status": "FIXED",
+   "issues": [
+    "Value (15) and date (8 June 2023) are correct. The CIPIT quote is verbatim (--check FOUND).",
+    "The source date was given only as '2023'. The page metadata shows the CIPIT post was published on 2023-07-24.",
+    "Caveat on the CIPIT source: its list of the 15 ratifying states includes Benin and leaves out Angola. The AU status list of 12 May 2023, as reported by Data Protection Africa, has Angola (11 May 2020) and not Benin. The count of 15 is unaffected, but CIPIT's list should not be reused.",
+    "Added an independent source dated after entry into force. It confirms that Mauritania deposited the 15th instrument on 9 May 2023 and that the Convention entered into force 30 days later, on 8 June 2023."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "date": "2023-07-24", "note": "Re-fetched the CIPIT page. The quote is verbatim (--check FOUND). article:published_time is 2023-07-24T09:08:22. Its list of ratifying states wrongly includes Benin instead of Angola, but the total of 15 is right."}
+   ],
+   "addSources": [
+    {
+     "institution": "directions (EU Cyber Direct blog)",
+     "title": "Africa's Cybersecurity Treaty Enters into Force",
+     "date": "2023-09-21",
+     "url": "https://directionsblog.eu/africas-cybersecurity-treaty-enters-into-force/",
+     "quote": "The Convention entered into force on 8 June 2023, 30 days after Mauritania deposited the 15th instrument of ratification on 9 May 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The page metadata gives a published date of 2023-09-21. Independent confirmation of the count of 15 and the entry-into-force date."
+    },
+    {
+     "institution": "Data Protection Africa (ALT Advisory)",
+     "title": "Africa: AU's Malabo Convention set to enter force after nine years",
+     "date": "2023-05-19",
+     "url": "https://dataprotection.africa/malabo-convention-set-to-enter-force/",
+     "quote": "The latest status list on the Convention shows that the AU received Mauritania’s ratification on 9 May 2023, meaning the Convention is likely to enter into force by 8 June 2023.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. datePublished is 2023-05-19. The page also lists all 15 ratifying states with their dates from the AU status list of 12 May 2023, starting 'Angola (11 May 2020), Cape Verde (5 February 2022)' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "convention-108-plus-ratifications-june-2023",
+   "status": "OK",
+   "issues": [
+    "No errors found. The Slovak DPA page confirms that the instrument of ratification was deposited on 15 June 2023 and that Slovakia was the 25th country to ratify CETS 223. The quote is verbatim (--check FOUND). The page links to the Council of Europe news item 'Convention 108+ a 25th ratification: Slovakia'.",
+    "coe.int returns HTTP 403 to both fetchers, so the chart and news pages could not be read directly. A web-search result title from coe.int, 'Republic of Moldova Becomes the 34th State to Ratify the Convention 108+', fits the note's '34 by May 2026', but that text could not be fetched. The note correctly calls the later count unverified."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the page. The quote is verbatim (--check FOUND). The same page says: 'On June 15, 2023, the ratification document was deposited by the Ambassador of the Permanent Mission of the Slovak Republic to the Council of Europe in Strasbourg'. That supports the '15 June 2023' in the label. The page shows no publication date, so '2023-06' is inferred from the deposit date."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "apec-cbpr-participating-economies-2026",
+   "status": "OK",
+   "issues": [
+    "No errors in the value. cbprs.org lists nine economies: USA, Mexico, Japan, Canada, Singapore, Republic of Korea, Australia, Chinese Taipei and the Philippines. The quote is verbatim (--check FOUND).",
+    "The cbprs.org page has no date and reads as if it has not been updated for some years. Because the record is dated 2026, I checked whether APEC CBPR still operates. The Global CBPR Forum's 2026-03-23 update says the APEC and Global CBPR systems run in parallel until at least 1 April 2027. TrustArc's current page lists the same nine economies. The count of 9 still stands in 2026. Sources added."
+   ],
+   "fieldFixes": {},
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "quote": "There are currently nine participating APEC CBPR system economies: USA, Mexico, Japan, Canada, Singapore, the Republic of Korea, Australia, Chinese Taipei, and the Philippines with more expected to join soon", "note": "The quote is extended to include the list of economies (--check FOUND). The page is undated, so '2026' means the date it was accessed."}
+   ],
+   "addSources": [
+    {
+     "institution": "Global CBPR Forum",
+     "title": "Updates to the Global Cross-Border Privacy Rules System Strengthen Global Interoperability and Privacy",
+     "date": "2026-03-23",
+     "url": "https://www.globalcbpr.org/updates-to-the-global-cross-border-privacy-rules-system-strengthen-global-interoperability-and-privacy/",
+     "quote": "Until April 1, 2027, the Global CBPR System and APEC CBPR System PRs will continue to be the same, and companies can continue to participate in both Systems.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. article:published_time is 2026-03-23. Confirms that the APEC CBPR System is still running in 2026, alongside the Global CBPR System."
+    },
+    {
+     "institution": "TrustArc (APEC CBPR Accountability Agent)",
+     "title": "APEC CBPR and PRP Privacy Certifications",
+     "date": "2026",
+     "url": "https://trustarc.com/products/assurance-certifications/apec-cbpr-prp/",
+     "quote": "The Asia-Pacific Economic Cooperation (APEC) Cross Border Privacy Rules (CBPR) and Privacy Recognition for Processors (PRP) has evolved into the Global CBPR and PRP as of June 2, 2025. Certification provides a robust international method for data transfer recognized with participating economies including USA, Canada, Japan, Korea, Singapore, Mexico, Philippines, Taipei, and Australia.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. A vendor page (secondary) that independently lists the same nine economies. The same page says 'Both systems will run in parallel with program updates being provided as they become available.' (--check FOUND)."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "global-cbpr-certified-companies-at-launch-2025",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim (--check FOUND), but it comes from a press release published on 2025-05-28, before the launch. 'Will launch on June 2, 2025, with about 100 certified companies' is the Forum's advance statement, not a count taken on launch day. The source date should be 2025-05-28, and the note should say the figure was announced in advance.",
+    "The launch on 2 June 2025 did happen. Covington's Inside Global Tech post of 2025-06-04 says the Forum 'officially launched' the certifications on 2 June 2025. Source added."
+   ],
+   "fieldFixes": {
+    "notes": "About 100 companies covering over 2,000 entities, as stated in the Global CBPR Forum's announcement of 28 May 2025, before the 2 June 2025 launch."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "date": "2025-05-28", "note": "Re-fetched the page. The quote is verbatim (--check FOUND). article:published_time is 2025-05-28T05:48:01. The figure is a pre-launch statement ('will launch ... with about 100 certified companies')."}
+   ],
+   "addSources": [
+    {
+     "institution": "Covington & Burling (Inside Global Tech)",
+     "title": "Global CBPR and PRP Certifications Launched: A New International Data Transfer Mechanism",
+     "date": "2025-06-04",
+     "url": "https://www.insideglobaltech.com/2025/06/04/global-cbpr-and-prp-certifications-launched-a-new-international-data-transfer-mechanism/",
+     "quote": "On June 2, 2025, the Global Cross-Border Privacy Rules (“CBPR”) Forum officially launched the Global CBPR and Privacy Recognition for Processors (“PRP”) certifications.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. Independent confirmation that the launch took place on 2 June 2025."
+    }
+   ]
+  },
+  {
+   "kind": "quant",
+   "id": "madrid-resolution-drafting-countries-2009",
+   "status": "FIXED",
+   "issues": [
+    "The quote is verbatim (--check FOUND), but it does not support the label 'Countries whose privacy authorities drafted the Madrid Resolution'. The 'fifty countries' sentence comes from the promotional preface signed by Artemi Rallo Lombarte, Director of the Spanish Data Protection Agency, and no list of the fifty is given.",
+    "The same PDF records who actually drafted the text. The AEPD invited every accredited authority to join a preparatory Working Group. The group met in January and June 2009 and drafted the Joint Proposal. Its footnoted membership list, 'AUTHORITIES BELONGING TO THE WORKING GROUP', names 23 authorities from 17 countries or territories, plus the European Data Protection Supervisor. The 17 are Austria, Belgium, Burkina Faso, Canada (2), Czech Republic, France, Germany (3), Hong Kong, Ireland, Italy, Netherlands, New Zealand, Portugal, Slovenia, Spain (4), Switzerland and the UK. So the formal drafters came from 17 jurisdictions, not 50. The 50 is the Spanish DPA's own broader count of the countries whose 'privacy guarantors' contributed.",
+    "The source institution should name the author of the quoted preface: the AEPD Director, writing for the Conference."
+   ],
+   "fieldFixes": {
+    "label": "Countries whose privacy authorities contributed to the Madrid Resolution (Spanish DPA's own count)",
+    "notes": "The figure of fifty comes from the Spanish DPA director's preface ('privacy guarantors from fifty countries'); the fifty are not listed. The formal drafting Working Group was smaller: 23 authorities from 17 countries or territories, plus the European Data Protection Supervisor. It met in January and June 2009. The International Conference welcomed the text in Madrid on 5 November 2009."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "institution": "Spanish Data Protection Agency (AEPD), for the International Conference of Data Protection and Privacy Commissioners (PDF hosted by the Global Privacy Assembly)", "title": "International Standards on the Protection of Personal Data and Privacy: The Madrid Resolution", "note": "Re-fetched the PDF. The quote is verbatim (--check FOUND) and sits in the 'presentation' preface signed 'ARTEMI RALLO LOMBARTE DIRECTOR OF THE SPANISH DATA PROTECTION AGENCY' (--check FOUND). Later in the same PDF: 'The authorities listed in Annex 2* expressed their desire to take part in this Working Group and consequently joined it.' (--check FOUND); 'The Working Group met in January and June 2009.' (--check FOUND); and the footnote 'AUTHORITIES BELONGING TO THE WORKING GROUP:' (--check FOUND) lists 24 bodies, of which 23 are national or subnational authorities from 17 jurisdictions, plus the EDPS."}
+   ],
+   "addSources": []
+  },
+  {
+   "kind": "quant",
+   "id": "privacy-commissioners-conferences-outside-europe-before-1999",
+   "status": "FIXED",
+   "issues": [
+    "The quote 'Of the 20 conferences before 1999, only five were held outside Europe.' is verbatim on the GPA history page (--check FOUND). The same page's own list of conferences contradicts it. The 1st to 20th conferences (1979–1998) were held in Bonn, Ottawa, Paris, London, Stockholm, Vienna, Luxembourg, Lisbon, Quebec, Oslo, Berlin, Paris, Strasbourg, Sydney, Manchester, The Hague, Copenhagen, Ottawa, Brussels and Santiago de Compostela. Only four of these are outside Europe: Ottawa 1980, Quebec 1987, Sydney 1992 and Ottawa 1996.",
+    "The page's own narrative agrees with four: 'primarily in European locations with an occasional foray to Canada and one trip down-under to Sydney, Australia, in 1992'. That is three Canadian meetings and one Australian. The GPA document archive independently lists the 9th (Quebec 1987), 14th (Sydney 1992) and 18th (Ottawa 1996) conferences. The 'five' probably counts the 21st conference (Hong Kong, 1999), which is not 'before 1999'. The value should be 4."
+   ],
+   "fieldFixes": {
+    "value": 4,
+    "notes": "Counted from the GPA's own list of conferences: Ottawa 1980, Quebec 1987, Sydney 1992 and Ottawa 1996. The GPA's history text says 'only five', but its list shows four; five is reached only by adding the 21st conference (Hong Kong, 1999)."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "quote": "The Assembly met for the first 20 years primarily in European locations with an occasional foray to Canada and one trip down-under to Sydney, Australia, in 1992.", "note": "Re-fetched the page. The original 'only five' sentence is verbatim but contradicted by the page's own list. The replacement quote is verbatim (--check FOUND). The list items '2 nd International Conference – Ottawa, Canada, 1980', '9 th International Conference – Quebec, Canada, 1987', '14 th International Conference – Sydney, Australia, 1992', '18 th International Conference – Ottawa, Canada, 1996' and '20 th International Conference – Santiago de Compostella, Spain, 1998' are all --check FOUND. All other conferences from 1 to 20 were in European cities."}
+   ],
+   "addSources": [
+    {
+     "institution": "Global Privacy Assembly",
+     "title": "Document archive: Miscellaneous",
+     "date": "2026",
+     "url": "https://globalprivacyassembly.com/document-archive/miscellaneous/",
+     "quote": "9th International Conference – Quebec, Canada 1987 Program",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "FREE",
+     "note": "--check FOUND. The same archive also lists '18 International Conference – Ottawa, Canada 1996 Options paper concerning future shape of conference' (--check FOUND) and the 14th International Conference in Sydney, 1992. It corroborates the non-European venues in the history-page list."
+    }
+   ]
+  },
+  {
+   "kind": "series",
+   "id": "greenleaf-countries-with-data-privacy-laws",
+   "status": "FIXED",
+   "issues": [
+    "All points and quotes check out. All five quotes, including the inline point sources, are verbatim on the free PL&B abstract pages (--check FOUND): 76 (1st ed. 2011), 109 (Jan 2015), 120 (Jan 2017), 132 (Jan 2019), 145 (Jan 2021), 157 (mid-March 2022), 162 (Feb 2023) and 172 (March 2025). The int195 abstract confirms the 2025 note 'as at 15 March 2025'. Greenleaf's own homepage confirms the 2023 note '8th edition': 'Global Tables of Data Privacy Laws and Bills (8th Ed, 2023) 162 countries'. The PL&B April 2025 abstract also refers to the 'Eighth Edition, 2023'. Source dates (2021-02, 2022-04, 2023-02, 2025-06) match the issues: February 2021, April 2022, February 2023 and June 2025.",
+    "The note's example of a recount is wrong. It says 'the 2020 decade recount gives 142 by end-2019 vs 132 in the January 2019 edition' to show that recounts are higher 'for the same years'. The two figures describe different cut-offs, January 2019 and end-2019. The PL&B February 2020 abstract says the 10-law gap consists of laws 'enacted or located' since January 2019, so much of it is new 2019 enactments, not recounting. A true same-period example comes from the same abstract: its per-decade counts (10 + 10 + 20 + 40) give 80 countries by end-2009, more than the 76 the 1st edition found in 2011.",
+    "The claim that counts include some self-governing territories is supported. The February 2020 abstract refers to 'over 200 countries (including self-governing territories)'. Source added."
+   ],
+   "fieldFixes": {
+    "notes": "Contemporaneous counts from each edition of Graham Greenleaf's Global Tables and his PL&B assessments. Later recounts can be higher for the same period because laws are 'located' after the fact. Greenleaf's February 2020 decade recount (10 new countries in the 1970s, 10 in the 1980s, 20 in the 1990s and 40 in the 2000s) implies 80 countries by end-2009, more than the 76 the 1st edition identified in 2011. The same recount gives 142 by end-2019, against 132 in the January 2019 edition; those ten were laws enacted or located during 2019. Counts include some self-governing territories."
+   },
+   "sourceFixes": [
+    {"index": 0, "verificationStatus": "CONFIRMED", "note": "Re-fetched the int169 abstract (International Report, February 2021). The quote is verbatim (--check FOUND). The abstract also says the tables are 'as at January 2021'."},
+    {"index": 1, "verificationStatus": "CONFIRMED", "note": "Re-fetched the int176 abstract (International Report, April 2022). The quote is verbatim (--check FOUND)."},
+    {"index": 2, "verificationStatus": "CONFIRMED", "note": "Re-fetched the int181 abstract (International Report, February 2023). The title is verbatim (--check FOUND). The abstract calls this 'the start of the seventh such assessment' (biennial assessments since 2011), which differs from the Tables' own edition numbering. Greenleaf's homepage, https://www2.austlii.edu.au/~graham/, lists 'Global Tables of Data Privacy Laws and Bills (8th Ed, 2023) 162 countries with data privacy laws plus those with official Bills.' (--check FOUND). That supports the point note '8th edition'."},
+    {"index": 3, "verificationStatus": "CONFIRMED", "note": "Re-fetched the int195 abstract (International Report, June 2025). The quote is verbatim (--check FOUND). 'The table lists national laws known as at 15 March 2025.' (--check FOUND) supports the point note."}
+   ],
+   "addSources": [
+    {
+     "institution": "Privacy Laws & Business International Report (Graham Greenleaf and Bertil Cottier)",
+     "title": "2020 ends a decade of 62 new data privacy laws",
+     "date": "2020-02",
+     "url": "https://www.privacylaws.com/reports-gateway/articles/int163/int163newdplaws/",
+     "quote": "The numbers of new countries with laws per decade are: 1970s – 10; 1980s – 10; 1990s – 20; 2000s – 40; 2010s – 62. This gives a total of 142 countries.",
+     "verificationStatus": "CONFIRMED",
+     "accessType": "PAYWALL",
+     "note": "--check FOUND on the free abstract page; the full article is for subscribers only. The same abstract says: 'Since publication of the most recent Global Tables of Data Privacy Laws in January 2019,( 1 ) which included 132 countries with such laws, a further ten laws have been enacted or located.' (--check FOUND) and 'there will be over 200 countries (including self-governing territories) with data privacy laws' (--check FOUND, within a longer sentence). These support the corrected note."
+    }
+   ]
+  }
+ ]
+}

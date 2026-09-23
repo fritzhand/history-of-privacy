@@ -25951,23 +25951,6 @@ window.privacyData = {
       verificationStatus: "CONFIRMED"
     },
     {
-      id: "rsa-munitions-t-shirt-1997",
-      era: "cookies",
-      year: 1995,
-      title: "The \"munitions\" T-shirt: export-restricted encryption code printed as protest",
-      caption: "A UK-printed 'munitions' T-shirt (front), carrying RSA encryption in three lines of Perl as a protest against US export rules that classed encryption software as a munition. Adam Back's site says a mock-up of the UK shirt appeared in the Japanese edition of Wired in November 1995; the photograph itself is undated.",
-      alt: "A black T-shirt, being worn, printed with 'WARNING This shirt is classified as a munition and may not be exported from the United States, or shown to a foreign national', the words 'RSA encryption in perl', a few lines of code and a large barcode",
-      creator: "Adam Back",
-      license: "CC0 1.0",
-      creditLine: "Adam Back, via Wikimedia Commons (CC0)",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Munitions_T-shirt_(front).jpg",
-      thumbUrl: "assets/media/rsa-munitions-t-shirt-1997.jpg",
-      fullUrl: "https://upload.wikimedia.org/wikipedia/commons/9/96/Munitions_T-shirt_%28front%29.jpg",
-      rightsEvidence: "Commons API extmetadata: LicenseShortName \"CC0\"; Artist \"Adam Back <adam@cypherspace.org>\"; Credit \"http://www.cypherspace.org/adam/rsa/uk-shirt.html\". Caveat: the CC0 tag was applied by a third-party uploader (User:Thue, UploadWizard, 2014-07-01) with an empty permission field and no VRT ticket, and the cited source page carries no licence statement, so the release could not be confirmed at source. The Commons date '1997' was entered by an anonymous IP in 2023 as an inference; the upload had given '1993-03-30'.",
-      archive: false,
-      verificationStatus: "PENDING"
-    },
-    {
       id: "mitch-kapor-2006",
       era: "cookies",
       year: 2006,

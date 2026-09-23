@@ -14,7 +14,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Indigo — Open Material Archive</title>
+<title>Who Writes the Terms? — Open Rights Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -22,7 +22,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 1200px; height: 630px; overflow: hidden; }
   body {
-    background: #F8F7F3; color: #161A26;
+    background: #F7F4EC; color: #1A1814;
     font-family: 'Work Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1;
@@ -49,13 +49,13 @@
   .rule-hair  { height: 1px; background: #E4E1DA; margin-top: 4px; }
 
   .head { margin-top: 28px; }
-  .kicker { font-size: 12px; font-weight: 600; text-transform: uppercase; color: #2E3F9E; line-height: 1; }
+  .kicker { font-size: 12px; font-weight: 600; text-transform: uppercase; color: #8A6412; line-height: 1; }
   /* Optical alignment: the D's stem sits inside its side bearing, so the
      glyph has to hang left to meet the rule. Same for the italic A below. */
   h1 {
     margin-top: 15px; margin-left: -10px;
     font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
-    font-size: 132px; font-weight: 600; line-height: .9;
+    font-size: 112px; font-weight: 600; line-height: .92;
     letter-spacing: -.024em; color: #1A1A1A;
   }
   .deck {
@@ -73,7 +73,7 @@
   }
   .byline .name { font-weight: 700; color: #1A1A1A; }
   .byline .sep { color: #C9C4B8; }
-  .byline .url { color: #2E3F9E; font-weight: 500; text-transform: none; letter-spacing: .06em; }
+  .byline .url { color: #8A6412; font-weight: 500; text-transform: none; letter-spacing: .06em; }
 
   .spacer { flex: 1 1 auto !important; min-height: 10px; }
 
@@ -84,13 +84,15 @@
   .fig-num   { font-size: 25px; font-weight: 700; line-height: 1; letter-spacing: -.01em; white-space: nowrap; }
   /* A fixed two-line box so the four labels share a baseline whatever they say. */
   .fig-label { margin-top: 5px; min-height: 24px; font-size: 9.4px; font-weight: 500; text-transform: uppercase; color: #6B6B6B; line-height: 1.25; }
-  .fig-origins .fig-num { color: #8C6A33; }
-  .fig-empire  .fig-num { color: #A61B1B; }
-  .fig-synth   .fig-num { color: #5E6575; }
-  .fig-denim   .fig-num { color: #2E4FA8; }
-  /* The dip strip beside the title: the page's thesis in one picture. */
-  .dips { display: flex; gap: 3px; margin: 14px 0 0 2px; }
-  .dips span { width: 46px; height: 12px; }
+  .fig-a .fig-num { color: #2C7680; }
+  .fig-b .fig-num { color: #A4501E; }
+  .fig-c .fig-num { color: #A61B1B; }
+  .fig-d .fig-num { color: #2F7A4E; }
+  /* The thesis strip beside the title: who has written the terms. */
+  .terms { display: flex; gap: 3px; margin: 16px 0 0 2px; }
+  .terms span { width: 104px; height: 20px; display: flex; align-items: flex-end; padding: 0 0 3px 6px;
+                font-size: 8.4px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #F7F4EC; }
+  .deck em { font-style: italic; color: #2F7A4E; }
   /* A card that boasts of 146 institutions should name a few. */
   .sources { margin-top: 11px; font-size: 9.4px; font-weight: 500; text-transform: uppercase; color: #9A9488; line-height: 1; }
 
@@ -121,23 +123,20 @@
 
     <header class="masthead">
       <div class="imprint">
-        <!-- Site mark: a cloth dipped five times, each band a shade deeper,
-             and the leaf the blue came from. -->
+        <!-- Site mark: a sealed letter whose wax seal is a keyhole. -->
         <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect x="11" y="4"    width="17" height="4.8" rx=".8" fill="#D9E2F5"/>
-          <rect x="11" y="9.2"  width="17" height="4.8" rx=".8" fill="#A9BCE8"/>
-          <rect x="11" y="14.4" width="17" height="4.8" rx=".8" fill="#7390D6"/>
-          <rect x="11" y="19.6" width="17" height="4.8" rx=".8" fill="#4760B0"/>
-          <rect x="11" y="24.8" width="17" height="3.4" rx=".8" fill="#2C3F86"/>
-          <path d="M3.2 25.5 C 2.6 17, 6.6 11.2, 13.4 9.2 C 13.6 16.8, 9.8 23.4, 3.2 25.5 Z" fill="#3C7A47"/>
-          <path d="M3.8 24.6 C 6.6 19.6, 9.2 15.4, 12.6 10.4" stroke="#F8F7F3" stroke-width=".8" fill="none" stroke-linecap="round"/>
+          <rect x="3" y="7.5" width="26" height="18" rx="1.6" fill="#F0ECE1" stroke="#45423B" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="M3.8 8.4 L16 17.6 L28.2 8.4" fill="none" stroke="#45423B" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="16" cy="17.6" r="5.6" fill="#8A6412"/>
+          <circle cx="16" cy="16.4" r="1.55" fill="#F7F4EC"/>
+          <path d="M15.05 17.2 H16.95 L17.45 20.4 H14.55 Z" fill="#F7F4EC"/>
         </svg>
         <div class="imprint-text">
-          <div class="imprint-name t3">Open Material Archive</div>
-          <div class="imprint-sub t2">Indigo &middot; c. 4000 BCE &ndash; today</div>
+          <div class="imprint-name t3">Open Rights Archive</div>
+          <div class="imprint-sub t2">Privacy &middot; antiquity &ndash; 2026</div>
         </div>
       </div>
-      <div class="provenance t2"><b>706</b> Cited Sources</div>
+      <div class="provenance t2"><b>0</b> Cited Sources</div>
     </header>
 
     <div class="rules">
@@ -146,21 +145,20 @@
     </div>
 
     <div class="head">
-      <div class="kicker t4">Six Thousand Years &nbsp;&middot;&nbsp; Huaca Prieta to the Denim Mill</div>
-      <h1>Indigo</h1>
-      <div class="deck">The Blue That Dyed the World</div>
-      <div class="dips"><span style="background:#D9E2F5"></span><span style="background:#A9BCE8"></span><span style="background:#7390D6"></span><span style="background:#4760B0"></span><span style="background:#2C3F86"></span><span style="background:#18234F"></span></div>
+      <div class="kicker t4">A History of Privacy &nbsp;&middot;&nbsp; The Closed Door to IEEE 7012</div>
+      <h1>Who Writes the Terms?</h1>
+      <div class="deck">From the wall and the seal to <em>your own terms</em></div>
+      <div class="terms"><span style="background:#8C6A33">Wall</span><span style="background:#6A4A9E">Law</span><span style="background:#A4501E">Their policy</span><span style="background:#2A64A0">Your signal</span><span style="background:#2F7A4E">Your terms</span></div>
     </div>
 
     <p class="standfirst">
-      One molecule from half a dozen unrelated plants &mdash; through temples, guilds, sea routes, slave plantations,
-      a peasant revolt and a German laboratory to every pair of jeans &mdash; told with cited open data and archival imagery.
+      <!-- STANDFIRST -->
     </p>
 
     <div class="byline t2">
       <span class="name">By Jeremy Fritzhand</span>
       <span class="sep">&mdash;</span>
-      <span class="url">fritzhand.github.io/history-of-indigo</span>
+      <span class="url">fritzhand.github.io/history-of-privacy</span>
     </div>
 
     <div class="spacer"></div>
@@ -168,51 +166,22 @@
     <div class="foot-rule"></div>
 
     <div class="figures">
-      <div class="fig-item fig-origins">
-        <div class="fig-num">&asymp;6,000 yrs</div>
-        <div class="fig-label t1">Oldest indigo-dyed cloth<br />Huaca Prieta, Peru</div>
-      </div>
-      <div class="fig-item fig-empire">
-        <div class="fig-num">1.7M acres</div>
-        <div class="fig-label t1">Under indigo in British India<br />1894&ndash;95 peak</div>
-      </div>
-      <div class="fig-item fig-synth">
-        <div class="fig-num">10 July 1897</div>
-        <div class="fig-label t1">BASF synthetic indigo<br />goes on sale</div>
-      </div>
-      <div class="fig-item fig-denim">
-        <div class="fig-num">3,781 L</div>
-        <div class="fig-label t1">Water per pair of 501s<br />Levi&rsquo;s life-cycle study, 2015</div>
-      </div>
+      <!-- FIGURES -->
     </div>
 
     <div class="sources t1">
-      Science Advances &middot; Historical Statistics of the U.S. &middot; Government of India statistics &middot; Indigo Commission, 1860 &middot; BASF &middot; UNESCO
+      <!-- SOURCES -->
     </div>
 
-    <div class="era-span t1"><span><b>c. 4200 BCE</b> Huaca Prieta</span><span>compressed time &middot; bio-indigo <b>2018</b></span></div>
+    <div class="era-span t1"><!-- ERASPAN --></div>
 
     <!-- Segments are each era's share of the site's compressed time axis
          (meta.timeKnots), not of elapsed years. -->
     <div class="era-bar">
-      <span style="flex:250;background:#8C6A33"></span>
-      <span style="flex:200;background:#7F6F12"></span>
-      <span style="flex:157;background:#2C7680"></span>
-      <span style="flex:147;background:#6A4A9E"></span>
-      <span style="flex:112;background:#A61B1B"></span>
-      <span style="flex:51;background:#5E6575"></span>
-      <span style="flex:57;background:#2E4FA8"></span>
-      <span style="flex:26;background:#3C7A47"></span>
+      <!-- ERABAR -->
     </div>
     <div class="era-names t1">
-      <span style="flex:250">Ancient</span>
-      <span style="flex:200">Medieval</span>
-      <span style="flex:157">Sea Routes</span>
-      <span style="flex:147">Plantation</span>
-      <span style="flex:112">Empire</span>
-      <span style="flex:51">Synth.</span>
-      <span style="flex:57">Denim</span>
-      <span style="flex:26">Rev.</span>
+      <!-- ERANAMES -->
     </div>
 
   </div>
